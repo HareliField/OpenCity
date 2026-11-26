@@ -45,7 +45,12 @@ function caseShot(a){
   }
   return street('Street incident',base,.82,4.3,f.victimName+' falls. The leather holdall is on the pavement.');
  }
- if(stage==='Filed')return room('Communications','Call received',(f.caller?.name||'A resident')+' reports a person down. Communications takes the location.');
+ if(stage==='Filed'){
+  const caller=f.caller?.name||'A resident';
+  return room('Communications','Call received',f.caller?.observation==='heard'?caller+' reports hearing gunfire. Communications takes the approximate location.':
+   f.caller?.observation==='eyewitness'?caller+' reports seeing the shooting. Communications takes the location.':
+   caller+' reports a person down. Communications takes the location.');
+ }
  if(stage==='Patrol assigned'||stage==='Scene review'||stage==='Lab review'){
   const units=departmentPeople.filter(u=>u.file===f&&!u.dead&&dist2(u.pos,base)<13);
   const curb=sceneStreetFrame(base),outward=Math.atan2(-curb.nx,-curb.nz);
@@ -55,7 +60,7 @@ function caseShot(a){
    const ride=cars.find(c=>c.sceneFileId===f.id&&!c.dead&&dist2(c.pos,base)<27);
    if(ride&&units.length<2)mid.lerp(ride.pos,.58);
    else if(unit)mid.lerp(unit.pos,.4);
-   const caption=units.length<2?name(f.patrol)+' responds to the caller’s location.':'Patrol stays with the injured resident and takes the caller’s account.';
+   const caption=f.pendingScene?name(f.patrol)+' checks the area where the caller heard gunfire.':units.length<2?name(f.patrol)+' responds to the caller’s location.':'Patrol stays with the injured resident and takes the caller’s account.';
    return {...street('Patrol response',mid,.96,9.5,caption),yaw:outward+1.02,rise:1.45};
   }
   const detectiveAtScene=stage==='Lab review'&&unit&&dist2(unit.pos,base)<3.8;

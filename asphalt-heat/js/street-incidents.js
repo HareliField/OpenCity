@@ -54,7 +54,7 @@ function seedNeighborhoodWalkers(){
   return !best||d<best.d?{r,t,d}:best;
  },null);
  // The six people who know each other from the Old Town bicycle story walk ordinary sidewalk routes.
- const residents=neighborhoodResidents.filter(([id])=>!PoliceDepartment.cases.some(f=>f.victimId===id||f.suspect===id));
+ const residents=neighborhoodResidents.filter(([id])=>!PoliceDepartment.cases.some(f=>f.victimId===id||f.pendingScene?.victimId===id||f.suspect===id));
  for(let i=residents.length-1;i>0;i--){
   const j=rint(0,i);[residents[i],residents[j]]=[residents[j],residents[i]];
  }
@@ -151,6 +151,14 @@ function seeStreetAttack(p,a){
 }
 function strikeInStreet(a){
  const {victim,offender}=a,pd=PoliceDepartment,at=victim.pos.clone();
+ // Snapshot hearing at the instant of the shot. Someone arriving later can only report what they find.
+ a.heard=new Map();
+ for(const p of peds){
+  if(p===victim||p===offender||p.dead)continue;
+  const distance=p.pos.distanceTo(offender.pos);
+  if(distance>44||distance>30&&!los(p.pos,offender.pos))continue;
+  a.heard.set(p.personId,{ped:p,at:p.pos.clone(),distance});
+ }
  for(const p of streetWitnesses(a)){
   if(seeStreetAttack(p,a))a.eyes.set(p.personId,Boolean(p.neighborhood&&p.neighborhood===offender.neighborhood));
   if(p!==a.onlooker&&freeWalker(p)&&dist2(p.pos,at)<9){
@@ -175,25 +183,50 @@ function strikeInStreet(a){
  globalThis.asphaltAgentEvent?.('street-death',{file:a.file.id,victim:victim.personId});
 }
 function beginStreetCall(a){
- const ped=streetWitnesses(a).find(p=>freeWalker(p)||p===a.onlooker&&p.mode==='encounter');
+ const eligible=p=>freeWalker(p)||p===a.onlooker&&p.mode==='encounter'&&!p.dead;
+ const nearby=streetWitnesses(a).filter(eligible);
+ const listeners=[...a.heard.entries()].filter(([id,h])=>h.ped.personId===id&&eligible(h.ped))
+  .sort(([,left],[,right])=>left.distance-right.distance);
+ // An eyewitness can call after fleeing, even after losing sight of the scene.
+ let ped=nearby.find(p=>a.eyes.has(p.personId))||listeners.find(([id,h])=>a.eyes.has(id)&&dist2(h.ped.pos,a.offender.pos)>8)?.[1].ped;
+ let observation='eyewitness';
+ if(!ped){
+  ped=nearby.find(p=>{
+   const dx=a.at.x-p.pos.x,dz=a.at.z-p.pos.z,d=Math.hypot(dx,dz);
+   return d<2.6||d<12&&dx*Math.sin(p.c.yaw)+dz*Math.cos(p.c.yaw)>d*.16;
+  });
+  observation='discovery';
+ }
+ if(!ped&&time-a.since>=1.65){
+  ped=listeners.find(([,h])=>dist2(h.ped.pos,a.offender.pos)>8)?.[1].ped;
+  observation='heard';
+ }
  if(!ped)return;
  ped.mode='encounter';faceStreetActor(ped,a.at);
- a.call={ped,id:ped.personId,due:time+3.6};a.phase='Calling 911';
- globalThis.asphaltAgentEvent?.('911-dial',{file:a.file.id,caller:ped.personId});
+ a.call={ped,id:ped.personId,observation,due:time+3.6};a.phase='Calling 911';
+ globalThis.asphaltAgentEvent?.('911-dial',{file:a.file.id,caller:ped.personId,observation});
 }
 function receiveStreetCall(a){
- const {ped,id}=a.call;
+ const {ped,id,observation}=a.call;
  if(ped.dead||ped.personId!==id||ped.mode!=='encounter'){
   a.call=null;a.phase='Aftermath';return;
  }
  if(time<a.call.due)return;
- const f=a.file,seen=a.eyes.has(id),recognized=seen&&a.eyes.get(id);
- const name=streetResidentName(ped);
- const statement=recognized?'I saw '+a.attacker.name+' fire. I know them from the Old Town counter.':
-  seen?'I saw someone fire, but I could not identify them.':'I found someone down on the pavement. I did not see who did it.';
- f.caller={id,name};f.evidence.push({type:'Statement',source:name,value:statement});
+ const f=a.file,name=streetResidentName(ped);
+ const recognized=observation==='eyewitness'&&a.eyes.get(id);
+ let statement='I found someone down on the pavement. I did not see who did it.';
+ if(observation==='heard'){
+  const reportArea=streetAddress(a.heard.get(id).at);
+  statement='I heard a shot while I was near '+reportArea+'. I could not see who fired.';
+  f.pendingScene={title:f.title,victimId:f.victimId,victimName:f.victimName,evidence:f.evidence.slice()};
+  f.kind='Gunfire report';f.title='Gunfire report near '+reportArea;
+  f.victimId=null;f.victimName=null;f.evidence=[];f.reportArea=reportArea;
+ }else if(observation==='eyewitness'){
+  statement=recognized?'I saw '+a.attacker.name+' fire. I know them from the Old Town counter.':'I saw someone fire, but I could not identify them.';
+ }
+ f.caller={id,name,observation};f.evidence.push({type:'Statement',source:name,value:statement});
  if(recognized){f.contact=a.attacker.id;f.subjectName=a.attacker.name;}
- PoliceDepartment.receiveCall(f,'911 · '+name,statement+' Location received. Patrol requested.');
+ PoliceDepartment.receiveCall(f,'911 · '+name,statement+(observation==='heard'?' Approximate area received.':' Location received.')+' Patrol requested.');
  a.phase='Reported';a.since=time;
 }
 function interviewAtScene(a){

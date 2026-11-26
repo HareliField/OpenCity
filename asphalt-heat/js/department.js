@@ -98,7 +98,7 @@ class CityPoliceDepartment {
   return null;
  }
  streetResponseActive(file){
-  return file.origin==='street'&&file.kind==='Homicide'&&['Patrol assigned','Scene review','Lab review'].includes(file.stage);
+  return file.origin==='street'&&(file.kind==='Homicide'||file.kind==='Gunfire report')&&['Patrol assigned','Scene review','Lab review'].includes(file.stage);
  }
  fieldAssignment(file,personId){
   return this.assigned(file)===personId||this.streetResponseActive(file)&&file.response?.some(r=>r.personId===personId);
@@ -191,6 +191,12 @@ class CityPoliceDepartment {
     const officer=this.staff.find(s=>s.personId===c.patrol);
     if(!officer||this.unavailable.has(c.patrol)){c.stage='Filed';c.patrol=null;changed=true;continue;}
     if(this.atScene&&!this.atScene(c))continue;
+    if(c.pendingScene){
+     const scene=c.pendingScene;
+     c.kind='Homicide';c.title=scene.title;c.victimId=scene.victimId;c.pendingVictimName=scene.victimName;
+     c.evidence.unshift(...scene.evidence);delete c.pendingScene;
+     this.logCase(c,officer.name,'Located a fallen resident while checking the reported area. Opened a homicide investigation.','Communications');
+    }
     if(c.kind==='Shots reported'){
      c.stage=c.contact?'Identified':'Open leads';c.suspect=c.contact;
      this.logCase(c,officer.name,c.contact?'Witness identified the shooter.':'Area checked. Shooter identity unconfirmed.');
@@ -228,6 +234,10 @@ class CityPoliceDepartment {
      if(!relief)continue;
      this.logCase(c,detective?.name||'Detectives','File transferred to the incoming watch for review.',relief.name);
      c.detective=relief.personId;detective=relief;
+    }
+    if(c.pendingVictimName&&c.evidence.some(e=>e.type==='DNA'&&e.source==='Injured person'&&e.value===this.identity(c.victimId).dnaId)){
+     c.victimName=c.pendingVictimName;delete c.pendingVictimName;
+     this.logCase(c,analyst.name,'The victim specimen matches the resident record for '+c.victimName+'.',detective.name);
     }
     const profile=c.contact?this.identity(c.contact):null;
     const match=profile&&c.evidence.some(e=>(!c.linkedExhibit||e.exhibit===c.linkedExhibit)&&
