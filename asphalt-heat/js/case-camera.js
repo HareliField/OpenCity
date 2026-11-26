@@ -46,20 +46,37 @@ function caseShot(a){
   return street('Street incident',base,.82,4.3,f.victimName+' falls. The leather holdall is on the pavement.');
  }
  if(stage==='Filed')return room('Communications','Call received',(f.caller?.name||'A resident')+' reports a person down. Communications takes the location.');
- if(stage==='Patrol assigned'||stage==='Lab review'){
-  const unit=fieldInvestigators.get(f.id),patrol=stage==='Patrol assigned';
+ if(stage==='Patrol assigned'||stage==='Scene review'||stage==='Lab review'){
+  const units=departmentPeople.filter(u=>u.file===f&&!u.dead&&dist2(u.pos,base)<13);
+  const curb=sceneStreetFrame(base),outward=Math.atan2(-curb.nx,-curb.nz);
   const mid=new V3(base.x,base.y,base.z);
-  if(unit)mid.lerp(unit.pos,.55);
-  return street(patrol?'Patrol response':'Detective at scene',mid,1.0,Math.max(4.35,unit?dist2(unit.pos,base)*.92:5),
-   patrol?name(f.patrol)+' responds to the caller’s location.':name(f.detective)+' reviews the witness statement and the exhibits.');
+  const unit=fieldInvestigators.get(f.id);
+  if(stage==='Patrol assigned'){
+   const ride=cars.find(c=>c.sceneFileId===f.id&&!c.dead&&dist2(c.pos,base)<27);
+   if(ride&&units.length<2)mid.lerp(ride.pos,.58);
+   else if(unit)mid.lerp(unit.pos,.4);
+   const caption=units.length<2?name(f.patrol)+' responds to the caller’s location.':'Patrol stays with the injured resident and takes the caller’s account.';
+   return {...street('Patrol response',mid,.96,9.5,caption),yaw:outward+1.02,rise:1.45};
+  }
+  const detectiveAtScene=stage==='Lab review'&&unit&&dist2(unit.pos,base)<3.8;
+  if(detectiveAtScene&&PoliceDepartment.clock>=f.due-4.5){
+   mid.lerp(unit.pos,.68);
+   return {...street('Detective at scene',mid,1.07,4.85,name(f.detective)+' reviews the witness account and collected exhibits.'),
+    yaw:outward-1.26,rise:.85};
+  }
+  for(const u of units)mid.add(u.pos);
+  mid.divideScalar(units.length+1);
+  const radius=Math.max(3.1,dist2(mid,base),...units.map(u=>dist2(mid,u.pos)));
+  const key=stage==='Scene review'?'Evidence collection':'Scene handover';
+  const caption=stage==='Scene review'?name(f.patrol)+' logs '+f.custody.length+' exhibits.':
+   name(f.detective)+' takes the case from '+name(f.patrol)+'.';
+  return {...street(key,mid,.95,Math.max(8.6,radius*1.75),caption),yaw:outward+.55,rise:2.7};
  }
- if(stage==='Scene review')return street('Evidence collection',base,.62,3.7,
-  name(f.patrol)+' records '+f.custody.length+' exhibits for the detective.');
  if(stage==='Lab queue'||stage==='Evidence examination'){
   const submitted=f.timeline.findLast(e=>e.message.startsWith('Requested comparison'));
   if(submitted&&PoliceDepartment.clock-submitted.at<2){
    const site=places.find(p=>p.office===hq),pos=new V3(site.door.x,groundY(site.door.x,site.door.z),site.door.z);
-   return {key:'Headquarters',pos,height:3.3,distance:12,yaw:SIDEANG[site.side]+.21,location:hq.name,
+   return {key:'Headquarters',pos,height:5.3,distance:23,yaw:SIDEANG[site.side]+.36,location:hq.name,
     caption:'The detective sends the sealed exhibits to headquarters.'};
   }
   return room('Forensics','Evidence laboratory',f.analyst?name(f.analyst)+' examines the leather holdall and checks the contact records.':'The exhibits are waiting for an available analyst.');
@@ -90,7 +107,7 @@ function updateCaseCamera(dt){
   view=shot.eye.clone();view.y+=1.75;view.x+=drift*.6;
  }else for(const angle of [heading+drift,heading+.8,heading-.8,heading+Math.PI]){
   const dx=Math.sin(angle)*shot.distance,dz=Math.cos(angle)*shot.distance;
-  const end=new V3(aim.x+dx,aim.y+(shot.key==='Headquarters'?2.2:.57),aim.z+dz);
+  const end=new V3(aim.x+dx,aim.y+(shot.rise??(shot.key==='Headquarters'?2.6:.57)),aim.z+dz);
   const clearance=cameraClearance(aim.x,aim.y,aim.z,end.x,end.y,end.z);
   if(clearance>maxClear){view=end.lerp(aim,1-clearance);maxClear=clearance;}
   if(clearance>.98)break;

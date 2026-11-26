@@ -268,11 +268,12 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
   if(c.hp<c.max*.4&&Math.random()<dt*13){const fx=Math.sin(c.h),fz=Math.cos(c.h);emit(c.pos.x+fx*c.spec.L*.36,c.pos.y+c.spec.hb+.1,c.pos.z+fz*c.spec.L*.36,rnd(-.3,.3),rnd(1,2.5),rnd(-.3,.3),1.6,.6,2.5,c.hp<c.max*.2?0x333030:0x9a9a9a,false);}
   if(c===player.car){drive(c,jy,-jx,sprint,dt);}
   else if(inFreightPort(c.pos.x,c.pos.z)&&(c.driver==='ai'||c.driver==='police'&&(!wanted||!c.dispatched)))driveToFreightExit(c,dt);
-  else if(c.driver==='ai')aiTraffic(c,dt);
+  else if(c.driver==='scene')driveSceneCar(c,dt);
+  else if(c.driver==='ai'||c.driver==='scene return')aiTraffic(c,dt);
   else if(c.driver==='police'){if(wanted>0){c.siren=c.dispatched&&wanted>=3&&LAW.seen;aiPolice(c,dt);}else{c.siren=false;c.route=null;c.dispatched=false;aiTraffic(c,dt);}}
   else if(c.phys)physCarControl(c,0,0,true,dt);
   updateTurnLamps(c,time);
-  if(c.bar){const on=c.siren&&(wanted>0||c.block)&&(c.driver==='police'||c.block);const f=(time*7|0)%2;c.bar.r.material=on&&f?SIREN.onR:SIREN.offR;c.bar.b.material=on&&!f?SIREN.onB:SIREN.offB;}}
+  if(c.bar){const on=c.siren&&(c.sceneFileId&&c.driver!=='player'||(wanted>0||c.block)&&(c.driver==='police'||c.block));const f=(time*7|0)%2;c.bar.r.material=on&&f?SIREN.onR:SIREN.offR;c.bar.b.material=on&&!f?SIREN.onB:SIREN.offB;}}
  physStep(dt);updateDoorMeshes();
  for(const c of cars){if(c.phys)physCarRead(c);syncCarMesh(c);if(c.spec.form==='roadster'){updateSeatedDriver(c);updateRoadsterDials(c);}c.mesh.visible=dist2(c.pos,player.pos)<230;if(dist2(c.pos,player.pos)<70)updateHeadlights(c,dt);}
  const lit=player.car;
@@ -437,7 +438,7 @@ async function boot(){resize();state='loading';setLoad('Loading city…',0);
  const mgr=THREE.DefaultLoadingManager;let tot=1,done=0;mgr.onStart=(u,l,t)=>{done=l;tot=t;};mgr.onProgress=(u,l,t)=>{done=l;tot=t;if(state==='loading')setLoad('Loading city & people… '+Math.round(l/t*100)+'%',l/t*.85);};
  await new Promise(r=>loadSky(r));
  const cast=await (await fetch('models/cast.json')).json();
- const lowSet=['Male_Adult_07','Police_Male_01','Police_Male_02','Military_Male_01','Security_Male_01','Male_Adult_10','Male_Adult_03','Medical_Male_01','Male_Adult_01','Male_Adult_04','Male_Adult_08','Business_Male_01','Female_Adult_01','Female_Adult_03','Female_Adult_07','Business_Female_01','Sports_Male_01','Sports_Female_01'];
+ const lowSet=['Male_Adult_07','Police_Male_01','Police_Male_02','Police_Male_03','Police_Male_07','Medical_Female_01','Military_Male_01','Security_Male_01','Male_Adult_10','Male_Adult_03','Medical_Male_01','Male_Adult_01','Male_Adult_04','Male_Adult_08','Business_Male_01','Female_Adult_01','Female_Adult_03','Female_Adult_07','Business_Female_01','Sports_Male_01','Sports_Female_01'];
  const names=Object.keys(cast).filter(n=>QUALITY.level>=2||lowSet.includes(n));
  const L=new THREE.GLTFLoader();const ld=u=>new Promise((res,rej)=>L.load(u,res,undefined,rej));
  initMaterials();

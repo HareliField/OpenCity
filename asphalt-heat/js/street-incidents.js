@@ -46,7 +46,7 @@ function seedNeighborhoodWalkers(){
   p.R=home.r;p.t=home.t-14+i*5.6+rnd(-.65,.65);p.dir=i%2?-1:1;p.mode='walk';
   const [x,z]=perimPos(p.R,p.t);p.pos.set(x,groundY(x,z),z);
   collideWorld(p.pos,.31);p.c.root.position.copy(p.pos);p.c.root.visible=true;
-  p.bag=null;if(i%3===0)givePedestrianBag(p);
+  p.bag=null;if(i===Math.floor(residents.length/2))givePedestrianBag(p);
  }
 }
 function streetResidentName(p){return p.residentName||'Resident '+p.personId.replace(/^ah-person-/,'');}
@@ -84,7 +84,42 @@ function startStreetEncounter(){
 function leaveEncounter(p){
  if(p&&!p.dead&&p.mode==='encounter'){p.c.talk=0;attachPed(p);}
 }
+const evidenceTentFace=new THREE.PlaneGeometry(.24,Math.hypot(.21,.078));
+function clearStreetMarker(a){
+ const marker=a.evidenceMarker;
+ if(!marker)return;
+ marker.parent?.remove(marker);
+ const material=marker.children[0].material;
+ material.map.dispose();material.dispose();a.evidenceMarker=null;
+}
+function markStreetExhibit(a){
+ if(a.evidenceMarker||!a.bag||!a.file.custody)return;
+ // Intake numbers the physical traces in evidence order. An incidental print can be ahead of the bag.
+ const physical=a.file.evidence.filter(e=>e.type==='Print'||e.type==='DNA');
+ const index=physical.findIndex(e=>e.exhibit&&e.exhibit===a.file.linkedExhibit);
+ const tag=a.file.custody[index]?.tag;
+ if(!tag)return;
+ const [canvas,g]=cvs(288,256);
+ g.fillStyle='#f5c342';g.fillRect(0,0,288,256);g.fillStyle='#262724';g.textAlign='center';
+ g.font='bold 28px Arial';g.fillText('EXHIBIT',144,55);
+ g.fillRect(24,75,240,4);g.font='bold 88px Arial';g.fillText(tag,144,185,254);
+ const material=new THREE.MeshStandardMaterial({map:ctex(canvas),roughness:.91});
+ const marker=new THREE.Group(),fold=Math.atan2(.078,.21);
+ for(const side of [-1,1]){
+  const panel=new THREE.Mesh(evidenceTentFace,material);
+  panel.rotation.order='YXZ';panel.rotation.y=side<0?Math.PI:0;panel.rotation.x=-fold;
+  panel.position.set(0,.105,side*.039);marker.add(panel);
+ }
+ const p=a.bag.position,f=sceneStreetFrame(p);
+ const along=(p.x-a.file.at.x)*f.tx+(p.z-a.file.at.z)*f.tz>=0?.34:-.34;
+ marker.position.set(p.x+along*f.tx-.29*f.nx,p.y,p.z+along*f.tz-.29*f.nz);
+ collideWorld(marker.position,.13);
+ marker.position.y=groundY(marker.position.x,marker.position.z,p.y)+.008;
+ marker.rotation.y=Math.atan2(-f.nx,-f.nz);marker.userData.custodyTag=tag;
+ scene.add(marker);a.evidenceMarker=marker;
+}
 function finishStreetEncounter(a){
+ clearStreetMarker(a);
  leaveEncounter(a.offender);leaveEncounter(a.victim);leaveEncounter(a.onlooker);leaveEncounter(a.call?.ped);
  if(a.bag!==a.offender.bag)a.bag?.parent?.remove(a.bag);a.phone?.parent?.remove(a.phone);streetIncidents.current=null;streetIncidents.nextCheck=time+12;
  stopCaseCamera();
@@ -96,8 +131,12 @@ function seeStreetAttack(p,a){
 }
 function strikeInStreet(a){
  const {victim,offender}=a,pd=PoliceDepartment,at=victim.pos.clone();
- for(const p of streetWitnesses(a))if(seeStreetAttack(p,a))a.eyes.set(p.personId,
-  Boolean(p.neighborhood&&p.neighborhood===offender.neighborhood));
+ for(const p of streetWitnesses(a)){
+  if(seeStreetAttack(p,a))a.eyes.set(p.personId,Boolean(p.neighborhood&&p.neighborhood===offender.neighborhood));
+  if(p!==a.onlooker&&freeWalker(p)&&dist2(p.pos,at)<9){
+   faceStreetActor(p,at);p.mode='cower';p.cowerT=1.7+dist2(p.pos,at)*.14;
+  }
+ }
  offender.c.aim=.5;
  const from=offender.pos.clone();from.y+=1.28;const to=at.clone();to.y+=1.05;
  tracer(from,to);emit(from.x,from.y,from.z,0,0,0,.06,.30,.8,0xffdb9a,true);
@@ -216,7 +255,17 @@ function updateStreetEncounter(dt){
  else if(a.phase==='Calling 911')receiveStreetCall(a);
  if(a.phase!=='Calling 911'&&a.phone){scene.remove(a.phone);a.phone=null;}
  const stage=a.file.stage;
+ if(stage==='Scene review'||stage==='Lab review')markStreetExhibit(a);
+ else clearStreetMarker(a);
  if(stage==='Patrol assigned')interviewAtScene(a);
+ if(stage==='Patrol assigned'||stage==='Scene review'||stage==='Lab review'){
+  for(const p of peds){
+   if(p.mode!=='walk'||p.dead||p.cross||p.scenePass===a.file.id||dist2(p.pos,a.at)>3.8)continue;
+   const [nextX,nextZ]=perimPos(p.R,p.t+p.dir*.6);
+   if(Math.hypot(nextX-a.at.x,nextZ-a.at.z)>=dist2(p.pos,a.at))continue;
+   p.scenePass=a.file.id;p.dir*=-1;faceStreetActor(p,a.at);p.mode='stand';p.standT=1.8;p.c.talk=0;
+  }
+ }
  if(stage==='Lab queue'||stage==='Evidence examination'||stage==='Command queue'||stage==='Command review'||
   stage==='Wanted'||stage==='Booked'||stage==='Open leads'){
   leaveEncounter(a.call?.ped);leaveEncounter(a.onlooker);

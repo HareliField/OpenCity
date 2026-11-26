@@ -64,7 +64,7 @@ class CityPoliceDepartment {
  get watch(){return Math.floor(this.clock/480)%3;}
  duty(member){return member.watch===this.watch&&!this.unavailable.has(member.personId);}
  activeFile(member){
-  return this.cases.find(f=>this.assigned(f)===member.personId||
+  return this.cases.find(f=>this.fieldAssignment(f,member.personId)||
    f.stage==='Evidence examination'&&f.analyst===member.personId||
    f.stage==='Command review'&&f.supervisor===member.personId);
  }
@@ -84,9 +84,24 @@ class CityPoliceDepartment {
   if(file.stage==='Lab review')return file.detective;
   return null;
  }
+ streetResponseActive(file){
+  return file.origin==='street'&&file.kind==='Homicide'&&['Patrol assigned','Scene review','Lab review'].includes(file.stage);
+ }
+ fieldAssignment(file,personId){
+  return this.assigned(file)===personId||this.streetResponseActive(file)&&file.response?.some(r=>r.personId===personId);
+ }
+ assignStreetResponse(file){
+  const roles=['Scene lead','Witness liaison','Incident notes','Scene access','Public assistance'];
+  file.response=[{personId:file.patrol,role:roles[0],slot:0,assignedAt:this.clock}];
+  for(let slot=1;slot<roles.length;slot++){
+   const member=this.available('Patrol');
+   if(!member)break;
+   file.response.push({personId:member.personId,role:roles[slot],slot,assignedAt:this.clock});
+  }
+ }
  available(division){
   const candidates=this.staff.filter(s=>s.division===division&&this.duty(s)&&!this.bindings.has(s.personId)&&
-   !this.cases.some(c=>this.assigned(c)===s.personId));
+   !this.activeFile(s));
   return candidates.find(s=>!this.workstations.has(s.personId))||candidates[0];
  }
  claim(division,assignment){
@@ -143,6 +158,7 @@ class CityPoliceDepartment {
  process(){
   let changed=false;
   for(const c of this.cases){
+   if(this.streetResponseActive(c)&&!c.response){this.assignStreetResponse(c);changed=true;}
    if(this.clock<c.due)continue;
    if(c.stage==='Filed'){
     const patrol=this.available('Patrol');if(!patrol)continue;
@@ -151,6 +167,13 @@ class CityPoliceDepartment {
     if(!dispatcher){c.stage='Filed';c.patrol=null;continue;}
     this.logCase(c,dispatcher.name,'Assigned the reported location.',patrol.name);
     this.logCase(c,patrol.name,'Copy. Responding.',dispatcher.name);
+    if(this.streetResponseActive(c)){
+     this.assignStreetResponse(c);
+     for(const responder of c.response.slice(1)){
+      const member=this.staff.find(s=>s.personId===responder.personId);
+      this.logCase(c,dispatcher.name,responder.role+' requested at the reported scene.',member.name);
+     }
+    }
    }else if(c.stage==='Patrol assigned'){
     const officer=this.staff.find(s=>s.personId===c.patrol);
     if(!officer||this.unavailable.has(c.patrol)){c.stage='Filed';c.patrol=null;changed=true;continue;}

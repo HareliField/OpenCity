@@ -475,7 +475,7 @@ function relocatePed(p,stand){
 function attachPed(p){p.cross=null;p.crossAfter=time+4;const B=blocks[clamp(Math.floor(p.pos.x/CELL),0,N-1)*N+clamp(Math.floor(p.pos.z/CELL),0,N-1)];p.R=perim(B);p.t=perimT(p.R,p.pos.x,p.pos.z);p.mode='walk';}
 function newPedChar(p,B){newStreetIdentity(p);if(p.c)removeChar(p.c);let role=pedRoleFor(B);if(role==='mb')role=ROLE.mb?'mb':'m';if(role==='fb')role=ROLE.fb?'fb':'f';const name=pickChar(role);p.c=makeChar(name,{});p.c.root.visible=false;p.tough=CAST[name]==='m'&&Math.random()<.3||CAST[name]==='gang';p.fem=/Female/.test(name);}
 function placePed(p,B,stand){newPedChar(p,B);assignCivilianIdentity(p);p.cross=null;p.crossAfter=time+3;p.R=perim(B);p.t=rnd(0,200);const q=perimPos(p.R,p.t);p.pos.set(q[0],0,q[1]);p.mode='walk';p.dead=false;p.hp=60;p.dir=Math.random()<.5?1:-1;p.spd=rnd(1.15,1.55)*(p.fem?.95:1);p.cash=rint(5,80);p.fleeT=0;p.downT=0;p.c.talk=0;
- if(Math.random()<.24)givePedestrianBag(p);
+ if(dist2(p.pos,player.pos)>55&&Math.random()<.045&&!peds.some(other=>other!==p&&other.bag&&dist2(other.pos,p.pos)<65))givePedestrianBag(p);
  if(stand){p.mode='stand';p.standT=rnd(8,25);p.c.talk=Math.random()<.7?1:0;p.c.yaw=rnd(0,6);}}
 function scare(x,z,r){for(const p of peds){if(p.dead||p.mode==='fight')continue;const dx=p.pos.x-x,dz=p.pos.z-z,d=Math.hypot(dx,dz);if(d<r){p.mode='flee';p.c.talk=0;p.fleeT=rnd(5,8);const a=Math.atan2(dx,dz)+rnd(-.6,.6);p.fv.set(Math.sin(a),0,Math.cos(a));}}}
 function killPed(p,vx,vy,vz,crimeIt,dropLoot=true){if(p.dead)return;p.dead=true;p.mode='down';p.downT=0;p.c.hands=0;p.c.talk=0;ragdoll(p.c,vx,vy,vz);if(dropLoot)dropCash(p.pos.x,p.pos.z,p.cash,p.pos.y);p.cash=0;if(crimeIt){registerIncident('Homicide',p.pos,{victim:p});crime(15,p.pos.x,p.pos.z);}}

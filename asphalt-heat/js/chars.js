@@ -47,7 +47,9 @@ function bakeClip(src,clipName,troot,tnm,trest,fps){const clip=src.clips[clipNam
 /* build a template from a loaded Rocketbox gltf */
 function addTemplate(name,gltf,role,animKey,clipNames){const scene=gltf.scene;const tnm=nodeMap(scene);const src=ANIM[animKey];
  scene.updateMatrixWorld(true);const trest=alignRest(tnm,src);
- const sig=animKey+BORDER.map(b=>trest.q[b]?trest.q[b].toArray().map(v=>v.toFixed(2)).join(','):'').join('|');
+ // Clips store local rotations, so rigs with different pelvis-parent axes cannot share a bake.
+ const pelvisParent=tnm[BMAP.Hips].parent.getWorldQuaternion(new THREE.Quaternion());
+ const sig=animKey+pelvisParent.toArray().map(v=>v.toFixed(3)).join(',')+'|'+BORDER.map(b=>trest.q[b]?trest.q[b].toArray().map(v=>v.toFixed(2)).join(','):'').join('|');
  let clips=CLIPCACHE[sig];if(!clips){clips={};for(const k in clipNames){const c=bakeClip(src,clipNames[k],scene,tnm,trest);if(c)clips[k]=c;}CLIPCACHE[sig]=clips;}
  scene.traverse(o=>{if(o.isMesh){o.frustumCulled=false;const ms=Array.isArray(o.material)?o.material:[o.material];for(const m of ms){m.envMapIntensity=.5;if(m.map)m.map.anisotropy=4;}}});
  const bb=new THREE.Box3().setFromObject(scene);
@@ -64,6 +66,163 @@ function makeChar(name,look={}){const T=TPL[name];const model=THREE.SkeletonUtil
  const mixer=new THREE.AnimationMixer(model);const acts={};for(const k in T.clips){const a=mixer.clipAction(T.clips[k]);a.play();a.setEffectiveWeight(k==='idle'?1:0);acts[k]=a;}
  mixer.update(Math.random()*2);scene.add(root);
  return{name,root,model,mixer,acts,bones,yaw:0,aim:0,punch:-1,hands:0,guard:0,down:0,gun:look.gun?makeGun():null,spd:0,talk:0};}
+/* Fit interchangeable photographic portraits to the uniform's bind pose.
+   Some of the source rigs express bone translations in centimetres. */
+const departmentFaces=new Map(),departmentMounts=new Map(),departmentCards=new Map();
+const portraitGeometry=new WeakMap();
+function portraitParts(model){
+ const parts=[];
+ model.traverse(mesh=>{
+  if(!mesh.isSkinnedMesh)return;
+  const geometry=mesh.geometry;
+  if(/_head$/i.test(mesh.material.name)){parts.push({mesh,face:geometry});return;}
+  if(!/_(opacity|glasses)$/i.test(mesh.material.name))return;
+  if(!portraitGeometry.has(geometry)){
+   const joints=geometry.attributes.skinIndex,weights=geometry.attributes.skinWeight;
+   const facialJoint=mesh.skeleton.bones.map(b=>{
+    while(b){if(b.name==='Bip01_Head'||b.name==='Bip01_Neck')return true;b=b.parent;}
+    return false;
+   });
+   const onHead=[];
+   for(let i=0;i<joints.count;i++){
+    let facial=0,total=0;
+    for(const component of ['getX','getY','getZ','getW']){
+     const w=weights[component](i);total+=w;if(facialJoint[joints[component](i)])facial+=w;
+    }
+    onHead.push(total>0&&facial/total>=.5);
+   }
+   const face=[],rest=[],index=geometry.index;
+   for(let i=0;i<(index?index.count:joints.count);i+=3){
+    const a=index?index.getX(i):i,b=index?index.getX(i+1):i+1,d=index?index.getX(i+2):i+2;
+    (onHead[a]+onHead[b]+onHead[d]>=2?face:rest).push(a,b,d);
+   }
+   function subset(indices){
+    if(!indices.length)return null;
+    if(indices.length===(index?index.count:joints.count))return geometry;
+    const part=new THREE.BufferGeometry();
+    for(const [name,data] of Object.entries(geometry.attributes))part.setAttribute(name,data);
+    return part.setIndex(indices);
+   }
+   portraitGeometry.set(geometry,{face:subset(face),rest:subset(rest)});
+  }
+  const split=portraitGeometry.get(geometry);
+  if(split.face)parts.push({mesh,...split});
+ });
+ return parts;
+}
+function fitDepartmentPortrait(c,portraitName){
+ const key=c.name+'/'+portraitName;
+ if(!departmentFaces.has(key)){
+  const target=TPL[c.name].scene,source=TPL[portraitName].scene;
+  const targetBones=nodeMap(target),sourceHead=nodeMap(source).Bip01_Head;
+  const pieces=portraitParts(source),reference=pieces.find(p=>/_head$/i.test(p.mesh.material.name))?.mesh;
+  if(!reference||!sourceHead||!targetBones.Bip01_Head)return;
+  target.updateMatrixWorld(true);source.updateMatrixWorld(true);
+  const offset=targetBones.Bip01_Head.getWorldPosition(new V3()).sub(sourceHead.getWorldPosition(new V3()));
+  const alignment=new THREE.Matrix4().makeTranslation(offset.x,offset.y,offset.z);
+  const skin=reference.skeleton;
+  const inverses=skin.bones.map((bone,i)=>{
+   const targetBone=targetBones[bone.name]||targetBones.Bip01_Head;
+   return targetBone.matrixWorld.clone().invert().multiply(alignment).multiply(bone.matrixWorld).multiply(skin.boneInverses[i]);
+  });
+  departmentFaces.set(key,{pieces,inverses,names:skin.bones.map(b=>b.name),bind:reference.bindMatrix});
+ }
+ const face=departmentFaces.get(key),actorBones=nodeMap(c.model),old=portraitParts(c.model);
+ const original=old.find(p=>/_head$/i.test(p.mesh.material.name))?.mesh;
+ if(!original)return;
+ const skeleton=new THREE.Skeleton(face.names.map(n=>actorBones[n]||c.bones.Head),face.inverses);
+ for(const part of face.pieces){
+  const mesh=new THREE.SkinnedMesh(part.face,part.mesh.material);
+  mesh.bind(skeleton,face.bind);mesh.frustumCulled=false;mesh.castShadow=original.castShadow;
+  mesh.layers.mask=original.layers.mask;original.parent.add(mesh);
+ }
+ for(const part of old){
+  if(part.rest)part.mesh.geometry=part.rest;
+  else part.mesh.visible=false;
+ }
+ c.portraitSkeleton=skeleton;
+}
+
+/* Measure the front of the actual shirt, coat or waistcoat at the clip location.
+   Quantized attributes must be normalized before doing CPU skinning in three r128. */
+function uniformMount(name,lateral,belowCollar){
+ const key=name+'/'+lateral+'/'+belowCollar;
+ if(departmentMounts.has(key))return departmentMounts.get(key);
+ const model=TPL[name].scene,bones=nodeMap(model);
+ model.updateMatrixWorld(true);
+ const neck=bones.Bip01_Neck.getWorldPosition(new V3());
+ const ray=new THREE.Ray(new V3(neck.x+lateral,neck.y-belowCollar,neck.z+.8),new V3(0,0,-1));
+ const hit=new V3(),surface=new V3(),normal=new V3(0,0,1);let found=false;
+ model.traverse(mesh=>{
+  if(!mesh.isSkinnedMesh||!/_body$/i.test(mesh.material.name))return;
+  const geometry=mesh.geometry,{position,skinIndex,skinWeight}=geometry.attributes;
+  const unit=a=>{const array=a.isInterleavedBufferAttribute?a.data.array:a.array;
+   return !a.normalized?1:array instanceof Int16Array?32767:array instanceof Uint16Array?65535:array instanceof Int8Array?127:255;};
+  const pointUnit=unit(position),weightUnit=unit(skinWeight),point=new V3(),weighted=new V3();
+  const transforms=mesh.skeleton.bones.map((b,i)=>b.matrixWorld.clone().multiply(mesh.skeleton.boneInverses[i]));
+  const verts=[];
+  for(let i=0;i<position.count;i++){
+   point.fromBufferAttribute(position,i).divideScalar(pointUnit).applyMatrix4(mesh.bindMatrix);
+   const v=new V3();
+   for(const get of ['getX','getY','getZ','getW']){
+    const w=skinWeight[get](i)/weightUnit;
+    if(w)v.addScaledVector(weighted.copy(point).applyMatrix4(transforms[skinIndex[get](i)]),w);
+   }
+   verts.push(v.applyMatrix4(mesh.bindMatrixInverse).applyMatrix4(mesh.matrixWorld));
+  }
+  const index=geometry.index;
+  for(let i=0;i<(index?index.count:verts.length);i+=3){
+   const a=verts[index?index.getX(i):i],b=verts[index?index.getX(i+1):i+1],d=verts[index?index.getX(i+2):i+2];
+   if(ray.intersectTriangle(a,b,d,false,hit)&&(!found||hit.z>surface.z)){
+    surface.copy(hit);THREE.Triangle.getNormal(a,b,d,normal);if(normal.z<0)normal.negate();found=true;
+   }
+  }
+ });
+ if(!found)surface.set(ray.origin.x,ray.origin.y,neck.z+.14);
+ // Keep the clip upright on the shirt even when the sampled seam is steep.
+ normal.z=Math.max(normal.z,.7);normal.normalize();
+ const rotation=new THREE.Quaternion().setFromUnitVectors(new V3(0,0,1),normal);
+ const mount=bones.Bip01_Spine2.matrixWorld.clone().invert().multiply(new THREE.Matrix4().compose(surface,rotation,new V3(1,1,1)));
+ departmentMounts.set(key,mount);return mount;
+}
+function attachDepartmentClip(c,clip,x,drop){
+ if(!c.bones.Spine2)return;
+ clip.applyMatrix4(uniformMount(c.name,x,drop));
+ let layer=1;c.model.traverse(m=>{if(m.isSkinnedMesh)layer=m.layers.mask;});
+ clip.traverse(m=>{m.layers.mask=layer;});c.bones.Spine2.add(clip);
+}
+let issuedCamera;
+function clipDepartmentCamera(c){
+ if(!issuedCamera){
+  issuedCamera=new THREE.Group();
+  const shell=new THREE.MeshStandardMaterial({color:0x253037,roughness:.58});
+  const rim=new THREE.MeshStandardMaterial({color:0x444e54,metalness:.35,roughness:.38});
+  const glass=new THREE.MeshStandardMaterial({color:0x183d4d,metalness:.44,roughness:.15});
+  const housing=new THREE.Mesh(new THREE.BoxGeometry(.048,.068,.021),shell);housing.position.z=.012;
+  const bezel=new THREE.Mesh(new THREE.CylinderGeometry(.016,.016,.008,14),rim);bezel.rotation.x=Math.PI/2;bezel.position.set(0,.014,.025);
+  const lens=new THREE.Mesh(new THREE.SphereGeometry(.011,12,8),glass);lens.scale.z=.35;lens.position.set(0,.014,.030);
+  const switchBar=new THREE.Mesh(new THREE.BoxGeometry(.021,.004,.002),rim);switchBar.position.set(0,-.014,.024);
+  issuedCamera.add(housing,bezel,lens,switchBar);
+ }
+ attachDepartmentClip(c,issuedCamera.clone(),-.057,.178);
+}
+function clipDepartmentCard(c,member){
+ if(!departmentCards.has(member.personId)){
+  const canvas=document.createElement('canvas');canvas.width=256;canvas.height=166;
+  const ctx=canvas.getContext('2d');
+  ctx.fillStyle='#e5e5df';ctx.fillRect(0,0,256,166);ctx.fillStyle='#1b3442';ctx.fillRect(0,0,256,39);
+  ctx.font='bold 22px sans-serif';ctx.fillStyle='#f1f1eb';ctx.fillText('OLD TOWN POLICE',11,28);
+  ctx.fillStyle='#263b44';ctx.font='bold 35px sans-serif';ctx.fillText(member.name.split(' ').at(-1).toUpperCase(),10,79,237);
+  ctx.font='20px sans-serif';ctx.fillText(member.division.toUpperCase(),11,109,230);
+  ctx.fillStyle='#667276';ctx.fillRect(11,121,230,2);ctx.font='bold 19px monospace';ctx.fillText(String(member.badge),11,150);
+  const texture=new THREE.CanvasTexture(canvas);texture.encoding=THREE.sRGBEncoding;texture.anisotropy=4;
+  const card=new THREE.Mesh(new THREE.PlaneGeometry(.079,.051),new THREE.MeshStandardMaterial({map:texture,roughness:.54}));
+  const holder=new THREE.Group(),clip=new THREE.Mesh(new THREE.BoxGeometry(.016,.012,.006),gunMat);
+  clip.position.set(0,.028,.008);card.position.z=.006;holder.add(card,clip);departmentCards.set(member.personId,holder);
+ }
+ attachDepartmentClip(c,departmentCards.get(member.personId).clone(),.090,.172);
+}
+
 const _q=new THREE.Quaternion(),_pq=new THREE.Quaternion(),_v=new THREE.Vector3(),_a=new THREE.Vector3(),_fw=new THREE.Vector3(),_rt=new THREE.Vector3(),_d1=new THREE.Vector3(),_d2=new THREE.Vector3(),_hp=new THREE.Vector3();
 /* rotate bone so that the segment towards `child` points along world dir */
 function pointBone(b,child,dir,w){if(!b||!child)return;b.updateWorldMatrix(true,false);_v.setFromMatrixPosition(child.matrixWorld);child.parent===b?0:0;

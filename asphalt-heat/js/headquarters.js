@@ -24,11 +24,47 @@ function hqGraphic(kind){
    const x=i*40-45,y=j*37+15;if(x>555)continue;
    g.fillStyle=(i+j*7)%11===0?'#89a691':'#b6c3b5';g.fillRect(x,y,31,28);
   }g.restore();g.fillStyle=ink;g.fillRect(0,0,768,52);text('CITY DISTRICTS   /   WATCH MAP',24,27,24);
- }else if(kind==='screen'){
-  text('CITY POLICE   /   OPERATIONS',28,37,24,gold);
-  for(let i=0;i<7;i++){g.fillStyle=i%2?'#254954':'#30535c';g.fillRect(24,74+i*40,465,29);
-   g.fillStyle=i===2?'#deb66f':'#86b7ad';g.fillRect(33,81+i*40,9,12);g.fillRect(60,86+i*40,98+i%3*32,3);}
-  for(let i=0;i<10;i++){g.fillStyle='#6d969c';g.fillRect(540+i*17,280-i%4*25,11,36+i%4*25);}
+ }else if(['screen','dispatch','lab','command'].includes(kind)){
+  const captions={screen:['RECORDS','Case number','Reporting officer','Case history','Supporting exhibits'],
+   dispatch:['COMMUNICATIONS','Caller and address','Location details','Assigned units','Call history'],
+   lab:['EXHIBIT INTAKE','Item description','Custody record','Comparison request','Examiner notes'],
+   command:['WATCH SUPERVISION','Staff assignments','Review queue','Patrol districts','Bulletin register']}[kind];
+  g.fillStyle='#203139';g.fillRect(0,0,768,384);
+  g.fillStyle='#325765';g.fillRect(0,0,768,61);text(captions[0],23,34,28);
+  g.fillStyle='#18262d';g.fillRect(0,62,162,322);
+  ['WORKSPACE','Inbox','City map','Directory','Reports'].forEach((s,i)=>text(s,14,90+i*57,i?20:15,i?cream:gold));
+  for(let i=0;i<4;i++){
+   g.fillStyle=i%2?'#314751':'#374d57';g.fillRect(177,79+i*72,572,60);
+   text(captions[i+1],192,100+i*72,22,'#e3eae6');
+   g.fillStyle='#64818a';g.fillRect(192,121+i*72,238-i*17,3);
+  }
+ }else if(kind==='command-board'){
+  g.fillStyle='#d4dad3';g.fillRect(0,0,768,384);g.fillStyle=ink;g.fillRect(0,0,768,58);
+  text('WATCH OFFICE',20,28,28);text('HANDOVER BOARD',401,28,22,gold);
+  ['PATROL','INVESTIGATIONS','SERVICES'].forEach((label,i)=>{
+   const x=20+i*251; text(label,x,84,18,ink);
+   g.fillStyle='#899c98';g.fillRect(x,102,225,2);
+   for(let j=0;j<3;j++){
+    const px=x+(j%2)*106,py=121+Math.floor(j/2)*111;
+    g.fillStyle=['#efdfb5','#d4e1e6','#e8e5d7'][j];g.fillRect(px,py,96,95);
+    g.fillStyle='#385361';g.fillRect(px+8,py+13,60,5);
+    for(let k=0;k<4;k++)g.fillRect(px+8,py+30+10*k,67-k%3*8,2);
+    g.fillStyle=j===1?'#36828a':'#ae6643';g.fillRect(px+42,py+3,6,6);
+   }
+  });
+ }else if(kind==='keyboard'){
+  g.fillStyle='#30373a';g.fillRect(0,0,768,384);
+  for(let r=0;r<5;r++)for(let k=0;k<16;k++){
+   const px=10+k*47,py=14+r*71;
+   g.fillStyle='#151e24';g.fillRect(px,py,42,58);
+   g.fillStyle='#495251';g.fillRect(px+2,py+2,38,48);
+   const letter=['1234567890-+','QWERTYUIOP','ASDFGHJKL','ZXCVBNM',''][r][k];
+   if(letter)text(letter,px+11,py+21,15);
+  }
+ }else if(kind==='paper'){
+  g.fillStyle='#eee9dc';g.fillRect(0,0,768,384);text('OLD TOWN  /  CASE REVIEW',36,49,28,ink);
+  g.fillStyle='#527176';g.fillRect(36,77,699,4);
+  for(let i=0;i<8;i++){g.fillStyle='#939b94';g.fillRect(43,104+i*32,640-(i%4)*48,3);}
  }else{
   g.fillStyle='#ba9367';g.fillRect(0,0,768,384);
   for(let i=0;i<9;i++){let x=24+(i%5)*145,y=24+Math.floor(i/5)*184;g.save();g.translate(x,y);g.rotate((i%3-1)*.035);
@@ -48,7 +84,13 @@ function hqCirculation(M){
 function furnishHeadquarters(block,M,side,box,sign,solid,station){
  const m=INTERIORS.materials;
  const paint=color=>new THREE.MeshStandardMaterial({color:lin(color),roughness:.78});
- const blue=paint(0x284959),limestone=paint(0xc8bda5),pale=paint(0xd6d6cb),brass=paint(0xae9362);
+ const blue=paint(0x284959),brass=paint(0xae9362);
+ const finish=(name,repeat,rough,ns,tint=0xffffff)=>roomLightMaterial(pbr(name,repeat,{color:tint,rough,ns,env:.42}),.68);
+ const limestone=finish('stone_light',.45,.74,.46,0xd6cdbc);
+ const pale=finish('hq-paint',.76,.83,.48),rail=finish('hq-paint',.76,.63,.33,0x8ba8a4);
+ const floorStone=finish('hq-aggregate',.77,.49,.34),carpet=finish('hq-carpet',.61,.96,.55);
+ const ceilingTile=finish('hq-acoustic',.48,.97,.40),oak=finish('planks',.64,.63,.31,0x9d8772);
+ const laminate=paint(0x925e46),enamel=paint(0x517277),charcoal=paint(0x35444a);
  const base=.15,level=i=>base+i*HQ_STOREY;
  const {shaft,stairs}=hqCirculation(M);
  const bounds=lrect(M,-18.95,18.95,4.03,31.96);
@@ -62,9 +104,13 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
    plainBox(mat,r.x0,r.x1,y0,y1,r.z0,r.z1,{uvm:2.6,shadow:false});
   }
  }
- function panel(kind,x,y,v,w,h){
-  const p=lpt(M,x,v),g=new THREE.PlaneGeometry(w,h);g.rotateY(SIDEANG[side]);g.translate(p.x,y,p.z);
+ function panel(kind,x,y,v,w,h,turn=0){
+  const p=lpt(M,x,v),g=new THREE.PlaneGeometry(w,h);g.rotateY(SIDEANG[side]+turn);g.translate(p.x,y,p.z);
   addGeo(hqGraphic(kind),g,false);
+ }
+ function horizontalPanel(kind,x,y,v,w,d){
+  const p=lpt(M,x,v),g=new THREE.PlaneGeometry(w,d);g.rotateX(-Math.PI/2);
+  g.rotateY(SIDEANG[side]);g.translate(p.x,y,p.z);addGeo(hqGraphic(kind),g,false);
  }
  function point(x,v,f){const p=lpt(M,x,v);p.y=level(f);return p;}
  function light(x,v,f,w=1.45){
@@ -75,7 +121,25 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
  }
  function wall(x0,x1,v0,v1,f){
   const y=level(f);solid(pale,x0,x1,y,y+3.38,v0,v1);
-  box(blue,x0-.012,x1+.012,y+.05,y+.16,v0-.012,v1+.012);
+  box(rail,x0-.009,x1+.009,y+.04,y+.92,v0-.009,v1+.009);
+  box(m.steel,x0-.023,x1+.023,y+.91,y+.942,v0-.023,v1+.023);
+  box(charcoal,x0-.013,x1+.013,y+.014,y+.112,v0-.013,v1+.013);
+ }
+ function windowWall(v,f){
+  const y=level(f),outer=v+.14;
+  let last=-18.85;
+  for(const [left,right] of HQ_WINDOW_BAYS){
+   wall(last,left,v,outer,f);
+   box(pale,left,right,y,y+1.16,v,outer);
+   box(rail,left,right,y+.04,y+.92,v-.009,outer+.009);
+   box(m.steel,left,right,y+.91,y+.942,v-.023,outer+.023);
+   box(charcoal,left,right,y+.014,y+.112,v-.013,outer+.013);
+   box(oak,left-.06,right+.06,y+1.11,y+1.16,v-.08,outer+.08);
+   box(pale,left,right,y+2.74,y+3.38,v,outer);
+   addRoomCollider(block,M,left,right,v,outer,y+3.38,y);
+   last=right;
+  }
+  wall(last,18.85,v,outer,f);
  }
  function seat(x,v,f){placeRoomFurniture(block,M,'seat',x,v,level(f),[.61,.88,.6]);}
  function desk(x,v,f,w=2.35){
@@ -85,12 +149,15 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
   box(m.steel,x+.36,x+.86,y+.08,y+.69,v-.37,v+.4);
   for(const h of [.26,.45,.63])box(m.black,x+.48,x+.73,y+h,y+h+.018,v-.39,v-.36);
  }
- function monitor(x,v,f,wide=.65){
+ function monitor(x,v,f,wide=.65,kind='screen',reverse=false){
   const y=level(f)+.81;box(m.black,x-.16,x+.16,y,y+.025,v-.09,v+.12);
   box(m.steel,x-.032,x+.032,y+.02,y+.19,v,v+.055);
   box(m.black,x-wide/2,x+wide/2,y+.11,y+.50,v-.03,v+.045);
-  panel('screen',x,y+.31,v-.035,wide-.035,.35);
-  box(m.rubber,x-.20,x+.2,y,y+.018,v-.32,v-.2);
+  panel(kind,x,y+.31,v+(reverse?.05:-.035),wide-.035,.35,reverse?Math.PI:0);
+  const k=v+(reverse?.28:-.28);
+  box(m.rubber,x-.22,x+.22,y,y+.018,k-.08,k+.08);
+  horizontalPanel('keyboard',x,y+.019,k,.42,.148);
+  box(m.black,x+.29,x+.355,y,y+.033,k-.05,k+.05);
  }
  function bank(x,v,f,count,kind){
   const y=level(f);
@@ -112,13 +179,63 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
  function bulletin(kind,x,v,y,w,h){
   box(m.wood,x-w/2-.04,x+w/2+.04,y-h/2-.04,y+h/2+.04,v,v+.10);panel(kind,x,y,v-.012,w,h);
  }
+ function chair(x,v,f,angle=0){
+  const frame=new THREE.Matrix4().makeRotationY(SIDEANG[side]+angle),p=point(x,v,f);
+  frame.setPosition(p);
+  const part=(mat,geo)=>addGeo(mat,geo.applyMatrix4(frame),false);
+  part(charcoal,new THREE.CylinderGeometry(.065,.066,.34,12).translate(0,.26,0));
+  for(let i=0;i<5;i++){
+   const a=i*2*Math.PI/5;
+   part(m.steel,new THREE.BoxGeometry(.046,.045,.31).translate(0,.115,.15).rotateY(a));
+   part(charcoal,new THREE.SphereGeometry(.059,8,5).scale(1,1,.73).translate(0,.064,.28).rotateY(a));
+  }
+  part(charcoal,new THREE.SphereGeometry(1,18,12).scale(.27,.064,.255).translate(0,.475,0));
+  part(charcoal,new THREE.SphereGeometry(1,18,12).scale(.245,.27,.052).rotateX(-.09).translate(0,.72,-.22));
+  for(const s of [-1,1]){
+   part(m.steel,new THREE.BoxGeometry(.026,.16,.04).translate(s*.253,.50,-.034));
+   part(charcoal,new THREE.BoxGeometry(.048,.038,.193).translate(s*.253,.601,.017));
+  }
+  addRoomCollider(block,M,x-.26,x+.26,v-.26,v+.26,p.y+.94,p.y);
+ }
+ function credenza(x,v,f,w){
+  const y=level(f);
+  solid(oak,x-w/2,x+w/2,y+.085,y+.90,v,v+.54);
+  box(charcoal,x-w/2+.095,x+w/2-.095,y,y+.09,v+.06,v+.50);
+  box(laminate,x-w/2-.03,x+w/2+.03,y+.90,y+.937,v-.035,v+.56);
+  const n=Math.round(w/.6);
+  for(let i=0;i<n;i++){
+   const a=x-w/2+i*w/n;
+   box(oak,a+.014,a+w/n-.014,y+.12,y+.86,v-.022,v);
+   box(m.chrome,a+w/n-.083,a+w/n-.061,y+.59,y+.74,v-.052,v-.023);
+  }
+ }
+ function binders(x,v,y,count){
+  for(let i=0;i<count;i++){
+   const a=x+i*.092,h=.255+(i%3)*.019;
+   box(i%5===2?laminate:i%4===0?charcoal:enamel,a,a+.083,y,y+h,v,v+.21);
+   box(m.cream,a+.009,a+.073,y+.093,y+.164,v-.003,v);
+   box(charcoal,a+.026,a+.051,y+.036,y+.055,v-.004,v);
+  }
+ }
+ function documents(x,v,y){
+  box(laminate,x-.23,x+.22,y,y+.023,v-.156,v+.153);
+  horizontalPanel('paper',x+.012,y+.025,v,.41,.282);
+ }
+ function phone(x,v,y){
+  box(charcoal,x-.117,x+.117,y,y+.047,v-.089,v+.10);
+  box(m.black,x-.112,x-.057,y+.047,y+.075,v-.085,v+.098);
+  box(enamel,x-.033,x+.096,y+.047,y+.056,v+.02,v+.082);
+  for(let r=0;r<3;r++)for(let i=0;i<3;i++)
+   box(m.steel,x-.025+i*.034,x-.004+i*.034,y+.048,y+.054,v-.064+r*.024,v-.05+r*.024);
+ }
  // A stone canopy, recessed soffit and municipal signage frame the public entrance.
- box(limestone,-6.6,6.6,3.37,3.60,.55,4.05);box(blue,-6.65,6.65,3.52,3.71,.5,4);
+ box(limestone,-6.6,6.6,3.37,3.60,.55,4.05);box(blue,-6.65,6.65,3.48,4.12,.5,4);
+ for(const x of [-4.6,0,4.6])box(m.neutral,x-.36,x+.36,3.35,3.37,2.04,2.25);
  for(const x of [-6.2,6.2]){
   solid(limestone,x-.18,x+.18,.15,3.4,.88,1.24);
   placeRoomFurniture(block,M,'plant',x+(x<0?-1:1),2.25,.15,[.85,1.05,.85]);
  }
- sign('OLD TOWN HEADQUARTERS',0,5.48,3.74,10.8,.98);
+ sign('OLD TOWN HEADQUARTERS',0,3.80,.48,8.36,.53);
  // Upper storeys use independent floor contacts, so pedestrians below them stay on the ground.
  for(let f=0;f<4;f++){
   const y=level(f);
@@ -127,14 +244,17 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
   if(f){
    const floorHoles=[shaft,stairs[(f-1)%2]];
    if(f<3)floorHoles.push(stairs[f%2]);
-   worksSlab(bounds,y,m.tile,floorHoles);
+   worksSlab(bounds,y,f===2?carpet:floorStone,floorHoles);
    for(const x of [-18.85,18.85])wall(x-.08,x+.08,4.1,31.85,f);
-   for(const v of [4.16,31.82])wall(-18.85,18.85,v,v+.14,f);
-   ceilingPart(m.ceiling,-18.85,18.85,y+3.39,y+3.46,4.22,31.76,openings);
+   for(const v of [4.16,31.82])windowWall(v,f);
+  }else{
+   topQuad(floorStone,bounds.x0,bounds.x1,y+.009,bounds.z0,bounds.z1,1.7,null,false);
   }
+  const ceilingY=y+(f===0?3.295:3.39);
+  ceilingPart(ceilingTile,-18.85,18.85,ceilingY,ceilingY+.07,4.22,31.76,openings);
   // Suspended ceiling runners, room skirting and acoustic tile joints.
-  for(let x=-18;x<=18;x+=2.4)ceilingPart(m.steel,x,x+.018,y+3.375,y+3.395,4.22,31.70,openings);
-  for(let v=5;v<32;v+=1.2)ceilingPart(m.steel,-18.72,18.72,y+3.377,y+3.397,v,v+.016,openings);
+  for(let x=-18;x<=18;x+=2.4)ceilingPart(m.steel,x,x+.018,ceilingY-.015,ceilingY+.005,4.22,31.70,openings);
+  for(let v=5;v<32;v+=1.2)ceilingPart(m.steel,-18.72,18.72,ceilingY-.013,ceilingY+.007,v,v+.016,openings);
   for(const x of [-12,0,12])for(const v of [7,15.3,24.5,29])if(x!==-12||v!==7)light(x,v,f);
   sign('LIFT   '+(f+1),6.1,y+2.83,8.48,1.4,.32);
   sign('STAIRS',-8.35,y+2.48,8.48,1.1,.3);
@@ -152,39 +272,123 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
  desk(-4.25,10.5,0,2.36);monitor(-4.6,10.6,0);
  for(const x of [-15,-13.9,-12.8,-11.7,-10.6])seat(x,9.2,0);
  for(const x of [-15,-13.9,-12.8,-11.7,-10.6])seat(x,12,0);
- bulletin('directory',-8,12.9,1.72,2.65,1.32);bulletin('notice',13,12.9,1.62,3.2,1.5);
+ wall(-9.7,-6.4,12.92,13.06,0);bulletin('directory',-8,12.8,1.72,2.65,1.32);
+ wall(10.1,16.8,13.91,14.05,0);bulletin('notice',13,13.78,1.95,3.2,1.18);
+ credenza(13.4,13.15,0,4.1);documents(12.4,13.30,1.093);phone(14.46,13.38,1.091);
+ for(const x of [11.1,15.7])seat(x,11.32,0);
  post('Patrol','Public records',-1.5,11.8,0,'taking a statement',2.1);
  // Booking, short-stay holding and private interview.
- desk(-12,21,0);monitor(-12.35,21,0);bank(-16,29.3,0,5,'files');sign('BOOKING',-12,2.61,20.95,2.5,.4);
+ desk(-12,21,0);monitor(-12.35,21,0,.65,'screen',true);bank(-16,29.3,0,5,'files');sign('BOOKING',-15.25,2.16,15.97,2.24,.37);
  terminal('BOOKING LOG','Booking',-12,19.9,0);post('Patrol','Booking',-12,22.2,0,'checking custody records',1.4);
  solid(pale,6,18.7,.15,.67,24.4,24.56);solid(pale,6,18.7,2.68,3.51,24.4,24.56);
  solid(m.glass,6.1,18.6,.68,2.67,24.45,24.49);
  solid(m.steel,11.3,17.9,.16,.63,29.6,30.2);
  for(let i=0;i<28;i++){const x=6.5+i*.42;box(m.steel,x,x+.043,.19,2.73,24.57,24.64);}
- sign('CUSTODY',12,2.64,24.36,2.4,.38);
- desk(0,26,0,2.25);seat(-.55,24.8,0);seat(.55,27.25,0);sign('INTERVIEW',0,2.65,25.92,2.3,.35);
+ sign('CUSTODY',12,3.04,24.36,2.4,.38);
+ desk(0,26,0,2.25);seat(-.55,24.8,0);seat(.55,27.25,0);sign('INTERVIEW',2.73,2.15,15.97,2.3,.35);
+ credenza(-1.15,30.97,0,3.18);documents(.35,25.96,.956);phone(-2.30,31.19,1.087);
  // Investigations, exhibit storage and instrument bench.
- for(const x of [-12,-8,9,13]){desk(x,11.2,1);monitor(x-.28,11.2,1);seat(x,12.4,1);}
- bulletin('notice',-12,14.5,level(1)+1.8,3.4,1.55);
+ for(const x of [-12,-8,9,13]){
+  desk(x,11.2,1);monitor(x-.28,11.2,1,.65,'screen',true);
+  chair(x+.5,12.26,1);documents(x+.63,11.09,level(1)+.804);
+ }
+ bulletin('notice',-7.5,15.87,level(1)+1.8,3.4,1.55);
  post('Detectives','Detective bureau',-13.1,12.5,1,'reviewing witness statements',.85);
  terminal('CASE FILES','Cases',-12,10.2,1);
- for(const x of [8,11.3,14.6]){desk(x,23.5,1,3.23);monitor(x-.78,23.5,1);
-  const y=level(1)+.81;box(m.ceramic,x+.15,x+.79,y,y+.09,23.15,23.76);
-  box(m.steel,x+.35,x+.46,y+.09,y+.43,23.56,23.66);
-  box(m.black,x+.20,x+.54,y+.41,y+.51,23.28,23.64);}
- bank(7.3,29.6,1,11,'files');sign('FORENSIC SERVICES',12,level(1)+2.50,23.35,3.7,.42);
- station.exhibitBench=point(10.65,23.32,1);station.exhibitBench.y+=1.14;
+ // The examination island has a single clear exhibit mat, a camera column and a separate logging terminal.
+ const labFloor=level(1),benchY=labFloor+.88;
+ solid(enamel,7.42,13.6,labFloor+.09,benchY-.06,23.04,23.95);
+ box(charcoal,7.47,13.55,labFloor,labFloor+.10,23.11,23.87);
+ box(charcoal,7.33,13.7,benchY-.06,benchY,22.96,24.03);
+ for(let x=7.52;x<13.45;x+=.76){
+  box(rail,x,x+.72,labFloor+.115,benchY-.095,23.010,23.04);
+  box(m.chrome,x+.21,x+.51,benchY-.22,benchY-.191,22.98,23.015);
+ }
+ box(m.rubber,10.40,11.58,benchY,benchY+.018,23.09,23.86);
+ box(m.cream,10.44,11.54,benchY+.018,benchY+.023,23.10,23.77);
+ const column=lpt(M,11.64,23.75);
+ cyl(m.steel,column.x,benchY+.035,column.z,.035,.044,.91,14);
+ box(charcoal,11.17,11.67,benchY+.83,benchY+.904,23.69,23.80);
+ box(m.black,11.10,11.32,benchY+.72,benchY+.85,23.64,23.83);
+ const lens=lpt(M,11.21,23.73);cyl(charcoal,lens.x,benchY+.64,lens.z,.065,.06,.08,14);
+ desk(15.12,23.52,1,2.35);monitor(14.88,23.49,1,.72,'lab',true);chair(15.2,24.70,1);
+ documents(15.82,23.35,labFloor+.805);
+ wall(5.12,15.65,28.14,28.29,1);wall(17.35,18.76,28.14,28.29,1);
+ sign('EXHIBIT STORAGE',16.50,labFloor+2.82,28.11,1.6,.30);
+ bank(6.15,27.43,1,4,'files');bank(7.3,30.85,1,9,'files');
+ credenza(12.26,27.43,1,4.95);
+ bulletin('lab',11.5,28.012,labFloor+2.01,2.29,1.16);
+ for(let shelf=0;shelf<2;shelf++){
+  const sy=labFloor+1.37+shelf*.45;
+  box(m.steel,13.24,15.36,sy-.035,sy,27.72,28.13);
+  for(let j=0;j<3;j++){
+   const a=13.33+j*.54;
+   box(m.cream,a,a+.465,sy,sy+.281,27.78,28.085);
+   box(oak,a-.008,a+.473,sy+.252,sy+.296,27.75,28.09);
+   box(charcoal,a+.13,a+.344,sy+.12,sy+.164,27.773,27.779);
+  }
+ }
+ // Side-wall wash-up counter, tiled splashback, basin lip, mixer and glove dispenser.
+ solid(enamel,5.11,5.86,labFloor+.09,benchY-.06,23.68,27.42);
+ box(m.ceramic,5.08,5.90,benchY-.06,benchY,23.59,27.47);
+ box(m.wallTile,5.09,5.13,benchY,benchY+.59,23.59,27.47);
+ box(m.steel,5.23,5.79,benchY,benchY+.015,25.26,26.04);
+ box(charcoal,5.27,5.75,benchY+.015,benchY+.018,25.30,26.00);
+ box(m.chrome,5.19,5.225,benchY,benchY+.36,25.62,25.664);
+ box(m.chrome,5.19,5.44,benchY+.327,benchY+.36,25.62,25.664);
+ box(m.chrome,5.414,5.44,benchY+.262,benchY+.36,25.62,25.664);
+ box(m.cream,5.11,5.24,benchY+.70,benchY+.97,25.04,25.39);
+ station.exhibitBench=point(10.97,23.43,1);station.exhibitBench.y+=.88+.023+.31;
  post('Forensics','Evidence laboratory',10,24.85,1,'examining an exhibit',2.0);
+ station.posts[station.posts.length-1].cameraStand=point(8.35,21.60,1);
  terminal('EVIDENCE REGISTER','Evidence',11.3,22.45,1);
- bank(-16.8,28.8,1,11,'files');desk(-12,22.5,1);monitor(-12,22.5,1);sign('EXHIBIT INTAKE',-12,level(1)+2.5,22.3,3.1,.42);
+ bank(-16.8,28.8,1,11,'files');desk(-12,22.5,1);monitor(-12,22.5,1, .65,'lab');sign('EXHIBIT INTAKE',-15.76,level(1)+2.12,15.97,2.69,.39);
+ // A central case conference room shares the rear corridor with the lab and property counter.
+ desk(0,25.27,1,3.30);
+ for(const x of [-.87,.87]){chair(x,24.24,1,Math.PI);chair(x,26.30,1);}
+ documents(.83,25.24,labFloor+.805);
+ credenza(0,31.16,1,4.32);binders(-1.85,31.29,labFloor+.937,12);
  // Watch floor. Each console has its own displays; the briefing gallery faces the city map.
- for(const x of [-12,-8.7]){desk(x,22.5,2,3.18);monitor(x-.67,22.5,2);monitor(x+.13,22.5,2);}
- bulletin('map',-11,28,level(2)+1.97,5.4,2.18);
- const consoleSeat=point(-12,21.52,2),chairFrame=new THREE.Matrix4().makeRotationY(SIDEANG[side]+Math.PI);
- chairFrame.setPosition(consoleSeat.x,0,consoleSeat.z);placeRoomFurniture(block,chairFrame,'seat',0,0,level(2),[.66,.91,.61]);
+ for(const x of [-12,-8.7]){
+  desk(x,22.5,2,3.18);monitor(x-.64,22.55,2,.82,'dispatch');monitor(x+.25,22.55,2,.80,'screen');
+  phone(x+1.07,22.39,level(2)+.81);
+ }
+ wall(-15.72,-5.10,25.85,26.02,2);
+ for(let i=0;i<52;i++){
+  const x=-15.67+i*.202;box(i%3===1?oak:charcoal,x,x+.095,level(2)+.15,level(2)+3.18,25.80,25.855);
+ }
+ bulletin('map',-12.63,25.66,level(2)+1.97,4.05,1.65);
+ bulletin('dispatch',-8.40,25.66,level(2)+1.97,3.36,1.65);
+ bank(-15.1,30.92,2,6,'files');
+ chair(-12,21.52,2,Math.PI);chair(-8.70,21.48,2,Math.PI);
  post('Communications','Dispatch',-12,21.52,2,'monitoring calls',0);
  station.posts[station.posts.length-1].seated=true;station.posts[station.posts.length-1].yaw+=Math.PI;terminal('CALL LOG','Radio',-10.85,21.44,2);
- desk(11,22.3,2);monitor(10.7,22.3,2);bulletin('notice',12,29,level(2)+1.9,3.6,1.7);
+ const watchFloor=level(2);
+ wall(5.10,15.72,27.62,27.77,2);wall(17.32,18.77,27.62,27.77,2);
+ sign('WATCH OFFICE',16.55,watchFloor+2.65,27.60,1.48,.30);
+ credenza(10.56,26.95,2,5.45);binders(8.18,27.12,watchFloor+.937,10);
+ bulletin('command-board',10.52,27.49,watchFloor+1.98,3.56,1.52);
+ bulletin('map',13.80,27.49,watchFloor+1.98,2.40,1.52);
+ desk(7.0,25.81,2,1.61);chair(6.65,24.74,2,Math.PI);
+ box(m.cream,6.58,7.33,watchFloor+.81,watchFloor+1.18,25.56,26.02);
+ box(charcoal,6.65,7.27,watchFloor+1.18,watchFloor+1.23,25.59,25.98);
+ box(m.rubber,6.67,7.23,watchFloor+.91,watchFloor+.98,25.548,25.558);
+ desk(11,22.3,2,3.15);monitor(11.90,22.39,2,.72,'command',true);
+ documents(10.61,22.26,watchFloor+.805);phone(9.83,22.50,watchFloor+.81);
+ for(const x of [14.60,15.65])chair(x,24.83,2,Math.PI*.75);
+ bank(6.7,30.85,2,5,'files');desk(12.5,29.65,2,2.65);
+ // Shared report writing and charging desks in the central watch room.
+ for(const x of [-2.14,1.36]){
+  desk(x,24.17,2,2.63);monitor(x-.37,24.1,2,.67,'command');chair(x-.35,23.14,2,Math.PI);
+  documents(x+.66,24.23,watchFloor+.805);
+ }
+ credenza(0,31.15,2,3.93);
+ for(let i=0;i<5;i++){
+  const x=-1.53+i*.33,y=watchFloor+.937;
+  box(charcoal,x,x+.18,y,y+.06,31.33,31.54);
+  box(m.black,x+.036,x+.144,y+.06,y+.224,31.38,31.46);
+  box(charcoal,x+.056,x+.071,y+.224,y+.286,31.39,31.414);
+ }
  post('Command','Watch command',10.4,23.55,2,'reviewing assignments',2.15);
  terminal('WATCH BOARD','Watch',11,21.2,2);
  for(const v of [8.7,11,13.25])for(const x of [-15,-13.5,-12,-10.5,-9])seat(x,v,2);
@@ -193,13 +397,24 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
  bank(-17,29,3,12,'lockers');bank(-16.8,14,3,7,'lockers');
  desk(-12,22.4,3,3.4);monitor(-12.8,22.4,3);
  for(const x of [-12,-11.7,-11.4])box(m.black,x,x+.14,level(3)+.81,level(3)+1.06,22.17,22.30);
- sign('EQUIPMENT ISSUE',-12,level(3)+2.52,22.3,3,.37);
+ sign('EQUIPMENT ISSUE',-15.76,level(3)+2.12,15.97,2.90,.37);
  post('Metro SWAT','Equipment issue',-12.5,23.65,3,'checking issued equipment',1.3);
  terminal('ISSUE LEDGER','Equipment',-12,21.25,3);
  desk(11.3,22.4,3);monitor(11,22.4,3);bulletin('map',12,28.7,level(3)+1.8,4,1.65);
  post('Air Support','Flight desk',11,23.6,3,'reviewing the flight board',1.25);
  for(const x of [10,14]){placeRoomFurniture(block,M,'reading-table',x,12,level(3),[1.35,.74,1.35]);seat(x,10.9,3);seat(x,13.1,3);}
- for(let f=1;f<4;f++)sign(HQ_FLOORS[f].toUpperCase(),0,level(f)+2.6,15.90,4.3,.48);
+ const staffFloor=level(3);
+ credenza(.7,30.95,3,5.3);
+ solid(m.ceramic,-3.75,-3.04,staffFloor,staffFloor+1.77,30.75,31.58);
+ box(m.steel,-3.72,-3.065,staffFloor+1.23,staffFloor+1.244,30.735,30.75);
+ box(charcoal,-3.15,-3.115,staffFloor+.81,staffFloor+1.12,30.706,30.746);
+ box(m.steel,1.73,2.25,staffFloor+.937,staffFloor+1.249,31.0,31.37);
+ box(charcoal,1.752,2.132,staffFloor+.98,staffFloor+1.213,30.992,31.01);
+ for(const v of [22.7,26.58]){
+  placeRoomFurniture(block,M,'reading-table',0,v,staffFloor,[1.48,.76,1.48]);
+  seat(-1.08,v,3);seat(1.08,v,3);
+ }
+ for(let f=1;f<4;f++)sign(HQ_FLOORS[f].toUpperCase(),-5.90,level(f)+2.53,15.90,4.15,.46);
 }
 
 function stationReach(pos,at,r){
@@ -233,8 +448,8 @@ function chooseHqFloor(station,current){
 
 function officerModel(member,onDuty=true){
  const roster=onDuty?{
-  Patrol:['Police_Male_01'],Command:['Police_Male_01'],'Metro SWAT':['Police_Male_02'],
-  Detectives:['Business_Male_01','Business_Female_01','Business_Male_02','Business_Female_02'],
+  Patrol:['Police_Male_03','Police_Male_01'],Command:['Police_Male_03','Police_Male_01'],'Metro SWAT':['Police_Male_02'],
+  Detectives:['Business_Female_01','Police_Male_07','Police_Male_06','Police_Male_07'],
   Forensics:['Medical_Female_01','Medical_Male_01'],
   Communications:['Female_Adult_03','Male_Adult_08','Business_Female_01'],
   'Air Support':['Male_Adult_04','Female_Adult_07','Security_Male_01']
@@ -244,25 +459,12 @@ function officerModel(member,onDuty=true){
 }
 
 function personalizeOfficer(c,member){
- // The uniform and head meshes use the Rocketbox rig. Retain each portrait's own UVs and skin.
- const uniform=['Patrol','Command','Metro SWAT'].includes(member.division)&&c.name.startsWith('Police_');
- if(uniform&&member.division!=='Metro SWAT'){
-  const faces=['Male_Adult_04','Male_Adult_08','Male_Adult_01','Business_Male_01','Male_Adult_03','Male_Adult_07'].filter(n=>TPL[n]);
-  const donor=faces.length&&TPL[faces[member.badge%faces.length]].scene;
-  let original,portrait;
-  c.model.traverse(o=>{if(o.isSkinnedMesh&&/_head$/i.test(o.material?.name))original=o;});
-  if(donor)donor.traverse(o=>{if(o.isSkinnedMesh&&/_head$/i.test(o.material?.name))portrait=o;});
-  if(original&&portrait){
-   const byName=new Map(original.skeleton.bones.map(b=>[b.name,b]));
-   const bones=portrait.skeleton.bones.map(b=>byName.get(b.name));
-   if(bones.every(Boolean)){
-    const mesh=new THREE.SkinnedMesh(portrait.geometry,portrait.material);
-    mesh.position.copy(original.position);mesh.scale.copy(original.scale);mesh.quaternion.copy(original.quaternion);
-    mesh.bind(new THREE.Skeleton(bones,portrait.skeleton.boneInverses),portrait.bindMatrix);
-    mesh.layers.mask=original.layers.mask;mesh.frustumCulled=false;mesh.castShadow=original.castShadow;
-    original.parent.add(mesh);original.visible=false;c.portraitSkeleton=mesh.skeleton;
-   }
-  }
+ // The same portrait and hair follow a person between civilian clothes and a uniform.
+ if(member.division!=='Metro SWAT'||!c.name.startsWith('Police_')){
+  const portraits=['Male_Adult_04','Female_Adult_03','Male_Adult_08','Business_Female_01',
+   'Business_Male_01','Female_Adult_07','Male_Adult_07','Female_Adult_01','Male_Adult_01','Male_Adult_03'];
+  const preferred=portraits[(member.badge*7+Math.floor(member.badge/3))%portraits.length];
+  if(TPL[preferred]&&c.name!==preferred)fitDepartmentPortrait(c,preferred);
  }
  const size=.96+(member.badge%7)*.012;c.root.scale.set(size,(.96+(member.badge%9)*.012),size);
 }
@@ -291,6 +493,7 @@ function officerAccessory(kind){
 function fitIssuedEquipment(c,member){
  const kit=member.kit;
  if(!kit)return;
+ if(!['Patrol','Metro SWAT'].includes(member.division))clipDepartmentCard(c,member);
  if(kit.some(k=>k.includes('headset'))&&c.bones.Head){
   const headset=officerAccessory('headset'),at=c.bones.Head.getWorldPosition(new V3());
   headset.position.copy(at);headset.position.y+=.075;c.root.add(headset);c.root.updateMatrixWorld(true);c.bones.Head.attach(headset);

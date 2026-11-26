@@ -14,6 +14,8 @@ function scenario({recognized=true,gloves=false,interrupt=false,cancelCall=false
   let time=0;
   const dist2=(a,b)=>Math.hypot(b.x-a.x,b.z-a.z),los=()=>true,collideWorld=()=>{},groundY=()=>0;
   const blockOf=()=>({i:2,j:2,dist:district}),stopCaseCamera=()=>{};
+  const sceneStreetFrame=()=>({tx:1,tz:0,nx:0,nz:1});
+  const cvs=()=>[{}, {fillRect(){},fillText(){}}],ctex=()=>new THREE.Texture();
   const tracer=()=>{},emit=()=>{},noise=()=>{},distVol=()=>0,makeGun=()=>new THREE.Group();
   const attachPed=p=>{p.mode='walk';},killPed=p=>{p.dead=true;p.mode='down';};
   const people=['carrier','stranger','caller'];
@@ -29,20 +31,21 @@ function scenario({recognized=true,gloves=false,interrupt=false,cancelCall=false
   // A print on a different bag at the same coordinates is an incidental contact.
   PoliceDepartment.touch(peds[1],{exhibit:'unrelated-bag'},peds[0].pos,'Dropped leather holdall');
   peds[1].gloves=withGloves;
-  let dialAt=null,reportedAt=null;
+  let dialAt=null,reportedAt=null;const markers=new Set();
   for(let i=0;i<2700;i++){
    time+=1/30;PoliceDepartment.clock=time;
    const a=streetIncidents.current;
    if(interrupt&&a?.phase==='Dispute'){peds[1].mode='flee';break;}
    if(cancelCall&&a?.phase==='Calling 911'){peds[2].dead=true;}
    updateStreetEncounter(1/30);
+   const marker=streetIncidents.current?.evidenceMarker;if(marker)markers.add(marker);
    if(streetIncidents.current?.phase==='Calling 911')dialAt??=time;
    if(streetIncidents.current?.phase==='Reported')reportedAt??=time;
    PoliceDepartment.process();
   }
   if(interrupt)updateStreetEncounter(1/30);
  `);
- return {file:run('PoliceDepartment.cases[0]'),delay:run('reportedAt-dialAt'),scene:run('streetIncidents.current')};
+ return {file:run('PoliceDepartment.cases[0]'),delay:run('reportedAt-dialAt'),scene:run('streetIncidents.current'),markers:run('Array.from(markers)')};
 }
 const solved=scenario({district:'downtown'});
 assert.equal(solved.file.origin,'street');
@@ -53,6 +56,11 @@ assert.equal(solved.file.suspect,'stranger');
 assert.equal(solved.file.caller.id,'caller');
 assert(solved.delay>=3.59);
 assert(solved.file.custody.every(exhibit=>exhibit.history.length===4));
+assert.equal(solved.markers.length,1);
+const traces=solved.file.evidence.filter(e=>e.type==='DNA'||e.type==='Print');
+const bagIndex=traces.findIndex(e=>e.exhibit===solved.file.linkedExhibit);
+assert.equal(solved.markers[0].userData.custodyTag,solved.file.custody[bagIndex].tag);
+assert.equal(solved.markers[0].parent,null,'marker leaves the pavement before the exhibits reach the lab');
 const unresolved=scenario({recognized:false,district:'docks'}).file;
 assert.equal(unresolved.stage,'Open leads');
 assert.equal(unresolved.title,'Homicide · Docks · block 3 / 3');

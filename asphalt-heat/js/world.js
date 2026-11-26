@@ -375,6 +375,55 @@ function containers(x0,x1,z0,z1){
  }
 }
 /* ---- landmarks ---- */
+const HQ_WINDOW_BAYS=[[-16.5,-10.5],[-8,-2],[2,8],[10.5,16.5]];
+function buildHeadquartersExterior(M,side,box){
+ const brick=pbr('brick_dark',2.1,{color:spick([0xf7eee1,0xf1e4d5]),rough:.86,ns:.65});
+ const trim=MAT.trim,frame=MAT.darkMetal,glass=INTERIORS.materials.glass;
+ // The front and rear window openings follow the occupied floors right through the wall.
+ for(let floor=1;floor<=3;floor++){
+  const base=.15+floor*HQ_STOREY,sill=base+1.16,head=base+2.74;
+  for(const v of [4.0,31.78]){
+   box(brick,-19,19,base-.30,sill,v,v+.22,{uvm:1});
+   box(brick,-19,19,head,base+HQ_STOREY-.30,v,v+.22,{uvm:1});
+   let end=-19;
+   for(const [left,right] of HQ_WINDOW_BAYS){
+    box(brick,end,left,sill,head,v,v+.22,{uvm:1});end=right;
+    box(trim,left-.12,right+.12,sill-.11,sill,v-.12,v+.34);
+    box(trim,left-.11,right+.11,head,head+.12,v-.06,v+.30);
+    box(glass,left,right,sill,head,v+.095,v+.11,{shadow:false});
+    for(let i=0;i<=3;i++){const x=left+(right-left)*i/3;box(frame,x-.035,x+.035,sill,head,v+.06,v+.15);}
+    for(const y of [sill,head-.42,head-.06])box(frame,left,right,y,y+.055,v+.055,v+.16);
+   }
+   box(brick,end,19,sill,head,v,v+.22,{uvm:1});
+   box(trim,-19.12,19.12,base-.32,base-.17,v-.08,v+.29);
+  }
+ }
+ for(const x of [-19,18.79])box(brick,x,x+.21,3.51,15,4,32,{uvm:1});
+ for(const x of [-18.96,-9.27,9.02,18.67])box(trim,x,x+.27,3.6,14.84,3.90,4.11);
+ box(trim,-19.15,19.15,14.62,15.0,3.86,32.1);
+ // Cast bronze municipal shield on the central pier, with its own backing and depth.
+ const [badge,g]=cvs(384,448);
+ g.beginPath();g.moveTo(34,54);g.quadraticCurveTo(128,51,192,14);g.quadraticCurveTo(256,51,350,54);
+ g.lineTo(338,244);g.quadraticCurveTo(332,349,192,426);g.quadraticCurveTo(52,349,46,244);g.closePath();
+ g.fillStyle='#17303a';g.fill();g.strokeStyle='#c1a46b';g.lineWidth=14;g.stroke();
+ g.textAlign='center';g.fillStyle='#e3ce95';g.font='bold 40px Georgia';g.fillText('OLD TOWN',192,117);
+ g.fillRect(121,239,142,14);for(const x of [137,161,185,209,233])g.fillRect(x,184,12,52);
+ g.beginPath();g.moveTo(113,178);g.lineTo(192,137);g.lineTo(271,178);g.closePath();g.fill();
+ g.font='bold 34px Georgia';g.fillText('POLICE',192,312);
+ const plaque=new THREE.MeshStandardMaterial({map:ctex(badge),alphaTest:.5,roughness:.55,metalness:.24});
+ const center=lpt(M,0,3.91),face=new THREE.PlaneGeometry(2.15,2.5);
+ face.rotateY(SIDEANG[side]);face.translate(center.x,7.42,center.z);addGeo(plaque,face,false);
+ const [flagCanvas,fg]=cvs(256,128);
+ fg.fillStyle='#193953';fg.fillRect(0,0,256,128);fg.fillStyle='#d9b673';fg.fillRect(0,72,256,9);
+ fg.fillStyle='#dbe3df';fg.fillRect(0,82,256,8);fg.beginPath();fg.arc(55,39,19,0,Math.PI*2);fg.fill();
+ const flag=new THREE.PlaneGeometry(2.36,1.18,12,3),p=flag.attributes.position;
+ for(let i=0;i<p.count;i++){
+  const t=(p.getX(i)+1.18)/2.36;
+  p.setXYZ(i,14+.09+2.36*t,12.25+p.getY(i)-.24*t,-1+.36*t*Math.sin(t*8.2+.45*p.getY(i)));
+ }
+ flag.computeVertexNormals();flag.applyMatrix4(M);
+ addGeo(new THREE.MeshStandardMaterial({map:ctex(flagCanvas),side:THREE.DoubleSide,roughness:.95}),flag,true);
+}
 function special(B,sp){const side=sp.side||'S',M=sideFrame(B,side);const door=lpt(M,0,-1.8);let pl=null;const ang=SIDEANG[side];
  const sign=(slot,u,y,v,w,h)=>{const p=lpt(M,u,v);signQuad(slot,p.x,y,p.z,w,h,ang,false);};
  const fillRest=(u0,u1,v0)=>{fillDistrict(B,lrect(M,-23.8,u0-1,0,v0),districtOf(B.i,B.j));fillDistrict(B,lrect(M,u1+1,23.8,0,v0),districtOf(B.i,B.j));fillDistrict(B,lrect(M,-23.8,23.8,v0+1,48),districtOf(B.i,B.j));};
@@ -409,11 +458,15 @@ function special(B,sp){const side=sp.side||'S',M=sideFrame(B,side);const door=lp
   pb(MAT.whiteMetal,-8,8,4,4.4,-.5,5);for(const u of[-7.5,7.5]){const p=lpt(M,u,0);cyl(MAT.metal,p.x,0,p.z,.12,.12,4,8);}
   sign(ATLAS.special.hospital,0,8.5,4.95,18,2.2);sign(ATLAS.special.er,0,4.7,-.52,7,1.1);
   buildAccessibleShell(B,R,{ceiling:4.04,height:22,kind:'lobby',selected:[side],wall:MAT.trim});fillDistrict(B,lrect(M,-23.8,23.8,41,48),'midtown');pl={kind:'hospital',name:'HOSPITAL'};}
- else if(sp.kind==='police'){const R=fb(MAT.fac.brick_dark,-19,19,3.52,15,4,32,{style:0,fh:3.6,bay:3.4,gH:0});roofDressing(R,15,'mid');const band=new THREE.MeshStandardMaterial({color:lin(0x243e4c),roughness:.75});
+ else if(sp.kind==='police'){const hq=B.i===2&&B.j===2;
+  const R=hq?lrect(M,-19,19,4,32):fb(MAT.fac.brick_dark,-19,19,3.52,15,4,32,{style:0,fh:3.6,bay:3.4,gH:0});
+  if(hq)buildHeadquartersExterior(M,side,pb);
+  roofDressing(R,15,'mid');const band=new THREE.MeshStandardMaterial({color:lin(0x243e4c),roughness:.75});
   for(const v of [3.8,32.04])pb(band,-19.2,19.2,4,4.48,v,v+.16);
   for(const u of [-19.2,19.04])pb(band,u,u+.16,4,4.48,3.95,32.05);
-  sign(ATLAS.special.police,0,7,3.75,16,2);const fp=lpt(M,14,1);cyl(MAT.metal,fp.x,0,fp.z,.08,.1,13,8);
-  const hq=B.i===2&&B.j===2,circulation=hq?hqCirculation(M):null;
+  if(!hq)sign(ATLAS.special.police,0,7,3.75,16,2);
+  const fp=lpt(M,14,1);cyl(MAT.metal,fp.x,0,fp.z,.055,.105,13,16);
+  const circulation=hq?hqCirculation(M):null;
   buildAccessibleShell(B,R,{ceiling:3.56,height:hq?3.56:15,ceilingOpenings:hq?[circulation.shaft,circulation.stairs[0]]:[],kind:'lobby',selected:[side],rooms:false,wall:MAT.stone});fillDistrict(B,lrect(M,-23.8,23.8,33,48),'oldtown');const office=buildPoliceOffice(B,M,side,pb);pl={kind:'police',name:office.name,office};}
  else if(sp.kind==='store'||sp.kind==='jewelry'||sp.kind==='gunshop'){const key=sp.kind==='jewelry'?'jewel':sp.kind==='gunshop'?'guns':sp.sign;
   const R=fb(sp.kind==='jewelry'?MAT.fac.stone_dark:MAT.fac.brick_tan,-9,9,4.08,5.4,0,14,{style:0,fh:5,bay:4,gH:4.4});roofDressing(R,5.4,'mid');sign(ATLAS.special[key],0,4.9,-.06,14,1.4);
