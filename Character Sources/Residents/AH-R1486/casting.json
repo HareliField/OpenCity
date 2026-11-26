@@ -1,0 +1,10 @@
+{
+  "method": "Local photo synthesis",
+  "engine": "stable-diffusion.cpp",
+  "model": "Realistic Vision V6.0 B1 Hyper",
+  "seed": 761486,
+  "steps": 6,
+  "poseSource": "AH-R0765",
+  "prompt": "Full length documentary casting photograph of one 44 year old woman, distinctive facial proportions, copper curls, average build, light olive skin, reserved expression. Wearing faded indigo overshirt, trousers and practical shoes. Standing facing camera, head to toe, arms down, hands clear of torso, shoe soles visible, centered upright, plain gray studio background, natural skin and fabric textures, softly lit realistic photograph.",
+  "referenceSha256": "f1d27e14a1d4a625a8752adc604d9400e05bdc6589944c2ec384a88c7a724064"
+}

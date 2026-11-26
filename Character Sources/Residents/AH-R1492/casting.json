@@ -1,0 +1,10 @@
+{
+  "method": "Local photo synthesis",
+  "engine": "stable-diffusion.cpp",
+  "model": "Realistic Vision V6.0 B1 Hyper",
+  "seed": 761492,
+  "steps": 6,
+  "poseSource": "AH-R0759",
+  "prompt": "Full length documentary casting photograph of one 54 year old woman, wide-set eyes, uneven waves, round shoulders, fair freckled skin, thoughtful gaze. Wearing mustard canvas overshirt, trousers and practical shoes. Standing facing camera, head to toe, arms down, hands clear of torso, shoe soles visible, centered upright, plain gray studio background, natural skin and fabric textures, softly lit realistic photograph.",
+  "referenceSha256": "060f97833fa238bf78f8a11ba91bf086a51666b734ff50fbff552ef1b0a4f03d"
+}
