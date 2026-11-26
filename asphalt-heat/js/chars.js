@@ -145,14 +145,14 @@ function fitDepartmentPortrait(c,portraitName){
 
 /* Measure the front of the actual shirt, coat or waistcoat at the clip location.
    Quantized attributes must be normalized before doing CPU skinning in three r128. */
-function uniformMount(name,lateral,belowCollar){
- const key=name+'/'+lateral+'/'+belowCollar;
+function uniformMount(name,lateral,belowCollar,face=1){
+ const key=name+'/'+lateral+'/'+belowCollar+'/'+face;
  if(departmentMounts.has(key))return departmentMounts.get(key);
  const model=TPL[name].scene,bones=nodeMap(model);
  model.updateMatrixWorld(true);
  const neck=bones.Bip01_Neck.getWorldPosition(new V3());
- const ray=new THREE.Ray(new V3(neck.x+lateral,neck.y-belowCollar,neck.z+.8),new V3(0,0,-1));
- const hit=new V3(),surface=new V3(),normal=new V3(0,0,1);let found=false;
+ const ray=new THREE.Ray(new V3(neck.x+lateral,neck.y-belowCollar,neck.z+face*.8),new V3(0,0,-face));
+ const hit=new V3(),surface=new V3(),normal=new V3(0,0,face);let found=false;
  model.traverse(mesh=>{
   if(!mesh.isSkinnedMesh||!/_body$/i.test(mesh.material.name))return;
   const geometry=mesh.geometry,{position,skinIndex,skinWeight}=geometry.attributes;
@@ -173,14 +173,14 @@ function uniformMount(name,lateral,belowCollar){
   const index=geometry.index;
   for(let i=0;i<(index?index.count:verts.length);i+=3){
    const a=verts[index?index.getX(i):i],b=verts[index?index.getX(i+1):i+1],d=verts[index?index.getX(i+2):i+2];
-   if(ray.intersectTriangle(a,b,d,false,hit)&&(!found||hit.z>surface.z)){
-    surface.copy(hit);THREE.Triangle.getNormal(a,b,d,normal);if(normal.z<0)normal.negate();found=true;
+   if(ray.intersectTriangle(a,b,d,false,hit)&&(!found||face*(hit.z-surface.z)>0)){
+    surface.copy(hit);THREE.Triangle.getNormal(a,b,d,normal);if(face*normal.z<0)normal.negate();found=true;
    }
   }
  });
- if(!found)surface.set(ray.origin.x,ray.origin.y,neck.z+.14);
+ if(!found)surface.set(ray.origin.x,ray.origin.y,neck.z+face*.14);
  // Keep the clip upright on the shirt even when the sampled seam is steep.
- normal.z=Math.max(normal.z,.7);normal.normalize();
+ normal.z=face*Math.max(face*normal.z,.7);normal.normalize();
  const rotation=new THREE.Quaternion().setFromUnitVectors(new V3(0,0,1),normal);
  const mount=bones.Bip01_Spine2.matrixWorld.clone().invert().multiply(new THREE.Matrix4().compose(surface,rotation,new V3(1,1,1)));
  departmentMounts.set(key,mount);return mount;

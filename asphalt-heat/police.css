@@ -3,6 +3,8 @@
 #policeDesk header{display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
 #deskStation{margin:0;font-size:22px}
 #policeDesk nav{display:flex;gap:4px;padding:0 14px 10px;flex-wrap:wrap;border-bottom:1px solid #40515d}
+#policeDesk nav[hidden]{display:none}
+#deskRows button:disabled{opacity:.65;cursor:default}
 #policeDesk button,#gloves{cursor:pointer;color:#e5ecf2;background:#22313e;border:1px solid #465d6b;border-radius:6px;min-height:40px;padding:0 10px}
 #policeDesk button[aria-pressed=true]{background:#c1dfea;color:#14242b}
 #deskRows{list-style:none;overflow-y:auto;max-height:48vh;padding:0 18px;margin:0}

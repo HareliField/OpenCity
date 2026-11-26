@@ -19,6 +19,7 @@ class CityPoliceDepartment {
   this.transmissions=[];
   this.contacts=[];
   this.cases=[];
+  this.tickets=[];
   this.serial=0;
   this.clock=0;
   this.unavailable=new Set();
@@ -39,14 +40,26 @@ class CityPoliceDepartment {
   try{
    const save=JSON.parse(storage?.getItem(this.key)||'null');
    if(save?.version===1&&Array.isArray(save.cases)){
-    this.cases=save.cases;this.transmissions=save.transmissions||[];this.serial=save.serial;this.clock=save.clock;
+    this.cases=save.cases;this.tickets=Array.isArray(save.tickets)?save.tickets:[];this.transmissions=save.transmissions||[];this.serial=save.serial;this.clock=save.clock;
     this.unavailable=new Set(save.unavailable);this.personSerial=save.personSerial;this.plateSerial=save.plateSerial;
    }
   }catch{}
  }
  save(){
-  try{this.storage?.setItem(this.key,JSON.stringify({version:1,cases:this.cases,transmissions:this.transmissions,serial:this.serial,clock:this.clock,
+  try{this.storage?.setItem(this.key,JSON.stringify({version:1,cases:this.cases,tickets:this.tickets,transmissions:this.transmissions,serial:this.serial,clock:this.clock,
    unavailable:[...this.unavailable],personSerial:this.personSerial,plateSerial:this.plateSerial}));}catch{}
+ }
+ issueTicket(record){
+  const ticket={...record,id:(this.tickets.at(-1)?.id||0)+1,issued:this.clock,paid:null};
+  this.tickets.push(ticket);
+  this.radio(record.issuer,'Ticket '+ticket.id+' · '+record.offense+' · '+record.street);
+  this.save();globalThis.asphaltAgentEvent?.('ticket',{ticket:{...ticket}});return ticket;
+ }
+ payTicket(id,payer){
+  const ticket=this.tickets.find(t=>t.id===id);
+  if(!ticket || ticket.driver!==payer.personId || ticket.paid!==null || payer.cash<ticket.fine)return false;
+  payer.cash-=ticket.fine;ticket.paid=this.clock;this.save();
+  globalThis.asphaltAgentEvent?.('ticketPaid',{id,amount:ticket.fine});return true;
  }
  identity(personId){
   // Opaque in-game specimen labels. The registry key keeps different residents distinct.

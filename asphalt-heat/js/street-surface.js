@@ -445,6 +445,8 @@ function obstructsStreet(x,z,type){
 }
 function buildStreetNetwork(){
  surveyDriveways();
+ for(const profile of GRADE_PROFILES)roadsideSign(profile);
+ ATLAS.mat.map.needsUpdate=true;
  for(const objects of [LAMPS,PROPSPOTS,TREES,PALMS])for(let k=objects.length-1;k>=0;k--){
   const o=objects[k];if(obstructsStreet(o.x??o[0],o.z??o[1],o.type))objects.splice(k,1);
  }

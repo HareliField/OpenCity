@@ -140,7 +140,8 @@ function physCarAdd(c){
   if(iv<1.9)return;
   const self=contact.bi===b,r=self?contact.ri:contact.rj;
   PH.hits.push({
-   car:c,other:e.body,iv,px:b.position.x+r.x,py:b.position.y+r.y,pz:b.position.z+r.z,
+   car:c,other:e.body,iv,approachSpeed:b.velocity.dot(contact.ni)*(self?1:-1),
+   otherApproach:-e.body.velocity.dot(contact.ni)*(self?1:-1),px:b.position.x+r.x,py:b.position.y+r.y,pz:b.position.z+r.z,
    nx:contact.ni.x*(self?1:-1),ny:contact.ni.y*(self?1:-1),nz:contact.ni.z*(self?1:-1)
   });
  });
