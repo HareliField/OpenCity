@@ -19,6 +19,7 @@ run(read('js/roads.js'));
 run(read('js/street-plan.js'));
 run(read('js/street-surface.js'));
 run(read('js/freight.js'));
+run(read('js/city-works.js'));
 run(read('js/game.js'));
 run(read('js/dispatch.js'));
 // The input and renderer bootstraps are driven by the browser. Load the gameplay section here.
@@ -82,4 +83,44 @@ run(`
    assert(carriageway.every(p=>p.y<.19),'at-grade crossings must clear the sides of the ramp');
   }
  }`);
+run(`
+ const w=CITY_WORKS,area=r=>(r.x1-r.x0)*(r.z1-r.z0),site=worksRect(325,375,270,375);
+ const terrain=subtractCityOpenings(site,STREET_OPENINGS);
+ assert(Math.abs(terrain.reduce((total,r)=>total+area(r),0)+STREET_OPENINGS.reduce((total,r)=>total+area(r),0)-area(site))<1e-7);
+ for(const gap of STREET_OPENINGS)assert(!terrain.some(r=>worksInside(r,(gap.x0+gap.x1)/2,(gap.z0+gap.z1)/2)));
+ w.floors.push({...w.gallery,y:w.levels[0]});
+ assert.equal(worksFloorAt(346,320,-3.91,0),-3.91);
+ assert.equal(worksFloorAt(346,320,0,0),0);
+ const flight={...MARKET_STAIR,n:24,from:w.levels[0],to:w.levels[1],reverse:false};
+ w.flights.push(flight);
+ for(const backwards of [false,true]){
+  let y=backwards?flight.to:flight.from;
+  for(let i=0;i<=96;i++){
+   const fraction=(backwards?96-i:i)/96,z=lerp(flight.z0,flight.z1,fraction);
+   const height=worksFloorAt((flight.x0+flight.x1)/2,z,y,0);
+   assert(Math.abs(y-height)<.19,'each stair tread remains reachable in both directions');y=height;
+  }
+ }
+ Object.assign(w.lift,{shaft:w.shaft,levels:w.levels,labels:['CELLAR','MARKET','FLATS','ROOF'],
+  gates:[],municipal:true,cab:new THREE.Group(),body:new CANNON.Body({mass:0,type:CANNON.Body.KINEMATIC})});
+ w.lifts.push(w.lift);
+ const rider=new V3((w.shaft.x0+w.shaft.x1)/2,.17,w.shaft.z1);
+ player.car=null;w.lift.target=2;
+ for(let i=0;i<90;i++)updateWorksLift(w.lift,1/60,rider);
+ assert.equal(w.lift.y,.17,'a rider in the door prevents departure');
+ rider.z-=1;w.grid=false;
+ for(let i=0;i<90;i++)updateWorksLift(w.lift,1/60,rider);
+ assert.equal(w.lift.y,.17,'power loss stops the municipal lift');
+ w.grid=true;
+ for(let i=0;i<420;i++)updateWorksLift(w.lift,1/60,rider);
+ assert.equal(rider.y,4.25);assert.equal(w.lift.y,4.25);assert.equal(w.lift.doors,1);
+ assert(Math.abs(w.lift.body.position.y+.08-rider.y)<1e-8,'collision deck and passenger arrive together');
+ const frame=()=>new THREE.Object3D();Object.assign(w,{drain:frame(),tap:frame(),gauge:frame(),handwheel:frame(),breaker:frame(),sewerSight:frame(),m:{lamp:{}}});
+ const tap={time:3.5,stream:frame()};w.fixtures.push(tap);w.water=.35;w.valve=true;w.pump=false;
+ for(let i=0;i<120;i++)updateCityWorks(1/60,rider);
+ assert(w.water>.35&&w.wastewater>.12&&tap.stream.visible,'basin discharge and storm sump respond independently');
+ w.pump=true;w.valve=false;
+ for(let i=0;i<330;i++)updateCityWorks(1/60,rider);
+ assert(w.water<.35&&!w.tap.visible&&!tap.stream.visible,'water valve shuts the taps and the drain pump lowers the sump');
+`);
 console.log('Gameplay regressions passed.');

@@ -129,7 +129,23 @@ function terrainBody(tile){
 }
 function buildSidewalk(B){
  const tile=newTerrain(true),height=STREET_DESIGN.curb,r=STREET_DESIGN.radius,end=7;
- const rect=(x0,x1,z0,z1)=>terrainFace(tile,MAT.sidewalk,[[x0,height,z0],[x0,height,z1],[x1,height,z1],[x1,height,z0]]);
+ // In the two municipal lots, the stairs and lift extend below street level.
+ // Cut the same flat sidewalk faces used for rendering, foot height and wheel collision.
+ const holes=STREET_OPENINGS.filter(r=>r.x0<B.x1&&r.x1>B.x0&&r.z0<B.z1&&r.z1>B.z0);
+ function pave(material,points,solid=true){
+  if(holes.length&&material===MAT.sidewalk&&points.length===4&&points.every(p=>p[1]===height)){
+   const xs=new Set(points.map(p=>p[0])),zs=new Set(points.map(p=>p[2]));
+   if(xs.size===2&&zs.size===2){
+    const r=worksRect(Math.min(...xs),Math.max(...xs),Math.min(...zs),Math.max(...zs));
+    for(const p of subtractCityOpenings(r,holes)){
+     terrainFace(tile,material,[[p.x0,height,p.z0],[p.x0,height,p.z1],[p.x1,height,p.z1],[p.x1,height,p.z0]],solid);
+    }
+    return;
+   }
+  }
+  terrainFace(tile,material,points,solid);
+ }
+ const rect=(x0,x1,z0,z1)=>pave(MAT.sidewalk,[[x0,height,z0],[x0,height,z1],[x1,height,z1],[x1,height,z0]]);
  rect(B.x0+end,B.x1-end,B.z0+end,B.z1-end);
  const wall=(a,b)=>{
   if(a[1]<.0001 && b[1]<.0001)return;
@@ -143,17 +159,17 @@ function buildSidewalk(B){
   const x=sx>0?B.x0:B.x1,z=sz>0?B.z0:B.z1;
   const point=(u,v,h=height)=>[x+sx*u,h,z+sz*v];
   const nodeI=B.i+(sx<0?1:0),nodeJ=B.j+(sz<0?1:0);
-  const flat=(u0,u1,v0,v1)=>terrainFace(tile,MAT.sidewalk,[point(u0,v0),point(u0,v1),point(u1,v1),point(u1,v0)]);
+  const flat=(u0,u1,v0,v1)=>pave(MAT.sidewalk,[point(u0,v0),point(u0,v1),point(u1,v1),point(u1,v0)]);
   flat(r,end,r,end);
   const arc=[];
   for(let k=0;k<=6;k++){
    const a=Math.PI+k*Math.PI/12;arc.push(point(r+r*Math.cos(a),r+r*Math.sin(a)));
    if(k)wall(arc[k-1],arc[k]);
   }
-  terrainFace(tile,MAT.sidewalk,[point(r,r),...arc]);
+  pave(MAT.sidewalk,[point(r,r),...arc]);
   for(const acrossX of [true,false]){
    const P=acrossX?(u,v,h)=>point(v,u,h):point;
-   const face=(vertices,mat=MAT.sidewalk,solid=true)=>terrainFace(tile,mat,vertices.map(v=>P(...v)),solid);
+   const face=(vertices,mat=MAT.sidewalk,solid=true)=>pave(mat,vertices.map(v=>P(...v)),solid);
    const dx=acrossX?0:-sx,dz=acrossX?-sz:0;
    if(!hasCrossing(nodeI,nodeJ,dx,dz) || hasCurbExtension(nodeI,nodeJ,dx,dz)){
     face([[r,0],[end,0],[end,r],[r,r]]);wall(P(r,0),P(end,0));continue;
@@ -174,7 +190,7 @@ function buildSidewalk(B){
    ['ew',B.j,B.i,1],['ew',B.j+1,B.i,-1]]){
   const point=(t,v,h=height)=>axis==='ns'?[line*CELL+side*(HALF+v),h,block*CELL+t]:
    [block*CELL+t,h,line*CELL+side*(HALF+v)];
-  const face=(coords,mat=MAT.sidewalk)=>terrainFace(tile,mat,coords.map(p=>point(...p)));
+  const face=(coords,mat=MAT.sidewalk)=>pave(mat,coords.map(p=>point(...p)));
   const start=HALF+end,finish=CELL-start,depth=2.35,flare=.85;
   const spans=[];
   for(const driveway of (DRIVEWAYS.get(drivewayKey(axis,line,block))||[]).filter(d=>d.side===side).sort((a,b)=>a.center-b.center)){

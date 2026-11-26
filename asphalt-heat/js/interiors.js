@@ -103,7 +103,7 @@ function buildInterior(room){
     textured(m.neutral,x-.62,x+.62,3.23,3.272,z-.09,z+.09);
    }else{
     cyl(m.black,x,3.03,z,.019,.019,.49,7,{M});
-    cyl(m.black,x,2.89,z,.12,.23,.17,14,{M});
+    worksModel('enamel-pendant',lamp.x,2.865,lamp.z,[.46,.216,.46],0,false);
     cyl(m.warm,x,2.87,z,.183,.183,.031,14,{M,shadow:false});
    }
   }
@@ -118,7 +118,8 @@ function buildInterior(room){
   const fallback=makeFixture(id,dims);
   node.add(fallback);
   scene.add(node);
-  INTERIORS.fixtures.push({id,node,fallback,dims,x:p.x,z:p.z});
+  const modelId=id==='display'?'bakery-counter':id==='plant'?'salon-plant':id==='stock'&&row===RETAIL.deli?'pantry-shelf':id;
+  INTERIORS.fixtures.push({id:modelId,node,fallback,dims,x:p.x,z:p.z});
   if(id==='seat'||id==='plant'||id==='reading-table'){
    registerLooseFixture(node,id,p.x,.172,p.z,angle,dims,id==='seat'?8:id==='plant'?13:28);
   }else if(solid){

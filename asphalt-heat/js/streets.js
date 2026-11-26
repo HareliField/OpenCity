@@ -29,6 +29,7 @@ function initStreetMaterials(){
  m.iron=new THREE.MeshStandardMaterial({color:lin(0x3e3b36),roughness:.76,metalness:.72});
  m.rubber=new THREE.MeshStandardMaterial({color:lin(0x252525),roughness:1});
  m.mulch=pbr('grass',1.15,{rough:.99,color:0x736455,ns:.7});
+ m.shopStone=pbr('stone_light',.95,{color:0xb6aea1,rough:.84,ns:.28});
  m.wornSlab=pbr('concrete',2.1,{rough:.83,color:0x938a7d});
  m.passage=pbr('brick_red',2.4,{color:0x8e6a60,rough:.87,ns:1.35});
  m.coastSand=pbr('sand',2.8,{color:0xbaa480,rough:1,ns:1.4});
@@ -111,10 +112,10 @@ function facadePlane(mat,M,x0,x1,y0,y1,z){
 function shopFacade(block,row,M,u0,u1,storey,coastal){
  const m=STREET.materials,width=u1-u0,center=(u0+u1)/2,yHead=3.53;
  const material=coastal?MAT.fac.stucco:MAT.fac.brick_tan;
- const texMat=coastal?MAT.trim:MAT.stone;
+ const texMat=coastal?MAT.trim:m.shopStone;
  const depth=coastal?16:17.5,roomDepth=6.65;
  const main=lrect(M,u0,u1,0,depth);
- const buildingArgs={style:coastal?4:1,fh:3.45,bay:coastal?3.15:2.82,tint:row.brick,top:storey,seed:(Math.abs(u0)+.31)/30};
+ const buildingArgs={style:coastal?4:1,fh:3.45,bay:coastal?3.15:2.82,tint:row.brick,top:storey,gH:4.1,seed:(Math.abs(u0)+.31)/30};
  facadeBox(material,main.x0,main.x1,4.1,storey,main.z0,main.z1,buildingArgs);
  const back=lrect(M,u0,u1,roomDepth+(hasStockRoom(row)?2.25:0),depth);
  facadeBox(material,back.x0,back.x1,.15,4.1,back.z0,back.z1,{...buildingArgs,style:3,fh:6});
@@ -142,9 +143,7 @@ function shopFacade(block,row,M,u0,u1,storey,coastal){
  facadePlane(m.glass,M,door0,door1,2.88,3.28,-.035);
  box(m.brass,door0-.027,door1+.027,.166,.19,-.12,.14,{shadow:false});
  registerDoor(M,center,.027,.175,door1-door0-.071,2.60,'glass');
- const q=lpt(M,center,-.091);
- const facing=Math.atan2(M.elements[8],M.elements[10]);
- signQuad(row.sign,q.x,3.64,q.z,Math.min(width-1,6.1),.62,facing,false);
+ referenceFascia(row,M,u0,u1,3.65);
  topQuad(m.shopLight,u0-.15,u1+.15,.172,.15,4.35,4.2,M,false);
  for(const k of [-.29,.29]){
   const x=center+width*k;
@@ -162,6 +161,7 @@ function shopFacade(block,row,M,u0,u1,storey,coastal){
   }
  }
  buildInterior({block,M,u0,u1,door0,door1,row,depth:roomDepth});
+ dressReferenceShop(block,row,M,u0,u1,storey);
  block.bld.push({...back,h:4.1},{...main,y0:3.55,h:storey});
  return main;
 }
@@ -271,14 +271,14 @@ function finishStreetDetails(){
 }
 
 function updateStreetLighting(dt,x,z){
- if((STREET.sample-=dt)>0)return;
+ if(DAYLIGHT||(STREET.sample-=dt)>0)return;
  STREET.sample=.36;
- const active=PROPS.list.filter(p=>p.t==='lamp'&&!p.moved&&Math.abs(p.x-x)<24&&Math.abs(p.z-z)<24);
+ const active=PROPS.list.filter(p=>p.P.glow&&!p.moved&&Math.abs(p.x-x)<24&&Math.abs(p.z-z)<24);
  active.sort((a,b)=>(a.x-x)**2+(a.z-z)**2-(b.x-x)**2-(b.z-z)**2);
  for(let i=0;i<STREET.lights.length;i++){
   const light=STREET.lights[i],p=active[i];
   if(p){
-   light.position.set(p.x+Math.sin(p.ry)*1.85,p.y+(p.display?.visible?5.47:6.65),p.z+Math.cos(p.ry)*1.85);
+   const at=lampEmitter(p);light.position.set(at.x,at.y-.20,at.z);
    light.intensity=.76;
   } else light.intensity=0;
  }

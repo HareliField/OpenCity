@@ -22,7 +22,7 @@ function updateOutdoorModels(dt,x,z){
  if((sceneryClock-=dt)>0)return;
  sceneryClock=.65;
  for(const p of OUTDOOR_MODELS){
-  const near=(p.x-x)**2+(p.z-z)**2<68**2;
+  const near=(p.x-x)**2+(p.z-z)**2+(p.y-player.pos.y)**2<(QUALITY.level===0?43:68)**2;
   if(p.display)p.display.visible=near;
   if(p.fallback)p.fallback(!p.display||!near);
   if(p.started||!near)continue;
@@ -42,8 +42,8 @@ function updateOutdoorModels(dt,x,z){
  }
  updateDoorModels();
  updatePropModels(x,z);
- const coupe=cars.find(c=>c.heroWanted&&!c.heroLoading&&!c.dead&&!(c.retryAfter>performance.now())&&Math.hypot(x-c.pos.x,z-c.pos.z)<85);
- if(coupe&&INTERIORS.catalog.coupe)loadHeroCoupe(coupe);
+ const featured=cars.find(c=>c.heroWanted&&!c.heroLoading&&!c.dead&&!(c.retryAfter>performance.now())&&Math.hypot(x-c.pos.x,z-c.pos.z)<85);
+ if(featured&&INTERIORS.catalog[featured.heroAsset||'coupe'])loadHeroCar(featured);
 }
 
 function installTreeModels(instances,trunks,leaves,kind,selected){
@@ -70,7 +70,7 @@ function installTreeModels(instances,trunks,leaves,kind,selected){
 }
 
 function updatePropModels(x,z){
- const types={bin:['street-bin',[.66,.992,.66]],fence:['picket-fence',[2.31,.96,.16]],lamp:['street-lamp',[.81,7.20,2.85]]};
+ const types={hydrant:['cast-hydrant',[.51,.83,.43]],bench:['promenade-bench',[2,.91,.57]],postbox:['post-box',[.59,1.30,.64]],lantern:['cast-lantern',[.56,4.84,.55]],bin:['street-bin',[.66,.992,.66]],fence:['picket-fence',[2.31,.96,.16]],lamp:['street-lamp',[.81,7.20,2.85]]};
  for(const p of PROPS.list){
   const type=types[p.t];
   if(!type)continue;
@@ -89,7 +89,7 @@ function updatePropModels(x,z){
   promise.then(template=>{
    if(!template){p.artStarted=false;return;}
    const node=modelInstance(template,dims,id);
-   node.traverse(o=>{if(o.isMesh)o.castShadow=p.t!=='lamp';});
+   node.traverse(o=>{if(o.isMesh)o.castShadow=!p.P.glow;});
    p.display=node;
    node.visible=true;
    scene.add(node);
@@ -99,15 +99,18 @@ function updatePropModels(x,z){
  }
 }
 
+function lampEmitter(p){
+ const lantern=p.t==='lantern',arm=lantern?0:1.85;
+ return {x:p.x+Math.sin(p.ry)*arm,y:p.y+(lantern?4.45:p.display?.visible?5.69:6.9),z:p.z+Math.cos(p.ry)*arm};
+}
 function syncLampGlow(p){
- if(p.t!=='lamp'||p.moved)return;
- const height=p.display?.visible?5.69:6.9;
- const x=p.x+Math.sin(p.ry)*1.85,z=p.z+Math.cos(p.ry)*1.85;
+ if(!p.P.glow||p.moved)return;
+ const {x,y,z}=lampEmitter(p);
  const points=PROPS.glow.geometry.attributes.position;
- points.setXYZ(p.gi,x,p.y+height,z);
+ points.setXYZ(p.gi,x,y,z);
  points.needsUpdate=true;
  _streetMatrix.makeRotationY(p.ry);
- _streetMatrix.setPosition(x,p.y+height-.12,z);
+ _streetMatrix.setPosition(x,y-.12,z);
  PROPS.heads.setMatrixAt(p.gi,_streetMatrix);
  PROPS.heads.instanceMatrix.needsUpdate=true;
 }
@@ -131,19 +134,20 @@ function syncPropMesh(p){
  p.P.mesh.instanceMatrix.needsUpdate=true;
 }
 
-let coupeModel=null;
+const heroModels=new Map();
 const COUPE_WHEEL_Y=new THREE.Quaternion().setFromAxisAngle(_streetUp,-Math.PI/2);
 const COUPE_WHEEL_FLIP=new THREE.Quaternion().setFromAxisAngle(_streetUp,Math.PI);
 const COUPE_WHEEL_SPIN=new THREE.Quaternion();
 const COUPE_WHEEL_X=new V3(1,0,0);
 
-function loadHeroCoupe(car){
+function loadHeroCar(car){
+ const id=car.heroAsset||'coupe';
  car.heroLoading=true;
- if(!coupeModel){
-  const path='models/scenery/'+INTERIORS.catalog.coupe.file;
-  coupeModel=new Promise((resolve,reject)=>new THREE.GLTFLoader().load(path,resolve,undefined,reject))
+ if(!heroModels.has(id)){
+  const path='models/scenery/'+INTERIORS.catalog[id].file;
+  const model=new Promise((resolve,reject)=>new THREE.GLTFLoader().load(path,resolve,undefined,reject))
    .then(gltf=>{
-    const shell=gltf.scene.getObjectByName('CoupeShell');
+    const shell=gltf.scene.getObjectByName('VehicleShell')||gltf.scene.getObjectByName('CoupeShell');
     const wheel=gltf.scene.getObjectByName('WheelPrototype');
     if(!shell||!wheel?.isMesh)return null;
     shell.traverse(o=>{
@@ -155,9 +159,10 @@ function loadHeroCoupe(car){
     });
     return {shell,wheel};
    }).catch(()=>null);
+  heroModels.set(id,model);
  }
- coupeModel.then(template=>{
-  if(!template){coupeModel=null;car.heroLoading=false;car.retryAfter=performance.now()+10000;return;}
+ heroModels.get(id).then(template=>{
+  if(!template){heroModels.delete(id);car.heroLoading=false;car.retryAfter=performance.now()+10000;return;}
   if(!cars.includes(car)||!car.heroWanted||car.dead)return;
   const shell=template.shell.clone(true),wheels=[];
   shell.traverse(o=>{if(o.isMesh){o.material=o.material.clone();if(car.repainted)o.material.color.copy(lin(car.paintColor));}});
@@ -171,10 +176,11 @@ function loadHeroCoupe(car){
    scene.add(wheel);
   }
   const lenses=[];
-  for(const z of [-2.219,2.224])for(const side of [-1,1]){
+  const lamps=id==='maroon-saloon'?[[-2.29,.60,.76,.33],[2.261,.58,.669,.29]]:[[-2.219,.673,.685,.26],[2.224,.658,.427,.19]];
+  for(const [z,x,y,width] of lamps)for(const side of [-1,1]){
    const lens=new THREE.Mesh(unitBox,z<0?LENS.tailOff:LENS.headOff);
-   lens.position.set(side*(z<0?.673:.658),z<0?.685:.427,z);
-   lens.scale.set(z<0?.26:.19,.066,.016);
+   lens.position.set(side*x,y,z);
+   lens.scale.set(width,.066,.016);
    lens.visible=false;
    car.mesh.add(lens);
    lenses.push(lens);

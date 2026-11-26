@@ -19,6 +19,7 @@ function actionCtx(){if(state!=='play'||shopOpen||player.down>0)return null;if(p
   }
   return {label:'EXIT',fn:toggleCar};
  }if(robbing)return{label:'ROB…',fn:()=>{}};
+ const serviceAction=worksAction(player.pos);if(serviceAction)return serviceAction;
  const doorway=doorInteraction(player.pos,1.83);if(doorway)return doorway;
  const p=nearPlace();if(p){if(p.kind==='police')return {label:'CASE DESK',hot:1,fn:()=>openPoliceDesk(p.office)};if(p.kind==='store'||p.kind==='bank')return p.cd>0?{label:'CLOSED',fn:()=>toast('ALREADY HIT — COME BACK LATER',1500)}:{label:'ROB',fn:()=>startRob(p),hot:1};
   if(p.kind==='gunshop')return{label:'SHOP',fn:openShop,hot:1};if(p.kind==='hospital')return{label:'HEAL',fn:()=>{if(player.hp>=100)toast('YOU ARE FINE',1000);else if(player.cash<100)toast('NEED $100',1000);else{player.cash-=100;player.hp=100;toast('PATCHED UP −$100',1400);}},hot:1};}
@@ -249,6 +250,7 @@ function cameraClearance(ax,ay,az,bx,by,bz){
  const hit=rayWorld(ax,az,bx,bz,ay,by,.18);return hit<1?Math.max(.04,hit-.015):1;
 }
 function step(dt,agentInput=null){time+=dt;WATERT.value=time;
+ updateCityWorks(dt,player.pos);
  refreshPhysicalWorld(player.pos.x,player.pos.z);
  const kx=(keys.ArrowRight?1:0)-(keys.ArrowLeft?1:0),ky=(keys.ArrowUp?1:0)-(keys.ArrowDown?1:0);const play=state==='play'&&!shopOpen;
  const jx=play?(agentInput?.turn??clamp(inp.jx+kx,-1,1)):0,jy=play?(agentInput?.forward??clamp(inp.jy+ky,-1,1)):0,fire=play&&(agentInput?.fire??(inp.fire||keys.Space)),sprint=play&&(agentInput?.sprint??(inp.sprint||keys.KeyX));
@@ -280,7 +282,7 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
  wheelBegin();for(const c of cars)pushWheels(c,dt);wheelEnd();
  /* player on foot */
  if(player.car){player.pos.copy(player.car.pos);player.yaw=player.car.h;}
- else if(player.down>0){player.down-=dt;const b=player.c.body;if(b)player.pos.set(b.position.x,Math.max(0,b.position.y-.55),b.position.z);updChar(player.c,0,dt,true);if(player.down<=0&&state==='play'){releaseRagdoll(player.c);collideWorld(player.pos,.4);player.c.root.position.set(player.pos.x,groundY(player.pos.x,player.pos.z,player.pos.y),player.pos.z);}}
+ else if(player.down>0){player.down-=dt;const b=player.c.body;if(b)player.pos.set(b.position.x,b.position.y-.55,b.position.z);updChar(player.c,0,dt,true);if(player.down<=0&&state==='play'){releaseRagdoll(player.c);collideWorld(player.pos,.4);player.c.root.position.set(player.pos.x,groundY(player.pos.x,player.pos.z,player.pos.y),player.pos.z);}}
  else if(!(state==='dead'&&deadKind==='WASTED')){
   const yawTarget=Math.abs(jx)>.12?-jx*(Math.abs(jy)>.3?2.28:2.85):0;
   player.turn=lerp(player.turn||0,yawTarget,1-Math.exp(-14*dt));
@@ -305,7 +307,7 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
   player.spd=Math.abs(spd);player.guardT-=dt;player.c.guard=player.guardT>0?1:0;const gy=groundY(player.pos.x,player.pos.z,player.pos.y),R=player.c.root;player.pos.y=gy;R.position.set(player.pos.x,R.position.y+(gy-R.position.y)*Math.min(1,dt*12),player.pos.z);player.c.yaw=player.yaw;player.c.back=spd<0;updChar(player.c,spd<0?1.2:spd,dt,true);
   }
  if(state==='play'&&player.hp<=0)gameOver('WASTED');
- if(state==='dead'){deadT-=dt;if(player.c.body){const b=player.c.body;player.pos.set(b.position.x,Math.max(0,b.position.y-.55),b.position.z);}updChar(player.c,0,dt,true);if(deadT<=0)respawn();}
+ if(state==='dead'){deadT-=dt;if(player.c.body){const b=player.c.body;player.pos.set(b.position.x,b.position.y-.55,b.position.z);}updChar(player.c,0,dt,true);if(deadT<=0)respawn();}
  if(play&&!player.car&&player.weapon!=='fist'&&player.c.aim>0)for(const p of peds){if(p.mode!=='walk'&&p.mode!=='stand')continue;const dx=p.pos.x-player.pos.x,dz=p.pos.z-player.pos.z,d=Math.hypot(dx,dz);if(d<12&&Math.abs(wrapA(Math.atan2(dx,dz)-player.yaw))<.5&&los(player.pos,p.pos)){p.mode='cower';p.c.talk=0;p.cowerT=rnd(3,6);}}
  player.arrestContact=false;updPeds(dt);updUnits(cops,dt);player.arrestT=player.arrestContact?player.arrestT+dt:0;
  if(state==='play'&&player.arrestT>4.2)gameOver('BUSTED');
@@ -405,6 +407,7 @@ function initGame(){buildMinimapBase();buildMarkers();initializePoliceLives();
  parkServiceVehicles(hp,'amb',1);parkServiceVehicles(pp,'police',2);
  addNeighborhoodCars();
  for(let k=0;k<(QUALITY.level>=2?20:14);k++)spawnTraffic(15,420);for(let k=0;k<12;k++)spawnParked();for(const P of PARKED)spawnParked(P.x,P.z,P.h);for(let k=0;k<2;k++)spawnPolice(false);
+ {const s=spawnCar('sedan',MARKET_PARKING.x,MARKET_PARKING.z,Math.PI/2,null);paintCar(s,0x662934);s.keep=true;s.heroWanted=true;s.heroAsset='maroon-saloon';}
  for(const p of places)if(p.kind==='hospital')for(const s of[-1,1]){const q=dropPickup('health',p.door.x+Math.cos(SIDEANG[p.side])*s*3,p.door.z-Math.sin(SIDEANG[p.side])*s*3,0);q.fixed=true;}
  {const q=dropPickup('armor',CELL*2.5,CELL*2.5+20,0);q.fixed=true;}
  {const court=blocks.find(B=>B.gang);if(court)for(let k=0;k<4;k++)spawnUnit('gang',court.gang.x+rnd(-10,10),court.gang.z+rnd(-6,6),'gang');}
@@ -426,15 +429,16 @@ async function boot(){resize();state='loading';setLoad('Loading city…',0);
  for(const n in CAST){const r=CAST[n];(ROLE[r]=ROLE[r]||[]).push(n);if(/Business_Male/.test(n))(ROLE.mb=ROLE.mb||[]).push(n);if(/Business_Female/.test(n))(ROLE.fb=ROLE.fb||[]).push(n);if(/Construction/.test(n))(ROLE.work=ROLE.work||[]).push(n);}
  if(!ROLE.clerk)ROLE.clerk=ROLE.m;for(const r of['cop','swat','army','guard','gang','medic','beach'])if(!ROLE[r])ROLE[r]=ROLE.m;
  setLoad('Building streets…',.92);await new Promise(r=>setTimeout(r,30));state='building';
- await buildCityRest();physInit();indexStatic();physWorld();initProps();initParts();initTracers();initSkids();initCarLenses();initWheels(320);initGame();
+ await buildCityRest();physInit();indexStatic();physWorld();installWorksPhysics();initProps();initParts();initTracers();initSkids();initCarLenses();initWheels(320);initGame();
  refreshPhysicalWorld(player.pos.x,player.pos.z);updProps(.5,player.pos.x,player.pos.z);camera.position.set(302,52,390);camera.lookAt(262,4,312);renderFrame(0);
  $('play').disabled=false;setLoad('Ready',1);}
-async function buildCityRest(){SEED=4242;initAwnings();initSigns();initStreetMaterials();initPaving();initInteriors();
- const asph=new THREE.Mesh(new THREE.PlaneGeometry(S+40,S+20),MAT.asphalt);asph.rotation.x=-Math.PI/2;asph.position.set(W/2,-.009,W/2-10);asph.receiveShadow=true;scene.add(asph);
- {const uv=asph.geometry.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,uv.getX(i)*(S+40)/7,(uv.getY(i)*(S+20)+20)/7);for(const t of[MAT.asphalt.map,MAT.asphalt.normalMap,MAT.asphalt.roughnessMap])t.repeat.set(1,1);}
+async function buildCityRest(){SEED=4242;initAwnings();initSigns();initStreetMaterials();initPaving();initInteriors();initWorksMaterials();initRetailFascias();
+ const streetBounds=worksRect(W/2-(S+40)/2,W/2+(S+40)/2,W/2-10-(S+20)/2,W/2-10+(S+20)/2);
+ const asph=new THREE.Mesh(worksGroundMesh(streetBounds,-.009,7,0,0),MAT.asphalt);asph.receiveShadow=true;scene.add(asph);
+ for(const t of [MAT.asphalt.map,MAT.asphalt.normalMap,MAT.asphalt.roughnessMap])t.repeat.set(1,1);
  for(let i=0;i<N;i++){
   for(let j=0;j<N;j++){const x0=i*CELL+HALF,x1=(i+1)*CELL-HALF,z0=j*CELL+HALF,z1=(j+1)*CELL-HALF;const B={i,j,x0,x1,z0,z1,bld:[],park:false,dist:districtOf(i,j)};blocks.push(B);
-  streetProps(B);if(i<ORIGINAL_GRID&&j<ORIGINAL_GRID||(i+j)%3===0)streetDetails(B);if(buildAuthoredBlock(B)||reserveGradeBlock(B))continue;const sp=SPECIAL[i+','+j];if(sp&&sp.kind==='park'){B.park=true;park(B);continue;}if(sp){special(B,sp);continue;}
+  streetProps(B);if(i<ORIGINAL_GRID&&j<ORIGINAL_GRID||(i+j)%3===0)streetDetails(B);if(buildWorksBlock(B)||buildAuthoredBlock(B)||reserveGradeBlock(B))continue;const sp=SPECIAL[i+','+j];if(sp&&sp.kind==='park'){B.park=true;park(B);continue;}if(sp){special(B,sp);continue;}
   const R={x0:x0+SW,x1:x1-SW,z0:z0+SW,z1:z1-SW};if(B.dist==='docks'&&(i+j)%3===0){warehouses(B,{x0:R.x0,x1:R.x1,z0:R.z0,z1:(R.z0+R.z1)/2-1});containers(R.x0+1,R.x1-1,(R.z0+R.z1)/2+1,R.z1-1);continue;}fillDistrict(B,R,B.dist);}
   if(i%4===3){
    flushBuckets();
@@ -442,7 +446,7 @@ async function buildCityRest(){SEED=4242;initAwnings();initSigns();initStreetMat
    await new Promise(resolve=>setTimeout(resolve,0));
   }
  }
- beach();skyline();buildFreightTerminal();buildGradeRoads();buildStreetNetwork();finishStreetDetails();flushBuckets();for(const m of scene.children)if(m.isMesh&&m.material===ATLAS.neon)m.renderOrder=2;plantTrees();buildTrafficLights();flushBuckets();initializeDoorMeshes();}
+ buildWorksGallery();buildCityDetail();beach();skyline();buildFreightTerminal();buildGradeRoads();buildStreetNetwork();finishStreetDetails();flushBuckets();for(const m of scene.children)if(m.isMesh&&m.material===ATLAS.neon)m.renderOrder=2;plantTrees();buildTrafficLights();flushBuckets();initializeDoorMeshes();}
 $('play').addEventListener('click',()=>{$('start').style.display='none';$('ui').hidden=false;$('touchViews').hidden=false;if(state==='title'){clock.getDelta();state='play';}});
-window.__game={department:PoliceDepartment,step,ff(n){for(let i=0;i<n;i++){step(1/30);}renderFrame(time);},scene,renderer,camera,sun,PH,get player(){return player},cars,peds,cops,gang,helis,places,PROPS,get heat(){return heat},set heat(v){heat=v},get wanted(){return wanted},get state(){return state},keys,inp,toggleCar,startRob,TPL,QUALITY};
+window.__game={department:PoliceDepartment,cityWorks:CITY_WORKS,step,ff(n){for(let i=0;i<n;i++){step(1/30);}renderFrame(time);},scene,renderer,camera,sun,PH,get player(){return player},cars,peds,cops,gang,helis,places,PROPS,get heat(){return heat},set heat(v){heat=v},get wanted(){return wanted},get state(){return state},keys,inp,toggleCar,startRob,TPL,QUALITY};
 loop();boot().catch(e=>{console.error(e);setLoad('Error: '+e.message);});

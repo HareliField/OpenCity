@@ -67,5 +67,56 @@
   },
   "rack": {
     "file": "rack.glb"
+  },
+  "roof-cistern": {
+    "file": "roof-cistern.glb"
+  },
+  "roof-condenser": {
+    "file": "roof-condenser.glb"
+  },
+  "cast-hydrant": {
+    "file": "cast-hydrant.glb"
+  },
+  "cast-lantern": {
+    "file": "cast-lantern.glb"
+  },
+  "post-box": {
+    "file": "post-box.glb"
+  },
+  "promenade-bench": {
+    "file": "promenade-bench.glb"
+  },
+  "rescue-hut": {
+    "file": "rescue-hut.glb"
+  },
+  "enamel-pendant": {
+    "file": "enamel-pendant.glb"
+  },
+  "laundry-basket": {
+    "file": "laundry-basket.glb"
+  },
+  "leather-holdall": {
+    "file": "leather-holdall.glb"
+  },
+  "salon-plant": {
+    "file": "salon-plant.glb"
+  },
+  "bakery-counter": {
+    "file": "bakery-counter.glb"
+  },
+  "pantry-shelf": {
+    "file": "pantry-shelf.glb"
+  },
+  "shop-register": {
+    "file": "shop-register.glb"
+  },
+  "produce-crate": {
+    "file": "produce-crate.glb"
+  },
+  "pavement-menu": {
+    "file": "pavement-menu.glb"
+  },
+  "maroon-saloon": {
+    "file": "maroon-saloon.glb"
   }
 }

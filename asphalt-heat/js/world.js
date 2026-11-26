@@ -4,9 +4,19 @@ function T(name,kind,rep,srgb){const k=name+kind+(rep||1);let t=TEXC[k];if(!t){t
 function pbr(name,meters,o={}){const r=1/meters;const m=new THREE.MeshStandardMaterial(Object.assign({map:T(name,'d',r,true),normalMap:T(name,'n',r),normalScale:new THREE.Vector2(o.ns||1,o.ns||1),roughness:o.rough==null?.9:o.rough,metalness:o.metal||0,envMapIntensity:o.env==null?.6:o.env},o.extra||{}));if(o.rmap)m.roughnessMap=T(name,'r',r);if(o.color)m.color=lin(o.color);return m;}
 /* ---- facade shader: windows with parallax interiors, frames, shop fronts ---- */
 const FACV=`attribute vec4 fac;attribute vec2 fac2;varying vec4 vFac;varying vec2 vFac2;varying vec2 vFU;varying vec3 vWP2;varying vec3 vWN;`;
-const FACF=`varying vec4 vFac;varying vec2 vFac2;varying vec2 vFU;varying vec3 vWP2;varying vec3 vWN;`+WETCODE;
+const FACADE_PHOTOS={color:{value:null},material:{value:null},ready:{value:0}};
+function loadFacadePhotos(){
+ let loaded=0;
+ const done=()=>{if(++loaded===2)FACADE_PHOTOS.ready.value=1;};
+ for(const [key,path] of [['color','reference-bays.jpg'],['material','reference-bays-material.png']]){
+  const texture=TLD.load('tex/'+path,done);
+  texture.anisotropy=8;
+  FACADE_PHOTOS[key].value=texture;
+ }
+}
+const FACF=`uniform sampler2D bayColor;uniform sampler2D bayMaterial;uniform float baysReady;varying vec4 vFac;varying vec2 vFac2;varying vec2 vFU;varying vec3 vWP2;varying vec3 vWN;`+WETCODE;
 const FACMAIN=`#include <map_fragment>
- float glass=0.,frame=0.,metalG=0.;
+ float glass=0.,frame=0.,metalG=0.; vec2 bayNormal=vec2(0.);float photoFace=0.;
  vec3 emitW=vec3(0.),frameC=vec3(.045,.041,.038),glassC=vec3(.01,.018,.024);
  {
   float seed=floor(vFac.x*117.+.5),sty=floor(vFac.y+.5),fh=vFac.z,bay=vFac.w,topH=vFac2.x,gH=vFac2.y;
@@ -81,20 +91,39 @@ const FACMAIN=`#include <map_fragment>
   }
  }
  diffuseColor.rgb=mix(diffuseColor.rgb,glassC,glass);
- diffuseColor.rgb=mix(diffuseColor.rgb,frameC,frame);`;
+ diffuseColor.rgb=mix(diffuseColor.rgb,frameC,frame);
+ // One rectified photographic bay per storey. The material atlas separates recessed
+ // glazing from masonry so the sky, moving sun and room lights still act on each.
+ if(baysReady>.5 && vWN.y<.5 && vFU.y>=vFac2.y && abs(vFac.y-3.)>.45){
+  float family=vFac.y>3.5?1.:vFac.y>1.5?3.:vFac.y>.5?0.:2.;
+  vec2 bay=vec2(vFU.x/vFac.w,(vFU.y-vFac2.y)/vFac.z);
+  float variant=floor(hash21(floor(bay)+floor(vFac.x*117.))*4.);
+  vec2 local=fract(bay),origin=vec2(variant,3.-family);
+  vec2 atlasUV=(origin+clamp(local,vec2(.006),vec2(.994)))*.25;
+  vec3 surface=texture2D(bayMaterial,atlasUV).rgb;
+  vec3 toward=normalize(cameraPosition-vWP2),right=normalize(cross(vec3(0.,1.,0.),vWN));
+  vec2 inset=vec2(dot(toward,right),toward.y)*(.027*surface.b/max(.35,abs(dot(toward,vWN))));
+  vec3 photo=pow(texture2D(bayColor,(origin+clamp(local-inset,vec2(.006),vec2(.994)))*.25).rgb,vec3(2.2));
+  glass=surface.b;metalG=mix(.17,.38,step(2.5,family));frame=0.;
+  bayNormal=(surface.rg-.5)*.96;
+  diffuseColor.rgb=photo*mix(vec3(.94),vColor,.16);
+  emitW=mix(emitW*.25,photo*.075,glass)*glass;
+  photoFace=1.;
+ }`;
 function facadeMat(name,meters,o={}){const m=pbr(name,meters,Object.assign({env:.85},o));m.vertexColors=true;
- m.onBeforeCompile=sh=>{sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\n'+FACV).replace('#include <fog_vertex>','#include <fog_vertex>\nvFac=fac;vFac2=fac2;vFU=uv;vWP2=(modelMatrix*vec4(transformed,1.)).xyz;vWN=normalize(mat3(modelMatrix)*objectNormal);');
+ m.onBeforeCompile=sh=>{Object.assign(sh.uniforms,{bayColor:FACADE_PHOTOS.color,bayMaterial:FACADE_PHOTOS.material,baysReady:FACADE_PHOTOS.ready});sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\n'+FACV).replace('#include <fog_vertex>','#include <fog_vertex>\nvFac=fac;vFac2=fac2;vFU=uv;vWP2=(modelMatrix*vec4(transformed,1.)).xyz;vWN=normalize(mat3(modelMatrix)*objectNormal);');
   sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\n'+FACF).replace('#include <map_fragment>',FACMAIN)
    .replace('#include <roughnessmap_fragment>','#include <roughnessmap_fragment>\nroughnessFactor=mix(roughnessFactor,.11,glass);roughnessFactor=mix(roughnessFactor,.45,frame);')
    .replace('#include <metalnessmap_fragment>','#include <metalnessmap_fragment>\nmetalnessFactor=mix(metalnessFactor,metalG,glass);metalnessFactor=mix(metalnessFactor,.5,frame);')
-   .replace('#include <normal_fragment_maps>','#include <normal_fragment_maps>\nnormal=normalize(mix(normal,normalize(vNormal),max(glass,frame)));')
+   .replace('#include <normal_fragment_maps>','#include <normal_fragment_maps>\nnormal=normalize(mix(normal,normalize(vNormal),max(glass,frame)));if(photoFace>.5){vec3 bayN=mat3(viewMatrix)*(normalize(cross(vec3(0.,1.,0.),vWN))*bayNormal.x+vec3(0.,bayNormal.y,0.));normal=normalize(normal+bayN);}')
    .replace('#include <emissivemap_fragment>','#include <emissivemap_fragment>\n{vec3 Vv=normalize(cameraPosition-vWP2);float fr=pow(1.-clamp(dot(Vv,vWN),0.,1.),4.);totalEmissiveRadiance+=emitW*(1.-fr*.46)*(1.-metalG*.18);}');};
  m.customProgramCacheKey=()=>'facade';return m;}
 /* ---- materials ---- */
 const MAT={};
 function initMaterials(){
- MAT.asphalt=makeWet(pbr('asphalt',7,{rough:1,rmap:1,ns:1.2,env:.7}),{tint:1});
- MAT.sidewalk=makeWet(pbr('sidewalk',3.2,{rough:.95,env:.76,rmap:1}),{wet:.83});
+ loadFacadePhotos();
+ MAT.asphalt=makeWet(pbr('asphalt',7,{rough:1,rmap:1,ns:1.2,env:.7}),{tint:1,wet:DAYLIGHT?.73:1});
+ MAT.sidewalk=makeWet(pbr('sidewalk',3.2,{rough:.95,env:.76,rmap:1}),{wet:DAYLIGHT?.48:.83});
  MAT.plaza=makeWet(pbr('plaza',3,{rough:.8,env:.6}),{wet:.6});
  MAT.curb=pbr('concrete',2,{color:0xb8b3aa,rough:.85});
  MAT.sand=pbr('sand',4,{rough:1,env:.3});MAT.grass=pbr('grass',4,{rough:1,env:.25});
@@ -156,9 +185,9 @@ function cyl(mat,x,y,z,r0,r1,h,seg=10,o={}){
  addGeo(mat,g,o.shadow!==false);
 }
 /* ---- sign atlas (shop names, hotel neon, billboards) ---- */
-const ATLAS={c:null,g:null,n:0,cols:4,rows:16,mat:null,neon:null};
-function atlasInit(){const[c,g]=cvs(2048,2048);ATLAS.c=c;ATLAS.g=g;g.fillStyle='#000';g.fillRect(0,0,2048,2048);}
-function atlasSlot(draw){const i=ATLAS.n++;const cw=512,chh=128,x=(i%ATLAS.cols)*cw,y=Math.floor(i/ATLAS.cols)*chh;const g=ATLAS.g;g.save();g.beginPath();g.rect(x,y,cw,chh);g.clip();g.translate(x,y);draw(g,cw,chh);g.restore();return{u0:x/2048,u1:(x+cw)/2048,v0:1-(y+chh)/2048,v1:1-y/2048};}
+const ATLAS={c:null,g:null,n:0,cols:4,rows:32,mat:null,neon:null};
+function atlasInit(){const[c,g]=cvs(ATLAS.cols*512,ATLAS.rows*128);ATLAS.c=c;ATLAS.g=g;g.fillStyle='#000';g.fillRect(0,0,c.width,c.height);}
+function atlasSlot(draw){const i=ATLAS.n++;const cw=512,chh=128,x=(i%ATLAS.cols)*cw,y=Math.floor(i/ATLAS.cols)*chh;const g=ATLAS.g;g.save();g.beginPath();g.rect(x,y,cw,chh);g.clip();g.translate(x,y);draw(g,cw,chh);g.restore();return{u0:x/ATLAS.c.width,u1:(x+cw)/ATLAS.c.width,v0:1-(y+chh)/ATLAS.c.height,v1:1-y/ATLAS.c.height};}
 function signQuad(slot,cx,cy,cz,w,h,ry,neon){const g=new THREE.PlaneGeometry(w,h);const uv=g.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,slot.u0+uv.getX(i)*(slot.u1-slot.u0),slot.v0+uv.getY(i)*(slot.v1-slot.v0));g.rotateY(ry);g.translate(cx,cy,cz);addGeo(neon?ATLAS.neon:ATLAS.mat,g,false);}
 const SHOPS=[['CAFÉ ROMA','#2a1a12','#f3d9a4'],['PHARMACY','#0e5a3a','#ffffff'],['TACOS EL REY','#b8321a','#ffe08a'],['BARBER','#1a1a1a','#e8e8e8'],['PAWN · GOLD','#3a2a08','#ffd36e'],['DINER 24H','#8a1a1a','#ffffff'],['PIZZA NAPOLI','#1f4d2b','#fff3d0'],['LAUNDROMAT','#1d3d6b','#ffffff'],['BOOKS','#4a1d1d','#f2e2c2'],['ELECTRONICS','#111','#5ad1ff'],['NAIL STUDIO','#5a1d4a','#ffd0ec'],['DONUTS','#d86a9a','#ffffff'],['SUSHI ZEN','#151515','#ff5a4a'],['FLOWERS','#2e5a2a','#f8f0e0'],['SURF SHOP','#0a5a7a','#ffe066'],['GELATO','#e8e0d0','#b8321a'],['DELI','#1a3a2a','#f0e0b0'],['OPTICS','#e8e8e8','#1a3a6a'],['BAKERY','#6a3a1a','#ffe8c0'],['VINYL','#111','#ff9a2a'],['SHOES','#2a2a3a','#fff'],['WINE BAR','#3a0a1a','#f2c2a2'],['TATTOO','#0a0a0a','#e83a3a'],['MARKET','#c03a1a','#fff']];
 let shopSlots=[];
@@ -170,7 +199,7 @@ function initSigns(){atlasInit();
  ATLAS.special={};
  for(const[k,t,bg,fg]of[['bank','BANK OF THE COAST','#1a140c','#e8c66a'],['hospital','ST. MARY HOSPITAL','#ffffff','#c0262a'],['police','POLICE DEPARTMENT','#0e2550','#ffffff'],['quik','QUIK MART 24/7','#c0262a','#ffffff'],['liquor','LIQUOR · BEER · WINE','#3a0a4a','#ff8af0'],['jewel','DIAMOND DISTRICT','#0c0c0c','#e8c66a'],['guns','LOCK & LOAD — GUNS','#2a3014','#ffe066'],['chop','PARTS & SALVAGE','#2a1a0a','#ff9a3a'],['spray','FRESH COAT · RESPRAY','#0a2a4a','#9fe8ff'],['er','EMERGENCY','#c0262a','#ffffff'],['docks','PORT OF ASPHALT','#14202a','#e0e6ea']])
   ATLAS.special[k]=atlasSlot((g,w,h)=>{g.fillStyle=bg;g.fillRect(0,0,w,h);g.font=`${t.length>16?50:64}px Anton, Impact, sans-serif`;g.textAlign='center';g.textBaseline='middle';g.fillStyle=fg;g.fillText(t,w/2,h/2+4);});
- const t=ctex(ATLAS.c);t.anisotropy=8;ATLAS.mat=new THREE.MeshStandardMaterial({map:t,emissiveMap:t,emissive:new THREE.Color(1.2,1.2,1.2),roughness:.5,polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2});
+ const t=ctex(ATLAS.c);t.anisotropy=8;ATLAS.mat=new THREE.MeshStandardMaterial({map:t,emissiveMap:t,emissive:new THREE.Color(1.2,1.2,1.2),emissiveIntensity:DAYLIGHT?.16:1,roughness:.64,polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2});
  ATLAS.neon=new THREE.MeshBasicMaterial({map:t,color:new THREE.Color(2.6,2.6,2.6),transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,polygonOffset:true,polygonOffsetFactor:-3,polygonOffsetUnits:-3});}
 /* ---- city layout ---- */
 const blocks=[],places=[],LAMPS=[],TREES=[],PALMS=[],PROPSPOTS=[],STATIC=[],PARKED=[];
@@ -217,8 +246,8 @@ function initAwnings(){AWN=['#9a2a2a','#2a5a3a','#2a3a6a','#b08a20','#e6e0d4','#
 function roofDressing(R,h,kind){const w=R.x1-R.x0,d=R.z1-R.z0;
  plainBox(MAT.trim,R.x0-.15,R.x1+.15,h,h+.75,R.z0-.15,R.z0+.2,{uvm:2});plainBox(MAT.trim,R.x0-.15,R.x1+.15,h,h+.75,R.z1-.2,R.z1+.15,{uvm:2});plainBox(MAT.trim,R.x0-.15,R.x0+.2,h,h+.75,R.z0,R.z1,{uvm:2});plainBox(MAT.trim,R.x1-.2,R.x1+.15,h,h+.75,R.z0,R.z1,{uvm:2});
  topQuad(MAT.roof,R.x0,R.x1,h+.05,R.z0,R.z1,4,null,false);
- for(let k=0,n=rint(1,4);k<n;k++){const sx=srange(1.2,2.6),sz=srange(1.2,2.6);if(w<sx*2+1||d<sz*2+1)continue;const x=srange(R.x0+sx+.5,R.x1-sx-.5),z=srange(R.z0+sz+.5,R.z1-sz-.5);plainBox(MAT.metal,x-sx/2,x+sx/2,h,h+srange(.9,1.6),z-sz/2,z+sz/2);}
- if(kind==='old'&&srnd()<.4&&w>9&&d>9){const x=srange(R.x0+3,R.x1-3),z=srange(R.z0+3,R.z1-3);cyl(MAT.wood,x,h+2.6,z,1.5,1.5,2.8,14);const cg=new THREE.ConeGeometry(1.65,1.1,14);cg.translate(x,h+5.95,z);addGeo(MAT.darkMetal,cg);for(const[a,b]of[[-1,-1],[1,-1],[1,1],[-1,1]])plainBox(MAT.darkMetal,x+a*1.05-.07,x+a*1.05+.07,h,h+2.6,z+b*1.05-.07,z+b*1.05+.07);}
+ for(let k=0,n=rint(1,4);k<n;k++){const sx=srange(1.2,2.6),sz=srange(1.2,2.6);if(w<sx*2+1||d<sz*2+1)continue;const x=srange(R.x0+sx+.5,R.x1-sx-.5),z=srange(R.z0+sz+.5,R.z1-sz-.5);const unitHeight=srange(.9,1.6);if(k===0&&h<55)worksModel('roof-condenser',x,h+.07,z,[sx,unitHeight,sz],0,false);else plainBox(MAT.metal,x-sx/2,x+sx/2,h,h+unitHeight,z-sz/2,z+sz/2);}
+ if(kind==='old'&&srnd()<.4&&w>9&&d>9){const x=srange(R.x0+3,R.x1-3),z=srange(R.z0+3,R.z1-3);worksRoofTank(x,h+.07,z);}
  if(kind==='tower'&&srnd()<.5){const x=(R.x0+R.x1)/2,z=(R.z0+R.z1)/2;cyl(MAT.metal,x,h,z,.08,.15,srange(6,16),6);}
  if(srnd()<.12&&h>12&&h<50){const ad=spick(ATLAS.ads);const ax=srnd()<.5;const bx=(R.x0+R.x1)/2,bz=(R.z0+R.z1)/2;plainBox(MAT.darkMetal,bx-.15,bx+.15,h,h+4.55,bz-.15,bz+.15);signQuad(ad,bx+(ax?0:.2),h+6,bz+(ax?.2:0),12,3,ax?0:Math.PI/2,false);signQuad(ad,bx-(ax?0:.2),h+6,bz-(ax?.2:0),12,3,ax?Math.PI:-Math.PI/2,false);}}
 function fireEscape(B,R,h,fh){const sd=streetSides(B,R);if(!sd.length)return;const s=sd[0];const along=s==='S'||s==='N';const L=along?R.x1-R.x0:R.z1-R.z0;if(L<8)return;const c=along?(R.x0+R.x1)/2:(R.z0+R.z1)/2;const off=s==='S'?R.z1:s==='N'?R.z0:s==='E'?R.x1:R.x0,sg=s==='S'||s==='E'?1:-1;
@@ -277,6 +306,7 @@ function houses(B,R){const lots=[];const per=3;for(const side of['N','S']){for(l
   if(h>3.4)facadeBox(MAT.fac.plaster,L.x0,L.x1,3.08,h,L.z0,L.z1,{style:1,fh:3.2,bay:2.8,tint,top:h+.6,seed:srnd()});
   buildAccessibleShell(B,L,{height:h,ceiling:h>3.4?3.08:h,kind:'home',selected:[L.side],wall});
   if(B.i===2&&B.j===4&&L.side==='S')frontPorch(L);
+  dressReferenceHouse(B,L,h);
   const w=L.x1-L.x0,d=L.z1-L.z0,rh=d*.30;const sh=new THREE.Shape();sh.moveTo(-d/2-.5,0);sh.lineTo(d/2+.5,0);sh.lineTo(0,rh);sh.lineTo(-d/2-.5,0);const g=new THREE.ExtrudeGeometry(sh,{depth:w+.8,bevelEnabled:false});
   const uv=g.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,uv.getX(i)/2.2,uv.getY(i)/2.2);g.rotateY(Math.PI/2);g.translate(L.x0-.4,h,(L.z0+L.z1)/2);addGeo(MAT.roofClay,g,true);
   const fz=L.side==='N'?L.z0-.05:L.z1+.05;
@@ -580,8 +610,15 @@ function plantTrees(){const o=new THREE.Object3D(),col=new THREE.Color();
  }
  trunk.computeVertexNormals();const br=[];for(let k=0;k<4;k++){const b=new THREE.CylinderGeometry(.04,.09,2,5);b.translate(0,1,0);b.rotateZ(.7);b.rotateY(k*1.57+.4);b.translate(0,2.8,0);br.push(b);}
  const treeTrunks=inst(mergeGeos([trunk,...br]),bark,TREES,p=>{o.position.set(p[0],.15,p[1]);o.scale.setScalar(p[2]);o.rotation.y=Math.random()*6;});
- const cards=[];for(let k=0;k<17;k++){const r=rnd(1.5,3.1);const g=new THREE.PlaneGeometry(r,r*.91);g.rotateX(rnd(-1.2,1.2));g.rotateY(rnd(0,3.14));g.translate(rnd(-1.65,1.65),rnd(3.25,5.5),rnd(-1.55,1.55));cards.push(g);}
- const foliage=TLD.load('tex/plane-leaves.webp');foliage.encoding=THREE.sRGBEncoding;foliage.anisotropy=4;
+ const cards=[];
+ // Distribute small branch clusters around a domed crown. Orientation follows the branch azimuth.
+ for(let k=0;k<28;k++){
+  const a=k*2.399963, f=(k+.5)/28, radius=Math.sqrt(1-(f*1.73-.86)**2)*1.45;
+  const g=new THREE.PlaneGeometry(1.82+(k%3)*.14,1.65+(k%4)*.11);
+  g.rotateX((f-.5)*.95);g.rotateY(a);
+  g.translate(Math.sin(a)*radius,3.6+f*2.46,Math.cos(a)*radius);cards.push(g);
+ }
+ const foliage=TLD.load('tex/avenue-foliage.webp');foliage.encoding=THREE.sRGBEncoding;foliage.anisotropy=4;
  const lm=new THREE.MeshStandardMaterial({map:foliage,alphaTest:.49,side:THREE.DoubleSide,roughness:.85});
  const leaves=inst(mergeGeos(cards),lm,TREES,p=>{o.position.set(p[0],.15,p[1]);o.scale.set(p[2],p[2]*rnd(.85,1.15),p[2]);o.rotation.y=Math.random()*6;});
  lm.onBeforeCompile=sh=>{

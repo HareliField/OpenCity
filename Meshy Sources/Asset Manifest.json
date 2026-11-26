@@ -140,6 +140,287 @@
       "original_sha256": "acc606c69a3336aa0bb41e732d795c30d80ab2e48cc6a7308d469c03edc26c7f",
       "runtime_file": "rack.glb",
       "requested_target_triangles": 16000
+    },
+    "roof-cistern": {
+      "task": "01a21975-8c71-7253-be3e-e0ad856a6419",
+      "status": "SUCCEEDED",
+      "original_sha256": "ec4ad49208a49e29ca23189062533b56d5b4d8aaa1fd59f39cfec12971266582",
+      "runtime_file": "roof-cistern.glb",
+      "requested_target_triangles": 9500,
+      "reference": "Natural Photos/095-old-town-aerial.png",
+      "input_sha256": "7bcb7cde5d9d6ec9f7fc480131ec042c49c624d8ff9650a617739ac4376af26f",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "274,188 279,182 300,168 306,165 315,166 340,178 347,187 345,194 345,238 341,244 327,250 303,252 282,246 276,239",
+      "charged_credits": 35,
+      "runtime_sha256": "655c8cc622e6c79071f8b52657a094f1994950946313c2034ea1f956e0f0e09e",
+      "runtime_repair": "Rebuilt the split tank with closed staves, hoops and a ribbed cone using the photographed timber and metal."
+    },
+    "roof-condenser": {
+      "task": "01a21975-927c-71cb-9df3-6a0c89b54459",
+      "status": "SUCCEEDED",
+      "original_sha256": "597442fcc60197c9d12b7b0a86d97a7526dd3ddd6047b7e681339b8b763bac17",
+      "runtime_file": "roof-condenser.glb",
+      "requested_target_triangles": 7000,
+      "reference": "Natural Photos/024-harbor-viaduct-aerial.png",
+      "input_sha256": "0beb90e6d9decc5c00153d40cc5ce6737532600a4da45b31165f60b622f25b2a",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "228,273 275,229 285,228 311,244 311,259 289,281 260,310 238,296 232,290",
+      "charged_credits": 35,
+      "runtime_sha256": "d5736d7fc5d4833e406de4a194a72dd2a5767cc15dd06ee2497f2c7351ad7386"
+    },
+    "cast-hydrant": {
+      "task": "01a21975-974f-71a4-9721-e57b31096508",
+      "status": "SUCCEEDED",
+      "original_sha256": "49145cfe119611dc245b77e2ef99fd1088357332c27566790c5e9548a89f0eb0",
+      "runtime_file": "cast-hydrant.glb",
+      "requested_target_triangles": 6000,
+      "reference": "Natural Photos/020-park-and-plaza-pursuit.png",
+      "input_sha256": "1270e58d1b8e7a28e451daa4bcd28dda8e52045e8913d783b293a1463afc1eef",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "674,278 677,275 681,274 680,270 683,268 685,272 685,274 690,276 691,279 685,281 691,282 694,283 697,285 697,290 693,291 690,288 689,304 690,310 691,312 687,315 674,314 671,312 672,309 674,308 675,292 670,291 669,288 669,284 675,283",
+      "charged_credits": 35,
+      "runtime_sha256": "533d903951bf07493dc337039646c259adf03976c740709680d3c1d792e61c8a",
+      "runtime_repair": "Removed detached geometry behind the hydrant before fitting its collision envelope."
+    },
+    "cast-lantern": {
+      "task": "01a21975-9bda-7738-a714-bb9f65d24b56",
+      "status": "SUCCEEDED",
+      "original_sha256": "72ee3c66c252c9b2f0ed8d83d38478784a5101b10a6fd740231f59951f6724f9",
+      "runtime_file": "cast-lantern.glb",
+      "requested_target_triangles": 8000,
+      "reference": "Natural Photos/020-park-and-plaza-pursuit.png",
+      "input_sha256": "f50663a6ec4fd698d6a26a9f777c506e2652c3d9ee41e5d0bd5a3e5757a20416",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "646,40 648,37 650,42 651,47 657,50 662,56 663,60 660,63 658,71 653,80 651,84 651,95 650,101 649,197 651,203 651,211 654,217 652,223 652,266 655,274 657,284 658,289 628,289 629,282 633,274 635,268 636,226 634,222 637,216 639,209 638,203 641,197 645,99 643,92 645,80 639,76 637,70 637,64 633,60 634,54 639,49 646,46",
+      "charged_credits": 35,
+      "runtime_sha256": "17a6b28e699b83bd30aff3d3a33cd5af518ae1c43772f7c577fd2dac0dda0fe7",
+      "runtime_repair": "Rebuilt a single fluted pole, globe, iron ribs and finial from the original single-lantern silhouette."
+    },
+    "post-box": {
+      "task": "01a21976-d4dc-7301-aad5-c00808c36db2",
+      "status": "SUCCEEDED",
+      "original_sha256": "34043a2f0041a69b14aee82f201a232e290d39c3c2895a0c7254532aa6be3c9b",
+      "runtime_file": "post-box.glb",
+      "requested_target_triangles": 6500,
+      "reference": "Natural Photos/092-palm-avenue-street.png",
+      "input_sha256": "4a3635ca1a848102e04aeb311edc672c6f6fe14dc8c270d09847f94e8e909992",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "631,226 632,222 638,220 648,219 654,222 656,226 655,249 655,264 653,264 652,253 647,252 647,262 645,262 644,252 634,252 633,262 631,262 631,251 630,247",
+      "charged_credits": 35,
+      "runtime_sha256": "d176c0eb8a3aa25d12c680ea3e1c7ee1ca60109a63898451b914d37c3f27139d",
+      "runtime_repair": "Rebuilt one arched steel box and four feet. The generation duplicated its front."
+    },
+    "promenade-bench": {
+      "task": "01a21977-36f9-731e-aa4b-7632e6eb8b68",
+      "status": "SUCCEEDED",
+      "original_sha256": "b12663eebf79d176f4b6bcece85e4218cc63a22b8bfc93791e0b9f3008ace81c",
+      "runtime_file": "promenade-bench.glb",
+      "requested_target_triangles": 8500,
+      "reference": "Natural Photos/092-palm-avenue-street.png",
+      "input_sha256": "f0c681788b14d930ab2017e38caea6035e70e6e394b9f32c5d70dd95f4b7c806",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "110,239 141,235 143,235 144,246 154,245 155,248 151,250 153,260 151,261 148,252 122,256 120,265 118,266 117,257 112,257 111,263 109,263 110,251 107,248 108,245 112,246",
+      "charged_credits": 35,
+      "runtime_sha256": "970a072a6bed7eacd87d68aae107315d6cc70c567c33e62f2d6324a93460c90d"
+    },
+    "rescue-hut": {
+      "task": "01a21977-c2f7-7190-85b1-1ce5007a01ee",
+      "status": "SUCCEEDED",
+      "original_sha256": "f8bea1926001b1d11bdb7fb1417c6da611a3c7cd7d79da4a4669bfebb5d69d23",
+      "runtime_file": "rescue-hut.glb",
+      "requested_target_triangles": 10000,
+      "reference": "Natural Photos/004-shoreline-wide.png",
+      "input_sha256": "a6a89299ecf66117b2bb6893d8354e24b2d1473325968ed272ea6e4a7c11695a",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "708,182 730,172 755,182 748,185 747,204 748,206 749,209 752,210 773,224 781,225 781,228 773,228 747,214 746,229 742,229 741,213 736,217 724,226 722,226 738,212 721,209 721,226 717,227 716,224 718,207 715,206 715,203 717,202 718,184",
+      "charged_credits": 35,
+      "runtime_sha256": "49c000eeb8313ee4884c1d88fa71fb293f1a8805a72c7da0380eaadec6561d49",
+      "runtime_repair": "Rebuilt one raised cabin and stair flight to match the photographed tower and the physical deck."
+    },
+    "enamel-pendant": {
+      "task": "01a21977-f90a-771d-aef2-7f245d3dbd24",
+      "status": "SUCCEEDED",
+      "original_sha256": "9b5f1c3fa6ae9202937f027200d7b496eb552777422d86999d1a56d4ae9aa402",
+      "runtime_file": "enamel-pendant.glb",
+      "requested_target_triangles": 4500,
+      "reference": "Natural Photos/023-shop-row-interior-interior.png",
+      "input_sha256": "02fce3c53b81635ad1207234a73cc670128650308f2c4a9bb0926ab4bd264f72",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "61,85 66,77 71,72 79,69 85,66 87,60 87,57 95,55 99,58 99,64 103,67 111,70 118,75 123,82 126,91 122,94 111,95 93,93 72,90",
+      "charged_credits": 35,
+      "runtime_sha256": "94032ef879d279b934d849017c6a9a5675b49797eb3140a9efaf17e31f28a475",
+      "runtime_repair": "Revolved the shade and enamelled underside and removed the stretched cable. The game supplies its suspension."
+    },
+    "laundry-basket": {
+      "task": "01a21978-5bc4-76ea-80de-2340d592340f",
+      "status": "SUCCEEDED",
+      "original_sha256": "649aff9452569084e78cd4059c91618d2e53a108f7c91831bcbfa6a4350abccf",
+      "runtime_file": "laundry-basket.glb",
+      "requested_target_triangles": 5000,
+      "reference": "Natural Photos/026-shop-row-interior-interior.png",
+      "input_sha256": "c456cccdf6b6b6f7fc53677fe81bccd14c6e461bb6985fb787008141859f6ce9",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "598,224 611,220 640,222 668,224 677,226 672,247 655,252 608,248 604,245",
+      "charged_credits": 35,
+      "runtime_sha256": "a05d3becb32332356217f45fe552d7f525c527d483ba32dc67e150d5fd466bcd"
+    },
+    "leather-holdall": {
+      "task": "01a21978-beb8-7462-a4ee-50d59f4260d3",
+      "status": "SUCCEEDED",
+      "original_sha256": "81e11afee8c628e50ab35da79d433653c378495d22f0fec12ec43be9cf7636a8",
+      "runtime_file": "leather-holdall.glb",
+      "requested_target_triangles": 6000,
+      "reference": "Natural Photos/089-cafe-row-interior-interior.png",
+      "input_sha256": "f93100994e92c2db91aa1a41e0fe9fd75dcb37d845dd6a288d486f19daea358f",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "670,112 670,92 675,87 681,85 690,85 696,83 707,82 712,84 723,84 730,88 731,104 729,116 677,116",
+      "charged_credits": 35,
+      "runtime_sha256": "fc90fd6f9d90e1a0c359ef67b66bfc161722fcdbe5824a504801dd84b2164a03"
+    },
+    "salon-plant": {
+      "task": "01a2197a-ef7b-72b7-8238-d3e7d60a1206",
+      "status": "SUCCEEDED",
+      "original_sha256": "fd9e240c6ba5df94e489bcab6d2b2d46c6ded080fde80637b2c89040f1e9e24d",
+      "runtime_file": "salon-plant.glb",
+      "requested_target_triangles": 7500,
+      "reference": "Natural Photos/023-shop-row-interior-interior.png",
+      "input_sha256": "00bc135eb4fee6dc4e7373a2e7512a899a5ce2dd0b6b251dabbfc21890dea0a4",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "212,240 222,233 235,232 241,223 248,223 251,230 263,227 270,228 260,235 271,237 266,244 254,248 265,250 262,259 252,263 255,274 250,288 256,289 253,311 247,315 231,315 228,289 235,288 231,272 219,284 221,274 212,277 215,267 209,268 211,258 216,251 209,251 212,246 221,241",
+      "charged_credits": 35,
+      "runtime_sha256": "0edcf1c93195698594460db2502a427a16cba15e0e5d7feaa3bcc5c385c939f3",
+      "runtime_repair": "Rebuilt the pot, branching stems and two-sided leaves to remove baked background walls."
+    },
+    "bakery-counter": {
+      "task": "01a21979-a8d1-7288-8602-c979c5b0ee64",
+      "status": "SUCCEEDED",
+      "original_sha256": "40ea103b0b719a7b755fb0ea94802586e71e48dc31760bd7816b026047ca0639",
+      "runtime_file": "bakery-counter.glb",
+      "requested_target_triangles": 12500,
+      "reference": "Natural Photos/111-cafe-row-interior-interior.png",
+      "input_sha256": "de5727ff2579cebdaf207ca26c46b4abc60d26ba2aeb6a7b87c47f369d3444ec",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "464,199 469,195 717,197 731,201 744,211 754,230 763,254 767,286 769,346 769,410 511,449 498,444 481,429 478,346 472,250",
+      "charged_credits": 35,
+      "runtime_sha256": "79766b3347472673ffea957a40728cfe990825dae6a0bebc1fd1c60352bc5e48"
+    },
+    "pantry-shelf": {
+      "task": "01a21979-afd3-744a-b4dd-defe70804bc1",
+      "status": "SUCCEEDED",
+      "original_sha256": "ac55a7237d44708e92a770f81af955764f6ef52362fcd103c9add6a6b89c2257",
+      "runtime_file": "pantry-shelf.glb",
+      "requested_target_triangles": 9000,
+      "reference": "Natural Photos/093-shop-row-interior-interior.png",
+      "input_sha256": "0e8a11c8d63258d17d775d560d9e8ed3985452ac93f10df4b8f55f7a885b3ad3",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "116,129 272,129 281,132 276,138 273,149 274,325 264,330 126,332 122,328 122,143",
+      "charged_credits": 35,
+      "runtime_sha256": "f13ea1f774d053161b260f2bbf442af36fe3636335c6d96c24bb19cbc3016459"
+    },
+    "shop-register": {
+      "task": "01a2197b-50af-70af-8c44-f67ea9bf752c",
+      "status": "SUCCEEDED",
+      "original_sha256": "debb09ff029eac2da6dbb606c32791503d44f243f9468282663c8b7c34b71516",
+      "runtime_file": "shop-register.glb",
+      "requested_target_triangles": 5500,
+      "reference": "Natural Photos/096-cafe-row-interior-interior.png",
+      "input_sha256": "2445374971c32047168d1e0e0c2f8e5e601493ca0821d366845b5377bde5e137",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "464,205 524,203 523,240 505,245 504,251 527,251 528,258 494,262 450,258 448,252 475,249 475,244 456,243",
+      "charged_credits": 35,
+      "runtime_sha256": "8bb6b6d80572bdb5d40fbe396acc6814a30a2ea03eb28c1d4954fb598b8d35d5"
+    },
+    "produce-crate": {
+      "task": "01a2197c-8b71-752d-8367-f27fb6f493f3",
+      "status": "SUCCEEDED",
+      "original_sha256": "1fc5432ad6266aa70ba76202eba34b435228564cb0b62b15834e831b0714a025",
+      "runtime_file": "produce-crate.glb",
+      "requested_target_triangles": 5500,
+      "reference": "Natural Photos/109-warehouse-district-drive.png",
+      "input_sha256": "3b8e7564d0c8ee5540f6574062d13768b1a8cddc360abac60ce56d7566e6fa4d",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "115,205 117,202 123,201 130,201 137,203 142,205 142,222 119,225 112,222 112,209",
+      "charged_credits": 35,
+      "runtime_sha256": "37edd84a3d99aeec4bead73d77faee87a938e919d0d0854ebc2bc8e263eb63f7",
+      "runtime_repair": "Rebuilt the four slatted walls, timber floor and individual oranges after the generation lost the fruit and left open polygons."
+    },
+    "pavement-menu": {
+      "task": "01a2197c-c1e4-7181-8d83-c4c9dece3b7e",
+      "status": "SUCCEEDED",
+      "original_sha256": "1db71212aa41378993ea4293326321a7b8c6d842b7f9d98b090d7da06f84b271",
+      "runtime_file": "pavement-menu.glb",
+      "requested_target_triangles": 4500,
+      "reference": "Natural Photos/112-shop-row-street.png",
+      "input_sha256": "354d4ed424f56a33ff0c0dd7ce9d768c7126565b868c8d518ed9eb990e0d6cd0",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "61,224 87,223 90,227 91,262 88,263 85,258 65,260 62,265 59,265 60,254",
+      "charged_credits": 35,
+      "runtime_sha256": "e5968e46874a310fd1aaf6348ba543b77dd10975b73069e8822f3d6fad5414ea"
+    },
+    "maroon-saloon": {
+      "task": "01a2197d-5723-77d4-92bd-41a1b11ac98a",
+      "status": "SUCCEEDED",
+      "original_sha256": "6a0d8e7150aa5ae719c105c2b94b1dfcb0c56fc4f33a92de12b334c354d43620",
+      "runtime_file": "maroon-saloon.glb",
+      "requested_target_triangles": 20000,
+      "reference": "Natural Photos/112-shop-row-street.png",
+      "input_sha256": "c120fc47805bb051578d88141ab3a8e0ff6411a80516038826a44fd93f3d3d8c",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "165,255 171,244 193,240 209,234 227,225 244,221 269,219 291,219 303,221 320,230 333,237 354,241 364,245 365,254 358,265 352,275 340,278 333,273 268,280 260,287 249,291 238,290 228,284 213,284 178,276 167,271",
+      "charged_credits": 35,
+      "runtime_sha256": "849acb71c1dd281af93ee44c5a52b5d4d6f41276d6a0d687c494aeececdfd3ad",
+      "runtime_repair": "Aligned the generated shell to the sedan axles, opened and lined all four wheel arches, tinted the glazing and reproduced spinning hubcaps from reference 112."
     }
   }
 }

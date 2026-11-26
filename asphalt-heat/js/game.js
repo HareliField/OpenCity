@@ -12,7 +12,7 @@ function groundY(x,z,referenceY=null){
   const grade=sampleGrade(x,z,referenceY);
   if(grade)y=Math.max(y,grade.height);
  }
- return y;
+ return worksFloorAt(x,z,referenceY,y);
 }
 function pushOut(p,r,R){
  if(R.radius){

@@ -10,7 +10,7 @@ From the game directory, run:
 python3 tools/serve.py
 ```
 
-Open [Asphalt Heat](http://127.0.0.1:8765/index.html). The game and its assets load locally. Add `?q=0`, `?q=1`, or `?q=2` to override automatic quality selection.
+Open [Asphalt Heat](http://127.0.0.1:8765/index.html). Daylight is the default. Add `?light=sunset` for the original evening sky. The game and its assets load locally. Add `?q=0`, `?q=1`, or `?q=2` to override automatic quality selection.
 
 | Action | Desktop |
 | --- | --- |
@@ -54,6 +54,14 @@ Street geometry uses metres. The midblock pavement drains from a 2% crown toward
 The civilian fleet includes original procedural models inspired by the Honda Civic, Toyota Corolla, Prius and RAV4, Volkswagen Golf GTI, MINI Cooper, Ford Mustang GT and F-150, Mazda MX-5, Porsche 911 Carrera, Volvo 240 Estate and Jeep Wrangler. Each has its own body proportions, wheelbase and lamp pattern. The name appears beneath the speedometer while driving.
 
 Run `node tools/street-test.js` to check intersection priority, pedestrian phases, vehicle queues, parking lanes, road surface contact and fleet geometry.
+
+## Market Street and the service gallery
+
+Tideline Market sits one block east of the starting shop row. Harbour Bakery shares its ground floor. Use **C** at the fruit or bread counter to buy food. The maroon four-door saloon is in the marked bay behind the market.
+
+Enter Market Flats through the west door. The stairs and lift connect the cellar, shops, flats and roof terrace. Use **C** inside the lift to travel to the displayed floor, or use the panel beside a landing to call it. Ferry Street Rooms in the west, Foundry Lofts near the warehouses, and Seabright Court near the beach each have their own shop, upper floors and roof access.
+
+The dry ledge in the cellar gallery crosses under Studio Boulevard to Tidewater Pump House. The power switch operates the market registers, lift and service lighting. The water valve controls tap pressure. The drain pump changes the storm sump level. Running a basin in the flats sends water into the separate sanitary line and its sight gauge.
 
 ## Driving, buildings, and assets
 

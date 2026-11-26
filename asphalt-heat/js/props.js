@@ -18,17 +18,26 @@ function initProps(){const C=(r0,r1,h,s=10)=>new THREE.CylinderGeometry(r0,r1,h,
   ...[-1.1,-.64,-.2,.25,.68,1.1].map(x=>[B(.081,.96,.095),x,.49,0])
  ]),mat:MAT.whiteMetal,shape:()=>new CANNON.Box(new CV(1.18,.49,.055)),off:new CV(0,.49,0),mass:32};
  T.mailbox={geo:propGeo([[C(.04,.04,1,6),0,.5,0],[B(.24,.26,.46),0,1.1,0]]),mat:MAT.darkMetal,shape:()=>new CANNON.Box(new CV(.13,.65,.24)),off:new CV(0,.65,0),mass:12};
- const spots=[...PROPSPOTS];for(const L of LAMPS)spots.push({type:'lamp',x:L.x,z:L.z,ry:L.ry});
+ T.lantern={geo:propGeo([[C(.14,.25,.40,12),0,.20,0],[C(.065,.12,3.80,10),0,2.22,0],
+  [C(.23,.09,.28,10),0,4.21,0],[C(.18,.23,.28,10),0,4.48,0],[new THREE.ConeGeometry(.27,.22,10),0,4.73,0]]),
+  mat:MAT.darkMetal,shape:()=>new CANNON.Box(new CV(.14,2.42,.14)),off:new CV(0,2.42,0),mass:155,glow:1};
+ T.postbox={geo:propGeo([[B(.58,.82,.53),0,.80,0],[B(.055,.44,.06),-.22,.22,.17],[B(.055,.44,.06),.22,.22,-.17]]),
+  mat:blue,shape:()=>new CANNON.Box(new CV(.30,.65,.32)),off:new CV(0,.65,0),mass:60};
+ const spots=[...PROPSPOTS];
+ for(const L of LAMPS){
+  const B=blockOf(L.x,L.z),historic=B&&(B.park||B.dist==='oldtown'||(B.i===3||B.i===4)&&B.j===5);
+  spots.push({type:historic?'lantern':'lamp',x:L.x,z:L.z,ry:L.ry});
+ }
  const byType={};for(const s of spots){(byType[s.type]=byType[s.type]||[]).push(s);}
  const o=new THREE.Object3D();
  for(const t in byType){const P=T[t];const arr=byType[t];const im=new THREE.InstancedMesh(P.geo,P.mat,arr.length);im.castShadow=true;im.receiveShadow=true;im.instanceMatrix.setUsage(THREE.DynamicDrawUsage);P.mesh=im;if(LOWSHADOW)im.layers.set(2);scene.add(im);
   arr.forEach((s,k)=>{const y=blockY(s.x,s.z);o.position.set(s.x,y,s.z);o.rotation.set(0,s.ry||0,0);o.updateMatrix();im.setMatrixAt(k,o.matrix);PROPS.list.push({t,P,x:s.x,y,z:s.z,ry:s.ry||0,idx:k,body:null,moved:false,broken:false,spray:0,renderPosition:o.position.clone(),renderQuaternion:o.quaternion.clone()});});}
  /* lamp glows */
- const lamps=PROPS.list.filter(p=>p.t==='lamp');const gp=new Float32Array(lamps.length*3),gc=new Float32Array(lamps.length*3);
- lamps.forEach((p,k)=>{p.gi=k;gp[k*3]=p.x+Math.sin(p.ry)*1.85;gp[k*3+1]=p.y+6.9;gp[k*3+2]=p.z+Math.cos(p.ry)*1.85;gc[k*3]=1;gc[k*3+1]=.72;gc[k*3+2]=.42;});
+ const lamps=PROPS.list.filter(p=>p.P.glow);const gp=new Float32Array(lamps.length*3),gc=new Float32Array(lamps.length*3);
+ lamps.forEach((p,k)=>{p.gi=k;const at=lampEmitter(p);gp[k*3]=at.x;gp[k*3+1]=at.y;gp[k*3+2]=at.z;gc[k*3]=1;gc[k*3+1]=.72;gc[k*3+2]=.42;});
  const gg=new THREE.BufferGeometry();gg.setAttribute('position',new THREE.BufferAttribute(gp,3));gg.setAttribute('color',new THREE.BufferAttribute(gc,3));
- PROPS.glow=new THREE.Points(gg,new THREE.PointsMaterial({map:glowTex(),size:1.32,vertexColors:true,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,opacity:.68}));PROPS.glow.frustumCulled=false;scene.add(PROPS.glow);
- const head=new THREE.InstancedMesh(new THREE.PlaneGeometry(.36,.66).rotateX(Math.PI/2),new THREE.MeshBasicMaterial({color:new THREE.Color(3,2.3,1.5)}),lamps.length);lamps.forEach((p,k)=>{o.position.set(gp[k*3],gp[k*3+1]-.08,gp[k*3+2]);o.rotation.set(0,p.ry,0);o.updateMatrix();head.setMatrixAt(k,o.matrix);});PROPS.heads=head;scene.add(head);}
+ PROPS.glow=new THREE.Points(gg,new THREE.PointsMaterial({map:glowTex(),size:1.32,vertexColors:true,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,opacity:.68}));PROPS.glow.visible=!DAYLIGHT;PROPS.glow.frustumCulled=false;scene.add(PROPS.glow);
+ const head=new THREE.InstancedMesh(new THREE.PlaneGeometry(.36,.66).rotateX(Math.PI/2),new THREE.MeshBasicMaterial({color:new THREE.Color(3,2.3,1.5)}),lamps.length);lamps.forEach((p,k)=>{o.position.set(gp[k*3],gp[k*3+1]-.08,gp[k*3+2]);o.rotation.set(0,p.ry,0);o.updateMatrix();head.setMatrixAt(k,o.matrix);});head.visible=!DAYLIGHT;PROPS.heads=head;scene.add(head);}
 let _glowT=null;function glowTex(){if(_glowT)return _glowT;const[c,g]=cvs(64,64);const gr=g.createRadialGradient(32,32,0,32,32,32);gr.addColorStop(0,'rgba(255,255,255,1)');gr.addColorStop(.2,'rgba(255,255,255,.55)');gr.addColorStop(1,'rgba(255,255,255,0)');g.fillStyle=gr;g.fillRect(0,0,64,64);return _glowT=new THREE.CanvasTexture(c);}
 function blockY(x,z){return groundY(x,z);}
 const _po=new THREE.Object3D();let propT=0;

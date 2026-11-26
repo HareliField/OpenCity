@@ -9,6 +9,7 @@ const V3=THREE.Vector3;const unitBox=new THREE.BoxGeometry(1,1,1);
 const ORIGINAL_GRID=8,N=16,CELL=64,HALF=8,W=N*CELL,S=W+16,LANE=4,SW=4;
 const isMobile=matchMedia('(pointer:coarse)').matches||/Android|iPhone|iPad/.test(navigator.userAgent);
 const qp=new URLSearchParams(location.search);
+const DAYLIGHT=qp.get('light')!=='sunset';
 const QUALITY={level:qp.has('q')?+qp.get('q'):(isMobile?1:2)};
 function applyQuality(){const L=QUALITY.level;QUALITY.physical=L>=2;QUALITY.refl=L>=1;QUALITY.bloom=L>=1;QUALITY.msaa=L>=2?4:(L>=1?2:0);QUALITY.pr=Math.min(devicePixelRatio,L>=2?1.75:L>=1?1.2:.9);QUALITY.shadow=L>=2?2048:1024;QUALITY.reflScale=L>=2?.5:.33;QUALITY.peds=L>=2?26:L>=1?18:12;}
 applyQuality();
@@ -29,8 +30,8 @@ renderer.physicallyCorrectLights=false;
 const scene=new THREE.Scene();
 const camera=new THREE.PerspectiveCamera(60,1,.12,2600);camera.layers.enable(2);
 /* sun (matches the sky panorama: sun azimuth +X, low) */
-const SUNDIR=new V3(.988,.151,.03).normalize();
-const SKYSUN=new V3(.991,.136,0);
+const SUNDIR=(DAYLIGHT?new V3(.6394,.743,.1978):new V3(.988,.151,.03)).normalize();
+const SKYSUN=DAYLIGHT?SUNDIR:new V3(.991,.136,0);
 /* ---- fog: colour follows the sky in the view direction ---- */
 {const sx=SKYSUN.x.toFixed(3),sz=SKYSUN.z.toFixed(3),sy=SKYSUN.y.toFixed(3);
  THREE.ShaderChunk.fog_pars_vertex='#ifdef USE_FOG\nvarying vec3 vFogPos;\n#endif';
@@ -39,7 +40,8 @@ const SKYSUN=new V3(.991,.136,0);
  THREE.ShaderChunk.fog_fragment=`#ifdef USE_FOG
  float fogD=length(vFogPos);vec3 fw=normalize(vec3(dot(viewMatrix[0].xyz,vFogPos),dot(viewMatrix[1].xyz,vFogPos),dot(viewMatrix[2].xyz,vFogPos)));
  vec2 fxz=normalize(fw.xz+1e-5);float fsd=max(dot(fxz,normalize(vec2(${sx},${sz}))),0.);
- vec3 fcol=mix(vec3(.225,.235,.295),vec3(.86,.39,.19),pow(fsd,4.))+vec3(2.2,.75,.12)*pow(max(dot(fw,normalize(vec3(${sx},${sy},${sz}))),0.),28.);
+ vec3 fcol=${DAYLIGHT?'mix(vec3(.51,.60,.72),vec3(.80,.82,.82),pow(fsd,2.))':'mix(vec3(.225,.235,.295),vec3(.86,.39,.19),pow(fsd,4.))'}+
+  ${DAYLIGHT?'vec3(.32,.29,.24)':'vec3(2.2,.75,.12)'}*pow(max(dot(fw,normalize(vec3(${sx},${sy},${sz}))),0.),28.);
  #ifdef FOG_EXP2
  float fogFactor=1.-exp(-fogDensity*fogDensity*fogD*fogD);
  #else
@@ -48,10 +50,10 @@ const SKYSUN=new V3(.991,.136,0);
  fogFactor*=clamp(1.15-fw.y*2.2,.0,1.);
  gl_FragColor.rgb=mix(gl_FragColor.rgb,fcol*fogColor,fogFactor);
  #endif`;}
-scene.fog=new THREE.FogExp2(0xffffff,.00315);
+scene.fog=new THREE.FogExp2(0xffffff,DAYLIGHT?.00175:.00315);
 /* ---- lights ---- */
-const hemi=new THREE.HemisphereLight(lin(0xc1cee8),lin(0x66584d),1.06);scene.add(hemi);
-const sun=new THREE.DirectionalLight(lin(0xffaa72),2.35);sun.castShadow=true;
+const hemi=new THREE.HemisphereLight(lin(DAYLIGHT?0xd8e2ed:0xc1cee8),lin(DAYLIGHT?0x9b9389:0x66584d),DAYLIGHT?1.50:1.06);scene.add(hemi);
+const sun=new THREE.DirectionalLight(lin(DAYLIGHT?0xfff1de:0xffaa72),DAYLIGHT?2.12:2.35);sun.castShadow=true;
 sun.shadow.mapSize.set(QUALITY.shadow,QUALITY.shadow);{const sc=sun.shadow.camera;sc.left=-48;sc.right=48;sc.top=48;sc.bottom=-48;sc.near=1;sc.far=500;}
 sun.shadow.bias=-.00019;sun.shadow.normalBias=.023;scene.add(sun,sun.target);
 const muzzleL=new THREE.PointLight(0xffc070,0,14,2);scene.add(muzzleL);
@@ -67,11 +69,11 @@ const skyMat=new THREE.ShaderMaterial({side:THREE.BackSide,depthWrite:false,fog:
  ${POST?'':'c=c/(c+.6);c=pow(c,vec3(1./2.2));'}gl_FragColor=vec4(c,1.);}`});
 const sky=new THREE.Mesh(new THREE.SphereGeometry(2000,48,24),skyMat);sky.frustumCulled=false;sky.renderOrder=-10;scene.add(sky);
 function loadSky(done){const ld=new THREE.TextureLoader();let n=2;const fin=()=>{if(--n===0)done();};
- ld.load('tex/sky.jpg',t=>{t.minFilter=THREE.LinearFilter;t.generateMipmaps=false;skyMat.uniforms.tSky.value=t;fin();},undefined,fin);
+ ld.load(DAYLIGHT?'tex/sky-daylight.jpg':'tex/sky.jpg',t=>{t.minFilter=THREE.LinearFilter;t.generateMipmaps=false;skyMat.uniforms.tSky.value=t;fin();},undefined,fin);
  const im=new Image();im.onload=()=>{const[c,g]=cvs(im.width,im.height);g.drawImage(im,0,0);const d=g.getImageData(0,0,c.width,c.height).data;const f=new Float32Array(c.width*c.height*4);
   for(let i=0;i<d.length;i+=4){for(let k=0;k<3;k++)f[i+k]=Math.min(Math.pow(d[i+k]/255,2.2)*4,30);f[i+3]=1;}
   const dt=new THREE.DataTexture(f,c.width,c.height,THREE.RGBAFormat,THREE.FloatType);dt.mapping=THREE.EquirectangularReflectionMapping;dt.flipY=true;dt.needsUpdate=true;dt.magFilter=dt.minFilter=THREE.LinearFilter;
-  try{const pm=new THREE.PMREMGenerator(renderer);scene.environment=pm.fromEquirectangular(dt).texture;pm.dispose();}catch(e){console.warn(e);}fin();};im.onerror=fin;im.src='tex/env.jpg';}
+  try{const pm=new THREE.PMREMGenerator(renderer);scene.environment=pm.fromEquirectangular(dt).texture;pm.dispose();}catch(e){console.warn(e);}fin();};im.onerror=fin;im.src=DAYLIGHT?'tex/env-daylight.jpg':'tex/env.jpg';}
 
 /* ---- planar reflection for wet ground ---- */
 const REFL={rt:null,cam:new THREE.PerspectiveCamera(),mat:new THREE.Matrix4(),on:false,uniforms:{tRefl:{value:null},reflMat:{value:new THREE.Matrix4()},reflOn:{value:0}}};
@@ -112,7 +114,7 @@ function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
     ${opt.paint?'if(fbm2(vWP.xz*22.)+vnoise(vWP.xz*69.)*.30<.30)discard;':''}`)
    .replace('#include <normal_fragment_maps>','#include <normal_fragment_maps>\nnormal=normalize(mix(normal,normalize(vNormal),pud*.9));')
    .replace('#include <tonemapping_fragment>',`
-    {vec3 V=normalize(cameraPosition-vWP);float fr=.13+.87*pow(1.-max(V.y,0.),3.1);float kk=(pud*.88+damp*.30*(1.-pud))*fr*reflOn;
+    {vec3 V=normalize(cameraPosition-vWP);float fr=.13+.87*pow(1.-max(V.y,0.),3.1);float kk=(pud*${DAYLIGHT?'.66':'.88'}+damp*${DAYLIGHT?'.14':'.30'}*(1.-pud))*fr*reflOn;
      if(kk>.002){vec2 dist=normal.xz*mix(.016,.0025,pud)+vec2(grain-.5,big-.5)*.003;vec4 ru=vRU;ru.xy+=dist*ru.w;vec3 rc=texture2DProj(tRefl,ru).rgb;
       if(pud<.6){vec4 r2=ru;r2.x+=.008*ru.w;vec4 r3=ru;r3.y-=.012*ru.w;rc=(rc+texture2DProj(tRefl,r2).rgb+texture2DProj(tRefl,r3).rgb)/3.;}
       vec2 edge=abs(ru.xy/max(.001,ru.w)-.5);
