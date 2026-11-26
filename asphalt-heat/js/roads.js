@@ -137,7 +137,9 @@ function buildRoadStrips(rows,width,asphalt,paint){
   const rim=half+.122;
   append(surface,surfaceIndex,[edge(a,-rim,.014),edge(a,rim,.014),edge(b,-rim,.014),edge(b,rim,.014)]);
   surfaceUV.push(0,d,width,d,0,next,width,next);
-  if(i>=3&&i<rows.length-4){
+  const atCrossing=a.p.y<.39 && b.p.y<.39 &&
+   Math.abs(a.p.x-Math.round(a.p.x/CELL)*CELL)<16 && Math.abs(a.p.z-Math.round(a.p.z/CELL)*CELL)<16;
+  if(i>=3&&i<rows.length-4&&!atCrossing){
    marking(a,b,-.19,-.08,[.61,.38,.065]);
    marking(a,b,.08,.19,[.61,.38,.065]);
    marking(a,b,-half+.24,-half+.34,[.67,.67,.63]);

@@ -232,15 +232,6 @@ function streetDetails(block){
   const rot=edge*Math.PI/2;
   const M=new THREE.Matrix4().makeRotationY(-rot);
   M.setPosition(x,0,z);
-  for(const t of [8,27,43]){
-   const style=dist==='docks'?1:.55;
-   plainBox(m.iron,t-.33,t+.33,.001,.017,-.57,-.17,{M,shadow:false});
-   for(let k=0;k<6;k++){
-    const u=t-.235+k*.094;
-    plainBox(m.rubber,u-.015,u+.015,.018,.021,-.53,-.20,{M,shadow:false});
-   }
-   if(style===1||t===27)topQuad(m.wornSlab,t-.60,t+.60,.156,.08,.78,1.6,M,false);
-  }
   if(dist!=='docks'&&dist!=='beach'){
    for(let i=0;i<12;i++){
     const t=2+srange(0,44),r=.034+srange(0,.061),zLocal=.26+srange(0,2.85);
@@ -248,14 +239,7 @@ function streetDetails(block){
    }
   }
  }
- if((block.i+block.j)%2===0){
-  const x=x0-5.35,z=z0+10.4;
-  cyl(m.iron,x,.003,z,.34,.34,.018,18,{shadow:false});
-  for(let i=0;i<6;i++){
-   const delta=-.17+i*.068;
-   plainBox(m.rubber,x-.20,x+.20,.021,.024,z+delta,z+delta+.014,{shadow:false});
-  }
- }
+
 }
 
 function finishStreetDetails(){

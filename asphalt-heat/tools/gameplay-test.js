@@ -16,7 +16,8 @@ run(`const CANNON=window.CANNON, CV=CANNON.Vec3, V3=THREE.Vector3, PHYS_GROUP={w
 `);
 run(read('js/access.js'));
 run(read('js/roads.js'));
-if(fs.existsSync(path.join(__dirname,'../js/street-plan.js')))run(read('js/street-plan.js'));
+run(read('js/street-plan.js'));
+run(read('js/street-surface.js'));
 run(read('js/freight.js'));
 run(read('js/game.js'));
 run(read('js/dispatch.js'));

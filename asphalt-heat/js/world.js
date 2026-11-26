@@ -428,7 +428,7 @@ function parkCornerPaths(block,x,z,half){
 }
 /* ---- street furniture placement ---- */
 function streetProps(B){const{x0,x1,z0,z1}=B;const dist=districtOf(B.i,B.j);
- for(const[sx,sz]of[[-1,-1],[1,-1],[1,1],[-1,1]])LAMPS.push({x:sx<0?x0+.6:x1-.6,z:sz<0?z0+.6:z1-.6,ry:Math.atan2(-sx,-sz)});
+ for(const[sx,sz]of[[-1,-1],[1,-1],[1,1],[-1,1]])LAMPS.push({x:sx<0?x0+10.4:x1-10.4,z:sz<0?z0+.76:z1-.76,ry:Math.atan2(-sx,-sz)});
  for(const e of[0,1,2,3]){const len=48;for(let t=16;t<len-12;t+=16){const p=e===0?[x0+t,z0+.6,Math.PI]:e===1?[x1-.6,z0+t,Math.PI/2]:e===2?[x0+t,z1-.6,0]:[x0+.6,z0+t,-Math.PI/2];if(srnd()<.55)LAMPS.push({x:p[0],z:p[1],ry:p[2]+Math.PI,mid:1});}}
  const sideP=(e,t,o)=>e===0?[x0+t,z0+o]:e===1?[x1-o,z0+t]:e===2?[x0+t,z1-o]:[x0+o,z0+t];
  const kinds=dist==='docks'?['barrel','barrel','cone','bin','hydrant']:dist==='suburb'?['bin','hydrant','mailbox']:['hydrant','bin','news','meter','meter','bench','bollard','bin'];
@@ -562,24 +562,6 @@ function skyline(){for(let k=0;k<130;k++){
  for(let k=0;k<16;k++){const a=srange(Math.PI*.6,Math.PI*1.9),r=srange(900,1200);if(Math.cos(a)>0)continue;
   const g=new THREE.ConeGeometry(srange(165,300),srange(66,130),16);g.translate(W/2+Math.cos(a)*r,11,W/2+Math.sin(a)*r);
   addGeo(new THREE.MeshStandardMaterial({color:lin(0x5a5048),roughness:1}),g,false);}}
-function roadMarkings(){const pos=[],col=[],idx=[];const Y=.012;const quad=(x0,z0,x1,z1,c)=>{const b=pos.length/3;pos.push(x0,Y,z0,x1,Y,z0,x0,Y,z1,x1,Y,z1);for(let i=0;i<4;i++)col.push(c[0],c[1],c[2]);idx.push(b,b+2,b+1,b+1,b+2,b+3);};
- const YEL=[.75,.52,.06],WHT=[.82,.82,.8];
- // Leave the side streets around the porch block unstriped between crossings.
- for(let k=0;k<=N;k++)for(let s=0;s<N;s++){
-  const c=k*CELL,a=s*CELL+HALF+3.6,b=(s+1)*CELL-HALF-3.6;
-  if(k!==2||s<4||s>5){
-   quad(c-.22,a,c-.1,b,YEL);quad(c+.1,a,c+.22,b,YEL);
-   quad(c-HALF+.35,a,c-HALF+.5,b,WHT);quad(c+HALF-.5,a,c+HALF-.35,b,WHT);
-  }
-  if(k!==5||s<1||s>2){
-   quad(a,c-.22,b,c-.1,YEL);quad(a,c+.1,b,c+.22,YEL);
-   quad(a,c-HALF+.35,b,c-HALF+.5,WHT);quad(a,c+HALF-.5,b,c+HALF-.35,WHT);
-  }
- }
- for(let i=0;i<=N;i++)for(let j=0;j<=N;j++){const x=i*CELL,z=j*CELL;for(let s=-6.6;s<=6.6;s+=1.1){if(j>0)quad(x+s-.25,z-HALF-3,x+s+.25,z-HALF-.6,WHT);if(j<N)quad(x+s-.25,z+HALF+.6,x+s+.25,z+HALF+3,WHT);if(i>0)quad(x-HALF-3,z+s-.25,x-HALF-.6,z+s+.25,WHT);if(i<N)quad(x+HALF+.6,z+s-.25,x+HALF+3,z+s+.25,WHT);}
-  if(j>0)quad(x-HALF+.3,z-HALF-3.6,x-.1,z-HALF-3.2,WHT);if(j<N)quad(x+.1,z+HALF+3.2,x+HALF-.3,z+HALF+3.6,WHT);if(i>0)quad(x-HALF-3.6,z+.1,x-HALF-3.2,z+HALF-.3,WHT);if(i<N)quad(x+HALF+3.2,z-HALF+.3,x+HALF+3.6,z-.1,WHT);}
- const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));g.setAttribute('color',new THREE.Float32BufferAttribute(col,3));const n=new Float32Array(pos.length);for(let i=1;i<n.length;i+=3)n[i]=1;g.setAttribute('normal',new THREE.BufferAttribute(n,3));g.setIndex(idx);
- const m=new THREE.Mesh(g,makeWet(new THREE.MeshStandardMaterial({vertexColors:true,roughness:.55,polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-1}),{wet:.8,paint:true}));m.receiveShadow=true;scene.add(m);}
 /* ---- trees, palms, lamps, traffic lights (instanced) ---- */
 function leafTex(palm){const[c,g]=cvs(256,256);g.clearRect(0,0,256,256);
  if(palm){g.translate(128,250);for(let i=0;i<60;i++){const t=i/60,y=-t*240,len=(1-Math.abs(t-.45)*1.6)*95+12;for(const s of[-1,1]){g.save();g.translate(0,y);g.rotate(s*(1.05-t*.4));g.fillStyle=`hsl(${rnd(85,105)},${rnd(35,50)}%,${rnd(22,34)}%)`;g.beginPath();g.ellipse(0,-len/2,4.5,len/2,0,0,7);g.fill();g.restore();}}g.fillStyle='#5a4a2a';g.fillRect(-2,-240,4,240);}
@@ -623,32 +605,6 @@ function plantTrees(){const o=new THREE.Object3D(),col=new THREE.Color();
  installTreeModels(PALMS,palmTrunks,palmLeaves,'palm-tree',(x,z,i)=>
   i%3===0&&x>428&&z>235&&z<305);
 }
-/* traffic lights */
-const TL={mats:{}};
-const signalGroup=(i,j)=>(i+2*j)%4;
-function signalPhase(i,j,t){
- const cycle=(t+signalGroup(i,j)*4)%22;
- return {ns:cycle<9?'G':cycle<11?'Y':'R',ew:cycle>=11&&cycle<20?'G':cycle>=20?'Y':'R'};
-}
-function buildTrafficLights(){const o=new THREE.Object3D();const poles=[],heads=[],lamps={};
- for(let i=0;i<=N;i++)for(let j=0;j<=N;j++){const x=i*CELL,z=j*CELL;for(const[sx,sz]of[[-1,-1],[1,1]]){const px=x+sx*(HALF+.7),pz=z+sz*(HALF+.7);if(px<0||pz<0||px>W||pz>W)continue;poles.push([px,pz,sx,sz]);STATIC.push({x0:px-.13,x1:px+.13,z0:pz-.13,z1:pz+.13,h:5.88,radius:.13});
-  for(const ax of['ns','ew']){const ry=ax==='ns'?(sz<0?0:Math.PI):(sx<0?Math.PI/2:-Math.PI/2);const armL=3.2;const hx=px+(ax==='ns'?-sx*armL:0)*0+(ax==='ew'?0:0),hz=pz;
-   const ox=ax==='ns'?-sx*0:0;const hx2=ax==='ns'?px-sx*1.6:px,hz2=ax==='ew'?pz-sz*1.6:pz;heads.push([hx2,hz2,ry]);const fx=Math.sin(ry)*.17,fz=Math.cos(ry)*.17;
-   (lamps[signalGroup(i,j)+ax+'R']||=[]).push([hx2+fx,5.15,hz2+fz,ry]);(lamps[signalGroup(i,j)+ax+'Y']||=[]).push([hx2+fx,4.82,hz2+fz,ry]);(lamps[signalGroup(i,j)+ax+'G']||=[]).push([hx2+fx,4.49,hz2+fz,ry]);}}}
- const pg=mergeGeos([(()=>{const g=new THREE.CylinderGeometry(.1,.13,5.8,8);g.translate(0,2.9,0);return g;})()]);const pm=new THREE.InstancedMesh(pg,MAT.darkMetal,poles.length);poles.forEach((p,k)=>{o.position.set(p[0],.15,p[1]);o.rotation.set(0,0,0);o.updateMatrix();pm.setMatrixAt(k,o.matrix);});pm.castShadow=true;scene.add(pm);
- const arm=new THREE.BoxGeometry(.08,.08,1.7);arm.translate(0,5.26,.85);const am=new THREE.InstancedMesh(arm,MAT.darkMetal,poles.length*2);let ai=0;poles.forEach(p=>{for(const ry of[Math.atan2(-p[2],0),Math.atan2(0,-p[3])]){o.position.set(p[0],.15,p[1]);o.rotation.set(0,ry,0);o.updateMatrix();am.setMatrixAt(ai++,o.matrix);}});scene.add(am);
- const hg=new THREE.BoxGeometry(.36,1.12,.28);hg.translate(0,4.82,0);const hm=new THREE.InstancedMesh(hg,new THREE.MeshStandardMaterial({color:lin(0x1a1b1d),roughness:.5}),heads.length);heads.forEach((p,k)=>{o.position.set(p[0],0,p[1]);o.rotation.set(0,p[2],0);o.updateMatrix();hm.setMatrixAt(k,o.matrix);});hm.castShadow=true;scene.add(hm);
- const lg=new THREE.CircleGeometry(.12,10);const cols={R:[3,.12,.05],Y:[3,1.4,.1],G:[.15,3,.6]};
- for(const key in lamps){const c=cols[key[3]];const m=new THREE.MeshBasicMaterial({color:new THREE.Color(.06,.06,.06)});m.userData.on=new THREE.Color(c[0],c[1],c[2]);TL.mats[key]=m;const im=new THREE.InstancedMesh(lg,m,lamps[key].length);lamps[key].forEach((p,k)=>{o.position.set(p[0],p[1],p[2]);o.rotation.set(0,p[3],0);o.updateMatrix();im.setMatrixAt(k,o.matrix);});scene.add(im);}}
-function updLights(t){
- for(let group=0;group<4;group++){
-  const phase=signalPhase(group,0,t);
-  for(const ax of ['ns','ew'])for(const lamp of 'RYG'){
-   const m=TL.mats[group+ax+lamp];if(phase[ax]===lamp)m.color.copy(m.userData.on);else m.color.setRGB(.05,.05,.05);
-  }
- }
-}
-
 function lighthouse(){
  const x=W+35,z=838.8,base={x0:x-3.45,x1:x+3.45,z0:z-4.25,z1:z+4.25};
  const B=blocks[cellKey(x,z)];

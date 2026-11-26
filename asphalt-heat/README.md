@@ -37,6 +37,24 @@ Touch devices show an on-screen stick, action controls, camera and HUD buttons. 
 - **South Shore Harbor.** The small private marina sits on the boardwalk south of Lighthouse Cove. It has three timber docks, four moored boats and a stone breakwater. Look for the anchor on the minimap when you get close.
 - **Port of Asphalt.** Take either signed gate south from the warehouse district. Follow the marked truck lanes to the container yards, rail loading sidings and quay, where four cranes move cargo beside two berthed ships. Look for the container symbol on the minimap.
 
+## Streets and traffic
+
+The Verve Street intersection at Studio Boulevard has mast-arm signals, pedestrian countdowns and a setback stop bar. Walk one block south for a priority intersection. Drive west to Juniper Street for the residential speed hump, or east to Breakwater Way for the parking-protected, two-way cycle track.
+
+The city uses right-hand traffic. Four-lane avenues carry through traffic, collectors have marked parking bays, and neighborhood streets use two-way or all-way stops. Drivers choose an appropriate lane before turning, signal, queue by bumper distance, yield on permissive left turns and wait for people using the crossing. Signals run an offset 60-second cycle with a pedestrian head start, amber and all-red clearance. On the waterfront, parked cars and a raised buffer sit between the traffic lanes and the cycle track.
+
+Street geometry uses metres. The midblock pavement drains from a 2% crown toward curbside catch basins. A neighborhood hump rises 76 mm over 3.66 m. The wheel collision surface follows the visible profile through the hump, utility repairs, driveway aprons and curb ramps. Selected retail and residential corners extend into the parking strip to shorten the crossing.
+
+**Municipal drawings used for the game**
+
+- Seattle standard plans 436a and 712 informed the hump profile, 3.05 m crosswalk, stop-bar widths and setback. [Construction drawings](https://www.seattle.gov/documents/Departments/SPU/Construction-Resources/standards-guidelines/specifications-plans/2026-Standard-Plans.pdf)
+- Seattle's Alaskan Way sheet RS1 informed the order of the cycle track, buffer, parked cars and motor lanes on Breakwater Way. The game fits that arrangement into its 16 m roadway. [Alaskan Way typical sections](https://www.seattle.gov/documents/departments/sdot/bikeprogram/alaskan%20way%20pbl/alaskan%20way%20safety_100percent.pdf#page=7)
+- New York's pole elevations and curb-extension details informed signal hardware and the extended corners. San Francisco's intersection plans informed parking setbacks, crossing visibility and ramp placement. [NYC pole drawings](https://www.nyc.gov/html/dot/downloads/pdf/nycdot-street-lighting-standard-drawings.pdf) · [NYC curb extensions](https://www.nycstreetdesign.info/geometry/curb-extension) · [San Francisco intersection design](https://sfbetterstreets.org/design-guidelines/intersection-design/index.html)
+
+The civilian fleet includes original procedural models inspired by the Honda Civic, Toyota Corolla, Prius and RAV4, Volkswagen Golf GTI, MINI Cooper, Ford Mustang GT and F-150, Mazda MX-5, Porsche 911 Carrera, Volvo 240 Estate and Jeep Wrangler. Each has its own body proportions, wheelbase and lamp pattern. The name appears beneath the speedometer while driving.
+
+Run `node tools/street-test.js` to check intersection priority, pedestrian phases, vehicle queues, parking lanes, road surface contact and fleet geometry.
+
 ## Driving, buildings, and assets
 
 Vehicles use a 90 Hz physics step, individual suspension and wheel contact, separate steering angles for the front wheels, and different traction on wet roads, concrete, and sand. Store entrances, house doors, and warehouse shutters open and close on real collision shapes. Many loose objects, including salon chairs and street bins, move when pushed. Trunks, counters, fences, poles, fountains, and railings are solid. Avatar falls use articulated constraints.

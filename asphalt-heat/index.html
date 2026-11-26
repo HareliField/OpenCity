@@ -43,6 +43,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
 #evade{width:clamp(110px,30vw,150px);height:3px;background:rgba(0,0,0,.4);border-radius:3px;overflow:hidden;opacity:0}
 #evade i{display:block;height:100%;width:0;background:#8fc8ff}
 #speedo{display:none;position:absolute;left:50%;bottom:max(18px,env(safe-area-inset-bottom));transform:translateX(-50%);font:400 clamp(30px,8vw,46px)/1 Anton,Impact,sans-serif;color:#fff;text-shadow:0 2px 6px #000;text-align:center}#speedo small{display:block;font:700 11px Inter,sans-serif;opacity:.7;letter-spacing:2px}
+#vehicleName{display:block;font:600 12px Inter,system-ui,sans-serif;letter-spacing:.03em;line-height:1.5;white-space:nowrap}
 #lbar{height:6px;width:min(320px,80vw);margin:10px auto 0;background:rgba(0,0,0,.35);border-radius:4px;overflow:hidden}#lbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffe08a,#ffb23a);transition:width .3s}
 #credits{margin-top:14px;font-size:11px;opacity:.55;max-width:440px;margin-left:auto;margin-right:auto}
 #mm{width:clamp(108px,29vw,150px);height:clamp(108px,29vw,150px);border-radius:50%;border:3px solid rgba(0,0,0,.7);box-shadow:0 0 0 2px rgba(255,255,255,.35),0 6px 16px rgba(0,0,0,.5)}
@@ -129,7 +130,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
   <div id="policeRadio" hidden></div>
   <div id="toast"></div><div id="banner"></div>
   <div id="prog"><span>ROBBING…</span><div class="bar"><i></i></div></div>
-  <div id="speedo">0<small>KM/H</small></div>
+  <div id="speedo">0<small>KM/H</small><span id="vehicleName"></span></div>
   <div id="joy"><div id="knob"></div></div>
   <div id="interaction" hidden><kbd>C</kbd><span></span></div>
   <div id="btns"><button id="bSprint">SPRINT</button><button id="bWep">WEAPON</button><button id="bAct">ENTER</button><button id="bFire">PUNCH</button></div>
@@ -159,5 +160,5 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
   <div id="credits">People: Microsoft Rocketbox avatars (MIT) · Surfaces &amp; sky: Poly Haven (CC0) · Physics: cannon-es · Rendering: three.js</div>
 </div></div>
 <script src="lib/three.min.js"></script><script src="lib/GLTFLoader.js"></script><script src="lib/SkeletonUtils.js"></script><script src="lib/cannon.js"></script>
-<script src="js/core.js"></script><script src="js/phys.js"></script><script src="js/cargen.js"></script><script src="js/chars.js"></script><script src="js/world.js"></script><script src="js/harbor.js"></script><script src="js/freight.js"></script><script src="js/streets.js"></script><script src="js/interiors.js"></script><script src="js/access.js"></script><script src="js/roads.js"></script><script src="js/props.js"></script><script src="js/scenery.js"></script><script src="js/game.js"></script><script src="js/department.js"></script><script src="js/police-world.js"></script><script src="js/police-desk.js"></script><script src="js/dispatch.js"></script><script src="js/main.js"></script>
+<script src="js/core.js"></script><script src="js/phys.js"></script><script src="js/cargen.js"></script><script src="js/fleet.js"></script><script src="js/chars.js"></script><script src="js/world.js"></script><script src="js/harbor.js"></script><script src="js/freight.js"></script><script src="js/streets.js"></script><script src="js/interiors.js"></script><script src="js/access.js"></script><script src="js/roads.js"></script><script src="js/street-plan.js"></script><script src="js/street-surface.js"></script><script src="js/street-signals.js"></script><script src="js/city-traffic.js"></script><script src="js/props.js"></script><script src="js/scenery.js"></script><script src="js/game.js"></script><script src="js/department.js"></script><script src="js/police-world.js"></script><script src="js/police-desk.js"></script><script src="js/dispatch.js"></script><script src="js/main.js"></script>
 </body></html>
