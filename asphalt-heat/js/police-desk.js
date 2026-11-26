@@ -11,6 +11,7 @@ function renderPoliceDesk(){
  document.getElementById('deskStation').textContent=deskStation.name+' · '+deskTab;
  const rows=[];
  const roster=[];
+ let liveRow=-1;
  if(deskTab==='Cases'){
   for(const c of [...pd.cases].reverse())if(c.stage!=='Unreported'){
    const investigator=pd.staff.find(p=>p.personId===(c.detective||c.patrol));
@@ -18,8 +19,9 @@ function renderPoliceDesk(){
     const seconds=Math.max(0,Math.floor(event.at-c.opened));
     return '+'+Math.floor(seconds/60)+'m '+String(seconds%60).padStart(2,'0')+'s · '+event.from+(event.to?' → '+event.to:'')+' — '+event.message;
    });
+   if(c===streetIncidents.current?.file)liveRow=rows.length;
    rows.push(['File '+String(c.id).padStart(4,'0')+' · '+(c.title||c.kind),(c.kind==='Homicide'&&['Wanted','Booked'].includes(c.stage)?'Solved · ':'')+c.stage+' · '+(investigator?.name||'Awaiting assignment'),
-    history.join('\n'),c.evidence.map(e=>e.type+' · '+e.source+' · '+e.value).join('\n')||'No evidence filed']);
+    c.victimName?'Victim · '+c.victimName:'',history.join('\n'),c.evidence.map(e=>e.type+' · '+e.source+' · '+e.value).join('\n')||'No evidence filed']);
   }
   if(!rows.length)rows.push(['No cases filed','']);
  }else if(deskTab==='Evidence'){
@@ -45,7 +47,7 @@ function renderPoliceDesk(){
  for(const [id,scenario] of [['followCase','homicide'],['followCall','heard'],['followPair','paired']]){
   document.getElementById(id).disabled=trainingInProgress(scenario);
  }
- const revision=JSON.stringify([deskTab,rows]);
+ const revision=JSON.stringify([deskTab,rows,liveRow]);
  if(revision===deskRevision)return;
  deskRevision=revision;
  const list=document.getElementById('deskRows');list.replaceChildren();
@@ -53,6 +55,14 @@ function renderPoliceDesk(){
   const li=document.createElement('li');
   for(const [i,label] of row.entries())if(label){
    const el=document.createElement(i===0?'strong':'span');el.textContent=label;li.append(el);
+  }
+  if(rowIndex===liveRow){
+   const button=document.createElement('button');button.type='button';button.textContent='Follow live case';
+   button.onclick=()=>{
+    policeDesk.addEventListener('close',toggleCaseCamera,{once:true});
+    policeDesk.close();
+   };
+   li.append(button);
   }
   if(roster[rowIndex]){
    const person=roster[rowIndex],button=document.createElement('button');

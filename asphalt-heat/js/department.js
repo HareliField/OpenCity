@@ -80,7 +80,7 @@ class CityPoliceDepartment {
   return 'On watch';
  }
  assigned(file){
-  if(file.stage==='Patrol assigned')return file.patrol;
+  if(file.stage==='Patrol assigned'||file.stage==='Scene review')return file.patrol;
   if(file.stage==='Lab review')return file.detective;
   return null;
  }
@@ -109,8 +109,8 @@ class CityPoliceDepartment {
   if(actor.gloves)return;
   const value=actor.fingerprintId||this.identity(this.identify(actor)).fingerprintId;
   object.contactPrint=value;
-  const trace={at:{x:at.x,y:at.y,z:at.z},type:'Print',value,source:label,time:this.clock};
-  this.contacts=this.contacts.filter(e=>this.clock-e.time<120&&!(e.value===value&&e.source===label&&e.at.x===at.x&&e.at.z===at.z));
+  const trace={at:{x:at.x,y:at.y,z:at.z},type:'Print',value,source:label,exhibit:object.exhibit,time:this.clock};
+  this.contacts=this.contacts.filter(e=>this.clock-e.time<120&&!(e.value===value&&e.source===label&&e.exhibit===object.exhibit&&e.at.x===at.x&&e.at.z===at.z));
   this.contacts.push(trace);
   if(this.contacts.length>96)this.contacts.shift();
  }
@@ -122,18 +122,18 @@ class CityPoliceDepartment {
   file.stage='Filed';file.due=this.clock+3;
   this.logCase(file,from,message);this.save();
  }
- file({kind,at,victim,plate,witness,touch,source,contact,trace,reported=true,title,subjectName,exercise=false,scenario,caller}){
+ file({kind,origin,linkedExhibit,at,victim,victimName,plate,witness,touch,source,contact,trace,reported=true,title,subjectName,exercise=false,scenario,caller}){
   const evidence=[];
   if(victim)evidence.push({type:'DNA',value:this.identity(victim).dnaId,source:'Injured person'});
   if(touch)evidence.push({type:'Print',value:touch,source});
   for(const e of this.contacts){
    if(this.clock-e.time>120||Math.abs((at.y||0)-e.at.y)>1.3||Math.hypot(at.x-e.at.x,at.z-e.at.z)>4)continue;
-   if(!evidence.some(row=>row.type==='Print'&&row.value===e.value&&row.source===e.source))evidence.push({type:'Print',value:e.value,source:e.source});
+   if(!evidence.some(row=>row.type==='Print'&&row.value===e.value&&row.source===e.source&&row.exhibit===e.exhibit))evidence.push({type:'Print',value:e.value,source:e.source,exhibit:e.exhibit});
   }
   if(trace)evidence.push({type:'DNA',value:trace,source});
   if(witness)evidence.push({type:'Statement',value:witness,source:'Witness'});
   if(plate)evidence.push({type:'Plate',value:plate,source:'Vehicle sighting'});
-  const entry={id:++this.serial,kind,at:{x:at.x,y:at.y,z:at.z},opened:this.clock,stage:reported?'Filed':'Unreported',
+  const entry={id:++this.serial,kind,origin,linkedExhibit,victimId:victim,victimName,at:{x:at.x,y:at.y,z:at.z},opened:this.clock,stage:reported?'Filed':'Unreported',
    title,subjectName,exercise,scenario,timeline:[],due:this.clock+3,evidence,contact:contact||null,detective:null,suspect:null,plate:plate||null};
   this.cases.push(entry);
   if(reported)this.receiveCall(entry,caller||'Communications',kind==='Shots reported'?'911 report of gunfire. Patrol requested.':kind+' reported. Patrol requested.');
@@ -194,8 +194,8 @@ class CityPoliceDepartment {
      c.detective=relief.personId;detective=relief;
     }
     const profile=c.contact?this.identity(c.contact):null;
-    const match=profile&&c.evidence.some(e=>e.type==='Print'&&e.value===profile.fingerprintId||
-     e.type==='DNA'&&e.source!=='Injured person'&&e.value===profile.dnaId);
+    const match=profile&&c.evidence.some(e=>(!c.linkedExhibit||e.exhibit===c.linkedExhibit)&&
+     (e.type==='Print'&&e.value===profile.fingerprintId||e.type==='DNA'&&e.source!=='Injured person'&&e.value===profile.dnaId));
     const statement=c.evidence.some(e=>e.type==='Statement');
     this.logCase(c,analyst.name,match?'Contact trace matched the comparison record.':'Evidence review complete. No corroborating contact trace.');
     c.suspect=c.contact&&statement&&(match||c.plate)?c.contact:null;

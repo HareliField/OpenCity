@@ -143,7 +143,7 @@ soundButton.addEventListener('click',async e=>{
  soundButton.setAttribute('aria-pressed',String(enabled));
  soundButton.textContent=enabled?'Sound on':'Sound off';
 });
-addEventListener('keydown',e=>{if(e.code==='Space'&&e.target===soundButton)return;if(e.code==='Space'||e.code.startsWith('Arrow'))e.preventDefault();if(e.repeat)return;keys[e.code]=true;if(state==='play'){if(e.code==='KeyC'){const a=actionCtx();a&&a.fn();}if(e.code==='KeyE'&&player.car&&!shopOpen)toggleCar();if(e.code==='KeyZ'&&!shopOpen)cycleWeapon();
+addEventListener('keydown',e=>{if(e.code==='Space'&&e.target===soundButton)return;if(e.code==='Space'||e.code.startsWith('Arrow'))e.preventDefault();if(e.repeat)return;keys[e.code]=true;if(state==='play'&&!caseCamera.enabled){if(e.code==='KeyC'){const a=actionCtx();a&&a.fn();}if(e.code==='KeyE'&&player.car&&!shopOpen)toggleCar();if(e.code==='KeyZ'&&!shopOpen)cycleWeapon();
  if(e.code==='KeyV')cycleCamera();
  if(!shopOpen && (e.code==='BracketLeft'||e.code==='BracketRight'))togglePlayerSignal(player.car,e.code==='BracketLeft'?-1:1);
  if(e.code==='KeyH')toggleHUD();}});
@@ -258,7 +258,7 @@ function cameraClearance(ax,ay,az,bx,by,bz){
 function step(dt,agentInput=null){time+=dt;WATERT.value=time;
  updateCityWorks(dt,player.pos);
  refreshPhysicalWorld(player.pos.x,player.pos.z);
- const kx=(keys.ArrowRight?1:0)-(keys.ArrowLeft?1:0),ky=(keys.ArrowUp?1:0)-(keys.ArrowDown?1:0);const play=state==='play'&&!shopOpen;
+ const kx=(keys.ArrowRight?1:0)-(keys.ArrowLeft?1:0),ky=(keys.ArrowUp?1:0)-(keys.ArrowDown?1:0);const play=state==='play'&&!shopOpen&&!caseCamera.enabled;
  const jx=play?(agentInput?.turn??clamp(inp.jx+kx,-1,1)):0,jy=play?(agentInput?.forward??clamp(inp.jy+ky,-1,1)):0,fire=play&&(agentInput?.fire??(inp.fire||keys.Space)),sprint=play&&(agentInput?.sprint??(inp.sprint||keys.KeyX));
  if(player.pendingPunch&&time>=player.pendingPunch.at){player.pendingPunch.land();player.pendingPunch=null;}player.fireCd-=dt;if(fire)playerAttack();updLights(time);
  lodT-=dt;if(lodT<=0){lodT=.5;physLOD();}
@@ -317,10 +317,10 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
  if(play&&!player.car&&player.weapon!=='fist'&&player.c.aim>0)for(const p of peds){if(p.mode!=='walk'&&p.mode!=='stand')continue;const dx=p.pos.x-player.pos.x,dz=p.pos.z-player.pos.z,d=Math.hypot(dx,dz);if(d<12&&Math.abs(wrapA(Math.atan2(dx,dz)-player.yaw))<.5&&los(player.pos,p.pos)){p.mode='cower';p.c.talk=0;p.cowerT=rnd(3,6);}}
  player.arrestContact=false;updPeds(dt);updUnits(cops,dt);player.arrestT=player.arrestContact?player.arrestT+dt:0;
  if(state==='play'&&player.arrestT>4.2)gameOver('BUSTED');
- updUnits(gang,dt);updUnits(guards,dt);updHelis(dt);manage(dt);updParts(dt);updPickups(dt);updRob(dt);updProps(dt,player.pos.x,player.pos.z);updateStreetLighting(dt,player.pos.x,player.pos.z);updateInteriors(dt,player.pos.x,player.pos.z);updateOutdoorModels(dt,player.pos.x,player.pos.z);if(clerk)updChar(clerk,0,dt,true);
+ updUnits(gang,dt);updUnits(guards,dt);updHelis(dt);manage(dt);updParts(dt);updPickups(dt);updRob(dt);updProps(dt,player.pos.x,player.pos.z);updateStreetLighting(dt,player.pos.x,player.pos.z);updateInteriors(dt,caseCamera.focus?.x??player.pos.x,caseCamera.focus?.z??player.pos.z,caseCamera.focus?.y??player.pos.y);updateOutdoorModels(dt,player.pos.x,player.pos.z);if(clerk)updChar(clerk,0,dt,true);
  for(const T of tracers)if(T.l.visible){T.t-=dt;if(T.t<=0)T.l.visible=false;}muzzleL.intensity=Math.max(0,muzzleL.intensity-dt*150);boomL.intensity=Math.max(0,boomL.intensity-dt*25);
  /* wanted */
- if(state==='play'){updateDepartment(dt);updateLaw(dt);}
+ if(state==='play'){updateStreetEncounter(dt);updateDepartment(dt);updateLaw(dt);}
  const cleanView=$('ui').classList.contains('cleanView');
  for(const m of markerObjs){
   const at=m.p.road||m.p.interact||m.p.door,d=Math.hypot(at.x-player.pos.x,at.z-player.pos.z);
@@ -369,9 +369,11 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
   camera.fov=lerp(camera.fov,fov,1-Math.exp(-3.4*dt));
   camera.updateProjectionMatrix();
  }
+ updateCaseCamera(dt);
  sky.position.copy(camera.position);
- sun.position.copy(tgt).addScaledVector(SUNDIR,250);
- sun.target.position.copy(tgt);
+ const viewTarget=caseCamera.focus||tgt;
+ sun.position.copy(viewTarget).addScaledVector(SUNDIR,250);
+ sun.target.position.copy(viewTarget);
  if(POST){PP.final.uniforms.hurt.value=Math.max(0,hurtT>0?hurtT*2.5:0)+(player.hp<30&&state==='play'?(.3+.2*Math.sin(time*5)):0);hurtT-=dt;}
  if(ac){const t=ac.currentTime;const c=player.car;if(c){const sp=Math.abs(c.speed),rpm=enginePitch(sp);engG.gain.setTargetAtTime(.06+Math.min(1,Math.abs(jy))*.04,t,.1);engO.frequency.setTargetAtTime(40+rpm*90*(c.type==='sport'?1.4:1),t,.06);engO2.frequency.setTargetAtTime(20+rpm*45,t,.06);engF.frequency.setTargetAtTime(300+rpm*900,t,.1);
    scrG.gain.setTargetAtTime(c.sliding&&sp>5?.12:0,t,.05);}else{engG.gain.setTargetAtTime(0,t,.2);scrG.gain.setTargetAtTime(0,t,.1);}
@@ -418,6 +420,7 @@ function initGame(){buildMinimapBase();buildMarkers();initializePoliceLives();
  player.personId='ah-player';PoliceDepartment.identify(player);player.gloves=false;
  player.c=makePlayerChar();dressPlayerHands();camYaw=player.yaw;
  for(let k=0;k<QUALITY.peds;k++){const p={c:null,pos:new V3(),mode:'walk',t:0,R:null,dir:1,spd:1.4,fleeT:0,fv:new V3(),downT:0,hp:60,cash:0,dead:false};peds.push(p);placePed(p,nearBlock(0,140),k%5===0);}
+ seedNeighborhoodWalkers();
  {const s=spawnCar('sport',CELL*4-HALF+1.9,streetStart.z+2.75,0,null);paintCar(s,0x711b29);s.keep=true;s.heroWanted=true;}
  {const c=spawnCar('hatch',CELL*2+5.9,CELL*4+31,Math.PI,null);paintCar(c,0xa27a27);c.keep=true;}
  {const c=spawnCar('van',CELL*2+5.9,CELL*4+39,Math.PI,null);paintCar(c,0x20334b);c.keep=true;}

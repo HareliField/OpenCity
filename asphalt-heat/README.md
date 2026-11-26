@@ -86,7 +86,13 @@ Add `?visit=police` to the game URL to start facing Old Town headquarters. Both 
 
 At reception, **Watch** lists the current shift. Use the lobby stairs or ride the lift to Investigations & Evidence, Watch Operations, or Staff & Equipment. The evidence terminal tracks each exhibit from collection to storage. Booking and equipment desks show linked bookings and the kits issued to the current watch.
 
-The **Cases** desk offers three playable training reports. Follow a homicide from the first call to a supervisor’s bulletin, follow a gunfire report with an unidentified shooter, or open two homicides together and see how the detectives share one analyst. The files advance on the game clock while you explore. Their timelines record the sender, recipient and finding. Dispatch stays silent during play.
+During ordinary play, two pedestrians can get into a dispute over a carried holdall. If somebody is killed, a bystander can call 911. The caller has to finish the call. Someone who finds the victim later can report the scene without naming the offender. Patrol and detectives use the same staffing queues and evidence records as other city cases. A witness who recognizes the offender and a corroborating exhibit can support a bulletin. Inconclusive files stay open.
+
+When an encounter is underway, select **Follow street incident** or press **Y** to watch the people involved, the call desk, the scene investigator and the lab. Select **Return to player** to leave the camera. At reception, **Cases** shows the victim, caller’s statement, exhibit history and decision. **Follow live case** in an active file opens the same camera.
+
+The [Old Town homicide film](films/old-town-homicide.html) follows one autonomous case from the street encounter to the bulletin. Its six chapter controls jump to footage from that same playthrough.
+
+The **Cases** desk also offers three playable training reports. Follow a homicide from the first call to a supervisor’s bulletin, follow a gunfire report with an unidentified shooter, or open two homicides together and see how the detectives share one analyst. The files advance on the game clock while you explore. Their timelines record the sender, recipient and finding. Dispatch stays silent during play.
 
 Homicides, robberies, gunfire and vehicle thefts create case files. A civilian can call 911 about gunfire they hear. An identified shooter can trigger a pursuit. A detective takes the file and the evidence desk reviews game-world prints, DNA, witness statements and vehicle sightings. The **Gloves** button changes the character’s hand covering. A homicide bulletin can survive a search cooldown and a reload in the same browser tab. A patrol that recognizes the person or a reported plate can reopen the search. Booking updates linked files at both desks.
 

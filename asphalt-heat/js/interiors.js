@@ -336,12 +336,12 @@ function requestScenery(id){
  return INTERIORS.models.get(id);
 }
 
-function updateInteriors(dt,x,z){
+function updateInteriors(dt,x,z,levelY=player.pos.y){
  if((INTERIORS.clock-=dt)>0)return;
  INTERIORS.clock=.30;
  const near=[];
  for(const lamp of INTERIORS.emitters){
-  if(lamp.floorY!==undefined&&Math.abs(lamp.floorY-player.pos.y)>1.5)continue;
+  if(lamp.floorY!==undefined&&Math.abs(lamp.floorY-levelY)>1.5)continue;
   const distance=(lamp.x-x)**2+(lamp.z-z)**2;
   if(distance<31**2&&cityPowerAt(lamp.x,lamp.z))near.push({lamp,distance});
  }

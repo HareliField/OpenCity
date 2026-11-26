@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Old Town homicide · Asphalt Heat</title>
+<style>
+:root{background:#111a1d;color:#f5f2ec;font:16px/1.55 Inter,system-ui,sans-serif}
+*{box-sizing:border-box}body{margin:0}main{max-width:1032px;margin:auto;padding:clamp(20px,4vw,48px) clamp(14px,4vw,38px) 42px}
+header{border-top:1px solid #667275;padding-top:14px}header p{font:600 .79rem/1.5 "IBM Plex Mono",Menlo,monospace;color:#dcc59e;letter-spacing:.06em;margin:0}
+h1{font:500 clamp(2.1rem,5vw,3.7rem)/1.04 "STIX Two Text",Georgia,serif;letter-spacing:-.045em;margin:12px 0 16px}
+video{display:block;background:#0b0f10;width:100%;aspect-ratio:16/9;object-fit:contain;border:1px solid #435054}
+nav{display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin:10px 0 22px;border-block:1px solid #465254}
+button{border:0;border-left:1px solid #354245;background:transparent;color:#e6e9e7;text-align:left;font:600 .91rem/1.25 Inter,system-ui,sans-serif;padding:10px;cursor:pointer}
+button:first-child{border-left:0}button time{display:block;color:#a9bbbd;font:12px/1.4 Menlo,monospace;margin-bottom:2px}
+button:hover,button:focus-visible{background:#34464a}button[aria-current="true"]{color:#f7dcad;box-shadow:inset 0 -2px #d5b988}
+h2{font-size:1.12rem;margin:0 0 6px}section p{max-width:78ch;margin:0;color:#d7dfdd}footer{margin-top:17px;color:#adb8b8;font-size:.85rem}a{color:#e4c99b}
+@media(max-width:620px){nav{grid-template-columns:repeat(3,1fr)}button:nth-child(4){border-left:0}button:nth-child(n+4){border-top:1px solid #354245}main{padding-top:18px}}
+</style>
+</head>
+<body><main>
+<header><p>ASPHALT HEAT &nbsp; / &nbsp; FILE 0001</p><h1>Old Town homicide</h1></header>
+<video id="film" controls muted playsinline preload="auto" poster="old-town-homicide.jpg" aria-label="A silent gameplay film following the shooting of Hollis Fry and the investigation"> <source src="old-town-homicide.mp4" type="video/mp4"> <a href="old-town-homicide.mp4">Open the MP4 film</a></video>
+<nav aria-label="Jump to a moment in the film">
+ <button data-at="6"><time>00:06</time>Street encounter</button>
+ <button data-at="15.46"><time>00:15</time>911 call</button>
+ <button data-at="22.46"><time>00:22</time>Patrol arrival</button>
+ <button data-at="30.46"><time>00:30</time>Detective on scene</button>
+ <button data-at="41.75"><time>00:42</time>Evidence lab</button>
+ <button data-at="51.08"><time>00:51</time>Wanted bulletin</button>
+</nav>
+<section aria-labelledby="finding"><h2 id="finding">The finding</h2>
+<p>Toby Lin saw Opal Finch shoot Hollis Fry and recognized Finch from the Old Town counter. Officer Ben Ortiz logged three exhibits. One was a sample from Fry. The recovered holdall carried both Fry’s and Finch’s prints. Analyst Ada Flynn matched Finch’s print, corroborating Lin’s statement. Detective Kai Chen submitted the finding, and Commander Maya Scott authorized the bulletin.</p></section>
+<footer>55 seconds of in-game footage · Silent, with on-screen captions · <a href="old-town-homicide.mp4" download>Download MP4</a></footer>
+</main>
+<script>
+const film=document.querySelector('video');
+const chapters=[...document.querySelectorAll('[data-at]')];
+for(const chapter of chapters)chapter.addEventListener('click',()=>{
+ film.currentTime=Number(chapter.dataset.at);film.play().catch(()=>{});
+});
+film.addEventListener('timeupdate',()=>{
+ const current=chapters.findLast(button=>film.currentTime>=Number(button.dataset.at));
+ for(const button of chapters)button.setAttribute('aria-current',String(button===current));
+});
+</script></body></html>
