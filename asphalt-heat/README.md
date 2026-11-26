@@ -86,3 +86,28 @@ Property damage generates a misdemeanor report when a witness sees it. Civilians
 | 5 | 60 seconds |
 
 Credits include Microsoft Rocketbox avatars (MIT), Poly Haven textures and sky (CC0), three.js, and cannon-es.
+
+## Agent controller
+
+Start the local server and open [agent mode](http://127.0.0.1:8765/index.html?agent=1) in your own Codex in-app browser tab. Press **Play**, verify **Sound off**, and expand **Agent controller**. Enter a JSON object and select **Run command**. Each tab has its own player, simulation clock and command history.
+
+| Task | Example command |
+| --- | --- |
+| Discover commands or read the current player, camera, HUD, menu and available actions | `{"op":"help"}` or `{"op":"observe"}` |
+| Find destinations and jump there on foot or with the current vehicle | `{"op":"places"}`, then `{"op":"jump","to":"harbor"}` |
+| Jump to coordinates facing south | `{"op":"jump","x":256,"z":320,"yaw":0}` |
+| Walk or drive forward for half a second | `{"op":"step","forward":1,"ticks":15}` |
+| Turn, sprint or handbrake, fire, or look around | `{"op":"step","ticks":5,"turn":0.5,"sprint":true,"fire":false,"lookYaw":0.3}` |
+| Use the current interaction or a listed menu action | `{"op":"act","action":"interact"}` |
+| Find the nearest doors, people, vehicles, props, pickups, helicopters, junctions or blocks | `{"op":"world","group":"doors","radius":40,"limit":10}` |
+| Inspect cases, evidence, police staffing and radio calls | `{"op":"police"}` |
+| Set up a test with health, armor, money or a wanted level | `{"op":"stats","health":100,"armor":50,"cash":1600,"wanted":2}` |
+| List vehicle models and spawn one in a clear nearby lane | `{"op":"models"}`, then `{"op":"spawn","model":"sport"}` |
+| Read timestamped commands, messages, damage, collisions, dispatch and errors | `{"op":"events","after":0}` |
+| Resume real-time play or pause for inspection | `{"op":"clock","paused":false}` or `{"op":"clock","paused":true}` |
+
+One tick advances 1/30 second. A step accepts 1–120 ticks and releases its inputs when it finishes. Forward and turn range from −1 to 1. Coordinates are metres, with +x east and +z south. Angles are radians. An optional jump `y` selects a surface at an overpass. Jump returns the actual landing position after collision adjustment and one settling tick.
+
+World queries sort by distance and return a `nextOffset` for the next page. Entity IDs are stable within a session. For a bug report, capture the starting observation, run the commands, then request events after the starting `cursor`. The last 512 events are retained. `missed` counts older entries that expired. Random traffic and pedestrians can differ between launches.
+
+The panel and `window.asphaltAgent.run(command)` use the same dispatcher. Browsers with WebMCP support also expose the page tool `asphalt_heat` with a `command` object.

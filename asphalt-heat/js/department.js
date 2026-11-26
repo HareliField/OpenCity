@@ -82,6 +82,7 @@ class CityPoliceDepartment {
   this.release(member);this.unavailable.add(member.personId);this.save();
  }
  radio(from,message,clip){
+  globalThis.asphaltAgentEvent?.('radio',{from,message});
   this.transmissions.unshift({at:this.clock,from,message,clip});
   this.transmissions.length=Math.min(30,this.transmissions.length);
 

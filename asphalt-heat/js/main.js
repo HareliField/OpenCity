@@ -111,9 +111,9 @@ function updRob(dt){if(!robbing)return;const p=robbing.p;const at=p.interact||p.
 function openShop(){shopOpen=true;$('shop').style.display='flex';renderShop();}
 function renderShop(){const items=[['pistol','Pistol ammo ×36','Reliable sidearm',150],['smg',player.own.smg?'SMG ammo ×120':'SMG + 120 rounds','Spray and pray',player.own.smg?300:1200],['shotgun',player.own.shotgun?'Shotgun shells ×24':'Shotgun + 24 shells','Devastating up close',player.own.shotgun?300:1600],['armor','Body armor','Absorbs 70% of damage',400]];
  const box=$('items');box.innerHTML='';for(const[id,t,s,price]of items){const row=document.createElement('div');row.className='it';const info=document.createElement('div');const b=document.createElement('b');b.textContent=t;const sp=document.createElement('span');sp.textContent=s;info.append(b,sp);
-  const btn=document.createElement('button');btn.textContent='$'+price;btn.disabled=player.cash<price||(id==='armor'&&player.armor>=100);btn.addEventListener('click',()=>{if(!shopOpen||state!=='play'||player.cash<price||(id==='armor'&&player.armor>=100))return;player.cash-=price;if(id==='pistol')player.ammo.pistol+=36;else if(id==='smg'){player.own.smg=true;player.ammo.smg+=120;}else if(id==='shotgun'){player.own.shotgun=true;player.ammo.shotgun+=24;}else player.armor=100;beep(1200,.08,.15,'sine');renderShop();});row.append(info,btn);box.append(row);}}
+  const btn=document.createElement('button');btn.dataset.item=id;btn.textContent='$'+price;btn.disabled=player.cash<price||(id==='armor'&&player.armor>=100);btn.addEventListener('click',()=>{if(!shopOpen||state!=='play'||player.cash<price||(id==='armor'&&player.armor>=100))return;player.cash-=price;if(id==='pistol')player.ammo.pistol+=36;else if(id==='smg'){player.own.smg=true;player.ammo.smg+=120;}else if(id==='shotgun'){player.own.shotgun=true;player.ammo.shotgun+=24;}else player.armor=100;beep(1200,.08,.15,'sine');renderShop();});row.append(info,btn);box.append(row);}}
 $('shopX').addEventListener('click',()=>{shopOpen=false;$('shop').style.display='none';});
-function gameOver(kind){if(state!=='play')return;if(policeDesk.open)policeDesk.close();if(kind==='BUSTED')PoliceDepartment.book(player.personId);shopOpen=false;$('shop').style.display='none';player.pendingPunch=null;state='dead';deadT=4.5;deadKind=kind;const b=$('big');b.textContent=kind;b.className='show'+(kind==='BUSTED'?' busted':'');robbing=null;
+function gameOver(kind){if(state!=='play')return;if(policeDesk.open)policeDesk.close();if(kind==='BUSTED')PoliceDepartment.book(player.personId);shopOpen=false;$('shop').style.display='none';player.pendingPunch=null;state='dead';deadT=4.5;deadKind=kind;globalThis.asphaltAgentEvent?.('gameOver',{kind});const b=$('big');b.textContent=kind;b.className='show'+(kind==='BUSTED'?' busted':'');robbing=null;
  if(kind==='BUSTED')player.c.hands=1;else if(!player.car&&!player.c.body)ragdoll(player.c,rnd(-1,1),1,rnd(-1,1));noise(.8,300,.4);}
 function respawn(){state='play';$('big').className='';const busted=deadKind==='BUSTED';const lost=busted?Math.round(player.cash*.3):Math.min(player.cash,200);player.cash-=lost;
  if(player.car){const car=player.car;player.car=null;car.driver=null;setCarLights(car,false);}player.hp=100;player.arrestT=0;player.down=0;player.pace=0;player.turn=0;heat=0;wanted=0;evadeT=0;resetDispatch();
@@ -248,10 +248,10 @@ const clock=new THREE.Clock();const camPos=new V3();let camInit=false,mmT=0,lodT
 function cameraClearance(ax,ay,az,bx,by,bz){
  const hit=rayWorld(ax,az,bx,bz,ay,by,.18);return hit<1?Math.max(.04,hit-.015):1;
 }
-function step(dt){time+=dt;WATERT.value=time;
+function step(dt,agentInput=null){time+=dt;WATERT.value=time;
  refreshPhysicalWorld(player.pos.x,player.pos.z);
  const kx=(keys.ArrowRight?1:0)-(keys.ArrowLeft?1:0),ky=(keys.ArrowUp?1:0)-(keys.ArrowDown?1:0);const play=state==='play'&&!shopOpen;
- const jx=play?clamp(inp.jx+kx,-1,1):0,jy=play?clamp(inp.jy+ky,-1,1):0,fire=play&&(inp.fire||keys.Space),sprint=play&&(inp.sprint||keys.KeyX);
+ const jx=play?(agentInput?.turn??clamp(inp.jx+kx,-1,1)):0,jy=play?(agentInput?.forward??clamp(inp.jy+ky,-1,1)):0,fire=play&&(agentInput?.fire??(inp.fire||keys.Space)),sprint=play&&(agentInput?.sprint??(inp.sprint||keys.KeyX));
  if(player.pendingPunch&&time>=player.pendingPunch.at){player.pendingPunch.land();player.pendingPunch=null;}player.fireCd-=dt;if(fire)playerAttack();updLights(time);
  lodT-=dt;if(lodT<=0){lodT=.5;physLOD();}
  /* controls before physics */
@@ -324,7 +324,7 @@ function step(dt){time+=dt;WATERT.value=time;
   m.ring.material.opacity=m.p.cd>0?.19:.55;
  }
  /* camera */
- if(dragId===null){lookYaw*=Math.exp(-4*dt);lookPitch*=Math.exp(-4*dt);}
+ if(dragId===null&&!agentInput?.looking){lookYaw*=Math.exp(-4*dt);lookPitch*=Math.exp(-4*dt);}
  const tgt=player.car?player.car.pos:player.pos;if(player.car){const c=player.car;const vh=Math.hypot(c.vel.x,c.vel.z)>4&&c.speed>0?Math.atan2(c.vel.x,c.vel.z):c.h;camYaw=lerpA(camYaw,lerpA(c.h,vh,.5),1-Math.exp(-4.5*dt));}else camYaw=lerpA(camYaw,player.yaw,1-Math.exp(-9*dt));
  const aerial=cameraMode===2, low=cameraMode===1,car=player.car,yawC=camYaw+lookYaw;
  const speed=car?Math.hypot(car.vel.x,car.vel.z):0;
@@ -363,6 +363,7 @@ function step(dt){time+=dt;WATERT.value=time;
 function loop(){
  requestAnimationFrame(loop);
  const elapsed=clock.getDelta(),dt=document.hidden?0:Math.min(elapsed,.25);
+ if(window.asphaltAgent?.paused)return;
  if((state==='play'||state==='dead')&&dt>0){
   const steps=Math.ceil(dt/.05);for(let i=0;i<steps;i++)step(dt/steps);hud();mmT-=dt;
   if(mmT<=0){mmT=1/12;drawMap();}
