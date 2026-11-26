@@ -1,11 +1,11 @@
 // Lane paths span the approach, curved intersection movement and receiving lane.
 const TURN_EXTENT=12.6;
 function gradeConnection(node,dx,dz){
- if(dz && ((node[0]===13 && node[1]===9 && dz===1) || (node[0]===14 && node[1]===12 && dz===-1))){
-  return {route:GRADE_ROADS.routes[1],direction:dz,exit:dz>0?[14,12]:[13,9]};
- }
- if(dx && node[1]===11 && ((dx===1 && node[0]===6) || (dx===-1 && node[0]===14))){
-  return {route:GRADE_ROADS.routes[0],direction:dx,exit:[dx>0?14:6,11]};
+ for(const route of GRADE_ROADS.routes){
+  const direction=route.axis==='ew'?dx:dz;
+  if(!direction)continue;
+  const [entry,exit]=direction>0?route.ends:[route.ends[1],route.ends[0]];
+  if(node[0]===entry[0] && node[1]===entry[1])return {route,direction,exit};
  }
  return null;
 }

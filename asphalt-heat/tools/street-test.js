@@ -20,7 +20,7 @@ run(`const CANNON=window.CANNON,V3=THREE.Vector3,CELL=64,N=16,W=N*CELL,HALF=8,OR
 `);
 const world=read('js/world.js');
 run(world.slice(world.indexOf('function districtOf('),world.indexOf('const SPECIAL=')));
-for(const name of ['phys','cargen','fleet','access','roads','street-plan','street-surface','city-works','city-services','city-traffic','lighthouse','garden-cottages','game'])run(read('js/'+name+'.js'));
+for(const name of ['phys','cargen','fleet','access','roads','street-plan','street-surface','city-works','city-services','city-traffic','lighthouse','garden-cottages','harbor-supply','game'])run(read('js/'+name+'.js'));
 run(`
  player={pos:new V3(800,0,800),car:null};
  setCarLights=()=>{};
@@ -324,4 +324,71 @@ run(`
   cycleRuns.push(hz);
  }
  console.log('Street regressions passed.',controls,{speedHumps:humps,fleet:fleet.length,movements,stopBarGaps:gaps,cycleRuns});
+`);
+run(`
+ const scene=new THREE.Scene(),STATIC=[],TREES=[],PALMS=[],LAMPS=[],PROPSPOTS=[];
+ const ATLAS={mat:{map:{}}},atlasSlot=()=>({}),pbr=()=>new THREE.MeshBasicMaterial(),lin=n=>new THREE.Color(n);
+ const cyl=()=>{},signQuad=()=>{},makeWet=material=>material;
+ reset();ACCESS.doors.length=0;buildGradeRoads();
+ DRIVEWAYS.set(drivewayKey('ns',14,12),[{side:1,center:26,half:2.6}]);
+ for(const profile of GRADE_PROFILES)roadsideSign(profile);
+ indexStatic();
+ // Sweep full vehicle width between the two intersection boxes, with room for the pavement crown.
+ // Use the streamed, oriented Cannon solids so an overhead bridge is tested at its actual height.
+ const width=Math.max(...Object.values(CARSPEC).map(s=>s.W)),roof=Math.max(...Object.values(CARSPEC).map(s=>s.r))+.15,low=.22;
+ const hull=new CANNON.Box(new CV(width/2,(roof-low)/2,CELL/2-HALF)).convexPolyhedronRepresentation;
+ const lo=new CV(),hi=new CV(),axisHit=new CV();
+ let strips=0;
+ for(let line=0;line<=N;line++)for(let part=0;part<N;part++)for(const axis of ['ns','ew']){
+  const section=streetSection(axis,line,part);
+  for(const dir of [-1,1])for(const lane of section.outer?[0,1]:[0]){
+   const dx=axis==='ew'?dir:0,dz=axis==='ns'?dir:0,u=laneCenter(section,dx,dz,lane);
+   const center=new CV((dx?part+.5:line)*CELL-dz*u,(roof+low)/2,(dz?part+.5:line)*CELL+dx*u);
+   const q=new CANNON.Quaternion();q.setFromEuler(0,Math.atan2(dx,dz),0);
+   hull.calculateWorldAABB(center,q,lo,hi);refreshPhysicalWorld(center.x,center.z);
+   for(const [r,body] of STREETS_PHYS.bodies){
+    if(r.faces || r.x1<=lo.x || r.x0>=hi.x || r.z1<=lo.z || r.z0>=hi.z || r.h<=lo.y || r.y0>=hi.y)continue;
+    const solid=body.shapes[0].convexPolyhedronRepresentation||body.shapes[0];
+    assert(!hull.findSeparatingAxis(solid,center,q,body.position,body.quaternion,axisHit),
+     'grade structure in '+axis+' '+line+'/'+part+' direction '+dir+' lane '+lane+' at '+body.position);
+   }
+   strips++;
+  }
+ }
+ assert.equal(strips,1376);
+ const signs=STATIC.filter(r=>r.radius===.077);
+ for(const route of GRADE_ROADS.routes)for(const [n,node] of route.ends.entries()){
+  const dir=n?-1:1,dx=route.axis==='ew'?dir:0,dz=dx?0:dir;
+  const mounted=signs.some(p=>{
+   const x=(p.x0+p.x1)/2-node[0]*CELL,z=(p.z0+p.z1)/2-node[1]*CELL;
+   return x*dx+z*dz < -18 && x*dx+z*dz >= -42 && -dz*x+dx*z > HALF+1.435 &&
+    !nearDriveway(x+node[0]*CELL,z+node[1]*CELL,1.5);
+  });
+  assert(mounted,route.name+' must be signed on the feeder sidewalk before the intersection');
+ }
+ for(let i=5;i<=14;i++)for(let j=8;j<=12;j++){buildSidewalk(blocks[i*N+j]);buildCarriageway('ns',i,j);buildCarriageway('ew',j,i);}
+ STREETS_PHYS.region=-1;
+ function driveGradeLink(a,b,lane,type,takeRamp,physical){
+  Math.random=()=>takeRamp?.45:.96;
+  const dx=b[0]-a[0],dz=b[1]-a[1],car=carOn(a,b,[b[0]+dx,b[1]+dz],lane,takeRamp?22:49,false,type);
+  const exit=takeRamp?car.ai.movement.ramp.exit:b;
+  refreshPhysicalWorld(car.pos.x,car.pos.z);if(physical)physCarOn(car);
+  let peak=0,done=false;
+  for(let tick=0;tick<(takeRamp?15000:1800);tick++){
+   time=tick/90+signalGroup(...b)*6+4;
+   refreshPhysicalWorld(car.pos.x,car.pos.z);advance(1/90,car);
+   peak=Math.max(peak,car.pos.y);
+   if(physical)assert(!PH.w.contacts.some(hit=>hit.bi===car.body || hit.bj===car.body),'chassis struck an obstacle at '+car.pos.toArray());
+   const past=(car.pos.x-exit[0]*CELL)*dx+(car.pos.z-exit[1]*CELL)*dz;
+   if(!car.ai.grade && past>(takeRamp?9:-20)){done=true;break;}
+  }
+  assert(done && (takeRamp?peak>4:peak<.3),'vehicle must finish on its selected road level');
+  if(physical)physCarOff(car);cars.length=0;
+ }
+ for(const type of ['f150','van','harborbox'])driveGradeLink([14,12],[14,13],1,type,false,true);
+ for(const route of GRADE_ROADS.routes)for(const [n,b] of route.ends.entries()){
+  const dir=n?-1:1,dx=route.axis==='ew'?dir:0,dz=dx?0:dir;
+  for(const type of ['van','harborbox'])for(const physical of [false,true])driveGradeLink([b[0]-dx,b[1]-dz],b,0,type,true,physical);
+ }
+ console.log('Grade clearances passed.',{straightLanes:strips,signs:signs.length,deckDrives:16,coastalTruckDrives:3});
 `);

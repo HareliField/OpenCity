@@ -17,8 +17,8 @@ run(read('lib/SkeletonUtils.js'));
 run(read('js/chars.js'));
 const fleet=read('js/fleet.js');
 run(fleet.slice(fleet.indexOf('function reachDriverLimb('),fleet.indexOf('function updateDriverSteering(')));
-const policeWorld=read('js/police-world.js');
-run(policeWorld.slice(policeWorld.indexOf('function poseDispatcher('),policeWorld.indexOf('function updateStationPosts(')));
+run(read('js/department.js'));
+run(read('js/police-world.js'));
 run(read('js/street-incidents.js'));
 
 // CPU skinning does not need GPU image uploads. Check every texture URI before letting the loader proceed.
@@ -41,7 +41,7 @@ async function verify(){
  for(const name of uniforms){
   context.name=name;
   context.actor=run('makeChar(name)');const actor=context.actor;
-  run("fitDepartmentPortrait(actor,'Female_Adult_03');clipDepartmentCamera(actor)");
+  run("fitDepartmentPortrait(actor,'Female_Adult_03');equipOfficer(actor,false,true)");
   const face=[];
   actor.model.traverse(mesh=>{if(mesh.isSkinnedMesh)face.push(mesh);});
   const head=face.find(mesh=>mesh.visible&&mesh.material.name==='f003_head');
@@ -56,6 +56,11 @@ async function verify(){
    const chest=mount.getWorldPosition(new THREE.Vector3());
    assert(eye.y>1.36&&eye.y<1.75,name+' torso must remain upright at speed '+speed);
    assert(chest.distanceTo(eye)<.46&&chest.y<eye.y-.08,name+' camera stays below the neck');
+   const vest=actor.bones.Spine2.getObjectByName('Traffic patrol vest'),position=vest.geometry.attributes.position;
+   for(let i=0;i<position.count;i++){
+    const p=vest.localToWorld(new THREE.Vector3().fromBufferAttribute(position,i));
+    assert(p.distanceTo(eye)<.75 && p.y<eye.y-.035,name+' vest stays on the torso');
+   }
   }
  }
  for(const name of ['Business_Female_01','Male_Adult_08','Female_Adult_03']){

@@ -1,0 +1,10 @@
+{
+  "method": "Local photo synthesis",
+  "engine": "stable-diffusion.cpp",
+  "model": "Realistic Vision V6.0 B1 Hyper",
+  "seed": 761490,
+  "steps": 6,
+  "poseSource": "AH-R0154",
+  "prompt": "Full length documentary casting photograph of one 80 year old man, heart-shaped face, natural everyday haircut, compact build, tan skin, small amused expression. Wearing black overshirt, trousers and practical shoes. Standing facing camera, head to toe, arms down, hands clear of torso, shoe soles visible, centered upright, plain gray studio background, natural skin and fabric textures, softly lit realistic photograph.",
+  "referenceSha256": "ced06503236ef8bd42db1e225d985b1426d7bc57c08c3f6caac289e480b1140d"
+}

@@ -1,0 +1,10 @@
+{
+  "method": "Local photo synthesis",
+  "engine": "stable-diffusion.cpp",
+  "model": "Realistic Vision V6.0 B1 Hyper",
+  "seed": 761495,
+  "steps": 6,
+  "poseSource": "AH-R0010",
+  "prompt": "Full length documentary casting photograph of one 51 year old man, distinctive facial proportions, natural everyday haircut, round shoulders, tan skin, small amused expression. Wearing gray fisher's sweater, trousers and practical shoes. Standing facing camera, head to toe, arms down, hands clear of torso, shoe soles visible, centered upright, plain gray studio background, natural skin and fabric textures, softly lit realistic photograph.",
+  "referenceSha256": "214d9ce5a1bc7713f844895f08c1bfe7fbf10c8d3c5b625897d61ec08e7e61f6"
+}

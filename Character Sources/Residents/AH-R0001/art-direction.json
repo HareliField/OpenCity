@@ -1,0 +1,80 @@
+{
+  "hair": "loose bun with side-swept fringe",
+  "outerwear": "red gathered windbreaker with a folded hood",
+  "rearPanel": [
+    0.318,
+    0.625
+  ],
+  "visualDetails": [
+    "fine gray strands at the temples",
+    "small hoop earrings",
+    "red thread through the bottom buttonhole"
+  ],
+  "performance": {
+    "take": "Walk, listen, give room",
+    "trigger": "Rafael asks everyone to stop fussing over the suit.",
+    "beats": [
+      "Approach at an unhurried pace",
+      "Settle her weight and lift one brow",
+      "Lower her hands and take half a step back"
+    ],
+    "cuts": [
+      [
+        "walk_stop",
+        0,
+        57,
+        67
+      ],
+      [
+        "explain",
+        215,
+        280,
+        60
+      ],
+      [
+        "step_back",
+        16,
+        36,
+        35
+      ],
+      [
+        "idle_shift",
+        25,
+        47,
+        22
+      ]
+    ],
+    "listenFrame": 60,
+    "markers": [
+      [
+        1,
+        "Cross the shop"
+      ],
+      [
+        59,
+        "Hear Rafael"
+      ],
+      [
+        78,
+        "Open her hand"
+      ],
+      [
+        112,
+        "Give him room"
+      ],
+      [
+        143,
+        "Settle"
+      ]
+    ],
+    "plantedBeats": [
+      1,
+      3
+    ],
+    "gestureWeights": {
+      "upperarm_l": 0.45,
+      "lowerarm_l": 0.62,
+      "upperarm_r": 0.83
+    }
+  }
+}

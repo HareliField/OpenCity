@@ -1,0 +1,10 @@
+{
+  "method": "Local photo synthesis",
+  "engine": "stable-diffusion.cpp",
+  "model": "Realistic Vision V6.0 B1 Hyper",
+  "seed": 761500,
+  "steps": 6,
+  "poseSource": "AH-R0035",
+  "prompt": "Full length documentary casting photograph of one 48 year old woman, crooked front tooth, close-cropped dark curls, sturdy build, dark brown skin, reserved expression. Wearing faded indigo overshirt, trousers and practical shoes. Standing facing camera, head to toe, arms down, hands clear of torso, shoe soles visible, centered upright, plain gray studio background, natural skin and fabric textures, softly lit realistic photograph.",
+  "referenceSha256": "22c6dd4b05519456160ac724f927993ccbe1b8a03ae8b77aa323abe015cdd242"
+}

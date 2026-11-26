@@ -23,6 +23,7 @@ function actionCtx(){if(state!=='play'||shopOpen||player.down>0)return null;if(p
  const doorway=doorInteraction(player.pos,1.83);if(doorway)return doorway;
  const p=nearPlace();if(p){if(p.kind==='police')return {label:'CASE DESK',hot:1,fn:()=>openPoliceDesk(p.office)};if(p.kind==='store'||p.kind==='bank')return p.cd>0?{label:'CLOSED',fn:()=>toast('ALREADY HIT — COME BACK LATER',1500)}:{label:'ROB',fn:()=>startRob(p),hot:1};
   if(p.kind==='gunshop')return{label:'SHOP',fn:openShop,hot:1};if(p.kind==='hospital')return{label:'HEAL',fn:()=>{if(player.hp>=100)toast('YOU ARE FINE',1000);else if(player.cash<100)toast('NEED $100',1000);else{player.cash-=100;player.hp=100;toast('PATCHED UP −$100',1400);}},hot:1};}
+ const ticketDesk=roadsideTicketAction(player.pos);if(ticketDesk)return ticketDesk;
  const c=nearestCar(3.6);if(c)return{label:c.driver?'JACK':'ENTER',fn:toggleCar,hot:1};return hqInteraction(player.pos)||meetDepartmentPerson()||propInteraction(player.pos)||{label:'ACTION',fn:()=>{}};}
 function carDoorSpot(c){
  const base=c.pos.y;
@@ -238,6 +239,7 @@ function hud(){const set=(k,v,f)=>{if(hudCache[k]!==v){hudCache[k]=v;f(v);}};
   $('signalLeft').setAttribute('aria-pressed',String(v<0));$('signalRight').setAttribute('aria-pressed',String(v>0));
  });
  set('spd',player.car?Math.round(Math.abs(player.car.speed)*3.6):-1,v=>{$('speedo').style.display=v<0?'none':'block';if(v>=0)$('speedo').firstChild.textContent=v;});
+ set('roadLimit',player.car?TRAFFIC_PATROL.limit:null,v=>{$('roadLimit').textContent=v?' · LIMIT '+v:'';});
  set('w',wanted,v=>starEls.forEach((s,i)=>s.classList.toggle('on',i<v)));const L=wanted,nxt=L<5?TH[L+1]:WANTED_MAX;
  set('heat',Math.round(L<5?(heat-TH[L])/(nxt-TH[L])*100:100),v=>$('heat').firstChild.style.width=clamp(v,0,100)+'%');
  set('ev',L>0?Math.round(evadeT/LV.evade[L]*100):0,v=>{$('evade').style.opacity=v>0?1:0;$('evade').firstChild.style.width=v+'%';});set('blink',L>0&&evadeT>1,v=>$('stars').classList.toggle('blink',v));
@@ -288,7 +290,12 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
   else if(c.phys)physCarControl(c,0,0,true,dt);
   updateVehicleSnow(c,dt);
   updateTurnLamps(c,time);
-  if(c.bar){const on=c.siren&&(c.sceneFileId&&c.driver!=='player'||(wanted>0||c.block)&&(c.driver==='police'||c.block));const f=(time*7|0)%2;c.bar.r.material=on&&f?SIREN.onR:SIREN.offR;c.bar.b.material=on&&!f?SIREN.onB:SIREN.offB;}}
+  if(c.bar){
+   const responding=c.siren&&(c.sceneFileId&&c.driver!=='player'||(wanted>0||c.block)&&(c.driver==='police'||c.block));
+   const on=responding||c.driver==='police'&&time<c.ticketLightsUntil,f=(time*7|0)%2;
+   c.bar.r.material=on&&f?SIREN.onR:SIREN.offR;c.bar.b.material=on&&!f?SIREN.onB:SIREN.offB;
+  }
+ }
  physStep(dt);updateDoorMeshes();
  for(const c of cars){if(c.phys)physCarRead(c);syncCarMesh(c);if(c.spec.form==='roadster'){updateSeatedDriver(c);updateRoadsterDials(c);}c.mesh.visible=dist2(c.pos,player.pos)<230;if(dist2(c.pos,player.pos)<70)updateHeadlights(c,dt);}
  updateDrivingLight();
@@ -329,7 +336,7 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
  updUnits(gang,dt);updUnits(guards,dt);updHelis(dt);manage(dt);updParts(dt);updPickups(dt);updRob(dt);updProps(dt,player.pos.x,player.pos.z);updateStreetLighting(dt,player.pos.x,player.pos.z);updateInteriors(dt,caseCamera.focus?.x??player.pos.x,caseCamera.focus?.z??player.pos.z,caseCamera.focus?.y??player.pos.y);updateOutdoorModels(dt,player.pos.x,player.pos.z);if(clerk)updChar(clerk,0,dt,true);
  for(const T of tracers)if(T.l.visible){T.t-=dt;if(T.t<=0)T.l.visible=false;}muzzleL.intensity=Math.max(0,muzzleL.intensity-dt*150);boomL.intensity=Math.max(0,boomL.intensity-dt*25);
  /* wanted */
- if(state==='play'){updateStreetEncounter(dt);updateDepartment(dt);updateLaw(dt);}
+ if(state==='play'){updateStreetEncounter(dt);updateDepartment(dt);updateTrafficPatrol(dt);updateLaw(dt);}
  const cleanView=$('ui').classList.contains('cleanView');
  for(const m of markerObjs){
   const at=m.p.road||m.p.interact||m.p.door,d=Math.hypot(at.x-player.pos.x,at.z-player.pos.z);
@@ -420,7 +427,7 @@ function loop(){
 }
 /* ================= boot ================= */
 function setLoad(t,p){$('load').textContent=t;if(p!=null)$('lbar').firstChild.style.width=Math.round(p*100)+'%';}
-function initGame(){buildMinimapBase();buildMarkers();initializePoliceLives();
+function initGame(){buildMinimapBase();buildMarkers();initializePoliceLives();installTrafficPosts();
  const hp=places.find(p=>p.kind==='hospital'),pp=places.find(p=>p.kind==='police');
  SPAWN.hospital={x:hp.door.x+Math.sin(SIDEANG[hp.side])*.6,z:hp.door.z+Math.cos(SIDEANG[hp.side])*.6,yaw:SIDEANG[hp.side]};SPAWN.police={x:pp.door.x+Math.sin(SIDEANG[pp.side])*.6,z:pp.door.z+Math.cos(SIDEANG[pp.side])*.6,yaw:SIDEANG[pp.side]};
  const streetStart={x:CELL*4-HALF-.88,z:CELL*5+HALF+10,yaw:0};

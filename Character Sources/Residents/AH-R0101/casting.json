@@ -1,0 +1,8 @@
+{
+  "method": "Local photo synthesis",
+  "engine": "stable-diffusion.cpp",
+  "model": "Realistic Vision V6.0 B1 Hyper",
+  "seed": 760101,
+  "poseSource": "AH-R0004",
+  "referenceSha256": "2576734b003ea0d494044882a1a054f74939adb5ce95ca5867a865301008425f"
+}

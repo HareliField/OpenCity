@@ -72,6 +72,8 @@ The green MX-5 is parked beside the starting shop row. Its cockpit view follows 
 
 Run `node tools/street-test.js` to check all 16 speed humps, opposing pedestrian paths, stop priority, blocked exits and tyre clearance through 1,440 intersection movements. Each of the 12 cars drives straight, left and right from all four approaches at five junction layouts with both near and distant traffic simulation. A shared intersection checks vehicle and pedestrian clearance at 30, 60 and 120 updates per second.
 
+The same test sweeps all 1,376 straight ground lanes against the actual bridge decks, rails, supports and signposts. It drives the F-150, panel van and Harbor Supply delivery truck south on Coastal Avenue. Both commercial vehicles also drive over Harbor Viaduct and Coast Ridge Road in both directions.
+
 Run `node tools/roadster-test.js` to check the floor clearance and steering-wheel reach of all 32 character meshes in the MX-5.
 
 ## Ferry Street cottages
@@ -121,6 +123,12 @@ The **Cases** desk also offers three playable training reports. Follow a homicid
 Homicides, robberies, gunfire and vehicle thefts create case files. A civilian can call 911 about gunfire they hear. An identified shooter can trigger a pursuit. A detective takes the file and the evidence desk reviews game-world prints, DNA, witness statements and vehicle sightings. The **Gloves** button changes the character’s hand covering. A homicide bulletin can survive a search cooldown and a reload in the same browser tab. A patrol that recognizes the person or a reported plate can reopen the search. Booking updates linked files at both desks.
 
 ## Police searches
+
+Traffic officers in reflective vests work Verve Street at Studio Boulevard, Juniper Street at Park Street and Coastal Avenue at Elm Street. Marked motor patrols also issue tickets. The roadside speed signs read in mph. The speedometer displays the equivalent limit in km/h.
+
+Officers can cite speeding, running a red light or stop sign, wrong-way driving, driving on the sidewalk or cycle track, entering an occupied crosswalk, hitting someone, and damaging or destroying property. A civilian who sees property damage can complete a 911 call. Each ticket records the offense, location, fine, officer, witness source and observed plate. Approach a traffic officer on foot and press **C** to open **Traffic tickets**, or choose **Tickets** at either police desk. Pay from the player's cash balance. Paid and outstanding records survive a reload in the same tab.
+
+Run `node tools/traffic-ticket-test.js` to check lawful and unlawful crossings, witness calls, crash attribution, duplicate tickets, payment and reload.
 
 Property damage generates a misdemeanor report when a witness sees it. Civilians take a few seconds to complete the call. Police search the scene and the last confirmed location, and losing sight of the player starts the cooldown. Levels 1 and 2 use investigation behavior. Each incident has a limited ground and air response.
 

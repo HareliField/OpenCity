@@ -54,8 +54,38 @@ function buildPoliceOffice(block,M,side,box){
 }
 
 const policeGearMaterial=new THREE.MeshStandardMaterial({color:0x24303a,roughness:.74});
-function equipOfficer(c,metro){
- // The skinned uniform already includes its belt, pouches and protective clothing.
+const trafficVestMaterial=new THREE.MeshStandardMaterial({vertexColors:true,side:THREE.DoubleSide,roughness:.66});
+const trafficVestFits=new Map();
+function fitTrafficVest(c){
+ if(!c.bones.Spine2)return;
+ let geometry=trafficVestFits.get(c.name);
+ if(!geometry){
+  const positions=[],colors=[],lime=new THREE.Color(0xbad43b),tape=new THREE.Color(0xe1e6db);
+  // Follow the front and back of this uniform from the shoulder to the top of its duty belt.
+  for(const face of [-1,1])for(const side of [-1,1]){
+   const panel=[.09,.22,.40].map((drop,i)=>{
+    const at=x=>new V3(0,0,.009).applyMatrix4(uniformMount(c.name,side*x,drop,face));
+    return [at(i===0?.065:.012),at(i===0?.141:.149)];
+   });
+   function stripe(a,b,t0,t1,u0,u1,color){
+    const point=(t,u)=>a[0].clone().lerp(b[0],t).lerp(a[1].clone().lerp(b[1],t),u);
+    const corners=[point(t0,u0),point(t0,u1),point(t1,u1),point(t1,u0)];
+    for(const k of [0,1,2,0,2,3]){positions.push(...corners[k].toArray());colors.push(color.r,color.g,color.b);}
+   }
+   for(const [l,r,col] of [[0,.38,lime],[.38,.68,tape],[.68,1,lime]])stripe(panel[0],panel[1],0,1,l,r,col);
+   for(const [a,b,col] of [[0,.16,lime],[.16,.36,tape],[.36,1,lime]])stripe(panel[1],panel[2],a,b,0,1,col);
+  }
+  geometry=new THREE.BufferGeometry();
+  geometry.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));
+  geometry.setAttribute('color',new THREE.Float32BufferAttribute(colors,3));geometry.computeVertexNormals();
+  trafficVestFits.set(c.name,geometry);
+ }
+ const vest=new THREE.Mesh(geometry,trafficVestMaterial);vest.name='Traffic patrol vest';
+ c.model.traverse(m=>{if(m.isSkinnedMesh)vest.layers.mask=m.layers.mask;});
+ c.bones.Spine2.add(vest);
+}
+function equipOfficer(c,metro,traffic=false){
+ if(traffic)fitTrafficVest(c);
  if(!metro)clipDepartmentCamera(c);
 }
 function poseDispatcher(c,post,phase){
@@ -131,7 +161,7 @@ function updateStationPosts(dt){
    post.actor=makeChar(officerModel(member),{gun:member.kit.some(k=>k.includes('sidearm'))});
    post.actor.personId=member.personId;
    post.unit=departmentPerson(member,post.actor,post.point,uniform);
-   if(uniform)equipOfficer(post.actor,member.division==='Metro SWAT');
+   if(uniform)equipOfficer(post.actor,member.division==='Metro SWAT',post.traffic);
    personalizeOfficer(post.actor,member);fitIssuedEquipment(post.actor,member);
    post.actor.root.position.copy(post.point);post.actor.root.position.y=post.point.y||.16;post.actor.yaw=post.yaw;post.actor.talk=1;
   }

@@ -158,7 +158,7 @@ function buildTrafficLights(){
    const dx=axis==='ew'?sign:0,dz=axis==='ns'?sign:0,along=block*CELL+(sign>0?19:45);
    const x=(dx?along:line*CELL)-dz*(HALF+.73),z=(dz?along:line*CELL)+dx*(HALF+.73);
    const angle=Math.atan2(-dx,-dz);signPole(x,z,2.79,.042);
-   signFace(hump?'SPEED HUMP':section.rank===2?'30':section.rank===1?'25':'20',
+   signFace(hump?'SPEED HUMP':String(section.limitMph),
     x-dx*.05,2.37,z-dz*.05,hump?.73:.5,hump?.73:.68,angle);
   }
  }

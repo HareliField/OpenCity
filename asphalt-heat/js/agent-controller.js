@@ -51,6 +51,7 @@
    {id:'start',name:'Verve Nail Studio',x:CELL*4-HALF-.88,z:CELL*5+HALF+10},
    ...places.map((p,i)=>({id:'place-'+i,name:p.name,kind:p.kind,...point(p.road||p.interact||p.door)})),
    ...GRADE_ROADS.routes.map((r,i)=>({id:'road-'+i,name:r.name,...point(r.curve.getPointAt(.5))})),
+   ...TRAFFIC_PATROL.posts.map((p,i)=>({id:'traffic-'+i,name:p.room,...point(p.point)})),
    {id:'harbor',name:HARBOR.name,x:HARBOR.quay.x0+2,z:(HARBOR.approach.z0+HARBOR.approach.z1)/2},
    ...FREIGHT.gates.map((g,i)=>({id:'gate-'+i,name:g.name,x:g.x,z:FREIGHT.z0+10}))
   ];
@@ -120,7 +121,8 @@
    weapon:p.weapon,owned:{...p.own},ammo:{...p.ammo},gloves:p.gloves,down:p.down,vehicle:p.car?id(p.car):null,speed:p.car?.speed??p.pace??0},
    camera:{mode:caseCamera.enabled?'case':['follow','low','aerial','cockpit'][cameraMode],position:point(camera.position),yaw:camYaw+lookYaw,pitch:lookPitch},
    hudVisible:!$('ui').classList.contains('cleanView'),objective:$('obj').textContent,interaction:actionCtx()?.label??null,
-   law:{wanted,heat,seen:LAW.seen,evadeSeconds:evadeT,lastKnown:LAW.known?point(LAW.anchor):null},
+   law:{wanted,heat,seen:LAW.seen,evadeSeconds:evadeT,lastKnown:LAW.known?point(LAW.anchor):null,
+    limitKmh:TRAFFIC_PATROL.limit,outstandingTickets:PoliceDepartment.tickets.filter(t=>t.driver===p.personId && t.paid===null).length},
    robbery:robbing?{place:robbing.p.name,seconds:robbing.t,total:robbing.p.time}:null,
    outcome:state==='dead'?{kind:deadKind,respawnIn:deadT}:null,
    menu:policeDesk.open?{name:'police',tab:deskTab,station:deskStation?.name,rows:[...$('deskRows').children].map(r=>r.innerText)}:
@@ -168,6 +170,7 @@
    player.c.root.position.copy(at);player.c.root.rotation.y=yaw;player.c.yaw=yaw;
   }
   player.pos.copy(car?car.pos:at);player.yaw=yaw;player.down=player.pace=player.turn=player.spd=0;player.pendingPunch=null;
+  TRAFFIC_PATROL.drive=null;
   camInit=false;camYaw=yaw;lookYaw=lookPitch=0;
   // Advance one ordinary tick so the streamed scenery, camera and interactions match the new location.
   step(1/30,{forward:0,turn:0,fire:false,sprint:false});
@@ -217,7 +220,7 @@
     if(c.op==='places') return destinations();
     if(c.op==='world') return world(c);
     if(c.op==='models') return Object.keys(CARSPEC);
-    return structuredClone({cases:PoliceDepartment.cases,radio:PoliceDepartment.transmissions,contacts:PoliceDepartment.contacts,
+    return structuredClone({cases:PoliceDepartment.cases,tickets:PoliceDepartment.tickets,radio:PoliceDepartment.transmissions,contacts:PoliceDepartment.contacts,
      staff:PoliceDepartment.staff.map(s=>({...s,status:PoliceDepartment.status(s)}))});
    case 'step': advance(c);break;
    case 'jump': jump(c);break;
