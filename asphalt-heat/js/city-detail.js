@@ -9,7 +9,16 @@ function detailPrototype(id){
  };
  const box=(color,x,y,z,w,h,d)=>part(new THREE.BoxGeometry(w,h,d),color,x,y,z);
  const drum=(color,x,y,z,top,foot,h)=>part(new THREE.CylinderGeometry(top,foot,h,12),color,x,y,z);
- if(id==='municipal-pump'){
+ if(id==='galvanized-roof-vent'||id==='factory-skylight'){
+  box(0x4d4a43,0,.064,0,1,.128,1);box(0x93978e,0,.45,0,.83,.68,.84);
+  box(id==='factory-skylight'?0x899a9c:0x92958e,0,.84,0,.97,.28,.95);
+ }else if(id==='cargo-pallet'){box(0x907855,0,.50,0,1,1,1);
+ }else if(id==='quay-drum'){drum(0x7f8780,0,.50,0,.49,.49,1);
+ }else if(id==='hardware-stock-rack'){
+  for(const x of [-.48,.48])for(const z of [-.45,.45])box(0x50626a,x,.5,z,.016,1,.034);
+  for(const y of [.10,.37,.65,.89])box(0x9c9f96,0,y,0,.98,.023,.94);
+  for(let k=0;k<10;k++)box(0x897f63,-.38+(k%5)*.19,.24+Math.floor(k/5)*.28,0,.13,.19,.52);
+ }else if(id==='municipal-pump'){
   box(0x474a45,0,.08,0,1,.16,.94);drum(0x416461,-.23,.43,0,.25,.26,.45);drum(0x4d716a,.25,.45,0,.22,.27,.54);
  }else if(id==='grocery-cooler'){
   box(0x888b85,0,.49,-.06,.99,.98,.83);box(0x404744,0,.54,.377,.90,.73,.018);
@@ -173,6 +182,7 @@ function dressReferenceShop(block,row,M,u0,u1,height,roomDepth){
  if(row===RETAIL.deli)for(const x of [u0+1.0,u0+2.1])model('produce-crate',x,.17,-.58,[.87,.59,.65],0,true);
  if(row===RETAIL.laundry)model('laundry-basket',u0+2.1,1.106,3.43,[.53,.30,.43]);
  if(row===RETAIL.tailor)model('leather-holdall',u0+.98,2.36,6.12,[.53,.30,.25]);
+ if(row===RETAIL.cafe)model('strelitzia-planter',u1-.87,.17,-.59,[.59,1.45,.57],.28,true);
  if(row===RETAIL.cafe)model('shop-register',center+w*.13,1.35,3.72,[.44,.39,.29],Math.PI);
 }
 function dressReferenceHouse(B,L,height){
@@ -206,7 +216,8 @@ function buildCityDetail(){
   }
  }
  for(const z of [117,628])worksModel('life-ring-station',W+28.1,.022,z,[.70,1.46,.31],-Math.PI/2);
- for(const [x,z,yaw] of [[W+33,120,0],[W+42,630,Math.PI]])buildBeachLookout(x,z,yaw);
+ for(const [x,z,yaw] of [[W+33,120,0],[W+42,630,Math.PI],[W+44,W*.18,0],
+  [W+44,W*.38,Math.PI],[W+44,W*.68,0],[W+44,W*.89,Math.PI]])buildBeachLookout(x,z,yaw);
  finishCityDetail();
 }
 

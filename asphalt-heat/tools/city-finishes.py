@@ -50,8 +50,65 @@ def finish(name, photo, box, size, rough, relief, tile=True):
     Image.fromarray(values).save(FINISHES / f'{name}-rough.png')
 
 
+def coastal_finishes():
+    finish('cove-ashlar',50,(199,10,336,143),(448,384),.91,5.8)
+    finish('cove-render',50,(269,185,361,295),(256,304),.93,4.2)
+    # Lift the shade from the photographed surfaces so directional light comes from the sun in game.
+    for name,target in [('cove-ashlar',[160,143,121]),('cove-render',[187,180,165])]:
+        path=FINISHES/(name+'-color.jpg')
+        tex=np.array(Image.open(path).convert('RGB'),dtype=float)
+        columns=np.asarray(Image.fromarray(np.uint8(tex.mean(axis=0)[None,:,:])).filter(ImageFilter.GaussianBlur(18)),dtype=float)
+        tex=np.clip((tex-columns)*.91+np.array(target),0,255)
+        wrap_edges(Image.fromarray(np.uint8(tex)),12).save(path,quality=94,subsampling=0)
+    # Rectify the one uninterrupted photograph of the keeper wall. Remove the vent and
+    # the bystander's overlap before fitting the actual opening and its metalwork.
+    with Image.open(next(PHOTOS.glob('050-*.png'))) as im:
+        w,h=im.size
+        quad=tuple(v*(w/800 if i%2==0 else h/450) for i,v in enumerate((175,172,181,316,436,279,437,173)))
+        facade=im.convert('RGB').transform((672,384),Image.Transform.QUAD,quad,Image.Resampling.BICUBIC)
+    def patch(box,offset):
+        x0,y0,x1,y1=box;dx,dy=offset
+        fragment=facade.crop((x0+dx,y0+dy,x1+dx,y1+dy))
+        mask=Image.new('L',(x1-x0,y1-y0))
+        ImageDraw.Draw(mask).rounded_rectangle((4,4,mask.width-4,mask.height-4),radius=9,fill=255)
+        facade.paste(fragment,(x0,y0),mask.filter(ImageFilter.GaussianBlur(3)))
+    patch((107,52,207,158),(115,0))
+    patch((519,180,637,384),(-140,0))
+    surf=np.asarray(facade,dtype=float)
+    surf=np.clip(surf*.94+np.array([167,156,140])-surf.mean(axis=(0,1))*.94,0,255)
+    face=Image.fromarray(np.uint8(surf))
+    face.save(FINISHES/'keeper-wall-color.jpg',quality=95,subsampling=0)
+    lum=np.asarray(face.convert('L').filter(ImageFilter.GaussianBlur(.67)),dtype=float)/255
+    dy,dx=np.gradient(lum);n=np.dstack((-dx*1.9,dy*1.9,np.ones_like(dx)));n/=np.linalg.norm(n,axis=-1,keepdims=True)
+    Image.fromarray(np.uint8((n*.5+.5)*255)).save(FINISHES/'keeper-wall-normal.png')
+    Image.fromarray(np.uint8(np.clip(.88+.11*lum,0,1)*255)).save(FINISHES/'keeper-wall-rough.png')
+    dry=crop(50,(537,325,740,441),(480,320))
+    arr=np.asarray(dry,dtype=float)
+    base=np.asarray(dry.filter(ImageFilter.GaussianBlur(22)),dtype=float)
+    sand=np.clip((arr-base)*.84+np.array([147,127,105]),0,255)
+    tiled=wrap_edges(Image.fromarray(np.uint8(sand)),22)
+    tiled.save(GAME/'tex/cove-sand_d.webp',quality=93)
+    lum=np.asarray(tiled.convert('L').filter(ImageFilter.GaussianBlur(.65)),dtype=float)/255
+    dy,dx=np.gradient(lum)
+    n=np.dstack((-dx*2.5,dy*2.5,np.ones_like(dx)))
+    n/=np.linalg.norm(n,axis=-1,keepdims=True)
+    Image.fromarray(np.uint8((n*.5+.5)*255)).save(GAME/'tex/cove-sand_n.webp',quality=91)
+    # Rectify the bright broken foam band from 032, excluding the beach, horizon and buildings.
+    with Image.open(next(PHOTOS.glob('032-*.png'))) as wave:
+        w,h=wave.size
+        origin=(127,284);along=(.625,-.781);out=(-.781,-.625)
+        def xy(u,v):
+            return ((origin[0]+u*along[0]+v*out[0])*w/800,(origin[1]+u*along[1]+v*out[1])*h/450)
+        quad=sum((xy(u,v) for u,v in [(-107,-8),(-107,19),(107,19),(107,-8)]),())
+        strip=wave.convert('L').transform((640,112),Image.Transform.QUAD,quad,Image.Resampling.BICUBIC)
+        pixels=np.asarray(strip,dtype=float)
+        mask=np.clip((pixels-78)/132,0,1)
+        wrap_edges(Image.fromarray(np.uint8(mask*255)),14).save(GAME/'tex/cove-foam.webp',quality=94)
+
 def build():
     FINISHES.mkdir(parents=True, exist_ok=True)
+    coastal_finishes()
+    finish('salon-upholstery',23,(613,368,684,408),(224,128),.94,3.1)
     finish('joinery', 93, (302,334,415,382), (384,180), .61, 5.5)
     finish('enamel', 26, (18,287,130,320), (256,100), .39, 1.7)
     finish('cast-iron', 112, (116,239,128,257), (80,132), .69, 2.4)
@@ -110,14 +167,14 @@ def build():
     palm = Image.new('RGBA',(224,512))
     pen = ImageDraw.Draw(palm)
     pen.line((112,511,112,2),fill=(109,101,60,255),width=3)
-    for j in range(34):
-        t=(j+.7)/35
+    for j in range(41):
+        t=(j+.7)/42
         y=512*(1-t)
-        span=17+85*sin(pi*t**.85)
+        span=21+87*sin(pi*t**.85)
         for side in [-1,1]:
             x=112+side*span
-            c=65+(j*13+side*5)%24
-            pen.polygon([(112,y+2),(112+side*span*.54,y-9),(x,y-21),(112+side*span*.60,y-1),(112,y+4)],fill=(c+11,c+12,c-18,255))
+            c=81+(j*13+side*5)%28
+            pen.polygon([(112,y+2),(112+side*span*.54,y-15),(x,y-27),(112+side*span*.60,y+1),(112,y+6)],fill=(c+11,c+12,c-18,255))
             pen.line((112,y+2,x,y-21),fill=(c+21,c+19,c-8,255),width=1)
     palm.save(FINISHES/'palm-spray.png',optimize=True)
 

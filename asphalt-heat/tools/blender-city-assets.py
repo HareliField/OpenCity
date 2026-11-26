@@ -39,7 +39,7 @@ plane_bark = material('Mottled avenue bark','736354',.91,finish='plane-bark')
 palm_bark = material('Palm trunk scars','8c7661',.91,finish='palm-bark')
 leaf = material('Photographed sycamore leaves','748047',.84,image='plane-leaves.png',cutout=True,two_sided=True)
 palm_card = material('Distant pinnate leaves','787c4d',.84,image='palm-spray.png',cutout=True,two_sided=True)
-frond = [material(n,c,.84,two_sided=True) for n,c in [('Sunlit palm leaf','817c49'),('Mature green palm leaf','61693c'),('Dry palm skirt','806a4c')]]
+frond = [material(n,c,.84,two_sided=True) for n,c in [('Sunlit palm leaf','8a8958'),('Mature green palm leaf','717b44'),('Dry palm skirt','806a4c')]]
 assets = []
 
 
@@ -371,19 +371,20 @@ def water_meter():
     return a
 
 
-def plane_tree(low=False):
+def plane_tree(low=False,mature=False):
     name='sycamore-distant' if low else 'avenue-sycamore'
+    if mature: name='park-sycamore-distant' if low else 'park-sycamore'
     a=make(name,[14,18,34,92,112],'Forking avenue sycamore with a lightly pruned crown and separate alpha-cut leaf clusters.')
-    rng=random.Random(34)
+    rng=random.Random(65 if mature else 34)
     a.tube('Trunk',[(0,0,0),(.045,-.028,.18),(-.04,.018,1.34),(-.075,.065,2.38),(.054,.113,3.26),(.21,.12,4.21)],[.233,.210,.159,.137,.094,.045],plane_bark,8 if low else 14)
     tips=[]
-    for j in range(7):
+    for j in range(9 if mature else 7):
         theta=j*2.40+rng.uniform(-.16,.16)
         e=Vector((cos(theta),sin(theta),0))
         lateral=Vector((-sin(theta),cos(theta),0))
         root=Vector((.045,.098,2.35+j*.184))
-        fork=root+e*(.44+j*.065)+Vector((0,0,.96+j*.058))
-        crown=fork+e*(.70+rng.random()*.40)+Vector((0,0,.73+rng.random()*.70))
+        fork=root+e*((.44+j*.065)*(1.58 if mature else 1))+Vector((0,0,.96+j*.058))
+        crown=fork+e*((.70+rng.random()*.40)*(1.37 if mature else 1))+Vector((0,0,.73+rng.random()*.70))
         a.tube('Primary scaffold limb',[root,(root+fork)*.5+e*.09,fork,crown],[.115-j*.007,.08,.057,.019],plane_bark,6 if low else 9)
         for sign in [-1,1]:
             tip=crown+lateral*(sign*(.48+rng.random()*.46))+e*(.13+rng.random()*.42)+Vector((0,0,.42+rng.random()*.87))
@@ -394,7 +395,7 @@ def plane_tree(low=False):
     vs,fs,uvs=[],[],[]
     # Small bent leaf sprays are distributed along branches. The open intervals reveal branch structure.
     for mid,tip,e,side in tips:
-        for j in range(4 if low else 14):
+        for j in range((6 if mature else 4) if low else (17 if mature else 14)):
             f=rng.uniform(-.5,1.32)
             c=mid.lerp(tip,f)+side*rng.uniform(-.61,.61)+e*rng.uniform(-.35,.38)+Vector((0,0,rng.uniform(-.30,.30)))
             theta=rng.random()*TAU
@@ -426,14 +427,14 @@ def palm_tree(low=False):
             a.turn('Leaf base scars',x,y,[(z-.021,r*.985),(z,r+.009),(z+.025,r*.991)],palm_bark,14)
     verts=[[] for _ in frond]
     faces=[[] for _ in frond]
-    for k in range(19):
-        age=k//7
+    for k in range(29):
+        age=min(2,k//11)
         angle=k*2.39996+rng.uniform(-.12,.12)
         axis=Vector((cos(angle),sin(angle),0))
         side=Vector((-sin(angle),cos(angle),0))
-        length=rng.uniform(2.00,2.68) if age<2 else rng.uniform(.7,1.28)
+        length=rng.uniform(2.47,3.16) if age<2 else rng.uniform(.89,1.51)
         rise=[1.87,1.02,.35][age]*rng.uniform(.8,1.12)
-        fall=[1.83,2.21,2.34][age]*rng.uniform(.86,1.15)
+        fall=[1.70,2.19,2.35][age]*rng.uniform(.86,1.15)
         def at(t):
             return crown + axis*(length*t)+side*(.20*t*t)+Vector((0,0,rise*t*1.90-fall*t*t*1.65))
         if low:
@@ -442,7 +443,7 @@ def palm_tree(low=False):
                 t=i/7
                 r=at(t)
                 for j,u in enumerate([-.5,0,.5]):
-                    vs.append(r+side*(u*(1.32 if age<2 else .66))+Vector((0,0,-abs(u)*.47)))
+                    vs.append(r+side*(u*(1.53 if age<2 else .81))+Vector((0,0,-abs(u)*.47)))
                     uvs.append((u+.5,t))
                 if i:
                     k=3*i
@@ -451,15 +452,15 @@ def palm_tree(low=False):
             continue
         n=15
         a.tube('Arched rachis',[at(i/n) for i in range(n+1)],[.038*(1-i/n)+.004 for i in range(n+1)],frond[age],5 if low else 7)
-        n=12 if low else 31
+        n=37
         for j in range(n):
             t=.08+.89*j/n
-            reach=(.13+.52*sin(pi*(t**.83))) * (1 if age<2 else .53)
+            reach=(.16+.64*sin(pi*(t**.83))) * (1 if age<2 else .53)
             for sign in [-1,1]:
                 r=at(t)
                 tip=r+side*(sign*reach)+axis*(.26*(1-t)+.07)+Vector((0,0,-.16-.35*sin(pi*t)))
                 mid=r.lerp(tip,.51)+Vector((0,0,.065))
-                width=(.030 if low else .019)*(.30+sin(pi*t)*.70)
+                width=.034*(.41+sin(pi*t)*.59)
                 i=len(verts[age])
                 verts[age].extend([r-axis*width,r+axis*width,mid+axis*width,tip,mid-axis*width,mid+Vector((0,0,.012))])
                 faces[age].extend([(i,i+1,i+5),(i+1,i+2,i+5),(i+2,i+3,i+5),(i+3,i+4,i+5),(i+4,i,i+5)])
@@ -552,7 +553,10 @@ def main():
         builder()
     plane_tree(True)
     palm_tree(True)
-    publish(assets,{a.name for a in assets})
+    plane_tree(mature=True)
+    plane_tree(low=True,mature=True)
+    runtime=set(sys.argv[1:]) or {a.name for a in assets}
+    publish(assets,runtime)
     manifest=[]
     for a in assets:
         manifest.append({'id':a.name,'sourceImages':a.refs,'description':a.description,'parts':len(a.collection.objects),

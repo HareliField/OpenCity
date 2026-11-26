@@ -182,5 +182,50 @@
   },
   "florists-trug": {
     "file": "florists-trug.glb"
+  },
+  "cove-lighthouse": {
+    "file": "cove-lighthouse.glb"
+  },
+  "park-sycamore": {
+    "file": "park-sycamore.glb"
+  },
+  "park-sycamore-distant": {
+    "file": "park-sycamore-distant.glb"
+  },
+  "galvanized-roof-vent": {
+    "file": "galvanized-roof-vent.glb"
+  },
+  "factory-skylight": {
+    "file": "factory-skylight.glb"
+  },
+  "cargo-pallet": {
+    "file": "cargo-pallet.glb"
+  },
+  "quay-drum": {
+    "file": "quay-drum.glb"
+  },
+  "hardware-stock-rack": {
+    "file": "hardware-stock-rack.glb"
+  },
+  "linen-salon-chair": {
+    "file": "linen-salon-chair.glb"
+  },
+  "strelitzia-planter": {
+    "file": "strelitzia-planter.glb"
+  },
+  "coat-rail": {
+    "file": "coat-rail.glb"
+  },
+  "coin-parking-meter": {
+    "file": "coin-parking-meter.glb"
+  },
+  "silver-city-sedan": {
+    "file": "silver-city-sedan.glb"
+  },
+  "brick-red-crossover": {
+    "file": "brick-red-crossover.glb"
+  },
+  "harbor-box-truck": {
+    "file": "harbor-box-truck.glb"
   }
 }

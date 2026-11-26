@@ -231,9 +231,9 @@
       92
     ],
     "description": "Scarred leaning trunk, persistent dry skirt and folded, tapered individual leaflets.",
-    "parts": 62,
+    "parts": 72,
     "movableParts": [],
-    "runtimeBytes": 660480
+    "runtimeBytes": 914652
   },
   {
     "id": "sycamore-distant",
@@ -259,8 +259,36 @@
       92
     ],
     "description": "Scarred leaning trunk, persistent dry skirt and folded, tapered individual leaflets.",
-    "parts": 20,
+    "parts": 30,
     "movableParts": [],
-    "runtimeBytes": 89208
+    "runtimeBytes": 103304
+  },
+  {
+    "id": "park-sycamore",
+    "sourceImages": [
+      14,
+      18,
+      34,
+      92,
+      112
+    ],
+    "description": "Forking avenue sycamore with a lightly pruned crown and separate alpha-cut leaf clusters.",
+    "parts": 29,
+    "movableParts": [],
+    "runtimeBytes": 593904
+  },
+  {
+    "id": "park-sycamore-distant",
+    "sourceImages": [
+      14,
+      18,
+      34,
+      92,
+      112
+    ],
+    "description": "Forking avenue sycamore with a lightly pruned crown and separate alpha-cut leaf clusters.",
+    "parts": 11,
+    "movableParts": [],
+    "runtimeBytes": 530240
   }
 ]

@@ -122,7 +122,7 @@ function buildInterior(room){
   const fallback=makeFixture(id,dims);
   node.add(fallback);
   scene.add(node);
-  const modelId=id==='washer'?'laundry-machine':id==='manicure-desk'?'nail-workstation':id==='display'?'patisserie-case':id==='plant'?'salon-plant':id==='stock'&&row===RETAIL.deli?'pantry-shelf':id;
+  const modelId=id==='rack'?'coat-rail':id==='seat'&&row===RETAIL.studio?'linen-salon-chair':id==='plant'&&row===RETAIL.cafe?'strelitzia-planter':id==='washer'?'laundry-machine':id==='manicure-desk'?'nail-workstation':id==='display'?'patisserie-case':id==='plant'?'salon-plant':id==='stock'&&row===RETAIL.deli?'pantry-shelf':id;
   const device=placeCityMachine(modelId,p.x,.172,p.z,angle,dims);
   INTERIORS.fixtures.push({id:modelId,node,fallback,dims,x:p.x,z:p.z,device});
   if(id==='seat'||id==='plant'||id==='reading-table'){

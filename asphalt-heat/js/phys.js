@@ -99,10 +99,14 @@ function physCarAdd(c){
  const b=new CANNON.Body({mass:s.mass,material:PH.mat.car,collisionFilterGroup:PHYS_GROUP.car});
  const length=s.L/2-.09,width=s.W/2-.09,clear=s.gc+.07;
  // A lower sill and narrower cabin let contact height determine pitch and roll.
- b.addShape(new CANNON.Box(new CV(length,(s.hb-clear)/2,width)),new CV(0,(s.hb+clear)/2-s.com,0));
- const cabin=(s.L-s.hood-s.tr)*.39;
- b.addShape(new CANNON.Box(new CV(cabin,(s.r-s.hb)/2,width-.14)),
-   new CV((s.hood-s.tr)/2,(s.r+s.hb)/2-s.com,0));
+ if(s.chassisBoxes){
+  for(const [x,y,z,L,H,W] of s.chassisBoxes)b.addShape(new CANNON.Box(new CV(L/2,H/2,W/2)),new CV(x,y-s.com,z));
+ }else{
+  b.addShape(new CANNON.Box(new CV(length,(s.hb-clear)/2,width)),new CV(0,(s.hb+clear)/2-s.com,0));
+  const cabin=(s.L-s.hood-s.tr)*.39;
+  b.addShape(new CANNON.Box(new CV(cabin,(s.r-s.hb)/2,width-.14)),
+    new CV((s.hood-s.tr)/2,(s.r+s.hb)/2-s.com,0));
+ }
  b.angularDamping=.27;
  b.linearDamping=.012;
  b.allowSleep=true;

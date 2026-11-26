@@ -62,6 +62,12 @@ Run `node tools/street-test.js` to check all 16 speed humps, opposing pedestrian
 
 Run `node tools/roadster-test.js` to check the floor clearance and steering-wheel reach of all 32 character meshes in the MX-5.
 
+## Dock Street and Lighthouse Cove
+
+Harbor Supply faces Dock Street, just west of Ocean Drive. The front shop and stock yard have separate entrances. Use **C** at the counter to buy a portable work light, beside the loading shutter to raise it, or beside the white truck to drive it out through the lowered curb. The silver sedan is parked on Dock Street and the brick-red crossover on Park Street.
+
+East of Ocean Drive, the keeper’s door opens onto a 96-tread spiral stair. The gallery is 15.77 metres above the beach. Use **C** at its electrical switch to operate the rotating beacon. The lens also follows the southeast district feeder.
+
 ## Market Street and the service gallery
 
 Tideline Market sits one block east of the starting shop row. Harbour Bakery shares its ground floor. Use **C** at the fruit or bread counter to buy food. On Foundry Street, the maroon four-door saloon is parked outside Harbor Books & Café, between Riverside Donuts and Coastal Nails. Each shop opens onto its furnished interior.

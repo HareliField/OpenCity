@@ -22,6 +22,7 @@ run(read('js/freight.js'));
 run(read('js/city-works.js'));
 run(read('js/city-services.js'));
 run(read('js/city-fixtures.js'));
+run(read('js/lighthouse.js'));
 run(read('js/game.js'));
 run(read('js/dispatch.js'));
 // The input and renderer bootstraps are driven by the browser. Load the gameplay section here.
