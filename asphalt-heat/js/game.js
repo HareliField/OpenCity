@@ -13,6 +13,7 @@ function groundY(x,z,referenceY=null){
   const grade=sampleGrade(x,z,referenceY);
   if(grade)y=Math.max(y,grade.height);
  }
+ y=truckFloorAt(x,z,referenceY,y);
  return coveFloorAt(x,z,referenceY,worksFloorAt(x,z,referenceY,mosaicFloorAt(x,z,y)));
 }
 function pushOut(p,r,R){
@@ -59,6 +60,7 @@ function collideWorld(p,r,motion=null){
    }
   }
  }
+ const panel=walkVehicleParts(p,r,y);if(panel)hit=panel;
  const coast=collideCove(p,r,y);if(coast)hit=coast;
  const grade=collideGradeRails(p,r,y);
  if(grade)hit=grade;
@@ -236,7 +238,7 @@ function damagePlayer(d){if(state!=='play')return;if(player.armor>0){const a=Mat
 /* ================= cars ================= */
 function liveryOf(t){return t==='police'?'police':t==='taxi'?'taxi':t==='swat'?'swat':t==='amb'?'amb':'none';}
 function spawnCar(type,x,z,h,driver){const s=CARSPEC[type],lv=liveryOf(type);const color=type==='taxi'?0xf2c200:lv!=='none'?0xffffff:pick(carColors);
- const M=makeCarMesh(type,color,lv);scene.add(M.grp);const mats=M.mats;
+ const M=makeCarMesh(type,color,lv);M.grp.userData.vehicleCoordinates=true;scene.add(M.grp);const mats=M.mats;
  const c={type,plate:mats[5].userData.plate,spec:s,mesh:M.grp,body3:M.body,beam:M.beam,rearGlow:M.rearGlow,bar:M.bar,mats,pos:new V3(x,0,z),vel:new V3(),h,speed:0,hp:s.hp,max:s.hp,driver,ai:null,route:null,burn:0,dead:false,wreckT:0,stuck:0,rev:0,wait:0,cd:rnd(1,2),siren:false,block:false,unit:null,phys:false,body:null,veh:null,upY:1,spin:0,steerA:0,lightsOn:!!driver};
  c.turnLamps=makeTurnLamps(s);M.grp.add(c.turnLamps.left,c.turnLamps.right);
  c.snowDepth=M.snowDepth;c.paintMaterial=M.paint;
@@ -256,14 +258,14 @@ function updateVehicleSnow(c,dt,opening=false){
  if(opening)c.snowDepth.value=exposed?weather.snowCover*(c.driver?.28:1):0;
  else c.snowDepth.value=vehicleSnowDepth(c.snowDepth.value,weather,exposed,c.speed,!!c.driver,dt);
 }
-function paintCar(c,color){c.paintColor=color;if(c.hero)c.hero.shell.traverse(o=>{if(o.isMesh)o.material.color.copy(lin(color));});c.paintMaterial.color.copy(lin(color));c.mats[0]=c.paintMaterial;c.body3.material=c.mats.slice();}
+function paintCar(c,color){c.paintColor=color;if(c.hero){for(const root of [c.hero.shell,c.components?.section])root?.traverse(o=>{if(o.isMesh&&o.userData.lacquer)o.material.color.copy(lin(color));});}c.paintMaterial.color.copy(lin(color));c.mats[0]=c.paintMaterial;c.body3.material=c.mats.slice();}
 function repairCar(c,color){
- c.hp=c.max;c.repainted=true;
- if(c.ownGeo){c.body3.geometry.dispose();c.body3.geometry=carGeo(c.type).geo;c.ownGeo=false;}
+ c.hp=c.max;c.repainted=true;repairVehicleComponents(c);
+ if(c.ownGeo){c.body3.geometry.dispose();c.body3.geometry=c.components&&!c.hero&&c.components.near?splitFleetGeometry(c.type).get('Frame'):carGeo(c.type).geo;c.ownGeo=false;}
  if(c.hero?.deformed){c.hero.shell.traverse(o=>{if(o.userData.undented){o.geometry.dispose();o.geometry=o.userData.undented;delete o.userData.undented;}});c.hero.deformed=false;}
  paintCar(c,color);
 }
-function removeCar(c){PoliceDepartment.release(c.officer);c.mats[5].map.dispose();c.mats[5].dispose();c.paintMaterial.dispose();c.rearGlow.material.dispose();removeSeatedDriver(c);removeHeroCoupe(c);physCarOff(c);scene.remove(c.mesh);if(c.ownGeo)c.body3.geometry.dispose();const i=cars.indexOf(c);if(i>=0)cars.splice(i,1);}
+function removeCar(c){PoliceDepartment.release(c.officer);c.mats[5].map.dispose();c.mats[5].dispose();c.paintMaterial.dispose();c.rearGlow.material.dispose();removeSeatedDriver(c);if(c.components)releaseVehicleComponents(c);removeHeroCoupe(c);physCarOff(c);scene.remove(c.mesh);if(c.ownGeo)c.body3.geometry.dispose();const i=cars.indexOf(c);if(i>=0)cars.splice(i,1);}
 function setCarLights(c,brake){const running=!!(c.driver||c===player.car)&&!c.dead;
  const on=running&&weather.headlights>.09;
  const head=on?LENS.headOn:LENS.headOff,tail=on?(brake?LENS.tailBrake:LENS.tailOn):(brake?LENS.tailBrake:LENS.tailOff);
@@ -359,7 +361,7 @@ function onCarHit(h){const c=h.car,o=h.other;if(!cars.includes(c))return;const o
   const at={x:h.px,y:c.pos.y,z:h.pz};
   reportTrafficDamage(oc?'collision':'property',oc||o,at,oc?'Collision with '+oc.spec.modelName+' · '+oc.plate:'Vehicle hit a fixed roadside structure.');
  }
- if(iv>4.5&&c.mesh.visible){c.mesh.updateMatrixWorld();_inv.copy(c.mesh.matrixWorld).invert();_lp.set(h.px,h.py,h.pz).applyMatrix4(_inv);_lp.y=clamp(_lp.y,c.spec.gc+.2,c.spec.r-.1);carDent(c,_lp.x*1.05,_lp.y,_lp.z*1.02,Math.min(.28,Math.max(0,(closing-1.2)*.018)));
+ if(iv>4.5&&c.mesh.visible){c.mesh.updateMatrixWorld();_inv.copy(c.mesh.matrixWorld).invert();_lp.set(h.px,h.py,h.pz).applyMatrix4(_inv);if(c.components)impactVehicleGlass(c,_lp,closing);_lp.y=clamp(_lp.y,c.spec.gc+.2,c.spec.r-.1);carDent(c,_lp.x*1.05,_lp.y,_lp.z*1.02,Math.min(.28,Math.max(0,(closing-1.2)*.018)));
   if(iv>7)for(let k=0;k<6;k++)emit(h.px,h.py+.3,h.pz,rnd(-3,3),rnd(1,4),rnd(-3,3),.4,.06,.05,0xffd29a,true,9);}
  if(iv>5){noise(.25+Math.min(iv,25)*.015,700+iv*30,distVol(h.px,h.pz,Math.min(1,iv/16)));if(c===player.car||oc===player.car){shake=Math.max(shake,Math.min(1,iv/20));if(c===player.car&&iv>16)damagePlayer((iv-16)*.9);}}
  if(oc&&(c===player.car||oc===player.car)){const other=c===player.car?oc:c;if(other.driver==='police'&&iv>7&&wanted<2)crime(12,other.pos.x,other.pos.z,true);if(other.driver==='ai'&&iv>6)other.angry=4;}}
@@ -371,7 +373,7 @@ function onPropHit(p,iv,c){
  noise(.2,p.t==='lamp'||p.t==='hydrant'?500:1200,distVol(p.x,p.z,Math.min(.7,iv/14)));
 }
 function explode(c){c.burn=0;c.wreckT=0;c.mats[0]=burntMat;c.mats[1]=burntMat;c.body3.material=c.mats.slice();if(c.bar){c.bar.r.material=SIREN.offR;c.bar.b.material=SIREN.offB;}c.beam.visible=c.rearGlow.visible=false;
- if(c.hero)c.hero.shell.traverse(o=>{if(o.isMesh){o.material.dispose();o.material=burntMat;}});
+ if(c.hero){for(const root of [c.hero.shell,...(c.components?.joints.values()||[])].map(p=>p.part||p))root.traverse(o=>{if(o.isMesh){o.material.dispose();o.material=burntMat;}});}
  updateHeroLights(c);
  if(c===player.car)player.hp=0;explodeAt(c.pos.x,c.pos.z,9,c);if(c.phys){c.body.wakeUp();c.body.applyImpulse(new CV(rnd(-1,1)*c.spec.mass*1.2,c.spec.mass*4.5,rnd(-1,1)*c.spec.mass*1.2),new CV(rnd(-1,1),.5,rnd(-1,1)));}}
 function explodeAt(x,z,r,src,y=src?.pos.y??groundY(x,z),playerCaused=!!src?.playerCaused){

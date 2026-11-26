@@ -51,6 +51,7 @@ function updateOutdoorModels(dt,x,z){
  }
  updateDoorModels();
  updatePropModels(x,z);
+ for(const c of cars)streamVehicleComponents(c,Math.hypot(x-c.pos.x,z-c.pos.z)<48);
  const featured=cars.find(c=>c.heroWanted&&!c.heroLoading&&!c.dead&&!(c.retryAfter>performance.now())&&Math.hypot(x-c.pos.x,z-c.pos.z)<85);
  if(featured&&INTERIORS.catalog[featured.heroAsset||'coupe'])loadHeroCar(featured);
 }
@@ -179,7 +180,11 @@ function loadHeroCar(car){
   const path='models/scenery/'+INTERIORS.catalog[id].file;
   const model=new Promise((resolve,reject)=>new THREE.GLTFLoader().load(path,resolve,undefined,reject))
    .then(gltf=>{
-    const shell=gltf.scene.getObjectByName('VehicleShell')||gltf.scene.getObjectByName('CoupeShell')||gltf.scene.getObjectByName('Frame');
+    let shell=gltf.scene.getObjectByName('VehicleShell')||gltf.scene.getObjectByName('CoupeShell');
+    if(!shell&&gltf.scene.getObjectByName('Frame')){
+     shell=new THREE.Group();shell.name='VehicleShell';
+     for(const part of [...gltf.scene.children])if(part.name!=='WheelPrototype')shell.add(part);
+    }
     const wheel=gltf.scene.getObjectByName('WheelPrototype');
     if(!shell||!wheel)return null;
     shell.traverse(o=>{
@@ -200,7 +205,9 @@ function loadHeroCar(car){
   shell.traverse(o=>{
    if(!o.isMesh)return;
    o.material=o.material.transparent?o.material.clone():coatVehicle(o.material,car.snowDepth);
-   if(car.repainted)o.material.color.copy(lin(car.paintColor));
+   const finish=o.material.name||'';
+   o.userData.lacquer=!o.material.transparent&&(id==='harbor-box-truck'?/enamel/i.test(finish):!/reference finishes|alloy|glass|tyre/i.test(finish));
+   if(car.repainted&&o.userData.lacquer)o.material.color.copy(lin(car.paintColor));
   });
   car.mesh.add(shell);
   car.body3.visible=false;
@@ -222,6 +229,7 @@ function loadHeroCar(car){
   }
   car.hero={shell,wheels,lenses,deformed:false};
   syncCarMesh(car);
+  createVehicleAssembly(car,shell);streamVehicleComponents(car,true);
   updateHeroLights(car);
  });
 }
@@ -251,7 +259,7 @@ function removeHeroCoupe(car){
  const {shell,wheels,lenses,deformed}=car.hero;
  car.mesh.remove(shell,...lenses);
  scene.remove(...wheels);
- shell.traverse(o=>{if(o.isMesh){if(deformed)o.geometry.dispose();if(o.material!==burntMat)o.material.dispose();}});
+ shell.traverse(o=>{if(o.isMesh){if(o.userData.undented)o.geometry.dispose();if(o.material!==burntMat)o.material.dispose();}});
  car.hero=null;
  car.body3.visible=true;
 }

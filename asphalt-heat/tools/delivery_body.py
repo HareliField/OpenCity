@@ -23,17 +23,17 @@ def build_truck(asset):
     def xyz(pt):
         x,y,z=pt
         return (x,-z,y)
-    def box(name,at,size,mat,bevel=0):
-        return a.box(name,xyz(at),(size[0],size[2],size[1]),mat,bevel)
+    def box(name,at,size,mat,bevel=0,group='Frame'):
+        return a.box(name,xyz(at),(size[0],size[2],size[1]),mat,bevel,group)
     def line(name,pts,rad,mat,side=10,group='Frame'):
         return a.tube(name,[xyz(pt) for pt in pts],rad,mat,side,group)
-    def face(name,pts,mat):
+    def face(name,pts,mat,group='Frame'):
         idx=tuple(range(len(pts)))
         vs=[Vector(xyz(pt)) for pt in pts]
         centre=sum(vs,Vector())/len(vs)
         normal=sum((vs[j].cross(vs[(j+1)%len(vs)]) for j in idx),Vector())
         if normal.dot(centre-Vector(xyz((0,1.08,1.45))))<0:idx=idx[::-1]
-        return a.mesh(name,vs,[idx],mat)
+        return a.mesh(name,vs,[idx],mat,group=group)
     axle,r=1.92,.397
     for side in [-1,1]:
         box('Ladder chassis',(.512*side,.547,-.012),(.113,.235,5.92),black,.009)
@@ -44,7 +44,15 @@ def build_truck(asset):
     for z in [-.757,-.096]:box('Tank strap',(-.695,.56,z),(.450,.352,.044),black,.042)
     # Bed and outer corners surround the photo's smooth white box.
     box('Box floor',(0,.947,-1.015),(2.16,.178,4.44),silver,.018)
-    box('Bonded cargo shell',(0,2.018,-1.025),(2.125,2.062,4.402),cargo,.031)
+    for side in [-1,1]:
+        box('Bonded cargo side',(side*1.051,2.018,-1.025),(.024,2.062,4.402),cargo,.010)
+        for k in range(10):
+            box('Internal rubbing strip',(side*1.022,1.122+k*.183,-1.025),(.028,.034,4.32),silver,.004)
+    box('Freight bulkhead',(0,2.018,1.162),(2.105,2.058,.045),white,.012)
+    for j in range(18):
+        box('Cargo floor board',(-.975+j*.115,1.052,-1.025),(.113,.018,4.33),cast,.003)
+    a.pivots['Bonnet']=xyz((0,1.359,2.251))
+    a.pivots['Windshield']=xyz((0,1.375,2.263))
     box('Roof cap',(0,3.039,-1.026),(2.163,.065,4.443),silver,.016)
     for s in [-1,1]:
         for y in [1.052,1.164,3.004]:box('Rolled side rail',(s*1.068,y,-1.025),(.033,.056,4.42),silver,.008)
@@ -56,8 +64,13 @@ def build_truck(asset):
                 y=1.211+k*.191
                 line('Panel rivet',[(s*1.065,y,z),(s*1.071,y,z)],.0092,silver,8)
         for z in [-3.056,-1.27,.955]:box('Amber running light',(s*1.090,1.126,z),(.027,.040,.123),orange,.010)
-    box('Rear roll-up door',(0,2.028,-3.236),(1.946,1.91,.034),cargo,.015)
-    for j in range(11):box('Interlocking door slat',(0,1.17+j*.172,-3.262),(1.927,.017,.018),silver,.005)
+    for j in range(11):
+        name='CargoSlat%02d'%j;y=1.155+j*.172
+        a.pivots[name]=xyz((0,y,-3.239))
+        box('Roll-up door board',(0,y,-3.239),(1.946,.174,.032),cargo,.006,name)
+        box('Interlocking rolled hem',(0,y+.081,-3.261),(1.932,.012,.018),silver,.003,name)
+        for x in [-.866,.866]:
+            box('Door hinge strap',(x,y,-3.216),(.052,.092,.015),cast,.005,name)
     for x in [-.968,.968]:box('Roll-up guide',(x,2.026,-3.269),(.035,1.929,.039),silver,.007)
     for x in [-.311,.311]:box('Tail lift bracket',(x,.782,-3.13),(.084,.358,.112),black,.008)
     box('Rear underrun bar',(0,.54,-3.30),(2.12,.139,.090),silver,.016)
@@ -88,7 +101,10 @@ def build_truck(asset):
         line('Door jamb',outline,.010,black,6)
         pane=[(side*.887,1.422,1.123),(side*.828,2.108,1.185),(side*.823,2.119,1.69),(side*.882,1.414,2.189)]
         for j in range(4):line('Door window rubber',[pane[j],pane[(j+1)%4]],.024,black,8)
-        face('Door side glass',pane,glass)
+        letter='R' if side>0 else 'L'
+        pane_id='GlassFront'+letter
+        a.pivots[pane_id]=xyz((side*.887,1.422,1.123))
+        face('Door side glass',pane,glass,pane_id)
         box('Pull handle',(side*.906,1.294,1.231),(.055,.047,.153),black,.012)
         box('Turn marker',(side*.902,1.122,2.726),(.026,.049,.102),orange,.008)
         line('Mirror mount',[(side*.882,1.533,2.037),(side*1.046,1.567,2.05),(side*1.095,1.63,1.996)],.023,black)
@@ -104,13 +120,13 @@ def build_truck(asset):
     for i in range(4):
         line('Windshield rubber',[glass_pts[i],glass_pts[(i+1)%4]],.032,black)
         if i%2:line('Rolled windshield post',[glass_pts[i],glass_pts[(i+1)%4]],.049,white)
-    face('Windshield',glass_pts,glass)
+    face('Laminated front light',glass_pts,glass,'Windshield')
     for x in [-.458,.405]:
         line('Wiper blade',[(x-.26,1.418,2.224),(x+.283,1.447,2.194)],.014,black,7)
         line('Wiper arm',[(x+.175,1.356,2.278),(x-.086,1.431,2.207)],.010,black,7)
     bonnet=[(-.861,1.359,2.251),(.861,1.359,2.251),(.876,1.186,3.209),(.798,1.126,3.291),(-.798,1.126,3.291),(-.876,1.186,3.209)]
-    face('Sloping bonnet',bonnet,white)
-    for side in [-1,1]:line('Hood pressing',[(side*.651,1.368,2.259),(side*.685,1.194,3.172)],.016,white)
+    face('Sloping bonnet',bonnet,white,'Bonnet')
+    for side in [-1,1]:line('Hood pressing',[(side*.651,1.368,2.259),(side*.685,1.194,3.172)],.016,white,10,'Bonnet')
     box('Front grille surround',(0,.918,3.249),(1.723,.441,.147),white,.069)
     box('Inset cooling grille',(0,.934,3.324),(.939,.275,.022),black,.016)
     for k in range(5):box('Horizontal grille bar',(0,.825+k*.052,3.338),(.920,.014,.012),silver,.004)

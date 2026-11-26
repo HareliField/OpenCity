@@ -55,7 +55,9 @@
       "status": "SUCCEEDED",
       "original_sha256": "7abf68e29b25b91674efb41674b05b52413962791157644bd3cd15e4b124338e",
       "runtime_file": "coupe-driveable.glb",
-      "requested_target_triangles": 36000
+      "requested_target_triangles": 36000,
+      "runtime_sha256": "c725ef09a14101b6a65ff04bee2be5506a99276832e99a8af31b20b3a55b2407",
+      "vehicle_components": "Independently hinged bonnet, service bay and separate automotive glazing; four wheel pivots follow the suspension."
     },
     "street-bin": {
       "task": "01a21880-2c55-708b-82dc-114290ac92bb",
@@ -419,7 +421,7 @@
       ],
       "input_outline": "165,255 171,244 193,240 209,234 227,225 244,221 269,219 291,219 303,221 320,230 333,237 354,241 364,245 365,254 358,265 352,275 340,278 333,273 268,280 260,287 249,291 238,290 228,284 213,284 178,276 167,271",
       "charged_credits": 35,
-      "runtime_sha256": "e5e079dad7148f1e775f3237c69b1483bc1e8e00cd995553a337ba8fa4c24223",
+      "runtime_sha256": "0c1ffa065e947299c3fbebd3824f5f54a3935f4550df963450e5ddd9fd7c5cfd",
       "runtime_repair": "Aligned the generated shell to the sedan axles, opened and lined all four wheel arches, tinted the glazing and reproduced spinning hubcaps from reference 112.",
       "variants": [
         {
@@ -427,9 +429,10 @@
           "reference": "Natural Photos/001-palm-avenue-drive.png",
           "method": "Graphite lacquer and reprojected trunk, number plate and rear lamps on the existing four-wheel sedan rig.",
           "charged_credits": 0,
-          "runtime_sha256": "67a3de7baa71eda243a9dd7d93aeee3dc46152784fcc890e60dd3494b63e6e41"
+          "runtime_sha256": "d18f9cd43c8b4236815a9c2731354d38580a255d5d6998f608b1defc39544d93"
         }
-      ]
+      ],
+      "vehicle_components": "Independently hinged bonnet, service bay and separate automotive glazing; four wheel pivots follow the suspension."
     },
     "silver-city-sedan": {
       "task": "01a2199c-1367-7367-bdd7-f6d99e60c110",
@@ -446,8 +449,9 @@
       "input_outline": "332,249 333,239 339,232 352,226 375,214 380,211 397,210 411,211 420,215 431,224 444,225 451,230 453,238 450,248 448,254 444,256 442,253 417,263 414,271 410,275 404,275 398,272 397,267 363,270 359,274 350,273 346,270 342,266 335,263",
       "input_holes": [],
       "charged_credits": 35,
-      "runtime_sha256": "d27c907fc87545aacc77b661f557a31710a9d9aa81dba4f49e04d4d180fe40a8",
-      "runtime_repair": "Refitted the shell to the sedan axles, opened four wheel arches, added liners and nine-spoke independently rotating wheels."
+      "runtime_sha256": "e1ab8f3426cc45a6d72711b1335752c1197e34f9eb523e39a985e76e00012691",
+      "runtime_repair": "Refitted the shell to the sedan axles, opened four wheel arches, added liners and nine-spoke independently rotating wheels.",
+      "vehicle_components": "Independently hinged bonnet, service bay and separate automotive glazing; four wheel pivots follow the suspension."
     },
     "brick-red-crossover": {
       "task": "01a2199c-182f-721f-a868-55e3178ccc7c",
@@ -464,8 +468,9 @@
       "input_outline": "359,219 362,213 365,209 371,209 374,204 379,200 389,198 413,197 420,198 425,197 431,199 436,202 440,208 445,213 447,219 449,230 447,243 443,250 438,256 427,257 423,254 390,254 387,261 378,262 374,259 373,254 367,250 366,245 362,241 359,229",
       "input_holes": [],
       "charged_credits": 35,
-      "runtime_sha256": "c0b8f98ea6fc61dc8bbb4987e08db1f6f154daccbf569920e96ce1b5cf263f60",
-      "runtime_repair": "Cleared underside remnants, aligned and lined the wheel arches, added separate five-spoke wheels and driver-controlled lamps."
+      "runtime_sha256": "79eac94f5c0b46f1c52cfbd5711cf64066bf78e49313fed361b8482016b4ce42",
+      "runtime_repair": "Cleared underside remnants, aligned and lined the wheel arches, added separate five-spoke wheels and driver-controlled lamps.",
+      "vehicle_components": "Independently hinged bonnet, service bay and separate automotive glazing; four wheel pivots follow the suspension."
     },
     "coin-parking-meter": {
       "task": "01a2199c-1cd5-7237-b744-e5ded7e1b64f",
@@ -521,8 +526,9 @@
       "input_outline": "645,144 646,135 650,133 669,135 681,140 683,145 683,152 688,154 693,158 694,161 696,164 694,169 692,171 689,174 682,174 680,173 678,176 673,175 670,170 662,166 657,165 655,168 651,167 647,164 646,158",
       "input_holes": [],
       "charged_credits": 35,
-      "runtime_sha256": "0e39c5ddd16a03add93339e7e9051cf31752b1c50c5f6fa46d304c87b04ed453",
-      "runtime_repair": "The generation contained disconnected thin fragments. Reconstructed the photographed cab, glazed windows, riveted cargo shell, separate wheels and five-part chassis in Blender."
+      "runtime_sha256": "4e86ca664e663b9e6c9674162de823cca02695c3c809a20109a0e62285f4eba3",
+      "runtime_repair": "The generation contained disconnected thin fragments. Reconstructed the photographed cab, glazed windows, riveted cargo shell, separate wheels and five-part chassis in Blender.",
+      "vehicle_components": "Independently hinged bonnet, service bay and separate automotive glazing; four wheel pivots follow the suspension."
     }
   }
 }

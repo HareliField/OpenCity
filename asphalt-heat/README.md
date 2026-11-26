@@ -80,6 +80,12 @@ Run `node tools/roadster-test.js` to check the floor clearance and steering-whee
 
 Between Maple Street and Ridge Road, four blocks each contain six furnished cottages around a shared garden. Enter through the side door facing the garden. Each kitchen tap draws from the water main and discharges to the sanitary return. The window grilles, clay tile edges, gutters and overhead service leads follow the houses in reference 017.
 
+## Vehicle service panels
+
+Stand at the nose of a parked car and use **C** to open the bonnet. On the rear-engined coupe, the engine lid opens at the tail. Inside are the radiator, fan, coolant bottle, battery, rocker covers, manifolds, accessory pulleys and wiring. These mechanical layouts are inferred from vehicle type. On the reference saloons, each window is cut from the fitted shell, with seats and a dashboard behind it. A severe impact can crack the laminated windscreen or shatter an individual side or rear pane. Respray service repairs the glazing. Use **C** at a passenger door’s trailing edge to swing it open.
+
+At the back of the Harbor Supply truck, **C** rolls the cargo shutter along its overhead tracks. Five boarding treads deploy when the door reaches the roof. The treads, cargo floor, body sides, front bulkhead and moving shutter support independent rigid bodies.
+
 ## Palm Street, Marina Street and the civic squares
 
 The 24-Hour Diner and Marina Coffee face each other at Palm Street and Marina Street. Use **C** at the diner counter for breakfast or at the café for coffee. The coin box outside sells a newspaper. The graphite saloon is parked on the west curb of Palm Street, between Commerce and Marina. Follow Marina east to Breakwater Way for fruit at Seabreeze Market or an LP at Coastal Vinyl. All four buildings have independent passenger lifts, stairs, upper flats and roof landings.

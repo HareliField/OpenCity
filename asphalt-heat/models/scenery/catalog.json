@@ -276,5 +276,20 @@
   },
   "graphite-city-saloon": {
     "file": "graphite-city-saloon.glb"
+  },
+  "engine-transverse": {
+    "file": "engine-transverse.glb"
+  },
+  "engine-v-bank": {
+    "file": "engine-v-bank.glb"
+  },
+  "engine-boxer": {
+    "file": "engine-boxer.glb"
+  },
+  "engine-diesel": {
+    "file": "engine-diesel.glb"
+  },
+  "passenger-cabin": {
+    "file": "passenger-cabin.glb"
   }
 }

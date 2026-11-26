@@ -14,6 +14,8 @@ python -B asphalt-heat/tools/blender-lighthouse.py
 python -B asphalt-heat/tools/blender-palm-corner.py
 python -B asphalt-heat/tools/blender-city-infrastructure.py
 python -B asphalt-heat/tools/palm-saloon-finish.py
+python -B asphalt-heat/tools/section-vehicle-shells.py
+python -B asphalt-heat/tools/blender-vehicle-assemblies.py
 python -B asphalt-heat/tools/coastal-sky.py
 ```
 
@@ -24,3 +26,5 @@ The finish scripts extract material surfaces and store prints from the supplied 
 **Garden cottages** contains the glazed sash and grille, clay ridge and verge tiles, service pole and galvanized street light. Their placement and walkable shells are defined in the garden block builder.
 
 **Palm Street interiors** contains the diner booths, tables and stools, coin newspaper box, LP browsers and photovoltaic panels. **Civic and service fittings** contains the ivory and blue fountain mosaic, glazed bus shelter, six-litre cistern and diner espresso machine. Their companion JSON files identify the source photographs.
+
+**Vehicle mechanical assemblies** includes four inferred engine layouts with separate cooling fans, passenger seating, floor pan, instruments and trim. The body sectioning script preserves the photographed paint and cuts the actual glazing and access panels along measured UV-mapped seams.

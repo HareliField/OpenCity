@@ -336,7 +336,7 @@ const SIREN={onR:new THREE.MeshBasicMaterial({color:new THREE.Color(3,.15,.1)}),
 function carDent(c,lx,ly,lz,amount){
  const meshes=[];
  if(c.hero){
-  c.hero.shell.traverse(o=>{if(o.isMesh)meshes.push(o);});
+  c.hero.shell.traverse(o=>{if(o.isMesh&&!o.userData.servicePanel&&!o.userData.serviceGlass)meshes.push(o);});
   if(!c.hero.deformed){
    for(const mesh of meshes){mesh.userData.undented=mesh.geometry;mesh.geometry=mesh.geometry.clone();}
    c.hero.deformed=true;

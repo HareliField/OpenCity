@@ -5,7 +5,9 @@ CARSPEC.harborbox={...CARSPEC.van,type:'harborbox',modelName:'Harbor Supply deli
  L:6.70,W:2.16,r:3.073,wb:1.92,wr:.397,hb:1.26,b:1.26,hood:1.06,tr:.05,ws:.61,rg:.09,
  com:.91,mass:3450,brake:138,F:14400,max:28,hp:185,wheelTile:CARSPEC.van.wheelTile,
  // Dimensions are longitudinal, vertical and lateral in the physics chassis frame. The nose is negative X.
- chassisBoxes:[[-.01,.66,0,6.42,.41,1.78],[1.03,1.982,0,4.40,2.174,2.13],
+ chassisBoxes:[[-.01,.66,0,6.42,.41,1.78],[1.03,.963,0,4.40,.179,2.13],
+  [1.03,2.019,-1.05,4.40,2.06,.035],[1.03,2.019,1.05,4.40,2.06,.035],
+  [-1.161,2.019,0,.05,2.06,2.13],[1.03,3.042,0,4.44,.075,2.16],
   [-1.42,1.43,0,.75,1.48,1.74],[-2.02,1.35,0,.50,1.02,1.71],[-2.75,.928,0,1.05,.56,1.72]]};
 function parkReferenceVehicles(){
  const photos=[['sedan','silver-city-sedan',1002.1,14*CELL+6.6,Math.PI/2,0xb5b4ae],

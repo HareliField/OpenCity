@@ -132,6 +132,7 @@ function physCarAdd(c){
  }
  v.world=PH.w;
  c.body=b;
+ if(c.type==='harborbox')updateCargoGate(c,c.serviceState?.CargoShutter?.phase||0);
  c.veh=v;
  c.controls={throttle:0,steer:0,handbrake:false,drivePedal:0,brakePedal:0,gear:1,interlock:false};
  b.addEventListener('collide',e=>{

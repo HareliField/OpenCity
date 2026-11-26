@@ -14,6 +14,7 @@ run(`const CANNON=window.CANNON, CV=CANNON.Vec3, V3=THREE.Vector3, PHYS_GROUP={w
  const blocks=Array.from({length:N*N},()=>({bld:[],residual:[]}));
  const clamp=(v,lo,hi)=>Math.min(hi,Math.max(lo,v)),lerp=(a,b,k)=>a+(b-a)*k;
 `);
+run(read('js/vehicle-components.js'));
 run(read('js/access.js'));
 run(read('js/roads.js'));
 run(read('js/street-plan.js'));
