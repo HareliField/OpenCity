@@ -211,12 +211,11 @@ function buildLift(r=CITY_WORKS.shaft,levels=CITY_WORKS.levels,labels=['SERVICE 
  const x=(r.x0+r.x1)/2,z=(r.z0+r.z1)/2,bottom=levels[0],top=levels[levels.length-1]+2.9;
  for(const u of [r.x0-.14,r.x1])worksSolid(worksRect(u,u+.14,r.z0-.18,r.z1),bottom,top,m.service);
  worksSolid(worksRect(r.x0,r.x1,r.z0-.17,r.z0),bottom,top,m.service);
- for(const y of levels){
+ for(const [level,y] of levels.entries()){
   const u0=r.x0+.48,u1=r.x1-.48;
   for(const [a,b] of [[r.x0,u0],[u1,r.x1]])worksSolid(worksRect(a,b,r.z1-.09,r.z1+.09),y,y+2.44,m.panel);
-  worksSolid(worksRect(r.x0,r.x1,r.z1-.09,r.z1+.09),y+2.45,y+3.9,m.service);
+  worksSolid(worksRect(r.x0,r.x1,r.z1-.09,r.z1+.09),y+2.45,Math.min(y+3.9,levels[level+1]??top),m.service);
   plainBox(m.ochre,u1+.15,u1+.32,y+.97,y+1.30,r.z1+.092,r.z1+.14);
-  const level=levels.indexOf(y);
   worksPanel(u1+.15,y,r.z1+.47,()=>lift.target===level&&Math.abs(lift.y-y)<.06?'LIFT AT THIS FLOOR':'CALL LIFT',()=>{
    if(!liftPowered(lift)){toast('Lift power is off · stairs are open',1700);return;}
    if(Math.abs(lift.y-lift.levels[lift.target])>.06)return toast('Lift in transit',1300);
@@ -250,6 +249,7 @@ function buildLift(r=CITY_WORKS.shaft,levels=CITY_WORKS.levels,labels=['SERVICE 
  }
  cab.position.set(x,lift.y,z);scene.add(cab);lift.cab=cab;
  syncWorksGates(lift);
+ return lift;
 }
 
 function syncWorksGates(lift){
@@ -525,6 +525,7 @@ function worksAction(pos){
   if(!worksInside(lift.shaft,pos.x,pos.z,-.16)||Math.abs(pos.y-lift.y)>=.36)continue;
   const at=lift.levels.findIndex(y=>Math.abs(y-lift.y)<.055);
   if(at<0||lift.doors<.93)return {label:'LIFT IN TRANSIT',fn:()=>{}};
+  if(lift.selectFloor)return {label:'LIFT',hot:true,fn:()=>lift.selectFloor(at)};
   const next=(at+1)%lift.levels.length,labels=lift.labels;
   return {label:'LIFT · '+labels[next],hot:true,fn:()=>{
    if(liftPowered(lift))lift.target=next;else toast('Power off · use the stairs',1500);

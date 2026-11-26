@@ -65,6 +65,21 @@ assert.equal(restored.cases.find(c=>c.id===homicide.id).stage,'Booked');
 assert.equal(restored.cases.find(c=>c.id===mystery.id).stage,'Open leads');
 advance(480);
 assert.equal(department.available('Patrol').watch,1);
+// An analyst finishes a comparison across a change of watch. The incoming detective receives the file.
+const changeover=vm.runInContext('new CityPoliceDepartment()',context);
+changeover.clock=456;
+const overnight=changeover.file({kind:'Homicide',at,victim:'resident-a',contact:'resident-b',witness:'Clerk',plate:'AH 9042'});
+for(let i=0;i<23;i++){changeover.clock++;changeover.process();}
+assert.equal(overnight.stage,'Evidence examination');
+const outgoing=changeover.staff.find(s=>s.personId===overnight.analyst);
+changeover.clock=480;
+assert.equal(changeover.working(outgoing),true);
+assert.match(changeover.status(outgoing),/Held over/);
+for(let i=0;i<10;i++){changeover.clock++;changeover.process();}
+assert.equal(overnight.stage,'Wanted');
+assert.equal(changeover.staff.find(s=>s.personId===overnight.detective).watch,1);
+assert.equal(changeover.working(outgoing),false);
+assert(overnight.timeline.some(e=>e.message.includes('incoming watch')&&e.to));
 console.log('Police roster, evidence, casework, bulletins, booking and reload passed.');
 
 // Exercise the dispatch entry points with independent sight, hearing and game clocks.
@@ -96,5 +111,12 @@ run(`
  assert.equal(heat,0);assert.equal(PoliceDepartment.cases.at(-1).contact,npc.personId);
  time=39;reportGunfire(player);caller.personId='different-resident';time=42;updateLaw(.05);
  assert.equal(heat,0);
+ const hearing=PoliceDepartment.file({kind:'Shots reported',at:{x:90,z:90,y:0}});
+ hearing.stage='Open leads';
+ receiveGunfire({at:hearing.at,from:'911',subject:'street-resident',callerId:caller.personId});
+ assert.equal(hearing.stage,'Filed');
+ PoliceDepartment.process();PoliceDepartment.clock+=6;PoliceDepartment.process();
+ assert.equal(hearing.stage,'Identified');assert.equal(hearing.suspect,'street-resident');
+ assert.equal(witnessesFor(caller.pos.x,caller.pos.z,caller.pos.y,caller).ped,null);
 `);
 console.log('911 call timing, sound-only reports, witness identity and wanted escalation passed.');

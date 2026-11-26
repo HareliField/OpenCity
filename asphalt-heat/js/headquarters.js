@@ -39,12 +39,29 @@ function hqGraphic(kind){
  hqPanels.set(kind,mat);return mat;
 }
 
+function hqCirculation(M){
+ return {
+  shaft:lrect(M,4.51,7.69,8.55,11.73),
+  stairs:[lrect(M,-16.8,-9.4,4.95,6.53),lrect(M,-16.8,-9.4,6.62,8.20)]
+ };
+}
 function furnishHeadquarters(block,M,side,box,sign,solid,station){
  const m=INTERIORS.materials;
  const paint=color=>new THREE.MeshStandardMaterial({color:lin(color),roughness:.78});
  const blue=paint(0x284959),limestone=paint(0xc8bda5),pale=paint(0xd6d6cb),brass=paint(0xae9362);
  const base=.15,level=i=>base+i*HQ_STOREY;
- station.terminals=[];station.lift=lpt(M,6.1,8.1);
+ const {shaft,stairs}=hqCirculation(M);
+ const bounds=lrect(M,-18.95,18.95,4.03,31.96);
+ const levels=HQ_FLOORS.map((_,i)=>level(i));
+ CITY_WORKS.walkups.push(bounds);
+ station.terminals=[];
+ station.lift=buildLift(shaft,levels,HQ_FLOORS);
+ station.lift.selectFloor=f=>chooseHqFloor(station,f);
+ function ceilingPart(mat,u0,u1,y0,y1,v0,v1,holes){
+  for(const r of subtractCityOpenings(lrect(M,u0,u1,v0,v1),holes)){
+   plainBox(mat,r.x0,r.x1,y0,y1,r.z0,r.z1,{uvm:2.6,shadow:false});
+  }
+ }
  function panel(kind,x,y,v,w,h){
   const p=lpt(M,x,v),g=new THREE.PlaneGeometry(w,h);g.rotateY(SIDEANG[side]);g.translate(p.x,y,p.z);
   addGeo(hqGraphic(kind),g,false);
@@ -105,22 +122,22 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
  // Upper storeys use independent floor contacts, so pedestrians below them stay on the ground.
  for(let f=0;f<4;f++){
   const y=level(f);
+  const openings=f===3?[]:[shaft,stairs[f%2]];
+  if(f<3)worksFlight(stairs[f%2],y,level(f+1),f%2===1);
   if(f){
-   const floor=box(m.tile,-18.95,18.95,y-.18,y,4.03,31.96);
-   STREET.steps.push({...floor,y,elevated:true});block.bld.push({...floor,y0:y-.18,h:y});
+   const floorHoles=[shaft,stairs[(f-1)%2]];
+   if(f<3)floorHoles.push(stairs[f%2]);
+   worksSlab(bounds,y,m.tile,floorHoles);
    for(const x of [-18.85,18.85])wall(x-.08,x+.08,4.1,31.85,f);
    for(const v of [4.16,31.82])wall(-18.85,18.85,v,v+.14,f);
-   box(m.ceiling,-18.85,18.85,y+3.39,y+3.46,4.22,31.76);
+   ceilingPart(m.ceiling,-18.85,18.85,y+3.39,y+3.46,4.22,31.76,openings);
   }
   // Suspended ceiling runners, room skirting and acoustic tile joints.
-  for(let x=-18;x<=18;x+=2.4)box(m.steel,x,x+.018,y+3.375,y+3.395,4.22,31.70);
-  for(let v=5;v<32;v+=1.2)box(m.steel,-18.72,18.72,y+3.377,y+3.397,v,v+.016);
-  for(const x of [-12,0,12])for(const v of [7,15.3,24.5,29])light(x,v,f);
-  // Lift landing remains clear at the same world coordinates on every floor.
-  box(m.steel,4.85,7.35,y+.02,y+2.63,9.05,9.24);
-  for(const x of [5.50,6.70])box(m.chrome,x-.56,x+.56,y+.03,y+2.46,9.0,9.08);
-  box(m.rubber,7.40,7.60,y+1.07,y+1.33,8.98,9.07);
-  sign('LIFT   '+(f+1),6.1,y+2.83,8.98,1.4,.32);
+  for(let x=-18;x<=18;x+=2.4)ceilingPart(m.steel,x,x+.018,y+3.375,y+3.395,4.22,31.70,openings);
+  for(let v=5;v<32;v+=1.2)ceilingPart(m.steel,-18.72,18.72,y+3.377,y+3.397,v,v+.016,openings);
+  for(const x of [-12,0,12])for(const v of [7,15.3,24.5,29])if(x!==-12||v!==7)light(x,v,f);
+  sign('LIFT   '+(f+1),6.1,y+2.83,8.48,1.4,.32);
+  sign('STAIRS',-8.35,y+2.48,8.48,1.1,.3);
   // Front-to-back circulation through a transverse gallery, with wide side-room entrances.
   for(const [a,b] of [[-18.8,-13.5],[-10.9,-1.2],[1.2,9.8],[12.4,18.8]])wall(a,b,16,16.17,f);
   for(const x of [-5,5])wall(x-.08,x+.08,17.9,31.75,f);
@@ -192,8 +209,6 @@ function hqInteraction(pos){
   if(!station.lift)continue;
   const f=Math.round((pos.y-.15)/HQ_STOREY);
   if(f<0||f>3)continue;
-  const landing=station.lift.clone();landing.y=.15+f*HQ_STOREY;
-  if(stationReach(pos,landing,1.9))return {label:'LIFT',hot:true,fn:()=>chooseHqFloor(station,f)};
   const terminal=station.terminals.find(t=>stationReach(pos,t.point,1.85));
   if(terminal)return {label:terminal.label,hot:true,fn:()=>openPoliceDesk(station,terminal.view)};
  }
@@ -205,9 +220,8 @@ function chooseHqFloor(station,current){
  for(const [f,name] of HQ_FLOORS.entries()){
   const b=document.createElement('button');b.type='button';b.textContent=(f+1)+'   '+name;b.disabled=f===current;
   b.onclick=()=>{
-   player.pos.copy(station.lift);player.pos.y=.15+f*HQ_STOREY;
-   player.c.root.position.copy(player.pos);player.pace=player.turn=0;
-   player.yaw=camYaw=station.posts[0].yaw-Math.PI*.5;lookYaw=0;camInit=false;
+   if(liftPowered(station.lift))station.lift.target=f;
+   else toast('Lift power is off · stairs are open',1700);
    dialog.close();
   };dialog.append(b);
  }

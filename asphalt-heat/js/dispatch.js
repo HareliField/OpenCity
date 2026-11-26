@@ -24,14 +24,14 @@ function policeCanSee(source,target,yaw,range,level){
  return alignment>(level===1?.52:.31);
 }
 
-function witnessesFor(x,z,y){
+function witnessesFor(x,z,y,exclude=null){
  const victim={x,y,z};
  const officers=departmentPeople.some(u=>u.team==='law'&&!u.dead&&policeCanSee(u.pos,victim,u.c.yaw,28,2))||cops.some(u=>!u.dead&&policeCanSee(u.pos,victim,u.c.yaw,28,2))||
   cars.some(c=>c.driver==='police'&&policeCanSee(c.pos,victim,c.h,32,2));
  if(officers)return {officers:true};
  let nearest=null,dist=31;
  for(const ped of peds){
-  if(ped.dead||ped.c?.root.visible===false)continue;
+  if(ped===exclude||ped.dead||ped.c?.root.visible===false)continue;
   const d=dist2(ped.pos,victim);
   if(d<dist&&los(ped.pos,victim)){
    dist=d;
@@ -79,7 +79,7 @@ function fileWitnessReport(amount,x,z,immediate=false,property=false){
 function reportGunfire(shooter){
  if(state!=='play')return;
  const at=shooter.car?.pos||shooter.pos,id=shooter.personId;
- const observation=witnessesFor(at.x,at.z,at.y);
+ const observation=witnessesFor(at.x,at.z,at.y,shooter);
  const caller=observation.ped||peds.find(p=>p!==shooter&&!p.dead&&p.c.root.visible&&dist2(p.pos,at)<44);
  if(!observation.officers&&!caller)return;
  const identified=observation.officers||!!observation.ped;
@@ -94,11 +94,13 @@ function reportGunfire(shooter){
 }
 function receiveGunfire(call){
  const {at,subject,from,plate}=call;
- const existing=PoliceDepartment.cases.findLast(c=>c.kind==='Shots reported'&&PoliceDepartment.clock-c.opened<10&&
+ const existing=PoliceDepartment.cases.findLast(c=>c.kind==='Shots reported'&&!c.exercise&&Math.abs((c.at.y||0)-(at.y||0))<2&&PoliceDepartment.clock-c.opened<10&&
   Math.hypot(at.x-c.at.x,at.z-c.at.z)<12&&(!c.contact||c.contact===subject));
  if(existing){
   if(subject&&!existing.contact){
-   existing.contact=subject;existing.evidence.push({type:'Statement',source:from,value:call.callerId||from});
+   existing.contact=subject;
+   if(existing.stage==='Open leads'){existing.stage='Filed';existing.due=PoliceDepartment.clock;}
+   existing.evidence.push({type:'Statement',source:from,value:call.callerId||from});
    PoliceDepartment.logCase(existing,from,'Follow-up witness identified the shooter.');PoliceDepartment.save();
   }
  }else PoliceDepartment.file({kind:'Shots reported',at,contact:subject,plate,witness:call.callerId||from,caller:from});

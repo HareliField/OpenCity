@@ -80,12 +80,12 @@ function updateStationPosts(dt){
    post.unit.downT+=dt;updChar(post.actor,0,dt,true);continue;
   }
   const calledOut=post.member&&(PoliceDepartment.bindings.has(post.member.personId)||PoliceDepartment.cases.some(c=>PoliceDepartment.assigned(c)===post.member.personId));
-  if(post.actor&&(!nearby||calledOut||!PoliceDepartment.duty(post.member))){
+  if(post.actor&&(!nearby||calledOut||!PoliceDepartment.working(post.member))){
    PoliceDepartment.workstations.delete(post.member.personId);removeDepartmentPerson(post.unit,false);post.member=post.actor=post.unit=null;
   }
   if(!nearby)continue;
   if(!post.actor){
-   const member=PoliceDepartment.staff.find(s=>s.division===post.role&&PoliceDepartment.duty(s)&&!PoliceDepartment.bindings.has(s.personId)&&
+   const member=PoliceDepartment.staff.find(s=>s.division===post.role&&PoliceDepartment.working(s)&&!PoliceDepartment.bindings.has(s.personId)&&
     !PoliceDepartment.workstations.has(s.personId)&&!PoliceDepartment.cases.some(c=>PoliceDepartment.assigned(c)===s.personId));
    if(!member)continue;
    post.member=member;PoliceDepartment.workstations.set(member.personId,post.room||station.name);
@@ -181,7 +181,7 @@ function removeDepartmentPerson(unit,release=true){
 function meetDepartmentPerson(){
  const person=[...departmentPeople,...cops].find(u=>u.officer&&!u.dead&&stationReach(player.pos,u.pos,1.8));
  if(!person)return null;
- return {label:'TALK',fn:()=>toast(person.officer.name+' · '+person.officer.division+' · '+PoliceDepartment.status(person.officer),2800)};
+ return {label:'TALK',fn:()=>openStaffProfile(person.officer)};
 }
 
 const policeHouseholds=[];
@@ -202,7 +202,7 @@ function updatePoliceLives(dt){
   // Between watches a resident walks in their neighborhood, then spends the overnight period at home.
   const outside=phase>=1.13&&phase<1.82||phase>2.82;
   const [x,z]=perimPos(home.route,home.start+pd.clock*.98);
-  const nearby=outside&&Math.hypot(x-player.pos.x,z-player.pos.z)<48;
+  const nearby=outside&&!pd.activeFile(member)&&Math.hypot(x-player.pos.x,z-player.pos.z)<48;
   if(home.unit&&home.unit.dead){
    updChar(home.unit.c,0,dt,true);home.unit.downT+=dt;
    if(home.unit.downT<15)continue;

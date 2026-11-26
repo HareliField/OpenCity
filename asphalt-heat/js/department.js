@@ -63,11 +63,16 @@ class CityPoliceDepartment {
  }
  get watch(){return Math.floor(this.clock/480)%3;}
  duty(member){return member.watch===this.watch&&!this.unavailable.has(member.personId);}
+ activeFile(member){
+  return this.cases.find(f=>this.assigned(f)===member.personId||
+   f.stage==='Evidence examination'&&f.analyst===member.personId||
+   f.stage==='Command review'&&f.supervisor===member.personId);
+ }
+ working(member){return this.duty(member)||!this.unavailable.has(member.personId)&&!!this.activeFile(member);}
  status(member){
   if(this.unavailable.has(member.personId))return 'Out of service';
-  const assigned=this.cases.find(f=>this.assigned(f)===member.personId||
-   f.stage==='Evidence examination'&&f.analyst===member.personId||f.stage==='Command review'&&f.supervisor===member.personId);
-  if(assigned)return 'Assigned · file '+assigned.id;
+  const assigned=this.activeFile(member);
+  if(assigned)return (this.duty(member)?'Assigned':'Held over')+' · file '+assigned.id;
   if(this.bindings.has(member.personId))return this.bindings.get(member.personId);
   if(this.workstations.has(member.personId))return this.workstations.get(member.personId);
   if(!this.duty(member))return 'Off duty · '+member.home;
@@ -172,8 +177,8 @@ class CityPoliceDepartment {
     c.stage='Lab queue';c.due=this.clock;
     this.logCase(c,this.staff.find(s=>s.personId===c.detective).name,'Requested comparison and submitted sealed exhibits.','Forensics');
    }else if(c.stage==='Lab queue'){
-    const analyst=this.staff.find(s=>s.division==='Forensics'&&this.duty(s)&&
-     !this.cases.some(f=>f.stage==='Evidence examination'&&f.analyst===s.personId));
+    if(this.cases.some(f=>f.stage==='Evidence examination'))continue;
+    const analyst=this.available('Forensics');
     if(!analyst)continue;
     c.analyst=analyst.personId;c.stage='Evidence examination';c.due=this.clock+5;
     this.transferExhibits(c,analyst.name,'Received for examination');
@@ -181,6 +186,13 @@ class CityPoliceDepartment {
    }else if(c.stage==='Evidence examination'){
     const analyst=this.staff.find(s=>s.personId===c.analyst);
     if(!analyst||this.unavailable.has(c.analyst)){c.stage='Lab queue';changed=true;continue;}
+    let detective=this.staff.find(s=>s.personId===c.detective);
+    if(!detective||!this.duty(detective)){
+     const relief=this.available('Detectives');
+     if(!relief)continue;
+     this.logCase(c,detective?.name||'Detectives','File transferred to the incoming watch for review.',relief.name);
+     c.detective=relief.personId;detective=relief;
+    }
     const profile=c.contact?this.identity(c.contact):null;
     const match=profile&&c.evidence.some(e=>e.type==='Print'&&e.value===profile.fingerprintId||
      e.type==='DNA'&&e.source!=='Injured person'&&e.value===profile.dnaId);
@@ -190,8 +202,7 @@ class CityPoliceDepartment {
     c.stage=c.suspect?(c.kind==='Homicide'?'Command queue':'Identified'):'Open leads';
     c.due=this.clock;
     this.transferExhibits(c,'Evidence storage','Sealed and returned');
-    const detective=this.staff.find(s=>s.personId===c.detective);
-    this.logCase(c,detective?.name||'Detectives',c.suspect?'Witness account corroborated. '+(c.subjectName||c.suspect)+' identified.':'Evidence is insufficient to identify the offender. File remains open.');
+    this.logCase(c,detective.name,c.suspect?'Witness account corroborated. '+(c.subjectName||c.suspect)+' identified.':'Evidence is insufficient to identify the offender. File remains open.');
    }else if(c.stage==='Command queue'){
     const chief=this.staff.find(s=>s.division==='Command'&&this.duty(s)&&!this.cases.some(f=>f.stage==='Command review'&&f.supervisor===s.personId));
     if(!chief)continue;

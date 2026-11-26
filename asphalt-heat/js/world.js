@@ -401,7 +401,8 @@ function special(B,sp){const side=sp.side||'S',M=sideFrame(B,side);const door=lp
   for(const v of [3.8,32.04])pb(band,-19.2,19.2,4,4.48,v,v+.16);
   for(const u of [-19.2,19.04])pb(band,u,u+.16,4,4.48,3.95,32.05);
   sign(ATLAS.special.police,0,7,3.75,16,2);const fp=lpt(M,14,1);cyl(MAT.metal,fp.x,0,fp.z,.08,.1,13,8);
-  buildAccessibleShell(B,R,{ceiling:3.56,height:B.i===2&&B.j===2?3.56:15,kind:'lobby',selected:[side],rooms:false,wall:MAT.stone});fillDistrict(B,lrect(M,-23.8,23.8,33,48),'oldtown');const office=buildPoliceOffice(B,M,side,pb);pl={kind:'police',name:office.name,office};}
+  const hq=B.i===2&&B.j===2,circulation=hq?hqCirculation(M):null;
+  buildAccessibleShell(B,R,{ceiling:3.56,height:hq?3.56:15,ceilingOpenings:hq?[circulation.shaft,circulation.stairs[0]]:[],kind:'lobby',selected:[side],rooms:false,wall:MAT.stone});fillDistrict(B,lrect(M,-23.8,23.8,33,48),'oldtown');const office=buildPoliceOffice(B,M,side,pb);pl={kind:'police',name:office.name,office};}
  else if(sp.kind==='store'||sp.kind==='jewelry'||sp.kind==='gunshop'){const key=sp.kind==='jewelry'?'jewel':sp.kind==='gunshop'?'guns':sp.sign;
   const R=fb(sp.kind==='jewelry'?MAT.fac.stone_dark:MAT.fac.brick_tan,-9,9,4.08,5.4,0,14,{style:0,fh:5,bay:4,gH:4.4});roofDressing(R,5.4,'mid');sign(ATLAS.special[key],0,4.9,-.06,14,1.4);
   buildAccessibleShell(B,R,{ceiling:4.11,height:5.4,selected:[side],wall:MAT.trim});fillRest(-9,9,15);
