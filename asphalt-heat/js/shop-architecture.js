@@ -2,8 +2,8 @@
 const SHOP_ELEVATIONS={brick:null,stucco:null,sash:null,sill:null,panes:null,caps:null,fascias:null,awning:null,frontages:[]};
 const RIVERSIDE_SHOPS={
  donuts:{name:'Riverside Donuts',line:'BAKED DAILY',color:'#4e3136'},
- books:{name:'Harbor Books & Café',line:'246',color:'#282b29'},
- studio:{name:'Coastal Nails',line:'NAILS · PEDICURE · WAXING',color:'#633b43'}
+ books:{name:'Harbor Books & Café',address:'248',color:'#282b29'},
+ studio:{name:'Coastal Nails',address:'252',line:'NAILS · PEDICURE · WAXING',color:'#633b43'}
 };
 
 function initShopArchitecture(){
@@ -106,9 +106,10 @@ function riversideFascia(row,M,u0,u1){
   const wall=lpt(M,x,.02),out=lpt(M,x,-.879);
   worksBeam(MAT.darkMetal,[wall.x,3.28,wall.z],[out.x,3.716,out.z],.021);
  }
- if(index===1){
-  const placard=worksSign('246','#232522','#e6ddc8'),p=lpt(M,center,-.058);
-  worksPlacard(placard,p.x,3.03,p.z,.54,.20,Math.atan2(M.elements[8],M.elements[10]));
+ const address=Object.values(RIVERSIDE_SHOPS)[index].address;
+ if(address){
+  const placard=worksSign(address,'#232522','#e6ddc8'),p=lpt(M,center,-.058);
+  worksPlacard(placard,p.x,3.07,p.z,1.27,.34,Math.atan2(M.elements[8],M.elements[10]));
  }
 }
 

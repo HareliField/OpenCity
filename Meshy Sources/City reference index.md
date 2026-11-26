@@ -21,7 +21,7 @@ The 112 images in **Natural Photos** supplied the visual target for this build. 
 | Lighthouse | 032, 050, 076 | Keeper wall, ashlar tower, gallery, revolving Fresnel optic, 96 walkable treads, sand and breaking surf. |
 | Pier | 063, 064, 075 | Nine timber approach steps, bolted boards, joists, tidal marks on the pilings, galvanized rails and breaking swells. |
 
-The north-facing frontage on Foundry Street recreates the three adjacent shopfronts in 018. Their brick reveals, frames, projecting sills, awnings and interiors are geometry. The bookseller's display, manicure tools, grocer's coolers, laundry machines, heritage lighting, sycamores and date palms are in the editable **Blender Sources** library. [Riverside shop row](City%20Review/Riverside%20shop%20row.jpg)
+The north-facing frontage on Foundry Street recreates the three adjacent shopfronts in 018. Their brick reveals, frames, projecting sills, awnings and interiors are geometry. Harbor Books & Café has number 248, Coastal Nails has number 252, and the cast lantern stands behind the maroon saloon. Water pools in low patches of asphalt across the painted crossing and recedes as the road dries. The bookseller's display, manicure tools, grocer's coolers, laundry machines, heritage lighting, sycamores and date palms are in the editable **Blender Sources** library. [Riverside shop row](City%20Review/Riverside%20shop%20row.jpg)
 
 The market, pumping station and connected sanitary line use inferred dimensions and internal layouts. Single views supplied the visible silhouettes and finishes of objects. The asset manifest and four-angle images document the reconstructions.
 

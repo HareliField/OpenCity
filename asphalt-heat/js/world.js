@@ -638,7 +638,12 @@ function parkCornerPaths(block,x,z,half){
 }
 /* ---- street furniture placement ---- */
 function streetProps(B){const{x0,x1,z0,z1}=B;const dist=B.i===15&&B.j>=13?'docks':districtOf(B.i,B.j);
- for(const[sx,sz]of[[-1,-1],[1,-1],[1,1],[-1,1]])LAMPS.push({x:sx<0?x0+10.4:x1-10.4,z:sz<0?z0+.76:z1-.76,ry:Math.atan2(-sx,-sz)});
+ for(const [sx,sz] of [[-1,-1],[1,-1],[1,1],[-1,1]]){
+  const bookseller=B.i===4&&B.j===6&&sx<0&&sz<0;
+  // Photo 018 places this crook behind the parked saloon, clear of the front door and the crossing.
+  const x=bookseller?x0+18.8:sx<0?x0+10.4:x1-10.4;
+  LAMPS.push({x,z:sz<0?z0+.76:z1-.76,ry:bookseller?Math.PI:Math.atan2(-sx,-sz)});
+ }
  for(const e of[0,1,2,3]){const len=48;for(let t=16;t<len-12;t+=16){const p=e===0?[x0+t,z0+.6,Math.PI]:e===1?[x1-.6,z0+t,Math.PI/2]:e===2?[x0+t,z1-.6,0]:[x0+.6,z0+t,-Math.PI/2];if(srnd()<.55)LAMPS.push({x:p[0],z:p[1],ry:p[2]+Math.PI,mid:1});}}
  const sideP=(e,t,o)=>e===0?[x0+t,z0+o]:e===1?[x1-o,z0+t]:e===2?[x0+t,z1-o]:[x0+o,z0+t];
  const kinds=dist==='docks'?['barrel','barrel','cone','bin','hydrant']:dist==='suburb'?['bin','hydrant','mailbox']:['hydrant','bin','news','meter','meter','bench','bollard','bin'];

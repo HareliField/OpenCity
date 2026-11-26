@@ -92,10 +92,17 @@ function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
     float film=uWet*exposed*facingUp*uWetness;
     float pud=smoothstep(.49,.652,pool)*film;
     float damp=film*(.74+.26*big);
-    ${opt.road?`float midblock=smoothstep(8.,16.,max(grid.x,grid.y));
-    float downhill=smoothstep(2.7,7.5,min(grid.x,grid.y));
-    float retention=mix(.42,mix(.16,.92,downhill),midblock);
-    pud*=retention;damp*=mix(.65,1.,retention);`:''}
+    ${opt.road?`// Water collects in aggregate hollows first. As the road dries, each pool recedes at its edges.
+    float across=min(grid.x,grid.y),midblock=smoothstep(8.,16.,max(grid.x,grid.y));
+    float downhill=smoothstep(2.7,7.5,across);
+    float retention=mix(.54,mix(.24,.94,downhill),midblock);
+    float wheelPath=1.-smoothstep(.12,.65,abs(min(abs(across-2.),abs(across-6.))-.75));
+    float aggregateRidges=vnoise(tangent*vec2(1.15,5.8));
+    float basin=pool-.105*(1.-retention)+midblock*.035*wheelPath+.11*(aggregateRidges-.5);
+    // Stripe paint and asphalt share the same water level along a crossing.
+    float waterLevel=.828-.39*uWetness;
+    pud=smoothstep(waterLevel-.031,waterLevel+.058,basin)*smoothstep(.08,.25,uWetness)*exposed*facingUp;
+    damp*=mix(.73,1.,retention);`:''}
     float grain=vnoise(vWP.xz*34.);
     roughnessFactor=mix(roughnessFactor,.29+grain*.15,damp*.81);roughnessFactor=mix(roughnessFactor,.055,pud);diffuseColor.rgb*=mix(1.,.60,damp)*mix(1.,.44,pud);
     ${opt.tint?'diffuseColor.rgb*=mix(.78,1.13,big);':''}
@@ -123,8 +130,10 @@ function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
      normal=normalize(normal+mat3(viewMatrix)*vec3(slope.x,0.,slope.y)*.11);
     }`)
    .replace('#include <tonemapping_fragment>',`
-    {vec3 V=normalize(cameraPosition-vWP);float fr=.13+.87*pow(1.-max(V.y,0.),3.1);float kk=(pud*.93+damp*mix(.22,.30,uLamp)*(1.-pud))*fr*reflOn*(1.-smoothstep(.40,.65,vWP.y));
-     if(kk>.002){vec2 dist=normal.xz*mix(.016,.0025,pud)+vec2(grain-.5,big-.5)*.003;vec4 ru=vRU;ru.xy+=dist*ru.w;vec3 rc=texture2DProj(tRefl,ru).rgb;
+    {vec3 V=normalize(cameraPosition-vWP);float fr=.035+.965*pow(1.-max(V.y,0.),3.7);float kk=(pud*.93+damp*mix(.22,.30,uLamp)*(1.-pud))*fr*reflOn*(1.-smoothstep(.40,.65,vWP.y));
+     if(kk>.002){vec2 dist=(normal-normalize(vNormal)).xy*mix(.016,.005,pud)+vec2(grain-.5,big-.5)*mix(.003,.0012,pud);
+      ${opt.road?'dist.y+=(aggregateRidges-.5)*.008*pud;':''}
+      vec4 ru=vRU;ru.xy+=dist*ru.w;vec3 rc=texture2DProj(tRefl,ru).rgb;
       if(pud<.6){vec4 r2=ru;r2.x+=.008*ru.w;vec4 r3=ru;r3.y-=.012*ru.w;rc=(rc+texture2DProj(tRefl,r2).rgb+texture2DProj(tRefl,r3).rgb)/3.;}
       vec2 edge=abs(ru.xy/max(.001,ru.w)-.5);
       float valid=1.-smoothstep(.46,.50,max(edge.x,edge.y));
