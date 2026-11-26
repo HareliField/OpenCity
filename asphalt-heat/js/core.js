@@ -108,7 +108,10 @@ function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
      diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.76,.83,.90)*(.82+.12*drift+.06*grain),snow);
      roughnessFactor=mix(roughnessFactor,.92,snow);pud*=1.-snow;damp*=1.-snow;
     }
-    ${opt.paint?'if(fbm2(vWP.xz*22.)+vnoise(vWP.xz*69.)*.30<.30)discard;':''}`)
+    ${opt.paint?`float abrasion=fbm2(tangent*vec2(.91,2.8))*.75+grain*.25;
+    float aggregate=fbm2(vWP.xz*22.)+vnoise(vWP.xz*69.)*.30;
+    if(aggregate<.27+.18*smoothstep(.38,.74,abrasion))discard;
+    diffuseColor.rgb*=mix(.67,1.0,smoothstep(.30,.78,aggregate))*(1.-.16*abrasion);`:''}`)
    .replace('#include <normal_fragment_maps>',`#include <normal_fragment_maps>
     normal=normalize(mix(normal,normalize(vNormal),max(pud*.90,snow*.67)));
     if(pud*uRain>.014){
@@ -200,6 +203,12 @@ function resize(){const w=innerWidth,h=innerHeight;renderer.setPixelRatio(QUALIT
 postInit();addEventListener('resize',resize);
 /* ---- generic merged-geometry buckets ---- */
 const buckets=new Map();
+function geometryWithBounds(source,sphere){
+ // Three r128 culls an instanced mesh using its geometry. Sector bounds can share the original vertex buffers.
+ const bounded=new THREE.BufferGeometry();
+ for(const key of Object.keys(source.attributes))bounded.setAttribute(key,source.attributes[key]);
+ bounded.setIndex(source.index);bounded.boundingSphere=sphere;return bounded;
+}
 function addGeo(mat,geo,shadow=true,layer){geo.computeBoundingBox();const a=geo.boundingBox;
  const wide=a.max.x-a.min.x>150||a.max.z-a.min.z>150;
  const sector=wide?'wide':Math.floor((a.min.x+a.max.x)/256)+':'+Math.floor((a.min.z+a.max.z)/256);

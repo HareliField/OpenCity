@@ -9,7 +9,13 @@ function groundY(x,z,referenceY=null){
   sidewalk?sidewalkHeight(sidewalk,x,z):pavementHeight(x,z);
  for(const d of sidewalk?.cargoDecks||[])
   if(d.y<=(referenceY??y)+.38&&withinRect(d,x,z))y=Math.max(y,d.y);
- for(const r of STREET.steps)if(x>=r.x0&&x<=r.x1&&z>=r.z0&&z<=r.z1&&(!r.elevated||referenceY!==null&&referenceY>r.y-.35))y=Math.max(y,r.y);
+ if(sidewalk?.escapeFloors)y=fireEscapeGroundAt(sidewalk,x,z,referenceY,y);
+ for(const r of STREET.steps){
+  if(x<r.x0||x>r.x1||z<r.z0||z>r.z1)continue;
+  if(r.elevated&&(referenceY===null||referenceY<=r.y-.35))continue;
+  if(r.soffit!==undefined&&referenceY!==null&&r.y-referenceY>.42)continue;
+  y=Math.max(y,r.y);
+ }
  if(referenceY!==null){
   y=gardenRoofHeight(x,z,referenceY,y);
   const grade=sampleGrade(x,z,referenceY);
@@ -178,7 +184,7 @@ const nearestNode=p=>[clamp(Math.round(p.x/CELL),0,N),clamp(Math.round(p.z/CELL)
 function neighbors(n){const r=[];for(const[a,b]of[[1,0],[-1,0],[0,1],[0,-1]]){const i=n[0]+a,j=n[1]+b;if(i>=0&&j>=0&&i<=N&&j<=N)r.push([i,j]);}return r;}
 const dist2=(a,b)=>Math.hypot(a.x-b.x,a.z-b.z);
 function physWorld(){
- for(const r of STREET.steps)if(r.y>.005&&!r.elevated)physBox(r.x0,r.x1,r.soffit??.005,r.y,r.z0,r.z1);
+ for(const r of STREET.steps)if(r.y>.005&&!r.elevated&&r.soffit===undefined)physBox(r.x0,r.x1,.005,r.y,r.z0,r.z1);
  physBox(-HALF-1,W+60,0,2,-HALF-1.2,-HALF-.2);
  for(const [a,b] of southWallSpans())physBox(a,b,0,2,FREIGHT.z0+.2,FREIGHT.z0+1.2);
  physBox(FREIGHT.x0,FREIGHT.x1,-1,1.85,FREIGHT.z1,FREIGHT.z1+.85);

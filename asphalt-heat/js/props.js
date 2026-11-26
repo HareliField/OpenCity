@@ -34,8 +34,32 @@ function initProps(){const C=(r0,r1,h,s=10)=>new THREE.CylinderGeometry(r0,r1,h,
  }
  const byType={};for(const s of spots){(byType[s.type]=byType[s.type]||[]).push(s);}
  const o=new THREE.Object3D();
- for(const t in byType){const P=T[t];const arr=byType[t];const im=new THREE.InstancedMesh(P.geo,P.mat,arr.length);im.castShadow=true;im.receiveShadow=true;im.instanceMatrix.setUsage(THREE.DynamicDrawUsage);P.mesh=im;if(LOWSHADOW)im.layers.set(2);scene.add(im);
-  arr.forEach((s,k)=>{const y=blockY(s.x,s.z);o.position.set(s.x,y,s.z);o.rotation.set(0,s.ry||0,0);o.updateMatrix();im.setMatrixAt(k,o.matrix);PROPS.list.push({t,P,x:s.x,y,z:s.z,ry:s.ry||0,idx:k,riverside:t==='lantern'&&s.z>382&&s.z<449&&s.x>=255&&s.x<322,body:null,moved:false,broken:false,spray:0,renderPosition:o.position.clone(),renderQuaternion:o.quaternion.clone()});});}
+ for(const [t,arr] of Object.entries(byType)){
+  const P=T[t],sectors=new Map(),location=s=>Math.floor(s.x/192)+','+Math.floor(s.z/192);
+  const surveyed=arr.map(s=>({...s,y:blockY(s.x,s.z)}));
+  P.geo.computeBoundingSphere();
+  const reach=P.geo.boundingSphere.center.length()+P.geo.boundingSphere.radius;
+  for(const s of surveyed){
+   const key=location(s);
+   if(!sectors.has(key))sectors.set(key,{count:0,next:0,bounds:new THREE.Box3()});
+   const group=sectors.get(key);group.count++;
+   group.bounds.expandByPoint(new V3(s.x,s.y,s.z));
+  }
+  for(const group of sectors.values()){
+   const sphere=group.bounds.expandByScalar(reach).getBoundingSphere(new THREE.Sphere());
+   const mesh=new THREE.InstancedMesh(geometryWithBounds(P.geo,sphere),P.mat,group.count);
+   mesh.castShadow=mesh.receiveShadow=mesh.frustumCulled=true;mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
+   if(LOWSHADOW)mesh.layers.set(2);
+   group.mesh=mesh;scene.add(mesh);
+  }
+  for(const s of surveyed){
+   const group=sectors.get(location(s)),y=s.y,idx=group.next++;
+   o.position.set(s.x,y,s.z);o.rotation.set(0,s.ry||0,0);o.updateMatrix();group.mesh.setMatrixAt(idx,o.matrix);
+   PROPS.list.push({t,P,mesh:group.mesh,x:s.x,y,z:s.z,ry:s.ry||0,idx,
+    riverside:t==='lantern'&&s.z>382&&s.z<449&&s.x>=255&&s.x<322,body:null,moved:false,broken:false,spray:0,
+    renderPosition:o.position.clone(),renderQuaternion:o.quaternion.clone()});
+  }
+ }
  /* lamp glows */
  const lamps=PROPS.list.filter(p=>p.P.glow);const gp=new Float32Array(lamps.length*3),gc=new Float32Array(lamps.length*3);
  lamps.forEach((p,k)=>{p.gi=k;const at=lampEmitter(p);gp[k*3]=at.x;gp[k*3+1]=at.y;gp[k*3+2]=at.z;gc[k*3]=1;gc[k*3+1]=.72;gc[k*3+2]=.42;});

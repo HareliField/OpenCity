@@ -1,8 +1,8 @@
 /* Sectioned car bodies. Window openings and panel hinges use the actual model's local coordinates. */
 const FLEET_SECTIONS=new Map();
 const OPEN_FREIGHT_BEDS=new Set();
-const autoGlass=new THREE.MeshStandardMaterial({color:0xa1b5b9,roughness:.10,metalness:.19,
- transparent:true,opacity:.35,side:THREE.DoubleSide,depthWrite:false,envMapIntensity:1.12});
+const autoGlass=new THREE.MeshPhysicalMaterial({color:new THREE.Color(0x576b75).convertSRGBToLinear(),roughness:.12,metalness:.04,
+ transparent:true,opacity:.37,side:THREE.DoubleSide,depthWrite:false,envMapIntensity:.84,clearcoat:.65,clearcoatRoughness:.10});
 const panelLinerMaterial=new THREE.MeshStandardMaterial({color:0x353a38,roughness:.89,metalness:.16,side:THREE.BackSide});
 const glassCrackMaterial=new THREE.LineBasicMaterial({color:0xc7d4cf,transparent:true,opacity:.70,depthWrite:false});
 const VEHICLE_GLASS=['Windshield','RearGlass','GlassFrontL','GlassFrontR','GlassRearL','GlassRearR'];

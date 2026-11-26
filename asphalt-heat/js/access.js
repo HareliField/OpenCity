@@ -47,7 +47,7 @@ function doorwayPose(d,phase){
 
 function initializeDoorMeshes(){
  const box=(x,y,z,w,h,d)=>new THREE.BoxGeometry(w,h,d).translate(x,y,z);
- for(const kind of ['glass','wood','shutter','cargo']){
+ for(const kind of ['glass','wood','shutter','cargo','egress']){
   const doors=ACCESS.doors.filter(d=>d.kind===kind);
   if(!doors.length)continue;
   const metal=MAT.darkMetal,m=INTERIORS.materials;
@@ -59,6 +59,10 @@ function initializeDoorMeshes(){
     box(0,-.464,0,.906,.072,1),box(0,.476,0,.906,.048,1),
     box(.399,-.012,.62,.021,.194,.36),box(.399,-.012,-.62,.021,.194,.36)
    ]),true]);
+  }else if(kind==='egress'){
+   layers.push([metal,mergeGeos([box(0,0,0,1,1,.86),box(0,-.372,.453,.93,.19,.10)]),true]);
+   layers.push([m.steel,mergeGeos([box(0,-.028,-.70,.78,.018,.24),
+    box(.36,-.037,.68,.14,.024,.24),box(-.32,-.027,-.54,.044,.054,.32),box(.32,-.027,-.54,.044,.054,.32)]),false]);
   }else if(kind==='wood'){
    layers.push([m.darkWood,mergeGeos([
     box(0,0,0,1,1,.83),box(0,.158,.41,.81,.413,.18),box(0,-.267,.41,.81,.282,.18)
@@ -80,16 +84,27 @@ function initializeDoorMeshes(){
    layers.push([MAT.shutter,box(0,0,0,1,1,.90),true]);
    layers.push([metal,box(0,-.444,.47,1,.05,.22),true]);
   }
-  const sets=new Map();
-  for(const d of doors){const owner=d.suiteBlock||null;if(!sets.has(owner))sets.set(owner,[]);sets.get(owner).push(d);}
-  for(const [owner,group] of sets){
+  const sets=new Map();ACCESS.batches[kind]=[];
+  for(const d of doors){
+   const key=d.suiteBlock||Math.floor(d.ox/192)+','+Math.floor(d.oz/192);
+   if(!sets.has(key))sets.set(key,[]);
+   sets.get(key).push(d);
+  }
+  for(const group of sets.values()){
+   const owner=group[0].suiteBlock,bounds=new THREE.Box3();
+   for(const d of group){
+    const reach=d.w+d.thickness+.12,top=d.base+d.h+(d.kind==='shutter'?d.h+.13:0);
+    bounds.expandByPoint(new V3(d.x-reach,d.base-.05,d.z-reach));
+    bounds.expandByPoint(new V3(d.x+reach,top+.05,d.z+reach));
+   }
+   const sphere=bounds.getBoundingSphere(new THREE.Sphere());
    const batches=layers.map(([geometryMaterial,geometry,shadow])=>{
-    const batch=new THREE.InstancedMesh(geometry,geometryMaterial,group.length);
-    batch.castShadow=shadow;batch.receiveShadow=true;batch.frustumCulled=false;batch.visible=!owner;
+    const batch=new THREE.InstancedMesh(geometryWithBounds(geometry,sphere),geometryMaterial,group.length);
+    batch.castShadow=shadow;batch.receiveShadow=true;batch.frustumCulled=true;batch.visible=!owner;
     batch.instanceMatrix.setUsage(THREE.DynamicDrawUsage);scene.add(batch);return batch;
    });
    if(owner)(owner.suiteDoorBatches||(owner.suiteDoorBatches=[])).push(...batches);
-   else ACCESS.batches[kind]=batches;
+   else ACCESS.batches[kind].push(...batches);
    group.forEach((d,i)=>{
     d.index=i;d.batches=batches;
     if(d.tint)batches[0].setColorAt(i,lin(d.tint));
@@ -110,7 +125,7 @@ function syncDoorMesh(d){
  }
  _entrySize.set(d.w,d.h,d.thickness);
  _entryMatrix.compose(_entryPos,_entryRotation,_entrySize);
- for(const b of d.batches||ACCESS.batches[d.kind]){
+ for(const b of d.batches||[]){
   b.setMatrixAt(d.index,_entryMatrix);
   b.instanceMatrix.needsUpdate=true;
  }

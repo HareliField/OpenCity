@@ -82,6 +82,11 @@ run(`
   approx(hit(x,z),groundY(x,z,.3),.0001,'sand relief matches wheel contact');
  }
  approx(coastalSandHeight(W+45,W*.42),.02,.0001,'pier entry stays level');
+ const pierFloor={x0:W+40,x1:W+150,z0:W*.42-4,z1:W*.42+4,y:1.60,soffit:1.527};
+ STREET.steps.push(pierFloor);
+ approx(groundY(W+46,W*.42,.02),.02,.0001,'feet below a deck stay at beach height');
+ approx(groundY(W+46,W*.42,1.45),1.60,.0001,'highest pier step meets the platform');
+ STREET.steps.pop();
  assert(hasCurbExtension(4,5,0,-1));
  buildCurbExtension(4,5,0,-1);
  const approachZ=5*CELL+STREET_DESIGN.crossing,faceX=4*CELL+HALF-EXTENSION_WIDTH;

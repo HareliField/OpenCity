@@ -210,16 +210,17 @@
   {
     "id": "avenue-sycamore",
     "sourceImages": [
+      1,
       14,
       18,
       34,
       92,
       112
     ],
-    "description": "Forking avenue sycamore with a lightly pruned crown and separate alpha-cut leaf clusters.",
-    "parts": 23,
+    "description": "Forking avenue sycamore with a lightly pruned crown and layered sprays of photographed leaves.",
+    "parts": 25,
     "movableParts": [],
-    "runtimeBytes": 565640
+    "runtimeBytes": 572524
   },
   {
     "id": "coastal-date-palm",
@@ -238,16 +239,17 @@
   {
     "id": "sycamore-distant",
     "sourceImages": [
+      1,
       14,
       18,
       34,
       92,
       112
     ],
-    "description": "Forking avenue sycamore with a lightly pruned crown and separate alpha-cut leaf clusters.",
+    "description": "Forking avenue sycamore with a lightly pruned crown and layered sprays of photographed leaves.",
     "parts": 9,
     "movableParts": [],
-    "runtimeBytes": 518352
+    "runtimeBytes": 519824
   },
   {
     "id": "palm-distant",
@@ -266,29 +268,31 @@
   {
     "id": "park-sycamore",
     "sourceImages": [
+      1,
       14,
       18,
       34,
       92,
       112
     ],
-    "description": "Forking avenue sycamore with a lightly pruned crown and separate alpha-cut leaf clusters.",
-    "parts": 29,
+    "description": "Forking avenue sycamore with a lightly pruned crown and layered sprays of photographed leaves.",
+    "parts": 38,
     "movableParts": [],
-    "runtimeBytes": 593904
+    "runtimeBytes": 629836
   },
   {
     "id": "park-sycamore-distant",
     "sourceImages": [
+      1,
       14,
       18,
       34,
       92,
       112
     ],
-    "description": "Forking avenue sycamore with a lightly pruned crown and separate alpha-cut leaf clusters.",
+    "description": "Forking avenue sycamore with a lightly pruned crown and layered sprays of photographed leaves.",
     "parts": 11,
     "movableParts": [],
-    "runtimeBytes": 530240
+    "runtimeBytes": 540176
   }
 ]

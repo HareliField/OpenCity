@@ -488,8 +488,8 @@ async function buildCityRest(){const coastReady=loadCoveLayout();SEED=4242;initA
   const x0=i*CELL+HALF,x1=(i+1)*CELL-HALF,z0=j*CELL+HALF,z1=(j+1)*CELL-HALF;const B={i,j,x0,x1,z0,z1,bld:[],park:false,dist:districtOf(i,j)};blocks.push(B);
   streetProps(B);if(i<ORIGINAL_GRID&&j<ORIGINAL_GRID||(i+j)%3===0)streetDetails(B);if(buildWorksBlock(B)||buildAuthoredBlock(B)||reserveGradeBlock(B))continue;const sp=SPECIAL[i+','+j];if(sp&&sp.kind==='park'){B.park=true;park(B);continue;}if(sp){special(B,sp);continue;}
   const R={x0:x0+SW,x1:x1-SW,z0:z0+SW,z1:z1-SW};if(B.dist==='docks'&&(i+j)%3===0){warehouses(B,{x0:R.x0,x1:R.x1,z0:R.z0,z1:(R.z0+R.z1)/2-1});containers(R.x0+1,R.x1-1,(R.z0+R.z1)/2+1,R.z1-1);continue;}fillDistrict(B,R,B.dist);}
-  for(let j=0;j<N;j++)planUpperRooms(blocks[i*N+j]);
-  finishBuildingProxies();
+  for(let j=0;j<N;j++){const b=blocks[i*N+j];planUpperRooms(b);installFireEscapes(b);}
+  finishBuildingProxies(i%4===3||i===N-1);
   if(i%4===3){
    flushBuckets();
    setLoad('Building streets… '+Math.round((i+1)/N*100)+'%',.93+.05*(i+1)/N);

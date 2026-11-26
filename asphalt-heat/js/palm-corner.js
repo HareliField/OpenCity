@@ -6,8 +6,22 @@ function cornerMaterials(){
  const plaster=pbr('plaster',1,{rough:.89,ns:.36,color:0xe4ddd0,env:.47});
  const ivory=pbr('plaster',1.63,{rough:.88,ns:.28,color:0xdbd9c6,env:.47});
  const shadow=pbr('concrete',1.21,{rough:.90,ns:.4,color:0x928f81});
+ for(const mat of [plaster,ivory]){
+  mat.onBeforeCompile=shader=>{
+   shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 stuccoAt;')
+    .replace('#include <fog_vertex>','#include <fog_vertex>\nstuccoAt=(modelMatrix*vec4(transformed,1.)).xyz;');
+   shader.fragmentShader=shader.fragmentShader.replace('#include <common>','#include <common>\nvarying vec3 stuccoAt;'+WETCODE)
+    .replace('#include <map_fragment>',`#include <map_fragment>
+     float along=stuccoAt.x+stuccoAt.z;
+     float stains=fbm2(vec2(along*.41,stuccoAt.y*.15))*.66+fbm2(vec2(along*2.9,stuccoAt.y*.44))*.34;
+     float belowSill=1.-smoothstep(.05,1.83,mod(4.76-stuccoAt.y,3.95));
+     float runoff=belowSill*smoothstep(.38,.66,stains),splash=(1.-smoothstep(.13,.79,stuccoAt.y))*stains;
+     diffuseColor.rgb*=mix(vec3(.75,.72,.66),vec3(1.04,1.02,.99),smoothstep(.24,.72,stains));
+     diffuseColor.rgb*=1.-.13*runoff-.28*splash;`);
+  };mat.customProgramCacheKey=()=>'coastal-stucco-weathering';
+ }
  return PALM_CORNER.materials={
-  plaster,ivory,shadow,sash:finish(0x747e78,.48,.35),brass:finish(0x998d6d,.38,.6),
+  plaster,ivory,shadow,inside:pbr('plaster',1.45,{rough:.93,ns:.29,color:0x998f7c,env:.27}),sash:finish(0x747e78,.48,.35),brass:finish(0x998d6d,.38,.6),
   green:finish(0x526b63,.64,.24),oxblood:finish(0x784045,.59,.17),dark:finish(0x3d403d,.64,.18),
   blinds:[finish(0xaca79b,.91),finish(0x87918a,.91),finish(0xb6b1a6,.92)],
   walls:[plaster,ivory,pbr('concrete',1.6,{rough:.85,ns:.30,color:0xd2d2bd})],
@@ -104,6 +118,10 @@ function cornerWall(B,r,side,base,top,floor,spec){
  box(strip,-half-.075,half+.075,top-.916,top-.191,-.27,.34);
  box(m.sash,-half-.094,half+.094,top-.201,top-.132,-.26,.374);
  box(m.dark,-half-.075,half+.075,top-.942,top-.892,-.22,.366);
+ if(diner||arcade){
+  box(m.dark,-half+.15,half-.15,top-1.018,top-.950,-.82,.389);
+  addRoomCollider(B,M,-half+.15,half-.15,-.389,.82,top-.950,top-1.018);
+ }
  const c=side===spec.front?(diner?-half+pitch*1.50:half-pitch*1.86):half-pitch*1.82;
  const signW=Math.min(diner?8.12:7.34,width*.35);
  const sign=cornerPanel(spec.shop,diner?'#813737':arcade?'#54483a':spec.kind==='records'?'#323533':'#385747','#efe6d6');
@@ -237,9 +255,9 @@ function furnishCornerShop(B,r,y,spec){
 function cornerFlatWall(B,x0,x1,z,y,doorX){
  const m=cornerMaterials(),M=new THREE.Matrix4().makeTranslation(0,0,z),gap=.626,head=y+2.17;
  for(const [a,b] of [[x0,doorX-gap],[doorX+gap,x1]]){
-  if(b>a)worksSolid(worksRect(a,b,z-.070,z+.070),y,y+3.91,m.plaster);
+  if(b>a)worksSolid(worksRect(a,b,z-.070,z+.070),y,y+3.91,m.inside);
  }
- worksSolid(worksRect(doorX-gap,doorX+gap,z-.07,z+.07),head,y+3.91,m.plaster);
+ worksSolid(worksRect(doorX-gap,doorX+gap,z-.07,z+.07),head,y+3.91,m.inside);
  registerDoor(M,doorX,0,y,1.195,2.11,'wood');
 }
 function furnishCornerFlats(B,r,y,floor){

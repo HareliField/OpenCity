@@ -56,7 +56,7 @@
       "original_sha256": "7abf68e29b25b91674efb41674b05b52413962791157644bd3cd15e4b124338e",
       "runtime_file": "coupe-driveable.glb",
       "requested_target_triangles": 36000,
-      "runtime_sha256": "c725ef09a14101b6a65ff04bee2be5506a99276832e99a8af31b20b3a55b2407",
+      "runtime_sha256": "17c4974947bc022493ffc87011b4b02b2162424f26bdc13be9a63887e95d89c1",
       "vehicle_components": "Independently hinged bonnet, service bay and separate automotive glazing; four wheel pivots follow the suspension."
     },
     "street-bin": {
@@ -421,7 +421,7 @@
       ],
       "input_outline": "165,255 171,244 193,240 209,234 227,225 244,221 269,219 291,219 303,221 320,230 333,237 354,241 364,245 365,254 358,265 352,275 340,278 333,273 268,280 260,287 249,291 238,290 228,284 213,284 178,276 167,271",
       "charged_credits": 35,
-      "runtime_sha256": "0c1ffa065e947299c3fbebd3824f5f54a3935f4550df963450e5ddd9fd7c5cfd",
+      "runtime_sha256": "25690905799e768fcde47cb0632f5e04c140673cce5379e57a82a85680a9125d",
       "runtime_repair": "Aligned the generated shell to the sedan axles, opened and lined all four wheel arches, tinted the glazing and reproduced spinning hubcaps from reference 112.",
       "variants": [
         {
@@ -429,7 +429,7 @@
           "reference": "Natural Photos/001-palm-avenue-drive.png",
           "method": "Graphite lacquer and reprojected trunk, number plate and rear lamps on the existing four-wheel sedan rig.",
           "charged_credits": 0,
-          "runtime_sha256": "d18f9cd43c8b4236815a9c2731354d38580a255d5d6998f608b1defc39544d93"
+          "runtime_sha256": "e8ee66b064a671de179f110eec978112533d436d5f0b31e5184008709ec2f0c2"
         }
       ],
       "vehicle_components": "Independently hinged bonnet, service bay and separate automotive glazing; four wheel pivots follow the suspension."
@@ -449,7 +449,7 @@
       "input_outline": "332,249 333,239 339,232 352,226 375,214 380,211 397,210 411,211 420,215 431,224 444,225 451,230 453,238 450,248 448,254 444,256 442,253 417,263 414,271 410,275 404,275 398,272 397,267 363,270 359,274 350,273 346,270 342,266 335,263",
       "input_holes": [],
       "charged_credits": 35,
-      "runtime_sha256": "e1ab8f3426cc45a6d72711b1335752c1197e34f9eb523e39a985e76e00012691",
+      "runtime_sha256": "0e6f3b5edcbac459a7ac2797aca08bffb857a2bac71b1def242bd0c985cffe20",
       "runtime_repair": "Refitted the shell to the sedan axles, opened four wheel arches, added liners and nine-spoke independently rotating wheels.",
       "vehicle_components": "Independently hinged bonnet, service bay and separate automotive glazing; four wheel pivots follow the suspension."
     },
@@ -468,7 +468,7 @@
       "input_outline": "359,219 362,213 365,209 371,209 374,204 379,200 389,198 413,197 420,198 425,197 431,199 436,202 440,208 445,213 447,219 449,230 447,243 443,250 438,256 427,257 423,254 390,254 387,261 378,262 374,259 373,254 367,250 366,245 362,241 359,229",
       "input_holes": [],
       "charged_credits": 35,
-      "runtime_sha256": "79eac94f5c0b46f1c52cfbd5711cf64066bf78e49313fed361b8482016b4ce42",
+      "runtime_sha256": "c21bfa6fa5134cf604191517fd9bb6bf6b10fb49da1da37816b9e0c83a84c5c8",
       "runtime_repair": "Cleared underside remnants, aligned and lined the wheel arches, added separate five-spoke wheels and driver-controlled lamps.",
       "vehicle_components": "Independently hinged bonnet, service bay and separate automotive glazing; four wheel pivots follow the suspension."
     },

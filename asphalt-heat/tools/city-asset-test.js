@@ -2,6 +2,7 @@
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
+const {createHash}=require('node:crypto');
 const game=path.resolve(__dirname,'..');
 const library=['City object library.json','Lighthouse Cove.json','District fittings.json','Garden cottages.json','Palm Street interiors.json','Civic and service fittings.json','Vehicle mechanical assemblies.json','Building and paving components.json','Domestic fittings.json','Beach furniture.json'].flatMap(file=>
  JSON.parse(fs.readFileSync(path.join(game,'..','Blender Sources',file))));
@@ -33,3 +34,12 @@ for(const asset of library){
  bytes+=bin.length;
 }
 console.log('Validated',library.length,'Blender exports,',triangles,'triangles and',bytes,'bytes.');
+const manifest=JSON.parse(fs.readFileSync(path.join(game,'..','Meshy Sources','Asset Manifest.json')));
+for(const asset of Object.values(manifest.assets)){
+ const files=[[asset.runtime_file,asset.runtime_sha256],...(asset.variants||[]).map(v=>[v.file,v.runtime_sha256])];
+ for(const [file,expected] of files){
+  if(!expected)continue;
+  const contents=fs.readFileSync(path.join(game,'models','scenery',file));
+  assert.equal(createHash('sha256').update(contents).digest('hex'),expected,file+' must match its runtime receipt');
+ }
+}

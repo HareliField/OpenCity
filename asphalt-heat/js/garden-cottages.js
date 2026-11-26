@@ -48,14 +48,10 @@ function gardenWall(B,R,side,openings,h,wall){
   }else{
    solid(l,r,base,o.y);addRoomCollider(B,M,l,r,-.05,.11,o.y+o.h,o.y,true);
    const p=lpt(M,o.x,-.032);
-   const proxy=new THREE.Group(),sash=new THREE.Mesh(unitBox,MAT.trim),pane=new THREE.Mesh(unitBox,INTERIORS.materials.glass);
-   pane.position.y=o.h*.5;pane.scale.set(o.w-.08,o.h-.086,.016);proxy.add(pane);
-   for(const edge of [-1,1]){
-    const upright=sash.clone();upright.position.set(edge*o.w*.48,o.h*.5,0);upright.scale.set(.054,o.h,.12);proxy.add(upright);
-    const bar=sash.clone();bar.position.set(0,edge<0?.035:o.h-.034,0);bar.scale.set(o.w,.067,.138);proxy.add(bar);
-   }
-   proxy.position.set(p.x,o.y,p.z);proxy.rotation.y=SIDEANG[side];scene.add(proxy);
-   placeScenery('garden-sash',p.x,o.y,p.z,SIDEANG[side],[o.w,o.h,.206],v=>{proxy.visible=v;});
+   const dims=[o.w,o.h,.206],yaw=SIDEANG[side];
+   const frame=detailFallback('garden-sash-frame',p.x,o.y,p.z,dims,yaw,MAT.trim);
+   const pane=detailFallback('garden-sash-pane',p.x,o.y,p.z,dims,yaw,INTERIORS.materials.glass);
+   placeScenery('garden-sash',p.x,o.y,p.z,yaw,dims,visible=>{frame(visible);pane(visible);});
   }
   last=r;
  }

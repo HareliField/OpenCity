@@ -90,20 +90,35 @@ function carGeo(type){if(CARGEO[type])return CARGEO[type];const s=CARSPEC[type],
 const CARTEX={};
 function carSeamTex(type,livery){const key=type+livery;if(CARTEX[key])return CARTEX[key];const G=carGeo(type),s=G.s,h=s.L/2;const c=document.createElement('canvas');c.width=1024;c.height=512;const g=c.getContext('2d');
  const X=z=>(z+h)/s.L*1024,Y=y=>512-y/2.4*512;g.fillStyle='#fff';g.fillRect(0,0,1024,512);
+ const legends=[];
+ const legend=(word,x,y)=>legends.push({word,x,y,ink:g.fillStyle,font:g.font});
  if(livery==='police'){g.fillStyle='#16181c';g.fillRect(X(G.zg0-.3),0,X(G.zg3+.25)-X(G.zg0-.3),512);g.fillStyle='#fff';g.fillRect(X(G.zB-1.02),Y(s.hb-.02),X(G.zB+1.0)-X(G.zB-1.02),Y(.3)-Y(s.hb-.02));
-  g.fillStyle='#1c3f94';g.fillRect(0,Y(.62),1024,9);g.fillStyle='#d8b23a';g.fillRect(0,Y(.62)+11,1024,3);g.font='bold 30px Anton, Impact, sans-serif';g.fillStyle='#1c3f94';g.textAlign='center';g.fillText('POLICE',X(G.zB-.5),Y(.72));g.fillText('POLICE',X(G.zB+.55),Y(.72));}
- if(livery==='taxi'){g.fillStyle='#111';for(let k=0;k<40;k++){if(k%2)g.fillRect(X(G.zB-1)+k*10,Y(.66),10,7);else g.fillRect(X(G.zB-1)+k*10,Y(.66)+7,10,7);}g.font='bold 26px Anton, Impact, sans-serif';g.textAlign='center';g.fillText('TAXI',X(G.zB+.5),Y(.42));}
- if(livery==='swat'){g.fillStyle='#16191d';g.fillRect(0,0,1024,512);g.font='bold 54px Anton, Impact, sans-serif';g.fillStyle='#cfd3d8';g.textAlign='center';g.fillText('S.W.A.T',X(-.9),Y(1.35));}
- if(livery==='amb'){g.fillStyle='#d42626';g.fillRect(0,Y(1.0),1024,16);g.fillRect(0,Y(.62),1024,8);g.font='bold 44px Anton, Impact, sans-serif';g.fillStyle='#d42626';g.textAlign='center';g.fillText('AMBULANCE',X(-.9),Y(1.5));g.fillRect(X(-2.2)-9,Y(1.75),18,58);g.fillRect(X(-2.2)-29,Y(1.75)+20,58,18);}
+  g.fillStyle='#1c3f94';g.fillRect(0,Y(.62),1024,9);g.fillStyle='#d8b23a';g.fillRect(0,Y(.62)+11,1024,3);g.font='bold 30px Anton, Impact, sans-serif';g.fillStyle='#1c3f94';legend('POLICE',X(G.zB-.5),Y(.72));legend('POLICE',X(G.zB+.55),Y(.72));}
+ if(livery==='taxi'){g.fillStyle='#111';for(let k=0;k<40;k++){if(k%2)g.fillRect(X(G.zB-1)+k*10,Y(.66),10,7);else g.fillRect(X(G.zB-1)+k*10,Y(.66)+7,10,7);}g.font='bold 26px Anton, Impact, sans-serif';legend('TAXI',X(G.zB+.5),Y(.42));}
+ if(livery==='swat'){g.fillStyle='#16191d';g.fillRect(0,0,1024,512);g.font='bold 54px Anton, Impact, sans-serif';g.fillStyle='#cfd3d8';legend('S.W.A.T',X(-.9),Y(1.35));}
+ if(livery==='amb'){g.fillStyle='#d42626';g.fillRect(0,Y(1.0),1024,16);g.fillRect(0,Y(.62),1024,8);g.font='bold 44px Anton, Impact, sans-serif';g.fillStyle='#d42626';legend('AMBULANCE',X(-.9),Y(1.5));g.fillRect(X(-2.2)-9,Y(1.75),18,58);g.fillRect(X(-2.2)-29,Y(1.75)+20,58,18);}
  g.strokeStyle='rgba(0,0,0,.55)';g.lineWidth=2.2;const door=(z0,z1)=>{g.beginPath();g.moveTo(X(z0),Y(s.hb));g.lineTo(X(z0),Y(s.gc+.17));g.lineTo(X(z1),Y(s.gc+.17));g.lineTo(X(z1),Y(s.hb));g.stroke();g.fillStyle='rgba(0,0,0,.5)';g.fillRect(X(z0)+6,Y(s.hb-.1),24,5);};
  const van=type==='van'||type==='amb'||type==='swat';
  door(G.zB-.02,G.zg3-.12);if(!van&&type!=='sport'&&s.doors!==2)door(Math.max(G.zg0+.25,-s.wb+.4),G.zB-.06);if(van)door(G.zB-1.6,G.zB-.4);
  g.beginPath();g.moveTo(X(G.zg3+.05),Y(pr(G,G.zg3+.05)));g.lineTo(X(G.zg3+.05),Y(s.hb-.2));g.stroke();
  const gr=g.createLinearGradient(0,Y(s.gc+.5),0,Y(s.gc));gr.addColorStop(0,'rgba(0,0,0,0)');gr.addColorStop(1,'rgba(0,0,0,.4)');g.fillStyle=gr;g.fillRect(0,Y(s.gc+.5),1024,300);
- const t=new THREE.CanvasTexture(c);t.encoding=THREE.sRGBEncoding;t.anisotropy=8;return CARTEX[key]=t;}
+ let image=c;
+ if(legends.length){
+  // The same longitudinal coordinate reads in opposite directions from the two pavements.
+  const [atlas,flank]=cvs(c.width,c.height*2);
+  for(const offset of [0,c.height]){
+   flank.drawImage(c,0,offset);
+   for(const {word,x,y,ink,font} of legends){
+    flank.save();flank.translate(x,y+offset);flank.scale(offset===0?-1:1,1);
+    flank.font=font;flank.fillStyle=ink;flank.textAlign='center';flank.fillText(word,0,0);flank.restore();
+   }
+  }
+  image=atlas;
+ }
+ const t=new THREE.CanvasTexture(image);t.encoding=THREE.sRGBEncoding;t.anisotropy=8;return CARTEX[key]=t;}
 function pr(G,z){return G.pr.top(z);}
 const CARMATS={},carColors=[0x8f1420,0x16306b,0xdfe3e6,0x15171a,0x5c6268,0x0d4a30,0xb78b1f,0x41185a,0xb5480c,0x6f8191,0x6e1730,0xf4f4f2,0x0b0b0c,0x1f5a78,0x9aa3ab,0x7a2f17];
-const glassMat=new THREE.MeshStandardMaterial({color:0x05080b,roughness:.04,metalness:.95,envMapIntensity:1.5});
+const glassMat=new THREE.MeshStandardMaterial({color:0x05080b,roughness:.13,metalness:.56,envMapIntensity:.84});
 const roadsterGlass=new THREE.MeshStandardMaterial({color:0xb6c9ce,roughness:.12,metalness:.07,transparent:true,opacity:.13,depthWrite:false});
 const darkMat=new THREE.MeshStandardMaterial({color:0x0c0c0d,roughness:.55,metalness:.3,polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2});
 const LENS={headOn:new THREE.MeshBasicMaterial({color:new THREE.Color(2.2,2.05,1.7),polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2}),headOff:new THREE.MeshStandardMaterial({color:0xcfd6dc,roughness:.1,metalness:.9,polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2}),
@@ -132,8 +147,12 @@ function initCarLenses(){
 
 function carPlateMat(){const c=document.createElement('canvas');c.width=256;c.height=64;const g=c.getContext('2d');g.fillStyle='#f3f1e4';g.fillRect(0,0,256,64);g.strokeStyle='#223';g.lineWidth=4;g.strokeRect(3,3,250,58);g.fillStyle='#1a2a55';g.font='bold 44px Anton, Impact, monospace';g.textAlign='center';g.textBaseline='middle';const plate='AH '+PoliceDepartment.plateSerial++;g.fillText(plate,128,37);const t=new THREE.CanvasTexture(c);t.encoding=THREE.sRGBEncoding;const m=new THREE.MeshStandardMaterial({map:t,roughness:.5,polygonOffset:true,polygonOffsetFactor:-3,polygonOffsetUnits:-3});m.userData.plate=plate;return m;}
 function carPaint(type,color,livery){const k=type+color+livery;if(CARMATS[k])return CARMATS[k];const M=QUALITY.physical?THREE.MeshPhysicalMaterial:THREE.MeshStandardMaterial;
- const m=new M({color:new THREE.Color(color).convertSRGBToLinear(),map:carSeamTex(type,livery),roughness:livery==='swat'?.6:.26,metalness:livery==='swat'?.2:.55,envMapIntensity:1.25});
- if(QUALITY.physical){m.clearcoat=livery==='swat'?0:1;m.clearcoatRoughness=.13;}return CARMATS[k]=m;}
+ const pigment=new THREE.Color(color).convertSRGBToLinear(),white=Math.min(pigment.r,pigment.g,pigment.b)>.69;
+ if(white)pigment.multiplyScalar(.77);
+ const matte=livery==='swat',map=carSeamTex(type,livery);
+ const m=new M({color:pigment,map,roughness:matte?.6:.29,metalness:matte?.2:white?.22:.46,envMapIntensity:1.02});
+ m.userData.flankAtlas=map.image.height===1024;
+ if(QUALITY.physical){m.clearcoat=matte?0:.90;m.clearcoatRoughness=.16;}return CARMATS[k]=m;}
 const burntMat=new THREE.MeshStandardMaterial({color:0x100e0d,roughness:1});
 function coatVehicle(material,snowDepth){
  const m=material.clone();
@@ -141,6 +160,10 @@ function coatVehicle(material,snowDepth){
   sh.uniforms.uPanelSnow=snowDepth;
   sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vPanel;')
    .replace('#include <begin_vertex>','#include <begin_vertex>\nvPanel=position;');
+  if(material.userData.flankAtlas){
+   const uv='vec2(vUv.x,.5*vUv.y+.5*step(0.,vPanel.x))';
+   sh.fragmentShader=sh.fragmentShader.replace('#include <map_fragment>',THREE.ShaderChunk.map_fragment.replace(/\bvUv\b/g,uv));
+  }
   sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\nvarying vec3 vPanel;uniform float uPanelSnow;'+WETCODE)
    .replace('#include <normal_fragment_maps>',`#include <normal_fragment_maps>
     float panelSnow=0.;
@@ -153,7 +176,7 @@ function coatVehicle(material,snowDepth){
     }`)
    .replace('#include <lights_physical_fragment>','#include <lights_physical_fragment>\n#ifdef CLEARCOAT\nmaterial.clearcoat*=1.-panelSnow;\n#endif');
  };
- m.customProgramCacheKey=()=>'snow-on-bodywork';
+ m.customProgramCacheKey=()=>material.userData.flankAtlas?'snow-on-lettered-bodywork':'snow-on-bodywork';
  return m;
 }
 /* Wheel faces share one atlas and draw call. Diameters are representative street trims. */

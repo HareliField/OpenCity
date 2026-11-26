@@ -126,6 +126,7 @@ function collectPaving(pos,select){
  }
 }
 function registerDeckBoards(rect,acrossX){
+ if(rect.soffit!==undefined)STATIC.push({x0:rect.x0,x1:rect.x1,z0:rect.z0,z1:rect.z1,y0:rect.soffit,h:rect.y});
  const from=acrossX?rect.z0:rect.x0,to=acrossX?rect.z1:rect.x1;
  const lo=acrossX?rect.x0:rect.z0,hi=acrossX?rect.x1:rect.z1;
  const rows=Math.ceil((to-from)/.158),width=(to-from)/rows;
@@ -146,6 +147,21 @@ function fittingTemplate(id){
  const a=BUILDING_FITTINGS,cached=a.templates.get(id);
  if(cached)return cached;
  if(id==='concrete-panel'){const t=pavementTemplate();a.templates.set(id,t);return t;}
+ if(id==='mission-pantile-low'){
+  // Keep the visible pan, cap and lapped nose on the street-facing roof.
+  const p=[],indices=[],uv=[],profile=[[-.50,.24],[-.27,.13],[-.035,.31],[.084,.75],[.246,.99],[.37,.83],[.50,.31]];
+  for(const [z,h,taper] of [[.50,-.125,1],[.50,0,1],[-.50,.046,.935]])for(const [x,rise] of profile){
+   p.push(x*taper,rise+h,z);uv.push(x+.5,z+.5);
+  }
+  const n=profile.length;
+  for(let row=0;row<2;row++)for(let k=0;k<n-1;k++){
+   const i=row*n+k;indices.push(i,i+1,i+n,i+1,i+n+1,i+n);
+  }
+  const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(p,3));g.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));
+  g.setIndex(indices);g.computeVertexNormals();
+  const t={dimensions:[1,1,1],primitives:[{geo:g,mat:new THREE.MeshStandardMaterial({color:lin(0xad694d),roughness:.90}),local:new THREE.Matrix4()}]};
+  a.templates.set(id,t);return t;
+ }
  if(a.pending.has(id))return null;
  const request=requestScenery(id);if(!request)return null;
  a.pending.add(id);
@@ -183,13 +199,19 @@ function streamBuildingFittings(pos){
   for(const l of s.levels){
    if(l.y0>pos.y+9)break;
    if(l.h<pos.y-4.6)continue;
-   for(const f of l.fittings||[])if(Math.hypot(pos.x-f.x,pos.z-f.z)<43)select(f);
+   for(const f of l.fittings||[]){
+    const reach=Math.max(...f.dims)>1.7?28:Math.max(...f.dims)>.8?22:15;
+    if(Math.hypot(pos.x-f.x,pos.z-f.z)<reach)select(f);
+   }
   }
  }
  const limit=65;
  for(let i=Math.floor((pos.x-limit)/CELL);i<=Math.floor((pos.x+limit)/CELL);i++)for(let j=Math.floor((pos.z-limit)/CELL);j<=Math.floor((pos.z+limit)/CELL);j++){
-  for(const f of a.outdoor.get(i+','+j)||[])
-   if(Math.hypot(f.x-pos.x,f.z-pos.z)<(f.reach||45)&&Math.abs(f.y-pos.y)<(f.highReach||24))select(f);
+  for(const f of a.outdoor.get(i+','+j)||[]){
+   const distance=Math.hypot(f.x-pos.x,f.z-pos.z),dy=Math.abs(f.y-pos.y);
+   if(distance>=(f.reach||45)||dy>=(f.highReach||24))continue;
+   select(f.id==='mission-pantile'&&(distance>13.5||dy>5.6)?{...f,id:'mission-pantile-low'}:f);
+  }
  }
  collectNearBrickwork(pos,select);collectPaving(pos,select);
  for(const d of a.drawnLeaves)d.draw=null;

@@ -4,6 +4,8 @@ const THREE=require('../lib/three.min.js');
 const read=file=>fs.readFileSync(path.join(__dirname,'..',file),'utf8');
 const world=read('js/world.js'),ctx=vm.createContext({THREE,assert,console,window:{},$:()=>({style:{},classList:{}})});
 const run=src=>vm.runInContext(src,ctx);
+const core=read('js/core.js');
+run(core.slice(core.indexOf('function mergeGeos('),core.indexOf('function flushBuckets(')));
 run(read('lib/cannon.js'));
 run(`const CANNON=window.CANNON,CV=CANNON.Vec3,V3=THREE.Vector3,PHYS_GROUP={world:1};
 const CELL=64,N=2,W=128,HALF=8,clamp=(v,a,b)=>Math.max(a,Math.min(b,v)),lerp=(a,b,t)=>a+(b-a)*t;
@@ -21,9 +23,11 @@ const plainBox=()=>{},addGeo=(mat,g)=>g.dispose();
 run(world.slice(world.indexOf('function lrect('),world.indexOf('const PASTEL=')));
 run(read('js/street-plan.js'));run(read('js/city-works.js'));run(read('js/access.js'));run(read('js/building-construction.js'));run(read('js/suite-interiors.js'));run(read('js/domestic-fittings.js'));
 run(read('js/city-services.js'));
-run(read('js/civic-fittings.js'));
+run(read('js/civic-fittings.js'));run(read('js/fire-escapes.js'));
+run("const SW=4;"+world.slice(world.indexOf('function streetSides('),world.indexOf('function shopDressing(')));
 run(world.slice(world.indexOf('function buildCargoContainer'),world.indexOf('/* ---- landmarks')));
 const game=read('js/game.js');run(game.slice(game.indexOf('function traceBox('),game.indexOf('const los=')));
+run(game.slice(game.indexOf('function groupStaticParts('),game.indexOf('function collideWorld(')));
 run(`
  const r={x0:16,x1:40,z0:13,z1:28},block=blocks[0],brick={mat:material,rect:r,style:1,bay:2.73,fh:3.4,h:14.6};
  const building=createStoreys(block,r,.15,4.4,[brick]);
@@ -129,6 +133,44 @@ run(`
   assert(probe()<1);d.phase=1;assert.equal(probe(),1);assert(doorwayPose(d,1).x<d.ox-.45,'both handed leaves swing outside');
  }
  assert.equal(rayWorld(82.4,34.22,87.6,34.22,1.58,1.58,.33),1,'container interior is air');
+ const stairBlock=blocks[3],oldLot={x0:76,x1:116,z0:76,z1:95},legacy=createStoreys(stairBlock,oldLot,.15,4.4,[{mat:material,rect:oldLot,style:1,bay:2.6,fh:3.3,h:17.6}]);
+ legacy.escapeCandidate=true;planUpperRooms(stairBlock);installFireEscapes(stairBlock);
+ assert.equal(stairBlock.fireEscapes.length,1);
+ groupStaticParts();for(const group of new Set(stairBlock.bld.filter(r=>r.compound).map(r=>r.compound)))staticPartsBody(group);
+ const deckProbe=(tread,reference)=>{
+  const x=(tread.x0+tread.x1)/2,z=(tread.z0+tread.z1)/2;
+  assert.equal(fireEscapeGroundAt(stairBlock,x,z,reference,.15),tread.y);
+  rayY(x,z,tread.y);
+ };
+ let previous=.15;
+ for(const t of stairBlock.escapeFloors.filter(t=>(t.x1-t.x0<.4||t.z1-t.z0<.4))){
+  deckProbe(t,previous);previous=t.y;
+ }
+ for(const l of legacy.levels.slice(1)){
+  const d=l.fireDoor.door,dx=.79*Math.sin(d.yaw),dz=.79*Math.cos(d.yaw);
+  const thru=()=>rayWorld(d.ox+dx,d.oz+dz,d.ox-dx,d.oz-dz,d.base+1.38,d.base+1.38,.33);
+  assert(thru()<1);d.phase=1;assert.equal(thru(),1,'open fire exit clears the room and the steel landing');
+  assert.equal(fireEscapeGroundAt(stairBlock,d.ox+dx,d.oz+dz,d.base,.15),l.y0);
+ }
+ const wallPart={...oldLot,y0:.15,h:3,mat:material},dyed=buildPartBatches([{...wallPart,tint:0xceae76},wallPart]),bare=buildPartBatches([wallPart]);
+ assert.notEqual(dyed[0].material,bare[0].material,'coloured and bare instance shaders keep separate bindings');
+ const white=new THREE.Color();dyed[0].getColorAt(1,white);assert.equal(white.getHex(),0xffffff);
+ disposePartBatches(dyed);disposePartBatches(bare);
+ const first={i:4,j:4},second={i:5,j:4},finish=new THREE.MeshBasicMaterial();
+ collectBuildingProxy(first,finish,new THREE.BoxGeometry(2,4,2));
+ finishBuildingProxies(false);
+ collectBuildingProxy(second,finish,new THREE.BoxGeometry(3,5,4).translate(12,0,5));
+ finishBuildingProxies(true);
+ const front=first.proxies[0],rear=second.proxies[0],sector=front.sector,index=sector.mesh.geometry.index;
+ assert.equal(sector,rear.sector);
+ const original=Array.from(index.array);
+ front.hidden=true;updateProxySector(sector);
+ assert.equal(sector.mesh.geometry.drawRange.count,rear.end-rear.start);
+ assert.deepEqual(Array.from(index.array.slice(0,rear.end-rear.start)),original.slice(rear.start,rear.end));
+ rear.hidden=true;updateProxySector(sector);assert.equal(sector.mesh.visible,false);
+ front.hidden=false;rear.hidden=false;updateProxySector(sector);
+ assert(sector.mesh.visible);assert.deepEqual(Array.from(index.array),original);
+ console.log(legacy.levels.length-1+' exterior fire exits, '+stairBlock.escapeFloors.length+' grated decks and treads verified.');
  console.log(building.levels.length+' connected storeys, '+stepsWalked+' actual treads, '+count+' construction pieces; feet, rigid bodies, optical rays and sliding windows verified.');
  console.log(rooms.length+' fitted upper rooms with clear doors, a working tap, and two cargo leaves verified.');
 `);

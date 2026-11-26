@@ -5,6 +5,7 @@ are in metres in the game's +Z-forward coordinates. Clipped corners interpolate 
 original UVs and vertex normals. Shared wheels and the unmodified 4K sources keep their UVs.
 """
 import argparse
+import hashlib
 import json
 import struct
 import subprocess
@@ -259,6 +260,17 @@ def section(name,study,raw):
     (MODELS/(name+'.glb')).write_bytes(output)
     print(name,len(names),'separate parts',len(output),'bytes',flush=True)
 
+def update_receipts():
+    path = GAME.parent / 'Meshy Sources' / 'Asset Manifest.json'
+    manifest = json.loads(path.read_text())
+    for asset in manifest['assets'].values():
+        records = [(asset, asset['runtime_file'])]
+        records.extend((variant, variant['file']) for variant in asset.get('variants', []))
+        for record, filename in records:
+            if Path(filename).stem in FILES:
+                record['runtime_sha256'] = hashlib.sha256((MODELS / filename).read_bytes()).hexdigest()
+    path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + '\n')
+
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--input-directory',type=Path)
     args=parser.parse_args()
@@ -266,3 +278,4 @@ if __name__=='__main__':
         path='asphalt-heat/models/scenery/'+name+'.glb'
         raw=(args.input_directory/(name+'.glb')).read_bytes() if args.input_directory else subprocess.check_output(['git','show',BASE_REVISION+':'+path],cwd=GAME)
         section(name,STUDIES[spec],raw)
+    update_receipts()

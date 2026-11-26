@@ -84,18 +84,17 @@ function loadForestSpecies(species){
     const [px,pz,scale]=items[i],v=Math.sin(px*7.513+pz*3.19);
     placement.position.set(px-x,groundY(px,pz),pz-z);
     placement.rotation.y=(px*.157+pz*.371)%6.283;
-    placement.scale.set(scale*(1+.08*v),scale*(1-.065*v),scale*(1+.06*v));
+    const crown=items[i][3]==='golden'?1.24:1;
+    placement.scale.set(crown*scale*(1+.08*v),scale*(1-.065*v),crown*scale*(1+.06*v));
     placement.updateMatrix();placement.matrix.toArray(matrices.array,i*16);
-    if(items[i][3]==='golden')shade.setRGB(1.13,.94,.65);else shade.setRGB(.86+v*.055,.89+v*.052,.81+v*.055);
+    if(items[i][3]==='golden')shade.setRGB(1.54,1.13,.62);else shade.setRGB(.86+v*.055,.89+v*.052,.81+v*.055);
     shade.toArray(colors.array,i*3);
    }
    const lods=prototypes.slice(mature?2:0,mature?4:2).map(parts=>{
     const group=new THREE.Group();group.position.set(x,0,z);group.visible=false;
     for(const {geo,mat,depth} of parts){
      // In three r128 the geometry owns the instanced frustum bound. Share the GPU vertex buffers.
-     const bounds=new THREE.BufferGeometry();
-     for(const key of Object.keys(geo.attributes))bounds.setAttribute(key,geo.attributes[key]);
-     bounds.setIndex(geo.index);bounds.boundingSphere=new THREE.Sphere(new V3(0,5,0),52);
+     const bounds=geometryWithBounds(geo,new THREE.Sphere(new V3(0,5,0),52));
      const mesh=new THREE.InstancedMesh(bounds,mat,items.length);
      mesh.instanceMatrix=matrices;mesh.instanceColor=colors;mesh.frustumCulled=true;
      mesh.receiveShadow=true;mesh.castShadow=true;if(depth)mesh.customDepthMaterial=depth;

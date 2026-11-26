@@ -1,6 +1,6 @@
 /* Storeys, switchback stairs and sliding sashes. Dimensions are in world metres. */
 const CONSTRUCTION={near:new Set(),bodies:new Map(),moving:new Set(),coatings:new Map(),tintMaterials:new WeakMap(),paneMaterial:null,
- visualCell:'',physicalCell:'',brickCell:'',brickMesh:null,proxyQueue:new Set()};
+ visualCell:'',physicalCell:'',brickCell:'',brickMesh:null,proxyQueue:new Set(),proxySectors:new Map()};
 const withinRect=(r,x,z)=>x>=r.x0&&x<=r.x1&&z>=r.z0&&z<=r.z1;
 const rectDistance=(r,x,z)=>Math.hypot(x-clamp(x,r.x0,r.x1),z-clamp(z,r.z0,r.z1));
 const partBox=(r,y0,h,role,mat)=>({...r,y0,h,role,mat});
@@ -32,16 +32,38 @@ function collectBuildingProxy(block,mat,geometry){
  if(!block.proxyGeometries.has(mat))block.proxyGeometries.set(mat,[]);
  block.proxyGeometries.get(mat).push(geometry);CONSTRUCTION.proxyQueue.add(block);
 }
-function finishBuildingProxies(){
+function finishBuildingProxies(finishSectors){
  for(const block of CONSTRUCTION.proxyQueue){
   block.proxies=block.proxies||[];
   for(const [mat,geos] of block.proxyGeometries){
-   const mesh=new THREE.Mesh(mergeGeos(geos),mat);
-   mesh.castShadow=!mat.transparent;mesh.receiveShadow=true;mesh.matrixAutoUpdate=false;
-   block.proxies.push(mesh);scene.add(mesh);geos.forEach(g=>g.dispose());
+   const key=Math.floor(block.i/4)+','+Math.floor(block.j/4)+','+mat.uuid;
+   if(!CONSTRUCTION.proxySectors.has(key))CONSTRUCTION.proxySectors.set(key,{mat,ranges:[]});
+   const sector=CONSTRUCTION.proxySectors.get(key);
+   const range={sector,geometry:mergeGeos(geos),hidden:false};
+   sector.ranges.push(range);block.proxies.push(range);geos.forEach(g=>g.dispose());
   }
   block.proxyGeometries.clear();
  }CONSTRUCTION.proxyQueue.clear();
+ if(!finishSectors)return;
+ for(const sector of CONSTRUCTION.proxySectors.values()){
+  const mesh=new THREE.Mesh(mergeGeos(sector.ranges.map(r=>r.geometry)),sector.mat);
+  mesh.castShadow=!sector.mat.transparent;mesh.receiveShadow=true;mesh.matrixAutoUpdate=false;scene.add(mesh);
+  sector.mesh=mesh;let offset=0;
+  for(const r of sector.ranges){
+   r.start=offset;r.end=offset+r.geometry.index.count;offset=r.end;
+   r.geometry.dispose();delete r.geometry;
+  }
+ }CONSTRUCTION.proxySectors.clear();
+}
+function updateProxySector(sector){
+ const g=sector.mesh.geometry;
+ if(!sector.original)sector.original=g.index.array.slice();
+ let count=0;
+ for(const r of sector.ranges)if(!r.hidden){
+  g.index.array.set(sector.original.subarray(r.start,r.end),count);count+=r.end-r.start;
+ }
+ sector.mesh.visible=count>0;g.setDrawRange(0,count);g.index.updateRange.offset=0;g.index.updateRange.count=count;
+ if(count)g.index.needsUpdate=true;
 }
 function orientedRect(alongX,u0,u1,v0,v1){
  return alongX?{x0:v0,x1:v1,z0:u0,z1:u1}:{x0:u0,x1:u1,z0:v0,z1:v1};
@@ -208,16 +230,34 @@ function storeyParts(l){
   const sill=bottom+(top-bottom)*(t.style===2?.13:t.style===3?.62:.28);
   const head=bottom+(top-bottom)*(t.style===3?.86:.85);
   const wall=(a,b,y0,h,inner=0,outer=.2,role='wall',material=t.finish)=>{
+   if(b<=a||h<=y0)return;
    const p=partBox(wallRect(r,side,a,b,inner,outer),y0,h,role,material);
    p.side=side;p.tint=t.tint||0xffffff;p.brick=t.brick&&role==='wall';add(p);
+   if(role==='wall'&&l.rooms?.length){
+    // A plasterboard liner meets the inside of each pier or spandrel. The backing wall supports both layers.
+    const finish=constructionFinish(INTERIORS.materials.plaster);
+    const liner=partBox(wallRect(r,side,a,b,outer-.001,outer+.0125),y0,h,'trim',finish);
+    add(liner);
+    if(y0===bottom&&h>bottom+.09)
+     add(partBox(wallRect(r,side,a,b,outer+.010,outer+.026),bottom,bottom+.084,'trim',MAT.trim));
+   }
   };
   if(lowRoom){wall(a,b,bottom,top);continue;}
-  wall(a,b,bottom,sill);wall(a,b,head,top);
+  const exit=l.fireDoor?.side===side?l.fireDoor:null;
+  if(exit){wall(a,exit.center-.60,bottom,sill);wall(exit.center+.60,b,bottom,sill);}
+  else wall(a,b,bottom,sill);
+  wall(a,b,head,top);
   const margin=Math.min(bay*.31,t.style===2?.13:t.style===1?.46:.34);
   for(let i=0;i<count;i++){
    const start=a+i*bay,end=start+bay,from=start+margin,to=end-margin;
    wall(i===0?a:start-margin,from,sill,head);
    if(i===count-1)wall(to,b,sill,head);
+   if(exit&&exit.bay===i){
+    const u=exit.center,H=bottom+2.15;
+    wall(from,u-.60,sill,head);wall(u+.60,to,sill,head);wall(u-.60,u+.60,H,head);
+    for(const edge of [u-.60,u+.60])wall(edge-.023,edge+.023,bottom,H,-.046,.12,'frame',MAT.darkMetal);
+    wall(u-.62,u+.62,H-.025,H+.028,-.045,.12,'frame',MAT.darkMetal);continue;
+   }
    const id=l.index+side+i;
    if(t.style===3&&i%2===1){wall(from,to,sill,head);continue;}
    addGlazing(l,r,side,from,to,sill,head,id,i===Math.floor(count/2)&&t.style!==2,add);
@@ -295,11 +335,11 @@ function nearbyConstruction(x,z,radius,fn){
 }
 function constructionMeshes(x,z){
  const key=Math.floor(x/8)+'/'+Math.floor(z/8);if(key===CONSTRUCTION.visualCell)return;
- CONSTRUCTION.visualCell=key;const next=new Set();
+ CONSTRUCTION.visualCell=key;const next=new Set(),changed=new Set();
  nearbyConstruction(x,z,24,b=>next.add(b));
  for(const b of CONSTRUCTION.near)if(!next.has(b)){
   disposePartBatches(b.partMeshes);b.partMeshes=null;
-  for(const p of b.proxies||[])p.visible=true;
+  for(const r of b.proxies||[]){r.hidden=false;changed.add(r.sector);}
   for(const p of b.suiteDoorBatches||[])p.visible=false;
   for(const g of b.lightsGlazing||[])for(const p of g.parts)p.draw=null;
   for(const s of b.structures||[])for(const l of s.levels){
@@ -308,13 +348,14 @@ function constructionMeshes(x,z){
   }
  }
  for(const b of next)if(!CONSTRUCTION.near.has(b)){
-  const all=[];
+  const all=[...(b.escapeParts||[])];
   for(const g of b.lightsGlazing||[])all.push(...g.parts);
   for(const s of b.structures||[])for(const l of s.levels)all.push(...storeyParts(l));
   b.partMeshes=buildPartBatches(all);
-  for(const p of b.proxies||[])p.visible=false;
+  for(const r of b.proxies||[]){r.hidden=true;changed.add(r.sector);}
   for(const p of b.suiteDoorBatches||[])p.visible=true;
  }
+ for(const sector of changed)updateProxySector(sector);
  CONSTRUCTION.near=next;
 }
 function releaseStoreyParts(l){

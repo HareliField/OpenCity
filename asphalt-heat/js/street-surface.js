@@ -58,6 +58,7 @@ function initPaving(){
  PAVING.gutter=makeWet(pbr('concrete',1,{rough:.9,color:0x938c80,ns:.48}),{wet:1});
  PAVING.panel=makeWet(pbr('concrete',1,{rough:.93,color:0xc6c2b9,ns:.46}),{wet:.83});
  PAVING.repair=makeWet(pbr('asphalt',1,{rough:.86,color:0x747678,ns:.67}),{road:true,wet:.87});
+ PAVING.redCurb=makeWet(pbr('concrete',1.15,{rough:.82,color:0xb15e4e,ns:.37}),{wet:.72,tint:true});
  const [pad,g]=cvs(128,128);
  g.fillStyle='#ac7737';g.fillRect(0,0,128,128);
  for(let y=8;y<128;y+=16)for(let x=8;x<128;x+=16){
@@ -144,6 +145,14 @@ function terrainBody(tile){
  PH.w.addBody(body);
  return body;
 }
+function paintedPalmCurb(a,b){
+ return a[1]>.10&&b[1]>.10&&[a,b].every(([x,,z])=>Math.max(Math.abs(x-10*CELL),Math.abs(z-10*CELL))<18);
+}
+function curbLip(tile,a,b,inside){
+ const dx=b[0]-a[0],dz=b[2]-a[2],scale=inside*.118/Math.hypot(dx,dz);
+ const edge=(p,n)=>[p[0]+n*dz*scale,p[1]+.003,p[2]-n*dx*scale];
+ terrainFace(tile,PAVING.redCurb,[edge(a,0),edge(b,0),edge(b,1),edge(a,1)],false);
+}
 function buildSidewalk(B){
  const tile=newTerrain(true),height=STREET_DESIGN.curb,r=STREET_DESIGN.radius,end=7;
  // In the two municipal lots, the stairs and lift extend below street level.
@@ -176,7 +185,9 @@ function buildSidewalk(B){
   g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));
   g.setAttribute('uv',new THREE.Float32BufferAttribute([0,.15,Math.hypot(b[0]-a[0],b[2]-a[2]),.15,Math.hypot(b[0]-a[0],b[2]-a[2]),0,0,0],2));
   const inward=(b[2]-a[2])*((B.x0+B.x1)/2-a[0])-(b[0]-a[0])*((B.z0+B.z1)/2-a[2]);
-  g.setIndex(inward>0?[0,2,1,0,3,2]:[0,1,2,0,2,3]);g.computeVertexNormals();addGeo(MAT.curb,g,false);
+  const palm=paintedPalmCurb(a,b);
+  g.setIndex(inward>0?[0,2,1,0,3,2]:[0,1,2,0,2,3]);g.computeVertexNormals();addGeo(palm?PAVING.redCurb:MAT.curb,g,false);
+  if(palm)curbLip(tile,a,b,inward>0?1:-1);
  };
  for(const [sx,sz] of [[1,1],[-1,1],[-1,-1],[1,-1]]){
   const x=sx>0?B.x0:B.x1,z=sz>0?B.z0:B.z1;
@@ -494,7 +505,13 @@ function buildCurbExtension(i,j,dx,dz){
    const pos=[...q,...r,r[0],-.005,r[2],q[0],-.005,q[2]];
    g.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));
    g.setAttribute('uv',new THREE.Float32BufferAttribute([0,.15,1,.15,1,0,0,0],2));
-   const k=side>0?[0,2,1,0,3,2]:[0,1,2,0,2,3];g.setIndex(k);g.computeVertexNormals();addGeo(MAT.curb,g,false);
+   const palm=paintedPalmCurb(q,r);
+   const k=side>0?[0,2,1,0,3,2]:[0,1,2,0,2,3];g.setIndex(k);g.computeVertexNormals();addGeo(palm?PAVING.redCurb:MAT.curb,g,false);
+   if(palm){
+    const inner=point((a[0]+b[0])/2,(a[1]+b[1])/2-.2);
+    const sign=(r[2]-q[2])*(inner[0]-q[0])-(r[0]-q[0])*(inner[2]-q[2]);
+    curbLip(tile,q,r,Math.sign(sign));
+   }
   }
   const w=EXTENSION_WIDTH,back=w-d.rampDepth;
   const profile=[[HALF+1.4,0],[HALF+1.68,.62],[lo-d.flare,w],[lo,w,0],

@@ -9,7 +9,13 @@ function detailPrototype(id){
  };
  const box=(color,x,y,z,w,h,d)=>part(new THREE.BoxGeometry(w,h,d),color,x,y,z);
  const drum=(color,x,y,z,top,foot,h)=>part(new THREE.CylinderGeometry(top,foot,h,12),color,x,y,z);
- if(id==='galvanized-roof-vent'||id==='factory-skylight'){
+ if(id==='garden-sash-frame'){
+  for(const sign of [-1,1]){
+   box(0xc8c2b6,sign*.48,.5,0,.041,1,.73);
+   box(0xc8c2b6,0,sign<0?.032:.968,0,1,.063,1);
+  }
+ }else if(id==='garden-sash-pane'){box(0xffffff,0,.5,0,.944,.925,.08);
+ }else if(id==='galvanized-roof-vent'||id==='factory-skylight'){
   box(0x4d4a43,0,.064,0,1,.128,1);box(0x93978e,0,.45,0,.83,.68,.84);
   box(id==='factory-skylight'?0x899a9c:0x92958e,0,.84,0,.97,.28,.95);
  }else if(id==='cargo-pallet'){box(0x907855,0,.50,0,1,1,1);
@@ -75,11 +81,11 @@ function detailPrototype(id){
  const g=mergeGeos(parts);parts.forEach(p=>p.dispose());CITY_DETAIL.prototypes.set(id,g);return g;
 }
 
-function detailFallback(id,x,y,z,dims,angle){
+function detailFallback(id,x,y,z,dims,angle,material=null){
  const geo=detailPrototype(id);if(!geo)return null;
  const key=id+':'+Math.floor(x/128)+':'+Math.floor(z/128);
  let batch=CITY_DETAIL.fallbacks.get(key);
- if(!batch){batch={geo,items:[],mesh:null};CITY_DETAIL.fallbacks.set(key,batch);}
+ if(!batch){batch={geo,material,items:[],mesh:null};CITY_DETAIL.fallbacks.set(key,batch);}
  const M=new THREE.Matrix4().makeRotationY(angle);M.scale(new V3(...dims));M.setPosition(x,y,z);
  const index=batch.items.length;batch.items.push(M);
  let displayed=true;
@@ -94,13 +100,13 @@ function finishCityDetail(){
  CITY_DETAIL.hidden=new THREE.Matrix4().makeScale(0,0,0);
  const material=new THREE.MeshStandardMaterial({vertexColors:true,roughness:.71,metalness:.10});
  for(const batch of CITY_DETAIL.fallbacks.values()){
-  const mesh=new THREE.InstancedMesh(batch.geo,material,batch.items.length);
+  const mesh=new THREE.InstancedMesh(batch.geo,batch.material||material,batch.items.length);
   const bounds=new THREE.Box3();
   batch.geo.computeBoundingBox();
   batch.items.forEach((M,i)=>{mesh.setMatrixAt(i,M);bounds.union(batch.geo.boundingBox.clone().applyMatrix4(M));});
   // This version of three uses the geometry bound for frustum tests on instanced meshes.
-  mesh.geometry=batch.geo.clone();mesh.geometry.boundingSphere=bounds.getBoundingSphere(new THREE.Sphere());
-  mesh.receiveShadow=true;mesh.castShadow=true;mesh.frustumCulled=true;batch.mesh=mesh;scene.add(mesh);
+  mesh.geometry=geometryWithBounds(batch.geo,bounds.getBoundingSphere(new THREE.Sphere()));
+  mesh.receiveShadow=true;mesh.castShadow=!mesh.material.transparent;mesh.frustumCulled=true;batch.mesh=mesh;scene.add(mesh);
  }
 }
 function retailPhoto(index,M,x,y,z,w,h){

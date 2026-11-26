@@ -155,8 +155,12 @@ function syncPropMesh(p){
  }else{
   _streetMatrix.compose(p.renderPosition,p.renderQuaternion,_streetScale);
  }
- p.P.mesh.setMatrixAt(p.idx,_streetMatrix);
- p.P.mesh.instanceMatrix.needsUpdate=true;
+ if(p.moved){
+  const bound=p.mesh.geometry.boundingSphere,shape=p.P.geo.boundingSphere;
+  bound.radius=Math.max(bound.radius,bound.center.distanceTo(p.renderPosition)+shape.center.length()+shape.radius);
+ }
+ p.mesh.setMatrixAt(p.idx,_streetMatrix);
+ p.mesh.instanceMatrix.needsUpdate=true;
 }
 
 const heroModels=new Map();
@@ -206,6 +210,9 @@ function loadHeroCar(car){
    if(!o.isMesh)return;
    o.material=o.material.transparent?o.material.clone():coatVehicle(o.material,car.snowDepth);
    const finish=o.material.name||'';
+   if(finish==='Laminated and tempered automotive glass'){
+    o.material.color.copy(lin(0x3f5259));o.material.opacity=.47;o.material.metalness=.34;o.material.envMapIntensity=.76;
+   }
    o.userData.lacquer=!o.material.transparent&&(id==='harbor-box-truck'?/enamel/i.test(finish):!/reference finishes|alloy|glass|tyre|inner body|acoustic lining|compartment seal/i.test(finish));
    if(car.repainted&&o.userData.lacquer)o.material.color.copy(lin(car.paintColor));
   });

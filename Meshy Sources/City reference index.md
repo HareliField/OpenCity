@@ -14,13 +14,23 @@ The 112 images in **Natural Photos** supplied the visual target for this build. 
 | Residential | 010, 017, 022, 046, 047, 052, 060, 078, 084, 108 | Four garden blocks, 24 furnished cottages, tile roofs, window grilles, overhead services, kitchen basins and six-litre cisterns. |
 | Cafe row | 011, 025, 029, 089, 090, 096, 099, 101, 111 | Fascias, counters, pendants, bakery glazing, pantry stock, draped coats and a leather holdall. |
 | Coastal barber | 013, 015, 031, 055, 056, 058, 073, 085, 088 | White and pastel retail frontage, tiled interiors, shelving, window bays and coastal flats. |
-| Old town | 014, 034, 042, 067, 069, 080, 095, 104 | Brick and stone bays, tree foliage, Ferry Street Rooms and timber roof cisterns. |
+| Old town | 014, 034, 042, 067, 069, 080, 095, 104 | Brick and stone bays, grated fire stairs with working upper-storey exits, sycamore canopies, Ferry Street Rooms and timber roof cisterns. |
 | Downtown | 016, 021, 030, 035, 040, 057, 070, 077, 094, 097 | Ribbon glazing, stepped towers, Seabreeze Market and Coastal Vinyl on Marina Street, solar arrays and wet paving. |
 | Shop row | 018, 023, 026, 027, 041, 049, 053, 054, 062, 093, 106, 112 | The saloon, pavement menu, postal and retail fixtures, washers, registers and planting. |
 | Harbor viaduct | 024, 071, 079, 091, 098 | Elevated crossings, roof plant and the industrial skyline. |
 | Lighthouse | 032, 050, 076 | Keeper wall, ashlar tower, gallery, revolving Fresnel optic, 96 walkable treads, sand and breaking surf. |
-| Pier | 063, 064, 075 | Decks, benches, rails and shelter at the water’s edge. |
+| Pier | 063, 064, 075 | Nine timber approach steps, bolted boards, joists, tidal marks on the pilings, galvanized rails and breaking swells. |
 
 The north side of Foundry Street recreates the three adjacent shopfronts in 018. Their brick reveals, frames, projecting sills, awnings and interiors are geometry. The bookseller's display, manicure tools, grocer's coolers, laundry machines, heritage lighting, sycamores and date palms are in the editable **Blender Sources** library. A saved gameplay view uses the supplied photograph's aspect ratio. [Riverside shop row](City%20Review/Riverside%20shop%20row.jpg)
 
 The market, pumping station and connected sanitary line use inferred dimensions and internal layouts. Single views supplied the visible silhouettes and finishes of objects. The asset manifest and four-angle images document the reconstructions.
+
+## Gameplay checks
+
+Three separate starts loaded the same 256-block layout. Its 1,097 ordinary buildings contain 5,279 storeys and 6,332 flats and offices. The 47,068 fixture placements include 4,640 refrigerators, and 3,818 units have fitted bathrooms. Nine lifts serve 37 stops. In Old Town, 45 exterior fire stairs connect to 242 upper-storey exits. [Furnished flat](City%20Review/Furnished%20flat.jpg) · [Old Town fire escape](City%20Review/Old%20Town%20fire%20escape.jpg)
+
+The walking audit swept a 0.33-metre radius through all 12,327 open doors. The vehicle audit swept 1,376 traffic-lane segments. Both checks found zero obstructions. Vehicle and walking heights also agreed on each of the nine pier steps. The traffic tests drove 16 raised-deck routes and three coastal truck routes. Water, sanitary and electricity services reach 256 lots in four sectors.
+
+All 22 vehicle types have separately breakable glazing, hinged access panels and engine-bay parts. The four engine layouts are inferred from the vehicle bodies and classes. [Saloon engine bay](City%20Review/Saloon%20engine%20bay.jpg)
+
+Six pairs show the supplied photographs alongside gameplay views of the same landmarks at their original aspect ratios. The towers on Palm Street, the tree crowns on Ferry Street, the daylight inside the shop windows and the shape of the shore still differ visibly. [Reference comparisons](City%20Review/Reference%20comparisons.jpg)
