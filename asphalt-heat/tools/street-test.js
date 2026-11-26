@@ -183,8 +183,9 @@ run(`
   const normalOffset=(c.pos.x-b[0]*CELL)*-ez+(c.pos.z-b[1]*CELL)*ex;
   approx(normalOffset,laneCenter(segmentSection(b,e),ex,ez,m.exitLane),1.25,'receiving lane '+b+' '+model+' '+physical+' '+turn);movements++;
  }
- // Two avenues, a collector with curb extensions, Juniper at Bay, a local all-way stop, and the offset waterfront.
- for(const b of [[8,5],[4,5],[2,7],[1,8],[15,7]]){
+ // Two avenues, a collector with curb extensions, Juniper at Bay, a local all-way stop, the offset waterfront,
+ // and the Palm / Marina signal where a collector meets the local street beside the diner.
+ for(const b of [[8,5],[4,5],[2,7],[1,8],[15,7],[10,10]]){
   const before=new Set([...STREET_TERRAIN.values()].flat());
   for(const [dx,dz] of CARDINAL)if(hasCurbExtension(...b,dx,dz))buildCurbExtension(...b,dx,dz);
   const extensions=[...new Set([...STREET_TERRAIN.values()].flat())].filter(tile=>!before.has(tile));
@@ -260,8 +261,8 @@ run(`
   const p={pos:new V3(route.waitX-dx*back,0,route.waitZ-dz*back),mode:'walk',spd:1.15,cross:route};
   peds.push(p);return p;
  }
- for(const i of [4,8]){
-  reset();const j=5,start=signalGroup(i,j)*6,dt=1/30;
+ for(const [i,j] of [[4,5],[8,5],[10,10]]){
+  reset();const start=signalGroup(i,j)*6,dt=1/30;
   const east=walker(i,j,0,1,1,0),west=walker(i,j,0,1,-1,0),rear=walker(i,j,0,1,1,0,.85);
   const edge=crossingEdge(east.cross),span=west.pos.x-east.pos.x;
   approx(span,2*(edge+.47),.001,'pedestrians wait behind the actual curb');

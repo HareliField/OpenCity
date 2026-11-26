@@ -22,18 +22,29 @@ run(`
  const tickets=PoliceDepartment.tickets,count=code=>tickets.filter(t=>t.code===code).length;
  function start(x,z,h,t){
   time=t;car.pos.set(x,0,z);car.h=h;car.speed=0;car.vel.set(0,0,0);TRAFFIC_PATROL.drive=null;
-  officer.pos.set(x+1,0,z-3);officer.c.yaw=0;player.car=car;
+  officer.pos.set(x+Math.cos(h)-3*Math.sin(h),0,z-Math.sin(h)-3*Math.cos(h));
+  officer.c.yaw=h;player.car=car;
  }
  function frames(n,speed,hz=30){
   const dt=1/hz;car.speed=speed;car.vel.set(Math.sin(car.h)*speed,0,Math.cos(car.h)*speed);
   for(let k=0;k<n;k++){time+=dt;PoliceDepartment.clock+=dt;car.pos.addScaledVector(car.vel,dt);updateTrafficPatrol(dt);}
  }
- const x=4*CELL-2.5,z=5*CELL,offset=signalGroup(4,5)*6;
- for(const hz of [30,60,120]){
-  start(x,z-24,0,offset+32);let red=count('red');frames(hz*2,6,hz);assert.equal(count('red'),red+1);
-  start(x,z-24,0,offset+7);red=count('red');frames(hz*2,6,hz);assert.equal(count('red'),red,'green entry');
-  start(x,z-24,0,offset+32);frames(hz,0,hz);car.pos.z=z-11;frames(1,0,hz);assert.equal(count('red'),red,'teleporting across the bar');
+ // Approach the signals from all four directions at Verve / Studio and the Palm Street diner.
+ for(const [i,j] of [[4,5],[10,10]])for(const [dx,dz] of CARDINAL){
+  const section=segmentSection([i-dx,j-dz],[i,j]),lane=laneCenter(section,dx,dz);
+  const x=i*CELL-24*dx-dz*lane,z=j*CELL-24*dz+dx*lane,h=Math.atan2(dx,dz);
+  const phase=signalGroup(i,j)*6+(dx?30:0);
+  for(const hz of [30,60,120]){
+   const red=count('red');
+   start(x,z,h,phase+32);frames(hz*2,6,hz);assert.equal(count('red'),red+1,'witnessed red entry');
+   assert.equal(tickets.at(-1).street,STREET_NAMES.ns[i]+' / '+STREET_NAMES.ew[j]);
+   start(x,z,h,phase+7);frames(hz*2,6,hz);assert.equal(count('red'),red+1,'green entry');
+   start(x,z,h,phase+32);frames(hz,0,hz);
+   car.pos.x+=13*dx;car.pos.z+=13*dz;frames(1,0,hz);
+   assert.equal(count('red'),red+1,'teleporting across the bar');
+  }
  }
+ const x=4*CELL-2.5,z=5*CELL,offset=signalGroup(4,5)*6;
  // A queued driver stops with the front bumper just short of Juniper's stop bar.
  const jx=2*CELL-2.65,jz=4*CELL,bar=stopLine(junctionControl(2,4)).outer+car.spec.L/2;
  start(jx,jz-bar-2,0,80);frames(10,5);frames(30,0);frames(60,5);
