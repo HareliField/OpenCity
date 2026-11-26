@@ -21,4 +21,6 @@ The 112 images in **Natural Photos** supplied the visual target for this build. 
 | Lighthouse | 032, 050, 076 | Rocky beach access, maritime surroundings and daylight visibility. |
 | Pier | 063, 064, 075 | Decks, benches, rails and shelter at the water’s edge. |
 
+The north side of Foundry Street recreates the three adjacent shopfronts in 018. Their brick reveals, frames, projecting sills, awnings and interiors are geometry. The bookseller's display, manicure tools, grocer's coolers, laundry machines, heritage lighting, sycamores and date palms are in the editable **Blender Sources** library. A saved gameplay view uses the supplied photograph's aspect ratio. [Riverside shop row](City%20Review/Riverside%20shop%20row.jpg)
+
 The market, pumping station and connected sanitary line use inferred dimensions and internal layouts. Single views supplied the visible silhouettes and finishes of objects. The asset manifest and four-angle images document the reconstructions.

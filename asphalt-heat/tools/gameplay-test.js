@@ -21,6 +21,7 @@ run(read('js/street-surface.js'));
 run(read('js/freight.js'));
 run(read('js/city-works.js'));
 run(read('js/city-services.js'));
+run(read('js/city-fixtures.js'));
 run(read('js/game.js'));
 run(read('js/dispatch.js'));
 // The input and renderer bootstraps are driven by the browser. Load the gameplay section here.
@@ -195,4 +196,24 @@ run(`
   assert(Math.abs(carLift.body.position.y+.08-carLift.y)<.002,'kinematic deck must stop at the visible landing');
  }
 `);
+
+run(`
+ const washer=placeCityMachine('laundry-machine',4,.17,4,0,[.96,1.12,.90]);
+ CITY_WORKS.valve=true;CITY_WORKS.pressure=1;CITY_SERVICES.next=0;updateServiceGraph(0);
+ const panel=CITY_WORKS.panels.at(-1);
+ panel.use();assert.equal(washer.remaining,40);
+ let out=0;
+ for(let i=0;i<600;i++){advanceLaundry(washer,1/60);out+=washer.discharge/60;}
+ assert(Math.abs(washer.water-12)<.005,'metered fill reaches twelve litres');
+ const feeder=serviceSector(4,4);feeder.power=false;
+ const at=washer.remaining,phase=washer.phase;advanceLaundry(washer,2);
+ assert.equal(washer.phase,phase);assert.equal(washer.remaining,at);
+ feeder.power=true;let plantPeak=0;
+ for(let i=0;i<2200;i++){
+  advanceLaundry(washer,1/60);updateServiceGraph(1/60);out+=washer.discharge/60;
+  plantPeak=Math.max(plantPeak,CITY_SERVICES.root.discharge);
+ }
+ assert.equal(washer.remaining,0);assert(Math.abs(out-12)<.005);assert(plantPeak>=1.6);
+`);
+
 console.log('Gameplay regressions passed.');

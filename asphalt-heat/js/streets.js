@@ -13,16 +13,7 @@ const RETAIL={
 
 function initStreetMaterials(){
  const m=STREET.materials;
- m.glass=new THREE.MeshStandardMaterial({
-  color:lin(0x888f94),metalness:.95,roughness:.16,envMapIntensity:.9,
-  transparent:true,opacity:.18,depthWrite:false
- });
- m.glass.onBeforeCompile=shader=>{
-  shader.fragmentShader=shader.fragmentShader.replace('#include <tonemapping_fragment>',`
-    float edgeReflection=pow(1.-abs(dot(normalize(vViewPosition),normalize(vNormal))),3.2);
-    gl_FragColor.a=mix(.095,.46,edgeReflection);
-    #include <tonemapping_fragment>`);
- };
+ m.glass=shopGlazing();
  m.pipe=new THREE.MeshStandardMaterial({color:lin(0x3c3a36),metalness:.72,roughness:.7});
  m.brass=new THREE.MeshStandardMaterial({color:lin(0x947957),metalness:.78,roughness:.42});
  m.bulb=new THREE.MeshBasicMaterial({color:new THREE.Color(3.1,2.25,1.42)});
@@ -109,14 +100,16 @@ function facadePlane(mat,M,x0,x1,y0,y1,z){
  addGeo(mat,g,false);
 }
 
-function shopFacade(block,row,M,u0,u1,storey,coastal){
+function shopFacade(block,row,M,u0,u1,storey,coastal,riverside=false){
  const m=STREET.materials,width=u1-u0,center=(u0+u1)/2,yHead=3.53;
  const material=coastal?MAT.fac.stucco:MAT.fac.brick_tan;
  const texMat=coastal?MAT.trim:m.shopStone;
  const depth=coastal?16:17.5,roomDepth=6.65;
  const main=lrect(M,u0,u1,0,depth);
  const buildingArgs={style:coastal?4:1,fh:3.45,bay:coastal?3.15:2.82,tint:row.brick,top:storey,gH:4.1,seed:(Math.abs(u0)+.31)/30};
- facadeBox(material,main.x0,main.x1,4.1,storey,main.z0,main.z1,buildingArgs);
+ facadeBox(material,main.x0,main.x1,4.1,storey,main.z0,main.z1,{...buildingArgs,frontYaw:Math.atan2(M.elements[8],M.elements[10])});
+ buildUpperShopFront(block,M,u0,u1,storey,coastal);
+ rememberShopGlass(M,u0,u1);
  const back=lrect(M,u0,u1,roomDepth+(hasStockRoom(row)?2.25:0),depth);
  facadeBox(material,back.x0,back.x1,.15,4.1,back.z0,back.z1,{...buildingArgs,style:3,fh:6});
  roofDressing(main,storey,coastal?'deco':'old');
@@ -143,7 +136,8 @@ function shopFacade(block,row,M,u0,u1,storey,coastal){
  facadePlane(m.glass,M,door0,door1,2.88,3.28,-.035);
  box(m.brass,door0-.027,door1+.027,.166,.19,-.12,.14,{shadow:false});
  registerDoor(M,center,.027,.175,door1-door0-.071,2.60,'glass');
- referenceFascia(row,M,u0,u1,3.65);
+ if(riverside)riversideFascia(row,M,u0,u1);
+ else referenceFascia(row,M,u0,u1,3.65);
  topQuad(m.shopLight,u0-.15,u1+.15,.172,.15,4.35,4.2,M,false);
  for(const k of [-.29,.29]){
   const x=center+width*k;
@@ -156,8 +150,8 @@ function shopFacade(block,row,M,u0,u1,storey,coastal){
  }
  if(row===RETAIL.barber){
   for(const x of [u0+.63,u1-.63]){
-   cyl(m.barberPole,x,1.66,.23,.105,.105,.78,12,{M});
-   for(const y of [1.61,2.43])cyl(m.brass,x,y,.23,.127,.127,.065,10,{M});
+   const p=lpt(M,x,-.186),yaw=Math.atan2(M.elements[8],M.elements[10]);
+   worksModel('barber-pole',p.x,1.58,p.z,[.258,.91,.306],yaw,false);
   }
  }
  buildInterior({block,M,u0,u1,door0,door1,row,depth:roomDepth});
@@ -181,6 +175,16 @@ function buildShopRow(block,side,shops,coastal=false){
 
 function buildAuthoredBlock(block){
  const key=block.i+','+block.j;
+ if(key==='4,6'){
+  const M=sideFrame(block,'N');
+  shopFacade(block,RETAIL.laundry,M,-19.80,-6.14,12.42,false);
+  for(const [id,l,r] of [['donuts',-6.14,2.62],['books',2.62,11.22],['studio',11.22,19.82]]){
+   shopFacade(block,RETAIL[id],M,l,r,11.05,false,true);
+  }
+  const rear=lrect(M,-19.8,19.82,25.9,39.75);
+  building(block,rear,10.28,{mat:MAT.fac.brick_red,style:1,fh:3.40,bay:2.78,shops:false,cornice:true,kind:'old'});
+  return true;
+ }
  if(key==='3,5'){
   const M=buildShopRow(block,'E',[
    ['laundry',-21.5,-9.1,15.0],['donuts',-9.1,.2,15.0],

@@ -25,13 +25,15 @@ function initProps(){const C=(r0,r1,h,s=10)=>new THREE.CylinderGeometry(r0,r1,h,
   mat:blue,shape:()=>new CANNON.Box(new CV(.30,.65,.32)),off:new CV(0,.65,0),mass:60};
  const spots=[...PROPSPOTS];
  for(const L of LAMPS){
-  const B=blockOf(L.x,L.z),historic=B&&(B.park||B.dist==='oldtown'||(B.i===3||B.i===4)&&B.j===5);
+  // Keep one crook over Harbor Books. A corner and midblock candidate are only 5.6 metres apart here.
+  if(Math.abs(L.x-274.4)<.05&&Math.abs(L.z-392.76)<.05)continue;
+  const B=blockOf(L.x,L.z),historic=B&&(B.park||B.dist==='oldtown'||(B.i===3||B.i===4)&&B.j===5||B.i===4&&B.j===6);
   spots.push({type:historic?'lantern':'lamp',x:L.x,z:L.z,ry:L.ry});
  }
  const byType={};for(const s of spots){(byType[s.type]=byType[s.type]||[]).push(s);}
  const o=new THREE.Object3D();
  for(const t in byType){const P=T[t];const arr=byType[t];const im=new THREE.InstancedMesh(P.geo,P.mat,arr.length);im.castShadow=true;im.receiveShadow=true;im.instanceMatrix.setUsage(THREE.DynamicDrawUsage);P.mesh=im;if(LOWSHADOW)im.layers.set(2);scene.add(im);
-  arr.forEach((s,k)=>{const y=blockY(s.x,s.z);o.position.set(s.x,y,s.z);o.rotation.set(0,s.ry||0,0);o.updateMatrix();im.setMatrixAt(k,o.matrix);PROPS.list.push({t,P,x:s.x,y,z:s.z,ry:s.ry||0,idx:k,body:null,moved:false,broken:false,spray:0,renderPosition:o.position.clone(),renderQuaternion:o.quaternion.clone()});});}
+  arr.forEach((s,k)=>{const y=blockY(s.x,s.z);o.position.set(s.x,y,s.z);o.rotation.set(0,s.ry||0,0);o.updateMatrix();im.setMatrixAt(k,o.matrix);PROPS.list.push({t,P,x:s.x,y,z:s.z,ry:s.ry||0,idx:k,riverside:t==='lantern'&&s.z>382&&s.z<449&&s.x>=255&&s.x<322,body:null,moved:false,broken:false,spray:0,renderPosition:o.position.clone(),renderQuaternion:o.quaternion.clone()});});}
  /* lamp glows */
  const lamps=PROPS.list.filter(p=>p.P.glow);const gp=new Float32Array(lamps.length*3),gc=new Float32Array(lamps.length*3);
  lamps.forEach((p,k)=>{p.gi=k;const at=lampEmitter(p);gp[k*3]=at.x;gp[k*3+1]=at.y;gp[k*3+2]=at.z;gc[k*3]=1;gc[k*3+1]=.72;gc[k*3+2]=.42;});

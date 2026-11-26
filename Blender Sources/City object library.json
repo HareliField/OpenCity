@@ -1,0 +1,266 @@
+[
+  {
+    "id": "riverside-lamp",
+    "sourceImages": [
+      18,
+      112
+    ],
+    "description": "Fluted cast base, swept arm, peaked shade and eight opal lens ribs.",
+    "parts": 21,
+    "movableParts": [],
+    "runtimeBytes": 178568
+  },
+  {
+    "id": "avenue-bin",
+    "sourceImages": [
+      92,
+      109
+    ],
+    "description": "Open basket with vented slats, liner, rolled rim and bolted ring foot.",
+    "parts": 34,
+    "movableParts": [],
+    "runtimeBytes": 110184
+  },
+  {
+    "id": "window-ac",
+    "sourceImages": [
+      18,
+      41,
+      112
+    ],
+    "description": "Window-mounted air conditioner with return louvers, fan guard and bent brackets.",
+    "parts": 25,
+    "movableParts": [],
+    "runtimeBytes": 202392
+  },
+  {
+    "id": "condenser-bank",
+    "sourceImages": [
+      24,
+      57,
+      95
+    ],
+    "description": "Twin fan condenser with louvered coils, guards and independent impellers.",
+    "parts": 71,
+    "movableParts": [
+      "Fan1",
+      "Fan2"
+    ],
+    "runtimeBytes": 515112
+  },
+  {
+    "id": "laundry-machine",
+    "sourceImages": [
+      26,
+      49,
+      54
+    ],
+    "description": "Stainless front-loader with rotating perforated drum, fascia, latch and seals.",
+    "parts": 62,
+    "movableParts": [
+      "Drum"
+    ],
+    "runtimeBytes": 178420
+  },
+  {
+    "id": "barber-pole",
+    "sourceImages": [
+      13,
+      15,
+      73
+    ],
+    "description": "Wall-mounted chrome globe, clear sleeve and spiral painted rotor.",
+    "parts": 15,
+    "movableParts": [
+      "Rotor"
+    ],
+    "runtimeBytes": 70400
+  },
+  {
+    "id": "manicure-tools",
+    "sourceImages": [
+      23,
+      27,
+      53
+    ],
+    "description": "Articulated task lamp, padded hand rest, polish rack and brush cup.",
+    "parts": 33,
+    "movableParts": [],
+    "runtimeBytes": 227900
+  },
+  {
+    "id": "nail-workstation",
+    "sourceImages": [
+      23,
+      27,
+      53
+    ],
+    "description": "Rounded pink base, stone worktop, working-height drawer pedestal and chrome pulls.",
+    "parts": 10,
+    "movableParts": [],
+    "runtimeBytes": 66636
+  },
+  {
+    "id": "patisserie-case",
+    "sourceImages": [
+      93,
+      96,
+      106,
+      111
+    ],
+    "description": "Curved plate-glass case with walnut panels, trays, croissants, rolls and ring doughnuts.",
+    "parts": 142,
+    "movableParts": [],
+    "runtimeBytes": 789488
+  },
+  {
+    "id": "grocery-cooler",
+    "sourceImages": [
+      29,
+      96,
+      101
+    ],
+    "description": "Two-door refrigerated cabinet with sliding glass, lit shelf rails and individually stocked glass bottles.",
+    "parts": 217,
+    "movableParts": [
+      "LeftDoor",
+      "RightDoor"
+    ],
+    "runtimeBytes": 592028
+  },
+  {
+    "id": "municipal-pump",
+    "sourceImages": [],
+    "description": "Foot-mounted end-suction pump, cooling fins, coupling guard and flanged discharge. Internal engineering is inferred.",
+    "parts": 74,
+    "movableParts": [
+      "Coupling"
+    ],
+    "runtimeBytes": 131684
+  },
+  {
+    "id": "life-ring-station",
+    "sourceImages": [
+      4,
+      63,
+      75,
+      82
+    ],
+    "description": "Boardwalk life ring with four canvas bands, grab line, rope hooks and bolted timber post.",
+    "parts": 13,
+    "movableParts": [],
+    "runtimeBytes": 225900
+  },
+  {
+    "id": "service-meter",
+    "sourceImages": [
+      10,
+      17,
+      22,
+      84,
+      108
+    ],
+    "description": "Exterior meter box with glass dial, service conduit, clamps and weather head.",
+    "parts": 27,
+    "movableParts": [],
+    "runtimeBytes": 112076
+  },
+  {
+    "id": "booksellers-table",
+    "sourceImages": [
+      18,
+      41,
+      53,
+      67,
+      112
+    ],
+    "description": "Two-tier oak window table with jacketed books, page blocks and face-out paperback stands.",
+    "parts": 272,
+    "movableParts": [],
+    "runtimeBytes": 1221476
+  },
+  {
+    "id": "espresso-machine",
+    "sourceImages": [
+      11,
+      25,
+      96,
+      99,
+      111
+    ],
+    "description": "Twin-group espresso maker with steam wands, drip tray, gauge, cup rail and porcelain cups.",
+    "parts": 36,
+    "movableParts": [],
+    "runtimeBytes": 233188
+  },
+  {
+    "id": "florists-trug",
+    "sourceImages": [
+      14,
+      20,
+      67,
+      89,
+      104
+    ],
+    "description": "Timber planting crate with individual stems, foliage and yellow or ochre flower heads.",
+    "parts": 341,
+    "movableParts": [],
+    "runtimeBytes": 365548
+  },
+  {
+    "id": "avenue-sycamore",
+    "sourceImages": [
+      14,
+      18,
+      34,
+      92,
+      112
+    ],
+    "description": "Forking avenue sycamore with a lightly pruned crown and separate alpha-cut leaf clusters.",
+    "parts": 23,
+    "movableParts": [],
+    "runtimeBytes": 565640
+  },
+  {
+    "id": "coastal-date-palm",
+    "sourceImages": [
+      5,
+      8,
+      37,
+      82,
+      92
+    ],
+    "description": "Scarred leaning trunk, persistent dry skirt and folded, tapered individual leaflets.",
+    "parts": 62,
+    "movableParts": [],
+    "runtimeBytes": 660480
+  },
+  {
+    "id": "sycamore-distant",
+    "sourceImages": [
+      14,
+      18,
+      34,
+      92,
+      112
+    ],
+    "description": "Forking avenue sycamore with a lightly pruned crown and separate alpha-cut leaf clusters.",
+    "parts": 9,
+    "movableParts": [],
+    "runtimeBytes": 518352
+  },
+  {
+    "id": "palm-distant",
+    "sourceImages": [
+      5,
+      8,
+      37,
+      82,
+      92
+    ],
+    "description": "Scarred leaning trunk, persistent dry skirt and folded, tapered individual leaflets.",
+    "parts": 20,
+    "movableParts": [],
+    "runtimeBytes": 89208
+  }
+]

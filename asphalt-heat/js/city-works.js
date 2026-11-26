@@ -9,7 +9,7 @@ const CITY_WORKS = {
  grid:true, pump:true, valve:true, workLight:false, water:.44, pressure:.9, wastewater:0, fixtures:[],
  lift:{y:.17, target:1, doors:1, cab:null, body:null}
 };
-const MARKET_PARKING={x:369.6,z:331.2};
+const RIVERSIDE_PARKING={x:281.5,z:6*CELL+ROAD_SECTIONS.local.parking};
 const MARKET_STAIR = {x0:332.25,x1:335.10,z0:339,z1:347.16};
 const FLAT_STAIR = {...MARKET_STAIR,x0:335.64,x1:338.49};
 const STATION_STAIR = {x0:355.2,x1:358.05,z0:282,z1:290.16};
@@ -164,6 +164,8 @@ function initWorksMaterials(){
   lamp:new THREE.MeshStandardMaterial({color:0xe1d8c7,emissive:0xffe2bb,emissiveIntensity:1.1}),
   channel:new THREE.MeshStandardMaterial({color:lin(0x566355),roughness:.23,metalness:.25,transparent:true,opacity:.88})
  };
+ CITY_WORKS.m.marketFloor=pbr('market-floor',.76,{rough:.61,ns:.35,env:.27});
+ CITY_WORKS.m.soffit=pbr('plaster',2.6,{rough:.93,ns:.29,color:0xcec6b8});
  const ink='#ece3ce';
  CITY_WORKS.signs={market:worksSign('TIDELINE MARKET','#2f493e',ink),baker:worksSign('HARBOUR BAKERY','#643e37',ink),
   apartments:worksSign('MARKET FLATS','#393c3c',ink),station:worksSign('TIDEWATER PUMP HOUSE','#334b55',ink),
@@ -174,6 +176,7 @@ function initWorksMaterials(){
 
 function worksWall(block,R,side,bottom,top,material,doors=[],windows=true){
  const {matrix:M,width}=lotFace(R,side),span=width/2;
+ if(windows&&bottom<1)rememberShopGlass(M,-span,span);
  const box=(mat,l,r,b,t,inner,outer)=>plainBox(mat,l,r,b,t,inner,outer,{M,uvm:1});
  const solid=(l,r,b,t)=>addRoomCollider(block,M,l,r,-.04,.27,t,b);
  const opaque=(l,r,b,t)=>{box(material,l,r,b,t,-.26,.04);solid(l,r,b,t);};
@@ -275,9 +278,14 @@ function buildMarket(block){
  topQuad(m.service,365.2,374.5,.158,329.66,332.76,1.7,null,false);
  for(const z of [329.80,332.64])topQuad(MAT.whiteMetal,365.48,374.45,.164,z,z+.08,1,null,false);
  worksSolid(worksRect(365.55,365.75,330.31,332.04),.16,.25,m.stone);
- worksSlab(r,ground,m.stone,outer);
+ worksSlab(r,ground,m.marketFloor,outer);
  worksSlab(r,flats,m.floor,[FLAT_STAIR,MARKET_STAIR,w.shaft]);
  worksSlab(r,roof,MAT.roof,[MARKET_STAIR,w.shaft]);
+ for(const p of subtractCityOpenings(r,[FLAT_STAIR,MARKET_STAIR,w.shaft])){
+  const g=new THREE.PlaneGeometry(p.x1-p.x0,p.z1-p.z0),uv=g.attributes.uv;
+  for(let i=0;i<uv.count;i++)uv.setXY(i,uv.getX(i)*(p.x1-p.x0),uv.getY(i)*(p.z1-p.z0));
+  g.rotateX(Math.PI/2);g.translate((p.x0+p.x1)/2,flats-.163,(p.z0+p.z1)/2);addGeo(m.soffit,g,false);
+ }
  // Each landing spans both flights. From the flats the return run reaches the terrace.
  worksFlight(MARKET_STAIR,basement,ground,false);
  worksFlight(FLAT_STAIR,ground,flats,true);
@@ -291,6 +299,7 @@ function buildMarket(block){
   worksSolid(lrect(face.matrix,-width/2,width/2,-.04,.17),roof,roof+.92,m.stone);
  }
  const front=lotFace(r,'S').matrix;
+ shopLightingRoom(front,-(r.x1-r.x0)/2,(r.x1-r.x0)/2,r.z1-r.z0);
  for(const [u,slot] of [[-12,w.signs.market],[8,w.signs.baker]]){
   const at=lpt(front,u,-.11);worksPlacard(slot,at.x,3.20,at.z,8,.77);
   const canopy=new THREE.BoxGeometry(8.1,.08,1.33);
@@ -310,7 +319,7 @@ function buildMarket(block){
  for(const x of [335.5,337.1,339.1,341.0]){
   worksModel('produce-crate',x,ground,363.6,[1.2,.71,.82],0);
  }
- for(const x of [360.3,363.0,365.7])worksModel('bakery-counter',x,ground,361,[2.45,1.38,.89],0);
+ for(const x of [360.3,363.0,365.7])worksModel('patisserie-case',x,ground,361,[2.45,1.38,.89],0);
  for(const x of [342.8,369.0]){
   worksFurniture(block,'counter',x,ground,361.25,2.55,.98,.78);
   worksModel('shop-register',x,ground+.99,361.22,[.42,.39,.30],Math.PI,false);
@@ -318,6 +327,7 @@ function buildMarket(block){
  worksPanel(342.8,ground,362.1,()=>'BUY FRUIT · $3',()=>buyMarketItem(3,5,'Fresh fruit'));
  worksPanel(364,ground,361.98,()=>'BUY BREAD · $5',()=>buyMarketItem(5,8,'Bakery loaf'));
  for(const x of [334.5,344,356,367.5])for(const z of [355.8,366.4]){
+  INTERIORS.emitters.push({x,y:2.82,z,cool:false,floorY:ground,municipal:true});
   worksBeam(MAT.darkMetal,[x,flats-.15,z],[x,3.36,z],.014);
   worksModel('enamel-pendant',x,3.05,z,[.51,.32,.51],0,false);
   cyl(m.lamp,x,3.052,z,.20,.20,.012,12,{shadow:false});
@@ -334,7 +344,7 @@ function buildMarket(block){
  worksPlacard(w.signs.tunnel,348.3,-1.2,334.23,3.2,.48);
  // Roof tank frame, rain stacks and a shaded communal table.
  worksRoofTank(360.1,roof,343.5);
- worksModel('roof-condenser',367,roof,339.2,[2.15,1.04,1.24],0);
+ worksModel('condenser-bank',367,roof,339.2,[2.15,1.04,1.24],0);
  worksModel('promenade-bench',363.4,roof,367.8,[1.86,.92,.62],Math.PI);
  worksFurniture(block,'reading-table',357.2,roof,365.8,1.45,.77,1.05);
  worksPlacard(w.signs.roof,341.8,roof+2.65,w.shaft.z1+.13,2.5,.42);
@@ -423,9 +433,10 @@ function buildStation(block){
  });
  for(const x of [339.4,343.4]){
   worksSolid(worksRect(x-1.14,x+1.14,279.3,281.43),ground,.48,m.service);
-  cyl(m.iron,x,.48,280.4,.62,.72,1.0,16);
-  for(const y of [.61,1.24])cyl(m.ochre,x,y,280.4,.75,.75,.07,16);
-  worksBeam(m.pipe,[x,1.15,280.4],[x,1.15,282.4],.24);
+  worksModel('municipal-pump',x,.48,280.4,[1.90,.94,.78]);
+  worksBeam(m.pipe,[x+.42,1.40,280.60],[x+.42,1.56,280.60],.112);
+  worksBeam(m.pipe,[x+.42,1.56,280.60],[x+.42,1.56,282.4],.112);
+  worksBeam(m.pipe,[x+.42,1.56,282.4],[x+.42,1.15,282.4],.112);
  }
  worksBeam(m.pipe,[339.4,1.15,282.4],[348.1,1.15,282.4],.24);
  worksBeam(m.pipe,[348.1,base+.37,282.4],[348.1,1.15,282.4],.23);
@@ -448,7 +459,7 @@ function buildStation(block){
  worksBeam(m.pipe,[371.1,1.61,350.93],[371.1,1.61,351.26],.045);
  w.tap=new THREE.Mesh(new THREE.CylinderGeometry(.016,.030,.50,8),w.m.channel);
  w.tap.position.set(371.1,1.34,351.26);scene.add(w.tap);
- worksModel('roof-condenser',341.6,4.42,292.5,[2.8,1.23,1.6],Math.PI/2);
+ worksModel('condenser-bank',341.6,4.42,292.5,[2.8,1.23,1.6],Math.PI/2);
  // The substation yard is entirely within this block. There is a service gate at its east end.
  const yard=worksRect(335.1,360.8,302.6,309.7);
  worksSlab(yard,.23,m.service);
@@ -690,7 +701,7 @@ function buildCityWalkup(B,spec){
  buildLift(shaft,levels,levels.map((y,i)=>i===0?'STREET':i===levels.length-1?'ROOF':coastal?'SUITES '+i:'FLOOR '+(i+1)));
  const at=lpt(front,-9,-.13);worksPlacard(signs[1],at.x,3.25,at.z,8.1,.73);
  const door=lpt(front,8,-.13);worksPlacard(signs[0],door.x,3.22,door.z,8.5,.72);
- worksModel('roof-condenser',r.x1-4.8,top,r.z0+7.2,[2.25,1.15,1.37]);
+ worksModel('condenser-bank',r.x1-4.8,top,r.z0+7.2,[2.25,1.15,1.37]);
  if(mill||spec.kind==='brick')worksRoofTank(r.x1-6.6,top,r.z1-8.2);
  if(coastal){
   worksModel('promenade-bench',r.x1-8,top,r.z1-3.6,[1.95,.91,.60],Math.PI);

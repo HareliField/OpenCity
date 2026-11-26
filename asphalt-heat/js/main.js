@@ -256,7 +256,7 @@ function cameraClearance(ax,ay,az,bx,by,bz){
  const hit=rayWorld(ax,az,bx,bz,ay,by,.18);return hit<1?Math.max(.04,hit-.015):1;
 }
 function step(dt,agentInput=null){time+=dt;WATERT.value=time;
- updateCityWorks(dt,player.pos);
+ updateCityWorks(dt,player.pos);updateCityMachines(dt,player.pos);updateForestLOD(dt);
  refreshPhysicalWorld(player.pos.x,player.pos.z);
  const kx=(keys.ArrowRight?1:0)-(keys.ArrowLeft?1:0),ky=(keys.ArrowUp?1:0)-(keys.ArrowDown?1:0);const play=state==='play'&&!shopOpen;
  const jx=play?(agentInput?.turn??clamp(inp.jx+kx,-1,1)):0,jy=play?(agentInput?.forward??clamp(inp.jy+ky,-1,1)):0,fire=play&&(agentInput?.fire??(inp.fire||keys.Space)),sprint=play&&(agentInput?.sprint??(inp.sprint||keys.KeyX));
@@ -422,9 +422,9 @@ function initGame(){buildMinimapBase();buildMarkers();initializePoliceLives();
  {const c=spawnCar('hatch',CELL*2+5.9,CELL*4+31,Math.PI,null);paintCar(c,0xa27a27);c.keep=true;}
  {const c=spawnCar('van',CELL*2+5.9,CELL*4+39,Math.PI,null);paintCar(c,0x20334b);c.keep=true;}
  parkServiceVehicles(hp,'amb',1);parkServiceVehicles(pp,'police',2);
+ {const s=spawnCar('sedan',RIVERSIDE_PARKING.x,RIVERSIDE_PARKING.z,Math.PI/2,null);paintCar(s,0x662934);s.keep=true;s.heroWanted=true;s.heroAsset='maroon-saloon';}
  addNeighborhoodCars();
  for(let k=0;k<(QUALITY.level>=2?20:14);k++)spawnTraffic(15,420);for(let k=0;k<12;k++)spawnParked();for(const P of PARKED)spawnParked(P.x,P.z,P.h);for(let k=0;k<2;k++)spawnPolice(false);
- {const s=spawnCar('sedan',MARKET_PARKING.x,MARKET_PARKING.z,Math.PI/2,null);paintCar(s,0x662934);s.keep=true;s.heroWanted=true;s.heroAsset='maroon-saloon';}
  for(const p of places)if(p.kind==='hospital')for(const s of[-1,1]){const q=dropPickup('health',p.door.x+Math.cos(SIDEANG[p.side])*s*3,p.door.z-Math.sin(SIDEANG[p.side])*s*3,0);q.fixed=true;}
  {const q=dropPickup('armor',CELL*2.5,CELL*2.5+20,0);q.fixed=true;}
  {const court=blocks.find(B=>B.gang);if(court)for(let k=0;k<4;k++)spawnUnit('gang',court.gang.x+rnd(-10,10),court.gang.z+rnd(-6,6),'gang');}
@@ -449,7 +449,7 @@ async function boot(){resize();state='loading';setLoad('Loading city…',0);
  await buildCityRest();physInit();indexStatic();physWorld();installWorksPhysics();initProps();initParts();initTracers();initSkids();initCarLenses();initWheels(320);initGame();
  refreshPhysicalWorld(player.pos.x,player.pos.z);updProps(.5,player.pos.x,player.pos.z);camera.position.set(302,52,390);camera.lookAt(262,4,312);renderFrame(0);
  $('play').disabled=false;setLoad('Ready',1);}
-async function buildCityRest(){SEED=4242;initAwnings();initSigns();initStreetMaterials();initPaving();initInteriors();initWorksMaterials();initRetailFascias();
+async function buildCityRest(){SEED=4242;initAwnings();initSigns();initStreetMaterials();initPaving();initInteriors();initWorksMaterials();initRetailFascias();initShopArchitecture();
  const streetBounds=worksRect(W/2-(S+40)/2,W/2+(S+40)/2,W/2-10-(S+20)/2,W/2-10+(S+20)/2);
  const asph=new THREE.Mesh(worksGroundMesh(streetBounds,-.009,7,0,0),MAT.asphalt);asph.receiveShadow=true;scene.add(asph);
  for(const t of [MAT.asphalt.map,MAT.asphalt.normalMap,MAT.asphalt.roughnessMap])t.repeat.set(1,1);

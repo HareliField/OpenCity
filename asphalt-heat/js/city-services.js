@@ -44,6 +44,10 @@ function updateServiceGraph(dt){
   const lot=supplyAt(f.x,f.z);
   if(lot)lot.discharge+=.16*pressureAtFixture(f);
  }
+ for(const machine of CITY_MACHINES.washers){
+  const lot=supplyAt(machine.x,machine.z);
+  if(lot)lot.discharge+=machine.discharge;
+ }
  for(const lot of s.downstream)if(lot.parent)lot.parent.discharge+=lot.discharge;
 }
 function drawServiceNetwork(){

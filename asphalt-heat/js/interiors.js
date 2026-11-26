@@ -48,7 +48,11 @@ function buildInterior(room){
  const {block,M,u0,u1,door0,door1,row,depth}=room;
  const m=INTERIORS.materials;
  const t=.17,back=-depth,ceiling=3.52;
- const textured=(mat,x0,x1,y0,y1,z0,z1)=>plainBox(mat,x0,x1,y0,y1,z0,z1,{M,uvm:2.1});
+ const lighting=shopLightingRoom(M,u0,u1,depth);
+ const textured=(mat,x0,x1,y0,y1,z0,z1)=>{
+  const geometry=plainBox(roomLightMaterial(mat),x0,x1,y0,y1,z0,z1,{M,uvm:2.1});
+  shadeRoomGeometry(lighting,geometry);
+ };
  const tile=row===RETAIL.laundry||row===RETAIL.barber||row===RETAIL.donuts;
  textured(tile?m.tile:m.wood,u0,u1,.148,.174,back,.19);
  textured(m.ceiling,u0,u1,ceiling,ceiling+.15,back,.08);
@@ -118,8 +122,9 @@ function buildInterior(room){
   const fallback=makeFixture(id,dims);
   node.add(fallback);
   scene.add(node);
-  const modelId=id==='display'?'bakery-counter':id==='plant'?'salon-plant':id==='stock'&&row===RETAIL.deli?'pantry-shelf':id;
-  INTERIORS.fixtures.push({id:modelId,node,fallback,dims,x:p.x,z:p.z});
+  const modelId=id==='washer'?'laundry-machine':id==='manicure-desk'?'nail-workstation':id==='display'?'patisserie-case':id==='plant'?'salon-plant':id==='stock'&&row===RETAIL.deli?'pantry-shelf':id;
+  const device=placeCityMachine(modelId,p.x,.172,p.z,angle,dims);
+  INTERIORS.fixtures.push({id:modelId,node,fallback,dims,x:p.x,z:p.z,device});
   if(id==='seat'||id==='plant'||id==='reading-table'){
    registerLooseFixture(node,id,p.x,.172,p.z,angle,dims,id==='seat'?8:id==='plant'?13:28);
   }else if(solid){
@@ -343,7 +348,7 @@ function updateInteriors(dt,x,z){
  for(const lamp of INTERIORS.emitters){
   if(lamp.floorY!==undefined&&Math.abs(lamp.floorY-player.pos.y)>1.5)continue;
   const distance=(lamp.x-x)**2+(lamp.z-z)**2;
-  if(distance<31**2&&cityPowerAt(lamp.x,lamp.z))near.push({lamp,distance});
+  if(distance<31**2&&cityPowerAt(lamp.x,lamp.z)&&(!lamp.municipal||CITY_WORKS.grid))near.push({lamp,distance});
  }
  near.sort((a,b)=>a.distance-b.distance);
  for(let i=0;i<INTERIORS.lights.length;i++){
@@ -366,7 +371,9 @@ function updateInteriors(dt,x,z){
     const model=modelInstance(template,f.dims,f.id);
     f.node.remove(f.fallback);
     f.fallback.traverse(o=>{if(o.isMesh)o.geometry.dispose();});
+    shadeFixture(model,f.x,f.node.position.y,f.z);
     f.node.add(model);
+    if(f.device)bindCityMachine(f.device,model);
    });
   }
  }

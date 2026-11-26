@@ -97,7 +97,12 @@ const FACMAIN=`#include <map_fragment>
  if(baysReady>.5 && vWN.y<.5 && vFU.y>=vFac2.y && abs(vFac.y-3.)>.45){
   float family=vFac.y>3.5?1.:vFac.y>1.5?3.:vFac.y>.5?0.:2.;
   vec2 bay=vec2(vFU.x/vFac.w,(vFU.y-vFac2.y)/vFac.z);
-  float variant=floor(hash21(floor(bay)+floor(vFac.x*117.))*4.);
+  // Adjacent glazing belongs to the same installation. A curtain wall samples a continuous
+  // four-bay strip from one photograph instead of changing finish at every floor.
+  float buildingChoice=floor(hash21(vec2(floor(vFac.x*117.),family))*4.);
+  float variant=family>2.5?mod(floor(bay.x)+buildingChoice,4.):
+    family<.5?mod(buildingChoice+floor(bay.x*.5),2.):
+    family<1.5?mod(floor(bay.x)+buildingChoice,2.):mod(floor(bay.x)+buildingChoice,4.);
   vec2 local=fract(bay),origin=vec2(variant,3.-family);
   vec2 atlasUV=(origin+clamp(local,vec2(.006),vec2(.994)))*.25;
   vec3 surface=texture2D(bayMaterial,atlasUV).rgb;
@@ -106,6 +111,13 @@ const FACMAIN=`#include <map_fragment>
   vec3 photo=pow(texture2D(bayColor,(origin+clamp(local-inset,vec2(.006),vec2(.994)))*.25).rgb,vec3(2.2));
   glass=surface.b;metalG=mix(.17,.38,step(2.5,family));frame=0.;
   bayNormal=(surface.rg-.5)*.96;
+  // Glass follows the daylight and the vertical face of the tower. Suppress the bright,
+  // baked highlights on blinds that produced a checkerboard across otherwise continuous glazing.
+  if(family>2.5){
+   float glaze=dot(photo,vec3(.2126,.7152,.0722));
+   vec3 tint=mix(vec3(.053,.083,.101),vec3(.18,.21,.218),smoothstep(.02,.63,glaze));
+   photo=mix(photo,tint,.80*glass);
+  }
   diffuseColor.rgb=photo*mix(vec3(.94),vColor,.16);
   emitW=mix(emitW*.25,photo*.075,glass)*glass;
   photoFace=1.;
@@ -122,7 +134,7 @@ function facadeMat(name,meters,o={}){const m=pbr(name,meters,Object.assign({env:
 const MAT={};
 function initMaterials(){
  loadFacadePhotos();
- MAT.asphalt=makeWet(pbr('asphalt',7,{rough:1,rmap:1,ns:1.2,env:.7}),{tint:1,road:true,wet:DAYLIGHT?.73:1});
+ MAT.asphalt=makeWet(pbr('asphalt',7,{rough:1,rmap:1,ns:1.2,env:.7}),{tint:1,road:true,wet:DAYLIGHT?.93:1});
  MAT.sidewalk=makeWet(pbr('sidewalk',3.2,{rough:.95,env:.76,rmap:1}),{wet:DAYLIGHT?.48:.83});
  MAT.plaza=makeWet(pbr('plaza',3,{rough:.8,env:.6}),{wet:.6});
  MAT.curb=pbr('concrete',2,{color:0xb8b3aa,rough:.85});
@@ -165,6 +177,7 @@ function facadeBox(mat,x0,x1,y0,y1,z0,z1,o){const w=x1-x0,d=z1-z0,h=y1-y0,cx=(x0
  const fac=[o.seed==null?Math.random():o.seed,o.style||0,o.fh||3.4,o.bay||3],fac2=[o.top||y1,o.gH||0];let u=0;
  const fs=[[w,0,cx,z1,1],[d,Math.PI/2,x1,cz,0],[w,Math.PI,cx,z0,1],[d,-Math.PI/2,x0,cz,0]];
  for(const[fw,ry,px,pz,ax]of fs){const g=new THREE.PlaneGeometry(fw,h);const uv=g.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,u+uv.getX(i)*fw,y0+uv.getY(i)*h);u+=fw+.37;
+  if(o.frontYaw!==undefined&&Math.cos(ry-o.frontYaw)>.999){g.dispose();continue;}
   g.rotateY(ry);g.translate(ax?cx:px,cy,ax?pz:cz);if(o.M)g.applyMatrix4(o.M);setAttrs(g,o.tint||0xffffff,fac,fac2);addGeo(mat,g,true);}}
 function plainBox(mat,x0,x1,y0,y1,z0,z1,o={}){const w=x1-x0,h=y1-y0,d=z1-z0;const g=new THREE.BoxGeometry(w,h,d);const uv=g.attributes.uv,nm=g.attributes.normal;
  if(o.uvm){for(let i=0;i<uv.count;i++){const ax=Math.abs(nm.getX(i))>.5?0:Math.abs(nm.getY(i))>.5?1:2;const fw=ax===0?d:w,fh=ax===1?d:h;uv.setXY(i,uv.getX(i)*fw/o.uvm,uv.getY(i)*fh/o.uvm);}}
@@ -640,10 +653,9 @@ function plantTrees(){const o=new THREE.Object3D(),col=new THREE.Color();
  const fr=[];for(let k=0;k<11;k++){const g=new THREE.PlaneGeometry(1.5,3.6,1,6);const pa=g.attributes.position;for(let i=0;i<pa.count;i++){const y=pa.getY(i)+1.8;pa.setZ(i,-Math.pow(y/3.6,2)*1.6);pa.setX(i,pa.getX(i)*(1-Math.abs(y/3.6-.5)*.6));}g.translate(0,1.8,0);g.rotateX(-Math.PI/2+.5+rnd(-.15,.2));g.rotateY(k/11*Math.PI*2+rnd(-.2,.2));g.translate(1.1,9,0);fr.push(g);}
  const pm=new THREE.MeshStandardMaterial({map:leafTex(true),alphaTest:.4,side:THREE.DoubleSide,roughness:.8});
  const palmLeaves=inst(mergeGeos(fr),pm,PALMS,p=>{o.position.set(p[0],p[0]>W?0:.15,p[1]);o.rotation.y=rnd(0,6);o.scale.setScalar(p[2]);});
- installTreeModels(TREES,treeTrunks,leaves,'plane-tree',(x,z,i)=>
-  i%3===0&&x>239&&x<281&&z>239&&z<378);
- installTreeModels(PALMS,palmTrunks,palmLeaves,'palm-tree',(x,z,i)=>
-  i%3===0&&x>428&&z>235&&z<305);
+ startForestSpecies(TREES,[treeTrunks,leaves],false);
+ startForestSpecies(PALMS,[palmTrunks,palmLeaves],true);
+ updateForestLOD(0,true);
 }
 function lighthouse(){
  const x=W+35,z=838.8,base={x0:x-3.45,x1:x+3.45,z0:z-4.25,z1:z+4.25};

@@ -15,7 +15,8 @@ function modelInstance(template,dims,id){
 }
 
 function placeScenery(id,x,y,z,heading,dims,fallback){
- OUTDOOR_MODELS.push({id,x,y,z,heading,dims,fallback,display:null,started:false});
+ const device=placeCityMachine(id,x,y,z,heading,dims);
+ OUTDOOR_MODELS.push({id,x,y,z,heading,dims,fallback,device,display:null,started:false});
 }
 
 function updateOutdoorModels(dt,x,z){
@@ -35,8 +36,11 @@ function updateOutdoorModels(dt,x,z){
    node.position.set(p.x,p.y,p.z);
    node.rotation.y=p.heading;
    node.traverse(o=>{if(o.isMesh)o.castShadow=true;});
+   shadeFixture(node,p.x,p.y,p.z);
    p.display=node;
-   p.fallback?.(false);
+   if(p.device)bindCityMachine(p.device,node);
+   node.visible=(p.x-player.pos.x)**2+(p.z-player.pos.z)**2+(p.y-player.pos.y)**2<(QUALITY.level===0?43:68)**2;
+   p.fallback?.(!node.visible);
    scene.add(node);
   });
  }
@@ -46,34 +50,10 @@ function updateOutdoorModels(dt,x,z){
  if(featured&&INTERIORS.catalog[featured.heroAsset||'coupe'])loadHeroCar(featured);
 }
 
-function installTreeModels(instances,trunks,leaves,kind,selected){
- if(!trunks||!leaves)return;
- for(let i=0;i<instances.length;i++){
-  const [x,z,scale]=instances[i];
-  if(!selected(x,z,i))continue;
-  const originalTrunk=new THREE.Matrix4(),originalLeaves=new THREE.Matrix4();
-  trunks.getMatrixAt(i,originalTrunk);
-  leaves.getMatrixAt(i,originalLeaves);
-  let visible=true;
-  const fallback=show=>{
-   if(show===visible)return;
-   visible=show;
-   _streetMatrix.makeTranslation(0,-1000,0);
-   trunks.setMatrixAt(i,show?originalTrunk:_streetMatrix);
-   // The close plane-tree supplies the bark and branches. Keep the photographed leaf canopy in both views.
-   if(kind==='palm-tree')leaves.setMatrixAt(i,show?originalLeaves:_streetMatrix);
-   trunks.instanceMatrix.needsUpdate=true;
-   leaves.instanceMatrix.needsUpdate=true;
-  };
-  const dims=kind==='palm-tree'?[4.85*scale,9.15*scale,4.55*scale]:[5.3*scale,6.55*scale,5.08*scale];
-  placeScenery(kind,x,groundY(x,z),z,(x+z)*.031,dims,fallback);
- }
-}
-
 function updatePropModels(x,z){
- const types={hydrant:['cast-hydrant',[.51,.83,.43]],bench:['promenade-bench',[2,.91,.57]],postbox:['post-box',[.59,1.30,.64]],lantern:['cast-lantern',[.56,4.84,.55]],bin:['street-bin',[.66,.992,.66]],fence:['picket-fence',[2.31,.96,.16]],lamp:['street-lamp',[.81,7.20,2.85]]};
+ const types={hydrant:['cast-hydrant',[.51,.83,.43]],bench:['promenade-bench',[2,.91,.57]],postbox:['post-box',[.59,1.30,.64]],lantern:['cast-lantern',[.56,4.84,.55]],bin:['avenue-bin',[.63,.96,.63]],fence:['picket-fence',[2.31,.96,.16]],lamp:['street-lamp',[.81,7.20,2.85]]};
  for(const p of PROPS.list){
-  const type=types[p.t];
+  const type=p.riverside?['riverside-lamp',[.56,4.93,1.08]]:types[p.t];
   if(!type)continue;
   const [id,dims]=type;
   const pos=p.renderPosition;
@@ -101,8 +81,8 @@ function updatePropModels(x,z){
 }
 
 function lampEmitter(p){
- const lantern=p.t==='lantern',arm=lantern?0:1.85;
- return {x:p.x+Math.sin(p.ry)*arm,y:p.y+(lantern?4.45:p.display?.visible?5.69:6.9),z:p.z+Math.cos(p.ry)*arm};
+ const lantern=p.t==='lantern',arm=p.riverside&&p.display?.visible? .57 : lantern?0:1.85;
+ return {x:p.x+Math.sin(p.ry)*arm,y:p.y+(p.riverside&&p.display?.visible?4.21:lantern?4.45:p.display?.visible?5.69:6.9),z:p.z+Math.cos(p.ry)*arm};
 }
 function syncLampGlow(p){
  if(!p.P.glow||p.moved)return;
@@ -187,6 +167,7 @@ function loadHeroCar(car){
    lenses.push(lens);
   }
   car.hero={shell,wheels,lenses,deformed:false};
+  syncCarMesh(car);
   updateHeroLights(car);
  });
 }

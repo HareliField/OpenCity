@@ -62,13 +62,13 @@ Run `node tools/street-test.js` to check all 16 speed humps, opposing pedestrian
 
 ## Market Street and the service gallery
 
-Tideline Market sits one block east of the starting shop row. Harbour Bakery shares its ground floor. Use **C** at the fruit or bread counter to buy food. The maroon four-door saloon is in the marked bay behind the market.
+Tideline Market sits one block east of the starting shop row. Harbour Bakery shares its ground floor. Use **C** at the fruit or bread counter to buy food. On Foundry Street, the maroon four-door saloon is parked outside Harbor Books & Café, between Riverside Donuts and Coastal Nails. Each shop opens onto its furnished interior.
 
 Enter Market Flats through the west door. The stairs and lift connect the cellar, shops, flats and roof terrace. Use **C** inside the lift to travel to the displayed floor, or use the panel beside a landing to call it. The cab carries loose objects on its moving collision deck. A person or a load in the doorway holds the doors open. Ferry Street Rooms in the west, Foundry Lofts near the warehouses, and Seabright Court near the beach each have their own shop, upper floors and roof access. Harbour Supply in Foundry Lofts sells a portable work light for use in the service gallery.
 
 The dry ledge in the cellar gallery crosses under Studio Boulevard to Tidewater Pump House. The power switch operates the market registers, lift and service lighting. The water valve controls tap pressure. The drain pump changes the storm sump level. Running a basin in the flats sends water into the separate sanitary line and its sight gauge.
 
-Buried water mains, electrical ducts and sanitary returns serve all 256 blocks. Four labelled district breakers on the pump house’s south wall operate the street lighting, nearby shop lights, and lifts on their feeder. Water pressure falls with distance and floor height. Flow from running taps on the four residential sites returns along the sanitary branches to the plant. The simulation tracks those fixtures and their service connections.
+Buried water mains, electrical ducts and sanitary returns serve all 256 blocks. Four labelled district breakers on the pump house’s south wall operate the street lighting, nearby shop lights, and lifts on their feeder. Water pressure falls with distance and floor height. Flow from running taps on the four residential sites returns along the sanitary branches to the plant. At Wash House, use **C** in front of a machine to run a wash. Its intake depends on pressure, its drum needs district power, and its measured discharge joins the sanitary line. The sliding glass cases at Tideline Market open from either side.
 
 ## Driving, buildings, and assets
 
@@ -78,7 +78,7 @@ The coupe bench test measured 6.00 seconds to 100 km/h and 37.0 metres to brake 
 
 Run `node tools/ptest.js` to check acceleration, braking, steering, curbs, wall collisions, surface traction, object toppling, and consistency across update rates.
 
-Reviewed GLBs load as the player approaches. Their source models were generated with Meshy 7.1 Ultra 4K geometry and 4K PBR textures. The game uses lighter versions of those files. The featured shop rooms, entrances, furniture, streets, and vehicles have 3D geometry. Upper window interiors and distant storefronts use shaders, and vegetation combines 3D branches with foliage textures.
+Reviewed GLBs load as the player approaches. The city uses Meshy 7.1 source models with 4K PBR textures and a separate editable Blender collection. The latter includes photographed finishes, independently moving equipment, store displays and two levels of detail for the street trees. The runtime shares meshes and materials between instances. The featured shop rooms, entrances, furniture, streets, and vehicles have 3D geometry. Upper window interiors and distant storefronts use shaders, and vegetation combines 3D branches with foliage textures.
 
 ## Police department
 

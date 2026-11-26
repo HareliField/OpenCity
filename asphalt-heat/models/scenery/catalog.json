@@ -118,5 +118,69 @@
   },
   "maroon-saloon": {
     "file": "maroon-saloon.glb"
+  },
+  "riverside-lamp": {
+    "file": "riverside-lamp.glb",
+    "anchor": [
+      0,
+      0.24
+    ]
+  },
+  "avenue-bin": {
+    "file": "avenue-bin.glb"
+  },
+  "window-ac": {
+    "file": "window-ac.glb"
+  },
+  "condenser-bank": {
+    "file": "condenser-bank.glb"
+  },
+  "laundry-machine": {
+    "file": "laundry-machine.glb"
+  },
+  "barber-pole": {
+    "file": "barber-pole.glb"
+  },
+  "manicure-tools": {
+    "file": "manicure-tools.glb"
+  },
+  "patisserie-case": {
+    "file": "patisserie-case.glb"
+  },
+  "grocery-cooler": {
+    "file": "grocery-cooler.glb"
+  },
+  "municipal-pump": {
+    "file": "municipal-pump.glb"
+  },
+  "life-ring-station": {
+    "file": "life-ring-station.glb"
+  },
+  "service-meter": {
+    "file": "service-meter.glb"
+  },
+  "avenue-sycamore": {
+    "file": "avenue-sycamore.glb"
+  },
+  "coastal-date-palm": {
+    "file": "coastal-date-palm.glb"
+  },
+  "sycamore-distant": {
+    "file": "sycamore-distant.glb"
+  },
+  "palm-distant": {
+    "file": "palm-distant.glb"
+  },
+  "nail-workstation": {
+    "file": "nail-workstation.glb"
+  },
+  "booksellers-table": {
+    "file": "booksellers-table.glb"
+  },
+  "espresso-machine": {
+    "file": "espresso-machine.glb"
+  },
+  "florists-trug": {
+    "file": "florists-trug.glb"
   }
 }
