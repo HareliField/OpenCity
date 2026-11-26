@@ -227,7 +227,7 @@ function makeRoadsterWheel(s){
   steeringWheelGeometry=mergeGeos(pieces);pieces.forEach(p=>p.dispose());
  }
  const wheel=new THREE.Mesh(steeringWheelGeometry,darkMat);
- wheel.position.set(s.W*.22,s.hb+.032,.12);wheel.rotation.x=.396;return wheel;
+ wheel.position.set(s.W*.22,s.hb+.032,.085);wheel.rotation.x=.396;return wheel;
 }
 let dialMaterial,dialGeometry,needleGeometry;
 const dialNeedleMaterial=new THREE.MeshBasicMaterial({color:0xe45f3b});
@@ -277,17 +277,15 @@ function updateRoadsterDials(c){
  tach.rotation.z=needleAngle(c.driver && !c.dead?clamp((enginePitch(metresPerSecond)-.25)*.75+.106,0,.94):0);
  speed.rotation.z=needleAngle(metresPerSecond*3.6/240);
 }
-function placeDriverHand(bones,side,target,carRotation){
- const arm=bones[BMAP[side+'Arm']],elbow=bones[BMAP[side+'ForeArm']],hand=bones[BMAP[side+'Hand']];
- const shoulder=arm.getWorldPosition(new V3()),joint=elbow.getWorldPosition(new V3()),end=hand.getWorldPosition(new V3());
- const upper=shoulder.distanceTo(joint),lower=joint.distanceTo(end),reach=target.clone().sub(shoulder);
+function reachDriverLimb(root,middle,tip,target,pole){
+ const origin=root.getWorldPosition(new V3()),joint=middle.getWorldPosition(new V3()),end=tip.getWorldPosition(new V3());
+ const upper=origin.distanceTo(joint),lower=joint.distanceTo(end),reach=target.clone().sub(origin);
  const length=clamp(reach.length(),Math.abs(upper-lower)+.001,upper+lower-.001);
  reach.normalize();
  const along=(upper*upper-lower*lower+length*length)/(2*length);
- const out=new V3(side==='Left'?.65:-.65,-1,-.10).applyQuaternion(carRotation);
- out.addScaledVector(reach,-out.dot(reach)).normalize();
- const bend=reach.clone().multiplyScalar(along).addScaledVector(out,Math.sqrt(Math.max(0,upper*upper-along*along)));
- pointBone(arm,elbow,bend);pointBone(elbow,hand,target.clone().sub(elbow.getWorldPosition(new V3())));
+ pole.addScaledVector(reach,-pole.dot(reach)).normalize();
+ const bend=reach.clone().multiplyScalar(along).addScaledVector(pole,Math.sqrt(Math.max(0,upper*upper-along*along)));
+ pointBone(root,middle,bend);pointBone(middle,tip,target.clone().sub(middle.getWorldPosition(new V3())));
 }
 function updateDriverSteering(c){
  const angle=clamp(-c.steerA*5.2,-1.22,1.22),seat=c.seatedDriver;
@@ -295,7 +293,19 @@ function updateDriverSteering(c){
  seat.angle=angle;c.steeringWheel.rotation.z=angle;c.mesh.updateWorldMatrix(true,true);
  for(const [side,sign] of [['Left',1],['Right',-1]]){
   const grip=c.steeringWheel.localToWorld(new V3(sign*.135,.072,-.012));
-  placeDriverHand(seat.bones,side,grip,c.mesh.quaternion);
+  const bone=name=>seat.bones[BMAP[side+name]],hand=bone('Hand');
+  const prefix='Bip01_'+(sign>0?'L':'R')+'_Finger',knuckle=seat.bones[prefix+'2'];
+  const palmLength=hand.getWorldPosition(new V3()).distanceTo(knuckle.getWorldPosition(new V3()));
+  const palmDir=new V3(-sign*.32,-.14,.94).transformDirection(c.steeringWheel.matrixWorld);
+  const wrist=grip.clone().addScaledVector(palmDir,-palmLength);
+  reachDriverLimb(bone('Arm'),bone('ForeArm'),hand,wrist,new V3(sign*.65,-1,-.10).applyQuaternion(c.mesh.quaternion));
+  pointBone(hand,knuckle,palmDir);
+  const curl=new V3(-sign*.44,-.83,.34).transformDirection(c.steeringWheel.matrixWorld);
+  const tip=new V3(-sign*.25,-.47,-.85).transformDirection(c.steeringWheel.matrixWorld);
+  for(let finger=1;finger<=4;finger++){
+   const base=seat.bones[prefix+finger],mid=seat.bones[prefix+finger+'1'];
+   pointBone(base,mid,curl);pointBone(mid,seat.bones[prefix+finger+'2'],tip);
+  }
  }
 }
 
@@ -309,16 +319,21 @@ function updateSeatedDriver(c){
  model.updateMatrixWorld(true);
  const bones=nodeMap(model);
  pointBone(bones[BMAP.Spine],bones[BMAP.Spine1],new V3(0,.96,-.28));
- for(const [side,sign] of [['Left',1],['Right',-1]]){
-  const pose=(joint,end,dir)=>pointBone(bones[BMAP[side+joint]],bones[BMAP[side+end]],dir);
-  pose('UpLeg','Leg',new V3(sign*.08,-.17,.96));
-  pose('Leg','Foot',new V3(0,-.79,.56));
- }
  const hips=bones[BMAP.Hips].getWorldPosition(new V3());
  const wheelX=c.spec.W*.22;
- model.position.add(new V3(wheelX,c.spec.gc+.264,-.32).sub(hips));model.updateMatrixWorld(true);
+ model.position.add(new V3(wheelX,c.spec.gc+.277,-.255).sub(hips));model.updateMatrixWorld(true);
+ for(const [side,sign] of [['Left',1],['Right',-1]]){
+  const bone=name=>bones[BMAP[side+name]],ankle=new V3(wheelX+sign*.105,c.spec.gc+.233,sign>0?.25:.32);
+  reachDriverLimb(bone('UpLeg'),bone('Leg'),bone('Foot'),ankle,new V3(sign*.08,1,.14));
+  pointBone(bone('Foot'),bone('ToeBase'),new V3(0,-.12,1));
+ }
  // The standing bind-pose bounds exclude the seated arms close to the cockpit camera.
- model.traverse(o=>{if(o.isMesh){o.castShadow=true;o.frustumCulled=false;}});
+ model.traverse(o=>{
+  if(!o.isMesh)return;
+  o.castShadow=true;o.frustumCulled=false;
+  // Stow the construction worker's hanging tool belt and straps while seated.
+  if(name==='Construction_Male_01' && ['m111_tools','m111_opacity'].includes(o.material.name))o.visible=false;
+ });
  c.mesh.add(model);
  c.seatedDriver={role,model,bones,angle:NaN};updateDriverSteering(c);
 }

@@ -56,9 +56,11 @@ Street geometry uses metres. The midblock pavement drains from a 2% crown toward
 
 The civilian fleet includes original procedural models inspired by the Honda Civic, Toyota Corolla, Prius and RAV4, Volkswagen Golf GTI, MINI Cooper, Ford Mustang GT and F-150, Mazda MX-5, Porsche 911 Carrera, Volvo 240 Estate and Jeep Wrangler. They have individual body proportions, wheelbases, wheel finishes, tyre widths and lamp patterns. The arrows beside the model name operate the turn signals. The signal cancels after the driver turns and straightens the wheel.
 
-The green MX-5 is parked beside the starting shop row. Its cockpit view follows the seat and suspension. The steering wheel moves with the driver’s hands, the speedometer reads the car’s measured speed and the tachometer follows the simulated engine pitch. [Mazda MX-5 reference gallery](https://www.mazdausa.com/vehicles/2025-mx-5-miata/gallery)
+The green MX-5 is parked beside the starting shop row. Its cockpit view follows the seat and suspension. The driver grips the moving wheel and rests both feet in the footwell. The speedometer reads the car’s measured speed and the tachometer follows the simulated engine pitch. [Mazda MX-5 reference gallery](https://www.mazdausa.com/vehicles/2025-mx-5-miata/gallery)
 
 Run `node tools/street-test.js` to check all 16 speed humps, opposing pedestrian paths, stop priority, blocked exits and tyre clearance through 1,440 intersection movements. Each of the 12 cars drives straight, left and right from all four approaches at five junction layouts with both near and distant traffic simulation. A shared intersection checks vehicle and pedestrian clearance at 30, 60 and 120 updates per second.
+
+Run `node tools/roadster-test.js` to check the floor clearance and steering-wheel reach of all 32 character meshes in the MX-5.
 
 ## Market Street and the service gallery
 
