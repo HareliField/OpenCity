@@ -154,7 +154,7 @@ function skid(c,i,pos){const L=c.skidLast||(c.skidLast=[null,null,null,null]);co
  P.setXYZ(k,last.x+nx,y,last.z+nz);P.setXYZ(k+1,last.x-nx,y,last.z-nz);P.setXYZ(k+2,pos.x+nx,y,pos.z+nz);P.setXYZ(k+3,pos.x-nx,y,pos.z-nz);P.needsUpdate=true;}L[i]={x:pos.x,z:pos.z};}
 /* ---- audio ---- */
 let ac=null,master,nbuf,engO,engO2,engG,engF,sirO,sirG,heliG,scrG,scrF;
-function initAudio(){try{ac=new(window.AudioContext||window.webkitAudioContext)();master=ac.createGain();master.gain.value=.55;master.connect(ac.destination);
+function initAudio(){try{ac=new(window.AudioContext||window.webkitAudioContext)();master=ac.createGain();master.gain.value=0;master.connect(ac.destination);
  nbuf=ac.createBuffer(1,ac.sampleRate,ac.sampleRate);const d=nbuf.getChannelData(0);for(let i=0;i<d.length;i++)d[i]=Math.random()*2-1;
  engO=ac.createOscillator();engO.type='sawtooth';engO2=ac.createOscillator();engO2.type='square';engF=ac.createBiquadFilter();engF.type='lowpass';engF.frequency.value=420;engG=ac.createGain();engG.gain.value=0;const g2=ac.createGain();g2.gain.value=.35;engO.connect(engF);engO2.connect(g2).connect(engF);engF.connect(engG).connect(master);engO.start();engO2.start();
  sirO=ac.createOscillator();sirO.type='triangle';sirG=ac.createGain();sirG.gain.value=0;sirO.connect(sirG).connect(master);sirO.start();

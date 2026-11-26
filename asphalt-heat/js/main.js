@@ -80,7 +80,23 @@ function respawn(){state='play';$('big').className='';const busted=deadKind==='B
 /* ================= input ================= */
 let cameraMode=0;
 const keys={};const inp={jx:0,jy:0,fire:false,sprint:false};let joyId=null,joyC=[0,0],dragId=null,dragX=0,dragY=0;
-addEventListener('keydown',e=>{if(e.code==='Space'||e.code.startsWith('Arrow'))e.preventDefault();if(e.repeat)return;keys[e.code]=true;if(state==='play'){if(e.code==='KeyC'){const a=actionCtx();a&&a.fn();}if(e.code==='KeyZ')cycleWeapon();
+const soundButton=$('sound');
+soundButton.addEventListener('click',async e=>{
+ if(e.detail>0)soundButton.blur();
+ const enabled=soundButton.getAttribute('aria-pressed')==='false';
+ if(enabled&&!ac)initAudio();
+ if(!ac){toast('Sound unavailable');return;}
+ if(enabled&&ac.state!=='running'){
+  soundButton.disabled=true;
+  try{await ac.resume();}
+  catch(e){toast('Sound unavailable');return;}
+  finally{soundButton.disabled=false;}
+ }
+ master.gain.value=enabled ? .55 : 0;
+ soundButton.setAttribute('aria-pressed',String(enabled));
+ soundButton.textContent=enabled?'Sound on':'Sound off';
+});
+addEventListener('keydown',e=>{if(e.code==='Space'&&e.target===soundButton)return;if(e.code==='Space'||e.code.startsWith('Arrow'))e.preventDefault();if(e.repeat)return;keys[e.code]=true;if(state==='play'){if(e.code==='KeyC'){const a=actionCtx();a&&a.fn();}if(e.code==='KeyZ')cycleWeapon();
  if(e.code==='KeyV'){cameraMode=(cameraMode+1)%3;}
  if(e.code==='KeyH')$('ui').classList.toggle('cleanView');}});
 addEventListener('keyup',e=>{keys[e.code]=false;});addEventListener('blur',()=>{for(const k in keys)keys[k]=false;inp.fire=false;});
@@ -239,9 +255,10 @@ function step(dt){time+=dt;WATERT.value=time;
  sun.target.position.copy(tgt);
  if(POST){PP.final.uniforms.hurt.value=Math.max(0,hurtT>0?hurtT*2.5:0)+(player.hp<30&&state==='play'?(.3+.2*Math.sin(time*5)):0);hurtT-=dt;}
  if(ac){const t=ac.currentTime;const c=player.car;if(c){const sp=Math.abs(c.speed),gear=Math.min(5,Math.floor(sp/9)),rpm=.25+(sp-gear*9)/9*.75+(gear===0?0:.15);engG.gain.setTargetAtTime(.06+Math.min(1,Math.abs(jy))*.04,t,.1);engO.frequency.setTargetAtTime(40+rpm*90*(c.type==='sport'?1.4:1),t,.06);engO2.frequency.setTargetAtTime(20+rpm*45,t,.06);engF.frequency.setTargetAtTime(300+rpm*900,t,.1);
-   scrG.gain.setTargetAtTime(c.sliding&&sp>5?.12:0,t,.05);c.sliding=false;}else{engG.gain.setTargetAtTime(0,t,.2);scrG.gain.setTargetAtTime(0,t,.1);}
+   scrG.gain.setTargetAtTime(c.sliding&&sp>5?.12:0,t,.05);}else{engG.gain.setTargetAtTime(0,t,.2);scrG.gain.setTargetAtTime(0,t,.1);}
   let dn=1e9;if(wanted>0)for(const k of cars)if(k.driver==='police')dn=Math.min(dn,dist2(k.pos,tgt));sirG.gain.setTargetAtTime(wanted>=3&&LAW.seen?clamp(1-dn/120,0,1)*.06:0,t,.2);sirO.frequency.setTargetAtTime(760+260*Math.sin(time*Math.PI*2*.9),t,.03);
   let hn=1e9;for(const h of helis)hn=Math.min(hn,h.pos.distanceTo(camera.position));heliG.gain.setTargetAtTime(clamp(1-hn/160,0,1)*.35,t,.2);}
+ if(player.car)player.car.sliding=false;
  if(toastT>0){toastT-=dt;if(toastT<=0)toastEl.classList.remove('on');}if(bannerT>0){bannerT-=dt;if(bannerT<=0)$('banner').classList.remove('on');}}
 function loop(){
  requestAnimationFrame(loop);
@@ -324,6 +341,6 @@ async function buildCityRest(){SEED=4242;initAwnings();initSigns();initStreetMat
   }
  }
  beach();skyline();roadMarkings();buildGradeRoads();finishStreetDetails();flushBuckets();for(const m of scene.children)if(m.isMesh&&m.material===ATLAS.neon)m.renderOrder=2;plantTrees();buildTrafficLights();initializeDoorMeshes();}
-$('play').addEventListener('click',()=>{$('start').style.display='none';$('ui').hidden=false;if(!ac)initAudio();else ac.resume&&ac.resume();if(state==='title'){state='play';}});
+$('play').addEventListener('click',()=>{$('start').style.display='none';$('ui').hidden=false;if(state==='title'){state='play';}});
 window.__game={step,ff(n){for(let i=0;i<n;i++){step(1/30);}renderFrame(time);},scene,renderer,camera,sun,PH,get player(){return player},cars,peds,cops,gang,helis,places,PROPS,get heat(){return heat},set heat(v){heat=v},get wanted(){return wanted},get state(){return state},keys,inp,toggleCar,startRob,TPL,QUALITY};
 loop();boot().catch(e=>{console.error(e);setLoad('Error: '+e.message);});
