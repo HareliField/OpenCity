@@ -227,5 +227,21 @@
   },
   "harbor-box-truck": {
     "file": "harbor-box-truck.glb"
+  },
+  "garden-roof-edge": {
+    "file": "garden-roof-edge.glb"
+  },
+  "garden-sash": {
+    "file": "garden-sash.glb"
+  },
+  "garden-utility-pole": {
+    "file": "garden-utility-pole.glb"
+  },
+  "dock-street-lamp": {
+    "file": "dock-street-lamp.glb",
+    "anchor": [
+      0,
+      0.424
+    ]
   }
 }

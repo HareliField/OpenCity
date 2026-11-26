@@ -9,6 +9,7 @@ function groundY(x,z,referenceY=null){
   sidewalk?sidewalkHeight(sidewalk,x,z):pavementHeight(x,z);
  for(const r of STREET.steps)if(x>=r.x0&&x<=r.x1&&z>=r.z0&&z<=r.z1&&(!r.elevated||referenceY!==null&&referenceY>r.y-.35))y=Math.max(y,r.y);
  if(referenceY!==null){
+  y=gardenRoofHeight(x,z,referenceY,y);
   const grade=sampleGrade(x,z,referenceY);
   if(grade)y=Math.max(y,grade.height);
  }

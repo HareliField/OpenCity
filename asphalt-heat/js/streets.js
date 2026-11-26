@@ -154,6 +154,7 @@ function buildAuthoredBlock(block){
  const key=block.i+','+block.j;
  if(block.i===HARBOR_SUPPLY.i&&block.j===HARBOR_SUPPLY.j){buildHarborSupply(block);return true;}
  if(block.i===15&&(block.j===13||block.j===15)){buildDockWorkshops(block);return true;}
+ if((block.i===11||block.i===12)&&(block.j===2||block.j===3)){buildGardenCottages(block);return true;}
  if(key==='4,6'){
   const M=sideFrame(block,'N');
   shopFacade(block,RETAIL.laundry,M,-19.80,-6.14,12.42,false);

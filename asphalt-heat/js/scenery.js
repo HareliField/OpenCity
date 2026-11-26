@@ -53,7 +53,9 @@ function updateOutdoorModels(dt,x,z){
 function updatePropModels(x,z){
  const types={meter:['coin-parking-meter',[.225,1.48,.17]],hydrant:['cast-hydrant',[.51,.83,.43]],bench:['promenade-bench',[2,.91,.57]],postbox:['post-box',[.59,1.30,.64]],lantern:['cast-lantern',[.56,4.84,.55]],bin:['avenue-bin',[.63,.96,.63]],fence:['picket-fence',[2.31,.96,.16]],lamp:['street-lamp',[.81,7.20,2.85]]};
  for(const p of PROPS.list){
-  const type=p.riverside?['riverside-lamp',[.56,4.93,1.08]]:types[p.t];
+  const dockLamp=p.t==='lamp'&&p.x>=15*CELL&&p.x<W+HALF&&p.z>=13*CELL;
+  const gardenLamp=p.t==='lamp'&&p.x>=11*CELL&&p.x<=13*CELL&&p.z>=2*CELL&&p.z<=4*CELL;
+  const type=dockLamp||gardenLamp?['dock-street-lamp',[.38,7.20,2.49]]:p.riverside?['riverside-lamp',[.56,4.93,1.08]]:types[p.t];
   if(!type)continue;
   const [id,dims]=type;
   const pos=p.renderPosition;

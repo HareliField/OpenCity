@@ -1,0 +1,54 @@
+[
+  {
+    "id": "garden-sash",
+    "sourceImages": [
+      10,
+      17,
+      84
+    ],
+    "description": "Timber sash with inset glass, six narrow steel grille bars and folded linen side curtains.",
+    "parts": 23,
+    "movableParts": [],
+    "runtimeBytes": 102072
+  },
+  {
+    "id": "garden-roof-edge",
+    "sourceImages": [
+      10,
+      17,
+      46,
+      84
+    ],
+    "description": "Individually bedded barrel ridge tiles, courses of eave tiles, verge boards and half-round gutters.",
+    "parts": 170,
+    "movableParts": [],
+    "runtimeBytes": 313204
+  },
+  {
+    "id": "garden-utility-pole",
+    "sourceImages": [
+      17,
+      22,
+      52,
+      60,
+      84
+    ],
+    "description": "Tapered timber distribution pole, two bolted crossarms and three porcelain line pins.",
+    "parts": 21,
+    "movableParts": [],
+    "runtimeBytes": 70048
+  },
+  {
+    "id": "dock-street-lamp",
+    "sourceImages": [
+      38,
+      59,
+      66,
+      83
+    ],
+    "description": "Galvanized tapered column, swept outreach arm, service door and oval roadway luminaire.",
+    "parts": 13,
+    "movableParts": [],
+    "runtimeBytes": 65788
+  }
+]

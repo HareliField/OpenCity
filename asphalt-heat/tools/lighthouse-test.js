@@ -10,6 +10,7 @@ run(`const CANNON=window.CANNON,CV=CANNON.Vec3,V3=THREE.Vector3,W=1024,HALF=8,CE
  const clamp=(v,a,b)=>Math.min(b,Math.max(a,v)),lerp=(a,b,t)=>a+(b-a)*t;
  const supply={power:true},cityPowerAt=()=>supply.power;`);
 run(read('js/lighthouse.js'));
+run(read('js/garden-cottages.js'));
 const game=read('js/game.js');
 run(game.slice(game.indexOf('function traceBox('),game.indexOf('function rayWorld(')));
 run(`prepareCove(layout);

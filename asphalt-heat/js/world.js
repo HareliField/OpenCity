@@ -236,7 +236,7 @@ const SIDEANG={S:0,N:Math.PI,E:Math.PI/2,W:-Math.PI/2};
 function sideFrame(B,side){const ix0=B.x0+SW,ix1=B.x1-SW,iz0=B.z0+SW,iz1=B.z1-SW,cx=(B.x0+B.x1)/2,cz=(B.z0+B.z1)/2;const p=side==='S'?[cx,iz1]:side==='N'?[cx,iz0]:side==='E'?[ix1,cz]:[ix0,cz];const M=new THREE.Matrix4().makeRotationY(SIDEANG[side]);M.setPosition(p[0],0,p[1]);return M;}
 function lrect(M,u0,u1,v0,v1){const a=new V3(u0,0,-v0).applyMatrix4(M),b=new V3(u1,0,-v1).applyMatrix4(M);return{x0:Math.min(a.x,b.x),x1:Math.max(a.x,b.x),z0:Math.min(a.z,b.z),z1:Math.max(a.z,b.z)};}
 const lpt=(M,u,v)=>new V3(u,0,-v).applyMatrix4(M);
-const PASTEL=[0xf6c6c9,0xbfe6d8,0xf7e3a1,0xc7dcf2,0xffffff,0xf3d1b0,0xd8c8f0,0xa8e0e8];
+const PASTEL=[0xe3d4c7,0xcdd0be,0xe6dcc3,0xc6cecd,0xe9e6dc,0xd7c1aa,0xd2c6bd,0xc4cdbe];
 const HOUSEC=[0xe8dcc4,0xd8c0a0,0xc4d4dc,0xf0e8d8,0xb8c8a8,0xc9918c,0xefded0];
 /* which walls of a lot face a street (for signs/awnings) */
 function streetSides(B,R){const s=[];if(R.z1>B.z1-SW-1.5)s.push('S');if(R.z0<B.z0+SW+1.5)s.push('N');if(R.x1>B.x1-SW-1.5)s.push('E');if(R.x0<B.x0+SW+1.5)s.push('W');return s;}
@@ -296,10 +296,10 @@ function fillDistrict(B,R,dist){
   if(dist==='oldtown'){const fh=3.3,fl=rint(4,7);building(B,L,4.4+fl*fh,{mat:MAT.fac[spick(FACLIST.oldtown)],style:1,fh,bay:2.6,shops:true,cornice:true,kind:'old'});if(srnd()<.6)fireEscape(B,L,4.4+fl*fh,fh);}
   else if(dist==='beach'){const fh=3.2,fl=rint(2,5),h=4.4+fl*fh,tint=spick(PASTEL);building(B,L,h,{mat:MAT.fac.stucco,style:4,fh,bay:3.2,shops:true,tint,kind:'deco'});
    for(let y=4.4+fh;y<h-.5;y+=fh)plainBox(MAT.whiteMetal,L.x0-.18,L.x1+.18,y-.12,y,L.z0-.18,L.z1+.18);
-   const sd=streetSides(B,L);if(sd.length&&srnd()<.85){const s=sd[0],hs=spick(ATLAS.hotels),y=h*.62;const fx=s==='E'?L.x1+.6:s==='W'?L.x0-.6:(L.x0+L.x1)/2,fz=s==='S'?L.z1+.6:s==='N'?L.z0-.6:(L.z0+L.z1)/2;
-    const ry=s==='S'||s==='N'?Math.PI/2:0;plainBox(MAT.whiteMetal,fx-(ry?1.1:.18),fx+(ry?1.1:.18),4.6,h+1.2,fz-(ry?.18:1.1),fz+(ry?.18:1.1),{ry:0});
-    const L2=Math.min(h-5.5,9);for(const sg of[1,-1]){const g=new THREE.PlaneGeometry(L2,L2/4);const uv=g.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,hs.u0+uv.getX(i)*(hs.u1-hs.u0),hs.v0+uv.getY(i)*(hs.v1-hs.v0));g.rotateZ(Math.PI/2);g.rotateY((s==='S'||s==='N')?(sg>0?0:Math.PI):(sg>0?Math.PI/2:-Math.PI/2));
-     g.translate(fx+((s==='E'||s==='W')?sg*.19:0),4.6+(h-3.4)/2,fz+((s==='S'||s==='N')?sg*.19:0));addGeo(ATLAS.neon,g,false);}}}
+   const sd=streetSides(B,L),sample=sd.length?srnd():1,hs=sample<.85?spick(ATLAS.hotels):null;if(hs&&sample<.15&&h>16){const s=sd[0],y=h*.62;const fx=s==='E'?L.x1+.6:s==='W'?L.x0-.6:(L.x0+L.x1)/2,fz=s==='S'?L.z1+.6:s==='N'?L.z0-.6:(L.z0+L.z1)/2;
+    const ry=s==='S'||s==='N'?Math.PI/2:0;plainBox(MAT.metal,fx-(ry?.61:.11),fx+(ry?.61:.11),y-2.1,y+2.1,fz-(ry?.11:.61),fz+(ry?.11:.61));
+    const L2=4.02;for(const sg of[1,-1]){const g=new THREE.PlaneGeometry(L2,L2/4);const uv=g.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,hs.u0+uv.getX(i)*(hs.u1-hs.u0),hs.v0+uv.getY(i)*(hs.v1-hs.v0));g.rotateZ(Math.PI/2);g.rotateY((s==='S'||s==='N')?(sg>0?0:Math.PI):(sg>0?Math.PI/2:-Math.PI/2));
+     g.translate(fx+((s==='E'||s==='W')?sg*.115:0),y,fz+((s==='S'||s==='N')?sg*.115:0));addGeo(ATLAS.mat,g,false);}}}
   else if(dist==='downtown'){const tall=dc<170?srange(.6,1):srange(.3,.7);const podium=7.7,fh=3.8,h=Math.round(podium+tall*srange(76,162)/fh)*fh;
    building(B,L,podium,{mat:MAT.fac.stone_dark,style:0,fh:4.4,bay:4,shops:true,kind:'tower'});
    const ix=(L.x1-L.x0)*srange(.016,.075),iz=(L.z1-L.z0)*srange(.016,.075),T2={x0:L.x0+ix,x1:L.x1-ix,z0:L.z0+iz,z1:L.z1-iz};const mat=MAT.fac[spick(FACLIST.downtown)];

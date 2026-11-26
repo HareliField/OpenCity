@@ -57,7 +57,7 @@ function supplyWall(block,side,R,openings,site=HARBOR_SUPPLY){
 }
 function buildHarborSupply(block){
  const site=HARBOR_SUPPLY,m=CITY_WORKS.m,base=.17;
- const R=worksRect(block.x1-SW-27.8,block.x1-SW-.38,block.z0+SW+.46,block.z0+SW+20.6);
+ const R=worksRect(block.x1-SW-27.8,block.x1-SW-.38,block.z0+SW+1.46,block.z0+SW+21.60);
  site.R=R;site.cladding=pbr('corrugated',1.36,{rough:.75,metal:.36,color:0xd5d1bf,ns:.51,env:.37});
  const mid=(R.x0+R.x1)/2,cz=(R.z0+R.z1)/2;
  const hole=(left,right,base,top,kind='window')=>({left,right,base,top,kind});
@@ -150,6 +150,11 @@ function buildHarborSupply(block){
  const drive=site.truck.x,half=2.42,key=drivewayKey('ew',block.j,block.i);
  if(!DRIVEWAYS.has(key))DRIVEWAYS.set(key,[]);
  DRIVEWAYS.get(key).push({side:1,center:drive-block.i*CELL,half});
+ // At the broad industrial frontage the lamp sits at the east corner outside the signs and approach.
+ for(let i=LAMPS.length-1;i>=0;i--){
+  const p=LAMPS[i];if(p.x>block.x0&&p.x<block.x1&&Math.abs(p.z-(block.z0+.76))<.05)LAMPS.splice(i,1);
+ }
+ LAMPS.push({x:block.x1-2.47,z:block.z0+.77,ry:Math.PI});
  // The apron connects the loading yard to Dock Street. Move ornamental fixtures clear of its flared curb.
  for(const list of [LAMPS,PROPSPOTS]){
   for(let i=list.length-1;i>=0;i--){

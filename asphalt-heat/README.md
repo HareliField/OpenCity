@@ -62,6 +62,10 @@ Run `node tools/street-test.js` to check all 16 speed humps, opposing pedestrian
 
 Run `node tools/roadster-test.js` to check the floor clearance and steering-wheel reach of all 32 character meshes in the MX-5.
 
+## Ferry Street cottages
+
+Between Maple Street and Ridge Road, four blocks each contain six furnished cottages around a shared garden. Enter through the side door facing the garden. Each kitchen tap draws from the water main and discharges to the sanitary return. The window grilles, clay tile edges, gutters and overhead service leads follow the houses in reference 017.
+
 ## Dock Street and Lighthouse Cove
 
 Harbor Supply faces Dock Street, just west of Ocean Drive. The front shop and stock yard have separate entrances. Use **C** at the counter to buy a portable work light, beside the loading shutter to raise it, or beside the white truck to drive it out through the lowered curb. The silver sedan is parked on Dock Street and the brick-red crossover on Park Street.

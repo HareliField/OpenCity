@@ -78,6 +78,31 @@ def workshop():
         Image.fromarray(tex).save(FINISHES/f'coat-weave-{i}.jpg',quality=94)
 
 
+def garden_surfaces():
+    # One roof slope in photograph 017, rectified along the eave and the ridge.
+    roof=planar_patch(17,[(132.8,260.5),(170.5,263.4),(162.9,391.4),(108.8,389.0)],768)
+    shade=gaussian_filter(roof.mean(axis=2),37)
+    roof=(roof-np.mean(roof,axis=(0,1)))*.91+np.array([125,83,57])
+    roof-=(shade-shade.mean())[:,:,None]*.42
+    roof=join_edges(roof,21)
+    field=np.clip(roof,0,255).astype('uint8')
+    # UVs run from ridge to eave across this plane and along the gable length.
+    for name,img in [('garden-tile_d.webp',field),('garden-tile_n.webp',normal((roof.mean(axis=2)-shade)/255,2.1))]:
+        Image.fromarray(img).save(GAME/'tex'/name,quality=95)
+    Image.fromarray(field).save(FINISHES/'clay-garden-tile.jpg',quality=95)
+    # Moss and worn patches in the strip between the two rows of cottages.
+    lawn=planar_patch(10,[(91,302),(143,294),(165,412),(118,405)],384)
+    low=gaussian_filter(lawn,18,axes=(0,1))
+    lawn=join_edges(np.clip((lawn-low)*1.02+.52*(low-np.mean(low,axis=(0,1)))+np.array([92,99,64]),0,255),21)
+    Image.fromarray(lawn.astype('uint8')).save(GAME/'tex/garden-lawn_d.webp',quality=94)
+    Image.fromarray(normal(lawn.mean(axis=2)/255,1.7)).save(GAME/'tex/garden-lawn_n.webp',quality=92)
+    # Exposed, peeling street render from the end gable, excluding the window grilles and wires.
+    stucco=planar_patch(17,[(284,369),(301,368),(301,377),(285,380)],192)
+    grain=stucco.mean(axis=2);base=join_edges(grain-gaussian_filter(grain,16),14)
+    Image.fromarray(np.uint8(np.clip([196,190,174]+base[:,:,None]*1.03,0,255))).save(GAME/'tex/garden-render_d.webp',quality=93)
+    Image.fromarray(normal(base/255,2.4)).save(GAME/'tex/garden-render_n.webp',quality=91)
+
+
 def supply_front():
     # Four surveyed corners of the photographed corrugated elevation, excluding its roof.
     square=planar_patch(38,[(256.2,156.1),(525.8,144.6),(517.9,207.4),(259.45,223.7)],1024)
@@ -105,3 +130,4 @@ if __name__=='__main__':
     asphalt()
     workshop()
     supply_front()
+    garden_surfaces()
