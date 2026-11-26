@@ -117,6 +117,22 @@ function hqGraphic(kind){
    const letter=['1234567890-+','QWERTYUIOP','ASDFGHJKL','ZXCVBNM',''][r][k];
    if(letter)text(letter,px+11,py+21,15);
   }
+ }else if(kind==='staff-board'){
+  g.fillStyle='#a78763';g.fillRect(0,0,768,384);
+  for(let i=0;i<1550;i++){g.fillStyle=i%3?'#957855':'#b59671';g.fillRect((i*419)%768,(i*97+Math.floor(i/6)*13)%384,2,2);}
+  g.fillStyle=ink;g.fillRect(0,0,768,54);text('STAFF NOTICES',22,27,26);
+  const notes=[
+   [29,76,205,254,'KITCHEN',['Wash and dry mugs','Return dishes to','the upper shelves.']],
+   [259,112,230,217,'DIRECTORY',['Public records   G','Investigations   2','Watch office      3']],
+   [516,77,218,241,'SHIFT NOTES',['Watch handover','Staff message slips','Reception desk']]
+  ];
+  for(const [px,py,w,h,label,lines] of notes){
+   g.save();g.translate(px,py);g.rotate(label==='KITCHEN'?-.036:.019);
+   g.fillStyle='#5c4938';g.fillRect(3,5,w,h);g.fillStyle=label==='DIRECTORY'?'#d5e1df':'#ede6ce';g.fillRect(0,0,w,h);
+   text(label,12,35,20,ink);g.fillStyle='#839495';g.fillRect(12,59,w-24,2);
+   lines.forEach((line,j)=>text(line,12,86+j*37,16,'#354a50'));
+   g.fillStyle='#a44935';g.beginPath();g.arc(w*.5,10,5,0,Math.PI*2);g.fill();g.restore();
+  }
  }else if(kind==='paper'){
   g.fillStyle='#eee9dc';g.fillRect(0,0,768,384);text('OLD TOWN  /  CASE REVIEW',36,49,28,ink);
   g.fillStyle='#527176';g.fillRect(36,77,699,4);
@@ -385,7 +401,13 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
  for(const x of [-12,-8,9,13]){
   desk(x,11.2,1);monitor(x-.28,11.2,1,.65,'screen',true);
   chair(x+.5,12.26,1);documents(x+.63,11.09,level(1)+.804);
+  phone(x-.89,11.18,level(1)+.804);
  }
+ // Shared working files sit below the district map, within reach from the bureau desks.
+ const fileShelfY=level(1)+.937;
+ credenza(-13.35,15.22,1,4.78);binders(-15.47,15.35,fileShelfY,13);
+ documents(-12.69,15.46,fileShelfY);
+ bulletin('map',-13.37,15.87,level(1)+2.03,3.43,1.67);
  bulletin('notice',-7.5,15.87,level(1)+1.8,3.4,1.55);
  post('Detectives','Detective bureau',-13.1,12.5,1,'reviewing witness statements',.85);
  terminal('CASE FILES','Cases',-12,10.2,1);
@@ -500,17 +522,110 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
  terminal('ISSUE LEDGER','Equipment',-12,21.25,3);
  desk(11.3,22.4,3);monitor(11,22.4,3);bulletin('map',12,28.7,level(3)+1.8,4,1.65);
  post('Air Support','Flight desk',11,23.6,3,'reviewing the flight board',1.25);
- for(const x of [10,14]){placeRoomFurniture(block,M,'reading-table',x,12,level(3),[1.35,.74,1.35]);seat(x,10.9,3);seat(x,13.1,3);}
  const staffFloor=level(3);
- credenza(.7,30.95,3,5.3);
- solid(m.ceramic,-3.75,-3.04,staffFloor,staffFloor+1.77,30.75,31.58);
- box(m.steel,-3.72,-3.065,staffFloor+1.23,staffFloor+1.244,30.735,30.75);
- box(charcoal,-3.15,-3.115,staffFloor+.81,staffFloor+1.12,30.706,30.746);
- box(m.steel,1.73,2.25,staffFloor+.937,staffFloor+1.249,31.0,31.37);
- box(charcoal,1.752,2.132,staffFloor+.98,staffFloor+1.213,30.992,31.01);
+ function mealChair(x,v,angle){
+  const frame=new THREE.Matrix4().makeRotationY(SIDEANG[side]+angle).setPosition(point(x,v,3));
+  const piece=(material,g)=>addGeo(material,g.applyMatrix4(frame),false);
+  const diningSeat=new THREE.Shape();
+  diningSeat.moveTo(-.20,-.17);diningSeat.quadraticCurveTo(-.25,-.17,-.24,-.09);
+  diningSeat.lineTo(-.205,.176);diningSeat.quadraticCurveTo(-.20,.213,-.135,.213);
+  diningSeat.lineTo(.135,.213);diningSeat.quadraticCurveTo(.20,.213,.205,.176);
+  diningSeat.lineTo(.24,-.09);diningSeat.quadraticCurveTo(.25,-.17,.20,-.17);diningSeat.closePath();
+  const bevel={depth:.019,bevelEnabled:true,bevelSize:.009,bevelThickness:.009,bevelSegments:2,curveSegments:6};
+  const seatShell=new THREE.ExtrudeGeometry(diningSeat,bevel).rotateX(-Math.PI/2);
+  const backShape=new THREE.Shape();backShape.moveTo(-.16,0);
+  backShape.quadraticCurveTo(-.196,0,-.204,.075);backShape.lineTo(-.207,.222);
+  backShape.quadraticCurveTo(-.223,.296,-.155,.304);backShape.quadraticCurveTo(0,.333,.155,.304);
+  backShape.quadraticCurveTo(.223,.296,.207,.222);backShape.lineTo(.204,.075);backShape.quadraticCurveTo(.196,0,.16,0);backShape.closePath();
+  const grip=new THREE.Path();grip.absellipse(0,.237,.072,.020,0,Math.PI*2,true);backShape.holes.push(grip);
+  const backShell=new THREE.ExtrudeGeometry(backShape,bevel);
+  const bp=backShell.attributes.position;
+  for(let i=0;i<bp.count;i++)bp.setZ(i,bp.getZ(i)+.035*(bp.getX(i)/.20)**2-.18*bp.getY(i));
+  backShell.computeVertexNormals();
+  piece(enamel,seatShell.translate(0,.445,0));piece(enamel,backShell.translate(0,.51,-.175));
+  for(const s of [-1,1]){
+   const pts=[[s*.132,.70,-.202],[s*.157,.44,-.174],[s*.202,.046,-.224],[s*.210,.032,-.119],[s*.202,.034,.163],[s*.179,.092,.205],[s*.152,.428,.139]];
+   const path=new THREE.CatmullRomCurve3(pts.map(([a,b,c])=>new V3(a,b,c)));
+   piece(m.steel,new THREE.TubeGeometry(path,22,.015,8,false));
+   piece(charcoal,new THREE.BoxGeometry(.05,.023,.078).translate(s*.203,.019,.114));
+  }
+  addRoomCollider(block,M,x-.25,x+.25,v-.25,v+.25,staffFloor+.84,staffFloor);
+ }
+ for(const x of [10,14]){
+  placeRoomFurniture(block,M,'reading-table',x,12,staffFloor,[1.35,.74,1.35]);
+  mealChair(x,10.96,Math.PI);mealChair(x,13.04,0);
+ }
+ // The cabinet is hollow beneath the basin. Its worktop returns on all four sides of the opening.
+ const workY=staffFloor+.94;
+ solid(enamel,-2.10,3.35,staffFloor+.075,staffFloor+.72,30.87,31.50);
+ box(charcoal,-2.04,3.29,staffFloor,staffFloor+.076,30.94,31.45);
+ const sx=-.36,dx=.63,v0=31.00,v1=31.42;
+ for(const [u0,u1,a,b] of [[-2.14,sx,30.825,31.55],[sx+dx,3.39,30.825,31.55],[sx,sx+dx,30.825,v0],[sx,sx+dx,v1,31.55]])
+  box(m.ceramic,u0,u1,workY-.045,workY,a,b);
+ for(let j=0;j<8;j++){
+  const u=-2.08+j*.677;
+  box(oak,u,u+.654,staffFloor+.10,workY-.052,30.842,30.884);
+  box(m.chrome,u+.205,u+.438,workY-.182,workY-.155,30.808,30.843);
+ }
+ box(m.steel,sx,sx+dx,workY-.171,workY-.156,v0,v1);
+ for(const edge of [sx,sx+dx]){
+  box(m.steel,edge-.009,edge+.009,workY-.16,workY+.004,v0,v1);
+  box(m.chrome,edge-.013,edge+.013,workY,workY+.008,v0-.011,v1+.011);
+ }
+ for(const v of [v0,v1]){
+  box(m.steel,sx,sx+dx,workY-.16,workY+.004,v-.010,v+.010);
+  box(m.chrome,sx-.012,sx+dx+.012,workY,workY+.008,v-.014,v+.014);
+ }
+ function tubeInRoom(material,pts,radius){
+  const curve=new THREE.CatmullRomCurve3(pts.map(([u,y,v])=>{const p=lpt(M,u,v);p.y=y;return p;}));
+  addGeo(material,new THREE.TubeGeometry(curve,16,radius,9,false),false);
+ }
+ tubeInRoom(m.chrome,[[-.037,workY,31.47],[-.037,workY+.259,31.47],[-.037,workY+.33,31.415],
+  [-.037,workY+.33,31.27],[-.037,workY+.254,31.235]],.016);
+ box(m.wallTile,-2.12,3.37,workY,workY+.22,31.53,31.57);
+ // The inset central pier between the real windows carries the mug shelves.
+ function mug(u,v,y,body){
+  const p=lpt(M,u,v),rim=.044;
+  cyl(body,p.x,y,p.z,rim,.038,.087,16);
+  cyl(m.darkWood,p.x,y+.087,p.z,rim-.005,rim-.005,.001,16);
+  tubeInRoom(body,[[u+.038,y+.073,v],[u+.068,y+.072,v],[u+.072,y+.036,v],[u+.040,y+.030,v]],.007);
+ }
+ for(const h of [1.45,1.84]){
+  const y=staffFloor+h;
+  box(oak,-1.72,.99,y-.034,y,31.31,31.58);
+  for(const u of [-1.5,.77])box(charcoal,u-.022,u+.022,y-.158,y-.032,31.45,31.58);
+  for(let i=0;i<5;i++)mug(-1.41+i*.245,31.393,y,i%2?m.ceramic:enamel);
+ }
+ // Refrigerator with separate door seals, projecting pulls and recessed grille.
+ solid(charcoal,-3.78,-2.96,staffFloor+.035,staffFloor+1.78,30.78,31.54);
+ for(const [bottom,top] of [[.08,.56],[.585,1.77]]){
+  box(m.ceramic,-3.759,-2.979,staffFloor+bottom,staffFloor+top,30.73,30.79);
+  const grip=staffFloor+top-.13;
+  tubeInRoom(m.steel,[[-3.11,grip-.26,30.73],[-3.11,grip-.245,30.67],[-3.11,grip-.018,30.67],[-3.11,grip,30.73]],.016);
+ }
+ for(const u of [-3.58,-3.48,-3.38,-3.28])box(m.steel,u,u+.053,staffFloor+.045,staffFloor+.063,30.76,30.78);
+ // Microwave door, pull, timer and keypad sit above the stone counter.
+ box(m.steel,1.73,2.27,workY,workY+.315,31.0,31.39);
+ box(charcoal,1.745,2.15,workY+.027,workY+.29,30.986,31.004);
+ box(m.black,1.77,2.077,workY+.057,workY+.26,30.981,30.989);
+ box(m.chrome,2.092,2.11,workY+.065,workY+.23,30.955,30.987);
+ box(enamel,2.17,2.242,workY+.225,workY+.255,30.99,31.001);
+ for(let i=0;i<6;i++)box(m.black,2.17+(i%2)*.042,2.186+(i%2)*.042,workY+.105+Math.floor(i/2)*.035,workY+.122+Math.floor(i/2)*.035,30.99,31);
+ // Drip coffee maker, glass carafe, insulated handle and warming plate.
+ box(charcoal,-1.65,-1.30,workY,workY+.043,30.96,31.39);
+ box(m.steel,-1.64,-1.31,workY+.042,workY+.42,31.23,31.385);
+ box(charcoal,-1.66,-1.29,workY+.376,workY+.47,30.96,31.41);
+ const jug=lpt(M,-1.46,31.09);
+ cyl(m.darkWood,jug.x,workY+.056,jug.z,.081,.095,.122,18);
+ cyl(m.glass,jug.x,workY+.056,jug.z,.084,.098,.179,18);
+ cyl(m.black,jug.x,workY+.235,jug.z,.087,.089,.018,18);
+ tubeInRoom(charcoal,[[-1.377,workY+.229,31.09],[-1.337,workY+.215,31.09],[-1.336,workY+.130,31.09],[-1.374,workY+.102,31.09]],.010);
+ // The shared noticeboard faces the room from the wall beside the dining tables.
+ box(oak,-4.925,-4.817,staffFloor+1.13,staffFloor+2.47,24.68,27.37);
+ panel('staff-board',-4.808,staffFloor+1.80,26.025,2.58,1.23,Math.PI/2);
  for(const v of [22.7,26.58]){
   placeRoomFurniture(block,M,'reading-table',0,v,staffFloor,[1.48,.76,1.48]);
-  seat(-1.08,v,3);seat(1.08,v,3);
+  mealChair(-1.01,v,Math.PI/2);mealChair(1.01,v,-Math.PI/2);
  }
  for(let f=1;f<4;f++)sign(HQ_FLOORS[f].toUpperCase(),-5.90,level(f)+2.53,15.90,4.15,.46);
 }

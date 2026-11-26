@@ -19,11 +19,16 @@ function placeScenery(id,x,y,z,heading,dims,fallback){
  OUTDOOR_MODELS.push({id,x,y,z,heading,dims,fallback,device,display:null,started:false});
 }
 
+function outdoorModelInView(p){
+ const view=caseCamera.focus||player.pos;
+ return (p.x-view.x)**2+(p.z-view.z)**2+(p.y-view.y)**2<(QUALITY.level===0?43:68)**2;
+}
+
 function updateOutdoorModels(dt,x,z){
  if((sceneryClock-=dt)>0)return;
  sceneryClock=.65;
  for(const p of OUTDOOR_MODELS){
-  const near=(p.x-x)**2+(p.z-z)**2+(p.y-player.pos.y)**2<(QUALITY.level===0?43:68)**2;
+  const near=outdoorModelInView(p);
   if(p.display)p.display.visible=near;
   if(p.fallback)p.fallback(!p.display||!near);
   if(p.started||!near)continue;
@@ -39,7 +44,7 @@ function updateOutdoorModels(dt,x,z){
    shadeFixture(node,p.x,p.y,p.z);
    p.display=node;
    if(p.device)bindCityMachine(p.device,node);
-   node.visible=(p.x-player.pos.x)**2+(p.z-player.pos.z)**2+(p.y-player.pos.y)**2<(QUALITY.level===0?43:68)**2;
+   node.visible=outdoorModelInView(p);
    p.fallback?.(!node.visible);
    scene.add(node);
   });
