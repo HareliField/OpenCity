@@ -168,4 +168,31 @@ run(`
   assert(Math.abs(height-.02)<.002,'the return trip reaches the beach');
  }
 `);
+// Put a dynamic load in the municipal car and drive it with the shipped 90 Hz physics loop.
+const physicsSource=read('js/phys.js');
+run(physicsSource.slice(physicsSource.indexOf('function physBox('),physicsSource.indexOf('class StreetVehicle')));
+run(`
+ const PHYS_DT=1/90,PH={w:new CANNON.World(),accumulator:0,mat:{ground:new CANNON.Material('ground'),concrete:new CANNON.Material('concrete')}};
+ PH.w.gravity.set(0,-9.81,0);PH.ground=new CANNON.Body({mass:0});PH.w.addBody(PH.ground);
+ const carLift=w.lift,shaft=carLift.shaft,cx=(shaft.x0+shaft.x1)/2,cz=(shaft.z0+shaft.z1)/2;
+ carLift.y=.17;carLift.target=1;carLift.doors=1;
+ carLift.cabDoors=[-1,1].map(sign=>({sign,width:1.12,node:frame(),shape:null}));
+ installWorksPhysics();player.pos.set(cx,.17,cz);
+ const cargo=new CANNON.Body({mass:12,shape:new CANNON.Box(new CV(.23,.22,.23))});
+ cargo.position.set(cx,.40,cz);PH.w.addBody(cargo);
+ for(let k=0;k<20;k++)physStep(1/30);
+ cargo.position.z=shaft.z1-.13;cargo.aabbNeedsUpdate=true;
+ for(let k=0;k<5;k++)physStep(1/30);
+ assert(liftDoorOccupied(carLift,player.pos),'a load crossing the threshold is detected');
+ carLift.target=2;for(let k=0;k<40;k++)physStep(1/30);
+ assert.equal(carLift.y,.17,'cargo projecting into the open door keeps the cab at the landing');
+ cargo.position.z=cz;cargo.aabbNeedsUpdate=true;
+ for(const level of [2,0,1]){
+  carLift.target=level;
+  for(let k=0;k<330;k++)physStep(1/30);
+  assert.equal(carLift.y,carLift.levels[level]);assert.equal(carLift.doors,1);
+  assert(Math.abs(cargo.position.y-.22-carLift.y)<.055,'an independent rigid body must ride the cabin in both directions');
+  assert(Math.abs(carLift.body.position.y+.08-carLift.y)<.002,'kinematic deck must stop at the visible landing');
+ }
+`);
 console.log('Gameplay regressions passed.');

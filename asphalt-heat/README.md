@@ -59,7 +59,7 @@ Run `node tools/street-test.js` to check intersection priority, pedestrian phase
 
 Tideline Market sits one block east of the starting shop row. Harbour Bakery shares its ground floor. Use **C** at the fruit or bread counter to buy food. The maroon four-door saloon is in the marked bay behind the market.
 
-Enter Market Flats through the west door. The stairs and lift connect the cellar, shops, flats and roof terrace. Use **C** inside the lift to travel to the displayed floor, or use the panel beside a landing to call it. Ferry Street Rooms in the west, Foundry Lofts near the warehouses, and Seabright Court near the beach each have their own shop, upper floors and roof access. Harbour Supply in Foundry Lofts sells a portable work light for use in the service gallery.
+Enter Market Flats through the west door. The stairs and lift connect the cellar, shops, flats and roof terrace. Use **C** inside the lift to travel to the displayed floor, or use the panel beside a landing to call it. The cab carries loose objects on its moving collision deck. A person or a load in the doorway holds the doors open. Ferry Street Rooms in the west, Foundry Lofts near the warehouses, and Seabright Court near the beach each have their own shop, upper floors and roof access. Harbour Supply in Foundry Lofts sells a portable work light for use in the service gallery.
 
 The dry ledge in the cellar gallery crosses under Studio Boulevard to Tidewater Pump House. The power switch operates the market registers, lift and service lighting. The water valve controls tap pressure. The drain pump changes the storm sump level. Running a basin in the flats sends water into the separate sanitary line and its sight gauge.
 

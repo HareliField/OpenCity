@@ -111,9 +111,17 @@ function installWorksPhysics(){
   physBox(r.x0,r.x1,-.13,0,r.z0,r.z1,PH.mat.ground);
  }
  for(const lift of CITY_WORKS.lifts){
-  const shaft=lift.shaft;
+  const shaft=lift.shaft,x=(shaft.x1-shaft.x0)*.5,z=(shaft.z1-shaft.z0)*.5;
   const body=new CANNON.Body({mass:0,type:CANNON.Body.KINEMATIC,material:PH.mat.concrete,collisionFilterGroup:PHYS_GROUP.world});
-  body.addShape(new CANNON.Box(new CV((shaft.x1-shaft.x0)/2-.03,.08,(shaft.z1-shaft.z0)/2-.03)));
+  const box=(w,h,d,px,py,pz)=>body.addShape(new CANNON.Box(new CV(w/2,h/2,d/2)),new CV(px,py+.08,pz));
+  box(2*x-.065,.16,2*z-.065,0,-.08,0);
+  box(3.08,.08,3.16,0,2.53,0);
+  box(3.08,2.5,.08,0,1.25,-1.51);
+  for(const side of [-1,1])box(.07,2.5,3.10,side*1.49,1.25,0);
+  for(const leaf of lift.cabDoors){
+   leaf.shape=body.shapes.length;
+   box(leaf.width,2.38,.065,leaf.node.position.x,1.19,z-.14);
+  }
   body.position.set((shaft.x0+shaft.x1)/2,lift.y-.08,(shaft.z0+shaft.z1)/2);
   PH.w.addBody(body);lift.body=body;
  }
@@ -198,7 +206,7 @@ function buildLift(r=CITY_WORKS.shaft,levels=CITY_WORKS.levels,labels=['SERVICE 
  const w=CITY_WORKS,m=w.m;
  const municipal=r===w.shaft;
  const lift=municipal?w.lift:{y:levels[0],target:0,doors:1,cab:null,body:null};
- Object.assign(lift,{shaft:r,levels,labels,gates:[],municipal});
+ Object.assign(lift,{shaft:r,levels,labels,gates:[],cabDoors:[],municipal});
  w.lifts.push(lift);
  const x=(r.x0+r.x1)/2,z=(r.z0+r.z1)/2,bottom=levels[0],top=levels[levels.length-1]+2.9;
  for(const u of [r.x0-.14,r.x1])worksSolid(worksRect(u,u+.14,r.z0-.18,r.z1),bottom,top,m.service);
@@ -234,11 +242,23 @@ function buildLift(r=CITY_WORKS.shaft,levels=CITY_WORKS.levels,labels=['SERVICE 
   if(mat===m.lamp)lift.light=part.material;
   part.scale.set(width,height,depth);part.position.set(xoff,yoff,zoff);part.receiveShadow=true;cab.add(part);
  }
+ const width=(r.x1-r.x0-.96)/2;
+ for(const sign of [-1,1]){
+  const node=new THREE.Mesh(unitBox,m.panel);
+  node.scale.set(width,2.38,.065);node.position.set(sign*width*(.5+lift.doors),1.19,(r.z1-r.z0)/2-.14);cab.add(node);
+  lift.cabDoors.push({node,sign,width,shape:null});
+ }
  cab.position.set(x,lift.y,z);scene.add(cab);lift.cab=cab;
  syncWorksGates(lift);
 }
 
 function syncWorksGates(lift){
+ for(const leaf of lift.cabDoors||[]){
+  const x=leaf.sign*leaf.width*(.5+lift.doors);
+  if(leaf.node.position.x===x)continue;
+  leaf.node.position.x=x;
+  if(leaf.shape!==null){lift.body.shapeOffsets[leaf.shape].x=x;lift.body.aabbNeedsUpdate=true;}
+ }
  for(const g of lift.gates){
   const open=Math.abs(lift.y-g.y)<.055?lift.doors:0;
   const x=g.x+g.sign*g.width*(.5+open);
@@ -517,28 +537,45 @@ function worksAction(pos){
  }
  return null;
 }
-function updateWorksLift(lift,dt,pos){
+function liftDoorOccupied(lift,pos){
+ const r=lift.shaft,y=lift.y;
+ if(Math.abs(pos.z-r.z1)<.49&&pos.x>r.x0+.25&&pos.x<r.x1-.25&&Math.abs(pos.y-y)<.36)return true;
+ if(!lift.body?.world)return false;
+ for(const contact of lift.body.world.contacts){
+  const body=contact.bi===lift.body?contact.bj:contact.bj===lift.body?contact.bi:null;
+  if(!body||body.type!==CANNON.Body.DYNAMIC)continue;
+  body.updateAABB();
+  const {lowerBound:a,upperBound:b}=body.aabb;
+  if(b.x>r.x0+.48&&a.x<r.x1-.48&&b.z>r.z1-.30&&a.z<r.z1+.16&&b.y>y+.02&&a.y<y+2.38)return true;
+ }
+ return false;
+}
+function moveLiftBodies(dt){
+ for(const lift of CITY_WORKS.lifts)updateWorksLift(lift,dt,player.pos,true);
+}
+function updateWorksLift(lift,dt,pos,physicsStep=false){
  const w=CITY_WORKS,r=lift.shaft;
  const old=lift.y,target=lift.levels[lift.target];
  const powered=liftPowered(lift);
  if(lift.light)lift.light.emissiveIntensity=powered?1.10:.10;
  if(powered){
   if(Math.abs(target-old)>.001){
-   const doorOccupied=Math.abs(pos.z-r.z1)<.42&&pos.x>r.x0+.25&&pos.x<r.x1-.25&&Math.abs(pos.y-old)<.36;
+   const doorOccupied=lift.doors>0&&liftDoorOccupied(lift,pos);
    lift.doors=doorOccupied?Math.min(1,lift.doors+dt*1.65):Math.max(0,lift.doors-dt*1.65);
    if(!lift.doors)lift.y+=Math.sign(target-old)*Math.min(Math.abs(target-old),dt*1.12);
   }else lift.doors=Math.min(1,lift.doors+dt*1.65);
  }
  if(lift.y!==old){
   if(!player.car&&worksInside(r,pos.x,pos.z)&&Math.abs(pos.y-old)<.28)pos.y=lift.y;
-  lift.cab.position.y=lift.y;lift.body.position.y=lift.y-.08;lift.body.aabbNeedsUpdate=true;
+  lift.cab.position.y=lift.y;
+  lift.body.position.y=(physicsStep?old:lift.y)-.08;lift.body.aabbNeedsUpdate=true;
  }
+ lift.body.velocity.y=physicsStep?(lift.y-old)/dt:0;
  syncWorksGates(lift);
 }
 
 function updateCityWorks(dt,pos){
  const w=CITY_WORKS;
- for(const lift of w.lifts)updateWorksLift(lift,dt,pos);
  const stationPower=w.grid&&cityPowerAt(w.station.x0,w.station.z0);
  const draining=stationPower&&w.pump;
  updateServiceGraph(dt);
