@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0780",
+  "personId": "AH-R0780",
+  "name": "Lionel Walker",
+  "age": 37,
+  "occupation": "Acting night manager",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Money after marriage",
+  "biography": "stories/residents/06/03-money-after-marriage.md#ah-r0780",
+  "life": "“I still remember covering the night manager's desk on a school holiday.” On Thursday, near the window at Night Shift Donuts, Lionel knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I trained the night manager to cover for family emergencies. She wants the title as well as the work now.",
+  "appearance": "Lionel is easy to recognize by dark brown curls cut close behind the ears and a wide brow and a narrow jaw. Usually dressed in an olive canvas jacket with a narrow brass watch set a little fast, Lionel counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Lionel enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To get the title and pay for night management.",
+  "family": "Stefan Tate is Lionel’s first cousin once removed. At a family wedding the hired photographer missed the older relatives entirely. They assembled a second album from pictures taken over shoulders at the kitchen door. Lionel asks before bringing someone shy into the frame. Asked about *A wall of birthdays*, Stefan says, “I measured every child who lived here while their parents worked.”",
+  "connections": "Riley Tate. A designer who once gave away a logo meets the manager asked to give away a title.",
+  "familyIds": [
+    "AH-R0235"
+  ],
+  "connectionIds": [
+    "AH-R0776"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver says payday matters more than the settlement",
+      "response": "Lionel checks what money is ring-fenced for the drivers already on the rota.",
+      "asWritten": "A driver says payday matters more than the settlement. Lionel checks what money is ring-fenced for the drivers already on the rota."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Lionel asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Lionel asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Lionel puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Lionel puts the deal away and suggests a walk."
+    }
+  ]
+}

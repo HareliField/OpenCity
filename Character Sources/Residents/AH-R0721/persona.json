@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0721",
+  "personId": "AH-R0721",
+  "name": "Beatrice Ko",
+  "age": 38,
+  "occupation": "Restaurant worker",
+  "home": "the western residential streets",
+  "episode": "The fountain score",
+  "biography": "stories/residents/05/13-the-fountain-score.md#ah-r0721",
+  "life": "“I still remember a pan that sat at an angle on our first hob.” People around Harbour Bakery know Beatrice by a small Tuesday habit. Beatrice buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I chose a saucepan with a dent from my first flat. Its note is flatter than any kitchen I have now.",
+  "appearance": "Beatrice is easy to recognize by a smooth side part with one rebellious curl and a strong profile and a little space between the front teeth. Usually dressed in a long navy raincoat with a pen clipped inside the neckline, Beatrice listens with the head tilted a little to the left when listening.",
+  "personality": "Beatrice is kind in very practical ways and prickly about being thanked in public. Beatrice loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To play the saucepan's actual imperfect pitch.",
+  "family": "Sol Lane is Beatrice’s parent’s cousin. Beatrice chooses the music. Sol puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The small signature*, Sol says, “My wife and I used to play chess with bottle caps here.”",
+  "connections": "Kate Dinh. A dented saucepan and a typewriter find neighboring places in the same score.",
+  "familyIds": [
+    "AH-R0030"
+  ],
+  "connectionIds": [
+    "AH-R0726"
+  ],
+  "reactions": [
+    {
+      "situation": "An instrument breaks before the fountain piece begins",
+      "response": "Beatrice asks the player whether a different everyday object can carry the missing note.",
+      "asWritten": "An instrument breaks before the fountain piece begins. Beatrice asks the player whether a different everyday object can carry the missing note."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Beatrice keeps the neighbor's place and finds out whether the stranger needs a different kind of help.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Beatrice keeps the neighbor's place and finds out whether the stranger needs a different kind of help."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Beatrice gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Beatrice gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

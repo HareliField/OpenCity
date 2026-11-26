@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0696",
+  "personId": "AH-R0696",
+  "name": "Elsa Allen",
+  "age": 32,
+  "occupation": "Night cleaner",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Midnight cinnamon",
+  "biography": "stories/residents/05/10-midnight-cinnamon.md#ah-r0696",
+  "life": "“I still remember saving a neighbor's supper until the moon rose.” On Tuesday, near the bank steps, Elsa takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I was fasting when the first tray came out. The baker put my piece away without making a fuss.",
+  "appearance": "On an ordinary day, look for a rust-colored canvas coat and a thin silver ring worn on a cord. Elsa has an aquiline nose and a square chin, with close-cropped dark curls. Elsa grins on one side while the eyes stay serious during a conversation.",
+  "personality": "Elsa has a quick wit and an equally quick sense of shame. A joke is often Elsa's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To collect the saved bun after the fast.",
+  "family": "Sybil Rey is Elsa’s cousin. Elsa can always ask for five minutes alone. Sybil asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Two portions*, Sybil says, “The second portion costs less than my mileage for investigating it.”",
+  "connections": "Carlo Gil. The seller sets a little spice packet aside for a customer fasting until night.",
+  "familyIds": [
+    "AH-R0139"
+  ],
+  "connectionIds": [
+    "AH-R0692"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer wants a bun saved until evening",
+      "response": "Elsa writes the customer's name and collection time on the wrapped bun.",
+      "asWritten": "A customer wants a bun saved until evening. Elsa writes the customer's name and collection time on the wrapped bun."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Elsa asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Elsa asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Elsa seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Elsa seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1470",
+  "personId": "AH-R1470",
+  "name": "Lennon Wang",
+  "age": 39,
+  "occupation": "Shift packing worker",
+  "home": "Coast Ridge",
+  "episode": "Three minutes at the bridge",
+  "biography": "stories/residents/10/12-three-minutes-at-the-bridge.md#ah-r1470",
+  "life": "“I still remember eating supper before dark while the carpool still worked.” Sunday often includes a stop at the approach to Seabright Court, where Lennon likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I had hoped the shared rides would turn into a friendship. I am learning to be glad it gets four tired people home.",
+  "appearance": "Lennon has a small notch in the left eyebrow. Look for short sandy hair and a marked widow's peak. On an ordinary day, the familiar outfit is a long navy raincoat with a train token tied to a zipper pull. In conversation Lennon looks toward the door whenever a name is called.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Lennon takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To get everyone home reliably before expecting friendship.",
+  "family": "Lev Bellamy is Lennon’s older cousin. Lennon calls back when there is finally a little privacy. Lev leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The blue suit*, Lev says, “My father taught me to turn a ruined cuff inside out.”",
+  "connections": "Rain Fisher. Looking after the van gives a non-driver a useful stake in the shared rides.",
+  "familyIds": [
+    "AH-R0002"
+  ],
+  "connectionIds": [
+    "AH-R1465"
+  ],
+  "reactions": [
+    {
+      "situation": "A carpool passenger needs an unplanned Friday stop",
+      "response": "Lennon asks the pharmacy passenger and the other riders which stop works for them.",
+      "asWritten": "A carpool passenger needs an unplanned Friday stop. Lennon asks the pharmacy passenger and the other riders which stop works for them."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Lennon asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Lennon asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Lennon asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Lennon asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

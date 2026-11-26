@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0519",
+  "personId": "AH-R0519",
+  "name": "Valentina Villa",
+  "age": 57,
+  "occupation": "Bus driver",
+  "home": "Coast Ridge",
+  "episode": "A borrowed name",
+  "biography": "stories/residents/04/07-a-borrowed-name.md#ah-r0519",
+  "life": "“I still remember my daughter editing my telling of a bedtime story.” People around the corner outside Coastal Barber know Valentina by a small Wednesday habit. Valentina usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I was afraid my daughter would believe the ending. She brought me a pencil and asked for my version.",
+  "appearance": "Valentina is easy to recognize by a smooth side part with one rebellious curl and a flat bridge to the nose and a mobile brow. Usually dressed in a pale blue work shirt with a pair of reading glasses in a cloth sleeve, Valentina leans a shoulder against the wall during long conversations when listening.",
+  "personality": "Valentina prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To write a version the daughter knows came from home.",
+  "family": "Parker Gao is Valentina’s second cousin. Valentina remembers the birthdays. Parker asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The driving lesson fund*, Parker says, “I have the best reason and the worst eyesight.”",
+  "connections": "Melanie Breen. They compare a name that changed in public with a story a parent wants to correct in private.",
+  "familyIds": [
+    "AH-R1312"
+  ],
+  "connectionIds": [
+    "AH-R0518"
+  ],
+  "reactions": [
+    {
+      "situation": "An author is asked to identify the living inspiration",
+      "response": "Valentina asks the person being represented whether they want to be identified.",
+      "asWritten": "An author is asked to identify the living inspiration. Valentina asks the person being represented whether they want to be identified."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Valentina takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Valentina takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Valentina clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Valentina clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

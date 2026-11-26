@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0740",
+  "personId": "AH-R0740",
+  "name": "David Marks",
+  "age": 60,
+  "occupation": "Neighbor and grocer",
+  "home": "Eastside",
+  "episode": "The split visit",
+  "biography": "stories/residents/05/14-the-split-visit.md#ah-r0740",
+  "life": "“I still remember drinking from a guest cup in a house I visited daily.” On Sunday, near Lighthouse Cove, David takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I live next door and brought the teapot. I want to be invited when there is no crisis too.",
+  "appearance": "On an ordinary day, look for a black overshirt with pearl buttons and a small enamel bird on the lapel. David has a round face with a pronounced chin, with silver temples and a dark fringe. David rubs a thumb along the edge of the nearest pocket during a conversation.",
+  "personality": "David reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones David trusts most.",
+  "agenda": "To take tea together on a day without a crisis.",
+  "family": "Sid Idris is David’s younger cousin. David chooses whether they walk home or sit a while. Sid brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The borrowed bass*, Sid says, “The paperwork values the wood and hardware.”",
+  "connections": "Mateo Park. The cake and teapot become a real visit beyond the allotted care tasks.",
+  "familyIds": [
+    "AH-R0127"
+  ],
+  "connectionIds": [
+    "AH-R0735"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor objects to the overlap",
+      "response": "David records what the overlap let the client do before judging its cost.",
+      "asWritten": "A supervisor objects to the overlap. David records what the overlap let the client do before judging its cost."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "David asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. David asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "David does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, David does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

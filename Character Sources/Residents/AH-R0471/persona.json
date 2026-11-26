@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0471",
+  "personId": "AH-R0471",
+  "name": "Alec Nielsen",
+  "age": 42,
+  "occupation": "Home help",
+  "home": "Coast Ridge",
+  "episode": "The savings club",
+  "biography": "stories/residents/04/03-the-savings-club.md#ah-r0471",
+  "life": "“I still remember a tune my father tapped instead of naming.” People around the window at Night Shift Donuts know Alec by a small Thursday habit. Alec knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I want the ticket home before my father forgets the songs we sing together.",
+  "appearance": "Alec has a long face and high cheekbones. Look for a cropped cut that shows the shape of the ears. On an ordinary day, the familiar outfit is a mustard canvas overshirt with a pen clipped inside the neckline. In conversation Alec takes off the watch before a long conversation.",
+  "personality": "Alec has a quick wit and an equally quick sense of shame. A joke is often Alec's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To visit the father while they still share the song.",
+  "family": "Sabine Ito is Alec’s cousin. Alec is free to hang up first. Sabine makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The widow's razor*, Sabine says, “I drove the widow here and never asked why the box stayed in her lap.”",
+  "connections": "Aubrey Ahmed. They price tickets going in opposite directions for two family reunions.",
+  "familyIds": [
+    "AH-R0409"
+  ],
+  "connectionIds": [
+    "AH-R0478"
+  ],
+  "reactions": [
+    {
+      "situation": "The club draws the name of someone who cannot travel",
+      "response": "Alec lets the winner describe where they actually want the money to go.",
+      "asWritten": "The club draws the name of someone who cannot travel. Alec lets the winner describe where they actually want the money to go."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Alec moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Alec moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Alec seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Alec seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

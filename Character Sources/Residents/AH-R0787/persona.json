@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0787",
+  "personId": "ah-pd-109",
+  "name": "Nia Brooks",
+  "age": 47,
+  "occupation": "Metro SWAT officer",
+  "home": "Coast Ridge",
+  "episode": "The Saturday swap",
+  "biography": "stories/residents/06/04-the-saturday-swap.md#ah-r0787",
+  "life": "“I still remember singing at a service for someone who disliked me.” People around the brick passage off the shop row know Nia by a small Friday habit. Nia takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I need to sing at a funeral. The man we're burying once complained about my conduct, and he was right.",
+  "appearance": "Nia has a center part and straight chestnut hair, a wide brow and a narrow jaw, and a favorite piece of clothing, a plum-colored cardigan. It usually goes with a watch on a cracked leather band. When somebody else has the floor, Nia counts on the side of one finger where hardly anybody notices.",
+  "personality": "Nia never tires of being shown how somebody makes a living. Nia can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To sing at the funeral even if a colleague asks why.",
+  "family": "Riley Fox is Nia’s cousin raised in the same household. Nia sets the time to leave. Riley picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The empty drum stool*, Riley says, “I was the usual replacement and nobody called.”",
+  "connections": "Inez Park. A funeral slot is covered using one of the unwanted Saturdays still on the informal tally.",
+  "familyIds": [
+    "AH-R0429"
+  ],
+  "connectionIds": [
+    "AH-R0785"
+  ],
+  "reactions": [
+    {
+      "situation": "A watch swap falls through overnight",
+      "response": "Nia tells the households relying on the swap before looking for a replacement.",
+      "asWritten": "A watch swap falls through overnight. Nia tells the households relying on the swap before looking for a replacement."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Nia offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Nia offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Nia may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Nia may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

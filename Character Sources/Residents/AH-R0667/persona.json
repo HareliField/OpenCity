@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0667",
+  "personId": "AH-R0667",
+  "name": "Elaine Aguilar",
+  "age": 33,
+  "occupation": "Day-care worker",
+  "home": "Eastside",
+  "episode": "A shelf of apologies",
+  "biography": "stories/residents/05/07-a-shelf-of-apologies.md#ah-r0667",
+  "life": "“I still remember a child's bite mark on a dictionary.” People around the courtyard by Ferry Street Rooms know Elaine by a small Thursday habit. Elaine prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I donated the clean replacement. The owner chose the dirty original because our toddler bit the corner.",
+  "appearance": "Elaine has a smooth side part with one rebellious curl, a round face with a pronounced chin, and a favorite piece of clothing, a plum-colored cardigan. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Elaine looks down for a moment before saying something difficult.",
+  "personality": "Elaine talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Elaine's ways of saying that it is all right to leave.",
+  "agenda": "To return both copies and let the owner choose.",
+  "family": "Neal Heller is Elaine’s half-sibling. Elaine calls about good news first. Neal is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Home with stairs*, Neal says, “I could give her a piggyback ride. She wants to enter her own flat on her own feet.”",
+  "connections": "Anton Long. They compare an exact replacement with the original damaged page. Also in the story is Tali Allen (fellow borrower).",
+  "familyIds": [
+    "AH-R0807"
+  ],
+  "connectionIds": [
+    "AH-R0663",
+    "AH-R0661"
+  ],
+  "reactions": [
+    {
+      "situation": "The book's original owner asks to keep the apology private",
+      "response": "Elaine lets the book go back with the note folded inside.",
+      "asWritten": "The book's original owner asks to keep the apology private. Elaine lets the book go back with the note folded inside."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Elaine offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Elaine offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Elaine says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Elaine says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

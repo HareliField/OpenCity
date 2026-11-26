@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0216",
+  "personId": "AH-R0216",
+  "name": "Carlo Ueda",
+  "age": 27,
+  "occupation": "Audiobook narrator",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The margin reader",
+  "biography": "stories/residents/02/07-the-margin-reader.md#ah-r0216",
+  "life": "“I recorded my first book in a closet lined with winter coats.” Sunday often includes a stop at Studio Boulevard, where Carlo waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "My dad hated the book but loved the notes. I'm recording just the margins for his walks.",
+  "appearance": "Carlo has brown hair pinned away from the temples, a crooked front tooth visible when laughing, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a partly rubbed-away embroidered initial. When somebody else has the floor, Carlo counts on the side of one finger where hardly anybody notices.",
+  "personality": "Carlo has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To record a version for a father who walks while listening.",
+  "family": "Daphne Perez is Carlo’s parent’s cousin. Carlo makes the call. Daphne is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Two birthdays in one ward*, Daphne says, “I dealt the first hand and lost to a woman I used to supervise on night shift.”",
+  "connections": "Fiona Nord. They turn a long argument in pencil into something an older reader can hear aloud.",
+  "familyIds": [
+    "AH-R1404"
+  ],
+  "connectionIds": [
+    "AH-R0212"
+  ],
+  "reactions": [
+    {
+      "situation": "Two people remember writing the same line",
+      "response": "Carlo lets both readers identify the line privately before adding a name.",
+      "asWritten": "Two people remember writing the same line. Carlo lets both readers identify the line privately before adding a name."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Carlo writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Carlo writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Carlo explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Carlo explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

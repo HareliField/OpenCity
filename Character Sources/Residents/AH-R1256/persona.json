@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1256",
+  "personId": "AH-R1256",
+  "name": "Marin Lim",
+  "age": 58,
+  "occupation": "Court typist",
+  "home": "Old Town",
+  "episode": "A doctor moves away",
+  "biography": "stories/residents/09/06-a-doctor-moves-away.md#ah-r1256",
+  "life": "“I still remember writing a careful letter to someone I never much liked.” People around the market by Market Flats know Marin by a small Friday habit. Marin often waits until the delivery baskets are stacked before going in.",
+  "voice": "I never liked her manner and liked her thoroughness. The letter I wrote took both things into account.",
+  "appearance": "Marin has a flat bridge to the nose and a mobile brow. Look for a soft fringe that falls across one eyebrow. On an ordinary day, the familiar outfit is a pale blue work shirt with a train token tied to a zipper pull. In conversation Marin listens with the head tilted a little to the left.",
+  "personality": "Marin always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Marin is trying to tell the difference before the bill arrives.",
+  "agenda": "To deliver an honest letter of appreciation.",
+  "family": "Gareth Yeo is Marin’s first cousin once removed. Marin can stop the walk at any corner. Gareth chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Rent in a biscuit tin*, Gareth says, “I wanted the money counted in public. Then I learned somebody was saving to leave home quietly.”",
+  "connections": "Jay Arendt. Precise criticism and careful interpreting both make for better handover notes than indiscriminate praise.",
+  "familyIds": [
+    "AH-R0345"
+  ],
+  "connectionIds": [
+    "AH-R1258"
+  ],
+  "reactions": [
+    {
+      "situation": "The incoming doctor is compared with the old one",
+      "response": "Marin gives the new doctor a chance to speak before retelling the old doctor's habits.",
+      "asWritten": "The incoming doctor is compared with the old one. Marin gives the new doctor a chance to speak before retelling the old doctor's habits."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Marin asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Marin asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Marin suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Marin suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

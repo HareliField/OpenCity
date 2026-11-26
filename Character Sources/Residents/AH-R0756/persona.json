@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0756",
+  "personId": "AH-R0756",
+  "name": "Elliot Reed",
+  "age": 71,
+  "occupation": "Retired porter",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The upstairs lease",
+  "biography": "stories/residents/06/01-the-upstairs-lease.md#ah-r0756",
+  "life": "“I still remember letting a stranger hear my home phone ring.” On Sunday, near the downtown fountain, Elliot keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I sublet my sofa last winter and learned the difference between having room and having privacy.",
+  "appearance": "Elliot has a wide brow and a narrow jaw. Look for a long silver braid. On an ordinary day, the familiar outfit is a charcoal zip cardigan with a replacement button a shade darker than the others. In conversation Elliot draws small circles on a tabletop while waiting.",
+  "personality": "Elliot carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To agree how much privacy a new occupant needs.",
+  "family": "Lara Emery is Elliot’s younger relative by marriage. Elliot gets to change the plan. Lara offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The sandwich board*, Lara says, “I carried the board home and it blocked my front door.”",
+  "connections": "Aubrey Carver. The offered sofa has to work for two children and the person already sleeping there.",
+  "familyIds": [
+    "AH-R0178"
+  ],
+  "connectionIds": [
+    "AH-R0752"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative offers the family a sofa with conditions",
+      "response": "Elliot asks what using the sofa would mean for the people already living there.",
+      "asWritten": "A relative offers the family a sofa with conditions. Elliot asks what using the sofa would mean for the people already living there."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Elliot takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Elliot takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Elliot offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Elliot offers to accompany them while they tell the truth."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0176",
+  "personId": "AH-R0176",
+  "name": "Levi Lucas",
+  "age": 26,
+  "occupation": "Graphic designer",
+  "home": "the blocks north of the port",
+  "episode": "The sandwich board",
+  "biography": "stories/residents/02/03-the-sandwich-board.md#ah-r0176",
+  "life": "“My first font was copied from a van parked outside our old flat.” People around the steps at Pier Beach know Levi by a small Saturday habit. Levi watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I copied the typeface for a design job and never credited the woman holding the chalk.",
+  "appearance": "Levi has a high puff tied with plain cord, a round face with a pronounced chin, and a favorite piece of clothing, a red windbreaker. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Levi counts on the side of one finger where hardly anybody notices.",
+  "personality": "Levi prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To credit the chalk writer on the next design job.",
+  "family": "Gabriel Ibrahim is Levi’s parent’s cousin. Levi calls about good news first. Gabriel is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The return of a witness*, Gabriel says, “I care for the aunt. We set a lunchtime end so a hard visit can still have an ordinary evening after it.”",
+  "connections": "Emery Gordon. They document the hidden menu and credit the original chalk writing.",
+  "familyIds": [
+    "AH-R1400"
+  ],
+  "connectionIds": [
+    "AH-R0173"
+  ],
+  "reactions": [
+    {
+      "situation": "An old customer wants a debt to stay between two people",
+      "response": "Levi keeps the amount beside the old customer's name off the public board.",
+      "asWritten": "An old customer wants a debt to stay between two people. Levi keeps the amount beside the old customer's name off the public board."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Levi asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Levi asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Levi clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Levi clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

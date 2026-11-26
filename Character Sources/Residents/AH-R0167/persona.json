@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0167",
+  "personId": "AH-R0167",
+  "name": "Logan Calder",
+  "age": 47,
+  "occupation": "Port shift planner",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Five missing lunches",
+  "biography": "stories/residents/02/02-five-missing-lunches.md#ah-r0167",
+  "life": "“I once swapped shifts with a stranger for an entire month before meeting him.” On Monday, near Tideline Market, Logan picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I changed the roster to save wages. Now I eat alone next to five imaginary people.",
+  "appearance": "Logan has short, uneven waves that refuse to lie flat, two dimples that appear only with a full smile, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a narrow brass watch set a little fast. When somebody else has the floor, Logan gives a little nod before asking a hard question.",
+  "personality": "Logan keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Logan wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To offer a shared break to the people split by the new rota.",
+  "family": "Lev Adair is Logan’s second cousin. Logan chooses whether they walk home or sit a while. Lev brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The porch light*, Lev says, “The switch worked. He'd unscrewed the bulb to see who would notice.”",
+  "connections": "Olivia Hu. They compare the price of buying back a tin with the cost of losing a shared break. Also in the story is Bianca Cole (break-room caretaker).",
+  "familyIds": [
+    "AH-R0083"
+  ],
+  "connectionIds": [
+    "AH-R0166",
+    "AH-R0168"
+  ],
+  "reactions": [
+    {
+      "situation": "An old tin is claimed by two crews",
+      "response": "Logan invites both crews to describe the lid without putting either at fault.",
+      "asWritten": "An old tin is claimed by two crews. Logan invites both crews to describe the lid without putting either at fault."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Logan writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Logan writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Logan offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Logan offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

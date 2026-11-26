@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1249",
+  "personId": "AH-R1249",
+  "name": "Hamish Mann",
+  "age": 45,
+  "occupation": "Cook",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A clean coat for court",
+  "biography": "stories/residents/09/05-a-clean-coat-for-court.md#ah-r1249",
+  "life": "“I still remember moving a chair closer in a room full of strangers.” Saturday often includes a stop at Juniper Street, where Hamish knows which of the west-side porches has a seat in the shade.",
+  "voice": "I had planned to wait outside. Seeing the lender sit alone made me move one chair closer.",
+  "appearance": "Away from the heat of the kitchen, look for a red windbreaker and a replacement button a shade darker than the others. Hamish has a long face and high cheekbones, with a center part and straight chestnut hair. Hamish looks toward the door whenever a name is called during a conversation.",
+  "personality": "Hamish has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To offer the lender quiet company inside.",
+  "family": "Kathleen Roy is Hamish’s cousin. Hamish gets to change the plan. Kathleen offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The uniform money*, Kathleen says, “I earned the uniform money washing hotel sheets.”",
+  "connections": "Magdalena Zhang. Someone sitting beside the lender and the person returning his coat can spare him a solitary wait.",
+  "familyIds": [
+    "AH-R0901"
+  ],
+  "connectionIds": [
+    "AH-R1250"
+  ],
+  "reactions": [
+    {
+      "situation": "A stranger asks why the lender came to court",
+      "response": "Hamish lets the lender tell or withhold the coat's history.",
+      "asWritten": "A stranger asks why the lender came to court. Hamish lets the lender tell or withhold the coat's history."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Hamish stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Hamish stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Hamish says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Hamish says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

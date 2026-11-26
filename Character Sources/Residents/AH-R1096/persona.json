@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1096",
+  "personId": "AH-R1096",
+  "name": "Jody Dunn",
+  "age": 27,
+  "occupation": "Street drug dealer",
+  "home": "the western residential streets",
+  "episode": "The boy on the corner",
+  "biography": "stories/residents/08/05-the-boy-on-the-corner.md#ah-r1096",
+  "life": "“I still remember a friend becoming inconvenient the day he needed a favor.” Saturday often includes a stop at Maré Coffee, where Jody likes the table where people coming off shift stop checking the time.",
+  "voice": "I sell drugs too. This family crisis exposes how little loyalty there is when a friend stops being useful.",
+  "appearance": "Jody is easy to recognize by dark brown curls cut close behind the ears and an aquiline nose and a square chin. Usually dressed in an unlined tan jacket with a pressed flower kept in the clear back of a phone case, Jody raises one eyebrow long before saying yes when listening.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Jody takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To decide what loyalty costs after a friend stops selling.",
+  "family": "Noel Wade is Jody’s second cousin. Jody knows which ones can be shared. Noel keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Closing soup*, Noel says, “I count what goes in because somebody eating with us has allergies.”",
+  "connections": "Clyde Starr. A school play gives another dealer a concrete reason to cover for a brother who needs to attend.",
+  "familyIds": [
+    "AH-R0546"
+  ],
+  "connectionIds": [
+    "AH-R1100"
+  ],
+  "reactions": [
+    {
+      "situation": "His younger brother asks what he delivers for a living",
+      "response": "Jody lets the older brother choose honest words the younger boy can understand.",
+      "asWritten": "His younger brother asks what he delivers for a living. Jody lets the older brother choose honest words the younger boy can understand."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Jody offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Jody offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Jody asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Jody asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

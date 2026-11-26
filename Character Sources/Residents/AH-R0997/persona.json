@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0997",
+  "personId": "AH-R0997",
+  "name": "Gerard Garza",
+  "age": 60,
+  "occupation": "Former hotel steward",
+  "home": "Midtown",
+  "episode": "An old restaurant debt",
+  "biography": "stories/residents/07/10-an-old-restaurant-debt.md#ah-r0997",
+  "life": "“I still remember coming home in somebody else's mourning coat.” Saturday often includes a stop at the corner outside Coastal Barber, where Gerard usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I lent the family my black coat and got the wrong one back. We recognized the lining over lunch.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a pen clipped inside the neckline. Gerard has fine brows over wide-set eyes, with short white hair and darker eyebrows. Gerard starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Gerard is fond of ambitious ideas and deeply suspicious of grand openings. The question Gerard asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To return the borrowed mourning coat.",
+  "family": "Miriam Lim is Gerard’s cousin. Gerard brings the paper and a pen. Miriam decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *An empty dedication*, Miriam says, “I taught the novelist to read. My favorite thing she wrote is still a vulgar note passed at school.”",
+  "connections": "Lars Tang. One exchange returns a coat, another passes down the old knowledge of carving.",
+  "familyIds": [
+    "AH-R1416"
+  ],
+  "connectionIds": [
+    "AH-R1000"
+  ],
+  "reactions": [
+    {
+      "situation": "A family returns to settle the old wake invoice",
+      "response": "Gerard brings out the old book and lets the family say how they want the payment recorded.",
+      "asWritten": "A family returns to settle the old wake invoice. Gerard brings out the old book and lets the family say how they want the payment recorded."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Gerard walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Gerard walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Gerard accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Gerard accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0401",
+  "personId": "AH-R0401",
+  "name": "Jamie Jiang",
+  "age": 70,
+  "occupation": "Retired ship cook",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The widow's razor",
+  "biography": "stories/residents/03/11-the-widow-s-razor.md#ah-r0401",
+  "life": "“I still remember a barber warming the handle before passing it over.” Saturday often includes a stop at the corner by Juniper Tailor, where Jamie looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I was the last customer she shaved. I asked the widow why there was still a little soap in the hinge.",
+  "appearance": "Jamie has two dimples that appear only with a full smile. Look for a gray streak running back from the forehead. Away from the heat of the kitchen, the familiar outfit is a mustard canvas overshirt with a stitched row of blue crosses along an old repair. In conversation Jamie gathers both sleeves neatly before settling in.",
+  "personality": "Jamie thinks best while walking. Sitting beneath someone's office clock makes Jamie sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To ask the widow about the last trace of soap.",
+  "family": "Gareth Parker is Jamie’s younger cousin. Jamie chooses an ordinary story to tell. Gareth asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The day sailor's divorce*, Gareth says, “I don't want the boat. I want the one time a week my son talks to me without looking down.”",
+  "connections": "Jo March. A last shave and a first chance to barber belong to the widow's account of the razor.",
+  "familyIds": [
+    "AH-R1041"
+  ],
+  "connectionIds": [
+    "AH-R0404"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer makes a high offer for the old razor",
+      "response": "Jamie lets the widow hear the price privately and keep the box in hand.",
+      "asWritten": "A buyer makes a high offer for the old razor. Jamie lets the widow hear the price privately and keep the box in hand."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Jamie gives up their own space if possible and asks the passengers who arrived first to choose what happens next.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Jamie gives up their own space if possible and asks the passengers who arrived first to choose what happens next."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Jamie asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Jamie asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

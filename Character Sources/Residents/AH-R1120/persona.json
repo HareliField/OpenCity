@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1120",
+  "personId": "AH-R1120",
+  "name": "Pat Garrett",
+  "age": 74,
+  "occupation": "Retired diarist",
+  "home": "the western residential streets",
+  "episode": "A prize nobody entered",
+  "biography": "stories/residents/08/07-a-prize-nobody-entered.md#ah-r1120",
+  "life": "“I still remember writing a diary through six house moves.” On Wednesday, near the blocks below Foundry Lofts, Pat checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I kept a diary nobody read for sixty years. I would like to enter mine under my own steam.",
+  "appearance": "Pat has salt-and-pepper curls, a crooked front tooth visible when laughing, and a favorite piece of clothing, a cream pullover. It usually goes with a replacement button a shade darker than the others. When somebody else has the floor, Pat rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Pat uses precise names for tools and very approximate names for feelings. People who know Pat well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To submit a diary by personal choice.",
+  "family": "Graham Jackson is Pat’s cousin. Pat is free to hang up first. Graham makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Rent in a biscuit tin*, Graham says, “The handwriting on my envelope is my late wife's.”",
+  "connections": "Iva Hayes. An older diarist and a translator compare what genuinely consenting to publication feels like.",
+  "familyIds": [
+    "AH-R0343"
+  ],
+  "connectionIds": [
+    "AH-R1117"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants the manuscript returned unopened",
+      "response": "Pat returns the pages privately without treating keeping them closed as a verdict on the work.",
+      "asWritten": "A relative wants the manuscript returned unopened. Pat returns the pages privately without treating keeping them closed as a verdict on the work."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Pat brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Pat brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Pat brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Pat brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

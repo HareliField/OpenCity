@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1053",
+  "personId": "AH-R1053",
+  "name": "Toby Miles",
+  "age": 33,
+  "occupation": "Laundry closer",
+  "home": "Eastside",
+  "episode": "Reopening at six",
+  "biography": "stories/residents/08/01-reopening-at-six.md#ah-r1053",
+  "life": "“I still remember watching my last train leave from a shop doorway.” Saturday often includes a stop at the downtown fountain, where Toby keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I close the shop. The last train leaves thirteen minutes before the last dryer stops.",
+  "appearance": "Toby is easy to recognize by a soft fringe that falls across one eyebrow and heavy brows and an unusually delicate jaw. Usually dressed in a dark green knitted vest with a pen clipped inside the neckline, Toby squares up pieces of paper while thinking when listening.",
+  "personality": "Toby prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To leave enough time to catch the last train.",
+  "family": "Casey Zhou is Toby’s cousin raised in the same household. Toby checks the date twice. Casey brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The school photograph that travels*, Casey says, “I marked the bakery worker who fed me on the way in.”",
+  "connections": "Daniel Fraser. Closing time affects both the last train and the youngest member of staff. Also in the story is Jean King (shop leaseholder).",
+  "familyIds": [
+    "AH-R1321"
+  ],
+  "connectionIds": [
+    "AH-R1060",
+    "AH-R1058"
+  ],
+  "reactions": [
+    {
+      "situation": "The laundromat chooses between dawn and late-night opening",
+      "response": "Toby asks which households lose their only usable wash time under either plan.",
+      "asWritten": "The laundromat chooses between dawn and late-night opening. Toby asks which households lose their only usable wash time under either plan."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Toby asks what the friend actually said last time and checks whether anybody is expecting them at home.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Toby asks what the friend actually said last time and checks whether anybody is expecting them at home."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Toby clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Toby clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

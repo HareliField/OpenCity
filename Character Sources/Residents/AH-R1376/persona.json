@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1376",
+  "personId": "AH-R1376",
+  "name": "John Machado",
+  "age": 70,
+  "occupation": "Retired developer",
+  "home": "Eastside",
+  "episode": "The gift nobody wants",
+  "biography": "stories/residents/10/03-the-gift-nobody-wants.md#ah-r1376",
+  "life": "“I still remember watching my partner finally move out of his father's office.” People around Paper & Pine Books know John by a small Thursday habit. John starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I am the father's old partner and I remember what he sacrificed to get out from under his own father.",
+  "appearance": "John is easy to recognize by silver temples and a dark fringe and one cheek that creases before the other. Usually dressed in a striped cotton shirt with a folded shopping list secured by a miniature clip, John listens with the head tilted a little to the left when listening.",
+  "personality": "John enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To remind the wealthy father why he wanted independence.",
+  "family": "Isaac Mendez is John’s younger relative by marriage. John knows which ones can be shared. Isaac keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *A room above the dryers*, Isaac says, “I want to draw somebody who dislikes me. The worker offered to sit after I explained the complaint I made.”",
+  "connections": "Allen Clay. An early rent receipt substantiates a business partner's account of the father's own struggle for independence.",
+  "familyIds": [
+    "AH-R1208"
+  ],
+  "connectionIds": [
+    "AH-R1380"
+  ],
+  "reactions": [
+    {
+      "situation": "A tenant hears about the building sale secondhand",
+      "response": "John gives the tenant a reliable contact for the sale information and a real date to expect an answer.",
+      "asWritten": "A tenant hears about the building sale secondhand. John gives the tenant a reliable contact for the sale information and a real date to expect an answer."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "John keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. John keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "John puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, John puts the deal away and suggests a walk."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0016",
+  "personId": "AH-R0016",
+  "name": "Willa True",
+  "age": 49,
+  "occupation": "Night watchkeeper",
+  "home": "Old Town",
+  "episode": "A chair on the quay",
+  "biography": "stories/residents/01/02-a-chair-on-the-quay.md#ah-r0016",
+  "life": "A night in lost property taught Willa that the people most comfortable claiming a thing often know least about it. She lets quieter owners describe one private detail before she brings anything out from behind the door. People around the approach to Seabright Court know Willa by a small Sunday habit. Willa likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "Somebody once took my mother's effects from a loading bay marked free. I moved the chair indoors and made the first person claiming it tell me what was under the seat.",
+  "appearance": "On an ordinary day, look for a pale blue work shirt and a replacement button a shade darker than the others. Willa has two dimples that appear only with a full smile, with a soft fringe that falls across one eyebrow. Willa gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Willa has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To establish ownership from a memory somebody could never learn from a photograph.",
+  "family": "Anita Gill is Willa’s stepsibling. Willa calls about good news first. Anita is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The engine lullaby*, Anita says, “I recorded it with my wedding tape by mistake.”",
+  "connections": "Bettine Cross. They disagree about moving the chair indoors before the ship's crew gets an answer.",
+  "familyIds": [
+    "AH-R0597"
+  ],
+  "connectionIds": [
+    "AH-R0012"
+  ],
+  "reactions": [
+    {
+      "situation": "A farewell photographer asks everyone to move aside",
+      "response": "Willa checks that the granddaughter can see the chair before people start arranging the adults.",
+      "asWritten": "A farewell photographer asks everyone to move aside. Willa checks that the granddaughter can see the chair before people start arranging the adults."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Willa asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Willa asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Willa asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Willa asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

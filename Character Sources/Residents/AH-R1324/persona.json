@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1324",
+  "personId": "AH-R1324",
+  "name": "Quinn Avery",
+  "age": 16,
+  "occupation": "Secondary pupil",
+  "home": "Midtown",
+  "episode": "The school photograph that travels",
+  "biography": "stories/residents/09/13-the-school-photograph-that-travels.md#ah-r1324",
+  "life": "“I still remember folding a class photo into the bag I packed to leave.” On Monday, near Breakwater Way, Quinn stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I am moving to another coast and the picture is proof there was a time when my whole world fitted on two rows.",
+  "appearance": "Quinn has a long face and high cheekbones. Look for black hair twisted into a small knot. Outside school, the familiar outfit is a rust-colored canvas coat with a stitched row of blue crosses along an old repair. In conversation Quinn presses the lips together to keep a smile in.",
+  "personality": "Quinn is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Quinn is by the number of tiny errands suddenly being done.",
+  "agenda": "To carry an ordinary school-day memory across the water.",
+  "family": "Cedric Arrieta is Quinn’s older cousin. Quinn sets the time to leave. Cedric picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A wall of birthdays*, Cedric says, “I took down one sheet too fast and split a date.”",
+  "connections": "Casey Zhou. The pupil leaving the school and the classmate leaving for another coast choose copies for different reasons.",
+  "familyIds": [
+    "AH-R0236"
+  ],
+  "connectionIds": [
+    "AH-R1321"
+  ],
+  "reactions": [
+    {
+      "situation": "A recipient wants to say thanks without being pictured",
+      "response": "Quinn offers a written reply or an ordinary visit without requiring a photograph in return.",
+      "asWritten": "A recipient wants to say thanks without being pictured. Quinn offers a written reply or an ordinary visit without requiring a photograph in return."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Quinn takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Quinn takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Quinn agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Quinn agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

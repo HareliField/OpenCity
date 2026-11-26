@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0031",
+  "personId": "ah-pd-101",
+  "name": "Marisol Vega",
+  "age": 39,
+  "occupation": "Patrol officer",
+  "home": "Coast Ridge",
+  "episode": "The wrong bicycle",
+  "biography": "stories/residents/01/04-the-wrong-bicycle.md#ah-r0031",
+  "life": "Marisol took a paper route as a kid to pay for punctures. The station has three forms for a bicycle and none asks what it feels like under its rider. She wants the return desk to ask that question before asking for a signature. People around Breakwater Way know Marisol by a small Friday habit. Marisol stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "My first bicycle belonged to three cousins before me. I thought recognizing a color was enough. I called both families from my own desk so neither would have to queue at the station again.",
+  "appearance": "Marisol is easy to recognize by short black hair swept back and a flat bridge to the nose and a mobile brow. Usually dressed in a cream pullover with a knotted piece of sail thread on a key ring, Marisol steadies a cup with both hands while listening when listening.",
+  "personality": "Marisol treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To give both riders one uninterrupted chance to identify their property.",
+  "family": "Cory Walker is Marisol’s parent’s cousin. Marisol saves a place. Cory chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The trust with a typo*, Cory says, “I knew the founder when she couldn't afford the exam.”",
+  "connections": "Hollis Fry. They meet a second time at the property counter to compare what the wrong saddle cost.",
+  "familyIds": [
+    "AH-R0624"
+  ],
+  "connectionIds": [
+    "AH-R0032"
+  ],
+  "reactions": [
+    {
+      "situation": "A child's account contradicts the adult at the counter",
+      "response": "Marisol lets the child finish describing the bicycle and asks to hear the bell.",
+      "asWritten": "A child's account contradicts the adult at the counter. Marisol lets the child finish describing the bicycle and asks to hear the bell."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Marisol agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Marisol agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Marisol changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Marisol changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

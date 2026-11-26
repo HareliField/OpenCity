@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0830",
+  "personId": "AH-R0830",
+  "name": "Tali Peters",
+  "age": 36,
+  "occupation": "Beach activity coach",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Summer staff",
+  "biography": "stories/residents/06/08-summer-staff.md#ah-r0830",
+  "life": "“I still remember packing equipment while my child counted the cork floats.” On Saturday, near Harbour Bakery, Tali buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I never told my kid this was a seasonal job. I asked him to help me take the name off the hut.",
+  "appearance": "Tali has fine brows over wide-set eyes. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is an unlined tan jacket with a copper-colored clasp that has been repaired by hand. In conversation Tali takes off the watch before a long conversation.",
+  "personality": "Tali can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To tell the child how seasonal work actually ends.",
+  "family": "Sofia Ghosh is Tali’s stepsibling. Tali puts the kettle on. Sofia chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The release address*, Sofia says, “I got out first and know the shock of seeing new windows in old walls.”",
+  "connections": "Ida Gupta. The younger workers get a direct explanation about the huts closing before school starts.",
+  "familyIds": [
+    "AH-R0945"
+  ],
+  "connectionIds": [
+    "AH-R0822"
+  ],
+  "reactions": [
+    {
+      "situation": "Two workers are offered one extra paid week",
+      "response": "Tali asks both workers what commitments they made on the strength of the old end date.",
+      "asWritten": "Two workers are offered one extra paid week. Tali asks both workers what commitments they made on the strength of the old end date."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Tali tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Tali tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Tali asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Tali asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

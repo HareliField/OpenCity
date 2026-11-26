@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0527",
+  "personId": "AH-R0527",
+  "name": "Lara Ng",
+  "age": 29,
+  "occupation": "Beach concession attendant",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The rescue hut mural",
+  "biography": "stories/residents/04/08-the-rescue-hut-mural.md#ah-r0527",
+  "life": "“I still remember a roll of artworks hidden under the beach cart.” On Tuesday, near Studio Boulevard, Lara waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I found the sketch folded into a beach umbrella. It shows a second figure we've never seen.",
+  "appearance": "Lara has an aquiline nose and a square chin. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is a narrow-striped sweater with a thin silver ring worn on a cord. In conversation Lara counts on the side of one finger where hardly anybody notices.",
+  "personality": "Lara is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To recover the second figure from the umbrella sketch.",
+  "family": "Ana Powell is Lara’s second cousin. Lara chooses the familiar route. Ana can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The crane shadow*, Ana says, “I missed the moment while feeding my baby. Next spring I want her to see what I missed.”",
+  "connections": "Eden Diaz. A lower view of the mural makes the possible second figure easier to see.",
+  "familyIds": [
+    "AH-R0612"
+  ],
+  "connectionIds": [
+    "AH-R0521"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor wants the painted figure made easier to recognize",
+      "response": "Lara asks the original model which part has been misunderstood.",
+      "asWritten": "A visitor wants the painted figure made easier to recognize. Lara asks the original model which part has been misunderstood."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Lara asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Lara asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Lara helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Lara helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

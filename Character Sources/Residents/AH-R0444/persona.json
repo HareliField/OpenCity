@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0444",
+  "personId": "AH-R0444",
+  "name": "Shay Stein",
+  "age": 55,
+  "occupation": "Clock dealer",
+  "home": "Midtown",
+  "episode": "The tide clock",
+  "biography": "stories/residents/03/15-the-tide-clock.md#ah-r0444",
+  "life": "“I still remember a customer asking for a clock nobody could hear.” People around the bank steps know Shay by a small Monday habit. Shay takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I sold the clock as a conversation piece. I never thought anyone would put it over the time cards.",
+  "appearance": "Shay has a soft fringe that falls across one eyebrow, a wide brow and a narrow jaw, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a comb in a sleeve sewn into the lining. When somebody else has the floor, Shay takes off the watch before a long conversation.",
+  "personality": "Shay never tires of being shown how somebody makes a living. Shay can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To supply a notice about what the dial measures.",
+  "family": "Lina King is Shay’s half-sibling. Shay calls back when there is finally a little privacy. Lina leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The margin reader*, Lina says, “The copy I could afford was missing chapter eight.”",
+  "connections": "Adele Gomez. The returning collector gets the true account of why a dealer sold the clock.",
+  "familyIds": [
+    "AH-R0217"
+  ],
+  "connectionIds": [
+    "AH-R0450"
+  ],
+  "reactions": [
+    {
+      "situation": "The owner considers taking the tide clock down",
+      "response": "Shay asks the workers whether a second, clearly labeled clock would solve the actual problem.",
+      "asWritten": "The owner considers taking the tide clock down. Shay asks the workers whether a second, clearly labeled clock would solve the actual problem."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Shay asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Shay asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Shay may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Shay may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

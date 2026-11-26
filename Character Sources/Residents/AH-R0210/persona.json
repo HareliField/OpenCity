@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0210",
+  "personId": "AH-R0210",
+  "name": "Katherine Lowe",
+  "age": 31,
+  "occupation": "Lift maintenance apprentice",
+  "home": "Eastside",
+  "episode": "A red mitten",
+  "biography": "stories/residents/02/06-a-red-mitten.md#ah-r0210",
+  "life": "“I repaired a stuck hospital lift on the morning my daughter was born upstairs.” Thursday often includes a stop at the brick passage off the shop row, where Katherine takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I found the other mitten in the lift. I've put the pair on a cord long enough to cover two chairs.",
+  "appearance": "Katherine is easy to recognize by a swept fringe and a closely clipped nape and a strong profile and a little space between the front teeth. Usually dressed in a dark green knitted vest with a thin silver ring worn on a cord, Katherine starts to lift a hand, then waits to be invited to speak when listening.",
+  "personality": "Katherine thinks best while walking. Sitting beneath someone's office clock makes Katherine sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To put the two mittens on a cord long enough to share.",
+  "family": "Noel Holmes is Katherine’s older cousin. Katherine remembers the birthdays. Noel asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The spare spectacles*, Noel says, “I sat beside her because my own witness statement had cost me a friend.”",
+  "connections": "Allen Marin. They reunite the pair and choose the cord between them.",
+  "familyIds": [
+    "AH-R0340"
+  ],
+  "connectionIds": [
+    "AH-R0203"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient wants the chair kept empty for a while",
+      "response": "Katherine saves the chair for a short agreed interval and checks who else needs it.",
+      "asWritten": "A patient wants the chair kept empty for a while. Katherine saves the chair for a short agreed interval and checks who else needs it."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Katherine suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Katherine suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Katherine asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Katherine asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0125",
+  "personId": "AH-R0125",
+  "name": "Stevie Dain",
+  "age": 16,
+  "occupation": "Teenage drummer",
+  "home": "Old Town",
+  "episode": "The borrowed bass",
+  "biography": "stories/residents/01/13-the-borrowed-bass.md#ah-r0125",
+  "life": "Stevie plays loud enough to feel brave. The quiet measure while the group waits for a call is the one she has practiced least. She wants the other acts to know her for something beyond volume. On Friday, near Lighthouse Cove, Stevie takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "My friend thinks an audition happens once. I got the other acts to agree to go first. Now I have to play quietly enough for the phone to ring.",
+  "appearance": "Stevie is easy to recognize by a smooth side part with one rebellious curl and a scattering of freckles across the bridge of the nose. Usually dressed in a boxy denim jacket with a comb in a sleeve sewn into the lining, Stevie looks toward the door whenever a name is called when listening.",
+  "personality": "Stevie enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To secure a later time in the audition order for the full band.",
+  "family": "Amos Choi is Stevie’s older cousin. Stevie chooses an ordinary story to tell. Amos asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The worker who couldn't read the joke*, Amos says, “I thought the joke was about me because of a word that means something else at home.”",
+  "connections": "Cory Halevi (bandmate). The audition only stays open if the drummer can persuade the other musicians to change their order.",
+  "familyIds": [
+    "AH-R1216"
+  ],
+  "connectionIds": [
+    "AH-R0121"
+  ],
+  "reactions": [
+    {
+      "situation": "Somebody says the pawn ticket proves the bass was stolen",
+      "response": "Stevie asks to see whether the ticket had already been settled.",
+      "asWritten": "Somebody says the pawn ticket proves the bass was stolen. Stevie asks to see whether the ticket had already been settled."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Stevie asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Stevie asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Stevie puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Stevie puts the deal away and suggests a walk."
+    }
+  ]
+}

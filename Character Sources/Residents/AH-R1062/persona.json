@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1062",
+  "personId": "AH-R1062",
+  "name": "Darcy Lewis",
+  "age": 51,
+  "occupation": "Fisherman",
+  "home": "Old Town",
+  "episode": "Land without cranes",
+  "biography": "stories/residents/08/02-land-without-cranes.md#ah-r1062",
+  "life": "“I still remember moving my old livelihood from a shed to a locker.” Sunday often includes a stop at Breakwater Way, where Darcy stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I stored my first fishing gear in that shed. I can afford a new locker and my apprentice can't.",
+  "appearance": "Darcy has a loose dark braid, two dimples that appear only with a full smile, and a favorite piece of clothing, a cream pullover. It usually goes with a tiny red thread tied through the lowest buttonhole. When somebody else has the floor, Darcy listens with the head tilted a little to the left.",
+  "personality": "Darcy finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To keep affordable storage for apprentices.",
+  "family": "Georgia Kwan is Darcy’s stepsibling. In this family birthdays are measured by the breakfast somebody requests. A person choosing plain toast or an elaborate fried meal gets the same fuss for one morning. Darcy writes down the exact order. Asked about *The margin reader*, Georgia says, “I need one clean copy for class. I traded it away because the messy one explains why anybody reads.”",
+  "connections": "Maria Kent. The apprentice's kit and the informal food cart need to be counted in the space plan.",
+  "familyIds": [
+    "AH-R0219"
+  ],
+  "connectionIds": [
+    "AH-R1067"
+  ],
+  "reactions": [
+    {
+      "situation": "A worker says their job was left out of the consultation",
+      "response": "Darcy records the missing job in the worker's own words for the consultation.",
+      "asWritten": "A worker says their job was left out of the consultation. Darcy records the missing job in the worker's own words for the consultation."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Darcy stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Darcy stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Darcy waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Darcy waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

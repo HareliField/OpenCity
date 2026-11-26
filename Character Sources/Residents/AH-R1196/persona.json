@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1196",
+  "personId": "AH-R1196",
+  "name": "Emery Fields",
+  "age": 52,
+  "occupation": "Marine accountant",
+  "home": "the western residential streets",
+  "episode": "The skipper goes ashore",
+  "biography": "stories/residents/08/15-the-skipper-goes-ashore.md#ah-r1196",
+  "life": "“I still remember balancing winter fuel bills at a kitchen table.” Tuesday often includes a stop at the public end of the South Shore boardwalk, where Emery checks the shade on the benches before deciding how long to stay.",
+  "voice": "I keep marine accounts. She has forgotten more about invoices than our last consultant knew.",
+  "appearance": "Emery is easy to recognize by a loose dark braid and a deep crease beside the mouth when smiling. Usually dressed in a plum-colored cardigan with a seam let out by a narrow strip of contrasting fabric, Emery draws breath as if to speak and lets someone else go first when listening.",
+  "personality": "Emery enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To use the former skipper's invoice knowledge.",
+  "family": "Sage Barclay is Emery’s first cousin once removed. Emery chooses the music. Sage puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The first language*, Sage says, “My grandchild knows words for the city that I don't.”",
+  "connections": "Scout Ames. The boat's owner gets a real office assignment costed by the marine accountant.",
+  "familyIds": [
+    "AH-R0968"
+  ],
+  "connectionIds": [
+    "AH-R1193"
+  ],
+  "reactions": [
+    {
+      "situation": "The new skipper changes the departure routine",
+      "response": "Emery gives the new skipper space to explain the change before measuring it against the former routine.",
+      "asWritten": "The new skipper changes the departure routine. Emery gives the new skipper space to explain the change before measuring it against the former routine."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Emery stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Emery stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Emery puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Emery puts the deal away and suggests a walk."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1024",
+  "personId": "AH-R1024",
+  "name": "Noel Mota",
+  "age": 41,
+  "occupation": "Graduation organizer",
+  "home": "the western residential streets",
+  "episode": "A dance for two fathers",
+  "biography": "stories/residents/07/13-a-dance-for-two-fathers.md#ah-r1024",
+  "life": "“I still remember fitting three family names on one school certificate.” Sunday often includes a stop at the courtyard by Ferry Street Rooms, where Noel prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I organized the ceremony and the printed program only has space for one name.",
+  "appearance": "Noel has a dark undercut with a longer wave on top, an aquiline nose and a square chin, and a favorite piece of clothing, a gray fisher's sweater. It usually goes with one loose pocket corner secured with green thread. When somebody else has the floor, Noel rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Noel has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To print both names on the program.",
+  "family": "Sam Park is Noel’s younger cousin. Noel knows which ones can be shared. Sam keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The fitting mirror*, Sam says, “I rolled the mirror over a threshold and saw our street upside down.”",
+  "connections": "Morgan Day. The ceremony organizer asks the retired author of the rule what it was designed to protect.",
+  "familyIds": [
+    "AH-R0557"
+  ],
+  "connectionIds": [
+    "AH-R1028"
+  ],
+  "reactions": [
+    {
+      "situation": "One of the fathers misses the dance rehearsal",
+      "response": "Noel keeps the missed step available for a quiet practice before the ceremony.",
+      "asWritten": "One of the fathers misses the dance rehearsal. Noel keeps the missed step available for a quiet practice before the ceremony."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Noel waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Noel waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Noel says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Noel says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

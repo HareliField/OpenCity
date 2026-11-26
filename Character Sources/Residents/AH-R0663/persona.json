@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0663",
+  "personId": "AH-R0663",
+  "name": "Anton Long",
+  "age": 58,
+  "occupation": "Coffee seller",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A shelf of apologies",
+  "biography": "stories/residents/05/07-a-shelf-of-apologies.md#ah-r0663",
+  "life": "“I still remember copying an illustration ruined by hot chocolate.” Saturday often includes a stop at the corner by Juniper Tailor, where Anton looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I spilled coffee on page six and copied the page by hand. Thirty years later my hand looks like my mum's.",
+  "appearance": "Anton has one cheek that creases before the other. Look for a loose dark braid. On an ordinary day, the familiar outfit is a soft blue checked shirt with a pair of reading glasses in a cloth sleeve. In conversation Anton draws breath as if to speak and lets someone else go first.",
+  "personality": "Anton has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To show the copied page to the original lender.",
+  "family": "Zara Kang is Anton’s cousin raised in the same household. Anton sets the time to leave. Zara picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The ladder crossing*, Zara says, “My wife stepped between the rungs laughing.”",
+  "connections": "Elaine Aguilar. They compare an exact replacement with the original damaged page.",
+  "familyIds": [
+    "AH-R0567"
+  ],
+  "connectionIds": [
+    "AH-R0667"
+  ],
+  "reactions": [
+    {
+      "situation": "The book's original owner asks to keep the apology private",
+      "response": "Anton lets the book go back with the note folded inside.",
+      "asWritten": "The book's original owner asks to keep the apology private. Anton lets the book go back with the note folded inside."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Anton takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Anton takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Anton explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Anton explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

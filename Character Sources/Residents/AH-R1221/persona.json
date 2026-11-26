@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1221",
+  "personId": "AH-R1221",
+  "name": "Nell Tang",
+  "age": 73,
+  "occupation": "Retired seamstress and homeowner",
+  "home": "Midtown",
+  "episode": "The million-dollar flat",
+  "biography": "stories/residents/09/03-the-million-dollar-flat.md#ah-r1221",
+  "life": "“I still remember making my first mortgage deposit in tailor's chalky shoes.” On Tuesday, near the downtown fountain, Nell keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I can sell for a fortune but can't buy a smaller place anywhere near my sister at these prices.",
+  "appearance": "Nell is easy to recognize by steel-colored hair cut square above the collar and a round face with a pronounced chin. Usually dressed in an old plum windbreaker with a tiny red thread tied through the lowest buttonhole, Nell gathers both sleeves neatly before settling in when listening.",
+  "personality": "Nell loves a well-told anecdote and distrusts the neat ending. The parts Nell remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To stay near the sister without selling away every option.",
+  "family": "Isaac Jensen is Nell’s younger relative by marriage. Nell can stop the walk at any corner. Isaac chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The crash anniversary*, Isaac says, “I was the witness nobody called because I was twelve.”",
+  "connections": "Loretta Osei (sister). The two sisters have to decide where companionship, stairs and ownership intersect. Also in the story is Philip Yu (adult son).",
+  "familyIds": [
+    "AH-R1018"
+  ],
+  "connectionIds": [
+    "AH-R1229",
+    "AH-R1223"
+  ],
+  "reactions": [
+    {
+      "situation": "The homeowner is asked to sell while the market is high",
+      "response": "Nell checks which affordable addresses leave the sister within visiting distance.",
+      "asWritten": "The homeowner is asked to sell while the market is high. Nell checks which affordable addresses leave the sister within visiting distance."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Nell asks the cashier to hold it and lets a claimant identify the writing and amount privately.",
+      "asWritten": "An envelope of wages is found under a café chair. Nell asks the cashier to hold it and lets a claimant identify the writing and amount privately."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Nell includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Nell includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0202",
+  "personId": "AH-R0202",
+  "name": "Dale Nielsen",
+  "age": 34,
+  "occupation": "Parent and school kitchen worker",
+  "home": "Coast Ridge",
+  "episode": "A red mitten",
+  "biography": "stories/residents/02/06-a-red-mitten.md#ah-r0202",
+  "life": "“My son learned the word tomorrow too early for my liking.” Monday often includes a stop at the blocks below Foundry Lofts, where Dale checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "My toddler kept moving it to save a seat for his dad. We told him the truth on the fourth visit.",
+  "appearance": "Away from the heat of the kitchen, look for a brown corduroy jacket and a printed handkerchief folded into the pocket. Dale has a round face with a pronounced chin, with a long plait tucked inside the collar. Dale folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Dale has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To explain the pencil schedule to the child before the next appointment.",
+  "family": "Nina Khan is Dale’s second cousin. Dale saves a place. Nina chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The kitchen without a boss*, Nina says, “I buy breakfast on a night wage. I want these new bosses to remember what two coins used to buy.”",
+  "connections": "Cory Palmer. A saved seat and a child's game account for the mitten's first small journey. Also in the story is Astrid Reed (ward property worker).",
+  "familyIds": [
+    "AH-R1447"
+  ],
+  "connectionIds": [
+    "AH-R0201",
+    "AH-R0208"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient wants the chair kept empty for a while",
+      "response": "Dale saves the chair for a short agreed interval and checks who else needs it.",
+      "asWritten": "A patient wants the chair kept empty for a while. Dale saves the chair for a short agreed interval and checks who else needs it."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Dale suggests one straightforward message without accusations and gives the friend time to answer.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Dale suggests one straightforward message without accusations and gives the friend time to answer."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Dale explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Dale explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1156",
+  "personId": "AH-R1156",
+  "name": "Julius Mitchell",
+  "age": 46,
+  "occupation": "Portrait printer",
+  "home": "Eastside",
+  "episode": "The hair after illness",
+  "biography": "stories/residents/08/11-the-hair-after-illness.md#ah-r1156",
+  "life": "“I still remember printing a picture with the face turned from the lens.” People around Maré Coffee know Julius by a small Tuesday habit. Julius likes the table where people coming off shift stop checking the time.",
+  "voice": "I print portrait cards. I offered one photograph from behind so she could look before sharing it.",
+  "appearance": "Julius has a cropped cut that shows the shape of the ears, a small notch in the left eyebrow, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Julius draws small circles on a tabletop while waiting.",
+  "personality": "Julius reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Julius trusts most.",
+  "agenda": "To give the client a private look at the first portrait.",
+  "family": "Samuel Drew is Julius’s stepsibling. The eldest person in the family used to sign cards with a large unsteady X. Everyone took this as a flourish until she asked someone to teach her the rest of her name. Julius never reads a private paper aloud without asking. Asked about *The empty drum stool*, Samuel says, “I walked away because my wrists hurt. I want the new drummer to know that was a choice, too.”",
+  "connections": "Julius Zhou. The portrait printer and the relative taking the picture agree the first view belongs to the client.",
+  "familyIds": [
+    "AH-R0421"
+  ],
+  "connectionIds": [
+    "AH-R1160"
+  ],
+  "reactions": [
+    {
+      "situation": "The recovering client changes their mind about the wig",
+      "response": "Julius lets the client keep or give away the wig without explaining the change of mind.",
+      "asWritten": "The recovering client changes their mind about the wig. Julius lets the client keep or give away the wig without explaining the change of mind."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Julius tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Julius tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Julius does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Julius does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

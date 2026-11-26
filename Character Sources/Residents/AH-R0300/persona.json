@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0300",
+  "personId": "AH-R0300",
+  "name": "Gloria Smith",
+  "age": 75,
+  "occupation": "Retired cleaner",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A sail cut small",
+  "biography": "stories/residents/02/15-a-sail-cut-small.md#ah-r0300",
+  "life": "“My first passport photograph shows the earrings I sold to pay for the passport.” Tuesday often includes a stop at the corner outside Coastal Barber, where Gloria usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I kept a postage-stamp square. It fits inside the passport I could never afford when that boat was new.",
+  "appearance": "Gloria has silver temples and a dark fringe, an aquiline nose and a square chin, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Gloria rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Gloria feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To keep the little sail square in a passport finally put to use.",
+  "family": "Cecilia Woods is Gloria’s first cousin once removed. Gloria makes room at the table. Cecilia brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Two left slippers*, Cecilia says, “I bought my dad those slippers after he fell.”",
+  "connections": "Daryl Mills. A shorebound neighbor can keep a piece of water as a shade or a passport square.",
+  "familyIds": [
+    "AH-R0651"
+  ],
+  "connectionIds": [
+    "AH-R0293"
+  ],
+  "reactions": [
+    {
+      "situation": "The marina asks to put its name on every finished piece",
+      "response": "Gloria asks the makers whether they want a brand name on what they take home.",
+      "asWritten": "The marina asks to put its name on every finished piece. Gloria asks the makers whether they want a brand name on what they take home."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Gloria asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Gloria asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Gloria lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Gloria lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

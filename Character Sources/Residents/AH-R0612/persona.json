@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0612",
+  "personId": "AH-R0612",
+  "name": "Ana Powell",
+  "age": 36,
+  "occupation": "Parent and rigger",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The crane shadow",
+  "biography": "stories/residents/05/02-the-crane-shadow.md#ah-r0612",
+  "life": "“I still remember the day my baby recognized a gull's call.” Sunday often includes a stop at the blocks below Foundry Lofts, where Ana checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I missed the moment while feeding my baby. Next spring I want her to see what I missed.",
+  "appearance": "Ana is easy to recognize by dark brown curls cut close behind the ears and a wide brow and a narrow jaw. Usually dressed in an olive canvas jacket with a thin silver ring worn on a cord, Ana folds a paper napkin into quarters without noticing when listening.",
+  "personality": "Ana has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To bring the child back next year.",
+  "family": "Lara Ng is Ana’s second cousin. Ana can stop the walk at any corner. Lara chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The rescue hut mural*, Lara says, “I found the sketch folded into a beach umbrella.”",
+  "connections": "Rafael Sloan. A parent waiting through another spring finds company in a new worker learning to look up.",
+  "familyIds": [
+    "AH-R0527"
+  ],
+  "connectionIds": [
+    "AH-R0618"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor reaches the quay too late to see it",
+      "response": "Ana shows the visitor where the shadow fell and when the next chance comes.",
+      "asWritten": "A visitor reaches the quay too late to see it. Ana shows the visitor where the shadow fell and when the next chance comes."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Ana keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Ana keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Ana asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Ana asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1063",
+  "personId": "AH-R1063",
+  "name": "Karina May",
+  "age": 32,
+  "occupation": "Architectural illustrator",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Land without cranes",
+  "biography": "stories/residents/08/02-land-without-cranes.md#ah-r1063",
+  "life": "“I still remember drawing a shop sign for a building nobody had asked to keep.” On Wednesday, near the courtyard by Ferry Street Rooms, Karina prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I draw architectural renderings. I put a worker in mine and realized there'd be no job for the person I drew.",
+  "appearance": "Karina has one cheek that creases before the other. Look for a cropped cut that shows the shape of the ears. On an ordinary day, the familiar outfit is a soft blue checked shirt with a braided bracelet with a single wooden bead. In conversation Karina touches a knuckle to the chin when searching for a word.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To show real jobs in the redevelopment drawings.",
+  "family": "Blake Baker is Karina’s cousin raised in the same household. Karina brings whatever was actually growing or affordable that week. Blake makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The bitter orange*, Blake says, “I'm the new owner. I promised a memorial special before I'd ever tasted what she ate.”",
+  "connections": "Adrian Marsh. The rendering of empty offices omits a dance floor the old steward can still locate.",
+  "familyIds": [
+    "AH-R0245"
+  ],
+  "connectionIds": [
+    "AH-R1069"
+  ],
+  "reactions": [
+    {
+      "situation": "A developer brings a drawing of the finished offices",
+      "response": "Karina asks where existing workers are shown in the finished picture.",
+      "asWritten": "A developer brings a drawing of the finished offices. Karina asks where existing workers are shown in the finished picture."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Karina walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Karina walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Karina listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Karina listens first to the account of how it was actually used."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0537",
+  "personId": "AH-R0537",
+  "name": "Grey Lopez",
+  "age": 35,
+  "occupation": "Bank cashier",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The porch auction",
+  "biography": "stories/residents/04/09-the-porch-auction.md#ah-r0537",
+  "life": "“I still remember counting lit porches from the back of a moving van.” Wednesday often includes a stop at the steps at Pier Beach, where Grey watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I always envied their porch. Buying a chair taught me I liked the people who sat on it more.",
+  "appearance": "Grey has a smooth side part with one rebellious curl, an aquiline nose and a square chin, and a favorite piece of clothing, a plum-colored cardigan. It usually goes with a thin silver ring worn on a cord. When somebody else has the floor, Grey looks down for a moment before saying something difficult.",
+  "personality": "Grey is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To get to know the neighbors after they move.",
+  "family": "Patricia Lang is Grey’s stepsibling. Grey chooses whether to use it. Patricia saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The widow's razor*, Patricia says, “I want to polish just the bit her thumb wore bright.”",
+  "connections": "Laurence Salcedo. A resting place proves more useful than an empty porch someone always envied.",
+  "familyIds": [
+    "AH-R0406"
+  ],
+  "connectionIds": [
+    "AH-R0535"
+  ],
+  "reactions": [
+    {
+      "situation": "Two visitors bid against each other for the porch chair",
+      "response": "Grey asks whether both people want the object itself or a particular memory of it.",
+      "asWritten": "Two visitors bid against each other for the porch chair. Grey asks whether both people want the object itself or a particular memory of it."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Grey offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Grey offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Grey thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Grey thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1440",
+  "personId": "AH-R1440",
+  "name": "Peyton Myers",
+  "age": 53,
+  "occupation": "Deli cook",
+  "home": "Midtown",
+  "episode": "A house divided kindly",
+  "biography": "stories/residents/10/09-a-house-divided-kindly.md#ah-r1440",
+  "life": "“I still remember putting two families' salt pots beside the same loaf.” On Wednesday, near the steps at Pier Beach, Peyton watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I offered the first shared meal. Both families brought their own salt, which suggests a useful arrangement for the gate.",
+  "appearance": "Away from the heat of the kitchen, look for a long navy raincoat and a train token tied to a zipper pull. Peyton has a strong profile and a little space between the front teeth, with auburn hair cut square at the nape. Peyton takes off the watch before a long conversation during a conversation.",
+  "personality": "Peyton can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To host the first supper at the open gate.",
+  "family": "Finn Heller is Peyton’s cousin. Peyton chooses whether to use it. Finn saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The worker who couldn't read the joke*, Finn says, “I have hired the same crew for decades. This is the first time two of them have asked to meet me privately.”",
+  "connections": "Martha Laurent. A loaned bench and two salt pots give different households real things they can still choose separately.",
+  "familyIds": [
+    "AH-R1217"
+  ],
+  "connectionIds": [
+    "AH-R1439"
+  ],
+  "reactions": [
+    {
+      "situation": "A grandchild objects to the garden plan",
+      "response": "Peyton asks the household members who will use the garden how they want to live in it now.",
+      "asWritten": "A grandchild objects to the garden plan. Peyton asks the household members who will use the garden how they want to live in it now."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Peyton calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Peyton calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Peyton asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Peyton asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

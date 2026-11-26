@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0777",
+  "personId": "AH-R0777",
+  "name": "Rosemary Bhandari",
+  "age": 64,
+  "occupation": "Bank relationship manager",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Money after marriage",
+  "biography": "stories/residents/06/03-money-after-marriage.md#ah-r0777",
+  "life": "“I still remember a founder coming back with a payment in small change.” People around the crossing outside Verve Nail Studio know Rosemary by a small Saturday habit. Rosemary notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I was their first lender. The woman I underestimated has been paying every installment.",
+  "appearance": "Rosemary has a scattering of freckles across the bridge of the nose. Look for short white hair and darker eyebrows. On an ordinary day, the familiar outfit is a boxy denim jacket with a braided bracelet with a single wooden bead. In conversation Rosemary squares up pieces of paper while thinking.",
+  "personality": "Rosemary keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Rosemary wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To credit the founder who made the payments.",
+  "family": "Sofia Yates is Rosemary’s younger cousin. Rosemary can always ask for five minutes alone. Sofia asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The empty drum stool*, Sofia says, “I was scared my students would laugh at my playing.”",
+  "connections": "Marlowe Nord. The early lender and the employee shareholder remember exactly when wages stopped arriving.",
+  "familyIds": [
+    "AH-R0426"
+  ],
+  "connectionIds": [
+    "AH-R0772"
+  ],
+  "reactions": [
+    {
+      "situation": "The divorcing founders ask staff to pick a side",
+      "response": "Rosemary asks when the next wages will arrive before giving either founder a public endorsement.",
+      "asWritten": "The divorcing founders ask staff to pick a side. Rosemary asks when the next wages will arrive before giving either founder a public endorsement."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Rosemary asks the person already using it whether they can comfortably stand, rather than presuming who needs it most.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Rosemary asks the person already using it whether they can comfortably stand, rather than presuming who needs it most."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Rosemary offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Rosemary offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

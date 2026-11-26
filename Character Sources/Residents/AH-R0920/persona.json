@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0920",
+  "personId": "AH-R0920",
+  "name": "Lane Baran",
+  "age": 39,
+  "occupation": "Legal courier",
+  "home": "Coast Ridge",
+  "episode": "The absent signature",
+  "biography": "stories/residents/07/02-the-absent-signature.md#ah-r0920",
+  "life": "“I still remember delivering an invitation to an empty office.” On Thursday, near the corner by Juniper Tailor, Lane looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I delivered the letter unsigned. A week later she sent back an invitation with a harbor ticket inside.",
+  "appearance": "On an ordinary day, look for a charcoal zip cardigan and one loose pocket corner secured with green thread. Lane has a broad nose and a deep dimple on one cheek, with black hair twisted into a small knot. Lane holds eye contact until the other person has finished during a conversation.",
+  "personality": "Lane has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To deliver the invitation to meet at the harbor.",
+  "family": "Ruben Yoon is Lane’s second cousin. Lane asks the question the rest of the family avoided. Ruben chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *A boat for sale twice*, Ruben says, “I am the broker everyone bypassed. I found the original bill folded behind the depth gauge.”",
+  "connections": "Michael Gallagher. The mail forwarder finds that delivering an invitation is easier than delivering a completed sale.",
+  "familyIds": [
+    "AH-R0743"
+  ],
+  "connectionIds": [
+    "AH-R0914"
+  ],
+  "reactions": [
+    {
+      "situation": "A creditor asks why the berth decision is taking so long",
+      "response": "Lane gives the creditor an accurate update without exposing private family correspondence.",
+      "asWritten": "A creditor asks why the berth decision is taking so long. Lane gives the creditor an accurate update without exposing private family correspondence."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Lane tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Lane tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Lane says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Lane says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

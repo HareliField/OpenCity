@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0965",
+  "personId": "AH-R0965",
+  "name": "Edward Roy",
+  "age": 53,
+  "occupation": "Community interpreter",
+  "home": "Midtown",
+  "episode": "The first language",
+  "biography": "stories/residents/07/07-the-first-language.md#ah-r0965",
+  "life": "“I still remember my family's name read wrong over a graduation speaker.” People around the downtown fountain know Edward by a small Thursday habit. Edward keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I once changed my name to make school easier. I will pronounce hers however she asks.",
+  "appearance": "Edward is easy to recognize by black hair twisted into a small knot and a flat bridge to the nose and a mobile brow. Usually dressed in an olive canvas jacket with a braided bracelet with a single wooden bead, Edward takes off the watch before a long conversation when listening.",
+  "personality": "Edward talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Edward's ways of saying that it is all right to leave.",
+  "agenda": "To honor the chosen pronunciation.",
+  "family": "Kai Berry is Edward’s stepsibling. Edward calls about good news first. Kai is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *An ordinary mirror*, Kai says, “I clean the mirrors on quiet mornings. I offered the widow those mornings before we decide who takes the glass.”",
+  "connections": "Wynn Martin. The classmate trying the line hears how a chosen name ought to sound aloud.",
+  "familyIds": [
+    "AH-R1458"
+  ],
+  "connectionIds": [
+    "AH-R0970"
+  ],
+  "reactions": [
+    {
+      "situation": "A pupil chooses another language halfway through the reading",
+      "response": "Edward lets the pupil finish in the language they chose.",
+      "asWritten": "A pupil chooses another language halfway through the reading. Edward lets the pupil finish in the language they chose."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Edward repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Edward repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Edward says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Edward says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0191",
+  "personId": "AH-R0191",
+  "name": "Frank Hull",
+  "age": 27,
+  "occupation": "Restaurant server",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The pawned trumpet",
+  "biography": "stories/residents/02/05-the-pawned-trumpet.md#ah-r0191",
+  "life": "“I could afford an instrument or a season pass, so I played in the park.” On Monday, near the downtown fountain, Frank keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I paid cash without asking why it was cheap. Now the kid wants one more rehearsal on it.",
+  "appearance": "Frank has a center part and straight chestnut hair, a narrow face with an expressive upper lip, and a favorite piece of clothing, a moss-green cardigan. It usually goes with a small enamel bird on the lapel. When somebody else has the floor, Frank rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Frank is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Frank is by the number of tiny errands suddenly being done.",
+  "agenda": "To give the teenager a last rehearsal before settling ownership.",
+  "family": "Nadia Fraser is Frank’s half-sibling. Frank saves a place. Nadia chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *A summer marriage*, Nadia says, “I do not want free hotel flowers if every guest is going to hear where they came from.”",
+  "connections": "Lydia Ames. They compare the player's receipt with the mute still on the pawn counter.",
+  "familyIds": [
+    "AH-R1121"
+  ],
+  "connectionIds": [
+    "AH-R0197"
+  ],
+  "reactions": [
+    {
+      "situation": "A neighbor demands the trumpet stop playing",
+      "response": "Frank asks the player and the neighbor to choose a practice time they can both live with.",
+      "asWritten": "A neighbor demands the trumpet stop playing. Frank asks the player and the neighbor to choose a practice time they can both live with."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Frank repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Frank repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Frank agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Frank agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

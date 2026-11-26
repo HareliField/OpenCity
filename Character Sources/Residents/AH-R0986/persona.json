@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0986",
+  "personId": "AH-R0986",
+  "name": "Evan Maciel",
+  "age": 37,
+  "occupation": "Pharmacy courier",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A tenant who stays",
+  "biography": "stories/residents/07/09-a-tenant-who-stays.md#ah-r0986",
+  "life": "“I still remember delivering a prescription written under a childhood name.” Saturday often includes a stop at Breakwater Way, where Evan stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I want the daughter to have somewhere safe to live after her breakup. I also deliver the tenant's medicine every week.",
+  "appearance": "Evan is easy to recognize by a swept fringe and a closely clipped nape and a straight nose and deep-set eyes. Usually dressed in a sand-colored linen shirt with a replacement button a shade darker than the others, Evan turns fully toward the person speaking when listening.",
+  "personality": "Evan loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To support the daughter and the older patient's continuing care.",
+  "family": "Kai Valdez is Evan’s older cousin. Evan gets to change the plan. Kai offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Reading the payslip*, Kai says, “I run a business. I came in pretending to be a worker because my own slips embarrass me.”",
+  "connections": "Stella Rizzo. Identifying trees that can move helps the relative delivering medicine find a useful part in the negotiation.",
+  "familyIds": [
+    "AH-R0818"
+  ],
+  "connectionIds": [
+    "AH-R0985"
+  ],
+  "reactions": [
+    {
+      "situation": "An elderly gardener wants to move just one tree",
+      "response": "Evan checks that the tree can survive the move before it is lifted.",
+      "asWritten": "An elderly gardener wants to move just one tree. Evan checks that the tree can survive the move before it is lifted."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Evan offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Evan offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Evan offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Evan offers one about their own embarrassment instead."
+    }
+  ]
+}

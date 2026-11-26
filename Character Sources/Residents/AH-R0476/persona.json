@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0476",
+  "personId": "AH-R0476",
+  "name": "Denise Barker",
+  "age": 32,
+  "occupation": "Instrument repairer",
+  "home": "Midtown",
+  "episode": "The savings club",
+  "biography": "stories/residents/04/03-the-savings-club.md#ah-r0476",
+  "life": "“I still remember engraving a sign somebody could feel with one finger.” People around Lighthouse Cove know Denise by a small Monday habit. Denise takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I used to draw the winning number with my mother. She can't see the slips now so I embossed them.",
+  "appearance": "Denise has two dimples that appear only with a full smile. Look for a dark undercut with a longer wave on top. On an ordinary day, the familiar outfit is a long navy raincoat with a copper-colored clasp that has been repaired by hand. In conversation Denise raises one eyebrow long before saying yes.",
+  "personality": "Denise often says yes too quickly out of pride in being useful. The people closest to Denise have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To let the mother identify the winning slip herself.",
+  "family": "Erin Roche is Denise’s half-sibling. Denise offers the first invitation. Erin gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The first delivery fee*, Erin says, “I work the deli counter. The first paid rider wants the tips I used to divide among the cooks.”",
+  "connections": "Cory Mann. The family redesigning the draw slips records the sound of the old savings jar.",
+  "familyIds": [
+    "AH-R1149"
+  ],
+  "connectionIds": [
+    "AH-R0479"
+  ],
+  "reactions": [
+    {
+      "situation": "A donor asks for the club's name in return for a ticket",
+      "response": "Denise asks the members to hear the terms before deciding on a name.",
+      "asWritten": "A donor asks for the club's name in return for a ticket. Denise asks the members to hear the terms before deciding on a name."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Denise writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Denise writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Denise rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Denise rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

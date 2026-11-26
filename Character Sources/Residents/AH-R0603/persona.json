@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0603",
+  "personId": "AH-R0603",
+  "name": "Talia Barclay",
+  "age": 24,
+  "occupation": "Bakery worker",
+  "home": "Coast Ridge",
+  "episode": "Salt in the pockets",
+  "biography": "stories/residents/05/01-salt-in-the-pockets.md#ah-r0603",
+  "life": "“I still remember my first secret wage tucked in an empty loaf bag.” Monday often includes a stop at the bank steps, where Talia takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I thought the powder was plaster. It was the sugar from the bakery where I secretly work weekends.",
+  "appearance": "Talia is easy to recognize by auburn hair cut square at the nape and a heart-shaped face and prominent ears. Usually dressed in a plum-colored cardigan with a pen clipped inside the neckline, Talia grins on one side while the eyes stay serious when listening.",
+  "personality": "Talia is kind in very practical ways and prickly about being thanked in public. Talia loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To tell the household about the second bakery income.",
+  "family": "Lydia Lai is Talia’s cousin. Talia decides what stays off the paper. Lydia brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The second dog*, Lydia says, “I offered free vaccination records and discovered our clinic had two birthdays for one animal.”",
+  "connections": "Winifred Osborne. A secret second wage and an asking-for-a-raise letter could both come out in the wash.",
+  "familyIds": [
+    "AH-R0186"
+  ],
+  "connectionIds": [
+    "AH-R0607"
+  ],
+  "reactions": [
+    {
+      "situation": "A coat's owner claims the crystals in the lining",
+      "response": "Talia sets the coat aside until the owner can identify the crystals privately.",
+      "asWritten": "A coat's owner claims the crystals in the lining. Talia sets the coat aside until the owner can identify the crystals privately."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Talia asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Talia asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Talia gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Talia gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

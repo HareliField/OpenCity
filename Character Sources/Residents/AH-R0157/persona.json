@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0157",
+  "personId": "AH-R0157",
+  "name": "Jody Baker",
+  "age": 49,
+  "occupation": "Women's refuge volunteer",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Hem by hem",
+  "biography": "stories/residents/02/01-hem-by-hem.md#ah-r0157",
+  "life": "“I first kept emergency bus money under the wrapper in a sewing kit.” People around Ferris Deli know Jody by a small Monday habit. Jody asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I thought the small pocket held a ring. It held bus money in case she wanted to leave.",
+  "appearance": "Jody has a deep crease beside the mouth when smiling. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a sand-colored linen shirt with a folded shopping list secured by a miniature clip. In conversation Jody folds a paper napkin into quarters without noticing.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Jody takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To keep a little travel money in the dress for the next wearer.",
+  "family": "Robin Kiln is Jody’s first cousin once removed. Jody chooses whether they walk home or sit a while. Robin brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The empty berth*, Robin says, “My scholarship covers lessons and nothing you wear to them.”",
+  "connections": "Marco Fox. They preserve a pocket and a tie out of the same bolts of wedding cloth.",
+  "familyIds": [
+    "AH-R0149"
+  ],
+  "connectionIds": [
+    "AH-R0158"
+  ],
+  "reactions": [
+    {
+      "situation": "The bride wants to keep the old pocket",
+      "response": "Jody leaves the pocket in place while the bride tries the dress on.",
+      "asWritten": "The bride wants to keep the old pocket. Jody leaves the pocket in place while the bride tries the dress on."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Jody tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Jody tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Jody asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Jody asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

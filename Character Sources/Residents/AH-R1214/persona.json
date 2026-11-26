@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1214",
+  "personId": "AH-R1214",
+  "name": "Olivia Nielsen",
+  "age": 52,
+  "occupation": "Bilingual ship clerk",
+  "home": "Old Town",
+  "episode": "The worker who couldn't read the joke",
+  "biography": "stories/residents/09/02-the-worker-who-couldn-t-read-the-joke.md#ah-r1214",
+  "life": "“I still remember softening a translated word that later caused an argument.” Tuesday often includes a stop at the public end of the South Shore boardwalk, where Olivia checks the shade on the benches before deciding how long to stay.",
+  "voice": "I translated it too gently the first time. My friend deserves to know which actual word upset everybody.",
+  "appearance": "Olivia has a cropped cut that shows the shape of the ears, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a mustard canvas overshirt. It usually goes with a replacement button a shade darker than the others. When somebody else has the floor, Olivia folds a paper napkin into quarters without noticing.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Olivia takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To translate the hurtful word accurately.",
+  "family": "Harold Pike is Olivia’s older cousin. Olivia chooses whether they walk home or sit a while. Harold brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The tide clock*, Harold says, “I used to tell time from harbor smells. I took the new hire along on my early round.”",
+  "connections": "Darcy Fadel (dock colleague). A truthful translation gives the photographed worker the words to challenge the apparent laugh.",
+  "familyIds": [
+    "AH-R0447"
+  ],
+  "connectionIds": [
+    "AH-R1211"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative forwards the break-room picture",
+      "response": "Olivia asks that the picture stop traveling while the worker decides what to say.",
+      "asWritten": "A relative forwards the break-room picture. Olivia asks that the picture stop traveling while the worker decides what to say."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Olivia asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Olivia asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Olivia asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Olivia asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

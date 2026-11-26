@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0320",
+  "personId": "AH-R0320",
+  "name": "Harold Byrd",
+  "age": 25,
+  "occupation": "Assistant navigator",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A ship without postcards",
+  "biography": "stories/residents/03/02-a-ship-without-postcards.md#ah-r0320",
+  "life": "“I still remember a packet of foreign coins taped to the pantry door.” On Monday, near the window at Night Shift Donuts, Harold knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I mailed a receipt for lunch. My family has been asking what an ordinary day costs.",
+  "appearance": "Harold has a broad nose and a deep dimple on one cheek. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is a red windbreaker with a pen clipped inside the neckline. In conversation Harold rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Harold has a long memory for unfair prices and a short one for small insults. Harold can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To explain the cost of an ordinary crew lunch at home.",
+  "family": "Isabel Doyle is Harold’s cousin raised in the same household. Harold brings a spare shopping bag. Isabel chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *A summer marriage*, Isabel says, “I have been saving for a huge wedding. Hearing these two haggle over chairs has made me question mine.”",
+  "connections": "Selena Roberts. They send the night lights and the lunch receipt as two honest views from one shift.",
+  "familyIds": [
+    "AH-R1127"
+  ],
+  "connectionIds": [
+    "AH-R0319"
+  ],
+  "reactions": [
+    {
+      "situation": "A souvenir shop offers to print the cards as an advert",
+      "response": "Harold checks whether the families want their messages used outside the envelopes.",
+      "asWritten": "A souvenir shop offers to print the cards as an advert. Harold checks whether the families want their messages used outside the envelopes."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Harold keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Harold keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Harold agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Harold agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

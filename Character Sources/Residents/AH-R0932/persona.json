@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0932",
+  "personId": "ah-pd-114",
+  "name": "Ada Flynn",
+  "age": 37,
+  "occupation": "Forensic analyst",
+  "home": "Midtown",
+  "episode": "A civilian apology",
+  "biography": "stories/residents/07/04-a-civilian-apology.md#ah-r0932",
+  "life": "“I still remember my son repeating a story I'd only half checked.” People around Juniper Street know Ada by a small Saturday habit. Ada knows which of the west-side porches has a seat in the shade.",
+  "voice": "I read the wrong name to my son for years. I want him beside me when the right one goes up.",
+  "appearance": "Ada has a crooked front tooth visible when laughing. Look for a long plait tucked inside the collar. Off duty, the familiar outfit is a black overshirt with pearl buttons with a folded shopping list secured by a miniature clip. In conversation Ada turns fully toward the person speaking.",
+  "personality": "Ada has a quick wit and an equally quick sense of shame. A joke is often Ada's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To show the corrected name to the son.",
+  "family": "Damian Neal is Ada’s half-sibling. Ada calls back when there is finally a little privacy. Damian leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *Overdue by a lifetime*, Damian says, “I wrote my crush's name under the flap. They're coming to the reading with their spouse.”",
+  "connections": "Ari Lane. The two grown children in the story deserve to know what name will go up this time.",
+  "familyIds": [
+    "AH-R0366"
+  ],
+  "connectionIds": [
+    "AH-R0939"
+  ],
+  "reactions": [
+    {
+      "situation": "The shopkeeper asks for a public correction",
+      "response": "Ada agrees a place and size for the correction with the person who was named.",
+      "asWritten": "The shopkeeper asks for a public correction. Ada agrees a place and size for the correction with the person who was named."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Ada starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Ada starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Ada seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Ada seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

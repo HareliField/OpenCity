@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1098",
+  "personId": "AH-R1098",
+  "name": "Rosemary Heller",
+  "age": 50,
+  "occupation": "Corner shop operator",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The boy on the corner",
+  "biography": "stories/residents/08/05-the-boy-on-the-corner.md#ah-r1098",
+  "life": "“I still remember clearing homework space under a wall of price stickers.” Saturday often includes a stop at the entrance to the Wash House, where Rosemary stops for local notices even on a day without a load to wash.",
+  "voice": "I rent the shop. I cleared a table for homework and asked the oldest brother to respect what happens at it.",
+  "appearance": "Rosemary has a wide brow and a narrow jaw. Look for a loose dark braid. On an ordinary day, the familiar outfit is a brown corduroy jacket with a comb in a sleeve sewn into the lining. In conversation Rosemary leans a shoulder against the wall during long conversations.",
+  "personality": "Rosemary can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Rosemary can afford to give, and family knows to take it seriously.",
+  "agenda": "To keep the homework table available.",
+  "family": "Maria Jackson is Rosemary’s second cousin. Rosemary brings a spare shopping bag. Maria chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *A last ship together*, Maria says, “I watched the ship berth from the road as a child.”",
+  "connections": "David Ramos. The tenant above the shop backs the shopkeeper's protected homework table.",
+  "familyIds": [
+    "AH-R1369"
+  ],
+  "connectionIds": [
+    "AH-R1093"
+  ],
+  "reactions": [
+    {
+      "situation": "His younger brother asks what he delivers for a living",
+      "response": "Rosemary lets the older brother choose honest words the younger boy can understand.",
+      "asWritten": "His younger brother asks what he delivers for a living. Rosemary lets the older brother choose honest words the younger boy can understand."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Rosemary asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Rosemary asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Rosemary suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Rosemary suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

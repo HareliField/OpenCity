@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1345",
+  "personId": "AH-R1345",
+  "name": "Denise Xu",
+  "age": 38,
+  "occupation": "Adult daughter and typist",
+  "home": "Old Town",
+  "episode": "The missing name on the stern",
+  "biography": "stories/residents/09/15-the-missing-name-on-the-stern.md#ah-r1345",
+  "life": "“I still remember getting two official letters addressed to two versions of me.” People around the foot of Harbor Viaduct know Denise by a small Tuesday habit. Denise pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I am the daughter with both spellings on my documents. A boat sign is the one place I can choose.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a thin silver ring worn on a cord. Denise has a broad nose and a deep dimple on one cheek, with black hair twisted into a small knot. Denise gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Denise enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To choose which personal spelling goes on the boat.",
+  "family": "Leon Osei is Denise’s second cousin. Denise knows which ones can be shared. Leon keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The late crossing*, Leon says, “I have the furthest walk to the pickup. The others moved their tea break by eight minutes for me.”",
+  "connections": "Jo Graves. The buyer gives the person who lives under two names a say in which one sails.",
+  "familyIds": [
+    "AH-R0866"
+  ],
+  "connectionIds": [
+    "AH-R1343"
+  ],
+  "reactions": [
+    {
+      "situation": "The apprentice notices the missing letter on the stern",
+      "response": "Denise checks the intended spelling with the family before painting over anything.",
+      "asWritten": "The apprentice notices the missing letter on the stern. Denise checks the intended spelling with the family before painting over anything."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Denise suggests one straightforward message without accusations and gives the friend time to answer.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Denise suggests one straightforward message without accusations and gives the friend time to answer."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Denise puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Denise puts the deal away and suggests a walk."
+    }
+  ]
+}

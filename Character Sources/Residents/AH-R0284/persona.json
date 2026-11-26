@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0284",
+  "personId": "AH-R0284",
+  "name": "Paloma Diaz",
+  "age": 43,
+  "occupation": "Property caretaker",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Saturday keys",
+  "biography": "stories/residents/02/14-saturday-keys.md#ah-r0284",
+  "life": "“I grew up above a shop whose locks changed more often than our address.” On Monday, near the brick passage off the shop row, Paloma takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I had the locks changed before they found the keys. The new key is easier for my mother to turn.",
+  "appearance": "Paloma has a blunt cut just below the ears, two dimples that appear only with a full smile, and a favorite piece of clothing, a charcoal zip cardigan. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Paloma rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Paloma finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To give the mother a spare key she can turn.",
+  "family": "Alex Miranda is Paloma’s stepsibling. Paloma puts the kettle on. Alex chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Three minutes at the bridge*, Alex says, “I own the van and want a clean seat for my father on the way home from his appointment.”",
+  "connections": "Marina Carvalho. A better-fitting lock goes into a backup list that can leave its keeper's house.",
+  "familyIds": [
+    "AH-R1463"
+  ],
+  "connectionIds": [
+    "AH-R0289"
+  ],
+  "reactions": [
+    {
+      "situation": "A volunteer is blamed before the tin is checked",
+      "response": "Paloma checks the returned tins before letting a name go into the complaint.",
+      "asWritten": "A volunteer is blamed before the tin is checked. Paloma checks the returned tins before letting a name go into the complaint."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Paloma separates the money question from the broken promise and asks which one the family wants to discuss first.",
+      "asWritten": "A family supper turns into an argument about old debt. Paloma separates the money question from the broken promise and asks which one the family wants to discuss first."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Paloma points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Paloma points to the person who noticed the original mistake."
+    }
+  ]
+}

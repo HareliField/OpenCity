@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0098",
+  "personId": "AH-R0098",
+  "name": "Eli Carr",
+  "age": 40,
+  "occupation": "Flour delivery driver",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The thirteenth doughnut",
+  "biography": "stories/residents/01/10-the-thirteenth-doughnut.md#ah-r0098",
+  "life": "Eli inherited a flour route and spent six months telling friends it was temporary. He finally stopped apologizing for it after hearing his own band's music pouring through the door of the bakery he was supplying. Sunday often includes a stop at the entrance to the Wash House, where Eli stops for local notices even on a day without a load to wash.",
+  "voice": "My father's flour route paid for my first drum kit. I can tell who is on the oven by the smell on the loading step. I'm leaving the baker a pair of tickets under the thirteenth slot.",
+  "appearance": "Eli is easy to recognize by a swept fringe and a closely clipped nape and heavy brows and an unusually delicate jaw. Usually dressed in a mustard canvas overshirt with a cloth patch so neatly matched it only shows in strong light, Eli counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Eli has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To bring the baker to a show paid for by the flour route.",
+  "family": "Ramona Penn is Eli’s second cousin. Eli picks the meeting place. Ramona sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *Nine unpaid hours*, Ramona says, “I left the contractor over favoritism. They still owe me two goodbye shifts and a borrowed radio.”",
+  "connections": "Vic Cho. A night broadcast and two music tickets link the bakery's sounds to an audience beyond the block.",
+  "familyIds": [
+    "AH-R0765"
+  ],
+  "connectionIds": [
+    "AH-R0097"
+  ],
+  "reactions": [
+    {
+      "situation": "A late worker finds somebody has eaten the saved breakfast",
+      "response": "Eli finds out which shift the breakfast was for before offering a replacement.",
+      "asWritten": "A late worker finds somebody has eaten the saved breakfast. Eli finds out which shift the breakfast was for before offering a replacement."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Eli tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Eli tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Eli explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Eli explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

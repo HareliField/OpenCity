@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1095",
+  "personId": "AH-R1095",
+  "name": "Sam Knight",
+  "age": 38,
+  "occupation": "Primary teacher",
+  "home": "Coast Ridge",
+  "episode": "The boy on the corner",
+  "biography": "stories/residents/08/05-the-boy-on-the-corner.md#ah-r1095",
+  "life": "“I still remember closing a classroom door after a child's ride hadn't come.” People around the steps at Pier Beach know Sam by a small Monday habit. Sam watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I am the teacher who noticed the uncollected child. I want him to know he can eat breakfast at school tomorrow.",
+  "appearance": "Sam has a small notch in the left eyebrow. Look for a swept fringe and a closely clipped nape. On an ordinary day, the familiar outfit is a cropped bottle-green coat with a narrow brass watch set a little fast. In conversation Sam draws small circles on a tabletop while waiting.",
+  "personality": "Sam is kind in very practical ways and prickly about being thanked in public. Sam loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To make tomorrow's school breakfast easy to claim.",
+  "family": "Jeff Jiang is Sam’s older cousin. The family once kept the wrong suitcase for a week while the carrier found its owner. They never opened it. Everybody still has a different private theory about what it held. Sam can admit curiosity without pretending it is a right. Asked about *One unposted detour*, Jeff says, “I recognized the detour from a flood when I was small.”",
+  "connections": "Charles Mack. They need to agree where the younger child can wait at the end of school.",
+  "familyIds": [
+    "AH-R0416"
+  ],
+  "connectionIds": [
+    "AH-R1091"
+  ],
+  "reactions": [
+    {
+      "situation": "The boy's babysitter takes a new job",
+      "response": "Sam helps the family identify the next uncovered school pickup.",
+      "asWritten": "The boy's babysitter takes a new job. Sam helps the family identify the next uncovered school pickup."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Sam draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Sam draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Sam gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Sam gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

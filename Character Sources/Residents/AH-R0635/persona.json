@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0635",
+  "personId": "AH-R0635",
+  "name": "Albert Bay",
+  "age": 51,
+  "occupation": "Former shoplifter and locksmith apprentice",
+  "home": "the neighborhood around Market Flats",
+  "episode": "One clean day",
+  "biography": "stories/residents/05/04-one-clean-day.md#ah-r0635",
+  "life": "“I still remember giving back a lunch I was too hungry to steal.” Wednesday often includes a stop at Ferris Deli, where Albert asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I used to steal lunches here. A woman whose sandwich I took asked if I had eaten today.",
+  "appearance": "Albert has a smooth side part with one rebellious curl, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a copper-colored clasp that has been repaired by hand. When somebody else has the floor, Albert turns fully toward the person speaking.",
+  "personality": "Albert listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To accept a meal from the old classmate.",
+  "family": "Jack Bellamy is Albert’s cousin raised in the same household. Albert sets the time to leave. Jack picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *One sleeve short*, Jack says, “I thought he was embarrassed about his arm.”",
+  "connections": "Bess Kaur. An unexpected offered meal leaves enough cake to take back to the watch.",
+  "familyIds": [
+    "AH-R0258"
+  ],
+  "connectionIds": [
+    "AH-R0640"
+  ],
+  "reactions": [
+    {
+      "situation": "A classmate arrives at the reunion in uniform",
+      "response": "Albert welcomes the classmate before bringing up their working clothes.",
+      "asWritten": "A classmate arrives at the reunion in uniform. Albert welcomes the classmate before bringing up their working clothes."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Albert says what they know in their own name and refuses to treat a guess as something the child has to disprove.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Albert says what they know in their own name and refuses to treat a guess as something the child has to disprove."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Albert keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Albert keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

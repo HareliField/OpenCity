@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0879",
+  "personId": "AH-R0879",
+  "name": "Terry Aranda",
+  "age": 45,
+  "occupation": "Former music student and bookbinder",
+  "home": "Old Town",
+  "episode": "The almost scholarship",
+  "biography": "stories/residents/06/13-the-almost-scholarship.md#ah-r0879",
+  "life": "“I still remember an acceptance letter I never got to use.” On Saturday, near the steps at Pier Beach, Terry watches the working part of the waterfront before turning toward the open water.",
+  "voice": "My own scholarship fell apart over an unpaid deposit. I keep the letter in my work bag for a reason.",
+  "appearance": "Terry has black hair twisted into a small knot, a round face with a pronounced chin, and a favorite piece of clothing, a charcoal zip cardigan. It usually goes with one cuff folded back twice. When somebody else has the floor, Terry draws breath as if to speak and lets someone else go first.",
+  "personality": "Terry is fond of ambitious ideas and deeply suspicious of grand openings. The question Terry asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To prevent an unpaid deposit from costing another child the place.",
+  "family": "Harry Rhodes is Terry’s older cousin. When an older relative began losing nouns, they drew a map of places where familiar words came back. The map still gets folded correctly every time it comes out. Terry marks the places where keeping quiet worked. Asked about *The last home visit*, Harry says, “I can reach my own medicine from a lower shelf.”",
+  "connections": "Sadie Liu. An aunt pricing sheet music learns about the deposit that sank another scholarship.",
+  "familyIds": [
+    "AH-R1488"
+  ],
+  "connectionIds": [
+    "AH-R0872"
+  ],
+  "reactions": [
+    {
+      "situation": "The school wants a deposit before travel support is settled",
+      "response": "Terry gets the school to specify the last date a deposit can be returned.",
+      "asWritten": "The school wants a deposit before travel support is settled. Terry gets the school to specify the last date a deposit can be returned."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Terry asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Terry asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Terry accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Terry accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

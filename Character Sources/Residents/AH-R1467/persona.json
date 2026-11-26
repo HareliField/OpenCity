@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1467",
+  "personId": "AH-R1467",
+  "name": "Diego Medina",
+  "age": 50,
+  "occupation": "Retired neighbor and tree grower",
+  "home": "Old Town",
+  "episode": "Three minutes at the bridge",
+  "biography": "stories/residents/10/12-three-minutes-at-the-bridge.md#ah-r1467",
+  "life": "“I still remember marking the first no-traffic morning on a paper calendar.” On Sunday, near the corner by Juniper Tailor, Diego looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I count the cars from my porch. The day the shared ride starts will look like one ordinary car missing.",
+  "appearance": "On an ordinary day, look for a brown corduroy jacket and a small enamel bird on the lapel. Diego has a straight nose and deep-set eyes, with dark brown curls cut close behind the ears. Diego listens with the head tilted a little to the left during a conversation.",
+  "personality": "Diego finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To mark the change in traffic on the porch calendar.",
+  "family": "Oliver Aranda is Diego’s stepsibling. Diego is free to hang up first. Oliver makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The worker who couldn't read the joke*, Oliver says, “I wanted the photo gone. My kid wanted a copy so we could talk about when it's hard to disagree in public.”",
+  "connections": "Santiago Wells. One passenger hears a quiet journey while a resident sees the missing car in the street.",
+  "familyIds": [
+    "AH-R1220"
+  ],
+  "connectionIds": [
+    "AH-R1466"
+  ],
+  "reactions": [
+    {
+      "situation": "A shift changes by exactly three minutes",
+      "response": "Diego checks the school pickup and shift clocks together before changing the route.",
+      "asWritten": "A shift changes by exactly three minutes. Diego checks the school pickup and shift clocks together before changing the route."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Diego writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Diego writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Diego waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Diego waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

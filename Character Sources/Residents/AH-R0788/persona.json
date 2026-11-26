@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0788",
+  "personId": "ah-pd-110",
+  "name": "Eli Moreno",
+  "age": 33,
+  "occupation": "Metro SWAT officer",
+  "home": "Midtown",
+  "episode": "The Saturday swap",
+  "biography": "stories/residents/06/04-the-saturday-swap.md#ah-r0788",
+  "life": "“I still remember a spreadsheet hiding three complicated mothers.” People around Juniper Street know Eli by a small Wednesday habit. Eli knows which of the west-side porches has a seat in the shade.",
+  "voice": "I made the spreadsheet. Seeing every family obligation as a blank square made me ring each person instead.",
+  "appearance": "Eli has auburn hair cut square at the nape, fine brows over wide-set eyes, and a favorite piece of clothing, a dark green knitted vest. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Eli steadies a cup with both hands while listening.",
+  "personality": "Eli often says yes too quickly out of pride in being useful. The people closest to Eli have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To find a swap each family can actually keep.",
+  "family": "Sage Rhodes is Eli’s second cousin. Eli decides what stays off the paper. Sage brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *A borrowed name*, Sage says, “I read it aloud in class. The customer came in and taught us what fiction leaves out.”",
+  "connections": "Ruth Kim. The officer who prefers working Saturdays has to put an honest answer on a colleague's spreadsheet. Also in the story is Ben Ortiz (watch colleague).",
+  "familyIds": [
+    "AH-R0517"
+  ],
+  "connectionIds": [
+    "AH-R0782",
+    "AH-R0783"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member asks for a definite promise about Saturday",
+      "response": "Eli promises a definite check-in time even if the watch itself is still uncertain.",
+      "asWritten": "A family member asks for a definite promise about Saturday. Eli promises a definite check-in time even if the watch itself is still uncertain."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Eli keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Eli keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Eli rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Eli rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

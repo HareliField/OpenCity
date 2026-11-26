@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0757",
+  "personId": "AH-R0757",
+  "name": "Agnes Kramer",
+  "age": 33,
+  "occupation": "Catering clerk",
+  "home": "the western residential streets",
+  "episode": "The upstairs lease",
+  "biography": "stories/residents/06/01-the-upstairs-lease.md#ah-r0757",
+  "life": "“I still remember my aunt returning every receipt folded in quarters.” Monday often includes a stop at the entrance to the Wash House, where Agnes stops for local notices even on a day without a load to wash.",
+  "voice": "My aunt collects the rent. I told the tenants before offering to help with their figures.",
+  "appearance": "Agnes has close-cropped dark curls, a small notch in the left eyebrow, and a favorite piece of clothing, a rust-colored canvas coat. It usually goes with a cloth patch so neatly matched it only shows in strong light. When somebody else has the floor, Agnes rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Agnes has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To disclose the rent-collecting aunt before offering advice.",
+  "family": "Quinn Carvalho is Agnes’s half-sibling. Agnes calls back when there is finally a little privacy. Quinn leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The spare spectacles*, Quinn says, “I read the statement aloud too fast. I asked her to tell me where to breathe.”",
+  "connections": "Annette Levin. A family tie to the rent collector makes honesty with the next-door neighbor essential.",
+  "familyIds": [
+    "AH-R0333"
+  ],
+  "connectionIds": [
+    "AH-R0758"
+  ],
+  "reactions": [
+    {
+      "situation": "The household must choose between paying a deposit and renewing",
+      "response": "Agnes lays out the two household costs and asks which deadline comes first.",
+      "asWritten": "The household must choose between paying a deposit and renewing. Agnes lays out the two household costs and asks which deadline comes first."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Agnes offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Agnes offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Agnes says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Agnes says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

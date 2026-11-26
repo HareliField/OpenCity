@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1475",
+  "personId": "AH-R1475",
+  "name": "Yvette Allard",
+  "age": 36,
+  "occupation": "Kitchen worker",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "One last dress rehearsal",
+  "biography": "stories/residents/10/13-one-last-dress-rehearsal.md#ah-r1475",
+  "life": "“I still remember forgetting the onions while covering the early kitchen.” On Monday, near Juniper Street, Yvette knows which of the west-side porches has a seat in the shade.",
+  "voice": "I worked the parent's late shift and nearly burned the onions. Next time I want to see the show myself.",
+  "appearance": "Yvette has a softly rounded chin under sharp cheekbones. Look for a blunt cut just below the ears. Away from the heat of the kitchen, the familiar outfit is a cream pullover with a narrow brass watch set a little fast. In conversation Yvette looks down for a moment before saying something difficult.",
+  "personality": "Yvette feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To see a rehearsal on the next free shift.",
+  "family": "Alicia Sáenz is Yvette’s second cousin. Yvette chooses whether they walk home or sit a while. Alicia brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The carer's afternoon*, Alicia says, “I offered to take Mum only if my sister finally saw a doctor.”",
+  "connections": "Gale Farah. A kitchen worker who covered this time takes a seat beside the quiet listener at the next rehearsal.",
+  "familyIds": [
+    "AH-R1032"
+  ],
+  "connectionIds": [
+    "AH-R1478"
+  ],
+  "reactions": [
+    {
+      "situation": "The working parent arrives after the curtain time",
+      "response": "Yvette waits for the parent to be seated before asking the cast to start.",
+      "asWritten": "The working parent arrives after the curtain time. Yvette waits for the parent to be seated before asking the cast to start."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Yvette writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Yvette writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Yvette lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Yvette lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

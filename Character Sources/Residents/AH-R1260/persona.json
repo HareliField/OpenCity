@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1260",
+  "personId": "AH-R1260",
+  "name": "Marlowe Arrieta",
+  "age": 55,
+  "occupation": "Café worker",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A doctor moves away",
+  "biography": "stories/residents/09/06-a-doctor-moves-away.md#ah-r1260",
+  "life": "“I still remember learning the difference between my doctor's real laugh and her polite one.” Wednesday often includes a stop at the blocks below Foundry Lofts, where Marlowe checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I asked for a last appointment to talk about anything other than my illness. We got halfway through comparing bad films.",
+  "appearance": "Marlowe has fine brows over wide-set eyes. Look for auburn hair cut square at the nape. On an ordinary day, the familiar outfit is a pale blue work shirt with a printed handkerchief folded into the pocket. In conversation Marlowe counts on the side of one finger where hardly anybody notices.",
+  "personality": "Marlowe takes a rejection personally for a day and analytically on the second morning. Marlowe can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To finish the conversation about bad films.",
+  "family": "Frances Brady is Marlowe’s second cousin. Marlowe asks what the birthday guest would like this year. Frances remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The widow's dividend*, Frances says, “I sold my shares for a taxi license. I still own the pen that signed them away.”",
+  "connections": "Gavin Kang. A portrait of a tattoo and a conversation about movies offer two goodbyes outside illness.",
+  "familyIds": [
+    "AH-R0326"
+  ],
+  "connectionIds": [
+    "AH-R1255"
+  ],
+  "reactions": [
+    {
+      "situation": "The incoming doctor is compared with the old one",
+      "response": "Marlowe gives the new doctor a chance to speak before retelling the old doctor's habits.",
+      "asWritten": "The incoming doctor is compared with the old one. Marlowe gives the new doctor a chance to speak before retelling the old doctor's habits."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Marlowe asks which other bill repayment would displace, then offers only what the household can afford to give.",
+      "asWritten": "A friend asks for a loan due back before payday. Marlowe asks which other bill repayment would displace, then offers only what the household can afford to give."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Marlowe turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Marlowe turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0783",
+  "personId": "ah-pd-105",
+  "name": "Ben Ortiz",
+  "age": 31,
+  "occupation": "Patrol officer",
+  "home": "Coast Ridge",
+  "episode": "The Saturday swap",
+  "biography": "stories/residents/06/04-the-saturday-swap.md#ah-r0783",
+  "life": "“I still remember my first language exam taken between bus changes.” On Saturday, near the foot of Harbor Viaduct, Ben pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I have a language exam that morning. I studied for it in the parked car because the house thinks I'm fluent already.",
+  "appearance": "Ben has auburn hair cut square at the nape, a small notch in the left eyebrow, and a favorite piece of clothing, a boxy denim jacket. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Ben touches a knuckle to the chin when searching for a word.",
+  "personality": "Ben has a quick wit and an equally quick sense of shame. A joke is often Ben's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To sit the language exam.",
+  "family": "Amin Bach is Ben’s second cousin. Ben asks the question the rest of the family avoided. Amin chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *Two portions*, Amin says, “The carer likes spice and the tenant doesn't.”",
+  "connections": "Lena Price. The language exam and the citizenship oath need cover on the same Saturday. Also in the story is Eli Moreno (watch colleague).",
+  "familyIds": [
+    "AH-R0136"
+  ],
+  "connectionIds": [
+    "AH-R0790",
+    "AH-R0788"
+  ],
+  "reactions": [
+    {
+      "situation": "A watch swap falls through overnight",
+      "response": "Ben tells the households relying on the swap before looking for a replacement.",
+      "asWritten": "A watch swap falls through overnight. Ben tells the households relying on the swap before looking for a replacement."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Ben keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Ben keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Ben seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Ben seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

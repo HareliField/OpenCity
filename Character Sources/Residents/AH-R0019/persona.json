@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0019",
+  "personId": "AH-R0019",
+  "name": "Merit Shaw",
+  "age": 40,
+  "occupation": "Freight forwarder",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A chair on the quay",
+  "biography": "stories/residents/01/02-a-chair-on-the-quay.md#ah-r0019",
+  "life": "Merit's first forwarding job was sending home a dead sailor's boots. She learned that a parcel can arrive before a family is ready to open it. Her quotations include a space for the recipient to choose a date. On Thursday, near Juniper Street, Merit knows which of the west-side porches has a seat in the shade.",
+  "voice": "I offered to pay to ship it to his sister. Then I learned they haven't spoken in eleven years. I gave him the quote in a sealed envelope he can throw away.",
+  "appearance": "Merit has a long face and high cheekbones. Look for short, uneven waves that refuse to lie flat. On an ordinary day, the familiar outfit is a rust-colored canvas coat with a cloth patch so neatly matched it only shows in strong light. In conversation Merit turns fully toward the person speaking.",
+  "personality": "Merit always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Merit is trying to tell the difference before the bill arrives.",
+  "agenda": "To leave the sister free to decline both the chair and the reconciliation.",
+  "family": "Adriana Arnett is Merit’s half-sibling. Merit puts the kettle on. Adriana chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The second dog*, Adriana says, “I have the delivery photo of both dogs in the same yard.”",
+  "connections": "Nell Oram. The shipping quote and the recorded recollections are the only things the absent sister can receive without taking ownership.",
+  "familyIds": [
+    "AH-R0188"
+  ],
+  "connectionIds": [
+    "AH-R0020"
+  ],
+  "reactions": [
+    {
+      "situation": "Two families claim the kitchen chair",
+      "response": "Merit asks each claimant what they remember about the seat before the marks are shown.",
+      "asWritten": "Two families claim the kitchen chair. Merit asks each claimant what they remember about the seat before the marks are shown."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Merit asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Merit asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Merit suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Merit suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

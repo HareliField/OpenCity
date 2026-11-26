@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0064",
+  "personId": "AH-R0064",
+  "name": "Noam Booth",
+  "age": 57,
+  "occupation": "Printmaker",
+  "home": "the neighborhood around Market Flats",
+  "episode": "An unfinished atlas",
+  "biography": "stories/residents/01/07-an-unfinished-atlas.md#ah-r0064",
+  "life": "Noam ran a print studio on discarded industrial ink. A well-funded art school once attributed his distinctive blue to taste. He wants the port cleaners who saved the leftovers to see their part in his work. On Sunday, near the corner by Juniper Tailor, Noam looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "The blue isn't sea. We used that ink for drains because it was free from the shipyard. I want the caption to say who paid for the original plate.",
+  "appearance": "On an ordinary day, look for a dark green knitted vest and a little coil of soft measuring tape. Noam has a round face with a pronounced chin, with short copper curls. Noam rubs a thumb along the edge of the nearest pocket during a conversation.",
+  "personality": "Noam loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To credit the crew that supplied the salvaged blue ink.",
+  "family": "Daria Singh is Noam’s cousin. Noam saves a place. Daria chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The widow's razor*, Daria says, “I keep the spare handle. It belonged to a matched pair we bought the day we opened separate shops.”",
+  "connections": "Fara Bloom. One recognizes the industrial ink. The other has a cupboard where the class can see it.",
+  "familyIds": [
+    "AH-R0405"
+  ],
+  "connectionIds": [
+    "AH-R0070"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member disputes the penciled street",
+      "response": "Noam marks the disputed piece of street in pencil and keeps the alternative name beside it.",
+      "asWritten": "A family member disputes the penciled street. Noam marks the disputed piece of street in pencil and keeps the alternative name beside it."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Noam tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Noam tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Noam offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Noam offers one about their own embarrassment instead."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0561",
+  "personId": "AH-R0561",
+  "name": "Arlo Lee",
+  "age": 51,
+  "occupation": "Sign painter",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The ladder crossing",
+  "biography": "stories/residents/04/12-the-ladder-crossing.md#ah-r0561",
+  "life": "“I still remember holding the far end of my father's ladder at dusk.” Friday often includes a stop at Lighthouse Cove, where Arlo takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I was at the front and couldn't see the painter crying at the back. It was his late father's ladder.",
+  "appearance": "Arlo has a strong profile and a little space between the front teeth. Look for a high puff tied with plain cord. On an ordinary day, the familiar outfit is a cream pullover with a replacement button a shade darker than the others. In conversation Arlo holds eye contact until the other person has finished.",
+  "personality": "Arlo prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To ask the painter about the father behind the cedar ladder.",
+  "family": "Cynthia Moran is Arlo’s younger cousin. A family member returned from a difficult year elsewhere and wanted dinner without a welcome speech. They made such a point of ordinary dinner that it became a permanent tradition. Arlo offers a person something useful to do as soon as they come in. Asked about *The bitter orange*, Cynthia says, “She had my name wrong for twenty years. I put the wrong name on my contribution to the recipe.”",
+  "connections": "Javier Lam. The person carrying the ladder explains why a modern replacement is an awkward gift.",
+  "familyIds": [
+    "AH-R0248"
+  ],
+  "connectionIds": [
+    "AH-R0565"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver sounds a horn halfway through the crossing",
+      "response": "Arlo asks for a pause until the people carrying the ladder can clear the crossing safely.",
+      "asWritten": "A driver sounds a horn halfway through the crossing. Arlo asks for a pause until the people carrying the ladder can clear the crossing safely."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Arlo asks what the friend actually said last time and checks whether anybody is expecting them at home.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Arlo asks what the friend actually said last time and checks whether anybody is expecting them at home."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Arlo clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Arlo clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

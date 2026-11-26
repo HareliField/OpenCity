@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0654",
+  "personId": "AH-R0654",
+  "name": "Irene Franco",
+  "age": 33,
+  "occupation": "Hospital orderly",
+  "home": "the western residential streets",
+  "episode": "Two left slippers",
+  "biography": "stories/residents/05/06-two-left-slippers.md#ah-r0654",
+  "life": "“I still remember walking a customer home with the wrong shoes on.” Wednesday often includes a stop at the approach to Seabright Court, where Irene likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I started laughing then saw him cry. I walked him home in my own trainers.",
+  "appearance": "Irene has close-cropped dark curls, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a long navy raincoat. It usually goes with a square of clean cloth for polishing smudges. When somebody else has the floor, Irene looks down for a moment before saying something difficult.",
+  "personality": "Irene is fond of ambitious ideas and deeply suspicious of grand openings. The question Irene asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To walk the patient home with a proper pair.",
+  "family": "Lorenzo Dixon is Irene’s parent’s cousin. An elder used to take the children to see the sea on payday, even when the only thing the outing bought was the bus fare. The family still asks what view is included when someone moves house. Irene remembers who got the window seat. Asked about *A room for a father*, Lorenzo says, “I know where the teenage boy waited for his father to return.”",
+  "connections": "Harold Levin. A barefoot loan gets a patient home to a family prepared to wait at the door. Also in the story is Denise Emery (hospital colleague).",
+  "familyIds": [
+    "AH-R0838"
+  ],
+  "connectionIds": [
+    "AH-R0660",
+    "AH-R0653"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor offers shoes that are far too large",
+      "response": "Irene offers to look for a usable pair before anyone is asked to walk in loose shoes.",
+      "asWritten": "A visitor offers shoes that are far too large. Irene offers to look for a usable pair before anyone is asked to walk in loose shoes."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Irene moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Irene moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Irene accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Irene accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

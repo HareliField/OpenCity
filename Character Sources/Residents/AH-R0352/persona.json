@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0352",
+  "personId": "AH-R0352",
+  "name": "Adela Griffin",
+  "age": 65,
+  "occupation": "Hospital volunteer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The hospital radio",
+  "biography": "stories/residents/03/06-the-hospital-radio.md#ah-r0352",
+  "life": "“I still remember an evening announcer who always sounded forgiving.” On Saturday, near Maré Coffee, Adela likes the table where people coming off shift stop checking the time.",
+  "voice": "I never learned the stations' names. I memorized how far the dial turned from the crack.",
+  "appearance": "Out of work clothes, look for a red windbreaker and a stitched row of blue crosses along an old repair. Adela has full cheeks and a mouth that pulls slightly to one side, with steel-colored hair cut square above the collar. Adela grins on one side while the eyes stay serious during a conversation.",
+  "personality": "Adela has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To mark the favorite station position for the next listener.",
+  "family": "Gregory Lang is Adela’s cousin. Adela picks the meeting place. Gregory sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *An ordinary mirror*, Gregory says, “I own the mirror and have seen a hundred other lives in it.”",
+  "connections": "Lisa Anders. The wheel that needn't work can keep the position remembered by touch.",
+  "familyIds": [
+    "AH-R1452"
+  ],
+  "connectionIds": [
+    "AH-R0358"
+  ],
+  "reactions": [
+    {
+      "situation": "The old tuning wheel goes missing from the shelf",
+      "response": "Adela checks the repair bench before assuming anyone took the dial.",
+      "asWritten": "The old tuning wheel goes missing from the shelf. Adela checks the repair bench before assuming anyone took the dial."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Adela offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Adela offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Adela says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Adela says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

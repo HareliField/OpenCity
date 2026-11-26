@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0465",
+  "personId": "AH-R0465",
+  "name": "Sara Hall",
+  "age": 45,
+  "occupation": "Immigration document typist",
+  "home": "the western residential streets",
+  "episode": "The soft wharf chalk",
+  "biography": "stories/residents/04/02-the-soft-wharf-chalk.md#ah-r0465",
+  "life": "“I still remember writing a date four ways for one government office.” On Tuesday, near the foot of Harbor Viaduct, Sara pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "The dates put my dad here months after he supposedly left town. I'd like a private answer.",
+  "appearance": "Sara has fine brows over wide-set eyes. Look for brown hair pinned away from the temples. On an ordinary day, the familiar outfit is a sand-colored linen shirt with a copper-colored clasp that has been repaired by hand. In conversation Sara looks at people's hands before looking at what they carry.",
+  "personality": "Sara keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Sara wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To ask the father privately about the disputed date.",
+  "family": "Kai Bruno is Sara’s stepsibling. Sara offers the first invitation. Kai gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *One last dress rehearsal*, Kai says, “I was the stage manager who almost canceled.”",
+  "connections": "Daniel Morris. The family researching dates meets the worker whose unfinished washing preserved them.",
+  "familyIds": [
+    "AH-R1480"
+  ],
+  "connectionIds": [
+    "AH-R0466"
+  ],
+  "reactions": [
+    {
+      "situation": "A contractor wants to scrub the chalk under the quay",
+      "response": "Sara takes a photograph and asks whose permission is needed before the chalk is touched.",
+      "asWritten": "A contractor wants to scrub the chalk under the quay. Sara takes a photograph and asks whose permission is needed before the chalk is touched."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Sara keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Sara keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Sara offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Sara offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

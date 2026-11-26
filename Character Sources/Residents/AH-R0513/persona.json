@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0513",
+  "personId": "AH-R0513",
+  "name": "Lena Crane",
+  "age": 58,
+  "occupation": "Literary publisher",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A borrowed name",
+  "biography": "stories/residents/04/07-a-borrowed-name.md#ah-r0513",
+  "life": "“I still remember a first printing with the dedication upside down.” Friday often includes a stop at the public road outside the Port of Asphalt, where Lena can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I published the book and missed the echo because I never go home to that street.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a tiny red thread tied through the lowest buttonhole. Lena has a wide brow and a narrow jaw, with thick, tightly coiled hair. Lena rubs a thumb along the edge of the nearest pocket during a conversation.",
+  "personality": "Lena admires skill and distrusts the idea that skill gives anyone permission to be rude. Lena learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To introduce the publisher to the people behind the echo.",
+  "family": "Jae Alder is Lena’s younger cousin. Lena brings something that can still be enjoyed tomorrow. Jae checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Two portions*, Jae says, “My mother missed parents' nights because she was doing this kind of care.”",
+  "connections": "Sage Rhodes. Hearing the customer teach makes the publisher rethink the old publicity copy. Also in the story is Darcy Hardy (novelist).",
+  "familyIds": [
+    "AH-R0137"
+  ],
+  "connectionIds": [
+    "AH-R0517",
+    "AH-R0511"
+  ],
+  "reactions": [
+    {
+      "situation": "An author is asked to identify the living inspiration",
+      "response": "Lena asks the person being represented whether they want to be identified.",
+      "asWritten": "An author is asked to identify the living inspiration. Lena asks the person being represented whether they want to be identified."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Lena calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Lena calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Lena describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Lena describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

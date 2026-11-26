@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1448",
+  "personId": "AH-R1448",
+  "name": "Marlowe Gross",
+  "age": 32,
+  "occupation": "Local food reviewer",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The kitchen without a boss",
+  "biography": "stories/residents/10/10-the-kitchen-without-a-boss.md#ah-r1448",
+  "life": "“I still remember publishing an unkind review written before my tea cooled.” People around Tideline Market know Marlowe by a small Wednesday habit. Marlowe picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I wrote an unfair review on their first rushed morning. I came back for twelve breakfasts before writing a correction.",
+  "appearance": "Marlowe is easy to recognize by a long plait tucked inside the collar and a heart-shaped face and prominent ears. Usually dressed in a charcoal zip cardigan with a train token tied to a zipper pull, Marlowe raises one eyebrow long before saying yes when listening.",
+  "personality": "Marlowe finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To publish a correction informed by several visits.",
+  "family": "Lennon Heller is Marlowe’s cousin. Marlowe knows which ones can be shared. Lennon keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The missing name on the stern*, Lennon says, “I quoted one afternoon's work. I budgeted an extra morning after meeting the grandmother who wanted to watch.”",
+  "connections": "Dale Garrett. A worker washing plates tells the reviewer what was missed in the rushed opening morning.",
+  "familyIds": [
+    "AH-R1346"
+  ],
+  "connectionIds": [
+    "AH-R1443"
+  ],
+  "reactions": [
+    {
+      "situation": "Two kitchen workers disagree on the new shift rota",
+      "response": "Marlowe puts both proposed rotas beside the actual delivery and childcare times.",
+      "asWritten": "Two kitchen workers disagree on the new shift rota. Marlowe puts both proposed rotas beside the actual delivery and childcare times."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Marlowe says what they know in their own name and refuses to treat a guess as something the child has to disprove.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Marlowe says what they know in their own name and refuses to treat a guess as something the child has to disprove."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Marlowe points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Marlowe points to the person who noticed the original mistake."
+    }
+  ]
+}

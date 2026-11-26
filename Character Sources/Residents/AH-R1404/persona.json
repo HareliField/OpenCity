@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1404",
+  "personId": "AH-R1404",
+  "name": "Daphne Perez",
+  "age": 71,
+  "occupation": "Retired ward supervisor",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Two birthdays in one ward",
+  "biography": "stories/residents/10/06-two-birthdays-in-one-ward.md#ah-r1404",
+  "life": "“I still remember a retired colleague winning money off me at dominoes.” Thursday often includes a stop at the steps at Pier Beach, where Daphne watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I dealt the first hand and lost to a woman I used to supervise on night shift.",
+  "appearance": "Daphne is easy to recognize by short white hair and darker eyebrows and a crooked front tooth visible when laughing. Usually dressed in a brown corduroy jacket with a narrow brass watch set a little fast, Daphne folds a paper napkin into quarters without noticing when listening.",
+  "personality": "Daphne is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To let the retired ward worker win or lose fairly.",
+  "family": "Carlo Ueda is Daphne’s cousin’s child. Daphne is free to hang up first. Carlo makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The margin reader*, Carlo says, “My dad hated the book but loved the notes. I'm recording just the margins for his walks.”",
+  "connections": "Ines Baines. The retired worker's chosen birthday includes playing cards with the old supervisor.",
+  "familyIds": [
+    "AH-R0216"
+  ],
+  "connectionIds": [
+    "AH-R1401"
+  ],
+  "reactions": [
+    {
+      "situation": "The other requests the biggest balloon anyone can find",
+      "response": "Daphne finds out where the big balloon can go without crowding anyone else's bed.",
+      "asWritten": "The other requests the biggest balloon anyone can find. Daphne finds out where the big balloon can go without crowding anyone else's bed."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Daphne offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Daphne offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Daphne helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Daphne helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

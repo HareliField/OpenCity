@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0700",
+  "personId": "AH-R0700",
+  "name": "Keiko Ruiz",
+  "age": 67,
+  "occupation": "Recipe keeper and caterer",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Midnight cinnamon",
+  "biography": "stories/residents/05/10-midnight-cinnamon.md#ah-r0700",
+  "life": "“I still remember taking a holiday cake to a doorstep with no wreath.” People around the courtyard by Ferry Street Rooms know Keiko by a small Wednesday habit. Keiko prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I have the recipe nobody else remembers. It calls for leaving one bun on a lonely neighbor's step.",
+  "appearance": "Keiko has two white streaks in otherwise dark hair, a broad nose and a deep dimple on one cheek, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a narrow brass watch set a little fast. When somebody else has the floor, Keiko starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Keiko never tires of being shown how somebody makes a living. Keiko can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To leave a warm bun on a lonely doorstep.",
+  "family": "Grey Good is Keiko’s half-sibling. Keiko chooses whether they walk home or sit a while. Grey brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *A wall of birthdays*, Grey says, “I papered over the wall because my boy never reached his next mark.”",
+  "connections": "Layla Jimenez. A cook who can't smell can still follow a holiday gift to the right neighbor.",
+  "familyIds": [
+    "AH-R0232"
+  ],
+  "connectionIds": [
+    "AH-R0694"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer wants a bun saved until evening",
+      "response": "Keiko writes the customer's name and collection time on the wrapped bun.",
+      "asWritten": "A customer wants a bun saved until evening. Keiko writes the customer's name and collection time on the wrapped bun."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Keiko asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Keiko asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Keiko may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Keiko may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

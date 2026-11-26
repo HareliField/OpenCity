@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0050",
+  "personId": "AH-R0050",
+  "name": "Leni Crow",
+  "age": 26,
+  "occupation": "Spoken-word host",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The aquarium",
+  "biography": "stories/residents/01/05-the-aquarium.md#ah-r0050",
+  "life": "Leni first took a microphone to tell jokes about the laundromat where she waited for her mum. She finds private pain terribly easy to turn into a public performance and is learning to ask whose applause she wants. Friday often includes a stop at the public end of the South Shore boardwalk, where Leni checks the shade on the benches before deciding how long to stay.",
+  "voice": "I wanted to turn the fish into a song about dispossession. The tenant asked if I knew anything about fish. I shelved the song and learned how to test the water.",
+  "appearance": "Leni has dark brown curls cut close behind the ears, fine brows over wide-set eyes, and a favorite piece of clothing, an old plum windbreaker. It usually goes with a folded shopping list secured by a miniature clip. When somebody else has the floor, Leni gives a little nod before asking a hard question.",
+  "personality": "Leni always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Leni is trying to tell the difference before the bill arrives.",
+  "agenda": "To earn the tenant's trust before asking to perform the aquarium story.",
+  "family": "Dario Moreau is Leni’s parent’s cousin. Leni remembers the birthdays. Dario asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The ladder crossing*, Dario says, “I measured the crossing too narrowly. Two people carrying an ordinary thing showed me the error.”",
+  "connections": "Miro Quade. One owes a child news of the fish. The other owes the tenant a chance to hear a song before anyone else does.",
+  "familyIds": [
+    "AH-R0564"
+  ],
+  "connectionIds": [
+    "AH-R0046"
+  ],
+  "reactions": [
+    {
+      "situation": "The tenant calls while everyone is arguing over the tank",
+      "response": "Leni quietens the group long enough for the tenant to hear the tank and decide what should happen next.",
+      "asWritten": "The tenant calls while everyone is arguing over the tank. Leni quietens the group long enough for the tenant to hear the tank and decide what should happen next."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Leni offers an ordinary errand that lets the distressed person leave without being followed by an audience.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Leni offers an ordinary errand that lets the distressed person leave without being followed by an audience."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Leni suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Leni suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

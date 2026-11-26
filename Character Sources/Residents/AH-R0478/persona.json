@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0478",
+  "personId": "AH-R0478",
+  "name": "Aubrey Ahmed",
+  "age": 47,
+  "occupation": "Nursing aide",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The savings club",
+  "biography": "stories/residents/04/03-the-savings-club.md#ah-r0478",
+  "life": "“I still remember receiving a return ticket with no fixed date.” People around the public road outside the Port of Asphalt know Aubrey by a small Tuesday habit. Aubrey can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I would rather buy a return for my sister than a departure for myself.",
+  "appearance": "Aubrey is easy to recognize by short sandy hair and a marked widow's peak and full cheeks and a mouth that pulls slightly to one side. Usually dressed in a narrow-striped sweater with a folded shopping list secured by a miniature clip, Aubrey presses the lips together to keep a smile in when listening.",
+  "personality": "Aubrey gets protective of anybody who comes into a meeting unprepared. Aubrey privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To buy a return trip for the sister.",
+  "family": "Mateo Adair is Aubrey’s older cousin. Aubrey chooses an ordinary story to tell. Mateo asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The split visit*, Mateo says, “I took the spare half-hour to walk to the corner alone.”",
+  "connections": "Alec Nielsen. They price tickets going in opposite directions for two family reunions.",
+  "familyIds": [
+    "AH-R0739"
+  ],
+  "connectionIds": [
+    "AH-R0471"
+  ],
+  "reactions": [
+    {
+      "situation": "A donor asks for the club's name in return for a ticket",
+      "response": "Aubrey asks the members to hear the terms before deciding on a name.",
+      "asWritten": "A donor asks for the club's name in return for a ticket. Aubrey asks the members to hear the terms before deciding on a name."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Aubrey suggests one straightforward message without accusations and gives the friend time to answer.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Aubrey suggests one straightforward message without accusations and gives the friend time to answer."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Aubrey offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Aubrey offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

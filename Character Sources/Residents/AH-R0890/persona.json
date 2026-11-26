@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0890",
+  "personId": "AH-R0890",
+  "name": "Nelson Mercer",
+  "age": 26,
+  "occupation": "Junior home visitor",
+  "home": "Coast Ridge",
+  "episode": "Care with a clock",
+  "biography": "stories/residents/06/14-care-with-a-clock.md#ah-r0890",
+  "life": "“I still remember asking to train with a client who took longer.” On Friday, near the approach to Seabright Court, Nelson likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I am the newest visitor. I asked for training time with the slow client rather than the tidy example house.",
+  "appearance": "Nelson has a center part and straight chestnut hair, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Nelson counts on the side of one finger where hardly anybody notices.",
+  "personality": "Nelson has a quick wit and an equally quick sense of shame. A joke is often Nelson's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To learn the routine from the person who takes longest.",
+  "family": "Warren Ito is Nelson’s older cousin. Nelson leaves the first voice message. Warren calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The other side of the cove*, Warren says, “I work in metal lettering. Both names fit if we give up the decorative crest.”",
+  "connections": "Marcel Braun. The new visitor learns from a client whose best carer left after being asked to rush.",
+  "familyIds": [
+    "AH-R1275"
+  ],
+  "connectionIds": [
+    "AH-R0886"
+  ],
+  "reactions": [
+    {
+      "situation": "A client wants another minute to finish a button",
+      "response": "Nelson lets the client finish the button and asks where time can be saved without hurrying them.",
+      "asWritten": "A client wants another minute to finish a button. Nelson lets the client finish the button and asks where time can be saved without hurrying them."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Nelson asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Nelson asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Nelson seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Nelson seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

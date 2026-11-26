@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1446",
+  "personId": "AH-R1446",
+  "name": "Francis Parra",
+  "age": 59,
+  "occupation": "Bakery shareholder",
+  "home": "the blocks north of the port",
+  "episode": "The kitchen without a boss",
+  "biography": "stories/residents/10/10-the-kitchen-without-a-boss.md#ah-r1446",
+  "life": "“I still remember trying to put on an apron over my shareholder's coat.” People around the courtyard by Ferry Street Rooms know Francis by a small Saturday habit. Francis prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I have shares and no apron. I offered to carry flour for one afternoon before looking at the daily numbers.",
+  "appearance": "Francis has heavy brows and an unusually delicate jaw. Look for steel-colored hair cut square above the collar. Away from the heat of the kitchen, the familiar outfit is a soft blue checked shirt with a cloth patch so neatly matched it only shows in strong light. In conversation Francis takes off the watch before a long conversation.",
+  "personality": "Francis loves a well-told anecdote and distrusts the neat ending. The parts Francis remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To put real flour-handling time behind a shareholder opinion.",
+  "family": "Talia Valdez is Francis’s stepsibling. Francis is allowed to ask about the bad news afterward. Talia calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The pawned trumpet*, Talia says, “I taught two pupils on that horn. Neither ever knew I owned it first.”",
+  "connections": "Teal Aranda. Carrying flour changes what a shareholder is prepared to say about the workers' rota.",
+  "familyIds": [
+    "AH-R0198"
+  ],
+  "connectionIds": [
+    "AH-R1450"
+  ],
+  "reactions": [
+    {
+      "situation": "Two kitchen workers disagree on the new shift rota",
+      "response": "Francis puts both proposed rotas beside the actual delivery and childcare times.",
+      "asWritten": "Two kitchen workers disagree on the new shift rota. Francis puts both proposed rotas beside the actual delivery and childcare times."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Francis offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Francis offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Francis includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Francis includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

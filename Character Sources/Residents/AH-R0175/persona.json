@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0175",
+  "personId": "AH-R0175",
+  "name": "Hank Meyer",
+  "age": 31,
+  "occupation": "Produce buyer",
+  "home": "Midtown",
+  "episode": "The sandwich board",
+  "biography": "stories/residents/02/03-the-sandwich-board.md#ah-r0175",
+  "life": "“I grew up translating market prices into the number of bedsheets Mum had to iron.” People around Breakwater Way know Hank by a small Sunday habit. Hank stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I thought the numbers were dates. My father can still remember what each filling cost.",
+  "appearance": "Hank is easy to recognize by short black hair swept back and a deep crease beside the mouth when smiling. Usually dressed in a dark green knitted vest with a seam let out by a narrow strip of contrasting fabric, Hank holds eye contact until the other person has finished when listening.",
+  "personality": "Hank talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Hank's ways of saying that it is all right to leave.",
+  "agenda": "To give the family a list of the original fillings.",
+  "family": "Yasmin Mason is Hank’s second cousin. Hank brings the paper and a pen. Yasmin decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The worker who couldn't read the joke*, Yasmin says, “I was the only one who understood both languages and looked away.”",
+  "connections": "Pascal Cullen. They try dating the menu before the millionaire bidder buys a personal memory.",
+  "familyIds": [
+    "AH-R1218"
+  ],
+  "connectionIds": [
+    "AH-R0179"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer offers to erase the board and repaint it",
+      "response": "Hank asks the former owner to record the board before the paint is changed.",
+      "asWritten": "A buyer offers to erase the board and repaint it. Hank asks the former owner to record the board before the paint is changed."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Hank suggests one straightforward message without accusations and gives the friend time to answer.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Hank suggests one straightforward message without accusations and gives the friend time to answer."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Hank says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Hank says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

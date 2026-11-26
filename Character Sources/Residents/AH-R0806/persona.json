@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0806",
+  "personId": "AH-R0806",
+  "name": "Max Carbone",
+  "age": 42,
+  "occupation": "Ward discharge planner",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Home with stairs",
+  "biography": "stories/residents/06/06-home-with-stairs.md#ah-r0806",
+  "life": "“I still remember folding up a bed before its occupant felt ready.” On Monday, near Harbour Bakery, Max buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I wanted the bed free for another patient. I went to see the stairs before asking for a date again.",
+  "appearance": "On an ordinary day, look for a pale blue work shirt and a little coil of soft measuring tape. Max has full cheeks and a mouth that pulls slightly to one side, with a high puff tied with plain cord. Max looks toward the door whenever a name is called during a conversation.",
+  "personality": "Max has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To give the ward an attainable discharge date.",
+  "family": "Evelyn Kaur is Max’s half-sibling. Max remembers the birthdays. Evelyn asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The release address*, Evelyn says, “I argued for a homecoming party until he asked for one evening when nobody wanted a speech.”",
+  "connections": "Neal Heller. The discharge planner hears why a free lift up the stairs isn't the patient's chosen solution.",
+  "familyIds": [
+    "AH-R0949"
+  ],
+  "connectionIds": [
+    "AH-R0807"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative offers to carry the patient up the stairs",
+      "response": "Max asks the patient whether being carried is an offer they want to take up.",
+      "asWritten": "A relative offers to carry the patient up the stairs. Max asks the patient whether being carried is an offer they want to take up."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Max keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Max keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Max asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Max asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

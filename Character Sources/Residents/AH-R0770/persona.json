@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0770",
+  "personId": "AH-R0770",
+  "name": "Amanda Wong",
+  "age": 52,
+  "occupation": "Union timekeeper",
+  "home": "the western residential streets",
+  "episode": "Nine unpaid hours",
+  "biography": "stories/residents/06/02-nine-unpaid-hours.md#ah-r0770",
+  "life": "“I still remember my wife circling a missing hour in red.” On Friday, near Breakwater Way, Amanda stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I counted overtime for everyone except myself. My wife sat down with the sheet and found my name.",
+  "appearance": "Amanda is easy to recognize by a smooth side part with one rebellious curl and fine brows over wide-set eyes. Usually dressed in a narrow-striped sweater with a pair of reading glasses in a cloth sleeve, Amanda folds a paper napkin into quarters without noticing when listening.",
+  "personality": "Amanda has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To include the overlooked personal overtime in the claim.",
+  "family": "Amir Jain is Amanda’s half-sibling. Amanda saves a place. Amir chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The carer's afternoon*, Amir says, “I learned the meal routine because I wanted to flirt with the neighbor and ended up loving Wednesdays.”",
+  "connections": "Taylor Vargas. A missed break can be added to the union tally before the sheet leaves the room.",
+  "familyIds": [
+    "AH-R1037"
+  ],
+  "connectionIds": [
+    "AH-R0763"
+  ],
+  "reactions": [
+    {
+      "situation": "A worker asks to give their account privately",
+      "response": "Amanda arranges a one-to-one account and checks which facts the worker permits to be shared.",
+      "asWritten": "A worker asks to give their account privately. Amanda arranges a one-to-one account and checks which facts the worker permits to be shared."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Amanda keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Amanda keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Amanda explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Amanda explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

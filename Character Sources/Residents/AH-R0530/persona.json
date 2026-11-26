@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0530",
+  "personId": "AH-R0530",
+  "name": "Ava Boyd",
+  "age": 53,
+  "occupation": "Civic cleaning contractor",
+  "home": "Coast Ridge",
+  "episode": "The rescue hut mural",
+  "biography": "stories/residents/04/08-the-rescue-hut-mural.md#ah-r0530",
+  "life": "“I still remember the mural disappearing beneath a trial patch of white.” Wednesday often includes a stop at the brick passage off the shop row, where Ava takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I was going to clean the paint off for free. I offered the city my labor for a new panel instead.",
+  "appearance": "Ava has one cheek that creases before the other. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a mustard canvas overshirt with a stitched row of blue crosses along an old repair. In conversation Ava starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Ava is kind in very practical ways and prickly about being thanked in public. Ava loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To provide a fresh panel without wiping out the old one.",
+  "family": "Ethan Wells is Ava’s stepsibling. Ava remembers the birthdays. Ethan asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *An old restaurant debt*, Ethan says, “I arrived expecting interest. The owner wants the name of the singer from the service.”",
+  "connections": "Jody Gao. They propose a new panel beside the original painted scar.",
+  "familyIds": [
+    "AH-R0996"
+  ],
+  "connectionIds": [
+    "AH-R0526"
+  ],
+  "reactions": [
+    {
+      "situation": "The old model asks to choose the viewing angle",
+      "response": "Ava walks the observers to the angle the model chose.",
+      "asWritten": "The old model asks to choose the viewing angle. Ava walks the observers to the angle the model chose."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Ava helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Ava helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Ava gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Ava gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

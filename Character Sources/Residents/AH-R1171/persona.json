@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1171",
+  "personId": "AH-R1171",
+  "name": "Zachary Abbott",
+  "age": 24,
+  "occupation": "Chorus understudy",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The understudy sings",
+  "biography": "stories/residents/08/13-the-understudy-sings.md#ah-r1171",
+  "life": "“I still remember learning somebody else's song while they were still in the room.” On Friday, near the corner outside Coastal Barber, Zachary usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I want the part and hate the thought that I might be happy about someone else's bad news.",
+  "appearance": "Zachary has a soft fringe that falls across one eyebrow, fine brows over wide-set eyes, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with a comb in a sleeve sewn into the lining. When somebody else has the floor, Zachary holds eye contact until the other person has finished.",
+  "personality": "Zachary can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Zachary can afford to give, and family knows to take it seriously.",
+  "agenda": "To take the lead without hiding complicated feelings.",
+  "family": "Logan Dinh is Zachary’s second cousin. Zachary calls back when there is finally a little privacy. Logan leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The painted footprint*, Logan says, “I brought the plaster cast my father took. It belongs to a gull hunter with enormous feet.”",
+  "connections": "Franklin Davila. The two singers discuss who gets to announce the change and who gets to hear the new voice first.",
+  "familyIds": [
+    "AH-R0377"
+  ],
+  "connectionIds": [
+    "AH-R1172"
+  ],
+  "reactions": [
+    {
+      "situation": "The understudy is offered the lead before the announcement",
+      "response": "Zachary asks that the lead singer hear the change directly before it is advertised.",
+      "asWritten": "The understudy is offered the lead before the announcement. Zachary asks that the lead singer hear the change directly before it is advertised."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Zachary brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Zachary brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Zachary suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Zachary suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

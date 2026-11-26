@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0294",
+  "personId": "AH-R0294",
+  "name": "Marin Ramos",
+  "age": 52,
+  "occupation": "Boat owner and architect",
+  "home": "Eastside",
+  "episode": "A sail cut small",
+  "biography": "stories/residents/02/15-a-sail-cut-small.md#ah-r0294",
+  "life": "“I renamed a boat once and regretted it before the paint dried.” People around the steps at Pier Beach know Marin by a small Tuesday habit. Marin watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I sold the boat but kept its name. I didn't know I wanted the letter H until somebody made a hat of it.",
+  "appearance": "Back on the street, look for a soft blue checked shirt and one loose pocket corner secured with green thread. Marin has two dimples that appear only with a full smile, with a center part and straight chestnut hair. Marin draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Marin prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To take the letter from the old boat name home.",
+  "family": "Elias Rios is Marin’s younger cousin. Marin offers the first invitation. Elias gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Two birthdays in one ward*, Elias says, “I play guitar on the ward. The old worker wanted a saucy song at a volume the child couldn't hear.”",
+  "connections": "Owen Brandt. They negotiate a useful pattern around the letter wanted for a hat.",
+  "familyIds": [
+    "AH-R1408"
+  ],
+  "connectionIds": [
+    "AH-R0296"
+  ],
+  "reactions": [
+    {
+      "situation": "The marina asks to put its name on every finished piece",
+      "response": "Marin asks the makers whether they want a brand name on what they take home.",
+      "asWritten": "The marina asks to put its name on every finished piece. Marin asks the makers whether they want a brand name on what they take home."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Marin keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Marin keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Marin clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Marin clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0107",
+  "personId": "AH-R0107",
+  "name": "Remi Ash",
+  "age": 29,
+  "occupation": "Paint shop clerk",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Ten fingers",
+  "biography": "stories/residents/01/11-ten-fingers.md#ah-r0107",
+  "life": "Remi learned color names in a trade catalogue and swear words from the customers misreading them. Sending the birthday woman into helpless laughter was the first sales demonstration that made the whole shop sit down. Sunday often includes a stop at Harbour Bakery, where Remi buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "Our yellow has a vulgar stock name. My grandmother hated being told what words she could say. I whispered it to the birthday girl and she made me say it louder.",
+  "appearance": "Remi has a smooth side part with one rebellious curl, a straight nose and deep-set eyes, and a favorite piece of clothing, a long navy raincoat. It usually goes with a printed handkerchief folded into the pocket. When somebody else has the floor, Remi gives a little nod before asking a hard question.",
+  "personality": "Remi treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To let the woman enjoy the yellow's outrageous name in company.",
+  "family": "Salma Hayward is Remi’s older relative by marriage. Remi makes room at the table. Salma brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The crash anniversary*, Salma says, “I lost a brother somewhere else. I sent one note to the family and left my phone number off it.”",
+  "connections": "Greta Falk. One wants an elegant arrangement. The other wants the birthday guest to enjoy a wonderfully rude shade name.",
+  "familyIds": [
+    "AH-R1017"
+  ],
+  "connectionIds": [
+    "AH-R0105"
+  ],
+  "reactions": [
+    {
+      "situation": "A birthday guest starts rearranging other people's colors",
+      "response": "Remi asks the birthday client whether she wants the colors moved.",
+      "asWritten": "A birthday guest starts rearranging other people's colors. Remi asks the birthday client whether she wants the colors moved."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Remi checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Remi checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Remi changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Remi changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

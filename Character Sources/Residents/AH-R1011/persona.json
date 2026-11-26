@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1011",
+  "personId": "AH-R1011",
+  "name": "Lee Ingram",
+  "age": 37,
+  "occupation": "Collision survivor and pay clerk",
+  "home": "Eastside",
+  "episode": "The crash anniversary",
+  "biography": "stories/residents/07/12-the-crash-anniversary.md#ah-r1011",
+  "life": "“I still remember seeing my damaged car in a newspaper box.” On Friday, near Lighthouse Cove, Lee takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I survived it. I need one route to work where nobody recognizes me from the newspaper photograph.",
+  "appearance": "On an ordinary day, look for a sand-colored linen shirt and a square of clean cloth for polishing smudges. Lee has full cheeks and a mouth that pulls slightly to one side, with black hair twisted into a small knot. Lee rubs a thumb along the edge of the nearest pocket during a conversation.",
+  "personality": "Lee thinks best while walking. Sitting beneath someone's office clock makes Lee sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To keep a usable route past the accident site.",
+  "family": "Darcy Baran is Lee’s stepsibling. Lee can stop the walk at any corner. Darcy chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The painted footprint*, Darcy says, “I'm measuring everyone's guesses for a statistics class.”",
+  "connections": "Roland Pierce. The survivor can choose whether a picture should mark a road they must travel every day. Also in the story is Manuel Peters (former collision counterpart).",
+  "familyIds": [
+    "AH-R0378"
+  ],
+  "connectionIds": [
+    "AH-R1016",
+    "AH-R1013"
+  ],
+  "reactions": [
+    {
+      "situation": "A memorial is proposed where the survivor walks to work",
+      "response": "Lee checks whether the survivor wants to pass the proposed site every day.",
+      "asWritten": "A memorial is proposed where the survivor walks to work. Lee checks whether the survivor wants to pass the proposed site every day."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Lee takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Lee takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Lee asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Lee asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

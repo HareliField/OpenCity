@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0977",
+  "personId": "AH-R0977",
+  "name": "Cian Ingram",
+  "age": 38,
+  "occupation": "Boardwalk chip seller",
+  "home": "Eastside",
+  "episode": "The expensive summer",
+  "biography": "stories/residents/07/08-the-expensive-summer.md#ah-r0977",
+  "life": "“I still remember carrying a paper tray that didn't cost a week's wages.” People around the downtown fountain know Cian by a small Monday habit. Cian keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I brought takeaway chips to the public bench. The birthday girl said it was her best sea view yet.",
+  "appearance": "Cian has a deep crease beside the mouth when smiling. Look for a loose dark braid. On an ordinary day, the familiar outfit is a cream pullover with a copper-colored clasp that has been repaired by hand. In conversation Cian counts on the side of one finger where hardly anybody notices.",
+  "personality": "Cian is kind in very practical ways and prickly about being thanked in public. Cian loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To give the birthday girl a waterfront meal within reach.",
+  "family": "Tamsin Leung is Cian’s stepsibling. Cian can stop the walk at any corner. Tamsin chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *A chair on the quay*, Tamsin says, “I put the chair in lost property under freight fittings.”",
+  "connections": "Adriana Ingram. The old recipe and the public bench make two possible alternatives to a costly birthday meal.",
+  "familyIds": [
+    "AH-R0014"
+  ],
+  "connectionIds": [
+    "AH-R0976"
+  ],
+  "reactions": [
+    {
+      "situation": "A waiter offers to split one birthday dessert among everybody",
+      "response": "Cian checks that the birthday guest likes the dessert before calculating the portions.",
+      "asWritten": "A waiter offers to split one birthday dessert among everybody. Cian checks that the birthday guest likes the dessert before calculating the portions."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Cian separates the money question from the broken promise and asks which one the family wants to discuss first.",
+      "asWritten": "A family supper turns into an argument about old debt. Cian separates the money question from the broken promise and asks which one the family wants to discuss first."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Cian gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Cian gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

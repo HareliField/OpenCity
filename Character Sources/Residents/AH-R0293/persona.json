@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0293",
+  "personId": "AH-R0293",
+  "name": "Daryl Mills",
+  "age": 40,
+  "occupation": "Upholsterer",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A sail cut small",
+  "biography": "stories/residents/02/15-a-sail-cut-small.md#ah-r0293",
+  "life": "“My best customer buys nothing twice because everything can be resewn.” Sunday often includes a stop at the courtyard by Ferry Street Rooms, where Daryl prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I'm stitching a sunshade for a neighbor who will never set foot on a boat again.",
+  "appearance": "Daryl has short, uneven waves that refuse to lie flat, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Daryl counts on the side of one finger where hardly anybody notices.",
+  "personality": "Daryl talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Daryl's ways of saying that it is all right to leave.",
+  "agenda": "To install a shade where a frightened former sailor can use it.",
+  "family": "Mona Brandt is Daryl’s cousin. Daryl remembers the birthdays. Mona asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The million-dollar flat*, Mona says, “I deliver her lunch. I love the joke about a millionaire buying soup on tick but I wish she'd let me balance the account.”",
+  "connections": "Gloria Smith. A shorebound neighbor can keep a piece of water as a shade or a passport square.",
+  "familyIds": [
+    "AH-R1226"
+  ],
+  "connectionIds": [
+    "AH-R0300"
+  ],
+  "reactions": [
+    {
+      "situation": "Two makers want the same piece of sail",
+      "response": "Daryl lays both paper patterns on the piece before anybody cuts.",
+      "asWritten": "Two makers want the same piece of sail. Daryl lays both paper patterns on the piece before anybody cuts."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Daryl asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Daryl asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Daryl says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Daryl says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

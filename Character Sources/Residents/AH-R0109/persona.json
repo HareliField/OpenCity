@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0109",
+  "personId": "AH-R0109",
+  "name": "Liv Oren",
+  "age": 36,
+  "occupation": "Bridal photographer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Ten fingers",
+  "biography": "stories/residents/01/11-ten-fingers.md#ah-r0109",
+  "life": "Liv learned photography at events where bridesmaids spent hours arranging pictures the guests had already taken. She has developed a liking for hands that are carrying, pouring, buttoning or busy enough to forget her. People around the steps at Pier Beach know Liv by a small Saturday habit. Liv watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I kept trying to pose the hands until she grabbed the kettle. That's the picture I'm giving her. You can see all ten colors and exactly who still pours the tea.",
+  "appearance": "Liv is easy to recognize by close-cropped dark curls and a softly rounded chin under sharp cheekbones. Usually dressed in a washed violet jersey with a train token tied to a zipper pull, Liv leans a shoulder against the wall during long conversations when listening.",
+  "personality": "Liv loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To deliver the candid kettle picture with the clients' agreement.",
+  "family": "Frankie Armas is Liv’s younger cousin. After a relative came home with a walker, everyone offered errands and nobody remembered the threshold. The two of them still measure doors before offering a room to anyone. Liv notices the physical difficulty first. Asked about *A dance for two fathers*, Frankie says, “I used to think my family was embarrassing.”",
+  "connections": "Lark Kane. Conducting with ten bright fingers gives the photographer a way of taking the picture without posing the hands.",
+  "familyIds": [
+    "AH-R1030"
+  ],
+  "connectionIds": [
+    "AH-R0106"
+  ],
+  "reactions": [
+    {
+      "situation": "A birthday guest starts rearranging other people's colors",
+      "response": "Liv asks the birthday client whether she wants the colors moved.",
+      "asWritten": "A birthday guest starts rearranging other people's colors. Liv asks the birthday client whether she wants the colors moved."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Liv lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Liv lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Liv offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Liv offers one about their own embarrassment instead."
+    }
+  ]
+}

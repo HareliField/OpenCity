@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1474",
+  "personId": "AH-R1474",
+  "name": "Yusuf Solis",
+  "age": 15,
+  "occupation": "School pupil and actor",
+  "home": "Old Town",
+  "episode": "One last dress rehearsal",
+  "biography": "stories/residents/10/13-one-last-dress-rehearsal.md#ah-r1474",
+  "life": "“I still remember being given a villain's line because I read it without fear.” People around the entrance to the Wash House know Yusuf by a small Wednesday habit. Yusuf stops for local notices even on a day without a load to wash.",
+  "voice": "I play the villain. My dad has never seen me do anything at school except get in trouble.",
+  "appearance": "Yusuf has a small notch in the left eyebrow. Look for a long plait tucked inside the collar. Outside school, the familiar outfit is a charcoal zip cardigan with a pen clipped inside the neckline. In conversation Yusuf listens with the head tilted a little to the left.",
+  "personality": "Yusuf uses precise names for tools and very approximate names for feelings. People who know Yusuf well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To let the father see the child in a lead scene.",
+  "family": "Hollis Parker is Yusuf’s older cousin. The household has two versions of an old recipe because somebody detested onions and never admitted it to the original cook. A person sitting down to eat gets to choose. Yusuf likes to give the old cook the first taste. Asked about *The spare spectacles*, Hollis says, “I signed something blurry once. I brought my own glasses and stayed until she read every word.”",
+  "connections": "Kai Bruno. The student villain and the stage manager both have memories riding on a parent getting into the room.",
+  "familyIds": [
+    "AH-R0331"
+  ],
+  "connectionIds": [
+    "AH-R1480"
+  ],
+  "reactions": [
+    {
+      "situation": "The stage manager asks if anybody can stay for a second ending",
+      "response": "Yusuf checks who can actually stay and which ride home would be lost.",
+      "asWritten": "The stage manager asks if anybody can stay for a second ending. Yusuf checks who can actually stay and which ride home would be lost."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Yusuf asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Yusuf asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Yusuf brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Yusuf brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

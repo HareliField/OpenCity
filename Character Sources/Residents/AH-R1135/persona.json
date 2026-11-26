@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1135",
+  "personId": "AH-R1135",
+  "name": "Allen Mora",
+  "age": 44,
+  "occupation": "Foster placement assessor",
+  "home": "Midtown",
+  "episode": "The third bedroom",
+  "biography": "stories/residents/08/09-the-third-bedroom.md#ah-r1135",
+  "life": "“I still remember measuring a bedroom while somebody tried to tell me their history.” Monday often includes a stop at the corner by Juniper Tailor, where Allen looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I do the assessment. I brought a tape measure and ended up drawing two alternate plans on the kitchen floor.",
+  "appearance": "Allen has a long plait tucked inside the collar, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Allen looks down for a moment before saying something difficult.",
+  "personality": "Allen loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To assess both floor plans with the children present.",
+  "family": "Ren Berry is Allen’s older cousin. Allen gets to change the plan. Ren offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The engine lullaby*, Ren says, “I tuned that engine solely by ear. I can hear which part was replaced while I was away.”",
+  "connections": "Shay Valdez. The assessor's second plan depends on a partition the fitter can build without losing the window.",
+  "familyIds": [
+    "AH-R0592"
+  ],
+  "connectionIds": [
+    "AH-R1136"
+  ],
+  "reactions": [
+    {
+      "situation": "A caseworker asks the foster siblings to describe sharing",
+      "response": "Allen gives each sibling room to describe sharing separately.",
+      "asWritten": "A caseworker asks the foster siblings to describe sharing. Allen gives each sibling room to describe sharing separately."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Allen walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Allen walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Allen offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Allen offers one about their own embarrassment instead."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0699",
+  "personId": "AH-R0699",
+  "name": "Nina Fraser",
+  "age": 62,
+  "occupation": "Retired import clerk",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Midnight cinnamon",
+  "biography": "stories/residents/05/10-midnight-cinnamon.md#ah-r0699",
+  "life": "“I still remember a sack printed with the address of an aunt's old room.” On Friday, near Paper & Pine Books, Nina starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I know the grinding marks on the sack. My aunt filled it before she retired inland.",
+  "appearance": "On an ordinary day, look for a dark green knitted vest and a printed handkerchief folded into the pocket. Nina has a strong profile and a little space between the front teeth, with a long silver braid. Nina folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Nina prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To identify the aunt's packing marks.",
+  "family": "Anthony Ortiz is Nina’s stepsibling. Nina asks the question the rest of the family avoided. Anthony chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The soft wharf chalk*, Anthony says, “I remember the sweet chalk we stole from school.”",
+  "connections": "Devin Ames. The wrongly delivered sack still carries the aunt's recognizably old packing mark.",
+  "familyIds": [
+    "AH-R0467"
+  ],
+  "connectionIds": [
+    "AH-R0697"
+  ],
+  "reactions": [
+    {
+      "situation": "The spice buyer wants the mistaken sack returned",
+      "response": "Nina sets aside a sample and confirms which holiday orders depend on it.",
+      "asWritten": "The spice buyer wants the mistaken sack returned. Nina sets aside a sample and confirms which holiday orders depend on it."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Nina asks the person already using it whether they can comfortably stand, rather than presuming who needs it most.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Nina asks the person already using it whether they can comfortably stand, rather than presuming who needs it most."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Nina clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Nina clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

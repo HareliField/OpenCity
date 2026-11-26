@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0041",
+  "personId": "AH-R0041",
+  "name": "Denny Ames",
+  "age": 32,
+  "occupation": "Street-level drug dealer",
+  "home": "Midtown",
+  "episode": "The aquarium",
+  "biography": "stories/residents/01/05-the-aquarium.md#ah-r0041",
+  "life": "Denny started selling to cover a brother's missed share of rent and kept selling after that emergency ended. He likes being the person everyone can find. Handing over the aquarium key means admitting that some uses of being needed are better than others. On Sunday, near the courtyard by Ferry Street Rooms, Denny prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I used to feed those fish while the tenant did dialysis. Everybody in the passage knows how I pay rent. Nobody knew I had his spare key until I gave it to the housing worker.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a train token tied to a zipper pull. Denny has a strong profile and a little space between the front teeth, with a soft fringe that falls across one eyebrow. Denny rubs a thumb along the edge of the nearest pocket during a conversation.",
+  "personality": "Denny treats a small promise with the gravity others reserve for a contract. This makes Denny lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To keep the fish alive and reopen contact with the displaced tenant.",
+  "family": "Marina Carvalho is Denny’s older cousin. Denny makes room at the table. Marina brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Saturday keys*, Marina says, “I keep an emergency key list in my hymn book.”",
+  "connections": "Bina Marsh. A surrendered spare key gives the housing worker a way to call a displaced man from beside his own fish.",
+  "familyIds": [
+    "AH-R0289"
+  ],
+  "connectionIds": [
+    "AH-R0045"
+  ],
+  "reactions": [
+    {
+      "situation": "A reporter asks which neighbor held the aquarium key",
+      "response": "Denny asks whether the tenant wants the key holder named before saying anything to the reporter.",
+      "asWritten": "A reporter asks which neighbor held the aquarium key. Denny asks whether the tenant wants the key holder named before saying anything to the reporter."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Denny asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Denny asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Denny says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Denny says what can be returned and asks whether that will do."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0690",
+  "personId": "AH-R0690",
+  "name": "Bianca Trent",
+  "age": 38,
+  "occupation": "Home-care aide",
+  "home": "Old Town",
+  "episode": "An address in pencil",
+  "biography": "stories/residents/05/09-an-address-in-pencil.md#ah-r0690",
+  "life": "“I still remember two alphabets on the door of our old flat.” People around the public road outside the Port of Asphalt know Bianca by a small Wednesday habit. Bianca can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I offered my grandmother's spare number tile. Now there are two grandparents' handwritings over our front door.",
+  "appearance": "Bianca has a deep crease beside the mouth when smiling. Look for a smooth side part with one rebellious curl. On an ordinary day, the familiar outfit is a striped cotton shirt with one loose pocket corner secured with green thread. In conversation Bianca gathers both sleeves neatly before settling in.",
+  "personality": "Bianca keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Bianca wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To mount the two handwritings above the family door.",
+  "family": "Sasha Baldwin is Bianca’s cousin. Bianca remembers the birthdays. Sasha asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A doctor moves away*, Sasha says, “I clean her office. She always notices the first orange I bring from my tree and nobody else at work does.”",
+  "connections": "Valentina Carey. Both families keep their old numbering on the door and in the album.",
+  "familyIds": [
+    "AH-R1254"
+  ],
+  "connectionIds": [
+    "AH-R0686"
+  ],
+  "reactions": [
+    {
+      "situation": "A resident asks for the old metal number back",
+      "response": "Bianca asks who has already taken the metal down and where it was left.",
+      "asWritten": "A resident asks for the old metal number back. Bianca asks who has already taken the metal down and where it was left."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Bianca asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Bianca asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Bianca offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Bianca offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

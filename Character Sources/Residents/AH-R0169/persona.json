@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0169",
+  "personId": "AH-R0169",
+  "name": "Joanna Ellis",
+  "age": 65,
+  "occupation": "Retired stevedore",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Five missing lunches",
+  "biography": "stories/residents/02/02-five-missing-lunches.md#ah-r0169",
+  "life": "“The first game we played ashore was scored in pencil on a packing list.” On Saturday, near the steps at Pier Beach, Joanna watches the working part of the waterfront before turning toward the open water.",
+  "voice": "The dents on those lids came from our lunchtime domino games. I still owe the last winner ten points.",
+  "appearance": "Joanna has salt-and-pepper curls, a long face and high cheekbones, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Joanna draws small circles on a tabletop while waiting.",
+  "personality": "Joanna has a talent for getting adversaries to laugh at exactly the same thing. Joanna knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To play out the unfinished domino score on the old table.",
+  "family": "Carmen Ali is Joanna’s stepsibling. Joanna chooses an ordinary story to tell. Carmen asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The button card*, Carmen says, “I found a brass anchor from a uniform my sister swore she'd burned.”",
+  "connections": "Ellen Baran. They arrange a lunchtime domino rematch with actual food in the tins.",
+  "familyIds": [
+    "AH-R0454"
+  ],
+  "connectionIds": [
+    "AH-R0170"
+  ],
+  "reactions": [
+    {
+      "situation": "An old tin is claimed by two crews",
+      "response": "Joanna invites both crews to describe the lid without putting either at fault.",
+      "asWritten": "An old tin is claimed by two crews. Joanna invites both crews to describe the lid without putting either at fault."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Joanna brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Joanna brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Joanna asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Joanna asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

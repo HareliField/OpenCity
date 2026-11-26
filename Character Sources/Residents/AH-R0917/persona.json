@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0917",
+  "personId": "AH-R0917",
+  "name": "Mara Bly",
+  "age": 26,
+  "occupation": "Florist",
+  "home": "Midtown",
+  "episode": "The absent signature",
+  "biography": "stories/residents/07/02-the-absent-signature.md#ah-r0917",
+  "life": "“I still remember being introduced to a relative by her formal name.” On Tuesday, near Harbour Bakery, Mara buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I want to speak to my aunt without mentioning the berth once. Nobody believes that will help.",
+  "appearance": "Mara is easy to recognize by short black hair swept back and one cheek that creases before the other. Usually dressed in a sand-colored linen shirt with a cloth patch so neatly matched it only shows in strong light, Mara raises one eyebrow long before saying yes when listening.",
+  "personality": "Mara can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To see the aunt apart from the lease.",
+  "family": "Patricia Keane is Mara’s stepsibling. Mara asks before bringing somebody along. Patricia can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Three minutes at the bridge*, Patricia says, “I need those three minutes to get my youngest through the school gate with a hug.”",
+  "connections": "Sage Jeong. They agree to ask the missing aunt before giving her address to people who want a signature.",
+  "familyIds": [
+    "AH-R1461"
+  ],
+  "connectionIds": [
+    "AH-R0911"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants the absent signer's address",
+      "response": "Mara asks the absent person what address, if any, can be shared.",
+      "asWritten": "A relative wants the absent signer's address. Mara asks the absent person what address, if any, can be shared."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Mara helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Mara helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Mara asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Mara asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

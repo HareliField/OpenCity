@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0856",
+  "personId": "AH-R0856",
+  "name": "Levi Lau",
+  "age": 27,
+  "occupation": "Shop-row delivery driver",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A chair of one's own",
+  "biography": "stories/residents/06/11-a-chair-of-one-s-own.md#ah-r0856",
+  "life": "“I still remember driving a friend to interview with my own competitor.” On Wednesday, near Studio Boulevard, Levi waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I gave her a lift to view another shop. I hope she'll stay but I want it to be a choice.",
+  "appearance": "On an ordinary day, look for a red windbreaker and a watch on a cracked leather band. Levi has a wide brow and a narrow jaw, with black hair twisted into a small knot. Levi squares up pieces of paper while thinking during a conversation.",
+  "personality": "Levi admires skill and distrusts the idea that skill gives anyone permission to be rude. Levi learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To let the colleague view another shop without pressure.",
+  "family": "Clara Ngo is Levi’s older cousin. A grown relative showed up at the family table in work clothes one holiday because taking extra time to change would mean missing the meal. The dusty chair is now part of the telling. Levi guards the last portion for the one running late. Asked about *An address in pencil*, Clara says, “I used to live opposite. The penciled number reminded me that I had a letter I never sent.”",
+  "connections": "Joel Myers. A receptionist can name the seasonal gaps while a driver can show the worker another chair.",
+  "familyIds": [
+    "AH-R0684"
+  ],
+  "connectionIds": [
+    "AH-R0855"
+  ],
+  "reactions": [
+    {
+      "situation": "A regular cancels the week's most valuable appointment",
+      "response": "Levi revises the week's numbers with the cancellation included before making any promise.",
+      "asWritten": "A regular cancels the week's most valuable appointment. Levi revises the week's numbers with the cancellation included before making any promise."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Levi asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Levi asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Levi describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Levi describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

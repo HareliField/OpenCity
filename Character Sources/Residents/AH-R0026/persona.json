@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0026",
+  "personId": "AH-R0026",
+  "name": "Etta Webb",
+  "age": 36,
+  "occupation": "Chess coach",
+  "home": "the western residential streets",
+  "episode": "The small signature",
+  "biography": "stories/residents/01/03-the-small-signature.md#ah-r0026",
+  "life": "Etta started the chess club so kids could lose at something that wasn't school. She refuses to post rankings. She can, however, recite the first move of every child who has ever beaten her. On Tuesday, near the blocks below Foundry Lofts, Etta checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "Our best player can't grip the heavy replacement pieces. I brought along the wooden set my father whittled. The donor played her and lost both rooks.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a fabric zip pull cut from a school scarf. Etta has a straight nose and deep-set eyes, with a swept fringe and a closely clipped nape. Etta raises one eyebrow long before saying yes during a conversation.",
+  "personality": "Etta talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Etta's ways of saying that it is all right to leave.",
+  "agenda": "To find pieces the club's strongest player can grip.",
+  "family": "Elise Cho is Etta’s older cousin. Etta brings the paper and a pen. Elise decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The first straight paycheck*, Elise says, “I am the mother who always took his gifts. I need to learn to accept a cheaper birthday present without asking why.”",
+  "connections": "Silas Pike. One drafts the words of the gift. The other has to find out if a child can actually use what those words buy.",
+  "familyIds": [
+    "AH-R0796"
+  ],
+  "connectionIds": [
+    "AH-R0024"
+  ],
+  "reactions": [
+    {
+      "situation": "The new chess table arrives too high for one of its players",
+      "response": "Etta puts one of the actual playing pieces into the affected player's hand before accepting delivery.",
+      "asWritten": "The new chess table arrives too high for one of its players. Etta puts one of the actual playing pieces into the affected player's hand before accepting delivery."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Etta helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Etta helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Etta says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Etta says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

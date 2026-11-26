@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1334",
+  "personId": "AH-R1334",
+  "name": "Jody Clay",
+  "age": 41,
+  "occupation": "Divorced engineer",
+  "home": "Coast Ridge",
+  "episode": "The missing Sunday",
+  "biography": "stories/residents/09/14-the-missing-sunday.md#ah-r1334",
+  "life": "“I still remember telling my spouse the time I actually had for Sunday.” On Thursday, near Juniper Street, Jody knows which of the west-side porches has a seat in the shade.",
+  "voice": "I love his company but I also need Sundays for my own marriage. I'm joining once a month on a fixed date.",
+  "appearance": "Jody has a broad nose and a deep dimple on one cheek. Look for thick, tightly coiled hair. On an ordinary day, the familiar outfit is an unlined tan jacket with a narrow brass watch set a little fast. In conversation Jody folds a paper napkin into quarters without noticing.",
+  "personality": "Jody can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Jody can afford to give, and family knows to take it seriously.",
+  "agenda": "To offer a sustainable monthly Sunday.",
+  "family": "Jo March is Jody’s parent’s cousin. Jody can always ask for five minutes alone. Jo asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The widow's razor*, Jo says, “I was forbidden to cut girls' hair here. That woman lent me the razor for my first paying customer.”",
+  "connections": "Quinn Park. A sustainable family date gives the social worker a better measure of companionship than a timed task.",
+  "familyIds": [
+    "AH-R0404"
+  ],
+  "connectionIds": [
+    "AH-R1336"
+  ],
+  "reactions": [
+    {
+      "situation": "One volunteer cannot make the match",
+      "response": "Jody gives the widower a timely message and lets him decide whether he wants another visitor.",
+      "asWritten": "One volunteer cannot make the match. Jody gives the widower a timely message and lets him decide whether he wants another visitor."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Jody checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Jody checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Jody suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Jody suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

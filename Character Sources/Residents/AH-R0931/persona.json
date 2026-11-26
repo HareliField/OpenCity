@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0931",
+  "personId": "ah-pd-113",
+  "name": "Jo Grant",
+  "age": 45,
+  "occupation": "Police communications dispatcher",
+  "home": "Coast Ridge",
+  "episode": "A civilian apology",
+  "biography": "stories/residents/07/04-a-civilian-apology.md#ah-r0931",
+  "life": "“I still remember typing a caption from the notes in a wet coat.” People around the brick passage off the shop row know Jo by a small Sunday habit. Jo takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I wrote the caption from a shorthand note. I remember the shopkeeper bringing tea to the waiting families.",
+  "appearance": "Jo has black hair twisted into a small knot, fine brows over wide-set eyes, and a favorite piece of clothing, a mustard canvas overshirt. It usually goes with a pair of reading glasses in a cloth sleeve. When somebody else has the floor, Jo steadies a cup with both hands while listening.",
+  "personality": "Jo reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Jo trusts most.",
+  "agenda": "To replace the inaccurate caption under personal responsibility.",
+  "family": "Orlando Dinh is Jo’s second cousin. Jo brings the paper and a pen. Orlando decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *A four o'clock kitchen*, Orlando says, “I work the port shift and the first warm meal makes me less short-tempered with my kid after work.”",
+  "connections": "Luis Soto (department colleague). A caption writer and the colleague who stayed silent both have something specific to correct.",
+  "familyIds": [
+    "AH-R1292"
+  ],
+  "connectionIds": [
+    "AH-R0938"
+  ],
+  "reactions": [
+    {
+      "situation": "A newspaper repeats the old display caption",
+      "response": "Jo gets the shopkeeper's preferred wording to the editor before passing the story on.",
+      "asWritten": "A newspaper repeats the old display caption. Jo gets the shopkeeper's preferred wording to the editor before passing the story on."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Jo accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Jo accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Jo does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Jo does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

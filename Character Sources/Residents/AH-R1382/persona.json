@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1382",
+  "personId": "ah-pd-140",
+  "name": "Max King",
+  "age": 41,
+  "occupation": "Patrol officer",
+  "home": "Old Town",
+  "episode": "Names on the night wall",
+  "biography": "stories/residents/10/04-names-on-the-night-wall.md#ah-r1382",
+  "life": "“I still remember a tomato plant surviving three shift changes.” On Wednesday, near the market by Market Flats, Max often waits until the delivery baskets are stacked before going in.",
+  "voice": "I have covered my partner's Saturdays for a decade. My own card names the neighbor who waters my tomatoes.",
+  "appearance": "Max has heavy brows and an unusually delicate jaw. Look for a high puff tied with plain cord. On an ordinary day, the familiar outfit is a plum-colored cardigan with a tiny red thread tied through the lowest buttonhole. In conversation Max starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Max prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To bring tomatoes to the neighbor who watered them.",
+  "family": "Helena Neal is Max’s cousin raised in the same household. Max is free to hang up first. Helena makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The pawned trumpet*, Helena says, “I took the loan to get home for my mother's funeral.”",
+  "connections": "Milan Gray. A late taxi escort and a neighbor watering tomatoes reveal the second shift behind an ordinary watch.",
+  "familyIds": [
+    "AH-R0194"
+  ],
+  "connectionIds": [
+    "AH-R1384"
+  ],
+  "reactions": [
+    {
+      "situation": "A neighbor named on several cards asks for a favor in return",
+      "response": "Max asks the neighbor what kind of help they actually need now.",
+      "asWritten": "A neighbor named on several cards asks for a favor in return. Max asks the neighbor what kind of help they actually need now."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Max asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Max asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Max clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Max clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

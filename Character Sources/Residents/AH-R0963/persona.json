@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0963",
+  "personId": "AH-R0963",
+  "name": "Victor Lowe",
+  "age": 41,
+  "occupation": "Bus operator",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The first language",
+  "biography": "stories/residents/07/07-the-first-language.md#ah-r0963",
+  "life": "“I still remember the book I bought to show I still knew my mother's language.” Friday often includes a stop at the blocks below Foundry Lofts, where Victor checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I buy books in our first language and never open them myself. She's begun asking why.",
+  "appearance": "Victor has a small notch in the left eyebrow. Look for short black hair swept back. On an ordinary day, the familiar outfit is a dark green knitted vest with a replacement button a shade darker than the others. In conversation Victor looks toward the door whenever a name is called.",
+  "personality": "Victor has a quick wit and an equally quick sense of shame. A joke is often Victor's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To open one home-language book alongside the child.",
+  "family": "Oakley Roman is Victor’s cousin raised in the same household. Victor chooses the familiar route. Oakley can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Names on the night wall*, Oakley says, “I cut the lettering and found no mention of the founder or the chief.”",
+  "connections": "Sage Barclay. The books bought by one generation finally get used in a lesson taught by another. Also in the story is Cara Carvalho (child).",
+  "familyIds": [
+    "AH-R1390"
+  ],
+  "connectionIds": [
+    "AH-R0968",
+    "AH-R0961"
+  ],
+  "reactions": [
+    {
+      "situation": "A pupil chooses another language halfway through the reading",
+      "response": "Victor lets the pupil finish in the language they chose.",
+      "asWritten": "A pupil chooses another language halfway through the reading. Victor lets the pupil finish in the language they chose."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Victor asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Victor asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Victor seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Victor seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

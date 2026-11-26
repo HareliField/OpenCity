@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0818",
+  "personId": "AH-R0818",
+  "name": "Kai Valdez",
+  "age": 57,
+  "occupation": "Small retailer",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Reading the payslip",
+  "biography": "stories/residents/06/07-reading-the-payslip.md#ah-r0818",
+  "life": "“I still remember wearing my work apron inside out at night classes.” On Sunday, near the window at Night Shift Donuts, Kai knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I run a business. I came in pretending to be a worker because my own slips embarrass me.",
+  "appearance": "Kai is easy to recognize by a swept fringe and a closely clipped nape and an aquiline nose and a square chin. Usually dressed in an old plum windbreaker with one cuff folded back twice, Kai listens with the head tilted a little to the left when listening.",
+  "personality": "Kai never tires of being shown how somebody makes a living. Kai can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To rewrite the firm's own slips after class.",
+  "family": "Evan Maciel is Kai’s younger cousin. Kai offers the first invitation. Evan gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *A tenant who stays*, Evan says, “I want the daughter to have somewhere safe to live after her breakup.”",
+  "connections": "Camille Marks. The employer attending quietly sees a real example that a cleaner spotted immediately.",
+  "familyIds": [
+    "AH-R0986"
+  ],
+  "connectionIds": [
+    "AH-R0817"
+  ],
+  "reactions": [
+    {
+      "situation": "An employer asks who is attending the class",
+      "response": "Kai protects the attendance list and offers general information about the class.",
+      "asWritten": "An employer asks who is attending the class. Kai protects the attendance list and offers general information about the class."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Kai finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Kai finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Kai may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Kai may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

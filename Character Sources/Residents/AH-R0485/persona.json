@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0485",
+  "personId": "AH-R0485",
+  "name": "Jasmine Laurent",
+  "age": 42,
+  "occupation": "Former shoplifter and mechanic",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Station steps in rain",
+  "biography": "stories/residents/04/04-station-steps-in-rain.md#ah-r0485",
+  "life": "“I still remember returning a stolen lunch box full of clean spoons.” People around Paper & Pine Books know Jasmine by a small Saturday habit. Jasmine starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I used to dread these steps. This time I came to collect my own repaired camera.",
+  "appearance": "On an ordinary day, look for a plum-colored cardigan and a pocket notebook shaped by years of sitting on it. Jasmine has a deep crease beside the mouth when smiling, with a loose dark braid. Jasmine counts on the side of one finger where hardly anybody notices during a conversation.",
+  "personality": "Jasmine is kind in very practical ways and prickly about being thanked in public. Jasmine loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To collect the old camera and go home openly.",
+  "family": "Jorge Crane is Jasmine’s older relative by marriage. Jasmine calls about good news first. Jorge is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The day sailor's divorce*, Jorge says, “I bought them the sail when they married. I told them dividing it into two napkins was an option.”",
+  "connections": "Cecilia Aranda. The new side-door invitation lets a nervous visitor come back for property without a crowd.",
+  "familyIds": [
+    "AH-R1044"
+  ],
+  "connectionIds": [
+    "AH-R0490"
+  ],
+  "reactions": [
+    {
+      "situation": "Rain blurs the names on the petition",
+      "response": "Jasmine records the petitioners who are present and asks them how to recover the others.",
+      "asWritten": "Rain blurs the names on the petition. Jasmine records the petitioners who are present and asks them how to recover the others."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Jasmine finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Jasmine finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Jasmine gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Jasmine gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

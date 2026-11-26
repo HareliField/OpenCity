@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1317",
+  "personId": "AH-R1317",
+  "name": "Jo Emery",
+  "age": 47,
+  "occupation": "Childminder",
+  "home": "the western residential streets",
+  "episode": "The driving lesson fund",
+  "biography": "stories/residents/09/12-the-driving-lesson-fund.md#ah-r1317",
+  "life": "“I still remember looking after a learner's child during the rainiest test day.” People around Breakwater Way know Jo by a small Wednesday habit. Jo stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I cannot fund another hour. I offered a place to wait for children whose parents are out with the car.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a little coil of soft measuring tape. Jo has a broad nose and a deep dimple on one cheek, with thick, tightly coiled hair. Jo counts on the side of one finger where hardly anybody notices during a conversation.",
+  "personality": "Jo is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To offer childcare during funded appointments.",
+  "family": "Ellen Baran is Jo’s cousin raised in the same household. Jo brings something that can still be enjoyed tomorrow. Ellen checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Five missing lunches*, Ellen says, “I store nuts in my tin. Finding somebody else's lunch inside made me remember to eat.”",
+  "connections": "Kai Kohli. Childcare and an outdoor map lesson make the same funded hour serve two households.",
+  "familyIds": [
+    "AH-R0170"
+  ],
+  "connectionIds": [
+    "AH-R1319"
+  ],
+  "reactions": [
+    {
+      "situation": "Two people qualify for the same funded lesson",
+      "response": "Jo asks both applicants which transport difficulty one lesson would actually address.",
+      "asWritten": "Two people qualify for the same funded lesson. Jo asks both applicants which transport difficulty one lesson would actually address."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Jo writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Jo writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Jo helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Jo helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0928",
+  "personId": "AH-R0928",
+  "name": "Albert Barclay",
+  "age": 71,
+  "occupation": "Retired kitchen porter",
+  "home": "the blocks north of the port",
+  "episode": "A widow bids again",
+  "biography": "stories/residents/07/03-a-widow-bids-again.md#ah-r0928",
+  "life": "“I still remember waiting on a staircase for my knees to settle.” On Thursday, near the downtown fountain, Albert keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I want a bench in the entry for those of us who take stairs in stages. Both bidders promised me the roof.",
+  "appearance": "Albert is easy to recognize by gray hair trimmed very close behind the ears and a strong profile and a little space between the front teeth. Usually dressed in a brown corduroy jacket with a knotted piece of sail thread on a key ring, Albert leans a shoulder against the wall during long conversations when listening.",
+  "personality": "Albert has a talent for getting adversaries to laugh at exactly the same thing. Albert knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To win a resting bench in the entry.",
+  "family": "Ashley Byrd is Albert’s first cousin once removed. Albert brings whatever was actually growing or affordable that week. Ashley makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The fitting mirror*, Ashley says, “I fitted a skirt in the salon. The client could sit while I pinned it for the first time in years.”",
+  "connections": "Anna Avila. The tenant group adds a usable entry bench to the terms before backing any owner.",
+  "familyIds": [
+    "AH-R0554"
+  ],
+  "connectionIds": [
+    "AH-R0923"
+  ],
+  "reactions": [
+    {
+      "situation": "A tenant calls attention to damp during the viewing",
+      "response": "Albert allows a proper look at the damp before returning to the argument about price.",
+      "asWritten": "A tenant calls attention to damp during the viewing. Albert allows a proper look at the damp before returning to the argument about price."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Albert agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Albert agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Albert asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Albert asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

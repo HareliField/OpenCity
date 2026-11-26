@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0722",
+  "personId": "AH-R0722",
+  "name": "Kai Williams",
+  "age": 54,
+  "occupation": "Joiner",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The fountain score",
+  "biography": "stories/residents/05/13-the-fountain-score.md#ah-r0722",
+  "life": "“I still remember my apprentice rule snapping shut in an examiner's pocket.” On Friday, near the brick passage off the shop row, Kai takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I offered my carpenter's rule. Snapped shut, it sounds exactly like the fountain starting.",
+  "appearance": "Kai has a long face and high cheekbones. Look for short copper curls. On an ordinary day, the familiar outfit is a pale blue work shirt with a knotted piece of sail thread on a key ring. In conversation Kai gives a little nod before asking a hard question.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Kai takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To use a snapping rule without spoiling the student's rhythm.",
+  "family": "Julius Zhou is Kai’s stepsibling. Kai checks the date twice. Julius brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The hair after illness*, Julius says, “I wanted a family picture. We gave her the remote shutter so she decided which smile stayed.”",
+  "connections": "Kai Chan. A rule snapping shut and a borrowed whistle stop the handwritten score sounding too polite. Also in the story is Una Kapoor (music teacher).",
+  "familyIds": [
+    "AH-R1160"
+  ],
+  "connectionIds": [
+    "AH-R0729",
+    "AH-R0730"
+  ],
+  "reactions": [
+    {
+      "situation": "The student asks the least confident player to start",
+      "response": "Kai gives the player a clear first beat and permission to pass the opening on.",
+      "asWritten": "The student asks the least confident player to start. Kai gives the player a clear first beat and permission to pass the opening on."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Kai finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Kai finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Kai asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Kai asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0085",
+  "personId": "AH-R0085",
+  "name": "Verity Long",
+  "age": 41,
+  "occupation": "Newly divorced school secretary",
+  "home": "Eastside",
+  "episode": "The porch light",
+  "biography": "stories/residents/01/09-the-porch-light.md#ah-r0085",
+  "life": "Verity became a school secretary because records showed her exactly which families needed another reminder before a deadline. In her own divorce she has been much worse at asking people for time. On Tuesday, near the window at Night Shift Donuts, Verity knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I can afford the house only with a lodger. The owner asked if that meant strangers all the time. I told him a stranger is how my children got the aunt who raised them.",
+  "appearance": "Verity is easy to recognize by a dark undercut with a longer wave on top and fine brows over wide-set eyes. Usually dressed in a sand-colored linen shirt with a thin silver ring worn on a cord, Verity gathers both sleeves neatly before settling in when listening.",
+  "personality": "Verity has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To make a fair room offer to a prospective lodger.",
+  "family": "Ruth Farah is Verity’s cousin raised in the same household. Verity makes room at the table. Ruth brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Laundry for a stranger*, Ruth says, “I built her an iron rest from a broken tile.”",
+  "connections": "Ruth Eade. The prospective buyer and agent must decide what a lodger means for the old owner's conditions.",
+  "familyIds": [
+    "AH-R0589"
+  ],
+  "connectionIds": [
+    "AH-R0082"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer offers extra for the porch lamp",
+      "response": "Verity asks the owner whether the lamp is even part of the sale before discussing the offer.",
+      "asWritten": "A buyer offers extra for the porch lamp. Verity asks the owner whether the lamp is even part of the sale before discussing the offer."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Verity agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Verity agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Verity says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Verity says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

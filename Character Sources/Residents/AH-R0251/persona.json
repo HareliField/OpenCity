@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0251",
+  "personId": "AH-R0251",
+  "name": "Norman Armas",
+  "age": 44,
+  "occupation": "Recruiter",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "One sleeve short",
+  "biography": "stories/residents/02/11-one-sleeve-short.md#ah-r0251",
+  "life": "“My first office had a mirror where candidates could see the interviewers arriving.” On Wednesday, near Harbour Bakery, Norman buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I interview people at a desk. I never realized I only see their top half until I saw the chalk lines.",
+  "appearance": "Norman is easy to recognize by a cropped cut that shows the shape of the ears and fine brows over wide-set eyes. Usually dressed in an old plum windbreaker with a narrow brass watch set a little fast, Norman looks toward the door whenever a name is called when listening.",
+  "personality": "Norman often says yes too quickly out of pride in being useful. The people closest to Norman have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To change how a job applicant's clothing is assessed across a desk.",
+  "family": "Agnes Lin is Norman’s first cousin once removed. Norman puts the kettle on. Agnes chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A dance for two fathers*, Agnes says, “I am the graduate. I choreographed a turn that leaves each man momentarily dancing with the other.”",
+  "connections": "Quinn Pereira. The interviewer and applicant eventually discuss the deliberate switch of handshake.",
+  "familyIds": [
+    "AH-R1021"
+  ],
+  "connectionIds": [
+    "AH-R0254"
+  ],
+  "reactions": [
+    {
+      "situation": "Somebody offers to buy a complete suit for the applicant",
+      "response": "Norman asks the applicant whether a whole donated suit would actually be welcome.",
+      "asWritten": "Somebody offers to buy a complete suit for the applicant. Norman asks the applicant whether a whole donated suit would actually be welcome."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Norman repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Norman repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Norman rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Norman rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

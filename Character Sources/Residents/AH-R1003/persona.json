@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1003",
+  "personId": "AH-R1003",
+  "name": "Isla Joseph",
+  "age": 46,
+  "occupation": "Events planner",
+  "home": "Midtown",
+  "episode": "The salon on strike",
+  "biography": "stories/residents/07/11-the-salon-on-strike.md#ah-r1003",
+  "life": "“I still remember planning a reception nobody thought to pay the cleaners for.” On Friday, near the blocks below Foundry Lofts, Isla checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I booked the party and invited my millionaire boss. I can cancel my own celebration without canceling everybody's wages.",
+  "appearance": "Isla has close-cropped dark curls, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, a washed violet jersey. It usually goes with one loose pocket corner secured with green thread. When somebody else has the floor, Isla listens with the head tilted a little to the left.",
+  "personality": "Isla has a long memory for unfair prices and a short one for small insults. Isla can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To cancel the private celebration without canceling wages.",
+  "family": "Anna Bishop is Isla’s older cousin. Isla is free to hang up first. Anna makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The clean ledger*, Anna says, “I want my niece's graduation dress back. A price in a notebook won't fit her.”",
+  "connections": "Karim Byrd. A worker hoping to gain clients speaks directly with the person who booked the unpaid promotion.",
+  "familyIds": [
+    "AH-R0641"
+  ],
+  "connectionIds": [
+    "AH-R1001"
+  ],
+  "reactions": [
+    {
+      "situation": "A promotional client insists on keeping the booking",
+      "response": "Isla asks who will be paid to staff the booking before promising it can go ahead.",
+      "asWritten": "A promotional client insists on keeping the booking. Isla asks who will be paid to staff the booking before promising it can go ahead."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Isla stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Isla stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Isla agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Isla agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

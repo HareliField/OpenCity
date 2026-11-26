@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0611",
+  "personId": "AH-R0611",
+  "name": "Martin Rahman",
+  "age": 67,
+  "occupation": "Retired port painter",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The crane shadow",
+  "biography": "stories/residents/05/02-the-crane-shadow.md#ah-r0611",
+  "life": "“I still remember a crane shadow hitting my first steel-toed shoe.” Tuesday often includes a stop at the courtyard by Ferry Street Rooms, where Martin prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I painted the gull where the shadow touched on the day I started. I've been timing my career by it.",
+  "appearance": "Martin has gray hair trimmed very close behind the ears, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with one cuff folded back twice. When somebody else has the floor, Martin grins on one side while the eyes stay serious.",
+  "personality": "Martin loves a well-told anecdote and distrusts the neat ending. The parts Martin remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To photograph one more spring shadow.",
+  "family": "Joan Morley is Martin’s cousin raised in the same household. Martin can stop the walk at any corner. Joan chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The small signature*, Joan says, “The proposed bench faces straight into the sprinkler.”",
+  "connections": "Tom Fox. The painter's first date goes into a shift log alongside the shadow. Also in the story is Zachary Teo (design student).",
+  "familyIds": [
+    "AH-R0025"
+  ],
+  "connectionIds": [
+    "AH-R0613",
+    "AH-R0614"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor asks the apprentice to work through the crane-shadow moment",
+      "response": "Martin asks the foreman whether the minutes can be traded rather than simply lost.",
+      "asWritten": "A supervisor asks the apprentice to work through the crane-shadow moment. Martin asks the foreman whether the minutes can be traded rather than simply lost."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Martin asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Martin asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Martin includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Martin includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

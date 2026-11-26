@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1094",
+  "personId": "AH-R1094",
+  "name": "Noel Gomes",
+  "age": 30,
+  "occupation": "Childcare worker and new payroll clerk",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The boy on the corner",
+  "biography": "stories/residents/08/05-the-boy-on-the-corner.md#ah-r1094",
+  "life": "“I still remember counting babysitting money into my first proper work purse.” On Sunday, near Ferris Deli, Noel asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I watched the little brother for grocery money. I have a proper job now and I won't apologize for taking it.",
+  "appearance": "Noel is easy to recognize by brown hair pinned away from the temples and a broad nose and a deep dimple on one cheek. Usually dressed in a charcoal zip cardigan with a pair of reading glasses in a cloth sleeve, Noel draws small circles on a tabletop while waiting when listening.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To hold onto the new paid job.",
+  "family": "Andre Bell is Noel’s second cousin. Noel gets to change the plan. Andre offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The last green*, Andre says, “He once drove my mother to hospital and refused a fare.”",
+  "connections": "Victoria Drew. The former babysitter and the salaried cousin can each explain why the first rush of help didn't last. Also in the story is Charles Mack (former childcare client).",
+  "familyIds": [
+    "AH-R0112"
+  ],
+  "connectionIds": [
+    "AH-R1099",
+    "AH-R1091"
+  ],
+  "reactions": [
+    {
+      "situation": "His younger brother asks what he delivers for a living",
+      "response": "Noel lets the older brother choose honest words the younger boy can understand.",
+      "asWritten": "His younger brother asks what he delivers for a living. Noel lets the older brother choose honest words the younger boy can understand."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Noel asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Noel asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Noel listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Noel listens first to the account of how it was actually used."
+    }
+  ]
+}

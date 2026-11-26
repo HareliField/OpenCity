@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0008",
+  "personId": "AH-R0008",
+  "name": "Dora Beck",
+  "age": 46,
+  "occupation": "Mechanic",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The blue suit",
+  "biography": "stories/residents/01/01-the-blue-suit.md#ah-r0008",
+  "life": "Dora spent her first decade fixing appliances others deemed uneconomic. She can price every part on sight and badly underprices her own time. Her brother has stopped lending her the van unless she puts labor on the bill. On Tuesday, near Maré Coffee, Dora likes the table where people coming off shift stop checking the time.",
+  "voice": "The rinse valve came from a batch I signed for with my brother's pencil. I paid for a new one out of the van money and kept the old part for the supplier to examine.",
+  "appearance": "Dora has brown hair pinned away from the temples, a heart-shaped face and prominent ears, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with a little coil of soft measuring tape. When somebody else has the floor, Dora squares up pieces of paper while thinking.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Dora takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To get the supplier to inspect the old valve with the workers present.",
+  "family": "Sonia Lee is Dora’s cousin. Dora puts the kettle on. Sonia chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The sandwich board*, Sonia says, “I'm the one who wiped off the prices. I wanted people to ask what the cheap lunch actually bought.”",
+  "connections": "Salma Ilyas. One is waiting for the courthouse to pick up while the other labels the failed valve.",
+  "familyIds": [
+    "AH-R0180"
+  ],
+  "connectionIds": [
+    "AH-R0005"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone wants to post the ruined cuff online",
+      "response": "Dora asks Rafael which version he wants a stranger to see before anyone shares the picture.",
+      "asWritten": "Someone wants to post the ruined cuff online. Dora asks Rafael which version he wants a stranger to see before anyone shares the picture."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Dora asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Dora asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Dora asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Dora asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

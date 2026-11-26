@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0455",
+  "personId": "AH-R0455",
+  "name": "Milo Rizzo",
+  "age": 39,
+  "occupation": "Outerwear buyer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The button card",
+  "biography": "stories/residents/04/01-the-button-card.md#ah-r0455",
+  "life": "“I still remember stepping out of my first self-bought winter coat.” People around Tideline Market know Milo by a small Thursday habit. Milo picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "The yellow button came from the first coat I ever bought without asking permission.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and a stitched row of blue crosses along an old repair. Milo has a flat bridge to the nose and a mobile brow, with a cropped cut that shows the shape of the ears. Milo squares up pieces of paper while thinking during a conversation.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Milo takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To repair the first self-bought coat with the same yellow.",
+  "family": "Nadine Lam is Milo’s cousin raised in the same household. Milo puts the kettle on. Nadine chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A doctor moves away*, Nadine says, “I am the parent's carer in the other city. I want the daughter to come home as family before she comes home as a doctor.”",
+  "connections": "Lola Jeong. The yellow winter-coat button acquires a new history in the costume box.",
+  "familyIds": [
+    "AH-R1257"
+  ],
+  "connectionIds": [
+    "AH-R0460"
+  ],
+  "reactions": [
+    {
+      "situation": "A child takes the most valuable button",
+      "response": "Milo lets the child show what the button is for before calling it too valuable.",
+      "asWritten": "A child takes the most valuable button. Milo lets the child show what the button is for before calling it too valuable."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Milo helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Milo helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Milo asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Milo asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

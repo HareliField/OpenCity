@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0120",
+  "personId": "AH-R0120",
+  "name": "Hana Solberg",
+  "age": 41,
+  "occupation": "Bridge maintenance engineer",
+  "home": "Old Town",
+  "episode": "The last green",
+  "biography": "stories/residents/01/12-the-last-green.md#ah-r0120",
+  "life": "Hana sees the viaduct from ladders, inspection platforms and the driver's seat. She didn't see the lighthouse in the mirror herself until a maintenance passenger showed it to her on a perfectly uneventful crossing. People around Harbour Bakery know Hana by a small Saturday habit. Hana buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "The best view is from the passenger side at the crest. He had crossed it eight thousand times without seeing the lighthouse in the mirror. I asked the driver to give him that seat.",
+  "appearance": "Hana has dark brown curls cut close behind the ears, a crooked front tooth visible when laughing, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Hana looks down for a moment before saying something difficult.",
+  "personality": "Hana is fond of ambitious ideas and deeply suspicious of grand openings. The question Hana asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To show the retiring driver the lighthouse in the passenger mirror.",
+  "family": "Elizabeth Yoon is Hana’s second cousin. Hana picks the meeting place. Elizabeth sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *Saturday keys*, Elizabeth says, “I used to hide my key in a shoe. After losing my home I hate the idea somebody else carries it.”",
+  "connections": "Andre Bell. One remembers being given a lift in a crisis. The other wants this final lift to include the view at the bridge crest.",
+  "familyIds": [
+    "AH-R0282"
+  ],
+  "connectionIds": [
+    "AH-R0112"
+  ],
+  "reactions": [
+    {
+      "situation": "The old driver wants to change the farewell route",
+      "response": "Hana takes the changed route seriously and checks who needs to know the new return time.",
+      "asWritten": "The old driver wants to change the farewell route. Hana takes the changed route seriously and checks who needs to know the new return time."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Hana suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Hana suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Hana accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Hana accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

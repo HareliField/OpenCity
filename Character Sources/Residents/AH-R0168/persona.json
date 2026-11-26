@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0168",
+  "personId": "AH-R0168",
+  "name": "Bianca Cole",
+  "age": 56,
+  "occupation": "Warehouse cleaner",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Five missing lunches",
+  "biography": "stories/residents/02/02-five-missing-lunches.md#ah-r0168",
+  "life": "“My old cleaning partner could identify every crane crew by its sandwich crumbs.” People around Breakwater Way know Bianca by a small Thursday habit. Bianca stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I was asked to throw them away. I put a forwarding card in each one instead.",
+  "appearance": "Bianca is easy to recognize by black hair twisted into a small knot and a long face and high cheekbones. Usually dressed in a soft blue checked shirt with a braided bracelet with a single wooden bead, Bianca looks at people's hands before looking at what they carry when listening.",
+  "personality": "Bianca always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Bianca is trying to tell the difference before the bill arrives.",
+  "agenda": "To attach forwarding tags to the uncollected containers.",
+  "family": "Chris Anders is Bianca’s cousin. Bianca puts the kettle on. Chris chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Rent in a biscuit tin*, Chris says, “I was sure my envelope had been opened. The crease was mine from the night I nearly spent it.”",
+  "connections": "Vincent Farah. They make sure the whale lid goes into the correct forwarding bag. Also in the story is Logan Calder (roster planner).",
+  "familyIds": [
+    "AH-R0349"
+  ],
+  "connectionIds": [
+    "AH-R0162",
+    "AH-R0167"
+  ],
+  "reactions": [
+    {
+      "situation": "The night shift misses the collection time",
+      "response": "Bianca puts the unclaimed tin by for a later handover.",
+      "asWritten": "The night shift misses the collection time. Bianca puts the unclaimed tin by for a later handover."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Bianca asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Bianca asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Bianca suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Bianca suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0805",
+  "personId": "AH-R0805",
+  "name": "Ingrid Moss",
+  "age": 29,
+  "occupation": "Pharmacy courier",
+  "home": "Eastside",
+  "episode": "Home with stairs",
+  "biography": "stories/residents/06/06-home-with-stairs.md#ah-r0805",
+  "life": "“I still remember walking a heavy prescription up in thin summer shoes.” People around the corner by Juniper Tailor know Ingrid by a small Thursday habit. Ingrid looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I deliver prescriptions here. I marked every landing where a person can set down a bag.",
+  "appearance": "On an ordinary day, look for a brown corduroy jacket and a folded shopping list secured by a miniature clip. Ingrid has a small notch in the left eyebrow, with a smooth side part with one rebellious curl. Ingrid takes off the watch before a long conversation during a conversation.",
+  "personality": "Ingrid loves a well-told anecdote and distrusts the neat ending. The parts Ingrid remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To mark useful parcel rests on the stair route.",
+  "family": "Rowan Jimenez is Ingrid’s stepsibling. Ingrid chooses the music. Rowan puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A play in a pocket*, Rowan says, “I wrote mine for my sister who hasn't entered a theater since the panic attacks began.”",
+  "connections": "Carlo Sharp. The courier's landing map shows the cleaner where a stool might help.",
+  "familyIds": [
+    "AH-R0571"
+  ],
+  "connectionIds": [
+    "AH-R0809"
+  ],
+  "reactions": [
+    {
+      "situation": "A hospital car arrives before the handrail is ready",
+      "response": "Ingrid checks the landing with the patient before calling the trip home ready.",
+      "asWritten": "A hospital car arrives before the handrail is ready. Ingrid checks the landing with the patient before calling the trip home ready."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Ingrid lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Ingrid lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Ingrid includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Ingrid includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

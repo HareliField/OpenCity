@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0918",
+  "personId": "AH-R0918",
+  "name": "Lily Lucas",
+  "age": 74,
+  "occupation": "Retired lease partner",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The absent signature",
+  "biography": "stories/residents/07/02-the-absent-signature.md#ah-r0918",
+  "life": "“I still remember signing a document after somebody tried to steer my wrist.” On Friday, near Juniper Street, Lily knows which of the west-side porches has a seat in the shade.",
+  "voice": "I can sign only for myself now. Age has made everybody suddenly eager to speak on my behalf.",
+  "appearance": "Lily has a thin scattering of white hair over the crown, a round face with a pronounced chin, and a favorite piece of clothing, an olive canvas jacket. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Lily squares up pieces of paper while thinking.",
+  "personality": "Lily can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Lily can afford to give, and family knows to take it seriously.",
+  "agenda": "To sign only the papers genuinely understood.",
+  "family": "Grey Iyer is Lily’s younger cousin. Lily makes room at the table. Grey brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The million-dollar flat*, Grey says, “I offered an annuity and lost her attention when I couldn't tell her where she might live at ninety.”",
+  "connections": "Amalia Keller (lease co-owner). Two generations of lease owners are each entitled to decide what can be signed.",
+  "familyIds": [
+    "AH-R1227"
+  ],
+  "connectionIds": [
+    "AH-R0912"
+  ],
+  "reactions": [
+    {
+      "situation": "A creditor asks why the berth decision is taking so long",
+      "response": "Lily gives the creditor an accurate update without exposing private family correspondence.",
+      "asWritten": "A creditor asks why the berth decision is taking so long. Lily gives the creditor an accurate update without exposing private family correspondence."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Lily draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Lily draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Lily suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Lily suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

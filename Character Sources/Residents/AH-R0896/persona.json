@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0896",
+  "personId": "AH-R0896",
+  "name": "Jo Wong",
+  "age": 39,
+  "occupation": "Shore tenant and language tutor",
+  "home": "Midtown",
+  "episode": "Winter afloat",
+  "biography": "stories/residents/06/15-winter-afloat.md#ah-r0896",
+  "life": "“I still remember nearly moving inland before I learned to swim.” People around the bank steps know Jo by a small Friday habit. Jo takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I live in a flat above the coast road. I'm exchanging winter housing for summer sailing lessons I might be scared to take.",
+  "appearance": "Jo is easy to recognize by brown hair pinned away from the temples and two dimples that appear only with a full smile. Usually dressed in a narrow-striped sweater with a stitched row of blue crosses along an old repair, Jo looks at people's hands before looking at what they carry when listening.",
+  "personality": "Jo feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To trade a winter room for summer sailing lessons.",
+  "family": "Charlie Black is Jo’s cousin. Jo makes room at the table. Charlie brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *A house divided kindly*, Charlie says, “I drew the boundary as a junior surveyor. This is the first time a client asked me how to make it friendlier.”",
+  "connections": "Scout Marin. Two people offering space compare the limits of a sofa and a winter flat.",
+  "familyIds": [
+    "AH-R1435"
+  ],
+  "connectionIds": [
+    "AH-R0892"
+  ],
+  "reactions": [
+    {
+      "situation": "A friend offers a sofa for an uncertain number of weeks",
+      "response": "Jo agrees a first review date for the sofa without pretending it settles the winter.",
+      "asWritten": "A friend offers a sofa for an uncertain number of weeks. Jo agrees a first review date for the sofa without pretending it settles the winter."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Jo says what they know in their own name and refuses to treat a guess as something the child has to disprove.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Jo says what they know in their own name and refuses to treat a guess as something the child has to disprove."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Jo lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Jo lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

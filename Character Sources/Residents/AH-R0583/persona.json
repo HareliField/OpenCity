@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0583",
+  "personId": "AH-R0583",
+  "name": "Anton Wong",
+  "age": 66,
+  "occupation": "Retired garment presser",
+  "home": "the western residential streets",
+  "episode": "Laundry for a stranger",
+  "biography": "stories/residents/04/14-laundry-for-a-stranger.md#ah-r0583",
+  "life": "“I still remember scoring our laundry with my mother's tiny triangle.” On Friday, near the market by Market Flats, Anton often waits until the delivery baskets are stacked before going in.",
+  "voice": "I took in shirts as a child. I recognized the invisible mark our family always left inside a collar.",
+  "appearance": "Anton is easy to recognize by short white hair and darker eyebrows and a scattering of freckles across the bridge of the nose. Usually dressed in a charcoal zip cardigan with a copper-colored clasp that has been repaired by hand, Anton looks toward the door whenever a name is called when listening.",
+  "personality": "Anton keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Anton wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To identify the child who learned the collar mark.",
+  "family": "Lennon Pereira is Anton’s stepsibling. Anton chooses an ordinary story to tell. Lennon asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *Two names on the chart*, Lennon says, “I adopted a surname in adulthood. I want the clerk to ask which name a waiting room can safely call out.”",
+  "connections": "Clement Mitchell. A secret laundry mark tells the cook who can leave the collar unstarched.",
+  "familyIds": [
+    "AH-R1105"
+  ],
+  "connectionIds": [
+    "AH-R0588"
+  ],
+  "reactions": [
+    {
+      "situation": "A staff supervisor demands the stranger's laundry back",
+      "response": "Anton checks with the shirt's owner before handing it over to anyone else.",
+      "asWritten": "A staff supervisor demands the stranger's laundry back. Anton checks with the shirt's owner before handing it over to anyone else."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Anton brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Anton brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Anton offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Anton offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

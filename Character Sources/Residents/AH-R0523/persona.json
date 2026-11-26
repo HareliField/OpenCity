@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0523",
+  "personId": "AH-R0523",
+  "name": "Jane Kahn",
+  "age": 38,
+  "occupation": "Decorator",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The rescue hut mural",
+  "biography": "stories/residents/04/08-the-rescue-hut-mural.md#ah-r0523",
+  "life": "“I still remember painting a portrait nobody wanted smiling.” People around Tideline Market know Jane by a small Sunday habit. Jane picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I volunteered to repaint her mouth until my child asked why she had to smile.",
+  "appearance": "Jane has a loose dark braid, a small notch in the left eyebrow, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with a thin silver ring worn on a cord. When somebody else has the floor, Jane gathers both sleeves neatly before settling in.",
+  "personality": "Jane treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To leave the painted mouth until the figure's owner chooses.",
+  "family": "Idris Marsh is Jane’s stepsibling. Jane picks the meeting place. Idris sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A closing hour*, Idris says, “I wanted the party to be a surprise. The owner finally closed up because his daughter told him exactly what she wanted.”",
+  "connections": "Carmen Daniels. They ask children what the face depicts before deciding how it ought to look.",
+  "familyIds": [
+    "AH-R1357"
+  ],
+  "connectionIds": [
+    "AH-R0528"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor wants the painted figure made easier to recognize",
+      "response": "Jane asks the original model which part has been misunderstood.",
+      "asWritten": "A visitor wants the painted figure made easier to recognize. Jane asks the original model which part has been misunderstood."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Jane lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Jane lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Jane changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Jane changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

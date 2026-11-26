@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0566",
+  "personId": "AH-R0566",
+  "name": "Talia Carvalho",
+  "age": 43,
+  "occupation": "Night porter",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The ladder crossing",
+  "biography": "stories/residents/04/12-the-ladder-crossing.md#ah-r0566",
+  "life": "“I still remember sharing a bag hook with an exhausted stranger.” People around the downtown fountain know Talia by a small Wednesday habit. Talia keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I balanced my shopping on a rung while we waited. Someone carried it all the way upstairs.",
+  "appearance": "On an ordinary day, look for a faded indigo overshirt and a pen clipped inside the neckline. Talia has a deep crease beside the mouth when smiling, with thick, tightly coiled hair. Talia folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Talia uses precise names for tools and very approximate names for feelings. People who know Talia well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To return the help by carrying somebody's groceries.",
+  "family": "Robin Gomes is Talia’s half-sibling. Talia saves a place. Robin chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The hair after illness*, Robin says, “I wanted my old photograph. In the chair I saw how much I like this new cowlick.”",
+  "connections": "Parker Valdez. A passenger's groceries become part of a candidate's truthful account of lateness.",
+  "familyIds": [
+    "AH-R1151"
+  ],
+  "connectionIds": [
+    "AH-R0569"
+  ],
+  "reactions": [
+    {
+      "situation": "A painter asks to put the ladder down",
+      "response": "Talia finds an empty, stable place to set it down while the painter rests.",
+      "asWritten": "A painter asks to put the ladder down. Talia finds an empty, stable place to set it down while the painter rests."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Talia finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Talia finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Talia brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Talia brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

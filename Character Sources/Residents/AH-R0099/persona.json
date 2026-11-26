@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0099",
+  "personId": "AH-R0099",
+  "name": "Dina Locke",
+  "age": 56,
+  "occupation": "Street sweeper",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The thirteenth doughnut",
+  "biography": "stories/residents/01/10-the-thirteenth-doughnut.md#ah-r0099",
+  "life": "Dina sweeps four blocks before dawn and can tell who works late by the things they throw away. Being recognized by a bakery employee without her cart startled her more than being recognized with it. People around the market by Market Flats know Dina by a small Thursday habit. Dina often waits until the delivery baskets are stacked before going in.",
+  "voice": "I get there after every good thing is gone. One morning they wrote my shift time on the lid. I want to learn the name of the person who knew it without asking.",
+  "appearance": "Dina has heavy brows and an unusually delicate jaw. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is an old plum windbreaker with a small enamel bird on the lapel. In conversation Dina presses the lips together to keep a smile in.",
+  "personality": "Dina reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Dina trusts most.",
+  "agenda": "To thank the person who held breakfast until the street was swept.",
+  "family": "Ruben Ali is Dina’s younger cousin. Dina keeps the photographs. Ruben knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The million-dollar flat*, Ruben says, “I came for a property feature. She introduced me to the fitter who can make the bath usable for another ten years.”",
+  "connections": "Sera Noor. The breakfast vote now has to reach the worker who shows up after everybody else leaves.",
+  "familyIds": [
+    "AH-R1230"
+  ],
+  "connectionIds": [
+    "AH-R0096"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer tries to sell the spare doughnut story to a brand",
+      "response": "Dina asks the baker and the intended recipient for their separate consent.",
+      "asWritten": "A customer tries to sell the spare doughnut story to a brand. Dina asks the baker and the intended recipient for their separate consent."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Dina sits beside them without expecting a performance and asks if they want to go outside.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Dina sits beside them without expecting a performance and asks if they want to go outside."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Dina does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Dina does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

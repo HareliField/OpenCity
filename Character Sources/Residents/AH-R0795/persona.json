@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0795",
+  "personId": "AH-R0795",
+  "name": "Ansel Perry",
+  "age": 55,
+  "occupation": "Glazier",
+  "home": "Midtown",
+  "episode": "The first straight paycheck",
+  "biography": "stories/residents/06/05-the-first-straight-paycheck.md#ah-r0795",
+  "life": "“I still remember a shop window covered with cardboard for a whole season.” People around the approach to Seabright Court know Ansel by a small Monday habit. Ansel likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "My shop window went through in one of our old rows. I want regular payments for the glass and no speeches.",
+  "appearance": "Ansel has a small notch in the left eyebrow. Look for a high puff tied with plain cord. On an ordinary day, the familiar outfit is an olive canvas jacket with a printed handkerchief folded into the pocket. In conversation Ansel holds eye contact until the other person has finished.",
+  "personality": "Ansel finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To get a regular repayment for the window.",
+  "family": "Frank Moran is Ansel’s younger cousin. Ansel asks what the birthday guest would like this year. Frank remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Station steps in rain*, Frank says, “I was handing out biscuits and learned that offering a uniformed stranger food takes nerve on both sides.”",
+  "connections": "Katherine Nielsen. An old window bill and a found wage slip bring the young worker's finances into two households.",
+  "familyIds": [
+    "AH-R0486"
+  ],
+  "connectionIds": [
+    "AH-R0797"
+  ],
+  "reactions": [
+    {
+      "situation": "An old customer arrives during the new warehouse shift",
+      "response": "Ansel asks the two people to talk away from the work floor and leaves disclosure to the new hire.",
+      "asWritten": "An old customer arrives during the new warehouse shift. Ansel asks the two people to talk away from the work floor and leaves disclosure to the new hire."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Ansel draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Ansel draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Ansel waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Ansel waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

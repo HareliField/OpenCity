@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1139",
+  "personId": "AH-R1139",
+  "name": "Walter Colón",
+  "age": 48,
+  "occupation": "Schoolteacher",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The third bedroom",
+  "biography": "stories/residents/08/09-the-third-bedroom.md#ah-r1139",
+  "life": "“I still remember praising the wrong child's careful drawing.” On Thursday, near Juniper Street, Walter knows which of the west-side porches has a seat in the shade.",
+  "voice": "I am one boy's teacher. I met the brother and discovered which drawings I'd been praising the wrong child for.",
+  "appearance": "On an ordinary day, look for a cropped bottle-green coat and a pen clipped inside the neckline. Walter has heavy brows and an unusually delicate jaw, with short black hair swept back. Walter looks at people's hands before looking at what they carry during a conversation.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To credit each brother's actual schoolwork.",
+  "family": "Milo Saito is Walter’s cousin raised in the same household. Walter chooses whether they walk home or sit a while. Milo brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Closing soup*, Milo says, “I taste the stock first because Dad lost his sense of smell before he told us.”",
+  "connections": "Katherine Mack. The former foster child warns the teacher what happens when two children's voices get confused.",
+  "familyIds": [
+    "AH-R0541"
+  ],
+  "connectionIds": [
+    "AH-R1137"
+  ],
+  "reactions": [
+    {
+      "situation": "A caseworker asks the foster siblings to describe sharing",
+      "response": "Walter gives each sibling room to describe sharing separately.",
+      "asWritten": "A caseworker asks the foster siblings to describe sharing. Walter gives each sibling room to describe sharing separately."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Walter alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Walter alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Walter listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Walter listens first to the account of how it was actually used."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0882",
+  "personId": "AH-R0882",
+  "name": "Olivia Farrell",
+  "age": 43,
+  "occupation": "Home visitor",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Care with a clock",
+  "biography": "stories/residents/06/14-care-with-a-clock.md#ah-r0882",
+  "life": "“I still remember taking my watch off so a client would stop watching it.” People around Lighthouse Cove know Olivia by a small Saturday habit. Olivia takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I shaved minutes off my notes until my own pay packet came up short.",
+  "appearance": "On an ordinary day, look for an old plum windbreaker and a pen clipped inside the neckline. Olivia has heavy brows and an unusually delicate jaw, with a long plait tucked inside the collar. Olivia steadies a cup with both hands while listening during a conversation.",
+  "personality": "Olivia always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Olivia is trying to tell the difference before the bill arrives.",
+  "agenda": "To claim the full time actually worked.",
+  "family": "Ashley Brooks is Olivia’s second cousin. Olivia checks the date twice. Ashley brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The empty chair on nights*, Ashley says, “I wish somebody would ask how it feels to be the person who gets the permanent post she left.”",
+  "connections": "Jody Gomez. A worker's unpaid sixteenth minute makes the family carer ask where all their pension hours went.",
+  "familyIds": [
+    "AH-R0956"
+  ],
+  "connectionIds": [
+    "AH-R0889"
+  ],
+  "reactions": [
+    {
+      "situation": "A client wants another minute to finish a button",
+      "response": "Olivia lets the client finish the button and asks where time can be saved without hurrying them.",
+      "asWritten": "A client wants another minute to finish a button. Olivia lets the client finish the button and asks where time can be saved without hurrying them."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Olivia asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Olivia asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Olivia suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Olivia suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0733",
+  "personId": "AH-R0733",
+  "name": "Alexei Gross",
+  "age": 74,
+  "occupation": "Retired retail clerk",
+  "home": "the western residential streets",
+  "episode": "The split visit",
+  "biography": "stories/residents/05/14-the-split-visit.md#ah-r0733",
+  "life": "“I still remember canceling my own support on the wrong Thursday.” On Wednesday, near Maré Coffee, Alexei likes the table where people coming off shift stop checking the time.",
+  "voice": "I forgot to cancel because my treatment date moved. I want a calendar with room for uncertainty.",
+  "appearance": "On an ordinary day, look for a charcoal zip cardigan and a little coil of soft measuring tape. Alexei has a broad nose and a deep dimple on one cheek, with a thin scattering of white hair over the crown. Alexei raises one eyebrow long before saying yes during a conversation.",
+  "personality": "Alexei always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Alexei is trying to tell the difference before the bill arrives.",
+  "agenda": "To build uncertainty into the care calendar.",
+  "family": "Bailey Salcedo is Alexei’s younger cousin. Alexei checks the date twice. Bailey brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Two birthdays in one ward*, Bailey says, “I bought matching cakes before asking either patient which flavors they eat.”",
+  "connections": "Alan Ko. A canceled treatment and the overseas calendar explain the duplicated appointment.",
+  "familyIds": [
+    "AH-R1403"
+  ],
+  "connectionIds": [
+    "AH-R0736"
+  ],
+  "reactions": [
+    {
+      "situation": "Two carers turn up for one visit",
+      "response": "Alexei asks the client which ordinary task would be easier with two people present.",
+      "asWritten": "Two carers turn up for one visit. Alexei asks the client which ordinary task would be easier with two people present."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Alexei puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Alexei puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Alexei suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Alexei suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

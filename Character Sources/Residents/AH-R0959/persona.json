@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0959",
+  "personId": "AH-R0959",
+  "name": "Parker Anders",
+  "age": 38,
+  "occupation": "Night porter",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The empty chair on nights",
+  "biography": "stories/residents/07/06-the-empty-chair-on-nights.md#ah-r0959",
+  "life": "“I still remember asking for leave after watching somebody else disappear.” Wednesday often includes a stop at the entrance to the Wash House, where Parker stops for local notices even on a day without a load to wash.",
+  "voice": "I voted against the farewell. Her leaving made me realize I need to ask for leave myself.",
+  "appearance": "Parker has black hair twisted into a small knot, a crooked front tooth visible when laughing, and a favorite piece of clothing, a washed violet jersey. It usually goes with a stitched row of blue crosses along an old repair. When somebody else has the floor, Parker squares up pieces of paper while thinking.",
+  "personality": "Parker has a talent for getting adversaries to laugh at exactly the same thing. Parker knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To request leave before reaching the same limit.",
+  "family": "Jack Gomez is Parker’s second cousin. Parker brings whatever was actually growing or affordable that week. Jack makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The crane shadow*, Jack says, “I booked a wedding picture at that exact spot.”",
+  "connections": "Lara Moss. A worker covering repeated shifts meets the one who is finally asking for leave.",
+  "familyIds": [
+    "AH-R0620"
+  ],
+  "connectionIds": [
+    "AH-R0953"
+  ],
+  "reactions": [
+    {
+      "situation": "A replacement nurse receives the permanent badge",
+      "response": "Parker welcomes the new nurse and saves the old worker's goodbye for a separate conversation.",
+      "asWritten": "A replacement nurse receives the permanent badge. Parker welcomes the new nurse and saves the old worker's goodbye for a separate conversation."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Parker writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Parker writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Parker asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Parker asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1399",
+  "personId": "AH-R1399",
+  "name": "Camille Breen",
+  "age": 34,
+  "occupation": "Former prisoner and garage apprentice",
+  "home": "Old Town",
+  "episode": "The return of a witness",
+  "biography": "stories/residents/10/05-the-return-of-a-witness.md#ah-r1399",
+  "life": "“I still remember refusing a message I couldn't deliver with a clear conscience.” People around Tideline Market know Camille by a small Sunday habit. Camille picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I was jailed for something else and shared a cell with the man she named. I won't carry messages between them.",
+  "appearance": "Camille has auburn hair cut square at the nape, an aquiline nose and a square chin, and a favorite piece of clothing, a washed violet jersey. It usually goes with a folded shopping list secured by a miniature clip. When somebody else has the floor, Camille counts on the side of one finger where hardly anybody notices.",
+  "personality": "Camille treats a small promise with the gravity others reserve for a contract. This makes Camille lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To keep the home visit clear of prison messages.",
+  "family": "Lina Carbone is Camille’s older cousin. Camille chooses whether they walk home or sit a while. Lina brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The absent signature*, Lina says, “I was the last person she called. The message was about soup, and its ordinariness is why I kept it.”",
+  "connections": "Basil Hunter. A shopkeeper offering personal observations meets someone refusing to carry another man's messages.",
+  "familyIds": [
+    "AH-R0916"
+  ],
+  "connectionIds": [
+    "AH-R1395"
+  ],
+  "reactions": [
+    {
+      "situation": "The witness runs into a convicted neighbor's family",
+      "response": "Camille gives both parties the space to pass or speak without an audience.",
+      "asWritten": "The witness runs into a convicted neighbor's family. Camille gives both parties the space to pass or speak without an audience."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Camille offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Camille offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Camille says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Camille says what can be returned and asks whether that will do."
+    }
+  ]
+}

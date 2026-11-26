@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0693",
+  "personId": "AH-R0693",
+  "name": "Terry Sullivan",
+  "age": 26,
+  "occupation": "Pastry apprentice",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Midnight cinnamon",
+  "biography": "stories/residents/05/10-midnight-cinnamon.md#ah-r0693",
+  "life": "“I still remember breaking a holiday bun open for the hidden fruit.” People around the public road outside the Port of Asphalt know Terry by a small Thursday habit. Terry can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I thought it was my grandmother's spice bread. My uncle came over to tell me what I was missing.",
+  "appearance": "Terry has a deep crease beside the mouth when smiling. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a pale blue work shirt with a folded shopping list secured by a miniature clip. In conversation Terry draws small circles on a tabletop while waiting.",
+  "personality": "Terry admires skill and distrusts the idea that skill gives anyone permission to be rude. Terry learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To find the relative's missing bread ingredient.",
+  "family": "Nell Oram is Terry’s cousin raised in the same household. Terry asks the question the rest of the family avoided. Nell chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *A chair on the quay*, Nell says, “He told me three versions of who cut the first mark.”",
+  "connections": "Seth Roberts. Two cooks ask relatives which smell was missing from their remembered holiday food.",
+  "familyIds": [
+    "AH-R0020"
+  ],
+  "connectionIds": [
+    "AH-R0691"
+  ],
+  "reactions": [
+    {
+      "situation": "The spice buyer wants the mistaken sack returned",
+      "response": "Terry sets aside a sample and confirms which holiday orders depend on it.",
+      "asWritten": "The spice buyer wants the mistaken sack returned. Terry sets aside a sample and confirms which holiday orders depend on it."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Terry walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Terry walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Terry describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Terry describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

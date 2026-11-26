@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1290",
+  "personId": "AH-R1290",
+  "name": "Valentina Jiang",
+  "age": 43,
+  "occupation": "Family visitor and courier",
+  "home": "the blocks north of the port",
+  "episode": "The returned daughter",
+  "biography": "stories/residents/09/09-the-returned-daughter.md#ah-r1290",
+  "life": "“I still remember handing back a sealed letter without asking what was in it.” People around the public road outside the Port of Asphalt know Valentina by a small Thursday habit. Valentina can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I heard her say enough in the hallway. I walked her out and saved the father's letter for a day she chooses.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a thin silver ring worn on a cord. Valentina has a round face with a pronounced chin, with a center part and straight chestnut hair. Valentina starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Valentina takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To deliver the letter only when it is wanted.",
+  "family": "Lola Vidal is Valentina’s cousin raised in the same household. Valentina brings whatever was actually growing or affordable that week. Lola makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Laundry for a stranger*, Lola says, “I use the linen round to keep an eye on three houses.”",
+  "connections": "Charles Stone. The paid carer and the person holding the letter agree that nobody's frailty requires a forced answer.",
+  "familyIds": [
+    "AH-R0587"
+  ],
+  "connectionIds": [
+    "AH-R1286"
+  ],
+  "reactions": [
+    {
+      "situation": "The father offers a letter instead of speaking",
+      "response": "Valentina asks whether the daughter wants to take the letter now or leave it closed for another day.",
+      "asWritten": "The father offers a letter instead of speaking. Valentina asks whether the daughter wants to take the letter now or leave it closed for another day."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Valentina asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Valentina asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Valentina asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Valentina asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

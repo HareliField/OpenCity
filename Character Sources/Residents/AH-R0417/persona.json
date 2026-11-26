@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0417",
+  "personId": "AH-R0417",
+  "name": "Elise Cotton",
+  "age": 52,
+  "occupation": "Works notice printer",
+  "home": "Coast Ridge",
+  "episode": "One unposted detour",
+  "biography": "stories/residents/03/12-one-unposted-detour.md#ah-r0417",
+  "life": "“I still remember printing a sign too large for the window.” People around the corner outside Coastal Barber know Elise by a small Tuesday habit. Elise usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I wrote the notice in tiny type to save paper. I want one copy I can read myself from a driver's seat.",
+  "appearance": "On an ordinary day, look for a black overshirt with pearl buttons and one loose pocket corner secured with green thread. Elise has an aquiline nose and a square chin, with a cropped cut that shows the shape of the ears. Elise leans a shoulder against the wall during long conversations during a conversation.",
+  "personality": "Elise tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Elise will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To print one sign a working driver can actually read.",
+  "family": "Nia Oak is Elise’s stepsibling. Elise can always ask for five minutes alone. Nia asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The borrowed bass*, Nia says, “I usually have to tell bands to turn down. I loaned this one the quiet side of the fountain for the phone call.”",
+  "connections": "Sam Sloan (route planner). They redesign the printed diversion around the users it left out.",
+  "familyIds": [
+    "AH-R0128"
+  ],
+  "connectionIds": [
+    "AH-R0411"
+  ],
+  "reactions": [
+    {
+      "situation": "A delivery customer refuses the late parcel",
+      "response": "Elise checks with the intended recipient before leaving a late parcel.",
+      "asWritten": "A delivery customer refuses the late parcel. Elise checks with the intended recipient before leaving a late parcel."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Elise stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Elise stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Elise repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Elise repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

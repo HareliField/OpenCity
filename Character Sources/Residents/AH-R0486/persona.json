@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0486",
+  "personId": "AH-R0486",
+  "name": "Frank Moran",
+  "age": 31,
+  "occupation": "Refreshments worker",
+  "home": "Coast Ridge",
+  "episode": "Station steps in rain",
+  "biography": "stories/residents/04/04-station-steps-in-rain.md#ah-r0486",
+  "life": "“I still remember pouring tea for somebody who had searched our flat.” On Friday, near the downtown fountain, Frank keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I was handing out biscuits and learned that offering a uniformed stranger food takes nerve on both sides.",
+  "appearance": "On an ordinary day, look for a dark green knitted vest and a watch on a cracked leather band. Frank has heavy brows and an unusually delicate jaw, with short, uneven waves that refuse to lie flat. Frank touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Frank takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To offer both sides refreshments on the same terms.",
+  "family": "Ansel Perry is Frank’s older cousin. Frank remembers the birthdays. Ansel asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The first straight paycheck*, Ansel says, “My shop window went through in one of our old rows.”",
+  "connections": "Gloria Sloan. A warm drink at the gathering becomes a reason to ask before publishing the photograph.",
+  "familyIds": [
+    "AH-R0795"
+  ],
+  "connectionIds": [
+    "AH-R0489"
+  ],
+  "reactions": [
+    {
+      "situation": "An officer asks whether the wet event should still count as a hearing",
+      "response": "Frank asks who missed the chance to speak before calling the hearing complete.",
+      "asWritten": "An officer asks whether the wet event should still count as a hearing. Frank asks who missed the chance to speak before calling the hearing complete."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Frank keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Frank keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Frank asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Frank asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

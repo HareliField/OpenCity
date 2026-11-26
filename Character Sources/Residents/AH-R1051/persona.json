@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1051",
+  "personId": "AH-R1051",
+  "name": "Devin Yang",
+  "age": 39,
+  "occupation": "Private housekeeper",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Reopening at six",
+  "biography": "stories/residents/08/01-reopening-at-six.md#ah-r1051",
+  "life": "“I still remember washing pillowcases before my first housecleaning shift.” On Friday, near the public end of the South Shore boardwalk, Devin checks the shade on the benches before deciding how long to stay.",
+  "voice": "I wash sheets before the first clients arrive and can't pretend an evening slot saves my business.",
+  "appearance": "Devin has a round face with a pronounced chin. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is an olive canvas jacket with a small enamel bird on the lapel. In conversation Devin looks down for a moment before saying something difficult.",
+  "personality": "Devin listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To secure an early laundry window for domestic workers.",
+  "family": "Bailey Alston is Devin’s half-sibling. Devin puts the kettle on. Bailey chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Two birthdays in one ward*, Bailey says, “I printed a birthday banner with room between their names.”",
+  "connections": "Anthony Clement. An early laundry customer and a retiree with changed care hours both depend on dawn openings.",
+  "familyIds": [
+    "AH-R1407"
+  ],
+  "connectionIds": [
+    "AH-R1056"
+  ],
+  "reactions": [
+    {
+      "situation": "The laundromat chooses between dawn and late-night opening",
+      "response": "Devin asks which households lose their only usable wash time under either plan.",
+      "asWritten": "The laundromat chooses between dawn and late-night opening. Devin asks which households lose their only usable wash time under either plan."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Devin looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Devin looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Devin keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Devin keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

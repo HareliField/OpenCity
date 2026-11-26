@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0151",
+  "personId": "AH-R0151",
+  "name": "Briar Mann",
+  "age": 52,
+  "occupation": "Bridal seamstress",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Hem by hem",
+  "biography": "stories/residents/02/01-hem-by-hem.md#ah-r0151",
+  "life": "“I learned bias-cut hems unpicking coats for a summer stock company.” Tuesday often includes a stop at Juniper Street, where Briar knows which of the west-side porches has a seat in the shade.",
+  "voice": "I moved the seam that once hid a pregnancy. The bride wants that seam left visible.",
+  "appearance": "Briar has fine brows over wide-set eyes. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a sand-colored linen shirt with a little coil of soft measuring tape. In conversation Briar raises one eyebrow long before saying yes.",
+  "personality": "Briar loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To leave the old seam where the bride can recognize it.",
+  "family": "Anwar Fen is Briar’s cousin. Briar can stop the walk at any corner. Anwar chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Window seven*, Anwar says, “I brought breakfast in a cup because her hands shook.”",
+  "connections": "Clyde Ho. They compare the hidden seam with the older woman's remembered stitch. Also in the story is Cian Reese (longtime fitting client).",
+  "familyIds": [
+    "AH-R0058"
+  ],
+  "connectionIds": [
+    "AH-R0153",
+    "AH-R0156"
+  ],
+  "reactions": [
+    {
+      "situation": "The bride wants to keep the old pocket",
+      "response": "Briar leaves the pocket in place while the bride tries the dress on.",
+      "asWritten": "The bride wants to keep the old pocket. Briar leaves the pocket in place while the bride tries the dress on."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Briar accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Briar accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Briar offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Briar offers one about their own embarrassment instead."
+    }
+  ]
+}

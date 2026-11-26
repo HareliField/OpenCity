@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0403",
+  "personId": "AH-R0403",
+  "name": "Thomas Banks",
+  "age": 41,
+  "occupation": "Antiques broker",
+  "home": "Coast Ridge",
+  "episode": "The widow's razor",
+  "biography": "stories/residents/03/11-the-widow-s-razor.md#ah-r0403",
+  "life": "“I still remember reading market prices written underneath a hat brim.” Friday often includes a stop at the foot of Harbor Viaduct, where Thomas pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I wanted to buy it for a collector. Then I saw the tiny rent figures written inside the lid.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and a tiny red thread tied through the lowest buttonhole. Thomas has a heart-shaped face and prominent ears, with brown hair pinned away from the temples. Thomas gives a little nod before asking a hard question during a conversation.",
+  "personality": "Thomas uses precise names for tools and very approximate names for feelings. People who know Thomas well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To record the rent prices before approaching a collector.",
+  "family": "Theo Hall is Thomas’s half-sibling. Thomas brings a spare shopping bag. Theo chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Names on the night wall*, Theo says, “I named the librarian who doesn't mention my job in the reading group.”",
+  "connections": "Ella Montoya. The lid that interested a collector becomes a record of a street going broke.",
+  "familyIds": [
+    "AH-R1386"
+  ],
+  "connectionIds": [
+    "AH-R0410"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer makes a high offer for the old razor",
+      "response": "Thomas lets the widow hear the price privately and keep the box in hand.",
+      "asWritten": "A buyer makes a high offer for the old razor. Thomas lets the widow hear the price privately and keep the box in hand."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Thomas walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Thomas walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Thomas brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Thomas brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

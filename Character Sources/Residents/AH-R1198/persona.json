@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1198",
+  "personId": "AH-R1198",
+  "name": "Adrian Andrade",
+  "age": 52,
+  "occupation": "Family breadwinner and tiler",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The skipper goes ashore",
+  "biography": "stories/residents/08/15-the-skipper-goes-ashore.md#ah-r1198",
+  "life": "“I still remember recalculating a mortgage when our second wage changed.” Saturday often includes a stop at Ferris Deli, where Adrian asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I do not want to sell our house because she earns less ashore. Our marriage needs a new calculation.",
+  "appearance": "Adrian has a round face with a pronounced chin. Look for short black hair swept back. On an ordinary day, the familiar outfit is a striped cotton shirt with a copper-colored clasp that has been repaired by hand. In conversation Adrian gives a little nod before asking a hard question.",
+  "personality": "Adrian takes a rejection personally for a day and analytically on the second morning. Adrian can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To build a household budget around the shore wage.",
+  "family": "Sam Yeo is Adrian’s second cousin. Adrian decides what stays off the paper. Sam brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *One clean day*, Sam says, “I carried the list of absent classmates and ended up talking about the living ones for once.”",
+  "connections": "Ignacio Schmidt (spouse). The shore job's real wage belongs in the family discussion about keeping the house.",
+  "familyIds": [
+    "AH-R0633"
+  ],
+  "connectionIds": [
+    "AH-R1191"
+  ],
+  "reactions": [
+    {
+      "situation": "The new skipper changes the departure routine",
+      "response": "Adrian gives the new skipper space to explain the change before measuring it against the former routine.",
+      "asWritten": "The new skipper changes the departure routine. Adrian gives the new skipper space to explain the change before measuring it against the former routine."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Adrian gets the people at the next doorway away from the smoke and asks a bystander to make the call.",
+      "asWritten": "Smoke appears under a shop door after closing. Adrian gets the people at the next doorway away from the smoke and asks a bystander to make the call."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Adrian turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Adrian turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

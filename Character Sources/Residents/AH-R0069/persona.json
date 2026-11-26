@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0069",
+  "personId": "AH-R0069",
+  "name": "Cal Esmond",
+  "age": 28,
+  "occupation": "Graduate cartographer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "An unfinished atlas",
+  "biography": "stories/residents/01/07-an-unfinished-atlas.md#ah-r0069",
+  "life": "Cal came here on a small research grant and is privately terrified the city will prove too ordinary for a thesis. The bookseller has begun showing him exactly how many ordinary streets need their history checked. On Thursday, near the entrance to the Wash House, Cal stops for local notices even on a day without a load to wash.",
+  "voice": "My funding depends on mapping a vanished street. It would be convenient if this were it. I wrote down three reasons it might be somewhere else before opening my laptop.",
+  "appearance": "Cal has a smooth side part with one rebellious curl, a round face with a pronounced chin, and a favorite piece of clothing, a dark green knitted vest. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Cal folds a paper napkin into quarters without noticing.",
+  "personality": "Cal is kind in very practical ways and prickly about being thanked in public. Cal loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To test whether the thesis street and the atlas street are actually the same.",
+  "family": "Kathleen Lu is Cal’s second cousin. Cal chooses the familiar route. Kathleen can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Low water music*, Kathleen says, “I wrote a tune around the note and discovered it changes when the rock is wet.”",
+  "connections": "Una Vida. A reading class and a thesis both depend on letting a former typesetter correct the map. Also in the story is Mavis Yeo (bookseller).",
+  "familyIds": [
+    "AH-R0224"
+  ],
+  "connectionIds": [
+    "AH-R0065",
+    "AH-R0061"
+  ],
+  "reactions": [
+    {
+      "situation": "A collector offers cash for the unexamined atlas",
+      "response": "Cal asks the bookseller to put the atlas somewhere safe while its ownership is checked.",
+      "asWritten": "A collector offers cash for the unexamined atlas. Cal asks the bookseller to put the atlas somewhere safe while its ownership is checked."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Cal asks which other bill repayment would displace, then offers only what the household can afford to give.",
+      "asWritten": "A friend asks for a loan due back before payday. Cal asks which other bill repayment would displace, then offers only what the household can afford to give."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Cal gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Cal gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

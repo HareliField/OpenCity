@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0656",
+  "personId": "AH-R0656",
+  "name": "Frances Jimenez",
+  "age": 29,
+  "occupation": "Bus rider and building cleaner",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Two left slippers",
+  "biography": "stories/residents/05/06-two-left-slippers.md#ah-r0656",
+  "life": "“I still remember catching my reflection carrying mismatched boots.” On Sunday, near the downtown fountain, Frances keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I kept the wrong slipper as a joke until someone at the bus stop offered me its mate.",
+  "appearance": "Frances has a center part and straight chestnut hair, an aquiline nose and a square chin, and a favorite piece of clothing, a mustard canvas overshirt. It usually goes with a replacement button a shade darker than the others. When somebody else has the floor, Frances grins on one side while the eyes stay serious.",
+  "personality": "Frances loves a well-told anecdote and distrusts the neat ending. The parts Frances remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To reunite the pair found at different stops.",
+  "family": "Alexei Zhang is Frances’s older cousin. Frances calls about good news first. Alexei is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Three minutes at the bridge*, Alexei says, “I can start earlier if someone else receives the first delivery.”",
+  "connections": "Alan Chapman. A right slipper found on the bus can join the spare shoes from a dancing troupe.",
+  "familyIds": [
+    "AH-R1462"
+  ],
+  "connectionIds": [
+    "AH-R0659"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor offers shoes that are far too large",
+      "response": "Frances offers to look for a usable pair before anyone is asked to walk in loose shoes.",
+      "asWritten": "A visitor offers shoes that are far too large. Frances offers to look for a usable pair before anyone is asked to walk in loose shoes."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Frances keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Frances keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Frances includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Frances includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

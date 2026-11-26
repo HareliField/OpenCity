@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1401",
+  "personId": "AH-R1401",
+  "name": "Ines Baines",
+  "age": 73,
+  "occupation": "Retired ward worker",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Two birthdays in one ward",
+  "biography": "stories/residents/10/06-two-birthdays-in-one-ward.md#ah-r1401",
+  "life": "“I still remember playing cards for buttons in the ward linen room.” People around Paper & Pine Books know Ines by a small Friday habit. Ines starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I am old enough that a surprise party feels like somebody rehearsing my funeral. I want a hand of cards.",
+  "appearance": "Ines is easy to recognize by gray hair trimmed very close behind the ears and a strong profile and a little space between the front teeth. Usually dressed in a charcoal zip cardigan with a tiny red thread tied through the lowest buttonhole, Ines draws breath as if to speak and lets someone else go first when listening.",
+  "personality": "Ines is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Ines is concerned.",
+  "agenda": "To play the requested birthday hand of cards.",
+  "family": "Javier Anders is Ines’s younger relative by marriage. Ines can always ask for five minutes alone. Javier asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *One unposted detour*, Javier says, “I borrowed a bicycle to deliver the last parcel.”",
+  "connections": "Daphne Perez. The retired worker's chosen birthday includes playing cards with the old supervisor.",
+  "familyIds": [
+    "AH-R0415"
+  ],
+  "connectionIds": [
+    "AH-R1404"
+  ],
+  "reactions": [
+    {
+      "situation": "One birthday patient wants a quiet ward",
+      "response": "Ines lets the quiet patient choose a low-key celebration separate from the party.",
+      "asWritten": "One birthday patient wants a quiet ward. Ines lets the quiet patient choose a low-key celebration separate from the party."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Ines stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Ines stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Ines asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Ines asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0112",
+  "personId": "ah-pd-102",
+  "name": "Andre Bell",
+  "age": 42,
+  "occupation": "Patrol officer with a traffic assignment",
+  "home": "Midtown",
+  "episode": "The last green",
+  "biography": "stories/residents/01/12-the-last-green.md#ah-r0112",
+  "life": "Andre knew half the city's cabs by their rear lights before he could spell dispatch. On a beat he still catches himself thinking of drivers as a boy grateful for a ride instead of an officer obliged to take their details. On Sunday, near Paper & Pine Books, Andre starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "He once drove my mother to hospital and refused a fare. I am the one who took the report on his last scrape. I offered to stand at the crossing in ordinary clothes when he goes by.",
+  "appearance": "Andre has a high puff tied with plain cord, a wide brow and a narrow jaw, and a favorite piece of clothing, a cream pullover. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Andre leans a shoulder against the wall during long conversations.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Andre takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To give Saul the courtesy of an ordinary goodbye at the crossing.",
+  "family": "Noel Gomes is Andre’s second cousin. Andre offers the first invitation. Noel gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The boy on the corner*, Noel says, “I watched the little brother for grocery money.”",
+  "connections": "Hana Solberg. One remembers being given a lift in a crisis. The other wants this final lift to include the view at the bridge crest.",
+  "familyIds": [
+    "AH-R1094"
+  ],
+  "connectionIds": [
+    "AH-R0120"
+  ],
+  "reactions": [
+    {
+      "situation": "The old driver wants to change the farewell route",
+      "response": "Andre takes the changed route seriously and checks who needs to know the new return time.",
+      "asWritten": "The old driver wants to change the farewell route. Andre takes the changed route seriously and checks who needs to know the new return time."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Andre offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Andre offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Andre asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Andre asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

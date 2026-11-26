@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0138",
+  "personId": "AH-R0138",
+  "name": "Dane Aubin",
+  "age": 57,
+  "occupation": "Food bank driver",
+  "home": "the blocks north of the port",
+  "episode": "Two portions",
+  "biography": "stories/residents/01/14-two-portions.md#ah-r0138",
+  "life": "Dane drives his food bank van by a map in which knocks, bells, side entrances and impatient dogs are more important than road numbers. He worries that management will call his handwritten music symbols unnecessary detail. Monday often includes a stop at the public road outside the Port of Asphalt, where Dane can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I take the stairs because the bell is louder than the tenant can bear. The new driver needs to know who can hear which knock. I drew a music note beside the address.",
+  "appearance": "Dane has a flat bridge to the nose and a mobile brow. Look for a blunt cut just below the ears. On an ordinary day, the familiar outfit is a dark green knitted vest with a pressed flower kept in the clear back of a phone case. In conversation Dane squares up pieces of paper while thinking.",
+  "personality": "Dane treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To pass each household's preferred knock to the next driver.",
+  "family": "Albert Daniels is Dane’s cousin. Dane brings a spare shopping bag. Albert chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *An ordinary mirror*, Albert says, “I am the client waiting behind her. I heard myself offer a story I have never told our own tailor.”",
+  "connections": "Jae Alder. The school clerk and the food driver compare the times when carers can actually answer a door.",
+  "familyIds": [
+    "AH-R1457"
+  ],
+  "connectionIds": [
+    "AH-R0137"
+  ],
+  "reactions": [
+    {
+      "situation": "The diner asks to have company without being asked about care",
+      "response": "Dane lets the diner start an ordinary conversation and leaves the care questions for another time.",
+      "asWritten": "The diner asks to have company without being asked about care. Dane lets the diner start an ordinary conversation and leaves the care questions for another time."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Dane asks the cashier to hold it and lets a claimant identify the writing and amount privately.",
+      "asWritten": "An envelope of wages is found under a café chair. Dane asks the cashier to hold it and lets a claimant identify the writing and amount privately."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Dane changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Dane changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

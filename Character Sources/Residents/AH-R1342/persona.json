@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1342",
+  "personId": "AH-R1342",
+  "name": "Shay Gray",
+  "age": 65,
+  "occupation": "Retired fishing captain",
+  "home": "Coast Ridge",
+  "episode": "The missing name on the stern",
+  "biography": "stories/residents/09/15-the-missing-name-on-the-stern.md#ah-r1342",
+  "life": "“I still remember writing the town's new version of my name in school ink.” On Saturday, near the public road outside the Port of Asphalt, Shay can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I changed the family name when I arrived here. The apprentice's version is the one my mother would have recognized.",
+  "appearance": "Shay has closely cropped salt-and-pepper hair, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a knotted piece of sail thread on a key ring. When somebody else has the floor, Shay listens with the head tilted a little to the left.",
+  "personality": "Shay keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Shay wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To choose the family spelling the mother would recognize.",
+  "family": "Ren Su is Shay’s cousin raised in the same household. Shay is free to hang up first. Ren makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The almost scholarship*, Ren says, “I can't give money. I can wash twenty shirts while the school uniform fund catches up.”",
+  "connections": "Jay Choi (sign painter). The apprentice and the old skipper can admit the error without losing the family's preferred spelling.",
+  "familyIds": [
+    "AH-R0878"
+  ],
+  "connectionIds": [
+    "AH-R1341"
+  ],
+  "reactions": [
+    {
+      "situation": "A family elder asks for the spelling they grew up with",
+      "response": "Shay writes both spellings where the elder can indicate the one they prefer.",
+      "asWritten": "A family elder asks for the spelling they grew up with. Shay writes both spellings where the elder can indicate the one they prefer."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Shay puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Shay puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Shay offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Shay offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

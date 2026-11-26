@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0484",
+  "personId": "AH-R0484",
+  "name": "Quinn Navarro",
+  "age": 33,
+  "occupation": "Access volunteer",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Station steps in rain",
+  "biography": "stories/residents/04/04-station-steps-in-rain.md#ah-r0484",
+  "life": "“I still remember an accessible door nobody ever unlocked.” On Thursday, near the public end of the South Shore boardwalk, Quinn checks the shade on the benches before deciding how long to stay.",
+  "voice": "I kept the wheelchair space clear and missed the speech my daughter wrote.",
+  "appearance": "Quinn has fine brows over wide-set eyes. Look for short, uneven waves that refuse to lie flat. On an ordinary day, the familiar outfit is a dark green knitted vest with a pocket notebook shaped by years of sitting on it. In conversation Quinn leans a shoulder against the wall during long conversations.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To keep the sheltered entrance accessible.",
+  "family": "Philip Moreau is Quinn’s second cousin. Quinn brings the paper and a pen. Philip decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The last home visit*, Philip says, “I am the successor. I would like to make one mistake that hasn't already been made by someone everyone adores.”",
+  "connections": "Marlowe Nolasco. Someone mistaken for staff can still hold the sheltered entrance clear.",
+  "familyIds": [
+    "AH-R1483"
+  ],
+  "connectionIds": [
+    "AH-R0482"
+  ],
+  "reactions": [
+    {
+      "situation": "An officer asks whether the wet event should still count as a hearing",
+      "response": "Quinn asks who missed the chance to speak before calling the hearing complete.",
+      "asWritten": "An officer asks whether the wet event should still count as a hearing. Quinn asks who missed the chance to speak before calling the hearing complete."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Quinn stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Quinn stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Quinn listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Quinn listens first to the account of how it was actually used."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0971",
+  "personId": "AH-R0971",
+  "name": "Gerard Ito",
+  "age": 52,
+  "occupation": "Family breadwinner and postal worker",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The expensive summer",
+  "biography": "stories/residents/07/08-the-expensive-summer.md#ah-r0971",
+  "life": "“I still remember choosing the special without hearing its price.” On Monday, near the crossing outside Verve Nail Studio, Gerard notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I suggested pretending we'd already eaten. My mum turned the menu over and told the children the truth.",
+  "appearance": "Gerard is easy to recognize by auburn hair cut square at the nape and two dimples that appear only with a full smile. Usually dressed in a red windbreaker with a little coil of soft measuring tape, Gerard listens with the head tilted a little to the left when listening.",
+  "personality": "Gerard is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Gerard is concerned.",
+  "agenda": "To tell the children the birthday budget truthfully.",
+  "family": "Tessa Abreu is Gerard’s half-sibling. Gerard is allowed to ask about the bad news afterward. Tessa calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The aquarium*, Tessa says, “My appointment with the glazier ended up on a pavement with our sleeves wet.”",
+  "connections": "Dora Villa. One relative wants to admit what supper costs. The other has already covered more than a fair share.",
+  "familyIds": [
+    "AH-R0049"
+  ],
+  "connectionIds": [
+    "AH-R0979"
+  ],
+  "reactions": [
+    {
+      "situation": "A waiter offers to split one birthday dessert among everybody",
+      "response": "Gerard checks that the birthday guest likes the dessert before calculating the portions.",
+      "asWritten": "A waiter offers to split one birthday dessert among everybody. Gerard checks that the birthday guest likes the dessert before calculating the portions."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Gerard keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Gerard keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Gerard asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Gerard asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

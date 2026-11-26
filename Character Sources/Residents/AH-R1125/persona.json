@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1125",
+  "personId": "AH-R1125",
+  "name": "Joy Hall",
+  "age": 41,
+  "occupation": "Boardwalk cook",
+  "home": "Coast Ridge",
+  "episode": "A summer marriage",
+  "biography": "stories/residents/08/08-a-summer-marriage.md#ah-r1125",
+  "life": "“I still remember doubling a wedding stew without doubling the budget.” Sunday often includes a stop at Breakwater Way, where Joy stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I can cook for twenty. The number became sixty when everybody started calling the beach public property.",
+  "appearance": "Joy has black hair twisted into a small knot, two dimples that appear only with a full smile, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a tiny red thread tied through the lowest buttonhole. When somebody else has the floor, Joy steadies a cup with both hands while listening.",
+  "personality": "Joy reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Joy trusts most.",
+  "agenda": "To agree a meal for the actual number of people.",
+  "family": "Joel Garza is Joy’s older relative by marriage. Joy is free to hang up first. Joel makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Home with stairs*, Joel says, “I counted them twice with a walking stick. My discharge sheet had a box for stairs and space for yes or no.”",
+  "connections": "Dana Sanders. The cook and seamster need a plan that can move right from celebration to work.",
+  "familyIds": [
+    "AH-R0801"
+  ],
+  "connectionIds": [
+    "AH-R1126"
+  ],
+  "reactions": [
+    {
+      "situation": "A guest brings additional people to the boardwalk wedding",
+      "response": "Joy checks whether the couple can actually feed and seat the additional people.",
+      "asWritten": "A guest brings additional people to the boardwalk wedding. Joy checks whether the couple can actually feed and seat the additional people."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Joy asks the cashier to hold it and lets a claimant identify the writing and amount privately.",
+      "asWritten": "An envelope of wages is found under a café chair. Joy asks the cashier to hold it and lets a claimant identify the writing and amount privately."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Joy does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Joy does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

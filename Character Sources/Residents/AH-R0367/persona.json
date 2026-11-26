@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0367",
+  "personId": "AH-R0367",
+  "name": "Liam Roberts",
+  "age": 59,
+  "occupation": "Letterpress printer",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Overdue by a lifetime",
+  "biography": "stories/residents/03/07-overdue-by-a-lifetime.md#ah-r0367",
+  "life": "“I still remember climbing onto a desk to reach a word.” On Tuesday, near the bank steps, Liam takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I translated the difficult words for my desk mate. He left them all in the margins for me.",
+  "appearance": "Liam is easy to recognize by a long silver braid and two dimples that appear only with a full smile. Usually dressed in an unlined tan jacket with one cuff folded back twice, Liam listens with the head tilted a little to the left when listening.",
+  "personality": "Liam has a quick wit and an equally quick sense of shame. A joke is often Liam's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To let the desk mate read the old translations.",
+  "family": "Basil Levi is Liam’s stepsibling. Liam chooses the familiar route. Basil can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The first straight paycheck*, Basil says, “I taught him to lift boxes. When someone recognized him on the floor he had to decide who told the foreman first.”",
+  "connections": "Devin Rhodes. They debate the ending with the knowledge of the missing words.",
+  "familyIds": [
+    "AH-R0793"
+  ],
+  "connectionIds": [
+    "AH-R0370"
+  ],
+  "reactions": [
+    {
+      "situation": "The former pupil offers to pay forty years of fines",
+      "response": "Liam asks the library what it actually needs from the returning reader.",
+      "asWritten": "The former pupil offers to pay forty years of fines. Liam asks the library what it actually needs from the returning reader."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Liam asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Liam asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Liam seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Liam seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

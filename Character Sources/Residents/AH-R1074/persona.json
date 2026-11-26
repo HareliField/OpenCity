@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1074",
+  "personId": "AH-R1074",
+  "name": "Grant Penn",
+  "age": 40,
+  "occupation": "Unpaid carer and pharmacy aide",
+  "home": "Midtown",
+  "episode": "The guarantee",
+  "biography": "stories/residents/08/03-the-guarantee.md#ah-r1074",
+  "life": "“I still remember watching my home-care hours vanish from the family balance sheet.” On Thursday, near the downtown fountain, Grant keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I am the sibling who stayed home to care for Mum. I want my years acknowledged before anybody calls the house security.",
+  "appearance": "Grant has a center part and straight chestnut hair, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a rust-colored canvas coat. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Grant presses the lips together to keep a smile in.",
+  "personality": "Grant finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To have care work acknowledged in the family decision.",
+  "family": "Adela Marin is Grant’s cousin. Grant chooses an ordinary story to tell. Adela asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The other side of the cove*, Adela says, “I donated the bolts. Nobody will see my name, which is how I prefer to keep a public thing standing.”",
+  "connections": "Terry Lau. The carer and another parent compare what helping somebody can cost other family members. Also in the story is Sonia Arnett (sister).",
+  "familyIds": [
+    "AH-R1280"
+  ],
+  "connectionIds": [
+    "AH-R1078",
+    "AH-R1071"
+  ],
+  "reactions": [
+    {
+      "situation": "A sibling wants the bank figures read at a family meal",
+      "response": "Grant asks the guarantor what can be shared at dinner before reading out any figures.",
+      "asWritten": "A sibling wants the bank figures read at a family meal. Grant asks the guarantor what can be shared at dinner before reading out any figures."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Grant stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Grant stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Grant points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Grant points to the person who noticed the original mistake."
+    }
+  ]
+}

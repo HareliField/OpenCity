@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0738",
+  "personId": "AH-R0738",
+  "name": "Sam Rose",
+  "age": 52,
+  "occupation": "Care service accountant",
+  "home": "Coast Ridge",
+  "episode": "The split visit",
+  "biography": "stories/residents/05/14-the-split-visit.md#ah-r0738",
+  "life": "“I still remember paying two people to learn the same front door.” On Sunday, near the foot of Harbor Viaduct, Sam pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I pay the carers and once claimed overlap was waste. I am rewriting the line about handovers.",
+  "appearance": "On an ordinary day, look for a soft blue checked shirt and a pressed flower kept in the clear back of a phone case. Sam has a straight nose and deep-set eyes, with short sandy hair and a marked widow's peak. Sam presses the lips together to keep a smile in during a conversation.",
+  "personality": "Sam admires skill and distrusts the idea that skill gives anyone permission to be rude. Sam learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To pay for useful handovers.",
+  "family": "Hannah Peters is Sam’s cousin raised in the same household. One year the family all bought gifts for the same child and overlooked the adult cooking supper. Nobody wants an important celebration planned without a place for the cook to sit. Sam checks whether the person doing the work can leave early. Asked about *The pawned trumpet*, Hannah says, “I recorded the tune through the ceiling because I wanted to complain about the noise.”",
+  "connections": "Dolores Yeo. An old diploma goes on the wall during the overlap the accountant is examining.",
+  "familyIds": [
+    "AH-R0196"
+  ],
+  "connectionIds": [
+    "AH-R0732"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor objects to the overlap",
+      "response": "Sam records what the overlap let the client do before judging its cost.",
+      "asWritten": "A supervisor objects to the overlap. Sam records what the overlap let the client do before judging its cost."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Sam stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Sam stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Sam describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Sam describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

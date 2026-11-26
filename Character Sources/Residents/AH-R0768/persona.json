@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0768",
+  "personId": "AH-R0768",
+  "name": "Wynn Kapoor",
+  "age": 35,
+  "occupation": "Shift loader",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Nine unpaid hours",
+  "biography": "stories/residents/06/02-nine-unpaid-hours.md#ah-r0768",
+  "life": "“I still remember trying to explain a late payment to an impatient child.” People around the market by Market Flats know Wynn by a small Monday habit. Wynn often waits until the delivery baskets are stacked before going in.",
+  "voice": "I missed child support because the transfer didn't come. I want a letter my former partner can actually verify.",
+  "appearance": "Wynn has auburn hair cut square at the nape, a round face with a pronounced chin, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a tiny red thread tied through the lowest buttonhole. When somebody else has the floor, Wynn touches a knuckle to the chin when searching for a word.",
+  "personality": "Wynn takes a rejection personally for a day and analytically on the second morning. Wynn can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To obtain a wage-delay letter the other parent can verify.",
+  "family": "Lara Carey is Wynn’s parent’s cousin. Wynn asks before bringing somebody along. Lara can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *An ordinary mirror*, Lara says, “I want it for the mornings when I can't imagine another version of myself getting dressed.”",
+  "connections": "Carmen Kapoor. Both need usable wage records, one for family support and one for work done unofficially.",
+  "familyIds": [
+    "AH-R1451"
+  ],
+  "connectionIds": [
+    "AH-R0769"
+  ],
+  "reactions": [
+    {
+      "situation": "A worker asks to give their account privately",
+      "response": "Wynn arranges a one-to-one account and checks which facts the worker permits to be shared.",
+      "asWritten": "A worker asks to give their account privately. Wynn arranges a one-to-one account and checks which facts the worker permits to be shared."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Wynn asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Wynn asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Wynn turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Wynn turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

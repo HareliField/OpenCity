@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1388",
+  "personId": "ah-pd-147",
+  "name": "Remy Cruz",
+  "age": 53,
+  "occupation": "Air support officer",
+  "home": "Eastside",
+  "episode": "Names on the night wall",
+  "biography": "stories/residents/10/04-names-on-the-night-wall.md#ah-r1388",
+  "life": "“I still remember turning up on the day I wanted most to stay in bed.” Monday often includes a stop at Studio Boulevard, where Remy waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I chose myself first. After a year of treatment, showing up each week really has been a shared decision between past and present me.",
+  "appearance": "Remy is easy to recognize by short sandy hair and a marked widow's peak and a broad nose and a deep dimple on one cheek. Usually dressed in a gray fisher's sweater with a pen clipped inside the neckline, Remy looks down for a moment before saying something difficult when listening.",
+  "personality": "Remy feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To acknowledge the work of returning after treatment.",
+  "family": "Frances Acosta is Remy’s second cousin. Remy decides what stays off the paper. Frances brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *One paid trial*, Frances says, “I only hire qualified bakers. Watching this trial has made me wonder what my certificate never tested.”",
+  "connections": "Pia Burke. A dependable custody handover and a year of treatment both earn places on the thank-you wall.",
+  "familyIds": [
+    "AH-R0848"
+  ],
+  "connectionIds": [
+    "AH-R1383"
+  ],
+  "reactions": [
+    {
+      "situation": "A neighbor named on several cards asks for a favor in return",
+      "response": "Remy asks the neighbor what kind of help they actually need now.",
+      "asWritten": "A neighbor named on several cards asks for a favor in return. Remy asks the neighbor what kind of help they actually need now."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Remy stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Remy stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Remy lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Remy lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

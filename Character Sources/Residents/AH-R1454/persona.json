@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1454",
+  "personId": "AH-R1454",
+  "name": "Laurence Williams",
+  "age": 66,
+  "occupation": "Late husband's brother and plumber",
+  "home": "Coast Ridge",
+  "episode": "An ordinary mirror",
+  "biography": "stories/residents/10/11-an-ordinary-mirror.md#ah-r1454",
+  "life": "“I still remember frightening a widow with my own brother's profile.” Thursday often includes a stop at the approach to Seabright Court, where Laurence likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I am the late husband's brother. We look alike and I hate accidentally frightening her in reflections.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and a stitched row of blue crosses along an old repair. Laurence has a straight nose and deep-set eyes, with two white streaks in otherwise dark hair. Laurence looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Laurence reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Laurence trusts most.",
+  "agenda": "To warn the widow before the resemblance startles her.",
+  "family": "Jo Briggs is Laurence’s first cousin once removed. A family supper used to end the moment somebody mentioned money. They invented a second meal, eaten standing at the sink, where that was the only thing anybody was allowed to discuss. Laurence keeps the household arithmetic honest. Asked about *One unposted detour*, Jo says, “I drove the crew car. The person we made wait was my mum, who hasn't waited for me in years.”",
+  "connections": "Reuben Marsh. A cautious family resemblance and an annual coat fitting both belong among the mirror's continuing uses. Also in the story is Lara Carey (widow of a sibling).",
+  "familyIds": [
+    "AH-R0418"
+  ],
+  "connectionIds": [
+    "AH-R1460",
+    "AH-R1451"
+  ],
+  "reactions": [
+    {
+      "situation": "Another customer asks for a last fitting in front of it",
+      "response": "Laurence sets aside an ordinary fitting time before making plans for the sale.",
+      "asWritten": "Another customer asks for a last fitting in front of it. Laurence sets aside an ordinary fitting time before making plans for the sale."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Laurence asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Laurence asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Laurence does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Laurence does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

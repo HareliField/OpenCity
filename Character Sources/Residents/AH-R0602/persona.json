@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0602",
+  "personId": "AH-R0602",
+  "name": "Winifred Reese",
+  "age": 40,
+  "occupation": "Workwear clerk",
+  "home": "Coast Ridge",
+  "episode": "Salt in the pockets",
+  "biography": "stories/residents/05/01-salt-in-the-pockets.md#ah-r0602",
+  "life": "“I still remember telling snow apart from salt by touch.” People around the approach to Seabright Court know Winifred by a small Tuesday habit. Winifred likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "My mother used to shake out our coats over a blue plate and read the weather in the grains.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a pocket notebook shaped by years of sitting on it. Winifred has one cheek that creases before the other, with thick, tightly coiled hair. Winifred leans a shoulder against the wall during long conversations during a conversation.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To revive the family's winter weather plate.",
+  "family": "Abel Weaver is Winifred’s parent’s cousin. The family has a birthday plate with a shallow crack. Whoever borrows it is responsible for returning it in person, which has salvaged more than one bad goodbye. Winifred makes sure it reaches the person who nearly didn't come. Asked about *The porch light*, Abel says, “My wife left the lamp on for the last nurse walking home from St.”",
+  "connections": "Cian Khan. They label the crystals in both scientific and household terms.",
+  "familyIds": [
+    "AH-R0081"
+  ],
+  "connectionIds": [
+    "AH-R0610"
+  ],
+  "reactions": [
+    {
+      "situation": "An employer wants every coat returned before supper",
+      "response": "Winifred asks the employer which garments are actually needed for tonight's shift.",
+      "asWritten": "An employer wants every coat returned before supper. Winifred asks the employer which garments are actually needed for tonight's shift."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Winifred keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Winifred keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Winifred listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Winifred listens first to the account of how it was actually used."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0571",
+  "personId": "AH-R0571",
+  "name": "Rowan Jimenez",
+  "age": 17,
+  "occupation": "Student playwright",
+  "home": "the blocks north of the port",
+  "episode": "A play in a pocket",
+  "biography": "stories/residents/04/13-a-play-in-a-pocket.md#ah-r0571",
+  "life": "“I still remember writing my first play on a bread wrapper.” On Saturday, near the steps at Pier Beach, Rowan watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I wrote mine for my sister who hasn't entered a theater since the panic attacks began.",
+  "appearance": "Rowan is easy to recognize by a long plait tucked inside the collar and one cheek that creases before the other. Usually dressed in a cropped bottle-green coat with a train token tied to a zipper pull, Rowan gathers both sleeves neatly before settling in when listening.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To perform the short play privately for the sister.",
+  "family": "Ingrid Moss is Rowan’s stepsibling. Rowan puts the kettle on. Ingrid chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Home with stairs*, Ingrid says, “I deliver prescriptions here. I marked every landing where a person can set down a bag.”",
+  "connections": "Clara Ferreira (drama tutor). They test whether a private scene works across a language difference.",
+  "familyIds": [
+    "AH-R0805"
+  ],
+  "connectionIds": [
+    "AH-R0578"
+  ],
+  "reactions": [
+    {
+      "situation": "A young actor asks the listener to stop the pocket play",
+      "response": "Rowan lets the actor stop without calling the audience's attention to the interruption.",
+      "asWritten": "A young actor asks the listener to stop the pocket play. Rowan lets the actor stop without calling the audience's attention to the interruption."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Rowan offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Rowan offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Rowan listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Rowan listens first to the account of how it was actually used."
+    }
+  ]
+}

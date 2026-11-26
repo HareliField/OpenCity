@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0796",
+  "personId": "AH-R0796",
+  "name": "Elise Cho",
+  "age": 57,
+  "occupation": "School meals supervisor",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The first straight paycheck",
+  "biography": "stories/residents/06/05-the-first-straight-paycheck.md#ah-r0796",
+  "life": "“I still remember pretending to like the most expensive gift on the table.” Wednesday often includes a stop at the window at Night Shift Donuts, where Elise knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I am the mother who always took his gifts. I need to learn to accept a cheaper birthday present without asking why.",
+  "appearance": "Elise is easy to recognize by dark brown curls cut close behind the ears and a flat bridge to the nose and a mobile brow. Usually dressed in a striped cotton shirt with a cloth patch so neatly matched it only shows in strong light, Elise grins on one side while the eyes stay serious when listening.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To receive a modest birthday present with genuine pleasure.",
+  "family": "Etta Webb is Elise’s younger cousin. Elise decides what stays off the paper. Etta brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The small signature*, Etta says, “Our best player can't grip the heavy replacement pieces.”",
+  "connections": "Santiago Montoya (son). A smaller birthday gift tells the mother more about the new wage than a big speech would.",
+  "familyIds": [
+    "AH-R0026"
+  ],
+  "connectionIds": [
+    "AH-R0791"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative says the first check is embarrassingly small",
+      "response": "Elise asks what the check has paid for this week before making a comparison with street money.",
+      "asWritten": "A relative says the first check is embarrassingly small. Elise asks what the check has paid for this week before making a comparison with street money."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Elise gets the people at the next doorway away from the smoke and asks a bystander to make the call.",
+      "asWritten": "Smoke appears under a shop door after closing. Elise gets the people at the next doorway away from the smoke and asks a bystander to make the call."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Elise listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Elise listens first to the account of how it was actually used."
+    }
+  ]
+}

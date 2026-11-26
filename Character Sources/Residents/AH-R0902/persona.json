@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0902",
+  "personId": "AH-R0902",
+  "name": "Lily Parra",
+  "age": 36,
+  "occupation": "Secondhand uniform sorter",
+  "home": "the blocks north of the port",
+  "episode": "The uniform money",
+  "biography": "stories/residents/07/01-the-uniform-money.md#ah-r0902",
+  "life": "“I still remember the first school tie my neighbor lent us.” On Monday, near the blocks below Foundry Lofts, Lily checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I have a spare blazer with another child's name in it. I want both names to stay.",
+  "appearance": "Lily has a broad nose and a deep dimple on one cheek. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a brown corduroy jacket with a thin silver ring worn on a cord. In conversation Lily takes off the watch before a long conversation.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Lily takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To loan the blazer with both names intact.",
+  "family": "Mika Lam is Lily’s cousin raised in the same household. Lily puts the kettle on. Mika chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The skipper goes ashore*, Mika says, “I got the vacant berth job. I am happy and afraid every passenger will compare us.”",
+  "connections": "Kathleen Roy. A damaged shirt and a borrowed blazer form one usable first-day uniform.",
+  "familyIds": [
+    "AH-R1194"
+  ],
+  "connectionIds": [
+    "AH-R0901"
+  ],
+  "reactions": [
+    {
+      "situation": "A donor asks to photograph the children receiving clothes",
+      "response": "Lily asks the children and families whether they want to appear in the picture.",
+      "asWritten": "A donor asks to photograph the children receiving clothes. Lily asks the children and families whether they want to appear in the picture."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Lily stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Lily stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Lily asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Lily asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0420",
+  "personId": "AH-R0420",
+  "name": "Una Roman",
+  "age": 31,
+  "occupation": "Transport researcher",
+  "home": "the blocks north of the port",
+  "episode": "One unposted detour",
+  "biography": "stories/residents/03/12-one-unposted-detour.md#ah-r0420",
+  "life": "“I still remember finding a whole neighborhood missing from a traffic count.” People around the steps at Pier Beach know Una by a small Wednesday habit. Una watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I am counting how many people stop to help. The official survey only counts the late vans.",
+  "appearance": "Una has a soft fringe that falls across one eyebrow, a long face and high cheekbones, and a favorite piece of clothing, a plum-colored cardigan. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Una looks at people's hands before looking at what they carry.",
+  "personality": "Una loves a well-told anecdote and distrusts the neat ending. The parts Una remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To measure how long real people spent helping.",
+  "family": "Duncan Woods is Una’s cousin raised in the same household. Una makes the call. Duncan is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The free fringe*, Duncan says, “I am paid by the cut. I'm asking the owner to count time spent with a customer who keeps their hair.”",
+  "connections": "Darcy Osei. A rescued cart's regulars become the first people counted in the help survey.",
+  "familyIds": [
+    "AH-R0704"
+  ],
+  "connectionIds": [
+    "AH-R0419"
+  ],
+  "reactions": [
+    {
+      "situation": "The diversion sign is only legible from close up",
+      "response": "Una reads the sign from the distance a driver really gets and reports the result.",
+      "asWritten": "The diversion sign is only legible from close up. Una reads the sign from the distance a driver really gets and reports the result."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Una asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Una asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Una includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Una includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1352",
+  "personId": "AH-R1352",
+  "name": "June Sawyer",
+  "age": 37,
+  "occupation": "Hotel laundry customer",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A closing hour",
+  "biography": "stories/residents/10/01-a-closing-hour.md#ah-r1352",
+  "life": "“I still remember waiting at a shutter I thought could never close.” People around the public end of the South Shore boardwalk know June by a small Sunday habit. June checks the shade on the benches before deciding how long to stay.",
+  "voice": "I am his regular dawn customer. His first day off was the first time I remembered to ask his name.",
+  "appearance": "June has a small notch in the left eyebrow. Look for a high puff tied with plain cord. On an ordinary day, the familiar outfit is a dark green knitted vest with a stitched row of blue crosses along an old repair. In conversation June gives a little nod before asking a hard question.",
+  "personality": "June never tires of being shown how somebody makes a living. June can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To learn the owner's name and normal opening days.",
+  "family": "Stevie Heath is June’s older cousin. At home an argument could last exactly as long as it took the kettle to boil. Whoever put it back on was admitting there was more to say. June is often the one who stays after the cups are empty. Asked about *The hospital radio*, Stevie says, “I fixed the radio with a shoelace during a strike.”",
+  "connections": "Chris Lowe. The regular is offered a wash at the rival's shop and a way back to the usual counter on Monday.",
+  "familyIds": [
+    "AH-R0353"
+  ],
+  "connectionIds": [
+    "AH-R1356"
+  ],
+  "reactions": [
+    {
+      "situation": "A regular needs a coat locked in the shop",
+      "response": "June checks whether the coat is needed that day before interrupting the owner.",
+      "asWritten": "A regular needs a coat locked in the shop. June checks whether the coat is needed that day before interrupting the owner."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "June repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. June repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "June may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, June may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1252",
+  "personId": "AH-R1252",
+  "name": "Bailey Moran",
+  "age": 73,
+  "occupation": "Retired school bursar",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A doctor moves away",
+  "biography": "stories/residents/09/06-a-doctor-moves-away.md#ah-r1252",
+  "life": "“I still remember having to tell my history twice in the same waiting room.” On Friday, near the entrance to the Wash House, Bailey stops for local notices even on a day without a load to wash.",
+  "voice": "I have no claim on her evenings and want an introduction to the person who will read what she wrote about me.",
+  "appearance": "On an ordinary day, look for a cream pullover and a copper-colored clasp that has been repaired by hand. Bailey has full cheeks and a mouth that pulls slightly to one side, with salt-and-pepper curls. Bailey raises one eyebrow long before saying yes during a conversation.",
+  "personality": "Bailey loves a well-told anecdote and distrusts the neat ending. The parts Bailey remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To get a personal introduction to the successor.",
+  "family": "Vincent Farah is Bailey’s younger cousin. Bailey calls back when there is finally a little privacy. Vincent leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *Five missing lunches*, Vincent says, “My son painted a whale on the lid. It's the only thing he drew before his hand operation.”",
+  "connections": "Sam Lim. The longtime patient meets the successor while the departing physician can still make the introduction.",
+  "familyIds": [
+    "AH-R0162"
+  ],
+  "connectionIds": [
+    "AH-R1253"
+  ],
+  "reactions": [
+    {
+      "situation": "The incoming doctor is compared with the old one",
+      "response": "Bailey gives the new doctor a chance to speak before retelling the old doctor's habits.",
+      "asWritten": "The incoming doctor is compared with the old one. Bailey gives the new doctor a chance to speak before retelling the old doctor's habits."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Bailey walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Bailey walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Bailey includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Bailey includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

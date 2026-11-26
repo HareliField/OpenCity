@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0115",
+  "personId": "AH-R0115",
+  "name": "Pam Ravel",
+  "age": 44,
+  "occupation": "Minibus driver",
+  "home": "Eastside",
+  "episode": "The last green",
+  "biography": "stories/residents/01/12-the-last-green.md#ah-r0115",
+  "life": "Pam drove her first bus in work gloves that Saul had cut short for her fingers. She kept them in the spare-tire compartment after upgrading. Now even Saul wants to know why the gloves still ride along. On Sunday, near the approach to Seabright Court, Pam likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "He trained me and never once sat quietly. On the farewell run I made him give me directions right down to the bakery smell at the turn. I want that recording for my first trainee.",
+  "appearance": "Pam has heavy brows and an unusually delicate jaw. Look for a blunt cut just below the ears. On an ordinary day, the familiar outfit is a gray fisher's sweater with a partly rubbed-away embroidered initial. In conversation Pam listens with the head tilted a little to the left.",
+  "personality": "Pam carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To take a trainee over the route using Saul's recorded directions.",
+  "family": "Cassandra Li is Pam’s cousin raised in the same household. Pam checks the date twice. Cassandra brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Nine unpaid hours*, Cassandra says, “I was paid because I have a permanent badge.”",
+  "connections": "Saul Rosner (former driving mentor). They change places in the cab for a final ride over a route both know by smell.",
+  "familyIds": [
+    "AH-R0762"
+  ],
+  "connectionIds": [
+    "AH-R0111"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative asks to keep the driver's keys in secret",
+      "response": "Pam asks Saul when he wants to hand over the keys.",
+      "asWritten": "A relative asks to keep the driver's keys in secret. Pam asks Saul when he wants to hand over the keys."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Pam gets the people at the next doorway away from the smoke and asks a bystander to make the call.",
+      "asWritten": "Smoke appears under a shop door after closing. Pam gets the people at the next doorway away from the smoke and asks a bystander to make the call."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Pam offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Pam offers to accompany them while they tell the truth."
+    }
+  ]
+}

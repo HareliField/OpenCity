@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0817",
+  "personId": "AH-R0817",
+  "name": "Camille Marks",
+  "age": 43,
+  "occupation": "Volunteer tutor",
+  "home": "the blocks north of the port",
+  "episode": "Reading the payslip",
+  "biography": "stories/residents/06/07-reading-the-payslip.md#ah-r0817",
+  "life": "“I still remember a cleaner recognizing the company behind my example.” On Wednesday, near Tideline Market, Camille picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I used a fake example until a cleaner spotted the exact deduction her daughter pays.",
+  "appearance": "Camille has one cheek that creases before the other. Look for a blunt cut just below the ears. On an ordinary day, the familiar outfit is a mustard canvas overshirt with a narrow brass watch set a little fast. In conversation Camille looks down for a moment before saying something difficult.",
+  "personality": "Camille prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To teach with examples the workers recognize.",
+  "family": "Una Kapoor is Camille’s cousin. Camille calls back when there is finally a little privacy. Una leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The fountain score*, Una says, “I am writing the instructions so a class inland can play the same score with whatever is in their pockets.”",
+  "connections": "Kai Valdez. The employer attending quietly sees a real example that a cleaner spotted immediately.",
+  "familyIds": [
+    "AH-R0730"
+  ],
+  "connectionIds": [
+    "AH-R0818"
+  ],
+  "reactions": [
+    {
+      "situation": "A classmate asks for help reading a real wage slip",
+      "response": "Camille sits beside the classmate and covers personal figures that aren't part of the question.",
+      "asWritten": "A classmate asks for help reading a real wage slip. Camille sits beside the classmate and covers personal figures that aren't part of the question."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Camille brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Camille brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Camille clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Camille clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

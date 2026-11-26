@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0501",
+  "personId": "AH-R0501",
+  "name": "Karina Hamilton",
+  "age": 48,
+  "occupation": "Plant nursery worker",
+  "home": "Old Town",
+  "episode": "The waiting-room plant",
+  "biography": "stories/residents/04/06-the-waiting-room-plant.md#ah-r0501",
+  "life": "“I still remember carrying my first rooted cutting in a paper straw.” People around the public end of the South Shore boardwalk know Karina by a small Wednesday habit. Karina checks the shade on the benches before deciding how long to stay.",
+  "voice": "I took the original cutting on the day my husband came home. I want to root another for his brother.",
+  "appearance": "Karina has dark brown curls cut close behind the ears, a small notch in the left eyebrow, and a favorite piece of clothing, a charcoal zip cardigan. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Karina squares up pieces of paper while thinking.",
+  "personality": "Karina has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To root a cutting for the husband's brother.",
+  "family": "Lina Farrell is Karina’s half-sibling. Karina picks the meeting place. Lina sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A room for a father*, Lina says, “I am the second wife's cousin. I can tell these people about a good father they never got.”",
+  "connections": "Elsa Guzman. A rooted cutting is small enough to visit a patient who lacks ordinary callers.",
+  "familyIds": [
+    "AH-R0833"
+  ],
+  "connectionIds": [
+    "AH-R0505"
+  ],
+  "reactions": [
+    {
+      "situation": "A ward wants the plant for the full week",
+      "response": "Karina checks the visiting list for the patients who will miss their turn.",
+      "asWritten": "A ward wants the plant for the full week. Karina checks the visiting list for the patients who will miss their turn."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Karina asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Karina asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Karina says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Karina says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

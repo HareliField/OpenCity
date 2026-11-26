@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0048",
+  "personId": "AH-R0048",
+  "name": "Mo Gill",
+  "age": 53,
+  "occupation": "Pet supply wholesaler",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The aquarium",
+  "biography": "stories/residents/01/05-the-aquarium.md#ah-r0048",
+  "life": "Mo's warehouse is profitable because almost everything moves. One shelf for damaged, usable goods troubles him more than a large donation because it means paying attention every week to who might need them. People around the foot of Harbor Viaduct know Mo by a small Friday habit. Mo pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I gave them an old pump marked display only. My warehouse is full of things nobody can sell and somebody could use. I want my partners to let the outreach worker choose a shelf.",
+  "appearance": "Mo has heavy brows and an unusually delicate jaw. Look for short sandy hair and a marked widow's peak. On an ordinary day, the familiar outfit is an unlined tan jacket with a pocket notebook shaped by years of sitting on it. In conversation Mo draws small circles on a tabletop while waiting.",
+  "personality": "Mo finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To open a shelf of usable damaged stock to the outreach worker.",
+  "family": "Grey Black is Mo’s half-sibling. Mo brings the paper and a pen. Grey decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The gift nobody wants*, Grey says, “I rent the shop below. The family's generosity could decide where my family eats next year.”",
+  "connections": "Cyrus Cole. They try the shop's spare pump on the two fish whose feeding habits only one of them really knows.",
+  "familyIds": [
+    "AH-R1374"
+  ],
+  "connectionIds": [
+    "AH-R0043"
+  ],
+  "reactions": [
+    {
+      "situation": "The tenant calls while everyone is arguing over the tank",
+      "response": "Mo quietens the group long enough for the tenant to hear the tank and decide what should happen next.",
+      "asWritten": "The tenant calls while everyone is arguing over the tank. Mo quietens the group long enough for the tenant to hear the tank and decide what should happen next."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Mo offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Mo offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Mo points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Mo points to the person who noticed the original mistake."
+    }
+  ]
+}

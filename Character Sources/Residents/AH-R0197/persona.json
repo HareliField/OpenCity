@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0197",
+  "personId": "AH-R0197",
+  "name": "Lydia Ames",
+  "age": 60,
+  "occupation": "Pawnbroker's assistant",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The pawned trumpet",
+  "biography": "stories/residents/02/05-the-pawned-trumpet.md#ah-r0197",
+  "life": "“I hate valuing instruments whose cases are worth more than my rent.” People around the courtyard by Ferry Street Rooms know Lydia by a small Friday habit. Lydia prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I sold the trumpet with a practice mute. The mute is still on my shelf and so is the child's name.",
+  "appearance": "Lydia has a broad nose and a deep dimple on one cheek. Look for salt-and-pepper curls. On an ordinary day, the familiar outfit is a narrow-striped sweater with a pocket notebook shaped by years of sitting on it. In conversation Lydia gathers both sleeves neatly before settling in.",
+  "personality": "Lydia finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To return the practice mute with its original owner's name.",
+  "family": "Lionel Wu is Lydia’s stepsibling. A relative let everybody believe a favorite tune was a folk song. Only later did the family find the melody in a book with a relative's real name under it. Lydia is quite capable of keeping a harmless secret for years. Asked about *A last ship together*, Lionel says, “I beat them at dominoes as a teenager. I want one last game with both clocks still ticking on company time.”",
+  "connections": "Frank Hull. They compare the player's receipt with the mute still on the pawn counter. Also in the story is Clyde Darzi (brass repairer).",
+  "familyIds": [
+    "AH-R1368"
+  ],
+  "connectionIds": [
+    "AH-R0191",
+    "AH-R0195"
+  ],
+  "reactions": [
+    {
+      "situation": "A neighbor demands the trumpet stop playing",
+      "response": "Lydia asks the player and the neighbor to choose a practice time they can both live with.",
+      "asWritten": "A neighbor demands the trumpet stop playing. Lydia asks the player and the neighbor to choose a practice time they can both live with."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Lydia asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Lydia asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Lydia points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Lydia points to the person who noticed the original mistake."
+    }
+  ]
+}

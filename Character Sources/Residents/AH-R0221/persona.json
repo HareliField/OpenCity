@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0221",
+  "personId": "AH-R0221",
+  "name": "Teresa Nielsen",
+  "age": 38,
+  "occupation": "Choir singer and receptionist",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Low water music",
+  "biography": "stories/residents/02/08-low-water-music.md#ah-r0221",
+  "life": "“I sang my first solo behind a curtain because my shoes were borrowed.” Wednesday often includes a stop at the downtown fountain, where Teresa keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "My mother called it the kettle. I want to hear her recorded laugh alongside whatever name wins.",
+  "appearance": "On an ordinary day, look for a mustard canvas overshirt and a copper-colored clasp that has been repaired by hand. Teresa has full cheeks and a mouth that pulls slightly to one side, with black hair twisted into a small knot. Teresa listens with the head tilted a little to the left during a conversation.",
+  "personality": "Teresa thinks best while walking. Sitting beneath someone's office clock makes Teresa sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To put the family's kettle name into the choir's programme.",
+  "family": "Jasmine Boyd is Teresa’s second cousin. Teresa brings a spare shopping bag. Jasmine chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Care with a clock*, Jasmine says, “I borrowed a stopwatch to prove a point and found our client has a wonderful laugh at minute thirteen.”",
+  "connections": "Jules Moran. The child's corrected note can sit beside the singer's memory of a mother's laugh.",
+  "familyIds": [
+    "AH-R0888"
+  ],
+  "connectionIds": [
+    "AH-R0230"
+  ],
+  "reactions": [
+    {
+      "situation": "The choir wants to claim the rock's official name",
+      "response": "Teresa asks for the neighborhood names to stay with the choir's name.",
+      "asWritten": "The choir wants to claim the rock's official name. Teresa asks for the neighborhood names to stay with the choir's name."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Teresa repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Teresa repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Teresa asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Teresa asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

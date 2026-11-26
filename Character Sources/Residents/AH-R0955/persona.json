@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0955",
+  "personId": "AH-R0955",
+  "name": "Nina Arendt",
+  "age": 54,
+  "occupation": "Nurse educator",
+  "home": "Old Town",
+  "episode": "The empty chair on nights",
+  "biography": "stories/residents/07/06-the-empty-chair-on-nights.md#ah-r0955",
+  "life": "“I still remember training a night nurse on the longest morning of my life.” People around Harbour Bakery know Nina by a small Sunday habit. Nina buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I trained her and missed every sign she was working past her limit.",
+  "appearance": "Out of work clothes, look for a charcoal zip cardigan and a fabric zip pull cut from a school scarf. Nina has a long face and high cheekbones, with short copper curls. Nina draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Nina has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To ask the nurse which signs the educator missed.",
+  "family": "Penelope Tang is Nina’s younger cousin. Nina remembers the birthdays. Penelope asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The first delivery fee*, Penelope says, “I volunteered because the route got me out of a miserable house.”",
+  "connections": "Ashley Brooks (mentee). The educator lets the new nurse discuss the promotion without calling the former nurse replaceable.",
+  "familyIds": [
+    "AH-R1141"
+  ],
+  "connectionIds": [
+    "AH-R0956"
+  ],
+  "reactions": [
+    {
+      "situation": "A replacement nurse receives the permanent badge",
+      "response": "Nina welcomes the new nurse and saves the old worker's goodbye for a separate conversation.",
+      "asWritten": "A replacement nurse receives the permanent badge. Nina welcomes the new nurse and saves the old worker's goodbye for a separate conversation."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Nina asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Nina asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Nina asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Nina asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

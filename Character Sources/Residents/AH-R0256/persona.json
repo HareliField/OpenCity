@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0256",
+  "personId": "AH-R0256",
+  "name": "Gale Levin",
+  "age": 35,
+  "occupation": "Lining supplier",
+  "home": "the blocks north of the port",
+  "episode": "One sleeve short",
+  "biography": "stories/residents/02/11-one-sleeve-short.md#ah-r0256",
+  "life": "“I have a drawer of damaged linings where the damaged side is the lovely one.” People around the foot of Harbor Viaduct know Gale by a small Monday habit. Gale pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I paid for a matching cuff lining on condition the customer never learns my name. He guessed from the fabric.",
+  "appearance": "Gale has full cheeks and a mouth that pulls slightly to one side. Look for a high puff tied with plain cord. On an ordinary day, the familiar outfit is a narrow-striped sweater with a partly rubbed-away embroidered initial. In conversation Gale looks toward the door whenever a name is called.",
+  "personality": "Gale treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To fit the donated lining without attaching a personal debt.",
+  "family": "Kit Curtis is Gale’s stepsibling. Gale makes room at the table. Kit brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Three minutes at the bridge*, Kit says, “I have been paying taxi fares with credit. I showed the crew my actual monthly statement before the vote.”",
+  "connections": "Isla Osei. They decide which expensive additions the applicant can decline.",
+  "familyIds": [
+    "AH-R1464"
+  ],
+  "connectionIds": [
+    "AH-R0257"
+  ],
+  "reactions": [
+    {
+      "situation": "The interview is advanced before the jacket is ready",
+      "response": "Gale checks which part of the jacket can be finished in the time available.",
+      "asWritten": "The interview is advanced before the jacket is ready. Gale checks which part of the jacket can be finished in the time available."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Gale takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Gale takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Gale changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Gale changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

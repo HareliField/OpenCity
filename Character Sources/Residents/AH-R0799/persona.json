@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0799",
+  "personId": "AH-R0799",
+  "name": "Frankie Kent",
+  "age": 40,
+  "occupation": "Job-seeking porter",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The first straight paycheck",
+  "biography": "stories/residents/06/05-the-first-straight-paycheck.md#ah-r0799",
+  "life": "“I still remember getting to work before the manager three mornings running.” Friday often includes a stop at the approach to Seabright Court, where Frankie likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I want his job reference. I'm forty and I've never had anyone say I turned up three Mondays in a row.",
+  "appearance": "Frankie has short, uneven waves that refuse to lie flat, a wide brow and a narrow jaw, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a printed handkerchief folded into the pocket. When somebody else has the floor, Frankie listens with the head tilted a little to the left.",
+  "personality": "Frankie can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To earn a reference that says more than available immediately.",
+  "family": "Sara Romero is Frankie’s cousin. Frankie knows which ones can be shared. Sara keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The waiting-room plant*, Sara says, “I watered it so often its roots rotted. I am learning that leaving something alone counts as care.”",
+  "connections": "Eileen Teo. The dealer wavering about leaving hears what three Mondays of a good reference could mean.",
+  "familyIds": [
+    "AH-R0502"
+  ],
+  "connectionIds": [
+    "AH-R0794"
+  ],
+  "reactions": [
+    {
+      "situation": "An old customer arrives during the new warehouse shift",
+      "response": "Frankie asks the two people to talk away from the work floor and leaves disclosure to the new hire.",
+      "asWritten": "An old customer arrives during the new warehouse shift. Frankie asks the two people to talk away from the work floor and leaves disclosure to the new hire."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Frankie waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Frankie waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Frankie asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Frankie asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

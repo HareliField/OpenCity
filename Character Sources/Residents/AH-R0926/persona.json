@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0926",
+  "personId": "AH-R0926",
+  "name": "Stella Easton",
+  "age": 73,
+  "occupation": "Retired domestic cleaner",
+  "home": "Eastside",
+  "episode": "A widow bids again",
+  "biography": "stories/residents/07/03-a-widow-bids-again.md#ah-r0926",
+  "life": "“I still remember sweeping a room the morning after a proposal.” On Tuesday, near the foot of Harbor Viaduct, Stella pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I used to clean that upstairs room. The famous love story started with me carrying out somebody else's rubbish.",
+  "appearance": "Stella has a long face and high cheekbones. Look for a thin scattering of white hair over the crown. On an ordinary day, the familiar outfit is a pale blue work shirt with a partly rubbed-away embroidered initial. In conversation Stella raises one eyebrow long before saying yes.",
+  "personality": "Stella keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Stella wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To tell the unsentimental part of the love story.",
+  "family": "Otis Wolff is Stella’s half-sibling. Stella brings something that can still be enjoyed tomorrow. Otis checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The borrowed bass*, Otis says, “I sold that bass to pay for a flight to my sister's wedding.”",
+  "connections": "Nadia Carvalho. The cleaner who knew the first room takes the surveyor to the less romantic damp wall.",
+  "familyIds": [
+    "AH-R0126"
+  ],
+  "connectionIds": [
+    "AH-R0929"
+  ],
+  "reactions": [
+    {
+      "situation": "A tenant calls attention to damp during the viewing",
+      "response": "Stella allows a proper look at the damp before returning to the argument about price.",
+      "asWritten": "A tenant calls attention to damp during the viewing. Stella allows a proper look at the damp before returning to the argument about price."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Stella asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Stella asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Stella offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Stella offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

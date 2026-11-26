@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0803",
+  "personId": "AH-R0803",
+  "name": "Jules Wong",
+  "age": 52,
+  "occupation": "Handrail fitter",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Home with stairs",
+  "biography": "stories/residents/06/06-home-with-stairs.md#ah-r0803",
+  "life": "“I still remember the first rail I fitted to the wall of my own flat.” People around the blocks below Foundry Lofts know Jules by a small Thursday habit. Jules checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I priced the missing rail. My family did the original job and used the cheapest possible ending.",
+  "appearance": "Jules has a center part and straight chestnut hair, an aquiline nose and a square chin, and a favorite piece of clothing, a long navy raincoat. It usually goes with a narrow brass watch set a little fast. When somebody else has the floor, Jules gathers both sleeves neatly before settling in.",
+  "personality": "Jules is fond of ambitious ideas and deeply suspicious of grand openings. The question Jules asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To extend the rail beyond step twenty-eight.",
+  "family": "Fenn Roche is Jules’s cousin. Jules asks what the birthday guest would like this year. Fenn remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The empty berth*, Fenn says, “I've been selling an imaginary fifth berth in people's daydreams.”",
+  "connections": "Paula Tan. The building manager has to approve the rail the fitter can actually install.",
+  "familyIds": [
+    "AH-R0144"
+  ],
+  "connectionIds": [
+    "AH-R0808"
+  ],
+  "reactions": [
+    {
+      "situation": "A hospital car arrives before the handrail is ready",
+      "response": "Jules checks the landing with the patient before calling the trip home ready.",
+      "asWritten": "A hospital car arrives before the handrail is ready. Jules checks the landing with the patient before calling the trip home ready."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Jules asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Jules asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Jules accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Jules accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1036",
+  "personId": "AH-R1036",
+  "name": "Marina Liu",
+  "age": 44,
+  "occupation": "Self-employed foreman",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The carer's afternoon",
+  "biography": "stories/residents/07/14-the-carer-s-afternoon.md#ah-r1036",
+  "life": "“I still remember paying for respite out of an invoice that hadn't cleared.” On Monday, near the public road outside the Port of Asphalt, Marina can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I said I'd pay for respite and then lost my biggest account. I told the family before they counted on the money.",
+  "appearance": "Marina has a broad nose and a deep dimple on one cheek. Look for thick, tightly coiled hair. On an ordinary day, the familiar outfit is a faded indigo overshirt with a tiny red thread tied through the lowest buttonhole. In conversation Marina turns fully toward the person speaking.",
+  "personality": "Marina admires skill and distrusts the idea that skill gives anyone permission to be rude. Marina learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To renegotiate the lost payment before it causes a gap.",
+  "family": "Pat Doran is Marina’s half-sibling. Marina knows which ones can be shared. Pat keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The aquarium*, Pat says, “I chipped a pane carrying the tank out. Once I'd have disappeared before anybody saw.”",
+  "connections": "Finn Ryan. Lost income and a night shift both set limits on who can safely cover Wednesday.",
+  "familyIds": [
+    "AH-R0044"
+  ],
+  "connectionIds": [
+    "AH-R1038"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative demands to know how the free time was spent",
+      "response": "Marina leaves the free afternoon private unless the carer wants to talk about it.",
+      "asWritten": "A relative demands to know how the free time was spent. Marina leaves the free afternoon private unless the carer wants to talk about it."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Marina agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Marina agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Marina describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Marina describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

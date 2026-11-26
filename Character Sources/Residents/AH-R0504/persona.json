@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0504",
+  "personId": "AH-R0504",
+  "name": "Talia Drew",
+  "age": 55,
+  "occupation": "Equipment welder",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The waiting-room plant",
+  "biography": "stories/residents/04/06-the-waiting-room-plant.md#ah-r0504",
+  "life": "“I still remember welding a tray onto a pair of pram wheels.” People around Lighthouse Cove know Talia by a small Saturday habit. Talia takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I built the rolling stand from my own discarded hospital tray. I want the brakes fixed before it travels again.",
+  "appearance": "Talia has a high puff tied with plain cord, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a washed violet jersey. It usually goes with a pair of reading glasses in a cloth sleeve. When somebody else has the floor, Talia grins on one side while the eyes stay serious.",
+  "personality": "Talia tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Talia will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To repair the brakes on its rolling stand.",
+  "family": "Devin Bernal is Talia’s first cousin once removed. Talia leaves the first voice message. Devin calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *One paid trial*, Devin says, “I cleaned with the apprentice for a year. I'm helping her write down every extra thing she learned unpaid.”",
+  "connections": "Mika Black. They put the watering information on the repaired stand. Also in the story is Lennon Adair (cutting supplier).",
+  "familyIds": [
+    "AH-R0847"
+  ],
+  "connectionIds": [
+    "AH-R0506",
+    "AH-R0510"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient asks to be alone with the plant",
+      "response": "Talia leaves the patient with the plant and returns at an agreed time.",
+      "asWritten": "A patient asks to be alone with the plant. Talia leaves the patient with the plant and returns at an agreed time."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Talia moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Talia moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Talia repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Talia repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0861",
+  "personId": "AH-R0861",
+  "name": "Ariel Crawford",
+  "age": 65,
+  "occupation": "Retired traffic examiner",
+  "home": "Coast Ridge",
+  "episode": "The late crossing",
+  "biography": "stories/residents/06/12-the-late-crossing.md#ah-r0861",
+  "life": "“I still remember the license renewal I put off one winter.” People around the approach to Seabright Court know Ariel by a small Monday habit. Ariel likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I can drive Mondays until my eye treatment begins. I have promised to tell the rota before I tell my boss.",
+  "appearance": "On an ordinary day, look for a rust-colored canvas coat and a narrow brass watch set a little fast. Ariel has a scattering of freckles across the bridge of the nose, with silvery hair gathered at the nape. Ariel grins on one side while the eyes stay serious during a conversation.",
+  "personality": "Ariel often says yes too quickly out of pride in being useful. The people closest to Ariel have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To give the rota notice of the eye treatment.",
+  "family": "Maia Molina is Ariel’s younger cousin. Ariel brings a spare shopping bag. Maia chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The missing Sunday*, Maia says, “I am the daughter who lives too far away. I started calling just after a loss because that's when he has most to say.”",
+  "connections": "Judith Dai. A lift promised through eye treatment becomes actual evidence for a late-bus case.",
+  "familyIds": [
+    "AH-R1340"
+  ],
+  "connectionIds": [
+    "AH-R0868"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver on the rota asks for petrol money",
+      "response": "Ariel agrees what the fuel actually cost and discusses the contribution privately.",
+      "asWritten": "A driver on the rota asks for petrol money. Ariel agrees what the fuel actually cost and discusses the contribution privately."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Ariel draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Ariel draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Ariel rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Ariel rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

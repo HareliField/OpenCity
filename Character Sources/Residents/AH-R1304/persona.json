@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1304",
+  "personId": "AH-R1304",
+  "name": "Ariel Morse",
+  "age": 54,
+  "occupation": "Campaign investor",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A scar at the salon",
+  "biography": "stories/residents/09/11-a-scar-at-the-salon.md#ah-r1304",
+  "life": "“I still remember a campaign meeting where nobody had dirty fingers.” Thursday often includes a stop at the bank steps, where Ariel takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I funded the advert and expected elegant hands. The photographer asked me who I imagine has earned elegance.",
+  "appearance": "On an ordinary day, look for a mustard canvas overshirt and a fabric zip pull cut from a school scarf. Ariel has a long face and high cheekbones, with a high puff tied with plain cord. Ariel presses the lips together to keep a smile in during a conversation.",
+  "personality": "Ariel has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To fund an advert the model recognizes as fair.",
+  "family": "Kai Shah is Ariel’s cousin raised in the same household. Ariel calls back when there is finally a little privacy. Kai leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A wall of birthdays*, Kai says, “I came to negotiate a sale and discovered my own childhood nickname behind the radiator.”",
+  "connections": "Silas Voss. The investor cannot approve the campaign until the copywriter replaces its presumptions.",
+  "familyIds": [
+    "AH-R0239"
+  ],
+  "connectionIds": [
+    "AH-R1309"
+  ],
+  "reactions": [
+    {
+      "situation": "The model asks to see the unedited print",
+      "response": "Ariel gets the model a private look before anybody else comments on the hand.",
+      "asWritten": "The model asks to see the unedited print. Ariel gets the model a private look before anybody else comments on the hand."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Ariel finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Ariel finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Ariel explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Ariel explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

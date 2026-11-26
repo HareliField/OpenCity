@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1323",
+  "personId": "AH-R1323",
+  "name": "Aldo Cao",
+  "age": 43,
+  "occupation": "Classroom teacher",
+  "home": "Coast Ridge",
+  "episode": "The school photograph that travels",
+  "biography": "stories/residents/09/13-the-school-photograph-that-travels.md#ah-r1323",
+  "life": "“I still remember my name missing from a pupil's list of trusted adults.” People around Paper & Pine Books know Aldo by a small Friday habit. Aldo starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I taught the class and wasn't on the list. It took me a week to ask what I missed.",
+  "appearance": "Aldo is easy to recognize by short black hair swept back and a flat bridge to the nose and a mobile brow. Usually dressed in a faded indigo overshirt with a seam let out by a narrow strip of contrasting fabric, Aldo grins on one side while the eyes stay serious when listening.",
+  "personality": "Aldo treats a small promise with the gravity others reserve for a contract. This makes Aldo lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To hear why the teacher didn't appear on the list.",
+  "family": "Erin Parra is Aldo’s half-sibling. Aldo brings something that can still be enjoyed tomorrow. Erin checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *One clean day*, Erin says, “I looked for the boy who gave me his inhaler.”",
+  "connections": "Rae Montoya. Teacher and former bully are both surprised by a pupil's choice of recipient. Also in the story is Casey Zhou (departing pupil).",
+  "familyIds": [
+    "AH-R0639"
+  ],
+  "connectionIds": [
+    "AH-R1327",
+    "AH-R1321"
+  ],
+  "reactions": [
+    {
+      "situation": "The departing pupil leaves a teacher off the photograph list",
+      "response": "Aldo asks the pupil privately what the photograph list means to them.",
+      "asWritten": "The departing pupil leaves a teacher off the photograph list. Aldo asks the pupil privately what the photograph list means to them."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Aldo asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Aldo asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Aldo says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Aldo says what can be returned and asks whether that will do."
+    }
+  ]
+}

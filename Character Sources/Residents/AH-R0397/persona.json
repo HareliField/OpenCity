@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0397",
+  "personId": "AH-R0397",
+  "name": "Nicholas Mitchell",
+  "age": 68,
+  "occupation": "Pensioned caregiver",
+  "home": "Coast Ridge",
+  "episode": "The broken till",
+  "biography": "stories/residents/03/10-the-broken-till.md#ah-r0397",
+  "life": "“I still remember a neighbor guaranteeing a single loaf for me.” People around the downtown fountain know Nicholas by a small Friday habit. Nicholas keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "My prepaid meal card wouldn't work. A stranger trusted me to pay it forward at breakfast.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a narrow brass watch set a little fast. Nicholas has a wide brow and a narrow jaw, with a thin scattering of white hair over the crown. Nicholas turns fully toward the person speaking during a conversation.",
+  "personality": "Nicholas reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Nicholas trusts most.",
+  "agenda": "To repay the breakfast favor at the next meal.",
+  "family": "Emilio Starr is Nicholas’s cousin raised in the same household. When a relative became too weak to cook, the family started chopping at the kitchen table with the cook directing from a chair. Revising the seasoning remained a point of honor. Nicholas knows how to let somebody else finish a job slowly. Asked about *The carer's afternoon*, Emilio says, “I owned a care agency and thought four hours was simple.”",
+  "connections": "Noel Berry. Two separate meal debts get recorded correctly before the till reopens.",
+  "familyIds": [
+    "AH-R1039"
+  ],
+  "connectionIds": [
+    "AH-R0398"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer cannot pay until the till opens",
+      "response": "Nicholas asks the cashier what can safely go on a temporary tab.",
+      "asWritten": "A customer cannot pay until the till opens. Nicholas asks the cashier what can safely go on a temporary tab."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Nicholas keeps the neighbor's place and finds out whether the stranger needs a different kind of help.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Nicholas keeps the neighbor's place and finds out whether the stranger needs a different kind of help."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Nicholas does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Nicholas does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

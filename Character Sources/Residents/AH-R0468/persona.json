@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0468",
+  "personId": "AH-R0468",
+  "name": "Dennis Shaw",
+  "age": 50,
+  "occupation": "Cargo interpreter",
+  "home": "Midtown",
+  "episode": "The soft wharf chalk",
+  "biography": "stories/residents/04/02-the-soft-wharf-chalk.md#ah-r0468",
+  "life": "“I still remember dreaming in two versions of the same sentence.” On Thursday, near Breakwater Way, Dennis stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I read the line in another language first. Both readings fit the two workers on that shift.",
+  "appearance": "Dennis has a soft fringe that falls across one eyebrow, a small notch in the left eyebrow, and a favorite piece of clothing, a cropped bottle-green coat. It usually goes with a small enamel bird on the lapel. When somebody else has the floor, Dennis draws breath as if to speak and lets someone else go first.",
+  "personality": "Dennis enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To record the two plausible translations.",
+  "family": "Peyton Ho is Dennis’s stepsibling. Dennis checks the date twice. Peyton brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The hair after illness*, Peyton says, “I kept her old brush through treatment and got angry when she didn't want it back.”",
+  "connections": "Evelyn Atwood. One recognizes the chalk hand and the other recognizes its possible second language.",
+  "familyIds": [
+    "AH-R1152"
+  ],
+  "connectionIds": [
+    "AH-R0462"
+  ],
+  "reactions": [
+    {
+      "situation": "A handwriting expert contradicts an old dock worker",
+      "response": "Dennis puts the expert's reading beside the dock worker's account and asks for the date of each.",
+      "asWritten": "A handwriting expert contradicts an old dock worker. Dennis puts the expert's reading beside the dock worker's account and asks for the date of each."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Dennis takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Dennis takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Dennis puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Dennis puts the deal away and suggests a walk."
+    }
+  ]
+}

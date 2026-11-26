@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1312",
+  "personId": "AH-R1312",
+  "name": "Parker Gao",
+  "age": 40,
+  "occupation": "Factory packer",
+  "home": "the western residential streets",
+  "episode": "The driving lesson fund",
+  "biography": "stories/residents/09/12-the-driving-lesson-fund.md#ah-r1312",
+  "life": "“I still remember stopping a driving lesson to put my glasses back together.” On Friday, near the public road outside the Port of Asphalt, Parker can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I have the best reason and the worst eyesight. I want someone honest to tell me if more lessons will help.",
+  "appearance": "Parker has a long face and high cheekbones. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a plum-colored cardigan with a braided bracelet with a single wooden bead. In conversation Parker draws small circles on a tabletop while waiting.",
+  "personality": "Parker feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To get a truthful assessment before paying for further lessons.",
+  "family": "Valentina Villa is Parker’s second cousin. Parker asks what the birthday guest would like this year. Valentina remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A borrowed name*, Valentina says, “I was afraid my daughter would believe the ending.”",
+  "connections": "Malcolm Garrett. A free lesson starts with hearing an honest question about eyesight.",
+  "familyIds": [
+    "AH-R0519"
+  ],
+  "connectionIds": [
+    "AH-R1311"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone asks whether the grant might buy a bus pass instead",
+      "response": "Parker prices a usable bus pass before dismissing it as a different kind of grant.",
+      "asWritten": "Someone asks whether the grant might buy a bus pass instead. Parker prices a usable bus pass before dismissing it as a different kind of grant."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Parker suggests one straightforward message without accusations and gives the friend time to answer.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Parker suggests one straightforward message without accusations and gives the friend time to answer."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Parker lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Parker lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

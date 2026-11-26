@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0772",
+  "personId": "AH-R0772",
+  "name": "Marlowe Nord",
+  "age": 48,
+  "occupation": "Employee shareholder",
+  "home": "the western residential streets",
+  "episode": "Money after marriage",
+  "biography": "stories/residents/06/03-money-after-marriage.md#ah-r0772",
+  "life": "“I still remember a share certificate handed over in a flour envelope.” People around the foot of Harbor Viaduct know Marlowe by a small Sunday habit. Marlowe pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I own a small share from the year we couldn't pay wages. This divorce could make me a millionaire or put me out of work.",
+  "appearance": "Marlowe is easy to recognize by short copper curls and a strong profile and a little space between the front teeth. Usually dressed in an unlined tan jacket with a seam let out by a narrow strip of contrasting fabric, Marlowe looks at people's hands before looking at what they carry when listening.",
+  "personality": "Marlowe is fond of ambitious ideas and deeply suspicious of grand openings. The question Marlowe asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To protect both the back wages and the future post.",
+  "family": "Miguel Tsai is Marlowe’s stepsibling. Marlowe is allowed to ask about the bad news afterward. Miguel calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The porch auction*, Miguel says, “I left without a chair. I got the new address and a Sunday invitation instead.”",
+  "connections": "Rosemary Bhandari. The early lender and the employee shareholder remember exactly when wages stopped arriving.",
+  "familyIds": [
+    "AH-R0540"
+  ],
+  "connectionIds": [
+    "AH-R0777"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver says payday matters more than the settlement",
+      "response": "Marlowe checks what money is ring-fenced for the drivers already on the rota.",
+      "asWritten": "A driver says payday matters more than the settlement. Marlowe checks what money is ring-fenced for the drivers already on the rota."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Marlowe offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Marlowe offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Marlowe accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Marlowe accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

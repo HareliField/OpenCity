@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0641",
+  "personId": "AH-R0641",
+  "name": "Anna Bishop",
+  "age": 64,
+  "occupation": "Retired dress buyer",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The clean ledger",
+  "biography": "stories/residents/05/05-the-clean-ledger.md#ah-r0641",
+  "life": "“I still remember a graduation dress hemmed with someone else's thread.” People around the public road outside the Port of Asphalt know Anna by a small Wednesday habit. Anna can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I want my niece's graduation dress back. A price in a notebook won't fit her.",
+  "appearance": "Anna has a flat bridge to the nose and a mobile brow. Look for a neat white crop. On an ordinary day, the familiar outfit is an old plum windbreaker with a partly rubbed-away embroidered initial. In conversation Anna counts on the side of one finger where hardly anybody notices.",
+  "personality": "Anna treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To recover the niece's graduation dress.",
+  "family": "Isla Joseph is Anna’s younger cousin. Anna makes the call. Isla is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The salon on strike*, Isla says, “I booked the party and invited my millionaire boss.”",
+  "connections": "Hamish James (ledger creditor). They have different odds of recovering the dress and the one surviving tool.",
+  "familyIds": [
+    "AH-R1003"
+  ],
+  "connectionIds": [
+    "AH-R0642"
+  ],
+  "reactions": [
+    {
+      "situation": "The former fence offers to pay money for something irreplaceable",
+      "response": "Anna asks the owner what returning money would and wouldn't settle.",
+      "asWritten": "The former fence offers to pay money for something irreplaceable. Anna asks the owner what returning money would and wouldn't settle."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Anna stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Anna stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Anna changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Anna changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

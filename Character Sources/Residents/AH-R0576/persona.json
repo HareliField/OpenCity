@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0576",
+  "personId": "AH-R0576",
+  "name": "Mia Taylor",
+  "age": 26,
+  "occupation": "Wardrobe trainee",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A play in a pocket",
+  "biography": "stories/residents/04/13-a-play-in-a-pocket.md#ah-r0576",
+  "life": "“I still remember my first bus pass worn through at the fold.” Thursday often includes a stop at the foot of Harbor Viaduct, where Mia pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I used a fare ticket for the curtain. It came from the bus that brought me to my first audition.",
+  "appearance": "Mia has short sandy hair and a marked widow's peak, one cheek that creases before the other, and a favorite piece of clothing, a moss-green cardigan. It usually goes with a printed handkerchief folded into the pocket. When somebody else has the floor, Mia holds eye contact until the other person has finished.",
+  "personality": "Mia carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To keep the ticket curtain from the first audition trip.",
+  "family": "Duncan Hsu is Mia’s cousin. Mia makes room at the table. Duncan brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The hair after illness*, Duncan says, “I used to say she looked brave. I asked what she'd like me to notice and she said her earrings.”",
+  "connections": "Lydia Avila. A bus ticket curtain gives the child's imitation of a parent a little stage.",
+  "familyIds": [
+    "AH-R1155"
+  ],
+  "connectionIds": [
+    "AH-R0577"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor wants to record a private performance",
+      "response": "Mia asks the actor and the sole listener separately before allowing a recording.",
+      "asWritten": "A visitor wants to record a private performance. Mia asks the actor and the sole listener separately before allowing a recording."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Mia takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Mia takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Mia offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Mia offers to accompany them while they tell the truth."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0183",
+  "personId": "AH-R0183",
+  "name": "Ivy Perreault",
+  "age": 33,
+  "occupation": "Police counter volunteer",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The second dog",
+  "biography": "stories/residents/02/04-the-second-dog.md#ah-r0183",
+  "life": "“I used to wait at this same counter for the mother who cleaned it.” Monday often includes a stop at Ferris Deli, where Ivy asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I took the first report and wrote brown. The little girl gave me nine different browns to choose from.",
+  "appearance": "Ivy has a scattering of freckles across the bridge of the nose. Look for thick, tightly coiled hair. Off duty, the familiar outfit is a mustard canvas overshirt with a train token tied to a zipper pull. In conversation Ivy draws breath as if to speak and lets someone else go first.",
+  "personality": "Ivy enjoys routines and will defend the right of someone else to break one. As a result, Ivy is often everyone's favorite cover for a missed morning.",
+  "agenda": "To record the child's description of the dog's coat.",
+  "family": "Fay March is Ivy’s older relative by marriage. Ivy chooses the music. Fay puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Ten fingers*, Fay says, “I am the birthday girl. Everybody has taken to speaking softly around me.”",
+  "connections": "Adela Ferraro. The child's drawing gives the counter volunteer more to record than the color brown.",
+  "familyIds": [
+    "AH-R0102"
+  ],
+  "connectionIds": [
+    "AH-R0189"
+  ],
+  "reactions": [
+    {
+      "situation": "A child takes the other dog's lead",
+      "response": "Ivy separates the leads and asks both families what the dogs respond to.",
+      "asWritten": "A child takes the other dog's lead. Ivy separates the leads and asks both families what the dogs respond to."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Ivy asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Ivy asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Ivy keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Ivy keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

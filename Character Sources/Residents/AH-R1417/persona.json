@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1417",
+  "personId": "AH-R1417",
+  "name": "Morgan Lim",
+  "age": 37,
+  "occupation": "Literary translator",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "An empty dedication",
+  "biography": "stories/residents/10/07-an-empty-dedication.md#ah-r1417",
+  "life": "“I still remember translating a family word that needed an entire sentence.” People around Tideline Market know Morgan by a small Monday habit. Morgan picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I translated the title. I want readers to understand that the word home in our language has a plural.",
+  "appearance": "Morgan has short, uneven waves that refuse to lie flat, a straight nose and deep-set eyes, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a knotted piece of sail thread on a key ring. When somebody else has the floor, Morgan grins on one side while the eyes stay serious.",
+  "personality": "Morgan finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To preserve the plural meaning of home.",
+  "family": "Amos Ferraro is Morgan’s half-sibling. Morgan knows which ones can be shared. Amos keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The understudy sings*, Amos says, “I am the director who waited too long to rehearse a second cast.”",
+  "connections": "Tobias Starr. A translation and a lunch-break proof both owe part of their existence to uncredited coworkers.",
+  "familyIds": [
+    "AH-R1175"
+  ],
+  "connectionIds": [
+    "AH-R1412"
+  ],
+  "reactions": [
+    {
+      "situation": "The author offers the dedication to someone who dislikes public praise",
+      "response": "Morgan asks the intended recipient which kind of thanks would actually feel welcome.",
+      "asWritten": "The author offers the dedication to someone who dislikes public praise. Morgan asks the intended recipient which kind of thanks would actually feel welcome."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Morgan waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Morgan waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Morgan points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Morgan points to the person who noticed the original mistake."
+    }
+  ]
+}

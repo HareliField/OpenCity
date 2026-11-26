@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0061",
+  "personId": "AH-R0061",
+  "name": "Mavis Yeo",
+  "age": 46,
+  "occupation": "Bookseller",
+  "home": "the western residential streets",
+  "episode": "An unfinished atlas",
+  "biography": "stories/residents/01/07-an-unfinished-atlas.md#ah-r0061",
+  "life": "Mavis bought the bookshop's old stock, including four boxes nobody had opened in ten years. She pays the rent selling new books and keeps the boxes under her desk for days when rent feels like the entire point. On Wednesday, near Harbour Bakery, Mavis buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I priced the atlas at four dollars before I saw the paste. My parents used to disagree about the name of that street. I pulled the price off and invited them separately to identify it.",
+  "appearance": "On an ordinary day, look for a long navy raincoat and a train token tied to a zipper pull. Mavis has two dimples that appear only with a full smile, with a high puff tied with plain cord. Mavis draws breath as if to speak and lets someone else go first during a conversation.",
+  "personality": "Mavis feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To hear both parents identify the street before committing a label.",
+  "family": "Audrey Mason is Mavis’s cousin. Mavis brings a spare shopping bag. Audrey chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *A red mitten*, Audrey says, “I used the mitten to warm the metal armrest for a man in a thin shirt.”",
+  "connections": "Carl Reeve. The clearing worker brought the atlas to the shop, and the bookseller must now decide what a fair return means. Also in the story is Cal Esmond (research visitor).",
+  "familyIds": [
+    "AH-R0204"
+  ],
+  "connectionIds": [
+    "AH-R0066",
+    "AH-R0069"
+  ],
+  "reactions": [
+    {
+      "situation": "A collector offers cash for the unexamined atlas",
+      "response": "Mavis asks the bookseller to put the atlas somewhere safe while its ownership is checked.",
+      "asWritten": "A collector offers cash for the unexamined atlas. Mavis asks the bookseller to put the atlas somewhere safe while its ownership is checked."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Mavis asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Mavis asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Mavis lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Mavis lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

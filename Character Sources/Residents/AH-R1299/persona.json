@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1299",
+  "personId": "AH-R1299",
+  "name": "Julia Cao",
+  "age": 54,
+  "occupation": "Union delegate",
+  "home": "the blocks north of the port",
+  "episode": "A four o'clock kitchen",
+  "biography": "stories/residents/09/10-a-four-o-clock-kitchen.md#ah-r1299",
+  "life": "“I still remember offering a meal subsidy at a shop too small for forms.” Monday often includes a stop at Breakwater Way, where Julia stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I want the port to subsidize a workers' meal without owning the menu or the cook's schedule.",
+  "appearance": "On an ordinary day, look for a plum-colored cardigan and a cloth patch so neatly matched it only shows in strong light. Julia has a wide brow and a narrow jaw, with a smooth side part with one rebellious curl. Julia steadies a cup with both hands while listening during a conversation.",
+  "personality": "Julia finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To secure a port subsidy without surrendering the menu.",
+  "family": "Dale Malik is Julia’s stepsibling. Julia is allowed to ask about the bad news afterward. Dale calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Salt in the pockets*, Dale says, “I kept the salt from my last deck shift in my cuff.”",
+  "connections": "Orlando Dinh. A port employee's need for breakfast and a union subsidy get considered alongside the cook's time.",
+  "familyIds": [
+    "AH-R0601"
+  ],
+  "connectionIds": [
+    "AH-R1292"
+  ],
+  "reactions": [
+    {
+      "situation": "A port buyer asks the cook to start still earlier",
+      "response": "Julia checks what the earlier start would do to the cook's family breakfast.",
+      "asWritten": "A port buyer asks the cook to start still earlier. Julia checks what the earlier start would do to the cook's family breakfast."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Julia asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Julia asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Julia points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Julia points to the person who noticed the original mistake."
+    }
+  ]
+}

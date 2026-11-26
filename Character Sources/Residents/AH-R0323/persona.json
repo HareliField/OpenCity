@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0323",
+  "personId": "AH-R0323",
+  "name": "Samuel Choi",
+  "age": 41,
+  "occupation": "Shop accountant",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The widow's dividend",
+  "biography": "stories/residents/03/03-the-widow-s-dividend.md#ah-r0323",
+  "life": "“I still remember the ledger balanced on an ironing board.” People around Juniper Street know Samuel by a small Thursday habit. Samuel knows which of the west-side porches has a seat in the shade.",
+  "voice": "I found a pencil debt to my mother between two lines about roofing nails.",
+  "appearance": "Samuel has a strong profile and a little space between the front teeth. Look for a blunt cut just below the ears. On an ordinary day, the familiar outfit is a red windbreaker with one loose pocket corner secured with green thread. In conversation Samuel looks at people's hands before looking at what they carry.",
+  "personality": "Samuel listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To settle the penciled debt to the mother.",
+  "family": "Bianca Sethi is Samuel’s younger relative by marriage. Samuel asks what the birthday guest would like this year. Bianca remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The quiet verse*, Bianca says, “I wrote the verse about my dad and then decided nobody gets to hear it yet.”",
+  "connections": "Taylor Beck. They trace the first cleaner's tip back to an unpaid ledger line. Also in the story is Rain Salcedo (founding shareholder).",
+  "familyIds": [
+    "AH-R0271"
+  ],
+  "connectionIds": [
+    "AH-R0321",
+    "AH-R0322"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member wants the ledger locked away",
+      "response": "Samuel asks whether the heirs can look at copies without parting with the old ledger.",
+      "asWritten": "A family member wants the ledger locked away. Samuel asks whether the heirs can look at copies without parting with the old ledger."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Samuel alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Samuel alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Samuel keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Samuel keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

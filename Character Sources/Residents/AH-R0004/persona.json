@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0004",
+  "personId": "AH-R0004",
+  "name": "Marnie Phelps",
+  "age": 29,
+  "occupation": "Wash attendant",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The blue suit",
+  "biography": "stories/residents/01/01-the-blue-suit.md#ah-r0004",
+  "life": "Marnie used to be trusted with a hotel boiler and nothing else. Leaving for a tiny laundry meant a pay cut and a chance to sign a maintenance sheet with her own name. That signature means more to her than the uniform did. People around the foot of Harbor Viaduct know Marnie by a small Thursday habit. Marnie pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I signed the machine off yesterday because the test towel came back clean. I've put my initials beside the failed test this time. I want the next shift to know exactly who to wake.",
+  "appearance": "On an ordinary day, look for a black overshirt with pearl buttons and a pair of reading glasses in a cloth sleeve. Marnie has heavy brows and an unusually delicate jaw, with short, uneven waves that refuse to lie flat. Marnie listens with the head tilted a little to the left during a conversation.",
+  "personality": "Marnie is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To secure paid time to test machines between overnight and day shifts.",
+  "family": "Stevie Rose is Marnie’s older cousin. Marnie brings the paper and a pen. Stevie decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *A borrowed name*, Stevie says, “I dislike the book and adore the man. I'm organizing a dinner where nobody has to choose.”",
+  "connections": "Lev Bellamy. They spread the ruined sleeve on the maintenance table to see what can still be saved.",
+  "familyIds": [
+    "AH-R0520"
+  ],
+  "connectionIds": [
+    "AH-R0002"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone wants to post the ruined cuff online",
+      "response": "Marnie asks Rafael which version he wants a stranger to see before anyone shares the picture.",
+      "asWritten": "Someone wants to post the ruined cuff online. Marnie asks Rafael which version he wants a stranger to see before anyone shares the picture."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Marnie walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Marnie walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Marnie helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Marnie helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

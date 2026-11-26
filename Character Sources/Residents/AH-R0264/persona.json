@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0264",
+  "personId": "AH-R0264",
+  "name": "Nelson Carbone",
+  "age": 56,
+  "occupation": "Coffee vendor",
+  "home": "the western residential streets",
+  "episode": "The sheltered corner",
+  "biography": "stories/residents/02/12-the-sheltered-corner.md#ah-r0264",
+  "life": "“My first cart belonged to a sailor who made very weak coffee.” People around the steps at Pier Beach know Nelson by a small Saturday habit. Nelson watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I sell coffee on the old corner. My first customer is now a pensioner who only comes to talk.",
+  "appearance": "Nelson has a strong profile and a little space between the front teeth. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is a cream pullover with a braided bracelet with a single wooden bead. In conversation Nelson turns fully toward the person speaking.",
+  "personality": "Nelson carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To give the cart a new set of regulars without losing the old neighbor.",
+  "family": "Samuel Molina is Nelson’s cousin. Nelson checks the date twice. Samuel brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *One clean day*, Samuel says, “I only knew my partner's working voice. I heard his school nickname and he sounded fourteen.”",
+  "connections": "Teal Holmes. The empty coffee corner finally has an errand for the person who found the ring.",
+  "familyIds": [
+    "AH-R0636"
+  ],
+  "connectionIds": [
+    "AH-R0270"
+  ],
+  "reactions": [
+    {
+      "situation": "The route manager declares the move a success",
+      "response": "Nelson asks one rider from each corner to walk the new distance.",
+      "asWritten": "The route manager declares the move a success. Nelson asks one rider from each corner to walk the new distance."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Nelson asks what the friend actually said last time and checks whether anybody is expecting them at home.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Nelson asks what the friend actually said last time and checks whether anybody is expecting them at home."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Nelson offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Nelson offers to accompany them while they tell the truth."
+    }
+  ]
+}

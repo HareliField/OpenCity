@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0853",
+  "personId": "AH-R0853",
+  "name": "Georgia Reid",
+  "age": 46,
+  "occupation": "Salon regular and cook",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A chair of one's own",
+  "biography": "stories/residents/06/11-a-chair-of-one-s-own.md#ah-r0853",
+  "life": "“I still remember a manicure carefully budgeted between two paychecks.” People around the brick passage off the shop row know Georgia by a small Wednesday habit. Georgia takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I want to pay for my regular's work at a proper rate and still get my nails done before payday.",
+  "appearance": "Georgia is easy to recognize by a smooth side part with one rebellious curl and heavy brows and an unusually delicate jaw. Usually dressed in a pale blue work shirt with a pen clipped inside the neckline, Georgia looks at people's hands before looking at what they carry when listening.",
+  "personality": "Georgia enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To pay fairly without losing the regular appointment.",
+  "family": "Sky Avery is Georgia’s stepsibling. Georgia brings something that can still be enjoyed tomorrow. Sky checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The engine lullaby*, Sky says, “I sell engine parts. I'd like the apprentice to learn the old sound before fitting the quieter replacement.”",
+  "connections": "Rowan Peters. A regular with a budget and a worker with a sick partner try pricing a long-term appointment fairly.",
+  "familyIds": [
+    "AH-R0595"
+  ],
+  "connectionIds": [
+    "AH-R0860"
+  ],
+  "reactions": [
+    {
+      "situation": "The studio asks for its chair deposit by Friday",
+      "response": "Georgia checks whether the chair renter has seen the terms before the deposit is due.",
+      "asWritten": "The studio asks for its chair deposit by Friday. Georgia checks whether the chair renter has seen the terms before the deposit is due."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Georgia puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Georgia puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Georgia puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Georgia puts the deal away and suggests a walk."
+    }
+  ]
+}

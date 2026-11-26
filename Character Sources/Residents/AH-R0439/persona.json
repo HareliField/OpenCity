@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0439",
+  "personId": "AH-R0439",
+  "name": "Dennis Perry",
+  "age": 51,
+  "occupation": "Home seamster",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The housecoat commission",
+  "biography": "stories/residents/03/14-the-housecoat-commission.md#ah-r0439",
+  "life": "“I still remember our kitchen iron warming the bed in winter.” Thursday often includes a stop at Maré Coffee, where Dennis likes the table where people coming off shift stop checking the time.",
+  "voice": "I iron on a child's old desk. The collar turned out square because the desk was, and she liked it.",
+  "appearance": "Dennis is easy to recognize by short copper curls and a scattering of freckles across the bridge of the nose. Usually dressed in a boxy denim jacket with a thin silver ring worn on a cord, Dennis turns fully toward the person speaking when listening.",
+  "personality": "Dennis takes a rejection personally for a day and analytically on the second morning. Dennis can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To keep the square collar as the client's own choice.",
+  "family": "Alexei Gibbs is Dennis’s cousin. At home the birthday guest used to get first choice of song. One quiet relative chose silence and got ten wonderful minutes in which everybody could hear the sea. Dennis knows that someone quiet can still have a strong preference. Asked about *The trust with a typo*, Alexei says, “I made the typo from a penciled instruction the founder wrote herself.”",
+  "connections": "Felix Rubio. The home cook gets to sit beside the person who ironed the collar.",
+  "familyIds": [
+    "AH-R0623"
+  ],
+  "connectionIds": [
+    "AH-R0436"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor asks where the housecoat was bought",
+      "response": "Dennis gives the maker the chance to be credited without revealing what the garment cost.",
+      "asWritten": "A visitor asks where the housecoat was bought. Dennis gives the maker the chance to be credited without revealing what the garment cost."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Dennis stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Dennis stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Dennis turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Dennis turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

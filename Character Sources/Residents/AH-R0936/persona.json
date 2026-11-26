@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0936",
+  "personId": "ah-pd-118",
+  "name": "Sofia Cruz",
+  "age": 40,
+  "occupation": "Patrol officer",
+  "home": "Midtown",
+  "episode": "A civilian apology",
+  "biography": "stories/residents/07/04-a-civilian-apology.md#ah-r0936",
+  "life": "“I still remember hearing three versions of a familiar address over a crackling phone.” Wednesday often includes a stop at the steps at Pier Beach, where Sofia watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I can still hear the call from that day. The caller described a red door and we all heard red coat.",
+  "appearance": "On an ordinary day, look for a red windbreaker and a fabric zip pull cut from a school scarf. Sofia has a softly rounded chin under sharp cheekbones, with a soft fringe that falls across one eyebrow. Sofia grins on one side while the eyes stay serious during a conversation.",
+  "personality": "Sofia never tires of being shown how somebody makes a living. Sofia can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To document the disputed door and coat wording.",
+  "family": "Michael Hubbard is Sofia’s half-sibling. Sofia chooses whether to use it. Michael saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The empty drum stool*, Michael says, “I watched through a shop window on my break.”",
+  "connections": "Nolan Reed. The new sign cannot settle the case until the words heard on the original call are distinguished.",
+  "familyIds": [
+    "AH-R0428"
+  ],
+  "connectionIds": [
+    "AH-R0935"
+  ],
+  "reactions": [
+    {
+      "situation": "The shopkeeper asks for a public correction",
+      "response": "Sofia agrees a place and size for the correction with the person who was named.",
+      "asWritten": "The shopkeeper asks for a public correction. Sofia agrees a place and size for the correction with the person who was named."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Sofia asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Sofia asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Sofia may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Sofia may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

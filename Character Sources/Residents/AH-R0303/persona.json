@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0303",
+  "personId": "AH-R0303",
+  "name": "Thomas Silva",
+  "age": 34,
+  "occupation": "Bakery night worker",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Spin cycle choir",
+  "biography": "stories/residents/03/01-spin-cycle-choir.md#ah-r0303",
+  "life": "“I still remember rocking a borrowed pram with my ankle.” Wednesday often includes a stop at the downtown fountain, where Thomas keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I hear the dryers through my pillow. I want one morning when the neighbors sing with them.",
+  "appearance": "Away from the heat of the kitchen, look for a red windbreaker and a cloth patch so neatly matched it only shows in strong light. Thomas has full cheeks and a mouth that pulls slightly to one side, with brown hair pinned away from the temples. Thomas touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Thomas finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To agree one undisturbed morning with the singers.",
+  "family": "Quinn Laurent is Thomas’s older cousin. Thomas calls about good news first. Quinn is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The day sailor's divorce*, Quinn says, “I kept hearing who paid most. I brought the maintenance log with everyone's cold hands in it.”",
+  "connections": "Franklin Brandt. The people trying to sleep get a say in when the morning choir rehearses.",
+  "familyIds": [
+    "AH-R1047"
+  ],
+  "connectionIds": [
+    "AH-R0309"
+  ],
+  "reactions": [
+    {
+      "situation": "The washer bearing goes quiet mid-song",
+      "response": "Thomas listens for the missing note and lets maintenance know what changed.",
+      "asWritten": "The washer bearing goes quiet mid-song. Thomas listens for the missing note and lets maintenance know what changed."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Thomas keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Thomas keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Thomas waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Thomas waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

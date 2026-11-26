@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0186",
+  "personId": "AH-R0186",
+  "name": "Lydia Lai",
+  "age": 29,
+  "occupation": "Veterinary receptionist",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The second dog",
+  "biography": "stories/residents/02/04-the-second-dog.md#ah-r0186",
+  "life": "“I first worked at the clinic making little paper envelopes for lost tags.” Friday often includes a stop at the courtyard by Ferry Street Rooms, where Lydia prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I offered free vaccination records and discovered our clinic had two birthdays for one animal.",
+  "appearance": "Lydia has short copper curls, a wide brow and a narrow jaw, and a favorite piece of clothing, an old plum windbreaker. It usually goes with a little coil of soft measuring tape. When somebody else has the floor, Lydia squares up pieces of paper while thinking.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To get the clinic to separate the two birth records.",
+  "family": "Talia Barclay is Lydia’s cousin. Lydia brings the paper and a pen. Talia decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Salt in the pockets*, Talia says, “I thought the powder was plaster. It was the sugar from the bakery where I secretly work weekends.”",
+  "connections": "Olive Kapoor. They put two records beside the two responses to a single whistle.",
+  "familyIds": [
+    "AH-R0603"
+  ],
+  "connectionIds": [
+    "AH-R0182"
+  ],
+  "reactions": [
+    {
+      "situation": "A parent wants both dogs handed over immediately",
+      "response": "Lydia waits until the dogs and the children are settled before discussing the handover.",
+      "asWritten": "A parent wants both dogs handed over immediately. Lydia waits until the dogs and the children are settled before discussing the handover."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Lydia asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Lydia asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Lydia listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Lydia listens first to the account of how it was actually used."
+    }
+  ]
+}

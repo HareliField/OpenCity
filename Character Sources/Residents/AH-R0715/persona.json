@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0715",
+  "personId": "AH-R0715",
+  "name": "Selena Sáenz",
+  "age": 42,
+  "occupation": "Detour manager",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Level with the window",
+  "biography": "stories/residents/05/12-level-with-the-window.md#ah-r0715",
+  "life": "“I still remember eating at a planning desk while making a map of other people's houses.” People around the window at Night Shift Donuts know Selena by a small Tuesday habit. Selena knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I manage the detour and have never had a route run through somebody's supper before.",
+  "appearance": "Selena has close-cropped dark curls, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with a partly rubbed-away embroidered initial. When somebody else has the floor, Selena squares up pieces of paper while thinking.",
+  "personality": "Selena uses precise names for tools and very approximate names for feelings. People who know Selena well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To record what the traffic diversion costs the households.",
+  "family": "Eva Bhandari is Selena’s older cousin. Selena saves a place. Eva chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *A scar at the salon*, Eva says, “I own the wall where the advert would hang.”",
+  "connections": "Jo Johnson (local resident). A cake for the driver arrives separately from the complaint for the planner.",
+  "familyIds": [
+    "AH-R1308"
+  ],
+  "connectionIds": [
+    "AH-R0719"
+  ],
+  "reactions": [
+    {
+      "situation": "A passenger asks to photograph a stranger through the kitchen window",
+      "response": "Selena waits for the resident to give permission before a camera goes up.",
+      "asWritten": "A passenger asks to photograph a stranger through the kitchen window. Selena waits for the resident to give permission before a camera goes up."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Selena offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Selena offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Selena brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Selena brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

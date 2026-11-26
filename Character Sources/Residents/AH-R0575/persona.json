@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0575",
+  "personId": "AH-R0575",
+  "name": "Ellen Avila",
+  "age": 40,
+  "occupation": "Teaching aide",
+  "home": "Old Town",
+  "episode": "A play in a pocket",
+  "biography": "stories/residents/04/13-a-play-in-a-pocket.md#ah-r0575",
+  "life": "“I still remember a child recasting my entire classroom in two minutes.” People around Tideline Market know Ellen by a small Saturday habit. Ellen picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I came to supervise the children and got cast as a lost umbrella.",
+  "appearance": "On an ordinary day, look for a striped cotton shirt and a tiny red thread tied through the lowest buttonhole. Ellen has a softly rounded chin under sharp cheekbones, with a blunt cut just below the ears. Ellen listens with the head tilted a little to the left during a conversation.",
+  "personality": "Ellen can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Ellen can afford to give, and family knows to take it seriously.",
+  "agenda": "To finish the scene in the role the children assigned.",
+  "family": "Ada Murphy is Ellen’s first cousin once removed. Ellen asks before bringing somebody along. Ada can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *School after sixty*, Ada says, “I can do sums if I face a window. Facing the board takes me right back to the day I stopped going.”",
+  "connections": "Greta Ray. The accidental cast member gets the camera put away for one private audience.",
+  "familyIds": [
+    "AH-R1261"
+  ],
+  "connectionIds": [
+    "AH-R0579"
+  ],
+  "reactions": [
+    {
+      "situation": "A young actor asks the listener to stop the pocket play",
+      "response": "Ellen lets the actor stop without calling the audience's attention to the interruption.",
+      "asWritten": "A young actor asks the listener to stop the pocket play. Ellen lets the actor stop without calling the audience's attention to the interruption."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Ellen starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Ellen starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Ellen suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Ellen suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

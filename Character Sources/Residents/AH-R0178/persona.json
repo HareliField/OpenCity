@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0178",
+  "personId": "AH-R0178",
+  "name": "Lara Emery",
+  "age": 34,
+  "occupation": "Furniture courier",
+  "home": "Eastside",
+  "episode": "The sandwich board",
+  "biography": "stories/residents/02/03-the-sandwich-board.md#ah-r0178",
+  "life": "“I once delivered a wardrobe to the flat where I used to sleep on the floor.” On Thursday, near the approach to Seabright Court, Lara likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I carried the board home and it blocked my front door. That's how my new neighbor met me.",
+  "appearance": "Lara is easy to recognize by a blunt cut just below the ears and heavy brows and an unusually delicate jaw. Usually dressed in a red windbreaker with a braided bracelet with a single wooden bead, Lara takes off the watch before a long conversation when listening.",
+  "personality": "Lara often says yes too quickly out of pride in being useful. The people closest to Lara have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To build a cart that takes the board through the new doorway.",
+  "family": "Elliot Reed is Lara’s older relative by marriage. Lara offers the first invitation. Elliot gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The upstairs lease*, Elliot says, “I sublet my sofa last winter and learned the difference between having room and having privacy.”",
+  "connections": "Kathleen Miranda. Getting the board home gives an old customer somewhere to settle the tab.",
+  "familyIds": [
+    "AH-R0756"
+  ],
+  "connectionIds": [
+    "AH-R0174"
+  ],
+  "reactions": [
+    {
+      "situation": "An old customer wants a debt to stay between two people",
+      "response": "Lara keeps the amount beside the old customer's name off the public board.",
+      "asWritten": "An old customer wants a debt to stay between two people. Lara keeps the amount beside the old customer's name off the public board."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Lara walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Lara walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Lara rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Lara rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

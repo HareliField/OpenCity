@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0450",
+  "personId": "AH-R0450",
+  "name": "Adele Gomez",
+  "age": 64,
+  "occupation": "Antiques evaluator",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The tide clock",
+  "biography": "stories/residents/03/15-the-tide-clock.md#ah-r0450",
+  "life": "“I still remember an alarm bell that used to wake a whole street.” On Wednesday, near the bank steps, Adele takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I collect clocks that measure something worth waiting for. This is the first the owner refused to sell.",
+  "appearance": "Adele has heavy brows and an unusually delicate jaw. Look for a gray streak running back from the forehead. On an ordinary day, the familiar outfit is a narrow-striped sweater with a fabric zip pull cut from a school scarf. In conversation Adele draws breath as if to speak and lets someone else go first.",
+  "personality": "Adele treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To document the clock in place with permission.",
+  "family": "Silas Murphy is Adele’s half-sibling. Adele saves a place. Silas chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *A shelf of apologies*, Silas says, “I used to write apologies for my boss. This is the first one I signed with my own name.”",
+  "connections": "Shay Stein. The returning collector gets the true account of why a dealer sold the clock.",
+  "familyIds": [
+    "AH-R0670"
+  ],
+  "connectionIds": [
+    "AH-R0444"
+  ],
+  "reactions": [
+    {
+      "situation": "The owner considers taking the tide clock down",
+      "response": "Adele asks the workers whether a second, clearly labeled clock would solve the actual problem.",
+      "asWritten": "The owner considers taking the tide clock down. Adele asks the workers whether a second, clearly labeled clock would solve the actual problem."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Adele suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Adele suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Adele changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Adele changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

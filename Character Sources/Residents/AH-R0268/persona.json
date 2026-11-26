@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0268",
+  "personId": "AH-R0268",
+  "name": "Gareth Arrieta",
+  "age": 46,
+  "occupation": "Overnight nurse",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The sheltered corner",
+  "biography": "stories/residents/02/12-the-sheltered-corner.md#ah-r0268",
+  "life": "“Night nursing taught me which breakfast places keep the lights low.” Sunday often includes a stop at Juniper Street, where Gareth knows which of the west-side porches has a seat in the shade.",
+  "voice": "I listen for the doors before putting toast down. Now I burn it every morning and blame the council.",
+  "appearance": "Gareth has fine brows over wide-set eyes. Look for short, uneven waves that refuse to lie flat. Out of work clothes, the familiar outfit is a cropped bottle-green coat with one loose pocket corner secured with green thread. In conversation Gareth looks toward the door whenever a name is called.",
+  "personality": "Gareth tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Gareth will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To get toast and shift time back into sensible order.",
+  "family": "Daryl Akers is Gareth’s half-sibling. Gareth saves a place. Daryl chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The clean ledger*, Daryl says, “I learned to read in prison. My own name on that page was the first word I didn't want to see.”",
+  "connections": "Ada Ellis. They trade better directions for the warning sound that once timed the morning toast.",
+  "familyIds": [
+    "AH-R0643"
+  ],
+  "connectionIds": [
+    "AH-R0267"
+  ],
+  "reactions": [
+    {
+      "situation": "The route manager declares the move a success",
+      "response": "Gareth asks one rider from each corner to walk the new distance.",
+      "asWritten": "The route manager declares the move a success. Gareth asks one rider from each corner to walk the new distance."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Gareth looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Gareth looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Gareth repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Gareth repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

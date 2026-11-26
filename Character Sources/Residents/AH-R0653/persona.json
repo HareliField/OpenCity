@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0653",
+  "personId": "AH-R0653",
+  "name": "Denise Emery",
+  "age": 41,
+  "occupation": "Discharge clerk",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Two left slippers",
+  "biography": "stories/residents/05/06-two-left-slippers.md#ah-r0653",
+  "life": "“I still remember putting on street clothes without feeling ready to leave.” Friday often includes a stop at the window at Night Shift Donuts, where Denise knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I ticked footwear present on the form. I have added a chair where people can actually try the pair.",
+  "appearance": "On an ordinary day, look for a plum-colored cardigan and a folded shopping list secured by a miniature clip. Denise has a flat bridge to the nose and a mobile brow, with a high puff tied with plain cord. Denise looks toward the door whenever a name is called during a conversation.",
+  "personality": "Denise tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Denise will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To give discharged patients a real chance to try their shoes.",
+  "family": "Carla Lam is Denise’s cousin. Denise gets to change the plan. Carla offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The dead man's tab*, Carla says, “I was his lawyer. He never once asked me to wipe out this particular debt.”",
+  "connections": "Lena Sanders. They design a discharge fitting with a seat and some privacy. Also in the story is Irene Franco (hospital colleague).",
+  "familyIds": [
+    "AH-R0498"
+  ],
+  "connectionIds": [
+    "AH-R0657",
+    "AH-R0654"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient opens the bag and finds two left slippers",
+      "response": "Denise sets out the pair and asks the discharge worker to check the right foot too.",
+      "asWritten": "A patient opens the bag and finds two left slippers. Denise sets out the pair and asks the discharge worker to check the right foot too."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Denise keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Denise keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Denise repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Denise repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

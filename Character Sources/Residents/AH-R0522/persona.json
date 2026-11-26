@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0522",
+  "personId": "AH-R0522",
+  "name": "Dario Oh",
+  "age": 73,
+  "occupation": "Retired artists' model",
+  "home": "Eastside",
+  "episode": "The rescue hut mural",
+  "biography": "stories/residents/04/08-the-rescue-hut-mural.md#ah-r0522",
+  "life": "“I still remember eating a sandwich halfway through a modeling job.” People around the bank steps know Dario by a small Saturday habit. Dario takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I was her model. I held a sandwich in the hand that looks so noble now.",
+  "appearance": "Dario is easy to recognize by soft white hair brushed sideways and a round face with a pronounced chin. Usually dressed in a narrow-striped sweater with a little coil of soft measuring tape, Dario touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Dario feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To tell visitors what the model actually held.",
+  "family": "Mia Frost is Dario’s first cousin once removed. Dario saves a place. Mia chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *First shift back*, Mia says, “I stopped sending messages after the first month.”",
+  "connections": "Astrid Olsen (mural painter). The model and the original painter finally explain the sandwich.",
+  "familyIds": [
+    "AH-R1085"
+  ],
+  "connectionIds": [
+    "AH-R0525"
+  ],
+  "reactions": [
+    {
+      "situation": "The old model asks to choose the viewing angle",
+      "response": "Dario walks the observers to the angle the model chose.",
+      "asWritten": "The old model asks to choose the viewing angle. Dario walks the observers to the angle the model chose."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Dario asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Dario asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Dario lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Dario lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

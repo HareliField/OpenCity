@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0051",
+  "personId": "AH-R0051",
+  "name": "Anton Dove",
+  "age": 47,
+  "occupation": "Ward porter",
+  "home": "Midtown",
+  "episode": "Window seven",
+  "biography": "stories/residents/01/06-window-seven.md#ah-r0051",
+  "life": "Anton knows which ward windows fog first and which patients would rather see streetlights than the sea. His eldest boy thinks he pushes beds for a living. Both descriptions are accurate, which pleases him. Wednesday often includes a stop at the corner outside Coastal Barber, where Anton usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "Window seven is the first place I saw the sea after I moved here. I timed the empty corridor with my watch and asked the patient what counted as sunrise to her.",
+  "appearance": "Anton has auburn hair cut square at the nape, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a moss-green cardigan. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Anton listens with the head tilted a little to the left.",
+  "personality": "Anton takes a rejection personally for a day and analytically on the second morning. Anton can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To work out a clear route to window seven before sunrise.",
+  "family": "Bruna Morse is Anton’s half-sibling. Anton asks before bringing somebody along. Bruna can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Nine unpaid hours*, Bruna says, “I ran payroll. I warned management on Wednesday and told the crews on Friday.”",
+  "connections": "Lois Fell (ward colleague). The porter knows this window. The chaplain is discovering how much of the morning that knowledge can hold.",
+  "familyIds": [
+    "AH-R0764"
+  ],
+  "connectionIds": [
+    "AH-R0059"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants the sunrise streamed to a phone",
+      "response": "Anton asks the patient whether they want a camera in this particular morning.",
+      "asWritten": "A relative wants the sunrise streamed to a phone. Anton asks the patient whether they want a camera in this particular morning."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Anton suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Anton suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Anton turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Anton turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

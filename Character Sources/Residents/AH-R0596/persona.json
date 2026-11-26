@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0596",
+  "personId": "AH-R0596",
+  "name": "Scout Mendez",
+  "age": 37,
+  "occupation": "Summer play worker",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The engine lullaby",
+  "biography": "stories/residents/04/15-the-engine-lullaby.md#ah-r0596",
+  "life": "“I still remember the little whale painted on my child's rain barrel.” Thursday often includes a stop at the public road outside the Port of Asphalt, where Scout can recognize shift change by the lull between two groups of walkers.",
+  "voice": "My child thinks there's a whale in the harbor. The skipper invited us to listen through the deck.",
+  "appearance": "Scout has a smooth side part with one rebellious curl, a crooked front tooth visible when laughing, and a favorite piece of clothing, a moss-green cardigan. It usually goes with a watch on a cracked leather band. When somebody else has the floor, Scout gathers both sleeves neatly before settling in.",
+  "personality": "Scout gets protective of anybody who comes into a meeting unprepared. Scout privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To let the child hear the hum through the deck.",
+  "family": "Hector Lang is Scout’s stepsibling. Scout chooses whether to use it. Hector saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The hospital radio*, Hector says, “I used to tune the coast forecast for my father.”",
+  "connections": "Anita Gill. A child with a whale story gives the wedding recording a new pair of listeners.",
+  "familyIds": [
+    "AH-R0351"
+  ],
+  "connectionIds": [
+    "AH-R0597"
+  ],
+  "reactions": [
+    {
+      "situation": "A family offers to pay to keep the old sound",
+      "response": "Scout asks the engine owner what can be kept without postponing necessary repairs.",
+      "asWritten": "A family offers to pay to keep the old sound. Scout asks the engine owner what can be kept without postponing necessary repairs."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Scout writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Scout writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Scout offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Scout offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

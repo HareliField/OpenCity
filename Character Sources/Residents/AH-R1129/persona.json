@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1129",
+  "personId": "AH-R1129",
+  "name": "Emil Palmer",
+  "age": 30,
+  "occupation": "Seasonal lifeguard",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A summer marriage",
+  "biography": "stories/residents/08/08-a-summer-marriage.md#ah-r1129",
+  "life": "“I still remember covering a shift because a colleague wanted to marry before high tide.” Thursday often includes a stop at the window at Night Shift Donuts, where Emil knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I donated a shift to the bride. She returned it because knowing the children had a lifeguard mattered more.",
+  "appearance": "Emil has fine brows over wide-set eyes. Look for a soft fringe that falls across one eyebrow. On an ordinary day, the familiar outfit is a moss-green cardigan with a pen clipped inside the neckline. In conversation Emil gives a little nod before asking a hard question.",
+  "personality": "Emil prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To provide continuing beach coverage through the vows.",
+  "family": "Dale Valdez is Emil’s older cousin. One family member never got a driver's license and learned the city by the feel of its bus stops. After dark the person with the smallest salary was often the one who knew the safest ride home. Emil asks who has to pay for getting back after an invitation. Asked about *The uniform money*, Dale says, “I am the teacher at the gate. I asked the head to join me in ordinary clothes on Monday morning.”",
+  "connections": "Nadia Fraser (spouse). The two partners settle the lifeguard's shift and the hotel employee's flower offer between them.",
+  "familyIds": [
+    "AH-R0910"
+  ],
+  "connectionIds": [
+    "AH-R1121"
+  ],
+  "reactions": [
+    {
+      "situation": "A guest brings additional people to the boardwalk wedding",
+      "response": "Emil checks whether the couple can actually feed and seat the additional people.",
+      "asWritten": "A guest brings additional people to the boardwalk wedding. Emil checks whether the couple can actually feed and seat the additional people."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Emil looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Emil looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Emil clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Emil clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

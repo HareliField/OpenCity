@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1338",
+  "personId": "AH-R1338",
+  "name": "Robin Poole",
+  "age": 45,
+  "occupation": "Soup kitchen cook",
+  "home": "the western residential streets",
+  "episode": "The missing Sunday",
+  "biography": "stories/residents/09/14-the-missing-sunday.md#ah-r1338",
+  "life": "“I still remember peeling vegetables through two halves and extra time.” People around the market by Market Flats know Robin by a small Sunday habit. Robin often waits until the delivery baskets are stacked before going in.",
+  "voice": "I don't watch sport. I cooked soup loud enough in his kitchen for him to know I stayed through the match.",
+  "appearance": "Away from the heat of the kitchen, look for a sand-colored linen shirt and a folded shopping list secured by a miniature clip. Robin has a scattering of freckles across the bridge of the nose, with a center part and straight chestnut hair. Robin gives a little nod before asking a hard question during a conversation.",
+  "personality": "Robin is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Robin is by the number of tiny errands suddenly being done.",
+  "agenda": "To cook through a whole match nearby.",
+  "family": "Miles Marks is Robin’s older relative by marriage. Robin is free to hang up first. Miles makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Two left slippers*, Miles says, “One was mine. My right foot has been gone for a year and I have a cupboard of usable lefts.”",
+  "connections": "Vera Baines. Two visitors who do not need to watch the score can stay audible from the kitchen.",
+  "familyIds": [
+    "AH-R0652"
+  ],
+  "connectionIds": [
+    "AH-R1333"
+  ],
+  "reactions": [
+    {
+      "situation": "One volunteer cannot make the match",
+      "response": "Robin gives the widower a timely message and lets him decide whether he wants another visitor.",
+      "asWritten": "One volunteer cannot make the match. Robin gives the widower a timely message and lets him decide whether he wants another visitor."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Robin asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Robin asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Robin agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Robin agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

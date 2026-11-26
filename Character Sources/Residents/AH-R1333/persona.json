@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1333",
+  "personId": "AH-R1333",
+  "name": "Vera Baines",
+  "age": 55,
+  "occupation": "Sunday home visitor",
+  "home": "the western residential streets",
+  "episode": "The missing Sunday",
+  "biography": "stories/residents/09/14-the-missing-sunday.md#ah-r1333",
+  "life": "“I still remember singing at a job nobody expected to hear me enjoy.” People around Maré Coffee know Vera by a small Tuesday habit. Vera likes the table where people coming off shift stop checking the time.",
+  "voice": "I have the Sunday key and normally clean silently. He invited me to bring my dreadful singing voice.",
+  "appearance": "Vera is easy to recognize by a swept fringe and a closely clipped nape and a softly rounded chin under sharp cheekbones. Usually dressed in a long navy raincoat with a train token tied to a zipper pull, Vera starts to lift a hand, then waits to be invited to speak when listening.",
+  "personality": "Vera can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To bring music into a previously silent visit.",
+  "family": "Inez Park is Vera’s stepsibling. Vera gets to change the plan. Inez offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The Saturday swap*, Inez says, “I took everyone's unwanted Saturdays last year.”",
+  "connections": "Robin Poole. Two visitors who do not need to watch the score can stay audible from the kitchen.",
+  "familyIds": [
+    "AH-R0785"
+  ],
+  "connectionIds": [
+    "AH-R1338"
+  ],
+  "reactions": [
+    {
+      "situation": "The widower asks for a Sunday with no appointments",
+      "response": "Vera keeps necessary care covered and leaves the social part of Sunday open.",
+      "asWritten": "The widower asks for a Sunday with no appointments. Vera keeps necessary care covered and leaves the social part of Sunday open."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Vera lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Vera lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Vera asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Vera asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

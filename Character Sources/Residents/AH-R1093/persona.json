@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1093",
+  "personId": "AH-R1093",
+  "name": "David Ramos",
+  "age": 57,
+  "occupation": "Shop tenant and factory worker",
+  "home": "Midtown",
+  "episode": "The boy on the corner",
+  "biography": "stories/residents/08/05-the-boy-on-the-corner.md#ah-r1093",
+  "life": "“I still remember someone smoking on our doorstep where the rain couldn't reach.” On Friday, near the entrance to the Wash House, David stops for local notices even on a day without a load to wash.",
+  "voice": "I live over the corner shop. I like the boy and I hate what brings people to our door.",
+  "appearance": "David has a round face with a pronounced chin. Look for a cropped cut that shows the shape of the ears. On an ordinary day, the familiar outfit is a boxy denim jacket with a braided bracelet with a single wooden bead. In conversation David gathers both sleeves neatly before settling in.",
+  "personality": "David finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To keep the boy welcome while protecting the shop entrance.",
+  "family": "Neal Ferraro is David’s younger relative by marriage. David chooses the music. Neal puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A tenant who stays*, Neal says, “My kid draws the bungalow every day. The tenant and daughter both asked for a copy and neither asked to be in it.”",
+  "connections": "Rosemary Heller. The tenant above the shop backs the shopkeeper's protected homework table.",
+  "familyIds": [
+    "AH-R0990"
+  ],
+  "connectionIds": [
+    "AH-R1098"
+  ],
+  "reactions": [
+    {
+      "situation": "The boy's babysitter takes a new job",
+      "response": "David helps the family identify the next uncovered school pickup.",
+      "asWritten": "The boy's babysitter takes a new job. David helps the family identify the next uncovered school pickup."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "David agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. David agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "David waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, David waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

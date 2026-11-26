@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0024",
+  "personId": "AH-R0024",
+  "name": "Silas Pike",
+  "age": 47,
+  "occupation": "Estate lawyer",
+  "home": "Coast Ridge",
+  "episode": "The small signature",
+  "biography": "stories/residents/01/03-the-small-signature.md#ah-r0024",
+  "life": "Silas went into estate law after his mother signed a paper she could not read. He earns most of his money from clients who like difficult clauses. His most interesting work begins when those two facts collide. On Friday, near Harbour Bakery, Silas buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I wrote the gift restriction in language the vendor couldn't read. My own mother left school at twelve. I owe them a version she could read aloud without stopping.",
+  "appearance": "Silas has a flat bridge to the nose and a mobile brow. Look for a loose dark braid. On an ordinary day, the familiar outfit is a cream pullover with a pair of reading glasses in a cloth sleeve. In conversation Silas holds eye contact until the other person has finished.",
+  "personality": "Silas has a quick wit and an equally quick sense of shame. A joke is often Silas's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To rewrite the gift terms in words a street seller can challenge.",
+  "family": "Dana Randall is Silas’s stepsibling. Silas leaves the first voice message. Dana calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A closing hour*, Dana says, “I advertised always open before I had a daughter.”",
+  "connections": "Etta Webb. One drafts the words of the gift. The other has to find out if a child can actually use what those words buy.",
+  "familyIds": [
+    "AH-R1351"
+  ],
+  "connectionIds": [
+    "AH-R0026"
+  ],
+  "reactions": [
+    {
+      "situation": "The new chess table arrives too high for one of its players",
+      "response": "Silas puts one of the actual playing pieces into the affected player's hand before accepting delivery.",
+      "asWritten": "The new chess table arrives too high for one of its players. Silas puts one of the actual playing pieces into the affected player's hand before accepting delivery."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Silas moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Silas moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Silas seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Silas seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

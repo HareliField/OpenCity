@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0123",
+  "personId": "AH-R0123",
+  "name": "Dev Ferris",
+  "age": 58,
+  "occupation": "Pawnbroker",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The borrowed bass",
+  "biography": "stories/residents/01/13-the-borrowed-bass.md#ah-r0123",
+  "life": "Dev ran the pawn counter through years when half his customers didn't want to be recognized. Releasing a paid ticket is often easy. Getting someone to believe the account is settled can take another decade. People around the window at Night Shift Donuts know Dev by a small Friday habit. Dev knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "Somebody paid the ticket years ago and never removed it. I can tell from the tear. I want the old owner to find that out from me because we parted on ugly terms.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a stitched row of blue crosses along an old repair. Dev has an aquiline nose and a square chin, with thick, tightly coiled hair. Dev grins on one side while the eyes stay serious during a conversation.",
+  "personality": "Dev always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Dev is trying to tell the difference before the bill arrives.",
+  "agenda": "To show the former owner when the ticket was actually paid.",
+  "family": "Edmund Porter is Dev’s second cousin. Dev offers the first invitation. Edmund gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The crane shadow*, Edmund says, “I can no longer climb the cab ladder. I stood inside its shadow and taught a child the controls from memory.”",
+  "connections": "Iris Cade. The teacher and the pawnbroker make the call that establishes whether the old ticket was settled.",
+  "familyIds": [
+    "AH-R0616"
+  ],
+  "connectionIds": [
+    "AH-R0122"
+  ],
+  "reactions": [
+    {
+      "situation": "Somebody says the pawn ticket proves the bass was stolen",
+      "response": "Dev asks to see whether the ticket had already been settled.",
+      "asWritten": "Somebody says the pawn ticket proves the bass was stolen. Dev asks to see whether the ticket had already been settled."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Dev asks the cashier to hold it and lets a claimant identify the writing and amount privately.",
+      "asWritten": "An envelope of wages is found under a café chair. Dev asks the cashier to hold it and lets a claimant identify the writing and amount privately."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Dev suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Dev suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

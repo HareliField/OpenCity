@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1444",
+  "personId": "AH-R1444",
+  "name": "Sonia Neal",
+  "age": 54,
+  "occupation": "Egg supplier",
+  "home": "Eastside",
+  "episode": "The kitchen without a boss",
+  "biography": "stories/residents/10/10-the-kitchen-without-a-boss.md#ah-r1444",
+  "life": "“I still remember driving eggs over a ridge without breaking one.” Sunday often includes a stop at the crossing outside Verve Nail Studio, where Sonia notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I supply eggs and normally ask for the boss. I learned all three new names when they sent back a cracked delivery.",
+  "appearance": "Sonia has short, uneven waves that refuse to lie flat, a small notch in the left eyebrow, and a favorite piece of clothing, a black overshirt with pearl buttons. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Sonia steadies a cup with both hands while listening.",
+  "personality": "Sonia is fond of ambitious ideas and deeply suspicious of grand openings. The question Sonia asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To deal directly with the three acting managers.",
+  "family": "Luz Aranda is Sonia’s cousin’s child. Sonia is free to hang up first. Luz makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The small signature*, Luz says, “I counted the jar twice and kept the bent coin.”",
+  "connections": "Dolores Silva. The egg supplier and rival baker each offer equipment or stock on straightforward terms.",
+  "familyIds": [
+    "AH-R0023"
+  ],
+  "connectionIds": [
+    "AH-R1449"
+  ],
+  "reactions": [
+    {
+      "situation": "Two kitchen workers disagree on the new shift rota",
+      "response": "Sonia puts both proposed rotas beside the actual delivery and childcare times.",
+      "asWritten": "Two kitchen workers disagree on the new shift rota. Sonia puts both proposed rotas beside the actual delivery and childcare times."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Sonia asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Sonia asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Sonia accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Sonia accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

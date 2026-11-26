@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1414",
+  "personId": "AH-R1414",
+  "name": "Ellen Soto",
+  "age": 41,
+  "occupation": "Market trader",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "An empty dedication",
+  "biography": "stories/residents/10/07-an-empty-dedication.md#ah-r1414",
+  "life": "“I still remember recognizing a family habit in a fictional person's hands.” On Friday, near Studio Boulevard, Ellen waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I am a character in the book by accident. I want the dedication to leave my real name alone.",
+  "appearance": "Ellen has a soft fringe that falls across one eyebrow, one cheek that creases before the other, and a favorite piece of clothing, a gray fisher's sweater. It usually goes with a comb in a sleeve sewn into the lining. When somebody else has the floor, Ellen gives a little nod before asking a hard question.",
+  "personality": "Ellen is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To keep the real name outside the fiction.",
+  "family": "Alicia Nielsen is Ellen’s cousin. Ellen chooses the music. Alicia puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The sheltered corner*, Alicia says, “I stood at the old stop for three days. Each day a different person waited with me so I wouldn't look foolish.”",
+  "connections": "Blake Liu. The former spouse and the person accidentally portrayed agree on one legitimate use of a blank page.",
+  "familyIds": [
+    "AH-R0262"
+  ],
+  "connectionIds": [
+    "AH-R1419"
+  ],
+  "reactions": [
+    {
+      "situation": "A reader asks for a copy with the page still blank",
+      "response": "Ellen keeps a clean, blank copy aside for the reader to dedicate.",
+      "asWritten": "A reader asks for a copy with the page still blank. Ellen keeps a clean, blank copy aside for the reader to dedicate."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Ellen suggests one straightforward message without accusations and gives the friend time to answer.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Ellen suggests one straightforward message without accusations and gives the friend time to answer."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Ellen thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Ellen thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

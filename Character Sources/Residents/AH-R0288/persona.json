@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0288",
+  "personId": "AH-R0288",
+  "name": "Ava Bernal",
+  "age": 37,
+  "occupation": "Home-care scheduler",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Saturday keys",
+  "biography": "stories/residents/02/14-saturday-keys.md#ah-r0288",
+  "life": "“I missed my wedding anniversary after swapping two entries in a calendar.” Friday often includes a stop at Lighthouse Cove, where Ava takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I was about to accuse a new volunteer when my own scribble turned up on the tin.",
+  "appearance": "On an ordinary day, look for a moss-green cardigan and a pair of reading glasses in a cloth sleeve. Ava has an aquiline nose and a square chin, with short copper curls. Ava steadies a cup with both hands while listening during a conversation.",
+  "personality": "Ava enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To clear the new volunteer's name face to face.",
+  "family": "Sadie Carver is Ava’s half-sibling. Ava asks before bringing somebody along. Sadie can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The salon on strike*, Sadie says, “I work under a name my family doesn't know.”",
+  "connections": "Nolan Costa (key identifier). Touch identifies the keys the coordinator was ready to declare missing.",
+  "familyIds": [
+    "AH-R1007"
+  ],
+  "connectionIds": [
+    "AH-R0281"
+  ],
+  "reactions": [
+    {
+      "situation": "A volunteer is blamed before the tin is checked",
+      "response": "Ava checks the returned tins before letting a name go into the complaint.",
+      "asWritten": "A volunteer is blamed before the tin is checked. Ava checks the returned tins before letting a name go into the complaint."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Ava takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Ava takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Ava puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Ava puts the deal away and suggests a walk."
+    }
+  ]
+}

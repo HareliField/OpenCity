@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0349",
+  "personId": "AH-R0349",
+  "name": "Chris Anders",
+  "age": 44,
+  "occupation": "Car body apprentice",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Rent in a biscuit tin",
+  "biography": "stories/residents/03/05-rent-in-a-biscuit-tin.md#ah-r0349",
+  "life": "“I still remember counting bus coins with oily thumbs.” Thursday often includes a stop at the window at Night Shift Donuts, where Chris knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I was sure my envelope had been opened. The crease was mine from the night I nearly spent it.",
+  "appearance": "On an ordinary day, look for an old plum windbreaker and a copper-colored clasp that has been repaired by hand. Chris has a flat bridge to the nose and a mobile brow, with a blunt cut just below the ears. Chris takes off the watch before a long conversation during a conversation.",
+  "personality": "Chris has a talent for getting adversaries to laugh at exactly the same thing. Chris knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To clear the accusation over the opened envelope.",
+  "family": "Bianca Cole is Chris’s cousin. Chris chooses the music. Bianca puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Five missing lunches*, Bianca says, “I was asked to throw them away. I put a forwarding card in each one instead.”",
+  "connections": "Lola Lowe. The deli-table count gives the worried owner a chance to recognize a familiar crease.",
+  "familyIds": [
+    "AH-R0168"
+  ],
+  "connectionIds": [
+    "AH-R0350"
+  ],
+  "reactions": [
+    {
+      "situation": "One renter wants the tin counted in public",
+      "response": "Chris asks each renter how much of the count they want heard in public.",
+      "asWritten": "One renter wants the tin counted in public. Chris asks each renter how much of the count they want heard in public."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Chris accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Chris accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Chris asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Chris asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0913",
+  "personId": "AH-R0913",
+  "name": "Leon White",
+  "age": 69,
+  "occupation": "Retired fisherman",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The absent signature",
+  "biography": "stories/residents/07/02-the-absent-signature.md#ah-r0913",
+  "life": "“I still remember mending a crate while two owners argued about the rent.” Monday often includes a stop at the window at Night Shift Donuts, where Leon knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I used the berth for pocket money and never asked whose money repaired it.",
+  "appearance": "Leon is easy to recognize by a thin scattering of white hair over the crown and two dimples that appear only with a full smile. Usually dressed in a plum-colored cardigan with a pair of reading glasses in a cloth sleeve, Leon turns fully toward the person speaking when listening.",
+  "personality": "Leon finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To establish who paid for the old repairs.",
+  "family": "Mara Tev is Leon’s cousin. Leon chooses the music. Mara puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The last green*, Mara says, “His callsign has been on my board since I joined.”",
+  "connections": "Sasha Watts. A berth used for pocket money belongs to a family whose photographs omitted a member.",
+  "familyIds": [
+    "AH-R0113"
+  ],
+  "connectionIds": [
+    "AH-R0919"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants the absent signer's address",
+      "response": "Leon asks the absent person what address, if any, can be shared.",
+      "asWritten": "A relative wants the absent signer's address. Leon asks the absent person what address, if any, can be shared."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Leon brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Leon brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Leon waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Leon waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

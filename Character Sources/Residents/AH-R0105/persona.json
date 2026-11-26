@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0105",
+  "personId": "AH-R0105",
+  "name": "Greta Falk",
+  "age": 34,
+  "occupation": "Wedding planner",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Ten fingers",
+  "biography": "stories/residents/01/11-ten-fingers.md#ah-r0105",
+  "life": "Greta has put on more elaborate weddings than she can afford for herself. Her sisters have seen her change a table plan during dessert. Letting them surprise her about clothes is a considerable gamble. Thursday often includes a stop at the blocks below Foundry Lofts, where Greta checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I was halfway through arranging the colors into a gradient when she caught me. My own wedding is in two months. I'm letting my sisters pick their dresses.",
+  "appearance": "Greta has full cheeks and a mouth that pulls slightly to one side. Look for a long plait tucked inside the collar. On an ordinary day, the familiar outfit is a cropped bottle-green coat with one cuff folded back twice. In conversation Greta folds a paper napkin into quarters without noticing.",
+  "personality": "Greta uses precise names for tools and very approximate names for feelings. People who know Greta well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To get through her own wedding without arranging everyone's clothes.",
+  "family": "Denise Zhou is Greta’s older cousin. Greta brings a spare shopping bag. Denise chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Two names on the chart*, Denise says, “I built the paper index and recognized my teenage handwriting.”",
+  "connections": "Remi Ash. One wants an elegant arrangement. The other wants the birthday guest to enjoy a wonderfully rude shade name.",
+  "familyIds": [
+    "AH-R1103"
+  ],
+  "connectionIds": [
+    "AH-R0107"
+  ],
+  "reactions": [
+    {
+      "situation": "A birthday guest starts rearranging other people's colors",
+      "response": "Greta asks the birthday client whether she wants the colors moved.",
+      "asWritten": "A birthday guest starts rearranging other people's colors. Greta asks the birthday client whether she wants the colors moved."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Greta moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Greta moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Greta brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Greta brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

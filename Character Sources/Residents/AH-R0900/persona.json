@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0900",
+  "personId": "AH-R0900",
+  "name": "Fiona Salas",
+  "age": 62,
+  "occupation": "Former liveaboard and gardener",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Winter afloat",
+  "biography": "stories/residents/06/15-winter-afloat.md#ah-r0900",
+  "life": "“I still remember the first friend who admitted I wasn't just visiting.” On Monday, near the entrance to the Wash House, Fiona stops for local notices even on a day without a load to wash.",
+  "voice": "I spent a winter pretending I was visiting friends. I told him exactly where my own pride first got cold.",
+  "appearance": "Fiona has a crooked front tooth visible when laughing. Look for short white hair and darker eyebrows. On an ordinary day, the familiar outfit is a mustard canvas overshirt with a seam let out by a narrow strip of contrasting fabric. In conversation Fiona draws breath as if to speak and lets someone else go first.",
+  "personality": "Fiona enjoys routines and will defend the right of someone else to break one. As a result, Fiona is often everyone's favorite cover for a missed morning.",
+  "agenda": "To offer the private welcome once needed personally.",
+  "family": "Keir Rios is Fiona’s younger cousin. Fiona makes the call. Keir is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The gift nobody wants*, Keir says, “I arranged a dinner to smooth things over and returned the sponsor's wine.”",
+  "connections": "Kit Gill. The spare shower key means something different to somebody who once spent a winter as a supposed visitor.",
+  "familyIds": [
+    "AH-R1378"
+  ],
+  "connectionIds": [
+    "AH-R0895"
+  ],
+  "reactions": [
+    {
+      "situation": "A friend offers a sofa for an uncertain number of weeks",
+      "response": "Fiona agrees a first review date for the sofa without pretending it settles the winter.",
+      "asWritten": "A friend offers a sofa for an uncertain number of weeks. Fiona agrees a first review date for the sofa without pretending it settles the winter."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Fiona draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Fiona draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Fiona keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Fiona keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

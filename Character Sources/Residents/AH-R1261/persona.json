@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1261",
+  "personId": "AH-R1261",
+  "name": "Ada Murphy",
+  "age": 69,
+  "occupation": "Retired market trader",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "School after sixty",
+  "biography": "stories/residents/09/07-school-after-sixty.md#ah-r1261",
+  "life": "“I still remember turning my exam desk toward the one classroom window.” Thursday often includes a stop at Ferris Deli, where Ada asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I can do sums if I face a window. Facing the board takes me right back to the day I stopped going.",
+  "appearance": "Ada has a scattering of freckles across the bridge of the nose. Look for gray hair trimmed very close behind the ears. On an ordinary day, the familiar outfit is a moss-green cardigan with a copper-colored clasp that has been repaired by hand. In conversation Ada looks at people's hands before looking at what they carry.",
+  "personality": "Ada treats a small promise with the gravity others reserve for a contract. This makes Ada lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To take the exam facing the window.",
+  "family": "Ellen Avila is Ada’s first cousin once removed. Ada can always ask for five minutes alone. Ellen asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A play in a pocket*, Ellen says, “I came to supervise the children and got cast as a lost umbrella.”",
+  "connections": "Grace Reeves (class tutor). The tutor can change the seat without making the oldest learner explain school in front of the class.",
+  "familyIds": [
+    "AH-R0575"
+  ],
+  "connectionIds": [
+    "AH-R1263"
+  ],
+  "reactions": [
+    {
+      "situation": "An older learner freezes in front of the blackboard",
+      "response": "Ada offers to turn the learner's chair without announcing the reason to the class.",
+      "asWritten": "An older learner freezes in front of the blackboard. Ada offers to turn the learner's chair without announcing the reason to the class."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Ada asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Ada asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Ada says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Ada says what can be returned and asks whether that will do."
+    }
+  ]
+}

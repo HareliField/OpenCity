@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1006",
+  "personId": "AH-R1006",
+  "name": "Milo Roche",
+  "age": 51,
+  "occupation": "Coffee shop owner",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The salon on strike",
+  "biography": "stories/residents/07/11-the-salon-on-strike.md#ah-r1006",
+  "life": "“I still remember a folding chair used for my first staff hearing.” Friday often includes a stop at the market by Market Flats, where Milo often waits until the delivery baskets are stacked before going in.",
+  "voice": "I rent the space next door. I offered enough folding chairs for the meeting, whatever they decide.",
+  "appearance": "Milo has short, uneven waves that refuse to lie flat, fine brows over wide-set eyes, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Milo rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Milo has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To host a meeting where either choice is welcome.",
+  "family": "Lars James is Milo’s first cousin once removed. Milo leaves the first voice message. Lars calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *Land without cranes*, Lars says, “I want a desk job here someday, but the new rents won't buy one for anyone I know.”",
+  "connections": "Hollis Aranda. A meeting next door gives the advertiser a real public update on the canceled event.",
+  "familyIds": [
+    "AH-R1061"
+  ],
+  "connectionIds": [
+    "AH-R1008"
+  ],
+  "reactions": [
+    {
+      "situation": "An apprentice asks if declining will cost future shifts",
+      "response": "Milo asks the owner to give the apprentice a direct answer in front of a witness of their choosing.",
+      "asWritten": "An apprentice asks if declining will cost future shifts. Milo asks the owner to give the apprentice a direct answer in front of a witness of their choosing."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Milo asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Milo asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Milo explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Milo explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

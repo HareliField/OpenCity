@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1287",
+  "personId": "AH-R1287",
+  "name": "Greta Hassan",
+  "age": 32,
+  "occupation": "Younger half sister and florist",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The returned daughter",
+  "biography": "stories/residents/09/09-the-returned-daughter.md#ah-r1287",
+  "life": "“I still remember discovering a half sister in the cut edge of a print.” Thursday often includes a stop at the entrance to the Wash House, where Greta stops for local notices even on a day without a load to wash.",
+  "voice": "I am the half sister born later. Today's visit is the first time anyone explained the family photograph with a cut edge.",
+  "appearance": "Greta is easy to recognize by short sandy hair and a marked widow's peak and fine brows over wide-set eyes. Usually dressed in a boxy denim jacket with one cuff folded back twice, Greta looks at people's hands before looking at what they carry when listening.",
+  "personality": "Greta finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To meet the half sister outside the old photograph.",
+  "family": "Mika Drew is Greta’s second cousin. Greta chooses whether to use it. Mika saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *Window seven*, Mika says, “The rail squealed when I moved it and woke three people.”",
+  "connections": "Owen Kerr. Buying familiar food introduces the younger sister to a childhood she did not share. Also in the story is Iva Salas (older half sister).",
+  "familyIds": [
+    "AH-R0053"
+  ],
+  "connectionIds": [
+    "AH-R1284",
+    "AH-R1281"
+  ],
+  "reactions": [
+    {
+      "situation": "The estranged daughter asks to leave before the meal",
+      "response": "Greta helps the daughter leave without forcing a final conversation at the door.",
+      "asWritten": "The estranged daughter asks to leave before the meal. Greta helps the daughter leave without forcing a final conversation at the door."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Greta walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Greta walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Greta waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Greta waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0825",
+  "personId": "AH-R0825",
+  "name": "Levi Boyd",
+  "age": 57,
+  "occupation": "Seafront hotel owner",
+  "home": "Old Town",
+  "episode": "Summer staff",
+  "biography": "stories/residents/06/08-summer-staff.md#ah-r0825",
+  "life": "“I still remember a cook who lost a bonus because winter came early.” On Saturday, near the crossing outside Verve Nail Studio, Levi notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I have money for one retention bonus. I'm asking every worker what a useful final week would look like.",
+  "appearance": "Levi is easy to recognize by a high puff tied with plain cord and an aquiline nose and a square chin. Usually dressed in a mustard canvas overshirt with a pocket notebook shaped by years of sitting on it, Levi looks at people's hands before looking at what they carry when listening.",
+  "personality": "Levi is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To spend the final bonus where it buys a useful week.",
+  "family": "Benjamin Fox is Levi’s stepsibling. Levi knows which ones can be shared. Benjamin keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The dead man's tab*, Benjamin says, “He conned my dad and paid for my lunch. Both facts belong on the same page.”",
+  "connections": "Scout Hull (seasonal worker). An early last paycheck has the hotel manager reconsidering where a retention bonus belongs.",
+  "familyIds": [
+    "AH-R0491"
+  ],
+  "connectionIds": [
+    "AH-R0821"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor demands a refund after the season ends early",
+      "response": "Levi checks the actual dates printed on the booking before discussing its refund.",
+      "asWritten": "A visitor demands a refund after the season ends early. Levi checks the actual dates printed on the booking before discussing its refund."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Levi asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Levi asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Levi helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Levi helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

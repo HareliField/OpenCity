@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0983",
+  "personId": "AH-R0983",
+  "name": "Diana Romero",
+  "age": 43,
+  "occupation": "Property manager",
+  "home": "the blocks north of the port",
+  "episode": "A tenant who stays",
+  "biography": "stories/residents/07/09-a-tenant-who-stays.md#ah-r0983",
+  "life": "“I still remember measuring rent changes from an office across town.” On Sunday, near the public end of the South Shore boardwalk, Diana checks the shade on the benches before deciding how long to stay.",
+  "voice": "I manage the house on a spreadsheet. The first visit changed which numbers I wanted beside the price.",
+  "appearance": "On an ordinary day, look for an old plum windbreaker and one cuff folded back twice. Diana has a flat bridge to the nose and a mobile brow, with thick, tightly coiled hair. Diana presses the lips together to keep a smile in during a conversation.",
+  "personality": "Diana feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To account for the garden in the property decision.",
+  "family": "Rosemary Morris is Diana’s half-sibling. Diana is free to hang up first. Rosemary makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The sandwich board*, Rosemary says, “I lent against the fridge. Seeing the board in the lot makes me wonder what else my signature swept up.”",
+  "connections": "Georgia Myers. The manager has to see which resident's light a new room would take.",
+  "familyIds": [
+    "AH-R0172"
+  ],
+  "connectionIds": [
+    "AH-R0988"
+  ],
+  "reactions": [
+    {
+      "situation": "The future tenant asks when the garden will be empty",
+      "response": "Diana asks the gardener which roots are most vulnerable before agreeing to a date.",
+      "asWritten": "The future tenant asks when the garden will be empty. Diana asks the gardener which roots are most vulnerable before agreeing to a date."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Diana finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Diana finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Diana lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Diana lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

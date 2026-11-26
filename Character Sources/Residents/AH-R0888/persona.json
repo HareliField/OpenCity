@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0888",
+  "personId": "AH-R0888",
+  "name": "Jasmine Boyd",
+  "age": 28,
+  "occupation": "Trainee care supervisor",
+  "home": "Eastside",
+  "episode": "Care with a clock",
+  "biography": "stories/residents/06/14-care-with-a-clock.md#ah-r0888",
+  "life": "“I still remember hearing somebody laugh at the sound of a stopwatch.” People around Maré Coffee know Jasmine by a small Monday habit. Jasmine likes the table where people coming off shift stop checking the time.",
+  "voice": "I borrowed a stopwatch to prove a point and found our client has a wonderful laugh at minute thirteen.",
+  "appearance": "Jasmine is easy to recognize by a dark undercut with a longer wave on top and a scattering of freckles across the bridge of the nose. Usually dressed in a cropped bottle-green coat with a thin silver ring worn on a cord, Jasmine looks down for a moment before saying something difficult when listening.",
+  "personality": "Jasmine has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To record the ordinary conversation as part of care.",
+  "family": "Teresa Nielsen is Jasmine’s second cousin. Jasmine chooses whether they walk home or sit a while. Teresa brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Low water music*, Teresa says, “My mother called it the kettle. I want to hear her recorded laugh alongside whatever name wins.”",
+  "connections": "Jody Ito. The stopwatch and the billing software meet a person who laughs at minute thirteen.",
+  "familyIds": [
+    "AH-R0221"
+  ],
+  "connectionIds": [
+    "AH-R0883"
+  ],
+  "reactions": [
+    {
+      "situation": "A client wants another minute to finish a button",
+      "response": "Jasmine lets the client finish the button and asks where time can be saved without hurrying them.",
+      "asWritten": "A client wants another minute to finish a button. Jasmine lets the client finish the button and asks where time can be saved without hurrying them."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Jasmine asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Jasmine asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Jasmine explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Jasmine explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

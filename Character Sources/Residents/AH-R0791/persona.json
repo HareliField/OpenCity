@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0791",
+  "personId": "AH-R0791",
+  "name": "Santiago Montoya",
+  "age": 30,
+  "occupation": "Former drug dealer and warehouse worker",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The first straight paycheck",
+  "biography": "stories/residents/06/05-the-first-straight-paycheck.md#ah-r0791",
+  "life": "“I still remember buying a birthday present with money I couldn't explain.” Monday often includes a stop at the corner by Juniper Tailor, where Santiago looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I kept expecting that fat pay envelope. Seeing tax withheld made me furious until my daughter asked what the receipt proved.",
+  "appearance": "On an ordinary day, look for a sand-colored linen shirt and a braided bracelet with a single wooden bead. Santiago has a scattering of freckles across the bridge of the nose, with dark brown curls cut close behind the ears. Santiago draws breath as if to speak and lets someone else go first during a conversation.",
+  "personality": "Santiago is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Santiago is concerned.",
+  "agenda": "To bring the first honest payslip home.",
+  "family": "Bea Morgan is Santiago’s second cousin. Santiago leaves the first voice message. Bea calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A civilian apology*, Bea says, “I checked the dates by my own maternity leave.”",
+  "connections": "Elise Cho (mother). A smaller birthday gift tells the mother more about the new wage than a big speech would. Also in the story is Basil Levi (warehouse trainer).",
+  "familyIds": [
+    "AH-R0937"
+  ],
+  "connectionIds": [
+    "AH-R0796",
+    "AH-R0793"
+  ],
+  "reactions": [
+    {
+      "situation": "An old customer arrives during the new warehouse shift",
+      "response": "Santiago asks the two people to talk away from the work floor and leaves disclosure to the new hire.",
+      "asWritten": "An old customer arrives during the new warehouse shift. Santiago asks the two people to talk away from the work floor and leaves disclosure to the new hire."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Santiago keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Santiago keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Santiago asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Santiago asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

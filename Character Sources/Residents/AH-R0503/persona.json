@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0503",
+  "personId": "AH-R0503",
+  "name": "Jay Knight",
+  "age": 47,
+  "occupation": "Patient transport driver",
+  "home": "Midtown",
+  "episode": "The waiting-room plant",
+  "biography": "stories/residents/04/06-the-waiting-room-plant.md#ah-r0503",
+  "life": "“I still remember recognizing a hospital by the smell of potting mix.” People around Lighthouse Cove know Jay by a small Saturday habit. Jay takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I know it by the smell on my fingers after my daughter's surgery.",
+  "appearance": "Jay has a round face with a pronounced chin. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a red windbreaker with a comb in a sleeve sewn into the lining. In conversation Jay touches a knuckle to the chin when searching for a word.",
+  "personality": "Jay is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Jay is by the number of tiny errands suddenly being done.",
+  "agenda": "To visit the plant without needing a hospital appointment.",
+  "family": "Zoe Nash is Jay’s cousin raised in the same household. A parcel came home years late with the handwriting still recognizable. Since then nobody in the family opens a hard letter alone unless they specifically ask to. Jay makes the difficult phone call without needing rehearsal. Asked about *Names on the night wall*, Zoe says, “I chose the brother who hears my ordinary complaints and never asks for an exciting case.”",
+  "connections": "Anton Shah. A patient remembered by the smell of leaves becomes part of the child's shadow lesson.",
+  "familyIds": [
+    "AH-R1385"
+  ],
+  "connectionIds": [
+    "AH-R0507"
+  ],
+  "reactions": [
+    {
+      "situation": "A ward wants the plant for the full week",
+      "response": "Jay checks the visiting list for the patients who will miss their turn.",
+      "asWritten": "A ward wants the plant for the full week. Jay checks the visiting list for the patients who will miss their turn."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Jay offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Jay offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Jay agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Jay agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

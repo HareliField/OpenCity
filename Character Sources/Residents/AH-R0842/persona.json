@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0842",
+  "personId": "AH-R0842",
+  "name": "Ida Boyd",
+  "age": 27,
+  "occupation": "Bakery apprentice",
+  "home": "Old Town",
+  "episode": "One paid trial",
+  "biography": "stories/residents/06/10-one-paid-trial.md#ah-r0842",
+  "life": "“I still remember washing an oven on my first day with no gloves left.” People around Juniper Street know Ida by a small Sunday habit. Ida knows which of the west-side porches has a seat in the shade.",
+  "voice": "I have done the unglamorous closing shift for eleven months. I want the promise written where I can see it.",
+  "appearance": "Ida has a center part and straight chestnut hair, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Ida rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Ida can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Ida can afford to give, and family knows to take it seriously.",
+  "agenda": "To put the old promise of promotion on paper.",
+  "family": "Sonia Arnett is Ida’s cousin raised in the same household. Ida saves a place. Sonia chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The guarantee*, Sonia says, “I assumed Mum put down savings. I found out when she wouldn't lend me the money for a replacement boiler.”",
+  "connections": "Devin Bernal. The closer helps the apprentice list the unpaid work behind the old promotion promise. Also in the story is Harley Kelly (shift manager).",
+  "familyIds": [
+    "AH-R1071"
+  ],
+  "connectionIds": [
+    "AH-R0847",
+    "AH-R0843"
+  ],
+  "reactions": [
+    {
+      "situation": "The apprentice asks for an old promise in writing",
+      "response": "Ida writes down the remembered promise including who was there to hear it.",
+      "asWritten": "The apprentice asks for an old promise in writing. Ida writes down the remembered promise including who was there to hear it."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Ida keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Ida keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Ida suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Ida suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

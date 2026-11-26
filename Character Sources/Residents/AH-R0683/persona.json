@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0683",
+  "personId": "AH-R0683",
+  "name": "Robin Cao",
+  "age": 51,
+  "occupation": "Metal number cutter",
+  "home": "the western residential streets",
+  "episode": "An address in pencil",
+  "biography": "stories/residents/05/09-an-address-in-pencil.md#ah-r0683",
+  "life": "“I still remember cutting number ones until my wrist got steady.” Wednesday often includes a stop at the public road outside the Port of Asphalt, where Robin can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I make numbers for office buildings. I cut a new one big enough to see without crossing the road.",
+  "appearance": "Robin has a smooth side part with one rebellious curl, an aquiline nose and a square chin, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a stitched row of blue crosses along an old repair. When somebody else has the floor, Robin draws breath as if to speak and lets someone else go first.",
+  "personality": "Robin is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Robin is by the number of tiny errands suddenly being done.",
+  "agenda": "To cut a permanent number visible across the road.",
+  "family": "Nico Ibrahim is Robin’s stepsibling. Robin is free to hang up first. Nico makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Closing soup*, Nico says, “I brought a thermos for my ex. We still buy food for each other even though we cannot share a table.”",
+  "connections": "Bruna Andrade (homeowner). A metal cutter reads the penciled number from the far side of the street.",
+  "familyIds": [
+    "AH-R0547"
+  ],
+  "connectionIds": [
+    "AH-R0681"
+  ],
+  "reactions": [
+    {
+      "situation": "A delivery goes to the newly renumbered neighbor",
+      "response": "Robin checks both doorways before moving the delivery.",
+      "asWritten": "A delivery goes to the newly renumbered neighbor. Robin checks both doorways before moving the delivery."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Robin keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Robin keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Robin agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Robin agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

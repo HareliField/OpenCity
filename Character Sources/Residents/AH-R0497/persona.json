@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0497",
+  "personId": "AH-R0497",
+  "name": "Hector Clay",
+  "age": 55,
+  "occupation": "Repair shop owner",
+  "home": "Eastside",
+  "episode": "The dead man's tab",
+  "biography": "stories/residents/04/05-the-dead-man-s-tab.md#ah-r0497",
+  "life": "“I still remember hanging a new lock after a stranger slept in our shop.” Saturday often includes a stop at the entrance to the Wash House, where Hector stops for local notices even on a day without a load to wash.",
+  "voice": "He charged me rent for a room he didn't own. I came to the reading because I wanted to hear someone say so.",
+  "appearance": "Hector is easy to recognize by a soft fringe that falls across one eyebrow and a softly rounded chin under sharp cheekbones. Usually dressed in an unlined tan jacket with a knotted piece of sail thread on a key ring, Hector raises one eyebrow long before saying yes when listening.",
+  "personality": "Hector finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To tell the family which tenancy was fraudulent.",
+  "family": "Peyton Waters is Hector’s stepsibling. Hector remembers the birthdays. Peyton asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The other side of the cove*, Peyton says, “I brought the cleaner a newspaper every summer.”",
+  "connections": "Ava Nichols. The cook hears from the customer who rented a room the man never owned.",
+  "familyIds": [
+    "AH-R1273"
+  ],
+  "connectionIds": [
+    "AH-R0499"
+  ],
+  "reactions": [
+    {
+      "situation": "A late customer's daughter objects to the memorial payment",
+      "response": "Hector gives the daughter a private chance to say what is upsetting about the payment.",
+      "asWritten": "A late customer's daughter objects to the memorial payment. Hector gives the daughter a private chance to say what is upsetting about the payment."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Hector asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Hector asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Hector waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Hector waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

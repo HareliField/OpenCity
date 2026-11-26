@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1366",
+  "personId": "AH-R1366",
+  "name": "Joel Arendt",
+  "age": 64,
+  "occupation": "Retired canteen worker",
+  "home": "Old Town",
+  "episode": "A last ship together",
+  "biography": "stories/residents/10/02-a-last-ship-together.md#ah-r1366",
+  "life": "“I still remember packing lunches an hour before anyone else stirred.” On Tuesday, near Harbour Bakery, Joel buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I spent forty years packing those two lunches. My partner asked what retirement will change for me.",
+  "appearance": "On an ordinary day, look for a charcoal zip cardigan and a tiny red thread tied through the lowest buttonhole. Joel has a deep crease beside the mouth when smiling, with a thin scattering of white hair over the crown. Joel steadies a cup with both hands while listening during a conversation.",
+  "personality": "Joel carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To give the retiring worker's partner a real voice about home life.",
+  "family": "Ely Kern is Joel’s younger cousin. Joel chooses whether to use it. Ely saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *A tide at noon*, Ely says, “I sent guests down in polished shoes. One guest took hers off and stayed for hours.”",
+  "connections": "Lionel Wu. Packed lunches and one last scorecard complicate the story that only two people are retiring.",
+  "familyIds": [
+    "AH-R0075"
+  ],
+  "connectionIds": [
+    "AH-R1368"
+  ],
+  "reactions": [
+    {
+      "situation": "A younger worker is asked to perform the final lift",
+      "response": "Joel lets the trainee carry out the job they are qualified for and keeps space for the retirees to watch.",
+      "asWritten": "A younger worker is asked to perform the final lift. Joel lets the trainee carry out the job they are qualified for and keeps space for the retirees to watch."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Joel brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Joel brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Joel offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Joel offers to accompany them while they tell the truth."
+    }
+  ]
+}

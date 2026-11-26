@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1405",
+  "personId": "AH-R1405",
+  "name": "Tristan Collins",
+  "age": 43,
+  "occupation": "Parent and commuter",
+  "home": "Midtown",
+  "episode": "Two birthdays in one ward",
+  "biography": "stories/residents/10/06-two-birthdays-in-one-ward.md#ah-r1405",
+  "life": "“I still remember folding a birthday paper carefully after the child tore it open.” People around Studio Boulevard know Tristan by a small Thursday habit. Tristan waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I am the parent afraid there won't be another birthday. My child asked me to stop counting possible futures out loud.",
+  "appearance": "Tristan has a wide brow and a narrow jaw. Look for brown hair pinned away from the temples. On an ordinary day, the familiar outfit is a soft blue checked shirt with a square of clean cloth for polishing smudges. In conversation Tristan touches a knuckle to the chin when searching for a word.",
+  "personality": "Tristan finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To enjoy one birthday without predicting the next.",
+  "family": "Bettine Cross is Tristan’s half-sibling. Tristan is free to hang up first. Bettine makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A chair on the quay*, Bettine says, “I carried it off a ship because a woman in the crew asked if anyone here repaired cane seats.”",
+  "connections": "Malcolm Fields (child). The young patient asks a parent to give the balloon more attention than the forecast.",
+  "familyIds": [
+    "AH-R0012"
+  ],
+  "connectionIds": [
+    "AH-R1402"
+  ],
+  "reactions": [
+    {
+      "situation": "One birthday patient wants a quiet ward",
+      "response": "Tristan lets the quiet patient choose a low-key celebration separate from the party.",
+      "asWritten": "One birthday patient wants a quiet ward. Tristan lets the quiet patient choose a low-key celebration separate from the party."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Tristan puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Tristan puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Tristan waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Tristan waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0587",
+  "personId": "AH-R0587",
+  "name": "Lola Vidal",
+  "age": 47,
+  "occupation": "Linen courier",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Laundry for a stranger",
+  "biography": "stories/residents/04/14-laundry-for-a-stranger.md#ah-r0587",
+  "life": "“I still remember a route nobody knew ended at my cousin's house.” On Sunday, near the blocks below Foundry Lofts, Lola checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I use the linen round to keep an eye on three houses. The shirts make it look like honest nosiness.",
+  "appearance": "Lola has a softly rounded chin under sharp cheekbones. Look for a blunt cut just below the ears. On an ordinary day, the familiar outfit is a sand-colored linen shirt with a train token tied to a zipper pull. In conversation Lola rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Lola has a long memory for unfair prices and a short one for small insults. Lola can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To keep the linen route as an ordinary way of checking in.",
+  "family": "Valentina Jiang is Lola’s cousin raised in the same household. Lola makes room at the table. Valentina brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The returned daughter*, Valentina says, “I heard her say enough in the hallway. I walked her out and saved the father's letter for a day she chooses.”",
+  "connections": "Briar Patel. Borrowing a court shirt depends on knowing the person who actually runs the linen round.",
+  "familyIds": [
+    "AH-R1290"
+  ],
+  "connectionIds": [
+    "AH-R0586"
+  ],
+  "reactions": [
+    {
+      "situation": "A staff supervisor demands the stranger's laundry back",
+      "response": "Lola checks with the shirt's owner before handing it over to anyone else.",
+      "asWritten": "A staff supervisor demands the stranger's laundry back. Lola checks with the shirt's owner before handing it over to anyone else."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Lola asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Lola asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Lola agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Lola agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

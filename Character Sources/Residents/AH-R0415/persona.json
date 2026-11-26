@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0415",
+  "personId": "AH-R0415",
+  "name": "Javier Anders",
+  "age": 26,
+  "occupation": "Bicycle messenger",
+  "home": "Old Town",
+  "episode": "One unposted detour",
+  "biography": "stories/residents/03/12-one-unposted-detour.md#ah-r0415",
+  "life": "“I still remember my first bicycle's saddle held level by string.” Wednesday often includes a stop at the public road outside the Port of Asphalt, where Javier can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I borrowed a bicycle to deliver the last parcel. The parcel was a pair of cycling shoes.",
+  "appearance": "Javier has a deep crease beside the mouth when smiling. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a washed violet jersey with a replacement button a shade darker than the others. In conversation Javier listens with the head tilted a little to the left.",
+  "personality": "Javier treats a small promise with the gravity others reserve for a contract. This makes Javier lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To deliver the final parcel on borrowed wheels.",
+  "family": "Ines Baines is Javier’s aunt by marriage. Javier asks before bringing somebody along. Ines can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Two birthdays in one ward*, Ines says, “I am old enough that a surprise party feels like somebody rehearsing my funeral.”",
+  "connections": "Jeff Jiang. They try the route by bicycle and by memories of the old flood road.",
+  "familyIds": [
+    "AH-R1401"
+  ],
+  "connectionIds": [
+    "AH-R0416"
+  ],
+  "reactions": [
+    {
+      "situation": "A delivery customer refuses the late parcel",
+      "response": "Javier checks with the intended recipient before leaving a late parcel.",
+      "asWritten": "A delivery customer refuses the late parcel. Javier checks with the intended recipient before leaving a late parcel."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Javier agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Javier agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Javier says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Javier says what can be returned and asks whether that will do."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0848",
+  "personId": "AH-R0848",
+  "name": "Frances Acosta",
+  "age": 55,
+  "occupation": "Hotel baker",
+  "home": "the streets inland from Pier Beach",
+  "episode": "One paid trial",
+  "biography": "stories/residents/06/10-one-paid-trial.md#ah-r0848",
+  "life": "“I still remember earning a certificate while the best cook at home had none.” People around the public end of the South Shore boardwalk know Frances by a small Tuesday habit. Frances checks the shade on the benches before deciding how long to stay.",
+  "voice": "I only hire qualified bakers. Watching this trial has made me wonder what my certificate never tested.",
+  "appearance": "Frances has auburn hair cut square at the nape, a crooked front tooth visible when laughing, and a favorite piece of clothing, a boxy denim jacket. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Frances holds eye contact until the other person has finished.",
+  "personality": "Frances is fond of ambitious ideas and deeply suspicious of grand openings. The question Frances asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To let a capable unqualified baker into the next hiring round.",
+  "family": "Remy Cruz is Frances’s second cousin. Frances brings the paper and a pen. Remy decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Names on the night wall*, Remy says, “I chose myself first. After a year of treatment, showing up each week really has been a shared decision between past and present me.”",
+  "connections": "Edward Pike. The certificate holder and the blind taster disagree about where expertise is visible.",
+  "familyIds": [
+    "AH-R1388"
+  ],
+  "connectionIds": [
+    "AH-R0844"
+  ],
+  "reactions": [
+    {
+      "situation": "The apprentice asks for an old promise in writing",
+      "response": "Frances writes down the remembered promise including who was there to hear it.",
+      "asWritten": "The apprentice asks for an old promise in writing. Frances writes down the remembered promise including who was there to hear it."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Frances asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Frances asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Frances accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Frances accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

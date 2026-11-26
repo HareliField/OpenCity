@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1023",
+  "personId": "AH-R1023",
+  "name": "Desmond Monroe",
+  "age": 47,
+  "occupation": "Birth father and press operator",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A dance for two fathers",
+  "biography": "stories/residents/07/13-a-dance-for-two-fathers.md#ah-r1023",
+  "life": "“I still remember sitting outside a rehearsal building too early to go inside.” On Sunday, near the corner by Juniper Tailor, Desmond looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I was gone too long to demand the opening step. I enrolled in lessons anyway.",
+  "appearance": "Desmond is easy to recognize by a smooth side part with one rebellious curl and a small notch in the left eyebrow. Usually dressed in a cream pullover with a pen clipped inside the neckline, Desmond looks toward the door whenever a name is called when listening.",
+  "personality": "Desmond carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To keep dance lessons without demanding the opening step.",
+  "family": "Noel Hudson is Desmond’s cousin. Desmond makes room at the table. Noel brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The million-dollar flat*, Noel says, “I rented the spare bedroom through college.”",
+  "connections": "Tom Moreno. They rehearse the same song after working out who should lead for the first turn. Also in the story is Agnes Lin (daughter).",
+  "familyIds": [
+    "AH-R1224"
+  ],
+  "connectionIds": [
+    "AH-R1022",
+    "AH-R1021"
+  ],
+  "reactions": [
+    {
+      "situation": "The school prints only one father's name",
+      "response": "Desmond asks the student which names and relationships should appear before reprinting.",
+      "asWritten": "The school prints only one father's name. Desmond asks the student which names and relationships should appear before reprinting."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Desmond asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Desmond asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Desmond offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Desmond offers to accompany them while they tell the truth."
+    }
+  ]
+}

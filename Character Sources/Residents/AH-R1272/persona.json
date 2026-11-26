@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1272",
+  "personId": "AH-R1272",
+  "name": "Daphne Ng",
+  "age": 65,
+  "occupation": "Millionaire business seller",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The other side of the cove",
+  "biography": "stories/residents/09/08-the-other-side-of-the-cove.md#ah-r1272",
+  "life": "“I still remember my first company changing hands under a borrowed umbrella.” On Saturday, near Ferris Deli, Daphne asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I gave the money after selling my second company. I wanted anonymity until my late partner's name entered the discussion.",
+  "appearance": "On an ordinary day, look for a washed violet jersey and a seam let out by a narrow strip of contrasting fabric. Daphne has fine brows over wide-set eyes, with silvery hair gathered at the nape. Daphne turns fully toward the person speaking during a conversation.",
+  "personality": "Daphne admires skill and distrusts the idea that skill gives anyone permission to be rude. Daphne learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To agree whether the late partner's name should appear.",
+  "family": "Nathan Neal is Daphne’s cousin’s child. Daphne chooses the music. Nathan puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The split visit*, Nathan says, “I stayed for breakfast because the woman always eats faster when she thinks we're in a hurry.”",
+  "connections": "Aria Machado. A working cleaner and a millionaire decide what, besides two names, the bench will give its users.",
+  "familyIds": [
+    "AH-R0731"
+  ],
+  "connectionIds": [
+    "AH-R1271"
+  ],
+  "reactions": [
+    {
+      "situation": "A former cleaner wants to try the seat before it is installed",
+      "response": "Daphne gets the seat tested by the person who will actually need to stand up from it.",
+      "asWritten": "A former cleaner wants to try the seat before it is installed. Daphne gets the seat tested by the person who will actually need to stand up from it."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Daphne asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Daphne asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Daphne describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Daphne describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

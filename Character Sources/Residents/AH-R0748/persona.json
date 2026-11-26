@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0748",
+  "personId": "AH-R0748",
+  "name": "Xavier Ray",
+  "age": 56,
+  "occupation": "Rail worker",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A boat for sale twice",
+  "biography": "stories/residents/05/15-a-boat-for-sale-twice.md#ah-r0748",
+  "life": "“I still remember the first time I returned to a pier after losing somebody.” People around the steps at Pier Beach know Xavier by a small Friday habit. Xavier watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I cannot read a sale sign from offshore. I came into the marina for the first time since my dad drowned.",
+  "appearance": "Xavier has a narrow face with an expressive upper lip. Look for a smooth side part with one rebellious curl. On an ordinary day, the familiar outfit is a pale blue work shirt with a pair of reading glasses in a cloth sleeve. In conversation Xavier rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Xavier treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To go back through the marina gate.",
+  "family": "Joy Nelson is Xavier’s cousin. Xavier saves a place. Joy chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *A clean coat for court*, Joy says, “I used to run stolen goods with the defendant.”",
+  "connections": "Eden Fisher. The half-share bidder and the person returning to the gate both ask what entry would really cost.",
+  "familyIds": [
+    "AH-R1247"
+  ],
+  "connectionIds": [
+    "AH-R0742"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer wants the old name painted over immediately",
+      "response": "Xavier checks who owns the name before anyone comes down with a paint tin.",
+      "asWritten": "A buyer wants the old name painted over immediately. Xavier checks who owns the name before anyone comes down with a paint tin."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Xavier stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Xavier stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Xavier changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Xavier changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

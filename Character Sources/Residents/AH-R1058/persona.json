@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1058",
+  "personId": "AH-R1058",
+  "name": "Jean King",
+  "age": 57,
+  "occupation": "Laundromat leaseholder",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Reopening at six",
+  "biography": "stories/residents/08/01-reopening-at-six.md#ah-r1058",
+  "life": "“I still remember an owner setting a timer shorter than the advertised wash.” On Wednesday, near the downtown fountain, Jean keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I own the doors and the landlord owns the timer. We're inviting the workers to watch us argue it out.",
+  "appearance": "Jean is easy to recognize by short sandy hair and a marked widow's peak and a wide brow and a narrow jaw. Usually dressed in a faded indigo overshirt with a pressed flower kept in the clear back of a phone case, Jean turns fully toward the person speaking when listening.",
+  "personality": "Jean uses precise names for tools and very approximate names for feelings. People who know Jean well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To negotiate the timer with the workers present.",
+  "family": "Emilio Walker is Jean’s cousin. Jean brings something that can still be enjoyed tomorrow. Emilio checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *One sleeve short*, Emilio says, “I offered a loan jacket and he refused. I had forgotten what it feels like to want one thing that's yours.”",
+  "connections": "Jacob Bowen. The linen sorter asks the leaseholder for privacy alongside opening hours. Also in the story is Toby Miles (employee).",
+  "familyIds": [
+    "AH-R0253"
+  ],
+  "connectionIds": [
+    "AH-R1055",
+    "AH-R1053"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer offers to pay for an extra private hour",
+      "response": "Jean gets the cost of staffing the hour into the conversation before accepting a private fee.",
+      "asWritten": "A customer offers to pay for an extra private hour. Jean gets the cost of staffing the hour into the conversation before accepting a private fee."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Jean says what they know in their own name and refuses to treat a guess as something the child has to disprove.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Jean says what they know in their own name and refuses to treat a guess as something the child has to disprove."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Jean brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Jean brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

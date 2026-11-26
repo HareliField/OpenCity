@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0261",
+  "personId": "AH-R0261",
+  "name": "Kira Ortiz",
+  "age": 69,
+  "occupation": "Retired house painter",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The sheltered corner",
+  "biography": "stories/residents/02/12-the-sheltered-corner.md#ah-r0261",
+  "life": "“I once painted a storm door the same blue as my daughter's pram.” Wednesday often includes a stop at the bank steps, where Kira takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I used to see my daughter's kitchen from the shelter. Our wave was the only conversation some weeks.",
+  "appearance": "On an ordinary day, look for a striped cotton shirt and a partly rubbed-away embroidered initial. Kira has a straight nose and deep-set eyes, with silvery hair gathered at the nape. Kira raises one eyebrow long before saying yes during a conversation.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Kira takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To keep a small morning ritual with the daughter despite the move.",
+  "family": "Jay Montoya is Kira’s younger cousin. Kira offers the first invitation. Jay gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The trust with a typo*, Jay says, “I received this scholarship years ago. I returned the typo letter with one month's pay enclosed.”",
+  "connections": "Jamie Calloway. They compare the morning wave lost at one window with the silence gained at another.",
+  "familyIds": [
+    "AH-R0629"
+  ],
+  "connectionIds": [
+    "AH-R0266"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver goes past the old stop in the rain",
+      "response": "Kira stays with the stranded rider and helps check the next usable stop.",
+      "asWritten": "A driver goes past the old stop in the rain. Kira stays with the stranded rider and helps check the next usable stop."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Kira asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Kira asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Kira asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Kira asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

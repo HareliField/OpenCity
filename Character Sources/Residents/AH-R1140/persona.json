@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1140",
+  "personId": "AH-R1140",
+  "name": "Roland Bloom",
+  "age": 46,
+  "occupation": "Family meal volunteer",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The third bedroom",
+  "biography": "stories/residents/08/09-the-third-bedroom.md#ah-r1140",
+  "life": "“I still remember stretching a Sunday across two different households.” On Sunday, near Ferris Deli, Roland asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I want the family to keep eating at one table after the doors go up. I have promised to come on Thursdays.",
+  "appearance": "On an ordinary day, look for a cropped bottle-green coat and a pocket notebook shaped by years of sitting on it. Roland has a round face with a pronounced chin, with a long plait tucked inside the collar. Roland gives a little nod before asking a hard question during a conversation.",
+  "personality": "Roland is kind in very practical ways and prickly about being thanked in public. Roland loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To keep Thursday supper together after the move.",
+  "family": "Barbara Frost is Roland’s second cousin. Roland chooses an ordinary story to tell. Barbara asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The worker who couldn't read the joke*, Barbara says, “I took the picture to show my brother the crew.”",
+  "connections": "Maria Dias. Trying a noisy room and keeping Thursday supper give the move an ordinary weekly rhythm.",
+  "familyIds": [
+    "AH-R1213"
+  ],
+  "connectionIds": [
+    "AH-R1138"
+  ],
+  "reactions": [
+    {
+      "situation": "The lodger is asked to leave on short notice",
+      "response": "Roland checks where the lodger can go before treating an empty room as a settled fact.",
+      "asWritten": "The lodger is asked to leave on short notice. Roland checks where the lodger can go before treating an empty room as a settled fact."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Roland keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Roland keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Roland gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Roland gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1097",
+  "personId": "AH-R1097",
+  "name": "Jade Hunter",
+  "age": 44,
+  "occupation": "Bakery worker",
+  "home": "Coast Ridge",
+  "episode": "The boy on the corner",
+  "biography": "stories/residents/08/05-the-boy-on-the-corner.md#ah-r1097",
+  "life": "“I still remember sleeping in a hallway to give a nephew my room.” On Monday, near Tideline Market, Jade picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I want to be their foster aunt. My flat is smaller than the official assessor expected and larger than the boys remember.",
+  "appearance": "Jade is easy to recognize by short sandy hair and a marked widow's peak and a strong profile and a little space between the front teeth. Usually dressed in a pale blue work shirt with a train token tied to a zipper pull, Jade draws small circles on a tabletop while waiting when listening.",
+  "personality": "Jade can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To have the spare space assessed as it is.",
+  "family": "Dee Varma is Jade’s half-sibling. Jade brings something that can still be enjoyed tomorrow. Dee checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The blue suit*, Dee says, “My hotel contract would keep the place open through winter.”",
+  "connections": "Beatrice Su. A former customer offering childcare can be asked for references by the prospective foster aunt. Also in the story is Charles Mack (nephew).",
+  "familyIds": [
+    "AH-R0010"
+  ],
+  "connectionIds": [
+    "AH-R1092",
+    "AH-R1091"
+  ],
+  "reactions": [
+    {
+      "situation": "The boy's babysitter takes a new job",
+      "response": "Jade helps the family identify the next uncovered school pickup.",
+      "asWritten": "The boy's babysitter takes a new job. Jade helps the family identify the next uncovered school pickup."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Jade asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Jade asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Jade asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Jade asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

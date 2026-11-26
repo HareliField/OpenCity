@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1263",
+  "personId": "AH-R1263",
+  "name": "Grace Reeves",
+  "age": 33,
+  "occupation": "Adult education tutor",
+  "home": "Midtown",
+  "episode": "School after sixty",
+  "biography": "stories/residents/09/07-school-after-sixty.md#ah-r1263",
+  "life": "“I still remember my oldest student attending in shiny interview shoes.” People around the foot of Harbor Viaduct know Grace by a small Monday habit. Grace pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I am younger than everyone taking my class. I need to ask before calling anyone by their first name.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and a stitched row of blue crosses along an old repair. Grace has a narrow face with an expressive upper lip, with a dark undercut with a longer wave on top. Grace listens with the head tilted a little to the left during a conversation.",
+  "personality": "Grace tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Grace will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To let each mature pupil choose how to be addressed.",
+  "family": "Priya Vance is Grace’s older cousin. Grace is allowed to ask about the bad news afterward. Priya calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *A widow bids again*, Priya says, “I can outbid them without touching my everyday account.”",
+  "connections": "Ada Murphy (adult student). The tutor can change the seat without making the oldest learner explain school in front of the class.",
+  "familyIds": [
+    "AH-R0921"
+  ],
+  "connectionIds": [
+    "AH-R1261"
+  ],
+  "reactions": [
+    {
+      "situation": "An older learner freezes in front of the blackboard",
+      "response": "Grace offers to turn the learner's chair without announcing the reason to the class.",
+      "asWritten": "An older learner freezes in front of the blackboard. Grace offers to turn the learner's chair without announcing the reason to the class."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Grace calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Grace calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Grace repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Grace repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

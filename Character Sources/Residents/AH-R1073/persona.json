@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1073",
+  "personId": "AH-R1073",
+  "name": "Gavin Roche",
+  "age": 42,
+  "occupation": "Bank processor",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The guarantee",
+  "biography": "stories/residents/08/03-the-guarantee.md#ah-r1073",
+  "life": "“I still remember loan forms signed on the other side of bulletproof glass.” On Thursday, near the brick passage off the shop row, Gavin takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I processed the loan in six minutes and spent an hour telling the family how that was possible.",
+  "appearance": "Gavin has a center part and straight chestnut hair, one cheek that creases before the other, and a favorite piece of clothing, a boxy denim jacket. It usually goes with a small enamel bird on the lapel. When somebody else has the floor, Gavin counts on the side of one finger where hardly anybody notices.",
+  "personality": "Gavin has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To explain the pledge as clearly as it was processed quickly.",
+  "family": "Wesley Carr is Gavin’s first cousin once removed. Gavin chooses the music. Wesley puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The quiet verse*, Wesley says, “I signed the words so my sister could follow.”",
+  "connections": "Cameron Kelly. A loan processed in minutes can undo a downsizing plan worked on for months.",
+  "familyIds": [
+    "AH-R0273"
+  ],
+  "connectionIds": [
+    "AH-R1080"
+  ],
+  "reactions": [
+    {
+      "situation": "A borrower learns exactly what the guarantee cost",
+      "response": "Gavin puts the actual pledged property and repayment date on paper.",
+      "asWritten": "A borrower learns exactly what the guarantee cost. Gavin puts the actual pledged property and repayment date on paper."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Gavin offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Gavin offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Gavin asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Gavin asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

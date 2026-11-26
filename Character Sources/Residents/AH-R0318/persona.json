@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0318",
+  "personId": "AH-R0318",
+  "name": "Lee Murphy",
+  "age": 66,
+  "occupation": "Former ballroom hostess",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A ship without postcards",
+  "biography": "stories/residents/03/02-a-ship-without-postcards.md#ah-r0318",
+  "life": "“I still remember a ballroom door too narrow for our scenery.” People around the blocks below Foundry Lofts know Lee by a small Friday habit. Lee checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I found our old dance hall in the background of a harbor print and sent it to my ex.",
+  "appearance": "Lee has two white streaks in otherwise dark hair, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, a plum-colored cardigan. It usually goes with a tiny red thread tied through the lowest buttonhole. When somebody else has the floor, Lee raises one eyebrow long before saying yes.",
+  "personality": "Lee has a talent for getting adversaries to laugh at exactly the same thing. Lee knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To mail the dance-hall scene to a former partner.",
+  "family": "Conrad Mann is Lee’s first cousin once removed. Lee chooses an ordinary story to tell. Conrad asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *A chair of one's own*, Conrad says, “I rent my chair and earn well. I never tell newcomers my partner pays our mortgage.”",
+  "connections": "August Jackson. A folded boat reaches one grandchild while a dance-hall print finds an old partner.",
+  "familyIds": [
+    "AH-R0852"
+  ],
+  "connectionIds": [
+    "AH-R0316"
+  ],
+  "reactions": [
+    {
+      "situation": "A souvenir shop offers to print the cards as an advert",
+      "response": "Lee checks whether the families want their messages used outside the envelopes.",
+      "asWritten": "A souvenir shop offers to print the cards as an advert. Lee checks whether the families want their messages used outside the envelopes."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Lee takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Lee takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Lee asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Lee asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1101",
+  "personId": "AH-R1101",
+  "name": "Paloma Arendt",
+  "age": 65,
+  "occupation": "Retired language tutor",
+  "home": "Eastside",
+  "episode": "Two names on the chart",
+  "biography": "stories/residents/08/06-two-names-on-the-chart.md#ah-r1101",
+  "life": "“I still remember giving my old surname when I was too ill to think.” On Wednesday, near the entrance to the Wash House, Paloma stops for local notices even on a day without a load to wash.",
+  "voice": "I have been telling the same story twice for years. I want to keep the childhood name printed somewhere.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a braided bracelet with a single wooden bead. Paloma has fine brows over wide-set eyes, with steel-colored hair cut square above the collar. Paloma grins on one side while the eyes stay serious during a conversation.",
+  "personality": "Paloma is fond of ambitious ideas and deeply suspicious of grand openings. The question Paloma asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To reunite the notes under the name the patient chooses.",
+  "family": "Dale Garrett is Paloma’s younger relative by marriage. Paloma chooses the familiar route. Dale can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The kitchen without a boss*, Dale says, “I came in to wash dishes. I was the one who remembered the owner's list of regulars who need softer rolls.”",
+  "connections": "Naomi Jones (adult daughter). The mother's childhood folder opens a part of her life her daughter never knew. Also in the story is Dana Harris (former spouse).",
+  "familyIds": [
+    "AH-R1443"
+  ],
+  "connectionIds": [
+    "AH-R1108",
+    "AH-R1102"
+  ],
+  "reactions": [
+    {
+      "situation": "A clerk calls the wrong surname in the waiting room",
+      "response": "Paloma waits for the patient to give a preferred public name before repeating it.",
+      "asWritten": "A clerk calls the wrong surname in the waiting room. Paloma waits for the patient to give a preferred public name before repeating it."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Paloma keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Paloma keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Paloma accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Paloma accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0358",
+  "personId": "AH-R0358",
+  "name": "Lisa Anders",
+  "age": 57,
+  "occupation": "Cabinet maker",
+  "home": "Old Town",
+  "episode": "The hospital radio",
+  "biography": "stories/residents/03/06-the-hospital-radio.md#ah-r0358",
+  "life": "“I still remember sanding the stand for an aunt's transistor.” People around Harbour Bakery know Lisa by a small Monday habit. Lisa buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I can rebuild the cabinet as a bedside shelf. The patient asked me to include the knob that does nothing.",
+  "appearance": "Lisa has short copper curls, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a cropped bottle-green coat. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Lisa starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Lisa loves a well-told anecdote and distrusts the neat ending. The parts Lisa remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To build a usable shelf around the redundant knob.",
+  "family": "Dale Crawford is Lisa’s cousin raised in the same household. Lisa calls about good news first. Dale is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *A dance for two fathers*, Dale says, “I lend formal shoes. I exchanged two right shoes so the men had to meet before the ceremony.”",
+  "connections": "Adela Griffin. The wheel that needn't work can keep the position remembered by touch. Also in the story is Stevie Heath (radio restorer).",
+  "familyIds": [
+    "AH-R1027"
+  ],
+  "connectionIds": [
+    "AH-R0352",
+    "AH-R0353"
+  ],
+  "reactions": [
+    {
+      "situation": "The old tuning wheel goes missing from the shelf",
+      "response": "Lisa checks the repair bench before assuming anyone took the dial.",
+      "asWritten": "The old tuning wheel goes missing from the shelf. Lisa checks the repair bench before assuming anyone took the dial."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Lisa stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Lisa stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Lisa includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Lisa includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

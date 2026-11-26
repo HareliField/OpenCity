@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0092",
+  "personId": "AH-R0092",
+  "name": "Lane Clegg",
+  "age": 39,
+  "occupation": "Diabetic pastry critic",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The thirteenth doughnut",
+  "biography": "stories/residents/01/10-the-thirteenth-doughnut.md#ah-r0092",
+  "life": "Lane reviews pastries by keeping separate notes on first bite and last bite. Portion sizes took on new meaning after the diabetes diagnosis. Sharing a cake is part pleasure, part calculation, and entirely Lane's business. Monday often includes a stop at the steps at Pier Beach, where Lane watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I cut the gift into four and gave three pieces away. Somebody wrote that I disliked it. I came back with the knife my grandmother used for celebrations and explained what a little can mean.",
+  "appearance": "Lane has auburn hair cut square at the nape, a straight nose and deep-set eyes, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a fabric zip pull cut from a school scarf. When somebody else has the floor, Lane touches a knuckle to the chin when searching for a word.",
+  "personality": "Lane always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Lane is trying to tell the difference before the bill arrives.",
+  "agenda": "To introduce a tasting portion customers can easily divide.",
+  "family": "Miles Sato is Lane’s older relative by marriage. Lane chooses an ordinary story to tell. Miles asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *School after sixty*, Miles says, “I brought the fountain pen I saved for finishing school.”",
+  "connections": "Jon Solis. They compare two ways of sharing a pastry without treating a small portion as a refusal.",
+  "familyIds": [
+    "AH-R1266"
+  ],
+  "connectionIds": [
+    "AH-R0095"
+  ],
+  "reactions": [
+    {
+      "situation": "A late worker finds somebody has eaten the saved breakfast",
+      "response": "Lane finds out which shift the breakfast was for before offering a replacement.",
+      "asWritten": "A late worker finds somebody has eaten the saved breakfast. Lane finds out which shift the breakfast was for before offering a replacement."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Lane tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Lane tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Lane suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Lane suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

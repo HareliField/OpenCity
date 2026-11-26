@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0160",
+  "personId": "AH-R0160",
+  "name": "Nell Graves",
+  "age": 31,
+  "occupation": "Wedding photographer",
+  "home": "Midtown",
+  "episode": "Hem by hem",
+  "biography": "stories/residents/02/01-hem-by-hem.md#ah-r0160",
+  "life": "“My first wedding assignment was my parents marrying each other a second time.” On Tuesday, near the corner outside Coastal Barber, Nell usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I've come to photograph the three waistlines. My own wedding pictures show nothing below our shoulders.",
+  "appearance": "On an ordinary day, look for a brown corduroy jacket and a partly rubbed-away embroidered initial. Nell has a scattering of freckles across the bridge of the nose, with a smooth side part with one rebellious curl. Nell looks at people's hands before looking at what they carry during a conversation.",
+  "personality": "Nell carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To photograph all three women's changes to the same garment.",
+  "family": "Toby Diaz is Nell’s half-sibling. Nell brings a spare shopping bag. Toby chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The clean ledger*, Toby says, “I sell drugs and used to think settling money settled everything.”",
+  "connections": "Parker Cho. They photograph the original chalk before the hem is washed.",
+  "familyIds": [
+    "AH-R0647"
+  ],
+  "connectionIds": [
+    "AH-R0159"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative asks to hide the changed seam",
+      "response": "Nell asks the bride herself what should show above the hem.",
+      "asWritten": "A relative asks to hide the changed seam. Nell asks the bride herself what should show above the hem."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Nell offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Nell offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Nell offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Nell offers to accompany them while they tell the truth."
+    }
+  ]
+}

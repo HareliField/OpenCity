@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0095",
+  "personId": "AH-R0095",
+  "name": "Jon Solis",
+  "age": 27,
+  "occupation": "Dishwasher and new father",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The thirteenth doughnut",
+  "biography": "stories/residents/01/10-the-thirteenth-doughnut.md#ah-r0095",
+  "life": "Jon learned to sleep between dish shifts and the baby's first feeds. He can carry a box level on a bus without thinking. He has yet to make it home with icing that looks the way it did in the shop. On Friday, near the window at Night Shift Donuts, Jon knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I kept the lemon one in a bag all day for my wife. The sugar stuck to the paper. She liked peeling it off better than eating the cake. I asked for the next one unglazed.",
+  "appearance": "Jon has a loose dark braid, a broad nose and a deep dimple on one cheek, and a favorite piece of clothing, a long navy raincoat. It usually goes with a partly rubbed-away embroidered initial. When somebody else has the floor, Jon rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Jon has a long memory for unfair prices and a short one for small insults. Jon can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To bring his wife a breakfast she can eat straight off the wrapper.",
+  "family": "Iva Hayes is Jon’s second cousin. Jon asks before bringing somebody along. Iva can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A prize nobody entered*, Iva says, “I translated two pages as a favor. My name is on the cover and the author's wishes aren't.”",
+  "connections": "Lane Clegg. They compare two ways of sharing a pastry without treating a small portion as a refusal.",
+  "familyIds": [
+    "AH-R1117"
+  ],
+  "connectionIds": [
+    "AH-R0092"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer tries to sell the spare doughnut story to a brand",
+      "response": "Jon asks the baker and the intended recipient for their separate consent.",
+      "asWritten": "A customer tries to sell the spare doughnut story to a brand. Jon asks the baker and the intended recipient for their separate consent."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Jon tells the first helper what they actually saw and makes room for the rider to answer for themself.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Jon tells the first helper what they actually saw and makes room for the rider to answer for themself."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Jon agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Jon agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1206",
+  "personId": "AH-R1206",
+  "name": "Emma Davis",
+  "age": 69,
+  "occupation": "Neighbor and retired mechanic",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A room above the dryers",
+  "biography": "stories/residents/09/01-a-room-above-the-dryers.md#ah-r1206",
+  "life": "“I still remember a pensioner posing proudly in a mended cardigan.” On Tuesday, near the brick passage off the shop row, Emma takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I live across the landing. I asked for free sittings for the old people nobody photographs unless they're blowing candles out.",
+  "appearance": "Emma is easy to recognize by two white streaks in otherwise dark hair and a small notch in the left eyebrow. Usually dressed in a brown corduroy jacket with a stitched row of blue crosses along an old repair, Emma gathers both sleeves neatly before settling in when listening.",
+  "personality": "Emma gets protective of anybody who comes into a meeting unprepared. Emma privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To secure portrait sittings for overlooked neighbors.",
+  "family": "Vera Rios is Emma’s second cousin. Emma sets the time to leave. Vera picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The small signature*, Vera says, “For years I bought my crews soup from that cart.”",
+  "connections": "Ingrid Kaur. A free sitting for a pensioner and an after-school session share the same sink.",
+  "familyIds": [
+    "AH-R0021"
+  ],
+  "connectionIds": [
+    "AH-R1209"
+  ],
+  "reactions": [
+    {
+      "situation": "An investor offers free publicity for the studio",
+      "response": "Emma asks what cost the publicity will cover before agreeing to an exhibition.",
+      "asWritten": "An investor offers free publicity for the studio. Emma asks what cost the publicity will cover before agreeing to an exhibition."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Emma asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Emma asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Emma offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Emma offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

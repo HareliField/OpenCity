@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1434",
+  "personId": "AH-R1434",
+  "name": "Noel Emery",
+  "age": 48,
+  "occupation": "Nursery worker",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A house divided kindly",
+  "biography": "stories/residents/10/09-a-house-divided-kindly.md#ah-r1434",
+  "life": "“I still remember transplanting a rose from a neighbor's closing shop.” On Sunday, near Breakwater Way, Noel stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I can move one rosebush and cannot promise it will flower again. I told both owners before taking a spade to it.",
+  "appearance": "Out of work clothes, look for a narrow-striped sweater and a fabric zip pull cut from a school scarf. Noel has heavy brows and an unusually delicate jaw, with a blunt cut just below the ears. Noel presses the lips together to keep a smile in during a conversation.",
+  "personality": "Noel enjoys routines and will defend the right of someone else to break one. As a result, Noel is often everyone's favorite cover for a missed morning.",
+  "agenda": "To move only rosebushes capable of surviving.",
+  "family": "Daniel Fraser is Noel’s cousin’s child. Noel is free to hang up first. Daniel makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Reopening at six*, Daniel says, “I am the teenager everyone expects to cover late.”",
+  "connections": "Marco Lam. A path for a walking frame has to coexist with the rose that may not survive moving.",
+  "familyIds": [
+    "AH-R1060"
+  ],
+  "connectionIds": [
+    "AH-R1437"
+  ],
+  "reactions": [
+    {
+      "situation": "A grandchild objects to the garden plan",
+      "response": "Noel asks the household members who will use the garden how they want to live in it now.",
+      "asWritten": "A grandchild objects to the garden plan. Noel asks the household members who will use the garden how they want to live in it now."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Noel asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Noel asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Noel keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Noel keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

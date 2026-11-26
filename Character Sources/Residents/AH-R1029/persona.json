@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1029",
+  "personId": "AH-R1029",
+  "name": "Layla March",
+  "age": 52,
+  "occupation": "Event volunteer",
+  "home": "Coast Ridge",
+  "episode": "A dance for two fathers",
+  "biography": "stories/residents/07/13-a-dance-for-two-fathers.md#ah-r1029",
+  "life": "“I still remember folding up celebration chairs before my own invitation came.” People around the public road outside the Port of Asphalt know Layla by a small Tuesday habit. Layla can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I am the other father who didn't get invited. I helped set up the chairs where I could hear the music.",
+  "appearance": "Layla has a smooth side part with one rebellious curl, a long face and high cheekbones, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with a fabric zip pull cut from a school scarf. When somebody else has the floor, Layla raises one eyebrow long before saying yes.",
+  "personality": "Layla is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To hear the dance from somewhere comfortable.",
+  "family": "Suki Mossman is Layla’s second cousin. Layla gets to change the plan. Suki offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Ten fingers*, Suki says, “I knew her husband by the hand he held out for her on our front step.”",
+  "connections": "Dale Crawford. A pair of formal shoes and the last stack of chairs get two adults into the room early.",
+  "familyIds": [
+    "AH-R0101"
+  ],
+  "connectionIds": [
+    "AH-R1027"
+  ],
+  "reactions": [
+    {
+      "situation": "The school prints only one father's name",
+      "response": "Layla asks the student which names and relationships should appear before reprinting.",
+      "asWritten": "The school prints only one father's name. Layla asks the student which names and relationships should appear before reprinting."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Layla asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Layla asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Layla thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Layla thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

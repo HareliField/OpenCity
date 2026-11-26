@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0084",
+  "personId": "AH-R0084",
+  "name": "Orla Till",
+  "age": 49,
+  "occupation": "Overnight nurse",
+  "home": "the western residential streets",
+  "episode": "The porch light",
+  "biography": "stories/residents/01/09-the-porch-light.md#ah-r0084",
+  "life": "Orla measures the night shift in the distance between places where somebody knows she's walking home. She never thought the porch owner knew about her. Asking for the pedometer back would be easier than telling him what the light meant. Sunday often includes a stop at Juniper Street, where Orla knows which of the west-side porches has a seat in the shade.",
+  "voice": "I used the lamp to know exactly how far I had left to walk. I'm giving him my old pedometer with the count from the gate to my door still taped on its back.",
+  "appearance": "Out of work clothes, look for a boxy denim jacket and a braided bracelet with a single wooden bead. Orla has a flat bridge to the nose and a mobile brow, with a high puff tied with plain cord. Orla looks toward the door whenever a name is called during a conversation.",
+  "personality": "Orla carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To let the owner know how far his lamp carried a stranger.",
+  "family": "Zara Barclay is Orla’s second cousin. Orla asks before bringing somebody along. Zara can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A four o'clock kitchen*, Zara says, “I love feeding strangers. I don't want my children to think that's easier than feeding them.”",
+  "connections": "Abel Weaver (porch owner). The night route and the porch lamp turn out to have been part of the same marriage without the nurse ever knowing it.",
+  "familyIds": [
+    "AH-R1291"
+  ],
+  "connectionIds": [
+    "AH-R0081"
+  ],
+  "reactions": [
+    {
+      "situation": "A shift worker turns up after the porch goes dark",
+      "response": "Orla keeps the worker company at the gate and lets the homeowner explain the dark.",
+      "asWritten": "A shift worker turns up after the porch goes dark. Orla keeps the worker company at the gate and lets the homeowner explain the dark."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Orla writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Orla writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Orla offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Orla offers to accompany them while they tell the truth."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0045",
+  "personId": "AH-R0045",
+  "name": "Bina Marsh",
+  "age": 33,
+  "occupation": "Housing outreach worker",
+  "home": "the blocks north of the port",
+  "episode": "The aquarium",
+  "biography": "stories/residents/01/05-the-aquarium.md#ah-r0045",
+  "life": "Bina left a landlord's office with a useful set of phone numbers and an uncomfortable knowledge of how quickly a spreadsheet can turn a home into vacant stock. She carries a spare charger so residents can make their own calls. Saturday often includes a stop at the crossing outside Verve Nail Studio, where Bina notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "He kept telling me the filter was humming wrong. It took me twenty minutes to understand he was asking whether his home would still be there tomorrow. I rang him from beside the glass.",
+  "appearance": "Bina is easy to recognize by dark brown curls cut close behind the ears and a crooked front tooth visible when laughing. Usually dressed in a sand-colored linen shirt with a knotted piece of sail thread on a key ring, Bina draws small circles on a tabletop while waiting when listening.",
+  "personality": "Bina is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To get the tenant a direct answer about returning home.",
+  "family": "Aidan Henry is Bina’s older cousin. Bina makes the call. Aidan is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A prize nobody entered*, Aidan says, “I sat on the jury and recognized our family's kitchen in the scene.”",
+  "connections": "Denny Ames. A surrendered spare key gives the housing worker a way to call a displaced man from beside his own fish.",
+  "familyIds": [
+    "AH-R1113"
+  ],
+  "connectionIds": [
+    "AH-R0041"
+  ],
+  "reactions": [
+    {
+      "situation": "A reporter asks which neighbor held the aquarium key",
+      "response": "Bina asks whether the tenant wants the key holder named before saying anything to the reporter.",
+      "asWritten": "A reporter asks which neighbor held the aquarium key. Bina asks whether the tenant wants the key holder named before saying anything to the reporter."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Bina draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Bina draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Bina thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Bina thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1217",
+  "personId": "AH-R1217",
+  "name": "Finn Heller",
+  "age": 58,
+  "occupation": "Staffing contractor",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The worker who couldn't read the joke",
+  "biography": "stories/residents/09/02-the-worker-who-couldn-t-read-the-joke.md#ah-r1217",
+  "life": "“I still remember hiring a young man whose father once employed me.” People around the courtyard by Ferry Street Rooms know Finn by a small Wednesday habit. Finn prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I have hired the same crew for decades. This is the first time two of them have asked to meet me privately.",
+  "appearance": "Finn is easy to recognize by a cropped cut that shows the shape of the ears and a small notch in the left eyebrow. Usually dressed in an old plum windbreaker with a printed handkerchief folded into the pocket, Finn grins on one side while the eyes stay serious when listening.",
+  "personality": "Finn carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To offer individual conversations before the staff meeting.",
+  "family": "Peyton Myers is Finn’s cousin. Finn saves a place. Peyton chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *A house divided kindly*, Peyton says, “I offered the first shared meal. Both families brought their own salt, which suggests a useful arrangement for the gate.”",
+  "connections": "Bianca Breen. The break-room manager and staffing contractor agree on a private way to hear individual workers.",
+  "familyIds": [
+    "AH-R1440"
+  ],
+  "connectionIds": [
+    "AH-R1215"
+  ],
+  "reactions": [
+    {
+      "situation": "A manager wants the photographed worker to address the crew",
+      "response": "Finn offers the pictured worker a private conversation before any meeting with the crew.",
+      "asWritten": "A manager wants the photographed worker to address the crew. Finn offers the pictured worker a private conversation before any meeting with the crew."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Finn starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Finn starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Finn offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Finn offers to accompany them while they tell the truth."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0012",
+  "personId": "AH-R0012",
+  "name": "Bettine Cross",
+  "age": 37,
+  "occupation": "Stevedore",
+  "home": "Midtown",
+  "episode": "A chair on the quay",
+  "biography": "stories/residents/01/02-a-chair-on-the-quay.md#ah-r0012",
+  "life": "Bettine goes to sea to visit cousins when holidays permit, so she understands the weight an ordinary object gains after months afloat. The crew member who first entrusted her with the chair worries her more than the people claiming it on shore. People around Tideline Market know Bettine by a small Friday habit. Bettine picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I carried it off a ship because a woman in the crew asked if anyone here repaired cane seats. Now half the port has a claim on it. I still owe that woman an answer.",
+  "appearance": "Back on the street, look for a narrow-striped sweater and a comb in a sleeve sewn into the lining. Bettine has a broad nose and a deep dimple on one cheek, with a cropped cut that shows the shape of the ears. Bettine holds eye contact until the other person has finished during a conversation.",
+  "personality": "Bettine tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Bettine will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To give the seafarer who handed over the chair a straight answer.",
+  "family": "Tristan Collins is Bettine’s half-sibling. Bettine makes the call. Tristan is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Two birthdays in one ward*, Tristan says, “I am the parent afraid there won't be another birthday.”",
+  "connections": "Willa True. They disagree about moving the chair indoors before the ship's crew gets an answer.",
+  "familyIds": [
+    "AH-R1405"
+  ],
+  "connectionIds": [
+    "AH-R0016"
+  ],
+  "reactions": [
+    {
+      "situation": "A farewell photographer asks everyone to move aside",
+      "response": "Bettine checks that the granddaughter can see the chair before people start arranging the adults.",
+      "asWritten": "A farewell photographer asks everyone to move aside. Bettine checks that the granddaughter can see the chair before people start arranging the adults."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Bettine draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Bettine draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Bettine repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Bettine repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

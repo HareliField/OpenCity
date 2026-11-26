@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0673",
+  "personId": "AH-R0673",
+  "name": "Paul Smith",
+  "age": 31,
+  "occupation": "Child's parent and cashier",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The misplaced umbrella",
+  "biography": "stories/residents/05/08-the-misplaced-umbrella.md#ah-r0673",
+  "life": "“I still remember a child's first important use of the word yours.” People around the entrance to the Wash House know Paul by a small Friday habit. Paul stops for local notices even on a day without a load to wash.",
+  "voice": "I saw the switch but the toddler holding both had just learned mine and yours.",
+  "appearance": "On an ordinary day, look for a boxy denim jacket and a cloth patch so neatly matched it only shows in strong light. Paul has a scattering of freckles across the bridge of the nose, with auburn hair cut square at the nape. Paul grins on one side while the eyes stay serious during a conversation.",
+  "personality": "Paul is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Paul is concerned.",
+  "agenda": "To let the child explain the swap.",
+  "family": "Ana West is Paul’s half-sibling. Paul keeps the photographs. Ana knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *A call heard twice*, Ana says, “I walked over with a cup of water. I am grateful the letter didn't mention me because I cried afterward.”",
+  "connections": "June Kent. A child's confusion about ownership leads the secondhand buyer to the aunt who made the first dress.",
+  "familyIds": [
+    "AH-R1236"
+  ],
+  "connectionIds": [
+    "AH-R0679"
+  ],
+  "reactions": [
+    {
+      "situation": "Both umbrella owners turn up at the beach",
+      "response": "Paul gets the two families together in the shade to identify the items.",
+      "asWritten": "Both umbrella owners turn up at the beach. Paul gets the two families together in the shade to identify the items."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Paul agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Paul agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Paul asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Paul asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

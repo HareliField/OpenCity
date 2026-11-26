@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1239",
+  "personId": "AH-R1239",
+  "name": "Harley Dias",
+  "age": 30,
+  "occupation": "Station records assistant",
+  "home": "Eastside",
+  "episode": "A call heard twice",
+  "biography": "stories/residents/09/04-a-call-heard-twice.md#ah-r1239",
+  "life": "“I still remember calling back to check on a family after the form was filed.” On Monday, near the public road outside the Port of Asphalt, Harley can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I called the resident later about paperwork. She asked whether the two people she remembered ever got a lunch break together.",
+  "appearance": "On an ordinary day, look for a cream pullover and a knotted piece of sail thread on a key ring. Harley has a flat bridge to the nose and a mobile brow, with short black hair swept back. Harley draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Harley feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To bring the caller news of a shared lunch.",
+  "family": "Len Brune is Harley’s older cousin. Harley chooses whether they walk home or sit a while. Len brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The last green*, Len says, “His old route passes the crooked arrow I painted in my first week.”",
+  "connections": "Zachary Silva. A neighbor handing over an envelope gives the records worker a place to send a personal reply.",
+  "familyIds": [
+    "AH-R0116"
+  ],
+  "connectionIds": [
+    "AH-R1240"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor offers thanks to only one call taker",
+      "response": "Harley gets both halves of the call into the account before a name goes up.",
+      "asWritten": "A supervisor offers thanks to only one call taker. Harley gets both halves of the call into the account before a name goes up."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Harley walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Harley walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Harley lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Harley lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

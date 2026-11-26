@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0991",
+  "personId": "AH-R0991",
+  "name": "Devin Mills",
+  "age": 65,
+  "occupation": "Family caterer",
+  "home": "the streets around Foundry Lofts",
+  "episode": "An old restaurant debt",
+  "biography": "stories/residents/07/10-an-old-restaurant-debt.md#ah-r0991",
+  "life": "“I still remember selling the last of my father's good crockery.” On Tuesday, near the window at Night Shift Donuts, Devin knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I sold the dead man's plates last month and finally had the money. The date still felt like Friday to me.",
+  "appearance": "Devin has full cheeks and a mouth that pulls slightly to one side. Look for gray hair trimmed very close behind the ears. Away from the heat of the kitchen, the familiar outfit is a dark green knitted vest with a pocket notebook shaped by years of sitting on it. In conversation Devin touches a knuckle to the chin when searching for a word.",
+  "personality": "Devin can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Devin can afford to give, and family knows to take it seriously.",
+  "agenda": "To settle the wake debt while the old cooks can hear it.",
+  "family": "Opal Finch is Devin’s second cousin. Devin knows which ones can be shared. Opal keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The wrong bicycle*, Opal says, “I recognized the child's bell by the second ring it never makes.”",
+  "connections": "Amanda Walker (adult child). Parent and grown child decide what the belated payment can do for another bereaved household.",
+  "familyIds": [
+    "AH-R0033"
+  ],
+  "connectionIds": [
+    "AH-R0992"
+  ],
+  "reactions": [
+    {
+      "situation": "A family returns to settle the old wake invoice",
+      "response": "Devin brings out the old book and lets the family say how they want the payment recorded.",
+      "asWritten": "A family returns to settle the old wake invoice. Devin brings out the old book and lets the family say how they want the payment recorded."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Devin brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Devin brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Devin suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Devin suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0514",
+  "personId": "AH-R0514",
+  "name": "Adrian Dias",
+  "age": 71,
+  "occupation": "Retired fisherman",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A borrowed name",
+  "biography": "stories/residents/04/07-a-borrowed-name.md#ah-r0514",
+  "life": "“I still remember disliking my nickname long before I learned its origin.” On Tuesday, near Maré Coffee, Adrian likes the table where people coming off shift stop checking the time.",
+  "voice": "I hate the fictional nickname. I brought the author the one the children actually gave me.",
+  "appearance": "On an ordinary day, look for a charcoal zip cardigan and a watch on a cracked leather band. Adrian has a round face with a pronounced chin, with tightly curled gray hair. Adrian gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Adrian has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To let the author hear the nickname actually used.",
+  "family": "Maeve Hamm is Adrian’s cousin raised in the same household. Adrian brings whatever was actually growing or affordable that week. Maeve makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The quiet verse*, Maeve says, “I heard the fountain through that gap. I've lived beside it for years and never knew it had two rhythms.”",
+  "connections": "Josephine Fields. A mother's widely told story sounds different in the real person's preferred words.",
+  "familyIds": [
+    "AH-R0278"
+  ],
+  "connectionIds": [
+    "AH-R0512"
+  ],
+  "reactions": [
+    {
+      "situation": "A reader asks the real person to autograph the novel",
+      "response": "Adrian gives the customer a graceful way to decline the autograph.",
+      "asWritten": "A reader asks the real person to autograph the novel. Adrian gives the customer a graceful way to decline the autograph."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Adrian brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Adrian brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Adrian explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Adrian explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

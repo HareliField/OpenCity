@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0636",
+  "personId": "AH-R0636",
+  "name": "Samuel Molina",
+  "age": 46,
+  "occupation": "Station administrator's partner and florist",
+  "home": "the blocks north of the port",
+  "episode": "One clean day",
+  "biography": "stories/residents/05/04-one-clean-day.md#ah-r0636",
+  "life": "“I still remember an old school nickname heard on the radio.” Wednesday often includes a stop at Ferris Deli, where Samuel asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I only knew my partner's working voice. I heard his school nickname and he sounded fourteen.",
+  "appearance": "Samuel is easy to recognize by short sandy hair and a marked widow's peak and an aquiline nose and a square chin. Usually dressed in a pale blue work shirt with a copper-colored clasp that has been repaired by hand, Samuel looks toward the door whenever a name is called when listening.",
+  "personality": "Samuel talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Samuel's ways of saying that it is all right to leave.",
+  "agenda": "To hear the working partner's first nickname.",
+  "family": "Nelson Carbone is Samuel’s cousin. Samuel brings something that can still be enjoyed tomorrow. Nelson checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The sheltered corner*, Nelson says, “I sell coffee on the old corner. My first customer is now a pensioner who only comes to talk.”",
+  "connections": "Teresa Lopez. A uniform and a school nickname briefly belong to the same young-looking person.",
+  "familyIds": [
+    "AH-R0264"
+  ],
+  "connectionIds": [
+    "AH-R0632"
+  ],
+  "reactions": [
+    {
+      "situation": "The person everyone expects to speak wants to sit down",
+      "response": "Samuel gives the expected speaker a seat and lets the old classmates start talking amongst themselves.",
+      "asWritten": "The person everyone expects to speak wants to sit down. Samuel gives the expected speaker a seat and lets the old classmates start talking amongst themselves."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Samuel writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Samuel writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Samuel says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Samuel says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

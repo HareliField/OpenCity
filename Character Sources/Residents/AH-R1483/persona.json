@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1483",
+  "personId": "AH-R1483",
+  "name": "Philip Moreau",
+  "age": 31,
+  "occupation": "New home-care worker",
+  "home": "the western residential streets",
+  "episode": "The last home visit",
+  "biography": "stories/residents/10/14-the-last-home-visit.md#ah-r1483",
+  "life": "“I still remember receiving a retiring worker's perfectly illegible notebook.” Saturday often includes a stop at the brick passage off the shop row, where Philip takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I am the successor. I would like to make one mistake that hasn't already been made by someone everyone adores.",
+  "appearance": "On an ordinary day, look for a sand-colored linen shirt and a braided bracelet with a single wooden bead. Philip has full cheeks and a mouth that pulls slightly to one side, with a loose dark braid. Philip leans a shoulder against the wall during long conversations during a conversation.",
+  "personality": "Philip can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Philip can afford to give, and family knows to take it seriously.",
+  "agenda": "To make a relationship that belongs to the new worker.",
+  "family": "Quinn Navarro is Philip’s second cousin. Philip decides what stays off the paper. Quinn brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Station steps in rain*, Quinn says, “I kept the wheelchair space clear and missed the speech my daughter wrote.”",
+  "connections": "Ariel Powell (retiring carer). The retiring visitor and the new one share a round without expecting the new worker to inherit all the old preferences.",
+  "familyIds": [
+    "AH-R0484"
+  ],
+  "connectionIds": [
+    "AH-R1481"
+  ],
+  "reactions": [
+    {
+      "situation": "A client tells the retiring carer what they disliked",
+      "response": "Philip lets the client finish the uncomfortable answer before proposing a fix.",
+      "asWritten": "A client tells the retiring carer what they disliked. Philip lets the client finish the uncomfortable answer before proposing a fix."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Philip accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Philip accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Philip suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Philip suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

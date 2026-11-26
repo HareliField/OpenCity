@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1035",
+  "personId": "AH-R1035",
+  "name": "Evelyn Gupta",
+  "age": 47,
+  "occupation": "School scheduler",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The carer's afternoon",
+  "biography": "stories/residents/07/14-the-carer-s-afternoon.md#ah-r1035",
+  "life": "“I still remember a care calendar too small for the journeys between visits.” Sunday often includes a stop at the market by Market Flats, where Evelyn often waits until the delivery baskets are stacked before going in.",
+  "voice": "I made a rota that divided time equally and forgot my brother's bus takes an hour each way.",
+  "appearance": "Evelyn has a smooth side part with one rebellious curl, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with a stitched row of blue crosses along an old repair. When somebody else has the floor, Evelyn takes off the watch before a long conversation.",
+  "personality": "Evelyn takes a rejection personally for a day and analytically on the second morning. Evelyn can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To correct the rota for the real travel time.",
+  "family": "Adela Ferraro is Evelyn’s first cousin once removed. Evelyn gets to change the plan. Adela offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The second dog*, Adela says, “I turned the photographs into a spot-the-difference game so my little niece would give evidence in her own words.”",
+  "connections": "Alicia Sáenz. A sibling offering help checks the proposed rota against real travel time.",
+  "familyIds": [
+    "AH-R0189"
+  ],
+  "connectionIds": [
+    "AH-R1032"
+  ],
+  "reactions": [
+    {
+      "situation": "The carer's Wednesday relief calls in sick",
+      "response": "Evelyn tells the carer plainly how much of Wednesday can still be covered.",
+      "asWritten": "The carer's Wednesday relief calls in sick. Evelyn tells the carer plainly how much of Wednesday can still be covered."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Evelyn calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Evelyn calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Evelyn turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Evelyn turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

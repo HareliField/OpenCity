@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0153",
+  "personId": "AH-R0153",
+  "name": "Clyde Ho",
+  "age": 55,
+  "occupation": "Tailoring tutor",
+  "home": "Old Town",
+  "episode": "Hem by hem",
+  "biography": "stories/residents/02/01-hem-by-hem.md#ah-r0153",
+  "life": "“I once taught stitching to a room that owned one needle between them.” People around the public end of the South Shore boardwalk know Clyde by a small Sunday habit. Clyde checks the shade on the benches before deciding how long to stay.",
+  "voice": "My fingers know the aunt's stitch. She always pulled too hard when she was angry.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a fabric zip pull cut from a school scarf. Clyde has a strong profile and a little space between the front teeth, with a cropped cut that shows the shape of the ears. Clyde starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Clyde is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To identify which aunt made the repairs nobody claimed.",
+  "family": "Lina Ryan is Clyde’s half-sibling. Clyde brings the paper and a pen. Lina decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The first language*, Lina says, “I read the wrong page aloud to show her adults can survive a mistake.”",
+  "connections": "Briar Mann. They compare the hidden seam with the older woman's remembered stitch.",
+  "familyIds": [
+    "AH-R0964"
+  ],
+  "connectionIds": [
+    "AH-R0151"
+  ],
+  "reactions": [
+    {
+      "situation": "The bride wants to keep the old pocket",
+      "response": "Clyde leaves the pocket in place while the bride tries the dress on.",
+      "asWritten": "The bride wants to keep the old pocket. Clyde leaves the pocket in place while the bride tries the dress on."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Clyde asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Clyde asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Clyde helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Clyde helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

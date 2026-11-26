@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0927",
+  "personId": "AH-R0927",
+  "name": "Morgan Freeman",
+  "age": 54,
+  "occupation": "Lease archivist",
+  "home": "Coast Ridge",
+  "episode": "A widow bids again",
+  "biography": "stories/residents/07/03-a-widow-bids-again.md#ah-r0927",
+  "life": "“I still remember a tenant agreement written across a picture of a gull.” Sunday often includes a stop at Ferris Deli, where Morgan asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I still have a lease written on a birthday card. It tells me how much a promise depends on who's holding it.",
+  "appearance": "Morgan has brown hair pinned away from the temples, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Morgan gives a little nod before asking a hard question.",
+  "personality": "Morgan always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Morgan is trying to tell the difference before the bill arrives.",
+  "agenda": "To protect the promises written into the early leases.",
+  "family": "Anya Li is Morgan’s cousin. Morgan brings something that can still be enjoyed tomorrow. Anya checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The bitter orange*, Anya says, “I squeezed the orange she carried in her pocket.”",
+  "connections": "Sadie Breen. Card leases and rents paid in groceries establish how long the tenants have already shaped the building.",
+  "familyIds": [
+    "AH-R0242"
+  ],
+  "connectionIds": [
+    "AH-R0922"
+  ],
+  "reactions": [
+    {
+      "situation": "The millionaire bidder offers a private deal",
+      "response": "Morgan gets the offer written down where the tenant group can consider it.",
+      "asWritten": "The millionaire bidder offers a private deal. Morgan gets the offer written down where the tenant group can consider it."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Morgan sits beside them without expecting a performance and asks if they want to go outside.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Morgan sits beside them without expecting a performance and asks if they want to go outside."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Morgan suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Morgan suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

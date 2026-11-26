@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0678",
+  "personId": "AH-R0678",
+  "name": "Denise Hamm",
+  "age": 54,
+  "occupation": "Sewing teacher",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The misplaced umbrella",
+  "biography": "stories/residents/05/08-the-misplaced-umbrella.md#ah-r0678",
+  "life": "“I still remember learning to patch by stitching through my own sleeve.” People around the corner outside Coastal Barber know Denise by a small Tuesday habit. Denise usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I am teaching mending. I want that patch on the poster with the owner's name underneath.",
+  "appearance": "Denise has short, uneven waves that refuse to lie flat, a round face with a pronounced chin, and a favorite piece of clothing, a moss-green cardigan. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Denise looks at people's hands before looking at what they carry.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To credit the owner at the mending class.",
+  "family": "Elise Sharp is Denise’s younger cousin. Denise calls about good news first. Elise is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The new language at dinner*, Elise says, “I am the speech assistant. I want family words in the exercise cards alongside the hospital's safe examples.”",
+  "connections": "Idris Yeo. The dress patch comes with credit for its seamstress in the mending class.",
+  "familyIds": [
+    "AH-R1189"
+  ],
+  "connectionIds": [
+    "AH-R0671"
+  ],
+  "reactions": [
+    {
+      "situation": "A hotel worker asks to throw the patched umbrella away",
+      "response": "Denise puts the patched umbrella aside until the owner can explain the repair.",
+      "asWritten": "A hotel worker asks to throw the patched umbrella away. Denise puts the patched umbrella aside until the owner can explain the repair."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Denise asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Denise asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Denise listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Denise listens first to the account of how it was actually used."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1359",
+  "personId": "AH-R1359",
+  "name": "Evan Koch",
+  "age": 44,
+  "occupation": "Coffee shop counter worker",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A closing hour",
+  "biography": "stories/residents/10/01-a-closing-hour.md#ah-r1359",
+  "life": "“I still remember hearing the first birds on the street during a power cut.” Tuesday often includes a stop at Ferris Deli, where Evan asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I work next door and hear the spinners every day. On the quiet morning I heard a bird in our passage for the first time.",
+  "appearance": "Evan has a blunt cut just below the ears, a crooked front tooth visible when laughing, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a tiny red thread tied through the lowest buttonhole. When somebody else has the floor, Evan draws breath as if to speak and lets someone else go first.",
+  "personality": "Evan is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Evan is concerned.",
+  "agenda": "To enjoy the newly audible birds on the quiet morning.",
+  "family": "Jody Ito is Evan’s cousin raised in the same household. Evan chooses whether they walk home or sit a while. Jody brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Care with a clock*, Jody says, “I wrote the billing software and never watched somebody fasten a row of small buttons.”",
+  "connections": "Victor Blair. A familiar warm shirt is one of the few things the neighbor misses in the sudden quiet.",
+  "familyIds": [
+    "AH-R0883"
+  ],
+  "connectionIds": [
+    "AH-R1355"
+  ],
+  "reactions": [
+    {
+      "situation": "The operator closes the doors for a family birthday",
+      "response": "Evan looks for a neighboring wash service and leaves the family birthday intact.",
+      "asWritten": "The operator closes the doors for a family birthday. Evan looks for a neighboring wash service and leaves the family birthday intact."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Evan keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Evan keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Evan asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Evan asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

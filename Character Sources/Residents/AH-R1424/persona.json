@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1424",
+  "personId": "AH-R1424",
+  "name": "Harold Crawford",
+  "age": 52,
+  "occupation": "Family physician",
+  "home": "the western residential streets",
+  "episode": "No lifeguard at dusk",
+  "biography": "stories/residents/10/08-no-lifeguard-at-dusk.md#ah-r1424",
+  "life": "“I still remember being asked for a medical opinion at my own beach picnic.” Monday often includes a stop at Juniper Street, where Harold knows which of the west-side porches has a seat in the shade.",
+  "voice": "I am her doctor and emphatically don't get to decide how she spends an ordinary evening.",
+  "appearance": "Harold is easy to recognize by a dark undercut with a longer wave on top and a straight nose and deep-set eyes. Usually dressed in a rust-colored canvas coat with a replacement button a shade darker than the others, Harold looks toward the door whenever a name is called when listening.",
+  "personality": "Harold has a quick wit and an equally quick sense of shame. A joke is often Harold's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To respect the swimmer's control over the evening.",
+  "family": "Gareth Jiang is Harold’s cousin raised in the same household. Harold sets the time to leave. Gareth picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The understudy sings*, Gareth says, “I read lips in rehearsals. I offered to teach both singers without asking either for a diagnosis.”",
+  "connections": "Milo Neal. The swimmer's sibling and physician both give up the temptation to decide for someone else.",
+  "familyIds": [
+    "AH-R1174"
+  ],
+  "connectionIds": [
+    "AH-R1429"
+  ],
+  "reactions": [
+    {
+      "situation": "A passerby assumes the beach is still staffed",
+      "response": "Harold points out the published end of cover and gets the passerby an accurate answer about tomorrow.",
+      "asWritten": "A passerby assumes the beach is still staffed. Harold points out the published end of cover and gets the passerby an accurate answer about tomorrow."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Harold keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Harold keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Harold seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Harold seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0679",
+  "personId": "AH-R0679",
+  "name": "June Kent",
+  "age": 33,
+  "occupation": "Thrift shop worker",
+  "home": "Midtown",
+  "episode": "The misplaced umbrella",
+  "biography": "stories/residents/05/08-the-misplaced-umbrella.md#ah-r0679",
+  "life": "“I still remember a secondhand coat with another girl's ribbon still in it.” Friday often includes a stop at the downtown fountain, where June keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I bought the umbrella secondhand. I've found the aunt who made the dress and she wants to tell me about it.",
+  "appearance": "On an ordinary day, look for a soft blue checked shirt and a printed handkerchief folded into the pocket. June has an aquiline nose and a square chin, with short copper curls. June raises one eyebrow long before saying yes during a conversation.",
+  "personality": "June is kind in very practical ways and prickly about being thanked in public. June loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To meet the aunt who wore the original dress.",
+  "family": "Howard Starr is June’s half-sibling. June remembers the birthdays. Howard asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Two names on the chart*, Howard says, “I checked her records at night and thought she was a new arrival despite our daughters sharing a classroom.”",
+  "connections": "Paul Smith. A child's confusion about ownership leads the secondhand buyer to the aunt who made the first dress.",
+  "familyIds": [
+    "AH-R1104"
+  ],
+  "connectionIds": [
+    "AH-R0673"
+  ],
+  "reactions": [
+    {
+      "situation": "Both umbrella owners turn up at the beach",
+      "response": "June gets the two families together in the shade to identify the items.",
+      "asWritten": "Both umbrella owners turn up at the beach. June gets the two families together in the shade to identify the items."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "June asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. June asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "June gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, June gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0658",
+  "personId": "AH-R0658",
+  "name": "Cecil Hooper",
+  "age": 31,
+  "occupation": "Bicycle courier",
+  "home": "Midtown",
+  "episode": "Two left slippers",
+  "biography": "stories/residents/05/06-two-left-slippers.md#ah-r0658",
+  "life": "“I still remember bringing slippers to three houses in one storm.” Saturday often includes a stop at Maré Coffee, where Cecil likes the table where people coming off shift stop checking the time.",
+  "voice": "I can deliver to the whole ward in my lunch hour if somebody will lend me a bicycle.",
+  "appearance": "Cecil is easy to recognize by thick, tightly coiled hair and a strong profile and a little space between the front teeth. Usually dressed in a moss-green cardigan with a cloth patch so neatly matched it only shows in strong light, Cecil holds eye contact until the other person has finished when listening.",
+  "personality": "Cecil finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To borrow a bike for the ward delivery round.",
+  "family": "Lee Carr is Cecil’s cousin raised in the same household. Cecil offers the first invitation. Lee gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The worker who couldn't read the joke*, Lee says, “I used to avoid the break room. We are holding one lunch where people can explain what actually makes them laugh.”",
+  "connections": "Rain Daniels. The courier's route makes a practical place for easy-to-find names on labels.",
+  "familyIds": [
+    "AH-R1219"
+  ],
+  "connectionIds": [
+    "AH-R0655"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor offers shoes that are far too large",
+      "response": "Cecil offers to look for a usable pair before anyone is asked to walk in loose shoes.",
+      "asWritten": "A visitor offers shoes that are far too large. Cecil offers to look for a usable pair before anyone is asked to walk in loose shoes."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Cecil puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Cecil puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Cecil points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Cecil points to the person who noticed the original mistake."
+    }
+  ]
+}

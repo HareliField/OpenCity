@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0948",
+  "personId": "AH-R0948",
+  "name": "Silas Rubio",
+  "age": 59,
+  "occupation": "Robbery survivor and shopkeeper",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The release address",
+  "biography": "stories/residents/07/05-the-release-address.md#ah-r0948",
+  "life": "“I still remember closing the shop after a robbery and going home to hungry children.” People around the brick passage off the shop row know Silas by a small Tuesday habit. Silas takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I own the shop he robbed. My own kids know him only as the man who sends birthday cards.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a pocket notebook shaped by years of sitting on it. Silas has a small notch in the left eyebrow, with salt-and-pepper curls. Silas looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Silas can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To let the shopkeeper's children ask about the man in the cards.",
+  "family": "Duncan Griffin is Silas’s cousin. Silas chooses whether to use it. Duncan saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The broken till*, Duncan says, “I offered to repair the till free. The spring had been bent around a coin from my old country.”",
+  "connections": "Darcy Ray. The victim's representative and the robbed shopkeeper decide which notice their families need.",
+  "familyIds": [
+    "AH-R0395"
+  ],
+  "connectionIds": [
+    "AH-R0944"
+  ],
+  "reactions": [
+    {
+      "situation": "A child wants to leave the homecoming meal early",
+      "response": "Silas gives the child an ordinary excuse to step outside without suggesting they reject the father.",
+      "asWritten": "A child wants to leave the homecoming meal early. Silas gives the child an ordinary excuse to step outside without suggesting they reject the father."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Silas asks the cashier to hold it and lets a claimant identify the writing and amount privately.",
+      "asWritten": "An envelope of wages is found under a café chair. Silas asks the cashier to hold it and lets a claimant identify the writing and amount privately."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Silas asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Silas asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0970",
+  "personId": "AH-R0970",
+  "name": "Wynn Martin",
+  "age": 14,
+  "occupation": "School pupil",
+  "home": "the blocks north of the port",
+  "episode": "The first language",
+  "biography": "stories/residents/07/07-the-first-language.md#ah-r0970",
+  "life": "“I still remember trying my classmate's tongue-twister on my big sister.” On Thursday, near the bank steps, Wynn takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I am the classmate she fears. I thought she was showing off until I tried one of those lines myself.",
+  "appearance": "Wynn is easy to recognize by auburn hair cut square at the nape and a deep crease beside the mouth when smiling. Usually dressed in a soft blue checked shirt with a narrow brass watch set a little fast, Wynn gathers both sleeves neatly before settling in when listening.",
+  "personality": "Wynn gets protective of anybody who comes into a meeting unprepared. Wynn privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To try the classmate's line before judging it.",
+  "family": "Parker Parker is Wynn’s parent’s cousin. Wynn checks the date twice. Parker brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The return of a witness*, Parker says, “I invited her for lunch and didn't tell her who would be at the table.”",
+  "connections": "Edward Roy. The classmate trying the line hears how a chosen name ought to sound aloud.",
+  "familyIds": [
+    "AH-R1394"
+  ],
+  "connectionIds": [
+    "AH-R0965"
+  ],
+  "reactions": [
+    {
+      "situation": "A grandparent tries to correct a word in front of classmates",
+      "response": "Wynn asks the grandparent to save the correction until the pupil asks for it.",
+      "asWritten": "A grandparent tries to correct a word in front of classmates. Wynn asks the grandparent to save the correction until the pupil asks for it."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Wynn agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Wynn agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Wynn offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Wynn offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

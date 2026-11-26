@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0044",
+  "personId": "AH-R0044",
+  "name": "Pat Doran",
+  "age": 41,
+  "occupation": "Former burglar and glazier",
+  "home": "Old Town",
+  "episode": "The aquarium",
+  "biography": "stories/residents/01/05-the-aquarium.md#ah-r0044",
+  "life": "Pat learned glazing while serving a sentence. Customers sometimes ask for lurid stories when all he wants is to explain the price of glass. His daughter trusts the nights he calls from a bus stop more than the nights he promises to be home early. People around Ferris Deli know Pat by a small Monday habit. Pat asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I chipped a pane carrying the tank out. Once I'd have disappeared before anybody saw. I spent the evening cutting a replacement and missed the last bus to my daughter's.",
+  "appearance": "Pat has a loose dark braid, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a long navy raincoat. It usually goes with a fabric zip pull cut from a school scarf. When somebody else has the floor, Pat starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Pat is fond of ambitious ideas and deeply suspicious of grand openings. The question Pat asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To replace the chipped pane before the tank is filled again.",
+  "family": "Marina Liu is Pat’s half-sibling. Pat keeps the photographs. Marina knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The carer's afternoon*, Marina says, “I said I'd pay for respite and then lost my biggest account.”",
+  "connections": "Tessa Abreu (probation officer). They finish a probation conversation with a heavy corner of glass between their hands.",
+  "familyIds": [
+    "AH-R1036"
+  ],
+  "connectionIds": [
+    "AH-R0049"
+  ],
+  "reactions": [
+    {
+      "situation": "The tenant calls while everyone is arguing over the tank",
+      "response": "Pat quietens the group long enough for the tenant to hear the tank and decide what should happen next.",
+      "asWritten": "The tenant calls while everyone is arguing over the tank. Pat quietens the group long enough for the tenant to hear the tank and decide what should happen next."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Pat checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Pat checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Pat accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Pat accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0851",
+  "personId": "AH-R0851",
+  "name": "Yasmin Vega",
+  "age": 32,
+  "occupation": "Nail technician",
+  "home": "Eastside",
+  "episode": "A chair of one's own",
+  "biography": "stories/residents/06/11-a-chair-of-one-s-own.md#ah-r0851",
+  "life": "“I still remember losing a week's appointments to a family wedding.” People around the market by Market Flats know Yasmin by a small Friday habit. Yasmin often waits until the delivery baskets are stacked before going in.",
+  "voice": "I have enough clients until one of them goes on maternity leave. I drew my budget with her baby arriving early.",
+  "appearance": "After the last appointment, look for a moss-green cardigan and a pen clipped inside the neckline. Yasmin has a crooked front tooth visible when laughing, with auburn hair cut square at the nape. Yasmin starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Yasmin always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Yasmin is trying to tell the difference before the bill arrives.",
+  "agenda": "To secure a chair agreement that survives a client's maternity leave.",
+  "family": "Lee Roche is Yasmin’s stepsibling. Yasmin asks before bringing somebody along. Lee can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The kitchen without a boss*, Lee says, “I bake the quiet-shift bread nobody photographs.”",
+  "connections": "Cynthia Hall (mother). Mother and daughter put the chair deposit down as a family loan, with terms both understand.",
+  "familyIds": [
+    "AH-R1442"
+  ],
+  "connectionIds": [
+    "AH-R0858"
+  ],
+  "reactions": [
+    {
+      "situation": "The studio asks for its chair deposit by Friday",
+      "response": "Yasmin checks whether the chair renter has seen the terms before the deposit is due.",
+      "asWritten": "The studio asks for its chair deposit by Friday. Yasmin checks whether the chair renter has seen the terms before the deposit is due."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Yasmin finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Yasmin finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Yasmin suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Yasmin suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

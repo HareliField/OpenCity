@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0361",
+  "personId": "AH-R0361",
+  "name": "Jorge Dias",
+  "age": 55,
+  "occupation": "Retired scaffolder",
+  "home": "Midtown",
+  "episode": "Overdue by a lifetime",
+  "biography": "stories/residents/03/07-overdue-by-a-lifetime.md#ah-r0361",
+  "life": "“I still remember being laughed at for reading with my finger.” Saturday often includes a stop at Harbour Bakery, where Jorge buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I borrowed it after failing a reading test. This is the first time I've finished the last page.",
+  "appearance": "Jorge is easy to recognize by short black hair swept back and a strong profile and a little space between the front teeth. Usually dressed in a long navy raincoat with a pen clipped inside the neckline, Jorge rubs a thumb along the edge of the nearest pocket when listening.",
+  "personality": "Jorge enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To finish the library reading in front of the original lender.",
+  "family": "Audrey Kahn is Jorge’s first cousin once removed. Jorge makes room at the table. Audrey brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The misplaced umbrella*, Audrey says, “I rented the parasol by the hour. Its whole day's income is now sitting over a street chess game.”",
+  "connections": "Byron Carbone. They turn the unpaid fine into a reading the former pupil actually wants to finish.",
+  "familyIds": [
+    "AH-R0674"
+  ],
+  "connectionIds": [
+    "AH-R0363"
+  ],
+  "reactions": [
+    {
+      "situation": "The former pupil offers to pay forty years of fines",
+      "response": "Jorge asks the library what it actually needs from the returning reader.",
+      "asWritten": "The former pupil offers to pay forty years of fines. Jorge asks the library what it actually needs from the returning reader."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Jorge accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Jorge accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Jorge puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Jorge puts the deal away and suggests a walk."
+    }
+  ]
+}

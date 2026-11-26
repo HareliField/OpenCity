@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0089",
+  "personId": "AH-R0089",
+  "name": "Ari Pennrose",
+  "age": 36,
+  "occupation": "Energy auditor",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The porch light",
+  "biography": "stories/residents/01/09-the-porch-light.md#ah-r0089",
+  "life": "Ari's job rewards the number of wasted kilowatts identified in a district. An elderly nurse kept asking where his figures accounted for safe journeys home. He has started walking the blocks he used to measure from the office. On Sunday, near the corner by Juniper Tailor, Ari looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I used that lit window in a slide about waste. The night nurse was in the audience and stayed behind. I've asked her to record what the walk sounds like in darkness.",
+  "appearance": "Ari has a smooth side part with one rebellious curl, a strong profile and a little space between the front teeth, and a favorite piece of clothing, an unlined tan jacket. It usually goes with a narrow brass watch set a little fast. When somebody else has the floor, Ari listens with the head tilted a little to the left.",
+  "personality": "Ari is fond of ambitious ideas and deeply suspicious of grand openings. The question Ari asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To measure the usefulness of the light on an actual night walk.",
+  "family": "Alex Cotton is Ari’s half-sibling. Ari makes the call. Alex is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A boat for sale twice*, Alex says, “I want the name painted over. It's my mother's name and she wants it back for her own dinghy.”",
+  "connections": "June Wicks. One has the morning papers and the other the night-light figures. Together they can reconstruct how long the porch stayed dark.",
+  "familyIds": [
+    "AH-R0749"
+  ],
+  "connectionIds": [
+    "AH-R0088"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer offers extra for the porch lamp",
+      "response": "Ari asks the owner whether the lamp is even part of the sale before discussing the offer.",
+      "asWritten": "A buyer offers extra for the porch lamp. Ari asks the owner whether the lamp is even part of the sale before discussing the offer."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Ari finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Ari finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Ari accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Ari accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

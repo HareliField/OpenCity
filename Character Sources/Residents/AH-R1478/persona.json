@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1478",
+  "personId": "AH-R1478",
+  "name": "Gale Farah",
+  "age": 70,
+  "occupation": "Retired stagehand",
+  "home": "Midtown",
+  "episode": "One last dress rehearsal",
+  "biography": "stories/residents/10/13-one-last-dress-rehearsal.md#ah-r1478",
+  "life": "“I still remember sitting alone after the props had all gone away.” People around the crossing outside Verve Nail Studio know Gale by a small Wednesday habit. Gale notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I have no children and love an empty theater. I chose the back so this could stay somebody else's night.",
+  "appearance": "Gale has a neat white crop, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, a red windbreaker. It usually goes with a cloth patch so neatly matched it only shows in strong light. When somebody else has the floor, Gale draws small circles on a tabletop while waiting.",
+  "personality": "Gale loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To give the mother the best private view.",
+  "family": "Gavin Kang is Gale’s first cousin once removed. Gale chooses the music. Gavin puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A doctor moves away*, Gavin says, “I sent her one photograph of the tattoo she helped me keep when everyone suggested covering it.”",
+  "connections": "Yvette Allard. A kitchen worker who covered this time takes a seat beside the quiet listener at the next rehearsal.",
+  "familyIds": [
+    "AH-R1255"
+  ],
+  "connectionIds": [
+    "AH-R1475"
+  ],
+  "reactions": [
+    {
+      "situation": "The stage manager asks if anybody can stay for a second ending",
+      "response": "Gale checks who can actually stay and which ride home would be lost.",
+      "asWritten": "The stage manager asks if anybody can stay for a second ending. Gale checks who can actually stay and which ride home would be lost."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Gale offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Gale offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Gale offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Gale offers one about their own embarrassment instead."
+    }
+  ]
+}

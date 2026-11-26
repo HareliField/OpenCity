@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1492",
+  "personId": "AH-R1492",
+  "name": "Samuel Mehta",
+  "age": 54,
+  "occupation": "Liveaboard resident and printer",
+  "home": "a boat at South Shore Harbor",
+  "episode": "The last light at the harbor",
+  "biography": "stories/residents/10/15-the-last-light-at-the-harbor.md#ah-r1492",
+  "life": "“I still remember rewiring the cabin where my grown daughter learned to duck.” On Friday, near Tideline Market, Samuel picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I turn ours off from below because my hands no longer reach the switch. My daughter moved it before she left town.",
+  "appearance": "Samuel is easy to recognize by short, uneven waves that refuse to lie flat and fine brows over wide-set eyes. Usually dressed in a mustard canvas overshirt with a seam let out by a narrow strip of contrasting fabric, Samuel raises one eyebrow long before saying yes when listening.",
+  "personality": "Samuel always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Samuel is trying to tell the difference before the bill arrives.",
+  "agenda": "To keep the cabin switch within reach.",
+  "family": "Jude Wick is Samuel’s half-sibling. Samuel calls back when there is finally a little privacy. Jude leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The wrong bicycle*, Jude says, “Both wheels were built in my shop. I spoke for the wheel I remembered, and the child corrected me.”",
+  "connections": "Noel Ford. The resident and electrician agree that an accessible switch can still belong in human hands.",
+  "familyIds": [
+    "AH-R0035"
+  ],
+  "connectionIds": [
+    "AH-R1498"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants to walk home along the docks in silence",
+      "response": "Samuel walks alongside without making the relative fill the silence.",
+      "asWritten": "A relative wants to walk home along the docks in silence. Samuel walks alongside without making the relative fill the silence."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Samuel offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Samuel offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Samuel suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Samuel suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

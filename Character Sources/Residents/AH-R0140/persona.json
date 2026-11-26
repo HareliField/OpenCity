@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0140",
+  "personId": "AH-R0140",
+  "name": "Pia Mercerly",
+  "age": 52,
+  "occupation": "Community cook",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Two portions",
+  "biography": "stories/residents/01/14-two-portions.md#ah-r0140",
+  "life": "Pia has prepared enough comfort food to know that a gentle cook isn't always what a person wants. The retired machinist at the western house enjoys explaining exactly how she has got his partner's recipe wrong. Saturday often includes a stop at the entrance to the Wash House, where Pia stops for local notices even on a day without a load to wash.",
+  "voice": "The man gives me his late partner's recipes and corrects every batch. I want him to sit in my kitchen one afternoon while I'm still making the mistakes.",
+  "appearance": "Pia is easy to recognize by a dark undercut with a longer wave on top and a softly rounded chin under sharp cheekbones. Usually dressed in a plum-colored cardigan with a stitched row of blue crosses along an old repair, Pia raises one eyebrow long before saying yes when listening.",
+  "personality": "Pia loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To give the retired cook a say in one whole afternoon of preparation.",
+  "family": "Devin Jeong is Pia’s cousin. Pia makes room at the table. Devin brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The crane shadow*, Devin says, “I thought the bird was a stain and scrubbed one wing away.”",
+  "connections": "Tori Gran. They exchange a blank shopping list for some of the diner's most opinionated recipes. Also in the story is Eamon Tor (home diner).",
+  "familyIds": [
+    "AH-R0617"
+  ],
+  "connectionIds": [
+    "AH-R0135",
+    "AH-R0134"
+  ],
+  "reactions": [
+    {
+      "situation": "The diner asks to have company without being asked about care",
+      "response": "Pia lets the diner start an ordinary conversation and leaves the care questions for another time.",
+      "asWritten": "The diner asks to have company without being asked about care. Pia lets the diner start an ordinary conversation and leaves the care questions for another time."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Pia separates the money question from the broken promise and asks which one the family wants to discuss first.",
+      "asWritten": "A family supper turns into an argument about old debt. Pia separates the money question from the broken promise and asks which one the family wants to discuss first."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Pia offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Pia offers one about their own embarrassment instead."
+    }
+  ]
+}

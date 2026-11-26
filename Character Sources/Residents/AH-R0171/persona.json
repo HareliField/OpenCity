@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0171",
+  "personId": "AH-R0171",
+  "name": "Harley Cao",
+  "age": 35,
+  "occupation": "Sandwich cart cook",
+  "home": "the blocks north of the port",
+  "episode": "The sandwich board",
+  "biography": "stories/residents/02/03-the-sandwich-board.md#ah-r0171",
+  "life": "“Our family recipes survive on the backs of eleven greasy menus.” People around the bank steps know Harley by a small Friday habit. Harley takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "My mum wrote that last price for the kids from the court. I want to chalk it back in every morning.",
+  "appearance": "Harley has a center part and straight chestnut hair, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a stitched row of blue crosses along an old repair. When somebody else has the floor, Harley counts on the side of one finger where hardly anybody notices.",
+  "personality": "Harley has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To put the children's price back on the board.",
+  "family": "Ashley West is Harley’s stepsibling. Harley keeps the photographs. Ashley knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The last light at the harbor*, Ashley says, “I always leave my lamp longest because nobody is waiting in my flat.”",
+  "connections": "Sonia Lee. The person who wants the cheap price restored hears why all the other prices came off. Also in the story is Rosemary Morris (auction lender).",
+  "familyIds": [
+    "AH-R1491"
+  ],
+  "connectionIds": [
+    "AH-R0180",
+    "AH-R0172"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer offers to erase the board and repaint it",
+      "response": "Harley asks the former owner to record the board before the paint is changed.",
+      "asWritten": "A buyer offers to erase the board and repaint it. Harley asks the former owner to record the board before the paint is changed."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Harley offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Harley offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Harley explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Harley explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0812",
+  "personId": "AH-R0812",
+  "name": "Olivia Teo",
+  "age": 44,
+  "occupation": "Parcel sorter",
+  "home": "Coast Ridge",
+  "episode": "Reading the payslip",
+  "biography": "stories/residents/06/07-reading-the-payslip.md#ah-r0812",
+  "life": "“I still remember the looping signature I borrowed from my spouse.” On Sunday, near the approach to Seabright Court, Olivia likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I sign my wife's name for deliveries. Tonight I want to learn to write mine on a wage dispute.",
+  "appearance": "Olivia has a wide brow and a narrow jaw. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a red windbreaker with a seam let out by a narrow strip of contrasting fabric. In conversation Olivia counts on the side of one finger where hardly anybody notices.",
+  "personality": "Olivia has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To sign a pay query unaided.",
+  "family": "Gabriel Han is Olivia’s half-sibling. Olivia gets to change the plan. Gabriel offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The misplaced umbrella*, Gabriel says, “I promised never to leave things on the beach.”",
+  "connections": "Eli Fong. A signed wage query has to make sense in both languages before it travels.",
+  "familyIds": [
+    "AH-R0680"
+  ],
+  "connectionIds": [
+    "AH-R0815"
+  ],
+  "reactions": [
+    {
+      "situation": "An employer asks who is attending the class",
+      "response": "Olivia protects the attendance list and offers general information about the class.",
+      "asWritten": "An employer asks who is attending the class. Olivia protects the attendance list and offers general information about the class."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Olivia asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Olivia asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Olivia explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Olivia explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

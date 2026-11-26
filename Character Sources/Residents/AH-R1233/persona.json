@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1233",
+  "personId": "ah-pd-148",
+  "name": "Lara Finch",
+  "age": 51,
+  "occupation": "Command officer",
+  "home": "Old Town",
+  "episode": "A call heard twice",
+  "biography": "stories/residents/09/04-a-call-heard-twice.md#ah-r1233",
+  "life": "“I still remember a letter marked for the wrong desk coming to me anyway.” On Friday, near the public road outside the Port of Asphalt, Lara can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I supervise the desk. I was about to post a single staff photograph before I checked the two time entries.",
+  "appearance": "Lara has auburn hair cut square at the nape, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a thin silver ring worn on a cord. When somebody else has the floor, Lara draws small circles on a tabletop while waiting.",
+  "personality": "Lara prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To publish both staff names with the writer's consent.",
+  "family": "Edgar Carbone is Lara’s cousin raised in the same household. Lara calls back when there is finally a little privacy. Edgar leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The first language*, Edgar says, “I corrected her accent too often. I sounded exactly like the teacher who frightened me at her age.”",
+  "connections": "Cole Dunn. The supervisor checks the picture against the reply writer's account of what the resident did.",
+  "familyIds": [
+    "AH-R0962"
+  ],
+  "connectionIds": [
+    "AH-R1237"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor offers thanks to only one call taker",
+      "response": "Lara gets both halves of the call into the account before a name goes up.",
+      "asWritten": "A supervisor offers thanks to only one call taker. Lara gets both halves of the call into the account before a name goes up."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Lara offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Lara offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Lara clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Lara clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

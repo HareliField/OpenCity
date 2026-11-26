@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0792",
+  "personId": "AH-R0792",
+  "name": "Briar Poole",
+  "age": 39,
+  "occupation": "Hotel caretaker",
+  "home": "the western residential streets",
+  "episode": "The first straight paycheck",
+  "biography": "stories/residents/06/05-the-first-straight-paycheck.md#ah-r0792",
+  "life": "“I still remember being asked about my supper by a man selling pills.” On Sunday, near the market by Market Flats, Briar often waits until the delivery baskets are stacked before going in.",
+  "voice": "I bought from him regularly. Losing his number matters less than losing the only person who asked if I'd eaten.",
+  "appearance": "On an ordinary day, look for a faded indigo overshirt and a replacement button a shade darker than the others. Briar has a small notch in the left eyebrow, with short copper curls. Briar looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Briar loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To keep a friendship after buying stops.",
+  "family": "Mateo Serrat is Briar’s older cousin. Briar decides what stays off the paper. Mateo brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *A chair on the quay*, Mateo says, “I remember carrying that chair up four flights to my first shore flat.”",
+  "connections": "Cara Holt. A former customer and a retired officer both have to let the new worker choose how they greet in public.",
+  "familyIds": [
+    "AH-R0015"
+  ],
+  "connectionIds": [
+    "AH-R0800"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative says the first check is embarrassingly small",
+      "response": "Briar asks what the check has paid for this week before making a comparison with street money.",
+      "asWritten": "A relative says the first check is embarrassingly small. Briar asks what the check has paid for this week before making a comparison with street money."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Briar calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Briar calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Briar offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Briar offers one about their own embarrassment instead."
+    }
+  ]
+}

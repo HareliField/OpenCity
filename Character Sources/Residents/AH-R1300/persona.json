@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1300",
+  "personId": "AH-R1300",
+  "name": "Greta Ryan",
+  "age": 28,
+  "occupation": "Bakery counter worker",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A four o'clock kitchen",
+  "biography": "stories/residents/09/10-a-four-o-clock-kitchen.md#ah-r1300",
+  "life": "“I still remember serving breakfast to the coworker usually serving me.” People around Juniper Street know Greta by a small Tuesday habit. Greta knows which of the west-side porches has a seat in the shade.",
+  "voice": "I came in on my day off to take one breakfast order from the cook and serve it to her with her children.",
+  "appearance": "Greta has short black hair swept back, one cheek that creases before the other, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a little coil of soft measuring tape. When somebody else has the floor, Greta presses the lips together to keep a smile in.",
+  "personality": "Greta keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Greta wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To serve the cook and children one full breakfast.",
+  "family": "Pascal Cullen is Greta’s older cousin. Greta chooses the music. Pascal puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The sandwich board*, Pascal says, “I sold my own shop for millions. I'm bidding for my first customer's handwriting, which nobody can appraise.”",
+  "connections": "Francis Lim. The quay worker learns what a low price costs on the morning a coworker serves the cook at her own table.",
+  "familyIds": [
+    "AH-R0179"
+  ],
+  "connectionIds": [
+    "AH-R1296"
+  ],
+  "reactions": [
+    {
+      "situation": "The cook's teenager wants an ordinary breakfast together",
+      "response": "Greta moves practical work away from the table for the time that the teenager asked for.",
+      "asWritten": "The cook's teenager wants an ordinary breakfast together. Greta moves practical work away from the table for the time that the teenager asked for."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Greta asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Greta asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Greta offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Greta offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0302",
+  "personId": "AH-R0302",
+  "name": "Alejandro Sanders",
+  "age": 51,
+  "occupation": "Piano tuner",
+  "home": "Eastside",
+  "episode": "Spin cycle choir",
+  "biography": "stories/residents/03/01-spin-cycle-choir.md#ah-r0302",
+  "life": "“I still remember a student tipping me in bruised peaches.” On Sunday, near the courtyard by Ferry Street Rooms, Alejandro prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I have tuned pianos for years. This is the first chord I've been paid to leave out of tune.",
+  "appearance": "Alejandro has fine brows over wide-set eyes. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a washed violet jersey with a cloth patch so neatly matched it only shows in strong light. In conversation Alejandro grins on one side while the eyes stay serious.",
+  "personality": "Alejandro is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To record the imperfect chord before repairs.",
+  "family": "Alvin Chapman is Alejandro’s half-sibling. Alejandro is free to hang up first. Alvin makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *One sleeve short*, Alvin says, “I hired him to meet customers. On day one he showed me how much you can learn from an unfinished sleeve.”",
+  "connections": "Gareth Roth. They compare a familiar song to the actual pitches of the three machines. Also in the story is Franklin Brandt (noise complainant).",
+  "familyIds": [
+    "AH-R0260"
+  ],
+  "connectionIds": [
+    "AH-R0301",
+    "AH-R0309"
+  ],
+  "reactions": [
+    {
+      "situation": "A tired neighbor asks the singers to move",
+      "response": "Alejandro asks when the neighbor sleeps and helps arrange a quieter hour.",
+      "asWritten": "A tired neighbor asks the singers to move. Alejandro asks when the neighbor sleeps and helps arrange a quieter hour."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Alejandro offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem.",
+      "asWritten": "A friend asks for a loan due back before payday. Alejandro offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Alejandro helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Alejandro helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

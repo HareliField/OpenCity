@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0217",
+  "personId": "AH-R0217",
+  "name": "Lina King",
+  "age": 60,
+  "occupation": "Night class student and shelf stocker",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The margin reader",
+  "biography": "stories/residents/02/07-the-margin-reader.md#ah-r0217",
+  "life": "“My first reading tutor let me skip the chapters I was frightened of.” On Saturday, near the public end of the South Shore boardwalk, Lina checks the shade on the benches before deciding how long to stay.",
+  "voice": "The copy I could afford was missing chapter eight. I've finally found out who I was defending.",
+  "appearance": "Lina has closely cropped salt-and-pepper hair, one cheek that creases before the other, and a favorite piece of clothing, a moss-green cardigan. It usually goes with a watch on a cracked leather band. When somebody else has the floor, Lina listens with the head tilted a little to the left.",
+  "personality": "Lina reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Lina trusts most.",
+  "agenda": "To read the missing chapter before defending its husband again.",
+  "family": "Shay Stein is Lina’s half-sibling. Lina leaves the first voice message. Shay calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The tide clock*, Shay says, “I sold the clock as a conversation piece. I never thought anyone would put it over the time cards.”",
+  "connections": "Julian Oh. The missing chapter and the penciled mustache finally find their way into the same conversation.",
+  "familyIds": [
+    "AH-R0444"
+  ],
+  "connectionIds": [
+    "AH-R0220"
+  ],
+  "reactions": [
+    {
+      "situation": "A reader asks to erase a personal inscription",
+      "response": "Lina puts a clean sheet over the inscription while its writer decides.",
+      "asWritten": "A reader asks to erase a personal inscription. Lina puts a clean sheet over the inscription while its writer decides."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Lina stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Lina stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Lina does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Lina does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

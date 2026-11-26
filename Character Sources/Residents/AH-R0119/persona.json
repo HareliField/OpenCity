@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0119",
+  "personId": "AH-R0119",
+  "name": "Tait Wynn",
+  "age": 39,
+  "occupation": "Driving instructor",
+  "home": "the western residential streets",
+  "episode": "The last green",
+  "biography": "stories/residents/01/12-the-last-green.md#ah-r0119",
+  "life": "Tait made a good driving pupil and a terrible driving examiner. He left examination work because he kept wanting to teach after the clock stopped. Bringing an old driver into the classroom lets him do exactly that. Tuesday often includes a stop at the public end of the South Shore boardwalk, where Tait checks the shade on the benches before deciding how long to stay.",
+  "voice": "He told me to get a proper job when I was a kid. I've asked him to speak to my new drivers about stopping in time. The topic includes careers.",
+  "appearance": "Tait has a small notch in the left eyebrow. Look for auburn hair cut square at the nape. On an ordinary day, the familiar outfit is a striped cotton shirt with a tiny red thread tied through the lowest buttonhole. In conversation Tait rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Tait tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Tait will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To bring Saul into a beginner class as someone with knowledge to pass on.",
+  "family": "Ruth Spencer is Tait’s cousin raised in the same household. Tait saves a place. Ruth chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The missing Sunday*, Ruth says, “I saved his old radio when he moved. It still gets the away matches better than my phone.”",
+  "connections": "Ole Finchley. They propose letting the former driver teach one lesson about what a license can and can't measure.",
+  "familyIds": [
+    "AH-R1339"
+  ],
+  "connectionIds": [
+    "AH-R0114"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative asks to keep the driver's keys in secret",
+      "response": "Tait asks Saul when he wants to hand over the keys.",
+      "asWritten": "A relative asks to keep the driver's keys in secret. Tait asks Saul when he wants to hand over the keys."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Tait finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Tait finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Tait repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Tait repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

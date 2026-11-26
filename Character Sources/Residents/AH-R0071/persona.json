@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0071",
+  "personId": "AH-R0071",
+  "name": "Paz Harrow",
+  "age": 31,
+  "occupation": "Lifeguard",
+  "home": "Eastside",
+  "episode": "A tide at noon",
+  "biography": "stories/residents/01/08-a-tide-at-noon.md#ah-r0071",
+  "life": "Paz saves a little sand from the first day of each season in old film canisters. Her younger brother considers the collection proof of excessive seriousness. She privately suspects he's right. Sunday often includes a stop at Breakwater Way, where Paz stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "My little brother still thinks his castle was disqualified because I didn't like it. I moved the flags to dry ground and asked every builder to walk me to their front door.",
+  "appearance": "Paz has a broad nose and a deep dimple on one cheek. Look for short sandy hair and a marked widow's peak. On an ordinary day, the familiar outfit is a plum-colored cardigan with a watch on a cracked leather band. In conversation Paz steadies a cup with both hands while listening.",
+  "personality": "Paz often says yes too quickly out of pride in being useful. The people closest to Paz have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To let every young builder be judged from a reachable patch of sand.",
+  "family": "Selena Roberts is Paz’s stepsibling. Paz checks the date twice. Selena brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *A ship without postcards*, Selena says, “I work nights and never see a blue sky here.”",
+  "connections": "Lia Banks (beach colleague). They move the judging line together and discover there are two different meanings of a reachable castle.",
+  "familyIds": [
+    "AH-R0319"
+  ],
+  "connectionIds": [
+    "AH-R0076"
+  ],
+  "reactions": [
+    {
+      "situation": "The water reaches a child's castle before judging",
+      "response": "Paz gives the builder time to show the judges what the water took.",
+      "asWritten": "The water reaches a child's castle before judging. Paz gives the builder time to show the judges what the water took."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Paz writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Paz writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Paz rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Paz rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

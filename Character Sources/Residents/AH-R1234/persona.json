@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1234",
+  "personId": "ah-pd-134",
+  "name": "Alex Yu",
+  "age": 39,
+  "occupation": "Patrol officer",
+  "home": "Midtown",
+  "episode": "A call heard twice",
+  "biography": "stories/residents/09/04-a-call-heard-twice.md#ah-r1234",
+  "life": "“I still remember hearing my daughter's bedtime joke in an adult emergency.” On Thursday, near Lighthouse Cove, Alex takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I heard my colleague say a silly phrase that calmed the caller. It came from a daughter who has never heard it at work.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a copper-colored clasp that has been repaired by hand. Alex has two dimples that appear only with a full smile, with a smooth side part with one rebellious curl. Alex gives a little nod before asking a hard question during a conversation.",
+  "personality": "Alex never tires of being shown how somebody makes a living. Alex can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To share the daughter's calming phrase with her.",
+  "family": "Logan Walker is Alex’s half-sibling. Alex can stop the walk at any corner. Logan chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The porch auction*, Logan says, “I took the torn cushion because I sewed the hidden patch for pocket money.”",
+  "connections": "Jules Rice. A colleague's bedtime phrase makes the handover easier for an entirely ordinary reason.",
+  "familyIds": [
+    "AH-R0538"
+  ],
+  "connectionIds": [
+    "AH-R1238"
+  ],
+  "reactions": [
+    {
+      "situation": "The resident asks for a reply in somebody's own words",
+      "response": "Alex asks the caller how they want to receive a personal reply.",
+      "asWritten": "The resident asks for a reply in somebody's own words. Alex asks the caller how they want to receive a personal reply."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Alex offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Alex offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Alex may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Alex may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

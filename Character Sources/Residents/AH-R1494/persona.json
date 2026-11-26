@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1494",
+  "personId": "AH-R1494",
+  "name": "Albert Wilson",
+  "age": 47,
+  "occupation": "Hospital night nurse",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The last light at the harbor",
+  "biography": "stories/residents/10/15-the-last-light-at-the-harbor.md#ah-r1494",
+  "life": "“I still remember starting a ward shift as a last cabin went dark.” On Friday, near the courtyard by Ferry Street Rooms, Albert prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I work nights at the hospital. Four cabin lights going out means it's time to put on my own work shoes.",
+  "appearance": "Out of work clothes, look for a soft blue checked shirt and a narrow brass watch set a little fast. Albert has heavy brows and an unusually delicate jaw, with a long plait tucked inside the collar. Albert holds eye contact until the other person has finished during a conversation.",
+  "personality": "Albert enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To begin the night rounds after seeing the harbor settle.",
+  "family": "Darcy Hardy is Albert’s half-sibling. On moving day a family cupboard wouldn't fit up the stairs. Their household spent the night dining off drawers stacked on the floor. There is still one drawer nobody wants to part with. Albert keeps a careful list of what can actually fit through a door. Asked about *A borrowed name*, Darcy says, “I gave the character a limp like mine. We got it in different places and we laugh differently about it.”",
+  "connections": "Nico Lin. A hospital shift and a waiting spouse use the same set of lights to mark opposite ends of the day.",
+  "familyIds": [
+    "AH-R0511"
+  ],
+  "connectionIds": [
+    "AH-R1499"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants to walk home along the docks in silence",
+      "response": "Albert walks alongside without making the relative fill the silence.",
+      "asWritten": "A relative wants to walk home along the docks in silence. Albert walks alongside without making the relative fill the silence."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Albert asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Albert asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Albert puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Albert puts the deal away and suggests a walk."
+    }
+  ]
+}

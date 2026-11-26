@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0343",
+  "personId": "AH-R0343",
+  "name": "Graham Jackson",
+  "age": 69,
+  "occupation": "Widowed delivery driver",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Rent in a biscuit tin",
+  "biography": "stories/residents/03/05-rent-in-a-biscuit-tin.md#ah-r0343",
+  "life": "“I still remember the stationery my wife ordered just to write rent checks.” On Wednesday, near Breakwater Way, Graham stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "The handwriting on my envelope is my late wife's. I asked for the paper back as well as the cash.",
+  "appearance": "Graham has one cheek that creases before the other. Look for a long silver braid. On an ordinary day, the familiar outfit is a long navy raincoat with a narrow brass watch set a little fast. In conversation Graham looks down for a moment before saying something difficult.",
+  "personality": "Graham is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To recover the paper bearing the late wife's handwriting.",
+  "family": "Pat Garrett is Graham’s cousin. Graham makes the call. Pat is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A prize nobody entered*, Pat says, “I kept a diary nobody read for sixty years.”",
+  "connections": "Ramona Ahmed. They date the old tin without discarding the wife's envelope.",
+  "familyIds": [
+    "AH-R1120"
+  ],
+  "connectionIds": [
+    "AH-R0346"
+  ],
+  "reactions": [
+    {
+      "situation": "One renter wants the tin counted in public",
+      "response": "Graham asks each renter how much of the count they want heard in public.",
+      "asWritten": "One renter wants the tin counted in public. Graham asks each renter how much of the count they want heard in public."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Graham stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Graham stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Graham thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Graham thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

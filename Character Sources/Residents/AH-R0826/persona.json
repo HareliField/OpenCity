@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0826",
+  "personId": "AH-R0826",
+  "name": "Clement Laurent",
+  "age": 46,
+  "occupation": "Lifelong local and tiler",
+  "home": "Midtown",
+  "episode": "Summer staff",
+  "biography": "stories/residents/06/08-summer-staff.md#ah-r0826",
+  "life": "“I still remember washing my aunt's feet in the public showers.” Sunday often includes a stop at Juniper Street, where Clement knows which of the west-side porches has a seat in the shade.",
+  "voice": "I am an off-season local. I want the beach showers left open for those of us who still live here.",
+  "appearance": "Clement has heavy brows and an unusually delicate jaw. Look for auburn hair cut square at the nape. On an ordinary day, the familiar outfit is a brown corduroy jacket with a tiny red thread tied through the lowest buttonhole. In conversation Clement grins on one side while the eyes stay serious.",
+  "personality": "Clement finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To keep the showers available to residents.",
+  "family": "Stella Rizzo is Clement’s second cousin. Clement brings the paper and a pen. Stella decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *A tenant who stays*, Stella says, “I carried the saplings here for my cousin. I can identify which ones can travel.”",
+  "connections": "Javier Rahman. The cart permit and the public showers are the two usable things that may outlast the season.",
+  "familyIds": [
+    "AH-R0985"
+  ],
+  "connectionIds": [
+    "AH-R0823"
+  ],
+  "reactions": [
+    {
+      "situation": "Two workers are offered one extra paid week",
+      "response": "Clement asks both workers what commitments they made on the strength of the old end date.",
+      "asWritten": "Two workers are offered one extra paid week. Clement asks both workers what commitments they made on the strength of the old end date."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Clement agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Clement agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Clement waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Clement waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

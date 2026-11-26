@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0324",
+  "personId": "AH-R0324",
+  "name": "Iva Allard",
+  "age": 56,
+  "occupation": "Former building partner",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The widow's dividend",
+  "biography": "stories/residents/03/03-the-widow-s-dividend.md#ah-r0324",
+  "life": "“I still remember practicing a signature in the back of a cab.” Monday often includes a stop at the window at Night Shift Donuts, where Iva knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I countersigned every page. The one missing signature is from the day I walked out.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a square of clean cloth for polishing smudges. Iva has a wide brow and a narrow jaw, with a soft fringe that falls across one eyebrow. Iva listens with the head tilted a little to the left during a conversation.",
+  "personality": "Iva talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Iva's ways of saying that it is all right to leave.",
+  "agenda": "To date the one unsigned ledger page.",
+  "family": "Maria Tanner is Iva’s second cousin. Iva brings the paper and a pen. Maria decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *School after sixty*, Maria says, “I am the old class bully. The classmate I frightened has chosen the chair opposite me and asked me to keep quiet.”",
+  "connections": "Daryl Trent. The missing signature makes the trustee ask whose stake the ledger didn't show.",
+  "familyIds": [
+    "AH-R1269"
+  ],
+  "connectionIds": [
+    "AH-R0325"
+  ],
+  "reactions": [
+    {
+      "situation": "An unexpected dividend arrives in the wrong envelope",
+      "response": "Iva checks the payee's name with the teller before opening the envelope.",
+      "asWritten": "An unexpected dividend arrives in the wrong envelope. Iva checks the payee's name with the teller before opening the envelope."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Iva asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Iva asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Iva says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Iva says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

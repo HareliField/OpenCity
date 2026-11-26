@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0615",
+  "personId": "AH-R0615",
+  "name": "Logan Hamm",
+  "age": 37,
+  "occupation": "Quay watchkeeper",
+  "home": "the blocks north of the port",
+  "episode": "The crane shadow",
+  "biography": "stories/residents/05/02-the-crane-shadow.md#ah-r0615",
+  "life": "“I still remember a supervisor quietly offering me the better view.” On Thursday, near the crossing outside Verve Nail Studio, Logan notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I got teased for being sentimental. My foreman quietly gave me his lunch break to watch.",
+  "appearance": "Logan is easy to recognize by auburn hair cut square at the nape and a narrow face with an expressive upper lip. Usually dressed in a faded indigo overshirt with a square of clean cloth for polishing smudges, Logan grins on one side while the eyes stay serious when listening.",
+  "personality": "Logan always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Logan is trying to tell the difference before the bill arrives.",
+  "agenda": "To thank the foreman who made time.",
+  "family": "Allen Baker is Logan’s older cousin. Logan puts the kettle on. Allen chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The new language at dinner*, Allen says, “I have recordings of him telling jokes before his stroke.”",
+  "connections": "Devin Jeong. A break granted to the watcher lets the painter mend the scrubbed wing.",
+  "familyIds": [
+    "AH-R1188"
+  ],
+  "connectionIds": [
+    "AH-R0617"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor asks the apprentice to work through the crane-shadow moment",
+      "response": "Logan asks the foreman whether the minutes can be traded rather than simply lost.",
+      "asWritten": "A supervisor asks the apprentice to work through the crane-shadow moment. Logan asks the foreman whether the minutes can be traded rather than simply lost."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Logan takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Logan takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Logan suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Logan suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

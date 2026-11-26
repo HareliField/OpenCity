@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0117",
+  "personId": "AH-R0117",
+  "name": "Nita Ellisby",
+  "age": 55,
+  "occupation": "Auto upholsterer",
+  "home": "Midtown",
+  "episode": "The last green",
+  "biography": "stories/residents/01/12-the-last-green.md#ah-r0117",
+  "life": "Nita's upholstery accounts record seats by chassis number. Her own drawings record them by who sat crooked, leaned forward or drove with a child perched beside them in the old days. People around the entrance to the Wash House know Nita by a small Friday habit. Nita stops for local notices even on a day without a load to wash.",
+  "voice": "The driver's seat has a dip the shape of his hip. He asked me to fix it for the next owner. I kept a square of the old cover to wrap his spare house key.",
+  "appearance": "On an ordinary day, look for a red windbreaker and a folded shopping list secured by a miniature clip. Nita has a straight nose and deep-set eyes, with short sandy hair and a marked widow's peak. Nita gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Nita treats a small promise with the gravity others reserve for a contract. This makes Nita lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To send Saul home with a house key wrapped in his old seat cover.",
+  "family": "Billie Abbott is Nita’s cousin. Nita asks before bringing somebody along. Billie can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The empty drum stool*, Billie says, “I booked a full band and got an audience member.”",
+  "connections": "Len Brune. The road arrow and the seat dip are two marks of the same career that these workers can preserve for a little longer.",
+  "familyIds": [
+    "AH-R0423"
+  ],
+  "connectionIds": [
+    "AH-R0116"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative asks to keep the driver's keys in secret",
+      "response": "Nita asks Saul when he wants to hand over the keys.",
+      "asWritten": "A relative asks to keep the driver's keys in secret. Nita asks Saul when he wants to hand over the keys."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Nita asks what the friend actually said last time and checks whether anybody is expecting them at home.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Nita asks what the friend actually said last time and checks whether anybody is expecting them at home."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Nita says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Nita says what can be returned and asks whether that will do."
+    }
+  ]
+}

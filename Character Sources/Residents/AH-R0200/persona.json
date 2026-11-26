@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0200",
+  "personId": "AH-R0200",
+  "name": "Remy Rizzo",
+  "age": 36,
+  "occupation": "Birthday party host",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The pawned trumpet",
+  "biography": "stories/residents/02/05-the-pawned-trumpet.md#ah-r0200",
+  "life": "“I hosted my first paid party under a staircase with three mismatched stools.” People around Lighthouse Cove know Remy by a small Thursday habit. Remy takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I lent my birthday room for a joint rehearsal. I'm keeping the first wrong note on the invitation.",
+  "appearance": "On an ordinary day, look for a red windbreaker and a fabric zip pull cut from a school scarf. Remy has a deep crease beside the mouth when smiling, with short black hair swept back. Remy looks toward the door whenever a name is called during a conversation.",
+  "personality": "Remy has a talent for getting adversaries to laugh at exactly the same thing. Remy knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To give the players a room for an ordinary, imperfect rehearsal.",
+  "family": "Nico Wells is Remy’s cousin. Remy offers the first invitation. Nico gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *First shift back*, Nico says, “I know what it costs to return without being cured of ordinary sadness.”",
+  "connections": "Hannah Peters. A noise complaint and a rehearsal invite turn one ceiling recording into something worth keeping.",
+  "familyIds": [
+    "AH-R1089"
+  ],
+  "connectionIds": [
+    "AH-R0196"
+  ],
+  "reactions": [
+    {
+      "situation": "The teenager gets an audition the morning the horn is due back",
+      "response": "Remy contacts the owner before treating an audition as permission to keep the horn.",
+      "asWritten": "The teenager gets an audition the morning the horn is due back. Remy contacts the owner before treating an audition as permission to keep the horn."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Remy writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Remy writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Remy asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Remy asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1473",
+  "personId": "AH-R1473",
+  "name": "Yvette Hill",
+  "age": 51,
+  "occupation": "Theater donor and grocer",
+  "home": "the streets around Foundry Lofts",
+  "episode": "One last dress rehearsal",
+  "biography": "stories/residents/10/13-one-last-dress-rehearsal.md#ah-r1473",
+  "life": "“I still remember buying another hour of light with the proceeds of a soup sale.” People around the public end of the South Shore boardwalk know Yvette by a small Thursday habit. Yvette checks the shade on the benches before deciding how long to stay.",
+  "voice": "I paid the lights for the extra hour. I want my own child's group to hear how little that really cost.",
+  "appearance": "Yvette has heavy brows and an unusually delicate jaw. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is an olive canvas jacket with a pair of reading glasses in a cloth sleeve. In conversation Yvette folds a paper napkin into quarters without noticing.",
+  "personality": "Yvette gets protective of anybody who comes into a meeting unprepared. Yvette privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To fund the light for another working parent's visit.",
+  "family": "Sylvia Moros is Yvette’s second cousin. Yvette can stop the walk at any corner. Sylvia chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The empty berth*, Sylvia says, “I inherited the smallest boat and bought the water around it in installments.”",
+  "connections": "Grant Tran. A donor funding one more hour backs the photographer's choice to let the occasion stay private.",
+  "familyIds": [
+    "AH-R0141"
+  ],
+  "connectionIds": [
+    "AH-R1479"
+  ],
+  "reactions": [
+    {
+      "situation": "The working parent arrives after the curtain time",
+      "response": "Yvette waits for the parent to be seated before asking the cast to start.",
+      "asWritten": "The working parent arrives after the curtain time. Yvette waits for the parent to be seated before asking the cast to start."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Yvette suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Yvette suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Yvette offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Yvette offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

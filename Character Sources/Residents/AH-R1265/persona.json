@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1265",
+  "personId": "AH-R1265",
+  "name": "Una Curtis",
+  "age": 57,
+  "occupation": "University lecturer",
+  "home": "the western residential streets",
+  "episode": "School after sixty",
+  "biography": "stories/residents/09/07-school-after-sixty.md#ah-r1265",
+  "life": "“I still remember teaching difficult poems while dreading my own sums.” On Monday, near the public end of the South Shore boardwalk, Una checks the shade on the benches before deciding how long to stay.",
+  "voice": "I teach at the university. This is my first attempt to learn bookkeeping and I am the slowest in class.",
+  "appearance": "Una has a long face and high cheekbones. Look for short black hair swept back. On an ordinary day, the familiar outfit is a red windbreaker with a watch on a cracked leather band. In conversation Una gathers both sleeves neatly before settling in.",
+  "personality": "Una is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To pass an unfamiliar subject without hiding the difficulty.",
+  "family": "Layla Colón is Una’s stepsibling. Una offers the first invitation. Layla gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *An ordinary mirror*, Layla says, “I polished the silvering after the shop flooded.”",
+  "connections": "Maria Tanner. The lecturer and former bully both return to a room where their previous authority has no special force.",
+  "familyIds": [
+    "AH-R1455"
+  ],
+  "connectionIds": [
+    "AH-R1269"
+  ],
+  "reactions": [
+    {
+      "situation": "An older learner freezes in front of the blackboard",
+      "response": "Una offers to turn the learner's chair without announcing the reason to the class.",
+      "asWritten": "An older learner freezes in front of the blackboard. Una offers to turn the learner's chair without announcing the reason to the class."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Una stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Una stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Una thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Una thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

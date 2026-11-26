@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0985",
+  "personId": "AH-R0985",
+  "name": "Stella Rizzo",
+  "age": 56,
+  "occupation": "Nursery manager",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A tenant who stays",
+  "biography": "stories/residents/07/09-a-tenant-who-stays.md#ah-r0985",
+  "life": "“I still remember watering a sapling while my sister recovered upstairs.” People around Juniper Street know Stella by a small Wednesday habit. Stella knows which of the west-side porches has a seat in the shade.",
+  "voice": "I carried the saplings here for my cousin. I can identify which ones can travel.",
+  "appearance": "Out of work clothes, look for an old plum windbreaker and a fabric zip pull cut from a school scarf. Stella has heavy brows and an unusually delicate jaw, with a loose dark braid. Stella holds eye contact until the other person has finished during a conversation.",
+  "personality": "Stella is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Stella is concerned.",
+  "agenda": "To identify the plants that can travel.",
+  "family": "Clement Laurent is Stella’s second cousin. Stella decides what stays off the paper. Clement brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Summer staff*, Clement says, “I am an off-season local. I want the beach showers left open for those of us who still live here.”",
+  "connections": "Evan Maciel. Identifying trees that can move helps the relative delivering medicine find a useful part in the negotiation.",
+  "familyIds": [
+    "AH-R0826"
+  ],
+  "connectionIds": [
+    "AH-R0986"
+  ],
+  "reactions": [
+    {
+      "situation": "The future tenant asks when the garden will be empty",
+      "response": "Stella asks the gardener which roots are most vulnerable before agreeing to a date.",
+      "asWritten": "The future tenant asks when the garden will be empty. Stella asks the gardener which roots are most vulnerable before agreeing to a date."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Stella lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Stella lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Stella asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Stella asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

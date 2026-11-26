@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0002",
+  "personId": "AH-R0002",
+  "name": "Lev Bellamy",
+  "age": 61,
+  "occupation": "Tailor",
+  "home": "the blocks north of the port",
+  "episode": "The blue suit",
+  "biography": "stories/residents/01/01-the-blue-suit.md#ah-r0002",
+  "life": "Lev began by cutting down men's coats for children during a bad winter. He still saves the narrow strips from the inside because they show what the cloth looked like new. He hates it when people ask to be made thinner. Sunday often includes a stop at the corner by Juniper Tailor, where Lev looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "My father taught me to turn a ruined cuff inside out. The dye reached the lining this time. I asked the man where he wanted the white stripe to sit and waited for him to choose.",
+  "appearance": "Lev has a small notch in the left eyebrow. Look for a gray streak running back from the forehead. On an ordinary day, the familiar outfit is a red windbreaker with a fabric zip pull cut from a school scarf. In conversation Lev leans a shoulder against the wall during long conversations.",
+  "personality": "Lev loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To give Rafael the option of keeping one visible mark from the morning.",
+  "family": "Lennon Wang is Lev’s younger cousin. Lev leaves the first voice message. Lennon calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *Three minutes at the bridge*, Lennon says, “I had hoped the shared rides would turn into a friendship.”",
+  "connections": "Marnie Phelps. They spread the ruined sleeve on the maintenance table to see what can still be saved.",
+  "familyIds": [
+    "AH-R1470"
+  ],
+  "connectionIds": [
+    "AH-R0004"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone wants to post the ruined cuff online",
+      "response": "Lev asks Rafael which version he wants a stranger to see before anyone shares the picture.",
+      "asWritten": "Someone wants to post the ruined cuff online. Lev asks Rafael which version he wants a stranger to see before anyone shares the picture."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Lev finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Lev finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Lev offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Lev offers one about their own embarrassment instead."
+    }
+  ]
+}

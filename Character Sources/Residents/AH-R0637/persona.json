@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0637",
+  "personId": "AH-R0637",
+  "name": "Frankie Reyes",
+  "age": 47,
+  "occupation": "Ambulance dispatcher",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "One clean day",
+  "biography": "stories/residents/05/04-one-clean-day.md#ah-r0637",
+  "life": "“I still remember a reunion picture taken just before my bus arrived.” On Monday, near the market by Market Flats, Frankie often waits until the delivery baskets are stacked before going in.",
+  "voice": "I took a call during the photograph. My friends left a space and took another after I came back.",
+  "appearance": "Frankie has a straight nose and deep-set eyes. Look for short, uneven waves that refuse to lie flat. On an ordinary day, the familiar outfit is an unlined tan jacket with a stitched row of blue crosses along an old repair. In conversation Frankie rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Frankie prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To get into the second group photograph.",
+  "family": "Irene Baines is Frankie’s cousin. Frankie puts the kettle on. Irene chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The skipper goes ashore*, Irene says, “I served under the skipper. She kept steering with a broken heart after her wife's death, so stopping now is hers to choose.”",
+  "connections": "Erin Parra. A late photograph adds the classmate identified from the old inhaler story.",
+  "familyIds": [
+    "AH-R1192"
+  ],
+  "connectionIds": [
+    "AH-R0639"
+  ],
+  "reactions": [
+    {
+      "situation": "A classmate arrives at the reunion in uniform",
+      "response": "Frankie welcomes the classmate before bringing up their working clothes.",
+      "asWritten": "A classmate arrives at the reunion in uniform. Frankie welcomes the classmate before bringing up their working clothes."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Frankie looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Frankie looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Frankie clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Frankie clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

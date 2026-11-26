@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0619",
+  "personId": "AH-R0619",
+  "name": "William Marks",
+  "age": 37,
+  "occupation": "Family history researcher",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The crane shadow",
+  "biography": "stories/residents/05/02-the-crane-shadow.md#ah-r0619",
+  "life": "“I still remember dating a family letter by the grain of its film.” Friday often includes a stop at Maré Coffee, where William likes the table where people coming off shift stop checking the time.",
+  "voice": "I needed a date for my parents' first meeting. Their old picture shows the hook resting right on the gull.",
+  "appearance": "On an ordinary day, look for a charcoal zip cardigan and a cloth patch so neatly matched it only shows in strong light. William has a crooked front tooth visible when laughing, with thick, tightly coiled hair. William presses the lips together to keep a smile in during a conversation.",
+  "personality": "William takes a rejection personally for a day and analytically on the second morning. William can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To date the parents' harbor photograph.",
+  "family": "Malcolm Fields is William’s nephew by marriage. William asks before bringing somebody along. Malcolm can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Two birthdays in one ward*, Malcolm says, “I want the biggest stupid balloon in the hospital.”",
+  "connections": "Edmund Porter. A father's dated picture gives a retired crane operator the time of the gull's next meeting.",
+  "familyIds": [
+    "AH-R1402"
+  ],
+  "connectionIds": [
+    "AH-R0616"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor asks the apprentice to work through the crane-shadow moment",
+      "response": "William asks the foreman whether the minutes can be traded rather than simply lost.",
+      "asWritten": "A supervisor asks the apprentice to work through the crane-shadow moment. William asks the foreman whether the minutes can be traded rather than simply lost."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "William keeps the neighbor's place and finds out whether the stranger needs a different kind of help.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. William keeps the neighbor's place and finds out whether the stranger needs a different kind of help."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "William turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, William turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

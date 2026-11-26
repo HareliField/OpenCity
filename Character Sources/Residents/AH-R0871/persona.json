@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0871",
+  "personId": "AH-R0871",
+  "name": "Ines Baldwin",
+  "age": 17,
+  "occupation": "Music scholarship pupil",
+  "home": "the western residential streets",
+  "episode": "The almost scholarship",
+  "biography": "stories/residents/06/13-the-almost-scholarship.md#ah-r0871",
+  "life": "“I still remember a viola lesson squeezed between two school runs.” People around the brick passage off the shop row know Ines by a small Thursday habit. Ines takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I won the tuition and haven't dared tell my little sister that going means leaving her school runs to somebody else.",
+  "appearance": "Ines has heavy brows and an unusually delicate jaw. Look for a blunt cut just below the ears. Outside school, the familiar outfit is a faded indigo overshirt with a small enamel bird on the lapel. In conversation Ines grins on one side while the eyes stay serious.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Ines takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To accept tuition only with workable travel and care arrangements.",
+  "family": "Charlotte Barker is Ines’s older relative by marriage. Ines brings something that can still be enjoyed tomorrow. Charlotte checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *A sail cut small*, Charlotte says, “I took the seam apart strand by strand after my hands stopped tolerating heavy rope.”",
+  "connections": "Benedict Perreault (market manager). The market manager's promised Saturday post gives the pupil one reliable foothold. Also in the story is Sadie Liu (aunt).",
+  "familyIds": [
+    "AH-R0297"
+  ],
+  "connectionIds": [
+    "AH-R0876",
+    "AH-R0872"
+  ],
+  "reactions": [
+    {
+      "situation": "The school wants a deposit before travel support is settled",
+      "response": "Ines gets the school to specify the last date a deposit can be returned.",
+      "asWritten": "The school wants a deposit before travel support is settled. Ines gets the school to specify the last date a deposit can be returned."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Ines gets the people at the next doorway away from the smoke and asks a bystander to make the call.",
+      "asWritten": "Smoke appears under a shop door after closing. Ines gets the people at the next doorway away from the smoke and asks a bystander to make the call."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Ines asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Ines asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

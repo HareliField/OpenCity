@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1459",
+  "personId": "AH-R1459",
+  "name": "Seth Massey",
+  "age": 26,
+  "occupation": "Apprentice glazier",
+  "home": "Midtown",
+  "episode": "An ordinary mirror",
+  "biography": "stories/residents/10/11-an-ordinary-mirror.md#ah-r1459",
+  "life": "“I still remember being allowed one offcut from a valuable sheet.” People around the steps at Pier Beach know Seth by a small Sunday habit. Seth watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I cut a little sample from the replacement glass. She found the window of her old flat reflected in it.",
+  "appearance": "On an ordinary day, look for a faded indigo overshirt and a little coil of soft measuring tape. Seth has a flat bridge to the nose and a mobile brow, with a smooth side part with one rebellious curl. Seth squares up pieces of paper while thinking during a conversation.",
+  "personality": "Seth never tires of being shown how somebody makes a living. Seth can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To show the widow the reflection caught in the offcut.",
+  "family": "Drew Ferraro is Seth’s first cousin once removed. Seth calls back when there is finally a little privacy. Drew leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The school photograph that travels*, Drew says, “I supplied uniforms on credit until her mother's work picked up.”",
+  "connections": "Malcolm Lund. A sample of new glass offers a familiar apartment reflection without pretending to be the original mirror.",
+  "familyIds": [
+    "AH-R1326"
+  ],
+  "connectionIds": [
+    "AH-R1456"
+  ],
+  "reactions": [
+    {
+      "situation": "The widow asks to buy the fitting mirror",
+      "response": "Seth asks the tailor and widow what access others would lose if the mirror moved.",
+      "asWritten": "The widow asks to buy the fitting mirror. Seth asks the tailor and widow what access others would lose if the mirror moved."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Seth asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Seth asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Seth may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Seth may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

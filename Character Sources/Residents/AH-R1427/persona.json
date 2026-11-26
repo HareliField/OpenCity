@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1427",
+  "personId": "AH-R1427",
+  "name": "Thomas Sun",
+  "age": 44,
+  "occupation": "Coast budget analyst",
+  "home": "the neighborhood around Market Flats",
+  "episode": "No lifeguard at dusk",
+  "biography": "stories/residents/10/08-no-lifeguard-at-dusk.md#ah-r1427",
+  "life": "“I still remember realizing our season dates ignored the earliest sunset.” On Thursday, near Paper & Pine Books, Thomas starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I thought we had budgeted for coverage until dusk. I am bringing the posted season dates to the next residents' meeting.",
+  "appearance": "On an ordinary day, look for an olive canvas jacket and a cloth patch so neatly matched it only shows in strong light. Thomas has a round face with a pronounced chin, with close-cropped dark curls. Thomas touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Thomas prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To check the season dates at the next budget meeting.",
+  "family": "Ava Baptiste is Thomas’s second cousin. Thomas asks what the birthday guest would like this year. Ava remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The small signature*, Ava says, “The big check made my deadline easy. Then the vendor asked me to name the eleven people behind the eleven dollars.”",
+  "connections": "Dolores Taylor. Flag collection and published coverage need to describe the same last shift.",
+  "familyIds": [
+    "AH-R0028"
+  ],
+  "connectionIds": [
+    "AH-R1426"
+  ],
+  "reactions": [
+    {
+      "situation": "The swimmer stays on the steps after the final shift",
+      "response": "Thomas checks whether the swimmer intends to go into the water before deciding what help is wanted.",
+      "asWritten": "The swimmer stays on the steps after the final shift. Thomas checks whether the swimmer intends to go into the water before deciding what help is wanted."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Thomas keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Thomas keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Thomas clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Thomas clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

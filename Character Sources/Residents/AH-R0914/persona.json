@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0914",
+  "personId": "AH-R0914",
+  "name": "Michael Gallagher",
+  "age": 48,
+  "occupation": "Postal redirect clerk",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The absent signature",
+  "biography": "stories/residents/07/02-the-absent-signature.md#ah-r0914",
+  "life": "“I still remember a forwarded letter finding me at sea.” Monday often includes a stop at Harbour Bakery, where Michael buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I forwarded her mail through two countries. I've only ever been thanked for losing the Christmas cards.",
+  "appearance": "Michael has a small notch in the left eyebrow. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a dark green knitted vest with one cuff folded back twice. In conversation Michael folds a paper napkin into quarters without noticing.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To make a reliable final mail transfer.",
+  "family": "Teal Aranda is Michael’s half-sibling. Michael chooses an ordinary story to tell. Teal asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The kitchen without a boss*, Teal says, “I want to keep the rota the workers designed even after the owner returns.”",
+  "connections": "Lane Baran. The mail forwarder finds that delivering an invitation is easier than delivering a completed sale.",
+  "familyIds": [
+    "AH-R1450"
+  ],
+  "connectionIds": [
+    "AH-R0920"
+  ],
+  "reactions": [
+    {
+      "situation": "A creditor asks why the berth decision is taking so long",
+      "response": "Michael gives the creditor an accurate update without exposing private family correspondence.",
+      "asWritten": "A creditor asks why the berth decision is taking so long. Michael gives the creditor an accurate update without exposing private family correspondence."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Michael asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Michael asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Michael listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Michael listens first to the account of how it was actually used."
+    }
+  ]
+}

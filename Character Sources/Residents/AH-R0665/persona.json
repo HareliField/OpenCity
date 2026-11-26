@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0665",
+  "personId": "AH-R0665",
+  "name": "Priya Solis",
+  "age": 50,
+  "occupation": "Seafarer",
+  "home": "Midtown",
+  "episode": "A shelf of apologies",
+  "biography": "stories/residents/05/07-a-shelf-of-apologies.md#ah-r0665",
+  "life": "“I still remember a map drawn inside an ocean-crossing novel.” People around the window at Night Shift Donuts know Priya by a small Friday habit. Priya knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I took mine on a ship and carried it through three oceans. I drew the route on the apology.",
+  "appearance": "Priya is easy to recognize by a soft fringe that falls across one eyebrow and a heart-shaped face and prominent ears. Usually dressed in a long navy raincoat with one loose pocket corner secured with green thread, Priya holds eye contact until the other person has finished when listening.",
+  "personality": "Priya has a quick wit and an equally quick sense of shame. A joke is often Priya's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To give the owner the ocean route map.",
+  "family": "Roman Wade is Priya’s half-sibling. Priya chooses the familiar route. Roman can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Land without cranes*, Roman says, “I got my first contract sweeping that floor after a conviction.”",
+  "connections": "Remy Carey. The recorded reading and the sea route both belong inside the owner's returned book.",
+  "familyIds": [
+    "AH-R1064"
+  ],
+  "connectionIds": [
+    "AH-R0662"
+  ],
+  "reactions": [
+    {
+      "situation": "The book's original owner asks to keep the apology private",
+      "response": "Priya lets the book go back with the note folded inside.",
+      "asWritten": "The book's original owner asks to keep the apology private. Priya lets the book go back with the note folded inside."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Priya stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Priya stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Priya seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Priya seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1057",
+  "personId": "AH-R1057",
+  "name": "Faye Boone",
+  "age": 43,
+  "occupation": "Apartment tenant and auditor",
+  "home": "Old Town",
+  "episode": "Reopening at six",
+  "biography": "stories/residents/08/01-reopening-at-six.md#ah-r1057",
+  "life": "“I still remember hearing two dryers answer each other through the ceiling.” Tuesday often includes a stop at the foot of Harbor Viaduct, where Faye pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I live over the machines. I want one night when I can hear my husband's voice in bed.",
+  "appearance": "Faye is easy to recognize by short sandy hair and a marked widow's peak and a scattering of freckles across the bridge of the nose. Usually dressed in a mustard canvas overshirt with a stitched row of blue crosses along an old repair, Faye squares up pieces of paper while thinking when listening.",
+  "personality": "Faye gets protective of anybody who comes into a meeting unprepared. Faye privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To agree one quiet night above the machines.",
+  "family": "Carla Molina is Faye’s cousin. Faye is free to hang up first. Carla makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *An address in pencil*, Carla says, “I am the postal substitute. I know the houses by curtains until everybody changes them.”",
+  "connections": "Vincent Armas. A former night customer and the resident upstairs devise an evening with less machine noise.",
+  "familyIds": [
+    "AH-R0685"
+  ],
+  "connectionIds": [
+    "AH-R1054"
+  ],
+  "reactions": [
+    {
+      "situation": "The laundromat chooses between dawn and late-night opening",
+      "response": "Faye asks which households lose their only usable wash time under either plan.",
+      "asWritten": "The laundromat chooses between dawn and late-night opening. Faye asks which households lose their only usable wash time under either plan."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Faye stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Faye stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Faye offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Faye offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

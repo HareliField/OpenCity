@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0134",
+  "personId": "AH-R0134",
+  "name": "Eamon Tor",
+  "age": 77,
+  "occupation": "Tenant and retired machinist",
+  "home": "the western residential streets",
+  "episode": "Two portions",
+  "biography": "stories/residents/01/14-two-portions.md#ah-r0134",
+  "life": "Eamon measures time in the old shop's unit of a tea break. The whole argument about gravy lasts six such breaks. He gets just as much nourishment out of being contradicted as he ever got out of roast beef. On Monday, near the corner by Juniper Tailor, Eamon looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I put two because a meal eaten alone lasts nine minutes and an argument over gravy lasts an hour. I'll pay for the gravy myself if they leave the hour alone.",
+  "appearance": "Eamon is easy to recognize by a thin scattering of white hair over the crown and a broad nose and a deep dimple on one cheek. Usually dressed in a narrow-striped sweater with a seam let out by a narrow strip of contrasting fabric, Eamon looks toward the door whenever a name is called when listening.",
+  "personality": "Eamon thinks best while walking. Sitting beneath someone's office clock makes Eamon sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To keep an hour of company on the meal schedule.",
+  "family": "Javier Turner is Eamon’s younger relative by marriage. Eamon offers the first invitation. Javier gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The uniform money*, Javier says, “I found the supplier who will sell singles without a bulk order.”",
+  "connections": "Essie Good (family carer). They are the two people the argument about a second portion is actually about. Also in the story is Pia Mercerly (community cook).",
+  "familyIds": [
+    "AH-R0906"
+  ],
+  "connectionIds": [
+    "AH-R0132",
+    "AH-R0140"
+  ],
+  "reactions": [
+    {
+      "situation": "The diner asks to have company without being asked about care",
+      "response": "Eamon lets the diner start an ordinary conversation and leaves the care questions for another time.",
+      "asWritten": "The diner asks to have company without being asked about care. Eamon lets the diner start an ordinary conversation and leaves the care questions for another time."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Eamon asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Eamon asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Eamon asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Eamon asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

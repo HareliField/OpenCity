@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0563",
+  "personId": "AH-R0563",
+  "name": "Franklin Sun",
+  "age": 42,
+  "occupation": "Picture framer",
+  "home": "Old Town",
+  "episode": "The ladder crossing",
+  "biography": "stories/residents/04/12-the-ladder-crossing.md#ah-r0563",
+  "life": "“I still remember playground shadows so long they reached the street.” On Monday, near Harbour Bakery, Franklin buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I saw the ladder's shadow stretch across my old playground and asked for a photograph.",
+  "appearance": "Franklin has a crooked front tooth visible when laughing. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a brown corduroy jacket with a thin silver ring worn on a cord. In conversation Franklin draws small circles on a tabletop while waiting.",
+  "personality": "Franklin often says yes too quickly out of pride in being useful. The people closest to Franklin have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To photograph the shadow across the old playground.",
+  "family": "Vic Cho is Franklin’s second cousin. Franklin chooses whether to use it. Vic saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The thirteenth doughnut*, Vic says, “I recorded the crunch for a midnight program and accidentally caught two men making up in the background.”",
+  "connections": "Dario Moreau. A long shadow shows the planner the width the object actually occupies.",
+  "familyIds": [
+    "AH-R0097"
+  ],
+  "connectionIds": [
+    "AH-R0564"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver sounds a horn halfway through the crossing",
+      "response": "Franklin asks for a pause until the people carrying the ladder can clear the crossing safely.",
+      "asWritten": "A driver sounds a horn halfway through the crossing. Franklin asks for a pause until the people carrying the ladder can clear the crossing safely."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Franklin offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Franklin offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Franklin rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Franklin rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

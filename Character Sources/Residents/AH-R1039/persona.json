@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1039",
+  "personId": "AH-R1039",
+  "name": "Emilio Starr",
+  "age": 61,
+  "occupation": "Former care agency owner",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The carer's afternoon",
+  "biography": "stories/residents/07/14-the-carer-s-afternoon.md#ah-r1039",
+  "life": "“I still remember being paid to arrange things I couldn't arrange for my family.” On Friday, near the corner by Juniper Tailor, Emilio looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I owned a care agency and thought four hours was simple. My dad taught me the order of fifteen little things.",
+  "appearance": "Emilio has a gray streak running back from the forehead, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a cream pullover. It usually goes with a replacement button a shade darker than the others. When somebody else has the floor, Emilio steadies a cup with both hands while listening.",
+  "personality": "Emilio has a quick wit and an equally quick sense of shame. A joke is often Emilio's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To learn the father's routine from him.",
+  "family": "Nicholas Mitchell is Emilio’s cousin raised in the same household. When a relative became too weak to cook, the family started chopping at the kitchen table with the cook directing from a chair. Revising the seasoning remained a point of honor. Emilio will argue about the seasoning like a proper guest. Asked about *The broken till*, Nicholas says, “My prepaid meal card wouldn't work. A stranger trusted me to pay it forward at breakfast.”",
+  "connections": "Rae Stein. An experienced care manager learns the routine beside a pupil doing homework at Gran's.",
+  "familyIds": [
+    "AH-R0397"
+  ],
+  "connectionIds": [
+    "AH-R1033"
+  ],
+  "reactions": [
+    {
+      "situation": "The carer's Wednesday relief calls in sick",
+      "response": "Emilio tells the carer plainly how much of Wednesday can still be covered.",
+      "asWritten": "The carer's Wednesday relief calls in sick. Emilio tells the carer plainly how much of Wednesday can still be covered."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Emilio takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Emilio takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Emilio seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Emilio seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

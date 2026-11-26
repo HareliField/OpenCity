@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0032",
+  "personId": "AH-R0032",
+  "name": "Hollis Fry",
+  "age": 28,
+  "occupation": "Bike courier",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The wrong bicycle",
+  "biography": "stories/residents/01/04-the-wrong-bicycle.md#ah-r0032",
+  "life": "Hollis learned to ride again after a hip operation by delivering groceries for two neighbors. He remembers every doorway where he could set a bag down and lean for a moment. A delivery penalty can still feel like a verdict on his body. People around Lighthouse Cove know Hollis by a small Saturday habit. Hollis takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "The taped saddle tips to the left because my hip does. I made it through one delivery on the wrong bike before I began to limp. I want my lost delivery fee as much as my saddle.",
+  "appearance": "Hollis has a flat bridge to the nose and a mobile brow. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a charcoal zip cardigan with a pair of reading glasses in a cloth sleeve. In conversation Hollis rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Hollis is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Hollis is concerned.",
+  "agenda": "To get the correct saddle back and the lost fee credited.",
+  "family": "Kate Parra is Hollis’s half-sibling. Hollis picks the meeting place. Kate sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The housecoat commission*, Kate says, “I borrowed the pattern for my dad. He wants pockets large enough for Sunday's newspaper.”",
+  "connections": "Marisol Vega. They meet a second time at the property counter to compare what the wrong saddle cost. Also in the story is Toby Lin (dispatcher).",
+  "familyIds": [
+    "AH-R0438"
+  ],
+  "connectionIds": [
+    "AH-R0031",
+    "AH-R0038"
+  ],
+  "reactions": [
+    {
+      "situation": "The courier asks who will cover the lost delivery",
+      "response": "Hollis gets the dispatcher and the courier looking at the same delivery entry.",
+      "asWritten": "The courier asks who will cover the lost delivery. Hollis gets the dispatcher and the courier looking at the same delivery entry."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Hollis asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Hollis asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Hollis asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Hollis asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

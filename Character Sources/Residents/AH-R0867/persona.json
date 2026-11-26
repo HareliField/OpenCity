@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0867",
+  "personId": "AH-R0867",
+  "name": "Bianca Spencer",
+  "age": 49,
+  "occupation": "Night watch worker",
+  "home": "Old Town",
+  "episode": "The late crossing",
+  "biography": "stories/residents/06/12-the-late-crossing.md#ah-r0867",
+  "life": "“I still remember folding fuel money inside a birthday card.” Saturday often includes a stop at the corner outside Coastal Barber, where Bianca usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I can pay toward fuel but can't say it in front of my kids. We made a little envelope in the glove box.",
+  "appearance": "On an ordinary day, look for a long navy raincoat and a small enamel bird on the lapel. Bianca has a flat bridge to the nose and a mobile brow, with thick, tightly coiled hair. Bianca squares up pieces of paper while thinking during a conversation.",
+  "personality": "Bianca is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Bianca is concerned.",
+  "agenda": "To contribute fuel money privately.",
+  "family": "Malcolm Lund is Bianca’s second cousin. Bianca makes the call. Malcolm is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *An ordinary mirror*, Malcolm says, “I want to make her a new mirror in the same shape.”",
+  "connections": "Ellen Randall. The no-smoking driver agrees to handle fuel money out of the rider's children's hearing.",
+  "familyIds": [
+    "AH-R1456"
+  ],
+  "connectionIds": [
+    "AH-R0862"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver on the rota asks for petrol money",
+      "response": "Bianca agrees what the fuel actually cost and discusses the contribution privately.",
+      "asWritten": "A driver on the rota asks for petrol money. Bianca agrees what the fuel actually cost and discusses the contribution privately."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Bianca asks what the friend actually said last time and checks whether anybody is expecting them at home.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Bianca asks what the friend actually said last time and checks whether anybody is expecting them at home."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Bianca asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Bianca asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

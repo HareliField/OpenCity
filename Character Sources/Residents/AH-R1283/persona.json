@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1283",
+  "personId": "AH-R1283",
+  "name": "Arthur Colón",
+  "age": 75,
+  "occupation": "Retired mechanic",
+  "home": "Old Town",
+  "episode": "The returned daughter",
+  "biography": "stories/residents/09/09-the-returned-daughter.md#ah-r1283",
+  "life": "“I still remember rehearsing a welcome in front of a blank television.” On Saturday, near the corner outside Coastal Barber, Arthur usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I am the father. I rehearsed an explanation for years and forgot to begin with her name.",
+  "appearance": "Arthur has tightly curled gray hair, a narrow face with an expressive upper lip, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a thin silver ring worn on a cord. When somebody else has the floor, Arthur steadies a cup with both hands while listening.",
+  "personality": "Arthur is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Arthur is concerned.",
+  "agenda": "To start the reunion with the daughter's real name.",
+  "family": "Lara Hart is Arthur’s first cousin once removed. Arthur chooses whether they walk home or sit a while. Lara brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The soft wharf chalk*, Lara says, “I left a thumbprint when I checked whether the chalk was loose.”",
+  "connections": "Teresa Arendt. The father practices his first words while the carpenter finishes the banister. Also in the story is Iva Salas (daughter).",
+  "familyIds": [
+    "AH-R0469"
+  ],
+  "connectionIds": [
+    "AH-R1288",
+    "AH-R1281"
+  ],
+  "reactions": [
+    {
+      "situation": "The estranged daughter asks to leave before the meal",
+      "response": "Arthur helps the daughter leave without forcing a final conversation at the door.",
+      "asWritten": "The estranged daughter asks to leave before the meal. Arthur helps the daughter leave without forcing a final conversation at the door."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Arthur alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Arthur alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Arthur asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Arthur asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

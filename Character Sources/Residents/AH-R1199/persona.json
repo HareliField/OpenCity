@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1199",
+  "personId": "AH-R1199",
+  "name": "Diana Baldwin",
+  "age": 30,
+  "occupation": "Dock assistant",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The skipper goes ashore",
+  "biography": "stories/residents/08/15-the-skipper-goes-ashore.md#ah-r1199",
+  "life": "“I still remember whistling a docking tune in an empty yard.” People around the downtown fountain know Diana by a small Sunday habit. Diana keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I still whistle her old docking tune. The successor wrote a different verse for it.",
+  "appearance": "Diana has a long face and high cheekbones. Look for brown hair pinned away from the temples. On an ordinary day, the familiar outfit is a black overshirt with pearl buttons with a folded shopping list secured by a miniature clip. In conversation Diana rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Diana admires skill and distrusts the idea that skill gives anyone permission to be rude. Diana learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To include the successor's verse in the docking song.",
+  "family": "Jules Brady is Diana’s cousin raised in the same household. Diana leaves the first voice message. Jules calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A closing hour*, Jules says, “I left my grandfather's coat inside Friday night.”",
+  "connections": "Oakley Carbone. A docking tune gives a child a first pier lesson they can remember at home.",
+  "familyIds": [
+    "AH-R1358"
+  ],
+  "connectionIds": [
+    "AH-R1197"
+  ],
+  "reactions": [
+    {
+      "situation": "An owner offers the former skipper a title with no clear duties",
+      "response": "Diana asks what actual work, hours and wage go with the shore title.",
+      "asWritten": "An owner offers the former skipper a title with no clear duties. Diana asks what actual work, hours and wage go with the shore title."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Diana tells the first helper what they actually saw and makes room for the rider to answer for themself.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Diana tells the first helper what they actually saw and makes room for the rider to answer for themself."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Diana describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Diana describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

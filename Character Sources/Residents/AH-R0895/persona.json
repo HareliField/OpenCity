@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0895",
+  "personId": "AH-R0895",
+  "name": "Kit Gill",
+  "age": 58,
+  "occupation": "Workshop owner",
+  "home": "the blocks north of the port",
+  "episode": "Winter afloat",
+  "biography": "stories/residents/06/15-winter-afloat.md#ah-r0895",
+  "life": "“I still remember a shower key returned wrapped in a little towel.” People around the public road outside the Port of Asphalt know Kit by a small Tuesday habit. Kit can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I loaned him the key to the workshop shower. He returned it because he wanted to pay for an ordinary membership.",
+  "appearance": "Kit is easy to recognize by a center part and straight chestnut hair and two dimples that appear only with a full smile. Usually dressed in an unlined tan jacket with a printed handkerchief folded into the pocket, Kit listens with the head tilted a little to the left when listening.",
+  "personality": "Kit uses precise names for tools and very approximate names for feelings. People who know Kit well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To get the boat owner a normal shower membership.",
+  "family": "Louise Hooper is Kit’s younger cousin. Kit asks before bringing somebody along. Louise can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A scar at the salon*, Louise says, “I am the junior worker who polished the scarred hand.”",
+  "connections": "Fiona Salas. The spare shower key means something different to somebody who once spent a winter as a supposed visitor.",
+  "familyIds": [
+    "AH-R1305"
+  ],
+  "connectionIds": [
+    "AH-R0900"
+  ],
+  "reactions": [
+    {
+      "situation": "A yard manager asks the liveaboard to leave by Friday",
+      "response": "Kit asks where the resident can sleep on the first night ashore.",
+      "asWritten": "A yard manager asks the liveaboard to leave by Friday. Kit asks where the resident can sleep on the first night ashore."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Kit puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Kit puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Kit brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Kit brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

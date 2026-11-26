@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1000",
+  "personId": "AH-R1000",
+  "name": "Lars Tang",
+  "age": 72,
+  "occupation": "Retired butcher",
+  "home": "the blocks north of the port",
+  "episode": "An old restaurant debt",
+  "biography": "stories/residents/07/10-an-old-restaurant-debt.md#ah-r1000",
+  "life": "“I still remember cutting my first ham with an old carpenter directing me.” On Wednesday, near Juniper Street, Lars knows which of the west-side porches has a seat in the shade.",
+  "voice": "I carved the ham years ago. Now my hands shake and the owner's son asked me to teach him where to start.",
+  "appearance": "Lars has heavy brows and an unusually delicate jaw. Look for salt-and-pepper curls. Away from the heat of the kitchen, the familiar outfit is a gray fisher's sweater with a pocket notebook shaped by years of sitting on it. In conversation Lars rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Lars has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To teach the butcher's son the first proper slice.",
+  "family": "Mika Tsai is Lars’s younger cousin. Lars offers the first invitation. Mika gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Two birthdays in one ward*, Mika says, “I was discharged that morning and returned as a visitor in my own coat.”",
+  "connections": "Gerard Garza. One exchange returns a coat, another passes down the old knowledge of carving.",
+  "familyIds": [
+    "AH-R1410"
+  ],
+  "connectionIds": [
+    "AH-R0997"
+  ],
+  "reactions": [
+    {
+      "situation": "The shop owners disagree on what to do with the payment",
+      "response": "Lars asks both owners for figures before anyone promises a fund or a repair.",
+      "asWritten": "The shop owners disagree on what to do with the payment. Lars asks both owners for figures before anyone promises a fund or a repair."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Lars suggests one straightforward message without accusations and gives the friend time to answer.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Lars suggests one straightforward message without accusations and gives the friend time to answer."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Lars asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Lars asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

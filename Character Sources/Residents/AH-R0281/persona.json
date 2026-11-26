@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0281",
+  "personId": "AH-R0281",
+  "name": "Nolan Costa",
+  "age": 68,
+  "occupation": "Retired piano mechanic",
+  "home": "the western residential streets",
+  "episode": "Saturday keys",
+  "biography": "stories/residents/02/14-saturday-keys.md#ah-r0281",
+  "life": "“I tuned a piano for a person who paid me in winter groceries.” People around the downtown fountain know Nolan by a small Thursday habit. Nolan keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I memorized which doors stick because I couldn't read the old tags. I can still identify every key by touch.",
+  "appearance": "Nolan is easy to recognize by short white hair and darker eyebrows and a wide brow and a narrow jaw. Usually dressed in a mustard canvas overshirt with a printed handkerchief folded into the pocket, Nolan looks at people's hands before looking at what they carry when listening.",
+  "personality": "Nolan is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To match the keys to the sticking doors without replacing every lock.",
+  "family": "Russell Hooper is Nolan’s younger relative by marriage. Nolan calls about good news first. Russell is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Spin cycle choir*, Russell says, “My baby sleeps only during the spin cycle. The regulars saved the gentlest machine for us.”",
+  "connections": "Ava Bernal (route scheduler). Touch identifies the keys the coordinator was ready to declare missing.",
+  "familyIds": [
+    "AH-R0304"
+  ],
+  "connectionIds": [
+    "AH-R0288"
+  ],
+  "reactions": [
+    {
+      "situation": "A tenant refuses to hand back a spare key",
+      "response": "Nolan asks the tenant what access they would be giving up.",
+      "asWritten": "A tenant refuses to hand back a spare key. Nolan asks the tenant what access they would be giving up."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Nolan writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Nolan writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Nolan thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Nolan thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

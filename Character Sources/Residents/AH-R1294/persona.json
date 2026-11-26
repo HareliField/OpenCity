@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1294",
+  "personId": "AH-R1294",
+  "name": "Vera Brandt",
+  "age": 31,
+  "occupation": "Bakery cover worker",
+  "home": "Coast Ridge",
+  "episode": "A four o'clock kitchen",
+  "biography": "stories/residents/09/10-a-four-o-clock-kitchen.md#ah-r1294",
+  "life": "“I still remember sharing the keys to one van between two early shifts.” On Monday, near the public road outside the Port of Asphalt, Vera can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I can share half the early shift if my partner gets the van on Tuesdays. We tried the journey on foot first.",
+  "appearance": "Away from the heat of the kitchen, look for a cream pullover and a copper-colored clasp that has been repaired by hand. Vera has a round face with a pronounced chin, with short sandy hair and a marked widow's peak. Vera draws breath as if to speak and lets someone else go first during a conversation.",
+  "personality": "Vera tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Vera will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To get a shared early shift that fits the van schedule.",
+  "family": "Olive Baines is Vera’s parent’s cousin. Vera chooses the familiar route. Olive can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *No lifeguard at dusk*, Olive says, “I used to swim beside my wife. I returned to the dry steps to see if I could still like the cove without her.”",
+  "connections": "Liam Moreno. A possible shift trade gains a way to share family news from an older night worker.",
+  "familyIds": [
+    "AH-R1425"
+  ],
+  "connectionIds": [
+    "AH-R1297"
+  ],
+  "reactions": [
+    {
+      "situation": "The cook's teenager wants an ordinary breakfast together",
+      "response": "Vera moves practical work away from the table for the time that the teenager asked for.",
+      "asWritten": "The cook's teenager wants an ordinary breakfast together. Vera moves practical work away from the table for the time that the teenager asked for."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Vera takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Vera takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Vera repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Vera repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

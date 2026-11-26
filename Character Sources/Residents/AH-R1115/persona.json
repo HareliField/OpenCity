@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1115",
+  "personId": "AH-R1115",
+  "name": "Lou Diaz",
+  "age": 49,
+  "occupation": "Literary organizer",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A prize nobody entered",
+  "biography": "stories/residents/08/07-a-prize-nobody-entered.md#ah-r1115",
+  "life": "“I still remember agreeing a print deposit over the price of a coffee.” Friday often includes a stop at the blocks below Foundry Lofts, where Lou checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I promised the prize money to a printer before the author answered. I will pay the printer myself.",
+  "appearance": "Lou has close-cropped dark curls, one cheek that creases before the other, and a favorite piece of clothing, a cream pullover. It usually goes with a little coil of soft measuring tape. When somebody else has the floor, Lou counts on the side of one finger where hardly anybody notices.",
+  "personality": "Lou prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To settle the printer's bill without pressuring the author.",
+  "family": "Nabil Reed is Lou’s cousin raised in the same household. Lou sets the time to leave. Nabil picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The porch light*, Nabil says, “We rebuilt the post around that live lamp during a blackout anniversary.”",
+  "connections": "Dora Garza. The printer's costs can be settled without taking away the writer's closed room.",
+  "familyIds": [
+    "AH-R0087"
+  ],
+  "connectionIds": [
+    "AH-R1119"
+  ],
+  "reactions": [
+    {
+      "situation": "The prize organizer asks the writer to appear onstage",
+      "response": "Lou asks the organizer to wait for the writer's own answer.",
+      "asWritten": "The prize organizer asks the writer to appear onstage. Lou asks the organizer to wait for the writer's own answer."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Lou asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Lou asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Lou clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Lou clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

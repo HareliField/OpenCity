@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0362",
+  "personId": "AH-R0362",
+  "name": "Emilia Dean",
+  "age": 50,
+  "occupation": "Pharmacy clerk",
+  "home": "Old Town",
+  "episode": "Overdue by a lifetime",
+  "biography": "stories/residents/03/07-overdue-by-a-lifetime.md#ah-r0362",
+  "life": "“I still remember the careful slant of my mum's newly married signature.” On Thursday, near Paper & Pine Books, Emilia starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "My mother signed the slip. It's the earliest sample I've seen of the married name she later gave up.",
+  "appearance": "Emilia has a loose dark braid, a long face and high cheekbones, and a favorite piece of clothing, a dark green knitted vest. It usually goes with a folded shopping list secured by a miniature clip. When somebody else has the floor, Emilia draws breath as if to speak and lets someone else go first.",
+  "personality": "Emilia has a long memory for unfair prices and a short one for small insults. Emilia can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To keep a copy of the mother's old signature.",
+  "family": "Billie Hunt is Emilia’s cousin. Emilia saves a place. Billie chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The empty chair on nights*, Billie says, “I know why she left. It's her marriage and her choice to tell the ward if she wants.”",
+  "connections": "Martin Arrieta (school conservator). The repair paste helps date a signature in a newly adopted surname.",
+  "familyIds": [
+    "AH-R0952"
+  ],
+  "connectionIds": [
+    "AH-R0364"
+  ],
+  "reactions": [
+    {
+      "situation": "The school asks to display the borrower's name",
+      "response": "Emilia asks the former pupil to choose how their name appears.",
+      "asWritten": "The school asks to display the borrower's name. Emilia asks the former pupil to choose how their name appears."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Emilia asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Emilia asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Emilia agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Emilia agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

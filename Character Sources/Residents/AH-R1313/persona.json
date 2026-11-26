@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1313",
+  "personId": "AH-R1313",
+  "name": "Desmond Calloway",
+  "age": 31,
+  "occupation": "Experienced learner and kitchen worker",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The driving lesson fund",
+  "biography": "stories/residents/09/12-the-driving-lesson-fund.md#ah-r1313",
+  "life": "“I still remember learning clutch control on a car that never left the yard.” People around Ferris Deli know Desmond by a small Saturday habit. Desmond asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I can drive but never had a chance to sit the test. I need one hour to get used to being watched.",
+  "appearance": "Away from the heat of the kitchen, look for a brown corduroy jacket and a cloth patch so neatly matched it only shows in strong light. Desmond has a long face and high cheekbones, with dark brown curls cut close behind the ears. Desmond touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Desmond treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To practice being assessed in an unfamiliar car.",
+  "family": "Ariel Kaye is Desmond’s half-sibling. Desmond can stop the walk at any corner. Ariel chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The aquarium*, Ariel says, “The housing photographs kept cropping the tank out.”",
+  "connections": "Gareth Mercer. Job applicants who can drive still have to find a fair way to be tested.",
+  "familyIds": [
+    "AH-R0047"
+  ],
+  "connectionIds": [
+    "AH-R1316"
+  ],
+  "reactions": [
+    {
+      "situation": "Two people qualify for the same funded lesson",
+      "response": "Desmond asks both applicants which transport difficulty one lesson would actually address.",
+      "asWritten": "Two people qualify for the same funded lesson. Desmond asks both applicants which transport difficulty one lesson would actually address."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Desmond offers an ordinary errand that lets the distressed person leave without being followed by an audience.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Desmond offers an ordinary errand that lets the distressed person leave without being followed by an audience."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Desmond changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Desmond changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

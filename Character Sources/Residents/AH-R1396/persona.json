@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1396",
+  "personId": "AH-R1396",
+  "name": "Winifred Bell",
+  "age": 19,
+  "occupation": "College student",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The return of a witness",
+  "biography": "stories/residents/10/05-the-return-of-a-witness.md#ah-r1396",
+  "life": "“I still remember putting a new address on every label in my school bag.” Monday often includes a stop at Lighthouse Cove, where Winifred takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I am her daughter. I know why we moved and I still miss the tree outside my first bedroom.",
+  "appearance": "Winifred has a smooth side part with one rebellious curl, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a mustard canvas overshirt. It usually goes with a small enamel bird on the lapel. When somebody else has the floor, Winifred draws breath as if to speak and lets someone else go first.",
+  "personality": "Winifred can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Winifred can afford to give, and family knows to take it seriously.",
+  "agenda": "To revisit the childhood tree.",
+  "family": "Terry Fong is Winifred’s stepsibling. Winifred gets to change the plan. Terry offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Summer staff*, Terry says, “I took deposits for sunset lessons. I'll refund the ones I can't teach even if it means losing my room.”",
+  "connections": "Reina Sanders. The reporter returns a photograph that contains the daughter's old neighborhood as well as the witness. Also in the story is Sylvia Reeves (mother).",
+  "familyIds": [
+    "AH-R0829"
+  ],
+  "connectionIds": [
+    "AH-R1397",
+    "AH-R1391"
+  ],
+  "reactions": [
+    {
+      "situation": "A reporter wants to attend the visit",
+      "response": "Winifred asks the family whether a reporter was invited before sharing a time or an address.",
+      "asWritten": "A reporter wants to attend the visit. Winifred asks the family whether a reporter was invited before sharing a time or an address."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Winifred offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Winifred offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Winifred suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Winifred suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

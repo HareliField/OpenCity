@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0325",
+  "personId": "AH-R0325",
+  "name": "Daryl Trent",
+  "age": 55,
+  "occupation": "Pension trustee",
+  "home": "the blocks north of the port",
+  "episode": "The widow's dividend",
+  "biography": "stories/residents/03/03-the-widow-s-dividend.md#ah-r0325",
+  "life": "“I still remember my first pension notice arriving on a postcard.” People around Tideline Market know Daryl by a small Saturday habit. Daryl picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "My pension owns a sliver of this firm. I want the tenants to know we're tied together.",
+  "appearance": "Daryl has a blunt cut just below the ears, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, a charcoal zip cardigan. It usually goes with a comb in a sleeve sewn into the lining. When somebody else has the floor, Daryl squares up pieces of paper while thinking.",
+  "personality": "Daryl prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To introduce the tenant association to the pension trustee.",
+  "family": "Mateo Alston is Daryl’s cousin. Daryl chooses whether they walk home or sit a while. Mateo brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *A sail cut small*, Mateo says, “I know where my old racing rival patched the sail.”",
+  "connections": "Iva Allard. The missing signature makes the trustee ask whose stake the ledger didn't show.",
+  "familyIds": [
+    "AH-R0298"
+  ],
+  "connectionIds": [
+    "AH-R0324"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member wants the ledger locked away",
+      "response": "Daryl asks whether the heirs can look at copies without parting with the old ledger.",
+      "asWritten": "A family member wants the ledger locked away. Daryl asks whether the heirs can look at copies without parting with the old ledger."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Daryl takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Daryl takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Daryl clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Daryl clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

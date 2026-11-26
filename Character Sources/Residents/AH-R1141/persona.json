@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1141",
+  "personId": "AH-R1141",
+  "name": "Penelope Tang",
+  "age": 28,
+  "occupation": "Former volunteer and paid shop worker",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The first delivery fee",
+  "biography": "stories/residents/08/10-the-first-delivery-fee.md#ah-r1141",
+  "life": "“I still remember delivering lunch to avoid coming home too early.” Saturday often includes a stop at the market by Market Flats, where Penelope often waits until the delivery baskets are stacked before going in.",
+  "voice": "I volunteered because the route got me out of a miserable house. I can't give my new wages away.",
+  "appearance": "Penelope has a cropped cut that shows the shape of the ears, two dimples that appear only with a full smile, and a favorite piece of clothing, a charcoal zip cardigan. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Penelope draws breath as if to speak and lets someone else go first.",
+  "personality": "Penelope carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To start the paid job with a clean handover of deliveries.",
+  "family": "Nina Arendt is Penelope’s older cousin. Penelope asks what the birthday guest would like this year. Nina remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The empty chair on nights*, Nina says, “I trained her and missed every sign she was working past her limit.”",
+  "connections": "Jonas Osborne. The former volunteer tells a regular who really paid for delivery time. Also in the story is Erin Roche (deli colleague).",
+  "familyIds": [
+    "AH-R0955"
+  ],
+  "connectionIds": [
+    "AH-R1142",
+    "AH-R1149"
+  ],
+  "reactions": [
+    {
+      "situation": "A housebound customer cannot afford the delivery fee",
+      "response": "Penelope asks whether combining a delivery with a willing neighbor would help.",
+      "asWritten": "A housebound customer cannot afford the delivery fee. Penelope asks whether combining a delivery with a willing neighbor would help."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Penelope asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Penelope asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Penelope offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Penelope offers to accompany them while they tell the truth."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0214",
+  "personId": "AH-R0214",
+  "name": "Keir Zhou",
+  "age": 49,
+  "occupation": "Secondhand book sorter",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The margin reader",
+  "biography": "stories/residents/02/07-the-margin-reader.md#ah-r0214",
+  "life": "“Books arrive damp more often from dry flats than owners like to admit.” On Saturday, near the entrance to the Wash House, Keir stops for local notices even on a day without a load to wash.",
+  "voice": "I erased three lines before I understood. I've written down the one I remember.",
+  "appearance": "Keir has a crooked front tooth visible when laughing. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a brown corduroy jacket with a thin silver ring worn on a cord. In conversation Keir draws small circles on a tabletop while waiting.",
+  "personality": "Keir takes a rejection personally for a day and analytically on the second morning. Keir can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To restore a penciled sentence before memory loses it.",
+  "family": "Fernando Arendt is Keir’s older cousin. Keir picks the meeting place. Fernando sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *Two names on the chart*, Fernando says, “I kept a clinic letter because the doctor spelled our village correctly.”",
+  "connections": "Georgia Kwan. The teacher wants the erased sentence restored before the class reads the copy.",
+  "familyIds": [
+    "AH-R1109"
+  ],
+  "connectionIds": [
+    "AH-R0219"
+  ],
+  "reactions": [
+    {
+      "situation": "Two people remember writing the same line",
+      "response": "Keir lets both readers identify the line privately before adding a name.",
+      "asWritten": "Two people remember writing the same line. Keir lets both readers identify the line privately before adding a name."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Keir agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Keir agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Keir turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Keir turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0224",
+  "personId": "AH-R0224",
+  "name": "Kathleen Lu",
+  "age": 27,
+  "occupation": "Composer and dishwasher",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Low water music",
+  "biography": "stories/residents/02/08-low-water-music.md#ah-r0224",
+  "life": "“The first tune I sold was commissioned to advertise a leaking fountain.” Tuesday often includes a stop at Studio Boulevard, where Kathleen waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I wrote a tune around the note and discovered it changes when the rock is wet. I need two endings.",
+  "appearance": "On an ordinary day, look for a moss-green cardigan and a pressed flower kept in the clear back of a phone case. Kathleen has two dimples that appear only with a full smile, with dark brown curls cut close behind the ears. Kathleen turns fully toward the person speaking during a conversation.",
+  "personality": "Kathleen feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To write separate endings for wet rock and dry rock.",
+  "family": "Cal Esmond is Kathleen’s second cousin. Kathleen can stop the walk at any corner. Cal chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *An unfinished atlas*, Cal says, “My funding depends on mapping a vanished street.”",
+  "connections": "Lina Carey. The changing wet note gives the marker painter another reason to leave the rock alone. Also in the story is Jules Moran (choir accompanist).",
+  "familyIds": [
+    "AH-R0069"
+  ],
+  "connectionIds": [
+    "AH-R0226",
+    "AH-R0230"
+  ],
+  "reactions": [
+    {
+      "situation": "A child asks to listen with bare feet",
+      "response": "Kathleen checks where the wet stone is stable and lets the child listen from there.",
+      "asWritten": "A child asks to listen with bare feet. Kathleen checks where the wet stone is stable and lets the child listen from there."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Kathleen offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Kathleen offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Kathleen lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Kathleen lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

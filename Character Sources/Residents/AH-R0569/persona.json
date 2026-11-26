@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0569",
+  "personId": "AH-R0569",
+  "name": "Parker Valdez",
+  "age": 31,
+  "occupation": "Candidate for hotel work",
+  "home": "Coast Ridge",
+  "episode": "The ladder crossing",
+  "biography": "stories/residents/04/12-the-ladder-crossing.md#ah-r0569",
+  "life": "“I still remember an interviewer asking me to start that answer again.” People around Maré Coffee know Parker by a small Thursday habit. Parker likes the table where people coming off shift stop checking the time.",
+  "voice": "I was late for an interview. I described the crossing when they asked how I handle delays.",
+  "appearance": "Parker has a long face and high cheekbones. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is a gray fisher's sweater with a knotted piece of sail thread on a key ring. In conversation Parker draws breath as if to speak and lets someone else go first.",
+  "personality": "Parker is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Parker is concerned.",
+  "agenda": "To explain the real delay at the interview.",
+  "family": "Jamie Hamilton is Parker’s stepsibling. Parker makes the call. Jamie is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A last ship together*, Jamie says, “I make the retirement plaques. One misspelling on the old time sheets has become a nickname they both want on the brass.”",
+  "connections": "Talia Carvalho. A passenger's groceries become part of a candidate's truthful account of lateness.",
+  "familyIds": [
+    "AH-R1365"
+  ],
+  "connectionIds": [
+    "AH-R0566"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver sounds a horn halfway through the crossing",
+      "response": "Parker asks for a pause until the people carrying the ladder can clear the crossing safely.",
+      "asWritten": "A driver sounds a horn halfway through the crossing. Parker asks for a pause until the people carrying the ladder can clear the crossing safely."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Parker offers an ordinary errand that lets the distressed person leave without being followed by an audience.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Parker offers an ordinary errand that lets the distressed person leave without being followed by an audience."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Parker asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Parker asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

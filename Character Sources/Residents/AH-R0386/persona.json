@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0386",
+  "personId": "AH-R0386",
+  "name": "Remy Morris",
+  "age": 37,
+  "occupation": "Cabinet fitter",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The upstairs piano",
+  "biography": "stories/residents/03/09-the-upstairs-piano.md#ah-r0386",
+  "life": "“I still remember measuring a doorway twice and a fresco once.” Monday often includes a stop at the entrance to the Wash House, where Remy stops for local notices even on a day without a load to wash.",
+  "voice": "I calculated the turn perfectly and forgot the banister finial my grandmother carved.",
+  "appearance": "Remy has a flat bridge to the nose and a mobile brow. Look for a soft fringe that falls across one eyebrow. On an ordinary day, the familiar outfit is a brown corduroy jacket with a partly rubbed-away embroidered initial. In conversation Remy draws breath as if to speak and lets someone else go first.",
+  "personality": "Remy tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Remy will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To measure the carved finial with the family present.",
+  "family": "Sylvia Kang is Remy’s cousin raised in the same household. Remy keeps the photographs. Sylvia knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Three minutes at the bridge*, Sylvia says, “I manage payroll and discovered our time clock rounds those exact three minutes away in one department.”",
+  "connections": "Penelope Hong. They measure a carved obstacle before moving the piano again.",
+  "familyIds": [
+    "AH-R1469"
+  ],
+  "connectionIds": [
+    "AH-R0382"
+  ],
+  "reactions": [
+    {
+      "situation": "The owner asks a child to play first",
+      "response": "Remy finds a steady seat for the child and waits for the opening notes.",
+      "asWritten": "The owner asks a child to play first. Remy finds a steady seat for the child and waits for the opening notes."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Remy asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Remy asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Remy repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Remy repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

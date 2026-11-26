@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1072",
+  "personId": "AH-R1072",
+  "name": "Sofia Ayala",
+  "age": 67,
+  "occupation": "Retired guarantor",
+  "home": "Coast Ridge",
+  "episode": "The guarantee",
+  "biography": "stories/residents/08/03-the-guarantee.md#ah-r1072",
+  "life": "“I still remember the day we finally owned the house clean and clear.” On Sunday, near the corner outside Coastal Barber, Sofia usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I understand every page I signed. I would like the children to stop treating my generosity as a symptom.",
+  "appearance": "Sofia is easy to recognize by steel-colored hair cut square above the collar and a flat bridge to the nose and a mobile brow. Usually dressed in a dark green knitted vest with a printed handkerchief folded into the pocket, Sofia rubs a thumb along the edge of the nearest pocket when listening.",
+  "personality": "Sofia loves a well-told anecdote and distrusts the neat ending. The parts Sofia remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To keep authority over the guarantee personally signed.",
+  "family": "Louis Law is Sofia’s younger cousin. Sofia offers the first invitation. Louis gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The driving lesson fund*, Louis says, “I teach under pressure for a living. I want my learner to get through one bend without apologizing for taking time.”",
+  "connections": "Sonia Arnett (daughter). Daughter and mother have to discuss different meanings of a generous guarantee.",
+  "familyIds": [
+    "AH-R1315"
+  ],
+  "connectionIds": [
+    "AH-R1071"
+  ],
+  "reactions": [
+    {
+      "situation": "A sibling wants the bank figures read at a family meal",
+      "response": "Sofia asks the guarantor what can be shared at dinner before reading out any figures.",
+      "asWritten": "A sibling wants the bank figures read at a family meal. Sofia asks the guarantor what can be shared at dinner before reading out any figures."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Sofia waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Sofia waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Sofia includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Sofia includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

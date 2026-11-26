@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0956",
+  "personId": "AH-R0956",
+  "name": "Ashley Brooks",
+  "age": 30,
+  "occupation": "New permanent nurse",
+  "home": "Eastside",
+  "episode": "The empty chair on nights",
+  "biography": "stories/residents/07/06-the-empty-chair-on-nights.md#ah-r0956",
+  "life": "“I still remember receiving a promotion nobody in the room wanted to celebrate.” On Thursday, near the public road outside the Port of Asphalt, Ashley can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I wish somebody would ask how it feels to be the person who gets the permanent post she left.",
+  "appearance": "Ashley is easy to recognize by brown hair pinned away from the temples and a round face with a pronounced chin. Usually dressed in a gray fisher's sweater with a cloth patch so neatly matched it only shows in strong light, Ashley turns fully toward the person speaking when listening.",
+  "personality": "Ashley finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To acknowledge the loss while taking the new post.",
+  "family": "Olivia Farrell is Ashley’s second cousin. Ashley brings something that can still be enjoyed tomorrow. Olivia checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Care with a clock*, Olivia says, “I shaved minutes off my notes until my own pay packet came up short.”",
+  "connections": "Nina Arendt (nurse educator). The educator lets the new nurse discuss the promotion without calling the former nurse replaceable.",
+  "familyIds": [
+    "AH-R0882"
+  ],
+  "connectionIds": [
+    "AH-R0955"
+  ],
+  "reactions": [
+    {
+      "situation": "The departing nurse asks for an ordinary breakfast",
+      "response": "Ashley keeps the breakfast small and sets work questions aside.",
+      "asWritten": "The departing nurse asks for an ordinary breakfast. Ashley keeps the breakfast small and sets work questions aside."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Ashley tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Ashley tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Ashley points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Ashley points to the person who noticed the original mistake."
+    }
+  ]
+}

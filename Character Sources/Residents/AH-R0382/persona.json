@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0382",
+  "personId": "AH-R0382",
+  "name": "Penelope Hong",
+  "age": 38,
+  "occupation": "Professional pianist",
+  "home": "Eastside",
+  "episode": "The upstairs piano",
+  "biography": "stories/residents/03/09-the-upstairs-piano.md#ah-r0382",
+  "life": "“I still remember carrying a cello in a very small postal van.” On Tuesday, near the crossing outside Verve Nail Studio, Penelope notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I trained as a mover before I played professionally. The owner wants me to choose which skill matters.",
+  "appearance": "Penelope has thick, tightly coiled hair, two dimples that appear only with a full smile, and a favorite piece of clothing, a charcoal zip cardigan. It usually goes with a pair of reading glasses in a cloth sleeve. When somebody else has the floor, Penelope rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Penelope carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To move the instrument without sacrificing the painted banister.",
+  "family": "Cameron Tsai is Penelope’s cousin raised in the same household. Penelope asks before bringing somebody along. Cameron can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *An empty dedication*, Cameron says, “I own Paper & Pine. We are selling a few copies with the dedication still blank for readers to give away.”",
+  "connections": "Remy Morris. They measure a carved obstacle before moving the piano again.",
+  "familyIds": [
+    "AH-R1420"
+  ],
+  "connectionIds": [
+    "AH-R0386"
+  ],
+  "reactions": [
+    {
+      "situation": "The owner asks a child to play first",
+      "response": "Penelope finds a steady seat for the child and waits for the opening notes.",
+      "asWritten": "The owner asks a child to play first. Penelope finds a steady seat for the child and waits for the opening notes."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Penelope brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Penelope brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Penelope offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Penelope offers to accompany them while they tell the truth."
+    }
+  ]
+}

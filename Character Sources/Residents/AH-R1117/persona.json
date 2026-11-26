@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1117",
+  "personId": "AH-R1117",
+  "name": "Iva Hayes",
+  "age": 41,
+  "occupation": "Translator",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A prize nobody entered",
+  "biography": "stories/residents/08/07-a-prize-nobody-entered.md#ah-r1117",
+  "life": "“I still remember my first translation printed without my name.” People around the market by Market Flats know Iva by a small Saturday habit. Iva often waits until the delivery baskets are stacked before going in.",
+  "voice": "I translated two pages as a favor. My name is on the cover and the author's wishes aren't.",
+  "appearance": "Iva has an aquiline nose and a square chin. Look for short black hair swept back. On an ordinary day, the familiar outfit is a charcoal zip cardigan with a copper-colored clasp that has been repaired by hand. In conversation Iva touches a knuckle to the chin when searching for a word.",
+  "personality": "Iva often says yes too quickly out of pride in being useful. The people closest to Iva have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To obtain the author's approval for the translation.",
+  "family": "Jon Solis is Iva’s second cousin. Iva can always ask for five minutes alone. Jon asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The thirteenth doughnut*, Jon says, “I kept the lemon one in a bag all day for my wife.”",
+  "connections": "Pat Garrett. An older diarist and a translator compare what genuinely consenting to publication feels like.",
+  "familyIds": [
+    "AH-R0095"
+  ],
+  "connectionIds": [
+    "AH-R1120"
+  ],
+  "reactions": [
+    {
+      "situation": "The prize organizer asks the writer to appear onstage",
+      "response": "Iva asks the organizer to wait for the writer's own answer.",
+      "asWritten": "The prize organizer asks the writer to appear onstage. Iva asks the organizer to wait for the writer's own answer."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Iva walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Iva walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Iva rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Iva rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

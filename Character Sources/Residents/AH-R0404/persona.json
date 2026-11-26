@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0404",
+  "personId": "AH-R0404",
+  "name": "Jo March",
+  "age": 68,
+  "occupation": "Retired barber",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The widow's razor",
+  "biography": "stories/residents/03/11-the-widow-s-razor.md#ah-r0404",
+  "life": "“I still remember learning to shave a balloon without breaking it.” People around the courtyard by Ferry Street Rooms know Jo by a small Tuesday habit. Jo prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I was forbidden to cut girls' hair here. That woman lent me the razor for my first paying customer.",
+  "appearance": "Jo has gray hair trimmed very close behind the ears, a long face and high cheekbones, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a thin silver ring worn on a cord. When somebody else has the floor, Jo looks at people's hands before looking at what they carry.",
+  "personality": "Jo feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To show the widow what her wife's loan made possible.",
+  "family": "Jody Clay is Jo’s cousin’s child. Jo asks before bringing somebody along. Jody can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The missing Sunday*, Jody says, “I love his company but I also need Sundays for my own marriage.”",
+  "connections": "Jamie Jiang. A last shave and a first chance to barber belong to the widow's account of the razor.",
+  "familyIds": [
+    "AH-R1334"
+  ],
+  "connectionIds": [
+    "AH-R0401"
+  ],
+  "reactions": [
+    {
+      "situation": "The widow wants to tell the apprentice who held it first",
+      "response": "Jo makes space for the widow and the apprentice to talk without buyers listening.",
+      "asWritten": "The widow wants to tell the apprentice who held it first. Jo makes space for the widow and the apprentice to talk without buyers listening."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Jo asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Jo asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Jo lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Jo lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

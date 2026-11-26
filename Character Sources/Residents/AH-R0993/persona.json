@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0993",
+  "personId": "AH-R0993",
+  "name": "Jamie Grant",
+  "age": 68,
+  "occupation": "Retired deli cook",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "An old restaurant debt",
+  "biography": "stories/residents/07/10-an-old-restaurant-debt.md#ah-r0993",
+  "life": "“I still remember carving onions while grieving over an unfinished quarrel.” On Wednesday, near the downtown fountain, Jamie keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I cooked that wake after a fight with the man who died. I remember the onions better than the apology.",
+  "appearance": "Jamie has silver temples and a dark fringe, a wide brow and a narrow jaw, and a favorite piece of clothing, a charcoal zip cardigan. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Jamie starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Jamie has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To finish the apology the onions once interrupted.",
+  "family": "Cynthia Hall is Jamie’s half-sibling. Jamie can stop the walk at any corner. Cynthia chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *A chair of one's own*, Cynthia says, “I am the mother lending the deposit. I'd like my daughter to stop describing family money as luck.”",
+  "connections": "Scout Saito. A cook remembers the quarrel while a debtor's relative remembers the meal that survived it.",
+  "familyIds": [
+    "AH-R0858"
+  ],
+  "connectionIds": [
+    "AH-R0998"
+  ],
+  "reactions": [
+    {
+      "situation": "A family returns to settle the old wake invoice",
+      "response": "Jamie brings out the old book and lets the family say how they want the payment recorded.",
+      "asWritten": "A family returns to settle the old wake invoice. Jamie brings out the old book and lets the family say how they want the payment recorded."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Jamie sits beside them without expecting a performance and asks if they want to go outside.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Jamie sits beside them without expecting a performance and asks if they want to go outside."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Jamie says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Jamie says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

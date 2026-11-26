@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0949",
+  "personId": "AH-R0949",
+  "name": "Evelyn Kaur",
+  "age": 38,
+  "occupation": "Party host",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The release address",
+  "biography": "stories/residents/07/05-the-release-address.md#ah-r0949",
+  "life": "“I still remember a celebration too loud for the person we were welcoming.” People around Paper & Pine Books know Evelyn by a small Wednesday habit. Evelyn starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I argued for a homecoming party until he asked for one evening when nobody wanted a speech.",
+  "appearance": "On an ordinary day, look for an old plum windbreaker and a pressed flower kept in the clear back of a phone case. Evelyn has heavy brows and an unusually delicate jaw, with a blunt cut just below the ears. Evelyn raises one eyebrow long before saying yes during a conversation.",
+  "personality": "Evelyn can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Evelyn can afford to give, and family knows to take it seriously.",
+  "agenda": "To give the returning man a speech-free evening.",
+  "family": "Max Carbone is Evelyn’s half-sibling. Evelyn asks what the birthday guest would like this year. Max remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Home with stairs*, Max says, “I wanted the bed free for another patient. I went to see the stairs before asking for a date again.”",
+  "connections": "Frankie Levin. A furniture number and a quiet evening may be more usable than a homecoming party.",
+  "familyIds": [
+    "AH-R0806"
+  ],
+  "connectionIds": [
+    "AH-R0946"
+  ],
+  "reactions": [
+    {
+      "situation": "The returning father asks to visit the old address",
+      "response": "Evelyn checks whether the person living there now wants visitors.",
+      "asWritten": "The returning father asks to visit the old address. Evelyn checks whether the person living there now wants visitors."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Evelyn asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Evelyn asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Evelyn suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Evelyn suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

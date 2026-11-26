@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1223",
+  "personId": "AH-R1223",
+  "name": "Philip Yu",
+  "age": 47,
+  "occupation": "Homeowner's son and travel agent",
+  "home": "the blocks north of the port",
+  "episode": "The million-dollar flat",
+  "biography": "stories/residents/09/03-the-million-dollar-flat.md#ah-r1223",
+  "life": "“I still remember asking my mother for money with a full fridge at home.” On Saturday, near the market by Market Flats, Philip often waits until the delivery baskets are stacked before going in.",
+  "voice": "I am the son who asked for an advance against the inheritance. Seeing Mum count coins for coffee made me withdraw it.",
+  "appearance": "Philip has short, uneven waves that refuse to lie flat, two dimples that appear only with a full smile, and a favorite piece of clothing, a plum-colored cardigan. It usually goes with a copper-colored clasp that has been repaired by hand. When somebody else has the floor, Philip looks toward the door whenever a name is called.",
+  "personality": "Philip finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To withdraw the premature inheritance request.",
+  "family": "Sasha Wong is Philip’s cousin. Philip gets to change the plan. Sasha offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *A boat for sale twice*, Sasha says, “I wrote my ex's number the first time. We haven't decided which of us owns the good years aboard.”",
+  "connections": "Mona Brandt. The old lady's son discovers who has been extending lunch credit. Also in the story is Nell Tang (mother).",
+  "familyIds": [
+    "AH-R0741"
+  ],
+  "connectionIds": [
+    "AH-R1226",
+    "AH-R1221"
+  ],
+  "reactions": [
+    {
+      "situation": "The homeowner is asked to sell while the market is high",
+      "response": "Philip checks which affordable addresses leave the sister within visiting distance.",
+      "asWritten": "The homeowner is asked to sell while the market is high. Philip checks which affordable addresses leave the sister within visiting distance."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Philip alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Philip alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Philip points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Philip points to the person who noticed the original mistake."
+    }
+  ]
+}

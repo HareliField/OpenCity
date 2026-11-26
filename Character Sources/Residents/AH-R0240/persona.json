@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0240",
+  "personId": "AH-R0240",
+  "name": "Jaime Holt",
+  "age": 37,
+  "occupation": "Traveling catering worker",
+  "home": "the blocks north of the port",
+  "episode": "A wall of birthdays",
+  "biography": "stories/residents/02/09-a-wall-of-birthdays.md#ah-r0240",
+  "life": "“My children remember the colors of old flats better than their addresses.” People around Juniper Street know Jaime by a small Thursday habit. Jaime knows which of the west-side porches has a seat in the shade.",
+  "voice": "My kids have moved five times. We're starting their marks on a board we can carry through any door.",
+  "appearance": "Jaime is easy to recognize by auburn hair cut square at the nape and a small notch in the left eyebrow. Usually dressed in a plum-colored cardigan with a stitched row of blue crosses along an old repair, Jaime presses the lips together to keep a smile in when listening.",
+  "personality": "Jaime loves a well-told anecdote and distrusts the neat ending. The parts Jaime remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To build a traveling height board for the children.",
+  "family": "Damian Fadel is Jaime’s cousin. Jaime chooses the familiar route. Damian can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Land without cranes*, Damian says, “I have the keys and no vote. I have offered every voter an hour inside on a working day.”",
+  "connections": "Sam Collins. They design a sheet that can move house on the back of a child's growing board.",
+  "familyIds": [
+    "AH-R1070"
+  ],
+  "connectionIds": [
+    "AH-R0237"
+  ],
+  "reactions": [
+    {
+      "situation": "A family asks for a tracing to take away",
+      "response": "Jaime asks which pencil marks the family recognizes as their own.",
+      "asWritten": "A family asks for a tracing to take away. Jaime asks which pencil marks the family recognizes as their own."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Jaime takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Jaime takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Jaime includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Jaime includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

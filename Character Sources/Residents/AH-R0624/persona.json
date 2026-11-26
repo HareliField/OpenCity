@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0624",
+  "personId": "AH-R0624",
+  "name": "Cory Walker",
+  "age": 73,
+  "occupation": "Retired college porter",
+  "home": "Eastside",
+  "episode": "The trust with a typo",
+  "biography": "stories/residents/05/03-the-trust-with-a-typo.md#ah-r0624",
+  "life": "“I still remember buying a student a ticket to an exam out of town.” Saturday often includes a stop at Lighthouse Cove, where Cory takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I knew the founder when she couldn't afford the exam. I want the next pupil to hear that part.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a thin silver ring worn on a cord. Cory has a wide brow and a narrow jaw, with closely cropped salt-and-pepper hair. Cory holds eye contact until the other person has finished during a conversation.",
+  "personality": "Cory never tires of being shown how somebody makes a living. Cory can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To tell applicants why exam fees matter.",
+  "family": "Marisol Vega is Cory’s cousin’s child. Cory chooses whether to use it. Marisol saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The wrong bicycle*, Marisol says, “My first bicycle belonged to three cousins before me.”",
+  "connections": "Darcy Reyes. One former applicant's embarrassment helps a new candidate choose a preferred name.",
+  "familyIds": [
+    "AH-R0031"
+  ],
+  "connectionIds": [
+    "AH-R0626"
+  ],
+  "reactions": [
+    {
+      "situation": "The founder is asked to use a formal name",
+      "response": "Cory leaves the founder to decide what her own name on a letter should be.",
+      "asWritten": "The founder is asked to use a formal name. Cory leaves the founder to decide what her own name on a letter should be."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Cory asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Cory asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Cory may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Cory may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

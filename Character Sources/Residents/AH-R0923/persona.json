@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0923",
+  "personId": "AH-R0923",
+  "name": "Anna Avila",
+  "age": 58,
+  "occupation": "Tenant cooperative treasurer",
+  "home": "Coast Ridge",
+  "episode": "A widow bids again",
+  "biography": "stories/residents/07/03-a-widow-bids-again.md#ah-r0923",
+  "life": "“I still remember signing the tenants' first shared repair request.” People around Tideline Market know Anna by a small Wednesday habit. Anna picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I want ownership shared because the widow's next wife might feel differently about us.",
+  "appearance": "Anna has dark brown curls cut close behind the ears, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Anna takes off the watch before a long conversation.",
+  "personality": "Anna loves a well-told anecdote and distrusts the neat ending. The parts Anna remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To get protection beyond the current donor's lifetime.",
+  "family": "Leon Gao is Anna’s second cousin. Anna chooses the music. Leon puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The second dog*, Leon says, “I've made two tags with different sounds. You can tell who's coming down the stairs without looking.”",
+  "connections": "Albert Barclay. The tenant group adds a usable entry bench to the terms before backing any owner.",
+  "familyIds": [
+    "AH-R0190"
+  ],
+  "connectionIds": [
+    "AH-R0928"
+  ],
+  "reactions": [
+    {
+      "situation": "The millionaire bidder offers a private deal",
+      "response": "Anna gets the offer written down where the tenant group can consider it.",
+      "asWritten": "The millionaire bidder offers a private deal. Anna gets the offer written down where the tenant group can consider it."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Anna asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Anna asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Anna includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Anna includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

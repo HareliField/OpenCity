@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0804",
+  "personId": "AH-R0804",
+  "name": "Kira Holmes",
+  "age": 53,
+  "occupation": "Ground-floor tenant and teacher",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Home with stairs",
+  "biography": "stories/residents/06/06-home-with-stairs.md#ah-r0804",
+  "life": "“I still remember hosting a visitor who needed the lamp left on.” Sunday often includes a stop at the steps at Pier Beach, where Kira watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I live on the ground floor and offered my bedroom. I had forgotten how badly I need my own quiet mornings.",
+  "appearance": "Kira has short sandy hair and a marked widow's peak, a long face and high cheekbones, and a favorite piece of clothing, a black overshirt with pearl buttons. It usually goes with a fabric zip pull cut from a school scarf. When somebody else has the floor, Kira starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Kira is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To agree a temporary bedroom offer that both households can tolerate.",
+  "family": "Rae Dove is Kira’s cousin. Kira brings the paper and a pen. Rae decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *First shift back*, Rae says, “I saved an old mug and lost it on the very morning of the return.”",
+  "connections": "Belinda Lee. An offer of a bedroom gets a useful limit from the old recovery calendar.",
+  "familyIds": [
+    "AH-R1087"
+  ],
+  "connectionIds": [
+    "AH-R0810"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative offers to carry the patient up the stairs",
+      "response": "Kira asks the patient whether being carried is an offer they want to take up.",
+      "asWritten": "A relative offers to carry the patient up the stairs. Kira asks the patient whether being carried is an offer they want to take up."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Kira asks what the friend actually said last time and checks whether anybody is expecting them at home.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Kira asks what the friend actually said last time and checks whether anybody is expecting them at home."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Kira thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Kira thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

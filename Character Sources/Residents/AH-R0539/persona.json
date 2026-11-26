@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0539",
+  "personId": "AH-R0539",
+  "name": "Tariq Wells",
+  "age": 39,
+  "occupation": "Estate auctioneer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The porch auction",
+  "biography": "stories/residents/04/09-the-porch-auction.md#ah-r0539",
+  "life": "“I still remember an aunt who always bought her own chairs back.” On Monday, near the entrance to the Wash House, Tariq stops for local notices even on a day without a load to wash.",
+  "voice": "I came to haggle and found my aunt's name underneath the most expensive chair.",
+  "appearance": "Tariq is easy to recognize by short sandy hair and a marked widow's peak and one cheek that creases before the other. Usually dressed in a washed violet jersey with a thin silver ring worn on a cord, Tariq counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Tariq has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To identify the aunt who marked the chair.",
+  "family": "Kai Chen is Tariq’s cousin. Tariq brings the paper and a pen. Kai decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The Saturday swap*, Kai says, “I want my old partner to cover for me and we've barely spoken since I got the promotion we both wanted.”",
+  "connections": "Miguel Tsai. An aunt's name on the furniture leads to a Sunday invitation at the smaller flat.",
+  "familyIds": [
+    "AH-R0789"
+  ],
+  "connectionIds": [
+    "AH-R0540"
+  ],
+  "reactions": [
+    {
+      "situation": "Two visitors bid against each other for the porch chair",
+      "response": "Tariq asks whether both people want the object itself or a particular memory of it.",
+      "asWritten": "Two visitors bid against each other for the porch chair. Tariq asks whether both people want the object itself or a particular memory of it."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Tariq starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Tariq starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Tariq asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Tariq asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

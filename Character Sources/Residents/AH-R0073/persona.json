@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0073",
+  "personId": "AH-R0073",
+  "name": "Aster Loy",
+  "age": 70,
+  "occupation": "Retired surveyor",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A tide at noon",
+  "biography": "stories/residents/01/08-a-tide-at-noon.md#ah-r0073",
+  "life": "Aster can calculate a slope in her head and can't make herself throw out an old calendar. This combination was harmless until a tide line involved children who had worked all morning. On Monday, near Tideline Market, Aster picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I painted the line with a tide table from the wrong year. I told the smallest builder first. She asked for my ruler and put me to work on drainage.",
+  "appearance": "Aster is easy to recognize by closely cropped salt-and-pepper hair and a wide brow and a narrow jaw. Usually dressed in an unlined tan jacket with a thin silver ring worn on a cord, Aster holds eye contact until the other person has finished when listening.",
+  "personality": "Aster gets protective of anybody who comes into a meeting unprepared. Aster privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To correct the tide mark in front of the builders affected.",
+  "family": "Jeff Jones is Aster’s younger cousin. Aster asks before bringing somebody along. Jeff can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A room for a father*, Jeff says, “I paid for the train fare and secretly hoped he'd miss the train.”",
+  "connections": "Cato Hull. One knows where the line should have gone. The other knows how the water reached it anyway.",
+  "familyIds": [
+    "AH-R0839"
+  ],
+  "connectionIds": [
+    "AH-R0078"
+  ],
+  "reactions": [
+    {
+      "situation": "The water reaches a child's castle before judging",
+      "response": "Aster gives the builder time to show the judges what the water took.",
+      "asWritten": "The water reaches a child's castle before judging. Aster gives the builder time to show the judges what the water took."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Aster asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Aster asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Aster offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Aster offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

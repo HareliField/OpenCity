@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0188",
+  "personId": "AH-R0188",
+  "name": "Adriana Arnett",
+  "age": 39,
+  "occupation": "Parcel depot supervisor",
+  "home": "Coast Ridge",
+  "episode": "The second dog",
+  "biography": "stories/residents/02/04-the-second-dog.md#ah-r0188",
+  "life": "“My first depot kept delivery photographs in a biscuit tin.” On Saturday, near Ferris Deli, Adriana asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I have the delivery photo of both dogs in the same yard. I want the courier credited for solving it.",
+  "appearance": "On an ordinary day, look for a sand-colored linen shirt and a cloth patch so neatly matched it only shows in strong light. Adriana has a flat bridge to the nose and a mobile brow, with a swept fringe and a closely clipped nape. Adriana turns fully toward the person speaking during a conversation.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Adriana takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To credit the driver who photographed both dogs.",
+  "family": "Merit Shaw is Adriana’s half-sibling. Adriana chooses the music. Merit puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A chair on the quay*, Merit says, “I offered to pay to ship it to his sister. Then I learned they haven't spoken in eleven years.”",
+  "connections": "Leon Gao. The delivery picture lets the engraver finish the two distinct tags.",
+  "familyIds": [
+    "AH-R0019"
+  ],
+  "connectionIds": [
+    "AH-R0190"
+  ],
+  "reactions": [
+    {
+      "situation": "A parent wants both dogs handed over immediately",
+      "response": "Adriana waits until the dogs and the children are settled before discussing the handover.",
+      "asWritten": "A parent wants both dogs handed over immediately. Adriana waits until the dogs and the children are settled before discussing the handover."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Adriana gives up their own space if possible and asks the passengers who arrived first to choose what happens next.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Adriana gives up their own space if possible and asks the passengers who arrived first to choose what happens next."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Adriana asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Adriana asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

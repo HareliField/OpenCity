@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1486",
+  "personId": "AH-R1486",
+  "name": "Teal Starr",
+  "age": 44,
+  "occupation": "Care agency payroll clerk",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The last home visit",
+  "biography": "stories/residents/10/14-the-last-home-visit.md#ah-r1486",
+  "life": "“I still remember signing expenses a worker felt guilty submitting.” On Tuesday, near Tideline Market, Teal picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I did her payroll. The route took an extra fifteen minutes every Friday and she never asked me to find them.",
+  "appearance": "On an ordinary day, look for a faded indigo overshirt and a thin silver ring worn on a cord. Teal has a small notch in the left eyebrow, with short copper curls. Teal starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Teal treats a small promise with the gravity others reserve for a contract. This makes Teal lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To account for the Friday quarter-hours.",
+  "family": "Elinor Stein is Teal’s second cousin. Teal brings something that can still be enjoyed tomorrow. Elinor checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *A boat for sale twice*, Elinor says, “I only wanted the dinghy we learned to row in.”",
+  "connections": "Jody Schmidt. A payroll worker records the lost quarter hours and a neighbor supplies the first dark-morning lift.",
+  "familyIds": [
+    "AH-R0744"
+  ],
+  "connectionIds": [
+    "AH-R1487"
+  ],
+  "reactions": [
+    {
+      "situation": "The successor asks for a private introduction at the door",
+      "response": "Teal introduces the successor quietly and gives the client a chance to set the routine.",
+      "asWritten": "The successor asks for a private introduction at the door. Teal introduces the successor quietly and gives the client a chance to set the routine."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Teal offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Teal offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Teal says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Teal says what can be returned and asks whether that will do."
+    }
+  ]
+}

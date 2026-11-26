@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0375",
+  "personId": "AH-R0375",
+  "name": "Emery Holland",
+  "age": 55,
+  "occupation": "Boardwalk carpenter",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The painted footprint",
+  "biography": "stories/residents/03/08-the-painted-footprint.md#ah-r0375",
+  "life": "“I still remember repairing the boardwalk under the runners' feet.” People around the window at Night Shift Donuts know Emery by a small Tuesday habit. Emery knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I covered it during repairs and felt awful. There's a tracing under my toolbox lid.",
+  "appearance": "On an ordinary day, look for a plum-colored cardigan and a knotted piece of sail thread on a key ring. Emery has a deep crease beside the mouth when smiling, with a dark undercut with a longer wave on top. Emery looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Emery is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Emery is concerned.",
+  "agenda": "To put the saved tracing in the beach records.",
+  "family": "Greta Ray is Emery’s younger cousin. Emery keeps the photographs. Greta knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *A play in a pocket*, Greta says, “I was filming until I understood the invitation was for one person.”",
+  "connections": "Ellen Scott. A saved tracing gives the runner somewhere to look for the buried starting mark.",
+  "familyIds": [
+    "AH-R0579"
+  ],
+  "connectionIds": [
+    "AH-R0376"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor insists the footprint must belong to a famous runner",
+      "response": "Emery checks for a family photograph before accepting the famous name.",
+      "asWritten": "A visitor insists the footprint must belong to a famous runner. Emery checks for a family photograph before accepting the famous name."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Emery takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Emery takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Emery asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Emery asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

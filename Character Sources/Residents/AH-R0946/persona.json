@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0946",
+  "personId": "AH-R0946",
+  "name": "Frankie Levin",
+  "age": 36,
+  "occupation": "Former drug seller and furniture mover",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The release address",
+  "biography": "stories/residents/07/05-the-release-address.md#ah-r0946",
+  "life": "“I still remember moving furniture through a lobby where I used to sell drugs.” On Thursday, near the bank steps, Frankie takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I used to bring him drugs. He asked me for the number of a furniture mover and nothing else.",
+  "appearance": "Frankie has a center part and straight chestnut hair, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a watch on a cracked leather band. When somebody else has the floor, Frankie raises one eyebrow long before saying yes.",
+  "personality": "Frankie is kind in very practical ways and prickly about being thanked in public. Frankie loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To give the father an ordinary contact for moving furniture.",
+  "family": "Marc Carr is Frankie’s half-sibling. Frankie puts the kettle on. Marc chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Names on the night wall*, Marc says, “I am the neighbor named in three different cards.”",
+  "connections": "Evelyn Kaur. A furniture number and a quiet evening may be more usable than a homecoming party.",
+  "familyIds": [
+    "AH-R1389"
+  ],
+  "connectionIds": [
+    "AH-R0949"
+  ],
+  "reactions": [
+    {
+      "situation": "A child wants to leave the homecoming meal early",
+      "response": "Frankie gives the child an ordinary excuse to step outside without suggesting they reject the father.",
+      "asWritten": "A child wants to leave the homecoming meal early. Frankie gives the child an ordinary excuse to step outside without suggesting they reject the father."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Frankie asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Frankie asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Frankie gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Frankie gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

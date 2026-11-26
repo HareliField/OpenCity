@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0235",
+  "personId": "AH-R0235",
+  "name": "Stefan Tate",
+  "age": 77,
+  "occupation": "Retired childminder",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A wall of birthdays",
+  "biography": "stories/residents/02/09-a-wall-of-birthdays.md#ah-r0235",
+  "life": "“I minded seven children who pretended not to know me when they grew tall.” On Friday, near Harbour Bakery, Stefan buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I measured every child who lived here while their parents worked. I can identify nine initials nobody else knows.",
+  "appearance": "Stefan is easy to recognize by steel-colored hair cut square above the collar and full cheeks and a mouth that pulls slightly to one side. Usually dressed in a sand-colored linen shirt with a pen clipped inside the neckline, Stefan rubs a thumb along the edge of the nearest pocket when listening.",
+  "personality": "Stefan treats a small promise with the gravity others reserve for a contract. This makes Stefan lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To identify the children behind the remaining initials.",
+  "family": "Lionel Walker is Stefan’s first cousin once removed. At a family wedding the hired photographer missed the older relatives entirely. They assembled a second album from pictures taken over shoulders at the kitchen door. Stefan looks for the people making the event possible. Asked about *Money after marriage*, Lionel says, “I trained the night manager to cover for family emergencies.”",
+  "connections": "Victor Sun. A new adult height mark fits beside names the former childminder still remembers.",
+  "familyIds": [
+    "AH-R0780"
+  ],
+  "connectionIds": [
+    "AH-R0231"
+  ],
+  "reactions": [
+    {
+      "situation": "The landlord wants the height marks covered today",
+      "response": "Stefan offers to help trace the height marks before work continues.",
+      "asWritten": "The landlord wants the height marks covered today. Stefan offers to help trace the height marks before work continues."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Stefan asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Stefan asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Stefan says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Stefan says what can be returned and asks whether that will do."
+    }
+  ]
+}

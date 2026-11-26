@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0172",
+  "personId": "AH-R0172",
+  "name": "Rosemary Morris",
+  "age": 47,
+  "occupation": "Loan officer",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The sandwich board",
+  "biography": "stories/residents/02/03-the-sandwich-board.md#ah-r0172",
+  "life": "“I once financed an ice machine without noticing the shop had no summer lease.” Monday often includes a stop at the blocks below Foundry Lofts, where Rosemary checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I lent against the fridge. Seeing the board in the lot makes me wonder what else my signature swept up.",
+  "appearance": "Rosemary has a deep crease beside the mouth when smiling. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a cream pullover with one cuff folded back twice. In conversation Rosemary squares up pieces of paper while thinking.",
+  "personality": "Rosemary reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Rosemary trusts most.",
+  "agenda": "To get the lender to identify exactly what the auction includes.",
+  "family": "Diana Romero is Rosemary’s half-sibling. Rosemary makes the call. Diana is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A tenant who stays*, Diana says, “I manage the house on a spreadsheet. The first visit changed which numbers I wanted beside the price.”",
+  "connections": "Lena Roth. They review exactly which business assets the auction swept up. Also in the story is Harley Cao (auction bidder).",
+  "familyIds": [
+    "AH-R0983"
+  ],
+  "connectionIds": [
+    "AH-R0177",
+    "AH-R0171"
+  ],
+  "reactions": [
+    {
+      "situation": "An old customer wants a debt to stay between two people",
+      "response": "Rosemary keeps the amount beside the old customer's name off the public board.",
+      "asWritten": "An old customer wants a debt to stay between two people. Rosemary keeps the amount beside the old customer's name off the public board."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Rosemary looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Rosemary looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Rosemary does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Rosemary does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0638",
+  "personId": "AH-R0638",
+  "name": "Eden Tran",
+  "age": 49,
+  "occupation": "Name badge printer",
+  "home": "Midtown",
+  "episode": "One clean day",
+  "biography": "stories/residents/05/04-one-clean-day.md#ah-r0638",
+  "life": "“I still remember a badge that said visitor in my own school.” On Monday, near the approach to Seabright Court, Eden likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I hate reunion badges. I made ones that let people write what they're doing tomorrow.",
+  "appearance": "Eden is easy to recognize by a dark undercut with a longer wave on top and an aquiline nose and a square chin. Usually dressed in a soft blue checked shirt with a little coil of soft measuring tape, Eden gathers both sleeves neatly before settling in when listening.",
+  "personality": "Eden never tires of being shown how somebody makes a living. Eden can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To let every guest write a new badge.",
+  "family": "Helena Alston is Eden’s cousin raised in the same household. Some years the only new thing anybody in the family got was a pair of shoes. Buying the right size for someone with plans of their own mattered much more than buying a surprise. Eden can make accepting practical help feel like choosing a present. Asked about *The new language at dinner*, Helena says, “I am the carer he loves. I can cook his favorite food and I cannot ask where it hurts.”",
+  "connections": "Sam Yeo. The absent names help the badge writer work out whom to invite next year.",
+  "familyIds": [
+    "AH-R1184"
+  ],
+  "connectionIds": [
+    "AH-R0633"
+  ],
+  "reactions": [
+    {
+      "situation": "The person everyone expects to speak wants to sit down",
+      "response": "Eden gives the expected speaker a seat and lets the old classmates start talking amongst themselves.",
+      "asWritten": "The person everyone expects to speak wants to sit down. Eden gives the expected speaker a seat and lets the old classmates start talking amongst themselves."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Eden says what they know in their own name and refuses to treat a guess as something the child has to disprove.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Eden says what they know in their own name and refuses to treat a guess as something the child has to disprove."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Eden may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Eden may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1292",
+  "personId": "AH-R1292",
+  "name": "Orlando Dinh",
+  "age": 39,
+  "occupation": "Early shift port driver",
+  "home": "the blocks north of the port",
+  "episode": "A four o'clock kitchen",
+  "biography": "stories/residents/09/10-a-four-o-clock-kitchen.md#ah-r1292",
+  "life": "“I still remember going to the quay hungry after missing the first bus.” Wednesday often includes a stop at Maré Coffee, where Orlando likes the table where people coming off shift stop checking the time.",
+  "voice": "I work the port shift and the first warm meal makes me less short-tempered with my kid after work.",
+  "appearance": "Orlando is easy to recognize by a long plait tucked inside the collar and a deep crease beside the mouth when smiling. Usually dressed in a faded indigo overshirt with a partly rubbed-away embroidered initial, Orlando gathers both sleeves neatly before settling in when listening.",
+  "personality": "Orlando treats a small promise with the gravity others reserve for a contract. This makes Orlando lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To keep an affordable warm meal before work.",
+  "family": "Jo Grant is Orlando’s second cousin. Orlando decides what stays off the paper. Jo brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *A civilian apology*, Jo says, “I wrote the caption from a shorthand note. I remember the shopkeeper bringing tea to the waiting families.”",
+  "connections": "Julia Cao. A port employee's need for breakfast and a union subsidy get considered alongside the cook's time.",
+  "familyIds": [
+    "AH-R0931"
+  ],
+  "connectionIds": [
+    "AH-R1299"
+  ],
+  "reactions": [
+    {
+      "situation": "The cook's teenager wants an ordinary breakfast together",
+      "response": "Orlando moves practical work away from the table for the time that the teenager asked for.",
+      "asWritten": "The cook's teenager wants an ordinary breakfast together. Orlando moves practical work away from the table for the time that the teenager asked for."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Orlando asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Orlando asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Orlando says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Orlando says what can be returned and asks whether that will do."
+    }
+  ]
+}

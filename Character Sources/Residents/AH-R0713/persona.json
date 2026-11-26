@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0713",
+  "personId": "AH-R0713",
+  "name": "Jack Saito",
+  "age": 40,
+  "occupation": "Morning bus commuter",
+  "home": "Midtown",
+  "episode": "Level with the window",
+  "biography": "stories/residents/05/12-level-with-the-window.md#ah-r0713",
+  "life": "“I still remember watching somebody across a road who seemed to recognize me.” People around the downtown fountain know Jack by a small Sunday habit. Jack keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I share a smile with a passenger every morning. The detour ends Friday and I'd like to learn her name.",
+  "appearance": "On an ordinary day, look for a soft blue checked shirt and a cloth patch so neatly matched it only shows in strong light. Jack has one cheek that creases before the other, with a smooth side part with one rebellious curl. Jack raises one eyebrow long before saying yes during a conversation.",
+  "personality": "Jack thinks best while walking. Sitting beneath someone's office clock makes Jack sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To introduce the window neighbors before the detour ends.",
+  "family": "Hollis Aranda is Jack’s cousin. Jack asks before bringing somebody along. Hollis can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The salon on strike*, Hollis says, “I promoted the party online and quietly deleted the post.”",
+  "connections": "Ismael Gross. A commuter's wave and a newly reopened curtain survive the end of the detour.",
+  "familyIds": [
+    "AH-R1008"
+  ],
+  "connectionIds": [
+    "AH-R0720"
+  ],
+  "reactions": [
+    {
+      "situation": "A passenger asks to photograph a stranger through the kitchen window",
+      "response": "Jack waits for the resident to give permission before a camera goes up.",
+      "asWritten": "A passenger asks to photograph a stranger through the kitchen window. Jack waits for the resident to give permission before a camera goes up."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Jack keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Jack keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Jack asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Jack asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

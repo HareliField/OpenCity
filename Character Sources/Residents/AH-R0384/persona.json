@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0384",
+  "personId": "AH-R0384",
+  "name": "Ivy Knight",
+  "age": 50,
+  "occupation": "Record shop clerk",
+  "home": "Coast Ridge",
+  "episode": "The upstairs piano",
+  "biography": "stories/residents/03/09-the-upstairs-piano.md#ah-r0384",
+  "life": "“I still remember hearing my first record with one ear covered.” Thursday often includes a stop at Paper & Pine Books, where Ivy starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I'm deaf in one ear. The landing is the only place in this building where I hear the bass clearly.",
+  "appearance": "On an ordinary day, look for a red windbreaker and a stitched row of blue crosses along an old repair. Ivy has a long face and high cheekbones, with short, uneven waves that refuse to lie flat. Ivy presses the lips together to keep a smile in during a conversation.",
+  "personality": "Ivy treats a small promise with the gravity others reserve for a contract. This makes Ivy lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To reserve a listening spot for the working bass register.",
+  "family": "Nora Nolasco is Ivy’s second cousin. Ivy saves a place. Nora chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *Station steps in rain*, Nora says, “I brought a petition and the names ran together.”",
+  "connections": "John Collins. A street recording lets the neighbor compare how the bass sounds outside.",
+  "familyIds": [
+    "AH-R0483"
+  ],
+  "connectionIds": [
+    "AH-R0390"
+  ],
+  "reactions": [
+    {
+      "situation": "The owner asks a child to play first",
+      "response": "Ivy finds a steady seat for the child and waits for the opening notes.",
+      "asWritten": "The owner asks a child to play first. Ivy finds a steady seat for the child and waits for the opening notes."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Ivy draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Ivy draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Ivy says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Ivy says what can be returned and asks whether that will do."
+    }
+  ]
+}

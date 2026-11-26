@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0496",
+  "personId": "AH-R0496",
+  "name": "Eli Brady",
+  "age": 27,
+  "occupation": "Sign maker",
+  "home": "Midtown",
+  "episode": "The dead man's tab",
+  "biography": "stories/residents/04/05-the-dead-man-s-tab.md#ah-r0496",
+  "life": "“I still remember forging a family birthday card before I could spell.” On Saturday, near Juniper Street, Eli knows which of the west-side porches has a seat in the shade.",
+  "voice": "I forged my father's signature once. Seeing the real one in the book made me own up.",
+  "appearance": "Eli has a cropped cut that shows the shape of the ears, a narrow face with an expressive upper lip, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a fabric zip pull cut from a school scarf. When somebody else has the floor, Eli counts on the side of one finger where hardly anybody notices.",
+  "personality": "Eli is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To own up to the borrowed signature at home.",
+  "family": "Bess Lai is Eli’s older relative by marriage. Eli can always ask for five minutes alone. Bess asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The margin reader*, Bess says, “I wrote the first objection when I was seventeen.”",
+  "connections": "Dominic Alvarez. A real signature matters to both the former forger and the person making a limited repayment.",
+  "familyIds": [
+    "AH-R0211"
+  ],
+  "connectionIds": [
+    "AH-R0500"
+  ],
+  "reactions": [
+    {
+      "situation": "The deli is asked to publish the whole tab",
+      "response": "Eli asks who owns the personal information on the tab before any of it leaves the counter.",
+      "asWritten": "The deli is asked to publish the whole tab. Eli asks who owns the personal information on the tab before any of it leaves the counter."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Eli takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Eli takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Eli helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Eli helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

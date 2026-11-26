@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0392",
+  "personId": "AH-R0392",
+  "name": "Marlowe Paige",
+  "age": 28,
+  "occupation": "Office messenger",
+  "home": "the western residential streets",
+  "episode": "The broken till",
+  "biography": "stories/residents/03/10-the-broken-till.md#ah-r0392",
+  "life": "“I still remember needing the price of a stamp before payroll.” People around the bank steps know Marlowe by a small Saturday habit. Marlowe takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I put down too much money to avoid looking broke. The cashier brought my change to work.",
+  "appearance": "Marlowe is easy to recognize by close-cropped dark curls and a heart-shaped face and prominent ears. Usually dressed in a long navy raincoat with one loose pocket corner secured with green thread, Marlowe touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Marlowe enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To settle the deliberate overpayment in private.",
+  "family": "Lennon Sanders is Marlowe’s half-sibling. Marlowe brings a spare shopping bag. Lennon chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The day sailor's divorce*, Lennon says, “I teach their son. His favorite part of Sunday is actually the walk to breakfast afterward.”",
+  "connections": "Billie Wilson. A few coins needed for a bus change hands without becoming charity.",
+  "familyIds": [
+    "AH-R1045"
+  ],
+  "connectionIds": [
+    "AH-R0394"
+  ],
+  "reactions": [
+    {
+      "situation": "A manager asks for the handwritten sandwich tally",
+      "response": "Marlowe makes sure customers' names needn't travel with the tally.",
+      "asWritten": "A manager asks for the handwritten sandwich tally. Marlowe makes sure customers' names needn't travel with the tally."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Marlowe starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Marlowe starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Marlowe puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Marlowe puts the deal away and suggests a walk."
+    }
+  ]
+}

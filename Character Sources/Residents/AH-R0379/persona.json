@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0379",
+  "personId": "AH-R0379",
+  "name": "Keiko Ames",
+  "age": 51,
+  "occupation": "Wedding celebrant",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The painted footprint",
+  "biography": "stories/residents/03/08-the-painted-footprint.md#ah-r0379",
+  "life": "“I still remember two people throwing rice straight into the wind.” Sunday often includes a stop at Paper & Pine Books, where Keiko starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I saw that foot in my wedding photograph. I'm meeting a stranger to compare summers.",
+  "appearance": "Keiko has a softly rounded chin under sharp cheekbones. Look for short black hair swept back. On an ordinary day, the familiar outfit is a narrow-striped sweater with a tiny red thread tied through the lowest buttonhole. In conversation Keiko raises one eyebrow long before saying yes.",
+  "personality": "Keiko finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To compare the wedding print with a stranger's family album.",
+  "family": "Eileen Teo is Keiko’s younger cousin. Keiko brings the paper and a pen. Eileen decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The first straight paycheck*, Eileen says, “I sold alongside him. Hearing how little he makes honestly has not convinced me to follow yet.”",
+  "connections": "Rae Nelson. Two new photographs connect a long-ago wedding with a present-day footprint.",
+  "familyIds": [
+    "AH-R0794"
+  ],
+  "connectionIds": [
+    "AH-R0380"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor insists the footprint must belong to a famous runner",
+      "response": "Keiko checks for a family photograph before accepting the famous name.",
+      "asWritten": "A visitor insists the footprint must belong to a famous runner. Keiko checks for a family photograph before accepting the famous name."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Keiko takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Keiko takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Keiko waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Keiko waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

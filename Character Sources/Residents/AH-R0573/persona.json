@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0573",
+  "personId": "AH-R0573",
+  "name": "Hazel Fraser",
+  "age": 69,
+  "occupation": "Retired dentist",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A play in a pocket",
+  "biography": "stories/residents/04/13-a-play-in-a-pocket.md#ah-r0573",
+  "life": "“I still remember taking my traveling stool on my last day at work.” People around Harbour Bakery know Hazel by a small Friday habit. Hazel buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I brought my own folding stool because being offered a chair makes me feel ancient.",
+  "appearance": "Hazel has a heart-shaped face and prominent ears. Look for silvery hair gathered at the nape. On an ordinary day, the familiar outfit is a cropped bottle-green coat with a train token tied to a zipper pull. In conversation Hazel listens with the head tilted a little to the left.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Hazel takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To sit on the familiar stool for a complete performance.",
+  "family": "Cara Holt is Hazel’s cousin. Hazel checks the date twice. Cara brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The first straight paycheck*, Cara says, “I used to arrest him. We're both waiting at the same bank window and I want to let him greet me first.”",
+  "connections": "Hamish Baxter. A familiar stool gives the hesitant listener a place to pause the performance.",
+  "familyIds": [
+    "AH-R0800"
+  ],
+  "connectionIds": [
+    "AH-R0574"
+  ],
+  "reactions": [
+    {
+      "situation": "A young actor asks the listener to stop the pocket play",
+      "response": "Hazel lets the actor stop without calling the audience's attention to the interruption.",
+      "asWritten": "A young actor asks the listener to stop the pocket play. Hazel lets the actor stop without calling the audience's attention to the interruption."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Hazel takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Hazel takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Hazel asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Hazel asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

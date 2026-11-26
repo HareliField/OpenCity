@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0982",
+  "personId": "AH-R0982",
+  "name": "Kai Gross",
+  "age": 75,
+  "occupation": "Retired gardener",
+  "home": "the western residential streets",
+  "episode": "A tenant who stays",
+  "biography": "stories/residents/07/09-a-tenant-who-stays.md#ah-r0982",
+  "life": "“I still remember planting a tree so I could grieve without explaining.” Sunday often includes a stop at Breakwater Way, where Kai stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I planted a tree after each miscarriage. I never told the man who owns the ground.",
+  "appearance": "Kai has silvery hair gathered at the nape, a small notch in the left eyebrow, and a favorite piece of clothing, a rust-colored canvas coat. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Kai takes off the watch before a long conversation.",
+  "personality": "Kai uses precise names for tools and very approximate names for feelings. People who know Kai well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To get time to preserve the garden's private memorials.",
+  "family": "Ethan Anand is Kai’s younger cousin. Kai chooses whether they walk home or sit a while. Ethan brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The split visit*, Ethan says, “I usually get the cheerful version of our client.”",
+  "connections": "Emery Rogers. The tenant's trees have an actual place to go because a neighbor offers some ground.",
+  "familyIds": [
+    "AH-R0734"
+  ],
+  "connectionIds": [
+    "AH-R0989"
+  ],
+  "reactions": [
+    {
+      "situation": "An elderly gardener wants to move just one tree",
+      "response": "Kai checks that the tree can survive the move before it is lifted.",
+      "asWritten": "An elderly gardener wants to move just one tree. Kai checks that the tree can survive the move before it is lifted."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Kai clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience.",
+      "asWritten": "A family supper turns into an argument about old debt. Kai clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Kai brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Kai brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

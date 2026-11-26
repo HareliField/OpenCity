@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1061",
+  "personId": "AH-R1061",
+  "name": "Lars James",
+  "age": 24,
+  "occupation": "Port trainee",
+  "home": "Eastside",
+  "episode": "Land without cranes",
+  "biography": "stories/residents/08/02-land-without-cranes.md#ah-r1061",
+  "life": "“I still remember writing office applications beside a fogged loading window.” Wednesday often includes a stop at the corner by Juniper Tailor, where Lars looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I want a desk job here someday, but the new rents won't buy one for anyone I know.",
+  "appearance": "On an ordinary day, look for a moss-green cardigan and a little coil of soft measuring tape. Lars has a crooked front tooth visible when laughing, with a loose dark braid. Lars touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Lars is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To secure an actual entry-level job in the redevelopment.",
+  "family": "Milo Roche is Lars’s first cousin once removed. Lars calls back when there is finally a little privacy. Milo leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The salon on strike*, Milo says, “I rent the space next door. I offered enough folding chairs for the meeting, whatever they decide.”",
+  "connections": "Ellen Boone. A desk-job ambition gets its first practical offer from a warehouse evening student. Also in the story is Bianca Gallagher (colleague at the rail siding).",
+  "familyIds": [
+    "AH-R1006"
+  ],
+  "connectionIds": [
+    "AH-R1068",
+    "AH-R1065"
+  ],
+  "reactions": [
+    {
+      "situation": "A developer brings a drawing of the finished offices",
+      "response": "Lars asks where existing workers are shown in the finished picture.",
+      "asWritten": "A developer brings a drawing of the finished offices. Lars asks where existing workers are shown in the finished picture."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Lars asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Lars asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Lars helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Lars helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

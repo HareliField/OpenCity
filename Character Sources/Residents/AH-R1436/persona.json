@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1436",
+  "personId": "AH-R1436",
+  "name": "Stella Choi",
+  "age": 46,
+  "occupation": "Former neighbor and shop worker",
+  "home": "Coast Ridge",
+  "episode": "A house divided kindly",
+  "biography": "stories/residents/10/09-a-house-divided-kindly.md#ah-r1436",
+  "life": "“I still remember catching my school coat in the gap between our gardens.” On Sunday, near the blocks below Foundry Lofts, Stella checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I used to squeeze through the gap to see my best friend. The new gate needs to be high enough for our grown-up heads.",
+  "appearance": "Stella is easy to recognize by dark brown curls cut close behind the ears and a long face and high cheekbones. Usually dressed in a rust-colored canvas coat with a thin silver ring worn on a cord, Stella rubs a thumb along the edge of the nearest pocket when listening.",
+  "personality": "Stella finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To leave room for two former children now grown.",
+  "family": "Fern Lin is Stella’s cousin. Stella gets to change the plan. Fern offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *A call heard twice*, Fern says, “I took the second call and inherited the trust the first voice had built.”",
+  "connections": "Charlie Black. The old childhood gap is a better starting point for the survey than the center of the hedge.",
+  "familyIds": [
+    "AH-R1232"
+  ],
+  "connectionIds": [
+    "AH-R1435"
+  ],
+  "reactions": [
+    {
+      "situation": "A grandchild objects to the garden plan",
+      "response": "Stella asks the household members who will use the garden how they want to live in it now.",
+      "asWritten": "A grandchild objects to the garden plan. Stella asks the household members who will use the garden how they want to live in it now."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Stella helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Stella helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Stella waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Stella waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

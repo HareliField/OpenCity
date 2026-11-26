@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1017",
+  "personId": "AH-R1017",
+  "name": "Salma Hayward",
+  "age": 59,
+  "occupation": "Bereavement volunteer",
+  "home": "the western residential streets",
+  "episode": "The crash anniversary",
+  "biography": "stories/residents/07/12-the-crash-anniversary.md#ah-r1017",
+  "life": "“I still remember writing a note I had no right to expect an answer to.” Thursday often includes a stop at the approach to Seabright Court, where Salma likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I lost a brother somewhere else. I sent one note to the family and left my phone number off it.",
+  "appearance": "Salma is easy to recognize by two white streaks in otherwise dark hair and a small notch in the left eyebrow. Usually dressed in a black overshirt with pearl buttons with a pair of reading glasses in a cloth sleeve, Salma steadies a cup with both hands while listening when listening.",
+  "personality": "Salma loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To send sympathy without demanding a relationship.",
+  "family": "Remi Ash is Salma’s younger relative by marriage. Salma brings whatever was actually growing or affordable that week. Remi makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Ten fingers*, Remi says, “Our yellow has a vulgar stock name. My grandmother hated being told what words she could say.”",
+  "connections": "June Brady. A person leaving flowers and a person writing from another loss discuss what the family can accept.",
+  "familyIds": [
+    "AH-R0107"
+  ],
+  "connectionIds": [
+    "AH-R1012"
+  ],
+  "reactions": [
+    {
+      "situation": "A memorial is proposed where the survivor walks to work",
+      "response": "Salma checks whether the survivor wants to pass the proposed site every day.",
+      "asWritten": "A memorial is proposed where the survivor walks to work. Salma checks whether the survivor wants to pass the proposed site every day."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Salma asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Salma asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Salma offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Salma offers one about their own embarrassment instead."
+    }
+  ]
+}

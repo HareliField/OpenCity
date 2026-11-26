@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0857",
+  "personId": "AH-R0857",
+  "name": "Emil Lund",
+  "age": 24,
+  "occupation": "Beauty course student",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A chair of one's own",
+  "biography": "stories/residents/06/11-a-chair-of-one-s-own.md#ah-r0857",
+  "life": "“I still remember practicing nail work on a plastic hand missing a finger.” On Wednesday, near the market by Market Flats, Emil often waits until the delivery baskets are stacked before going in.",
+  "voice": "I have always wanted my own salon. I sat in that chair after closing and costed the dream down to the last bottle.",
+  "appearance": "Emil has a center part and straight chestnut hair, a wide brow and a narrow jaw, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Emil squares up pieces of paper while thinking.",
+  "personality": "Emil has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To work out the deposit for a genuinely independent chair.",
+  "family": "Clara Baines is Emil’s second cousin. Emil decides what stays off the paper. Clara brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The trust with a typo*, Clara says, “I feared the nickname would disqualify my form and missed the deadline trying to replace it.”",
+  "connections": "Conrad Mann. A renter whose home costs are covered shows the prospective owner what the chair alone really costs.",
+  "familyIds": [
+    "AH-R0622"
+  ],
+  "connectionIds": [
+    "AH-R0852"
+  ],
+  "reactions": [
+    {
+      "situation": "The studio asks for its chair deposit by Friday",
+      "response": "Emil checks whether the chair renter has seen the terms before the deposit is due.",
+      "asWritten": "The studio asks for its chair deposit by Friday. Emil checks whether the chair renter has seen the terms before the deposit is due."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Emil keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Emil keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Emil explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Emil explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

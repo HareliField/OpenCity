@@ -1,0 +1,43 @@
+{
+  "residentId": "AH-R1281",
+  "personId": "AH-R1281",
+  "name": "Iva Salas",
+  "age": 47,
+  "occupation": "Estranged daughter and retail buyer",
+  "home": "the western residential streets",
+  "episode": "The returned daughter",
+  "biography": "stories/residents/09/09-the-returned-daughter.md#ah-r1281",
+  "life": "“I still remember learning exactly which gate never latched on the night I left.” On Wednesday, near the window at Night Shift Donuts, Iva knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I thought the house would look smaller. The door still feels exactly as high as the day I left.",
+  "appearance": "Iva has thick, tightly coiled hair, a softly rounded chin under sharp cheekbones, and a favorite piece of clothing, a gray fisher's sweater. It usually goes with a square of clean cloth for polishing smudges. When somebody else has the floor, Iva looks at people's hands before looking at what they carry.",
+  "personality": "Iva feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To visit without surrendering the right to leave.",
+  "family": "Teal Alder is Iva’s younger cousin. Iva decides what stays off the paper. Teal brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Five missing lunches*, Teal says, “I offered to deliver them and discovered that two people who worked together for years never knew each other's addresses.”",
+  "connections": "Caroline Diaz (foster mother). The foster mother gives the returning adult permission to love more than one home. Other connections include Arthur Colón (father), Greta Hassan (younger half sister), Terry Perry (partner).",
+  "familyIds": [
+    "AH-R0164"
+  ],
+  "connectionIds": [
+    "AH-R1282",
+    "AH-R1283",
+    "AH-R1287",
+    "AH-R1289"
+  ],
+  "reactions": [
+    {
+      "situation": "The estranged daughter asks to leave before the meal",
+      "response": "Iva helps the daughter leave without forcing a final conversation at the door.",
+      "asWritten": "The estranged daughter asks to leave before the meal. Iva helps the daughter leave without forcing a final conversation at the door."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Iva takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Iva takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Iva lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Iva lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

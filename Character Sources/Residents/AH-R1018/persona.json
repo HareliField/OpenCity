@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1018",
+  "personId": "AH-R1018",
+  "name": "Isaac Jensen",
+  "age": 13,
+  "occupation": "Secondary school pupil",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The crash anniversary",
+  "biography": "stories/residents/07/12-the-crash-anniversary.md#ah-r1018",
+  "life": "“I still remember watching an adult bring a blanket before anyone thought to ask.” Friday often includes a stop at the downtown fountain, where Isaac keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I was the witness nobody called because I was twelve. I wrote down the small kind things I saw afterward.",
+  "appearance": "Isaac has thick, tightly coiled hair, a heart-shaped face and prominent ears, and a favorite piece of clothing, a long navy raincoat. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Isaac folds a paper napkin into quarters without noticing.",
+  "personality": "Isaac enjoys routines and will defend the right of someone else to break one. As a result, Isaac is often everyone's favorite cover for a missed morning.",
+  "agenda": "To write down the kindness the adults missed.",
+  "family": "Nell Tang is Isaac’s aunt by marriage. Isaac chooses the familiar route. Nell can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The million-dollar flat*, Nell says, “I can sell for a fortune but can't buy a smaller place anywhere near my sister at these prices.”",
+  "connections": "Manuel Peters. An adult driver's unsent letter and a child's unasked-for statement belong to different memories of one day.",
+  "familyIds": [
+    "AH-R1221"
+  ],
+  "connectionIds": [
+    "AH-R1013"
+  ],
+  "reactions": [
+    {
+      "situation": "The victim's family wants a private anniversary meal",
+      "response": "Isaac lets the family make its own guest list and keeps press questions away from the table.",
+      "asWritten": "The victim's family wants a private anniversary meal. Isaac lets the family make its own guest list and keeps press questions away from the table."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Isaac brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Isaac brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Isaac keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Isaac keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

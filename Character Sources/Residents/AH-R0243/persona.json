@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0243",
+  "personId": "AH-R0243",
+  "name": "Lou Khan",
+  "age": 48,
+  "occupation": "Counter cook",
+  "home": "Midtown",
+  "episode": "The bitter orange",
+  "biography": "stories/residents/02/10-the-bitter-orange.md#ah-r0243",
+  "life": "“I worked breakfast on the day our street lost power until noon.” Wednesday often includes a stop at Tideline Market, where Lou picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "She ordered two slices after her husband died. I wrapped the other half for whoever sat at his table.",
+  "appearance": "Lou is easy to recognize by a soft fringe that falls across one eyebrow and a straight nose and deep-set eyes. Usually dressed in a boxy denim jacket with a partly rubbed-away embroidered initial, Lou folds a paper napkin into quarters without noticing when listening.",
+  "personality": "Lou enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To keep one lunchtime place open for an unaccompanied diner.",
+  "family": "Grey Ibrahim is Lou’s cousin raised in the same household. Lou brings a spare shopping bag. Grey chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Rent in a biscuit tin*, Grey says, “I used her kitchen as my savings bank when I sold pills.”",
+  "connections": "Blake Baker. A new deli owner learns who used to eat the other half.",
+  "familyIds": [
+    "AH-R0341"
+  ],
+  "connectionIds": [
+    "AH-R0245"
+  ],
+  "reactions": [
+    {
+      "situation": "The deli proposes serving the memorial sandwich every Sunday",
+      "response": "Lou asks the family what they would want to eat on an ordinary Sunday.",
+      "asWritten": "The deli proposes serving the memorial sandwich every Sunday. Lou asks the family what they would want to eat on an ordinary Sunday."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Lou keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Lou keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Lou puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Lou puts the deal away and suggests a walk."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0850",
+  "personId": "AH-R0850",
+  "name": "Harriet Ho",
+  "age": 49,
+  "occupation": "Bakery partner",
+  "home": "the western residential streets",
+  "episode": "One paid trial",
+  "biography": "stories/residents/06/10-one-paid-trial.md#ah-r0850",
+  "life": "“I still remember the first time two employees offered one job a better shape.” Monday often includes a stop at the public end of the South Shore boardwalk, where Harriet checks the shade on the benches before deciding how long to stay.",
+  "voice": "I wanted to announce a winner. They came back with a split-shift proposal and asked me to cost it.",
+  "appearance": "Harriet has a straight nose and deep-set eyes. Look for a dark undercut with a longer wave on top. Away from the heat of the kitchen, the familiar outfit is a washed violet jersey with a little coil of soft measuring tape. In conversation Harriet looks at people's hands before looking at what they carry.",
+  "personality": "Harriet loves a well-told anecdote and distrusts the neat ending. The parts Harriet remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To get the two-shift proposal costed honestly.",
+  "family": "Frances Ortiz is Harriet’s cousin. Harriet brings whatever was actually growing or affordable that week. Frances makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The tide clock*, Frances says, “I fixed the minute hand before I knew it wasn't minutes.”",
+  "connections": "Harley Kelly. The shift manager has to cost the proposal that upends a simple hiring contest.",
+  "familyIds": [
+    "AH-R0449"
+  ],
+  "connectionIds": [
+    "AH-R0843"
+  ],
+  "reactions": [
+    {
+      "situation": "The apprentice asks for an old promise in writing",
+      "response": "Harriet writes down the remembered promise including who was there to hear it.",
+      "asWritten": "The apprentice asks for an old promise in writing. Harriet writes down the remembered promise including who was there to hear it."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Harriet keeps the neighbor's place and finds out whether the stranger needs a different kind of help.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Harriet keeps the neighbor's place and finds out whether the stranger needs a different kind of help."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Harriet includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Harriet includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1485",
+  "personId": "AH-R1485",
+  "name": "Teal Ruiz",
+  "age": 77,
+  "occupation": "Widowed retired grocer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The last home visit",
+  "biography": "stories/residents/10/14-the-last-home-visit.md#ah-r1485",
+  "life": "“I still remember opening a window for the first time after my husband died.” People around Breakwater Way know Teal by a small Thursday habit. Teal stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I always asked for the window shut because my partner felt the cold. He died last year and I'd like the breeze now.",
+  "appearance": "On an ordinary day, look for a moss-green cardigan and a comb in a sleeve sewn into the lining. Teal has a broad nose and a deep dimple on one cheek, with a gray streak running back from the forehead. Teal looks at people's hands before looking at what they carry during a conversation.",
+  "personality": "Teal has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To reopen the window now the cold is welcome.",
+  "family": "John Collins is Teal’s first cousin once removed. Teal decides what stays off the paper. John brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The upstairs piano*, John says, “I heard the landing concert from the street.”",
+  "connections": "Willa Bishop. An open window and a loose end of knitting make two invitations to come back in ordinary clothes.",
+  "familyIds": [
+    "AH-R0390"
+  ],
+  "connectionIds": [
+    "AH-R1490"
+  ],
+  "reactions": [
+    {
+      "situation": "A client tells the retiring carer what they disliked",
+      "response": "Teal lets the client finish the uncomfortable answer before proposing a fix.",
+      "asWritten": "A client tells the retiring carer what they disliked. Teal lets the client finish the uncomfortable answer before proposing a fix."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Teal walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Teal walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Teal says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Teal says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

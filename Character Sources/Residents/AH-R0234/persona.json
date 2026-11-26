@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0234",
+  "personId": "AH-R0234",
+  "name": "Nora Ford",
+  "age": 67,
+  "occupation": "Office cleaner",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A wall of birthdays",
+  "biography": "stories/residents/02/09-a-wall-of-birthdays.md#ah-r0234",
+  "life": "“I cleaned the place where my sister had won her first prizes.” People around the courtyard by Ferry Street Rooms know Nora by a small Friday habit. Nora prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I learned my sister cheated by wearing shoes. Her defense is that they were our mother's heels.",
+  "appearance": "On an ordinary day, look for a mustard canvas overshirt and a pocket notebook shaped by years of sitting on it. Nora has two dimples that appear only with a full smile, with tightly curled gray hair. Nora touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Nora has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To reconstruct how high the old shoes made the sister stand.",
+  "family": "Adela Oh is Nora’s stepsibling. Nora makes room at the table. Adela brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The tide clock*, Adela says, “I painted the moon on it using my wedding ring as a stencil.”",
+  "connections": "Cedric Arrieta. A torn date helps settle the argument about wearing high heels to be measured.",
+  "familyIds": [
+    "AH-R0445"
+  ],
+  "connectionIds": [
+    "AH-R0236"
+  ],
+  "reactions": [
+    {
+      "situation": "A family asks for a tracing to take away",
+      "response": "Nora asks which pencil marks the family recognizes as their own.",
+      "asWritten": "A family asks for a tracing to take away. Nora asks which pencil marks the family recognizes as their own."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Nora sits beside them without expecting a performance and asks if they want to go outside.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Nora sits beside them without expecting a performance and asks if they want to go outside."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Nora says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Nora says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

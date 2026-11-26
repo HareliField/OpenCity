@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0884",
+  "personId": "AH-R0884",
+  "name": "Martha Ueda",
+  "age": 48,
+  "occupation": "Caseworker and family carer",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Care with a clock",
+  "biography": "stories/residents/06/14-care-with-a-clock.md#ah-r0884",
+  "life": "“I still remember borrowing a care payment from a holiday fund.” People around the crossing outside Verve Nail Studio know Martha by a small Tuesday habit. Martha notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I have been buying an extra fifteen minutes for my father without telling my sister I'm in debt.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a watch on a cracked leather band. Martha has a flat bridge to the nose and a mobile brow, with short copper curls. Martha holds eye contact until the other person has finished during a conversation.",
+  "personality": "Martha enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To disclose the cost the family is already carrying.",
+  "family": "Amanda Walker is Martha’s half-sibling. Martha asks before bringing somebody along. Amanda can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *An old restaurant debt*, Amanda says, “I was the child eating the cake. I want to pay for the next family whose grown-ups whisper at the till.”",
+  "connections": "Nell Rios. Four households could pool a quarter hour and ease a daughter's concealed debt. Also in the story is Alex Hamm (parent).",
+  "familyIds": [
+    "AH-R0992"
+  ],
+  "connectionIds": [
+    "AH-R0887",
+    "AH-R0881"
+  ],
+  "reactions": [
+    {
+      "situation": "A client wants another minute to finish a button",
+      "response": "Martha lets the client finish the button and asks where time can be saved without hurrying them.",
+      "asWritten": "A client wants another minute to finish a button. Martha lets the client finish the button and asks where time can be saved without hurrying them."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Martha repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Martha repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Martha puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Martha puts the deal away and suggests a walk."
+    }
+  ]
+}

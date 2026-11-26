@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0922",
+  "personId": "AH-R0922",
+  "name": "Sadie Breen",
+  "age": 39,
+  "occupation": "Building caretaker",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A widow bids again",
+  "biography": "stories/residents/07/03-a-widow-bids-again.md#ah-r0922",
+  "life": "“I still remember my grandmother setting rent against a sack of potatoes.” People around the steps at Pier Beach know Sadie by a small Sunday habit. Sadie watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I was the original landlady's granddaughter. I know which tenants paid her in groceries.",
+  "appearance": "On an ordinary day, look for an olive canvas jacket and a pen clipped inside the neckline. Sadie has a heart-shaped face and prominent ears, with auburn hair cut square at the nape. Sadie folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Sadie is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To establish which tenants paid in goods.",
+  "family": "Lennon Ahmed is Sadie’s stepsibling. Sadie knows which ones can be shared. Lennon keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *A boat for sale twice*, Lennon says, “I answered both numbers. It was the first time our separated parents had asked me the same question all year.”",
+  "connections": "Morgan Freeman. Card leases and rents paid in groceries establish how long the tenants have already shaped the building.",
+  "familyIds": [
+    "AH-R0750"
+  ],
+  "connectionIds": [
+    "AH-R0927"
+  ],
+  "reactions": [
+    {
+      "situation": "A tenant calls attention to damp during the viewing",
+      "response": "Sadie allows a proper look at the damp before returning to the argument about price.",
+      "asWritten": "A tenant calls attention to damp during the viewing. Sadie allows a proper look at the damp before returning to the argument about price."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Sadie asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Sadie asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Sadie thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Sadie thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0868",
+  "personId": "AH-R0868",
+  "name": "Judith Dai",
+  "age": 46,
+  "occupation": "Transport planner",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The late crossing",
+  "biography": "stories/residents/06/12-the-late-crossing.md#ah-r0868",
+  "life": "“I still remember showing a public planner the last empty bus.” Tuesday often includes a stop at the window at Night Shift Donuts, where Judith knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I work in traffic planning. I brought the ride log to the meeting that was going to cut another late bus.",
+  "appearance": "Judith has a heart-shaped face and prominent ears. Look for a smooth side part with one rebellious curl. On an ordinary day, the familiar outfit is a gray fisher's sweater with a square of clean cloth for polishing smudges. In conversation Judith turns fully toward the person speaking.",
+  "personality": "Judith loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To restore a late service using actual shift journeys.",
+  "family": "Rae Villa is Judith’s younger cousin. Judith brings something that can still be enjoyed tomorrow. Rae checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The trust with a typo*, Rae says, “I threw out the letter as a joke. The post carrier came back after work to tell me it counted.”",
+  "connections": "Ariel Crawford. A lift promised through eye treatment becomes actual evidence for a late-bus case. Also in the story is Patricia Ramos (commuter).",
+  "familyIds": [
+    "AH-R0628"
+  ],
+  "connectionIds": [
+    "AH-R0861",
+    "AH-R0864"
+  ],
+  "reactions": [
+    {
+      "situation": "A shift worker is late to the meeting point",
+      "response": "Judith checks whether waiting will make the whole shift late and tells the rider the decision.",
+      "asWritten": "A shift worker is late to the meeting point. Judith checks whether waiting will make the whole shift late and tells the rider the decision."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Judith gets the people at the next doorway away from the smoke and asks a bystander to make the call.",
+      "asWritten": "Smoke appears under a shop door after closing. Judith gets the people at the next doorway away from the smoke and asks a bystander to make the call."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Judith offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Judith offers one about their own embarrassment instead."
+    }
+  ]
+}

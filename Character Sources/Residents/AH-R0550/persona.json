@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0550",
+  "personId": "AH-R0550",
+  "name": "Ashley Lang",
+  "age": 48,
+  "occupation": "Community interpreter",
+  "home": "the blocks north of the port",
+  "episode": "Closing soup",
+  "biography": "stories/residents/04/10-closing-soup.md#ah-r0550",
+  "life": "“I still remember hearing my grandmother's kitchen language on a city bus.” Wednesday often includes a stop at Studio Boulevard, where Ashley waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I heard my mother say supper in a language I haven't used for years. I wrote the recipe in that language first.",
+  "appearance": "Ashley has a scattering of freckles across the bridge of the nose. Look for a long plait tucked inside the collar. On an ordinary day, the familiar outfit is a faded indigo overshirt with one loose pocket corner secured with green thread. In conversation Ashley touches a knuckle to the chin when searching for a word.",
+  "personality": "Ashley prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To write the kitchen's recipe in its first language.",
+  "family": "Dolores Taylor is Ashley’s cousin. Ashley brings the paper and a pen. Dolores decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *No lifeguard at dusk*, Dolores says, “I came to collect the flags and found the guard unable to hand them over.”",
+  "connections": "Ken Calloway. A leftover meal brings the visiting cook and a family language into one kitchen.",
+  "familyIds": [
+    "AH-R1426"
+  ],
+  "connectionIds": [
+    "AH-R0544"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone in the soup line cannot eat one ingredient",
+      "response": "Ashley asks the cook to identify the ingredients before offering a separate bowl.",
+      "asWritten": "Someone in the soup line cannot eat one ingredient. Ashley asks the cook to identify the ingredients before offering a separate bowl."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Ashley tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Ashley tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Ashley clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Ashley clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

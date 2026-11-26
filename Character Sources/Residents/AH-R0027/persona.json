@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0027",
+  "personId": "AH-R0027",
+  "name": "Perry Han",
+  "age": 41,
+  "occupation": "Wealth manager",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The small signature",
+  "biography": "stories/residents/01/03-the-small-signature.md#ah-r0027",
+  "life": "Perry grew up being moved to the edge of school pictures whenever somebody taller arrived. At work he took the flattering crop before he thought about the person on its edge. He has asked the vendor to choose the replacement. On Friday, near the approach to Seabright Court, Perry likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I was the one who cropped the vendor out of the press picture. I used to sell school photos and hated making children stand at the edge. I called the editor myself.",
+  "appearance": "On an ordinary day, look for a cropped bottle-green coat and a fabric zip pull cut from a school scarf. Perry has a small notch in the left eyebrow, with a dark undercut with a longer wave on top. Perry starts to lift a hand, then waits to be invited to speak during a conversation. For a press event Perry brings a square of lens cloth in the same pocket as a carefully folded tie.",
+  "personality": "Perry prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To restore the vendor's place in the newspaper photograph.",
+  "family": "Cian Reese is Perry’s first cousin once removed. Perry calls about good news first. Cian is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Hem by hem*, Cian says, “I can't stand long enough for a fitting. The bride carried the mirror to my chair.”",
+  "connections": "Ava Baptiste. They both worked on the press coverage and have different mistakes to repair.",
+  "familyIds": [
+    "AH-R0156"
+  ],
+  "connectionIds": [
+    "AH-R0028"
+  ],
+  "reactions": [
+    {
+      "situation": "The paper wants a photograph with only the biggest donor",
+      "response": "Perry asks the vendor where they would like to stand and tells the photographer who paid the eleven dollars.",
+      "asWritten": "The paper wants a photograph with only the biggest donor. Perry asks the vendor where they would like to stand and tells the photographer who paid the eleven dollars."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Perry draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Perry draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Perry clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Perry clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

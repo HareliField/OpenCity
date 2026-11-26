@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1302",
+  "personId": "AH-R1302",
+  "name": "Ruth Sutton",
+  "age": 37,
+  "occupation": "Advertising photographer",
+  "home": "the blocks north of the port",
+  "episode": "A scar at the salon",
+  "biography": "stories/residents/09/11-a-scar-at-the-salon.md#ah-r1302",
+  "life": "“I still remember my first commercial photograph where the subject got no print.” People around the blocks below Foundry Lofts know Ruth by a small Friday habit. Ruth checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I loved the scar in the picture because my own hands look similar. That doesn't let me sell her story.",
+  "appearance": "Ruth has dark brown curls cut close behind the ears, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a long navy raincoat. It usually goes with a pair of reading glasses in a cloth sleeve. When somebody else has the floor, Ruth steadies a cup with both hands while listening.",
+  "personality": "Ruth takes a rejection personally for a day and analytically on the second morning. Ruth can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To get the sitter's actual permission to use the picture.",
+  "family": "Basil Allard is Ruth’s stepsibling. Ruth calls back when there is finally a little privacy. Basil leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *One clean day*, Basil says, “I remember exactly who sat beside me when I repeated a year.”",
+  "connections": "Duncan Stahl. The model and the photographer agree which parts of the hand's history are for sale.",
+  "familyIds": [
+    "AH-R0631"
+  ],
+  "connectionIds": [
+    "AH-R1301"
+  ],
+  "reactions": [
+    {
+      "situation": "The model asks to see the unedited print",
+      "response": "Ruth gets the model a private look before anybody else comments on the hand.",
+      "asWritten": "The model asks to see the unedited print. Ruth gets the model a private look before anybody else comments on the hand."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Ruth writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Ruth writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Ruth turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Ruth turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

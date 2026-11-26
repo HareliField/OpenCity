@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0438",
+  "personId": "AH-R0438",
+  "name": "Kate Parra",
+  "age": 35,
+  "occupation": "Shop clerk",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The housecoat commission",
+  "biography": "stories/residents/03/14-the-housecoat-commission.md#ah-r0438",
+  "life": "“I still remember carrying a pattern in my father's hat.” Wednesday often includes a stop at the corner outside Coastal Barber, where Kate usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I borrowed the pattern for my dad. He wants pockets large enough for Sunday's newspaper.",
+  "appearance": "Kate is easy to recognize by a loose dark braid and a deep crease beside the mouth when smiling. Usually dressed in a brown corduroy jacket with a knotted piece of sail thread on a key ring, Kate folds a paper napkin into quarters without noticing when listening.",
+  "personality": "Kate has a long memory for unfair prices and a short one for small insults. Kate can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To make a newspaper pocket for the father's coat.",
+  "family": "Hollis Fry is Kate’s half-sibling. Kate sets the time to leave. Hollis picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The wrong bicycle*, Hollis says, “The taped saddle tips to the left because my hip does.”",
+  "connections": "Judith Hong. They compare the fastenings needed by two different seated wearers.",
+  "familyIds": [
+    "AH-R0032"
+  ],
+  "connectionIds": [
+    "AH-R0437"
+  ],
+  "reactions": [
+    {
+      "situation": "The diner wants to fasten the new cuff unaided",
+      "response": "Kate leaves the cuff in reach and lets the diner set the pace.",
+      "asWritten": "The diner wants to fasten the new cuff unaided. Kate leaves the cuff in reach and lets the diner set the pace."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Kate asks the person already using it whether they can comfortably stand, rather than presuming who needs it most.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Kate asks the person already using it whether they can comfortably stand, rather than presuming who needs it most."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Kate agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Kate agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

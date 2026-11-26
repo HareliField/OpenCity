@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1433",
+  "personId": "AH-R1433",
+  "name": "Joy Johannsen",
+  "age": 41,
+  "occupation": "Resident's daughter and designer",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A house divided kindly",
+  "biography": "stories/residents/10/09-a-house-divided-kindly.md#ah-r1433",
+  "life": "“I still remember finding my mother's plans more exact than mine.” People around the market by Market Flats know Joy by a small Monday habit. Joy often waits until the delivery baskets are stacked before going in.",
+  "voice": "I am the daughter afraid this garden scheme means Mum is getting confused. I saw the careful scale drawing in her kitchen.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a partly rubbed-away embroidered initial. Joy has two dimples that appear only with a full smile, with a high puff tied with plain cord. Joy holds eye contact until the other person has finished during a conversation.",
+  "personality": "Joy loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To hear the mother's drawings explained on their merits.",
+  "family": "Faye Daniels is Joy’s older relative by marriage. Joy decides what stays off the paper. Faye brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The dead man's tab*, Faye says, “I want the deli to give the money to the daughter everyone speaks for.”",
+  "connections": "Jo Allard. The scale drawing lets two adult generations see the older gardeners' plan before objecting.",
+  "familyIds": [
+    "AH-R0495"
+  ],
+  "connectionIds": [
+    "AH-R1438"
+  ],
+  "reactions": [
+    {
+      "situation": "The older neighbors disagree on where the gate should go",
+      "response": "Joy gets both neighbors to mark a trial gate position before any hedge is cut.",
+      "asWritten": "The older neighbors disagree on where the gate should go. Joy gets both neighbors to mark a trial gate position before any hedge is cut."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Joy keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Joy keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Joy offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Joy offers one about their own embarrassment instead."
+    }
+  ]
+}

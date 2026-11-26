@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0753",
+  "personId": "AH-R0753",
+  "name": "Jacqueline Darzi",
+  "age": 32,
+  "occupation": "Salon cashier",
+  "home": "Midtown",
+  "episode": "The upstairs lease",
+  "biography": "stories/residents/06/01-the-upstairs-lease.md#ah-r0753",
+  "life": "“I still remember practicing smiles while waiting on a tooth repair.” Tuesday often includes a stop at the market by Market Flats, where Jacqueline often waits until the delivery baskets are stacked before going in.",
+  "voice": "I spent our deposit on the dental work that let me return to the counter. I want the family to hear why.",
+  "appearance": "After the last appointment, look for an unlined tan jacket and a seam let out by a narrow strip of contrasting fabric. Jacqueline has heavy brows and an unusually delicate jaw, with short, uneven waves that refuse to lie flat. Jacqueline looks at people's hands before looking at what they carry during a conversation.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Jacqueline takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To explain where the dental deposit went.",
+  "family": "Annette Marquez is Jacqueline’s second cousin. Jacqueline puts the kettle on. Annette chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *An old restaurant debt*, Annette says, “I deleted the old invoice when we digitized.”",
+  "connections": "Aidan Song. A paid dental bill shows why a bank's reasonable deposit wasn't sitting in the account.",
+  "familyIds": [
+    "AH-R0994"
+  ],
+  "connectionIds": [
+    "AH-R0754"
+  ],
+  "reactions": [
+    {
+      "situation": "The household must choose between paying a deposit and renewing",
+      "response": "Jacqueline lays out the two household costs and asks which deadline comes first.",
+      "asWritten": "The household must choose between paying a deposit and renewing. Jacqueline lays out the two household costs and asks which deadline comes first."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Jacqueline asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Jacqueline asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Jacqueline asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Jacqueline asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

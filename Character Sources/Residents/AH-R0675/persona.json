@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0675",
+  "personId": "AH-R0675",
+  "name": "Eileen Reed",
+  "age": 68,
+  "occupation": "Retired textile cleaner",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The misplaced umbrella",
+  "biography": "stories/residents/05/08-the-misplaced-umbrella.md#ah-r0675",
+  "life": "“I still remember dye running from my first factory apron.” On Friday, near Tideline Market, Eileen picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I can name the maker of the stripe from the faded blue. I used to clean its factory floor.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a fabric zip pull cut from a school scarf. Eileen has a broad nose and a deep dimple on one cheek, with short white hair and darker eyebrows. Eileen holds eye contact until the other person has finished during a conversation.",
+  "personality": "Eileen enjoys routines and will defend the right of someone else to break one. As a result, Eileen is often everyone's favorite cover for a missed morning.",
+  "agenda": "To identify the stripe maker from the old factory.",
+  "family": "Melanie Breen is Eileen’s cousin’s child. Eileen is allowed to ask about the bad news afterward. Melanie calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *A borrowed name*, Melanie says, “My own name was changed at immigration. I lent the writer the two spellings I live under.”",
+  "connections": "Gabriel Han. The fabric worker helps distinguish two umbrellas before anyone walks home in rain.",
+  "familyIds": [
+    "AH-R0518"
+  ],
+  "connectionIds": [
+    "AH-R0680"
+  ],
+  "reactions": [
+    {
+      "situation": "Both umbrella owners turn up at the beach",
+      "response": "Eileen gets the two families together in the shade to identify the items.",
+      "asWritten": "Both umbrella owners turn up at the beach. Eileen gets the two families together in the shade to identify the items."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Eileen asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Eileen asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Eileen keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Eileen keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

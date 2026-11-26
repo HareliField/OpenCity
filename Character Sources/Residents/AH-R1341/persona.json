@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1341",
+  "personId": "AH-R1341",
+  "name": "Jay Choi",
+  "age": 24,
+  "occupation": "Marina paint apprentice",
+  "home": "the western residential streets",
+  "episode": "The missing name on the stern",
+  "biography": "stories/residents/09/15-the-missing-name-on-the-stern.md#ah-r1341",
+  "life": "“I still remember mixing the right color before understanding the lettering.” Thursday often includes a stop at the public road outside the Port of Asphalt, where Jay can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I transposed two letters in my first language and put the brush down when I saw the owner seeing it.",
+  "appearance": "Back on the street, look for a boxy denim jacket and a small enamel bird on the lapel. Jay has a broad nose and a deep dimple on one cheek, with short black hair swept back. Jay starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Jay finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To acknowledge the spelling error to its owners.",
+  "family": "Leon Mehta is Jay’s older cousin. Jay is free to hang up first. Leon makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The hair after illness*, Leon says, “I sold her the wig. I want to help her give it away without telling the next owner its history.”",
+  "connections": "Shay Gray (skipper). The apprentice and the old skipper can admit the error without losing the family's preferred spelling.",
+  "familyIds": [
+    "AH-R1154"
+  ],
+  "connectionIds": [
+    "AH-R1342"
+  ],
+  "reactions": [
+    {
+      "situation": "The apprentice notices the missing letter on the stern",
+      "response": "Jay checks the intended spelling with the family before painting over anything.",
+      "asWritten": "The apprentice notices the missing letter on the stern. Jay checks the intended spelling with the family before painting over anything."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Jay keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Jay keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Jay points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Jay points to the person who noticed the original mistake."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0664",
+  "personId": "AH-R0664",
+  "name": "Ida Bruno",
+  "age": 72,
+  "occupation": "Retired reading tutor",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A shelf of apologies",
+  "biography": "stories/residents/05/07-a-shelf-of-apologies.md#ah-r0664",
+  "life": "“I still remember a borrowed book returned by the person I married.” People around the steps at Pier Beach know Ida by a small Sunday habit. Ida watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I lent this book so a friend would have to see me again. The note finally explained why she didn't.",
+  "appearance": "Ida has a long face and high cheekbones. Look for a thin scattering of white hair over the crown. On an ordinary day, the familiar outfit is a sand-colored linen shirt with a pressed flower kept in the clear back of a phone case. In conversation Ida takes off the watch before a long conversation.",
+  "personality": "Ida reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Ida trusts most.",
+  "agenda": "To hear why the old friend stayed away.",
+  "family": "Teresa Berg is Ida’s younger cousin. Ida leaves the first voice message. Teresa calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The expensive summer*, Teresa says, “I want a birthday where the people at the table can argue about movies instead of arithmetic.”",
+  "connections": "Logan Gupta. A loan meant to prolong a friendship helped another borrower out of a marriage.",
+  "familyIds": [
+    "AH-R0980"
+  ],
+  "connectionIds": [
+    "AH-R0666"
+  ],
+  "reactions": [
+    {
+      "situation": "A bookseller wants to display the most surprising note",
+      "response": "Ida asks the writer who was supposed to receive the note.",
+      "asWritten": "A bookseller wants to display the most surprising note. Ida asks the writer who was supposed to receive the note."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Ida stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Ida stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Ida does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Ida does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

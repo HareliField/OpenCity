@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0652",
+  "personId": "AH-R0652",
+  "name": "Miles Marks",
+  "age": 72,
+  "occupation": "Retired tram operator",
+  "home": "Midtown",
+  "episode": "Two left slippers",
+  "biography": "stories/residents/05/06-two-left-slippers.md#ah-r0652",
+  "life": "“I still remember the shoe shop that let me buy a single left.” People around the corner by Juniper Tailor know Miles by a small Thursday habit. Miles looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "One was mine. My right foot has been gone for a year and I have a cupboard of usable lefts.",
+  "appearance": "On an ordinary day, look for an olive canvas jacket and a knotted piece of sail thread on a key ring. Miles has a broad nose and a deep dimple on one cheek, with iron-gray waves. Miles listens with the head tilted a little to the left during a conversation.",
+  "personality": "Miles is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Miles is by the number of tiny errands suddenly being done.",
+  "agenda": "To offer unused left shoes to people who can use them.",
+  "family": "Robin Poole is Miles’s younger relative by marriage. Miles makes the call. Robin is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The missing Sunday*, Robin says, “I don't watch sport. I cooked soup loud enough in his kitchen for him to know I stayed through the match.”",
+  "connections": "Cecilia Woods. A family looking for a right slipper meets the wearer who can pass on an unused left.",
+  "familyIds": [
+    "AH-R1338"
+  ],
+  "connectionIds": [
+    "AH-R0651"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor offers shoes that are far too large",
+      "response": "Miles offers to look for a usable pair before anyone is asked to walk in loose shoes.",
+      "asWritten": "A visitor offers shoes that are far too large. Miles offers to look for a usable pair before anyone is asked to walk in loose shoes."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Miles puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Miles puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Miles agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Miles agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

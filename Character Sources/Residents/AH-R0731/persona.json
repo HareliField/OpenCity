@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0731",
+  "personId": "AH-R0731",
+  "name": "Nathan Neal",
+  "age": 39,
+  "occupation": "Home-care worker",
+  "home": "the western residential streets",
+  "episode": "The split visit",
+  "biography": "stories/residents/05/14-the-split-visit.md#ah-r0731",
+  "life": "“I still remember sitting beside a client nobody had time to hear.” On Tuesday, near Harbour Bakery, Nathan buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I stayed for breakfast because the woman always eats faster when she thinks we're in a hurry.",
+  "appearance": "Nathan has a small notch in the left eyebrow. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a dark green knitted vest with a pen clipped inside the neckline. In conversation Nathan gives a little nod before asking a hard question.",
+  "personality": "Nathan finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To let the client finish breakfast slowly.",
+  "family": "Daphne Ng is Nathan’s parent’s cousin. Nathan puts the kettle on. Daphne chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The other side of the cove*, Daphne says, “I gave the money after selling my second company.”",
+  "connections": "Ethan Anand (care colleague). The carer who stays for breakfast finally hears the version of the client known on afternoons.",
+  "familyIds": [
+    "AH-R1272"
+  ],
+  "connectionIds": [
+    "AH-R0734"
+  ],
+  "reactions": [
+    {
+      "situation": "Two carers turn up for one visit",
+      "response": "Nathan asks the client which ordinary task would be easier with two people present.",
+      "asWritten": "Two carers turn up for one visit. Nathan asks the client which ordinary task would be easier with two people present."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Nathan offers an ordinary errand that lets the distressed person leave without being followed by an audience.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Nathan offers an ordinary errand that lets the distressed person leave without being followed by an audience."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Nathan points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Nathan points to the person who noticed the original mistake."
+    }
+  ]
+}

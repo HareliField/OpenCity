@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0880",
+  "personId": "AH-R0880",
+  "name": "Benedict Lund",
+  "age": 33,
+  "occupation": "Music shop driver",
+  "home": "Eastside",
+  "episode": "The almost scholarship",
+  "biography": "stories/residents/06/13-the-almost-scholarship.md#ah-r0880",
+  "life": "“I still remember the pupil who came back in February to ask for a lift.” On Saturday, near the blocks below Foundry Lofts, Benedict checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I offered a lift to the first lesson. I'm asking everybody who came to the celebration where they will be in February.",
+  "appearance": "Benedict is easy to recognize by auburn hair cut square at the nape and one cheek that creases before the other. Usually dressed in a rust-colored canvas coat with a pair of reading glasses in a cloth sleeve, Benedict raises one eyebrow long before saying yes when listening.",
+  "personality": "Benedict is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To secure reliable help after opening-night enthusiasm fades.",
+  "family": "Ian Palmer is Benedict’s cousin raised in the same household. Benedict chooses the music. Ian puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A sail cut small*, Ian says, “I can make six small sails for beginners. Their parents asked why every panel was a different shade.”",
+  "connections": "Elias Hart. A proposed host family's curfew has to work on the far less glamorous February journeys too.",
+  "familyIds": [
+    "AH-R0295"
+  ],
+  "connectionIds": [
+    "AH-R0875"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative urges the pupil to accept in public",
+      "response": "Benedict lets the pupil answer privately before relatives announce an acceptance.",
+      "asWritten": "A relative urges the pupil to accept in public. Benedict lets the pupil answer privately before relatives announce an acceptance."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Benedict offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Benedict offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Benedict thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Benedict thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

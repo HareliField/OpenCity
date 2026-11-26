@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0877",
+  "personId": "AH-R0877",
+  "name": "Talia Wong",
+  "age": 36,
+  "occupation": "Fundraiser",
+  "home": "Old Town",
+  "episode": "The almost scholarship",
+  "biography": "stories/residents/06/13-the-almost-scholarship.md#ah-r0877",
+  "life": "“I still remember selling benefit tickets at a show I couldn't afford.” On Monday, near Ferris Deli, Talia asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I already sold concert tickets for the fundraiser. I want the pupil to be allowed to decline anyway.",
+  "appearance": "Talia has a loose dark braid, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, a black overshirt with pearl buttons. It usually goes with a narrow brass watch set a little fast. When somebody else has the floor, Talia folds a paper napkin into quarters without noticing.",
+  "personality": "Talia is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Talia is by the number of tiny errands suddenly being done.",
+  "agenda": "To make the fundraiser valid even if the pupil declines.",
+  "family": "Rain Fisher is Talia’s half-sibling. Talia keeps the photographs. Rain knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Three minutes at the bridge*, Rain says, “I am the only rider who can't drive. I offered to handle the mechanic appointments and the laundry for the seat covers.”",
+  "connections": "Morgan Moreau. A runner-up's teacher helps the fundraiser keep the winner's choice open.",
+  "familyIds": [
+    "AH-R1465"
+  ],
+  "connectionIds": [
+    "AH-R0873"
+  ],
+  "reactions": [
+    {
+      "situation": "The school wants a deposit before travel support is settled",
+      "response": "Talia gets the school to specify the last date a deposit can be returned.",
+      "asWritten": "The school wants a deposit before travel support is settled. Talia gets the school to specify the last date a deposit can be returned."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Talia offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Talia offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Talia agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Talia agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

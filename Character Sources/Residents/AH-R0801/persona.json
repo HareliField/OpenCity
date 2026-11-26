@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0801",
+  "personId": "AH-R0801",
+  "name": "Joel Garza",
+  "age": 75,
+  "occupation": "Retired alterationist",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Home with stairs",
+  "biography": "stories/residents/06/06-home-with-stairs.md#ah-r0801",
+  "life": "“I still remember counting steps in my slippers after work.” People around the crossing outside Verve Nail Studio know Joel by a small Sunday habit. Joel notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I counted them twice with a walking stick. My discharge sheet had a box for stairs and space for yes or no.",
+  "appearance": "Joel is easy to recognize by closely cropped salt-and-pepper hair and a wide brow and a narrow jaw. Usually dressed in an unlined tan jacket with a pocket notebook shaped by years of sitting on it, Joel gives a little nod before asking a hard question when listening.",
+  "personality": "Joel is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Joel is by the number of tiny errands suddenly being done.",
+  "agenda": "To walk into the flat under personal control.",
+  "family": "Joy Hall is Joel’s younger relative by marriage. Joel makes the call. Joy is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A summer marriage*, Joy says, “I can cook for twenty. The number became sixty when everybody started calling the beach public property.”",
+  "connections": "Harriet Chapman (adult child). They plan the welcome around the mother's feet and the adult child's strength.",
+  "familyIds": [
+    "AH-R1125"
+  ],
+  "connectionIds": [
+    "AH-R0802"
+  ],
+  "reactions": [
+    {
+      "situation": "A hospital car arrives before the handrail is ready",
+      "response": "Joel checks the landing with the patient before calling the trip home ready.",
+      "asWritten": "A hospital car arrives before the handrail is ready. Joel checks the landing with the patient before calling the trip home ready."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Joel offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Joel offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Joel agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Joel agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

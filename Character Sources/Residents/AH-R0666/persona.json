@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0666",
+  "personId": "AH-R0666",
+  "name": "Logan Gupta",
+  "age": 41,
+  "occupation": "Separated office administrator",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A shelf of apologies",
+  "biography": "stories/residents/05/07-a-shelf-of-apologies.md#ah-r0666",
+  "life": "“I still remember the library card I kept after leaving home.” Sunday often includes a stop at the market by Market Flats, where Logan often waits until the delivery baskets are stacked before going in.",
+  "voice": "I am not sorry I kept it. It got me out of the marriage described in chapter twelve.",
+  "appearance": "Logan is easy to recognize by a swept fringe and a closely clipped nape and a heart-shaped face and prominent ears. Usually dressed in a faded indigo overshirt with a cloth patch so neatly matched it only shows in strong light, Logan looks down for a moment before saying something difficult when listening.",
+  "personality": "Logan listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To keep the marked chapter that made leaving possible.",
+  "family": "Amalia Keller is Logan’s second cousin. The family gave a child a coin for every question asked at an appointment. By the third visit the child was paying the others to keep quiet and let the professional answer. Logan will wait through an awkward pause for a real answer. Asked about *The absent signature*, Amalia says, “I want to sell so my wife can retire. My missing sister thinks I want my childhood erased.”",
+  "connections": "Ida Bruno. A loan meant to prolong a friendship helped another borrower out of a marriage.",
+  "familyIds": [
+    "AH-R0912"
+  ],
+  "connectionIds": [
+    "AH-R0664"
+  ],
+  "reactions": [
+    {
+      "situation": "A bookseller wants to display the most surprising note",
+      "response": "Logan asks the writer who was supposed to receive the note.",
+      "asWritten": "A bookseller wants to display the most surprising note. Logan asks the writer who was supposed to receive the note."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Logan takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Logan takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Logan keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Logan keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

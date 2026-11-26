@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1346",
+  "personId": "AH-R1346",
+  "name": "Lennon Heller",
+  "age": 43,
+  "occupation": "Paint contractor",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The missing name on the stern",
+  "biography": "stories/residents/09/15-the-missing-name-on-the-stern.md#ah-r1346",
+  "life": "“I still remember waiting for an older client's hand before varnishing a sign.” Monday often includes a stop at Juniper Street, where Lennon knows which of the west-side porches has a seat in the shade.",
+  "voice": "I quoted one afternoon's work. I budgeted an extra morning after meeting the grandmother who wanted to watch.",
+  "appearance": "On an ordinary day, look for an olive canvas jacket and a printed handkerchief folded into the pocket. Lennon has a broad nose and a deep dimple on one cheek, with dark brown curls cut close behind the ears. Lennon squares up pieces of paper while thinking during a conversation.",
+  "personality": "Lennon has a long memory for unfair prices and a short one for small insults. Lennon can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To give the grandmother time to watch the repaint.",
+  "family": "Marlowe Gross is Lennon’s cousin. Lennon keeps the photographs. Marlowe knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The kitchen without a boss*, Marlowe says, “I wrote an unfair review on their first rushed morning.”",
+  "connections": "Charlie Emery. An extra morning to paint belongs in the outgoing skipper's log alongside the family's decision.",
+  "familyIds": [
+    "AH-R1448"
+  ],
+  "connectionIds": [
+    "AH-R1350"
+  ],
+  "reactions": [
+    {
+      "situation": "A family elder asks for the spelling they grew up with",
+      "response": "Lennon writes both spellings where the elder can indicate the one they prefer.",
+      "asWritten": "A family elder asks for the spelling they grew up with. Lennon writes both spellings where the elder can indicate the one they prefer."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Lennon starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Lennon starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Lennon agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Lennon agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

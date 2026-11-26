@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0393",
+  "personId": "AH-R0393",
+  "name": "Cian Malik",
+  "age": 55,
+  "occupation": "Bakery accounts clerk",
+  "home": "Midtown",
+  "episode": "The broken till",
+  "biography": "stories/residents/03/10-the-broken-till.md#ah-r0393",
+  "life": "“I still remember shorthand drawn in the flour on a worktop.” Friday often includes a stop at the crossing outside Verve Nail Studio, where Cian notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I recognized my first boss's pencil shorthand. I can read the tab nobody else understands.",
+  "appearance": "Cian has black hair twisted into a small knot, a wide brow and a narrow jaw, and a favorite piece of clothing, a moss-green cardigan. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Cian squares up pieces of paper while thinking.",
+  "personality": "Cian has a long memory for unfair prices and a short one for small insults. Cian can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To read the shorthand on the oldest tab.",
+  "family": "Malcolm Tan is Cian’s second cousin. Cian asks before bringing somebody along. Malcolm can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The fountain score*, Malcolm says, “I brought an empty milk tin from the shop my parents lost.”",
+  "connections": "Duncan Griffin. An old shorthand entry and a foreign coin give the fault a history.",
+  "familyIds": [
+    "AH-R0727"
+  ],
+  "connectionIds": [
+    "AH-R0395"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer cannot pay until the till opens",
+      "response": "Cian asks the cashier what can safely go on a temporary tab.",
+      "asWritten": "A customer cannot pay until the till opens. Cian asks the cashier what can safely go on a temporary tab."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Cian stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Cian stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Cian agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Cian agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1224",
+  "personId": "AH-R1224",
+  "name": "Noel Hudson",
+  "age": 54,
+  "occupation": "Former lodger and teacher",
+  "home": "Old Town",
+  "episode": "The million-dollar flat",
+  "biography": "stories/residents/09/03-the-million-dollar-flat.md#ah-r1224",
+  "life": "“I still remember the landlady knowing my examination dates before I did.” On Tuesday, near Studio Boulevard, Noel waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I rented the spare bedroom through college. The old landlady remembers my exams better than my dad does.",
+  "appearance": "On an ordinary day, look for a soft blue checked shirt and a thin silver ring worn on a cord. Noel has a scattering of freckles across the bridge of the nose, with a high puff tied with plain cord. Noel grins on one side while the eyes stay serious during a conversation.",
+  "personality": "Noel keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Noel wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To share the former lodger's family news in person.",
+  "family": "Desmond Monroe is Noel’s cousin. Noel brings whatever was actually growing or affordable that week. Desmond makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *A dance for two fathers*, Desmond says, “I was gone too long to demand the opening step.”",
+  "connections": "Jody Breen. A former lodger and the original cabinet maker both know what the flat was like before it became valuable.",
+  "familyIds": [
+    "AH-R1023"
+  ],
+  "connectionIds": [
+    "AH-R1228"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative asks for a loan against the house",
+      "response": "Noel puts the monthly cost of the suggested loan beside the home's paper value.",
+      "asWritten": "A relative asks for a loan against the house. Noel puts the monthly cost of the suggested loan beside the home's paper value."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Noel offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Noel offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Noel offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Noel offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

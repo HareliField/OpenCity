@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0528",
+  "personId": "AH-R0528",
+  "name": "Carmen Daniels",
+  "age": 51,
+  "occupation": "Sign designer",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The rescue hut mural",
+  "biography": "stories/residents/04/08-the-rescue-hut-mural.md#ah-r0528",
+  "life": "“I still remember watching someone read a sign with their fingertips.” On Wednesday, near the approach to Seabright Court, Carmen likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I design signs for low vision. I asked regulars to describe the mural with their eyes closed.",
+  "appearance": "On an ordinary day, look for a washed violet jersey and a pen clipped inside the neckline. Carmen has a crooked front tooth visible when laughing, with a cropped cut that shows the shape of the ears. Carmen steadies a cup with both hands while listening during a conversation.",
+  "personality": "Carmen finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To add an audio description to the hut.",
+  "family": "Yvette Tsai is Carmen’s half-sibling. Carmen brings the paper and a pen. Yvette decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *School after sixty*, Yvette says, “I left school for a wage and spent my working life hiding my spelling.”",
+  "connections": "Jane Kahn. They ask children what the face depicts before deciding how it ought to look.",
+  "familyIds": [
+    "AH-R1262"
+  ],
+  "connectionIds": [
+    "AH-R0523"
+  ],
+  "reactions": [
+    {
+      "situation": "The old model asks to choose the viewing angle",
+      "response": "Carmen walks the observers to the angle the model chose.",
+      "asWritten": "The old model asks to choose the viewing angle. Carmen walks the observers to the angle the model chose."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Carmen asks the person already using it whether they can comfortably stand, rather than presuming who needs it most.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Carmen asks the person already using it whether they can comfortably stand, rather than presuming who needs it most."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Carmen waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Carmen waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

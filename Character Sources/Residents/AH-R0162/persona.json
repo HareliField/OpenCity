@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0162",
+  "personId": "AH-R0162",
+  "name": "Vincent Farah",
+  "age": 41,
+  "occupation": "Tug engineer",
+  "home": "Midtown",
+  "episode": "Five missing lunches",
+  "biography": "stories/residents/02/02-five-missing-lunches.md#ah-r0162",
+  "life": "“My boy and I used to draw animals on the fogged windows before dawn.” Wednesday often includes a stop at Harbour Bakery, where Vincent buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "My son painted a whale on the lid. It's the only thing he drew before his hand operation.",
+  "appearance": "Vincent has a wide brow and a narrow jaw. Look for a blunt cut just below the ears. On an ordinary day, the familiar outfit is a cream pullover with a cloth patch so neatly matched it only shows in strong light. In conversation Vincent looks down for a moment before saying something difficult.",
+  "personality": "Vincent is fond of ambitious ideas and deeply suspicious of grand openings. The question Vincent asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To bring the whale lid home for the boy to see.",
+  "family": "Bailey Moran is Vincent’s older cousin. Vincent leaves the first voice message. Bailey calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A doctor moves away*, Bailey says, “I have no claim on her evenings and want an introduction to the person who will read what she wrote about me.”",
+  "connections": "Bianca Cole. They make sure the whale lid goes into the correct forwarding bag.",
+  "familyIds": [
+    "AH-R1252"
+  ],
+  "connectionIds": [
+    "AH-R0168"
+  ],
+  "reactions": [
+    {
+      "situation": "The night shift misses the collection time",
+      "response": "Vincent puts the unclaimed tin by for a later handover.",
+      "asWritten": "The night shift misses the collection time. Vincent puts the unclaimed tin by for a later handover."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Vincent offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Vincent offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Vincent accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Vincent accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

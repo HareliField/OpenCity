@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0021",
+  "personId": "AH-R0021",
+  "name": "Vera Rios",
+  "age": 62,
+  "occupation": "Self-made millionaire and cold-store owner",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The small signature",
+  "biography": "stories/residents/01/03-the-small-signature.md#ah-r0021",
+  "life": "Vera built her fortune keeping food cold for businesses that couldn't buy their own storage. During the first summer she slept beside a faulty alarm. Today plenty of people call her generous. Very few remember that she used to owe the snack seller lunch money. Friday often includes a stop at Harbour Bakery, where Vera buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "For years I bought my crews soup from that cart. I gave the big check because I wanted my late wife's name on a bench. Now the vendor is asking who can actually afford to sit there at lunchtime.",
+  "appearance": "Vera has a long silver braid, a small notch in the left eyebrow, and a favorite piece of clothing, a dark green knitted vest. It usually goes with a printed handkerchief folded into the pocket. When somebody else has the floor, Vera turns fully toward the person speaking.",
+  "personality": "Vera admires skill and distrusts the idea that skill gives anyone permission to be rude. Vera learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To put a memorial where her wife would actually have spent a lunch break.",
+  "family": "Emma Davis is Vera’s second cousin. Vera picks the meeting place. Emma sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A room above the dryers*, Emma says, “I live across the landing. I asked for free sittings for the old people nobody photographs unless they're blowing candles out.”",
+  "connections": "Gil Atwood (former lunch vendor). They knew each other over a cart long before anybody put their names on the same check.",
+  "familyIds": [
+    "AH-R1206"
+  ],
+  "connectionIds": [
+    "AH-R0022"
+  ],
+  "reactions": [
+    {
+      "situation": "The paper wants a photograph with only the biggest donor",
+      "response": "Vera asks the vendor where they would like to stand and tells the photographer who paid the eleven dollars.",
+      "asWritten": "The paper wants a photograph with only the biggest donor. Vera asks the vendor where they would like to stand and tells the photographer who paid the eleven dollars."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Vera writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Vera writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Vera describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Vera describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

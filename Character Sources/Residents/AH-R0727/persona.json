@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0727",
+  "personId": "AH-R0727",
+  "name": "Malcolm Tan",
+  "age": 45,
+  "occupation": "Packing worker",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The fountain score",
+  "biography": "stories/residents/05/13-the-fountain-score.md#ah-r0727",
+  "life": "“I still remember a work lunch carried in the very last family tin.” People around the public end of the South Shore boardwalk know Malcolm by a small Saturday habit. Malcolm checks the shade on the benches before deciding how long to stay.",
+  "voice": "I brought an empty milk tin from the shop my parents lost. I finally heard something new inside it.",
+  "appearance": "Malcolm has a wide brow and a narrow jaw. Look for short, uneven waves that refuse to lie flat. On an ordinary day, the familiar outfit is a black overshirt with pearl buttons with a small enamel bird on the lapel. In conversation Malcolm presses the lips together to keep a smile in.",
+  "personality": "Malcolm treats a small promise with the gravity others reserve for a contract. This makes Malcolm lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To get the old milk tin into the program.",
+  "family": "Cian Malik is Malcolm’s second cousin. Malcolm can always ask for five minutes alone. Cian asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The broken till*, Cian says, “I recognized my first boss's pencil shorthand.”",
+  "connections": "Howard Heller. Keys and the old packing tin place a shop closing inside the music.",
+  "familyIds": [
+    "AH-R0393"
+  ],
+  "connectionIds": [
+    "AH-R0723"
+  ],
+  "reactions": [
+    {
+      "situation": "An instrument breaks before the fountain piece begins",
+      "response": "Malcolm asks the player whether a different everyday object can carry the missing note.",
+      "asWritten": "An instrument breaks before the fountain piece begins. Malcolm asks the player whether a different everyday object can carry the missing note."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Malcolm clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience.",
+      "asWritten": "A family supper turns into an argument about old debt. Malcolm clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Malcolm says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Malcolm says what can be returned and asks whether that will do."
+    }
+  ]
+}

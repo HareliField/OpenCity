@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0992",
+  "personId": "AH-R0992",
+  "name": "Amanda Walker",
+  "age": 39,
+  "occupation": "Office receptionist",
+  "home": "Eastside",
+  "episode": "An old restaurant debt",
+  "biography": "stories/residents/07/10-an-old-restaurant-debt.md#ah-r0992",
+  "life": "“I still remember cake served on a plate borrowed from our neighbors.” Friday often includes a stop at Breakwater Way, where Amanda stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I was the child eating the cake. I want to pay for the next family whose grown-ups whisper at the till.",
+  "appearance": "On an ordinary day, look for a charcoal zip cardigan and one cuff folded back twice. Amanda has heavy brows and an unusually delicate jaw, with a high puff tied with plain cord. Amanda squares up pieces of paper while thinking during a conversation.",
+  "personality": "Amanda carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To fund a meal for another bereaved family.",
+  "family": "Martha Ueda is Amanda’s half-sibling. Amanda can always ask for five minutes alone. Martha asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Care with a clock*, Martha says, “I have been buying an extra fifteen minutes for my father without telling my sister I'm in debt.”",
+  "connections": "Devin Mills (parent). Parent and grown child decide what the belated payment can do for another bereaved household.",
+  "familyIds": [
+    "AH-R0884"
+  ],
+  "connectionIds": [
+    "AH-R0991"
+  ],
+  "reactions": [
+    {
+      "situation": "The shop owners disagree on what to do with the payment",
+      "response": "Amanda asks both owners for figures before anyone promises a fund or a repair.",
+      "asWritten": "The shop owners disagree on what to do with the payment. Amanda asks both owners for figures before anyone promises a fund or a repair."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Amanda offers an ordinary errand that lets the distressed person leave without being followed by an audience.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Amanda offers an ordinary errand that lets the distressed person leave without being followed by an audience."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Amanda offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Amanda offers to accompany them while they tell the truth."
+    }
+  ]
+}

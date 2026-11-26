@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1220",
+  "personId": "AH-R1220",
+  "name": "Oliver Aranda",
+  "age": 41,
+  "occupation": "Port worker and parent",
+  "home": "the western residential streets",
+  "episode": "The worker who couldn't read the joke",
+  "biography": "stories/residents/09/02-the-worker-who-couldn-t-read-the-joke.md#ah-r1220",
+  "life": "“I still remember my child asking why every worker in the photograph looked alike.” People around Breakwater Way know Oliver by a small Saturday habit. Oliver stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I wanted the photo gone. My kid wanted a copy so we could talk about when it's hard to disagree in public.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a small enamel bird on the lapel. Oliver has a straight nose and deep-set eyes, with short black hair swept back. Oliver touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Oliver is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Oliver is by the number of tiny errands suddenly being done.",
+  "agenda": "To use the copy privately to talk with the child.",
+  "family": "Diego Medina is Oliver’s stepsibling. Oliver makes the call. Diego is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Three minutes at the bridge*, Diego says, “I count the cars from my porch. The day the shared ride starts will look like one ordinary car missing.”",
+  "connections": "Barbara Frost. A family copy of the crew portrait becomes evidence of how far the joke traveled.",
+  "familyIds": [
+    "AH-R1467"
+  ],
+  "connectionIds": [
+    "AH-R1213"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative forwards the break-room picture",
+      "response": "Oliver asks that the picture stop traveling while the worker decides what to say.",
+      "asWritten": "A relative forwards the break-room picture. Oliver asks that the picture stop traveling while the worker decides what to say."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Oliver writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Oliver writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Oliver agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Oliver agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

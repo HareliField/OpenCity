@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0924",
+  "personId": "AH-R0924",
+  "name": "Bianca Ward",
+  "age": 45,
+  "occupation": "Estate broker",
+  "home": "the blocks north of the port",
+  "episode": "A widow bids again",
+  "biography": "stories/residents/07/03-a-widow-bids-again.md#ah-r0924",
+  "life": "“I still remember forgetting the name of the woman who cleaned a showing.” On Friday, near Harbour Bakery, Bianca buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I sell luxury property. This is the first bidder who asked me the names on the doorbells.",
+  "appearance": "Bianca has a swept fringe and a closely clipped nape, a heart-shaped face and prominent ears, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Bianca squares up pieces of paper while thinking.",
+  "personality": "Bianca has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To put the residents' names into the bidder's briefing.",
+  "family": "Ida Mercer is Bianca’s second cousin. Bianca is free to hang up first. Ida makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The blue suit*, Ida says, “I bought this place with the settlement from my bus accident.”",
+  "connections": "Priya Vance (property bidder). A bidder who can raise the price in seconds asks the broker to read her the actual names.",
+  "familyIds": [
+    "AH-R0001"
+  ],
+  "connectionIds": [
+    "AH-R0921"
+  ],
+  "reactions": [
+    {
+      "situation": "A tenant calls attention to damp during the viewing",
+      "response": "Bianca allows a proper look at the damp before returning to the argument about price.",
+      "asWritten": "A tenant calls attention to damp during the viewing. Bianca allows a proper look at the damp before returning to the argument about price."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Bianca takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Bianca takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Bianca asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Bianca asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

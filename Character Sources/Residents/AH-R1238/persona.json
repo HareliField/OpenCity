@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1238",
+  "personId": "ah-pd-138",
+  "name": "Jules Rice",
+  "age": 42,
+  "occupation": "Patrol officer",
+  "home": "Midtown",
+  "episode": "A call heard twice",
+  "biography": "stories/residents/09/04-a-call-heard-twice.md#ah-r1238",
+  "life": "“I still remember an ordinary greeting coming at the hardest part of a handover.” Thursday often includes a stop at Ferris Deli, where Jules asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I want the young staff to see that a good handover can sound like an ordinary conversation.",
+  "appearance": "Jules is easy to recognize by a center part and straight chestnut hair and a deep crease beside the mouth when smiling. Usually dressed in a mustard canvas overshirt with a seam let out by a narrow strip of contrasting fabric, Jules starts to lift a hand, then waits to be invited to speak when listening.",
+  "personality": "Jules uses precise names for tools and very approximate names for feelings. People who know Jules well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To use the handover in training with permission.",
+  "family": "Ida Gupta is Jules’s younger cousin. Jules knows which ones can be shared. Ida keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Summer staff*, Ida says, “I promised my little brother he could work his first shift beside me.”",
+  "connections": "Alex Yu. A colleague's bedtime phrase makes the handover easier for an entirely ordinary reason.",
+  "familyIds": [
+    "AH-R0822"
+  ],
+  "connectionIds": [
+    "AH-R1234"
+  ],
+  "reactions": [
+    {
+      "situation": "The resident asks for a reply in somebody's own words",
+      "response": "Jules asks the caller how they want to receive a personal reply.",
+      "asWritten": "The resident asks for a reply in somebody's own words. Jules asks the caller how they want to receive a personal reply."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Jules checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Jules checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Jules brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Jules brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

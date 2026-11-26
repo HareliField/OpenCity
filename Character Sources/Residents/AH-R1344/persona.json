@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1344",
+  "personId": "AH-R1344",
+  "name": "Dina Hooper",
+  "age": 52,
+  "occupation": "Dock carpenter",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The missing name on the stern",
+  "biography": "stories/residents/09/15-the-missing-name-on-the-stern.md#ah-r1344",
+  "life": "“I still remember finding a stencil that hadn't been turned over in decades.” People around Breakwater Way know Dina by a small Thursday habit. Dina stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I kept the original stencil on the back of a cupboard door. We have been repainting a stranger's mistake for twenty years.",
+  "appearance": "Dina is easy to recognize by a center part and straight chestnut hair and a scattering of freckles across the bridge of the nose. Usually dressed in a faded indigo overshirt with a stitched row of blue crosses along an old repair, Dina grins on one side while the eyes stay serious when listening.",
+  "personality": "Dina has a talent for getting adversaries to laugh at exactly the same thing. Dina knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To bring the original stencil to the dock.",
+  "family": "Una Vida is Dina’s half-sibling. Dina sets the time to leave. Una picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *An unfinished atlas*, Una says, “One of my students can read the tiny block letters upside down.”",
+  "connections": "Rain Scott. A stencil and a set of removed letters are welcome in two different shore workshops.",
+  "familyIds": [
+    "AH-R0065"
+  ],
+  "connectionIds": [
+    "AH-R1348"
+  ],
+  "reactions": [
+    {
+      "situation": "A family elder asks for the spelling they grew up with",
+      "response": "Dina writes both spellings where the elder can indicate the one they prefer.",
+      "asWritten": "A family elder asks for the spelling they grew up with. Dina writes both spellings where the elder can indicate the one they prefer."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Dina keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Dina keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Dina asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Dina asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

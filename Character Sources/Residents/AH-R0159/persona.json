@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0159",
+  "personId": "AH-R0159",
+  "name": "Parker Cho",
+  "age": 45,
+  "occupation": "Hotel housekeeper",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Hem by hem",
+  "biography": "stories/residents/02/01-hem-by-hem.md#ah-r0159",
+  "life": "“Hotel work taught me that white silk goes yellow fastest where people hold it.” On Thursday, near Maré Coffee, Parker likes the table where people coming off shift stop checking the time.",
+  "voice": "I mistook the worn hem for dirt and almost scrubbed away the original chalk marks.",
+  "appearance": "Parker is easy to recognize by short sandy hair and a marked widow's peak and two dimples that appear only with a full smile. Usually dressed in a sand-colored linen shirt with a seam let out by a narrow strip of contrasting fabric, Parker raises one eyebrow long before saying yes when listening.",
+  "personality": "Parker can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Parker can afford to give, and family knows to take it seriously.",
+  "agenda": "To save the chalk marks on a piece that can come out before washing.",
+  "family": "Tariq Hamilton is Parker’s stepsibling. Parker checks the date twice. Tariq brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *A tenant who stays*, Tariq says, “I thought my father had promised the house to me.”",
+  "connections": "Nell Graves. They photograph the original chalk before the hem is washed.",
+  "familyIds": [
+    "AH-R0987"
+  ],
+  "connectionIds": [
+    "AH-R0160"
+  ],
+  "reactions": [
+    {
+      "situation": "The bride wants to keep the old pocket",
+      "response": "Parker leaves the pocket in place while the bride tries the dress on.",
+      "asWritten": "The bride wants to keep the old pocket. Parker leaves the pocket in place while the bride tries the dress on."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Parker offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Parker offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Parker suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Parker suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

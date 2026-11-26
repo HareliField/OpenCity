@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0809",
+  "personId": "AH-R0809",
+  "name": "Carlo Sharp",
+  "age": 48,
+  "occupation": "Night cleaner",
+  "home": "Eastside",
+  "episode": "Home with stairs",
+  "biography": "stories/residents/06/06-home-with-stairs.md#ah-r0809",
+  "life": "“I still remember the missing stair where the night cleaner rested.” On Friday, near the approach to Seabright Court, Carlo likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I clean the stairs after midnight. I cleared a place for a resting stool on the twenty-eighth.",
+  "appearance": "Carlo has a flat bridge to the nose and a mobile brow. Look for brown hair pinned away from the temples. On an ordinary day, the familiar outfit is a soft blue checked shirt with a seam let out by a narrow strip of contrasting fabric. In conversation Carlo grins on one side while the eyes stay serious.",
+  "personality": "Carlo always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Carlo is trying to tell the difference before the bill arrives.",
+  "agenda": "To make space for a landing stool.",
+  "family": "Cecilia Aranda is Carlo’s cousin raised in the same household. Carlo brings something that can still be enjoyed tomorrow. Cecilia checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Station steps in rain*, Cecilia says, “I opened the side door too late. I owe the person who left before we found a dry route a second invitation.”",
+  "connections": "Ingrid Moss. The courier's landing map shows the cleaner where a stool might help.",
+  "familyIds": [
+    "AH-R0490"
+  ],
+  "connectionIds": [
+    "AH-R0805"
+  ],
+  "reactions": [
+    {
+      "situation": "A hospital car arrives before the handrail is ready",
+      "response": "Carlo checks the landing with the patient before calling the trip home ready.",
+      "asWritten": "A hospital car arrives before the handrail is ready. Carlo checks the landing with the patient before calling the trip home ready."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Carlo stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Carlo stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Carlo suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Carlo suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

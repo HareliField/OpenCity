@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0739",
+  "personId": "AH-R0739",
+  "name": "Mateo Adair",
+  "age": 74,
+  "occupation": "Retired tram conductor",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The split visit",
+  "biography": "stories/residents/05/14-the-split-visit.md#ah-r0739",
+  "life": "“I still remember first going around the corner without a walking frame.” Tuesday often includes a stop at Paper & Pine Books, where Mateo starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I took the spare half-hour to walk to the corner alone. They were still there when I came back.",
+  "appearance": "Mateo has a strong profile and a little space between the front teeth. Look for salt-and-pepper curls. On an ordinary day, the familiar outfit is a washed violet jersey with a stitched row of blue crosses along an old repair. In conversation Mateo gives a little nod before asking a hard question.",
+  "personality": "Mateo has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To walk to the corner without losing company.",
+  "family": "Aubrey Ahmed is Mateo’s younger cousin. Mateo asks the question the rest of the family avoided. Aubrey chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The savings club*, Aubrey says, “I would rather buy a return for my sister than a departure for myself.”",
+  "connections": "Briar Henry. A folding table and a walk to the corner both make the extra half hour count.",
+  "familyIds": [
+    "AH-R0478"
+  ],
+  "connectionIds": [
+    "AH-R0737"
+  ],
+  "reactions": [
+    {
+      "situation": "Two carers turn up for one visit",
+      "response": "Mateo asks the client which ordinary task would be easier with two people present.",
+      "asWritten": "Two carers turn up for one visit. Mateo asks the client which ordinary task would be easier with two people present."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Mateo waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Mateo waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Mateo explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Mateo explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

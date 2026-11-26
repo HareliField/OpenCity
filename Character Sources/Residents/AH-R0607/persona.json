@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0607",
+  "personId": "AH-R0607",
+  "name": "Winifred Osborne",
+  "age": 29,
+  "occupation": "Commercial cleaner",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Salt in the pockets",
+  "biography": "stories/residents/05/01-salt-in-the-pockets.md#ah-r0607",
+  "life": "“I still remember practicing a request for better wages into a sink.” Monday often includes a stop at the brick passage off the shop row, where Winifred takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I folded my note asking for a raise into that pocket. Now I have to say the words aloud.",
+  "appearance": "Winifred has a strong profile and a little space between the front teeth. Look for a high puff tied with plain cord. On an ordinary day, the familiar outfit is a striped cotton shirt with a pair of reading glasses in a cloth sleeve. In conversation Winifred takes off the watch before a long conversation.",
+  "personality": "Winifred carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To ask for the pay rise in person.",
+  "family": "Taylor Lucas is Winifred’s second cousin. Winifred brings a spare shopping bag. Taylor chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Reading the payslip*, Taylor says, “I earned more in tips last month than my own manager.”",
+  "connections": "Talia Barclay. A secret second wage and an asking-for-a-raise letter could both come out in the wash.",
+  "familyIds": [
+    "AH-R0814"
+  ],
+  "connectionIds": [
+    "AH-R0603"
+  ],
+  "reactions": [
+    {
+      "situation": "A coat's owner claims the crystals in the lining",
+      "response": "Winifred sets the coat aside until the owner can identify the crystals privately.",
+      "asWritten": "A coat's owner claims the crystals in the lining. Winifred sets the coat aside until the owner can identify the crystals privately."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Winifred takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Winifred takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Winifred offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Winifred offers to accompany them while they tell the truth."
+    }
+  ]
+}

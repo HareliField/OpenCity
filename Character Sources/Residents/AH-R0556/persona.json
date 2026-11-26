@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0556",
+  "personId": "AH-R0556",
+  "name": "Nadia Black",
+  "age": 33,
+  "occupation": "Bridal stylist",
+  "home": "the western residential streets",
+  "episode": "The fitting mirror",
+  "biography": "stories/residents/04/11-the-fitting-mirror.md#ah-r0556",
+  "life": "“I still remember a bride apologizing for her elbows.” On Sunday, near the approach to Seabright Court, Nadia likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I am tired of brides apologizing to the glass. I drape it until they tell me they're ready.",
+  "appearance": "Nadia has close-cropped dark curls, a small notch in the left eyebrow, and a favorite piece of clothing, a rust-colored canvas coat. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Nadia looks toward the door whenever a name is called.",
+  "personality": "Nadia loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To uncover the mirror when the bride asks.",
+  "family": "Santiago Wells is Nadia’s cousin. Nadia picks the meeting place. Santiago sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *Three minutes at the bridge*, Santiago says, “I used to travel in complete silence. I asked the others to let me have one quiet morning a week.”",
+  "connections": "Ashley Byrd (tailor). They put the mirror at a height that lets a seated customer choose when to look.",
+  "familyIds": [
+    "AH-R1466"
+  ],
+  "connectionIds": [
+    "AH-R0554"
+  ],
+  "reactions": [
+    {
+      "situation": "The mirror owner wants it back during a fitting",
+      "response": "Nadia asks the two shops for enough time to finish the fitting in privacy.",
+      "asWritten": "The mirror owner wants it back during a fitting. Nadia asks the two shops for enough time to finish the fitting in privacy."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Nadia keeps the neighbor's place and finds out whether the stranger needs a different kind of help.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Nadia keeps the neighbor's place and finds out whether the stranger needs a different kind of help."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Nadia offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Nadia offers one about their own embarrassment instead."
+    }
+  ]
+}

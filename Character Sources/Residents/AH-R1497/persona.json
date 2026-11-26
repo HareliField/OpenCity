@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1497",
+  "personId": "AH-R1497",
+  "name": "Micah Hassan",
+  "age": 57,
+  "occupation": "Marina operations clerk",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The last light at the harbor",
+  "biography": "stories/residents/10/15-the-last-light-at-the-harbor.md#ah-r1497",
+  "life": "“I still remember recognizing a missing neighbor from four unlit windows.” Tuesday often includes a stop at the public end of the South Shore boardwalk, where Micah checks the shade on the benches before deciding how long to stay.",
+  "voice": "I run the marina. I didn't understand how many people check on each other without passing through my office.",
+  "appearance": "Micah has a high puff tied with plain cord, a broad nose and a deep dimple on one cheek, and a favorite piece of clothing, a plum-colored cardigan. It usually goes with a tiny red thread tied through the lowest buttonhole. When somebody else has the floor, Micah presses the lips together to keep a smile in.",
+  "personality": "Micah admires skill and distrusts the idea that skill gives anyone permission to be rude. Micah learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To learn who looks after whom beyond the office door.",
+  "family": "Lennon Adair is Micah’s stepsibling. Micah chooses the music. Lennon puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The waiting-room plant*, Lennon says, “I gave it the name of my favorite aunt. My other aunt just found out and wants a pot of her own.”",
+  "connections": "Ashley West (dock porter). The night porter and the marina manager compare who still needs company after the office closes.",
+  "familyIds": [
+    "AH-R0510"
+  ],
+  "connectionIds": [
+    "AH-R1491"
+  ],
+  "reactions": [
+    {
+      "situation": "A cabin light stays on after its usual time",
+      "response": "Micah checks in through an ordinary contact before treating the late light as an emergency.",
+      "asWritten": "A cabin light stays on after its usual time. Micah checks in through an ordinary contact before treating the late light as an emergency."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Micah asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Micah asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Micah describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Micah describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

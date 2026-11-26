@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1466",
+  "personId": "AH-R1466",
+  "name": "Santiago Wells",
+  "age": 47,
+  "occupation": "Early shift bookkeeper",
+  "home": "the western residential streets",
+  "episode": "Three minutes at the bridge",
+  "biography": "stories/residents/10/12-three-minutes-at-the-bridge.md#ah-r1466",
+  "life": "“I still remember spending one shared journey quietly after a family illness.” On Wednesday, near the market by Market Flats, Santiago often waits until the delivery baskets are stacked before going in.",
+  "voice": "I used to travel in complete silence. I asked the others to let me have one quiet morning a week.",
+  "appearance": "Santiago has a long face and high cheekbones. Look for a dark undercut with a longer wave on top. On an ordinary day, the familiar outfit is an unlined tan jacket with a folded shopping list secured by a miniature clip. In conversation Santiago looks toward the door whenever a name is called.",
+  "personality": "Santiago is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To claim one quiet ride each week.",
+  "family": "Nadia Black is Santiago’s cousin. Santiago sets the time to leave. Nadia picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The fitting mirror*, Nadia says, “I am tired of brides apologizing to the glass.”",
+  "connections": "Diego Medina. One passenger hears a quiet journey while a resident sees the missing car in the street.",
+  "familyIds": [
+    "AH-R0556"
+  ],
+  "connectionIds": [
+    "AH-R1467"
+  ],
+  "reactions": [
+    {
+      "situation": "A carpool passenger needs an unplanned Friday stop",
+      "response": "Santiago asks the pharmacy passenger and the other riders which stop works for them.",
+      "asWritten": "A carpool passenger needs an unplanned Friday stop. Santiago asks the pharmacy passenger and the other riders which stop works for them."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Santiago finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Santiago finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Santiago helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Santiago helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

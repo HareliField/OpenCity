@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0935",
+  "personId": "ah-pd-117",
+  "name": "Nolan Reed",
+  "age": 36,
+  "occupation": "Patrol officer",
+  "home": "Coast Ridge",
+  "episode": "A civilian apology",
+  "biography": "stories/residents/07/04-a-civilian-apology.md#ah-r0935",
+  "life": "“I still remember taking down a shop sign too early after an argument.” On Sunday, near Ferris Deli, Nolan asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I brought the shopkeeper a new sign and discovered she wants the old one saved as evidence of what happened.",
+  "appearance": "Nolan is easy to recognize by short sandy hair and a marked widow's peak and a strong profile and a little space between the front teeth. Usually dressed in a brown corduroy jacket with one loose pocket corner secured with green thread, Nolan looks down for a moment before saying something difficult when listening.",
+  "personality": "Nolan prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To save the old sign as part of the record.",
+  "family": "Val Moss is Nolan’s half-sibling. Nolan brings whatever was actually growing or affordable that week. Val makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The engine lullaby*, Val says, “I can't hear it from our new flat. I walk here after arguments so I don't say the cruel thing first.”",
+  "connections": "Sofia Cruz. The new sign cannot settle the case until the words heard on the original call are distinguished.",
+  "familyIds": [
+    "AH-R0598"
+  ],
+  "connectionIds": [
+    "AH-R0936"
+  ],
+  "reactions": [
+    {
+      "situation": "A newspaper repeats the old display caption",
+      "response": "Nolan gets the shopkeeper's preferred wording to the editor before passing the story on.",
+      "asWritten": "A newspaper repeats the old display caption. Nolan gets the shopkeeper's preferred wording to the editor before passing the story on."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Nolan gives up their own space if possible and asks the passengers who arrived first to choose what happens next.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Nolan gives up their own space if possible and asks the passengers who arrived first to choose what happens next."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Nolan clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Nolan clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0703",
+  "personId": "AH-R0703",
+  "name": "Cora Yates",
+  "age": 31,
+  "occupation": "Hotel towel attendant",
+  "home": "Old Town",
+  "episode": "The free fringe",
+  "biography": "stories/residents/05/11-the-free-fringe.md#ah-r0703",
+  "life": "“I still remember giving up my chair for an anxious apprentice.” People around the entrance to the Wash House know Cora by a small Friday habit. Cora stops for local notices even on a day without a load to wash.",
+  "voice": "I gave up my slot because I remembered the first day I had nowhere to go before work.",
+  "appearance": "Cora is easy to recognize by a swept fringe and a closely clipped nape and a strong profile and a little space between the front teeth. Usually dressed in a dark green knitted vest with a stitched row of blue crosses along an old repair, Cora draws breath as if to speak and lets someone else go first when listening.",
+  "personality": "Cora has a talent for getting adversaries to laugh at exactly the same thing. Cora knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To let somebody without elsewhere to go use the slot.",
+  "family": "Martin Chen is Cora’s older cousin. Cora sets the time to leave. Martin picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The bitter orange*, Martin says, “I delivered bread six mornings a week. On the seventh she ate with my family.”",
+  "connections": "Gavin Jones. One customer gives up a place and another gets help arriving at an interview.",
+  "familyIds": [
+    "AH-R0247"
+  ],
+  "connectionIds": [
+    "AH-R0705"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer uses the free haircut to talk",
+      "response": "Cora lets the visitor say whether they would like a trim as well as a talk.",
+      "asWritten": "A customer uses the free haircut to talk. Cora lets the visitor say whether they would like a trim as well as a talk."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Cora offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Cora offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Cora asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Cora asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

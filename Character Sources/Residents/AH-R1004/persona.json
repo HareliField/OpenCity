@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1004",
+  "personId": "AH-R1004",
+  "name": "Chris Moss",
+  "age": 35,
+  "occupation": "Beauty supplier",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The salon on strike",
+  "biography": "stories/residents/07/11-the-salon-on-strike.md#ah-r1004",
+  "life": "“I still remember a bottle promotion that sold out while the trainees did all the washing up.” On Thursday, near Studio Boulevard, Chris waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I make commission on the bottles. I brought my sales figures so the assistants can point to what their work earns.",
+  "appearance": "Chris is easy to recognize by a dark undercut with a longer wave on top and a wide brow and a narrow jaw. Usually dressed in a boxy denim jacket with a printed handkerchief folded into the pocket, Chris listens with the head tilted a little to the left when listening.",
+  "personality": "Chris takes a rejection personally for a day and analytically on the second morning. Chris can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To show what the assistants' labor earned.",
+  "family": "Kai Mercer is Chris’s second cousin. Chris keeps the photographs. Kai knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *School after sixty*, Kai says, “I can translate the questions but not the answer my aunt wants to give.”",
+  "connections": "Evelyn Wade. Sales figures give the worker financing a colleague's absence a better bargaining position.",
+  "familyIds": [
+    "AH-R1267"
+  ],
+  "connectionIds": [
+    "AH-R1009"
+  ],
+  "reactions": [
+    {
+      "situation": "An apprentice asks if declining will cost future shifts",
+      "response": "Chris asks the owner to give the apprentice a direct answer in front of a witness of their choosing.",
+      "asWritten": "An apprentice asks if declining will cost future shifts. Chris asks the owner to give the apprentice a direct answer in front of a witness of their choosing."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Chris finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Chris finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Chris turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Chris turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "residentId": "AH-R1133",
+  "personId": "AH-R1133",
+  "name": "Ivy Burke",
+  "age": 46,
+  "occupation": "Foster carer and receptionist",
+  "home": "the western residential streets",
+  "episode": "The third bedroom",
+  "biography": "stories/residents/08/09-the-third-bedroom.md#ah-r1133",
+  "life": "“I still remember saving two places at a crowded supper table.” People around the downtown fountain know Ivy by a small Saturday habit. Ivy keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I want to stay their carer. Our spare room pays the mortgage with a lodger in it.",
+  "appearance": "Ivy is easy to recognize by a high puff tied with plain cord and a wide brow and a narrow jaw. Usually dressed in a faded indigo overshirt with a replacement button a shade darker than the others, Ivy starts to lift a hand, then waits to be invited to speak when listening.",
+  "personality": "Ivy treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To keep both foster placements financially possible.",
+  "family": "Ken Calloway is Ivy’s cousin raised in the same household. Ivy chooses whether to use it. Ken saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *Closing soup*, Ken says, “I was ashamed my family lived on leftovers.”",
+  "connections": "Patrick Osborne. The carer and the lodger negotiate two families' housing at once. Other connections include Cyrus Keller (foster child), Dale Lane (foster child).",
+  "familyIds": [
+    "AH-R0544"
+  ],
+  "connectionIds": [
+    "AH-R1134",
+    "AH-R1131",
+    "AH-R1132"
+  ],
+  "reactions": [
+    {
+      "situation": "A caseworker asks the foster siblings to describe sharing",
+      "response": "Ivy gives each sibling room to describe sharing separately.",
+      "asWritten": "A caseworker asks the foster siblings to describe sharing. Ivy gives each sibling room to describe sharing separately."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Ivy asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Ivy asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Ivy changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Ivy changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

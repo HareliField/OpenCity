@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0723",
+  "personId": "AH-R0723",
+  "name": "Howard Heller",
+  "age": 43,
+  "occupation": "Department store clerk",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The fountain score",
+  "biography": "stories/residents/05/13-the-fountain-score.md#ah-r0723",
+  "life": "“I still remember a keyring from the place where I got my first job.” People around Breakwater Way know Howard by a small Thursday habit. Howard stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I came prepared to laugh at the performance. My car keys became the last instrument in it.",
+  "appearance": "Howard has a round face with a pronounced chin. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a faded indigo overshirt with a pen clipped inside the neckline. In conversation Howard rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Howard can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To bring the car keys back for the next concert.",
+  "family": "Faye Tate is Howard’s cousin raised in the same household. Howard brings a spare shopping bag. Faye chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The crash anniversary*, Faye says, “I take flowers home after they wilt so the family doesn't have to see them wet and gray.”",
+  "connections": "Malcolm Tan. Keys and the old packing tin place a shop closing inside the music.",
+  "familyIds": [
+    "AH-R1015"
+  ],
+  "connectionIds": [
+    "AH-R0727"
+  ],
+  "reactions": [
+    {
+      "situation": "An instrument breaks before the fountain piece begins",
+      "response": "Howard asks the player whether a different everyday object can carry the missing note.",
+      "asWritten": "An instrument breaks before the fountain piece begins. Howard asks the player whether a different everyday object can carry the missing note."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Howard asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Howard asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Howard asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Howard asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

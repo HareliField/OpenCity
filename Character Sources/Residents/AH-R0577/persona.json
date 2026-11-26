@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0577",
+  "personId": "AH-R0577",
+  "name": "Lydia Avila",
+  "age": 14,
+  "occupation": "Young actor",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A play in a pocket",
+  "biography": "stories/residents/04/13-a-play-in-a-pocket.md#ah-r0577",
+  "life": "“I still remember ordering coffee in my dad's important telephone voice.” On Monday, near the public end of the South Shore boardwalk, Lydia checks the shade on the benches before deciding how long to stay.",
+  "voice": "I played my dad ordering coffee. He heard it and for once remembered to say please.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and a square of clean cloth for polishing smudges. Lydia has a deep crease beside the mouth when smiling, with short, uneven waves that refuse to lie flat. Lydia listens with the head tilted a little to the left during a conversation.",
+  "personality": "Lydia has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To get the father to hear his café manners kindly.",
+  "family": "Dolores Silva is Lydia’s older relative by marriage. Lydia saves a place. Dolores chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The kitchen without a boss*, Dolores says, “I manage the other bakery. I lent a mixer and did not mention our own sale while I carried it through the door.”",
+  "connections": "Mia Taylor. A bus ticket curtain gives the child's imitation of a parent a little stage.",
+  "familyIds": [
+    "AH-R1449"
+  ],
+  "connectionIds": [
+    "AH-R0576"
+  ],
+  "reactions": [
+    {
+      "situation": "A young actor asks the listener to stop the pocket play",
+      "response": "Lydia lets the actor stop without calling the audience's attention to the interruption.",
+      "asWritten": "A young actor asks the listener to stop the pocket play. Lydia lets the actor stop without calling the audience's attention to the interruption."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Lydia brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Lydia brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Lydia says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Lydia says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

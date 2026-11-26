@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0271",
+  "personId": "AH-R0271",
+  "name": "Bianca Sethi",
+  "age": 15,
+  "occupation": "Student songwriter",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The quiet verse",
+  "biography": "stories/residents/02/13-the-quiet-verse.md#ah-r0271",
+  "life": "“I first wrote lyrics in the backs of permission slips nobody returned.” People around Maré Coffee know Bianca by a small Wednesday habit. Bianca likes the table where people coming off shift stop checking the time.",
+  "voice": "I wrote the verse about my dad and then decided nobody gets to hear it yet.",
+  "appearance": "On an ordinary day, look for a cream pullover and a train token tied to a zipper pull. Bianca has a round face with a pronounced chin, with thick, tightly coiled hair. Bianca gives a little nod before asking a hard question during a conversation.",
+  "personality": "Bianca keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Bianca wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To decide personally if the private verse will ever be heard.",
+  "family": "Samuel Choi is Bianca’s older relative by marriage. Bianca remembers the birthdays. Samuel asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The widow's dividend*, Samuel says, “I found a pencil debt to my mother between two lines about roofing nails.”",
+  "connections": "Annette Alder (choir director). The conductor and writer agree who controls the unsung verse.",
+  "familyIds": [
+    "AH-R0323"
+  ],
+  "connectionIds": [
+    "AH-R0277"
+  ],
+  "reactions": [
+    {
+      "situation": "The silent verse gets applause in the wrong place",
+      "response": "Bianca gives the singer time to resume instead of trying to conduct the applause.",
+      "asWritten": "The silent verse gets applause in the wrong place. Bianca gives the singer time to resume instead of trying to conduct the applause."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Bianca offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Bianca offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Bianca offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Bianca offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1372",
+  "personId": "AH-R1372",
+  "name": "Cassandra Collins",
+  "age": 32,
+  "occupation": "Junior tailor",
+  "home": "the blocks north of the port",
+  "episode": "The gift nobody wants",
+  "biography": "stories/residents/10/03-the-gift-nobody-wants.md#ah-r1372",
+  "life": "“I still remember pinning cloth in a shop barely wider than the mirror.” Monday often includes a stop at the corner by Juniper Tailor, where Cassandra looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I am the daughter. Dad has offered me a valuable building with his office on the top floor.",
+  "appearance": "On an ordinary day, look for a brown corduroy jacket and a comb in a sleeve sewn into the lining. Cassandra has fine brows over wide-set eyes, with a soft fringe that falls across one eyebrow. Cassandra folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Cassandra finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To get a modest tailoring space under personal control.",
+  "family": "Freya King is Cassandra’s older cousin. Cassandra calls back when there is finally a little privacy. Freya leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The bitter orange*, Freya says, “I brought her son in expecting tears. He ordered something completely different and made everyone laugh.”",
+  "connections": "Joseph Moran (father). A wealthy father and a young tailor disagree about whether owning a whole building constitutes freedom. Also in the story is Marin Brady (master tailor).",
+  "familyIds": [
+    "AH-R0250"
+  ],
+  "connectionIds": [
+    "AH-R1371",
+    "AH-R1377"
+  ],
+  "reactions": [
+    {
+      "situation": "A tenant hears about the building sale secondhand",
+      "response": "Cassandra gives the tenant a reliable contact for the sale information and a real date to expect an answer.",
+      "asWritten": "A tenant hears about the building sale secondhand. Cassandra gives the tenant a reliable contact for the sale information and a real date to expect an answer."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Cassandra asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Cassandra asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Cassandra points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Cassandra points to the person who noticed the original mistake."
+    }
+  ]
+}

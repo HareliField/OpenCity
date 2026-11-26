@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1034",
+  "personId": "AH-R1034",
+  "name": "Nelson Darzi",
+  "age": 72,
+  "occupation": "Retired payroll clerk",
+  "home": "Eastside",
+  "episode": "The carer's afternoon",
+  "biography": "stories/residents/07/14-the-carer-s-afternoon.md#ah-r1034",
+  "life": "“I still remember enjoying a conversation my daughter had nothing to do with.” On Saturday, near Harbour Bakery, Nelson buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I am the parent needing care. My daughter doesn't know I've wanted an afternoon without her questions too.",
+  "appearance": "On an ordinary day, look for an olive canvas jacket and a square of clean cloth for polishing smudges. Nelson has a round face with a pronounced chin, with a neat white crop. Nelson looks toward the door whenever a name is called during a conversation.",
+  "personality": "Nelson has a long memory for unfair prices and a short one for small insults. Nelson can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To enjoy a quiet Wednesday on personal terms.",
+  "family": "Lucia Starr is Nelson’s first cousin once removed. Nelson brings something that can still be enjoyed tomorrow. Lucia checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Spin cycle choir*, Lucia says, “I wrote my first dance to those machines. I want to rehearse before customers start arriving.”",
+  "connections": "Maria Delgado (daughter). Mother and daughter both have a use for four unscheduled hours apart.",
+  "familyIds": [
+    "AH-R0308"
+  ],
+  "connectionIds": [
+    "AH-R1031"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative demands to know how the free time was spent",
+      "response": "Nelson leaves the free afternoon private unless the carer wants to talk about it.",
+      "asWritten": "A relative demands to know how the free time was spent. Nelson leaves the free afternoon private unless the carer wants to talk about it."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Nelson keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Nelson keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Nelson agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Nelson agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

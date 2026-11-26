@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1050",
+  "personId": "AH-R1050",
+  "name": "Edwin Wilson",
+  "age": 40,
+  "occupation": "Separated sail instructor",
+  "home": "Coast Ridge",
+  "episode": "The day sailor's divorce",
+  "biography": "stories/residents/07/15-the-day-sailor-s-divorce.md#ah-r1050",
+  "life": "“I still remember the argument we didn't have over pancakes after a voyage.” Thursday often includes a stop at the approach to Seabright Court, where Edwin likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I want our first trip after signing the papers to be the children's choice of route and breakfast.",
+  "appearance": "Edwin has a small notch in the left eyebrow. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a red windbreaker with a pressed flower kept in the clear back of a phone case. In conversation Edwin looks down for a moment before saying something difficult.",
+  "personality": "Edwin is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To let the children choose the first breakfast route.",
+  "family": "Sonia Lang is Edwin’s half-sibling. Edwin leaves the first voice message. Sonia calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A closing hour*, Sonia says, “I arrived with wet bedding and bad temper. The handwritten birthday sign made me ring my own father.”",
+  "connections": "Jorge Crane. The wedding sail's donor asks what the children want on the first trip after the papers are signed.",
+  "familyIds": [
+    "AH-R1354"
+  ],
+  "connectionIds": [
+    "AH-R1044"
+  ],
+  "reactions": [
+    {
+      "situation": "A spouse asks to count repair hours toward Sunday time",
+      "response": "Edwin checks the maintenance log before treating Sundays as the only contribution.",
+      "asWritten": "A spouse asks to count repair hours toward Sunday time. Edwin checks the maintenance log before treating Sundays as the only contribution."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Edwin offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Edwin offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Edwin helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Edwin helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

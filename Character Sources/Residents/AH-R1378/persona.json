@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1378",
+  "personId": "AH-R1378",
+  "name": "Keir Rios",
+  "age": 41,
+  "occupation": "Dinner caterer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The gift nobody wants",
+  "biography": "stories/residents/10/03-the-gift-nobody-wants.md#ah-r1378",
+  "life": "“I still remember returning a fine bottle to somebody who wanted a quiet lunch.” Saturday often includes a stop at Tideline Market, where Keir picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I arranged a dinner to smooth things over and returned the sponsor's wine. I want everybody to taste what they chose.",
+  "appearance": "Keir has a softly rounded chin under sharp cheekbones. Look for a dark undercut with a longer wave on top. Away from the heat of the kitchen, the familiar outfit is an old plum windbreaker with a narrow brass watch set a little fast. In conversation Keir presses the lips together to keep a smile in.",
+  "personality": "Keir takes a rejection personally for a day and analytically on the second morning. Keir can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To host a dinner the sponsor doesn't own.",
+  "family": "Fiona Salas is Keir’s older cousin. Keir is free to hang up first. Fiona makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Winter afloat*, Fiona says, “I spent a winter pretending I was visiting friends.”",
+  "connections": "Ivan Ruiz. A donor's dinner gets easier once two people can explain why it is possible to refuse a gift.",
+  "familyIds": [
+    "AH-R0900"
+  ],
+  "connectionIds": [
+    "AH-R1375"
+  ],
+  "reactions": [
+    {
+      "situation": "A tenant hears about the building sale secondhand",
+      "response": "Keir gives the tenant a reliable contact for the sale information and a real date to expect an answer.",
+      "asWritten": "A tenant hears about the building sale secondhand. Keir gives the tenant a reliable contact for the sale information and a real date to expect an answer."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Keir asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Keir asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Keir turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Keir turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

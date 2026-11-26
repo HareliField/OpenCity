@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1349",
+  "personId": "AH-R1349",
+  "name": "Merritt Hart",
+  "age": 39,
+  "occupation": "Marina bookkeeper",
+  "home": "Coast Ridge",
+  "episode": "The missing name on the stern",
+  "biography": "stories/residents/09/15-the-missing-name-on-the-stern.md#ah-r1349",
+  "life": "“I still remember being taught to say my customer's name while checking an invoice.” People around the corner by Juniper Tailor know Merritt by a small Monday habit. Merritt looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I thought I was hiring a painter. The apprentice taught me to say the owner's name without flattening the last sound.",
+  "appearance": "Back on the street, look for a sand-colored linen shirt and a train token tied to a zipper pull. Merritt has a softly rounded chin under sharp cheekbones, with a loose dark braid. Merritt takes off the watch before a long conversation during a conversation.",
+  "personality": "Merritt has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To pronounce the marine customer's name correctly.",
+  "family": "Hank Fry is Merritt’s second cousin. Merritt is allowed to ask about the bad news afterward. Hank calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *A ship without postcards*, Hank says, “I sell lighthouse cards printed inland. I asked the crew to show me their view from the bunk.”",
+  "connections": "Amanda Quintero. A flag maker and a bookkeeper practice the spoken name before they put it in different alphabets.",
+  "familyIds": [
+    "AH-R0314"
+  ],
+  "connectionIds": [
+    "AH-R1347"
+  ],
+  "reactions": [
+    {
+      "situation": "The apprentice notices the missing letter on the stern",
+      "response": "Merritt checks the intended spelling with the family before painting over anything.",
+      "asWritten": "The apprentice notices the missing letter on the stern. Merritt checks the intended spelling with the family before painting over anything."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Merritt asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Merritt asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Merritt explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Merritt explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

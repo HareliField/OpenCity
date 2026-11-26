@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1069",
+  "personId": "AH-R1069",
+  "name": "Adrian Marsh",
+  "age": 54,
+  "occupation": "Former dance club steward",
+  "home": "Eastside",
+  "episode": "Land without cranes",
+  "biography": "stories/residents/08/02-land-without-cranes.md#ah-r1069",
+  "life": "“I still remember salting a dance floor during a port winter.” People around the crossing outside Verve Nail Studio know Adrian by a small Tuesday habit. Adrian notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I used to lock up after a dance club. I want one last night of music before the public hearing.",
+  "appearance": "Adrian has a heart-shaped face and prominent ears. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is a pale blue work shirt with one loose pocket corner secured with green thread. In conversation Adrian gives a little nod before asking a hard question.",
+  "personality": "Adrian has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To hold one last dance before the hearing.",
+  "family": "Loretta Banks is Adrian’s half-sibling. Adrian asks what the birthday guest would like this year. Loretta remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The clean ledger*, Loretta says, “I paid him back years ago. I brought the dated rent envelope to prove our families can stop quarreling.”",
+  "connections": "Karina May. The rendering of empty offices omits a dance floor the old steward can still locate.",
+  "familyIds": [
+    "AH-R0646"
+  ],
+  "connectionIds": [
+    "AH-R1063"
+  ],
+  "reactions": [
+    {
+      "situation": "A developer brings a drawing of the finished offices",
+      "response": "Adrian asks where existing workers are shown in the finished picture.",
+      "asWritten": "A developer brings a drawing of the finished offices. Adrian asks where existing workers are shown in the finished picture."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Adrian waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Adrian waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Adrian says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Adrian says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

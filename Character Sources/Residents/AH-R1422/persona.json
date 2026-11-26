@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1422",
+  "personId": "AH-R1422",
+  "name": "Chris Liu",
+  "age": 71,
+  "occupation": "Retired swimmer and teacher",
+  "home": "Coast Ridge",
+  "episode": "No lifeguard at dusk",
+  "biography": "stories/residents/10/08-no-lifeguard-at-dusk.md#ah-r1422",
+  "life": "“I still remember putting my coat on without having decided whether to swim.” People around the courtyard by Ferry Street Rooms know Chris by a small Monday habit. Chris prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I know my own strength. I need to tell the young guard that sometimes I sit here without getting in.",
+  "appearance": "Chris is easy to recognize by silvery hair gathered at the nape and full cheeks and a mouth that pulls slightly to one side. Usually dressed in an olive canvas jacket with a replacement button a shade darker than the others, Chris draws small circles on a tabletop while waiting when listening.",
+  "personality": "Chris has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To sit by the sea without an obligation to swim.",
+  "family": "Gwen Hooper is Chris’s cousin. Chris brings whatever was actually growing or affordable that week. Gwen makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Care with a clock*, Gwen says, “I can alter the shirt but the old buttons came off his wedding suit.”",
+  "connections": "Ashley Hsu (seasonal lifeguard). The guard learns that staying to sit on the steps is not the same choice as taking responsibility for a final swim.",
+  "familyIds": [
+    "AH-R0885"
+  ],
+  "connectionIds": [
+    "AH-R1421"
+  ],
+  "reactions": [
+    {
+      "situation": "A passerby assumes the beach is still staffed",
+      "response": "Chris points out the published end of cover and gets the passerby an accurate answer about tomorrow.",
+      "asWritten": "A passerby assumes the beach is still staffed. Chris points out the published end of cover and gets the passerby an accurate answer about tomorrow."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Chris asks which other bill repayment would displace, then offers only what the household can afford to give.",
+      "asWritten": "A friend asks for a loan due back before payday. Chris asks which other bill repayment would displace, then offers only what the household can afford to give."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Chris explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Chris explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

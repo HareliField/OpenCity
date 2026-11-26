@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1202",
+  "personId": "AH-R1202",
+  "name": "Gregory Chen",
+  "age": 64,
+  "occupation": "Building owner",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A room above the dryers",
+  "biography": "stories/residents/09/01-a-room-above-the-dryers.md#ah-r1202",
+  "life": "“I still remember saving a room for a son who loved another city.” People around Studio Boulevard know Gregory by a small Wednesday habit. Gregory waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I own the room and was saving it for a child who has no intention of moving home.",
+  "appearance": "Gregory has fine brows over wide-set eyes. Look for silver temples and a dark fringe. On an ordinary day, the familiar outfit is a long navy raincoat with one loose pocket corner secured with green thread. In conversation Gregory takes off the watch before a long conversation.",
+  "personality": "Gregory prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To decide who can actually use the empty room now.",
+  "family": "Cara Mann is Gregory’s cousin’s child. Gregory brings whatever was actually growing or affordable that week. Cara makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *A boat for sale twice*, Cara says, “I bought a yard of the same blue canvas to take home.”",
+  "connections": "Lucia Byrd. The partner's rent limit meets the owner's price for a long-empty studio.",
+  "familyIds": [
+    "AH-R0747"
+  ],
+  "connectionIds": [
+    "AH-R1204"
+  ],
+  "reactions": [
+    {
+      "situation": "An investor offers free publicity for the studio",
+      "response": "Gregory asks what cost the publicity will cover before agreeing to an exhibition.",
+      "asWritten": "An investor offers free publicity for the studio. Gregory asks what cost the publicity will cover before agreeing to an exhibition."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Gregory offers an ordinary errand that lets the distressed person leave without being followed by an audience.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Gregory offers an ordinary errand that lets the distressed person leave without being followed by an audience."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Gregory clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Gregory clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0329",
+  "personId": "AH-R0329",
+  "name": "Lydia Macrae",
+  "age": 39,
+  "occupation": "Housing rights volunteer",
+  "home": "Coast Ridge",
+  "episode": "The widow's dividend",
+  "biography": "stories/residents/03/03-the-widow-s-dividend.md#ah-r0329",
+  "life": "“I still remember my aunt carrying her bedding down the bank steps.” Saturday often includes a stop at Lighthouse Cove, where Lydia takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I can't forgive the first owner's eviction of my aunt. I want my dividend paid straight to her.",
+  "appearance": "Lydia has a narrow face with an expressive upper lip. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a sand-colored linen shirt with a stitched row of blue crosses along an old repair. In conversation Lydia touches a knuckle to the chin when searching for a word.",
+  "personality": "Lydia gets protective of anybody who comes into a meeting unprepared. Lydia privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To send the aunt the first payment directly.",
+  "family": "Evelyn Atwood is Lydia’s older cousin. Lydia chooses an ordinary story to tell. Evelyn asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The soft wharf chalk*, Evelyn says, “I know the hook in that W from the attendance board.”",
+  "connections": "Yasmin Arrieta. They compare using a dividend for a reunion with using one to make a family repayment.",
+  "familyIds": [
+    "AH-R0462"
+  ],
+  "connectionIds": [
+    "AH-R0328"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member wants the ledger locked away",
+      "response": "Lydia asks whether the heirs can look at copies without parting with the old ledger.",
+      "asWritten": "A family member wants the ledger locked away. Lydia asks whether the heirs can look at copies without parting with the old ledger."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Lydia alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Lydia alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Lydia offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Lydia offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

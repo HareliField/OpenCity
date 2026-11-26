@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0431",
+  "personId": "AH-R0431",
+  "name": "Oakley Han",
+  "age": 74,
+  "occupation": "Retired restaurateur",
+  "home": "the western residential streets",
+  "episode": "The housecoat commission",
+  "biography": "stories/residents/03/14-the-housecoat-commission.md#ah-r0431",
+  "life": "“I still remember a waiter ironing my sleeves before our first opening.” On Saturday, near Harbour Bakery, Oakley buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I want it lined in cold blue like the restaurant I used to run.",
+  "appearance": "Oakley has a gray streak running back from the forehead, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a printed handkerchief folded into the pocket. When somebody else has the floor, Oakley starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Oakley loves a well-told anecdote and distrusts the neat ending. The parts Oakley remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To host a Sunday dinner in the blue-lined coat.",
+  "family": "Silas Voss is Oakley’s younger cousin. Oakley remembers the birthdays. Silas asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A scar at the salon*, Silas says, “I wrote a manipulative slogan about survival and took it out before the presentation.”",
+  "connections": "Noel Aubin (housecoat maker). They measure a garment for a whole Sunday, including sitting at the head of the table.",
+  "familyIds": [
+    "AH-R1309"
+  ],
+  "connectionIds": [
+    "AH-R0432"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor asks where the housecoat was bought",
+      "response": "Oakley gives the maker the chance to be credited without revealing what the garment cost.",
+      "asWritten": "A visitor asks where the housecoat was bought. Oakley gives the maker the chance to be credited without revealing what the garment cost."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Oakley offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Oakley offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Oakley includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Oakley includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0463",
+  "personId": "AH-R0463",
+  "name": "Jo Bloom",
+  "age": 37,
+  "occupation": "Delivery driver",
+  "home": "Midtown",
+  "episode": "The soft wharf chalk",
+  "biography": "stories/residents/04/02-the-soft-wharf-chalk.md#ah-r0463",
+  "life": "“I still remember calling a halt from the back of a van.” People around Breakwater Way know Jo by a small Thursday habit. Jo stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I thought it was a safety warning and stopped a delivery. I'm glad I did.",
+  "appearance": "Jo has short copper curls, fine brows over wide-set eyes, and a favorite piece of clothing, an olive canvas jacket. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Jo counts on the side of one finger where hardly anybody notices.",
+  "personality": "Jo has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To reopen the platform after the wording is understood.",
+  "family": "Joseph Moran is Jo’s older cousin. Jo calls about good news first. Joseph is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The gift nobody wants*, Joseph says, “I made money selling buildings. I thought the finest gift I could give her was never having to ask a landlord for anything.”",
+  "connections": "Ruth Tran. The shift stopped for a warning gives a carpenter time to save the marked board.",
+  "familyIds": [
+    "AH-R1371"
+  ],
+  "connectionIds": [
+    "AH-R0464"
+  ],
+  "reactions": [
+    {
+      "situation": "A contractor wants to scrub the chalk under the quay",
+      "response": "Jo takes a photograph and asks whose permission is needed before the chalk is touched.",
+      "asWritten": "A contractor wants to scrub the chalk under the quay. Jo takes a photograph and asks whose permission is needed before the chalk is touched."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Jo accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Jo accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Jo asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Jo asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

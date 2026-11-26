@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0708",
+  "personId": "AH-R0708",
+  "name": "Loretta Lu",
+  "age": 39,
+  "occupation": "School supplies worker",
+  "home": "Coast Ridge",
+  "episode": "The free fringe",
+  "biography": "stories/residents/05/11-the-free-fringe.md#ah-r0708",
+  "life": "“I still remember my child's alarming honesty about my new hair.” People around the public end of the South Shore boardwalk know Loretta by a small Sunday habit. Loretta checks the shade on the benches before deciding how long to stay.",
+  "voice": "I ordered a fringe I didn't like just so my child would try the chair. She saw right through it.",
+  "appearance": "Loretta has two dimples that appear only with a full smile. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a moss-green cardigan with a square of clean cloth for polishing smudges. In conversation Loretta gathers both sleeves neatly before settling in.",
+  "personality": "Loretta has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To get the child to choose their own haircut.",
+  "family": "Lily Thomas is Loretta’s second cousin. Loretta brings something that can still be enjoyed tomorrow. Lily checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The quiet verse*, Lily says, “I booked the park for ninety minutes. The silent verse was the first minute I stopped watching the clock.”",
+  "connections": "Cecil Hassan. A client revealing a scar provides a child with a braver explanation for the chair.",
+  "familyIds": [
+    "AH-R0275"
+  ],
+  "connectionIds": [
+    "AH-R0706"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone waiting in line complains",
+      "response": "Loretta tells the waiting customer roughly how much of the appointment is still left.",
+      "asWritten": "Someone waiting in line complains. Loretta tells the waiting customer roughly how much of the appointment is still left."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Loretta draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Loretta draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Loretta explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Loretta explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

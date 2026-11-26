@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0270",
+  "personId": "AH-R0270",
+  "name": "Teal Holmes",
+  "age": 70,
+  "occupation": "Retired utility worker",
+  "home": "the blocks north of the port",
+  "episode": "The sheltered corner",
+  "biography": "stories/residents/02/12-the-sheltered-corner.md#ah-r0270",
+  "life": "“I repaired the original shelter after the wind tore off its timetable.” Saturday often includes a stop at the courtyard by Ferry Street Rooms, where Teal prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I found a ring under the old shelter. The date inside matches a couple who used to catch separate buses.",
+  "appearance": "Teal is easy to recognize by silvery hair gathered at the nape and a round face with a pronounced chin. Usually dressed in a long navy raincoat with a fabric zip pull cut from a school scarf, Teal looks at people's hands before looking at what they carry when listening.",
+  "personality": "Teal is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To return the found ring to the right couple.",
+  "family": "Eden Song is Teal’s younger cousin. Teal keeps the photographs. Eden knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Reading the payslip*, Eden says, “I found a pension contribution and called my father.”",
+  "connections": "Nelson Carbone. The empty coffee corner finally has an errand for the person who found the ring.",
+  "familyIds": [
+    "AH-R0820"
+  ],
+  "connectionIds": [
+    "AH-R0264"
+  ],
+  "reactions": [
+    {
+      "situation": "The route manager declares the move a success",
+      "response": "Teal asks one rider from each corner to walk the new distance.",
+      "asWritten": "The route manager declares the move a success. Teal asks one rider from each corner to walk the new distance."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Teal asks the cashier to hold it and lets a claimant identify the writing and amount privately.",
+      "asWritten": "An envelope of wages is found under a café chair. Teal asks the cashier to hold it and lets a claimant identify the writing and amount privately."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Teal thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Teal thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0184",
+  "personId": "AH-R0184",
+  "name": "Shay Lloyd",
+  "age": 57,
+  "occupation": "Dog fosterer and bookkeeper",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The second dog",
+  "biography": "stories/residents/02/04-the-second-dog.md#ah-r0184",
+  "life": "“My first foster dog ate the receipt for our secondhand sofa.” On Wednesday, near Juniper Street, Shay knows which of the west-side porches has a seat in the shade.",
+  "voice": "I fostered both litters. Their ears fold the same way until somebody says dinner.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a small enamel bird on the lapel. Shay has a flat bridge to the nose and a mobile brow, with short black hair swept back. Shay gives a little nod before asking a hard question during a conversation.",
+  "personality": "Shay is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To give both families a trustworthy way to tell the dogs apart.",
+  "family": "Kit Salcedo is Shay’s younger cousin. A parent had a second job that nobody mentioned at school. Years later the family discovered two sets of friends who thought they knew entirely different people. Shay is slow to assume that a job title explains anybody. Asked about *The blue suit*, Kit says, “I gave the borrowed shoes a polish on the bank steps.”",
+  "connections": "Eden Sun (dog guardian). The fosterer helps the new guardian distinguish two members of one litter.",
+  "familyIds": [
+    "AH-R0007"
+  ],
+  "connectionIds": [
+    "AH-R0181"
+  ],
+  "reactions": [
+    {
+      "situation": "A parent wants both dogs handed over immediately",
+      "response": "Shay waits until the dogs and the children are settled before discussing the handover.",
+      "asWritten": "A parent wants both dogs handed over immediately. Shay waits until the dogs and the children are settled before discussing the handover."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Shay offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Shay offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Shay helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Shay helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

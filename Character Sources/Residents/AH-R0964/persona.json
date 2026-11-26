@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0964",
+  "personId": "AH-R0964",
+  "name": "Lina Ryan",
+  "age": 39,
+  "occupation": "Literacy tutor",
+  "home": "the blocks north of the port",
+  "episode": "The first language",
+  "biography": "stories/residents/07/07-the-first-language.md#ah-r0964",
+  "life": "“I still remember losing my place in the simplest nursery rhyme.” On Sunday, near Harbour Bakery, Lina buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I read the wrong page aloud to show her adults can survive a mistake. She thought I'd forgotten my glasses.",
+  "appearance": "On an ordinary day, look for a black overshirt with pearl buttons and a cloth patch so neatly matched it only shows in strong light. Lina has a wide brow and a narrow jaw, with short sandy hair and a marked widow's peak. Lina looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Lina listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To make classroom mistakes safe to hear.",
+  "family": "Clyde Ho is Lina’s half-sibling. Lina decides what stays off the paper. Clyde brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Hem by hem*, Clyde says, “My fingers know the aunt's stitch. She always pulled too hard when she was angry.”",
+  "connections": "Peyton Mitchell. A tutor admits a deliberate reading mistake to the child practicing with the shop cat.",
+  "familyIds": [
+    "AH-R0153"
+  ],
+  "connectionIds": [
+    "AH-R0969"
+  ],
+  "reactions": [
+    {
+      "situation": "A grandparent tries to correct a word in front of classmates",
+      "response": "Lina asks the grandparent to save the correction until the pupil asks for it.",
+      "asWritten": "A grandparent tries to correct a word in front of classmates. Lina asks the grandparent to save the correction until the pupil asks for it."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Lina asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Lina asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Lina keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Lina keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

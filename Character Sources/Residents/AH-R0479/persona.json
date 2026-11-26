@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0479",
+  "personId": "AH-R0479",
+  "name": "Cory Mann",
+  "age": 60,
+  "occupation": "Ceramicist",
+  "home": "Old Town",
+  "episode": "The savings club",
+  "biography": "stories/residents/04/03-the-savings-club.md#ah-r0479",
+  "life": "“I still remember a chipped wedding cup that outlasted the plates.” On Saturday, near the window at Night Shift Donuts, Cory knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I broke the jar years ago and replaced it with one from my wedding. Today I want that sound on tape.",
+  "appearance": "On an ordinary day, look for a sand-colored linen shirt and a braided bracelet with a single wooden bead. Cory has a straight nose and deep-set eyes, with a neat white crop. Cory draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Cory uses precise names for tools and very approximate names for feelings. People who know Cory well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To record the sound of the old jar opening.",
+  "family": "Lois Fell is Cory’s cousin. Cory decides what stays off the paper. Lois brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Window seven*, Lois says, “I had a reading ready. At the window she asked me to tell her the names of the ships.”",
+  "connections": "Denise Barker. The family redesigning the draw slips records the sound of the old savings jar.",
+  "familyIds": [
+    "AH-R0059"
+  ],
+  "connectionIds": [
+    "AH-R0476"
+  ],
+  "reactions": [
+    {
+      "situation": "The club draws the name of someone who cannot travel",
+      "response": "Cory lets the winner describe where they actually want the money to go.",
+      "asWritten": "The club draws the name of someone who cannot travel. Cory lets the winner describe where they actually want the money to go."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Cory stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Cory stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Cory brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Cory brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0872",
+  "personId": "AH-R0872",
+  "name": "Sadie Liu",
+  "age": 45,
+  "occupation": "Aunt and tailor",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The almost scholarship",
+  "biography": "stories/residents/06/13-the-almost-scholarship.md#ah-r0872",
+  "life": "“I still remember pricing a used score with the corrections left in.” People around the foot of Harbor Viaduct know Sadie by a small Tuesday habit. Sadie pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I promised to cover books until I saw the price of a single score.",
+  "appearance": "Sadie is easy to recognize by a center part and straight chestnut hair and full cheeks and a mouth that pulls slightly to one side. Usually dressed in a rust-colored canvas coat with a folded shopping list secured by a miniature clip, Sadie takes off the watch before a long conversation when listening.",
+  "personality": "Sadie can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To price the scores before promising to cover them.",
+  "family": "Laura Osborne is Sadie’s older cousin. Sadie brings a spare shopping bag. Laura chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *An old restaurant debt*, Laura says, “I am a cousin who contributed nothing then.”",
+  "connections": "Terry Aranda. An aunt pricing sheet music learns about the deposit that sank another scholarship. Also in the story is Ines Baldwin (niece or nephew).",
+  "familyIds": [
+    "AH-R0995"
+  ],
+  "connectionIds": [
+    "AH-R0879",
+    "AH-R0871"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative urges the pupil to accept in public",
+      "response": "Sadie lets the pupil answer privately before relatives announce an acceptance.",
+      "asWritten": "A relative urges the pupil to accept in public. Sadie lets the pupil answer privately before relatives announce an acceptance."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Sadie repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Sadie repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Sadie asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Sadie asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

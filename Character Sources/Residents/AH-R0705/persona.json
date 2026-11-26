@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0705",
+  "personId": "AH-R0705",
+  "name": "Gavin Jones",
+  "age": 53,
+  "occupation": "Bus driver",
+  "home": "Midtown",
+  "episode": "The free fringe",
+  "biography": "stories/residents/05/11-the-free-fringe.md#ah-r0705",
+  "life": "“I still remember driving somebody who had just missed their job interview.” Wednesday often includes a stop at the approach to Seabright Court, where Gavin likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I was the next in line and angry. The customer gave me a ride to my interview when our time ran over.",
+  "appearance": "Gavin is easy to recognize by short black hair swept back and a flat bridge to the nose and a mobile brow. Usually dressed in a mustard canvas overshirt with a small enamel bird on the lapel, Gavin presses the lips together to keep a smile in when listening.",
+  "personality": "Gavin has a long memory for unfair prices and a short one for small insults. Gavin can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To get to the interview with the delayed customer.",
+  "family": "Ellen Randall is Gavin’s second cousin. Gavin picks the meeting place. Ellen sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The late crossing*, Ellen says, “I can help if nobody smokes in the car. Asking made me feel more fragile than giving lifts.”",
+  "connections": "Cora Yates. One customer gives up a place and another gets help arriving at an interview.",
+  "familyIds": [
+    "AH-R0862"
+  ],
+  "connectionIds": [
+    "AH-R0703"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer uses the free haircut to talk",
+      "response": "Gavin lets the visitor say whether they would like a trim as well as a talk.",
+      "asWritten": "A customer uses the free haircut to talk. Gavin lets the visitor say whether they would like a trim as well as a talk."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Gavin takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Gavin takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Gavin agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Gavin agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

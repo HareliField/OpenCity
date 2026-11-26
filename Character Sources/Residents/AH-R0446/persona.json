@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0446",
+  "personId": "AH-R0446",
+  "name": "Harley Hooper",
+  "age": 32,
+  "occupation": "Sailing school coordinator",
+  "home": "Eastside",
+  "episode": "The tide clock",
+  "biography": "stories/residents/03/15-the-tide-clock.md#ah-r0446",
+  "life": "“I still remember teaching time with the launch schedule.” People around Breakwater Way know Harley by a small Tuesday habit. Harley stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I want two clocks on the wall so workers with ferry connections can actually make them.",
+  "appearance": "Harley is easy to recognize by a cropped cut that shows the shape of the ears and a long face and high cheekbones. Usually dressed in a red windbreaker with a seam let out by a narrow strip of contrasting fabric, Harley starts to lift a hand, then waits to be invited to speak when listening.",
+  "personality": "Harley thinks best while walking. Sitting beneath someone's office clock makes Harley sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To mount a time clock beside the tide dial.",
+  "family": "Imri Black is Harley’s cousin. Harley asks the question the rest of the family avoided. Imri chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *Ten fingers*, Imri says, “I chose clear and got laughed at until I showed them the gold thread underneath.”",
+  "connections": "Jesse Starr. They arrange for a real time clock beside the one that misled the new hire.",
+  "familyIds": [
+    "AH-R0103"
+  ],
+  "connectionIds": [
+    "AH-R0442"
+  ],
+  "reactions": [
+    {
+      "situation": "The owner considers taking the tide clock down",
+      "response": "Harley asks the workers whether a second, clearly labeled clock would solve the actual problem.",
+      "asWritten": "The owner considers taking the tide clock down. Harley asks the workers whether a second, clearly labeled clock would solve the actual problem."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Harley offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Harley offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Harley asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Harley asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

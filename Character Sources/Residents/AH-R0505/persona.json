@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0505",
+  "personId": "AH-R0505",
+  "name": "Elsa Guzman",
+  "age": 71,
+  "occupation": "Retired seamstress",
+  "home": "Midtown",
+  "episode": "The waiting-room plant",
+  "biography": "stories/residents/04/06-the-waiting-room-plant.md#ah-r0505",
+  "life": "“I still remember a visiting schedule with a whole blank week.” Monday often includes a stop at the public end of the South Shore boardwalk, where Elsa checks the shade on the benches before deciding how long to stay.",
+  "voice": "I never have visitors. I booked the plant for Thursday and three gardeners turned up.",
+  "appearance": "On an ordinary day, look for a rust-colored canvas coat and a tiny red thread tied through the lowest buttonhole. Elsa has a heart-shaped face and prominent ears, with silvery hair gathered at the nape. Elsa touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Elsa is fond of ambitious ideas and deeply suspicious of grand openings. The question Elsa asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To invite the three gardeners back next Thursday.",
+  "family": "Victor Anders is Elsa’s younger cousin. Elsa gets to change the plan. Victor offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The tide clock*, Victor says, “I arrived at the dentist six hours early and left with a vacancy on his cleaning crew.”",
+  "connections": "Karina Hamilton. A rooted cutting is small enough to visit a patient who lacks ordinary callers.",
+  "familyIds": [
+    "AH-R0443"
+  ],
+  "connectionIds": [
+    "AH-R0501"
+  ],
+  "reactions": [
+    {
+      "situation": "A ward wants the plant for the full week",
+      "response": "Elsa checks the visiting list for the patients who will miss their turn.",
+      "asWritten": "A ward wants the plant for the full week. Elsa checks the visiting list for the patients who will miss their turn."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Elsa brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Elsa brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Elsa accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Elsa accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

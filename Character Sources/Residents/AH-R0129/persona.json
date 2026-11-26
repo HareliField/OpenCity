@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0129",
+  "personId": "AH-R0129",
+  "name": "Elin Watts",
+  "age": 43,
+  "occupation": "School counselor",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The borrowed bass",
+  "biography": "stories/residents/01/13-the-borrowed-bass.md#ah-r0129",
+  "life": "Elin used to be the student who gave up the solo, the prize or the last bit of cake to prove how little she needed. A generous pupil saying everything is fine is the pupil she checks on in the corridor. Thursday often includes a stop at Maré Coffee, where Elin likes the table where people coming off shift stop checking the time.",
+  "voice": "He thinks giving up the audition proves he is decent. I recognize that bargain from my own adolescence. I asked him to name one decent thing he can do and still play.",
+  "appearance": "Elin is easy to recognize by short black hair swept back and a softly rounded chin under sharp cheekbones. Usually dressed in a moss-green cardigan with a pair of reading glasses in a cloth sleeve, Elin gathers both sleeves neatly before settling in when listening.",
+  "personality": "Elin has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To help Cory keep an opportunity while doing right by the old owner.",
+  "family": "Kai Day is Elin’s cousin. Elin makes room at the table. Kai brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The dead man's tab*, Kai says, “I sold him pills. I won't call the debt friendship just because he died.”",
+  "connections": "Nia Oak. They give the teenager somewhere quiet to make a call without having to surrender the audition.",
+  "familyIds": [
+    "AH-R0493"
+  ],
+  "connectionIds": [
+    "AH-R0128"
+  ],
+  "reactions": [
+    {
+      "situation": "Somebody says the pawn ticket proves the bass was stolen",
+      "response": "Elin asks to see whether the ticket had already been settled.",
+      "asWritten": "Somebody says the pawn ticket proves the bass was stolen. Elin asks to see whether the ticket had already been settled."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Elin asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Elin asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Elin explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Elin explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

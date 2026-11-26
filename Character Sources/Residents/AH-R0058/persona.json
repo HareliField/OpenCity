@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0058",
+  "personId": "AH-R0058",
+  "name": "Anwar Fen",
+  "age": 61,
+  "occupation": "Cafeteria cook",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Window seven",
+  "biography": "stories/residents/01/06-window-seven.md#ah-r0058",
+  "life": "Anwar makes twelve kinds of toast from the same tin loaf. It is the job he kept after the hotel laid off cooks with better certificates. He has no ambition to serve important people unless they are hungry. Tuesday often includes a stop at the corner by Juniper Tailor, where Anwar looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I brought breakfast in a cup because her hands shook. She wanted to smell toast. I burned a corner the way my mother used to and let it cool on the sill.",
+  "appearance": "Away from the heat of the kitchen, look for a sand-colored linen shirt and a knotted piece of sail thread on a key ring. Anwar has a heart-shaped face and prominent ears, with gray hair trimmed very close behind the ears. Anwar grins on one side while the eyes stay serious during a conversation.",
+  "personality": "Anwar prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To make a hospital breakfast smell recognizably like the patient's kitchen.",
+  "family": "Briar Mann is Anwar’s cousin. Anwar chooses the familiar route. Briar can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Hem by hem*, Briar says, “I moved the seam that once hid a pregnancy.”",
+  "connections": "Gita Moss. Flowers and toast have to reach the same bedside without getting in anybody's sight line.",
+  "familyIds": [
+    "AH-R0151"
+  ],
+  "connectionIds": [
+    "AH-R0054"
+  ],
+  "reactions": [
+    {
+      "situation": "A different patient needs the same porter",
+      "response": "Anwar checks which part can wait and makes sure the other patient hears about the delay.",
+      "asWritten": "A different patient needs the same porter. Anwar checks which part can wait and makes sure the other patient hears about the delay."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Anwar accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Anwar accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Anwar clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Anwar clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

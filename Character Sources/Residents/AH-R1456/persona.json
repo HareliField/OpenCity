@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1456",
+  "personId": "AH-R1456",
+  "name": "Malcolm Lund",
+  "age": 38,
+  "occupation": "Glass cutter",
+  "home": "the streets around Foundry Lofts",
+  "episode": "An ordinary mirror",
+  "biography": "stories/residents/10/11-an-ordinary-mirror.md#ah-r1456",
+  "life": "“I still remember cutting replacement glass for an irreplaceable frame.” On Thursday, near Paper & Pine Books, Malcolm starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I want to make her a new mirror in the same shape. She explained that shape was the least important part.",
+  "appearance": "On an ordinary day, look for a black overshirt with pearl buttons and a comb in a sleeve sewn into the lining. Malcolm has a small notch in the left eyebrow, with a smooth side part with one rebellious curl. Malcolm starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Malcolm listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To offer a new mirror without promising the same history.",
+  "family": "Bianca Spencer is Malcolm’s second cousin. Malcolm is free to hang up first. Bianca makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The late crossing*, Bianca says, “I can pay toward fuel but can't say it in front of my kids.”",
+  "connections": "Seth Massey. A sample of new glass offers a familiar apartment reflection without pretending to be the original mirror.",
+  "familyIds": [
+    "AH-R0867"
+  ],
+  "connectionIds": [
+    "AH-R1459"
+  ],
+  "reactions": [
+    {
+      "situation": "Another customer asks for a last fitting in front of it",
+      "response": "Malcolm sets aside an ordinary fitting time before making plans for the sale.",
+      "asWritten": "Another customer asks for a last fitting in front of it. Malcolm sets aside an ordinary fitting time before making plans for the sale."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Malcolm gets the people at the next doorway away from the smoke and asks a bystander to make the call.",
+      "asWritten": "Smoke appears under a shop door after closing. Malcolm gets the people at the next doorway away from the smoke and asks a bystander to make the call."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Malcolm keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Malcolm keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

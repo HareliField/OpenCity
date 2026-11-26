@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0744",
+  "personId": "AH-R0744",
+  "name": "Elinor Stein",
+  "age": 33,
+  "occupation": "Rowing instructor",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A boat for sale twice",
+  "biography": "stories/residents/05/15-a-boat-for-sale-twice.md#ah-r0744",
+  "life": "“I still remember rowing a dinghy with one oar longer than the other.” On Wednesday, near the bank steps, Elinor takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I only wanted the dinghy we learned to row in. The owner said the little boat gets its own decision.",
+  "appearance": "Elinor has short, uneven waves that refuse to lie flat, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a dark green knitted vest. It usually goes with a square of clean cloth for polishing smudges. When somebody else has the floor, Elinor raises one eyebrow long before saying yes.",
+  "personality": "Elinor thinks best while walking. Sitting beneath someone's office clock makes Elinor sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To let the dinghy have its own buyer.",
+  "family": "Teal Starr is Elinor’s second cousin. Elinor checks the date twice. Teal brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The last home visit*, Teal says, “I did her payroll. The route took an extra fifteen minutes every Friday and she never asked me to find them.”",
+  "connections": "Alex Cotton. The family may separate the little dinghy from the larger boat's borrowed name.",
+  "familyIds": [
+    "AH-R1486"
+  ],
+  "connectionIds": [
+    "AH-R0749"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer wants the old name painted over immediately",
+      "response": "Elinor checks who owns the name before anyone comes down with a paint tin.",
+      "asWritten": "A buyer wants the old name painted over immediately. Elinor checks who owns the name before anyone comes down with a paint tin."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Elinor keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Elinor keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Elinor asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Elinor asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

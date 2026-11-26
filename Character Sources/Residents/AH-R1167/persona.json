@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1167",
+  "personId": "AH-R1167",
+  "name": "John Starr",
+  "age": 66,
+  "occupation": "Widowed freight driver",
+  "home": "Eastside",
+  "episode": "The high road home",
+  "biography": "stories/residents/08/12-the-high-road-home.md#ah-r1167",
+  "life": "“I still remember my first long journey with the passenger seat freshly empty.” People around the downtown fountain know John by a small Saturday habit. John keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I used to drive straight over every night until my companion died. Being on the passenger side is my practice too.",
+  "appearance": "On an ordinary day, look for a soft blue checked shirt and a watch on a cracked leather band. John has a scattering of freckles across the bridge of the nose, with a long silver braid. John gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "John enjoys routines and will defend the right of someone else to break one. As a result, John is often everyone's favorite cover for a missed morning.",
+  "agenda": "To try the ridge from the passenger seat.",
+  "family": "Toby Webb is John’s second cousin. John can stop the walk at any corner. Toby chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The expensive summer*, Toby says, “I ordered the cheapest thing and hated realizing my grandson was doing the same calculation.”",
+  "connections": "Karina Heller. Two passengers who dislike the height each find a different fixed place to look.",
+  "familyIds": [
+    "AH-R0974"
+  ],
+  "connectionIds": [
+    "AH-R1164"
+  ],
+  "reactions": [
+    {
+      "situation": "The learner turns back before the crest",
+      "response": "John treats turning back as a completed decision and finds somewhere calm to stop.",
+      "asWritten": "The learner turns back before the crest. John treats turning back as a completed decision and finds somewhere calm to stop."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "John writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. John writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "John keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, John keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

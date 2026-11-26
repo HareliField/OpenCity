@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0378",
+  "personId": "AH-R0378",
+  "name": "Darcy Baran",
+  "age": 33,
+  "occupation": "Statistics tutor",
+  "home": "Old Town",
+  "episode": "The painted footprint",
+  "biography": "stories/residents/03/08-the-painted-footprint.md#ah-r0378",
+  "life": "“I still remember a teacher letting us count surfers for credit.” People around the approach to Seabright Court know Darcy by a small Friday habit. Darcy likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I'm measuring everyone's guesses for a statistics class. The owner can remain unnamed.",
+  "appearance": "Darcy is easy to recognize by a cropped cut that shows the shape of the ears and a crooked front tooth visible when laughing. Usually dressed in a striped cotton shirt with a small enamel bird on the lapel, Darcy draws small circles on a tabletop while waiting when listening.",
+  "personality": "Darcy is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To let the owner opt out of the class survey.",
+  "family": "Lee Ingram is Darcy’s stepsibling. Darcy chooses the familiar route. Lee can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The crash anniversary*, Lee says, “I survived it. I need one route to work where nobody recognizes me from the newspaper photograph.”",
+  "connections": "Logan Dinh. A real plaster cast gives the class a comparison that can remain anonymous. Also in the story is Charlotte Bruno (beach visitor).",
+  "familyIds": [
+    "AH-R1011"
+  ],
+  "connectionIds": [
+    "AH-R0377",
+    "AH-R0374"
+  ],
+  "reactions": [
+    {
+      "situation": "A child wants to trace a different sort of foot",
+      "response": "Darcy gives the child paper and room for a footprint that goes home with them.",
+      "asWritten": "A child wants to trace a different sort of foot. Darcy gives the child paper and room for a footprint that goes home with them."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Darcy keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Darcy keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Darcy helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Darcy helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

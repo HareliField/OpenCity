@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0802",
+  "personId": "AH-R0802",
+  "name": "Harriet Chapman",
+  "age": 47,
+  "occupation": "Kitchen assistant",
+  "home": "the western residential streets",
+  "episode": "Home with stairs",
+  "biography": "stories/residents/06/06-home-with-stairs.md#ah-r0802",
+  "life": "“I still remember trying to lift someone who told me to stop.” On Sunday, near the corner outside Coastal Barber, Harriet usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I want my mother at home but can't lift her. I canceled the welcome lunch until she can tell me what she needs.",
+  "appearance": "Harriet has two dimples that appear only with a full smile. Look for thick, tightly coiled hair. Away from the heat of the kitchen, the familiar outfit is a cropped bottle-green coat with one loose pocket corner secured with green thread. In conversation Harriet touches a knuckle to the chin when searching for a word.",
+  "personality": "Harriet tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Harriet will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To prepare a welcome the mother can physically enjoy.",
+  "family": "Willa Bishop is Harriet’s older relative by marriage. Harriet leaves the first voice message. Willa calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The last home visit*, Willa says, “I knitted her a retirement scarf with a loose end deliberately sticking out.”",
+  "connections": "Joel Garza (parent). They plan the welcome around the mother's feet and the adult child's strength.",
+  "familyIds": [
+    "AH-R1490"
+  ],
+  "connectionIds": [
+    "AH-R0801"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative offers to carry the patient up the stairs",
+      "response": "Harriet asks the patient whether being carried is an offer they want to take up.",
+      "asWritten": "A relative offers to carry the patient up the stairs. Harriet asks the patient whether being carried is an offer they want to take up."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Harriet asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Harriet asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Harriet repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Harriet repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0590",
+  "personId": "AH-R0590",
+  "name": "Merritt Parker",
+  "age": 45,
+  "occupation": "Alterations teacher",
+  "home": "the western residential streets",
+  "episode": "Laundry for a stranger",
+  "biography": "stories/residents/04/14-laundry-for-a-stranger.md#ah-r0590",
+  "life": "“I still remember a favorite client with uneven shoulders.” Monday often includes a stop at Ferris Deli, where Merritt asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I noticed the sleeves differ in length. I want my arthritic husband to meet whoever figured out that cut.",
+  "appearance": "Merritt is easy to recognize by close-cropped dark curls and a straight nose and deep-set eyes. Usually dressed in a long navy raincoat with a pen clipped inside the neckline, Merritt steadies a cup with both hands while listening when listening.",
+  "personality": "Merritt has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To copy the unequal-sleeve pattern for an arthritic spouse.",
+  "family": "Maria Ayala is Merritt’s older cousin. Merritt can stop the walk at any corner. Maria chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The hospital radio*, Maria says, “I hid a note to my successor inside the back.”",
+  "connections": "Melanie Arendt. A pocket and an unequal sleeve solve two different problems in a familiar shirt.",
+  "familyIds": [
+    "AH-R0356"
+  ],
+  "connectionIds": [
+    "AH-R0585"
+  ],
+  "reactions": [
+    {
+      "situation": "An elderly tenant wants to iron the collar personally",
+      "response": "Merritt lets the tenant do the collar at a safe height and takes the heavier laundry.",
+      "asWritten": "An elderly tenant wants to iron the collar personally. Merritt lets the tenant do the collar at a safe height and takes the heavier laundry."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Merritt starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Merritt starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Merritt explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Merritt explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

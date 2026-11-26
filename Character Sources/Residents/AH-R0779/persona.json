@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0779",
+  "personId": "AH-R0779",
+  "name": "Ansel Colón",
+  "age": 55,
+  "occupation": "Cold-store supplier",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Money after marriage",
+  "biography": "stories/residents/06/03-money-after-marriage.md#ah-r0779",
+  "life": "“I still remember a van full of stock another person hadn't paid for.” Thursday often includes a stop at Paper & Pine Books, where Ansel starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I supplied them on credit. I want a way to stay sympathetic without becoming their involuntary bank.",
+  "appearance": "On an ordinary day, look for a black overshirt with pearl buttons and a watch on a cracked leather band. Ansel has a scattering of freckles across the bridge of the nose, with close-cropped dark curls. Ansel presses the lips together to keep a smile in during a conversation.",
+  "personality": "Ansel has a talent for getting adversaries to laugh at exactly the same thing. Ansel knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To keep supplying stock on sustainable terms.",
+  "family": "Ravi Stone is Ansel’s younger cousin. Their family used to get a different front-door key cut for each visiting relative. One returned key meant someone had left in anger. They keep in touch even when nobody wants to hand the key back. Ansel tries once at the locked door and respects the answer. Asked about *A call heard twice*, Ravi says, “I left a quiet room in the station free for the person who needed to finish that call.”",
+  "connections": "Basil Guzman. The driver's buyout would have to honor the supplier's outstanding invoices.",
+  "familyIds": [
+    "AH-R1235"
+  ],
+  "connectionIds": [
+    "AH-R0775"
+  ],
+  "reactions": [
+    {
+      "situation": "The divorcing founders ask staff to pick a side",
+      "response": "Ansel asks when the next wages will arrive before giving either founder a public endorsement.",
+      "asWritten": "The divorcing founders ask staff to pick a side. Ansel asks when the next wages will arrive before giving either founder a public endorsement."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Ansel asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Ansel asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Ansel asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Ansel asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0427",
+  "personId": "AH-R0427",
+  "name": "Anthony Carey",
+  "age": 39,
+  "occupation": "Piano bench restorer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The empty drum stool",
+  "biography": "stories/residents/03/13-the-empty-drum-stool.md#ah-r0427",
+  "life": "“I still remember a bench with one foot perched on bus tokens.” On Wednesday, near the courtyard by Ferry Street Rooms, Anthony prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I mended the cracked foot by wrapping it in cloth from my graduation gown.",
+  "appearance": "Anthony is easy to recognize by a loose dark braid and a strong profile and a little space between the front teeth. Usually dressed in a black overshirt with pearl buttons with one loose pocket corner secured with green thread, Anthony gathers both sleeves neatly before settling in when listening.",
+  "personality": "Anthony carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To make the stool safe without discarding the cloth.",
+  "family": "Nico Lin is Anthony’s cousin raised in the same household. Anthony makes room at the table. Nico brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The last light at the harbor*, Nico says, “I wait on the public benches for my wife's shift to end.”",
+  "connections": "Michael Hubbard. The repaired stool goes to the shop for a brief last song.",
+  "familyIds": [
+    "AH-R1499"
+  ],
+  "connectionIds": [
+    "AH-R0428"
+  ],
+  "reactions": [
+    {
+      "situation": "The drummer asks the substitute to keep the stool",
+      "response": "Anthony asks whether the drummer means a loan or a gift.",
+      "asWritten": "The drummer asks the substitute to keep the stool. Anthony asks whether the drummer means a loan or a gift."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Anthony suggests one straightforward message without accusations and gives the friend time to answer.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Anthony suggests one straightforward message without accusations and gives the friend time to answer."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Anthony offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Anthony offers to accompany them while they tell the truth."
+    }
+  ]
+}

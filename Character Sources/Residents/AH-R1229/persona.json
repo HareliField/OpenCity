@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1229",
+  "personId": "AH-R1229",
+  "name": "Loretta Osei",
+  "age": 70,
+  "occupation": "Retired shop worker",
+  "home": "Midtown",
+  "episode": "The million-dollar flat",
+  "biography": "stories/residents/09/03-the-million-dollar-flat.md#ah-r1229",
+  "life": "“I still remember turning my sister's first key in an expensive heavy lock.” On Sunday, near Juniper Street, Loretta knows which of the west-side porches has a seat in the shade.",
+  "voice": "I am her sister. My own flat is barely worth half and it's the one with space for us both.",
+  "appearance": "On an ordinary day, look for a brown corduroy jacket and one loose pocket corner secured with green thread. Loretta has two dimples that appear only with a full smile, with silvery hair gathered at the nape. Loretta squares up pieces of paper while thinking during a conversation.",
+  "personality": "Loretta takes a rejection personally for a day and analytically on the second morning. Loretta can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To make a genuine offer of shared space.",
+  "family": "Scout Gallagher is Loretta’s younger relative by marriage. Loretta is allowed to ask about the bad news afterward. Scout calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *A prize nobody entered*, Scout says, “I came second. I don't want to win by someone else's withdrawal and I don't want a dishonest result.”",
+  "connections": "Nell Tang (sister). The two sisters have to decide where companionship, stairs and ownership intersect.",
+  "familyIds": [
+    "AH-R1114"
+  ],
+  "connectionIds": [
+    "AH-R1221"
+  ],
+  "reactions": [
+    {
+      "situation": "The homeowner is asked to sell while the market is high",
+      "response": "Loretta checks which affordable addresses leave the sister within visiting distance.",
+      "asWritten": "The homeowner is asked to sell while the market is high. Loretta checks which affordable addresses leave the sister within visiting distance."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Loretta asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Loretta asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Loretta turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Loretta turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

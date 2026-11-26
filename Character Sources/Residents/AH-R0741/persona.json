@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0741",
+  "personId": "AH-R0741",
+  "name": "Sasha Wong",
+  "age": 52,
+  "occupation": "Separated boat co-owner",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A boat for sale twice",
+  "biography": "stories/residents/05/15-a-boat-for-sale-twice.md#ah-r0741",
+  "life": "“I still remember signing a purchase while my partner wrote the boat's name.” On Thursday, near Maré Coffee, Sasha likes the table where people coming off shift stop checking the time.",
+  "voice": "I wrote my ex's number the first time. We haven't decided which of us owns the good years aboard.",
+  "appearance": "Sasha is easy to recognize by a loose dark braid and a wide brow and a narrow jaw. Usually dressed in a cropped bottle-green coat with a knotted piece of sail thread on a key ring, Sasha gathers both sleeves neatly before settling in when listening.",
+  "personality": "Sasha prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To agree who actually handles the sale.",
+  "family": "Philip Yu is Sasha’s cousin. Sasha offers the first invitation. Philip gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The million-dollar flat*, Philip says, “I am the son who asked for an advance against the inheritance.”",
+  "connections": "Lennon Ahmed (adult child). The parent who wrote the wrong number finally gets the same question answered by the child.",
+  "familyIds": [
+    "AH-R1223"
+  ],
+  "connectionIds": [
+    "AH-R0750"
+  ],
+  "reactions": [
+    {
+      "situation": "The boat's owners give two answers about selling",
+      "response": "Sasha asks both owners which decision has actually been made.",
+      "asWritten": "The boat's owners give two answers about selling. Sasha asks both owners which decision has actually been made."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Sasha draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Sasha draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Sasha clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Sasha clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

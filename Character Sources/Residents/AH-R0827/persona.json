@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0827",
+  "personId": "AH-R0827",
+  "name": "Catherine Easton",
+  "age": 31,
+  "occupation": "Traveling beach instructor",
+  "home": "Old Town",
+  "episode": "Summer staff",
+  "biography": "stories/residents/06/08-summer-staff.md#ah-r0827",
+  "life": "“I still remember a holiday postcard arriving after its season was over.” Thursday often includes a stop at Ferris Deli, where Catherine asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I can move to a warm coast for another season. My partner has finally got a permanent post here.",
+  "appearance": "Catherine has a strong profile and a little space between the front teeth. Look for auburn hair cut square at the nape. On an ordinary day, the familiar outfit is an old plum windbreaker with one cuff folded back twice. In conversation Catherine counts on the side of one finger where hardly anybody notices.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To choose a season compatible with the partner's stable job.",
+  "family": "Pablo Thomas is Catherine’s older cousin. Catherine brings whatever was actually growing or affordable that week. Pablo makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Level with the window*, Pablo says, “I was angry about the noise until I saw the pensioners on the upper deck counting our flowerpots.”",
+  "connections": "Ronan Vidal. A traveling summer contract looks different from the viewpoint of the worker who mends its flags.",
+  "familyIds": [
+    "AH-R0714"
+  ],
+  "connectionIds": [
+    "AH-R0828"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor demands a refund after the season ends early",
+      "response": "Catherine checks the actual dates printed on the booking before discussing its refund.",
+      "asWritten": "A visitor demands a refund after the season ends early. Catherine checks the actual dates printed on the booking before discussing its refund."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Catherine asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Catherine asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Catherine listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Catherine listens first to the account of how it was actually used."
+    }
+  ]
+}

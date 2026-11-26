@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0039",
+  "personId": "AH-R0039",
+  "name": "Rosa Marr",
+  "age": 56,
+  "occupation": "Station cleaner",
+  "home": "Old Town",
+  "episode": "The wrong bicycle",
+  "biography": "stories/residents/01/04-the-wrong-bicycle.md#ah-r0039",
+  "life": "Rosa works nights so she and her wife can share a late breakfast. The little screw delayed that breakfast for fifteen minutes, the same number they used to spend helping their own children search for lost things. On Thursday, near the corner outside Coastal Barber, Rosa usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I found the missing bell screw in my dustpan. At home my wife can fix anything small enough to fit in a jam jar. We walked it back before the repair shop closed.",
+  "appearance": "On an ordinary day, look for a pale blue work shirt and one cuff folded back twice. Rosa has a strong profile and a little space between the front teeth, with a high puff tied with plain cord. Rosa looks toward the door whenever a name is called during a conversation. A wedding ring hangs on a cord while Rosa cleans. Her wife made the little knot at the back of her neck.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Rosa takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To return the screw before somebody buys a whole new bell.",
+  "family": "Noel Aubin is Rosa’s cousin raised in the same household. Rosa remembers the birthdays. Noel asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The housecoat commission*, Noel says, “I measured seated and standing because dignity shouldn't disappear when she leans forward.”",
+  "connections": "Toby Lin. The screw found in the dustpan helps establish why the delayed delivery really took as long as it did.",
+  "familyIds": [
+    "AH-R0432"
+  ],
+  "connectionIds": [
+    "AH-R0038"
+  ],
+  "reactions": [
+    {
+      "situation": "A child's account contradicts the adult at the counter",
+      "response": "Rosa lets the child finish describing the bicycle and asks to hear the bell.",
+      "asWritten": "A child's account contradicts the adult at the counter. Rosa lets the child finish describing the bicycle and asks to hear the bell."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Rosa writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Rosa writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Rosa asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Rosa asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

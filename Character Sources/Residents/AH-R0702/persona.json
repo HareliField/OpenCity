@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0702",
+  "personId": "AH-R0702",
+  "name": "Chris Valdez",
+  "age": 38,
+  "occupation": "Barber",
+  "home": "Eastside",
+  "episode": "The free fringe",
+  "biography": "stories/residents/05/11-the-free-fringe.md#ah-r0702",
+  "life": "“I still remember the customer who kept asking for the same unfinished story.” Tuesday often includes a stop at the bank steps, where Chris takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I timed the conversation like a normal trim. When the bell rang we were halfway through a good story.",
+  "appearance": "Chris is easy to recognize by short copper curls and a narrow face with an expressive upper lip. Usually dressed in an olive canvas jacket with a watch on a cracked leather band, Chris starts to lift a hand, then waits to be invited to speak when listening.",
+  "personality": "Chris always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Chris is trying to tell the difference before the bill arrives.",
+  "agenda": "To offer conversation the time allowed for a haircut.",
+  "family": "Orla March is Chris’s first cousin once removed. Chris gets to change the plan. Orla offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Laundry for a stranger*, Orla says, “I iron for the young man opposite because he held my hand when the ambulance took my wife.”",
+  "connections": "Percy Davila (barber customer). A free fringe buys the customer and the barber a perfectly real conversation.",
+  "familyIds": [
+    "AH-R0581"
+  ],
+  "connectionIds": [
+    "AH-R0701"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone waiting in line complains",
+      "response": "Chris tells the waiting customer roughly how much of the appointment is still left.",
+      "asWritten": "Someone waiting in line complains. Chris tells the waiting customer roughly how much of the appointment is still left."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Chris asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Chris asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Chris suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Chris suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

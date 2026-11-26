@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0426",
+  "personId": "AH-R0426",
+  "name": "Sofia Yates",
+  "age": 43,
+  "occupation": "Percussion teacher",
+  "home": "Midtown",
+  "episode": "The empty drum stool",
+  "biography": "stories/residents/03/13-the-empty-drum-stool.md#ah-r0426",
+  "life": "“I still remember my first pupil saying I played too fast.” Monday often includes a stop at Harbour Bakery, where Sofia buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I was scared my students would laugh at my playing. One of them started the count for me.",
+  "appearance": "On an ordinary day, look for a plum-colored cardigan and a train token tied to a zipper pull. Sofia has a broad nose and a deep dimple on one cheek, with short sandy hair and a marked widow's peak. Sofia draws breath as if to speak and lets someone else go first during a conversation.",
+  "personality": "Sofia can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Sofia can afford to give, and family knows to take it seriously.",
+  "agenda": "To let pupils hear an honest adult practice session.",
+  "family": "Rosemary Bhandari is Sofia’s older cousin. Sofia asks before bringing somebody along. Rosemary can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Money after marriage*, Rosemary says, “I was their first lender. The woman I underestimated has been paying every installment.”",
+  "connections": "Hollis Fong. The kitchen percussionist and the teacher discover how to practice standing together.",
+  "familyIds": [
+    "AH-R0777"
+  ],
+  "connectionIds": [
+    "AH-R0424"
+  ],
+  "reactions": [
+    {
+      "situation": "A child freezes halfway through the song",
+      "response": "Sofia lets the beat drop out and waits for the child to choose whether to rejoin.",
+      "asWritten": "A child freezes halfway through the song. Sofia lets the beat drop out and waits for the child to choose whether to rejoin."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Sofia asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Sofia asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Sofia suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Sofia suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0769",
+  "personId": "AH-R0769",
+  "name": "Carmen Kapoor",
+  "age": 50,
+  "occupation": "Casual freight worker",
+  "home": "Coast Ridge",
+  "episode": "Nine unpaid hours",
+  "biography": "stories/residents/06/02-nine-unpaid-hours.md#ah-r0769",
+  "life": "“I still remember being passed over because my old letters were in another language.” People around Breakwater Way know Carmen by a small Saturday habit. Carmen stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I used to accept cash so nobody asked about my papers. I want the union to hear me without promising miracles.",
+  "appearance": "Carmen has a center part and straight chestnut hair, a wide brow and a narrow jaw, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Carmen folds a paper napkin into quarters without noticing.",
+  "personality": "Carmen admires skill and distrusts the idea that skill gives anyone permission to be rude. Carmen learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To get a protected hearing from the union.",
+  "family": "Sofia Valdez is Carmen’s cousin. Carmen makes room at the table. Sofia brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The high road home*, Sofia says, “I can tell when the driver is scared because the radio gets louder.”",
+  "connections": "Wynn Kapoor. Both need usable wage records, one for family support and one for work done unofficially.",
+  "familyIds": [
+    "AH-R1169"
+  ],
+  "connectionIds": [
+    "AH-R0768"
+  ],
+  "reactions": [
+    {
+      "situation": "The contractor offers selected workers a partial payment",
+      "response": "Carmen asks that the offer be written down with the remaining unpaid hours.",
+      "asWritten": "The contractor offers selected workers a partial payment. Carmen asks that the offer be written down with the remaining unpaid hours."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Carmen offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Carmen offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Carmen describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Carmen describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

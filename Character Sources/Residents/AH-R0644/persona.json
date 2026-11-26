@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0644",
+  "personId": "AH-R0644",
+  "name": "Melanie Nelson",
+  "age": 50,
+  "occupation": "Furniture mover",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The clean ledger",
+  "biography": "stories/residents/05/05-the-clean-ledger.md#ah-r0644",
+  "life": "“I still remember a man who paid me back by carrying boxes.” Friday often includes a stop at Tideline Market, where Melanie picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I am the creditor everyone thought dead. I'm asking for an afternoon of help moving house.",
+  "appearance": "Melanie has a softly rounded chin under sharp cheekbones. Look for thick, tightly coiled hair. On an ordinary day, the familiar outfit is a faded indigo overshirt with a replacement button a shade darker than the others. In conversation Melanie turns fully toward the person speaking.",
+  "personality": "Melanie enjoys routines and will defend the right of someone else to break one. As a result, Melanie is often everyone's favorite cover for a missed morning.",
+  "agenda": "To exchange the debt for one afternoon moving furniture.",
+  "family": "Simon Hunter is Melanie’s half-sibling. Melanie brings the paper and a pen. Simon decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Nine unpaid hours*, Simon says, “I have nine hours on that sheet and a refrigerator full of food I bought on credit.”",
+  "connections": "Toby Diaz. A creditor asking for labor gives the dealer who owes a birthday a different idea of repayment.",
+  "familyIds": [
+    "AH-R0761"
+  ],
+  "connectionIds": [
+    "AH-R0647"
+  ],
+  "reactions": [
+    {
+      "situation": "A creditor asks for a conversation without witnesses",
+      "response": "Melanie finds a private time when both people can still have someone nearby if requested.",
+      "asWritten": "A creditor asks for a conversation without witnesses. Melanie finds a private time when both people can still have someone nearby if requested."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Melanie asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Melanie asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Melanie keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Melanie keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

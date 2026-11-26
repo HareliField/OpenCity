@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0017",
+  "personId": "AH-R0017",
+  "name": "Fen Ellis",
+  "age": 45,
+  "occupation": "Sign painter",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A chair on the quay",
+  "biography": "stories/residents/01/02-a-chair-on-the-quay.md#ah-r0017",
+  "life": "Fen drew birds as a child because the family moved too often to keep pets. He signed his first paid shopfront with a tiny gull where only someone opening the shutter could see it. Friday often includes a stop at the crossing outside Verve Nail Studio, where Fen notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "The chalk gull underneath is mine. I used to draw birds under things at friends' houses. This is the first time one of them has flown back.",
+  "appearance": "Fen is easy to recognize by dark brown curls cut close behind the ears and a small notch in the left eyebrow. Usually dressed in an old plum windbreaker with a partly rubbed-away embroidered initial, Fen looks at people's hands before looking at what they carry when listening.",
+  "personality": "Fen finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To find one of the other childhood gulls before an old house is sold.",
+  "family": "Hollis Osei is Fen’s older relative by marriage. Fen remembers the birthdays. Hollis asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A tenant who stays*, Hollis says, “I would share the big room for a season. Nobody asked because they thought an old person always wants silence.”",
+  "connections": "Tamsin Leung. A chalk gull lets them test two very different ideas about who used to sit here. Also in the story is Owen Vale (childhood friend).",
+  "familyIds": [
+    "AH-R0984"
+  ],
+  "connectionIds": [
+    "AH-R0014",
+    "AH-R0011"
+  ],
+  "reactions": [
+    {
+      "situation": "Two families claim the kitchen chair",
+      "response": "Fen asks each claimant what they remember about the seat before the marks are shown.",
+      "asWritten": "Two families claim the kitchen chair. Fen asks each claimant what they remember about the seat before the marks are shown."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Fen helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Fen helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Fen points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Fen points to the person who noticed the original mistake."
+    }
+  ]
+}

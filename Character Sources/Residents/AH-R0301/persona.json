@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0301",
+  "personId": "AH-R0301",
+  "name": "Gareth Roth",
+  "age": 39,
+  "occupation": "Courier",
+  "home": "the blocks north of the port",
+  "episode": "Spin cycle choir",
+  "biography": "stories/residents/03/01-spin-cycle-choir.md#ah-r0301",
+  "life": "“I still remember my father's tunes coming through his workshop wall.” On Sunday, near the market by Market Flats, Gareth often waits until the delivery baskets are stacked before going in.",
+  "voice": "My father whistled that song through our last argument. I need its second line.",
+  "appearance": "On an ordinary day, look for a faded indigo overshirt and a pressed flower kept in the clear back of a phone case. Gareth has a heart-shaped face and prominent ears, with a long plait tucked inside the collar. Gareth rubs a thumb along the edge of the nearest pocket during a conversation.",
+  "personality": "Gareth enjoys routines and will defend the right of someone else to break one. As a result, Gareth is often everyone's favorite cover for a missed morning.",
+  "agenda": "To recover the tune's missing verse.",
+  "family": "Carmen Saye is Gareth’s cousin. Gareth brings whatever was actually growing or affordable that week. Carmen makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The last green*, Carmen says, “I used to take his cab after my double shifts.”",
+  "connections": "Alejandro Sanders. They compare a familiar song to the actual pitches of the three machines.",
+  "familyIds": [
+    "AH-R0118"
+  ],
+  "connectionIds": [
+    "AH-R0302"
+  ],
+  "reactions": [
+    {
+      "situation": "The washer bearing goes quiet mid-song",
+      "response": "Gareth listens for the missing note and lets maintenance know what changed.",
+      "asWritten": "The washer bearing goes quiet mid-song. Gareth listens for the missing note and lets maintenance know what changed."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Gareth puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Gareth puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Gareth keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Gareth keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

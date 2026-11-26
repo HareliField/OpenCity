@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1128",
+  "personId": "AH-R1128",
+  "name": "Jade Cole",
+  "age": 63,
+  "occupation": "Retired cemetery gardener",
+  "home": "Coast Ridge",
+  "episode": "A summer marriage",
+  "biography": "stories/residents/08/08-a-summer-marriage.md#ah-r1128",
+  "life": "“I still remember watching a family photograph being taken from another window.” People around the approach to Seabright Court know Jade by a small Thursday habit. Jade likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I am the parent staying away. I booked a room facing the beach because staying away is harder than I admitted.",
+  "appearance": "Jade has a thin scattering of white hair over the crown, a long face and high cheekbones, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a cloth patch so neatly matched it only shows in strong light. When somebody else has the floor, Jade holds eye contact until the other person has finished.",
+  "personality": "Jade talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Jade's ways of saying that it is all right to leave.",
+  "agenda": "To decide whether to come down from the hotel room.",
+  "family": "Bess Kaur is Jade’s cousin. Jade chooses whether they walk home or sit a while. Bess brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *One clean day*, Bess says, “I had to leave early for watch. Somebody packed the sheet cake in ten little boxes so I could keep talking about it.”",
+  "connections": "Owen Green. The old friend's speech will sound quite different if the reluctant parent comes down to listen.",
+  "familyIds": [
+    "AH-R0640"
+  ],
+  "connectionIds": [
+    "AH-R1124"
+  ],
+  "reactions": [
+    {
+      "situation": "Fog hides the sea during the vows",
+      "response": "Jade asks the couple if they want to begin under fog or wait, without extending the celebration for a photograph.",
+      "asWritten": "Fog hides the sea during the vows. Jade asks the couple if they want to begin under fog or wait, without extending the celebration for a photograph."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Jade suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Jade suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Jade says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Jade says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

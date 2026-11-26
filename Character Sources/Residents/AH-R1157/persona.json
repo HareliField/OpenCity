@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1157",
+  "personId": "AH-R1157",
+  "name": "Carol Mack",
+  "age": 37,
+  "occupation": "Patient support worker",
+  "home": "Old Town",
+  "episode": "The hair after illness",
+  "biography": "stories/residents/08/11-the-hair-after-illness.md#ah-r1157",
+  "life": "“I still remember recognizing a person's laugh before their changing face.” On Monday, near the window at Night Shift Donuts, Carol knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I met her during treatment and have never seen the woman her friends keep insisting she used to be.",
+  "appearance": "Carol is easy to recognize by short sandy hair and a marked widow's peak and a strong profile and a little space between the front teeth. Usually dressed in a dark green knitted vest with a braided bracelet with a single wooden bead, Carol folds a paper napkin into quarters without noticing when listening.",
+  "personality": "Carol has a quick wit and an equally quick sense of shame. A joke is often Carol's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To meet the person already known without comparison to the past.",
+  "family": "Alice Ortiz is Carol’s second cousin. Carol asks what the birthday guest would like this year. Alice remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The engine lullaby*, Alice says, “My father took me aboard whenever I couldn't sleep.”",
+  "connections": "Ramon Lloyd. Someone who only knew the client during illness notices the barber's changing hair too.",
+  "familyIds": [
+    "AH-R0591"
+  ],
+  "connectionIds": [
+    "AH-R1159"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone asks to take a photograph before the haircut",
+      "response": "Carol waits for the customer's permission before anyone takes a picture.",
+      "asWritten": "Someone asks to take a photograph before the haircut. Carol waits for the customer's permission before anyone takes a picture."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Carol keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Carol keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Carol seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Carol seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

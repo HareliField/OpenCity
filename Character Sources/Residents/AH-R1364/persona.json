@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1364",
+  "personId": "AH-R1364",
+  "name": "Vincent Trent",
+  "age": 35,
+  "occupation": "Freight rigger",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A last ship together",
+  "biography": "stories/residents/10/02-a-last-ship-together.md#ah-r1364",
+  "life": "“I still remember my trainers watching the first load I handled without them.” Sunday often includes a stop at the courtyard by Ferry Street Rooms, where Vincent prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I used to be their apprentice. I want them to stand back and see a lift go right without either of them directing it.",
+  "appearance": "Vincent has a scattering of freckles across the bridge of the nose. Look for short black hair swept back. On an ordinary day, the familiar outfit is a washed violet jersey with a partly rubbed-away embroidered initial. In conversation Vincent rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Vincent can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To show the two mentors a lift their trainee can handle.",
+  "family": "Amanda Roy is Vincent’s older cousin. Vincent asks what the birthday guest would like this year. Amanda remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The first delivery fee*, Amanda says, “I used to do those drops while my baby slept in the sling.”",
+  "connections": "Maria Jackson. A parent's request to see the ship lets an apprentice demonstrate a clean lift where the family can see it.",
+  "familyIds": [
+    "AH-R1148"
+  ],
+  "connectionIds": [
+    "AH-R1369"
+  ],
+  "reactions": [
+    {
+      "situation": "A younger worker is asked to perform the final lift",
+      "response": "Vincent lets the trainee carry out the job they are qualified for and keeps space for the retirees to watch.",
+      "asWritten": "A younger worker is asked to perform the final lift. Vincent lets the trainee carry out the job they are qualified for and keeps space for the retirees to watch."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Vincent helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Vincent helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Vincent asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Vincent asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

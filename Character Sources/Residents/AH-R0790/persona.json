@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0790",
+  "personId": "ah-pd-112",
+  "name": "Lena Price",
+  "age": 42,
+  "occupation": "Detective",
+  "home": "Old Town",
+  "episode": "The Saturday swap",
+  "biography": "stories/residents/06/04-the-saturday-swap.md#ah-r0790",
+  "life": "“I still remember the first neighbor who trusted me to witness a signature.” People around the brick passage off the shop row know Lena by a small Sunday habit. Lena takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I agreed to work half the shift so my neighbor could take her citizenship oath. I am the one she asked to witness it.",
+  "appearance": "Lena has a heart-shaped face and prominent ears. Look for short copper curls. Off duty, the familiar outfit is a black overshirt with pearl buttons with a comb in a sleeve sewn into the lining. In conversation Lena leans a shoulder against the wall during long conversations.",
+  "personality": "Lena gets protective of anybody who comes into a meeting unprepared. Lena privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To witness the neighbor's citizenship oath.",
+  "family": "Victor Armas is Lena’s half-sibling. Lena asks before bringing somebody along. Victor can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The empty chair on nights*, Victor says, “I borrowed her spare trainers on my first night.”",
+  "connections": "Ben Ortiz. The language exam and the citizenship oath need cover on the same Saturday.",
+  "familyIds": [
+    "AH-R0954"
+  ],
+  "connectionIds": [
+    "AH-R0783"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member asks for a definite promise about Saturday",
+      "response": "Lena promises a definite check-in time even if the watch itself is still uncertain.",
+      "asWritten": "A family member asks for a definite promise about Saturday. Lena promises a definite check-in time even if the watch itself is still uncertain."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Lena lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Lena lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Lena offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Lena offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

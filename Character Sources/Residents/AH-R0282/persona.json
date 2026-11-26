@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0282",
+  "personId": "AH-R0282",
+  "name": "Elizabeth Yoon",
+  "age": 49,
+  "occupation": "Formerly unhoused day laborer",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Saturday keys",
+  "biography": "stories/residents/02/14-saturday-keys.md#ah-r0282",
+  "life": "“I stopped sleeping in doorways when a woman offered me her spare key and a time to return it.” Tuesday often includes a stop at the market by Market Flats, where Elizabeth often waits until the delivery baskets are stacked before going in.",
+  "voice": "I used to hide my key in a shoe. After losing my home I hate the idea somebody else carries it.",
+  "appearance": "Elizabeth has brown hair pinned away from the temples, a long face and high cheekbones, and a favorite piece of clothing, a cropped bottle-green coat. It usually goes with a stitched row of blue crosses along an old repair. When somebody else has the floor, Elizabeth counts on the side of one finger where hardly anybody notices.",
+  "personality": "Elizabeth loves a well-told anecdote and distrusts the neat ending. The parts Elizabeth remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To recover control over access to the home.",
+  "family": "Hana Solberg is Elizabeth’s second cousin. Elizabeth sets the time to leave. Hana picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The last green*, Hana says, “The best view is from the passenger side at the crest.”",
+  "connections": "Rae Meyer. They agree which doors will open for a volunteer and which owners will open themselves.",
+  "familyIds": [
+    "AH-R0120"
+  ],
+  "connectionIds": [
+    "AH-R0290"
+  ],
+  "reactions": [
+    {
+      "situation": "A volunteer is blamed before the tin is checked",
+      "response": "Elizabeth checks the returned tins before letting a name go into the complaint.",
+      "asWritten": "A volunteer is blamed before the tin is checked. Elizabeth checks the returned tins before letting a name go into the complaint."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Elizabeth keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Elizabeth keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Elizabeth includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Elizabeth includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

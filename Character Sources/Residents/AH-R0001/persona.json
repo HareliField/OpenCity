@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0001",
+  "personId": "AH-R0001",
+  "name": "Ida Mercer",
+  "age": 52,
+  "occupation": "Laundromat operator",
+  "home": "the blocks north of the port",
+  "episode": "The blue suit",
+  "biography": "stories/residents/01/01-the-blue-suit.md#ah-r0001",
+  "life": "Before the accident Ida collected fares and knew regulars by the noises they made climbing onto the bus. Running the Wash House lets her keep that skill. A person dropping one sock at a time needs a chair before they need a lecture about the machines. People around Paper & Pine Books know Ida by a small Wednesday habit. Ida starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I bought this place with the settlement from my bus accident. I can refund a wash. I can't refund this morning. I gave him the good jacket I keep behind the till for meetings with the bank.",
+  "appearance": "Ida is easy to recognize by a soft fringe that falls across one eyebrow and fine brows over wide-set eyes. Usually dressed in a red windbreaker with a tiny red thread tied through the lowest buttonhole, Ida raises one eyebrow long before saying yes when listening.",
+  "personality": "Ida is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Ida is concerned.",
+  "agenda": "To keep an emergency clothes rail behind the till without turning it into charity theater.",
+  "family": "Bianca Ward is Ida’s second cousin. Ida makes the call. Bianca is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A widow bids again*, Bianca says, “I sell luxury property. This is the first bidder who asked me the names on the doorbells.”",
+  "connections": "Rafael Nunes. The jacket from behind the till is the loan between them that makes the ceremony possible.",
+  "familyIds": [
+    "AH-R0924"
+  ],
+  "connectionIds": [
+    "AH-R0003"
+  ],
+  "reactions": [
+    {
+      "situation": "Rafael asks everyone to stop fussing over the suit",
+      "response": "Ida steps away from the hanger and lets Rafael choose what help to keep.",
+      "asWritten": "Rafael asks everyone to stop fussing over the suit. Ida steps away from the hanger and lets Rafael choose what help to keep."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Ida stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Ida stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Ida asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Ida asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

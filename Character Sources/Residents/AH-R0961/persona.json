@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0961",
+  "personId": "AH-R0961",
+  "name": "Cara Carvalho",
+  "age": 14,
+  "occupation": "Secondary school pupil",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The first language",
+  "biography": "stories/residents/07/07-the-first-language.md#ah-r0961",
+  "life": "“I still remember reading grandad's letter in the stairwell.” On Monday, near the foot of Harbor Viaduct, Cara pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I can read every word but my classmates think my voice changes when I do.",
+  "appearance": "Cara has thick, tightly coiled hair, a small notch in the left eyebrow, and a favorite piece of clothing, a boxy denim jacket. It usually goes with a red pencil tucked into a stitched pocket. When somebody else has the floor, Cara counts on the side of one finger where hardly anybody notices.",
+  "personality": "Cara has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To choose when to read aloud.",
+  "family": "Grey Foster is Cara’s first cousin once removed. Cara can always ask for five minutes alone. Grey asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *One sleeve short*, Grey says, “I shortened the sleeve too far on purpose for a child to grow into it.”",
+  "connections": "Edgar Carbone (grandparent). A grandparent practicing listening can stay in the room when the child changes languages. Also in the story is Victor Lowe (parent).",
+  "familyIds": [
+    "AH-R0255"
+  ],
+  "connectionIds": [
+    "AH-R0962",
+    "AH-R0963"
+  ],
+  "reactions": [
+    {
+      "situation": "A pupil chooses another language halfway through the reading",
+      "response": "Cara lets the pupil finish in the language they chose.",
+      "asWritten": "A pupil chooses another language halfway through the reading. Cara lets the pupil finish in the language they chose."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Cara asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Cara asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Cara explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Cara explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

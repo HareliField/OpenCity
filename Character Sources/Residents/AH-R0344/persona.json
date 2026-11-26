@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0344",
+  "personId": "AH-R0344",
+  "name": "Reina Gallagher",
+  "age": 47,
+  "occupation": "Rent collector",
+  "home": "Midtown",
+  "episode": "Rent in a biscuit tin",
+  "biography": "stories/residents/03/05-rent-in-a-biscuit-tin.md#ah-r0344",
+  "life": "“I still remember collecting cash in the year nobody had change.” Friday often includes a stop at the public end of the South Shore boardwalk, where Reina checks the shade on the benches before deciding how long to stay.",
+  "voice": "I collected rent in the rain and swapped the tins. I traced every tenant before closing my books.",
+  "appearance": "On an ordinary day, look for a brown corduroy jacket and a knotted piece of sail thread on a key ring. Reina has a broad nose and a deep dimple on one cheek, with short copper curls. Reina listens with the head tilted a little to the left during a conversation.",
+  "personality": "Reina loves a well-told anecdote and distrusts the neat ending. The parts Reina remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To match every envelope before month-end.",
+  "family": "Clement Mitchell is Reina’s cousin. Reina leaves the first voice message. Clement calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *Laundry for a stranger*, Clement says, “I can't stand a starched collar since catering school.”",
+  "connections": "Grey Ibrahim. They get the former dealer a reliable record of which rent was actually collected. Also in the story is Gareth Yeo (budget tutor).",
+  "familyIds": [
+    "AH-R0588"
+  ],
+  "connectionIds": [
+    "AH-R0341",
+    "AH-R0345"
+  ],
+  "reactions": [
+    {
+      "situation": "A family asks to come back later without explanation",
+      "response": "Reina arranges a second visit without repeating the family's explanation.",
+      "asWritten": "A family asks to come back later without explanation. Reina arranges a second visit without repeating the family's explanation."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Reina asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Reina asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Reina includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Reina includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

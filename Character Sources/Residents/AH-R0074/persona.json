@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0074",
+  "personId": "AH-R0074",
+  "name": "Nico Salas",
+  "age": 36,
+  "occupation": "Sand sculptor",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A tide at noon",
+  "biography": "stories/residents/01/08-a-tide-at-noon.md#ah-r0074",
+  "life": "Nico makes perfect castles for hotels that photograph them before admitting guests. His nephew's crooked castle with a sink has made him think about the difference between a castle that sells rooms and one a child imagines entering. People around the steps at Pier Beach know Nico by a small Wednesday habit. Nico watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I earn money making flawless hotel displays. My nephew wanted the ugly castle with a kitchen sink to win. I made him show me the pipes before we went back to judging.",
+  "appearance": "Nico has a swept fringe and a closely clipped nape, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Nico gives a little nod before asking a hard question.",
+  "personality": "Nico uses precise names for tools and very approximate names for feelings. People who know Nico well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To judge one castle by how someone imagines living there.",
+  "family": "Frankie Palmer is Nico’s half-sibling. Nico makes room at the table. Frankie brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Midnight cinnamon*, Frankie says, “I used to pour my wages into scratch cards on this street.”",
+  "connections": "Pip Arlen. They decide what an award ought to recognize after a professional sculptor notices the child's kitchen.",
+  "familyIds": [
+    "AH-R0698"
+  ],
+  "connectionIds": [
+    "AH-R0080"
+  ],
+  "reactions": [
+    {
+      "situation": "The judges ask the fastest builder to speak for everyone",
+      "response": "Nico asks each child how they would enter their own castle.",
+      "asWritten": "The judges ask the fastest builder to speak for everyone. Nico asks each child how they would enter their own castle."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Nico says what they know in their own name and refuses to treat a guess as something the child has to disprove.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Nico says what they know in their own name and refuses to treat a guess as something the child has to disprove."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Nico brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Nico brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

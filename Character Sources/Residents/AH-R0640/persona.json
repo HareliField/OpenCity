@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0640",
+  "personId": "AH-R0640",
+  "name": "Bess Kaur",
+  "age": 52,
+  "occupation": "Rail watchkeeper",
+  "home": "the blocks north of the port",
+  "episode": "One clean day",
+  "biography": "stories/residents/05/04-one-clean-day.md#ah-r0640",
+  "life": "“I still remember carrying cake home after everyone had gone to bed.” On Wednesday, near the corner outside Coastal Barber, Bess usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I had to leave early for watch. Somebody packed the sheet cake in ten little boxes so I could keep talking about it.",
+  "appearance": "Bess has a smooth side part with one rebellious curl, a heart-shaped face and prominent ears, and a favorite piece of clothing, a long navy raincoat. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Bess counts on the side of one finger where hardly anybody notices.",
+  "personality": "Bess thinks best while walking. Sitting beneath someone's office clock makes Bess sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To take enough cake to share through the watch.",
+  "family": "Jade Cole is Bess’s cousin. Bess brings a spare shopping bag. Jade chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *A summer marriage*, Jade says, “I am the parent staying away. I booked a room facing the beach because staying away is harder than I admitted.”",
+  "connections": "Albert Bay. An unexpected offered meal leaves enough cake to take back to the watch.",
+  "familyIds": [
+    "AH-R1128"
+  ],
+  "connectionIds": [
+    "AH-R0635"
+  ],
+  "reactions": [
+    {
+      "situation": "The person everyone expects to speak wants to sit down",
+      "response": "Bess gives the expected speaker a seat and lets the old classmates start talking amongst themselves.",
+      "asWritten": "The person everyone expects to speak wants to sit down. Bess gives the expected speaker a seat and lets the old classmates start talking amongst themselves."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Bess asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Bess asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Bess asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Bess asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

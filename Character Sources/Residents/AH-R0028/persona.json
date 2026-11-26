@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0028",
+  "personId": "AH-R0028",
+  "name": "Ava Baptiste",
+  "age": 32,
+  "occupation": "Community reporter",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The small signature",
+  "biography": "stories/residents/01/03-the-small-signature.md#ah-r0028",
+  "life": "Ava can produce seven hundred words about any ribbon cutting in twenty minutes. She secretly misses the old district desk where every misspelled name brought an angry relative to the office. Sunday often includes a stop at Breakwater Way, where Ava stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "The big check made my deadline easy. Then the vendor asked me to name the eleven people behind the eleven dollars. I gave up my afternoon off to find the first four.",
+  "appearance": "Ava has dark brown curls cut close behind the ears, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a dark green knitted vest. It usually goes with a small enamel bird on the lapel. When somebody else has the floor, Ava presses the lips together to keep a smile in.",
+  "personality": "Ava never tires of being shown how somebody makes a living. Ava can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To identify the regulars who filled the eleven-dollar jar.",
+  "family": "Thomas Sun is Ava’s second cousin. Ava remembers the birthdays. Thomas asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *No lifeguard at dusk*, Thomas says, “I thought we had budgeted for coverage until dusk.”",
+  "connections": "Perry Han. They both worked on the press coverage and have different mistakes to repair.",
+  "familyIds": [
+    "AH-R1427"
+  ],
+  "connectionIds": [
+    "AH-R0027"
+  ],
+  "reactions": [
+    {
+      "situation": "The new chess table arrives too high for one of its players",
+      "response": "Ava puts one of the actual playing pieces into the affected player's hand before accepting delivery.",
+      "asWritten": "The new chess table arrives too high for one of its players. Ava puts one of the actual playing pieces into the affected player's hand before accepting delivery."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Ava stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Ava stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Ava may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Ava may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

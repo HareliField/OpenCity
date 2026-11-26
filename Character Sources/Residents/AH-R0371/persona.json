@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0371",
+  "personId": "AH-R0371",
+  "name": "Ivy Scott",
+  "age": 67,
+  "occupation": "Retired sprint coach",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The painted footprint",
+  "biography": "stories/residents/03/08-the-painted-footprint.md#ah-r0371",
+  "life": "“I still remember the high arch I once tried to flatten.” People around the brick passage off the shop row know Ivy by a small Thursday habit. Ivy takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I came to see whether it was my foot before my toes began to curl.",
+  "appearance": "Ivy has a gray streak running back from the forehead, a softly rounded chin under sharp cheekbones, and a favorite piece of clothing, a black overshirt with pearl buttons. It usually goes with a partly rubbed-away embroidered initial. When somebody else has the floor, Ivy leans a shoulder against the wall during long conversations.",
+  "personality": "Ivy gets protective of anybody who comes into a meeting unprepared. Ivy privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To compare the old footprint to the changed adult foot.",
+  "family": "Devin Bruno is Ivy’s younger relative by marriage. Ivy asks before bringing somebody along. Devin can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A shelf of apologies*, Devin says, “I don't know who loaned it to me. I remember their dog's name and hope somebody recognizes it.”",
+  "connections": "Eli Mason. They check whether the print came from the foot or the painter's brush.",
+  "familyIds": [
+    "AH-R0669"
+  ],
+  "connectionIds": [
+    "AH-R0372"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor insists the footprint must belong to a famous runner",
+      "response": "Ivy checks for a family photograph before accepting the famous name.",
+      "asWritten": "A visitor insists the footprint must belong to a famous runner. Ivy checks for a family photograph before accepting the famous name."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Ivy helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Ivy helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Ivy offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Ivy offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

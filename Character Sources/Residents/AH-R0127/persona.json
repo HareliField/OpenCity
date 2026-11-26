@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0127",
+  "personId": "AH-R0127",
+  "name": "Sid Idris",
+  "age": 40,
+  "occupation": "Instrument insurer",
+  "home": "Old Town",
+  "episode": "The borrowed bass",
+  "biography": "stories/residents/01/13-the-borrowed-bass.md#ah-r0127",
+  "life": "Sid writes replacement values for objects people hope never to replace. His sister plays oboe and still sends him a repair estimate after every tour as an argument for what his policies leave out. People around Lighthouse Cove know Sid by a small Tuesday habit. Sid takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "The paperwork values the wood and hardware. The two hours everybody spent trying to return it count for nothing on my form. I've started another page for the lender to keep.",
+  "appearance": "On an ordinary day, look for an olive canvas jacket and a narrow brass watch set a little fast. Sid has a scattering of freckles across the bridge of the nose, with black hair twisted into a small knot. Sid takes off the watch before a long conversation during a conversation.",
+  "personality": "Sid takes a rejection personally for a day and analytically on the second morning. Sid can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To give the lender a written account of the human value as well as the price.",
+  "family": "David Marks is Sid’s older cousin. Sid brings a spare shopping bag. David chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The split visit*, David says, “I live next door and brought the teapot. I want to be invited when there is no crisis too.”",
+  "connections": "Pax Orr. They discuss how a photograph of a repair could stay with the family while the instrument goes on earning its keep.",
+  "familyIds": [
+    "AH-R0740"
+  ],
+  "connectionIds": [
+    "AH-R0124"
+  ],
+  "reactions": [
+    {
+      "situation": "Somebody says the pawn ticket proves the bass was stolen",
+      "response": "Sid asks to see whether the ticket had already been settled.",
+      "asWritten": "Somebody says the pawn ticket proves the bass was stolen. Sid asks to see whether the ticket had already been settled."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Sid looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Sid looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Sid turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Sid turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

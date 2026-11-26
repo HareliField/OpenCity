@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1360",
+  "personId": "AH-R1360",
+  "name": "Jody Hewitt",
+  "age": 39,
+  "occupation": "Self-employed washer repairer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A closing hour",
+  "biography": "stories/residents/10/01-a-closing-hour.md#ah-r1360",
+  "life": "“I still remember realizing my own holiday was penciled in three years running.” Friday often includes a stop at the public end of the South Shore boardwalk, where Jody checks the shade on the benches before deciding how long to stay.",
+  "voice": "I was going to post a complaint. I wrote my week's opening hours on his birthday card because I need a day off too.",
+  "appearance": "On an ordinary day, look for a red windbreaker and a braided bracelet with a single wooden bead. Jody has a strong profile and a little space between the front teeth, with a smooth side part with one rebellious curl. Jody looks at people's hands before looking at what they carry during a conversation.",
+  "personality": "Jody loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To take one personal day away from appliance calls.",
+  "family": "Pablo Roy is Jody’s second cousin. Jody brings something that can still be enjoyed tomorrow. Pablo checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The day sailor's divorce*, Pablo says, “I did every winter repair while my spouse sailed.”",
+  "connections": "Sonia Lang. A complaint about wet bedding and an appliance worker's birthday card arrive on the same shut door.",
+  "familyIds": [
+    "AH-R1042"
+  ],
+  "connectionIds": [
+    "AH-R1354"
+  ],
+  "reactions": [
+    {
+      "situation": "A regular needs a coat locked in the shop",
+      "response": "Jody checks whether the coat is needed that day before interrupting the owner.",
+      "asWritten": "A regular needs a coat locked in the shop. Jody checks whether the coat is needed that day before interrupting the owner."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Jody stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Jody stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Jody offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Jody offers one about their own embarrassment instead."
+    }
+  ]
+}

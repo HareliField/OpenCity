@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1457",
+  "personId": "AH-R1457",
+  "name": "Albert Daniels",
+  "age": 41,
+  "occupation": "Alterations customer and postal clerk",
+  "home": "the blocks north of the port",
+  "episode": "An ordinary mirror",
+  "biography": "stories/residents/10/11-an-ordinary-mirror.md#ah-r1457",
+  "life": "“I still remember recognizing a stranger behind me as somebody I wanted to tell.” Tuesday often includes a stop at Ferris Deli, where Albert asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I am the client waiting behind her. I heard myself offer a story I have never told our own tailor.",
+  "appearance": "Albert has a swept fringe and a closely clipped nape, an aquiline nose and a square chin, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a thin silver ring worn on a cord. When somebody else has the floor, Albert rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Albert talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Albert's ways of saying that it is all right to leave.",
+  "agenda": "To give the widow the choice of hearing the stranger's story.",
+  "family": "Dane Aubin is Albert’s cousin. Albert chooses whether they walk home or sit a while. Dane brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Two portions*, Dane says, “I take the stairs because the bell is louder than the tenant can bear.”",
+  "connections": "Hollis Bowen. An old school fitting helps the next customer find words for an unrelated garment memory.",
+  "familyIds": [
+    "AH-R0138"
+  ],
+  "connectionIds": [
+    "AH-R1453"
+  ],
+  "reactions": [
+    {
+      "situation": "The widow asks to buy the fitting mirror",
+      "response": "Albert asks the tailor and widow what access others would lose if the mirror moved.",
+      "asWritten": "The widow asks to buy the fitting mirror. Albert asks the tailor and widow what access others would lose if the mirror moved."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Albert tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Albert tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Albert says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Albert says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

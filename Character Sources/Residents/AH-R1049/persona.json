@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1049",
+  "personId": "AH-R1049",
+  "name": "Alfred Ross",
+  "age": 38,
+  "occupation": "Restaurant cook",
+  "home": "Coast Ridge",
+  "episode": "The day sailor's divorce",
+  "biography": "stories/residents/07/15-the-day-sailor-s-divorce.md#ah-r1049",
+  "life": "“I still remember having Sunday morning temporarily to myself.” People around the downtown fountain know Alfred by a small Thursday habit. Alfred keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I am the new partner everyone resents. I would like Sunday morning alone on shore anyway.",
+  "appearance": "Away from the heat of the kitchen, look for a red windbreaker and a pen clipped inside the neckline. Alfred has two dimples that appear only with a full smile, with a swept fringe and a closely clipped nape. Alfred looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Alfred enjoys routines and will defend the right of someone else to break one. As a result, Alfred is often everyone's favorite cover for a missed morning.",
+  "agenda": "To protect a Sunday ashore.",
+  "family": "Daryl Maciel is Alfred’s second cousin. Alfred is free to hang up first. Daryl makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The fitting mirror*, Daryl says, “I promised to fix the wheel and gave the mirror my son's old skate bearing.”",
+  "connections": "Lennon Sanders. The teacher and new partner have reasons to preserve a morning at the breakfast table ashore.",
+  "familyIds": [
+    "AH-R0558"
+  ],
+  "connectionIds": [
+    "AH-R1045"
+  ],
+  "reactions": [
+    {
+      "situation": "A child wants both separated adults on the same boat",
+      "response": "Alfred asks each adult whether sharing one trip is possible without putting the child in the middle.",
+      "asWritten": "A child wants both separated adults on the same boat. Alfred asks each adult whether sharing one trip is possible without putting the child in the middle."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Alfred tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Alfred tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Alfred keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Alfred keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

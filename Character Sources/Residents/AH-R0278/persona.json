@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0278",
+  "personId": "AH-R0278",
+  "name": "Maeve Hamm",
+  "age": 55,
+  "occupation": "Fountain maintenance fitter",
+  "home": "Coast Ridge",
+  "episode": "The quiet verse",
+  "biography": "stories/residents/02/13-the-quiet-verse.md#ah-r0278",
+  "life": "“I can tell the lower fountain pump from the upper by the gulls it frightens.” Monday often includes a stop at Juniper Street, where Maeve knows which of the west-side porches has a seat in the shade.",
+  "voice": "I heard the fountain through that gap. I've lived beside it for years and never knew it had two rhythms.",
+  "appearance": "On an ordinary day, look for a washed violet jersey and a folded shopping list secured by a miniature clip. Maeve has fine brows over wide-set eyes, with close-cropped dark curls. Maeve counts on the side of one finger where hardly anybody notices during a conversation.",
+  "personality": "Maeve has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To let the pupils hear both fountain rhythms.",
+  "family": "Adrian Dias is Maeve’s cousin raised in the same household. Maeve makes room at the table. Adrian brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *A borrowed name*, Adrian says, “I hate the fictional nickname. I brought the author the one the children actually gave me.”",
+  "connections": "Wesley Carr. Signing in the pause makes room for a listener who heard the fountain underneath it.",
+  "familyIds": [
+    "AH-R0514"
+  ],
+  "connectionIds": [
+    "AH-R0273"
+  ],
+  "reactions": [
+    {
+      "situation": "A parent demands to hear the private words",
+      "response": "Maeve leaves the private verse with its writer.",
+      "asWritten": "A parent demands to hear the private words. Maeve leaves the private verse with its writer."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Maeve tells the first helper what they actually saw and makes room for the rider to answer for themself.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Maeve tells the first helper what they actually saw and makes room for the rider to answer for themself."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Maeve explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Maeve explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0717",
+  "personId": "AH-R0717",
+  "name": "William Nielsen",
+  "age": 56,
+  "occupation": "Sports fixture clerk",
+  "home": "Eastside",
+  "episode": "Level with the window",
+  "biography": "stories/residents/05/12-level-with-the-window.md#ah-r0717",
+  "life": "“I still remember giving a goal score to a passenger who had missed his stop.” People around Maré Coffee know William by a small Wednesday habit. William likes the table where people coming off shift stop checking the time.",
+  "voice": "I put up a score on match days. The passengers started holding up their predictions on the return journey.",
+  "appearance": "On an ordinary day, look for a washed violet jersey and a thin silver ring worn on a cord. William has a narrow face with an expressive upper lip, with a swept fringe and a closely clipped nape. William presses the lips together to keep a smile in during a conversation.",
+  "personality": "William treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To publish a match score the passengers can see.",
+  "family": "Cora Adair is William’s half-sibling. William keeps the photographs. Cora knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The missing Sunday*, Cora says, “I arranged every important task. My father asked what hour I'd set aside to waste with him.”",
+  "connections": "Aisha Ortiz. The passenger who recognized a teacher starts looking out for the match score.",
+  "familyIds": [
+    "AH-R1332"
+  ],
+  "connectionIds": [
+    "AH-R0711"
+  ],
+  "reactions": [
+    {
+      "situation": "A passenger asks to photograph a stranger through the kitchen window",
+      "response": "William waits for the resident to give permission before a camera goes up.",
+      "asWritten": "A passenger asks to photograph a stranger through the kitchen window. William waits for the resident to give permission before a camera goes up."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "William asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. William asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "William changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, William changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

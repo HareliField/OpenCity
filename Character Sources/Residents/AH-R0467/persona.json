@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0467",
+  "personId": "AH-R0467",
+  "name": "Anthony Ortiz",
+  "age": 54,
+  "occupation": "School tour volunteer",
+  "home": "Coast Ridge",
+  "episode": "The soft wharf chalk",
+  "biography": "stories/residents/04/02-the-soft-wharf-chalk.md#ah-r0467",
+  "life": "“I still remember a child asking which bit of the port belonged to her.” On Thursday, near the market by Market Flats, Anthony often waits until the delivery baskets are stacked before going in.",
+  "voice": "I remember the sweet chalk we stole from school. I want the children who come on tours to draw their own messages.",
+  "appearance": "Anthony is easy to recognize by short, uneven waves that refuse to lie flat and a straight nose and deep-set eyes. Usually dressed in a faded indigo overshirt with a pressed flower kept in the clear back of a phone case, Anthony presses the lips together to keep a smile in when listening.",
+  "personality": "Anthony has a talent for getting adversaries to laugh at exactly the same thing. Anthony knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To let tour children make messages of their own.",
+  "family": "Nina Fraser is Anthony’s stepsibling. Anthony chooses an ordinary story to tell. Nina asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *Midnight cinnamon*, Nina says, “I know the grinding marks on the sack. My aunt filled it before she retired inland.”",
+  "connections": "Lara Hart. They decide how to let children make new marks while safeguarding the old ones.",
+  "familyIds": [
+    "AH-R0699"
+  ],
+  "connectionIds": [
+    "AH-R0469"
+  ],
+  "reactions": [
+    {
+      "situation": "A contractor wants to scrub the chalk under the quay",
+      "response": "Anthony takes a photograph and asks whose permission is needed before the chalk is touched.",
+      "asWritten": "A contractor wants to scrub the chalk under the quay. Anthony takes a photograph and asks whose permission is needed before the chalk is touched."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Anthony finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Anthony finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Anthony asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Anthony asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

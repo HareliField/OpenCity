@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1240",
+  "personId": "AH-R1240",
+  "name": "Zachary Silva",
+  "age": 48,
+  "occupation": "Rail station clerk",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A call heard twice",
+  "biography": "stories/residents/09/04-a-call-heard-twice.md#ah-r1240",
+  "life": "“I still remember a neighbor asking whether a stamp still worked on local mail.” Monday often includes a stop at the courtyard by Ferry Street Rooms, where Zachary prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I was off duty and brought the letter from my neighbor to the desk. I didn't know how many people a stamp could thank.",
+  "appearance": "Zachary has a strong profile and a little space between the front teeth. Look for a dark undercut with a longer wave on top. On an ordinary day, the familiar outfit is an olive canvas jacket with a folded shopping list secured by a miniature clip. In conversation Zachary squares up pieces of paper while thinking.",
+  "personality": "Zachary treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To deliver the envelope to both sets of hands.",
+  "family": "Mika Williams is Zachary’s half-sibling. Zachary picks the meeting place. Mika sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A last ship together*, Mika says, “I started beside a stranger and want one final day's work beside my friend even if we talk about nothing important.”",
+  "connections": "Harley Dias. A neighbor handing over an envelope gives the records worker a place to send a personal reply.",
+  "familyIds": [
+    "AH-R1361"
+  ],
+  "connectionIds": [
+    "AH-R1239"
+  ],
+  "reactions": [
+    {
+      "situation": "The resident asks for a reply in somebody's own words",
+      "response": "Zachary asks the caller how they want to receive a personal reply.",
+      "asWritten": "The resident asks for a reply in somebody's own words. Zachary asks the caller how they want to receive a personal reply."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Zachary agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Zachary agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Zachary changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Zachary changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

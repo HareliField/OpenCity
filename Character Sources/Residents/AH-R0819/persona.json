@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0819",
+  "personId": "AH-R0819",
+  "name": "Frances Finch",
+  "age": 31,
+  "occupation": "Ward assistant",
+  "home": "Old Town",
+  "episode": "Reading the payslip",
+  "biography": "stories/residents/06/07-reading-the-payslip.md#ah-r0819",
+  "life": "“I still remember a teacher posting notes through my shop door.” On Thursday, near Paper & Pine Books, Frances starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I missed the first class to cover a double. The teacher saved me her chair and a marked-up envelope.",
+  "appearance": "Frances has a flat bridge to the nose and a mobile brow. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a narrow-striped sweater with a little coil of soft measuring tape. In conversation Frances presses the lips together to keep a smile in.",
+  "personality": "Frances often says yes too quickly out of pride in being useful. The people closest to Frances have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To catch up on the lesson lost to a double shift.",
+  "family": "Ida Heath is Frances’s cousin raised in the same household. Frances puts the kettle on. Ida chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A summer marriage*, Ida says, “I booked the shade at noon. The wheelchair user in our family would rather have the boardwalk than the prettiest sand.”",
+  "connections": "Eden Song. A missed class and a rediscovered pension both lead to calls made after work.",
+  "familyIds": [
+    "AH-R1123"
+  ],
+  "connectionIds": [
+    "AH-R0820"
+  ],
+  "reactions": [
+    {
+      "situation": "A classmate asks for help reading a real wage slip",
+      "response": "Frances sits beside the classmate and covers personal figures that aren't part of the question.",
+      "asWritten": "A classmate asks for help reading a real wage slip. Frances sits beside the classmate and covers personal figures that aren't part of the question."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Frances keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Frances keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Frances rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Frances rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

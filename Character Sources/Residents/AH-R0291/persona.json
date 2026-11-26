@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0291",
+  "personId": "AH-R0291",
+  "name": "Teresa Glass",
+  "age": 42,
+  "occupation": "Hospital messenger",
+  "home": "the western residential streets",
+  "episode": "A sail cut small",
+  "biography": "stories/residents/02/15-a-sail-cut-small.md#ah-r0291",
+  "life": "“My first shopping bag was a pillowcase turned lengthways.” Tuesday often includes a stop at the approach to Seabright Court, where Teresa likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I cut out a grocery bag and found the boat's number across the bottom. It brings strangers over in the market.",
+  "appearance": "Teresa is easy to recognize by black hair twisted into a small knot and a round face with a pronounced chin. Usually dressed in a plum-colored cardigan with a little coil of soft measuring tape, Teresa squares up pieces of paper while thinking when listening.",
+  "personality": "Teresa has a quick wit and an equally quick sense of shame. A joke is often Teresa's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To carry the boat number through a whole season's grocery trips.",
+  "family": "Cassandra Joseph is Teresa’s stepsibling. Teresa brings the paper and a pen. Cassandra decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *A clean coat for court*, Cassandra says, “I lent the coat because his daughter will see him in it.”",
+  "connections": "Ignacio Paige. A grocery bag with a sail number serves as the first pattern for the care-route bags.",
+  "familyIds": [
+    "AH-R1242"
+  ],
+  "connectionIds": [
+    "AH-R0299"
+  ],
+  "reactions": [
+    {
+      "situation": "Two makers want the same piece of sail",
+      "response": "Teresa lays both paper patterns on the piece before anybody cuts.",
+      "asWritten": "Two makers want the same piece of sail. Teresa lays both paper patterns on the piece before anybody cuts."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Teresa takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Teresa takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Teresa seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Teresa seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

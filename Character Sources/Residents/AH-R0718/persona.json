@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0718",
+  "personId": "AH-R0718",
+  "name": "Emma Carbone",
+  "age": 29,
+  "occupation": "Street photographer",
+  "home": "Coast Ridge",
+  "episode": "Level with the window",
+  "biography": "stories/residents/05/12-level-with-the-window.md#ah-r0718",
+  "life": "“I still remember taking family portraits through a café window.” On Friday, near the entrance to the Wash House, Emma stops for local notices even on a day without a load to wash.",
+  "voice": "I wanted to photograph the window from the bus. The resident asked to photograph me from her kitchen.",
+  "appearance": "On an ordinary day, look for a boxy denim jacket and a train token tied to a zipper pull. Emma has two dimples that appear only with a full smile, with a long plait tucked inside the collar. Emma draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Emma is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Emma is concerned.",
+  "agenda": "To exchange the pictures with the resident.",
+  "family": "Frances Mendez is Emma’s stepsibling. Emma makes the call. Frances is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The first delivery fee*, Frances says, “My mother orders one small lunch. We can't pay a delivery charge five times a week and she can't store five meals.”",
+  "connections": "Cian Davenport. A curtain makes it possible to offer a photograph without giving away the whole room.",
+  "familyIds": [
+    "AH-R1143"
+  ],
+  "connectionIds": [
+    "AH-R0712"
+  ],
+  "reactions": [
+    {
+      "situation": "The resident closes the curtains during the morning detour",
+      "response": "Emma treats the closed curtain as the resident's answer for that day.",
+      "asWritten": "The resident closes the curtains during the morning detour. Emma treats the closed curtain as the resident's answer for that day."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Emma asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Emma asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Emma asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Emma asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

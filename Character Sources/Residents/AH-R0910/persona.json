@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0910",
+  "personId": "AH-R0910",
+  "name": "Dale Valdez",
+  "age": 48,
+  "occupation": "Primary teacher",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The uniform money",
+  "biography": "stories/residents/07/01-the-uniform-money.md#ah-r0910",
+  "life": "“I still remember borrowing a sports jersey on my first day of work.” People around the corner outside Coastal Barber know Dale by a small Tuesday habit. Dale usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I am the teacher at the gate. I asked the head to join me in ordinary clothes on Monday morning.",
+  "appearance": "Dale has a dark undercut with a longer wave on top, a long face and high cheekbones, and a favorite piece of clothing, a mustard canvas overshirt. It usually goes with a comb in a sleeve sewn into the lining. When somebody else has the floor, Dale starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Dale is fond of ambitious ideas and deeply suspicious of grand openings. The question Dale asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To get the adults at the gate into ordinary clothes.",
+  "family": "Emil Palmer is Dale’s younger cousin. One family member never got a driver's license and learned the city by the feel of its bus stops. After dark the person with the smallest salary was often the one who knew the safest ride home. Dale can give directions in terms of places to rest. Asked about *A summer marriage*, Emil says, “I donated a shift to the bride. She returned it because knowing the children had a lifeguard mattered more.”",
+  "connections": "Terry Morse. A concerned parent can meet a teacher wearing the same ordinary clothes as a pupil. Also in the story is Keir Pierce (uniform washer).",
+  "familyIds": [
+    "AH-R1129"
+  ],
+  "connectionIds": [
+    "AH-R0903",
+    "AH-R0904"
+  ],
+  "reactions": [
+    {
+      "situation": "A donor asks to photograph the children receiving clothes",
+      "response": "Dale asks the children and families whether they want to appear in the picture.",
+      "asWritten": "A donor asks to photograph the children receiving clothes. Dale asks the children and families whether they want to appear in the picture."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Dale asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Dale asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Dale accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Dale accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

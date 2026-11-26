@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0706",
+  "personId": "AH-R0706",
+  "name": "Cecil Hassan",
+  "age": 41,
+  "occupation": "Deli cashier",
+  "home": "the western residential streets",
+  "episode": "The free fringe",
+  "biography": "stories/residents/05/11-the-free-fringe.md#ah-r0706",
+  "life": "“I still remember showing a scar I usually hid with my hand.” People around the foot of Harbor Viaduct know Cecil by a small Saturday habit. Cecil pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I used to dye my fringe to hide a scar. I came to have the scar shown for the first time.",
+  "appearance": "Cecil has a small notch in the left eyebrow. Look for short black hair swept back. Away from the heat of the kitchen, the familiar outfit is a long navy raincoat with a braided bracelet with a single wooden bead. In conversation Cecil folds a paper napkin into quarters without noticing.",
+  "personality": "Cecil takes a rejection personally for a day and analytically on the second morning. Cecil can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To wear the scar openly after the trim.",
+  "family": "Celia Lai is Cecil’s stepsibling. Cecil brings something that can still be enjoyed tomorrow. Celia checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The button card*, Celia says, “I need an enormous button I can close with one useful thumb.”",
+  "connections": "Loretta Lu. A client revealing a scar provides a child with a braver explanation for the chair.",
+  "familyIds": [
+    "AH-R0457"
+  ],
+  "connectionIds": [
+    "AH-R0708"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone waiting in line complains",
+      "response": "Cecil tells the waiting customer roughly how much of the appointment is still left.",
+      "asWritten": "Someone waiting in line complains. Cecil tells the waiting customer roughly how much of the appointment is still left."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Cecil puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Cecil puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Cecil turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Cecil turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

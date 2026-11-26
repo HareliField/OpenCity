@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1038",
+  "personId": "AH-R1038",
+  "name": "Finn Ryan",
+  "age": 33,
+  "occupation": "Night porter",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The carer's afternoon",
+  "biography": "stories/residents/07/14-the-carer-s-afternoon.md#ah-r1038",
+  "life": "“I still remember falling asleep in the passenger seat on the way to a care shift.” People around the steps at Pier Beach know Finn by a small Saturday habit. Finn watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I work the night before. I can do tea but nobody should ask me to drive.",
+  "appearance": "Finn has a cropped cut that shows the shape of the ears, a wide brow and a narrow jaw, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a copper-colored clasp that has been repaired by hand. When somebody else has the floor, Finn starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Finn reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Finn trusts most.",
+  "agenda": "To contribute without driving while exhausted.",
+  "family": "Dale Hamm is Finn’s second cousin. Finn makes the call. Dale is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The guarantee*, Dale says, “I bought supplies for the new business. My own small mortgage now depends on that family's next argument.”",
+  "connections": "Marina Liu. Lost income and a night shift both set limits on who can safely cover Wednesday.",
+  "familyIds": [
+    "AH-R1075"
+  ],
+  "connectionIds": [
+    "AH-R1036"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative demands to know how the free time was spent",
+      "response": "Finn leaves the free afternoon private unless the carer wants to talk about it.",
+      "asWritten": "A relative demands to know how the free time was spent. Finn leaves the free afternoon private unless the carer wants to talk about it."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Finn asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Finn asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Finn does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Finn does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1037",
+  "personId": "AH-R1037",
+  "name": "Amir Jain",
+  "age": 38,
+  "occupation": "Neighbor and tattoo artist",
+  "home": "the blocks north of the port",
+  "episode": "The carer's afternoon",
+  "biography": "stories/residents/07/14-the-carer-s-afternoon.md#ah-r1037",
+  "life": "“I still remember learning to cook an old neighbor's strange idea of breakfast.” People around the foot of Harbor Viaduct know Amir by a small Friday habit. Amir pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I learned the meal routine because I wanted to flirt with the neighbor and ended up loving Wednesdays.",
+  "appearance": "Amir has a strong profile and a little space between the front teeth. Look for short black hair swept back. On an ordinary day, the familiar outfit is a soft blue checked shirt with one loose pocket corner secured with green thread. In conversation Amir folds a paper napkin into quarters without noticing.",
+  "personality": "Amir has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To keep the Wednesday meal shared.",
+  "family": "Amanda Wong is Amir’s half-sibling. Amir chooses whether to use it. Amanda saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *Nine unpaid hours*, Amanda says, “I counted overtime for everyone except myself.”",
+  "connections": "Benedict Holt. The neighbor who enjoys Wednesdays helps the family let the carer come home without a report.",
+  "familyIds": [
+    "AH-R0770"
+  ],
+  "connectionIds": [
+    "AH-R1040"
+  ],
+  "reactions": [
+    {
+      "situation": "The carer's Wednesday relief calls in sick",
+      "response": "Amir tells the carer plainly how much of Wednesday can still be covered.",
+      "asWritten": "The carer's Wednesday relief calls in sick. Amir tells the carer plainly how much of Wednesday can still be covered."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Amir starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Amir starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Amir explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Amir explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

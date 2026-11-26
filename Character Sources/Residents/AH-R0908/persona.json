@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0908",
+  "personId": "AH-R0908",
+  "name": "Taylor Sethi",
+  "age": 60,
+  "occupation": "Family accountant",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The uniform money",
+  "biography": "stories/residents/07/01-the-uniform-money.md#ah-r0908",
+  "life": "“I still remember receiving help labeled as an anonymous refund.” People around the entrance to the Wash House know Taylor by a small Tuesday habit. Taylor stops for local notices even on a day without a load to wash.",
+  "voice": "I wanted to give anonymous money. My niece asked why I was so embarrassed to help someone I knew.",
+  "appearance": "Taylor has a round face with a pronounced chin. Look for silvery hair gathered at the nape. On an ordinary day, the familiar outfit is a cream pullover with a pen clipped inside the neckline. In conversation Taylor draws small circles on a tabletop while waiting.",
+  "personality": "Taylor is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Taylor is by the number of tiny errands suddenly being done.",
+  "agenda": "To discuss school costs honestly with the niece.",
+  "family": "Pip Arlen is Taylor’s younger relative by marriage. Taylor can stop the walk at any corner. Pip chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *A tide at noon*, Pip says, “I budgeted for one trophy and found myself facing thirty-two mayors of imaginary towns.”",
+  "connections": "Neal Day. One open offer of a sports shirt makes another donor reconsider anonymity.",
+  "familyIds": [
+    "AH-R0080"
+  ],
+  "connectionIds": [
+    "AH-R0907"
+  ],
+  "reactions": [
+    {
+      "situation": "A donor asks to photograph the children receiving clothes",
+      "response": "Taylor asks the children and families whether they want to appear in the picture.",
+      "asWritten": "A donor asks to photograph the children receiving clothes. Taylor asks the children and families whether they want to appear in the picture."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Taylor offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Taylor offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Taylor agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Taylor agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

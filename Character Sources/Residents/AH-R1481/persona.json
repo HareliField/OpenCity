@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1481",
+  "personId": "AH-R1481",
+  "name": "Ariel Powell",
+  "age": 66,
+  "occupation": "Retiring home-care worker",
+  "home": "the western residential streets",
+  "episode": "The last home visit",
+  "biography": "stories/residents/10/14-the-last-home-visit.md#ah-r1481",
+  "life": "“I still remember thinking a polite client had enjoyed every cup.” On Friday, near Lighthouse Cove, Ariel takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I brought sweet tea for years. My oldest client said she'd waited for my last day to admit she liked it bitter.",
+  "appearance": "Ariel has steel-colored hair cut square above the collar, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a mustard canvas overshirt. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Ariel touches a knuckle to the chin when searching for a word.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Ariel takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To learn the real tea preference before retirement.",
+  "family": "Ruth Eade is Ariel’s cousin’s child. Ariel brings something that can still be enjoyed tomorrow. Ruth checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The porch light*, Ruth says, “I described it as original hardware. When the owner started to cry I crossed the phrase out.”",
+  "connections": "Philip Moreau (successor). The retiring visitor and the new one share a round without expecting the new worker to inherit all the old preferences.",
+  "familyIds": [
+    "AH-R0082"
+  ],
+  "connectionIds": [
+    "AH-R1483"
+  ],
+  "reactions": [
+    {
+      "situation": "A client tells the retiring carer what they disliked",
+      "response": "Ariel lets the client finish the uncomfortable answer before proposing a fix.",
+      "asWritten": "A client tells the retiring carer what they disliked. Ariel lets the client finish the uncomfortable answer before proposing a fix."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Ariel finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Ariel finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Ariel asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Ariel asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

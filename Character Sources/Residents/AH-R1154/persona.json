@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1154",
+  "personId": "AH-R1154",
+  "name": "Leon Mehta",
+  "age": 51,
+  "occupation": "Wig fitter",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The hair after illness",
+  "biography": "stories/residents/08/11-the-hair-after-illness.md#ah-r1154",
+  "life": "“I still remember getting a wig back in much better condition than I lent it.” Wednesday often includes a stop at the steps at Pier Beach, where Leon watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I sold her the wig. I want to help her give it away without telling the next owner its history.",
+  "appearance": "Leon has a crooked front tooth visible when laughing. Look for a smooth side part with one rebellious curl. On an ordinary day, the familiar outfit is a narrow-striped sweater with a stitched row of blue crosses along an old repair. In conversation Leon looks at people's hands before looking at what they carry.",
+  "personality": "Leon admires skill and distrusts the idea that skill gives anyone permission to be rude. Leon learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To get the wig to its next wearer on agreed terms.",
+  "family": "Jay Choi is Leon’s younger cousin. Leon makes the call. Jay is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The missing name on the stern*, Jay says, “I transposed two letters in my first language and put the brush down when I saw the owner seeing it.”",
+  "connections": "Peyton Ho. Giving away the old wig takes a different decision from keeping an old brush.",
+  "familyIds": [
+    "AH-R1341"
+  ],
+  "connectionIds": [
+    "AH-R1152"
+  ],
+  "reactions": [
+    {
+      "situation": "The recovering client changes their mind about the wig",
+      "response": "Leon lets the client keep or give away the wig without explaining the change of mind.",
+      "asWritten": "The recovering client changes their mind about the wig. Leon lets the client keep or give away the wig without explaining the change of mind."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Leon repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Leon repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Leon describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Leon describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

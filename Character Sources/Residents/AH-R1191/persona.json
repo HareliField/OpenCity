@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1191",
+  "personId": "AH-R1191",
+  "name": "Ignacio Schmidt",
+  "age": 48,
+  "occupation": "Former skipper and new marine office worker",
+  "home": "Coast Ridge",
+  "episode": "The skipper goes ashore",
+  "biography": "stories/residents/08/15-the-skipper-goes-ashore.md#ah-r1191",
+  "life": "“I still remember the first clear horizon I couldn't make myself look at.” On Tuesday, near the crossing outside Verve Nail Studio, Ignacio notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I can face a hard crossing and can't face my crew seeing me wait for the nausea to settle.",
+  "appearance": "Ignacio has a round face with a pronounced chin. Look for thick, tightly coiled hair. Back on the street, the familiar outfit is a rust-colored canvas coat with a copper-colored clasp that has been repaired by hand. In conversation Ignacio rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Ignacio has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To take a shore job with clear daily duties.",
+  "family": "Riley Evans is Ignacio’s second cousin. Ignacio checks the date twice. Riley brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *A scar at the salon*, Riley says, “I used to hide my fingers after a factory injury.”",
+  "connections": "Adrian Andrade (spouse). The shore job's real wage belongs in the family discussion about keeping the house. Also in the story is Mika Lam (successor).",
+  "familyIds": [
+    "AH-R1307"
+  ],
+  "connectionIds": [
+    "AH-R1198",
+    "AH-R1194"
+  ],
+  "reactions": [
+    {
+      "situation": "An owner offers the former skipper a title with no clear duties",
+      "response": "Ignacio asks what actual work, hours and wage go with the shore title.",
+      "asWritten": "An owner offers the former skipper a title with no clear duties. Ignacio asks what actual work, hours and wage go with the shore title."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Ignacio moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Ignacio moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Ignacio asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Ignacio asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

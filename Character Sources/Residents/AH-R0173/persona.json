@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0173",
+  "personId": "AH-R0173",
+  "name": "Emery Gordon",
+  "age": 59,
+  "occupation": "Theater sign painter",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The sandwich board",
+  "biography": "stories/residents/02/03-the-sandwich-board.md#ah-r0173",
+  "life": "“My wife and I painted theater flats in a room too narrow to lay them down.” People around the public end of the South Shore boardwalk know Emery by a small Wednesday habit. Emery checks the shade on the benches before deciding how long to stay.",
+  "voice": "I bid because there is a second menu under the first. My wife painted it on our honeymoon.",
+  "appearance": "Emery has fine brows over wide-set eyes. Look for a neat white crop. On an ordinary day, the familiar outfit is a rust-colored canvas coat with a comb in a sleeve sewn into the lining. In conversation Emery squares up pieces of paper while thinking.",
+  "personality": "Emery has a quick wit and an equally quick sense of shame. A joke is often Emery's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To recover the older painted menu without damaging the top one.",
+  "family": "Lucia Byrd is Emery’s younger cousin. Emery leaves the first voice message. Lucia calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A room above the dryers*, Lucia says, “I am the worker's partner. I can give up the kitchen table for art but I cannot give up part of the rent for a studio.”",
+  "connections": "Levi Lucas. They document the hidden menu and credit the original chalk writing.",
+  "familyIds": [
+    "AH-R1204"
+  ],
+  "connectionIds": [
+    "AH-R0176"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer offers to erase the board and repaint it",
+      "response": "Emery asks the former owner to record the board before the paint is changed.",
+      "asWritten": "A buyer offers to erase the board and repaint it. Emery asks the former owner to record the board before the paint is changed."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Emery stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Emery stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Emery seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Emery seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

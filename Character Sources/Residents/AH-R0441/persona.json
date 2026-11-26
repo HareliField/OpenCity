@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0441",
+  "personId": "AH-R0441",
+  "name": "Lorenzo Mack",
+  "age": 52,
+  "occupation": "Dock timekeeper",
+  "home": "Eastside",
+  "episode": "The tide clock",
+  "biography": "stories/residents/03/15-the-tide-clock.md#ah-r0441",
+  "life": "“I still remember guessing the tide by the height of a painted boot.” On Sunday, near the steps at Pier Beach, Lorenzo watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I set that clock by a rock my father could see from the gate. The rock moved in last winter's storm.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and a pair of reading glasses in a cloth sleeve. Lorenzo has a flat bridge to the nose and a mobile brow, with a loose dark braid. Lorenzo touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Lorenzo listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To reset the clock from a fixed harbor reference.",
+  "family": "Alvin Jeong is Lorenzo’s younger relative by marriage. Lorenzo calls about good news first. Alvin is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *One last dress rehearsal*, Alvin says, “I used to think my mother was choosing work over me.”",
+  "connections": "Victor Anders (new marina worker). The tide setter shows the worker exactly what time the wall never promised.",
+  "familyIds": [
+    "AH-R1471"
+  ],
+  "connectionIds": [
+    "AH-R0443"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor blames the new hire for missing the time",
+      "response": "Lorenzo checks which dial the worker saw before accepting a lateness entry.",
+      "asWritten": "A supervisor blames the new hire for missing the time. Lorenzo checks which dial the worker saw before accepting a lateness entry."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Lorenzo asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Lorenzo asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Lorenzo keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Lorenzo keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

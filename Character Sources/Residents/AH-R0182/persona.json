@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0182",
+  "personId": "AH-R0182",
+  "name": "Olive Kapoor",
+  "age": 46,
+  "occupation": "Family carer",
+  "home": "Coast Ridge",
+  "episode": "The second dog",
+  "biography": "stories/residents/02/04-the-second-dog.md#ah-r0182",
+  "life": "“Whistling was the only thing that reliably cut through Dad's bad hearing days.” People around Harbour Bakery know Olive by a small Sunday habit. Olive buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I trained that whistle to get my father indoors before dark. Now a dog comes too.",
+  "appearance": "Olive has a center part and straight chestnut hair, a small notch in the left eyebrow, and a favorite piece of clothing, a boxy denim jacket. It usually goes with one loose pocket corner secured with green thread. When somebody else has the floor, Olive touches a knuckle to the chin when searching for a word.",
+  "personality": "Olive loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To keep the whistle useful for a parent who wanders.",
+  "family": "Rae Montoya is Olive’s younger cousin. Olive keeps the photographs. Rae knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The school photograph that travels*, Rae says, “I was the child who made her life miserable.”",
+  "connections": "Lydia Lai. They put two records beside the two responses to a single whistle.",
+  "familyIds": [
+    "AH-R1327"
+  ],
+  "connectionIds": [
+    "AH-R0186"
+  ],
+  "reactions": [
+    {
+      "situation": "A parent wants both dogs handed over immediately",
+      "response": "Olive waits until the dogs and the children are settled before discussing the handover.",
+      "asWritten": "A parent wants both dogs handed over immediately. Olive waits until the dogs and the children are settled before discussing the handover."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Olive tells the first helper what they actually saw and makes room for the rider to answer for themself.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Olive tells the first helper what they actually saw and makes room for the rider to answer for themself."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Olive offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Olive offers one about their own embarrassment instead."
+    }
+  ]
+}

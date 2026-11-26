@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1178",
+  "personId": "AH-R1178",
+  "name": "Agnes Colón",
+  "age": 43,
+  "occupation": "Audio engineer",
+  "home": "the blocks north of the port",
+  "episode": "The understudy sings",
+  "biography": "stories/residents/08/13-the-understudy-sings.md#ah-r1178",
+  "life": "“I still remember adjusting a monitor for a singer with one doubtful ear.” On Tuesday, near the steps at Pier Beach, Agnes watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I tuned the monitors lower for the lead and accidentally made the understudy sound wonderful too.",
+  "appearance": "On an ordinary day, look for a moss-green cardigan and a stitched row of blue crosses along an old repair. Agnes has a strong profile and a little space between the front teeth, with short black hair swept back. Agnes squares up pieces of paper while thinking during a conversation.",
+  "personality": "Agnes is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To set a monitor level both singers can use.",
+  "family": "Robin Atwood is Agnes’s second cousin. Agnes chooses the familiar route. Robin can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *A room above the dryers*, Robin says, “I failed my art course for never finishing a portrait.”",
+  "connections": "Gareth Jiang. A caption worker and monitor technician help two performers share the same rehearsal.",
+  "familyIds": [
+    "AH-R1207"
+  ],
+  "connectionIds": [
+    "AH-R1174"
+  ],
+  "reactions": [
+    {
+      "situation": "The original singer asks to choose a seat in the audience",
+      "response": "Agnes lets the singer choose a seat without alerting the whole audience.",
+      "asWritten": "The original singer asks to choose a seat in the audience. Agnes lets the singer choose a seat without alerting the whole audience."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Agnes finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Agnes finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Agnes thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Agnes thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

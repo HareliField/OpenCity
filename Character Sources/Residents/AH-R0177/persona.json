@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0177",
+  "personId": "AH-R0177",
+  "name": "Lena Roth",
+  "age": 51,
+  "occupation": "Business adviser",
+  "home": "the western residential streets",
+  "episode": "The sandwich board",
+  "biography": "stories/residents/02/03-the-sandwich-board.md#ah-r0177",
+  "life": "“I started advising owners after failing at selling curtains myself.” On Saturday, near the crossing outside Verve Nail Studio, Lena notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I promised the owner her business would survive. I want to return at least one thing I promised.",
+  "appearance": "Lena has heavy brows and an unusually delicate jaw. Look for a swept fringe and a closely clipped nape. On an ordinary day, the familiar outfit is a cream pullover with a cloth patch so neatly matched it only shows in strong light. In conversation Lena raises one eyebrow long before saying yes.",
+  "personality": "Lena never tires of being shown how somebody makes a living. Lena can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To return one promised piece of the closed shop.",
+  "family": "Casey Hunter is Lena’s cousin. Lena remembers the birthdays. Casey asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A scar at the salon*, Casey says, “I am the fishing partner who was there that day.”",
+  "connections": "Rosemary Morris. They review exactly which business assets the auction swept up.",
+  "familyIds": [
+    "AH-R1303"
+  ],
+  "connectionIds": [
+    "AH-R0172"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer offers to erase the board and repaint it",
+      "response": "Lena asks the former owner to record the board before the paint is changed.",
+      "asWritten": "A buyer offers to erase the board and repaint it. Lena asks the former owner to record the board before the paint is changed."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Lena takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Lena takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Lena may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Lena may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

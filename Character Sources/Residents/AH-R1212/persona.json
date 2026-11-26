@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1212",
+  "personId": "AH-R1212",
+  "name": "Remy Macrae",
+  "age": 44,
+  "occupation": "Shift fitter",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The worker who couldn't read the joke",
+  "biography": "stories/residents/09/02-the-worker-who-couldn-t-read-the-joke.md#ah-r1212",
+  "life": "“I still remember a trainee asking me why my jokes always needed a victim.” Monday often includes a stop at Paper & Pine Books, where Remy starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I wrote the joke before I knew who would be on shift. I have to answer to a person I usually only nod at.",
+  "appearance": "Remy has fine brows over wide-set eyes. Look for a long plait tucked inside the collar. On an ordinary day, the familiar outfit is a rust-colored canvas coat with a braided bracelet with a single wooden bead. In conversation Remy listens with the head tilted a little to the left.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To account for the words with the pictured worker present.",
+  "family": "Victoria Drew is Remy’s half-sibling. Remy can always ask for five minutes alone. Victoria asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The boy on the corner*, Victoria says, “I am the cousin with steady wages who went missing first.”",
+  "connections": "Yasmin Mason. The writer and the silent bystander each owe a different conversation to the person in the picture.",
+  "familyIds": [
+    "AH-R1099"
+  ],
+  "connectionIds": [
+    "AH-R1218"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative forwards the break-room picture",
+      "response": "Remy asks that the picture stop traveling while the worker decides what to say.",
+      "asWritten": "A relative forwards the break-room picture. Remy asks that the picture stop traveling while the worker decides what to say."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Remy writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Remy writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Remy listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Remy listens first to the account of how it was actually used."
+    }
+  ]
+}

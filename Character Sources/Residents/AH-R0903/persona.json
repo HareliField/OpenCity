@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0903",
+  "personId": "AH-R0903",
+  "name": "Terry Morse",
+  "age": 49,
+  "occupation": "Parent and lift attendant",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The uniform money",
+  "biography": "stories/residents/07/01-the-uniform-money.md#ah-r0903",
+  "life": "“I still remember a teacher mistaking a faded skirt for the wrong color.” On Saturday, near the brick passage off the shop row, Terry takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I thought my daughter was being vain about the right shade of skirt until I remembered my first day here.",
+  "appearance": "Terry has a heart-shaped face and prominent ears. Look for short, uneven waves that refuse to lie flat. On an ordinary day, the familiar outfit is a faded indigo overshirt with one loose pocket corner secured with green thread. In conversation Terry raises one eyebrow long before saying yes.",
+  "personality": "Terry can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To let the daughter choose which uniform fixes matter.",
+  "family": "Drew Milo is Terry’s second cousin. Terry brings something that can still be enjoyed tomorrow. Drew checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The thirteenth doughnut*, Drew says, “I got the first free one and ate it sitting on the loading step.”",
+  "connections": "Dale Valdez. A concerned parent can meet a teacher wearing the same ordinary clothes as a pupil.",
+  "familyIds": [
+    "AH-R0093"
+  ],
+  "connectionIds": [
+    "AH-R0910"
+  ],
+  "reactions": [
+    {
+      "situation": "A student turns up in the wrong uniform",
+      "response": "Terry gets the child through the gate before discussing the uniform with an adult.",
+      "asWritten": "A student turns up in the wrong uniform. Terry gets the child through the gate before discussing the uniform with an adult."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Terry asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Terry asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Terry asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Terry asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1328",
+  "personId": "AH-R1328",
+  "name": "Benjamin Sun",
+  "age": 39,
+  "occupation": "Swimming coach",
+  "home": "Old Town",
+  "episode": "The school photograph that travels",
+  "biography": "stories/residents/09/13-the-school-photograph-that-travels.md#ah-r1328",
+  "life": "“I still remember recognizing a former pupil by their perfect dive.” On Friday, near the window at Night Shift Donuts, Benjamin knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I taught her to swim at Pier Beach. I didn't recognize the quiet uniformed girl with her hair dry.",
+  "appearance": "Benjamin has fine brows over wide-set eyes. Look for a swept fringe and a closely clipped nape. On an ordinary day, the familiar outfit is a faded indigo overshirt with a little coil of soft measuring tape. In conversation Benjamin draws breath as if to speak and lets someone else go first.",
+  "personality": "Benjamin loves a well-told anecdote and distrusts the neat ending. The parts Benjamin remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To visit the former pupil before departure.",
+  "family": "Jamie Calloway is Benjamin’s older cousin. Benjamin can always ask for five minutes alone. Jamie asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The sheltered corner*, Jamie says, “Our porch got quieter. I miss knowing school is out by the sudden noise.”",
+  "connections": "Drew Ferraro. Wet hair and a school blazer remind two helpers how differently they have known the same child.",
+  "familyIds": [
+    "AH-R0266"
+  ],
+  "connectionIds": [
+    "AH-R1326"
+  ],
+  "reactions": [
+    {
+      "situation": "A recipient wants to say thanks without being pictured",
+      "response": "Benjamin offers a written reply or an ordinary visit without requiring a photograph in return.",
+      "asWritten": "A recipient wants to say thanks without being pictured. Benjamin offers a written reply or an ordinary visit without requiring a photograph in return."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Benjamin offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Benjamin offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Benjamin includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Benjamin includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

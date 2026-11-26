@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1441",
+  "personId": "AH-R1441",
+  "name": "Ren Ruiz",
+  "age": 46,
+  "occupation": "Bakery supervisor",
+  "home": "Midtown",
+  "episode": "The kitchen without a boss",
+  "biography": "stories/residents/10/10-the-kitchen-without-a-boss.md#ah-r1441",
+  "life": "“I still remember answering the first bakery call in my pajamas.” People around the bank steps know Ren by a small Wednesday habit. Ren takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I have wanted this job for years. I learned on day two that the deliveries call before the children wake.",
+  "appearance": "Away from the heat of the kitchen, look for a red windbreaker and a watch on a cracked leather band. Ren has one cheek that creases before the other, with short copper curls. Ren folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Ren treats a small promise with the gravity others reserve for a contract. This makes Ren lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To run the month without losing early family commitments.",
+  "family": "Jasmine Moreau is Ren’s second cousin. Ren chooses whether to use it. Jasmine saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The school photograph that travels*, Jasmine says, “I am the cleaner who opened the library early.”",
+  "connections": "Selena Lin (bakery owner). A worker who wanted responsibility gets a whole month in which the owner has to let the decisions stand.",
+  "familyIds": [
+    "AH-R1322"
+  ],
+  "connectionIds": [
+    "AH-R1445"
+  ],
+  "reactions": [
+    {
+      "situation": "The absent owner calls to ask which pastry burned",
+      "response": "Ren gives the owner a truthful account without handing back all three workers' decisions.",
+      "asWritten": "The absent owner calls to ask which pastry burned. Ren gives the owner a truthful account without handing back all three workers' decisions."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Ren offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Ren offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Ren says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Ren says what can be returned and asks whether that will do."
+    }
+  ]
+}

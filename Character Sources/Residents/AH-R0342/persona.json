@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0342",
+  "personId": "AH-R0342",
+  "name": "Tariq Banks",
+  "age": 24,
+  "occupation": "Taxi trainee",
+  "home": "the western residential streets",
+  "episode": "Rent in a biscuit tin",
+  "biography": "stories/residents/03/05-rent-in-a-biscuit-tin.md#ah-r0342",
+  "life": "“I still remember three attempts at the same blind corner.” Wednesday often includes a stop at Maré Coffee, where Tariq likes the table where people coming off shift stop checking the time.",
+  "voice": "My envelope held money for driving lessons. I was too embarrassed to say I failed again.",
+  "appearance": "Tariq is easy to recognize by a cropped cut that shows the shape of the ears and fine brows over wide-set eyes. Usually dressed in a red windbreaker with a folded shopping list secured by a miniature clip, Tariq counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Tariq is fond of ambitious ideas and deeply suspicious of grand openings. The question Tariq asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To save for another honest attempt at the driving test.",
+  "family": "Daniel Morris is Tariq’s older relative by marriage. Tariq keeps the photographs. Daniel knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The soft wharf chalk*, Daniel says, “I was supposed to wash the underside. My wrists gave out halfway through and spared the words.”",
+  "connections": "Gareth Yeo. The envelope for driving lessons goes into the count only with its owner's permission.",
+  "familyIds": [
+    "AH-R0466"
+  ],
+  "connectionIds": [
+    "AH-R0345"
+  ],
+  "reactions": [
+    {
+      "situation": "A family asks to come back later without explanation",
+      "response": "Tariq arranges a second visit without repeating the family's explanation.",
+      "asWritten": "A family asks to come back later without explanation. Tariq arranges a second visit without repeating the family's explanation."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Tariq suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Tariq suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Tariq accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Tariq accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

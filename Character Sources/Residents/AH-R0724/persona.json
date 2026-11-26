@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0724",
+  "personId": "AH-R0724",
+  "name": "Logan Hill",
+  "age": 41,
+  "occupation": "Night courier",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The fountain score",
+  "biography": "stories/residents/05/13-the-fountain-score.md#ah-r0724",
+  "life": "“I still remember hearing my voice break in the school hall.” On Sunday, near the brick passage off the shop row, Logan takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I was asked to hum. I haven't sung in public since my voice changed and nobody let me forget it.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a small enamel bird on the lapel. Logan has a flat bridge to the nose and a mobile brow, with a high puff tied with plain cord. Logan starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Logan can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Logan can afford to give, and family knows to take it seriously.",
+  "agenda": "To hum a whole line in public.",
+  "family": "Magdalena Zhang is Logan’s cousin. Logan asks before bringing somebody along. Magdalena can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A clean coat for court*, Magdalena says, “I want the coat returned unwashed because the lender's old dog knows its smell.”",
+  "connections": "Una Kapoor. The teacher adapting the piece inland hears a singer find a voice for the first time.",
+  "familyIds": [
+    "AH-R1250"
+  ],
+  "connectionIds": [
+    "AH-R0730"
+  ],
+  "reactions": [
+    {
+      "situation": "The student asks the least confident player to start",
+      "response": "Logan gives the player a clear first beat and permission to pass the opening on.",
+      "asWritten": "The student asks the least confident player to start. Logan gives the player a clear first beat and permission to pass the opening on."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Logan brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Logan brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Logan suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Logan suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

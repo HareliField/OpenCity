@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0823",
+  "personId": "AH-R0823",
+  "name": "Javier Rahman",
+  "age": 49,
+  "occupation": "Licensed ice cart vendor",
+  "home": "the western residential streets",
+  "episode": "Summer staff",
+  "biography": "stories/residents/06/08-summer-staff.md#ah-r0823",
+  "life": "“I still remember buying a cart whose canopy came down when it rained.” On Saturday, near the foot of Harbor Viaduct, Javier pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I sold my van to afford the cart permit. I'm asking the council whether the permit can follow me inland.",
+  "appearance": "Javier has dark brown curls cut close behind the ears, a narrow face with an expressive upper lip, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a pair of reading glasses in a cloth sleeve. When somebody else has the floor, Javier draws small circles on a tabletop while waiting.",
+  "personality": "Javier loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To transfer the cart permit to a working site.",
+  "family": "Alice Brooks is Javier’s first cousin once removed. Javier brings something that can still be enjoyed tomorrow. Alice checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The housecoat commission*, Alice says, “I painted her nails to match before the cloth came.”",
+  "connections": "Clement Laurent. The cart permit and the public showers are the two usable things that may outlast the season.",
+  "familyIds": [
+    "AH-R0435"
+  ],
+  "connectionIds": [
+    "AH-R0826"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor demands a refund after the season ends early",
+      "response": "Javier checks the actual dates printed on the booking before discussing its refund.",
+      "asWritten": "A visitor demands a refund after the season ends early. Javier checks the actual dates printed on the booking before discussing its refund."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Javier agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Javier agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Javier offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Javier offers one about their own embarrassment instead."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1165",
+  "personId": "AH-R1165",
+  "name": "Pablo Armas",
+  "age": 40,
+  "occupation": "Cab owner-driver",
+  "home": "Midtown",
+  "episode": "The high road home",
+  "biography": "stories/residents/08/12-the-high-road-home.md#ah-r1165",
+  "life": "“I still remember counting the change after my first driving lesson.” On Saturday, near Maré Coffee, Pablo likes the table where people coming off shift stop checking the time.",
+  "voice": "I offer rides for cash. Free practice sounds nice until I remember how much it cost me to learn.",
+  "appearance": "Pablo is easy to recognize by a loose dark braid and a long face and high cheekbones. Usually dressed in a black overshirt with pearl buttons with a pen clipped inside the neckline, Pablo turns fully toward the person speaking when listening.",
+  "personality": "Pablo is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Pablo is concerned.",
+  "agenda": "To get learning costs out in the open.",
+  "family": "Basil Guzman is Pablo’s cousin raised in the same household. Pablo chooses the music. Basil puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Money after marriage*, Basil says, “I want to buy the delivery side with the drivers.”",
+  "connections": "Lee Ochoa. The taxi owner's fuel bill makes a useful comparison with the optional bakery run.",
+  "familyIds": [
+    "AH-R0775"
+  ],
+  "connectionIds": [
+    "AH-R1168"
+  ],
+  "reactions": [
+    {
+      "situation": "The learner turns back before the crest",
+      "response": "Pablo treats turning back as a completed decision and finds somewhere calm to stop.",
+      "asWritten": "The learner turns back before the crest. Pablo treats turning back as a completed decision and finds somewhere calm to stop."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Pablo offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Pablo offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Pablo asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Pablo asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

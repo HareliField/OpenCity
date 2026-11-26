@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1258",
+  "personId": "AH-R1258",
+  "name": "Jay Arendt",
+  "age": 49,
+  "occupation": "Hospital interpreter",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A doctor moves away",
+  "biography": "stories/residents/09/06-a-doctor-moves-away.md#ah-r1258",
+  "life": "“I still remember interpreting a consultation that needed almost no words.” Monday often includes a stop at Breakwater Way, where Jay stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I translated her visits for sixteen years. We know each other's pauses better than some married people.",
+  "appearance": "Jay has brown hair pinned away from the temples, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, an olive canvas jacket. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Jay touches a knuckle to the chin when searching for a word.",
+  "personality": "Jay enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To record the useful translation handovers.",
+  "family": "Rami Bose is Jay’s second cousin. Jay chooses whether to use it. Rami saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The borrowed bass*, Rami says, “I know the old owner's favorite tune. I wrote the bass line on a grocery bag so these kids can play it when he walks into the park.”",
+  "connections": "Marin Lim. Precise criticism and careful interpreting both make for better handover notes than indiscriminate praise.",
+  "familyIds": [
+    "AH-R0130"
+  ],
+  "connectionIds": [
+    "AH-R1256"
+  ],
+  "reactions": [
+    {
+      "situation": "The incoming doctor is compared with the old one",
+      "response": "Jay gives the new doctor a chance to speak before retelling the old doctor's habits.",
+      "asWritten": "The incoming doctor is compared with the old one. Jay gives the new doctor a chance to speak before retelling the old doctor's habits."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Jay tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Jay tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Jay puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Jay puts the deal away and suggests a walk."
+    }
+  ]
+}

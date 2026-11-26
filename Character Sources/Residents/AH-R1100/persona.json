@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1100",
+  "personId": "AH-R1100",
+  "name": "Clyde Starr",
+  "age": 35,
+  "occupation": "Costume dresser",
+  "home": "Coast Ridge",
+  "episode": "The boy on the corner",
+  "biography": "stories/residents/08/05-the-boy-on-the-corner.md#ah-r1100",
+  "life": "“I still remember a child picking the least showy costume in the box.” Sunday often includes a stop at the corner outside Coastal Barber, where Clyde usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I bought the child a costume for the school play. He wants his brother in the audience more than he wants a crown.",
+  "appearance": "Clyde is easy to recognize by a swept fringe and a closely clipped nape and a softly rounded chin under sharp cheekbones. Usually dressed in a mustard canvas overshirt with a folded shopping list secured by a miniature clip, Clyde rubs a thumb along the edge of the nearest pocket when listening.",
+  "personality": "Clyde has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To get the older brother into the audience.",
+  "family": "Vincent Albright is Clyde’s older relative by marriage. Clyde makes room at the table. Vincent brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The other side of the cove*, Vincent says, “I object to putting people's names on benches.”",
+  "connections": "Jody Dunn. A school play gives another dealer a concrete reason to cover for a brother who needs to attend.",
+  "familyIds": [
+    "AH-R1276"
+  ],
+  "connectionIds": [
+    "AH-R1096"
+  ],
+  "reactions": [
+    {
+      "situation": "His younger brother asks what he delivers for a living",
+      "response": "Clyde lets the older brother choose honest words the younger boy can understand.",
+      "asWritten": "His younger brother asks what he delivers for a living. Clyde lets the older brother choose honest words the younger boy can understand."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Clyde offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Clyde offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Clyde says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Clyde says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

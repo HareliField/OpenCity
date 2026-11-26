@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0136",
+  "personId": "AH-R0136",
+  "name": "Amin Bach",
+  "age": 31,
+  "occupation": "Dietary assistant",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Two portions",
+  "biography": "stories/residents/01/14-two-portions.md#ah-r0136",
+  "life": "Amin can recognize an allergy-safe tray at twenty paces. He is trying to get equally good at recognizing all the little tastes that make a person something more than an allergy on a card. On Monday, near the market by Market Flats, Amin often waits until the delivery baskets are stacked before going in.",
+  "voice": "The carer likes spice and the tenant doesn't. I packed one little paper twist of pepper. Now three addresses are asking who gets to decide what tastes like home.",
+  "appearance": "Amin has a wide brow and a narrow jaw. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a pale blue work shirt with a pair of reading glasses in a cloth sleeve. In conversation Amin gives a little nod before asking a hard question.",
+  "personality": "Amin uses precise names for tools and very approximate names for feelings. People who know Amin well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To pack seasoning so two diners can choose differently.",
+  "family": "Ben Ortiz is Amin’s second cousin. Amin chooses an ordinary story to tell. Ben asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The Saturday swap*, Ben says, “I have a language exam that morning. I studied for it in the parked car because the house thinks I'm fluent already.”",
+  "connections": "Sybil Rey. The cost of a twist of pepper is the auditor's smallest example of the difference between meals and people.",
+  "familyIds": [
+    "AH-R0783"
+  ],
+  "connectionIds": [
+    "AH-R0139"
+  ],
+  "reactions": [
+    {
+      "situation": "The diner asks to have company without being asked about care",
+      "response": "Amin lets the diner start an ordinary conversation and leaves the care questions for another time.",
+      "asWritten": "The diner asks to have company without being asked about care. Amin lets the diner start an ordinary conversation and leaves the care questions for another time."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Amin asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Amin asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Amin brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Amin brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

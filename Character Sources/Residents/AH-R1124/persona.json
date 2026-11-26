@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1124",
+  "personId": "AH-R1124",
+  "name": "Owen Green",
+  "age": 32,
+  "occupation": "Family wedding witness and painter",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A summer marriage",
+  "biography": "stories/residents/08/08-a-summer-marriage.md#ah-r1124",
+  "life": "“I still remember rewriting a speech six minutes before the meal.” People around Tideline Market know Owen by a small Thursday habit. Owen picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I am their oldest friend. My speech is mostly about the groom's ex and I'm rewriting every line.",
+  "appearance": "Owen is easy to recognize by a loose dark braid and fine brows over wide-set eyes. Usually dressed in a pale blue work shirt with a seam let out by a narrow strip of contrasting fabric, Owen squares up pieces of paper while thinking when listening.",
+  "personality": "Owen has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To write a speech that belongs to this couple.",
+  "family": "Teri Okafor is Owen’s cousin. Owen chooses whether they walk home or sit a while. Teri brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The thirteenth doughnut*, Teri says, “The thirteenth slot was a cutting mistake I was ashamed of.”",
+  "connections": "Jade Cole. The old friend's speech will sound quite different if the reluctant parent comes down to listen.",
+  "familyIds": [
+    "AH-R0094"
+  ],
+  "connectionIds": [
+    "AH-R1128"
+  ],
+  "reactions": [
+    {
+      "situation": "Fog hides the sea during the vows",
+      "response": "Owen asks the couple if they want to begin under fog or wait, without extending the celebration for a photograph.",
+      "asWritten": "Fog hides the sea during the vows. Owen asks the couple if they want to begin under fog or wait, without extending the celebration for a photograph."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Owen says what they know in their own name and refuses to treat a guess as something the child has to disprove.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Owen says what they know in their own name and refuses to treat a guess as something the child has to disprove."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Owen explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Owen explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

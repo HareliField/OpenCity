@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0536",
+  "personId": "AH-R0536",
+  "name": "Ruben Choi",
+  "age": 47,
+  "occupation": "Toy maker",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The porch auction",
+  "biography": "stories/residents/04/09-the-porch-auction.md#ah-r0536",
+  "life": "“I still remember building doll chairs from an old school desk.” Saturday often includes a stop at the market by Market Flats, where Ruben often waits until the delivery baskets are stacked before going in.",
+  "voice": "I wanted the wood for toys. The owner asked me to make one chair small enough for her new kitchen.",
+  "appearance": "On an ordinary day, look for a cream pullover and a train token tied to a zipper pull. Ruben has an aquiline nose and a square chin, with black hair twisted into a small knot. Ruben listens with the head tilted a little to the left during a conversation.",
+  "personality": "Ruben is fond of ambitious ideas and deeply suspicious of grand openings. The question Ruben asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To build one small kitchen chair from the old stock.",
+  "family": "Grey Clement is Ruben’s half-sibling. Ruben makes the call. Grey is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Winter afloat*, Grey says, “I found an old lease with a shore room included.”",
+  "connections": "Talia Bloom. A childhood repair and a new small chair make different use of the same rung. Also in the story is Logan Walker (cushion restorer).",
+  "familyIds": [
+    "AH-R0897"
+  ],
+  "connectionIds": [
+    "AH-R0532",
+    "AH-R0538"
+  ],
+  "reactions": [
+    {
+      "situation": "A repair reveals a family name under the cushion",
+      "response": "Ruben invites the family to see the full name before the repair is closed.",
+      "asWritten": "A repair reveals a family name under the cushion. Ruben invites the family to see the full name before the repair is closed."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Ruben offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Ruben offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Ruben accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Ruben accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

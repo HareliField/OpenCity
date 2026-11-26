@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0925",
+  "personId": "AH-R0925",
+  "name": "Carol Reed",
+  "age": 61,
+  "occupation": "Pension trustee",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A widow bids again",
+  "biography": "stories/residents/07/03-a-widow-bids-again.md#ah-r0925",
+  "life": "“I still remember my husband counting pension money on a school desk.” Saturday often includes a stop at Paper & Pine Books, where Carol starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I can put my pension into the joint offer. My husband says choosing the city over our kids needs both our signatures.",
+  "appearance": "On an ordinary day, look for a cropped bottle-green coat and one cuff folded back twice. Carol has an aquiline nose and a square chin, with salt-and-pepper curls. Carol draws breath as if to speak and lets someone else go first during a conversation.",
+  "personality": "Carol finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To decide the pension contribution together at home.",
+  "family": "Jacqueline Ueda is Carol’s younger cousin. Carol chooses whether they walk home or sit a while. Jacqueline brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *A boat for sale twice*, Jacqueline says, “I put in an offer and withdrew it when my son said he gets seasick every trip.”",
+  "connections": "Wynn Montoya. A family pension offer and a deliberately low bid test how seriously small investors are taken.",
+  "familyIds": [
+    "AH-R0745"
+  ],
+  "connectionIds": [
+    "AH-R0930"
+  ],
+  "reactions": [
+    {
+      "situation": "The millionaire bidder offers a private deal",
+      "response": "Carol gets the offer written down where the tenant group can consider it.",
+      "asWritten": "The millionaire bidder offers a private deal. Carol gets the offer written down where the tenant group can consider it."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Carol brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Carol brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Carol points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Carol points to the person who noticed the original mistake."
+    }
+  ]
+}

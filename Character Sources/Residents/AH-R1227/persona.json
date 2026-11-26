@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1227",
+  "personId": "AH-R1227",
+  "name": "Grey Iyer",
+  "age": 49,
+  "occupation": "Retirement adviser",
+  "home": "Coast Ridge",
+  "episode": "The million-dollar flat",
+  "biography": "stories/residents/09/03-the-million-dollar-flat.md#ah-r1227",
+  "life": "“I still remember asking a pensioner how far they walk for bread before discussing investment.” On Friday, near Studio Boulevard, Grey waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I offered an annuity and lost her attention when I couldn't tell her where she might live at ninety.",
+  "appearance": "Grey has short, uneven waves that refuse to lie flat, a heart-shaped face and prominent ears, and a favorite piece of clothing, a washed violet jersey. It usually goes with a little coil of soft measuring tape. When somebody else has the floor, Grey looks toward the door whenever a name is called.",
+  "personality": "Grey enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To show the owner where the proposed income would buy a home.",
+  "family": "Lily Lucas is Grey’s older cousin. Grey brings whatever was actually growing or affordable that week. Lily makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The absent signature*, Lily says, “I can sign only for myself now. Age has made everybody suddenly eager to speak on my behalf.”",
+  "connections": "Elias Lau. A resident with a large mortgage can ask the adviser difficult questions about paper wealth.",
+  "familyIds": [
+    "AH-R0918"
+  ],
+  "connectionIds": [
+    "AH-R1225"
+  ],
+  "reactions": [
+    {
+      "situation": "The homeowner is asked to sell while the market is high",
+      "response": "Grey checks which affordable addresses leave the sister within visiting distance.",
+      "asWritten": "The homeowner is asked to sell while the market is high. Grey checks which affordable addresses leave the sister within visiting distance."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Grey moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Grey moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Grey puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Grey puts the deal away and suggests a walk."
+    }
+  ]
+}

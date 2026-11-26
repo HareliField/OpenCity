@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0332",
+  "personId": "AH-R0332",
+  "name": "Jody Mehta",
+  "age": 37,
+  "occupation": "Optical repairer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The spare spectacles",
+  "biography": "stories/residents/03/04-the-spare-spectacles.md#ah-r0332",
+  "life": "“I still remember mending a pair of spectacles with fishing line.” On Tuesday, near the crossing outside Verve Nail Studio, Jody notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I know that bent temple. I repaired it for my former partner after we split up.",
+  "appearance": "On an ordinary day, look for a pale blue work shirt and a printed handkerchief folded into the pocket. Jody has an aquiline nose and a square chin, with a swept fringe and a closely clipped nape. Jody rubs a thumb along the edge of the nearest pocket during a conversation.",
+  "personality": "Jody enjoys routines and will defend the right of someone else to break one. As a result, Jody is often everyone's favorite cover for a missed morning.",
+  "agenda": "To identify the old repair without involving the former partner unnecessarily.",
+  "family": "Amanda Kerr is Jody’s half-sibling. Jody makes the call. Amanda is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The engine lullaby*, Amanda says, “I sang against the hum to steady my voice for an audition.”",
+  "connections": "Geraldine Quintero. The temple repair identifies the frame and the note in its case.",
+  "familyIds": [
+    "AH-R0594"
+  ],
+  "connectionIds": [
+    "AH-R0337"
+  ],
+  "reactions": [
+    {
+      "situation": "The counter is busy and another visitor starts to hurry the signing",
+      "response": "Jody puts a time on when the counter will be free again and protects the witness's time to read.",
+      "asWritten": "The counter is busy and another visitor starts to hurry the signing. Jody puts a time on when the counter will be free again and protects the witness's time to read."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Jody separates the money question from the broken promise and asks which one the family wants to discuss first.",
+      "asWritten": "A family supper turns into an argument about old debt. Jody separates the money question from the broken promise and asks which one the family wants to discuss first."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Jody keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Jody keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

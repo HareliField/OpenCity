@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0250",
+  "personId": "AH-R0250",
+  "name": "Freya King",
+  "age": 56,
+  "occupation": "Hotel night auditor",
+  "home": "Coast Ridge",
+  "episode": "The bitter orange",
+  "biography": "stories/residents/02/10-the-bitter-orange.md#ah-r0250",
+  "life": "“A night audit teaches you how many solitary meals get charged to double rooms.” People around the entrance to the Wash House know Freya by a small Monday habit. Freya stops for local notices even on a day without a load to wash.",
+  "voice": "I brought her son in expecting tears. He ordered something completely different and made everyone laugh.",
+  "appearance": "Freya has a round face with a pronounced chin. Look for thick, tightly coiled hair. On an ordinary day, the familiar outfit is a plum-colored cardigan with one cuff folded back twice. In conversation Freya starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Freya listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To make room at the remembrance lunch for a different order.",
+  "family": "Cassandra Collins is Freya’s younger cousin. Freya leaves the first voice message. Cassandra calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The gift nobody wants*, Cassandra says, “I am the daughter. Dad has offered me a valuable building with his office on the top floor.”",
+  "connections": "Hugo Barron. The son hears about a long-ago exam his mother asked after. Also in the story is Blake Baker (shop owner).",
+  "familyIds": [
+    "AH-R1372"
+  ],
+  "connectionIds": [
+    "AH-R0246",
+    "AH-R0245"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative hates the ingredient everyone remembers",
+      "response": "Freya lets the relative choose a different sandwich without defending the menu.",
+      "asWritten": "A relative hates the ingredient everyone remembers. Freya lets the relative choose a different sandwich without defending the menu."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Freya clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience.",
+      "asWritten": "A family supper turns into an argument about old debt. Freya clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Freya keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Freya keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0500",
+  "personId": "AH-R0500",
+  "name": "Dominic Alvarez",
+  "age": 64,
+  "occupation": "Retired legal secretary",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The dead man's tab",
+  "biography": "stories/residents/04/05-the-dead-man-s-tab.md#ah-r0500",
+  "life": "“I still remember noticing my late husband's old account had never been closed.” Friday often includes a stop at Breakwater Way, where Dominic stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I'm his old victim's sister. I offered to cover only the meals that went to people still alive.",
+  "appearance": "On an ordinary day, look for a rust-colored canvas coat and a tiny red thread tied through the lowest buttonhole. Dominic has a scattering of freckles across the bridge of the nose, with a neat white crop. Dominic presses the lips together to keep a smile in during a conversation.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Dominic takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To pay only for the meals still doing somebody good.",
+  "family": "Melle Juric is Dominic’s cousin’s child. Dominic calls back when there is finally a little privacy. Melle leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *An unfinished atlas*, Melle says, “My father remembers the coffee seller's face but loses names halfway through a sentence.”",
+  "connections": "Eli Brady. A real signature matters to both the former forger and the person making a limited repayment.",
+  "familyIds": [
+    "AH-R0068"
+  ],
+  "connectionIds": [
+    "AH-R0496"
+  ],
+  "reactions": [
+    {
+      "situation": "The deli is asked to publish the whole tab",
+      "response": "Dominic asks who owns the personal information on the tab before any of it leaves the counter.",
+      "asWritten": "The deli is asked to publish the whole tab. Dominic asks who owns the personal information on the tab before any of it leaves the counter."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Dominic tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Dominic tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Dominic asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Dominic asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

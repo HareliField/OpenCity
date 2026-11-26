@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0701",
+  "personId": "AH-R0701",
+  "name": "Percy Davila",
+  "age": 46,
+  "occupation": "Recently separated machinist",
+  "home": "Old Town",
+  "episode": "The free fringe",
+  "biography": "stories/residents/05/11-the-free-fringe.md#ah-r0701",
+  "life": "“I still remember getting my first trim after I moved into a rented room.” People around the public road outside the Port of Asphalt know Percy by a small Monday habit. Percy can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I used the free offer as an excuse to get out of my room after my husband left.",
+  "appearance": "Percy is easy to recognize by a center part and straight chestnut hair and a heart-shaped face and prominent ears. Usually dressed in a mustard canvas overshirt with a fabric zip pull cut from a school scarf, Percy holds eye contact until the other person has finished when listening.",
+  "personality": "Percy keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Percy wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To get a morning outside the empty room.",
+  "family": "Philip Meyer is Percy’s half-sibling. Percy brings a spare shopping bag. Philip chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *A summer marriage*, Philip says, “I offered to officiate because I could do the ceremony in both their languages.”",
+  "connections": "Chris Valdez (barber). A free fringe buys the customer and the barber a perfectly real conversation.",
+  "familyIds": [
+    "AH-R1122"
+  ],
+  "connectionIds": [
+    "AH-R0702"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer uses the free haircut to talk",
+      "response": "Percy lets the visitor say whether they would like a trim as well as a talk.",
+      "asWritten": "A customer uses the free haircut to talk. Percy lets the visitor say whether they would like a trim as well as a talk."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Percy offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Percy offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Percy offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Percy offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

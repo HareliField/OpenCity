@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0033",
+  "personId": "AH-R0033",
+  "name": "Opal Finch",
+  "age": 58,
+  "occupation": "School crossing guard",
+  "home": "Coast Ridge",
+  "episode": "The wrong bicycle",
+  "biography": "stories/residents/01/04-the-wrong-bicycle.md#ah-r0033",
+  "life": "Opal has watched two generations grow tall enough to cross alone. Little children tell her things adults are too busy to hear. She hopes her replacement will wait for the last syllable before lifting the stop sign. People around Maré Coffee know Opal by a small Friday habit. Opal likes the table where people coming off shift stop checking the time.",
+  "voice": "I recognized the child's bell by the second ring it never makes. When the officer handed it back I let the kid explain the fault. People have been speaking over her all term.",
+  "appearance": "Opal has a heart-shaped face and prominent ears. Look for thick, tightly coiled hair. On an ordinary day, the familiar outfit is a cropped bottle-green coat with a pressed flower kept in the clear back of a phone case. In conversation Opal presses the lips together to keep a smile in.",
+  "personality": "Opal loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To let the child demonstrate the broken bell herself.",
+  "family": "Devin Mills is Opal’s second cousin. Opal keeps the photographs. Devin knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *An old restaurant debt*, Devin says, “I sold the dead man's plates last month and finally had the money.”",
+  "connections": "Jude Wick. They trust the child's description after the bell and the spokes offer two independent ways to identify the bike.",
+  "familyIds": [
+    "AH-R0991"
+  ],
+  "connectionIds": [
+    "AH-R0035"
+  ],
+  "reactions": [
+    {
+      "situation": "A child's account contradicts the adult at the counter",
+      "response": "Opal lets the child finish describing the bicycle and asks to hear the bell.",
+      "asWritten": "A child's account contradicts the adult at the counter. Opal lets the child finish describing the bicycle and asks to hear the bell."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Opal asks which other bill repayment would displace, then offers only what the household can afford to give.",
+      "asWritten": "A friend asks for a loan due back before payday. Opal asks which other bill repayment would displace, then offers only what the household can afford to give."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Opal offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Opal offers one about their own embarrassment instead."
+    }
+  ]
+}

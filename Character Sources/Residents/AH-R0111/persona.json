@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0111",
+  "personId": "AH-R0111",
+  "name": "Saul Rosner",
+  "age": 73,
+  "occupation": "Retired cabdriver",
+  "home": "the blocks north of the port",
+  "episode": "The last green",
+  "biography": "stories/residents/01/12-the-last-green.md#ah-r0111",
+  "life": "Saul gave up taking fares on stormy evenings long before he gave up driving. His family interpreted each little concession as a promise of a larger one. This time he wants the decision remembered as his own. Wednesday often includes a stop at the public road outside the Port of Asphalt, where Saul can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I can name the color of each light with my eyes closed. My daughter says this is exactly the trouble. I want to be the one who hands the keys across.",
+  "appearance": "Saul has a scattering of freckles across the bridge of the nose. Look for tightly curled gray hair. On an ordinary day, the familiar outfit is an olive canvas jacket with a seam let out by a narrow strip of contrasting fabric. In conversation Saul squares up pieces of paper while thinking. Saul still wears the soft peaked cap that kept sunlight off the cab mirror.",
+  "personality": "Saul is kind in very practical ways and prickly about being thanked in public. Saul loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To decide where and when to hand the car keys across.",
+  "family": "Hamish Baxter is Saul’s younger cousin. Saul remembers the birthdays. Hamish asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A play in a pocket*, Hamish says, “I had ten lines. The listener cried after the first two and asked if we could wait.”",
+  "connections": "Pam Ravel (former driving pupil). They change places in the cab for a final ride over a route both know by smell.",
+  "familyIds": [
+    "AH-R0574"
+  ],
+  "connectionIds": [
+    "AH-R0115"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative asks to keep the driver's keys in secret",
+      "response": "Saul asks Saul when he wants to hand over the keys.",
+      "asWritten": "A relative asks to keep the driver's keys in secret. Saul asks Saul when he wants to hand over the keys."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Saul draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Saul draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Saul gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Saul gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0209",
+  "personId": "AH-R0209",
+  "name": "Casey Armas",
+  "age": 58,
+  "occupation": "Theater dresser",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A red mitten",
+  "biography": "stories/residents/02/06-a-red-mitten.md#ah-r0209",
+  "life": "“My first stage job was sewing two mittens into one enormous crab claw.” People around the entrance to the Wash House know Casey by a small Thursday habit. Casey stops for local notices even on a day without a load to wash.",
+  "voice": "My sister and I disagreed about the color. Our mother called it tomato and settled a thirty-year argument.",
+  "appearance": "Casey is easy to recognize by close-cropped dark curls and two dimples that appear only with a full smile. Usually dressed in a cropped bottle-green coat with a train token tied to a zipper pull, Casey takes off the watch before a long conversation when listening.",
+  "personality": "Casey often says yes too quickly out of pride in being useful. The people closest to Casey have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To agree on a family name for the shade of red.",
+  "family": "Remy Monroe is Casey’s half-sibling. Casey calls about good news first. Remy is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *One unposted detour*, Remy says, “I stood by the turn and gave directions in three languages.”",
+  "connections": "Aria Colón. They choose a time when returning to the chair will feel like an ordinary visit.",
+  "familyIds": [
+    "AH-R0414"
+  ],
+  "connectionIds": [
+    "AH-R0207"
+  ],
+  "reactions": [
+    {
+      "situation": "The waiting-room mitten is about to be thrown away",
+      "response": "Casey asks whether the other mitten is still being looked for.",
+      "asWritten": "The waiting-room mitten is about to be thrown away. Casey asks whether the other mitten is still being looked for."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Casey offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem.",
+      "asWritten": "A friend asks for a loan due back before payday. Casey offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Casey rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Casey rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0137",
+  "personId": "AH-R0137",
+  "name": "Jae Alder",
+  "age": 38,
+  "occupation": "School attendance clerk",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Two portions",
+  "biography": "stories/residents/01/14-two-portions.md#ah-r0137",
+  "life": "Jae's school records say mother absent beside almost every parents' night she remembers. She saw her mother in three homes doing indispensable work on each of those evenings. That still determines which phone calls she makes first. On Friday, near the corner outside Coastal Barber, Jae usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "My mother missed parents' nights because she was doing this kind of care. I'm holding the next one over two evenings so carers can swap. I need one family to test the arrangement.",
+  "appearance": "Jae has a center part and straight chestnut hair, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a long navy raincoat. It usually goes with a square of clean cloth for polishing smudges. When somebody else has the floor, Jae holds eye contact until the other person has finished.",
+  "personality": "Jae feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To offer a usable parents' night to a family on care shifts.",
+  "family": "Lena Crane is Jae’s older cousin. Jae checks the date twice. Lena brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *A borrowed name*, Lena says, “I published the book and missed the echo because I never go home to that street.”",
+  "connections": "Dane Aubin. The school clerk and the food driver compare the times when carers can actually answer a door.",
+  "familyIds": [
+    "AH-R0513"
+  ],
+  "connectionIds": [
+    "AH-R0138"
+  ],
+  "reactions": [
+    {
+      "situation": "A visiting supervisor wants the second dinner withdrawn",
+      "response": "Jae asks for a meal to be held while the people who eat it explain the second portion.",
+      "asWritten": "A visiting supervisor wants the second dinner withdrawn. Jae asks for a meal to be held while the people who eat it explain the second portion."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Jae repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Jae repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Jae lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Jae lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

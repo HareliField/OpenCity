@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1071",
+  "personId": "AH-R1071",
+  "name": "Sonia Arnett",
+  "age": 35,
+  "occupation": "Business borrower",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The guarantee",
+  "biography": "stories/residents/08/03-the-guarantee.md#ah-r1071",
+  "life": "“I still remember Mum standing the cost of my very first market table.” Monday often includes a stop at the corner by Juniper Tailor, where Sonia looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I assumed Mum put down savings. I found out when she wouldn't lend me the money for a replacement boiler.",
+  "appearance": "Sonia is easy to recognize by short, uneven waves that refuse to lie flat and heavy brows and an unusually delicate jaw. Usually dressed in a plum-colored cardigan with a little coil of soft measuring tape, Sonia touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Sonia is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To work out whether the business can release the house.",
+  "family": "Ida Boyd is Sonia’s cousin raised in the same household. Sonia chooses whether to use it. Ida saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *One paid trial*, Ida says, “I have done the unglamorous closing shift for eleven months.”",
+  "connections": "Sofia Ayala (mother). Daughter and mother have to discuss different meanings of a generous guarantee. Also in the story is Grant Penn (sibling).",
+  "familyIds": [
+    "AH-R0842"
+  ],
+  "connectionIds": [
+    "AH-R1072",
+    "AH-R1074"
+  ],
+  "reactions": [
+    {
+      "situation": "A borrower learns exactly what the guarantee cost",
+      "response": "Sonia puts the actual pledged property and repayment date on paper.",
+      "asWritten": "A borrower learns exactly what the guarantee cost. Sonia puts the actual pledged property and repayment date on paper."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Sonia asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Sonia asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Sonia thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Sonia thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

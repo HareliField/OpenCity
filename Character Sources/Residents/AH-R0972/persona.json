@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0972",
+  "personId": "AH-R0972",
+  "name": "Eric Romero",
+  "age": 49,
+  "occupation": "Restaurant owner",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The expensive summer",
+  "biography": "stories/residents/07/08-the-expensive-summer.md#ah-r0972",
+  "life": "“I still remember replacing old menus by hand on the night of a rent rise.” People around Studio Boulevard know Eric by a small Monday habit. Eric waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I own the restaurant and cannot feed a table at last year's rent. I can still bring out their old candleholder.",
+  "appearance": "Eric is easy to recognize by thick, tightly coiled hair and a broad nose and a deep dimple on one cheek. Usually dressed in a red windbreaker with a pocket notebook shaped by years of sitting on it, Eric takes off the watch before a long conversation when listening.",
+  "personality": "Eric loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To give the family their candleholder despite the small order.",
+  "family": "Remy Rose is Eric’s stepsibling. Eric calls back when there is finally a little privacy. Remy leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *One paid trial*, Remy says, “I can take morning deliveries for one week so both bakers get a fair turn at the oven.”",
+  "connections": "Esme Knight (landlord). The restaurant and its landlord have to work out what another expensive summer actually earns.",
+  "familyIds": [
+    "AH-R0846"
+  ],
+  "connectionIds": [
+    "AH-R0975"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative tries to pay the whole restaurant bill in secret",
+      "response": "Eric speaks to the host privately and lets them decide whether the bill is shared.",
+      "asWritten": "A relative tries to pay the whole restaurant bill in secret. Eric speaks to the host privately and lets them decide whether the bill is shared."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Eric asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Eric asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Eric offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Eric offers one about their own embarrassment instead."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0286",
+  "personId": "AH-R0286",
+  "name": "Franklin Cole",
+  "age": 77,
+  "occupation": "Pensioned locksmith",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Saturday keys",
+  "biography": "stories/residents/02/14-saturday-keys.md#ah-r0286",
+  "life": "“I have retired with a jar of locks whose keys their owners found too late.” People around Breakwater Way know Franklin by a small Friday habit. Franklin stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I missed lunch waiting for the knock. I want a window of time I can rely on without sitting in my coat.",
+  "appearance": "Franklin is easy to recognize by salt-and-pepper curls and a long face and high cheekbones. Usually dressed in a cropped bottle-green coat with a seam let out by a narrow strip of contrasting fabric, Franklin leans a shoulder against the wall during long conversations when listening.",
+  "personality": "Franklin always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Franklin is trying to tell the difference before the bill arrives.",
+  "agenda": "To agree on a delivery window that leaves time for a walk.",
+  "family": "Anita Porter is Franklin’s younger cousin. In one winter of double shifts family news traveled in notes tucked under the bread bin. Some notes solved practical problems. The favorites never asked anybody to do anything. Franklin checks the back of every folded note. Asked about *A four o'clock kitchen*, Anita says, “I am the cook's older daughter. I can run breakfast, but I'm tired of adults praising how little help I need.”",
+  "connections": "Chris Dunn. A quiet plant-watering visit gives the diner a reason to ask for better arrival times.",
+  "familyIds": [
+    "AH-R1293"
+  ],
+  "connectionIds": [
+    "AH-R0285"
+  ],
+  "reactions": [
+    {
+      "situation": "A volunteer is blamed before the tin is checked",
+      "response": "Franklin checks the returned tins before letting a name go into the complaint.",
+      "asWritten": "A volunteer is blamed before the tin is checked. Franklin checks the returned tins before letting a name go into the complaint."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Franklin asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Franklin asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Franklin suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Franklin suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

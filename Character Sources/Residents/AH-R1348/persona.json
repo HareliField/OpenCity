@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1348",
+  "personId": "AH-R1348",
+  "name": "Rain Scott",
+  "age": 48,
+  "occupation": "Marine welder",
+  "home": "Midtown",
+  "episode": "The missing name on the stern",
+  "biography": "stories/residents/09/15-the-missing-name-on-the-stern.md#ah-r1348",
+  "life": "“I still remember practicing the family name in the privacy of my workshop.” Saturday often includes a stop at the public road outside the Port of Asphalt, where Rain can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I was embarrassed by the old name growing up. I am buying the removed letters for the wall over my workbench.",
+  "appearance": "Rain has a blunt cut just below the ears, a crooked front tooth visible when laughing, and a favorite piece of clothing, an unlined tan jacket. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Rain raises one eyebrow long before saying yes.",
+  "personality": "Rain admires skill and distrusts the idea that skill gives anyone permission to be rude. Rain learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To hang the removed letters in the workshop.",
+  "family": "Shay Valdez is Rain’s cousin raised in the same household. Rain is allowed to ask about the bad news afterward. Shay calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The third bedroom*, Shay says, “I build wardrobes. A proper partition would eat the window, so I'm pricing a different door.”",
+  "connections": "Dina Hooper. A stencil and a set of removed letters are welcome in two different shore workshops.",
+  "familyIds": [
+    "AH-R1136"
+  ],
+  "connectionIds": [
+    "AH-R1344"
+  ],
+  "reactions": [
+    {
+      "situation": "A family elder asks for the spelling they grew up with",
+      "response": "Rain writes both spellings where the elder can indicate the one they prefer.",
+      "asWritten": "A family elder asks for the spelling they grew up with. Rain writes both spellings where the elder can indicate the one they prefer."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Rain waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Rain waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Rain describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Rain describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

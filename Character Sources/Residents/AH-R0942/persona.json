@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0942",
+  "personId": "AH-R0942",
+  "name": "Lou Reed",
+  "age": 43,
+  "occupation": "Separated school cook",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The release address",
+  "biography": "stories/residents/07/05-the-release-address.md#ah-r0942",
+  "life": "“I still remember packing children's books before clothes on moving day.” People around Lighthouse Cove know Lou by a small Saturday habit. Lou takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I moved without giving him the new number because I needed one quiet Christmas. I can say that to his face now.",
+  "appearance": "Away from the heat of the kitchen, look for a moss-green cardigan and a pocket notebook shaped by years of sitting on it. Lou has a softly rounded chin under sharp cheekbones, with a high puff tied with plain cord. Lou listens with the head tilted a little to the left during a conversation.",
+  "personality": "Lou enjoys routines and will defend the right of someone else to break one. As a result, Lou is often everyone's favorite cover for a missed morning.",
+  "agenda": "To tell the father why the new address was withheld.",
+  "family": "Opal Felix is Lou’s cousin raised in the same household. Their relatives kept a holiday fund in a boot that still had its mate. Even after the family acquired bank accounts, an envelope of change at supper meant somebody was planning a journey. Lou asks whether the person being visited is ready for company. Asked about *The other side of the cove*, Opal says, “I saved the original donor letter. It specified a sea view and made no mention of who's looking.”",
+  "connections": "Douglas Waters. Two households sort out where letters ought to go without making a public forwarding list.",
+  "familyIds": [
+    "AH-R1277"
+  ],
+  "connectionIds": [
+    "AH-R0943"
+  ],
+  "reactions": [
+    {
+      "situation": "A child wants to leave the homecoming meal early",
+      "response": "Lou gives the child an ordinary excuse to step outside without suggesting they reject the father.",
+      "asWritten": "A child wants to leave the homecoming meal early. Lou gives the child an ordinary excuse to step outside without suggesting they reject the father."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Lou takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Lou takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Lou keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Lou keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

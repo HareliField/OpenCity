@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0347",
+  "personId": "AH-R0347",
+  "name": "Scout Nord",
+  "age": 36,
+  "occupation": "Unemployed shelf stocker",
+  "home": "the blocks north of the port",
+  "episode": "Rent in a biscuit tin",
+  "biography": "stories/residents/03/05-rent-in-a-biscuit-tin.md#ah-r0347",
+  "life": "“I still remember my child's delight in stiff new shoelaces.” On Tuesday, near the courtyard by Ferry Street Rooms, Scout prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I thought the extra rent was a gift. I had already bought school shoes when the owner knocked.",
+  "appearance": "Scout has a wide brow and a narrow jaw. Look for a cropped cut that shows the shape of the ears. On an ordinary day, the familiar outfit is a black overshirt with pearl buttons with a square of clean cloth for polishing smudges. In conversation Scout presses the lips together to keep a smile in.",
+  "personality": "Scout keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Scout wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To explain the school shoe purchase and settle the difference.",
+  "family": "John Hong is Scout’s older cousin. Scout is allowed to ask about the bad news afterward. John calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Five missing lunches*, John says, “I wanted the red tin for our museum display.”",
+  "connections": "Ren Alston. The two renters compare finding money that somebody else had quietly put aside.",
+  "familyIds": [
+    "AH-R0165"
+  ],
+  "connectionIds": [
+    "AH-R0348"
+  ],
+  "reactions": [
+    {
+      "situation": "One renter wants the tin counted in public",
+      "response": "Scout asks each renter how much of the count they want heard in public.",
+      "asWritten": "One renter wants the tin counted in public. Scout asks each renter how much of the count they want heard in public."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Scout starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Scout starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Scout offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Scout offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

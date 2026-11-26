@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0156",
+  "personId": "AH-R0156",
+  "name": "Cian Reese",
+  "age": 76,
+  "occupation": "Retired school cook",
+  "home": "the blocks north of the port",
+  "episode": "Hem by hem",
+  "biography": "stories/residents/02/01-hem-by-hem.md#ah-r0156",
+  "life": "“I fed schoolchildren who are now old enough to cook for me.” On Wednesday, near the downtown fountain, Cian keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I can't stand long enough for a fitting. The bride carried the mirror to my chair.",
+  "appearance": "Cian has full cheeks and a mouth that pulls slightly to one side. Look for soft white hair brushed sideways. Away from the heat of the kitchen, the familiar outfit is an olive canvas jacket with a stitched row of blue crosses along an old repair. In conversation Cian draws small circles on a tabletop while waiting.",
+  "personality": "Cian is kind in very practical ways and prickly about being thanked in public. Cian loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To finish the fitting seated with a mirror she can actually use.",
+  "family": "Perry Han is Cian’s first cousin once removed. Cian is allowed to ask about the bad news afterward. Perry calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The small signature*, Perry says, “I was the one who cropped the vendor out of the press picture.”",
+  "connections": "Gwen Evans. They bring the lifetime fitting promise to the customer's chair. Also in the story is Briar Mann (dressmaker).",
+  "familyIds": [
+    "AH-R0027"
+  ],
+  "connectionIds": [
+    "AH-R0155",
+    "AH-R0151"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative asks to hide the changed seam",
+      "response": "Cian asks the bride herself what should show above the hem.",
+      "asWritten": "A relative asks to hide the changed seam. Cian asks the bride herself what should show above the hem."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Cian asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Cian asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Cian gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Cian gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

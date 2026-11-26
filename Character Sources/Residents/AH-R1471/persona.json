@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1471",
+  "personId": "AH-R1471",
+  "name": "Alvin Jeong",
+  "age": 16,
+  "occupation": "School pupil and actor",
+  "home": "the western residential streets",
+  "episode": "One last dress rehearsal",
+  "biography": "stories/residents/10/13-one-last-dress-rehearsal.md#ah-r1471",
+  "life": "“I still remember my mother attending a rehearsal with flour on her sleeve.” On Monday, near the public road outside the Port of Asphalt, Alvin can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I used to think my mother was choosing work over me. Watching her take off her apron in the front row changed the line I sang.",
+  "appearance": "Alvin is easy to recognize by a blunt cut just below the ears and an aquiline nose and a square chin. Usually dressed in a dark green knitted vest with a stitched row of blue crosses along an old repair, Alvin counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Alvin often says yes too quickly out of pride in being useful. The people closest to Alvin have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To sing the full scene with the mother watching.",
+  "family": "Lorenzo Mack is Alvin’s older relative by marriage. Alvin is allowed to ask about the bad news afterward. Lorenzo calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The tide clock*, Lorenzo says, “I set that clock by a rock my father could see from the gate.”",
+  "connections": "Naomi Tate (mother). The youth player gets to sing the line to the parent who finally knows what the rehearsal was for.",
+  "familyIds": [
+    "AH-R0441"
+  ],
+  "connectionIds": [
+    "AH-R1472"
+  ],
+  "reactions": [
+    {
+      "situation": "The working parent arrives after the curtain time",
+      "response": "Alvin waits for the parent to be seated before asking the cast to start.",
+      "asWritten": "The working parent arrives after the curtain time. Alvin waits for the parent to be seated before asking the cast to start."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Alvin brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Alvin brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Alvin rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Alvin rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

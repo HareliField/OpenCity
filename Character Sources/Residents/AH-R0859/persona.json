@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0859",
+  "personId": "AH-R0859",
+  "name": "Drew Lai",
+  "age": 39,
+  "occupation": "Barber's receptionist",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A chair of one's own",
+  "biography": "stories/residents/06/11-a-chair-of-one-s-own.md#ah-r0859",
+  "life": "“I still remember watching a barber price the hours nobody sat in the chair.” Friday often includes a stop at the market by Market Flats, where Drew often waits until the delivery baskets are stacked before going in.",
+  "voice": "I work the shop door at Coastal. The women asked to see our numbers before agreeing to any new lease.",
+  "appearance": "After the last appointment, look for an unlined tan jacket and a replacement button a shade darker than the others. Drew has a flat bridge to the nose and a mobile brow, with short black hair swept back. Drew listens with the head tilted a little to the left during a conversation.",
+  "personality": "Drew has a quick wit and an equally quick sense of shame. A joke is often Drew's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To share the barber shop's rental figures.",
+  "family": "Tom Reyes is Drew’s cousin raised in the same household. Drew brings the paper and a pen. Tom decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *A civilian apology*, Tom says, “I pushed for the original display because it made our work look simple.”",
+  "connections": "Leon Cole. They compare contracts across the salon and barber counters.",
+  "familyIds": [
+    "AH-R0933"
+  ],
+  "connectionIds": [
+    "AH-R0854"
+  ],
+  "reactions": [
+    {
+      "situation": "The studio asks for its chair deposit by Friday",
+      "response": "Drew checks whether the chair renter has seen the terms before the deposit is due.",
+      "asWritten": "The studio asks for its chair deposit by Friday. Drew checks whether the chair renter has seen the terms before the deposit is due."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Drew asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Drew asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Drew seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Drew seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

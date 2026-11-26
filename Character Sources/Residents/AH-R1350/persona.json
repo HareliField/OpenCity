@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1350",
+  "personId": "AH-R1350",
+  "name": "Charlie Emery",
+  "age": 63,
+  "occupation": "Retiring skipper",
+  "home": "Old Town",
+  "episode": "The missing name on the stern",
+  "biography": "stories/residents/09/15-the-missing-name-on-the-stern.md#ah-r1350",
+  "life": "“I still remember writing our last old-name voyage in fading pencil.” On Saturday, near the crossing outside Verve Nail Studio, Charlie notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I ran the last voyage under that old spelling. I want the log to say who chose the new one.",
+  "appearance": "Charlie has short white hair and darker eyebrows, a straight nose and deep-set eyes, and a favorite piece of clothing, an old plum windbreaker. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Charlie draws small circles on a tabletop while waiting.",
+  "personality": "Charlie reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Charlie trusts most.",
+  "agenda": "To record who chose the spelling in the voyage log.",
+  "family": "Charles Shah is Charlie’s half-sibling. Charlie asks what the birthday guest would like this year. Charles remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Money after marriage*, Charles says, “I managed their books through both pregnancies.”",
+  "connections": "Lennon Heller. An extra morning to paint belongs in the outgoing skipper's log alongside the family's decision.",
+  "familyIds": [
+    "AH-R0773"
+  ],
+  "connectionIds": [
+    "AH-R1346"
+  ],
+  "reactions": [
+    {
+      "situation": "A family elder asks for the spelling they grew up with",
+      "response": "Charlie writes both spellings where the elder can indicate the one they prefer.",
+      "asWritten": "A family elder asks for the spelling they grew up with. Charlie writes both spellings where the elder can indicate the one they prefer."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Charlie asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Charlie asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Charlie does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Charlie does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

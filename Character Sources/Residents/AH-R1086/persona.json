@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1086",
+  "personId": "ah-pd-128",
+  "name": "Omar Blake",
+  "age": 38,
+  "occupation": "Detective",
+  "home": "Old Town",
+  "episode": "First shift back",
+  "biography": "stories/residents/08/04-first-shift-back.md#ah-r1086",
+  "life": "“I still remember making a hard family call beside a humming drinks machine.” People around the public road outside the Port of Asphalt know Omar by a small Friday habit. Omar can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I want a private room to make a call home. My coworkers keep generously offering to listen.",
+  "appearance": "Omar has a dark undercut with a longer wave on top, a heart-shaped face and prominent ears, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with a partly rubbed-away embroidered initial. When somebody else has the floor, Omar listens with the head tilted a little to the left.",
+  "personality": "Omar often says yes too quickly out of pride in being useful. The people closest to Omar have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To secure a private place for family calls.",
+  "family": "Linden Owen is Omar’s second cousin. Omar brings something that can still be enjoyed tomorrow. Linden checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The absent signature*, Linden says, “I need the papers to renew my job. I'm willing to wait longer than either side thinks.”",
+  "connections": "Nico Wells. A private call home and a quiet walk away from work serve different parts of the same return.",
+  "familyIds": [
+    "AH-R0915"
+  ],
+  "connectionIds": [
+    "AH-R1089"
+  ],
+  "reactions": [
+    {
+      "situation": "A coworker asks for private details about the leave",
+      "response": "Omar leaves the reason for leave with the returning colleague and redirects the question to working arrangements.",
+      "asWritten": "A coworker asks for private details about the leave. Omar leaves the reason for leave with the returning colleague and redirects the question to working arrangements."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Omar asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Omar asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Omar rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Omar rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

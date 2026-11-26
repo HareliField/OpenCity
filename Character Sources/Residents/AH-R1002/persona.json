@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1002",
+  "personId": "AH-R1002",
+  "name": "Aldo Dixon",
+  "age": 39,
+  "occupation": "Salon employee",
+  "home": "Old Town",
+  "episode": "The salon on strike",
+  "biography": "stories/residents/07/11-the-salon-on-strike.md#ah-r1002",
+  "life": "“I still remember walking away from a salon with glitter still under my nails.” Sunday often includes a stop at the crossing outside Verve Nail Studio, where Aldo notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I quit my last salon over this and swore the next owner would hear my reasons before getting my notice.",
+  "appearance": "After the last appointment, look for a moss-green cardigan and a square of clean cloth for polishing smudges. Aldo has a broad nose and a deep dimple on one cheek, with short black hair swept back. Aldo folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Aldo enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To get an answer from this owner before resigning.",
+  "family": "Terry Lin is Aldo’s stepsibling. Aldo chooses whether they walk home or sit a while. Terry brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Money after marriage*, Terry says, “I used to get invited to both houses. Once I put a price on the company neither was sure I could still come to dinner.”",
+  "connections": "Tali Harris (salon owner). The worker who would quit explains the exact terms the owner once protested herself.",
+  "familyIds": [
+    "AH-R0778"
+  ],
+  "connectionIds": [
+    "AH-R1010"
+  ],
+  "reactions": [
+    {
+      "situation": "An apprentice asks if declining will cost future shifts",
+      "response": "Aldo asks the owner to give the apprentice a direct answer in front of a witness of their choosing.",
+      "asWritten": "An apprentice asks if declining will cost future shifts. Aldo asks the owner to give the apprentice a direct answer in front of a witness of their choosing."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Aldo asks the cashier to hold it and lets a claimant identify the writing and amount privately.",
+      "asWritten": "An envelope of wages is found under a café chair. Aldo asks the cashier to hold it and lets a claimant identify the writing and amount privately."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Aldo puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Aldo puts the deal away and suggests a walk."
+    }
+  ]
+}

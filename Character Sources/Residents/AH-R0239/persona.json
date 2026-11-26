@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0239",
+  "personId": "AH-R0239",
+  "name": "Kai Shah",
+  "age": 47,
+  "occupation": "Estate appraiser",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A wall of birthdays",
+  "biography": "stories/residents/02/09-a-wall-of-birthdays.md#ah-r0239",
+  "life": "“I once valued a house my family had been turned away from viewing.” On Friday, near the public road outside the Port of Asphalt, Kai can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I came to negotiate a sale and discovered my own childhood nickname behind the radiator.",
+  "appearance": "Kai has a blunt cut just below the ears, a round face with a pronounced chin, and a favorite piece of clothing, a charcoal zip cardigan. It usually goes with a copper-colored clasp that has been repaired by hand. When somebody else has the floor, Kai looks toward the door whenever a name is called.",
+  "personality": "Kai is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To save the nickname before the buyer redecorates.",
+  "family": "Ariel Morse is Kai’s cousin raised in the same household. Kai leaves the first voice message. Ariel calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A scar at the salon*, Ariel says, “I funded the advert and expected elegant hands.”",
+  "connections": "Alex Carr. A newly married name and an old nickname fit on the same tracing.",
+  "familyIds": [
+    "AH-R1304"
+  ],
+  "connectionIds": [
+    "AH-R0233"
+  ],
+  "reactions": [
+    {
+      "situation": "The landlord wants the height marks covered today",
+      "response": "Kai offers to help trace the height marks before work continues.",
+      "asWritten": "The landlord wants the height marks covered today. Kai offers to help trace the height marks before work continues."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Kai offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem.",
+      "asWritten": "A friend asks for a loan due back before payday. Kai offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Kai thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Kai thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

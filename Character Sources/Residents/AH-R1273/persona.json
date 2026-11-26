@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1273",
+  "personId": "AH-R1273",
+  "name": "Peyton Waters",
+  "age": 69,
+  "occupation": "Retired newspaper courier",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The other side of the cove",
+  "biography": "stories/residents/09/08-the-other-side-of-the-cove.md#ah-r1273",
+  "life": "“I still remember delivering a paper to a beach hut that had no number.” People around the courtyard by Ferry Street Rooms know Peyton by a small Sunday habit. Peyton prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I brought the cleaner a newspaper every summer. She let me use her bucket for the sea glass.",
+  "appearance": "Peyton has a scattering of freckles across the bridge of the nose. Look for silvery hair gathered at the nape. On an ordinary day, the familiar outfit is a plum-colored cardigan with a square of clean cloth for polishing smudges. In conversation Peyton grins on one side while the eyes stay serious.",
+  "personality": "Peyton has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To return the beach bucket with a picture of its use.",
+  "family": "Hector Clay is Peyton’s stepsibling. Peyton asks what the birthday guest would like this year. Hector remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The dead man's tab*, Hector says, “He charged me rent for a room he didn't own.”",
+  "connections": "Warren Ito. The person who used to carry newspapers finds the lettering artist space on the public proof.",
+  "familyIds": [
+    "AH-R0497"
+  ],
+  "connectionIds": [
+    "AH-R1275"
+  ],
+  "reactions": [
+    {
+      "situation": "A public donor asks to approve the wording on the bench",
+      "response": "Peyton asks the cleaner and the donor for separate views on the wording.",
+      "asWritten": "A public donor asks to approve the wording on the bench. Peyton asks the cleaner and the donor for separate views on the wording."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Peyton stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Peyton stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Peyton explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Peyton explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

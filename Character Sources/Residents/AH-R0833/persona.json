@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0833",
+  "personId": "AH-R0833",
+  "name": "Lina Farrell",
+  "age": 58,
+  "occupation": "Family letter writer and cleaner",
+  "home": "Eastside",
+  "episode": "A room for a father",
+  "biography": "stories/residents/06/09-a-room-for-a-father.md#ah-r0833",
+  "life": "“I still remember our family's worst quarrel told as a cheerful story elsewhere.” On Tuesday, near Maré Coffee, Lina likes the table where people coming off shift stop checking the time.",
+  "voice": "I am the second wife's cousin. I can tell these people about a good father they never got.",
+  "appearance": "On an ordinary day, look for a boxy denim jacket and a folded shopping list secured by a miniature clip. Lina has a long face and high cheekbones, with a cropped cut that shows the shape of the ears. Lina looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Lina tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Lina will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To let the two branches of the family tell different truths.",
+  "family": "Karina Hamilton is Lina’s half-sibling. Lina sets the time to leave. Karina picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The waiting-room plant*, Karina says, “I took the original cutting on the day my husband came home.”",
+  "connections": "Damian Mack. The second branch of the family has a different name for the man everybody is trying to greet.",
+  "familyIds": [
+    "AH-R0501"
+  ],
+  "connectionIds": [
+    "AH-R0840"
+  ],
+  "reactions": [
+    {
+      "situation": "The returning father wants a family photograph immediately",
+      "response": "Lina asks each household member privately whether they want to be in the picture.",
+      "asWritten": "The returning father wants a family photograph immediately. Lina asks each household member privately whether they want to be in the picture."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Lina offers an ordinary errand that lets the distressed person leave without being followed by an audience.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Lina offers an ordinary errand that lets the distressed person leave without being followed by an audience."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Lina repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Lina repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

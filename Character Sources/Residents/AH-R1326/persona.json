@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1326",
+  "personId": "AH-R1326",
+  "name": "Drew Ferraro",
+  "age": 49,
+  "occupation": "Uniform supplier",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The school photograph that travels",
+  "biography": "stories/residents/09/13-the-school-photograph-that-travels.md#ah-r1326",
+  "life": "“I still remember a family paying its school account on a summer morning.” People around Harbour Bakery know Drew by a small Thursday habit. Drew buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I supplied uniforms on credit until her mother's work picked up. I want her to know the debt was paid years ago.",
+  "appearance": "Drew has a smooth side part with one rebellious curl, two dimples that appear only with a full smile, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Drew rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Drew is fond of ambitious ideas and deeply suspicious of grand openings. The question Drew asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To tell the family the uniform debt was fully settled.",
+  "family": "Seth Massey is Drew’s first cousin once removed. Drew leaves the first voice message. Seth calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *An ordinary mirror*, Seth says, “I cut a little sample from the replacement glass.”",
+  "connections": "Benjamin Sun. Wet hair and a school blazer remind two helpers how differently they have known the same child.",
+  "familyIds": [
+    "AH-R1459"
+  ],
+  "connectionIds": [
+    "AH-R1328"
+  ],
+  "reactions": [
+    {
+      "situation": "A recipient wants to say thanks without being pictured",
+      "response": "Drew offers a written reply or an ordinary visit without requiring a photograph in return.",
+      "asWritten": "A recipient wants to say thanks without being pictured. Drew offers a written reply or an ordinary visit without requiring a photograph in return."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Drew asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Drew asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Drew accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Drew accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

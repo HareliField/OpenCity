@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1407",
+  "personId": "AH-R1407",
+  "name": "Bailey Alston",
+  "age": 35,
+  "occupation": "Banner printer",
+  "home": "the western residential streets",
+  "episode": "Two birthdays in one ward",
+  "biography": "stories/residents/10/06-two-birthdays-in-one-ward.md#ah-r1407",
+  "life": "“I still remember printing two names too close on a banner.” People around the public road outside the Port of Asphalt know Bailey by a small Thursday habit. Bailey can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I printed a birthday banner with room between their names. They cut it in half and traded messages on the blank ends.",
+  "appearance": "On an ordinary day, look for a moss-green cardigan and a thin silver ring worn on a cord. Bailey has a narrow face with an expressive upper lip, with a swept fringe and a closely clipped nape. Bailey squares up pieces of paper while thinking during a conversation.",
+  "personality": "Bailey is kind in very practical ways and prickly about being thanked in public. Bailey loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To exchange the blank halves of the birthday messages.",
+  "family": "Devin Yang is Bailey’s half-sibling. Bailey chooses the music. Devin puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Reopening at six*, Devin says, “I wash sheets before the first clients arrive and can't pretend an evening slot saves my business.”",
+  "connections": "Mika Tsai. A divided banner leaves the newly discharged visitor enough space to add a personal message.",
+  "familyIds": [
+    "AH-R1051"
+  ],
+  "connectionIds": [
+    "AH-R1410"
+  ],
+  "reactions": [
+    {
+      "situation": "One birthday patient wants a quiet ward",
+      "response": "Bailey lets the quiet patient choose a low-key celebration separate from the party.",
+      "asWritten": "One birthday patient wants a quiet ward. Bailey lets the quiet patient choose a low-key celebration separate from the party."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Bailey walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Bailey walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Bailey gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Bailey gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

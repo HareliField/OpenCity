@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0589",
+  "personId": "AH-R0589",
+  "name": "Ruth Farah",
+  "age": 56,
+  "occupation": "Tiler",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Laundry for a stranger",
+  "biography": "stories/residents/04/14-laundry-for-a-stranger.md#ah-r0589",
+  "life": "“I still remember cutting my first tile across my knees.” People around the courtyard by Ferry Street Rooms know Ruth by a small Friday habit. Ruth prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I built her an iron rest from a broken tile. She's finally willing to let me mend something in her house.",
+  "appearance": "Ruth has short, uneven waves that refuse to lie flat, a straight nose and deep-set eyes, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Ruth steadies a cup with both hands while listening.",
+  "personality": "Ruth admires skill and distrusts the idea that skill gives anyone permission to be rude. Ruth learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To let the neighbor choose the next small household repair.",
+  "family": "Verity Long is Ruth’s cousin raised in the same household. Ruth brings whatever was actually growing or affordable that week. Verity makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The porch light*, Verity says, “I can afford the house only with a lodger. The owner asked if that meant strangers all the time.”",
+  "connections": "Aubrey Farah. A house call to apologize becomes an opportunity to return the mended iron rest.",
+  "familyIds": [
+    "AH-R0085"
+  ],
+  "connectionIds": [
+    "AH-R0584"
+  ],
+  "reactions": [
+    {
+      "situation": "A staff supervisor demands the stranger's laundry back",
+      "response": "Ruth checks with the shirt's owner before handing it over to anyone else.",
+      "asWritten": "A staff supervisor demands the stranger's laundry back. Ruth checks with the shirt's owner before handing it over to anyone else."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Ruth lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Ruth lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Ruth describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Ruth describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

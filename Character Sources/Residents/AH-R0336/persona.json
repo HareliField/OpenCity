@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0336",
+  "personId": "AH-R0336",
+  "name": "Dario Allard",
+  "age": 29,
+  "occupation": "Menu designer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The spare spectacles",
+  "biography": "stories/residents/03/04-the-spare-spectacles.md#ah-r0336",
+  "life": "“I still remember my dad rubbing prices off his own menu.” Friday often includes a stop at Studio Boulevard, where Dario waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I keep my dad's spare pair in my bag to see menus the way he did.",
+  "appearance": "Dario is easy to recognize by dark brown curls cut close behind the ears and a straight nose and deep-set eyes. Usually dressed in a cream pullover with a fabric zip pull cut from a school scarf, Dario takes off the watch before a long conversation when listening.",
+  "personality": "Dario is kind in very practical ways and prickly about being thanked in public. Dario loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To let a diner borrow reading glasses without fuss.",
+  "family": "Evelyn Wade is Dario’s older cousin. Their family had a rule about visiting someone who had fallen on hard times. Bring enough food for the next day and bring a reason for an ordinary conversation. Dario knows when a neighbor would rather come over than receive visitors. Asked about *The salon on strike*, Evelyn says, “I have savings. I promised to cover a day's wages for the youngest worker if she wanted to speak.”",
+  "connections": "George Stahl. The father's glasses help test the new reading basket at the desk.",
+  "familyIds": [
+    "AH-R1009"
+  ],
+  "connectionIds": [
+    "AH-R0334"
+  ],
+  "reactions": [
+    {
+      "situation": "The counter is busy and another visitor starts to hurry the signing",
+      "response": "Dario puts a time on when the counter will be free again and protects the witness's time to read.",
+      "asWritten": "The counter is busy and another visitor starts to hurry the signing. Dario puts a time on when the counter will be free again and protects the witness's time to read."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Dario asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Dario asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Dario gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Dario gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

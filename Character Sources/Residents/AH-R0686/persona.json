@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0686",
+  "personId": "AH-R0686",
+  "name": "Valentina Carey",
+  "age": 59,
+  "occupation": "Neighborhood archivist",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "An address in pencil",
+  "biography": "stories/residents/05/09-an-address-in-pencil.md#ah-r0686",
+  "life": "“I still remember a family street known by its old name after the sign changed.” On Wednesday, near Maré Coffee, Valentina likes the table where people coming off shift stop checking the time.",
+  "voice": "I didn't know we had two numbering systems before the viaduct opened. I want both in my photo album.",
+  "appearance": "Valentina is easy to recognize by closely cropped salt-and-pepper hair and a strong profile and a little space between the front teeth. Usually dressed in a narrow-striped sweater with a pen clipped inside the neckline, Valentina touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Valentina is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To put both numbering schemes in the old album.",
+  "family": "Petra Noel is Valentina’s second cousin. Somebody once took a family child's drawing to be framed and trimmed away the signature. The trimming hurt worse than spoiling the picture. At home they still ask where the signature goes. Valentina remembers exactly who made the thing. Asked about *The empty berth*, Petra says, “From offshore you can see straight through the gap to the porch where I grew up.”",
+  "connections": "Bianca Trent. Both families keep their old numbering on the door and in the album.",
+  "familyIds": [
+    "AH-R0150"
+  ],
+  "connectionIds": [
+    "AH-R0690"
+  ],
+  "reactions": [
+    {
+      "situation": "A resident asks for the old metal number back",
+      "response": "Valentina asks who has already taken the metal down and where it was left.",
+      "asWritten": "A resident asks for the old metal number back. Valentina asks who has already taken the metal down and where it was left."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Valentina writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Valentina writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Valentina thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Valentina thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

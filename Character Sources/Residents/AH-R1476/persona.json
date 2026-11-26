@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1476",
+  "personId": "AH-R1476",
+  "name": "Gilbert Moss",
+  "age": 42,
+  "occupation": "Costume seamster",
+  "home": "Coast Ridge",
+  "episode": "One last dress rehearsal",
+  "biography": "stories/residents/10/13-one-last-dress-rehearsal.md#ah-r1476",
+  "life": "“I still remember putting a real coin into a costume's real pocket.” On Saturday, near the public end of the South Shore boardwalk, Gilbert checks the shade on the benches before deciding how long to stay.",
+  "voice": "I sewed the costumes. This was the first audience member who noticed we had put real pockets in all the work clothes.",
+  "appearance": "Gilbert has auburn hair cut square at the nape, fine brows over wide-set eyes, and a favorite piece of clothing, a moss-green cardigan. It usually goes with a cloth patch so neatly matched it only shows in strong light. When somebody else has the floor, Gilbert gives a little nod before asking a hard question.",
+  "personality": "Gilbert treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To put useful pockets in the next work costume too.",
+  "family": "Anita Abbott is Gilbert’s half-sibling. Gilbert sets the time to leave. Anita picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A room for a father*, Anita says, “I forgave the man years ago. I am still furious about the rent he left and the teeth we couldn't afford to fix.”",
+  "connections": "Esme Gross. Pockets that actually work and captions a parent can read return two overlooked details to the show.",
+  "familyIds": [
+    "AH-R0832"
+  ],
+  "connectionIds": [
+    "AH-R1477"
+  ],
+  "reactions": [
+    {
+      "situation": "The stage manager asks if anybody can stay for a second ending",
+      "response": "Gilbert checks who can actually stay and which ride home would be lost.",
+      "asWritten": "The stage manager asks if anybody can stay for a second ending. Gilbert checks who can actually stay and which ride home would be lost."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Gilbert draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Gilbert draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Gilbert changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Gilbert changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0891",
+  "personId": "AH-R0891",
+  "name": "Rowan Kelly",
+  "age": 47,
+  "occupation": "Liveaboard and window fitter",
+  "home": "a boat at South Shore Harbor",
+  "episode": "Winter afloat",
+  "biography": "stories/residents/06/15-winter-afloat.md#ah-r0891",
+  "life": "“I still remember my first night at sea without a shore address.” People around the foot of Harbor Viaduct know Rowan by a small Monday habit. Rowan pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I budgeted for timber and forgot the cost of a bed. I haven't rented a room since my marriage broke up.",
+  "appearance": "Rowan is easy to recognize by a cropped cut that shows the shape of the ears and a broad nose and a deep dimple on one cheek. Usually dressed in a pale blue work shirt with one loose pocket corner secured with green thread, Rowan draws breath as if to speak and lets someone else go first when listening.",
+  "personality": "Rowan never tires of being shown how somebody makes a living. Rowan can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To find a bed for the dry-dock weeks.",
+  "family": "Darcy Reyes is Rowan’s younger cousin. Rowan chooses the music. Darcy puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The trust with a typo*, Darcy says, “I asked the school to use my own nickname on the shortlist.”",
+  "connections": "Grey Clement. The old berth lease may give the displaced resident a real key ashore. Also in the story is Drew Hayward (shore room coordinator).",
+  "familyIds": [
+    "AH-R0626"
+  ],
+  "connectionIds": [
+    "AH-R0897",
+    "AH-R0898"
+  ],
+  "reactions": [
+    {
+      "situation": "A yard manager asks the liveaboard to leave by Friday",
+      "response": "Rowan asks where the resident can sleep on the first night ashore.",
+      "asWritten": "A yard manager asks the liveaboard to leave by Friday. Rowan asks where the resident can sleep on the first night ashore."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Rowan asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Rowan asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Rowan may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Rowan may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0402",
+  "personId": "AH-R0402",
+  "name": "Albert Bennett",
+  "age": 54,
+  "occupation": "Knife sharpener",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The widow's razor",
+  "biography": "stories/residents/03/11-the-widow-s-razor.md#ah-r0402",
+  "life": "“I still remember a whetstone worn in the shape of my hand.” On Friday, near the bank steps, Albert takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I can sharpen it until it forgets its shape. Instead I offered to make a stand.",
+  "appearance": "On an ordinary day, look for a long navy raincoat and a copper-colored clasp that has been repaired by hand. Albert has an aquiline nose and a square chin, with a center part and straight chestnut hair. Albert presses the lips together to keep a smile in during a conversation.",
+  "personality": "Albert gets protective of anybody who comes into a meeting unprepared. Albert privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To make a stable display without regrinding the blade.",
+  "family": "Alex Hamm is Albert’s cousin raised in the same household. Albert checks the date twice. Alex brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Care with a clock*, Alex says, “I can dress in sixteen minutes. I will not practice being ashamed of the sixteenth.”",
+  "connections": "Patricia Lang (display assistant). They work out where to polish the blade and where to keep the thumbprint bright.",
+  "familyIds": [
+    "AH-R0881"
+  ],
+  "connectionIds": [
+    "AH-R0406"
+  ],
+  "reactions": [
+    {
+      "situation": "The widow wants to tell the apprentice who held it first",
+      "response": "Albert makes space for the widow and the apprentice to talk without buyers listening.",
+      "asWritten": "The widow wants to tell the apprentice who held it first. Albert makes space for the widow and the apprentice to talk without buyers listening."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Albert offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Albert offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Albert offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Albert offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

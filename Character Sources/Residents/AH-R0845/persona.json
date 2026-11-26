@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0845",
+  "personId": "AH-R0845",
+  "name": "Tara Dean",
+  "age": 59,
+  "occupation": "Food stall investor",
+  "home": "Coast Ridge",
+  "episode": "One paid trial",
+  "biography": "stories/residents/06/10-one-paid-trial.md#ah-r0845",
+  "life": "“I still remember funding a chance I never got at twenty.” On Saturday, near the brick passage off the shop row, Tara takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I sponsored the trial wage. My name can stay off the winner's contract.",
+  "appearance": "On an ordinary day, look for a rust-colored canvas coat and a cloth patch so neatly matched it only shows in strong light. Tara has two dimples that appear only with a full smile, with two white streaks in otherwise dark hair. Tara gives a little nod before asking a hard question during a conversation.",
+  "personality": "Tara treats a small promise with the gravity others reserve for a contract. This makes Tara lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To fund the trial with no obligation to the sponsor.",
+  "family": "Martha Laurent is Tara’s second cousin. Tara makes the call. Martha is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A house divided kindly*, Martha says, “I am a tenant on the same street. I can't move a fence but I can share the bench I built from packing wood.”",
+  "connections": "Emery Colón. Sponsor and bread customer both care whether the new job leaves a loaf ordinary workers can buy.",
+  "familyIds": [
+    "AH-R1439"
+  ],
+  "connectionIds": [
+    "AH-R0849"
+  ],
+  "reactions": [
+    {
+      "situation": "The new baker gets the first oven slot",
+      "response": "Tara makes sure the other applicant gets a comparable chance with the same oven.",
+      "asWritten": "The new baker gets the first oven slot. Tara makes sure the other applicant gets a comparable chance with the same oven."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Tara asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Tara asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Tara says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Tara says what can be returned and asks whether that will do."
+    }
+  ]
+}

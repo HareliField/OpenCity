@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1432",
+  "personId": "AH-R1432",
+  "name": "Amelia Liu",
+  "age": 65,
+  "occupation": "Retired office manager",
+  "home": "the western residential streets",
+  "episode": "A house divided kindly",
+  "biography": "stories/residents/10/09-a-house-divided-kindly.md#ah-r1432",
+  "life": "“I still remember being handed the first front-door key nobody could take away.” On Tuesday, near Breakwater Way, Amelia stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I grew up with no front door of my own. I'd like a shared gate I can close at night.",
+  "appearance": "Amelia has silver temples and a dark fringe, one cheek that creases before the other, and a favorite piece of clothing, a long navy raincoat. It usually goes with a printed handkerchief folded into the pocket. When somebody else has the floor, Amelia holds eye contact until the other person has finished.",
+  "personality": "Amelia is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Amelia is concerned.",
+  "agenda": "To get a shared gate that closes securely at night.",
+  "family": "Leo Hart is Amelia’s younger cousin. Amelia can always ask for five minutes alone. Leo asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *First shift back*, Leo says, “I was the first person they asked for advice.”",
+  "connections": "Byron Sato (next-door neighbor). A locked gate can be both a new invitation and a respected boundary.",
+  "familyIds": [
+    "AH-R1088"
+  ],
+  "connectionIds": [
+    "AH-R1431"
+  ],
+  "reactions": [
+    {
+      "situation": "A grandchild objects to the garden plan",
+      "response": "Amelia asks the household members who will use the garden how they want to live in it now.",
+      "asWritten": "A grandchild objects to the garden plan. Amelia asks the household members who will use the garden how they want to live in it now."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Amelia asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Amelia asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Amelia asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Amelia asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

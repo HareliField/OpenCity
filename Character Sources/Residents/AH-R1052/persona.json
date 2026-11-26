@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1052",
+  "personId": "AH-R1052",
+  "name": "Ariel Pierce",
+  "age": 47,
+  "occupation": "Night bus driver",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Reopening at six",
+  "biography": "stories/residents/08/01-reopening-at-six.md#ah-r1052",
+  "life": "“I still remember the first breakfast trolley I passed after a whole night driving.” People around the brick passage off the shop row know Ariel by a small Wednesday habit. Ariel takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I run a night bus and want to put my clothes in before I go to bed at sunrise.",
+  "appearance": "Ariel is easy to recognize by a center part and straight chestnut hair and a long face and high cheekbones. Usually dressed in a soft blue checked shirt with a square of clean cloth for polishing smudges, Ariel raises one eyebrow long before saying yes when listening.",
+  "personality": "Ariel talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Ariel's ways of saying that it is all right to leave.",
+  "agenda": "To get a wash started before daytime sleep.",
+  "family": "Aidan Mack is Ariel’s older cousin. Ariel chooses an ordinary story to tell. Aidan asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *A doctor moves away*, Aidan says, “I was angry that she was leaving until I realized I'd told her to see her father on every one of my appointments.”",
+  "connections": "Bailey Valdez. A night bus rider sees the extra cleaning work behind an extra open hour.",
+  "familyIds": [
+    "AH-R1259"
+  ],
+  "connectionIds": [
+    "AH-R1059"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer offers to pay for an extra private hour",
+      "response": "Ariel gets the cost of staffing the hour into the conversation before accepting a private fee.",
+      "asWritten": "A customer offers to pay for an extra private hour. Ariel gets the cost of staffing the hour into the conversation before accepting a private fee."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Ariel writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Ariel writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Ariel says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Ariel says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

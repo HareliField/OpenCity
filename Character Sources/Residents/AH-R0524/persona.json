@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0524",
+  "personId": "AH-R0524",
+  "name": "Anthony Bell",
+  "age": 44,
+  "occupation": "Beach photographer",
+  "home": "Midtown",
+  "episode": "The rescue hut mural",
+  "biography": "stories/residents/04/08-the-rescue-hut-mural.md#ah-r0524",
+  "life": "“I still remember the blue of the rescue hut before it faded.” On Wednesday, near the public road outside the Port of Asphalt, Anthony can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I sell postcards from the wrong angle and people prefer them. I want both views on the rack.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a pair of reading glasses in a cloth sleeve. Anthony has a small notch in the left eyebrow, with a smooth side part with one rebellious curl. Anthony holds eye contact until the other person has finished during a conversation.",
+  "personality": "Anthony is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Anthony is concerned.",
+  "agenda": "To stock postcards from both angles.",
+  "family": "Alexei Taylor is Anthony’s younger cousin. Anthony is free to hang up first. Alexei makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The upstairs piano*, Alexei says, “I rent the ground floor. I asked for lessons in exchange for living with somebody else's piano.”",
+  "connections": "Daphne Mills. Two angles fit on a postcard that the father can revisit.",
+  "familyIds": [
+    "AH-R0387"
+  ],
+  "connectionIds": [
+    "AH-R0529"
+  ],
+  "reactions": [
+    {
+      "situation": "The old model asks to choose the viewing angle",
+      "response": "Anthony walks the observers to the angle the model chose.",
+      "asWritten": "The old model asks to choose the viewing angle. Anthony walks the observers to the angle the model chose."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Anthony asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Anthony asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Anthony asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Anthony asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

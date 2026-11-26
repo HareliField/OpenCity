@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0043",
+  "personId": "AH-R0043",
+  "name": "Cyrus Cole",
+  "age": 38,
+  "occupation": "Aquarium hobbyist and payroll clerk",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The aquarium",
+  "biography": "stories/residents/01/05-the-aquarium.md#ah-r0043",
+  "life": "Cyrus took up fishkeeping during a miserable year of night payroll. The little routines gave him one piece of a day he could predict. He will rearrange a whole week's plans for an animal that needs food dropped on a particular side. On Friday, near Studio Boulevard, Cyrus waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "One fish has a crooked jaw. It needs its food dropped on the left. I took the difficult one, then learned separating the pair made both stop eating.",
+  "appearance": "Cyrus has a narrow face with an expressive upper lip. Look for short copper curls. On an ordinary day, the familiar outfit is a faded indigo overshirt with a pen clipped inside the neckline. In conversation Cyrus leans a shoulder against the wall during long conversations.",
+  "personality": "Cyrus tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Cyrus will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To bring the two fish back into the same working tank.",
+  "family": "Aubrey Farah is Cyrus’s older relative by marriage. Cyrus picks the meeting place. Aubrey sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *Laundry for a stranger*, Aubrey says, “I accused my carer of mixing up the bags. I am taking the apology to her home on foot.”",
+  "connections": "Mo Gill. They try the shop's spare pump on the two fish whose feeding habits only one of them really knows.",
+  "familyIds": [
+    "AH-R0584"
+  ],
+  "connectionIds": [
+    "AH-R0048"
+  ],
+  "reactions": [
+    {
+      "situation": "A reporter asks which neighbor held the aquarium key",
+      "response": "Cyrus asks whether the tenant wants the key holder named before saying anything to the reporter.",
+      "asWritten": "A reporter asks which neighbor held the aquarium key. Cyrus asks whether the tenant wants the key holder named before saying anything to the reporter."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Cyrus puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Cyrus puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Cyrus repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Cyrus repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

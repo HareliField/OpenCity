@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0368",
+  "personId": "AH-R0368",
+  "name": "Orla Jain",
+  "age": 32,
+  "occupation": "Estate sorter",
+  "home": "the blocks north of the port",
+  "episode": "Overdue by a lifetime",
+  "biography": "stories/residents/03/07-overdue-by-a-lifetime.md#ah-r0368",
+  "life": "“I still remember fishing one wet page out of the paper bin.” On Friday, near the public road outside the Port of Asphalt, Orla can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I bought the whole box for the cookbook on top. I'd like the first reader to choose where the others go.",
+  "appearance": "Orla has auburn hair cut square at the nape, a narrow face with an expressive upper lip, and a favorite piece of clothing, a gray fisher's sweater. It usually goes with a copper-colored clasp that has been repaired by hand. When somebody else has the floor, Orla looks at people's hands before looking at what they carry.",
+  "personality": "Orla listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To give the reader a choice of destination for the boxes.",
+  "family": "Keiko Cross is Orla’s older cousin. Orla brings the paper and a pen. Keiko decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *A scar at the salon*, Keiko says, “I bought a plain postcard of the hand. I want the client to choose what to write on the back.”",
+  "connections": "Val Evans. Sorting the box unearths the old school production remembered by its villain.",
+  "familyIds": [
+    "AH-R1310"
+  ],
+  "connectionIds": [
+    "AH-R0365"
+  ],
+  "reactions": [
+    {
+      "situation": "The school asks to display the borrower's name",
+      "response": "Orla asks the former pupil to choose how their name appears.",
+      "asWritten": "The school asks to display the borrower's name. Orla asks the former pupil to choose how their name appears."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Orla stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Orla stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Orla keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Orla keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

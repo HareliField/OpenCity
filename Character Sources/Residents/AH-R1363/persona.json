@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1363",
+  "personId": "AH-R1363",
+  "name": "Stanley Hull",
+  "age": 51,
+  "occupation": "Dock foreman",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A last ship together",
+  "biography": "stories/residents/10/02-a-last-ship-together.md#ah-r1363",
+  "life": "“I still remember using my paid hour to cover a colleague's daughter's birthday.” Wednesday often includes a stop at the crossing outside Verve Nail Studio, where Stanley notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I am the foreman who cannot offer both options. I have put my own paid hour into the pot.",
+  "appearance": "Stanley is easy to recognize by auburn hair cut square at the nape and a crooked front tooth visible when laughing. Usually dressed in a cropped bottle-green coat with a braided bracelet with a single wooden bead, Stanley draws small circles on a tabletop while waiting when listening.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Stanley takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To offer an hour that lets both retirees choose.",
+  "family": "Tess Walker is Stanley’s half-sibling. Stanley asks what the birthday guest would like this year. Tess remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The Saturday swap*, Tess says, “I want to swap so I can meet the sister my father only mentioned in his will.”",
+  "connections": "Clyde Schmidt. The foreman's hour gives the younger hand a real chance to work beside the departing crew.",
+  "familyIds": [
+    "AH-R0784"
+  ],
+  "connectionIds": [
+    "AH-R1367"
+  ],
+  "reactions": [
+    {
+      "situation": "The two old workers are offered separate farewell days",
+      "response": "Stanley asks each worker separately what kind of last day they want.",
+      "asWritten": "The two old workers are offered separate farewell days. Stanley asks each worker separately what kind of last day they want."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Stanley asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Stanley asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Stanley asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Stanley asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

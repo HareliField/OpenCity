@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0521",
+  "personId": "AH-R0521",
+  "name": "Eden Diaz",
+  "age": 55,
+  "occupation": "Access reviewer",
+  "home": "Old Town",
+  "episode": "The rescue hut mural",
+  "biography": "stories/residents/04/08-the-rescue-hut-mural.md#ah-r0521",
+  "life": "“I still remember watching beach performers from under the rail.” People around the foot of Harbor Viaduct know Eden by a small Thursday habit. Eden pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I always thought she was diving. From my wheelchair she's clearly reaching for somebody.",
+  "appearance": "Eden is easy to recognize by short, uneven waves that refuse to lie flat and an aquiline nose and a square chin. Usually dressed in a moss-green cardigan with a small enamel bird on the lapel, Eden presses the lips together to keep a smile in when listening.",
+  "personality": "Eden uses precise names for tools and very approximate names for feelings. People who know Eden well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To show the sculpted hand from wheelchair height.",
+  "family": "Billie Morrow is Eden’s second cousin. Eden gets to change the plan. Billie offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Saturday keys*, Billie says, “I returned the ring inside a soup tin to keep it dry.”",
+  "connections": "Lara Ng. A lower view of the mural makes the possible second figure easier to see.",
+  "familyIds": [
+    "AH-R0283"
+  ],
+  "connectionIds": [
+    "AH-R0527"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor wants the painted figure made easier to recognize",
+      "response": "Eden asks the original model which part has been misunderstood.",
+      "asWritten": "A visitor wants the painted figure made easier to recognize. Eden asks the original model which part has been misunderstood."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Eden offers an ordinary errand that lets the distressed person leave without being followed by an audience.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Eden offers an ordinary errand that lets the distressed person leave without being followed by an audience."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Eden brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Eden brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0066",
+  "personId": "AH-R0066",
+  "name": "Carl Reeve",
+  "age": 35,
+  "occupation": "Estate clearance worker",
+  "home": "the neighborhood around Market Flats",
+  "episode": "An unfinished atlas",
+  "biography": "stories/residents/01/07-an-unfinished-atlas.md#ah-r0066",
+  "life": "Carl clears estates for relatives who are sometimes four countries away. He dislikes deciding which ordinary things count as effects. A book with a folded leaf is more difficult than a cabinet of costly china. On Tuesday, near Tideline Market, Carl picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I saved the atlas from the paper skip because its spine matched my coat. Now the family wants it back. I'll tell them where it is once the shop agrees to keep the tracing.",
+  "appearance": "Carl is easy to recognize by a high puff tied with plain cord and a strong profile and a little space between the front teeth. Usually dressed in a boxy denim jacket with a pressed flower kept in the clear back of a phone case, Carl squares up pieces of paper while thinking when listening.",
+  "personality": "Carl is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To return the family's atlas and keep a lawful tracing at the shop.",
+  "family": "Lina Barrett is Carl’s cousin raised in the same household. Carl keeps the photographs. Lina knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The new language at dinner*, Lina says, “I was ashamed my language sounded provincial when I moved here.”",
+  "connections": "Mavis Yeo. The clearing worker brought the atlas to the shop, and the bookseller must now decide what a fair return means.",
+  "familyIds": [
+    "AH-R1187"
+  ],
+  "connectionIds": [
+    "AH-R0061"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member disputes the penciled street",
+      "response": "Carl marks the disputed piece of street in pencil and keeps the alternative name beside it.",
+      "asWritten": "A family member disputes the penciled street. Carl marks the disputed piece of street in pencil and keeps the alternative name beside it."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Carl asks what the friend actually said last time and checks whether anybody is expecting them at home.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Carl asks what the friend actually said last time and checks whether anybody is expecting them at home."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Carl helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Carl helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

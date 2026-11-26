@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0499",
+  "personId": "AH-R0499",
+  "name": "Ava Nichols",
+  "age": 52,
+  "occupation": "Soup cook",
+  "home": "the blocks north of the port",
+  "episode": "The dead man's tab",
+  "biography": "stories/residents/04/05-the-dead-man-s-tab.md#ah-r0499",
+  "life": "“I still remember the first soup I sold without tasting.” People around Juniper Street know Ava by a small Sunday habit. Ava knows which of the west-side porches has a seat in the shade.",
+  "voice": "I made the soup. He said it tasted like school dinners, which I discovered was a compliment.",
+  "appearance": "Away from the heat of the kitchen, look for a cropped bottle-green coat and one cuff folded back twice. Ava has fine brows over wide-set eyes, with a dark undercut with a longer wave on top. Ava looks toward the door whenever a name is called during a conversation.",
+  "personality": "Ava is kind in very practical ways and prickly about being thanked in public. Ava loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To serve the soup the regular really liked.",
+  "family": "Harley Kelly is Ava’s second cousin. Ava puts the kettle on. Harley chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *One paid trial*, Harley says, “I posted the job without asking the apprentice what I once said across a sink.”",
+  "connections": "Hector Clay. The cook hears from the customer who rented a room the man never owned. Also in the story is Faye Daniels (debt meeting guest).",
+  "familyIds": [
+    "AH-R0843"
+  ],
+  "connectionIds": [
+    "AH-R0497",
+    "AH-R0495"
+  ],
+  "reactions": [
+    {
+      "situation": "A late customer's daughter objects to the memorial payment",
+      "response": "Ava gives the daughter a private chance to say what is upsetting about the payment.",
+      "asWritten": "A late customer's daughter objects to the memorial payment. Ava gives the daughter a private chance to say what is upsetting about the payment."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Ava waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Ava waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Ava gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Ava gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

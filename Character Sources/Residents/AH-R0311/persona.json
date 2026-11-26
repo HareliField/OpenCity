@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0311",
+  "personId": "AH-R0311",
+  "name": "Edgar Joseph",
+  "age": 28,
+  "occupation": "Ship electrician",
+  "home": "Coast Ridge",
+  "episode": "A ship without postcards",
+  "biography": "stories/residents/03/02-a-ship-without-postcards.md#ah-r0311",
+  "life": "“I still remember painting shadow cats on my first locker.” Saturday often includes a stop at the foot of Harbor Viaduct, where Edgar pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I draw the alley bins because my mother knows cities by their cats.",
+  "appearance": "Edgar has black hair twisted into a small knot, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a plum-colored cardigan. It usually goes with a stitched row of blue crosses along an old repair. When somebody else has the floor, Edgar turns fully toward the person speaking.",
+  "personality": "Edgar is fond of ambitious ideas and deeply suspicious of grand openings. The question Edgar asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To draw the city's working cats for family.",
+  "family": "Rain Yang is Edgar’s cousin raised in the same household. Edgar leaves the first voice message. Rain calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The new language at dinner*, Rain says, “I speak his language but the agency only knows I clean offices.”",
+  "connections": "Hank Fry. An onboard drawing gives the souvenir seller an alternative to the hotel view.",
+  "familyIds": [
+    "AH-R1183"
+  ],
+  "connectionIds": [
+    "AH-R0314"
+  ],
+  "reactions": [
+    {
+      "situation": "A family ashore asks for a picture of the crew",
+      "response": "Edgar asks the crew who wants to be visible in the family picture.",
+      "asWritten": "A family ashore asks for a picture of the crew. Edgar asks the crew who wants to be visible in the family picture."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Edgar finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Edgar finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Edgar accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Edgar accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

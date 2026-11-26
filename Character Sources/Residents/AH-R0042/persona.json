@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0042",
+  "personId": "AH-R0042",
+  "name": "Harriet Sloan",
+  "age": 44,
+  "occupation": "Property manager",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The aquarium",
+  "biography": "stories/residents/01/05-the-aquarium.md#ah-r0042",
+  "life": "Harriet's first building flooded while she was on holiday. Ever since, she tries to close every open task before going home. She is capable of real generosity once she notices who is being hurried out of the picture. Wednesday often includes a stop at the market by Market Flats, where Harriet often waits until the delivery baskets are stacked before going in.",
+  "voice": "I wrote abandoned on the inventory because the flat was empty. My son would have asked where the fish were supposed to go. I bought them a secondhand tank with my inspection fee.",
+  "appearance": "Harriet has a strong profile and a little space between the front teeth. Look for a cropped cut that shows the shape of the ears. On an ordinary day, the familiar outfit is a washed violet jersey with one cuff folded back twice. In conversation Harriet draws breath as if to speak and lets someone else go first.",
+  "personality": "Harriet is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Harriet is by the number of tiny errands suddenly being done.",
+  "agenda": "To replace the lost tank and correct the word on the inventory.",
+  "family": "Amos Tate is Harriet’s half-sibling. Harriet saves a place. Amos chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *One unposted detour*, Amos says, “I lost a day's ice. I want the contractor to pay the stallholders who lost sales too.”",
+  "connections": "Ariel Kaye. The manager's abandonment inventory and the advocate's pavement measurements tell different stories about the same home.",
+  "familyIds": [
+    "AH-R0413"
+  ],
+  "connectionIds": [
+    "AH-R0047"
+  ],
+  "reactions": [
+    {
+      "situation": "The tenant calls while everyone is arguing over the tank",
+      "response": "Harriet quietens the group long enough for the tenant to hear the tank and decide what should happen next.",
+      "asWritten": "The tenant calls while everyone is arguing over the tank. Harriet quietens the group long enough for the tenant to hear the tank and decide what should happen next."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Harriet takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Harriet takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Harriet agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Harriet agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

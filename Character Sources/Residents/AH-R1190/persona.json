@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1190",
+  "personId": "AH-R1190",
+  "name": "Remy Knight",
+  "age": 30,
+  "occupation": "Evening home visitor",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The new language at dinner",
+  "biography": "stories/residents/08/14-the-new-language-at-dinner.md#ah-r1190",
+  "life": "“I still remember being recognized by touch before the elderly client could name me.” People around Lighthouse Cove know Remy by a small Sunday habit. Remy takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I hold the client's hand at meals. Yesterday he said my name correctly in a language I have never spoken.",
+  "appearance": "Remy has an aquiline nose and a square chin. Look for a blunt cut just below the ears. On an ordinary day, the familiar outfit is a narrow-striped sweater with a pen clipped inside the neckline. In conversation Remy rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Remy talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Remy's ways of saying that it is all right to leave.",
+  "agenda": "To answer when the client personally calls a name.",
+  "family": "Julian Oh is Remy’s first cousin once removed. When a family elder realized nobody could pronounce a friend's original name, she spent a whole evening teaching the table the three difficult sounds. Under pressure the family still says the names slowly. Remy knows how to correct it without making the person a spectacle. Asked about *The margin reader*, Julian says, “I drew a moustache on the author. Decades later my granddaughter guessed it was me from the shape.”",
+  "connections": "Johan Vega. An extra dinner trip puts a worker who recognizes the client's hand beside the plate.",
+  "familyIds": [
+    "AH-R0220"
+  ],
+  "connectionIds": [
+    "AH-R1186"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone asks a family member to translate an intimate question",
+      "response": "Remy offers a qualified interpreter and lets the client decide how much family should hear.",
+      "asWritten": "Someone asks a family member to translate an intimate question. Remy offers a qualified interpreter and lets the client decide how much family should hear."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Remy finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Remy finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Remy says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Remy says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

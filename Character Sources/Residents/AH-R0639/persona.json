@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0639",
+  "personId": "AH-R0639",
+  "name": "Erin Parra",
+  "age": 53,
+  "occupation": "Council interpreter",
+  "home": "Midtown",
+  "episode": "One clean day",
+  "biography": "stories/residents/05/04-one-clean-day.md#ah-r0639",
+  "life": "“I still remember a borrowed inhaler kept beside a bus ticket.” People around Harbour Bakery know Erin by a small Sunday habit. Erin buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I looked for the boy who gave me his inhaler. He is now old enough to call my supervisor young man.",
+  "appearance": "Erin has a scattering of freckles across the bridge of the nose. Look for brown hair pinned away from the temples. On an ordinary day, the familiar outfit is a charcoal zip cardigan with a stitched row of blue crosses along an old repair. In conversation Erin folds a paper napkin into quarters without noticing.",
+  "personality": "Erin often says yes too quickly out of pride in being useful. The people closest to Erin have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To find the former inhaler lender.",
+  "family": "Aldo Cao is Erin’s half-sibling. Erin checks the date twice. Aldo brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The school photograph that travels*, Aldo says, “I taught the class and wasn't on the list. It took me a week to ask what I missed.”",
+  "connections": "Frankie Reyes. A late photograph adds the classmate identified from the old inhaler story.",
+  "familyIds": [
+    "AH-R1323"
+  ],
+  "connectionIds": [
+    "AH-R0637"
+  ],
+  "reactions": [
+    {
+      "situation": "A classmate arrives at the reunion in uniform",
+      "response": "Erin welcomes the classmate before bringing up their working clothes.",
+      "asWritten": "A classmate arrives at the reunion in uniform. Erin welcomes the classmate before bringing up their working clothes."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Erin asks what the friend actually said last time and checks whether anybody is expecting them at home.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Erin asks what the friend actually said last time and checks whether anybody is expecting them at home."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Erin rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Erin rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

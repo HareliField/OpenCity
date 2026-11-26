@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0257",
+  "personId": "AH-R0257",
+  "name": "Isla Osei",
+  "age": 44,
+  "occupation": "Department store salesman",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "One sleeve short",
+  "biography": "stories/residents/02/11-one-sleeve-short.md#ah-r0257",
+  "life": "“I sold work suits in a store that paid us too little to buy one.” Wednesday often includes a stop at the foot of Harbor Viaduct, where Isla pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I wanted to sell him a full suit on credit. I tore the form up when I saw how carefully he budgeted.",
+  "appearance": "Isla has a deep crease beside the mouth when smiling. Look for short sandy hair and a marked widow's peak. On an ordinary day, the familiar outfit is a soft blue checked shirt with a printed handkerchief folded into the pocket. In conversation Isla starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Isla is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Isla is concerned.",
+  "agenda": "To offer fitting work a customer can afford this week.",
+  "family": "Byron Felix is Isla’s cousin. Isla saves a place. Byron chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *A room for a father*, Byron says, “I wrote his prescriptions on separate cards.”",
+  "connections": "Gale Levin. They decide which expensive additions the applicant can decline.",
+  "familyIds": [
+    "AH-R0836"
+  ],
+  "connectionIds": [
+    "AH-R0256"
+  ],
+  "reactions": [
+    {
+      "situation": "Somebody offers to buy a complete suit for the applicant",
+      "response": "Isla asks the applicant whether a whole donated suit would actually be welcome.",
+      "asWritten": "Somebody offers to buy a complete suit for the applicant. Isla asks the applicant whether a whole donated suit would actually be welcome."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Isla tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Isla tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Isla asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Isla asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

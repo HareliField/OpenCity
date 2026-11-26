@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0557",
+  "personId": "AH-R0557",
+  "name": "Sam Park",
+  "age": 21,
+  "occupation": "Fine art student",
+  "home": "Eastside",
+  "episode": "The fitting mirror",
+  "biography": "stories/residents/04/11-the-fitting-mirror.md#ah-r0557",
+  "life": "“I still remember a window reflection putting the sky under my feet.” Monday often includes a stop at the corner by Juniper Tailor, where Sam looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I rolled the mirror over a threshold and saw our street upside down. I want to paint that view.",
+  "appearance": "On an ordinary day, look for a faded indigo overshirt and a thin silver ring worn on a cord. Sam has a narrow face with an expressive upper lip, with short copper curls. Sam draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Sam enjoys routines and will defend the right of someone else to break one. As a result, Sam is often everyone's favorite cover for a missed morning.",
+  "agenda": "To paint the inverted street reflection.",
+  "family": "Noel Mota is Sam’s older cousin. Sam keeps the photographs. Noel knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *A dance for two fathers*, Noel says, “I organized the ceremony and the printed program only has space for one name.”",
+  "connections": "Kathleen Warren. The street painter tests the view from a child's stool.",
+  "familyIds": [
+    "AH-R1024"
+  ],
+  "connectionIds": [
+    "AH-R0560"
+  ],
+  "reactions": [
+    {
+      "situation": "A client asks to sit outside the shared mirror's view",
+      "response": "Sam puts the person's chair outside the reflection and lets them choose when to look.",
+      "asWritten": "A client asks to sit outside the shared mirror's view. Sam puts the person's chair outside the reflection and lets them choose when to look."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Sam offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem.",
+      "asWritten": "A friend asks for a loan due back before payday. Sam offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Sam keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Sam keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

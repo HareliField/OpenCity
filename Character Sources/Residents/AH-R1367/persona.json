@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1367",
+  "personId": "AH-R1367",
+  "name": "Clyde Schmidt",
+  "age": 30,
+  "occupation": "New dock loader",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A last ship together",
+  "biography": "stories/residents/10/02-a-last-ship-together.md#ah-r1367",
+  "life": "“I still remember walking into a port office under somebody else's lucky number.” People around Paper & Pine Books know Clyde by a small Wednesday habit. Clyde starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I am the younger hand who gets the vacancy. I am proud of it and have promised them their old table whenever they visit.",
+  "appearance": "Clyde has auburn hair cut square at the nape, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a comb in a sleeve sewn into the lining. When somebody else has the floor, Clyde gathers both sleeves neatly before settling in.",
+  "personality": "Clyde has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To keep visiting rights at the old table.",
+  "family": "Jasmine Miranda is Clyde’s second cousin. Clyde is allowed to ask about the bad news afterward. Jasmine calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *An address in pencil*, Jasmine says, “I wanted the house number on a necklace so my mother can tell a driver where she lives.”",
+  "connections": "Stanley Hull. The foreman's hour gives the younger hand a real chance to work beside the departing crew.",
+  "familyIds": [
+    "AH-R0689"
+  ],
+  "connectionIds": [
+    "AH-R1363"
+  ],
+  "reactions": [
+    {
+      "situation": "The two old workers are offered separate farewell days",
+      "response": "Clyde asks each worker separately what kind of last day they want.",
+      "asWritten": "The two old workers are offered separate farewell days. Clyde asks each worker separately what kind of last day they want."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Clyde finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Clyde finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Clyde says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Clyde says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

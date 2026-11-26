@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1130",
+  "personId": "AH-R1130",
+  "name": "Lucia Ferreira",
+  "age": 39,
+  "occupation": "Wedding photographer",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A summer marriage",
+  "biography": "stories/residents/08/08-a-summer-marriage.md#ah-r1130",
+  "life": "“I still remember photographing a boat almost completely hidden by fog.” On Wednesday, near the courtyard by Ferry Street Rooms, Lucia prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I promised a sea view and the fog came down. The vows carried further than they would have on a bright day.",
+  "appearance": "Lucia has black hair twisted into a small knot, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a red windbreaker. It usually goes with a stitched row of blue crosses along an old repair. When somebody else has the floor, Lucia draws breath as if to speak and lets someone else go first.",
+  "personality": "Lucia never tires of being shown how somebody makes a living. Lucia can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To make the fog part of the picture.",
+  "family": "Gale Felix is Lucia’s half-sibling. Lucia asks the question the rest of the family avoided. Gale chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The empty chair on nights*, Gale says, “I paid for a cake before the decision was made.”",
+  "connections": "Philip Meyer. A bilingual ceremony and a fog-bound photograph leave the vows at the center of the afternoon.",
+  "familyIds": [
+    "AH-R0958"
+  ],
+  "connectionIds": [
+    "AH-R1122"
+  ],
+  "reactions": [
+    {
+      "situation": "Fog hides the sea during the vows",
+      "response": "Lucia asks the couple if they want to begin under fog or wait, without extending the celebration for a photograph.",
+      "asWritten": "Fog hides the sea during the vows. Lucia asks the couple if they want to begin under fog or wait, without extending the celebration for a photograph."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Lucia alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Lucia alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Lucia may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Lucia may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

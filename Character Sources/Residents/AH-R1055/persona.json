@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1055",
+  "personId": "AH-R1055",
+  "name": "Jacob Bowen",
+  "age": 54,
+  "occupation": "Clinical laundry worker",
+  "home": "Eastside",
+  "episode": "Reopening at six",
+  "biography": "stories/residents/08/01-reopening-at-six.md#ah-r1055",
+  "life": "“I still remember sorting hospital linen behind a borrowed sheet.” Tuesday often includes a stop at Breakwater Way, where Jacob stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I can share a dryer with the cook but need a screen to sort my medical linen.",
+  "appearance": "Jacob has fine brows over wide-set eyes. Look for a high puff tied with plain cord. Out of work clothes, the familiar outfit is a gray fisher's sweater with a square of clean cloth for polishing smudges. In conversation Jacob listens with the head tilted a little to the left.",
+  "personality": "Jacob often says yes too quickly out of pride in being useful. The people closest to Jacob have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To arrange a private place to sort medical linen.",
+  "family": "Cian Davenport is Jacob’s half-sibling. Jacob chooses whether they walk home or sit a while. Cian brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Level with the window*, Cian says, “I hung a little curtain for my partner. She asked me to leave a gap so she could see the buses.”",
+  "connections": "Jean King. The linen sorter asks the leaseholder for privacy alongside opening hours.",
+  "familyIds": [
+    "AH-R0712"
+  ],
+  "connectionIds": [
+    "AH-R1058"
+  ],
+  "reactions": [
+    {
+      "situation": "The laundromat chooses between dawn and late-night opening",
+      "response": "Jacob asks which households lose their only usable wash time under either plan.",
+      "asWritten": "The laundromat chooses between dawn and late-night opening. Jacob asks which households lose their only usable wash time under either plan."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Jacob offers an ordinary errand that lets the distressed person leave without being followed by an audience.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Jacob offers an ordinary errand that lets the distressed person leave without being followed by an audience."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Jacob rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Jacob rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

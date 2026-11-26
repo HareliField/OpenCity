@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0351",
+  "personId": "AH-R0351",
+  "name": "Hector Lang",
+  "age": 43,
+  "occupation": "Bedside support worker",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The hospital radio",
+  "biography": "stories/residents/03/06-the-hospital-radio.md#ah-r0351",
+  "life": "“I still remember the click between the fishing and football stations.” On Thursday, near Tideline Market, Hector picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I used to tune the coast forecast for my father. I want that little wheel on his bedside drawer.",
+  "appearance": "Hector has a long face and high cheekbones. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a gray fisher's sweater with a fabric zip pull cut from a school scarf. In conversation Hector looks toward the door whenever a name is called.",
+  "personality": "Hector carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To fit a tuning wheel in the father's drawer.",
+  "family": "Scout Mendez is Hector’s stepsibling. Hector saves a place. Scout chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The engine lullaby*, Scout says, “My child thinks there's a whale in the harbor.”",
+  "connections": "Maria Ayala. They discuss which old parts can be kept by the bedside.",
+  "familyIds": [
+    "AH-R0596"
+  ],
+  "connectionIds": [
+    "AH-R0356"
+  ],
+  "reactions": [
+    {
+      "situation": "The replacement radio drowns out a patient's match",
+      "response": "Hector asks the two patients which part of the match each wants to hear.",
+      "asWritten": "The replacement radio drowns out a patient's match. Hector asks the two patients which part of the match each wants to hear."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Hector keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Hector keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Hector offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Hector offers to accompany them while they tell the truth."
+    }
+  ]
+}

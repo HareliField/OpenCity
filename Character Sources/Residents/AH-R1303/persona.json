@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1303",
+  "personId": "AH-R1303",
+  "name": "Casey Hunter",
+  "age": 49,
+  "occupation": "Former fishing partner",
+  "home": "the blocks north of the port",
+  "episode": "A scar at the salon",
+  "biography": "stories/residents/09/11-a-scar-at-the-salon.md#ah-r1303",
+  "life": "“I still remember hearing the winch the day my partner lost her grip.” Wednesday often includes a stop at the brick passage off the shop row, where Casey takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I am the fishing partner who was there that day. I want the client to know she can tell as much or little as she likes.",
+  "appearance": "Casey is easy to recognize by thick, tightly coiled hair and a narrow face with an expressive upper lip. Usually dressed in a rust-colored canvas coat with a small enamel bird on the lapel, Casey turns fully toward the person speaking when listening.",
+  "personality": "Casey admires skill and distrusts the idea that skill gives anyone permission to be rude. Casey learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To let the former partner choose what to tell about the accident.",
+  "family": "Lena Roth is Casey’s cousin. Casey asks what the birthday guest would like this year. Lena remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The sandwich board*, Lena says, “I promised the owner her business would survive.”",
+  "connections": "Riley Evans. The original fishing partner meets a second worker who will model an injury on separate terms. Also in the story is Duncan Stahl (former crewmate).",
+  "familyIds": [
+    "AH-R0177"
+  ],
+  "connectionIds": [
+    "AH-R1307",
+    "AH-R1301"
+  ],
+  "reactions": [
+    {
+      "situation": "A campaign manager wants to enlarge the scar",
+      "response": "Casey asks the model whether the original permission covers the scar.",
+      "asWritten": "A campaign manager wants to enlarge the scar. Casey asks the model whether the original permission covers the scar."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Casey stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Casey stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Casey describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Casey describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

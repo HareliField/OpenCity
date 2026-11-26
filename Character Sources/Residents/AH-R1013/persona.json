@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1013",
+  "personId": "AH-R1013",
+  "name": "Manuel Peters",
+  "age": 49,
+  "occupation": "Delivery driver",
+  "home": "the western residential streets",
+  "episode": "The crash anniversary",
+  "biography": "stories/residents/07/12-the-crash-anniversary.md#ah-r1013",
+  "life": "“I still remember sitting in my parked car the first morning I tried driving again.” On Friday, near Studio Boulevard, Manuel waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I was driving the other vehicle. My letter to the family has stayed in the same drawer for eleven months.",
+  "appearance": "Manuel has a wide brow and a narrow jaw. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is an old plum windbreaker with a square of clean cloth for polishing smudges. In conversation Manuel holds eye contact until the other person has finished.",
+  "personality": "Manuel uses precise names for tools and very approximate names for feelings. People who know Manuel well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To deliver the carefully written letter appropriately.",
+  "family": "Marlowe May is Manuel’s half-sibling. Manuel calls back when there is finally a little privacy. Marlowe leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The broken till*, Marlowe says, “I manage a cashless shop. I want to know why the pencil line moved faster than ours.”",
+  "connections": "Isaac Jensen. An adult driver's unsent letter and a child's unasked-for statement belong to different memories of one day. Also in the story is Lee Ingram (former collision counterpart).",
+  "familyIds": [
+    "AH-R0399"
+  ],
+  "connectionIds": [
+    "AH-R1018",
+    "AH-R1011"
+  ],
+  "reactions": [
+    {
+      "situation": "A memorial is proposed where the survivor walks to work",
+      "response": "Manuel checks whether the survivor wants to pass the proposed site every day.",
+      "asWritten": "A memorial is proposed where the survivor walks to work. Manuel checks whether the survivor wants to pass the proposed site every day."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Manuel asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Manuel asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Manuel brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Manuel brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

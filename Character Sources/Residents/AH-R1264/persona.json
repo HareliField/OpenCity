@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1264",
+  "personId": "AH-R1264",
+  "name": "Ramona Vargas",
+  "age": 34,
+  "occupation": "Bookshop clerk",
+  "home": "Old Town",
+  "episode": "School after sixty",
+  "biography": "stories/residents/09/07-school-after-sixty.md#ah-r1264",
+  "life": "“I still remember smudging a practice paper after getting the answer right.” On Sunday, near the downtown fountain, Ramona keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I made a clean copy of the practice paper because my partner was embarrassed about crossing out every line.",
+  "appearance": "Ramona is easy to recognize by thick, tightly coiled hair and two dimples that appear only with a full smile. Usually dressed in an olive canvas jacket with a pocket notebook shaped by years of sitting on it, Ramona touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Ramona is fond of ambitious ideas and deeply suspicious of grand openings. The question Ramona asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To give the partner a clean practice paper.",
+  "family": "Teresa Lopez is Ramona’s half-sibling. Ramona can stop the walk at any corner. Teresa chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *One clean day*, Teresa says, “I came in uniform because changing clothes would make me late.”",
+  "connections": "Kai Mercer. A clean practice copy lets an adult decide when a translating relative can help.",
+  "familyIds": [
+    "AH-R0632"
+  ],
+  "connectionIds": [
+    "AH-R1267"
+  ],
+  "reactions": [
+    {
+      "situation": "An examiner offers to read a question aloud",
+      "response": "Ramona asks the learner how they want the question presented before the examiner begins.",
+      "asWritten": "An examiner offers to read a question aloud. Ramona asks the learner how they want the question presented before the examiner begins."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Ramona gets the people at the next doorway away from the smoke and asks a bystander to make the call.",
+      "asWritten": "Smoke appears under a shop door after closing. Ramona gets the people at the next doorway away from the smoke and asks a bystander to make the call."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Ramona accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Ramona accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

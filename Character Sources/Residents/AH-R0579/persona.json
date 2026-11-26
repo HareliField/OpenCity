@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0579",
+  "personId": "AH-R0579",
+  "name": "Greta Ray",
+  "age": 30,
+  "occupation": "Freelance videographer",
+  "home": "Eastside",
+  "episode": "A play in a pocket",
+  "biography": "stories/residents/04/13-a-play-in-a-pocket.md#ah-r0579",
+  "life": "“I still remember recording a performance with the sound turned off by mistake.” People around the window at Night Shift Donuts know Greta by a small Tuesday habit. Greta knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I was filming until I understood the invitation was for one person. I put the phone in my hat.",
+  "appearance": "Greta has a small notch in the left eyebrow. Look for a blunt cut just below the ears. On an ordinary day, the familiar outfit is a soft blue checked shirt with a stitched row of blue crosses along an old repair. In conversation Greta holds eye contact until the other person has finished.",
+  "personality": "Greta is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Greta is by the number of tiny errands suddenly being done.",
+  "agenda": "To give one audience member a genuinely private performance.",
+  "family": "Emery Holland is Greta’s older cousin. Greta knows which ones can be shared. Emery keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The painted footprint*, Emery says, “I covered it during repairs and felt awful.”",
+  "connections": "Ellen Avila. The accidental cast member gets the camera put away for one private audience.",
+  "familyIds": [
+    "AH-R0375"
+  ],
+  "connectionIds": [
+    "AH-R0575"
+  ],
+  "reactions": [
+    {
+      "situation": "A young actor asks the listener to stop the pocket play",
+      "response": "Greta lets the actor stop without calling the audience's attention to the interruption.",
+      "asWritten": "A young actor asks the listener to stop the pocket play. Greta lets the actor stop without calling the audience's attention to the interruption."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Greta asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Greta asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Greta agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Greta agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

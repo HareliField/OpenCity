@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0691",
+  "personId": "AH-R0691",
+  "name": "Seth Roberts",
+  "age": 41,
+  "occupation": "Oven tender",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Midnight cinnamon",
+  "biography": "stories/residents/05/10-midnight-cinnamon.md#ah-r0691",
+  "life": "“I still remember my dad scorching spice while explaining a divorce.” On Tuesday, near Studio Boulevard, Seth waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I hated that holiday until the sack opened. My father used to toast the spice while apologizing.",
+  "appearance": "Seth has black hair twisted into a small knot, a round face with a pronounced chin, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with a partly rubbed-away embroidered initial. When somebody else has the floor, Seth gathers both sleeves neatly before settling in.",
+  "personality": "Seth has a long memory for unfair prices and a short one for small insults. Seth can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To re-create the father's toasted spice for supper.",
+  "family": "Morgan Day is Seth’s first cousin once removed. Seth asks before bringing somebody along. Morgan can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A dance for two fathers*, Morgan says, “I wrote the school's old dance rule years ago.”",
+  "connections": "Terry Sullivan. Two cooks ask relatives which smell was missing from their remembered holiday food. Also in the story is Devin Ames (spice courier).",
+  "familyIds": [
+    "AH-R1028"
+  ],
+  "connectionIds": [
+    "AH-R0693",
+    "AH-R0697"
+  ],
+  "reactions": [
+    {
+      "situation": "The spice buyer wants the mistaken sack returned",
+      "response": "Seth sets aside a sample and confirms which holiday orders depend on it.",
+      "asWritten": "The spice buyer wants the mistaken sack returned. Seth sets aside a sample and confirms which holiday orders depend on it."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Seth puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Seth puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Seth agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Seth agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

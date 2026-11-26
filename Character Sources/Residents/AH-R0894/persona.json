@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0894",
+  "personId": "AH-R0894",
+  "name": "Sam Ochoa",
+  "age": 32,
+  "occupation": "Dock porter",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Winter afloat",
+  "biography": "stories/residents/06/15-winter-afloat.md#ah-r0894",
+  "life": "“I still remember carrying a wounded gull to a cardboard box.” Tuesday often includes a stop at Juniper Street, where Sam knows which of the west-side porches has a seat in the shade.",
+  "voice": "I want him to keep feeding the gull with the broken foot. I didn't think to ask who would feed him.",
+  "appearance": "Sam has a dark undercut with a longer wave on top, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, an olive canvas jacket. It usually goes with a stitched row of blue crosses along an old repair. When somebody else has the floor, Sam leans a shoulder against the wall during long conversations.",
+  "personality": "Sam gets protective of anybody who comes into a meeting unprepared. Sam privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To arrange food for the person who looks after the gull.",
+  "family": "Bruna Andrade is Sam’s first cousin once removed. Sam brings whatever was actually growing or affordable that week. Bruna makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *An address in pencil*, Bruna says, “I wrote the figure the way Dad did and nobody under thirty could read it.”",
+  "connections": "Sasha Gil. A departing berth holder is still somebody a dock neighbor is counting on to feed a gull.",
+  "familyIds": [
+    "AH-R0681"
+  ],
+  "connectionIds": [
+    "AH-R0899"
+  ],
+  "reactions": [
+    {
+      "situation": "A friend offers a sofa for an uncertain number of weeks",
+      "response": "Sam agrees a first review date for the sofa without pretending it settles the winter.",
+      "asWritten": "A friend offers a sofa for an uncertain number of weeks. Sam agrees a first review date for the sofa without pretending it settles the winter."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Sam writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Sam writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Sam offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Sam offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

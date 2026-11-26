@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1319",
+  "personId": "AH-R1319",
+  "name": "Kai Kohli",
+  "age": 69,
+  "occupation": "Retired cabdriver",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The driving lesson fund",
+  "biography": "stories/residents/09/12-the-driving-lesson-fund.md#ah-r1319",
+  "life": "“I still remember pointing out familiar streets on a map turned sideways.” On Monday, near the corner by Juniper Tailor, Kai looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I used to be a cabdriver. I am teaching map reading in the park while the fund grows.",
+  "appearance": "Kai has closely cropped salt-and-pepper hair, a heart-shaped face and prominent ears, and a favorite piece of clothing, a cropped bottle-green coat. It usually goes with a narrow brass watch set a little fast. When somebody else has the floor, Kai looks down for a moment before saying something difficult.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To teach a park class in map reading.",
+  "family": "Carlo Leung is Kai’s younger cousin. Kai can stop the walk at any corner. Carlo chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The misplaced umbrella*, Carlo says, “I walked an elderly man home under the wrong umbrella.”",
+  "connections": "Jo Emery. Childcare and an outdoor map lesson make the same funded hour serve two households.",
+  "familyIds": [
+    "AH-R0676"
+  ],
+  "connectionIds": [
+    "AH-R1317"
+  ],
+  "reactions": [
+    {
+      "situation": "Two people qualify for the same funded lesson",
+      "response": "Kai asks both applicants which transport difficulty one lesson would actually address.",
+      "asWritten": "Two people qualify for the same funded lesson. Kai asks both applicants which transport difficulty one lesson would actually address."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Kai stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Kai stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Kai listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Kai listens first to the account of how it was actually used."
+    }
+  ]
+}

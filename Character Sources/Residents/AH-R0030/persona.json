@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0030",
+  "personId": "AH-R0030",
+  "name": "Sol Lane",
+  "age": 67,
+  "occupation": "Street violinist",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The small signature",
+  "biography": "stories/residents/01/03-the-small-signature.md#ah-r0030",
+  "life": "Sol's wife played the stronger opening and Sol played the better ending. They passed an entire courtship arguing about the middle game. Playing at a dedication is easy. Hearing chess clocks afterward is the hard part. People around Lighthouse Cove know Sol by a small Thursday habit. Sol takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "My wife and I used to play chess with bottle caps here. I'm giving the opening concert, but I want the first minute quiet enough to hear the clocks on the tables.",
+  "appearance": "Sol has two white streaks in otherwise dark hair, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with a narrow brass watch set a little fast. When somebody else has the floor, Sol leans a shoulder against the wall during long conversations.",
+  "personality": "Sol thinks best while walking. Sitting beneath someone's office clock makes Sol sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To play something that will leave the first chess game audible.",
+  "family": "Beatrice Ko is Sol’s cousin’s child. Sol puts the kettle on. Beatrice chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The fountain score*, Beatrice says, “I chose a saucepan with a dent from my first flat.”",
+  "connections": "Joan Morley. They are walking the proposed bench site at the hour when a violin and a sprinkler can both be heard.",
+  "familyIds": [
+    "AH-R0721"
+  ],
+  "connectionIds": [
+    "AH-R0025"
+  ],
+  "reactions": [
+    {
+      "situation": "The new chess table arrives too high for one of its players",
+      "response": "Sol puts one of the actual playing pieces into the affected player's hand before accepting delivery.",
+      "asWritten": "The new chess table arrives too high for one of its players. Sol puts one of the actual playing pieces into the affected player's hand before accepting delivery."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Sol suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Sol suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Sol asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Sol asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

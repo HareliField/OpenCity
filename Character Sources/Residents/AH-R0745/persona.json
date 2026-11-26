@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0745",
+  "personId": "AH-R0745",
+  "name": "Jacqueline Ueda",
+  "age": 42,
+  "occupation": "School counselor",
+  "home": "the western residential streets",
+  "episode": "A boat for sale twice",
+  "biography": "stories/residents/05/15-a-boat-for-sale-twice.md#ah-r0745",
+  "life": "“I still remember admitting I felt sick halfway through a school boat trip.” On Friday, near the bank steps, Jacqueline takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I put in an offer and withdrew it when my son said he gets seasick every trip.",
+  "appearance": "Jacqueline is easy to recognize by close-cropped dark curls and a deep crease beside the mouth when smiling. Usually dressed in a striped cotton shirt with a fabric zip pull cut from a school scarf, Jacqueline grins on one side while the eyes stay serious when listening.",
+  "personality": "Jacqueline gets protective of anybody who comes into a meeting unprepared. Jacqueline privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To let the son decline the sailing life.",
+  "family": "Carol Reed is Jacqueline’s older cousin. Jacqueline brings a spare shopping bag. Carol chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *A widow bids again*, Carol says, “I can put my pension into the joint offer. My husband says choosing the city over our kids needs both our signatures.”",
+  "connections": "Cara Mann. A withdrawn bidder and a canvas buyer discover how little boat each actually wanted.",
+  "familyIds": [
+    "AH-R0925"
+  ],
+  "connectionIds": [
+    "AH-R0747"
+  ],
+  "reactions": [
+    {
+      "situation": "The boat's owners give two answers about selling",
+      "response": "Jacqueline asks both owners which decision has actually been made.",
+      "asWritten": "The boat's owners give two answers about selling. Jacqueline asks both owners which decision has actually been made."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Jacqueline lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Jacqueline lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Jacqueline offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Jacqueline offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0380",
+  "personId": "AH-R0380",
+  "name": "Rae Nelson",
+  "age": 43,
+  "occupation": "Prosthetics workshop coordinator",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The painted footprint",
+  "biography": "stories/residents/03/08-the-painted-footprint.md#ah-r0380",
+  "life": "“I still remember my first shoe worn for walking instead of posing.” Wednesday often includes a stop at Maré Coffee, where Rae likes the table where people coming off shift stop checking the time.",
+  "voice": "I wear an artificial foot. I want to trace mine beside it on paper and take the pair home.",
+  "appearance": "Rae is easy to recognize by short black hair swept back and a wide brow and a narrow jaw. Usually dressed in a striped cotton shirt with a thin silver ring worn on a cord, Rae gives a little nod before asking a hard question when listening.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To take home a tracing of both feet.",
+  "family": "Pax Orr is Rae’s cousin raised in the same household. Rae chooses the music. Pax puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The borrowed bass*, Pax says, “I recognized the wiring by a burned thumbprint in the solder.”",
+  "connections": "Keiko Ames. Two new photographs connect a long-ago wedding with a present-day footprint.",
+  "familyIds": [
+    "AH-R0124"
+  ],
+  "connectionIds": [
+    "AH-R0379"
+  ],
+  "reactions": [
+    {
+      "situation": "A child wants to trace a different sort of foot",
+      "response": "Rae gives the child paper and room for a footprint that goes home with them.",
+      "asWritten": "A child wants to trace a different sort of foot. Rae gives the child paper and room for a footprint that goes home with them."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Rae asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Rae asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Rae listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Rae listens first to the account of how it was actually used."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1110",
+  "personId": "AH-R1110",
+  "name": "Anton Roman",
+  "age": 29,
+  "occupation": "Outpatient receptionist",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Two names on the chart",
+  "biography": "stories/residents/08/06-two-names-on-the-chart.md#ah-r1110",
+  "life": "“I still remember the first private detail I repeated too loudly at the desk.” People around the public end of the South Shore boardwalk know Anton by a small Tuesday habit. Anton checks the shade on the benches before deciding how long to stay.",
+  "voice": "I had to tell a waiting patient why the counter was busy. I did it without turning another woman's history into entertainment.",
+  "appearance": "Anton has heavy brows and an unusually delicate jaw. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is a soft blue checked shirt with a stitched row of blue crosses along an old repair. In conversation Anton looks toward the door whenever a name is called.",
+  "personality": "Anton has a long memory for unfair prices and a short one for small insults. Anton can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To keep the waiting line informed without disclosing the patient's history.",
+  "family": "Marin Brady is Anton’s older relative by marriage. Anton asks before bringing somebody along. Marin can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The gift nobody wants*, Marin says, “I trained the daughter in tailoring. She told me exactly how little space her first shop needs.”",
+  "connections": "Howard Starr. Two people at the hospital work out what other waiting patients actually need to be told.",
+  "familyIds": [
+    "AH-R1377"
+  ],
+  "connectionIds": [
+    "AH-R1104"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member asks to see both old folders",
+      "response": "Anton checks what the patient has authorized before handing over either folder.",
+      "asWritten": "A family member asks to see both old folders. Anton checks what the patient has authorized before handing over either folder."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Anton asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Anton asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Anton agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Anton agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

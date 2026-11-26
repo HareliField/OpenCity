@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0287",
+  "personId": "AH-R0287",
+  "name": "Marc Ramos",
+  "age": 15,
+  "occupation": "Secondary school pupil",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Saturday keys",
+  "biography": "stories/residents/02/14-saturday-keys.md#ah-r0287",
+  "life": "“I taught myself to skate braking against our sofa.” Monday often includes a stop at the downtown fountain, where Marc keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I delivered the missing keys on my skates. It's the first time a grown-up thanked me for using the pavement.",
+  "appearance": "Marc has auburn hair cut square at the nape, an aquiline nose and a square chin, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with a printed handkerchief folded into the pocket. When somebody else has the floor, Marc starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Marc has a talent for getting adversaries to laugh at exactly the same thing. Marc knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To be trusted with another small delivery on skates.",
+  "family": "Nessa Wren is Marc’s parent’s cousin. Marc brings whatever was actually growing or affordable that week. Nessa makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Window seven*, Nessa says, “I promised her we'd try. I kept saying try because of the time I promised my father a trip he never got to make.”",
+  "connections": "Billie Morrow. The soup tin has to travel another route with a rider who now knows where it belongs.",
+  "familyIds": [
+    "AH-R0052"
+  ],
+  "connectionIds": [
+    "AH-R0283"
+  ],
+  "reactions": [
+    {
+      "situation": "A tenant refuses to hand back a spare key",
+      "response": "Marc asks the tenant what access they would be giving up.",
+      "asWritten": "A tenant refuses to hand back a spare key. Marc asks the tenant what access they would be giving up."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Marc keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Marc keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Marc asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Marc asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

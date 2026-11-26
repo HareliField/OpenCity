@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1406",
+  "personId": "AH-R1406",
+  "name": "Alexei Macrae",
+  "age": 69,
+  "occupation": "Retired nursing aide",
+  "home": "the western residential streets",
+  "episode": "Two birthdays in one ward",
+  "biography": "stories/residents/10/06-two-birthdays-in-one-ward.md#ah-r1406",
+  "life": "“I still remember remembering which old hospital jokes have a clean ending.” People around the corner by Juniper Tailor know Alexei by a small Tuesday habit. Alexei looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I worked beside the older celebrant. I have a joke from each decade and only two are fit for a child's ward.",
+  "appearance": "Alexei is easy to recognize by closely cropped salt-and-pepper hair and full cheeks and a mouth that pulls slightly to one side. Usually dressed in a black overshirt with pearl buttons with a tiny red thread tied through the lowest buttonhole, Alexei leans a shoulder against the wall during long conversations when listening.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To find one old ward joke that suits both rooms.",
+  "family": "Roman Sutton is Alexei’s cousin. Alexei can stop the walk at any corner. Roman chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The first delivery fee*, Roman says, “I inherited money and want to underwrite deliveries without the delusion that I now own the riders' time.”",
+  "connections": "Elias Rios. The guitarist and old nursing aide agree which jokes the young patient shouldn't have to overhear.",
+  "familyIds": [
+    "AH-R1145"
+  ],
+  "connectionIds": [
+    "AH-R1408"
+  ],
+  "reactions": [
+    {
+      "situation": "The other requests the biggest balloon anyone can find",
+      "response": "Alexei finds out where the big balloon can go without crowding anyone else's bed.",
+      "asWritten": "The other requests the biggest balloon anyone can find. Alexei finds out where the big balloon can go without crowding anyone else's bed."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Alexei keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Alexei keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Alexei listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Alexei listens first to the account of how it was actually used."
+    }
+  ]
+}

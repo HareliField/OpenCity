@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0940",
+  "personId": "ah-pd-122",
+  "name": "Jay Owens",
+  "age": 55,
+  "occupation": "Patrol officer",
+  "home": "Midtown",
+  "episode": "A civilian apology",
+  "biography": "stories/residents/07/04-a-civilian-apology.md#ah-r0940",
+  "life": "“I still remember preparing a speech for someone who decided to answer back.” Saturday often includes a stop at Lighthouse Cove, where Jay takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I arranged a private apology first. The woman said the damage was public and asked me to open the doors.",
+  "appearance": "Jay has a smooth side part with one rebellious curl, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a cropped bottle-green coat. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Jay folds a paper napkin into quarters without noticing.",
+  "personality": "Jay uses precise names for tools and very approximate names for feelings. People who know Jay well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To open the public room for a public correction.",
+  "family": "Grace Palmer is Jay’s stepsibling. Jay can always ask for five minutes alone. Grace asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The porch auction*, Grace says, “I want the wicker one that held me through my first labor pains.”",
+  "connections": "Tom Reyes. The colleague who wanted the unveiling public now has to insist the correction be public too.",
+  "familyIds": [
+    "AH-R0531"
+  ],
+  "connectionIds": [
+    "AH-R0933"
+  ],
+  "reactions": [
+    {
+      "situation": "The shopkeeper asks for a public correction",
+      "response": "Jay agrees a place and size for the correction with the person who was named.",
+      "asWritten": "The shopkeeper asks for a public correction. Jay agrees a place and size for the correction with the person who was named."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Jay agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Jay agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Jay brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Jay brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

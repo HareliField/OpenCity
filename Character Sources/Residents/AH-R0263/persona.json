@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0263",
+  "personId": "AH-R0263",
+  "name": "Agnes Kahn",
+  "age": 32,
+  "occupation": "Systems tester",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The sheltered corner",
+  "biography": "stories/residents/02/12-the-sheltered-corner.md#ah-r0263",
+  "life": "“I tested caption screens because broadcasts got my mother's name wrong.” On Monday, near Breakwater Way, Agnes stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "The new stop faces the sun. I can read the driver's lips for the first time.",
+  "appearance": "Agnes has short copper curls, a long face and high cheekbones, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a braided bracelet with a single wooden bead. When somebody else has the floor, Agnes gives a little nod before asking a hard question.",
+  "personality": "Agnes can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Agnes can afford to give, and family knows to take it seriously.",
+  "agenda": "To show the planner where the light helps passengers read lips.",
+  "family": "Geraldine Andrade is Agnes’s older relative by marriage. Agnes chooses an ordinary story to tell. Geraldine asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The last home visit*, Geraldine says, “I hate being called darling and will miss the only person who could get away with it.”",
+  "connections": "Lou Arnett. The planner learns why the new morning light matters to a lip reader.",
+  "familyIds": [
+    "AH-R1489"
+  ],
+  "connectionIds": [
+    "AH-R0265"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver goes past the old stop in the rain",
+      "response": "Agnes stays with the stranded rider and helps check the next usable stop.",
+      "asWritten": "A driver goes past the old stop in the rain. Agnes stays with the stranded rider and helps check the next usable stop."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Agnes checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Agnes checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Agnes suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Agnes suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

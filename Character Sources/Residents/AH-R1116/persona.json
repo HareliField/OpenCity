@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1116",
+  "personId": "AH-R1116",
+  "name": "Elliot Cotton",
+  "age": 53,
+  "occupation": "Former theater dresser",
+  "home": "Eastside",
+  "episode": "A prize nobody entered",
+  "biography": "stories/residents/08/07-a-prize-nobody-entered.md#ah-r1116",
+  "life": "“I still remember seeing an old relationship turned into a scene onstage.” People around the blocks below Foundry Lofts know Elliot by a small Monday habit. Elliot checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I am the brother's former girlfriend. There is a paragraph I never wanted my child to read.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a partly rubbed-away embroidered initial. Elliot has a narrow face with an expressive upper lip, with auburn hair cut square at the nape. Elliot turns fully toward the person speaking during a conversation.",
+  "personality": "Elliot never tires of being shown how somebody makes a living. Elliot can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To protect the child's privacy around the old relationship.",
+  "family": "Martin Martin is Elliot’s half-sibling. Elliot chooses whether to use it. Martin saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The quiet verse*, Martin says, “I promised a recording to my sister overseas.”",
+  "connections": "Leona Navarro. The private reading gives someone portrayed in the book a place to raise concerns before publication.",
+  "familyIds": [
+    "AH-R0279"
+  ],
+  "connectionIds": [
+    "AH-R1118"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants the manuscript returned unopened",
+      "response": "Elliot returns the pages privately without treating keeping them closed as a verdict on the work.",
+      "asWritten": "A relative wants the manuscript returned unopened. Elliot returns the pages privately without treating keeping them closed as a verdict on the work."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Elliot keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Elliot keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Elliot may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Elliot may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

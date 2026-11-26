@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0233",
+  "personId": "AH-R0233",
+  "name": "Alex Carr",
+  "age": 48,
+  "occupation": "Language tutor",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A wall of birthdays",
+  "biography": "stories/residents/02/09-a-wall-of-birthdays.md#ah-r0233",
+  "life": "“I learned my spouse's language badly enough to make their father laugh.” People around the bank steps know Alex by a small Monday habit. Alex takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I grew up elsewhere and married into this house. There's finally room to write my name at my adult height.",
+  "appearance": "Alex has fine brows over wide-set eyes. Look for a high puff tied with plain cord. On an ordinary day, the familiar outfit is a rust-colored canvas coat with a copper-colored clasp that has been repaired by hand. In conversation Alex leans a shoulder against the wall during long conversations.",
+  "personality": "Alex carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To add the married-in family member's first pencil mark.",
+  "family": "Anton March is Alex’s cousin raised in the same household. Alex asks before bringing somebody along. Anton can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A ship without postcards*, Anton says, “I want a picture of the crane shadows. My kid thinks the ships do all the lifting.”",
+  "connections": "Kai Shah. A newly married name and an old nickname fit on the same tracing.",
+  "familyIds": [
+    "AH-R0312"
+  ],
+  "connectionIds": [
+    "AH-R0239"
+  ],
+  "reactions": [
+    {
+      "situation": "The landlord wants the height marks covered today",
+      "response": "Alex offers to help trace the height marks before work continues.",
+      "asWritten": "The landlord wants the height marks covered today. Alex offers to help trace the height marks before work continues."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Alex offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Alex offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Alex offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Alex offers to accompany them while they tell the truth."
+    }
+  ]
+}

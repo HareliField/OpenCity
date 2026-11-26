@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0222",
+  "personId": "AH-R0222",
+  "name": "Percy Andrade",
+  "age": 68,
+  "occupation": "Retired factory turner",
+  "home": "Eastside",
+  "episode": "Low water music",
+  "biography": "stories/residents/02/08-low-water-music.md#ah-r0222",
+  "life": "“We worked the night the cove froze at its very edge.” People around the corner by Juniper Tailor know Percy by a small Friday habit. Percy looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I scraped my knee there and have called it a much ruder name since. The choir wants to use it.",
+  "appearance": "Percy has a long face and high cheekbones. Look for salt-and-pepper curls. On an ordinary day, the familiar outfit is a narrow-striped sweater with a narrow brass watch set a little fast. In conversation Percy rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Percy gets protective of anybody who comes into a meeting unprepared. Percy privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To teach the choir the name adults only use in bad weather.",
+  "family": "Lola Jeong is Percy’s younger cousin. Percy asks before bringing somebody along. Lola can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The button card*, Lola says, “I came to return a button my wife thought unlucky.”",
+  "connections": "Ruben Keller. They decide which decidedly unofficial name can appear on the choir sheet.",
+  "familyIds": [
+    "AH-R0460"
+  ],
+  "connectionIds": [
+    "AH-R0225"
+  ],
+  "reactions": [
+    {
+      "situation": "A child asks to listen with bare feet",
+      "response": "Percy checks where the wet stone is stable and lets the child listen from there.",
+      "asWritten": "A child asks to listen with bare feet. Percy checks where the wet stone is stable and lets the child listen from there."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Percy walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Percy walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Percy offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Percy offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0630",
+  "personId": "AH-R0630",
+  "name": "Lane Marsh",
+  "age": 52,
+  "occupation": "Foundation bookkeeper",
+  "home": "the western residential streets",
+  "episode": "The trust with a typo",
+  "biography": "stories/residents/05/03-the-trust-with-a-typo.md#ah-r0630",
+  "life": "“I still remember learning rejection letters had to be signed by hand.” Saturday often includes a stop at the blocks below Foundry Lofts, where Lane checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I am keeping the wrong envelopes for rejection letters. The founder wants to write those by hand.",
+  "appearance": "Lane has a crooked front tooth visible when laughing. Look for thick, tightly coiled hair. On an ordinary day, the familiar outfit is a black overshirt with pearl buttons with a narrow brass watch set a little fast. In conversation Lane turns fully toward the person speaking.",
+  "personality": "Lane treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To let the founder sign the hard letters personally.",
+  "family": "Amanda Quintero is Lane’s cousin. Lane asks before bringing somebody along. Amanda can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The missing name on the stern*, Amanda says, “I make marine flags. I suggested one name on each side so a boat leaving and returning tells the whole story.”",
+  "connections": "Alexei Gibbs. The instruction preserved by the printer determines which letters the founder will sign.",
+  "familyIds": [
+    "AH-R1347"
+  ],
+  "connectionIds": [
+    "AH-R0623"
+  ],
+  "reactions": [
+    {
+      "situation": "The founder is asked to use a formal name",
+      "response": "Lane leaves the founder to decide what her own name on a letter should be.",
+      "asWritten": "The founder is asked to use a formal name. Lane leaves the founder to decide what her own name on a letter should be."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Lane suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Lane suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Lane changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Lane changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

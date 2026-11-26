@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0193",
+  "personId": "AH-R0193",
+  "name": "Merritt Gomes",
+  "age": 50,
+  "occupation": "Former receiver of stolen goods and shop porter",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The pawned trumpet",
+  "biography": "stories/residents/02/05-the-pawned-trumpet.md#ah-r0193",
+  "life": "“I left the trade in stolen things after my cousin bought her own camera back from me.” Thursday often includes a stop at Lighthouse Cove, where Merritt takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I used to buy stolen instruments. This time there's a receipt and a real hurt that the receipt doesn't cover.",
+  "appearance": "Merritt has black hair twisted into a small knot, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a gray fisher's sweater. It usually goes with a folded shopping list secured by a miniature clip. When somebody else has the floor, Merritt steadies a cup with both hands while listening.",
+  "personality": "Merritt is fond of ambitious ideas and deeply suspicious of grand openings. The question Merritt asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To put the buyer and seller together without assuming a crime.",
+  "family": "Aidan Song is Merritt’s cousin raised in the same household. Merritt keeps the photographs. Aidan knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The upstairs lease*, Aidan says, “I can approve reasonable leases. Nobody at the bank has ever told me what reasonable means for a night worker.”",
+  "connections": "Winifred Starr. They find a legal sale behind a rumor that had already attached itself to a dealer.",
+  "familyIds": [
+    "AH-R0754"
+  ],
+  "connectionIds": [
+    "AH-R0199"
+  ],
+  "reactions": [
+    {
+      "situation": "A neighbor demands the trumpet stop playing",
+      "response": "Merritt asks the player and the neighbor to choose a practice time they can both live with.",
+      "asWritten": "A neighbor demands the trumpet stop playing. Merritt asks the player and the neighbor to choose a practice time they can both live with."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Merritt offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Merritt offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Merritt accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Merritt accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

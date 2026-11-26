@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1329",
+  "personId": "AH-R1329",
+  "name": "Marlowe Nunes",
+  "age": 35,
+  "occupation": "Bicycle shop worker",
+  "home": "the blocks north of the port",
+  "episode": "The school photograph that travels",
+  "biography": "stories/residents/09/13-the-school-photograph-that-travels.md#ah-r1329",
+  "life": "“I still remember a drawing hung where my photograph could have gone.” On Tuesday, near the corner by Juniper Tailor, Marlowe looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I don't take pictures for religious reasons. She drew me a picture of my locked-up bike instead.",
+  "appearance": "Marlowe has black hair twisted into a small knot, a small notch in the left eyebrow, and a favorite piece of clothing, a boxy denim jacket. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Marlowe touches a knuckle to the chin when searching for a word.",
+  "personality": "Marlowe has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To keep the drawn bicycle as the personal class portrait.",
+  "family": "Cyrus Berg is Marlowe’s stepsibling. Marlowe can stop the walk at any corner. Cyrus chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The skipper goes ashore*, Cyrus says, “I want her first payday lunch somewhere she cannot see a single mast unless she chooses the window.”",
+  "connections": "Jasmine Moreau. The library copy and the bicycle drawing are two ways a helper can receive thanks.",
+  "familyIds": [
+    "AH-R1200"
+  ],
+  "connectionIds": [
+    "AH-R1322"
+  ],
+  "reactions": [
+    {
+      "situation": "The departing pupil leaves a teacher off the photograph list",
+      "response": "Marlowe asks the pupil privately what the photograph list means to them.",
+      "asWritten": "The departing pupil leaves a teacher off the photograph list. Marlowe asks the pupil privately what the photograph list means to them."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Marlowe asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Marlowe asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Marlowe asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Marlowe asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

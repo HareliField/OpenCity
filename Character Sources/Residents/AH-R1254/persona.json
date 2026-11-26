@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1254",
+  "personId": "AH-R1254",
+  "name": "Sasha Baldwin",
+  "age": 46,
+  "occupation": "Hospital cleaner",
+  "home": "Coast Ridge",
+  "episode": "A doctor moves away",
+  "biography": "stories/residents/09/06-a-doctor-moves-away.md#ah-r1254",
+  "life": "“I still remember leaving my first homegrown orange in a doctor's drawer.” Friday often includes a stop at the approach to Seabright Court, where Sasha likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I clean her office. She always notices the first orange I bring from my tree and nobody else at work does.",
+  "appearance": "Sasha is easy to recognize by short sandy hair and a marked widow's peak and a crooked front tooth visible when laughing. Usually dressed in a moss-green cardigan with a square of clean cloth for polishing smudges, Sasha looks toward the door whenever a name is called when listening.",
+  "personality": "Sasha finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To share the first orange after the move.",
+  "family": "Bianca Trent is Sasha’s cousin. Sasha asks what the birthday guest would like this year. Bianca remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *An address in pencil*, Bianca says, “I offered my grandmother's spare number tile.”",
+  "connections": "Aidan Mack. A first orange from the cleaner and a final greeting from an old patient reach the doctor in person.",
+  "familyIds": [
+    "AH-R0690"
+  ],
+  "connectionIds": [
+    "AH-R1259"
+  ],
+  "reactions": [
+    {
+      "situation": "The incoming doctor is compared with the old one",
+      "response": "Sasha gives the new doctor a chance to speak before retelling the old doctor's habits.",
+      "asWritten": "The incoming doctor is compared with the old one. Sasha gives the new doctor a chance to speak before retelling the old doctor's habits."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Sasha asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Sasha asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Sasha points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Sasha points to the person who noticed the original mistake."
+    }
+  ]
+}

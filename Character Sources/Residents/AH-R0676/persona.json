@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0676",
+  "personId": "AH-R0676",
+  "name": "Carlo Leung",
+  "age": 47,
+  "occupation": "Delivery cyclist",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The misplaced umbrella",
+  "biography": "stories/residents/05/08-the-misplaced-umbrella.md#ah-r0676",
+  "life": "“I still remember sharing one umbrella along a street with six awnings.” Friday often includes a stop at the brick passage off the shop row, where Carlo takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I walked an elderly man home under the wrong umbrella. That's where we found the right owner.",
+  "appearance": "Carlo has a small notch in the left eyebrow. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a boxy denim jacket with a knotted piece of sail thread on a key ring. In conversation Carlo holds eye contact until the other person has finished.",
+  "personality": "Carlo is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To walk the umbrellas to their correct owners.",
+  "family": "Kai Kohli is Carlo’s older cousin. Carlo chooses the familiar route. Kai can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The driving lesson fund*, Kai says, “I used to be a cabdriver. I am teaching map reading in the park while the fund grows.”",
+  "connections": "Rowan Armas. The rescued man and a family photograph give the patched umbrella two independent witnesses.",
+  "familyIds": [
+    "AH-R1319"
+  ],
+  "connectionIds": [
+    "AH-R0677"
+  ],
+  "reactions": [
+    {
+      "situation": "A hotel worker asks to throw the patched umbrella away",
+      "response": "Carlo puts the patched umbrella aside until the owner can explain the repair.",
+      "asWritten": "A hotel worker asks to throw the patched umbrella away. Carlo puts the patched umbrella aside until the owner can explain the repair."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Carlo tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Carlo tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Carlo helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Carlo helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

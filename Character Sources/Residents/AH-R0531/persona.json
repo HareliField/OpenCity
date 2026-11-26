@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0531",
+  "personId": "AH-R0531",
+  "name": "Grace Palmer",
+  "age": 63,
+  "occupation": "Retired maternity clerk",
+  "home": "the western residential streets",
+  "episode": "The porch auction",
+  "biography": "stories/residents/04/09-the-porch-auction.md#ah-r0531",
+  "life": "“I still remember gripping wicker through a late summer contraction.” People around the public road outside the Port of Asphalt know Grace by a small Sunday habit. Grace can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I want the wicker one that held me through my first labor pains.",
+  "appearance": "Grace has a crooked front tooth visible when laughing. Look for silvery hair gathered at the nape. On an ordinary day, the familiar outfit is a soft blue checked shirt with a stitched row of blue crosses along an old repair. In conversation Grace looks toward the door whenever a name is called.",
+  "personality": "Grace carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To get the wicker chair back for a family birth.",
+  "family": "Jay Owens is Grace’s stepsibling. Grace asks before bringing somebody along. Jay can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A civilian apology*, Jay says, “I arranged a private apology first. The woman said the damage was public and asked me to open the doors.”",
+  "connections": "Kathleen Garza. Both want chairs for memories that wouldn't appear in the auction catalogue.",
+  "familyIds": [
+    "AH-R0940"
+  ],
+  "connectionIds": [
+    "AH-R0534"
+  ],
+  "reactions": [
+    {
+      "situation": "Two visitors bid against each other for the porch chair",
+      "response": "Grace asks whether both people want the object itself or a particular memory of it.",
+      "asWritten": "Two visitors bid against each other for the porch chair. Grace asks whether both people want the object itself or a particular memory of it."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Grace asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Grace asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Grace offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Grace offers to accompany them while they tell the truth."
+    }
+  ]
+}

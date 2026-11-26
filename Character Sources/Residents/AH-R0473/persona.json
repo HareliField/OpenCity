@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0473",
+  "personId": "AH-R0473",
+  "name": "Sasha Perez",
+  "age": 53,
+  "occupation": "Boarding-house receptionist",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The savings club",
+  "biography": "stories/residents/04/03-the-savings-club.md#ah-r0473",
+  "life": "“I still remember my first guest spending the evening on the doorstep.” On Sunday, near the corner outside Coastal Barber, Sasha usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I can contribute time in a spare room on the route, which our rules don't count.",
+  "appearance": "On an ordinary day, look for a striped cotton shirt and a cloth patch so neatly matched it only shows in strong light. Sasha has a round face with a pronounced chin, with brown hair pinned away from the temples. Sasha draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Sasha talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Sasha's ways of saying that it is all right to leave.",
+  "agenda": "To make a spare room count as a real contribution.",
+  "family": "Vincent Armas is Sasha’s cousin raised in the same household. Sasha brings the paper and a pen. Vincent decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Reopening at six*, Vincent says, “I used to pay the old owner's daughter to sit with me when the place emptied.”",
+  "connections": "Kit Evans. One member can give a room even as the other needs some of the savings back.",
+  "familyIds": [
+    "AH-R1054"
+  ],
+  "connectionIds": [
+    "AH-R0475"
+  ],
+  "reactions": [
+    {
+      "situation": "The club draws the name of someone who cannot travel",
+      "response": "Sasha lets the winner describe where they actually want the money to go.",
+      "asWritten": "The club draws the name of someone who cannot travel. Sasha lets the winner describe where they actually want the money to go."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Sasha stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Sasha stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Sasha says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Sasha says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

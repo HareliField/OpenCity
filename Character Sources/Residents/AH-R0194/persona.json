@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0194",
+  "personId": "AH-R0194",
+  "name": "Helena Neal",
+  "age": 47,
+  "occupation": "Funeral caterer",
+  "home": "the blocks north of the port",
+  "episode": "The pawned trumpet",
+  "biography": "stories/residents/02/05-the-pawned-trumpet.md#ah-r0194",
+  "life": "“My family feeds mourners before anyone tells them where to hang their coats.” Saturday often includes a stop at the courtyard by Ferry Street Rooms, where Helena prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I took the loan to get home for my mother's funeral. I haven't told my son what the train cost.",
+  "appearance": "Helena is easy to recognize by brown hair pinned away from the temples and a round face with a pronounced chin. Usually dressed in a plum-colored cardigan with a printed handkerchief folded into the pocket, Helena squares up pieces of paper while thinking when listening.",
+  "personality": "Helena is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To tell the child what the funeral journey actually cost.",
+  "family": "Max King is Helena’s cousin raised in the same household. Helena makes the call. Max is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Names on the night wall*, Max says, “I have covered my partner's Saturdays for a decade.”",
+  "connections": "Clyde Darzi. They discuss a loan horn without making a parent explain the funeral money in public.",
+  "familyIds": [
+    "AH-R1382"
+  ],
+  "connectionIds": [
+    "AH-R0195"
+  ],
+  "reactions": [
+    {
+      "situation": "The teenager gets an audition the morning the horn is due back",
+      "response": "Helena contacts the owner before treating an audition as permission to keep the horn.",
+      "asWritten": "The teenager gets an audition the morning the horn is due back. Helena contacts the owner before treating an audition as permission to keep the horn."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Helena keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Helena keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Helena thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Helena thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

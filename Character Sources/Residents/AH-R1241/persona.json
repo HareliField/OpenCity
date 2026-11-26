@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1241",
+  "personId": "AH-R1241",
+  "name": "Gareth Rivera",
+  "age": 48,
+  "occupation": "Former confidence trickster and repairer",
+  "home": "Midtown",
+  "episode": "A clean coat for court",
+  "biography": "stories/residents/09/05-a-clean-coat-for-court.md#ah-r1241",
+  "life": "“I still remember watching a customer's suspicious face become trusting.” People around the corner outside Coastal Barber know Gareth by a small Wednesday habit. Gareth usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I cheated him. Borrowing his coat feels worse than borrowing money because I'm wearing his good opinion.",
+  "appearance": "On an ordinary day, look for a boxy denim jacket and a copper-colored clasp that has been repaired by hand. Gareth has a flat bridge to the nose and a mobile brow, with a center part and straight chestnut hair. Gareth gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Gareth is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To return the coat and address the debt separately.",
+  "family": "Cory Halevi is Gareth’s first cousin once removed. Gareth is allowed to ask about the bad news afterward. Cory calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The borrowed bass*, Cory says, “I heard that rattle every time I played the low E.”",
+  "connections": "Cassandra Joseph (creditor). Lending the coat does not settle the fraud debt. Both men have to live with that distinction. Also in the story is Desmond Green (adult child).",
+  "familyIds": [
+    "AH-R0121"
+  ],
+  "connectionIds": [
+    "AH-R1242",
+    "AH-R1244"
+  ],
+  "reactions": [
+    {
+      "situation": "A stranger asks why the lender came to court",
+      "response": "Gareth lets the lender tell or withhold the coat's history.",
+      "asWritten": "A stranger asks why the lender came to court. Gareth lets the lender tell or withhold the coat's history."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Gareth checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Gareth checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Gareth helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Gareth helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

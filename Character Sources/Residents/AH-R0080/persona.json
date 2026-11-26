@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0080",
+  "personId": "AH-R0080",
+  "name": "Pip Arlen",
+  "age": 29,
+  "occupation": "Event accountant",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A tide at noon",
+  "biography": "stories/residents/01/08-a-tide-at-noon.md#ah-r0080",
+  "life": "Pip studied accountancy to leave the family souvenir shop and keeps finding ways to spend public budgets on things that fit inside a child's pocket. It is the family habit that proved hardest to leave. Friday often includes a stop at the blocks below Foundry Lofts, where Pip checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I budgeted for one trophy and found myself facing thirty-two mayors of imaginary towns. I paid the photographer for contact sheets and let every mayor sign their own municipal record.",
+  "appearance": "Pip has a scattering of freckles across the bridge of the nose. Look for a loose dark braid. On an ordinary day, the familiar outfit is a pale blue work shirt with a braided bracelet with a single wooden bead. In conversation Pip counts on the side of one finger where hardly anybody notices.",
+  "personality": "Pip is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To give every young mayor a signed copy of a town photograph.",
+  "family": "Taylor Sethi is Pip’s older relative by marriage. Pip chooses the familiar route. Taylor can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The uniform money*, Taylor says, “I wanted to give anonymous money. My niece asked why I was so embarrassed to help someone I knew.”",
+  "connections": "Nico Salas. They decide what an award ought to recognize after a professional sculptor notices the child's kitchen.",
+  "familyIds": [
+    "AH-R0908"
+  ],
+  "connectionIds": [
+    "AH-R0074"
+  ],
+  "reactions": [
+    {
+      "situation": "The judges ask the fastest builder to speak for everyone",
+      "response": "Pip asks each child how they would enter their own castle.",
+      "asWritten": "The judges ask the fastest builder to speak for everyone. Pip asks each child how they would enter their own castle."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Pip writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Pip writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Pip helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Pip helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

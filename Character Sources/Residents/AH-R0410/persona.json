@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0410",
+  "personId": "AH-R0410",
+  "name": "Ella Montoya",
+  "age": 37,
+  "occupation": "Social historian",
+  "home": "the blocks north of the port",
+  "episode": "The widow's razor",
+  "biography": "stories/residents/03/11-the-widow-s-razor.md#ah-r0410",
+  "life": "“I still remember the first receipt written after a whole street closed.” Monday often includes a stop at the courtyard by Ferry Street Rooms, where Ella prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I wrote down every price on the lid. Together they tell you the year the whole street went broke.",
+  "appearance": "Ella is easy to recognize by a long plait tucked inside the collar and an aquiline nose and a square chin. Usually dressed in an old plum windbreaker with a knotted piece of sail thread on a key ring, Ella raises one eyebrow long before saying yes when listening.",
+  "personality": "Ella finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To date the shop's difficult winter from the price notes.",
+  "family": "Ari Lane is Ella’s cousin raised in the same household. Ella leaves the first voice message. Ari calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A civilian apology*, Ari says, “I remember the shopkeeper's child doing sums behind the counter.”",
+  "connections": "Thomas Banks. The lid that interested a collector becomes a record of a street going broke.",
+  "familyIds": [
+    "AH-R0939"
+  ],
+  "connectionIds": [
+    "AH-R0403"
+  ],
+  "reactions": [
+    {
+      "situation": "The widow wants to tell the apprentice who held it first",
+      "response": "Ella makes space for the widow and the apprentice to talk without buyers listening.",
+      "asWritten": "The widow wants to tell the apprentice who held it first. Ella makes space for the widow and the apprentice to talk without buyers listening."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Ella says what they know in their own name and refuses to treat a guess as something the child has to disprove.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Ella says what they know in their own name and refuses to treat a guess as something the child has to disprove."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Ella waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Ella waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

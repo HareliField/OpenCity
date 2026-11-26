@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1276",
+  "personId": "AH-R1276",
+  "name": "Vincent Albright",
+  "age": 67,
+  "occupation": "Retired teacher",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The other side of the cove",
+  "biography": "stories/residents/09/08-the-other-side-of-the-cove.md#ah-r1276",
+  "life": "“I still remember talking to a friend's bench after a hard week.” On Thursday, near Harbour Bakery, Vincent buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I object to putting people's names on benches. I changed my mind when I found a friend's name I could say aloud.",
+  "appearance": "Vincent has iron-gray waves, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a washed violet jersey. It usually goes with a replacement button a shade darker than the others. When somebody else has the floor, Vincent listens with the head tilted a little to the left.",
+  "personality": "Vincent listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To make space for a friend's remembered name.",
+  "family": "Clyde Starr is Vincent’s younger relative by marriage. Vincent brings whatever was actually growing or affordable that week. Clyde makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The boy on the corner*, Clyde says, “I bought the child a costume for the school play.”",
+  "connections": "Opal Felix. A saved donor letter helps a reluctant walker see how a name could earn its place on the bench.",
+  "familyIds": [
+    "AH-R1100"
+  ],
+  "connectionIds": [
+    "AH-R1277"
+  ],
+  "reactions": [
+    {
+      "situation": "A former cleaner wants to try the seat before it is installed",
+      "response": "Vincent gets the seat tested by the person who will actually need to stand up from it.",
+      "asWritten": "A former cleaner wants to try the seat before it is installed. Vincent gets the seat tested by the person who will actually need to stand up from it."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Vincent asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Vincent asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Vincent keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Vincent keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

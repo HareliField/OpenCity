@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0376",
+  "personId": "AH-R0376",
+  "name": "Ellen Scott",
+  "age": 69,
+  "occupation": "Retired athletics judge",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The painted footprint",
+  "biography": "stories/residents/03/08-the-painted-footprint.md#ah-r0376",
+  "life": "“I still remember an old football shoe that touched only three toes.” People around the public end of the South Shore boardwalk know Ellen by a small Friday habit. Ellen checks the shade on the benches before deciding how long to stay.",
+  "voice": "I ran barefoot races here. I want to know whether the old starting mark lies under that plank.",
+  "appearance": "Ellen has a softly rounded chin under sharp cheekbones. Look for closely cropped salt-and-pepper hair. On an ordinary day, the familiar outfit is a red windbreaker with a pen clipped inside the neckline. In conversation Ellen folds a paper napkin into quarters without noticing.",
+  "personality": "Ellen loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To locate the old racing start line.",
+  "family": "Yvette Weber is Ellen’s cousin. Ellen makes the call. Yvette is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The last home visit*, Yvette says, “I want the new worker to knock twice. A single knock still sounds like a debt collector at my old front door.”",
+  "connections": "Emery Holland. A saved tracing gives the runner somewhere to look for the buried starting mark.",
+  "familyIds": [
+    "AH-R1482"
+  ],
+  "connectionIds": [
+    "AH-R0375"
+  ],
+  "reactions": [
+    {
+      "situation": "A child wants to trace a different sort of foot",
+      "response": "Ellen gives the child paper and room for a footprint that goes home with them.",
+      "asWritten": "A child wants to trace a different sort of foot. Ellen gives the child paper and room for a footprint that goes home with them."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Ellen stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Ellen stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Ellen offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Ellen offers one about their own embarrassment instead."
+    }
+  ]
+}

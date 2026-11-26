@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1042",
+  "personId": "AH-R1042",
+  "name": "Pablo Roy",
+  "age": 45,
+  "occupation": "Boat fitter",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The day sailor's divorce",
+  "biography": "stories/residents/07/15-the-day-sailor-s-divorce.md#ah-r1042",
+  "life": "“I still remember mending sails while my family went out to celebrate.” People around Studio Boulevard know Pablo by a small Wednesday habit. Pablo waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I did every winter repair while my spouse sailed. I think dry-land hours ought to count.",
+  "appearance": "Pablo is easy to recognize by a blunt cut just below the ears and a heart-shaped face and prominent ears. Usually dressed in a long navy raincoat with a cloth patch so neatly matched it only shows in strong light, Pablo listens with the head tilted a little to the left when listening.",
+  "personality": "Pablo thinks best while walking. Sitting beneath someone's office clock makes Pablo sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To count winter repair time fairly.",
+  "family": "Jody Hewitt is Pablo’s second cousin. Pablo checks the date twice. Jody brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *A closing hour*, Jody says, “I was going to post a complaint. I wrote my week's opening hours on his birthday card because I need a day off too.”",
+  "connections": "Gareth Parker (former spouse). Former spouses decide whether a Sunday afloat and an hour repairing ashore have equal weight.",
+  "familyIds": [
+    "AH-R1360"
+  ],
+  "connectionIds": [
+    "AH-R1041"
+  ],
+  "reactions": [
+    {
+      "situation": "A spouse asks to count repair hours toward Sunday time",
+      "response": "Pablo checks the maintenance log before treating Sundays as the only contribution.",
+      "asWritten": "A spouse asks to count repair hours toward Sunday time. Pablo checks the maintenance log before treating Sundays as the only contribution."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Pablo puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Pablo puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Pablo asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Pablo asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

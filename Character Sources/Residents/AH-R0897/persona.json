@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0897",
+  "personId": "AH-R0897",
+  "name": "Grey Clement",
+  "age": 54,
+  "occupation": "Marina lease clerk",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Winter afloat",
+  "biography": "stories/residents/06/15-winter-afloat.md#ah-r0897",
+  "life": "“I still remember opening a storage room that used to have curtains.” People around the public end of the South Shore boardwalk know Grey by a small Wednesday habit. Grey checks the shade on the benches before deciding how long to stay.",
+  "voice": "I found an old lease with a shore room included. The room is now the marina's expensive equipment store.",
+  "appearance": "Grey has two dimples that appear only with a full smile. Look for a smooth side part with one rebellious curl. Back on the street, the familiar outfit is a soft blue checked shirt with a pen clipped inside the neckline. In conversation Grey rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Grey treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To verify the lease provision for shore housing.",
+  "family": "Ruben Choi is Grey’s half-sibling. Grey is free to hang up first. Ruben makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The porch auction*, Ruben says, “I wanted the wood for toys. The owner asked me to make one chair small enough for her new kitchen.”",
+  "connections": "Rowan Kelly. The old berth lease may give the displaced resident a real key ashore.",
+  "familyIds": [
+    "AH-R0536"
+  ],
+  "connectionIds": [
+    "AH-R0891"
+  ],
+  "reactions": [
+    {
+      "situation": "A yard manager asks the liveaboard to leave by Friday",
+      "response": "Grey asks where the resident can sleep on the first night ashore.",
+      "asWritten": "A yard manager asks the liveaboard to leave by Friday. Grey asks where the resident can sleep on the first night ashore."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Grey stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Grey stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Grey changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Grey changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

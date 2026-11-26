@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1403",
+  "personId": "AH-R1403",
+  "name": "Bailey Salcedo",
+  "age": 42,
+  "occupation": "Hospital party volunteer",
+  "home": "the western residential streets",
+  "episode": "Two birthdays in one ward",
+  "biography": "stories/residents/10/06-two-birthdays-in-one-ward.md#ah-r1403",
+  "life": "“I still remember ordering the wrong cake for someone with a lovely laugh.” Monday often includes a stop at the crossing outside Verve Nail Studio, where Bailey notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I bought matching cakes before asking either patient which flavors they eat.",
+  "appearance": "Bailey has a flat bridge to the nose and a mobile brow. Look for a smooth side part with one rebellious curl. Out of work clothes, the familiar outfit is a sand-colored linen shirt with a fabric zip pull cut from a school scarf. In conversation Bailey holds eye contact until the other person has finished.",
+  "personality": "Bailey enjoys routines and will defend the right of someone else to break one. As a result, Bailey is often everyone's favorite cover for a missed morning.",
+  "agenda": "To replace one matched cake with two chosen flavors.",
+  "family": "Alexei Gross is Bailey’s older cousin. Bailey brings something that can still be enjoyed tomorrow. Alexei checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The split visit*, Alexei says, “I forgot to cancel because my treatment date moved.”",
+  "connections": "Una Bell. The cake volunteer can hold a slice after learning when the cleaner arrives.",
+  "familyIds": [
+    "AH-R0733"
+  ],
+  "connectionIds": [
+    "AH-R1409"
+  ],
+  "reactions": [
+    {
+      "situation": "One birthday patient wants a quiet ward",
+      "response": "Bailey lets the quiet patient choose a low-key celebration separate from the party.",
+      "asWritten": "One birthday patient wants a quiet ward. Bailey lets the quiet patient choose a low-key celebration separate from the party."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Bailey keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Bailey keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Bailey keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Bailey keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

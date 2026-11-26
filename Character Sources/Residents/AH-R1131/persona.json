@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1131",
+  "personId": "AH-R1131",
+  "name": "Cyrus Keller",
+  "age": 15,
+  "occupation": "Foster child and secondary pupil",
+  "home": "the western residential streets",
+  "episode": "The third bedroom",
+  "biography": "stories/residents/08/09-the-third-bedroom.md#ah-r1131",
+  "life": "“I still remember holding my brother's wrist whenever the bedroom door shut.” On Saturday, near the approach to Seabright Court, Cyrus likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I have shared a room with my brother ever since the night we left. A closed door still feels like an alarm.",
+  "appearance": "Cyrus is easy to recognize by thick, tightly coiled hair and a small notch in the left eyebrow. Usually dressed in a plum-colored cardigan with a square of clean cloth for polishing smudges, Cyrus looks at people's hands before looking at what they carry when listening.",
+  "personality": "Cyrus uses precise names for tools and very approximate names for feelings. People who know Cyrus well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To choose when the new room's door closes.",
+  "family": "Dora Villa is Cyrus’s older cousin. Cyrus chooses the music. Dora puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The expensive summer*, Dora says, “I used to be the kid with no money at this party.”",
+  "connections": "Dale Lane (foster sibling). The siblings want different things from the same closed bedroom door. Also in the story is Ivy Burke (foster parent).",
+  "familyIds": [
+    "AH-R0979"
+  ],
+  "connectionIds": [
+    "AH-R1132",
+    "AH-R1133"
+  ],
+  "reactions": [
+    {
+      "situation": "A caseworker asks the foster siblings to describe sharing",
+      "response": "Cyrus gives each sibling room to describe sharing separately.",
+      "asWritten": "A caseworker asks the foster siblings to describe sharing. Cyrus gives each sibling room to describe sharing separately."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Cyrus asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Cyrus asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Cyrus brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Cyrus brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

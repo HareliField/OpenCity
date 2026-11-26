@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0190",
+  "personId": "AH-R0190",
+  "name": "Leon Gao",
+  "age": 48,
+  "occupation": "Engraver",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The second dog",
+  "biography": "stories/residents/02/04-the-second-dog.md#ah-r0190",
+  "life": "“I learned engraving by cutting each of my sisters' names into cheap teaspoons.” Monday often includes a stop at Breakwater Way, where Leon stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I've made two tags with different sounds. You can tell who's coming down the stairs without looking.",
+  "appearance": "On an ordinary day, look for a red windbreaker and a comb in a sleeve sewn into the lining. Leon has full cheeks and a mouth that pulls slightly to one side, with brown hair pinned away from the temples. Leon leans a shoulder against the wall during long conversations during a conversation.",
+  "personality": "Leon can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Leon can afford to give, and family knows to take it seriously.",
+  "agenda": "To fit two tags the household can identify by sound alone.",
+  "family": "Anna Avila is Leon’s second cousin. Leon puts the kettle on. Anna chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A widow bids again*, Anna says, “I want ownership shared because the widow's next wife might feel differently about us.”",
+  "connections": "Adriana Arnett. The delivery picture lets the engraver finish the two distinct tags.",
+  "familyIds": [
+    "AH-R0923"
+  ],
+  "connectionIds": [
+    "AH-R0188"
+  ],
+  "reactions": [
+    {
+      "situation": "A parent wants both dogs handed over immediately",
+      "response": "Leon waits until the dogs and the children are settled before discussing the handover.",
+      "asWritten": "A parent wants both dogs handed over immediately. Leon waits until the dogs and the children are settled before discussing the handover."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Leon agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Leon agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Leon suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Leon suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

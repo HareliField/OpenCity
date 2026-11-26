@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1370",
+  "personId": "AH-R1370",
+  "name": "Marcel Easton",
+  "age": 54,
+  "occupation": "Harbor kettle attendant",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A last ship together",
+  "biography": "stories/residents/10/02-a-last-ship-together.md#ah-r1370",
+  "life": "“I still remember hearing a kettle above the sound of a stopped ship.” On Monday, near Maré Coffee, Marcel likes the table where people coming off shift stop checking the time.",
+  "voice": "I thought goodbye would sound like a whistle. The last thing they wanted to hear was the kettle boiling in the break room.",
+  "appearance": "Marcel has close-cropped dark curls, an aquiline nose and a square chin, and a favorite piece of clothing, a plum-colored cardigan. It usually goes with a knotted piece of sail thread on a key ring. When somebody else has the floor, Marcel starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Marcel tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Marcel will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To put the kettle on for the last shared break.",
+  "family": "Valentina Berry is Marcel’s cousin raised in the same household. Marcel brings something that can still be enjoyed tomorrow. Valentina checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The ladder crossing*, Valentina says, “I held up a bus and lost the driver's goodwill.”",
+  "connections": "Jamie Hamilton. The person making the plaque brings it to the room where the kettle and the crew actually are.",
+  "familyIds": [
+    "AH-R0562"
+  ],
+  "connectionIds": [
+    "AH-R1365"
+  ],
+  "reactions": [
+    {
+      "situation": "A younger worker is asked to perform the final lift",
+      "response": "Marcel lets the trainee carry out the job they are qualified for and keeps space for the retirees to watch.",
+      "asWritten": "A younger worker is asked to perform the final lift. Marcel lets the trainee carry out the job they are qualified for and keeps space for the retirees to watch."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Marcel finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Marcel finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Marcel repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Marcel repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

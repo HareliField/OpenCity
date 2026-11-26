@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0472",
+  "personId": "AH-R0472",
+  "name": "Kai Ibrahim",
+  "age": 70,
+  "occupation": "Retired caretaker",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The savings club",
+  "biography": "stories/residents/04/03-the-savings-club.md#ah-r0472",
+  "life": "“I still remember winning a raffle for a coat that didn't fit.” People around Lighthouse Cove know Kai by a small Wednesday habit. Kai takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I've won the draw twice and deferred it twice. This year the person I was visiting has moved here.",
+  "appearance": "On an ordinary day, look for a soft blue checked shirt and a pair of reading glasses in a cloth sleeve. Kai has a softly rounded chin under sharp cheekbones, with a gray streak running back from the forehead. Kai raises one eyebrow long before saying yes during a conversation.",
+  "personality": "Kai listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To spend a deferred holiday with the relative now nearby.",
+  "family": "Noel Ford is Kai’s younger relative by marriage. Kai chooses the familiar route. Noel can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The last light at the harbor*, Noel says, “I am the electrician who suggested timers. The owners asked me to leave the switches where human hands can get to them.”",
+  "connections": "Vera Price (club treasurer). A deferred holiday and an unused refund may create a second journey.",
+  "familyIds": [
+    "AH-R1498"
+  ],
+  "connectionIds": [
+    "AH-R0480"
+  ],
+  "reactions": [
+    {
+      "situation": "A donor asks for the club's name in return for a ticket",
+      "response": "Kai asks the members to hear the terms before deciding on a name.",
+      "asWritten": "A donor asks for the club's name in return for a ticket. Kai asks the members to hear the terms before deciding on a name."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Kai waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Kai waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Kai keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Kai keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

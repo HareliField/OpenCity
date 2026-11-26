@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1274",
+  "personId": "AH-R1274",
+  "name": "Walter Ray",
+  "age": 46,
+  "occupation": "Catering supervisor",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The other side of the cove",
+  "biography": "stories/residents/09/08-the-other-side-of-the-cove.md#ah-r1274",
+  "life": "“I still remember hearing rented hands called willing volunteers.” Tuesday often includes a stop at the corner by Juniper Tailor, where Walter looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I want my mother's work named with her proper job title. The city keeps calling her a volunteer.",
+  "appearance": "Walter has heavy brows and an unusually delicate jaw. Look for auburn hair cut square at the nape. On an ordinary day, the familiar outfit is a faded indigo overshirt with a partly rubbed-away embroidered initial. In conversation Walter squares up pieces of paper while thinking.",
+  "personality": "Walter reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Walter trusts most.",
+  "agenda": "To get the mother's paid work accurately acknowledged.",
+  "family": "Carlo Gil is Walter’s stepsibling. Walter brings whatever was actually growing or affordable that week. Carlo makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Midnight cinnamon*, Carlo says, “I sell cinnamon by weight. I am trying to price the little packets customers buy just to carry home.”",
+  "connections": "Yusuf Bennett. Mother and successor become visible to the committee as two paid workers. Also in the story is Aria Machado (mother).",
+  "familyIds": [
+    "AH-R0692"
+  ],
+  "connectionIds": [
+    "AH-R1278",
+    "AH-R1271"
+  ],
+  "reactions": [
+    {
+      "situation": "A former cleaner wants to try the seat before it is installed",
+      "response": "Walter gets the seat tested by the person who will actually need to stand up from it.",
+      "asWritten": "A former cleaner wants to try the seat before it is installed. Walter gets the seat tested by the person who will actually need to stand up from it."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Walter offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Walter offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Walter does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Walter does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

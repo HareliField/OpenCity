@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0863",
+  "personId": "AH-R0863",
+  "name": "Denise Ho",
+  "age": 39,
+  "occupation": "Unlicensed childcare worker",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The late crossing",
+  "biography": "stories/residents/06/12-the-late-crossing.md#ah-r0863",
+  "life": "“I still remember watching somebody else's children beside a car I couldn't drive.” On Wednesday, near the public end of the South Shore boardwalk, Denise checks the shade on the benches before deciding how long to stay.",
+  "voice": "I lost my license and kept quiet. I contribute by watching the driver's children for the round trip.",
+  "appearance": "Denise is easy to recognize by black hair twisted into a small knot and one cheek that creases before the other. Usually dressed in a soft blue checked shirt with one cuff folded back twice, Denise folds a paper napkin into quarters without noticing when listening.",
+  "personality": "Denise gets protective of anybody who comes into a meeting unprepared. Denise privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To earn a place in the rota by providing childcare.",
+  "family": "Bea Rial is Denise’s half-sibling. Denise is free to hang up first. Bea makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Window seven*, Bea says, “You can see an old handprint when the sun catches that pane.”",
+  "connections": "Leon Osei. Watching children gives a rider at the furthest stop enough time to reach the lift.",
+  "familyIds": [
+    "AH-R0056"
+  ],
+  "connectionIds": [
+    "AH-R0866"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver on the rota asks for petrol money",
+      "response": "Denise agrees what the fuel actually cost and discusses the contribution privately.",
+      "asWritten": "A driver on the rota asks for petrol money. Denise agrees what the fuel actually cost and discusses the contribution privately."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Denise alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Denise alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Denise offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Denise offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

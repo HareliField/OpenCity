@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0996",
+  "personId": "AH-R0996",
+  "name": "Ethan Wells",
+  "age": 45,
+  "occupation": "Community musician",
+  "home": "Coast Ridge",
+  "episode": "An old restaurant debt",
+  "biography": "stories/residents/07/10-an-old-restaurant-debt.md#ah-r0996",
+  "life": "“I still remember playing music nobody in the family had requested.” On Monday, near the courtyard by Ferry Street Rooms, Ethan prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I arrived expecting interest. The owner wants the name of the singer from the service.",
+  "appearance": "Ethan is easy to recognize by black hair twisted into a small knot and one cheek that creases before the other. Usually dressed in an olive canvas jacket with a thin silver ring worn on a cord, Ethan turns fully toward the person speaking when listening.",
+  "personality": "Ethan tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Ethan will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To identify the service singer.",
+  "family": "Ava Boyd is Ethan’s stepsibling. Ethan asks what the birthday guest would like this year. Ava remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The rescue hut mural*, Ava says, “I was going to clean the paint off for free.”",
+  "connections": "Laura Osborne. A late contribution helps the family find the musician at the original wake.",
+  "familyIds": [
+    "AH-R0530"
+  ],
+  "connectionIds": [
+    "AH-R0995"
+  ],
+  "reactions": [
+    {
+      "situation": "The shop owners disagree on what to do with the payment",
+      "response": "Ethan asks both owners for figures before anyone promises a fund or a repair.",
+      "asWritten": "The shop owners disagree on what to do with the payment. Ethan asks both owners for figures before anyone promises a fund or a repair."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Ethan asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Ethan asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Ethan repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Ethan repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

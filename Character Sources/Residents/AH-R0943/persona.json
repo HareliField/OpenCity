@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0943",
+  "personId": "AH-R0943",
+  "name": "Douglas Waters",
+  "age": 31,
+  "occupation": "Parcel handler",
+  "home": "Eastside",
+  "episode": "The release address",
+  "biography": "stories/residents/07/05-the-release-address.md#ah-r0943",
+  "life": "“I still remember a letter addressed to somebody who didn't own my room anymore.” People around the window at Night Shift Donuts know Douglas by a small Monday habit. Douglas knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I rented his old room. The first letter that arrived asked my permission to send another.",
+  "appearance": "Douglas has a wide brow and a narrow jaw. Look for thick, tightly coiled hair. On an ordinary day, the familiar outfit is a gray fisher's sweater with a train token tied to a zipper pull. In conversation Douglas steadies a cup with both hands while listening.",
+  "personality": "Douglas is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To give a clear answer about receiving more forwarded mail.",
+  "family": "Rafael Sloan is Douglas’s cousin raised in the same household. Douglas chooses whether they walk home or sit a while. Rafael brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The crane shadow*, Rafael says, “I spent my first year here looking down. This gull was the first thing that made me look up.”",
+  "connections": "Lou Reed. Two households sort out where letters ought to go without making a public forwarding list.",
+  "familyIds": [
+    "AH-R0618"
+  ],
+  "connectionIds": [
+    "AH-R0942"
+  ],
+  "reactions": [
+    {
+      "situation": "The returning father asks to visit the old address",
+      "response": "Douglas checks whether the person living there now wants visitors.",
+      "asWritten": "The returning father asks to visit the old address. Douglas checks whether the person living there now wants visitors."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Douglas asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Douglas asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Douglas helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Douglas helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

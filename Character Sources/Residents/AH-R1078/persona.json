@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1078",
+  "personId": "AH-R1078",
+  "name": "Terry Lau",
+  "age": 70,
+  "occupation": "Retired nursery owner",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The guarantee",
+  "biography": "stories/residents/08/03-the-guarantee.md#ah-r1078",
+  "life": "“I still remember saying no to my child at a bank counter.” People around Paper & Pine Books know Terry by a small Tuesday habit. Terry starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I declined to be a guarantor for my own child. I'm helping this mother find a way to say yes with limits.",
+  "appearance": "Terry has a deep crease beside the mouth when smiling. Look for a gray streak running back from the forehead. Out of work clothes, the familiar outfit is a plum-colored cardigan with a pen clipped inside the neckline. In conversation Terry rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Terry enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To help the mother set a limit without taking over.",
+  "family": "Elias Hart is Terry’s younger cousin. Terry chooses whether to use it. Elias saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The almost scholarship*, Elias says, “I found a host family. They have an empty room and a curfew the winner's evening job can't meet.”",
+  "connections": "Grant Penn. The carer and another parent compare what helping somebody can cost other family members.",
+  "familyIds": [
+    "AH-R0875"
+  ],
+  "connectionIds": [
+    "AH-R1074"
+  ],
+  "reactions": [
+    {
+      "situation": "A sibling wants the bank figures read at a family meal",
+      "response": "Terry asks the guarantor what can be shared at dinner before reading out any figures.",
+      "asWritten": "A sibling wants the bank figures read at a family meal. Terry asks the guarantor what can be shared at dinner before reading out any figures."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Terry takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Terry takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Terry puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Terry puts the deal away and suggests a walk."
+    }
+  ]
+}

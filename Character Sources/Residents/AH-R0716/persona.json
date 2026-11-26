@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0716",
+  "personId": "AH-R0716",
+  "name": "Sebastian Hudson",
+  "age": 47,
+  "occupation": "Scenic painter",
+  "home": "the western residential streets",
+  "episode": "Level with the window",
+  "biography": "stories/residents/05/12-level-with-the-window.md#ah-r0716",
+  "life": "“I still remember painting a horizon across a kitchen blind.” People around the public end of the South Shore boardwalk know Sebastian by a small Sunday habit. Sebastian checks the shade on the benches before deciding how long to stay.",
+  "voice": "I painted a sea view on a screen because the real sea is behind the bus.",
+  "appearance": "Sebastian has short copper curls, a long face and high cheekbones, and a favorite piece of clothing, an olive canvas jacket. It usually goes with one loose pocket corner secured with green thread. When somebody else has the floor, Sebastian gathers both sleeves neatly before settling in.",
+  "personality": "Sebastian feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To finish the sea view for the screen.",
+  "family": "Ruth Kim is Sebastian’s stepsibling. Sebastian picks the meeting place. Ruth sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The Saturday swap*, Ruth says, “I can work Saturday. My wife wants me to admit I prefer the station to another afternoon with her father.”",
+  "connections": "Pablo Thomas. Two home decorators compare the view from an overfull bus.",
+  "familyIds": [
+    "AH-R0782"
+  ],
+  "connectionIds": [
+    "AH-R0714"
+  ],
+  "reactions": [
+    {
+      "situation": "The resident closes the curtains during the morning detour",
+      "response": "Sebastian treats the closed curtain as the resident's answer for that day.",
+      "asWritten": "The resident closes the curtains during the morning detour. Sebastian treats the closed curtain as the resident's answer for that day."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Sebastian finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Sebastian finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Sebastian lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Sebastian lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0911",
+  "personId": "AH-R0911",
+  "name": "Sage Jeong",
+  "age": 38,
+  "occupation": "Freight partnership clerk",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The absent signature",
+  "biography": "stories/residents/07/02-the-absent-signature.md#ah-r0911",
+  "life": "“I still remember a goodbye address written among baking instructions.” People around the market by Market Flats know Sage by a small Friday habit. Sage often waits until the delivery baskets are stacked before going in.",
+  "voice": "I found her address on an old recipe card. I won't give it away until she asks me to.",
+  "appearance": "Sage has thick, tightly coiled hair, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a plum-colored cardigan. It usually goes with a folded shopping list secured by a miniature clip. When somebody else has the floor, Sage touches a knuckle to the chin when searching for a word.",
+  "personality": "Sage enjoys routines and will defend the right of someone else to break one. As a result, Sage is often everyone's favorite cover for a missed morning.",
+  "agenda": "To ask the absent signer before sharing the address.",
+  "family": "Lucinda Duran is Sage’s cousin. Sage chooses whether they walk home or sit a while. Lucinda brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The quiet verse*, Lucinda says, “I thought the microphone had failed and ran onto the stage.”",
+  "connections": "Mara Bly. They agree to ask the missing aunt before giving her address to people who want a signature.",
+  "familyIds": [
+    "AH-R0276"
+  ],
+  "connectionIds": [
+    "AH-R0917"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants the absent signer's address",
+      "response": "Sage asks the absent person what address, if any, can be shared.",
+      "asWritten": "A relative wants the absent signer's address. Sage asks the absent person what address, if any, can be shared."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Sage offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem.",
+      "asWritten": "A friend asks for a loan due back before payday. Sage offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Sage keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Sage keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

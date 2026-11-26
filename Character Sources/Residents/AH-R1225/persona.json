@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1225",
+  "personId": "AH-R1225",
+  "name": "Elias Lau",
+  "age": 39,
+  "occupation": "Mortgaged flight attendant",
+  "home": "Midtown",
+  "episode": "The million-dollar flat",
+  "biography": "stories/residents/09/03-the-million-dollar-flat.md#ah-r1225",
+  "life": "“I still remember celebrating a purchase without mentioning its interest rate.” Thursday often includes a stop at Studio Boulevard, where Elias waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I own the identical flat downstairs and owe the bank more than anyone imagines.",
+  "appearance": "Elias is easy to recognize by a swept fringe and a closely clipped nape and fine brows over wide-set eyes. Usually dressed in a red windbreaker with a braided bracelet with a single wooden bead, Elias gathers both sleeves neatly before settling in when listening.",
+  "personality": "Elias always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Elias is trying to tell the difference before the bill arrives.",
+  "agenda": "To explain why equal property values hide different debts.",
+  "family": "Marisol Lane is Elias’s older relative by marriage. Elias calls back when there is finally a little privacy. Marisol leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The fitting mirror*, Marisol says, “I don't remember my wedding outfit. The salon owner found me reflected in another bride's photograph.”",
+  "connections": "Grey Iyer. A resident with a large mortgage can ask the adviser difficult questions about paper wealth.",
+  "familyIds": [
+    "AH-R0559"
+  ],
+  "connectionIds": [
+    "AH-R1227"
+  ],
+  "reactions": [
+    {
+      "situation": "The homeowner is asked to sell while the market is high",
+      "response": "Elias checks which affordable addresses leave the sister within visiting distance.",
+      "asWritten": "The homeowner is asked to sell while the market is high. Elias checks which affordable addresses leave the sister within visiting distance."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Elias asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Elias asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Elias suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Elias suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

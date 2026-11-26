@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0834",
+  "personId": "AH-R0834",
+  "name": "Charlie Starr",
+  "age": 39,
+  "occupation": "Spare-room decorator",
+  "home": "the blocks north of the port",
+  "episode": "A room for a father",
+  "biography": "stories/residents/06/09-a-room-for-a-father.md#ah-r0834",
+  "life": "“I still remember painting a bedroom before I knew who its owner was.” People around the downtown fountain know Charlie by a small Monday habit. Charlie keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I painted the spare room blue. He called it a color for a nursery and I nearly sent him packing.",
+  "appearance": "Charlie has two dimples that appear only with a full smile. Look for a long plait tucked inside the collar. On an ordinary day, the familiar outfit is a pale blue work shirt with a watch on a cracked leather band. In conversation Charlie takes off the watch before a long conversation.",
+  "personality": "Charlie is fond of ambitious ideas and deeply suspicious of grand openings. The question Charlie asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To finish the blue room on terms the returning parent can accept.",
+  "family": "Rene Mott is Charlie’s cousin. Charlie can always ask for five minutes alone. Rene asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *An unfinished atlas*, Rene says, “My hand shook the day I ruined a school register with too much water.”",
+  "connections": "Sonia Garza. Preparing a bedroom competes with the guest's own need for occasional space in the house.",
+  "familyIds": [
+    "AH-R0062"
+  ],
+  "connectionIds": [
+    "AH-R0837"
+  ],
+  "reactions": [
+    {
+      "situation": "A sibling leaves the room during the welcome dinner",
+      "response": "Charlie leaves the departing sibling room to get out without turning supper into a vote.",
+      "asWritten": "A sibling leaves the room during the welcome dinner. Charlie leaves the departing sibling room to get out without turning supper into a vote."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Charlie asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Charlie asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Charlie accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Charlie accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

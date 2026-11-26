@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0657",
+  "personId": "AH-R0657",
+  "name": "Lena Sanders",
+  "age": 37,
+  "occupation": "Medical screen fitter",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Two left slippers",
+  "biography": "stories/residents/05/06-two-left-slippers.md#ah-r0657",
+  "life": "“I still remember a nurse remembering to close the changing curtain.” On Friday, near Tideline Market, Lena picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I hated getting dressed in front of people after surgery. I designed a fitting screen from an old curtain.",
+  "appearance": "Lena has a dark undercut with a longer wave on top, a crooked front tooth visible when laughing, and a favorite piece of clothing, a dark green knitted vest. It usually goes with a cloth patch so neatly matched it only shows in strong light. When somebody else has the floor, Lena steadies a cup with both hands while listening.",
+  "personality": "Lena has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To give recovering patients a private fitting space.",
+  "family": "Bailey Sato is Lena’s first cousin once removed. Lena remembers the birthdays. Bailey asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Land without cranes*, Bailey says, “I own shares in the redevelopment. My grandson asked me to show him which wall I helped build.”",
+  "connections": "Denise Emery. They design a discharge fitting with a seat and some privacy.",
+  "familyIds": [
+    "AH-R1066"
+  ],
+  "connectionIds": [
+    "AH-R0653"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient opens the bag and finds two left slippers",
+      "response": "Lena sets out the pair and asks the discharge worker to check the right foot too.",
+      "asWritten": "A patient opens the bag and finds two left slippers. Lena sets out the pair and asks the discharge worker to check the right foot too."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Lena walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Lena walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Lena asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Lena asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

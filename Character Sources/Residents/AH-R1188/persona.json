@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1188",
+  "personId": "AH-R1188",
+  "name": "Allen Baker",
+  "age": 55,
+  "occupation": "Sound technician",
+  "home": "Old Town",
+  "episode": "The new language at dinner",
+  "biography": "stories/residents/08/14-the-new-language-at-dinner.md#ah-r1188",
+  "life": "“I still remember finding an old voice in the middle of a music cassette.” Thursday often includes a stop at the corner by Juniper Tailor, where Allen looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I have recordings of him telling jokes before his stroke. The new carer laughed before the punchline was even finished.",
+  "appearance": "Allen is easy to recognize by short sandy hair and a marked widow's peak and a strong profile and a little space between the front teeth. Usually dressed in an olive canvas jacket with a stitched row of blue crosses along an old repair, Allen gives a little nod before asking a hard question when listening.",
+  "personality": "Allen has a quick wit and an equally quick sense of shame. A joke is often Allen's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To bring the recorded jokes to a shared meal.",
+  "family": "Logan Hamm is Allen’s younger cousin. Allen chooses the music. Logan puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The crane shadow*, Logan says, “I got teased for being sentimental. My foreman quietly gave me his lunch break to watch.”",
+  "connections": "Ariel Pinto. A joke recorded before the stroke gives the interpreter a familiar voice to begin with.",
+  "familyIds": [
+    "AH-R0615"
+  ],
+  "connectionIds": [
+    "AH-R1185"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone asks a family member to translate an intimate question",
+      "response": "Allen offers a qualified interpreter and lets the client decide how much family should hear.",
+      "asWritten": "Someone asks a family member to translate an intimate question. Allen offers a qualified interpreter and lets the client decide how much family should hear."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Allen asks which other bill repayment would displace, then offers only what the household can afford to give.",
+      "asWritten": "A friend asks for a loan due back before payday. Allen asks which other bill repayment would displace, then offers only what the household can afford to give."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Allen seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Allen seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

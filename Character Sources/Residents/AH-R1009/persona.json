@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1009",
+  "personId": "AH-R1009",
+  "name": "Evelyn Wade",
+  "age": 49,
+  "occupation": "Salon business partner",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The salon on strike",
+  "biography": "stories/residents/07/11-the-salon-on-strike.md#ah-r1009",
+  "life": "“I still remember covering a colleague's train fare during a strike.” On Saturday, near Paper & Pine Books, Evelyn starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I have savings. I promised to cover a day's wages for the youngest worker if she wanted to speak.",
+  "appearance": "Evelyn is easy to recognize by short black hair swept back and one cheek that creases before the other. Usually dressed in a faded indigo overshirt with a pocket notebook shaped by years of sitting on it, Evelyn looks at people's hands before looking at what they carry when listening.",
+  "personality": "Evelyn listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To cover the youngest speaker's lost day.",
+  "family": "Dario Allard is Evelyn’s younger cousin. Their family had a rule about visiting someone who had fallen on hard times. Bring enough food for the next day and bring a reason for an ordinary conversation. Evelyn can rustle up a convincing practical excuse for a visit. Asked about *The spare spectacles*, Dario says, “I keep my dad's spare pair in my bag to see menus the way he did.”",
+  "connections": "Chris Moss. Sales figures give the worker financing a colleague's absence a better bargaining position.",
+  "familyIds": [
+    "AH-R0336"
+  ],
+  "connectionIds": [
+    "AH-R1004"
+  ],
+  "reactions": [
+    {
+      "situation": "A promotional client insists on keeping the booking",
+      "response": "Evelyn asks who will be paid to staff the booking before promising it can go ahead.",
+      "asWritten": "A promotional client insists on keeping the booking. Evelyn asks who will be paid to staff the booking before promising it can go ahead."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Evelyn brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Evelyn brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Evelyn keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Evelyn keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

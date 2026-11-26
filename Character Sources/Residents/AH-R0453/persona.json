@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0453",
+  "personId": "AH-R0453",
+  "name": "Benjamin Lewis",
+  "age": 31,
+  "occupation": "Costume bead dealer",
+  "home": "the western residential streets",
+  "episode": "The button card",
+  "biography": "stories/residents/04/01-the-button-card.md#ah-r0453",
+  "life": "“I still remember a costume star made from cracked buttons.” On Thursday, near Lighthouse Cove, Benjamin takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I collect glass buttons but gave away the best one because the boy needed a moon for his costume.",
+  "appearance": "Benjamin has a deep crease beside the mouth when smiling. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a cream pullover with a pocket notebook shaped by years of sitting on it. In conversation Benjamin counts on the side of one finger where hardly anybody notices.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To finish the child's moon costume before the show.",
+  "family": "Rain Daniels is Benjamin’s older relative by marriage. Benjamin remembers the birthdays. Rain asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Two left slippers*, Rain says, “I embroider names inside slippers. I'm going to ask first who can bend far enough to read them.”",
+  "connections": "Elizabeth Osei. A child's costume moon survives beside an older worker's maternity buttons.",
+  "familyIds": [
+    "AH-R0655"
+  ],
+  "connectionIds": [
+    "AH-R0459"
+  ],
+  "reactions": [
+    {
+      "situation": "A child takes the most valuable button",
+      "response": "Benjamin lets the child show what the button is for before calling it too valuable.",
+      "asWritten": "A child takes the most valuable button. Benjamin lets the child show what the button is for before calling it too valuable."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Benjamin writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Benjamin writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Benjamin listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Benjamin listens first to the account of how it was actually used."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0909",
+  "personId": "AH-R0909",
+  "name": "Rae Vargas",
+  "age": 33,
+  "occupation": "School supplies aide",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The uniform money",
+  "biography": "stories/residents/07/01-the-uniform-money.md#ah-r0909",
+  "life": "“I still remember drawing bus routes beside the ironing board.” On Thursday, near the public road outside the Port of Asphalt, Rae can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I drew a timetable for sharing the iron. The children rearranged it by bus times.",
+  "appearance": "Rae has close-cropped dark curls, a narrow face with an expressive upper lip, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a copper-colored clasp that has been repaired by hand. When somebody else has the floor, Rae gives a little nod before asking a hard question.",
+  "personality": "Rae tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Rae will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To make the iron schedule match the buses.",
+  "family": "Tom Fox is Rae’s cousin. Rae asks what the birthday guest would like this year. Tom remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The crane shadow*, Tom says, “I keep our shift diary and had never recorded anything that served no business purpose.”",
+  "connections": "Keir Pierce. The repair shift is ordered by the bus schedule the pupils worked out for the iron.",
+  "familyIds": [
+    "AH-R0613"
+  ],
+  "connectionIds": [
+    "AH-R0904"
+  ],
+  "reactions": [
+    {
+      "situation": "A student turns up in the wrong uniform",
+      "response": "Rae gets the child through the gate before discussing the uniform with an adult.",
+      "asWritten": "A student turns up in the wrong uniform. Rae gets the child through the gate before discussing the uniform with an adult."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Rae asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Rae asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Rae repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Rae repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

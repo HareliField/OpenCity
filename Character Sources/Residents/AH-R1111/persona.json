@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1111",
+  "personId": "AH-R1111",
+  "name": "Sadie Cross",
+  "age": 37,
+  "occupation": "Local writer and cleaner",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A prize nobody entered",
+  "biography": "stories/residents/08/07-a-prize-nobody-entered.md#ah-r1111",
+  "life": "“I still remember paying for a notebook meant for nobody else.” People around Lighthouse Cove know Sadie by a small Sunday habit. Sadie takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I wrote the piece to understand my brother's death. A prize makes that private purpose feel surprisingly expensive.",
+  "appearance": "Sadie is easy to recognize by a long plait tucked inside the collar and a wide brow and a narrow jaw. Usually dressed in a washed violet jersey with a watch on a cracked leather band, Sadie draws breath as if to speak and lets someone else go first when listening.",
+  "personality": "Sadie reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Sadie trusts most.",
+  "agenda": "To choose personally whether the manuscript leaves the family.",
+  "family": "Amelia Kahn is Sadie’s second cousin. Sadie chooses whether to use it. Amelia saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The upstairs lease*, Amelia says, “I wrote a budget in which nobody grows, gets ill or buys new shoes.”",
+  "connections": "Lane Bose (relative who submitted the book). The person who entered the work has to put the decision back in the author's hands.",
+  "familyIds": [
+    "AH-R0759"
+  ],
+  "connectionIds": [
+    "AH-R1112"
+  ],
+  "reactions": [
+    {
+      "situation": "The prize organizer asks the writer to appear onstage",
+      "response": "Sadie asks the organizer to wait for the writer's own answer.",
+      "asWritten": "The prize organizer asks the writer to appear onstage. Sadie asks the organizer to wait for the writer's own answer."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Sadie accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Sadie accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Sadie does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Sadie does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

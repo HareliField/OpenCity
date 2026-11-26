@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1219",
+  "personId": "AH-R1219",
+  "name": "Lee Carr",
+  "age": 38,
+  "occupation": "Freight checker",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The worker who couldn't read the joke",
+  "biography": "stories/residents/09/02-the-worker-who-couldn-t-read-the-joke.md#ah-r1219",
+  "life": "“I still remember starting my break early so the room would be empty.” People around the public road outside the Port of Asphalt know Lee by a small Wednesday habit. Lee can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I used to avoid the break room. We are holding one lunch where people can explain what actually makes them laugh.",
+  "appearance": "On an ordinary day, look for a cream pullover and a pair of reading glasses in a cloth sleeve. Lee has a softly rounded chin under sharp cheekbones, with a blunt cut just below the ears. Lee looks toward the door whenever a name is called during a conversation.",
+  "personality": "Lee treats a small promise with the gravity others reserve for a contract. This makes Lee lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To hold one shared lunch with jokes everyone understands.",
+  "family": "Cecil Hooper is Lee’s cousin raised in the same household. Lee gets to change the plan. Cecil offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Two left slippers*, Cecil says, “I can deliver to the whole ward in my lunch hour if somebody will lend me a bicycle.”",
+  "connections": "Amos Choi. A misunderstood home word gives the lunch organizer a starting point for the next meal.",
+  "familyIds": [
+    "AH-R0658"
+  ],
+  "connectionIds": [
+    "AH-R1216"
+  ],
+  "reactions": [
+    {
+      "situation": "A manager wants the photographed worker to address the crew",
+      "response": "Lee offers the pictured worker a private conversation before any meeting with the crew.",
+      "asWritten": "A manager wants the photographed worker to address the crew. Lee offers the pictured worker a private conversation before any meeting with the crew."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Lee lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Lee lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Lee says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Lee says what can be returned and asks whether that will do."
+    }
+  ]
+}

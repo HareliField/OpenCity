@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0642",
+  "personId": "AH-R0642",
+  "name": "Hamish James",
+  "age": 56,
+  "occupation": "Former workshop owner",
+  "home": "Eastside",
+  "episode": "The clean ledger",
+  "biography": "stories/residents/05/05-the-clean-ledger.md#ah-r0642",
+  "life": "“I still remember my first shop closing while I still had the keys.” Thursday often includes a stop at the corner outside Coastal Barber, where Hamish usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I bought the man's tools and lost my shop anyway. I have one plane left to return.",
+  "appearance": "Hamish is easy to recognize by thick, tightly coiled hair and a softly rounded chin under sharp cheekbones. Usually dressed in a sand-colored linen shirt with a pressed flower kept in the clear back of a phone case, Hamish steadies a cup with both hands while listening when listening.",
+  "personality": "Hamish is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Hamish is concerned.",
+  "agenda": "To return the one surviving plane.",
+  "family": "Riley Macrae is Hamish’s half-sibling. Hamish leaves the first voice message. Riley calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A doctor moves away*, Riley says, “I asked my patients what mattered for years.”",
+  "connections": "Anna Bishop (ledger creditor). They have different odds of recovering the dress and the one surviving tool.",
+  "familyIds": [
+    "AH-R1251"
+  ],
+  "connectionIds": [
+    "AH-R0641"
+  ],
+  "reactions": [
+    {
+      "situation": "A creditor asks for a conversation without witnesses",
+      "response": "Hamish finds a private time when both people can still have someone nearby if requested.",
+      "asWritten": "A creditor asks for a conversation without witnesses. Hamish finds a private time when both people can still have someone nearby if requested."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Hamish asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Hamish asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Hamish asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Hamish asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

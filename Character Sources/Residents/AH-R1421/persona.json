@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1421",
+  "personId": "AH-R1421",
+  "name": "Ashley Hsu",
+  "age": 29,
+  "occupation": "Seasonal lifeguard",
+  "home": "Old Town",
+  "episode": "No lifeguard at dusk",
+  "biography": "stories/residents/10/08-no-lifeguard-at-dusk.md#ah-r1421",
+  "life": "“I still remember taking off my lifeguard shirt while an old swimmer was watching.” On Saturday, near Studio Boulevard, Ashley waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I have watched this woman swim every evening. My contract ends at six and my affection didn't read the contract.",
+  "appearance": "Ashley has thick, tightly coiled hair, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, a boxy denim jacket. It usually goes with a fabric zip pull cut from a school scarf. When somebody else has the floor, Ashley counts on the side of one finger where hardly anybody notices.",
+  "personality": "Ashley admires skill and distrusts the idea that skill gives anyone permission to be rude. Ashley learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To get an ordinary goodbye to the regular swimmer.",
+  "family": "Javier Lam is Ashley’s half-sibling. Ashley brings whatever was actually growing or affordable that week. Javier makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The ladder crossing*, Javier says, “I sell folding ladders and offered a trade.”",
+  "connections": "Chris Liu (regular swimmer). The guard learns that staying to sit on the steps is not the same choice as taking responsibility for a final swim.",
+  "familyIds": [
+    "AH-R0565"
+  ],
+  "connectionIds": [
+    "AH-R1422"
+  ],
+  "reactions": [
+    {
+      "situation": "The swimmer stays on the steps after the final shift",
+      "response": "Ashley checks whether the swimmer intends to go into the water before deciding what help is wanted.",
+      "asWritten": "The swimmer stays on the steps after the final shift. Ashley checks whether the swimmer intends to go into the water before deciding what help is wanted."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Ashley separates the money question from the broken promise and asks which one the family wants to discuss first.",
+      "asWritten": "A family supper turns into an argument about old debt. Ashley separates the money question from the broken promise and asks which one the family wants to discuss first."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Ashley describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Ashley describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

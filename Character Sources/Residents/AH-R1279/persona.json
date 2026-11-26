@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1279",
+  "personId": "AH-R1279",
+  "name": "Jody Thomas",
+  "age": 32,
+  "occupation": "New parent and hotel receptionist",
+  "home": "Midtown",
+  "episode": "The other side of the cove",
+  "biography": "stories/residents/09/08-the-other-side-of-the-cove.md#ah-r1279",
+  "life": "“I still remember balancing a bottle while perched on a windy bench.” On Sunday, near the public end of the South Shore boardwalk, Jody checks the shade on the benches before deciding how long to stay.",
+  "voice": "I am hoping for a quiet place to feed my baby. I asked the committee to bring their measuring tape at high tide.",
+  "appearance": "Jody has a smooth side part with one rebellious curl, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a stitched row of blue crosses along an old repair. When somebody else has the floor, Jody raises one eyebrow long before saying yes.",
+  "personality": "Jody never tires of being shown how somebody makes a living. Jody can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To test the bench at high tide while holding a baby.",
+  "family": "Ada Ellis is Jody’s cousin raised in the same household. Jody brings whatever was actually growing or affordable that week. Ada makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The sheltered corner*, Ada says, “I gave directions using the old stop. A stranger arrived late for a reunion and I want to write to the host.”",
+  "connections": "Adela Marin. Testing a seat with a baby on one knee shows the bolt supplier what the finished dimensions mean.",
+  "familyIds": [
+    "AH-R0267"
+  ],
+  "connectionIds": [
+    "AH-R1280"
+  ],
+  "reactions": [
+    {
+      "situation": "A public donor asks to approve the wording on the bench",
+      "response": "Jody asks the cleaner and the donor for separate views on the wording.",
+      "asWritten": "A public donor asks to approve the wording on the bench. Jody asks the cleaner and the donor for separate views on the wording."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Jody suggests one straightforward message without accusations and gives the friend time to answer.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Jody suggests one straightforward message without accusations and gives the friend time to answer."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Jody may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Jody may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1147",
+  "personId": "AH-R1147",
+  "name": "Taylor Chan",
+  "age": 45,
+  "occupation": "Subscription bookkeeper",
+  "home": "Midtown",
+  "episode": "The first delivery fee",
+  "biography": "stories/residents/08/10-the-first-delivery-fee.md#ah-r1147",
+  "life": "“I still remember canceling a subscription for a newly admitted patient.” People around Tideline Market know Taylor by a small Thursday habit. Taylor picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I suggested a subscription. The residents asked what happens to the fee when they go into hospital.",
+  "appearance": "Taylor has a strong profile and a little space between the front teeth. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a cropped bottle-green coat with a replacement button a shade darker than the others. In conversation Taylor presses the lips together to keep a smile in.",
+  "personality": "Taylor is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To pause fees when a subscriber enters hospital.",
+  "family": "Leon Cole is Taylor’s second cousin. Taylor sets the time to leave. Leon picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A chair of one's own*, Leon says, “I own the studio. I called the offer independence before asking who buys the empty hours.”",
+  "connections": "Roman Sutton. The investor and bookkeeper agree on what happens to a fee during a hospital stay.",
+  "familyIds": [
+    "AH-R0854"
+  ],
+  "connectionIds": [
+    "AH-R1145"
+  ],
+  "reactions": [
+    {
+      "situation": "A housebound customer cannot afford the delivery fee",
+      "response": "Taylor asks whether combining a delivery with a willing neighbor would help.",
+      "asWritten": "A housebound customer cannot afford the delivery fee. Taylor asks whether combining a delivery with a willing neighbor would help."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Taylor asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Taylor asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Taylor thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Taylor thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

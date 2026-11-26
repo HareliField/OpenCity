@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0005",
+  "personId": "AH-R0005",
+  "name": "Salma Ilyas",
+  "age": 37,
+  "occupation": "Courthouse interpreter",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The blue suit",
+  "biography": "stories/residents/01/01-the-blue-suit.md#ah-r0005",
+  "life": "As a schoolchild Salma translated every official letter for her family except the one about her own attendance. She makes families tell her which person has asked for the translation before agreeing to speak. On Friday, near the public end of the South Shore boardwalk, Salma checks the shade on the benches before deciding how long to stay.",
+  "voice": "At my own ceremony nobody could pronounce my mother's name. I wrote the pronunciation on his appointment slip and called ahead about the delay while he changed.",
+  "appearance": "Salma has fine brows over wide-set eyes. Look for a cropped cut that shows the shape of the ears. On an ordinary day, the familiar outfit is a pale blue work shirt with a printed handkerchief folded into the pocket. In conversation Salma listens with the head tilted a little to the left.",
+  "personality": "Salma finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To make the courthouse call a person's chosen name correctly on the first try.",
+  "family": "Martin Henry is Salma’s second cousin. Salma calls about good news first. Martin is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The guarantee*, Martin says, “My parents owned nothing they could pledge.”",
+  "connections": "Dora Beck. One is waiting for the courthouse to pick up while the other labels the failed valve.",
+  "familyIds": [
+    "AH-R1077"
+  ],
+  "connectionIds": [
+    "AH-R0008"
+  ],
+  "reactions": [
+    {
+      "situation": "Rafael asks everyone to stop fussing over the suit",
+      "response": "Salma steps away from the hanger and lets Rafael choose what help to keep.",
+      "asWritten": "Rafael asks everyone to stop fussing over the suit. Salma steps away from the hanger and lets Rafael choose what help to keep."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Salma gives up their own space if possible and asks the passengers who arrived first to choose what happens next.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Salma gives up their own space if possible and asks the passengers who arrived first to choose what happens next."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Salma waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Salma waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

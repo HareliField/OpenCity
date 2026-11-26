@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0333",
+  "personId": "AH-R0333",
+  "name": "Quinn Carvalho",
+  "age": 44,
+  "occupation": "Station desk interpreter",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The spare spectacles",
+  "biography": "stories/residents/03/04-the-spare-spectacles.md#ah-r0333",
+  "life": "“I still remember a witness asking me to pronounce their job correctly.” Monday often includes a stop at the corner outside Coastal Barber, where Quinn usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I read the statement aloud too fast. I asked her to tell me where to breathe.",
+  "appearance": "Quinn is easy to recognize by dark brown curls cut close behind the ears and a round face with a pronounced chin. Usually dressed in a long navy raincoat with a comb in a sleeve sewn into the lining, Quinn holds eye contact until the other person has finished when listening.",
+  "personality": "Quinn is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To record the witness's phrasing where the form allows it.",
+  "family": "Agnes Kramer is Quinn’s half-sibling. Quinn leaves the first voice message. Agnes calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The upstairs lease*, Agnes says, “My aunt collects the rent. I told the tenants before offering to help with their figures.”",
+  "connections": "Billie Warren (community interpreter). They turn the printed account into language the witness will actually sign.",
+  "familyIds": [
+    "AH-R0757"
+  ],
+  "connectionIds": [
+    "AH-R0339"
+  ],
+  "reactions": [
+    {
+      "situation": "The witness asks to read the page alone",
+      "response": "Quinn finds a quiet place for the witness and waits without reading over a shoulder.",
+      "asWritten": "The witness asks to read the page alone. Quinn finds a quiet place for the witness and waits without reading over a shoulder."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Quinn writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Quinn writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Quinn helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Quinn helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

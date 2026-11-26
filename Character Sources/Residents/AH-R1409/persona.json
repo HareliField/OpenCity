@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1409",
+  "personId": "AH-R1409",
+  "name": "Una Bell",
+  "age": 37,
+  "occupation": "Kitchen worker",
+  "home": "Eastside",
+  "episode": "Two birthdays in one ward",
+  "biography": "stories/residents/10/06-two-birthdays-in-one-ward.md#ah-r1409",
+  "life": "“I still remember saving a slice for the person who cleared the paper hats.” Monday often includes a stop at the crossing outside Verve Nail Studio, where Una notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I work the kitchen. The boy asked me to save one slice for the cleaner who comes when everybody else has gone.",
+  "appearance": "Una has auburn hair cut square at the nape, a round face with a pronounced chin, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with one cuff folded back twice. When somebody else has the floor, Una leans a shoulder against the wall during long conversations.",
+  "personality": "Una can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To save a slice for the night cleaner.",
+  "family": "Owen Vale is Una’s older cousin. Una knows which ones can be shared. Owen keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *A chair on the quay*, Owen says, “My dad marked my height on that chair after every voyage.”",
+  "connections": "Bailey Salcedo. The cake volunteer can hold a slice after learning when the cleaner arrives.",
+  "familyIds": [
+    "AH-R0011"
+  ],
+  "connectionIds": [
+    "AH-R1403"
+  ],
+  "reactions": [
+    {
+      "situation": "One birthday patient wants a quiet ward",
+      "response": "Una lets the quiet patient choose a low-key celebration separate from the party.",
+      "asWritten": "One birthday patient wants a quiet ward. Una lets the quiet patient choose a low-key celebration separate from the party."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Una finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Una finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Una asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Una asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

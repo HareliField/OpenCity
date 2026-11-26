@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1247",
+  "personId": "AH-R1247",
+  "name": "Joy Nelson",
+  "age": 42,
+  "occupation": "Former receiver and dock porter",
+  "home": "Old Town",
+  "episode": "A clean coat for court",
+  "biography": "stories/residents/09/05-a-clean-coat-for-court.md#ah-r1247",
+  "life": "“I still remember sleeping on a bench beside the man I owed money to.” Wednesday often includes a stop at the steps at Pier Beach, where Joy watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I used to run stolen goods with the defendant. I have no standing to tell anybody he has changed.",
+  "appearance": "Joy has a deep crease beside the mouth when smiling. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is a charcoal zip cardigan with a pair of reading glasses in a cloth sleeve. In conversation Joy takes off the watch before a long conversation.",
+  "personality": "Joy can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Joy can afford to give, and family knows to take it seriously.",
+  "agenda": "To speak only from personal knowledge about the defendant.",
+  "family": "Xavier Ray is Joy’s cousin. Joy chooses whether to use it. Xavier saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *A boat for sale twice*, Xavier says, “I cannot read a sale sign from offshore. I came into the marina for the first time since my dad drowned.”",
+  "connections": "Jonathan Grant. A damp old cinema ticket reminds a former receiver that a real relationship outlives its account of stolen goods.",
+  "familyIds": [
+    "AH-R0748"
+  ],
+  "connectionIds": [
+    "AH-R1246"
+  ],
+  "reactions": [
+    {
+      "situation": "A stranger asks why the lender came to court",
+      "response": "Joy lets the lender tell or withhold the coat's history.",
+      "asWritten": "A stranger asks why the lender came to court. Joy lets the lender tell or withhold the coat's history."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Joy asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Joy asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Joy suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Joy suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

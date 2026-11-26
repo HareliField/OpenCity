@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0545",
+  "personId": "AH-R0545",
+  "name": "Alex Scott",
+  "age": 43,
+  "occupation": "Dietary clerk",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Closing soup",
+  "biography": "stories/residents/04/10-closing-soup.md#ah-r0545",
+  "life": "“I still remember a cheese rind kept for a difficult Friday.” On Thursday, near Studio Boulevard, Alex waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I put a rind in that was meant for my own dinner. Now I have to explain why I'm bringing soup again.",
+  "appearance": "Alex has a crooked front tooth visible when laughing. Look for short black hair swept back. On an ordinary day, the familiar outfit is a black overshirt with pearl buttons with a fabric zip pull cut from a school scarf. In conversation Alex looks at people's hands before looking at what they carry.",
+  "personality": "Alex has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To bring the next rind without giving up dinner.",
+  "family": "Agnes Osei is Alex’s cousin. Alex gets to change the plan. Agnes offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The empty berth*, Agnes says, “My juniors need a place to learn how to step off a dock as much as they need water.”",
+  "connections": "Alvin Kapoor. The ingredients record gives the celery-hater a real say in tomorrow's batch. Also in the story is Reuben Grant (produce donor).",
+  "familyIds": [
+    "AH-R0145"
+  ],
+  "connectionIds": [
+    "AH-R0548",
+    "AH-R0543"
+  ],
+  "reactions": [
+    {
+      "situation": "The cook asks for an exact recipe",
+      "response": "Alex records what went into this particular pot and when the cooks tasted it.",
+      "asWritten": "The cook asks for an exact recipe. Alex records what went into this particular pot and when the cooks tasted it."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Alex asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Alex asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Alex explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Alex explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

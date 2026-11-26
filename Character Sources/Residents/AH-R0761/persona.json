@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0761",
+  "personId": "AH-R0761",
+  "name": "Simon Hunter",
+  "age": 40,
+  "occupation": "Contract loader",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Nine unpaid hours",
+  "biography": "stories/residents/06/02-nine-unpaid-hours.md#ah-r0761",
+  "life": "“I still remember a week's overtime written on a damp matchbook.” Wednesday often includes a stop at the entrance to the Wash House, where Simon stops for local notices even on a day without a load to wash.",
+  "voice": "I have nine hours on that sheet and a refrigerator full of food I bought on credit.",
+  "appearance": "On an ordinary day, look for a mustard canvas overshirt and a pocket notebook shaped by years of sitting on it. Simon has a heart-shaped face and prominent ears, with thick, tightly coiled hair. Simon listens with the head tilted a little to the left during a conversation.",
+  "personality": "Simon has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To recover the nine hours before the grocery tab is due.",
+  "family": "Melanie Nelson is Simon’s half-sibling. Simon decides what stays off the paper. Melanie brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The clean ledger*, Melanie says, “I am the creditor everyone thought dead. I'm asking for an afternoon of help moving house.”",
+  "connections": "Cassandra Li. The permanent worker's payslip corroborates the contractor's nine unpaid hours. Also in the story is Bruna Morse (payroll contact).",
+  "familyIds": [
+    "AH-R0644"
+  ],
+  "connectionIds": [
+    "AH-R0762",
+    "AH-R0764"
+  ],
+  "reactions": [
+    {
+      "situation": "The contractor offers selected workers a partial payment",
+      "response": "Simon asks that the offer be written down with the remaining unpaid hours.",
+      "asWritten": "The contractor offers selected workers a partial payment. Simon asks that the offer be written down with the remaining unpaid hours."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Simon tells the first helper what they actually saw and makes room for the rider to answer for themself.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Simon tells the first helper what they actually saw and makes room for the rider to answer for themself."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Simon asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Simon asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

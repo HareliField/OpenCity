@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0621",
+  "personId": "AH-R0621",
+  "name": "Rowan Katz",
+  "age": 72,
+  "occupation": "Scholarship founder and retired accountant",
+  "home": "Eastside",
+  "episode": "The trust with a typo",
+  "biography": "stories/residents/05/03-the-trust-with-a-typo.md#ah-r0621",
+  "life": "“I still remember the classroom where my nickname hurt most.” People around the crossing outside Verve Nail Studio know Rowan by a small Thursday habit. Rowan notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I chose that nickname to survive school. Seeing it on bank stationery made me feel sixteen again.",
+  "appearance": "Rowan has closely cropped salt-and-pepper hair, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with a small enamel bird on the lapel. When somebody else has the floor, Rowan turns fully toward the person speaking.",
+  "personality": "Rowan listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To let the scholarship use the old nickname with permission.",
+  "family": "Catherine Leung is Rowan’s second cousin. Rowan chooses whether to use it. Catherine saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The porch auction*, Catherine says, “I proposed to my second husband in the low chair.”",
+  "connections": "Howard Poole (trust secretary). Founder and secretary can now meet under the easier childhood name.",
+  "familyIds": [
+    "AH-R0533"
+  ],
+  "connectionIds": [
+    "AH-R0627"
+  ],
+  "reactions": [
+    {
+      "situation": "A recipient thinks the nickname makes the letter a joke",
+      "response": "Rowan confirms the letter with the trust before asking the recipient to respond.",
+      "asWritten": "A recipient thinks the nickname makes the letter a joke. Rowan confirms the letter with the trust before asking the recipient to respond."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Rowan keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Rowan keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Rowan keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Rowan keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

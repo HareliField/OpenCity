@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1092",
+  "personId": "AH-R1092",
+  "name": "Beatrice Su",
+  "age": 49,
+  "occupation": "Market cleaner",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The boy on the corner",
+  "biography": "stories/residents/08/05-the-boy-on-the-corner.md#ah-r1092",
+  "life": "“I still remember a customer asking if I could wait by his sleeping baby's room.” On Saturday, near Harbour Bakery, Beatrice buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I used to buy from the boy's dad. I'm offering childcare and he has good reason to check on me first.",
+  "appearance": "Beatrice has short, uneven waves that refuse to lie flat, a crooked front tooth visible when laughing, and a favorite piece of clothing, a cream pullover. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Beatrice folds a paper napkin into quarters without noticing.",
+  "personality": "Beatrice is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To offer childcare on terms the family can check.",
+  "family": "Lark Kane is Beatrice’s younger cousin. Beatrice can always ask for five minutes alone. Lark asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Ten fingers*, Lark says, “I picked a green that flashes under stage light because I watch hands for a living.”",
+  "connections": "Jade Hunter. A former customer offering childcare can be asked for references by the prospective foster aunt.",
+  "familyIds": [
+    "AH-R0106"
+  ],
+  "connectionIds": [
+    "AH-R1097"
+  ],
+  "reactions": [
+    {
+      "situation": "His younger brother asks what he delivers for a living",
+      "response": "Beatrice lets the older brother choose honest words the younger boy can understand.",
+      "asWritten": "His younger brother asks what he delivers for a living. Beatrice lets the older brother choose honest words the younger boy can understand."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Beatrice asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Beatrice asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Beatrice helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Beatrice helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

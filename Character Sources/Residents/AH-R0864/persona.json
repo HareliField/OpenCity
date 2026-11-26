@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0864",
+  "personId": "AH-R0864",
+  "name": "Patricia Ramos",
+  "age": 32,
+  "occupation": "Hotel housekeeper",
+  "home": "Midtown",
+  "episode": "The late crossing",
+  "biography": "stories/residents/06/12-the-late-crossing.md#ah-r0864",
+  "life": "“I still remember belonging to a ride scheme where favors became overtime.” On Friday, near the window at Night Shift Donuts, Patricia knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I used to get lifts from my boss until I felt I couldn't refuse overtime. I want the rota to belong to the riders.",
+  "appearance": "Patricia has a broad nose and a deep dimple on one cheek. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a faded indigo overshirt with a narrow brass watch set a little fast. In conversation Patricia looks down for a moment before saying something difficult.",
+  "personality": "Patricia uses precise names for tools and very approximate names for feelings. People who know Patricia well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To get the rota into the riders' ownership.",
+  "family": "August Jackson is Patricia’s older relative by marriage. Patricia gets to change the plan. August offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *A ship without postcards*, August says, “I fold the cards into boats. My granddaughter can open them only by reading flags.”",
+  "connections": "Carol Dunn. One person wants a rider-owned rota. The other wants each rider to have a way out. Also in the story is Judith Dai (route planner).",
+  "familyIds": [
+    "AH-R0316"
+  ],
+  "connectionIds": [
+    "AH-R0870",
+    "AH-R0868"
+  ],
+  "reactions": [
+    {
+      "situation": "A shift worker is late to the meeting point",
+      "response": "Patricia checks whether waiting will make the whole shift late and tells the rider the decision.",
+      "asWritten": "A shift worker is late to the meeting point. Patricia checks whether waiting will make the whole shift late and tells the rider the decision."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Patricia asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Patricia asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Patricia brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Patricia brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

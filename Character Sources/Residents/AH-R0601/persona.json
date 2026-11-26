@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0601",
+  "personId": "AH-R0601",
+  "name": "Dale Malik",
+  "age": 47,
+  "occupation": "Former deck worker",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Salt in the pockets",
+  "biography": "stories/residents/05/01-salt-in-the-pockets.md#ah-r0601",
+  "life": "“I still remember my last night aboard with a coat too stiff to fold.” People around the downtown fountain know Dale by a small Thursday habit. Dale keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I kept the salt from my last deck shift in my cuff. I wish I'd said something before the rinse.",
+  "appearance": "Dale has a long face and high cheekbones. Look for short sandy hair and a marked widow's peak. On an ordinary day, the familiar outfit is a cropped bottle-green coat with a folded shopping list secured by a miniature clip. In conversation Dale gives a little nod before asking a hard question.",
+  "personality": "Dale finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To take the last deck salt home intact.",
+  "family": "Julia Cao is Dale’s stepsibling. Dale calls about good news first. Julia is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *A four o'clock kitchen*, Julia says, “I want the port to subsidize a workers' meal without owning the menu or the cook's schedule.”",
+  "connections": "Teresa Ellis. They establish which salt coat belongs to which member of the deck crew.",
+  "familyIds": [
+    "AH-R1299"
+  ],
+  "connectionIds": [
+    "AH-R0605"
+  ],
+  "reactions": [
+    {
+      "situation": "A coat's owner claims the crystals in the lining",
+      "response": "Dale sets the coat aside until the owner can identify the crystals privately.",
+      "asWritten": "A coat's owner claims the crystals in the lining. Dale sets the coat aside until the owner can identify the crystals privately."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Dale puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Dale puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Dale waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Dale waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

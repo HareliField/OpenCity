@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0481",
+  "personId": "AH-R0481",
+  "name": "Vivian Acosta",
+  "age": 39,
+  "occupation": "Retail worker",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Station steps in rain",
+  "biography": "stories/residents/04/04-station-steps-in-rain.md#ah-r0481",
+  "life": "“I still remember an officer sharing my dripping shop awning.” People around the public end of the South Shore boardwalk know Vivian by a small Wednesday habit. Vivian checks the shade on the benches before deciding how long to stay.",
+  "voice": "I came to complain about my street and held an umbrella over the officer I was going to name.",
+  "appearance": "Vivian is easy to recognize by dark brown curls cut close behind the ears and a strong profile and a little space between the front teeth. Usually dressed in a narrow-striped sweater with a train token tied to a zipper pull, Vivian starts to lift a hand, then waits to be invited to speak when listening.",
+  "personality": "Vivian enjoys routines and will defend the right of someone else to break one. As a result, Vivian is often everyone's favorite cover for a missed morning.",
+  "agenda": "To deliver the complaint to the officer who shared the umbrella.",
+  "family": "Duncan Stahl is Vivian’s half-sibling. Vivian makes the call. Duncan is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A scar at the salon*, Duncan says, “I agreed to show my nails. Nobody asked whether my accident was part of the product.”",
+  "connections": "Adrian Bhandari. They arrange two private ways to finish a complaint after the storm.",
+  "familyIds": [
+    "AH-R1301"
+  ],
+  "connectionIds": [
+    "AH-R0488"
+  ],
+  "reactions": [
+    {
+      "situation": "Rain blurs the names on the petition",
+      "response": "Vivian records the petitioners who are present and asks them how to recover the others.",
+      "asWritten": "Rain blurs the names on the petition. Vivian records the petitioners who are present and asks them how to recover the others."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Vivian brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Vivian brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Vivian keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Vivian keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

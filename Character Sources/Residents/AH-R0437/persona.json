@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0437",
+  "personId": "AH-R0437",
+  "name": "Judith Hong",
+  "age": 44,
+  "occupation": "Adaptive clothing fitter",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The housecoat commission",
+  "biography": "stories/residents/03/14-the-housecoat-commission.md#ah-r0437",
+  "life": "“I still remember making trouser seams disappear beneath a brace.” On Wednesday, near Ferris Deli, Judith asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "My first outfit after surgery tied in back. I'm designing fastenings she can reach by herself.",
+  "appearance": "Judith is easy to recognize by brown hair pinned away from the temples and a long face and high cheekbones. Usually dressed in a sand-colored linen shirt with a train token tied to a zipper pull, Judith leans a shoulder against the wall during long conversations when listening.",
+  "personality": "Judith enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To install a fastening the wearer can reach.",
+  "family": "Jules Sun is Judith’s second cousin. Judith is allowed to ask about the bad news afterward. Jules calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The second dog*, Jules says, “The first owner got angry at me for smiling.”",
+  "connections": "Kate Parra. They compare the fastenings needed by two different seated wearers.",
+  "familyIds": [
+    "AH-R0187"
+  ],
+  "connectionIds": [
+    "AH-R0438"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor asks where the housecoat was bought",
+      "response": "Judith gives the maker the chance to be credited without revealing what the garment cost.",
+      "asWritten": "A visitor asks where the housecoat was bought. Judith gives the maker the chance to be credited without revealing what the garment cost."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Judith gives up their own space if possible and asks the passengers who arrived first to choose what happens next.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Judith gives up their own space if possible and asks the passengers who arrived first to choose what happens next."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Judith puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Judith puts the deal away and suggests a walk."
+    }
+  ]
+}

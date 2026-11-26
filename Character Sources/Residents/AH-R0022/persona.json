@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0022",
+  "personId": "AH-R0022",
+  "name": "Gil Atwood",
+  "age": 55,
+  "occupation": "Park snack vendor",
+  "home": "Coast Ridge",
+  "episode": "The small signature",
+  "biography": "stories/residents/01/03-the-small-signature.md#ah-r0022",
+  "life": "Gil fixes the park cart's smallest wheel with a piece of the chess set the children broke. Repairing the table would let him retire the makeshift axle. He is tired of donors assuming that gratitude pays for spare parts. People around Ferris Deli know Gil by a small Thursday habit. Gil asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "My eleven dollars were the change regulars left in a jar after a boy broke the chess table. Somebody called me a philanthropist. I still owe those regulars a chess table.",
+  "appearance": "Gil has short copper curls, a crooked front tooth visible when laughing, and a favorite piece of clothing, a moss-green cardigan. It usually goes with a cloth patch so neatly matched it only shows in strong light. When somebody else has the floor, Gil squares up pieces of paper while thinking.",
+  "personality": "Gil has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To replace the children's chess table before the ceremony.",
+  "family": "Daniel Song is Gil’s second cousin. Gil keeps the photographs. Daniel knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Salt in the pockets*, Daniel says, “I need the big coat to keep my knees warm on the early ferry.”",
+  "connections": "Vera Rios (former lunch customer). They knew each other over a cart long before anybody put their names on the same check.",
+  "familyIds": [
+    "AH-R0606"
+  ],
+  "connectionIds": [
+    "AH-R0021"
+  ],
+  "reactions": [
+    {
+      "situation": "The new chess table arrives too high for one of its players",
+      "response": "Gil puts one of the actual playing pieces into the affected player's hand before accepting delivery.",
+      "asWritten": "The new chess table arrives too high for one of its players. Gil puts one of the actual playing pieces into the affected player's hand before accepting delivery."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Gil offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Gil offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Gil explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Gil explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

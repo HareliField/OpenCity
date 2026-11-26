@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1044",
+  "personId": "AH-R1044",
+  "name": "Jorge Crane",
+  "age": 69,
+  "occupation": "Retired sailmaker",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The day sailor's divorce",
+  "biography": "stories/residents/07/15-the-day-sailor-s-divorce.md#ah-r1044",
+  "life": "“I still remember a wedding napkin embroidered with a boat's first name.” On Wednesday, near the steps at Pier Beach, Jorge watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I bought them the sail when they married. I told them dividing it into two napkins was an option.",
+  "appearance": "Jorge has a broad nose and a deep dimple on one cheek. Look for a thin scattering of white hair over the crown. Back on the street, the familiar outfit is a sand-colored linen shirt with a partly rubbed-away embroidered initial. In conversation Jorge touches a knuckle to the chin when searching for a word.",
+  "personality": "Jorge uses precise names for tools and very approximate names for feelings. People who know Jorge well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To leave the decision about the old sail to its owners.",
+  "family": "Jasmine Laurent is Jorge’s younger relative by marriage. Jorge is allowed to ask about the bad news afterward. Jasmine calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Station steps in rain*, Jasmine says, “I used to dread these steps. This time I came to collect my own repaired camera.”",
+  "connections": "Edwin Wilson. The wedding sail's donor asks what the children want on the first trip after the papers are signed.",
+  "familyIds": [
+    "AH-R0485"
+  ],
+  "connectionIds": [
+    "AH-R1050"
+  ],
+  "reactions": [
+    {
+      "situation": "A spouse asks to count repair hours toward Sunday time",
+      "response": "Jorge checks the maintenance log before treating Sundays as the only contribution.",
+      "asWritten": "A spouse asks to count repair hours toward Sunday time. Jorge checks the maintenance log before treating Sundays as the only contribution."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Jorge asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Jorge asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Jorge brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Jorge brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0118",
+  "personId": "AH-R0118",
+  "name": "Carmen Saye",
+  "age": 48,
+  "occupation": "Bus rider and payroll supervisor",
+  "home": "Coast Ridge",
+  "episode": "The last green",
+  "biography": "stories/residents/01/12-the-last-green.md#ah-r0118",
+  "life": "Carmen's father drove everywhere and never learned the bus colors. After he gave up the car she found that being able to read didn't tell him which shelter got a seat first. She draws maps from the knees up. On Thursday, near the market by Market Flats, Carmen often waits until the delivery baskets are stacked before going in.",
+  "voice": "I used to take his cab after my double shifts. Now he needs to know how to change buses with sore knees. I drew the route with every seat and shelter marked.",
+  "appearance": "Carmen has a flat bridge to the nose and a mobile brow. Look for a long plait tucked inside the collar. On an ordinary day, the familiar outfit is a washed violet jersey with a partly rubbed-away embroidered initial. In conversation Carmen holds eye contact until the other person has finished.",
+  "personality": "Carmen is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Carmen is by the number of tiny errands suddenly being done.",
+  "agenda": "To test the marked rest stops with Saul on public transport.",
+  "family": "Gareth Roth is Carmen’s cousin. Carmen makes room at the table. Gareth brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Spin cycle choir*, Gareth says, “My father whistled that song through our last argument.”",
+  "connections": "Mara Tev. The retired callsign gives the payroll worker a way to book a last trip before drawing routes for the bus.",
+  "familyIds": [
+    "AH-R0301"
+  ],
+  "connectionIds": [
+    "AH-R0113"
+  ],
+  "reactions": [
+    {
+      "situation": "The old driver wants to change the farewell route",
+      "response": "Carmen takes the changed route seriously and checks who needs to know the new return time.",
+      "asWritten": "The old driver wants to change the farewell route. Carmen takes the changed route seriously and checks who needs to know the new return time."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Carmen offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Carmen offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Carmen agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Carmen agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

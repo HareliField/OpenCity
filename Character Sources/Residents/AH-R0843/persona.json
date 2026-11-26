@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0843",
+  "personId": "AH-R0843",
+  "name": "Harley Kelly",
+  "age": 46,
+  "occupation": "Bakery shift manager",
+  "home": "Old Town",
+  "episode": "One paid trial",
+  "biography": "stories/residents/06/10-one-paid-trial.md#ah-r0843",
+  "life": "“I still remember offering a promise beside a sink that cost more than I thought.” On Tuesday, near Studio Boulevard, Harley waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I posted the job without asking the apprentice what I once said across a sink.",
+  "appearance": "Harley has a wide brow and a narrow jaw. Look for a loose dark braid. Away from the heat of the kitchen, the familiar outfit is a gray fisher's sweater with a pair of reading glasses in a cloth sleeve. In conversation Harley gathers both sleeves neatly before settling in.",
+  "personality": "Harley carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To account for both candidates' prior labor.",
+  "family": "Ava Nichols is Harley’s second cousin. Harley chooses the music. Ava puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The dead man's tab*, Ava says, “I made the soup. He said it tasted like school dinners, which I discovered was a compliment.”",
+  "connections": "Harriet Ho. The shift manager has to cost the proposal that upends a simple hiring contest. Also in the story is Ida Boyd (apprentice).",
+  "familyIds": [
+    "AH-R0499"
+  ],
+  "connectionIds": [
+    "AH-R0850",
+    "AH-R0842"
+  ],
+  "reactions": [
+    {
+      "situation": "The new baker gets the first oven slot",
+      "response": "Harley makes sure the other applicant gets a comparable chance with the same oven.",
+      "asWritten": "The new baker gets the first oven slot. Harley makes sure the other applicant gets a comparable chance with the same oven."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Harley asks which other bill repayment would displace, then offers only what the household can afford to give.",
+      "asWritten": "A friend asks for a loan due back before payday. Harley asks which other bill repayment would displace, then offers only what the household can afford to give."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Harley offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Harley offers to accompany them while they tell the truth."
+    }
+  ]
+}

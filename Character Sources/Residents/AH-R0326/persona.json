@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0326",
+  "personId": "AH-R0326",
+  "name": "Frances Brady",
+  "age": 59,
+  "occupation": "Taxi owner-driver",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The widow's dividend",
+  "biography": "stories/residents/03/03-the-widow-s-dividend.md#ah-r0326",
+  "life": "“I still remember a meter ticking through my younger child's first words.” On Saturday, near the window at Night Shift Donuts, Frances knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I sold my shares for a taxi license. I still own the pen that signed them away.",
+  "appearance": "Frances is easy to recognize by iron-gray waves and a long face and high cheekbones. Usually dressed in a plum-colored cardigan with a pair of reading glasses in a cloth sleeve, Frances raises one eyebrow long before saying yes when listening.",
+  "personality": "Frances never tires of being shown how somebody makes a living. Frances can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To get the old pen into a founding photograph.",
+  "family": "Marlowe Arrieta is Frances’s second cousin. Frances remembers the birthdays. Marlowe asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A doctor moves away*, Marlowe says, “I asked for a last appointment to talk about anything other than my illness.”",
+  "connections": "Grey Garza. The seller's old pen helps date the cassette of the founding meeting.",
+  "familyIds": [
+    "AH-R1260"
+  ],
+  "connectionIds": [
+    "AH-R0327"
+  ],
+  "reactions": [
+    {
+      "situation": "An unexpected dividend arrives in the wrong envelope",
+      "response": "Frances checks the payee's name with the teller before opening the envelope.",
+      "asWritten": "An unexpected dividend arrives in the wrong envelope. Frances checks the payee's name with the teller before opening the envelope."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Frances offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Frances offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Frances may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Frances may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0097",
+  "personId": "AH-R0097",
+  "name": "Vic Cho",
+  "age": 37,
+  "occupation": "Radio producer",
+  "home": "Midtown",
+  "episode": "The thirteenth doughnut",
+  "biography": "stories/residents/01/10-the-thirteenth-doughnut.md#ah-r0097",
+  "life": "Vic collects sounds at a volume that lets the people producing them hear each other. Some of the best recordings in the cupboard have no permission form. They will stay in the cupboard. Wednesday often includes a stop at the blocks below Foundry Lofts, where Vic checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I recorded the crunch for a midnight program and accidentally caught two men making up in the background. I asked them which part I could keep. They chose the silence after it.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and a folded shopping list secured by a miniature clip. Vic has a deep crease beside the mouth when smiling, with a loose dark braid. Vic folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Vic admires skill and distrusts the idea that skill gives anyone permission to be rude. Vic learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To give the recorded couple a final choice about the broadcast.",
+  "family": "Franklin Sun is Vic’s second cousin. Vic saves a place. Franklin chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The ladder crossing*, Franklin says, “I saw the ladder's shadow stretch across my old playground and asked for a photograph.”",
+  "connections": "Eli Carr. A night broadcast and two music tickets link the bakery's sounds to an audience beyond the block.",
+  "familyIds": [
+    "AH-R0563"
+  ],
+  "connectionIds": [
+    "AH-R0098"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer tries to sell the spare doughnut story to a brand",
+      "response": "Vic asks the baker and the intended recipient for their separate consent.",
+      "asWritten": "A customer tries to sell the spare doughnut story to a brand. Vic asks the baker and the intended recipient for their separate consent."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Vic asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Vic asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Vic describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Vic describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

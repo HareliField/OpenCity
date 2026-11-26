@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0007",
+  "personId": "AH-R0007",
+  "name": "Kit Salcedo",
+  "age": 34,
+  "occupation": "Shoe shiner",
+  "home": "Coast Ridge",
+  "episode": "The blue suit",
+  "biography": "stories/residents/01/01-the-blue-suit.md#ah-r0007",
+  "life": "Kit rented the shoeshine stool after losing a restaurant job. He makes enough on hearing days to skip the humiliating half-shift his old manager still offers him. People tipping too generously put that pride in a difficult place. On Sunday, near Studio Boulevard, Kit waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I gave the borrowed shoes a polish on the bank steps. He kept offering me a note. I finally took it because he was starting to feel like everybody's charity case.",
+  "appearance": "Kit is easy to recognize by a center part and straight chestnut hair and a flat bridge to the nose and a mobile brow. Usually dressed in a soft blue checked shirt with a replacement button a shade darker than the others, Kit gathers both sleeves neatly before settling in when listening.",
+  "personality": "Kit is kind in very practical ways and prickly about being thanked in public. Kit loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To earn enough on ordinary paid shines to keep the stool on the bank steps.",
+  "family": "Shay Lloyd is Kit’s older cousin. A parent had a second job that nobody mentioned at school. Years later the family discovered two sets of friends who thought they knew entirely different people. Kit can usually spot the person covering a double shift. Asked about *The second dog*, Shay says, “I fostered both litters. Their ears fold the same way until somebody says dinner.”",
+  "connections": "Alma Faye. One finishes the borrowed shoes while the other frames the cuff that won't match them.",
+  "familyIds": [
+    "AH-R0184"
+  ],
+  "connectionIds": [
+    "AH-R0009"
+  ],
+  "reactions": [
+    {
+      "situation": "Rafael asks everyone to stop fussing over the suit",
+      "response": "Kit steps away from the hanger and lets Rafael choose what help to keep.",
+      "asWritten": "Rafael asks everyone to stop fussing over the suit. Kit steps away from the hanger and lets Rafael choose what help to keep."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Kit lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Kit lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Kit gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Kit gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

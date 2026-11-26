@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1314",
+  "personId": "AH-R1314",
+  "name": "Bianca Moreau",
+  "age": 52,
+  "occupation": "Community grant volunteer",
+  "home": "Eastside",
+  "episode": "The driving lesson fund",
+  "biography": "stories/residents/09/12-the-driving-lesson-fund.md#ah-r1314",
+  "life": "“I still remember hearing a single adult's care obligations discounted.” On Monday, near the foot of Harbor Viaduct, Bianca pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I voted to give the slot to a parent. The single person who lost gets up at four to visit her dad.",
+  "appearance": "Bianca has auburn hair cut square at the nape, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a red windbreaker. It usually goes with one loose pocket corner secured with green thread. When somebody else has the floor, Bianca steadies a cup with both hands while listening.",
+  "personality": "Bianca is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Bianca is concerned.",
+  "agenda": "To let applicants describe obligations beyond parental status.",
+  "family": "Ismael Fong is Bianca’s cousin. Bianca chooses whether to use it. Ismael saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *A room for a father*, Ismael says, “I want to meet him at the gate so my mother can choose when to see him.”",
+  "connections": "Darcy Wu. A bus pass complicates a panel vote framed entirely around parents who need to drive.",
+  "familyIds": [
+    "AH-R0831"
+  ],
+  "connectionIds": [
+    "AH-R1320"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone asks whether the grant might buy a bus pass instead",
+      "response": "Bianca prices a usable bus pass before dismissing it as a different kind of grant.",
+      "asWritten": "Someone asks whether the grant might buy a bus pass instead. Bianca prices a usable bus pass before dismissing it as a different kind of grant."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Bianca writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Bianca writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Bianca asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Bianca asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

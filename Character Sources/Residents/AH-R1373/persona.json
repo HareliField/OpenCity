@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1373",
+  "personId": "AH-R1373",
+  "name": "Cassandra Knight",
+  "age": 49,
+  "occupation": "Valuer",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The gift nobody wants",
+  "biography": "stories/residents/10/03-the-gift-nobody-wants.md#ah-r1373",
+  "life": "“I still remember pricing a view the prospective owner never wanted.” On Sunday, near the corner outside Coastal Barber, Cassandra usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I was hired to value the gift. I asked whether the young woman wanted to be a landlord at all.",
+  "appearance": "Cassandra has a dark undercut with a longer wave on top, a small notch in the left eyebrow, and a favorite piece of clothing, a rust-colored canvas coat. It usually goes with a square of clean cloth for polishing smudges. When somebody else has the floor, Cassandra listens with the head tilted a little to the left.",
+  "personality": "Cassandra keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Cassandra wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To ask the intended owner what responsibilities are welcome.",
+  "family": "Quinn Pereira is Cassandra’s younger cousin. Cassandra chooses whether they walk home or sit a while. Quinn brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *One sleeve short*, Quinn says, “I practiced my handshake with the unaltered arm.”",
+  "connections": "Tom Crane. The valuation and the tenants' explanation give the daughter a realistic picture of ownership.",
+  "familyIds": [
+    "AH-R0254"
+  ],
+  "connectionIds": [
+    "AH-R1379"
+  ],
+  "reactions": [
+    {
+      "situation": "The daughter declines the property gift",
+      "response": "Cassandra takes the daughter's preferred shop seriously before proposing another gift.",
+      "asWritten": "The daughter declines the property gift. Cassandra takes the daughter's preferred shop seriously before proposing another gift."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Cassandra stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Cassandra stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Cassandra offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Cassandra offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

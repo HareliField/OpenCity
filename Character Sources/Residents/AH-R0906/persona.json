@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0906",
+  "personId": "AH-R0906",
+  "name": "Javier Turner",
+  "age": 45,
+  "occupation": "Import clerk",
+  "home": "the western residential streets",
+  "episode": "The uniform money",
+  "biography": "stories/residents/07/01-the-uniform-money.md#ah-r0906",
+  "life": "“I still remember opening an invoice nobody had translated for Mum.” On Wednesday, near Breakwater Way, Javier stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I found the supplier who will sell singles without a bulk order. It took four calls in my first language.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and one cuff folded back twice. Javier has a crooked front tooth visible when laughing, with close-cropped dark curls. Javier looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Javier has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To get a supplier to sell one shirt at a time.",
+  "family": "Eamon Tor is Javier’s older relative by marriage. Javier gets to change the plan. Eamon offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Two portions*, Eamon says, “I put two because a meal eaten alone lasts nine minutes and an argument over gravy lasts an hour.”",
+  "connections": "Neal Clement. They source individual collars that work for families who cannot buy whole sets.",
+  "familyIds": [
+    "AH-R0134"
+  ],
+  "connectionIds": [
+    "AH-R0905"
+  ],
+  "reactions": [
+    {
+      "situation": "A donor asks to photograph the children receiving clothes",
+      "response": "Javier asks the children and families whether they want to appear in the picture.",
+      "asWritten": "A donor asks to photograph the children receiving clothes. Javier asks the children and families whether they want to appear in the picture."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Javier asks the cashier to hold it and lets a claimant identify the writing and amount privately.",
+      "asWritten": "An envelope of wages is found under a café chair. Javier asks the cashier to hold it and lets a claimant identify the writing and amount privately."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Javier says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Javier says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

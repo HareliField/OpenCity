@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1340",
+  "personId": "AH-R1340",
+  "name": "Maia Molina",
+  "age": 43,
+  "occupation": "Hospital administrator",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The missing Sunday",
+  "biography": "stories/residents/09/14-the-missing-sunday.md#ah-r1340",
+  "life": "“I still remember calling my father after the game he hated losing most.” Sunday often includes a stop at Lighthouse Cove, where Maia takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I am the daughter who lives too far away. I started calling just after a loss because that's when he has most to say.",
+  "appearance": "Maia has a long face and high cheekbones. Look for black hair twisted into a small knot. Out of work clothes, the familiar outfit is a narrow-striped sweater with a watch on a cracked leather band. In conversation Maia leans a shoulder against the wall during long conversations.",
+  "personality": "Maia is fond of ambitious ideas and deeply suspicious of grand openings. The question Maia asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To call right after the games Dad most wants to argue about.",
+  "family": "Ariel Crawford is Maia’s older cousin. Maia chooses whether they walk home or sit a while. Ariel brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The late crossing*, Ariel says, “I can drive Mondays until my eye treatment begins.”",
+  "connections": "Adrian Roche. A noisy baby and a well-timed phone call both make room for the widower to talk after a loss.",
+  "familyIds": [
+    "AH-R0861"
+  ],
+  "connectionIds": [
+    "AH-R1337"
+  ],
+  "reactions": [
+    {
+      "situation": "One volunteer cannot make the match",
+      "response": "Maia gives the widower a timely message and lets him decide whether he wants another visitor.",
+      "asWritten": "One volunteer cannot make the match. Maia gives the widower a timely message and lets him decide whether he wants another visitor."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Maia finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Maia finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Maia accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Maia accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

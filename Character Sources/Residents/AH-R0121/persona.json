@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0121",
+  "personId": "AH-R0121",
+  "name": "Cory Halevi",
+  "age": 17,
+  "occupation": "Teenage bassist",
+  "home": "Old Town",
+  "episode": "The borrowed bass",
+  "biography": "stories/residents/01/13-the-borrowed-bass.md#ah-r0121",
+  "life": "Cory borrows instruments because the family's rent changes faster than anyone can save. Learning the sound of a loose screw gave him an accidental education in listening to a thing other people have used. People around the window at Night Shift Donuts know Cory by a small Monday habit. Cory knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I heard that rattle every time I played the low E. I thought it was my timing. I'm missing the audition to walk the instrument back unless the owner lets me tell the band the whole story.",
+  "appearance": "Outside school, look for a gray fisher's sweater and a comb in a sleeve sewn into the lining. Cory has a broad nose and a deep dimple on one cheek, with a cropped cut that shows the shape of the ears. Cory squares up pieces of paper while thinking during a conversation.",
+  "personality": "Cory finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To return the bass honestly and still make the audition if possible.",
+  "family": "Gareth Rivera is Cory’s first cousin once removed. Cory calls about good news first. Gareth is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *A clean coat for court*, Gareth says, “I cheated him. Borrowing his coat feels worse than borrowing money because I'm wearing his good opinion.”",
+  "connections": "Stevie Dain (bandmate). The audition only stays open if the drummer can persuade the other musicians to change their order. Also in the story is Iris Cade (music teacher).",
+  "familyIds": [
+    "AH-R1241"
+  ],
+  "connectionIds": [
+    "AH-R0125",
+    "AH-R0122"
+  ],
+  "reactions": [
+    {
+      "situation": "Somebody says the pawn ticket proves the bass was stolen",
+      "response": "Cory asks to see whether the ticket had already been settled.",
+      "asWritten": "Somebody says the pawn ticket proves the bass was stolen. Cory asks to see whether the ticket had already been settled."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Cory stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Cory stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Cory points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Cory points to the person who noticed the original mistake."
+    }
+  ]
+}

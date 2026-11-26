@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0978",
+  "personId": "AH-R0978",
+  "name": "Elizabeth Campos",
+  "age": 34,
+  "occupation": "Cake decorator",
+  "home": "the western residential streets",
+  "episode": "The expensive summer",
+  "biography": "stories/residents/07/08-the-expensive-summer.md#ah-r0978",
+  "life": "“I still remember cutting a sample cake into eleven sensible pieces.” People around the public end of the South Shore boardwalk know Elizabeth by a small Monday habit. Elizabeth checks the shade on the benches before deciding how long to stay.",
+  "voice": "I make fancy cakes. I delivered one small enough to share without pretending it was a feast.",
+  "appearance": "Elizabeth has a dark undercut with a longer wave on top, a heart-shaped face and prominent ears, and a favorite piece of clothing, a washed violet jersey. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Elizabeth gathers both sleeves neatly before settling in.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Elizabeth takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To deliver a genuinely shareable small cake.",
+  "family": "Rosa Vance is Elizabeth’s cousin raised in the same household. Elizabeth offers the first invitation. Rosa gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The skipper goes ashore*, Rosa says, “I have always been seasick. I told the skipper which bench has the best steady horizon for talking after a trip.”",
+  "connections": "Barbara Jackson. Both tips and an affordable birthday cake depend on the dessert table being welcomed.",
+  "familyIds": [
+    "AH-R1195"
+  ],
+  "connectionIds": [
+    "AH-R0973"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative tries to pay the whole restaurant bill in secret",
+      "response": "Elizabeth speaks to the host privately and lets them decide whether the bill is shared.",
+      "asWritten": "A relative tries to pay the whole restaurant bill in secret. Elizabeth speaks to the host privately and lets them decide whether the bill is shared."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Elizabeth calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Elizabeth calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Elizabeth asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Elizabeth asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

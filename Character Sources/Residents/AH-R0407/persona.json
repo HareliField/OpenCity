@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0407",
+  "personId": "AH-R0407",
+  "name": "Quinn Fong",
+  "age": 75,
+  "occupation": "Retired warehouse clerk",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The widow's razor",
+  "biography": "stories/residents/03/11-the-widow-s-razor.md#ah-r0407",
+  "life": "“I still remember an eye test using letters I knew by heart.” People around Breakwater Way know Quinn by a small Saturday habit. Quinn stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I can't see the maker's mark. My granddaughter read it out and found her own middle name.",
+  "appearance": "Quinn is easy to recognize by a long silver braid and a round face with a pronounced chin. Usually dressed in a cream pullover with one cuff folded back twice, Quinn gathers both sleeves neatly before settling in when listening.",
+  "personality": "Quinn loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To identify the maker with the granddaughter.",
+  "family": "Jean Miranda is Quinn’s cousin’s child. Quinn picks the meeting place. Jean sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *Reading the payslip*, Jean says, “I sharpen pencils for class because it gives my shaking hands a job.”",
+  "connections": "Aidan Hayward. The maker's name finally goes beside the old haircut bought with fish.",
+  "familyIds": [
+    "AH-R0816"
+  ],
+  "connectionIds": [
+    "AH-R0408"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer makes a high offer for the old razor",
+      "response": "Quinn lets the widow hear the price privately and keep the box in hand.",
+      "asWritten": "A buyer makes a high offer for the old razor. Quinn lets the widow hear the price privately and keep the box in hand."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Quinn asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Quinn asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Quinn offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Quinn offers one about their own embarrassment instead."
+    }
+  ]
+}

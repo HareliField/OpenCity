@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0836",
+  "personId": "AH-R0836",
+  "name": "Byron Felix",
+  "age": 35,
+  "occupation": "Prescription technician",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A room for a father",
+  "biography": "stories/residents/06/09-a-room-for-a-father.md#ah-r0836",
+  "life": "“I still remember finding a pill bottle in a bread tin.” Friday often includes a stop at the crossing outside Verve Nail Studio, where Byron notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I wrote his prescriptions on separate cards. Nobody wants to learn how much care is actually coming.",
+  "appearance": "Byron has one cheek that creases before the other. Look for thick, tightly coiled hair. On an ordinary day, the familiar outfit is an olive canvas jacket with a partly rubbed-away embroidered initial. In conversation Byron rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Byron loves a well-told anecdote and distrusts the neat ending. The parts Byron remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To put a workable care schedule beside the prescriptions.",
+  "family": "Isla Osei is Byron’s cousin. Byron chooses whether to use it. Isla saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *One sleeve short*, Isla says, “I wanted to sell him a full suit on credit.”",
+  "connections": "Lorenzo Dixon. The old neighbor's memories put a human history beside the new prescription schedule.",
+  "familyIds": [
+    "AH-R0257"
+  ],
+  "connectionIds": [
+    "AH-R0838"
+  ],
+  "reactions": [
+    {
+      "situation": "A sibling leaves the room during the welcome dinner",
+      "response": "Byron leaves the departing sibling room to get out without turning supper into a vote.",
+      "asWritten": "A sibling leaves the room during the welcome dinner. Byron leaves the departing sibling room to get out without turning supper into a vote."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Byron finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Byron finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Byron includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Byron includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

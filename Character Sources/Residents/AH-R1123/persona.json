@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1123",
+  "personId": "AH-R1123",
+  "name": "Ida Heath",
+  "age": 43,
+  "occupation": "Wheelchair user and travel agent",
+  "home": "Coast Ridge",
+  "episode": "A summer marriage",
+  "biography": "stories/residents/08/08-a-summer-marriage.md#ah-r1123",
+  "life": "“I still remember pushing my uncle's chair off the edge of a paved path.” On Sunday, near the approach to Seabright Court, Ida likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I booked the shade at noon. The wheelchair user in our family would rather have the boardwalk than the prettiest sand.",
+  "appearance": "Ida has a strong profile and a little space between the front teeth. Look for a swept fringe and a closely clipped nape. On an ordinary day, the familiar outfit is a narrow-striped sweater with a copper-colored clasp that has been repaired by hand. In conversation Ida squares up pieces of paper while thinking.",
+  "personality": "Ida admires skill and distrusts the idea that skill gives anyone permission to be rude. Ida learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To put the wheelchair guest on firm ground.",
+  "family": "Frances Finch is Ida’s cousin raised in the same household. Ida chooses the music. Frances puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Reading the payslip*, Frances says, “I missed the first class to cover a double.”",
+  "connections": "Isabel Doyle. A guest choosing firm ground gives another future bride a useful approach to planning.",
+  "familyIds": [
+    "AH-R0819"
+  ],
+  "connectionIds": [
+    "AH-R1127"
+  ],
+  "reactions": [
+    {
+      "situation": "A guest brings additional people to the boardwalk wedding",
+      "response": "Ida checks whether the couple can actually feed and seat the additional people.",
+      "asWritten": "A guest brings additional people to the boardwalk wedding. Ida checks whether the couple can actually feed and seat the additional people."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Ida brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Ida brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Ida describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Ida describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0161",
+  "personId": "AH-R0161",
+  "name": "Wesley Joseph",
+  "age": 36,
+  "occupation": "Port forklift driver",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Five missing lunches",
+  "biography": "stories/residents/02/02-five-missing-lunches.md#ah-r0161",
+  "life": "“I began moving freight on a borrowed forklift with a missing armrest.” People around the blocks below Foundry Lofts know Wesley by a small Sunday habit. Wesley checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "We used to swap the sweet things. With my new shift I don't know anybody's favorite.",
+  "appearance": "Wesley has short, uneven waves that refuse to lie flat, a softly rounded chin under sharp cheekbones, and a favorite piece of clothing, an unlined tan jacket. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Wesley listens with the head tilted a little to the left.",
+  "personality": "Wesley tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Wesley will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To exchange lunch treats with one new shift mate.",
+  "family": "Imani Ford is Wesley’s half-sibling. Wesley makes the call. Imani is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A call heard twice*, Imani says, “I took the first call and lost the connection.”",
+  "connections": "John Hong. They argue over whether a working lunch tin is ready to become a museum piece.",
+  "familyIds": [
+    "AH-R1231"
+  ],
+  "connectionIds": [
+    "AH-R0165"
+  ],
+  "reactions": [
+    {
+      "situation": "An old tin is claimed by two crews",
+      "response": "Wesley invites both crews to describe the lid without putting either at fault.",
+      "asWritten": "An old tin is claimed by two crews. Wesley invites both crews to describe the lid without putting either at fault."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Wesley tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Wesley tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Wesley repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Wesley repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

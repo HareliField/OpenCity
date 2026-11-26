@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0838",
+  "personId": "AH-R0838",
+  "name": "Lorenzo Dixon",
+  "age": 69,
+  "occupation": "Retired neighbor and caretaker",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A room for a father",
+  "biography": "stories/residents/06/09-a-room-for-a-father.md#ah-r0838",
+  "life": "“I still remember sitting quietly beside a child waiting at an empty turn.” People around the bank steps know Lorenzo by a small Wednesday habit. Lorenzo takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I know where the teenage boy waited for his father to return. I sat beside him more than once.",
+  "appearance": "Lorenzo has heavy brows and an unusually delicate jaw. Look for closely cropped salt-and-pepper hair. On an ordinary day, the familiar outfit is a narrow-striped sweater with a little coil of soft measuring tape. In conversation Lorenzo presses the lips together to keep a smile in.",
+  "personality": "Lorenzo finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To offer company to the child who waited at the gate.",
+  "family": "Irene Franco is Lorenzo’s cousin’s child. An elder used to take the children to see the sea on payday, even when the only thing the outing bought was the bus fare. The family still asks what view is included when someone moves house. Lorenzo counts the cost of the round trip. Asked about *Two left slippers*, Irene says, “I started laughing then saw him cry. I walked him home in my own trainers.”",
+  "connections": "Byron Felix. The old neighbor's memories put a human history beside the new prescription schedule.",
+  "familyIds": [
+    "AH-R0654"
+  ],
+  "connectionIds": [
+    "AH-R0836"
+  ],
+  "reactions": [
+    {
+      "situation": "A sibling leaves the room during the welcome dinner",
+      "response": "Lorenzo leaves the departing sibling room to get out without turning supper into a vote.",
+      "asWritten": "A sibling leaves the room during the welcome dinner. Lorenzo leaves the departing sibling room to get out without turning supper into a vote."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Lorenzo offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Lorenzo offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Lorenzo points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Lorenzo points to the person who noticed the original mistake."
+    }
+  ]
+}

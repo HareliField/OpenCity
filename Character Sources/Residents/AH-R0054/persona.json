@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0054",
+  "personId": "AH-R0054",
+  "name": "Gita Moss",
+  "age": 57,
+  "occupation": "Flower seller",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Window seven",
+  "biography": "stories/residents/01/06-window-seven.md#ah-r0054",
+  "life": "Gita learned to wait outside a room until someone made eye contact after walking into a family quarrel carrying congratulations. Her whole flower business depends on reading a doorway in time. Thursday often includes a stop at Ferris Deli, where Gita asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I delivered yellow roses to the wrong bed here once. The woman asked to keep them. Today I stood back until someone told me whose view I might be blocking.",
+  "appearance": "Gita is easy to recognize by a blunt cut just below the ears and a broad nose and a deep dimple on one cheek. Usually dressed in a soft blue checked shirt with a stitched row of blue crosses along an old repair, Gita squares up pieces of paper while thinking when listening.",
+  "personality": "Gita reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Gita trusts most.",
+  "agenda": "To bring flowers to the bedside without taking anybody's view.",
+  "family": "Cian Khan is Gita’s younger relative by marriage. Gita picks the meeting place. Cian sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *Salt in the pockets*, Cian says, “I wanted a scientific name for every crystal until the dockers started giving me better names.”",
+  "connections": "Anwar Fen. Flowers and toast have to reach the same bedside without getting in anybody's sight line.",
+  "familyIds": [
+    "AH-R0610"
+  ],
+  "connectionIds": [
+    "AH-R0058"
+  ],
+  "reactions": [
+    {
+      "situation": "A different patient needs the same porter",
+      "response": "Gita checks which part can wait and makes sure the other patient hears about the delay.",
+      "asWritten": "A different patient needs the same porter. Gita checks which part can wait and makes sure the other patient hears about the delay."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Gita walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Gita walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Gita does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Gita does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

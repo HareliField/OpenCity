@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0951",
+  "personId": "AH-R0951",
+  "name": "Javier Aguilar",
+  "age": 39,
+  "occupation": "Ward nurse",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The empty chair on nights",
+  "biography": "stories/residents/07/06-the-empty-chair-on-nights.md#ah-r0951",
+  "life": "“I still remember leaving a sick job without a goodbye cup.” Thursday often includes a stop at Studio Boulevard, where Javier waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I want the farewell because last time I left work sick nobody even phoned.",
+  "appearance": "Javier is easy to recognize by auburn hair cut square at the nape and two dimples that appear only with a full smile. Usually dressed in a mustard canvas overshirt with a pen clipped inside the neckline, Javier folds a paper napkin into quarters without noticing when listening.",
+  "personality": "Javier tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Javier will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To give the former nurse a farewell she can freely decline.",
+  "family": "Lily Wilcox is Javier’s older cousin. Javier is allowed to ask about the bad news afterward. Lily calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *A sail cut small*, Lily says, “I wanted the stained piece because my niece spilled her first cup of tea there in a swell.”",
+  "connections": "Rosa Taylor. They decide which farewells a neighbor can actually deliver without violating a confidence.",
+  "familyIds": [
+    "AH-R0292"
+  ],
+  "connectionIds": [
+    "AH-R0957"
+  ],
+  "reactions": [
+    {
+      "situation": "A replacement nurse receives the permanent badge",
+      "response": "Javier welcomes the new nurse and saves the old worker's goodbye for a separate conversation.",
+      "asWritten": "A replacement nurse receives the permanent badge. Javier welcomes the new nurse and saves the old worker's goodbye for a separate conversation."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Javier offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Javier offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Javier repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Javier repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

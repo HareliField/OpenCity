@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0082",
+  "personId": "AH-R0082",
+  "name": "Ruth Eade",
+  "age": 38,
+  "occupation": "Estate agent",
+  "home": "the western residential streets",
+  "episode": "The porch light",
+  "biography": "stories/residents/01/09-the-porch-light.md#ah-r0082",
+  "life": "Ruth grew up in a house staged for sale every spring. She knows how exhausted a family can become trying to look as if it has never used its own kitchen. She has started scheduling viewings around one untouched family meal. Tuesday often includes a stop at Breakwater Way, where Ruth stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I described it as original hardware. When the owner started to cry I crossed the phrase out. I still need the commission to cover my own rent, and I'll earn it with a different sentence.",
+  "appearance": "On an ordinary day, look for a cream pullover and a partly rubbed-away embroidered initial. Ruth has a strong profile and a little space between the front teeth, with a cropped cut that shows the shape of the ears. Ruth counts on the side of one finger where hardly anybody notices during a conversation.",
+  "personality": "Ruth can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To sell the house with terms the owner can sign freely.",
+  "family": "Ariel Powell is Ruth’s parent’s cousin. Ruth checks the date twice. Ariel brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The last home visit*, Ariel says, “I brought sweet tea for years. My oldest client said she'd waited for my last day to admit she liked it bitter.”",
+  "connections": "Verity Long. The prospective buyer and agent must decide what a lodger means for the old owner's conditions.",
+  "familyIds": [
+    "AH-R1481"
+  ],
+  "connectionIds": [
+    "AH-R0085"
+  ],
+  "reactions": [
+    {
+      "situation": "A shift worker turns up after the porch goes dark",
+      "response": "Ruth keeps the worker company at the gate and lets the homeowner explain the dark.",
+      "asWritten": "A shift worker turns up after the porch goes dark. Ruth keeps the worker company at the gate and lets the homeowner explain the dark."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Ruth brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Ruth brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Ruth asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Ruth asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

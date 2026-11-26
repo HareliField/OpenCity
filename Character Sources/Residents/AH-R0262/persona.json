@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0262",
+  "personId": "AH-R0262",
+  "name": "Alicia Nielsen",
+  "age": 36,
+  "occupation": "Early hotel porter",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The sheltered corner",
+  "biography": "stories/residents/02/12-the-sheltered-corner.md#ah-r0262",
+  "life": "“I have opened a hotel before sunrise for fourteen winters.” People around the corner by Juniper Tailor know Alicia by a small Wednesday habit. Alicia looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I stood at the old stop for three days. Each day a different person waited with me so I wouldn't look foolish.",
+  "appearance": "Alicia is easy to recognize by brown hair pinned away from the temples and heavy brows and an unusually delicate jaw. Usually dressed in a washed violet jersey with a square of clean cloth for polishing smudges, Alicia folds a paper napkin into quarters without noticing when listening.",
+  "personality": "Alicia can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To make the old stop a useful meeting point during the change.",
+  "family": "Ellen Soto is Alicia’s cousin. Alicia puts the kettle on. Ellen chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *An empty dedication*, Ellen says, “I am a character in the book by accident. I want the dedication to leave my real name alone.”",
+  "connections": "Stella Hull. An old-stop regular walks the new wheelchair turn alongside its advocate.",
+  "familyIds": [
+    "AH-R1414"
+  ],
+  "connectionIds": [
+    "AH-R0269"
+  ],
+  "reactions": [
+    {
+      "situation": "The route manager declares the move a success",
+      "response": "Alicia asks one rider from each corner to walk the new distance.",
+      "asWritten": "The route manager declares the move a success. Alicia asks one rider from each corner to walk the new distance."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Alicia asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Alicia asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Alicia asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Alicia asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

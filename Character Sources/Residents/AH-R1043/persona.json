@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1043",
+  "personId": "AH-R1043",
+  "name": "Dana Wong",
+  "age": 42,
+  "occupation": "Sailing syndicate member",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The day sailor's divorce",
+  "biography": "stories/residents/07/15-the-day-sailor-s-divorce.md#ah-r1043",
+  "life": "“I still remember taking messages between adults who shared the same key.” On Tuesday, near Harbour Bakery, Dana buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I co-own the boat and am tired of becoming a messenger between people who know each other's numbers.",
+  "appearance": "On an ordinary day, look for an olive canvas jacket and a fabric zip pull cut from a school scarf. Dana has one cheek that creases before the other, with black hair twisted into a small knot. Dana takes off the watch before a long conversation during a conversation.",
+  "personality": "Dana gets protective of anybody who comes into a meeting unprepared. Dana privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To end the role of go-between.",
+  "family": "Dale Lane is Dana’s first cousin once removed. Dana brings a spare shopping bag. Dale chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The third bedroom*, Dale says, “I would like a private room so I can cry without making him think it's his fault.”",
+  "connections": "Kieran Colón. A co-owner who refuses to relay messages still has to hear the proposal for a new boat name.",
+  "familyIds": [
+    "AH-R1132"
+  ],
+  "connectionIds": [
+    "AH-R1048"
+  ],
+  "reactions": [
+    {
+      "situation": "A child wants both separated adults on the same boat",
+      "response": "Dana asks each adult whether sharing one trip is possible without putting the child in the middle.",
+      "asWritten": "A child wants both separated adults on the same boat. Dana asks each adult whether sharing one trip is possible without putting the child in the middle."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Dana asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Dana asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Dana offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Dana offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

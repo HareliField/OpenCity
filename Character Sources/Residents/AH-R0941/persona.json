@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0941",
+  "personId": "AH-R0941",
+  "name": "Cian Farrell",
+  "age": 47,
+  "occupation": "Recently released warehouse applicant",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The release address",
+  "biography": "stories/residents/07/05-the-release-address.md#ah-r0941",
+  "life": "“I still remember the old family doorbell ringing in my dreams inside prison.” On Saturday, near the courtyard by Ferry Street Rooms, Cian prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I have addressed birthday envelopes to a demolition site for two years. My girl kept every forwarded card.",
+  "appearance": "On an ordinary day, look for a faded indigo overshirt and a fabric zip pull cut from a school scarf. Cian has two dimples that appear only with a full smile, with brown hair pinned away from the temples. Cian rubs a thumb along the edge of the nearest pocket during a conversation.",
+  "personality": "Cian loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To send the daughter a letter to the right address.",
+  "family": "Sasha Gil is Cian’s half-sibling. Cian knows which ones can be shared. Sasha keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Winter afloat*, Sasha says, “I want the berth clear on Friday. The owner asked me what time checkout is for someone whose home floats.”",
+  "connections": "Isaac Nord (adult child). Returning parent and grown child try addressing one another by the right names. Also in the story is Joel Gomes (uncle).",
+  "familyIds": [
+    "AH-R0899"
+  ],
+  "connectionIds": [
+    "AH-R0950",
+    "AH-R0947"
+  ],
+  "reactions": [
+    {
+      "situation": "The returning father asks to visit the old address",
+      "response": "Cian checks whether the person living there now wants visitors.",
+      "asWritten": "The returning father asks to visit the old address. Cian checks whether the person living there now wants visitors."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Cian offers an ordinary errand that lets the distressed person leave without being followed by an audience.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Cian offers an ordinary errand that lets the distressed person leave without being followed by an audience."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Cian offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Cian offers one about their own embarrassment instead."
+    }
+  ]
+}

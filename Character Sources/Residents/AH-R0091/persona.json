@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0091",
+  "personId": "AH-R0091",
+  "name": "Joss Farin",
+  "age": 43,
+  "occupation": "Overnight baker",
+  "home": "Old Town",
+  "episode": "The thirteenth doughnut",
+  "biography": "stories/residents/01/10-the-thirteenth-doughnut.md#ah-r0091",
+  "life": "Joss's husband can taste lemon in a room where nobody else smells it. Their marriage runs on such very local bits of expert knowledge. He wants the bakery to know its late customers half as well. Wednesday often includes a stop at the approach to Seabright Court, where Joss likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I made the first one with lemon because my husband hated lemon and wouldn't eat it on the way. Now people leave me notes telling me what their night tasted like. I want to bake one of those notes.",
+  "appearance": "Joss has close-cropped dark curls, a long face and high cheekbones, and a favorite piece of clothing, a black overshirt with pearl buttons. It usually goes with one cuff folded back twice. When somebody else has the floor, Joss folds a paper napkin into quarters without noticing.",
+  "personality": "Joss keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Joss wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To turn one customer's description of a hard night into a breakfast flavor.",
+  "family": "Bianca Breen is Joss’s stepsibling. Joss puts the kettle on. Bianca chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The worker who couldn't read the joke*, Bianca says, “I run the break room. I won't make the wronged worker stand up at a meeting unless he wants to.”",
+  "connections": "Drew Milo. A lemon doughnut passed between their shifts before either knew why the other was awake. Also in the story is Sera Noor (night-crew organizer).",
+  "familyIds": [
+    "AH-R1215"
+  ],
+  "connectionIds": [
+    "AH-R0093",
+    "AH-R0096"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer tries to sell the spare doughnut story to a brand",
+      "response": "Joss asks the baker and the intended recipient for their separate consent.",
+      "asWritten": "A customer tries to sell the spare doughnut story to a brand. Joss asks the baker and the intended recipient for their separate consent."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Joss asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Joss asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Joss offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Joss offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

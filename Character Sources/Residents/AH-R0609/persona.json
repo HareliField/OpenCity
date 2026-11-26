@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0609",
+  "personId": "AH-R0609",
+  "name": "Miguel Grant",
+  "age": 39,
+  "occupation": "Furniture warehouse worker",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Salt in the pockets",
+  "biography": "stories/residents/05/01-salt-in-the-pockets.md#ah-r0609",
+  "life": "“I still remember my child mistaking my new work clothes for a disguise.” On Monday, near Ferris Deli, Miguel asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I didn't recognize my own coat clean. My kid found it by the spot where I'd held her crayons.",
+  "appearance": "Miguel has brown hair pinned away from the temples, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, an unlined tan jacket. It usually goes with a narrow brass watch set a little fast. When somebody else has the floor, Miguel rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Miguel treats a small promise with the gravity others reserve for a contract. This makes Miguel lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To let the child choose the recognizable work coat.",
+  "family": "Petra Jones is Miguel’s stepsibling. Miguel calls back when there is finally a little privacy. Petra leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A borrowed name*, Petra says, “I sold out of copies until the real man stood in the doorway.”",
+  "connections": "Daniel Song (ferry client). A familiar stain helps a family recognize a coat the ferry passenger wants to copy.",
+  "familyIds": [
+    "AH-R0515"
+  ],
+  "connectionIds": [
+    "AH-R0606"
+  ],
+  "reactions": [
+    {
+      "situation": "A coat's owner claims the crystals in the lining",
+      "response": "Miguel sets the coat aside until the owner can identify the crystals privately.",
+      "asWritten": "A coat's owner claims the crystals in the lining. Miguel sets the coat aside until the owner can identify the crystals privately."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Miguel asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Miguel asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Miguel says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Miguel says what can be returned and asks whether that will do."
+    }
+  ]
+}

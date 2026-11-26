@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0719",
+  "personId": "AH-R0719",
+  "name": "Jo Johnson",
+  "age": 59,
+  "occupation": "Residents' association volunteer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Level with the window",
+  "biography": "stories/residents/05/12-level-with-the-window.md#ah-r0719",
+  "life": "“I still remember holding an unsigned petition in a warm bakery.” People around Ferris Deli know Jo by a small Sunday habit. Jo asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I delivered a complaint and a cake to the same desk. The cake was for the driver who waved.",
+  "appearance": "On an ordinary day, look for a long navy raincoat and a little coil of soft measuring tape. Jo has a strong profile and a little space between the front teeth, with gray hair trimmed very close behind the ears. Jo draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Jo loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To thank the waving driver separately from the complaint.",
+  "family": "Nadia Hayes is Jo’s cousin raised in the same household. Jo brings something that can still be enjoyed tomorrow. Nadia checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The broken till*, Nadia says, “I learned sums selling tomatoes. I ran the paper till and earned my first paid shift.”",
+  "connections": "Selena Sáenz (detour manager). A cake for the driver arrives separately from the complaint for the planner.",
+  "familyIds": [
+    "AH-R0391"
+  ],
+  "connectionIds": [
+    "AH-R0715"
+  ],
+  "reactions": [
+    {
+      "situation": "A passenger asks to photograph a stranger through the kitchen window",
+      "response": "Jo waits for the resident to give permission before a camera goes up.",
+      "asWritten": "A passenger asks to photograph a stranger through the kitchen window. Jo waits for the resident to give permission before a camera goes up."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Jo separates the money question from the broken promise and asks which one the family wants to discuss first.",
+      "asWritten": "A family supper turns into an argument about old debt. Jo separates the money question from the broken promise and asks which one the family wants to discuss first."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Jo offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Jo offers one about their own embarrassment instead."
+    }
+  ]
+}

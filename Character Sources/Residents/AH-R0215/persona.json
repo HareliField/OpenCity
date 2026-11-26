@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0215",
+  "personId": "AH-R0215",
+  "name": "Miles Price",
+  "age": 51,
+  "occupation": "Divorced tax preparer",
+  "home": "the blocks north of the port",
+  "episode": "The margin reader",
+  "biography": "stories/residents/02/07-the-margin-reader.md#ah-r0215",
+  "life": "“My divorce came with six cartons we couldn't bear to divide.” On Monday, near the steps at Pier Beach, Miles watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I donated the books during a divorce. My ex kept replying after I'd already moved out.",
+  "appearance": "On an ordinary day, look for a pale blue work shirt and a comb in a sleeve sewn into the lining. Miles has a narrow face with an expressive upper lip, with a soft fringe that falls across one eyebrow. Miles starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Miles admires skill and distrusts the idea that skill gives anyone permission to be rude. Miles learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To exchange the final set of notes with the former spouse.",
+  "family": "Mae Linford is Miles’s cousin. Miles decides what stays off the paper. Mae brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Two portions*, Mae says, “I nearly canceled the extra dinner. Then I remembered the winter my father fed our neighbor off his own plate.”",
+  "connections": "Bess Lai. One writer's teenage opinion survived a divorce in somebody else's carton.",
+  "familyIds": [
+    "AH-R0131"
+  ],
+  "connectionIds": [
+    "AH-R0211"
+  ],
+  "reactions": [
+    {
+      "situation": "A reader asks to erase a personal inscription",
+      "response": "Miles puts a clean sheet over the inscription while its writer decides.",
+      "asWritten": "A reader asks to erase a personal inscription. Miles puts a clean sheet over the inscription while its writer decides."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Miles asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Miles asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Miles describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Miles describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1222",
+  "personId": "AH-R1222",
+  "name": "Gloria Batista",
+  "age": 42,
+  "occupation": "Property valuer",
+  "home": "Old Town",
+  "episode": "The million-dollar flat",
+  "biography": "stories/residents/09/03-the-million-dollar-flat.md#ah-r1222",
+  "life": "“I still remember carrying a valuer's bag up six flights in August.” People around Lighthouse Cove know Gloria by a small Monday habit. Gloria takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I valued the view and overlooked the years she carried her shopping up without a lift. I returned with my own bags to try it.",
+  "appearance": "Gloria has a long face and high cheekbones. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is an unlined tan jacket with a pair of reading glasses in a cloth sleeve. In conversation Gloria looks down for a moment before saying something difficult.",
+  "personality": "Gloria has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To value the stairs as well as the view.",
+  "family": "Eva Bay is Gloria’s stepsibling. Gloria puts the kettle on. Eva chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *An empty dedication*, Eva says, “I wrote the book while my husband cooked. He hates public thanks and likes a hot meal waiting for him.”",
+  "connections": "Ruben Ali. The journalist tests the dramatic valuation against the unglamorous price of a usable bath.",
+  "familyIds": [
+    "AH-R1411"
+  ],
+  "connectionIds": [
+    "AH-R1230"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative asks for a loan against the house",
+      "response": "Gloria puts the monthly cost of the suggested loan beside the home's paper value.",
+      "asWritten": "A relative asks for a loan against the house. Gloria puts the monthly cost of the suggested loan beside the home's paper value."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Gloria brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Gloria brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Gloria asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Gloria asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

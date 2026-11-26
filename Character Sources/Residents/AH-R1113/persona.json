@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1113",
+  "personId": "AH-R1113",
+  "name": "Aidan Henry",
+  "age": 55,
+  "occupation": "Prize juror",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A prize nobody entered",
+  "biography": "stories/residents/08/07-a-prize-nobody-entered.md#ah-r1113",
+  "life": "“I still remember recognizing a relative's bread knife in a stranger's book.” People around Studio Boulevard know Aidan by a small Sunday habit. Aidan waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I sat on the jury and recognized our family's kitchen in the scene. I should have said something before the vote.",
+  "appearance": "On an ordinary day, look for a red windbreaker and a cloth patch so neatly matched it only shows in strong light. Aidan has a softly rounded chin under sharp cheekbones, with short copper curls. Aidan starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Aidan listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To disclose the juror's family connection.",
+  "family": "Bina Marsh is Aidan’s younger cousin. Aidan is free to hang up first. Bina makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The aquarium*, Bina says, “He kept telling me the filter was humming wrong.”",
+  "connections": "Scout Gallagher. The juror's family recognition puts the runner-up in an awkward but legitimate position.",
+  "familyIds": [
+    "AH-R0045"
+  ],
+  "connectionIds": [
+    "AH-R1114"
+  ],
+  "reactions": [
+    {
+      "situation": "The prize organizer asks the writer to appear onstage",
+      "response": "Aidan asks the organizer to wait for the writer's own answer.",
+      "asWritten": "The prize organizer asks the writer to appear onstage. Aidan asks the organizer to wait for the writer's own answer."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Aidan asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Aidan asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Aidan keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Aidan keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

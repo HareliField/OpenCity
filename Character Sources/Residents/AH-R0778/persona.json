@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0778",
+  "personId": "AH-R0778",
+  "name": "Terry Lin",
+  "age": 47,
+  "occupation": "Business valuer",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Money after marriage",
+  "biography": "stories/residents/06/03-money-after-marriage.md#ah-r0778",
+  "life": "“I still remember trying to price a business that had once fed me.” Sunday often includes a stop at Harbour Bakery, where Terry buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I used to get invited to both houses. Once I put a price on the company neither was sure I could still come to dinner.",
+  "appearance": "Terry has thick, tightly coiled hair, a crooked front tooth visible when laughing, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a copper-colored clasp that has been repaired by hand. When somebody else has the floor, Terry counts on the side of one finger where hardly anybody notices.",
+  "personality": "Terry always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Terry is trying to tell the difference before the bill arrives.",
+  "agenda": "To get through a dinner where business can stay off the table.",
+  "family": "Aldo Dixon is Terry’s stepsibling. Terry brings a spare shopping bag. Aldo chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The salon on strike*, Aldo says, “I quit my last salon over this and swore the next owner would hear my reasons before getting my notice.”",
+  "connections": "Magdalena Macrae. They put the value of established customers beside the company's formal valuations.",
+  "familyIds": [
+    "AH-R1002"
+  ],
+  "connectionIds": [
+    "AH-R0771"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver says payday matters more than the settlement",
+      "response": "Terry checks what money is ring-fenced for the drivers already on the rota.",
+      "asWritten": "A driver says payday matters more than the settlement. Terry checks what money is ring-fenced for the drivers already on the rota."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Terry asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Terry asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Terry suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Terry suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

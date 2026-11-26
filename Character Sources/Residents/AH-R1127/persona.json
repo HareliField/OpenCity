@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1127",
+  "personId": "AH-R1127",
+  "name": "Isabel Doyle",
+  "age": 29,
+  "occupation": "Teacher",
+  "home": "Coast Ridge",
+  "episode": "A summer marriage",
+  "biography": "stories/residents/08/08-a-summer-marriage.md#ah-r1127",
+  "life": "“I still remember saving for a reception bigger than the flat I lived in.” Monday often includes a stop at the window at Night Shift Donuts, where Isabel knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I have been saving for a huge wedding. Hearing these two haggle over chairs has made me question mine.",
+  "appearance": "Isabel has an aquiline nose and a square chin. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a rust-colored canvas coat with a small enamel bird on the lapel. In conversation Isabel takes off the watch before a long conversation.",
+  "personality": "Isabel listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To change the plan for a future wedding.",
+  "family": "Harold Byrd is Isabel’s cousin raised in the same household. Isabel chooses whether they walk home or sit a while. Harold brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *A ship without postcards*, Harold says, “I mailed a receipt for lunch. My family has been asking what an ordinary day costs.”",
+  "connections": "Ida Heath. A guest choosing firm ground gives another future bride a useful approach to planning.",
+  "familyIds": [
+    "AH-R0320"
+  ],
+  "connectionIds": [
+    "AH-R1123"
+  ],
+  "reactions": [
+    {
+      "situation": "A guest brings additional people to the boardwalk wedding",
+      "response": "Isabel checks whether the couple can actually feed and seat the additional people.",
+      "asWritten": "A guest brings additional people to the boardwalk wedding. Isabel checks whether the couple can actually feed and seat the additional people."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Isabel writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Isabel writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Isabel keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Isabel keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

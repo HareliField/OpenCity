@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1315",
+  "personId": "AH-R1315",
+  "name": "Louis Law",
+  "age": 38,
+  "occupation": "Driving tutor",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The driving lesson fund",
+  "biography": "stories/residents/09/12-the-driving-lesson-fund.md#ah-r1315",
+  "life": "“I still remember helping my first nervous driver to stop apologizing.” On Wednesday, near Harbour Bakery, Louis buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I teach under pressure for a living. I want my learner to get through one bend without apologizing for taking time.",
+  "appearance": "Louis is easy to recognize by short black hair swept back and a broad nose and a deep dimple on one cheek. Usually dressed in an old plum windbreaker with a partly rubbed-away embroidered initial, Louis starts to lift a hand, then waits to be invited to speak when listening.",
+  "personality": "Louis loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To get the learner through one bend without apology.",
+  "family": "Sofia Ayala is Louis’s older cousin. Louis gets to change the plan. Sofia offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The guarantee*, Sofia says, “I understand every page I signed. I would like the children to stop treating my generosity as a symptom.”",
+  "connections": "Terry March. The instructor hears the difference between paid lessons and years of parental practice.",
+  "familyIds": [
+    "AH-R1072"
+  ],
+  "connectionIds": [
+    "AH-R1318"
+  ],
+  "reactions": [
+    {
+      "situation": "Two people qualify for the same funded lesson",
+      "response": "Louis asks both applicants which transport difficulty one lesson would actually address.",
+      "asWritten": "Two people qualify for the same funded lesson. Louis asks both applicants which transport difficulty one lesson would actually address."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Louis asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Louis asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Louis offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Louis offers one about their own embarrassment instead."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0939",
+  "personId": "ah-pd-121",
+  "name": "Ari Lane",
+  "age": 48,
+  "occupation": "Patrol officer",
+  "home": "Coast Ridge",
+  "episode": "A civilian apology",
+  "biography": "stories/residents/07/04-a-civilian-apology.md#ah-r0939",
+  "life": "“I still remember doing sums under a counter while the adults argued.” On Sunday, near the bank steps, Ari takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I remember the shopkeeper's child doing sums behind the counter. I asked her where the correction should hang.",
+  "appearance": "Ari has heavy brows and an unusually delicate jaw. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a narrow-striped sweater with a tiny red thread tied through the lowest buttonhole. In conversation Ari looks down for a moment before saying something difficult.",
+  "personality": "Ari gets protective of anybody who comes into a meeting unprepared. Ari privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To hang the correction where the shopkeeper's child chooses.",
+  "family": "Ella Montoya is Ari’s cousin raised in the same household. Ari calls back when there is finally a little privacy. Ella leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The widow's razor*, Ella says, “I wrote down every price on the lid. Together they tell you the year the whole street went broke.”",
+  "connections": "Ada Flynn. The two grown children in the story deserve to know what name will go up this time.",
+  "familyIds": [
+    "AH-R0410"
+  ],
+  "connectionIds": [
+    "AH-R0932"
+  ],
+  "reactions": [
+    {
+      "situation": "A newspaper repeats the old display caption",
+      "response": "Ari gets the shopkeeper's preferred wording to the editor before passing the story on.",
+      "asWritten": "A newspaper repeats the old display caption. Ari gets the shopkeeper's preferred wording to the editor before passing the story on."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Ari asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Ari asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Ari offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Ari offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

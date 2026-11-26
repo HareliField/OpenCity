@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0762",
+  "personId": "AH-R0762",
+  "name": "Cassandra Li",
+  "age": 58,
+  "occupation": "Permanent freight handler",
+  "home": "Midtown",
+  "episode": "Nine unpaid hours",
+  "biography": "stories/residents/06/02-nine-unpaid-hours.md#ah-r0762",
+  "life": "“I still remember my temporary badge finally being replaced.” On Saturday, near the blocks below Foundry Lofts, Cassandra checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I was paid because I have a permanent badge. I brought my payslip to show exactly where our shifts overlapped.",
+  "appearance": "On an ordinary day, look for an olive canvas jacket and one cuff folded back twice. Cassandra has fine brows over wide-set eyes, with a smooth side part with one rebellious curl. Cassandra starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Cassandra finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To prove where temporary and permanent shifts overlapped.",
+  "family": "Pam Ravel is Cassandra’s cousin raised in the same household. Cassandra brings something that can still be enjoyed tomorrow. Pam checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The last green*, Pam says, “He trained me and never once sat quietly. On the farewell run I made him give me directions right down to the bakery smell at the turn.”",
+  "connections": "Simon Hunter. The permanent worker's payslip corroborates the contractor's nine unpaid hours.",
+  "familyIds": [
+    "AH-R0115"
+  ],
+  "connectionIds": [
+    "AH-R0761"
+  ],
+  "reactions": [
+    {
+      "situation": "A worker asks to give their account privately",
+      "response": "Cassandra arranges a one-to-one account and checks which facts the worker permits to be shared.",
+      "asWritten": "A worker asks to give their account privately. Cassandra arranges a one-to-one account and checks which facts the worker permits to be shared."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Cassandra asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Cassandra asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Cassandra points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Cassandra points to the person who noticed the original mistake."
+    }
+  ]
+}

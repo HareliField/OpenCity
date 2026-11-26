@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0483",
+  "personId": "AH-R0483",
+  "name": "Nora Nolasco",
+  "age": 56,
+  "occupation": "Tenants' association secretary",
+  "home": "Eastside",
+  "episode": "Station steps in rain",
+  "biography": "stories/residents/04/04-station-steps-in-rain.md#ah-r0483",
+  "life": "“I still remember my own name becoming illegible in a school register.” On Tuesday, near the market by Market Flats, Nora often waits until the delivery baskets are stacked before going in.",
+  "voice": "I brought a petition and the names ran together. My opponents helped me remember who had signed.",
+  "appearance": "Nora has auburn hair cut square at the nape, a broad nose and a deep dimple on one cheek, and a favorite piece of clothing, an unlined tan jacket. It usually goes with a copper-colored clasp that has been repaired by hand. When somebody else has the floor, Nora squares up pieces of paper while thinking.",
+  "personality": "Nora finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To reconstruct the names with both sides present.",
+  "family": "Ivy Knight is Nora’s second cousin. Nora chooses whether to use it. Ivy saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The upstairs piano*, Ivy says, “I'm deaf in one ear. The landing is the only place in this building where I hear the bass clearly.”",
+  "connections": "Lucia Webb. The petitions reach signers in more than one language. Also in the story is Cecilia Aranda (station host).",
+  "familyIds": [
+    "AH-R0384"
+  ],
+  "connectionIds": [
+    "AH-R0487",
+    "AH-R0490"
+  ],
+  "reactions": [
+    {
+      "situation": "Rain blurs the names on the petition",
+      "response": "Nora records the petitioners who are present and asks them how to recover the others.",
+      "asWritten": "Rain blurs the names on the petition. Nora records the petitioners who are present and asks them how to recover the others."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Nora asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Nora asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Nora waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Nora waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

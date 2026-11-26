@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1325",
+  "personId": "AH-R1325",
+  "name": "Albert Hsu",
+  "age": 57,
+  "occupation": "School bus driver",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The school photograph that travels",
+  "biography": "stories/residents/09/13-the-school-photograph-that-travels.md#ah-r1325",
+  "life": "“I still remember a child asking if drivers have birthdays too.” People around Paper & Pine Books know Albert by a small Friday habit. Albert starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I drove the school route. She wrote my bus number on the photo because she never knew my surname.",
+  "appearance": "Albert has a deep crease beside the mouth when smiling. Look for short, uneven waves that refuse to lie flat. On an ordinary day, the familiar outfit is a charcoal zip cardigan with a pen clipped inside the neckline. In conversation Albert squares up pieces of paper while thinking.",
+  "personality": "Albert tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Albert will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To teach the child the driver's surname.",
+  "family": "Rafael Nunes is Albert’s second cousin. Albert can stop the walk at any corner. Rafael chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The blue suit*, Rafael says, “My wife pressed that suit on the kitchen table the night before she died.”",
+  "connections": "Ismael Wu. A bus number and a new home address help the final copy get where it belongs.",
+  "familyIds": [
+    "AH-R0003"
+  ],
+  "connectionIds": [
+    "AH-R1330"
+  ],
+  "reactions": [
+    {
+      "situation": "The departing pupil leaves a teacher off the photograph list",
+      "response": "Albert asks the pupil privately what the photograph list means to them.",
+      "asWritten": "The departing pupil leaves a teacher off the photograph list. Albert asks the pupil privately what the photograph list means to them."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Albert gives up their own space if possible and asks the passengers who arrived first to choose what happens next.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Albert gives up their own space if possible and asks the passengers who arrived first to choose what happens next."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Albert repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Albert repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

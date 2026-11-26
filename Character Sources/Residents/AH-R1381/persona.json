@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1381",
+  "personId": "ah-pd-139",
+  "name": "Luz Dean",
+  "age": 37,
+  "occupation": "Patrol officer",
+  "home": "Eastside",
+  "episode": "Names on the night wall",
+  "biography": "stories/residents/10/04-names-on-the-night-wall.md#ah-r1381",
+  "life": "“I still remember a grocer keeping my little girl's bag behind the oranges.” Saturday often includes a stop at Tideline Market, where Luz picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I wrote the name of the grocer who holds my daughter's school bag when my watch runs late.",
+  "appearance": "Luz has an aquiline nose and a square chin. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a long navy raincoat with a cloth patch so neatly matched it only shows in strong light. In conversation Luz holds eye contact until the other person has finished.",
+  "personality": "Luz talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Luz's ways of saying that it is all right to leave.",
+  "agenda": "To thank the grocer for protecting the school bag.",
+  "family": "Sam Lim is Luz’s stepsibling. Luz asks what the birthday guest would like this year. Sam remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A doctor moves away*, Sam says, “I am the young physician replacing her. My first week's schedule is full of people who want to say goodbye.”",
+  "connections": "Marc Carr (neighbor). A watch worker thanks the person who knows which child's school bag stays behind the orange boxes.",
+  "familyIds": [
+    "AH-R1253"
+  ],
+  "connectionIds": [
+    "AH-R1389"
+  ],
+  "reactions": [
+    {
+      "situation": "A colleague leaves a name off the thank-you wall",
+      "response": "Luz allows a private thank-you to stay private even on unveiling day.",
+      "asWritten": "A colleague leaves a name off the thank-you wall. Luz allows a private thank-you to stay private even on unveiling day."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Luz takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Luz takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Luz says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Luz says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0390",
+  "personId": "AH-R0390",
+  "name": "John Collins",
+  "age": 29,
+  "occupation": "Field recordist",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The upstairs piano",
+  "biography": "stories/residents/03/09-the-upstairs-piano.md#ah-r0390",
+  "life": "“I still remember hearing someone whistle my first composition.” On Monday, near the courtyard by Ferry Street Rooms, John prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I heard the landing concert from the street. I've given the household the recording of its reluctant orchestra.",
+  "appearance": "John has a flat bridge to the nose and a mobile brow. Look for a swept fringe and a closely clipped nape. On an ordinary day, the familiar outfit is a rust-colored canvas coat with a pen clipped inside the neckline. In conversation John leans a shoulder against the wall during long conversations.",
+  "personality": "John has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To deliver the impromptu concert to the upstairs family.",
+  "family": "Teal Ruiz is John’s first cousin once removed. John brings the paper and a pen. Teal decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The last home visit*, Teal says, “I always asked for the window shut because my partner felt the cold.”",
+  "connections": "Ivy Knight. A street recording lets the neighbor compare how the bass sounds outside.",
+  "familyIds": [
+    "AH-R1485"
+  ],
+  "connectionIds": [
+    "AH-R0384"
+  ],
+  "reactions": [
+    {
+      "situation": "The owner asks a child to play first",
+      "response": "John finds a steady seat for the child and waits for the opening notes.",
+      "asWritten": "The owner asks a child to play first. John finds a steady seat for the child and waits for the opening notes."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "John asks the cashier to hold it and lets a claimant identify the writing and amount privately.",
+      "asWritten": "An envelope of wages is found under a café chair. John asks the cashier to hold it and lets a claimant identify the writing and amount privately."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "John asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, John asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

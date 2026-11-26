@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0543",
+  "personId": "AH-R0543",
+  "name": "Reuben Grant",
+  "age": 46,
+  "occupation": "Market gardener",
+  "home": "Midtown",
+  "episode": "Closing soup",
+  "biography": "stories/residents/04/10-closing-soup.md#ah-r0543",
+  "life": "“I still remember my worst crop becoming the market cook's favorite.” On Sunday, near the steps at Pier Beach, Reuben watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I donated the fennel nobody bought. In the soup people asked me to grow extra.",
+  "appearance": "On an ordinary day, look for a soft blue checked shirt and a pocket notebook shaped by years of sitting on it. Reuben has heavy brows and an unusually delicate jaw, with short copper curls. Reuben listens with the head tilted a little to the left during a conversation.",
+  "personality": "Reuben takes a rejection personally for a day and analytically on the second morning. Reuben can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To get a standing fennel order from the kitchen.",
+  "family": "Ren Alston is Reuben’s stepsibling. Reuben asks what the birthday guest would like this year. Ren remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Rent in a biscuit tin*, Ren says, “I owed her one month and found she'd put in a little every week herself.”",
+  "connections": "Noel Wade. A fennel donation changes what the late cook has left to take home. Also in the story is Alex Scott (soup ingredient recorder).",
+  "familyIds": [
+    "AH-R0348"
+  ],
+  "connectionIds": [
+    "AH-R0546",
+    "AH-R0545"
+  ],
+  "reactions": [
+    {
+      "situation": "The cook asks for an exact recipe",
+      "response": "Reuben records what went into this particular pot and when the cooks tasted it.",
+      "asWritten": "The cook asks for an exact recipe. Reuben records what went into this particular pot and when the cooks tasted it."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Reuben sits beside them without expecting a performance and asks if they want to go outside.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Reuben sits beside them without expecting a performance and asks if they want to go outside."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Reuben turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Reuben turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

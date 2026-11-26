@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0763",
+  "personId": "AH-R0763",
+  "name": "Taylor Vargas",
+  "age": 36,
+  "occupation": "Dock rigger",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Nine unpaid hours",
+  "biography": "stories/residents/06/02-nine-unpaid-hours.md#ah-r0763",
+  "life": "“I still remember a long talk held beside a motionless crane.” Wednesday often includes a stop at the public end of the South Shore boardwalk, where Taylor checks the shade on the benches before deciding how long to stay.",
+  "voice": "I worked through a break nobody signed for. Three people remember the conversation we had instead of eating.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a small enamel bird on the lapel. Taylor has fine brows over wide-set eyes, with short copper curls. Taylor draws breath as if to speak and lets someone else go first during a conversation.",
+  "personality": "Taylor keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Taylor wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To get the worked break acknowledged.",
+  "family": "Dale Zhou is Taylor’s cousin. Taylor calls back when there is finally a little privacy. Dale leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The hospital radio*, Dale says, “I found a folded list of songs behind the battery cover.”",
+  "connections": "Amanda Wong. A missed break can be added to the union tally before the sheet leaves the room.",
+  "familyIds": [
+    "AH-R0355"
+  ],
+  "connectionIds": [
+    "AH-R0770"
+  ],
+  "reactions": [
+    {
+      "situation": "The contractor offers selected workers a partial payment",
+      "response": "Taylor asks that the offer be written down with the remaining unpaid hours.",
+      "asWritten": "The contractor offers selected workers a partial payment. Taylor asks that the offer be written down with the remaining unpaid hours."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Taylor agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Taylor agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Taylor offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Taylor offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

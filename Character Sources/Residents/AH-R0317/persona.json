@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0317",
+  "personId": "AH-R0317",
+  "name": "Nora Ray",
+  "age": 38,
+  "occupation": "Ship mechanic",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A ship without postcards",
+  "biography": "stories/residents/03/02-a-ship-without-postcards.md#ah-r0317",
+  "life": "“I still remember moving with every possession in a flimsy bag.” Friday often includes a stop at the public end of the South Shore boardwalk, where Nora checks the shade on the benches before deciding how long to stay.",
+  "voice": "I wrote my address on the picture side because the picture looks more like home than my address does.",
+  "appearance": "Nora has a round face with a pronounced chin. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a faded indigo overshirt with a thin silver ring worn on a cord. In conversation Nora touches a knuckle to the chin when searching for a word.",
+  "personality": "Nora always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Nora is trying to tell the difference before the bill arrives.",
+  "agenda": "To get the home address on the preferred side of the picture.",
+  "family": "Bailey Solis is Nora’s stepsibling. Nora puts the kettle on. Bailey chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A scar at the salon*, Bailey says, “I can retouch it away. I offered a print with no edits so the client could make the first choice.”",
+  "connections": "Ida Henry. They compare how little room a parcel needs to carry the idea of home.",
+  "familyIds": [
+    "AH-R1306"
+  ],
+  "connectionIds": [
+    "AH-R0313"
+  ],
+  "reactions": [
+    {
+      "situation": "A family ashore asks for a picture of the crew",
+      "response": "Nora asks the crew who wants to be visible in the family picture.",
+      "asWritten": "A family ashore asks for a picture of the crew. Nora asks the crew who wants to be visible in the family picture."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Nora tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Nora tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Nora suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Nora suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

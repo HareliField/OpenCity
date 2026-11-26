@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0448",
+  "personId": "AH-R0448",
+  "name": "Rae Kelly",
+  "age": 39,
+  "occupation": "Boat electrician",
+  "home": "the blocks north of the port",
+  "episode": "The tide clock",
+  "biography": "stories/residents/03/15-the-tide-clock.md#ah-r0448",
+  "life": "“I still remember an electrical job paid in handwritten charts.” On Friday, near Harbour Bakery, Rae buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I left a note saying see you at high. My old friend understood and the receptionist didn't.",
+  "appearance": "Rae has a swept fringe and a closely clipped nape, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a braided bracelet with a single wooden bead. When somebody else has the floor, Rae rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Rae uses precise names for tools and very approximate names for feelings. People who know Rae well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To arrange a reunion in plain clock hours.",
+  "family": "Lina Carey is Rae’s stepsibling. Rae knows which ones can be shared. Lina keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Low water music*, Lina says, “I climbed down to paint a marker and saw a crab with eggs.”",
+  "connections": "Adela Oh. The painted moon and a note about high tide identify the correct appointment.",
+  "familyIds": [
+    "AH-R0226"
+  ],
+  "connectionIds": [
+    "AH-R0445"
+  ],
+  "reactions": [
+    {
+      "situation": "The owner considers taking the tide clock down",
+      "response": "Rae asks the workers whether a second, clearly labeled clock would solve the actual problem.",
+      "asWritten": "The owner considers taking the tide clock down. Rae asks the workers whether a second, clearly labeled clock would solve the actual problem."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Rae waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Rae waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Rae brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Rae brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

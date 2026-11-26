@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1085",
+  "personId": "ah-pd-127",
+  "name": "Mia Frost",
+  "age": 34,
+  "occupation": "Detective",
+  "home": "Eastside",
+  "episode": "First shift back",
+  "biography": "stories/residents/08/04-first-shift-back.md#ah-r1085",
+  "life": "“I still remember realizing my third unanswered text was six months old.” Wednesday often includes a stop at Harbour Bakery, where Mia buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I stopped sending messages after the first month. I was afraid to say the wrong thing so I disappeared.",
+  "appearance": "Mia is easy to recognize by a loose dark braid and one cheek that creases before the other. Usually dressed in a boxy denim jacket with a square of clean cloth for polishing smudges, Mia gives a little nod before asking a hard question when listening.",
+  "personality": "Mia never tires of being shown how somebody makes a living. Mia can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To restart an ordinary conversation after months of silence.",
+  "family": "Dario Oh is Mia’s first cousin once removed. Mia chooses whether to use it. Dario saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The rescue hut mural*, Dario says, “I was her model. I held a sandwich in the hand that looks so noble now.”",
+  "connections": "Drew Silva. The colleague learning the new form has reason to answer a message that stopped too early.",
+  "familyIds": [
+    "AH-R0522"
+  ],
+  "connectionIds": [
+    "AH-R1084"
+  ],
+  "reactions": [
+    {
+      "situation": "The returning colleague finds another name on the desk",
+      "response": "Mia lets both workers describe what happened to the assignment during leave.",
+      "asWritten": "The returning colleague finds another name on the desk. Mia lets both workers describe what happened to the assignment during leave."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Mia keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Mia keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Mia may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Mia may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

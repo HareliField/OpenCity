@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0893",
+  "personId": "AH-R0893",
+  "name": "Morgan Hamada",
+  "age": 69,
+  "occupation": "Retired marina developer",
+  "home": "Coast Ridge",
+  "episode": "Winter afloat",
+  "biography": "stories/residents/06/15-winter-afloat.md#ah-r0893",
+  "life": "“I still remember the smell of sawdust in my first expensive office.” Monday often includes a stop at Breakwater Way, where Morgan stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I built boats before I sold expensive moorings. I found myself checking this man's cupboards to see if he really lived here.",
+  "appearance": "Morgan has a scattering of freckles across the bridge of the nose. Look for a long silver braid. Back on the street, the familiar outfit is a narrow-striped sweater with a little coil of soft measuring tape. In conversation Morgan draws small circles on a tabletop while waiting.",
+  "personality": "Morgan thinks best while walking. Sitting beneath someone's office clock makes Morgan sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To recognize the resident's home without inspecting private cupboards.",
+  "family": "Billie Warren is Morgan’s younger cousin. Morgan chooses the music. Billie puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The spare spectacles*, Billie says, “I translated the printed words. She corrected the name of the crossing in both languages.”",
+  "connections": "Drew Hayward. A marina developer and an equipment coordinator have to turn a store back into a room.",
+  "familyIds": [
+    "AH-R0339"
+  ],
+  "connectionIds": [
+    "AH-R0898"
+  ],
+  "reactions": [
+    {
+      "situation": "A yard manager asks the liveaboard to leave by Friday",
+      "response": "Morgan asks where the resident can sleep on the first night ashore.",
+      "asWritten": "A yard manager asks the liveaboard to leave by Friday. Morgan asks where the resident can sleep on the first night ashore."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Morgan asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Morgan asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Morgan asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Morgan asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

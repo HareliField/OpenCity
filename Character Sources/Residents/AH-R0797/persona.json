@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0797",
+  "personId": "AH-R0797",
+  "name": "Katherine Nielsen",
+  "age": 35,
+  "occupation": "Night sweeper",
+  "home": "the blocks north of the port",
+  "episode": "The first straight paycheck",
+  "biography": "stories/residents/06/05-the-first-straight-paycheck.md#ah-r0797",
+  "life": "“I still remember returning somebody's wage slip in a blank envelope.” Wednesday often includes a stop at the corner outside Coastal Barber, where Katherine usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I found the wage slip on the pavement. I knew what it might cost him if the wrong friend saw it.",
+  "appearance": "Katherine has a round face with a pronounced chin. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a faded indigo overshirt with a cloth patch so neatly matched it only shows in strong light. In conversation Katherine rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Katherine is kind in very practical ways and prickly about being thanked in public. Katherine loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To return the wage slip directly to its owner.",
+  "family": "Dora Frost is Katherine’s cousin. Katherine puts the kettle on. Dora chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A room above the dryers*, Dora says, “I draw the people who wait for their washing and forget what their own faces are doing.”",
+  "connections": "Ansel Perry. An old window bill and a found wage slip bring the young worker's finances into two households.",
+  "familyIds": [
+    "AH-R1201"
+  ],
+  "connectionIds": [
+    "AH-R0795"
+  ],
+  "reactions": [
+    {
+      "situation": "An old customer arrives during the new warehouse shift",
+      "response": "Katherine asks the two people to talk away from the work floor and leaves disclosure to the new hire.",
+      "asWritten": "An old customer arrives during the new warehouse shift. Katherine asks the two people to talk away from the work floor and leaves disclosure to the new hire."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Katherine alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Katherine alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Katherine gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Katherine gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

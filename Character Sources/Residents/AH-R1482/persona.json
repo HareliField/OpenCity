@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1482",
+  "personId": "AH-R1482",
+  "name": "Yvette Weber",
+  "age": 73,
+  "occupation": "Retired hotel porter",
+  "home": "the western residential streets",
+  "episode": "The last home visit",
+  "biography": "stories/residents/10/14-the-last-home-visit.md#ah-r1482",
+  "life": "“I still remember waiting beside a door that echoed like my old tenement.” On Wednesday, near the entrance to the Wash House, Yvette stops for local notices even on a day without a load to wash.",
+  "voice": "I want the new worker to knock twice. A single knock still sounds like a debt collector at my old front door.",
+  "appearance": "Yvette has a scattering of freckles across the bridge of the nose. Look for short white hair and darker eyebrows. On an ordinary day, the familiar outfit is a striped cotton shirt with a pressed flower kept in the clear back of a phone case. In conversation Yvette rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Yvette can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To have the new worker knock twice.",
+  "family": "Ellen Scott is Yvette’s cousin. Yvette is free to hang up first. Ellen makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The painted footprint*, Ellen says, “I ran barefoot races here. I want to know whether the old starting mark lies under that plank.”",
+  "connections": "Harry Rhodes. A private introduction lets a client ask both for a particular knock and for medicine on a reachable shelf.",
+  "familyIds": [
+    "AH-R0376"
+  ],
+  "connectionIds": [
+    "AH-R1488"
+  ],
+  "reactions": [
+    {
+      "situation": "The successor asks for a private introduction at the door",
+      "response": "Yvette introduces the successor quietly and gives the client a chance to set the routine.",
+      "asWritten": "The successor asks for a private introduction at the door. Yvette introduces the successor quietly and gives the client a chance to set the routine."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Yvette calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Yvette calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Yvette asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Yvette asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0688",
+  "personId": "AH-R0688",
+  "name": "Marcel Lai",
+  "age": 54,
+  "occupation": "Scrap sorter",
+  "home": "the blocks north of the port",
+  "episode": "An address in pencil",
+  "biography": "stories/residents/05/09-an-address-in-pencil.md#ah-r0688",
+  "life": "“I still remember finding my old scooter's registration in a scrap bin.” People around Studio Boulevard know Marcel by a small Tuesday habit. Marcel waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I saved the old numeral for scrap and realized it matched the dent on my first motorcycle.",
+  "appearance": "Marcel has a round face with a pronounced chin. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a brown corduroy jacket with a little coil of soft measuring tape. In conversation Marcel gathers both sleeves neatly before settling in.",
+  "personality": "Marcel has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To keep a scrap of metal from the old number.",
+  "family": "David Soto is Marcel’s stepsibling. Marcel brings the paper and a pen. David decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The high road home*, David says, “I trust my daughter and distrust the road. I had to say both things without making her fear bigger.”",
+  "connections": "Jasmine Miranda. Scrap metal and an engraved address have two very different futures in the same workshop.",
+  "familyIds": [
+    "AH-R1163"
+  ],
+  "connectionIds": [
+    "AH-R0689"
+  ],
+  "reactions": [
+    {
+      "situation": "A resident asks for the old metal number back",
+      "response": "Marcel asks who has already taken the metal down and where it was left.",
+      "asWritten": "A resident asks for the old metal number back. Marcel asks who has already taken the metal down and where it was left."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Marcel offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Marcel offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Marcel asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Marcel asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

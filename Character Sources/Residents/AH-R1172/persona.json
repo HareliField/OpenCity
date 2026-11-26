@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1172",
+  "personId": "AH-R1172",
+  "name": "Franklin Davila",
+  "age": 34,
+  "occupation": "Lead singer",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The understudy sings",
+  "biography": "stories/residents/08/13-the-understudy-sings.md#ah-r1172",
+  "life": "“I still remember watching the subtitles at my own show.” People around Tideline Market know Franklin by a small Saturday habit. Franklin picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I am the lead. I want the audience to know why I am in the front row and not to spend the whole song looking at me.",
+  "appearance": "On an ordinary day, look for a soft blue checked shirt and a tiny red thread tied through the lowest buttonhole. Franklin has fine brows over wide-set eyes, with a blunt cut just below the ears. Franklin starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Franklin carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To choose what the audience knows and where to sit.",
+  "family": "Alim Ward is Franklin’s half-sibling. A cousin asked for help with the rent and got six different lectures. The family now tries to agree on the amount it can offer before composing any advice. Franklin is good at asking what kind of help was actually requested. Asked about *The wrong bicycle*, Alim says, “The adults wanted separate appointments. The two riders wanted to compare yellow paint.”",
+  "connections": "Zachary Abbott. The two singers discuss who gets to announce the change and who gets to hear the new voice first. Also in the story is Aria Miller (sibling).",
+  "familyIds": [
+    "AH-R0040"
+  ],
+  "connectionIds": [
+    "AH-R1171",
+    "AH-R1176"
+  ],
+  "reactions": [
+    {
+      "situation": "The original singer asks to choose a seat in the audience",
+      "response": "Franklin lets the singer choose a seat without alerting the whole audience.",
+      "asWritten": "The original singer asks to choose a seat in the audience. Franklin lets the singer choose a seat without alerting the whole audience."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Franklin separates the money question from the broken promise and asks which one the family wants to discuss first.",
+      "asWritten": "A family supper turns into an argument about old debt. Franklin separates the money question from the broken promise and asks which one the family wants to discuss first."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Franklin offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Franklin offers to accompany them while they tell the truth."
+    }
+  ]
+}

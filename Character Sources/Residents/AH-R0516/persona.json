@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0516",
+  "personId": "AH-R0516",
+  "name": "Lennon Price",
+  "age": 34,
+  "occupation": "Print workshop worker",
+  "home": "Old Town",
+  "episode": "A borrowed name",
+  "biography": "stories/residents/04/07-a-borrowed-name.md#ah-r0516",
+  "life": "“I still remember a pencil joke stamped onto a toolbox lid.” Monday often includes a stop at the crossing outside Verve Nail Studio, where Lennon notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I want royalties for the joke my granddad wrote on his toolbox. Mostly I want the author to get the punchline right.",
+  "appearance": "Lennon has a deep crease beside the mouth when smiling. Look for a cropped cut that shows the shape of the ears. On an ordinary day, the familiar outfit is a faded indigo overshirt with a small enamel bird on the lapel. In conversation Lennon turns fully toward the person speaking.",
+  "personality": "Lennon has a quick wit and an equally quick sense of shame. A joke is often Lennon's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To get the grandfather's punchline printed accurately.",
+  "family": "Milo Neal is Lennon’s older cousin. Lennon chooses the familiar route. Milo can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *No lifeguard at dusk*, Milo says, “I am the sibling who asked her to stop swimming.”",
+  "connections": "Darcy Hardy. They decide where a borrowed family joke deserves a credit in the book.",
+  "familyIds": [
+    "AH-R1429"
+  ],
+  "connectionIds": [
+    "AH-R0511"
+  ],
+  "reactions": [
+    {
+      "situation": "A reader asks the real person to autograph the novel",
+      "response": "Lennon gives the customer a graceful way to decline the autograph.",
+      "asWritten": "A reader asks the real person to autograph the novel. Lennon gives the customer a graceful way to decline the autograph."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Lennon asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Lennon asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Lennon seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Lennon seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

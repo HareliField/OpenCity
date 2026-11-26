@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0364",
+  "personId": "AH-R0364",
+  "name": "Martin Arrieta",
+  "age": 58,
+  "occupation": "School conservator",
+  "home": "Eastside",
+  "episode": "Overdue by a lifetime",
+  "biography": "stories/residents/03/07-overdue-by-a-lifetime.md#ah-r0364",
+  "life": "“I still remember book paste that smelled exactly like supper.” On Thursday, near the corner outside Coastal Barber, Martin usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I can tell which classroom it came from by the paste we used in winter.",
+  "appearance": "Martin is easy to recognize by close-cropped dark curls and fine brows over wide-set eyes. Usually dressed in a washed violet jersey with a braided bracelet with a single wooden bead, Martin looks down for a moment before saying something difficult when listening.",
+  "personality": "Martin admires skill and distrusts the idea that skill gives anyone permission to be rude. Martin learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To identify the classroom from its repaired binding.",
+  "family": "Ronan Vidal is Martin’s stepsibling. A relative came back from a stay in hospital to a house rearranged for convenience and walked straight into the new chair. The family learned to ask before making helpful changes. Martin gets the person affected to choose where things go. Asked about *Summer staff*, Ronan says, “I sew flag repairs by the piece. All the flags came in at once and I won't have enough for autumn.”",
+  "connections": "Emilia Dean (manuscript donor). The repair paste helps date a signature in a newly adopted surname.",
+  "familyIds": [
+    "AH-R0828"
+  ],
+  "connectionIds": [
+    "AH-R0362"
+  ],
+  "reactions": [
+    {
+      "situation": "The school asks to display the borrower's name",
+      "response": "Martin asks the former pupil to choose how their name appears.",
+      "asWritten": "The school asks to display the borrower's name. Martin asks the former pupil to choose how their name appears."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Martin asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Martin asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Martin describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Martin describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

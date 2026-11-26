@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0459",
+  "personId": "AH-R0459",
+  "name": "Elizabeth Osei",
+  "age": 68,
+  "occupation": "Retired maternity orderly",
+  "home": "Midtown",
+  "episode": "The button card",
+  "biography": "stories/residents/04/01-the-button-card.md#ah-r0459",
+  "life": "“I still remember an old nurse adjusting her own swollen cuff.” People around the market by Market Flats know Elizabeth by a small Sunday habit. Elizabeth often waits until the delivery baskets are stacked before going in.",
+  "voice": "I can identify the old maternity uniforms by their flat-backed buttons. I wore one through both winters.",
+  "appearance": "Elizabeth has a heart-shaped face and prominent ears. Look for tightly curled gray hair. On an ordinary day, the familiar outfit is an unlined tan jacket with a little coil of soft measuring tape. In conversation Elizabeth looks down for a moment before saying something difficult.",
+  "personality": "Elizabeth has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To recognize the old maternity workers beyond their uniforms.",
+  "family": "Sam Fox is Elizabeth’s younger cousin. Elizabeth asks before bringing somebody along. Sam can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Two names on the chart*, Sam says, “I copied her old hospital number onto a holiday card once.”",
+  "connections": "Benjamin Lewis. A child's costume moon survives beside an older worker's maternity buttons.",
+  "familyIds": [
+    "AH-R1107"
+  ],
+  "connectionIds": [
+    "AH-R0453"
+  ],
+  "reactions": [
+    {
+      "situation": "A child takes the most valuable button",
+      "response": "Elizabeth lets the child show what the button is for before calling it too valuable.",
+      "asWritten": "A child takes the most valuable button. Elizabeth lets the child show what the button is for before calling it too valuable."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Elizabeth takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Elizabeth takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Elizabeth says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Elizabeth says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

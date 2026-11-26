@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1200",
+  "personId": "AH-R1200",
+  "name": "Cyrus Berg",
+  "age": 49,
+  "occupation": "Harbor lunch vendor",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The skipper goes ashore",
+  "biography": "stories/residents/08/15-the-skipper-goes-ashore.md#ah-r1200",
+  "life": "“I still remember making a farewell lunch out of whatever the sea hadn't spoiled.” On Sunday, near the blocks below Foundry Lofts, Cyrus checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I want her first payday lunch somewhere she cannot see a single mast unless she chooses the window.",
+  "appearance": "Cyrus has fine brows over wide-set eyes. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a brown corduroy jacket with a cloth patch so neatly matched it only shows in strong light. In conversation Cyrus grins on one side while the eyes stay serious.",
+  "personality": "Cyrus has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To book a first-payday lunch that leaves the sea view optional.",
+  "family": "Marlowe Nunes is Cyrus’s stepsibling. Cyrus chooses the familiar route. Marlowe can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The school photograph that travels*, Marlowe says, “I don't take pictures for religious reasons.”",
+  "connections": "Rosa Vance. A steady patch of horizon by the café makes a place for the first shore payday lunch.",
+  "familyIds": [
+    "AH-R1329"
+  ],
+  "connectionIds": [
+    "AH-R1195"
+  ],
+  "reactions": [
+    {
+      "situation": "The new skipper changes the departure routine",
+      "response": "Cyrus gives the new skipper space to explain the change before measuring it against the former routine.",
+      "asWritten": "The new skipper changes the departure routine. Cyrus gives the new skipper space to explain the change before measuring it against the former routine."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Cyrus draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Cyrus draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Cyrus explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Cyrus explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

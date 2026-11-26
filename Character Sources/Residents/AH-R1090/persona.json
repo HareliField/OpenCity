@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1090",
+  "personId": "ah-pd-132",
+  "name": "Quinn Shaw",
+  "age": 50,
+  "occupation": "Command officer",
+  "home": "Old Town",
+  "episode": "First shift back",
+  "biography": "stories/residents/08/04-first-shift-back.md#ah-r1090",
+  "life": "“I still remember having a farewell lunch that suited the host better than the guest.” Wednesday often includes a stop at the corner by Juniper Tailor, where Quinn looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I organized a big welcome lunch and changed it to breakfast for two at the returning worker's request.",
+  "appearance": "Quinn has fine brows over wide-set eyes. Look for a cropped cut that shows the shape of the ears. Off duty, the familiar outfit is a plum-colored cardigan with a partly rubbed-away embroidered initial. In conversation Quinn folds a paper napkin into quarters without noticing.",
+  "personality": "Quinn feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To hold the smaller welcome the colleague actually wanted.",
+  "family": "Celia Baxter is Quinn’s cousin raised in the same household. Quinn knows which ones can be shared. Celia keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *One sleeve short*, Celia says, “My first interview was in my mother's jacket.”",
+  "connections": "Rae Dove. A lost mug and a breakfast for two make a less public welcome than a full station lunch.",
+  "familyIds": [
+    "AH-R0259"
+  ],
+  "connectionIds": [
+    "AH-R1087"
+  ],
+  "reactions": [
+    {
+      "situation": "A coworker asks for private details about the leave",
+      "response": "Quinn leaves the reason for leave with the returning colleague and redirects the question to working arrangements.",
+      "asWritten": "A coworker asks for private details about the leave. Quinn leaves the reason for leave with the returning colleague and redirects the question to working arrangements."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Quinn asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Quinn asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Quinn lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Quinn lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

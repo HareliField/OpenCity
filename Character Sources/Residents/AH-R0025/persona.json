@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0025",
+  "personId": "AH-R0025",
+  "name": "Joan Morley",
+  "age": 58,
+  "occupation": "Park gardener",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The small signature",
+  "biography": "stories/residents/01/03-the-small-signature.md#ah-r0025",
+  "life": "Joan looks after park soil on a contractor's budget that changes every spring. She distrusts gifts for things that need watering because no donor has ever wanted their name on the water bill. On Monday, near the foot of Harbor Viaduct, Joan pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "The proposed bench faces straight into the sprinkler. I put a folding chair there and invited the donor out at six in the morning. I want one decision made with wet shoes.",
+  "appearance": "Joan has a crooked front tooth visible when laughing. Look for short black hair swept back. On an ordinary day, the familiar outfit is a sand-colored linen shirt with a small enamel bird on the lapel. In conversation Joan leans a shoulder against the wall during long conversations.",
+  "personality": "Joan listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To move the bench out of the sprinkler's reach.",
+  "family": "Martin Rahman is Joan’s cousin raised in the same household. Joan chooses the familiar route. Martin can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The crane shadow*, Martin says, “I painted the gull where the shadow touched on the day I started.”",
+  "connections": "Sol Lane. They are walking the proposed bench site at the hour when a violin and a sprinkler can both be heard.",
+  "familyIds": [
+    "AH-R0611"
+  ],
+  "connectionIds": [
+    "AH-R0030"
+  ],
+  "reactions": [
+    {
+      "situation": "The paper wants a photograph with only the biggest donor",
+      "response": "Joan asks the vendor where they would like to stand and tells the photographer who paid the eleven dollars.",
+      "asWritten": "The paper wants a photograph with only the biggest donor. Joan asks the vendor where they would like to stand and tells the photographer who paid the eleven dollars."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Joan waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Joan waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Joan keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Joan keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

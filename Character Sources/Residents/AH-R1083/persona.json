@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1083",
+  "personId": "ah-pd-125",
+  "name": "Eva Moss",
+  "age": 41,
+  "occupation": "Metro SWAT officer",
+  "home": "Coast Ridge",
+  "episode": "First shift back",
+  "biography": "stories/residents/08/04-first-shift-back.md#ah-r1083",
+  "life": "“I still remember bringing groceries to a colleague without asking about the case.” People around the corner by Juniper Tailor know Eva by a small Thursday habit. Eva looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I visited the family off duty. I am learning which parts of that visit never belong in the break room.",
+  "appearance": "Eva has dark brown curls cut close behind the ears, a round face with a pronounced chin, and a favorite piece of clothing, a gray fisher's sweater. It usually goes with a little coil of soft measuring tape. When somebody else has the floor, Eva grins on one side while the eyes stay serious.",
+  "personality": "Eva talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Eva's ways of saying that it is all right to leave.",
+  "agenda": "To keep family visits separate from workplace accounts.",
+  "family": "Eli Mason is Eva’s half-sibling. Eva brings whatever was actually growing or affordable that week. Eli makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The painted footprint*, Eli says, “I drew it with house paint because the lifeguard had used up all our chalk.”",
+  "connections": "Leo Hart. Private family information only reaches the station with the returning worker's say.",
+  "familyIds": [
+    "AH-R0372"
+  ],
+  "connectionIds": [
+    "AH-R1088"
+  ],
+  "reactions": [
+    {
+      "situation": "The returning colleague finds another name on the desk",
+      "response": "Eva lets both workers describe what happened to the assignment during leave.",
+      "asWritten": "The returning colleague finds another name on the desk. Eva lets both workers describe what happened to the assignment during leave."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Eva asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Eva asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Eva says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Eva says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

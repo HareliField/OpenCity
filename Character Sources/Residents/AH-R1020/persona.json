@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1020",
+  "personId": "AH-R1020",
+  "name": "Cynthia Bloom",
+  "age": 46,
+  "occupation": "Café manager",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The crash anniversary",
+  "biography": "stories/residents/07/12-the-crash-anniversary.md#ah-r1020",
+  "life": "“I still remember a memorial guest who only wanted to help chop vegetables.” On Saturday, near the blocks below Foundry Lofts, Cynthia checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I am arranging a meal instead of a ceremony. Everybody can come in the side door and leave separately.",
+  "appearance": "Cynthia has short copper curls, a long face and high cheekbones, and a favorite piece of clothing, a washed violet jersey. It usually goes with a partly rubbed-away embroidered initial. When somebody else has the floor, Cynthia presses the lips together to keep a smile in.",
+  "personality": "Cynthia finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To host a meal people can leave quietly.",
+  "family": "Esther Mills is Cynthia’s cousin raised in the same household. Cynthia chooses whether they walk home or sit a while. Esther brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The empty drum stool*, Esther says, “I recognized the handwriting as my old wife's.”",
+  "connections": "Faye Tate. Fading flowers and a side-door meal give the family two ways to leave the memorial quietly.",
+  "familyIds": [
+    "AH-R0425"
+  ],
+  "connectionIds": [
+    "AH-R1015"
+  ],
+  "reactions": [
+    {
+      "situation": "The victim's family wants a private anniversary meal",
+      "response": "Cynthia lets the family make its own guest list and keeps press questions away from the table.",
+      "asWritten": "The victim's family wants a private anniversary meal. Cynthia lets the family make its own guest list and keeps press questions away from the table."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Cynthia asks the person already using it whether they can comfortably stand, rather than presuming who needs it most.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Cynthia asks the person already using it whether they can comfortably stand, rather than presuming who needs it most."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Cynthia waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Cynthia waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

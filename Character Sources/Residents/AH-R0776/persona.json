@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0776",
+  "personId": "AH-R0776",
+  "name": "Riley Tate",
+  "age": 59,
+  "occupation": "Brand designer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Money after marriage",
+  "biography": "stories/residents/06/03-money-after-marriage.md#ah-r0776",
+  "life": "“I still remember drawing a business logo on a wedding napkin.” Sunday often includes a stop at Breakwater Way, where Riley stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I designed the company mark as a wedding gift. Its third owner will need a new agreement with me.",
+  "appearance": "Riley has a heart-shaped face and prominent ears. Look for tightly curled gray hair. On an ordinary day, the familiar outfit is a narrow-striped sweater with a printed handkerchief folded into the pocket. In conversation Riley looks toward the door whenever a name is called.",
+  "personality": "Riley finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To renegotiate the design rights.",
+  "family": "Ruben Han is Riley’s cousin’s child. Riley chooses an ordinary story to tell. Ruben asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The last light at the harbor*, Ruben says, “I am a child allowed to work the switch. It feels like sending an entire little house to sleep.”",
+  "connections": "Lionel Walker. A designer who once gave away a logo meets the manager asked to give away a title.",
+  "familyIds": [
+    "AH-R1496"
+  ],
+  "connectionIds": [
+    "AH-R0780"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver says payday matters more than the settlement",
+      "response": "Riley checks what money is ring-fenced for the drivers already on the rota.",
+      "asWritten": "A driver says payday matters more than the settlement. Riley checks what money is ring-fenced for the drivers already on the rota."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Riley helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Riley helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Riley points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Riley points to the person who noticed the original mistake."
+    }
+  ]
+}

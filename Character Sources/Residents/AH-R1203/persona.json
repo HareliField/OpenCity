@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1203",
+  "personId": "AH-R1203",
+  "name": "Joanna Zhou",
+  "age": 42,
+  "occupation": "Portrait sitter and cleaner",
+  "home": "the western residential streets",
+  "episode": "A room above the dryers",
+  "biography": "stories/residents/09/01-a-room-above-the-dryers.md#ah-r1203",
+  "life": "“I still remember seeing a portrait capture the way I worry at my lip.” People around Studio Boulevard know Joanna by a small Sunday habit. Joanna waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I sat for the first drawing. I love it and absolutely do not want strangers to see it.",
+  "appearance": "Joanna has a wide brow and a narrow jaw. Look for a loose dark braid. On an ordinary day, the familiar outfit is an old plum windbreaker with a stitched row of blue crosses along an old repair. In conversation Joanna steadies a cup with both hands while listening.",
+  "personality": "Joanna never tires of being shown how somebody makes a living. Joanna can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To keep the first portrait private.",
+  "family": "Aria Colón is Joanna’s older cousin. Joanna can stop the walk at any corner. Aria chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *A red mitten*, Aria says, “I was sitting in that chair on the worst day of my life.”",
+  "connections": "Dora Frost. Artist and sitter discuss what making a likeness entitles anyone else to see.",
+  "familyIds": [
+    "AH-R0207"
+  ],
+  "connectionIds": [
+    "AH-R1201"
+  ],
+  "reactions": [
+    {
+      "situation": "A portrait sitter asks for the drawing back",
+      "response": "Joanna asks the sitter whether the drawing can be stored privately or should go home with them.",
+      "asWritten": "A portrait sitter asks for the drawing back. Joanna asks the sitter whether the drawing can be stored privately or should go home with them."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Joanna keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Joanna keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Joanna may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Joanna may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0866",
+  "personId": "AH-R0866",
+  "name": "Leon Osei",
+  "age": 34,
+  "occupation": "Early shift cashier",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The late crossing",
+  "biography": "stories/residents/06/12-the-late-crossing.md#ah-r0866",
+  "life": "“I still remember walking to a lift after my colleagues finished their tea.” On Sunday, near Ferris Deli, Leon asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I have the furthest walk to the pickup. The others moved their tea break by eight minutes for me.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a fabric zip pull cut from a school scarf. Leon has a narrow face with an expressive upper lip, with a soft fringe that falls across one eyebrow. Leon folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Leon treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To keep the pickup time reachable from the far end.",
+  "family": "Denise Xu is Leon’s second cousin. Leon keeps the photographs. Denise knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The missing name on the stern*, Denise says, “I am the daughter with both spellings on my documents.”",
+  "connections": "Denise Ho. Watching children gives a rider at the furthest stop enough time to reach the lift.",
+  "familyIds": [
+    "AH-R1345"
+  ],
+  "connectionIds": [
+    "AH-R0863"
+  ],
+  "reactions": [
+    {
+      "situation": "A shift worker is late to the meeting point",
+      "response": "Leon checks whether waiting will make the whole shift late and tells the rider the decision.",
+      "asWritten": "A shift worker is late to the meeting point. Leon checks whether waiting will make the whole shift late and tells the rider the decision."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Leon checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Leon checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Leon changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Leon changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

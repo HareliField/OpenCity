@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0870",
+  "personId": "AH-R0870",
+  "name": "Carol Dunn",
+  "age": 38,
+  "occupation": "Security porter",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The late crossing",
+  "biography": "stories/residents/06/12-the-late-crossing.md#ah-r0870",
+  "life": "“I still remember working near home for one unusually easy month.” On Saturday, near Ferris Deli, Carol asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I thought all six of us wanted a bus. One wants his license back and another wants work nearer her dad.",
+  "appearance": "Carol has one cheek that creases before the other. Look for short sandy hair and a marked widow's peak. On an ordinary day, the familiar outfit is a cream pullover with a printed handkerchief folded into the pocket. In conversation Carol draws breath as if to speak and lets someone else go first.",
+  "personality": "Carol is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To let each rider name what would make the arrangement unnecessary.",
+  "family": "Chloe Briggs is Carol’s stepsibling. Carol brings the paper and a pen. Chloe decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The understudy sings*, Chloe says, “I promoted the show around one voice. I put the understudy's full name on every remaining poster.”",
+  "connections": "Patricia Ramos. One person wants a rider-owned rota. The other wants each rider to have a way out.",
+  "familyIds": [
+    "AH-R1173"
+  ],
+  "connectionIds": [
+    "AH-R0864"
+  ],
+  "reactions": [
+    {
+      "situation": "A shift worker is late to the meeting point",
+      "response": "Carol checks whether waiting will make the whole shift late and tells the rider the decision.",
+      "asWritten": "A shift worker is late to the meeting point. Carol checks whether waiting will make the whole shift late and tells the rider the decision."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Carol calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Carol calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Carol helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Carol helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

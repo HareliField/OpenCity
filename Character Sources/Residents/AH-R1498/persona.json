@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1498",
+  "personId": "AH-R1498",
+  "name": "Noel Ford",
+  "age": 40,
+  "occupation": "Dock electrician",
+  "home": "Eastside",
+  "episode": "The last light at the harbor",
+  "biography": "stories/residents/10/15-the-last-light-at-the-harbor.md#ah-r1498",
+  "life": "“I still remember fitting a switch somebody could comfortably reach with wet hands.” People around the window at Night Shift Donuts know Noel by a small Saturday habit. Noel knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I am the electrician who suggested timers. The owners asked me to leave the switches where human hands can get to them.",
+  "appearance": "Noel is easy to recognize by a cropped cut that shows the shape of the ears and a round face with a pronounced chin. Usually dressed in an olive canvas jacket with a pen clipped inside the neckline, Noel looks down for a moment before saying something difficult when listening.",
+  "personality": "Noel has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To retain the reachable human-operated switches.",
+  "family": "Kai Ibrahim is Noel’s older relative by marriage. Noel can stop the walk at any corner. Kai chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The savings club*, Kai says, “I've won the draw twice and deferred it twice.”",
+  "connections": "Samuel Mehta. The resident and electrician agree that an accessible switch can still belong in human hands.",
+  "familyIds": [
+    "AH-R0472"
+  ],
+  "connectionIds": [
+    "AH-R1492"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants to walk home along the docks in silence",
+      "response": "Noel walks alongside without making the relative fill the silence.",
+      "asWritten": "A relative wants to walk home along the docks in silence. Noel walks alongside without making the relative fill the silence."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Noel lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Noel lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Noel explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Noel explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

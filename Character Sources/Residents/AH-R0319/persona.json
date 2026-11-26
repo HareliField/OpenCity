@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0319",
+  "personId": "AH-R0319",
+  "name": "Selena Roberts",
+  "age": 43,
+  "occupation": "Night freight worker",
+  "home": "Eastside",
+  "episode": "A ship without postcards",
+  "biography": "stories/residents/03/02-a-ship-without-postcards.md#ah-r0319",
+  "life": "“I still remember the silence before the first floodlight ignites.” On Tuesday, near the bank steps, Selena takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I work nights and never see a blue sky here. I drew the floodlights instead.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and a pocket notebook shaped by years of sitting on it. Selena has a flat bridge to the nose and a mobile brow, with black hair twisted into a small knot. Selena looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Selena enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To draw the actual night shift lights.",
+  "family": "Paz Harrow is Selena’s stepsibling. Selena brings something that can still be enjoyed tomorrow. Paz checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *A tide at noon*, Paz says, “My little brother still thinks his castle was disqualified because I didn't like it.”",
+  "connections": "Harold Byrd. They send the night lights and the lunch receipt as two honest views from one shift. Also in the story is Iris Vidal (harbor photographer).",
+  "familyIds": [
+    "AH-R0071"
+  ],
+  "connectionIds": [
+    "AH-R0320",
+    "AH-R0315"
+  ],
+  "reactions": [
+    {
+      "situation": "A family ashore asks for a picture of the crew",
+      "response": "Selena asks the crew who wants to be visible in the family picture.",
+      "asWritten": "A family ashore asks for a picture of the crew. Selena asks the crew who wants to be visible in the family picture."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Selena looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Selena looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Selena puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Selena puts the deal away and suggests a walk."
+    }
+  ]
+}

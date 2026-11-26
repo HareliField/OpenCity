@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0122",
+  "personId": "AH-R0122",
+  "name": "Iris Cade",
+  "age": 44,
+  "occupation": "Music teacher",
+  "home": "the blocks north of the port",
+  "episode": "The borrowed bass",
+  "biography": "stories/residents/01/13-the-borrowed-bass.md#ah-r0122",
+  "life": "Iris teaches music to children who rarely control which room they can practice in. Her lending system depends on knowing when an overdue instrument signals a family emergency and when it signals a reluctant pupil. People around Harbour Bakery know Iris by a small Tuesday habit. Iris buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I lent the bass because I remembered what it was like to be the kid with empty hands. I hadn't asked where the donor got it. I have to make that call in front of the student.",
+  "appearance": "Iris is easy to recognize by a high puff tied with plain cord and a softly rounded chin under sharp cheekbones. Usually dressed in a black overshirt with pearl buttons with one loose pocket corner secured with green thread, Iris steadies a cup with both hands while listening when listening.",
+  "personality": "Iris keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Iris wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To identify the lender in front of the pupil who trusted the loan.",
+  "family": "Dana Harris is Iris’s older cousin. The family spent one holiday with the electricity off. They remember who found the candles, who kept the food cold and who cracked the joke that let the children stop being brave. Iris remembers the joke word for word. Asked about *Two names on the chart*, Dana says, “I am the divorced spouse whose surname still turns up.”",
+  "connections": "Dev Ferris. The teacher and the pawnbroker make the call that establishes whether the old ticket was settled. Also in the story is Cory Halevi (music student).",
+  "familyIds": [
+    "AH-R1102"
+  ],
+  "connectionIds": [
+    "AH-R0123",
+    "AH-R0121"
+  ],
+  "reactions": [
+    {
+      "situation": "The band is called early for its audition",
+      "response": "Iris finds out how many minutes the band actually has before treating the slot as lost.",
+      "asWritten": "The band is called early for its audition. Iris finds out how many minutes the band actually has before treating the slot as lost."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Iris alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Iris alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Iris offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Iris offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

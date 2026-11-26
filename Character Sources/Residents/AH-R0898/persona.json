@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0898",
+  "personId": "AH-R0898",
+  "name": "Drew Hayward",
+  "age": 35,
+  "occupation": "Equipment coordinator",
+  "home": "Coast Ridge",
+  "episode": "Winter afloat",
+  "biography": "stories/residents/06/15-winter-afloat.md#ah-r0898",
+  "life": "“I still remember emptying lockers after a winter flood.” People around Studio Boulevard know Drew by a small Saturday habit. Drew waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I am the person who has to empty that room. I asked to meet the man who will wake up in it.",
+  "appearance": "Drew has a strong profile and a little space between the front teeth. Look for a soft fringe that falls across one eyebrow. On an ordinary day, the familiar outfit is an old plum windbreaker with a narrow brass watch set a little fast. In conversation Drew folds a paper napkin into quarters without noticing.",
+  "personality": "Drew is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Drew is concerned.",
+  "agenda": "To prepare the shore room after meeting its occupant.",
+  "family": "Darcy Bay is Drew’s cousin. Drew can stop the walk at any corner. Darcy chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *An address in pencil*, Darcy says, “I missed the correct door collecting my pensioner fares.”",
+  "connections": "Morgan Hamada. A marina developer and an equipment coordinator have to turn a store back into a room. Also in the story is Rowan Kelly (liveaboard).",
+  "familyIds": [
+    "AH-R0687"
+  ],
+  "connectionIds": [
+    "AH-R0893",
+    "AH-R0891"
+  ],
+  "reactions": [
+    {
+      "situation": "A friend offers a sofa for an uncertain number of weeks",
+      "response": "Drew agrees a first review date for the sofa without pretending it settles the winter.",
+      "asWritten": "A friend offers a sofa for an uncertain number of weeks. Drew agrees a first review date for the sofa without pretending it settles the winter."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Drew offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Drew offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Drew asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Drew asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

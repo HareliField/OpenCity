@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0335",
+  "personId": "AH-R0335",
+  "name": "Alan Williams",
+  "age": 35,
+  "occupation": "Witness support worker",
+  "home": "Midtown",
+  "episode": "The spare spectacles",
+  "biography": "stories/residents/03/04-the-spare-spectacles.md#ah-r0335",
+  "life": "“I still remember being misheard across an echoing gym.” People around the corner by Juniper Tailor know Alan by a small Friday habit. Alan looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I thought her hesitation meant doubt. She could describe the room exactly once the letters stayed still.",
+  "appearance": "On an ordinary day, look for a washed violet jersey and a comb in a sleeve sewn into the lining. Alan has a wide brow and a narrow jaw, with thick, tightly coiled hair. Alan squares up pieces of paper while thinking during a conversation.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To ask what the witness can see before judging hesitation.",
+  "family": "Sasha Watts is Alan’s stepsibling. Alan brings the paper and a pen. Sasha decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The absent signature*, Sasha says, “I married into the family after she left. I'd like to know why there isn't a single photograph of her on the quay.”",
+  "connections": "Hollis Parker. They make sure difficulty seeing the form is never recorded as uncertainty about the event.",
+  "familyIds": [
+    "AH-R0919"
+  ],
+  "connectionIds": [
+    "AH-R0331"
+  ],
+  "reactions": [
+    {
+      "situation": "The witness asks to read the page alone",
+      "response": "Alan finds a quiet place for the witness and waits without reading over a shoulder.",
+      "asWritten": "The witness asks to read the page alone. Alan finds a quiet place for the witness and waits without reading over a shoulder."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Alan says what they know in their own name and refuses to treat a guess as something the child has to disprove.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Alan says what they know in their own name and refuses to treat a guess as something the child has to disprove."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Alan listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Alan listens first to the account of how it was actually used."
+    }
+  ]
+}

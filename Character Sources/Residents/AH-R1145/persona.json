@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1145",
+  "personId": "AH-R1145",
+  "name": "Roman Sutton",
+  "age": 59,
+  "occupation": "Retired wealthy restaurant investor",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The first delivery fee",
+  "biography": "stories/residents/08/10-the-first-delivery-fee.md#ah-r1145",
+  "life": "“I still remember my first income too large to discuss over supper.” On Tuesday, near the blocks below Foundry Lofts, Roman checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I inherited money and want to underwrite deliveries without the delusion that I now own the riders' time.",
+  "appearance": "On an ordinary day, look for a soft blue checked shirt and a cloth patch so neatly matched it only shows in strong light. Roman has a wide brow and a narrow jaw, with closely cropped salt-and-pepper hair. Roman grins on one side while the eyes stay serious during a conversation.",
+  "personality": "Roman tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Roman will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To underwrite deliveries without controlling the riders.",
+  "family": "Alexei Macrae is Roman’s cousin. Roman chooses the familiar route. Alexei can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Two birthdays in one ward*, Alexei says, “I worked beside the older celebrant. I have a joke from each decade and only two are fit for a child's ward.”",
+  "connections": "Taylor Chan. The investor and bookkeeper agree on what happens to a fee during a hospital stay.",
+  "familyIds": [
+    "AH-R1406"
+  ],
+  "connectionIds": [
+    "AH-R1147"
+  ],
+  "reactions": [
+    {
+      "situation": "A housebound customer cannot afford the delivery fee",
+      "response": "Roman asks whether combining a delivery with a willing neighbor would help.",
+      "asWritten": "A housebound customer cannot afford the delivery fee. Roman asks whether combining a delivery with a willing neighbor would help."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Roman asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Roman asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Roman repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Roman repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

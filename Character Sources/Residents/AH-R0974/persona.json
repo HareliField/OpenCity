@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0974",
+  "personId": "AH-R0974",
+  "name": "Toby Webb",
+  "age": 73,
+  "occupation": "Retired seamstress",
+  "home": "Old Town",
+  "episode": "The expensive summer",
+  "biography": "stories/residents/07/08-the-expensive-summer.md#ah-r0974",
+  "life": "“I still remember my youngest grandchild copying the way I count coins.” People around the corner by Juniper Tailor know Toby by a small Sunday habit. Toby looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I ordered the cheapest thing and hated realizing my grandson was doing the same calculation.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and one cuff folded back twice. Toby has a long face and high cheekbones, with soft white hair brushed sideways. Toby draws breath as if to speak and lets someone else go first during a conversation.",
+  "personality": "Toby is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To order without making the grandchild conceal the same worry.",
+  "family": "John Starr is Toby’s second cousin. Toby chooses the familiar route. John can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The high road home*, John says, “I used to drive straight over every night until my companion died.”",
+  "connections": "Teresa Berg. A grandparent counting coins and the person celebrating would both like to change the subject.",
+  "familyIds": [
+    "AH-R1167"
+  ],
+  "connectionIds": [
+    "AH-R0980"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative tries to pay the whole restaurant bill in secret",
+      "response": "Toby speaks to the host privately and lets them decide whether the bill is shared.",
+      "asWritten": "A relative tries to pay the whole restaurant bill in secret. Toby speaks to the host privately and lets them decide whether the bill is shared."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Toby tells the first helper what they actually saw and makes room for the rider to answer for themself.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Toby tells the first helper what they actually saw and makes room for the rider to answer for themself."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Toby helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Toby helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

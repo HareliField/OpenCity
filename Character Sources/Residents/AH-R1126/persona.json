@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1126",
+  "personId": "AH-R1126",
+  "name": "Dana Sanders",
+  "age": 54,
+  "occupation": "Uniform seamster",
+  "home": "Eastside",
+  "episode": "A summer marriage",
+  "biography": "stories/residents/08/08-a-summer-marriage.md#ah-r1126",
+  "life": "“I still remember fitting trousers that could survive a return to work.” Thursday often includes a stop at the public road outside the Port of Asphalt, where Dana can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I sew uniforms. The couple asked for formal clothes they can go straight back to work in.",
+  "appearance": "Dana has a small notch in the left eyebrow. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a mustard canvas overshirt with a pocket notebook shaped by years of sitting on it. In conversation Dana touches a knuckle to the chin when searching for a word.",
+  "personality": "Dana has a quick wit and an equally quick sense of shame. A joke is often Dana's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To make formal clothes that work through a shift.",
+  "family": "Alex Gomez is Dana’s cousin’s child. Dana can always ask for five minutes alone. Alex asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Spin cycle choir*, Alex says, “I sat in the wrong laundromat listening for it.”",
+  "connections": "Joy Hall. The cook and seamster need a plan that can move right from celebration to work.",
+  "familyIds": [
+    "AH-R0310"
+  ],
+  "connectionIds": [
+    "AH-R1125"
+  ],
+  "reactions": [
+    {
+      "situation": "Fog hides the sea during the vows",
+      "response": "Dana asks the couple if they want to begin under fog or wait, without extending the celebration for a photograph.",
+      "asWritten": "Fog hides the sea during the vows. Dana asks the couple if they want to begin under fog or wait, without extending the celebration for a photograph."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Dana asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Dana asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Dana seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Dana seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

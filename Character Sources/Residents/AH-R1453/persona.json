@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1453",
+  "personId": "AH-R1453",
+  "name": "Hollis Bowen",
+  "age": 71,
+  "occupation": "Retired garment fitter",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "An ordinary mirror",
+  "biography": "stories/residents/10/11-an-ordinary-mirror.md#ah-r1453",
+  "life": "“I still remember fitting a school sleeve over a badly grazed shoulder.” People around Studio Boulevard know Hollis by a small Monday habit. Hollis waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I remember making her school uniform wider at the shoulder so she could throw a ball.",
+  "appearance": "Hollis has two white streaks in otherwise dark hair, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a charcoal zip cardigan. It usually goes with a small enamel bird on the lapel. When somebody else has the floor, Hollis grins on one side while the eyes stay serious.",
+  "personality": "Hollis has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To tell the widow about the first school skirt.",
+  "family": "Drew Aguilar is Hollis’s first cousin once removed. Hollis knows which ones can be shared. Drew keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Midnight cinnamon*, Drew says, “I want the staff to choose one bake from each of the three holidays and teach me the pronunciations.”",
+  "connections": "Albert Daniels. An old school fitting helps the next customer find words for an unrelated garment memory.",
+  "familyIds": [
+    "AH-R0695"
+  ],
+  "connectionIds": [
+    "AH-R1457"
+  ],
+  "reactions": [
+    {
+      "situation": "The widow asks to buy the fitting mirror",
+      "response": "Hollis asks the tailor and widow what access others would lose if the mirror moved.",
+      "asWritten": "The widow asks to buy the fitting mirror. Hollis asks the tailor and widow what access others would lose if the mirror moved."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Hollis offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Hollis offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Hollis explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Hollis explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

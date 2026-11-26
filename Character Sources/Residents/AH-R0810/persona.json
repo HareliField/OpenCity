@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0810",
+  "personId": "AH-R0810",
+  "name": "Belinda Lee",
+  "age": 68,
+  "occupation": "Retired upholstery worker",
+  "home": "the western residential streets",
+  "episode": "Home with stairs",
+  "biography": "stories/residents/06/06-home-with-stairs.md#ah-r0810",
+  "life": "“I still remember rehanging my keys on the day I came home.” Thursday often includes a stop at the public road outside the Port of Asphalt, where Belinda can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I rented my old flat out too soon after my own illness. I am lending her my calendar with the recovery weeks crossed out.",
+  "appearance": "Belinda has salt-and-pepper curls, a round face with a pronounced chin, and a favorite piece of clothing, a charcoal zip cardigan. It usually goes with one cuff folded back twice. When somebody else has the floor, Belinda touches a knuckle to the chin when searching for a word.",
+  "personality": "Belinda has a talent for getting adversaries to laugh at exactly the same thing. Belinda knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To lend the family a realistic recovery calendar.",
+  "family": "Aria Machado is Belinda’s stepsibling. Belinda checks the date twice. Aria brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The other side of the cove*, Aria says, “I was that cleaner. I'm still alive and I would like the seat low enough for me to stand up from.”",
+  "connections": "Kira Holmes. An offer of a bedroom gets a useful limit from the old recovery calendar.",
+  "familyIds": [
+    "AH-R1271"
+  ],
+  "connectionIds": [
+    "AH-R0804"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative offers to carry the patient up the stairs",
+      "response": "Belinda asks the patient whether being carried is an offer they want to take up.",
+      "asWritten": "A relative offers to carry the patient up the stairs. Belinda asks the patient whether being carried is an offer they want to take up."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Belinda asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Belinda asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Belinda asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Belinda asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

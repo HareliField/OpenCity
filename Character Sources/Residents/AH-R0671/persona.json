@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0671",
+  "personId": "AH-R0671",
+  "name": "Idris Yeo",
+  "age": 45,
+  "occupation": "Garment repairer",
+  "home": "the western residential streets",
+  "episode": "The misplaced umbrella",
+  "biography": "stories/residents/05/08-the-misplaced-umbrella.md#ah-r0671",
+  "life": "“I still remember a wedding dress that became several practical patches.” Wednesday often includes a stop at the foot of Harbor Viaduct, where Idris pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I stitched the patch from a dress my aunt wore on her only holiday. I don't care what the parasol cost.",
+  "appearance": "Idris is easy to recognize by auburn hair cut square at the nape and one cheek that creases before the other. Usually dressed in a red windbreaker with a comb in a sleeve sewn into the lining, Idris squares up pieces of paper while thinking when listening.",
+  "personality": "Idris feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To recover the aunt's patched fabric.",
+  "family": "Ida Henry is Idris’s cousin raised in the same household. Idris decides what stays off the paper. Ida brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *A ship without postcards*, Ida says, “I bought a blank card to send my aunt the smell of her old soap.”",
+  "connections": "Denise Hamm. The dress patch comes with credit for its seamstress in the mending class.",
+  "familyIds": [
+    "AH-R0313"
+  ],
+  "connectionIds": [
+    "AH-R0678"
+  ],
+  "reactions": [
+    {
+      "situation": "Both umbrella owners turn up at the beach",
+      "response": "Idris gets the two families together in the shade to identify the items.",
+      "asWritten": "Both umbrella owners turn up at the beach. Idris gets the two families together in the shade to identify the items."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Idris stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Idris stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Idris lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Idris lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

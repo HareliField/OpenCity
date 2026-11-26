@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0698",
+  "personId": "AH-R0698",
+  "name": "Frankie Palmer",
+  "age": 38,
+  "occupation": "Recovery group volunteer and painter",
+  "home": "the western residential streets",
+  "episode": "Midnight cinnamon",
+  "biography": "stories/residents/05/10-midnight-cinnamon.md#ah-r0698",
+  "life": "“I still remember spending grocery money beside a bakery window.” On Friday, near Maré Coffee, Frankie likes the table where people coming off shift stop checking the time.",
+  "voice": "I used to pour my wages into scratch cards on this street. Tonight I took a bag of warm buns home instead.",
+  "appearance": "Frankie has fine brows over wide-set eyes. Look for brown hair pinned away from the temples. On an ordinary day, the familiar outfit is a gray fisher's sweater with a knotted piece of sail thread on a key ring. In conversation Frankie grins on one side while the eyes stay serious.",
+  "personality": "Frankie talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Frankie's ways of saying that it is all right to leave.",
+  "agenda": "To bring holiday breakfast home instead of buying a scratch card.",
+  "family": "Nico Salas is Frankie’s half-sibling. Frankie brings whatever was actually growing or affordable that week. Nico makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *A tide at noon*, Nico says, “I earn money making flawless hotel displays.”",
+  "connections": "Drew Aguilar. One worker chooses the holidays and the other can buy the finished buns after a hard shift.",
+  "familyIds": [
+    "AH-R0074"
+  ],
+  "connectionIds": [
+    "AH-R0695"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer wants a bun saved until evening",
+      "response": "Frankie writes the customer's name and collection time on the wrapped bun.",
+      "asWritten": "A customer wants a bun saved until evening. Frankie writes the customer's name and collection time on the wrapped bun."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Frankie keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Frankie keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Frankie says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Frankie says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

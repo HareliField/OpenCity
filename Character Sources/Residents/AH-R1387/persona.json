@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1387",
+  "personId": "ah-pd-146",
+  "name": "Kit Hale",
+  "age": 42,
+  "occupation": "Forensic analyst",
+  "home": "Midtown",
+  "episode": "Names on the night wall",
+  "biography": "stories/residents/10/04-names-on-the-night-wall.md#ah-r1387",
+  "life": "“I still remember someone hanging an ordinary apron beside my uniform.” On Monday, near the brick passage off the shop row, Kit takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I wrote a blank because the person keeping my house together doesn't want their name known here.",
+  "appearance": "Kit is easy to recognize by a swept fringe and a closely clipped nape and a small notch in the left eyebrow. Usually dressed in a gray fisher's sweater with a comb in a sleeve sewn into the lining, Kit squares up pieces of paper while thinking when listening.",
+  "personality": "Kit uses precise names for tools and very approximate names for feelings. People who know Kit well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To thank the unnamed person privately.",
+  "family": "Owen Kerr is Kit’s cousin raised in the same household. Kit decides what stays off the paper. Owen brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The returned daughter*, Owen says, “I bought the groceries before her visit and chose the food she liked at sixteen.”",
+  "connections": "Theo Hall. A librarian's discretion helps the colleague whose helper has asked to stay unnamed.",
+  "familyIds": [
+    "AH-R1284"
+  ],
+  "connectionIds": [
+    "AH-R1386"
+  ],
+  "reactions": [
+    {
+      "situation": "A colleague leaves a name off the thank-you wall",
+      "response": "Kit allows a private thank-you to stay private even on unveiling day.",
+      "asWritten": "A colleague leaves a name off the thank-you wall. Kit allows a private thank-you to stay private even on unveiling day."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Kit tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Kit tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Kit brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Kit brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

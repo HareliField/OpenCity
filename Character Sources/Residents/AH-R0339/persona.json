@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0339",
+  "personId": "AH-R0339",
+  "name": "Billie Warren",
+  "age": 41,
+  "occupation": "Community interpreter",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The spare spectacles",
+  "biography": "stories/residents/03/04-the-spare-spectacles.md#ah-r0339",
+  "life": "“I still remember the word for alley changing across one street.” Monday often includes a stop at Lighthouse Cove, where Billie takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I translated the printed words. She corrected the name of the crossing in both languages.",
+  "appearance": "Billie has heavy brows and an unusually delicate jaw. Look for short copper curls. On an ordinary day, the familiar outfit is a black overshirt with pearl buttons with a cloth patch so neatly matched it only shows in strong light. In conversation Billie grins on one side while the eyes stay serious.",
+  "personality": "Billie can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Billie can afford to give, and family knows to take it seriously.",
+  "agenda": "To keep both versions of the crossing's name.",
+  "family": "Morgan Hamada is Billie’s older cousin. Billie puts the kettle on. Morgan chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Winter afloat*, Morgan says, “I built boats before I sold expensive moorings.”",
+  "connections": "Quinn Carvalho (station interpreter). They turn the printed account into language the witness will actually sign.",
+  "familyIds": [
+    "AH-R0893"
+  ],
+  "connectionIds": [
+    "AH-R0333"
+  ],
+  "reactions": [
+    {
+      "situation": "The witness asks to read the page alone",
+      "response": "Billie finds a quiet place for the witness and waits without reading over a shoulder.",
+      "asWritten": "The witness asks to read the page alone. Billie finds a quiet place for the witness and waits without reading over a shoulder."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Billie asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Billie asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Billie suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Billie suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

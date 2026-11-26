@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0198",
+  "personId": "AH-R0198",
+  "name": "Talia Valdez",
+  "age": 64,
+  "occupation": "Retired music teacher",
+  "home": "Midtown",
+  "episode": "The pawned trumpet",
+  "biography": "stories/residents/02/05-the-pawned-trumpet.md#ah-r0198",
+  "life": "“One of my pupils went on tour and mailed me a different terrible hotel pen each week.” On Friday, near the crossing outside Verve Nail Studio, Talia notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I taught two pupils on that horn. Neither ever knew I owned it first.",
+  "appearance": "Talia has steel-colored hair cut square above the collar, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a gray fisher's sweater. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Talia looks at people's hands before looking at what they carry.",
+  "personality": "Talia keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Talia wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To let two generations of students meet at rehearsal.",
+  "family": "Francis Parra is Talia’s stepsibling. Talia calls about good news first. Francis is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The kitchen without a boss*, Francis says, “I have shares and no apron. I offered to carry flour for one afternoon before looking at the daily numbers.”",
+  "connections": "Erin Hubbard. Two teachers recognize two different stages of the trumpet's working life.",
+  "familyIds": [
+    "AH-R1446"
+  ],
+  "connectionIds": [
+    "AH-R0192"
+  ],
+  "reactions": [
+    {
+      "situation": "The teenager gets an audition the morning the horn is due back",
+      "response": "Talia contacts the owner before treating an audition as permission to keep the horn.",
+      "asWritten": "The teenager gets an audition the morning the horn is due back. Talia contacts the owner before treating an audition as permission to keep the horn."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Talia asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Talia asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Talia offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Talia offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

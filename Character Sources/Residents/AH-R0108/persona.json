@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0108",
+  "personId": "AH-R0108",
+  "name": "Galen Howe",
+  "age": 52,
+  "occupation": "Barber",
+  "home": "Old Town",
+  "episode": "Ten fingers",
+  "biography": "stories/residents/01/11-ten-fingers.md#ah-r0108",
+  "life": "Galen's father had one barber chair and a cash tin that also paid the household bills. Losing the corner lease hurt more than he has admitted to the salon next door. Lending the first chair is a manageable beginning. People around the public end of the South Shore boardwalk know Galen by a small Thursday habit. Galen checks the shade on the benches before deciding how long to stay.",
+  "voice": "We used to compete for the same corner lease. I chose the blue that is still on my shopfront. I'll lend her the folding chair my first customers sat in for the group picture.",
+  "appearance": "After the last appointment, look for a washed violet jersey and one loose pocket corner secured with green thread. Galen has two dimples that appear only with a full smile, with a blunt cut just below the ears. Galen touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Galen is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Galen is concerned.",
+  "agenda": "To bring the original barber chair over for the birthday portrait.",
+  "family": "Jean Shen is Galen’s cousin raised in the same household. Galen saves a place. Jean chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *Salt in the pockets*, Jean says, “I took a photograph because it looked like our street under the one snowfall I remember.”",
+  "connections": "Marta Ely. The borrowed barber chair goes into a room whose rent will have to be negotiated tomorrow.",
+  "familyIds": [
+    "AH-R0604"
+  ],
+  "connectionIds": [
+    "AH-R0110"
+  ],
+  "reactions": [
+    {
+      "situation": "The birthday woman asks for five minutes by herself",
+      "response": "Galen lets the room empty and puts the next invitation in her hands.",
+      "asWritten": "The birthday woman asks for five minutes by herself. Galen lets the room empty and puts the next invitation in her hands."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Galen asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Galen asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Galen asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Galen asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

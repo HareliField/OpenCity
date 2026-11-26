@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1237",
+  "personId": "ah-pd-137",
+  "name": "Cole Dunn",
+  "age": 35,
+  "occupation": "Patrol officer",
+  "home": "Coast Ridge",
+  "episode": "A call heard twice",
+  "biography": "stories/residents/09/04-a-call-heard-twice.md#ah-r1237",
+  "life": "“I still remember a letter of thanks that misspelled my name and meant every word.” On Tuesday, near the entrance to the Wash House, Cole stops for local notices even on a day without a load to wash.",
+  "voice": "I typed the reply and changed saved you to stayed with you. The caller had done most of the difficult things herself.",
+  "appearance": "Cole has short black hair swept back, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a folded shopping list secured by a miniature clip. When somebody else has the floor, Cole looks down for a moment before saying something difficult.",
+  "personality": "Cole gets protective of anybody who comes into a meeting unprepared. Cole privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To give the resident credit in the written reply.",
+  "family": "Briar Barrett is Cole’s cousin raised in the same household. Cole calls back when there is finally a little privacy. Briar leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The high road home*, Briar says, “I paint the edge line. The driver pointed out the place where the existing paint disappears in reflected light.”",
+  "connections": "Lara Finch. The supervisor checks the picture against the reply writer's account of what the resident did.",
+  "familyIds": [
+    "AH-R1166"
+  ],
+  "connectionIds": [
+    "AH-R1233"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor offers thanks to only one call taker",
+      "response": "Cole gets both halves of the call into the account before a name goes up.",
+      "asWritten": "A supervisor offers thanks to only one call taker. Cole gets both halves of the call into the account before a name goes up."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Cole gets the people at the next doorway away from the smoke and asks a bystander to make the call.",
+      "asWritten": "Smoke appears under a shop door after closing. Cole gets the people at the next doorway away from the smoke and asks a bystander to make the call."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Cole offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Cole offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0260",
+  "personId": "AH-R0260",
+  "name": "Alvin Chapman",
+  "age": 53,
+  "occupation": "Front desk supervisor",
+  "home": "the streets inland from Pier Beach",
+  "episode": "One sleeve short",
+  "biography": "stories/residents/02/11-one-sleeve-short.md#ah-r0260",
+  "life": "“I got my first supervisor job after the preferred applicant turned up in the wrong city.” People around Tideline Market know Alvin by a small Monday habit. Alvin picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I hired him to meet customers. On day one he showed me how much you can learn from an unfinished sleeve.",
+  "appearance": "Alvin has a blunt cut just below the ears, a broad nose and a deep dimple on one cheek, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a small enamel bird on the lapel. When somebody else has the floor, Alvin presses the lips together to keep a smile in.",
+  "personality": "Alvin is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To give the new hire a front-counter shift with a fair wage.",
+  "family": "Alejandro Sanders is Alvin’s half-sibling. Alvin makes the call. Alejandro is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Spin cycle choir*, Alejandro says, “I have tuned pianos for years. This is the first chord I've been paid to leave out of tune.”",
+  "connections": "Celia Baxter. The cupboard organizer finds an employer willing to let the new hire choose real work clothes. Also in the story is Quinn Pereira (new hire).",
+  "familyIds": [
+    "AH-R0302"
+  ],
+  "connectionIds": [
+    "AH-R0259",
+    "AH-R0254"
+  ],
+  "reactions": [
+    {
+      "situation": "The interview is advanced before the jacket is ready",
+      "response": "Alvin checks which part of the jacket can be finished in the time available.",
+      "asWritten": "The interview is advanced before the jacket is ready. Alvin checks which part of the jacket can be finished in the time available."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Alvin says what they know in their own name and refuses to treat a guess as something the child has to disprove.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Alvin says what they know in their own name and refuses to treat a guess as something the child has to disprove."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Alvin helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Alvin helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

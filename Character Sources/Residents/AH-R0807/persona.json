@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0807",
+  "personId": "AH-R0807",
+  "name": "Neal Heller",
+  "age": 36,
+  "occupation": "Family caregiver and loader",
+  "home": "the blocks north of the port",
+  "episode": "Home with stairs",
+  "biography": "stories/residents/06/06-home-with-stairs.md#ah-r0807",
+  "life": "“I still remember the unfair generosity of a relative offering a piggyback.” People around the brick passage off the shop row know Neal by a small Thursday habit. Neal takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I could give her a piggyback ride. She wants to enter her own flat on her own feet.",
+  "appearance": "Neal is easy to recognize by a dark undercut with a longer wave on top and a narrow face with an expressive upper lip. Usually dressed in a boxy denim jacket with a fabric zip pull cut from a school scarf, Neal draws breath as if to speak and lets someone else go first when listening.",
+  "personality": "Neal finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To help without lifting someone who wants to walk.",
+  "family": "Elaine Aguilar is Neal’s half-sibling. Neal is allowed to ask about the bad news afterward. Elaine calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *A shelf of apologies*, Elaine says, “I donated the clean replacement. The owner chose the dirty original because our toddler bit the corner.”",
+  "connections": "Max Carbone. The discharge planner hears why a free lift up the stairs isn't the patient's chosen solution.",
+  "familyIds": [
+    "AH-R0667"
+  ],
+  "connectionIds": [
+    "AH-R0806"
+  ],
+  "reactions": [
+    {
+      "situation": "A hospital car arrives before the handrail is ready",
+      "response": "Neal checks the landing with the patient before calling the trip home ready.",
+      "asWritten": "A hospital car arrives before the handrail is ready. Neal checks the landing with the patient before calling the trip home ready."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Neal asks which other bill repayment would displace, then offers only what the household can afford to give.",
+      "asWritten": "A friend asks for a loan due back before payday. Neal asks which other bill repayment would displace, then offers only what the household can afford to give."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Neal points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Neal points to the person who noticed the original mistake."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0976",
+  "personId": "AH-R0976",
+  "name": "Adriana Ingram",
+  "age": 45,
+  "occupation": "Cook",
+  "home": "Old Town",
+  "episode": "The expensive summer",
+  "biography": "stories/residents/07/08-the-expensive-summer.md#ah-r0976",
+  "life": "“I still remember buying a retired chef the onions she said were essential.” People around the public road outside the Port of Asphalt know Adriana by a small Saturday habit. Adriana can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I know the former chef's recipe. The family asked for it and I want her blessing before passing it on.",
+  "appearance": "Adriana is easy to recognize by short copper curls and a deep crease beside the mouth when smiling. Usually dressed in a washed violet jersey with a printed handkerchief folded into the pocket, Adriana takes off the watch before a long conversation when listening.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To seek the original chef's permission for the recipe.",
+  "family": "Rain Malik is Adriana’s cousin. Adriana chooses whether to use it. Rain saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *An address in pencil*, Rain says, “I delivered flowers to the wrong widow. She walked them over and stayed for dinner.”",
+  "connections": "Cian Ingram. The old recipe and the public bench make two possible alternatives to a costly birthday meal.",
+  "familyIds": [
+    "AH-R0682"
+  ],
+  "connectionIds": [
+    "AH-R0977"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative tries to pay the whole restaurant bill in secret",
+      "response": "Adriana speaks to the host privately and lets them decide whether the bill is shared.",
+      "asWritten": "A relative tries to pay the whole restaurant bill in secret. Adriana speaks to the host privately and lets them decide whether the bill is shared."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Adriana suggests one straightforward message without accusations and gives the friend time to answer.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Adriana suggests one straightforward message without accusations and gives the friend time to answer."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Adriana listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Adriana listens first to the account of how it was actually used."
+    }
+  ]
+}

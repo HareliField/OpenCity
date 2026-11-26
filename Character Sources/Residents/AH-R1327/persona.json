@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1327",
+  "personId": "AH-R1327",
+  "name": "Rae Montoya",
+  "age": 17,
+  "occupation": "Former classmate and student",
+  "home": "Coast Ridge",
+  "episode": "The school photograph that travels",
+  "biography": "stories/residents/09/13-the-school-photograph-that-travels.md#ah-r1327",
+  "life": "“I still remember a joke I told in class that a friend took home for years.” People around the foot of Harbor Viaduct know Rae by a small Sunday habit. Rae pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I was the child who made her life miserable. She sent me a photograph with no message and I have to choose my own words.",
+  "appearance": "Rae has a soft fringe that falls across one eyebrow, a crooked front tooth visible when laughing, and a favorite piece of clothing, a red windbreaker. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Rae looks down for a moment before saying something difficult.",
+  "personality": "Rae is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To choose an honest reply to the former classmate.",
+  "family": "Olive Kapoor is Rae’s older cousin. Rae knows which ones can be shared. Olive keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The second dog*, Olive says, “I trained that whistle to get my father indoors before dark.”",
+  "connections": "Aldo Cao. Teacher and former bully are both surprised by a pupil's choice of recipient.",
+  "familyIds": [
+    "AH-R0182"
+  ],
+  "connectionIds": [
+    "AH-R1323"
+  ],
+  "reactions": [
+    {
+      "situation": "The departing pupil leaves a teacher off the photograph list",
+      "response": "Rae asks the pupil privately what the photograph list means to them.",
+      "asWritten": "The departing pupil leaves a teacher off the photograph list. Rae asks the pupil privately what the photograph list means to them."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Rae stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Rae stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Rae thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Rae thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

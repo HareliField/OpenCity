@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1368",
+  "personId": "AH-R1368",
+  "name": "Lionel Wu",
+  "age": 44,
+  "occupation": "Rail checker",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A last ship together",
+  "biography": "stories/residents/10/02-a-last-ship-together.md#ah-r1368",
+  "life": "“I still remember scoring a domino match on the back of a payslip.” People around the downtown fountain know Lionel by a small Thursday habit. Lionel keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I beat them at dominoes as a teenager. I want one last game with both clocks still ticking on company time.",
+  "appearance": "Lionel has brown hair pinned away from the temples, a straight nose and deep-set eyes, and a favorite piece of clothing, a rust-colored canvas coat. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Lionel touches a knuckle to the chin when searching for a word.",
+  "personality": "Lionel treats a small promise with the gravity others reserve for a contract. This makes Lionel lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To play the last scored game before clocking out.",
+  "family": "Lydia Ames is Lionel’s stepsibling. A relative let everybody believe a favorite tune was a folk song. Only later did the family find the melody in a book with a relative's real name under it. Lionel wants the person who made something to have a chance to claim it. Asked about *The pawned trumpet*, Lydia says, “I sold the trumpet with a practice mute. The mute is still on my shelf and so is the child's name.”",
+  "connections": "Joel Arendt. Packed lunches and one last scorecard complicate the story that only two people are retiring.",
+  "familyIds": [
+    "AH-R0197"
+  ],
+  "connectionIds": [
+    "AH-R1366"
+  ],
+  "reactions": [
+    {
+      "situation": "A younger worker is asked to perform the final lift",
+      "response": "Lionel lets the trainee carry out the job they are qualified for and keeps space for the retirees to watch.",
+      "asWritten": "A younger worker is asked to perform the final lift. Lionel lets the trainee carry out the job they are qualified for and keeps space for the retirees to watch."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Lionel asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Lionel asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Lionel says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Lionel says what can be returned and asks whether that will do."
+    }
+  ]
+}

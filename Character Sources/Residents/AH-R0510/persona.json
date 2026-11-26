@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0510",
+  "personId": "AH-R0510",
+  "name": "Lennon Adair",
+  "age": 41,
+  "occupation": "Plant seller",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The waiting-room plant",
+  "biography": "stories/residents/04/06-the-waiting-room-plant.md#ah-r0510",
+  "life": "“I still remember a customer naming a seedling before it had roots.” Tuesday often includes a stop at the brick passage off the shop row, where Lennon takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I gave it the name of my favorite aunt. My other aunt just found out and wants a pot of her own.",
+  "appearance": "Lennon has auburn hair cut square at the nape, a round face with a pronounced chin, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a thin silver ring worn on a cord. When somebody else has the floor, Lennon touches a knuckle to the chin when searching for a word.",
+  "personality": "Lennon keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Lennon wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To give the second aunt a cutting to name.",
+  "family": "Micah Hassan is Lennon’s stepsibling. Lennon puts the kettle on. Micah chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The last light at the harbor*, Micah says, “I run the marina. I didn't understand how many people check on each other without passing through my office.”",
+  "connections": "Elaine Marquez. One inherited name and one new cutting go to rooms where the plant can be welcomed. Also in the story is Talia Drew (plant stand maker).",
+  "familyIds": [
+    "AH-R1497"
+  ],
+  "connectionIds": [
+    "AH-R0509",
+    "AH-R0504"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient asks to be alone with the plant",
+      "response": "Lennon leaves the patient with the plant and returns at an agreed time.",
+      "asWritten": "A patient asks to be alone with the plant. Lennon leaves the patient with the plant and returns at an agreed time."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Lennon suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Lennon suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Lennon offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Lennon offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

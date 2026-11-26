@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0460",
+  "personId": "AH-R0460",
+  "name": "Lola Jeong",
+  "age": 29,
+  "occupation": "Community costume assistant",
+  "home": "the western residential streets",
+  "episode": "The button card",
+  "biography": "stories/residents/04/01-the-button-card.md#ah-r0460",
+  "life": "“I still remember the lucky charm sewn into our practice curtain.” Thursday often includes a stop at Tideline Market, where Lola picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I came to return a button my wife thought unlucky. It won somebody else the costume prize.",
+  "appearance": "Lola is easy to recognize by a blunt cut just below the ears and two dimples that appear only with a full smile. Usually dressed in a plum-colored cardigan with a little coil of soft measuring tape, Lola gives a little nod before asking a hard question when listening.",
+  "personality": "Lola treats a small promise with the gravity others reserve for a contract. This makes Lola lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To explain the returned lucky button to its next wearer.",
+  "family": "Percy Andrade is Lola’s older cousin. Lola can always ask for five minutes alone. Percy asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Low water music*, Percy says, “I scraped my knee there and have called it a much ruder name since.”",
+  "connections": "Milo Rizzo. The yellow winter-coat button acquires a new history in the costume box. Also in the story is Nelson Gallagher (button donor).",
+  "familyIds": [
+    "AH-R0222"
+  ],
+  "connectionIds": [
+    "AH-R0455",
+    "AH-R0456"
+  ],
+  "reactions": [
+    {
+      "situation": "The donor recognizes the uniform it came from",
+      "response": "Lola asks the owner which garment the donor wants remembered.",
+      "asWritten": "The donor recognizes the uniform it came from. Lola asks the owner which garment the donor wants remembered."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Lola lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Lola lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Lola says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Lola says what can be returned and asks whether that will do."
+    }
+  ]
+}

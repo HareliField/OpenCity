@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1204",
+  "personId": "AH-R1204",
+  "name": "Lucia Byrd",
+  "age": 34,
+  "occupation": "Laundry worker's partner and hotel clerk",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A room above the dryers",
+  "biography": "stories/residents/09/01-a-room-above-the-dryers.md#ah-r1204",
+  "life": "“I still remember negotiating kitchen space for an unfinished picture.” Wednesday often includes a stop at the corner by Juniper Tailor, where Lucia looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I am the worker's partner. I can give up the kitchen table for art but I cannot give up part of the rent for a studio.",
+  "appearance": "Lucia has dark brown curls cut close behind the ears, a crooked front tooth visible when laughing, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a square of clean cloth for polishing smudges. When somebody else has the floor, Lucia leans a shoulder against the wall during long conversations.",
+  "personality": "Lucia often says yes too quickly out of pride in being useful. The people closest to Lucia have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To agree a studio cost the couple can carry.",
+  "family": "Emery Gordon is Lucia’s older cousin. Lucia calls back when there is finally a little privacy. Emery leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The sandwich board*, Emery says, “I bid because there is a second menu under the first.”",
+  "connections": "Gregory Chen. The partner's rent limit meets the owner's price for a long-empty studio. Also in the story is Dora Frost (partner).",
+  "familyIds": [
+    "AH-R0173"
+  ],
+  "connectionIds": [
+    "AH-R1202",
+    "AH-R1201"
+  ],
+  "reactions": [
+    {
+      "situation": "An investor offers free publicity for the studio",
+      "response": "Lucia asks what cost the publicity will cover before agreeing to an exhibition.",
+      "asWritten": "An investor offers free publicity for the studio. Lucia asks what cost the publicity will cover before agreeing to an exhibition."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Lucia offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Lucia offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Lucia rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Lucia rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

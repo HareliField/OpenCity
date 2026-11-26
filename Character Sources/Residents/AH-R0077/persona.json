@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0077",
+  "personId": "AH-R0077",
+  "name": "Mona Neri",
+  "age": 54,
+  "occupation": "Pediatric dentist",
+  "home": "Eastside",
+  "episode": "A tide at noon",
+  "biography": "stories/residents/01/08-a-tide-at-noon.md#ah-r0077",
+  "life": "Mona works with children who are often frightened before they reach her room. On the beach she thought she had left that white-shirt authority behind and was startled to discover how easily it followed her outdoors. On Saturday, near Paper & Pine Books, Mona starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I donated the prize bucket. The winning child was afraid to come near my white shirt. I sat on the sand with my back to her until she came and filled it herself.",
+  "appearance": "Mona has two dimples that appear only with a full smile. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a moss-green cardigan with one loose pocket corner secured with green thread. In conversation Mona rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Mona is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Mona is concerned.",
+  "agenda": "To let the winning child choose when to collect the bucket.",
+  "family": "Jo Allard is Mona’s cousin’s child. Mona keeps the photographs. Jo knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *A house divided kindly*, Jo says, “I am the grandchild who expected to inherit this house.”",
+  "connections": "Ely Kern. They help small visitors find both a dry towel and an unthreatening way to collect their prize.",
+  "familyIds": [
+    "AH-R1438"
+  ],
+  "connectionIds": [
+    "AH-R0075"
+  ],
+  "reactions": [
+    {
+      "situation": "The water reaches a child's castle before judging",
+      "response": "Mona gives the builder time to show the judges what the water took.",
+      "asWritten": "The water reaches a child's castle before judging. Mona gives the builder time to show the judges what the water took."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Mona tells the first helper what they actually saw and makes room for the rider to answer for themself.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Mona tells the first helper what they actually saw and makes room for the rider to answer for themself."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Mona asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Mona asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

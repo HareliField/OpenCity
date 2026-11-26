@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0398",
+  "personId": "AH-R0398",
+  "name": "Noel Berry",
+  "age": 40,
+  "occupation": "Hospital food runner",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The broken till",
+  "biography": "stories/residents/03/10-the-broken-till.md#ah-r0398",
+  "life": "“I still remember delivering a meal still labeled for yesterday's ward.” People around the corner by Juniper Tailor know Noel by a small Saturday habit. Noel looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I took a lunch for a patient and forgot to sign. I've come back to put the right name beside the debt.",
+  "appearance": "Noel is easy to recognize by a cropped cut that shows the shape of the ears and a straight nose and deep-set eyes. Usually dressed in a gray fisher's sweater with a watch on a cracked leather band, Noel takes off the watch before a long conversation when listening.",
+  "personality": "Noel has a quick wit and an equally quick sense of shame. A joke is often Noel's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To add the correct patient name to the account.",
+  "family": "Leah Smith is Noel’s cousin raised in the same household. Noel makes the call. Leah is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The salon on strike*, Leah says, “I thought a free manicure made it fair. The technician asked who would watch her sleeping children.”",
+  "connections": "Nicholas Mitchell. Two separate meal debts get recorded correctly before the till reopens. Also in the story is Nadia Holland (counter note taker).",
+  "familyIds": [
+    "AH-R1005"
+  ],
+  "connectionIds": [
+    "AH-R0397",
+    "AH-R0396"
+  ],
+  "reactions": [
+    {
+      "situation": "A manager asks for the handwritten sandwich tally",
+      "response": "Noel makes sure customers' names needn't travel with the tally.",
+      "asWritten": "A manager asks for the handwritten sandwich tally. Noel makes sure customers' names needn't travel with the tally."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Noel alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Noel alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Noel seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Noel seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

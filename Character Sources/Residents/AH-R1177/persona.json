@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1177",
+  "personId": "AH-R1177",
+  "name": "Ruben King",
+  "age": 21,
+  "occupation": "Conservatory student",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The understudy sings",
+  "biography": "stories/residents/08/13-the-understudy-sings.md#ah-r1177",
+  "life": "“I still remember buying a concert seat I had no business pretending was cheap.” People around Breakwater Way know Ruben by a small Monday habit. Ruben stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I spent my student loan on a ticket to hear the original singer. I stayed for the new one.",
+  "appearance": "On an ordinary day, look for a charcoal zip cardigan and a replacement button a shade darker than the others. Ruben has a long face and high cheekbones, with a cropped cut that shows the shape of the ears. Ruben raises one eyebrow long before saying yes during a conversation.",
+  "personality": "Ruben is fond of ambitious ideas and deeply suspicious of grand openings. The question Ruben asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To hear the full show even after the casting change.",
+  "family": "Scout Hull is Ruben’s cousin. Ruben sets the time to leave. Scout picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *Summer staff*, Scout says, “I rented a room through September and my final lifeguard check comes in August.”",
+  "connections": "Aria Miller. A listener who bought a ticket for one voice hears the sibling's harmony with another.",
+  "familyIds": [
+    "AH-R0821"
+  ],
+  "connectionIds": [
+    "AH-R1176"
+  ],
+  "reactions": [
+    {
+      "situation": "The understudy is offered the lead before the announcement",
+      "response": "Ruben asks that the lead singer hear the change directly before it is advertised.",
+      "asWritten": "The understudy is offered the lead before the announcement. Ruben asks that the lead singer hear the change directly before it is advertised."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Ruben asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Ruben asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Ruben accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Ruben accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

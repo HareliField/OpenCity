@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1022",
+  "personId": "AH-R1022",
+  "name": "Tom Moreno",
+  "age": 49,
+  "occupation": "Stepfather and electrician",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A dance for two fathers",
+  "biography": "stories/residents/07/13-a-dance-for-two-fathers.md#ah-r1022",
+  "life": "“I still remember practicing the old family song without claiming to have picked it.” On Monday, near the crossing outside Verve Nail Studio, Tom notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I raised her. The song she picked was the one her birth father used to play for her and I know every word.",
+  "appearance": "On an ordinary day, look for a mustard canvas overshirt and a copper-colored clasp that has been repaired by hand. Tom has a strong profile and a little space between the front teeth, with a dark undercut with a longer wave on top. Tom looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Tom can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Tom can afford to give, and family knows to take it seriously.",
+  "agenda": "To honor the song both men know.",
+  "family": "Layla Jimenez is Tom’s stepsibling. Tom sets the time to leave. Layla picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *Midnight cinnamon*, Layla says, “I lost my sense of smell in a fever. I recognized everybody's faces from last winter's batch.”",
+  "connections": "Desmond Monroe. They rehearse the same song after working out who should lead for the first turn. Also in the story is Agnes Lin (stepdaughter).",
+  "familyIds": [
+    "AH-R0694"
+  ],
+  "connectionIds": [
+    "AH-R1023",
+    "AH-R1021"
+  ],
+  "reactions": [
+    {
+      "situation": "One of the fathers misses the dance rehearsal",
+      "response": "Tom keeps the missed step available for a quiet practice before the ceremony.",
+      "asWritten": "One of the fathers misses the dance rehearsal. Tom keeps the missed step available for a quiet practice before the ceremony."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Tom starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Tom starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Tom suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Tom suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

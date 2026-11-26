@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1255",
+  "personId": "AH-R1255",
+  "name": "Gavin Kang",
+  "age": 30,
+  "occupation": "Artist and former clinic patient",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A doctor moves away",
+  "biography": "stories/residents/09/06-a-doctor-moves-away.md#ah-r1255",
+  "life": "“I still remember deciding to keep a tattoo long after a lover left.” Saturday often includes a stop at the steps at Pier Beach, where Gavin watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I sent her one photograph of the tattoo she helped me keep when everyone suggested covering it.",
+  "appearance": "Gavin has a high puff tied with plain cord, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with one loose pocket corner secured with green thread. When somebody else has the floor, Gavin draws small circles on a tabletop while waiting.",
+  "personality": "Gavin keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Gavin wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To give the departing physician the updated photograph.",
+  "family": "Gale Farah is Gavin’s first cousin once removed. Gavin puts the kettle on. Gale chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *One last dress rehearsal*, Gale says, “I have no children and love an empty theater.”",
+  "connections": "Marlowe Arrieta. A portrait of a tattoo and a conversation about movies offer two goodbyes outside illness.",
+  "familyIds": [
+    "AH-R1478"
+  ],
+  "connectionIds": [
+    "AH-R1260"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient asks the leaving doctor to stay one more month",
+      "response": "Gavin asks what handover would help the patient if the move date stands.",
+      "asWritten": "A patient asks the leaving doctor to stay one more month. Gavin asks what handover would help the patient if the move date stands."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Gavin asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Gavin asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Gavin offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Gavin offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

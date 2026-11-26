@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1449",
+  "personId": "AH-R1449",
+  "name": "Dolores Silva",
+  "age": 52,
+  "occupation": "Rival bakery manager",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The kitchen without a boss",
+  "biography": "stories/residents/10/10-the-kitchen-without-a-boss.md#ah-r1449",
+  "life": "“I still remember lending a mixer before asking when I'd get it back.” On Friday, near Ferris Deli, Dolores asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I manage the other bakery. I lent a mixer and did not mention our own sale while I carried it through the door.",
+  "appearance": "Dolores is easy to recognize by a center part and straight chestnut hair and a strong profile and a little space between the front teeth. Usually dressed in an old plum windbreaker with a pocket notebook shaped by years of sitting on it, Dolores holds eye contact until the other person has finished when listening.",
+  "personality": "Dolores keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Dolores wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To loan the mixer without poaching the customers.",
+  "family": "Lydia Avila is Dolores’s younger relative by marriage. Dolores chooses whether to use it. Lydia saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *A play in a pocket*, Lydia says, “I played my dad ordering coffee. He heard it and for once remembered to say please.”",
+  "connections": "Sonia Neal. The egg supplier and rival baker each offer equipment or stock on straightforward terms.",
+  "familyIds": [
+    "AH-R0577"
+  ],
+  "connectionIds": [
+    "AH-R1444"
+  ],
+  "reactions": [
+    {
+      "situation": "The absent owner calls to ask which pastry burned",
+      "response": "Dolores gives the owner a truthful account without handing back all three workers' decisions.",
+      "asWritten": "The absent owner calls to ask which pastry burned. Dolores gives the owner a truthful account without handing back all three workers' decisions."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Dolores keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Dolores keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Dolores offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Dolores offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

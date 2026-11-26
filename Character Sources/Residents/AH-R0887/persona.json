@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0887",
+  "personId": "AH-R0887",
+  "name": "Nell Rios",
+  "age": 46,
+  "occupation": "Household accounts volunteer",
+  "home": "Eastside",
+  "episode": "Care with a clock",
+  "biography": "stories/residents/06/14-care-with-a-clock.md#ah-r0887",
+  "life": "“I still remember a quarter hour shared among several frightened households.” People around the courtyard by Ferry Street Rooms know Nell by a small Monday habit. Nell prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I keep our local accounts. Four households together can afford a floating quarter hour if everybody agrees.",
+  "appearance": "Nell has fine brows over wide-set eyes. Look for a dark undercut with a longer wave on top. On an ordinary day, the familiar outfit is a red windbreaker with a comb in a sleeve sewn into the lining. In conversation Nell counts on the side of one finger where hardly anybody notices.",
+  "personality": "Nell admires skill and distrusts the idea that skill gives anyone permission to be rude. Nell learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To fund a flexible quarter hour across willing households.",
+  "family": "Devin Rhodes is Nell’s half-sibling. Nell asks what the birthday guest would like this year. Devin remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Overdue by a lifetime*, Devin says, “I hated that ending at ten. At fifty I still hate it and finally have a room in which to say why.”",
+  "connections": "Martha Ueda. Four households could pool a quarter hour and ease a daughter's concealed debt.",
+  "familyIds": [
+    "AH-R0370"
+  ],
+  "connectionIds": [
+    "AH-R0884"
+  ],
+  "reactions": [
+    {
+      "situation": "A visit runs into a second billing block",
+      "response": "Nell records the extra time actually spent with the client.",
+      "asWritten": "A visit runs into a second billing block. Nell records the extra time actually spent with the client."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Nell gives up their own space if possible and asks the passengers who arrived first to choose what happens next.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Nell gives up their own space if possible and asks the passengers who arrived first to choose what happens next."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Nell describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Nell describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

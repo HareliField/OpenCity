@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1357",
+  "personId": "AH-R1357",
+  "name": "Idris Marsh",
+  "age": 29,
+  "occupation": "Events assistant",
+  "home": "the blocks north of the port",
+  "episode": "A closing hour",
+  "biography": "stories/residents/10/01-a-closing-hour.md#ah-r1357",
+  "life": "“I still remember a party whose guest of honor arrived two hours late.” On Tuesday, near Breakwater Way, Idris stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I wanted the party to be a surprise. The owner finally closed up because his daughter told him exactly what she wanted.",
+  "appearance": "On an ordinary day, look for a washed violet jersey and a cloth patch so neatly matched it only shows in strong light. Idris has a deep crease beside the mouth when smiling, with close-cropped dark curls. Idris listens with the head tilted a little to the left during a conversation.",
+  "personality": "Idris feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To set a birthday hour the guest of honor can keep.",
+  "family": "Jane Kahn is Idris’s stepsibling. Idris sets the time to leave. Jane picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The rescue hut mural*, Jane says, “I volunteered to repaint her mouth until my child asked why she had to smile.”",
+  "connections": "Dana Randall. The family birthday only remains a real commitment if the owner and organizer set the same hour.",
+  "familyIds": [
+    "AH-R0523"
+  ],
+  "connectionIds": [
+    "AH-R1351"
+  ],
+  "reactions": [
+    {
+      "situation": "The operator closes the doors for a family birthday",
+      "response": "Idris looks for a neighboring wash service and leaves the family birthday intact.",
+      "asWritten": "The operator closes the doors for a family birthday. Idris looks for a neighboring wash service and leaves the family birthday intact."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Idris asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Idris asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Idris lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Idris lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

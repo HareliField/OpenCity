@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1010",
+  "personId": "AH-R1010",
+  "name": "Tali Harris",
+  "age": 55,
+  "occupation": "Salon owner and nail artist",
+  "home": "Old Town",
+  "episode": "The salon on strike",
+  "biography": "stories/residents/07/11-the-salon-on-strike.md#ah-r1010",
+  "life": "“I still remember working a full evening with pay promised in samples.” Friday often includes a stop at the bank steps, where Tali takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I own the salon. I used to complain about my own boss doing exactly this, which the oldest technician remembers.",
+  "appearance": "Tali is easy to recognize by a smooth side part with one rebellious curl and a wide brow and a narrow jaw. Usually dressed in a long navy raincoat with a folded shopping list secured by a miniature clip, Tali draws breath as if to speak and lets someone else go first when listening.",
+  "personality": "Tali talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Tali's ways of saying that it is all right to leave.",
+  "agenda": "To get the offer into terms the old shop self would have accepted.",
+  "family": "Ana Crane is Tali’s second cousin. Tali remembers the birthdays. Ana asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The understudy sings*, Ana says, “I am the parent's friend who wanted a benefit concert.”",
+  "connections": "Aldo Dixon (salon worker). The worker who would quit explains the exact terms the owner once protested herself.",
+  "familyIds": [
+    "AH-R1179"
+  ],
+  "connectionIds": [
+    "AH-R1002"
+  ],
+  "reactions": [
+    {
+      "situation": "An apprentice asks if declining will cost future shifts",
+      "response": "Tali asks the owner to give the apprentice a direct answer in front of a witness of their choosing.",
+      "asWritten": "An apprentice asks if declining will cost future shifts. Tali asks the owner to give the apprentice a direct answer in front of a witness of their choosing."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Tali asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Tali asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Tali says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Tali says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

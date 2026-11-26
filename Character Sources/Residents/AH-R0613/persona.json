@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0613",
+  "personId": "AH-R0613",
+  "name": "Tom Fox",
+  "age": 46,
+  "occupation": "Shift recorder",
+  "home": "Old Town",
+  "episode": "The crane shadow",
+  "biography": "stories/residents/05/02-the-crane-shadow.md#ah-r0613",
+  "life": "“I still remember keeping the shift log through a long blackout.” People around Maré Coffee know Tom by a small Wednesday habit. Tom likes the table where people coming off shift stop checking the time.",
+  "voice": "I keep our shift diary and had never recorded anything that served no business purpose. I made room.",
+  "appearance": "On an ordinary day, look for a black overshirt with pearl buttons and a seam let out by a narrow strip of contrasting fabric. Tom has two dimples that appear only with a full smile, with brown hair pinned away from the temples. Tom presses the lips together to keep a smile in during a conversation.",
+  "personality": "Tom finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To record the gull in the shift diary.",
+  "family": "Rae Vargas is Tom’s cousin. Tom remembers the birthdays. Rae asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The uniform money*, Rae says, “I drew a timetable for sharing the iron. The children rearranged it by bus times.”",
+  "connections": "Martin Rahman. The painter's first date goes into a shift log alongside the shadow.",
+  "familyIds": [
+    "AH-R0909"
+  ],
+  "connectionIds": [
+    "AH-R0611"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor asks the apprentice to work through the crane-shadow moment",
+      "response": "Tom asks the foreman whether the minutes can be traded rather than simply lost.",
+      "asWritten": "A supervisor asks the apprentice to work through the crane-shadow moment. Tom asks the foreman whether the minutes can be traded rather than simply lost."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Tom stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Tom stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Tom points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Tom points to the person who noticed the original mistake."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1308",
+  "personId": "AH-R1308",
+  "name": "Eva Bhandari",
+  "age": 61,
+  "occupation": "Shop landlord",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A scar at the salon",
+  "biography": "stories/residents/09/11-a-scar-at-the-salon.md#ah-r1308",
+  "life": "“I still remember scrubbing adverts off a wall to make room for a local artist.” Saturday often includes a stop at the approach to Seabright Court, where Eva likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I own the wall where the advert would hang. I would rather use it for a local exhibition of working hands.",
+  "appearance": "Eva has soft white hair brushed sideways, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a long navy raincoat. It usually goes with a cloth patch so neatly matched it only shows in strong light. When somebody else has the floor, Eva turns fully toward the person speaking.",
+  "personality": "Eva talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Eva's ways of saying that it is all right to leave.",
+  "agenda": "To reserve the wall for working hands with permission.",
+  "family": "Selena Sáenz is Eva’s younger cousin. Eva chooses whether to use it. Selena saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *Level with the window*, Selena says, “I manage the detour and have never had a route run through somebody's supper before.”",
+  "connections": "Louise Hooper. The studio assistant and the wall owner discuss giving local workers their own credits.",
+  "familyIds": [
+    "AH-R0715"
+  ],
+  "connectionIds": [
+    "AH-R1305"
+  ],
+  "reactions": [
+    {
+      "situation": "The model asks to see the unedited print",
+      "response": "Eva gets the model a private look before anybody else comments on the hand.",
+      "asWritten": "The model asks to see the unedited print. Eva gets the model a private look before anybody else comments on the hand."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Eva draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Eva draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Eva says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Eva says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

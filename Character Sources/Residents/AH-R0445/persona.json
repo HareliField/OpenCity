@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0445",
+  "personId": "AH-R0445",
+  "name": "Adela Oh",
+  "age": 58,
+  "occupation": "Dial painter",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The tide clock",
+  "biography": "stories/residents/03/15-the-tide-clock.md#ah-r0445",
+  "life": "“I still remember a paintbrush whose hairs came from a sailing kitten.” Sunday often includes a stop at the bank steps, where Adela takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I painted the moon on it using my wedding ring as a stencil. The marriage ended. The moon still fits.",
+  "appearance": "Adela is easy to recognize by a loose dark braid and a straight nose and deep-set eyes. Usually dressed in a black overshirt with pearl buttons with one loose pocket corner secured with green thread, Adela holds eye contact until the other person has finished when listening.",
+  "personality": "Adela often says yes too quickly out of pride in being useful. The people closest to Adela have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To retain the original moon stencil.",
+  "family": "Nora Ford is Adela’s stepsibling. Adela brings whatever was actually growing or affordable that week. Nora makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *A wall of birthdays*, Nora says, “I learned my sister cheated by wearing shoes.”",
+  "connections": "Rae Kelly. The painted moon and a note about high tide identify the correct appointment.",
+  "familyIds": [
+    "AH-R0234"
+  ],
+  "connectionIds": [
+    "AH-R0448"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor blames the new hire for missing the time",
+      "response": "Adela checks which dial the worker saw before accepting a lateness entry.",
+      "asWritten": "A supervisor blames the new hire for missing the time. Adela checks which dial the worker saw before accepting a lateness entry."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Adela asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Adela asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Adela rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Adela rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

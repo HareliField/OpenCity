@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0532",
+  "personId": "AH-R0532",
+  "name": "Talia Bloom",
+  "age": 46,
+  "occupation": "Dog walker",
+  "home": "the western residential streets",
+  "episode": "The porch auction",
+  "biography": "stories/residents/04/09-the-porch-auction.md#ah-r0532",
+  "life": "“I still remember my grandmother believing a remarkably innocent dog.” On Saturday, near the downtown fountain, Talia keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I broke a rung at sixteen and blamed the dog. I've brought a new one and an apology.",
+  "appearance": "Talia is easy to recognize by close-cropped dark curls and fine brows over wide-set eyes. Usually dressed in a narrow-striped sweater with a partly rubbed-away embroidered initial, Talia turns fully toward the person speaking when listening.",
+  "personality": "Talia has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To replace the broken rung and confess the dog's innocence.",
+  "family": "Marco Bennett is Talia’s second cousin. Talia makes room at the table. Marco brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Two names on the chart*, Marco says, “I make labels that stay readable after washing.”",
+  "connections": "Ruben Choi. A childhood repair and a new small chair make different use of the same rung.",
+  "familyIds": [
+    "AH-R1106"
+  ],
+  "connectionIds": [
+    "AH-R0536"
+  ],
+  "reactions": [
+    {
+      "situation": "A repair reveals a family name under the cushion",
+      "response": "Talia invites the family to see the full name before the repair is closed.",
+      "asWritten": "A repair reveals a family name under the cushion. Talia invites the family to see the full name before the repair is closed."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Talia waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Talia waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Talia says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Talia says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

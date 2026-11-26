@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0331",
+  "personId": "AH-R0331",
+  "name": "Hollis Parker",
+  "age": 50,
+  "occupation": "Retired union recorder",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The spare spectacles",
+  "biography": "stories/residents/03/04-the-spare-spectacles.md#ah-r0331",
+  "life": "“I still remember a council hearing where I mistook a four for a nine.” People around the entrance to the Wash House know Hollis by a small Tuesday habit. Hollis stops for local notices even on a day without a load to wash.",
+  "voice": "I signed something blurry once. I brought my own glasses and stayed until she read every word.",
+  "appearance": "On an ordinary day, look for a dark green knitted vest and a seam let out by a narrow strip of contrasting fabric. Hollis has a small notch in the left eyebrow, with short, uneven waves that refuse to lie flat. Hollis draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Hollis loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To let the witness read every word at her own pace.",
+  "family": "Yusuf Solis is Hollis’s younger cousin. The household has two versions of an old recipe because somebody detested onions and never admitted it to the original cook. A person sitting down to eat gets to choose. Hollis will defend the changed version in front of purists. Asked about *One last dress rehearsal*, Yusuf says, “I play the villain. My dad has never seen me do anything at school except get in trouble.”",
+  "connections": "Alan Williams. They make sure difficulty seeing the form is never recorded as uncertainty about the event.",
+  "familyIds": [
+    "AH-R1474"
+  ],
+  "connectionIds": [
+    "AH-R0335"
+  ],
+  "reactions": [
+    {
+      "situation": "The witness asks to read the page alone",
+      "response": "Hollis finds a quiet place for the witness and waits without reading over a shoulder.",
+      "asWritten": "The witness asks to read the page alone. Hollis finds a quiet place for the witness and waits without reading over a shoulder."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Hollis takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Hollis takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Hollis offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Hollis offers one about their own embarrassment instead."
+    }
+  ]
+}

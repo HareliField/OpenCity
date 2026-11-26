@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0363",
+  "personId": "AH-R0363",
+  "name": "Byron Carbone",
+  "age": 63,
+  "occupation": "Retired supermarket buyer",
+  "home": "Midtown",
+  "episode": "Overdue by a lifetime",
+  "biography": "stories/residents/03/07-overdue-by-a-lifetime.md#ah-r0363",
+  "life": "“I still remember paying ten pennies a month into a tea tin.” Wednesday often includes a stop at the approach to Seabright Court, where Byron likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I kept the fine in coins for years. The library wants a story hour instead.",
+  "appearance": "Byron has a strong profile and a little space between the front teeth. Look for iron-gray waves. On an ordinary day, the familiar outfit is a boxy denim jacket with a pocket notebook shaped by years of sitting on it. In conversation Byron looks toward the door whenever a name is called.",
+  "personality": "Byron takes a rejection personally for a day and analytically on the second morning. Byron can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To give the library a useful story hour.",
+  "family": "Mateo Park is Byron’s cousin. Byron picks the meeting place. Mateo sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The split visit*, Mateo says, “I baked one cake to thank two people. They finally got to cut it while we were all in the same room.”",
+  "connections": "Jorge Dias. They turn the unpaid fine into a reading the former pupil actually wants to finish.",
+  "familyIds": [
+    "AH-R0735"
+  ],
+  "connectionIds": [
+    "AH-R0361"
+  ],
+  "reactions": [
+    {
+      "situation": "The former pupil offers to pay forty years of fines",
+      "response": "Byron asks the library what it actually needs from the returning reader.",
+      "asWritten": "The former pupil offers to pay forty years of fines. Byron asks the library what it actually needs from the returning reader."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Byron asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Byron asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Byron turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Byron turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

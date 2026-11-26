@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0704",
+  "personId": "AH-R0704",
+  "name": "Duncan Woods",
+  "age": 28,
+  "occupation": "Commission barber",
+  "home": "Old Town",
+  "episode": "The free fringe",
+  "biography": "stories/residents/05/11-the-free-fringe.md#ah-r0704",
+  "life": "“I still remember my first pay packet listing cuts instead of hours.” People around Studio Boulevard know Duncan by a small Tuesday habit. Duncan waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I am paid by the cut. I'm asking the owner to count time spent with a customer who keeps their hair.",
+  "appearance": "Duncan is easy to recognize by brown hair pinned away from the temples and a narrow face with an expressive upper lip. Usually dressed in a plum-colored cardigan with a pen clipped inside the neckline, Duncan listens with the head tilted a little to the left when listening.",
+  "personality": "Duncan enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To count uncut appointments in the wage calculation.",
+  "family": "Una Roman is Duncan’s cousin raised in the same household. Duncan is free to hang up first. Una makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *One unposted detour*, Una says, “I am counting how many people stop to help.”",
+  "connections": "Percy Wade. They make the case for a paid quiet appointment and a usable after-school hour.",
+  "familyIds": [
+    "AH-R0420"
+  ],
+  "connectionIds": [
+    "AH-R0710"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone waiting in line complains",
+      "response": "Duncan tells the waiting customer roughly how much of the appointment is still left.",
+      "asWritten": "Someone waiting in line complains. Duncan tells the waiting customer roughly how much of the appointment is still left."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Duncan asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Duncan asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Duncan puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Duncan puts the deal away and suggests a walk."
+    }
+  ]
+}

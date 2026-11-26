@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0650",
+  "personId": "AH-R0650",
+  "name": "Mia Nair",
+  "age": 51,
+  "occupation": "Former receiver and market porter",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The clean ledger",
+  "biography": "stories/residents/05/05-the-clean-ledger.md#ah-r0650",
+  "life": "“I still remember an apology I had to deliver three times before the door opened.” People around the corner outside Coastal Barber know Mia by a small Thursday habit. Mia usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I want to be the last name he reads. I owe him an apology he never put in his ledger.",
+  "appearance": "On an ordinary day, look for an olive canvas jacket and a replacement button a shade darker than the others. Mia has an aquiline nose and a square chin, with a soft fringe that falls across one eyebrow. Mia draws breath as if to speak and lets someone else go first during a conversation.",
+  "personality": "Mia can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To deliver the apology after the accounts are closed.",
+  "family": "Irene Baptiste is Mia’s first cousin once removed. Mia gets to change the plan. Irene offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Spin cycle choir*, Irene says, “I put three different loads in to test my theory and dyed my best shirt.”",
+  "connections": "Zachary Khan. One wants an object back and the other would like to leave with an apology.",
+  "familyIds": [
+    "AH-R0305"
+  ],
+  "connectionIds": [
+    "AH-R0649"
+  ],
+  "reactions": [
+    {
+      "situation": "A creditor asks for a conversation without witnesses",
+      "response": "Mia finds a private time when both people can still have someone nearby if requested.",
+      "asWritten": "A creditor asks for a conversation without witnesses. Mia finds a private time when both people can still have someone nearby if requested."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Mia checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Mia checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Mia asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Mia asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

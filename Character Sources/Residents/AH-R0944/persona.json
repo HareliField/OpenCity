@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0944",
+  "personId": "AH-R0944",
+  "name": "Darcy Ray",
+  "age": 50,
+  "occupation": "Victim support volunteer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The release address",
+  "biography": "stories/residents/07/05-the-release-address.md#ah-r0944",
+  "life": "“I still remember a victim's mother offering me the spare hearing notice.” Friday often includes a stop at Juniper Street, where Darcy knows which of the west-side porches has a seat in the shade.",
+  "voice": "I attended court with his victim. Her family deserves notice of a return without becoming his welcoming committee.",
+  "appearance": "Darcy has a loose dark braid, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a long navy raincoat. It usually goes with one loose pocket corner secured with green thread. When somebody else has the floor, Darcy looks down for a moment before saying something difficult.",
+  "personality": "Darcy finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To let the victim's family anticipate the return privately.",
+  "family": "Lou Carver is Darcy’s stepsibling. Darcy remembers the birthdays. Lou asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Three minutes at the bridge*, Lou says, “I promised no detours and need a stop for my dad's medicine on Fridays.”",
+  "connections": "Silas Rubio. The victim's representative and the robbed shopkeeper decide which notice their families need.",
+  "familyIds": [
+    "AH-R1468"
+  ],
+  "connectionIds": [
+    "AH-R0948"
+  ],
+  "reactions": [
+    {
+      "situation": "A child wants to leave the homecoming meal early",
+      "response": "Darcy gives the child an ordinary excuse to step outside without suggesting they reject the father.",
+      "asWritten": "A child wants to leave the homecoming meal early. Darcy gives the child an ordinary excuse to step outside without suggesting they reject the father."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Darcy offers an ordinary errand that lets the distressed person leave without being followed by an audience.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Darcy offers an ordinary errand that lets the distressed person leave without being followed by an audience."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Darcy waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Darcy waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

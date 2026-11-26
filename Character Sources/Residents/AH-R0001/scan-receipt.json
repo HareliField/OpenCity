@@ -1,0 +1,12 @@
+{
+  "image-to-3d": {
+    "status": "SUCCEEDED",
+    "id": "01a21998-1555-716d-81d4-2bf4b797e131",
+    "credits": 35
+  },
+  "rigging": {
+    "status": "SUCCEEDED",
+    "id": "01a2199a-8cfb-7631-a18c-6dfc2ba06c05",
+    "credits": 5
+  }
+}

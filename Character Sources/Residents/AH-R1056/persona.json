@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1056",
+  "personId": "AH-R1056",
+  "name": "Anthony Clement",
+  "age": 68,
+  "occupation": "Retired mechanic",
+  "home": "Old Town",
+  "episode": "Reopening at six",
+  "biography": "stories/residents/08/01-reopening-at-six.md#ah-r1056",
+  "life": "“I still remember losing the mornings I thought retirement would give me.” People around Juniper Street know Anthony by a small Monday habit. Anthony knows which of the west-side porches has a seat in the shade.",
+  "voice": "I thought my pension meant timing didn't matter. Then the carer changed shifts and took my mornings with her.",
+  "appearance": "On an ordinary day, look for a faded indigo overshirt and a stitched row of blue crosses along an old repair. Anthony has a small notch in the left eyebrow, with a neat white crop. Anthony grins on one side while the eyes stay serious during a conversation.",
+  "personality": "Anthony thinks best while walking. Sitting beneath someone's office clock makes Anthony sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To match laundry time to the carer's visits.",
+  "family": "Ivo Carden is Anthony’s younger cousin. Anthony decides what stays off the paper. Ivo brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The empty berth*, Ivo says, “The boat needs a plank my grandfather steamed into shape forty years ago.”",
+  "connections": "Devin Yang. An early laundry customer and a retiree with changed care hours both depend on dawn openings.",
+  "familyIds": [
+    "AH-R0142"
+  ],
+  "connectionIds": [
+    "AH-R1051"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer offers to pay for an extra private hour",
+      "response": "Anthony gets the cost of staffing the hour into the conversation before accepting a private fee.",
+      "asWritten": "A customer offers to pay for an extra private hour. Anthony gets the cost of staffing the hour into the conversation before accepting a private fee."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Anthony asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Anthony asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Anthony asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Anthony asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

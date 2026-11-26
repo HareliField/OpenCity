@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0312",
+  "personId": "AH-R0312",
+  "name": "Anton March",
+  "age": 43,
+  "occupation": "Rail porter",
+  "home": "Coast Ridge",
+  "episode": "A ship without postcards",
+  "biography": "stories/residents/03/02-a-ship-without-postcards.md#ah-r0312",
+  "life": "“I still remember waiting through unloading with a blanket around two shoulders.” On Thursday, near the corner by Juniper Tailor, Anton looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I want a picture of the crane shadows. My kid thinks the ships do all the lifting.",
+  "appearance": "Anton is easy to recognize by close-cropped dark curls and a narrow face with an expressive upper lip. Usually dressed in a long navy raincoat with a knotted piece of sail thread on a key ring, Anton counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Anton is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To send the child a crane-shadow photograph.",
+  "family": "Alex Carr is Anton’s cousin raised in the same household. Anton can always ask for five minutes alone. Alex asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A wall of birthdays*, Alex says, “I grew up elsewhere and married into this house.”",
+  "connections": "Iris Vidal. The crane shadows and the crooked rail fit into one unmistakable postcard.",
+  "familyIds": [
+    "AH-R0233"
+  ],
+  "connectionIds": [
+    "AH-R0315"
+  ],
+  "reactions": [
+    {
+      "situation": "A souvenir shop offers to print the cards as an advert",
+      "response": "Anton checks whether the families want their messages used outside the envelopes.",
+      "asWritten": "A souvenir shop offers to print the cards as an advert. Anton checks whether the families want their messages used outside the envelopes."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Anton asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Anton asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Anton thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Anton thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0366",
+  "personId": "AH-R0366",
+  "name": "Damian Neal",
+  "age": 43,
+  "occupation": "Counseling receptionist",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Overdue by a lifetime",
+  "biography": "stories/residents/03/07-overdue-by-a-lifetime.md#ah-r0366",
+  "life": "“I still remember the old classroom violin missing a string.” On Tuesday, near Tideline Market, Damian picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I wrote my crush's name under the flap. They're coming to the reading with their spouse.",
+  "appearance": "On an ordinary day, look for a dark green knitted vest and a stitched row of blue crosses along an old repair. Damian has a small notch in the left eyebrow, with a soft fringe that falls across one eyebrow. Damian turns fully toward the person speaking during a conversation.",
+  "personality": "Damian reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Damian trusts most.",
+  "agenda": "To meet the old crush without embarrassing anyone.",
+  "family": "Ada Flynn is Damian’s half-sibling. Damian leaves the first voice message. Ada calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A civilian apology*, Ada says, “I read the wrong name to my son for years. I want him beside me when the right one goes up.”",
+  "connections": "Alma Pike. A child's declaration of love gives the teacher a difficult margin to read aloud.",
+  "familyIds": [
+    "AH-R0932"
+  ],
+  "connectionIds": [
+    "AH-R0369"
+  ],
+  "reactions": [
+    {
+      "situation": "The school asks to display the borrower's name",
+      "response": "Damian asks the former pupil to choose how their name appears.",
+      "asWritten": "The school asks to display the borrower's name. Damian asks the former pupil to choose how their name appears."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Damian takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Damian takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Damian does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Damian does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

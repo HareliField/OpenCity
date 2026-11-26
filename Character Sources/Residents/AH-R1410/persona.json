@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1410",
+  "personId": "AH-R1410",
+  "name": "Mika Tsai",
+  "age": 47,
+  "occupation": "Newly discharged joiner",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Two birthdays in one ward",
+  "biography": "stories/residents/10/06-two-birthdays-in-one-ward.md#ah-r1410",
+  "life": "“I still remember the first visit wearing my own coat after discharge.” People around Breakwater Way know Mika by a small Friday habit. Mika stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I was discharged that morning and returned as a visitor in my own coat. It was my favorite birthday present to either of them.",
+  "appearance": "On an ordinary day, look for a charcoal zip cardigan and a comb in a sleeve sewn into the lining. Mika has fine brows over wide-set eyes, with black hair twisted into a small knot. Mika counts on the side of one finger where hardly anybody notices during a conversation.",
+  "personality": "Mika can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Mika can afford to give, and family knows to take it seriously.",
+  "agenda": "To visit the ward in an ordinary coat.",
+  "family": "Lars Tang is Mika’s older cousin. Mika gets to change the plan. Lars offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *An old restaurant debt*, Lars says, “I carved the ham years ago. Now my hands shake and the owner's son asked me to teach him where to start.”",
+  "connections": "Bailey Alston. A divided banner leaves the newly discharged visitor enough space to add a personal message.",
+  "familyIds": [
+    "AH-R1000"
+  ],
+  "connectionIds": [
+    "AH-R1407"
+  ],
+  "reactions": [
+    {
+      "situation": "The other requests the biggest balloon anyone can find",
+      "response": "Mika finds out where the big balloon can go without crowding anyone else's bed.",
+      "asWritten": "The other requests the biggest balloon anyone can find. Mika finds out where the big balloon can go without crowding anyone else's bed."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Mika asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Mika asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Mika suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Mika suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

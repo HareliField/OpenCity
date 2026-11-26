@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1291",
+  "personId": "AH-R1291",
+  "name": "Zara Barclay",
+  "age": 43,
+  "occupation": "Bakery cook",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A four o'clock kitchen",
+  "biography": "stories/residents/09/10-a-four-o-clock-kitchen.md#ah-r1291",
+  "life": "“I still remember finishing restaurant prep before my own child's alarm.” People around the blocks below Foundry Lofts know Zara by a small Monday habit. Zara checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I love feeding strangers. I don't want my children to think that's easier than feeding them.",
+  "appearance": "Away from the heat of the kitchen, look for an unlined tan jacket and a pair of reading glasses in a cloth sleeve. Zara has a round face with a pronounced chin, with a cropped cut that shows the shape of the ears. Zara leans a shoulder against the wall during long conversations during a conversation.",
+  "personality": "Zara has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To find one weekly breakfast at home with the teenagers.",
+  "family": "Orla Till is Zara’s second cousin. Zara can always ask for five minutes alone. Orla asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The porch light*, Orla says, “I used the lamp to know exactly how far I had left to walk.”",
+  "connections": "Anita Porter (daughter). The cook and the oldest child finally talk about who has been making breakfast at home.",
+  "familyIds": [
+    "AH-R0084"
+  ],
+  "connectionIds": [
+    "AH-R1293"
+  ],
+  "reactions": [
+    {
+      "situation": "A port buyer asks the cook to start still earlier",
+      "response": "Zara checks what the earlier start would do to the cook's family breakfast.",
+      "asWritten": "A port buyer asks the cook to start still earlier. Zara checks what the earlier start would do to the cook's family breakfast."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Zara brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Zara brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Zara says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Zara says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

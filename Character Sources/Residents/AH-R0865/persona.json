@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0865",
+  "personId": "AH-R0865",
+  "name": "Charlotte Sawyer",
+  "age": 27,
+  "occupation": "Shop night clerk",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The late crossing",
+  "biography": "stories/residents/06/12-the-late-crossing.md#ah-r0865",
+  "life": "“I still remember the first drive after dark I could choose for myself.” People around Harbour Bakery know Charlotte by a small Tuesday habit. Charlotte buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I sit in the back because being driven after dark reminds me of my parents driving when they fought.",
+  "appearance": "On an ordinary day, look for a brown corduroy jacket and a tiny red thread tied through the lowest buttonhole. Charlotte has an aquiline nose and a square chin, with short sandy hair and a marked widow's peak. Charlotte looks at people's hands before looking at what they carry during a conversation.",
+  "personality": "Charlotte feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To take a back seat without having to explain it each journey.",
+  "family": "Fara Bloom is Charlotte’s first cousin once removed. Charlotte decides what stays off the paper. Fara brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *An unfinished atlas*, Fara says, “There is a copy of that blue ink under the third coat of paint in our map cupboard.”",
+  "connections": "Jay Leung. The anxious passenger decides when a sing-along in the shared car will help rather than hurt.",
+  "familyIds": [
+    "AH-R0070"
+  ],
+  "connectionIds": [
+    "AH-R0869"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver on the rota asks for petrol money",
+      "response": "Charlotte agrees what the fuel actually cost and discusses the contribution privately.",
+      "asWritten": "A driver on the rota asks for petrol money. Charlotte agrees what the fuel actually cost and discusses the contribution privately."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Charlotte accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Charlotte accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Charlotte lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Charlotte lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

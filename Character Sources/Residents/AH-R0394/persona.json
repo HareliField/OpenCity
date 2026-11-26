@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0394",
+  "personId": "AH-R0394",
+  "name": "Billie Wilson",
+  "age": 34,
+  "occupation": "Bus mechanic",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The broken till",
+  "biography": "stories/residents/03/10-the-broken-till.md#ah-r0394",
+  "life": "“I still remember the bus driver who accepted my last foreign coin.” People around Paper & Pine Books know Billie by a small Tuesday habit. Billie starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I came for change for the bus. I stayed because somebody owed exactly the fare I needed.",
+  "appearance": "Billie is easy to recognize by a dark undercut with a longer wave on top and a narrow face with an expressive upper lip. Usually dressed in a faded indigo overshirt with a stitched row of blue crosses along an old repair, Billie draws breath as if to speak and lets someone else go first when listening.",
+  "personality": "Billie takes a rejection personally for a day and analytically on the second morning. Billie can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To recover bus fare without interrupting the lunch rush.",
+  "family": "Rowan Peters is Billie’s stepsibling. Billie makes room at the table. Rowan brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *A chair of one's own*, Rowan says, “I offered two days a week instead of six. I have a sick partner and I know exactly what three empty days cost.”",
+  "connections": "Marlowe Paige. A few coins needed for a bus change hands without becoming charity.",
+  "familyIds": [
+    "AH-R0860"
+  ],
+  "connectionIds": [
+    "AH-R0392"
+  ],
+  "reactions": [
+    {
+      "situation": "A manager asks for the handwritten sandwich tally",
+      "response": "Billie makes sure customers' names needn't travel with the tally.",
+      "asWritten": "A manager asks for the handwritten sandwich tally. Billie makes sure customers' names needn't travel with the tally."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Billie asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Billie asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Billie turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Billie turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

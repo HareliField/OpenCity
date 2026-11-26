@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0816",
+  "personId": "AH-R0816",
+  "name": "Jean Miranda",
+  "age": 51,
+  "occupation": "Shoe repairer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Reading the payslip",
+  "biography": "stories/residents/06/07-reading-the-payslip.md#ah-r0816",
+  "life": "“I still remember sharpening my little sister's pencils after she went to bed.” On Friday, near the corner by Juniper Tailor, Jean looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I sharpen pencils for class because it gives my shaking hands a job.",
+  "appearance": "Jean has short, uneven waves that refuse to lie flat, a small notch in the left eyebrow, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a little coil of soft measuring tape. When somebody else has the floor, Jean looks at people's hands before looking at what they carry.",
+  "personality": "Jean talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Jean's ways of saying that it is all right to leave.",
+  "agenda": "To keep the class stocked and take one practice sheet home.",
+  "family": "Quinn Fong is Jean’s parent’s cousin. Jean sets the time to leave. Quinn picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The widow's razor*, Quinn says, “I can't see the maker's mark. My granddaughter read it out and found her own middle name.”",
+  "connections": "Taylor Lucas. Tips create an arithmetic problem worth staying to solve beside the sharpened pencils. Also in the story is Anthony Penn (classmate).",
+  "familyIds": [
+    "AH-R0407"
+  ],
+  "connectionIds": [
+    "AH-R0814",
+    "AH-R0813"
+  ],
+  "reactions": [
+    {
+      "situation": "An employer asks who is attending the class",
+      "response": "Jean protects the attendance list and offers general information about the class.",
+      "asWritten": "An employer asks who is attending the class. Jean protects the attendance list and offers general information about the class."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Jean asks the person already using it whether they can comfortably stand, rather than presuming who needs it most.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Jean asks the person already using it whether they can comfortably stand, rather than presuming who needs it most."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Jean says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Jean says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

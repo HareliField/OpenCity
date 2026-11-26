@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1066",
+  "personId": "AH-R1066",
+  "name": "Bailey Sato",
+  "age": 72,
+  "occupation": "Retired shareholder",
+  "home": "the western residential streets",
+  "episode": "Land without cranes",
+  "biography": "stories/residents/08/02-land-without-cranes.md#ah-r1066",
+  "life": "“I still remember buying my first share while wearing a paint-stained coat.” People around the public end of the South Shore boardwalk know Bailey by a small Tuesday habit. Bailey checks the shade on the benches before deciding how long to stay.",
+  "voice": "I own shares in the redevelopment. My grandson asked me to show him which wall I helped build.",
+  "appearance": "Bailey is easy to recognize by silvery hair gathered at the nape and a wide brow and a narrow jaw. Usually dressed in a pale blue work shirt with one cuff folded back twice, Bailey touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Bailey can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To walk the old wall with the grandson before voting.",
+  "family": "Lena Sanders is Bailey’s first cousin once removed. Bailey asks what the birthday guest would like this year. Lena remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Two left slippers*, Lena says, “I hated getting dressed in front of people after surgery.”",
+  "connections": "Bianca Gallagher. A rail route and an old wall give the retired shareholder something tangible to show the grandson.",
+  "familyIds": [
+    "AH-R0657"
+  ],
+  "connectionIds": [
+    "AH-R1065"
+  ],
+  "reactions": [
+    {
+      "situation": "A worker says their job was left out of the consultation",
+      "response": "Bailey records the missing job in the worker's own words for the consultation.",
+      "asWritten": "A worker says their job was left out of the consultation. Bailey records the missing job in the worker's own words for the consultation."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Bailey brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Bailey brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Bailey asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Bailey asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

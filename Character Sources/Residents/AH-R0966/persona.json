@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0966",
+  "personId": "AH-R0966",
+  "name": "Morgan Gil",
+  "age": 48,
+  "occupation": "Bakery worker",
+  "home": "the western residential streets",
+  "episode": "The first language",
+  "biography": "stories/residents/07/07-the-first-language.md#ah-r0966",
+  "life": "“I still remember reading a page on the factory lunch step.” Wednesday often includes a stop at the public end of the South Shore boardwalk, where Morgan checks the shade on the benches before deciding how long to stay.",
+  "voice": "I come after work in floury trousers because there are no books in our language at the staff flat.",
+  "appearance": "Morgan has a center part and straight chestnut hair, a straight nose and deep-set eyes, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a braided bracelet with a single wooden bead. When somebody else has the floor, Morgan draws breath as if to speak and lets someone else go first.",
+  "personality": "Morgan prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To obtain home-language books for the staff flat.",
+  "family": "Ramona Ahmed is Morgan’s cousin. Morgan decides what stays off the paper. Ramona brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Rent in a biscuit tin*, Ramona says, “My bakery made the biscuits. I can date the tin from the misspelled ingredients.”",
+  "connections": "Cynthia Barrett. An adult practicing after a flour shift shares a quiet place with the learner practicing on a tin.",
+  "familyIds": [
+    "AH-R0346"
+  ],
+  "connectionIds": [
+    "AH-R0967"
+  ],
+  "reactions": [
+    {
+      "situation": "A grandparent tries to correct a word in front of classmates",
+      "response": "Morgan asks the grandparent to save the correction until the pupil asks for it.",
+      "asWritten": "A grandparent tries to correct a word in front of classmates. Morgan asks the grandparent to save the correction until the pupil asks for it."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Morgan asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Morgan asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Morgan clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Morgan clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

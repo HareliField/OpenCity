@@ -1,0 +1,42 @@
+{
+  "residentId": "AH-R1021",
+  "personId": "AH-R1021",
+  "name": "Agnes Lin",
+  "age": 18,
+  "occupation": "Graduating student",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A dance for two fathers",
+  "biography": "stories/residents/07/13-a-dance-for-two-fathers.md#ah-r1021",
+  "life": "“I still remember learning a dance step against two different kitchen cabinets.” Thursday often includes a stop at Breakwater Way, where Agnes stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I am the graduate. I choreographed a turn that leaves each man momentarily dancing with the other.",
+  "appearance": "Agnes has short, uneven waves that refuse to lie flat, a softly rounded chin under sharp cheekbones, and a favorite piece of clothing, a black overshirt with pearl buttons. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Agnes presses the lips together to keep a smile in.",
+  "personality": "Agnes can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To dance with both fathers on chosen terms.",
+  "family": "Norman Armas is Agnes’s first cousin once removed. Agnes chooses the music. Norman puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *One sleeve short*, Norman says, “I interview people at a desk. I never realized I only see their top half until I saw the chalk lines.”",
+  "connections": "Faye Tran. The choreographer and dance teacher work out where each father has room to move. Other connections include Tom Moreno (stepfather), Desmond Monroe (birth father).",
+  "familyIds": [
+    "AH-R0251"
+  ],
+  "connectionIds": [
+    "AH-R1026",
+    "AH-R1022",
+    "AH-R1023"
+  ],
+  "reactions": [
+    {
+      "situation": "The school prints only one father's name",
+      "response": "Agnes asks the student which names and relationships should appear before reprinting.",
+      "asWritten": "The school prints only one father's name. Agnes asks the student which names and relationships should appear before reprinting."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Agnes clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience.",
+      "asWritten": "A family supper turns into an argument about old debt. Agnes clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Agnes asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Agnes asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

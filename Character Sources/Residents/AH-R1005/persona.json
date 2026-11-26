@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1005",
+  "personId": "AH-R1005",
+  "name": "Leah Smith",
+  "age": 42,
+  "occupation": "Regular client and hospital cook",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The salon on strike",
+  "biography": "stories/residents/07/11-the-salon-on-strike.md#ah-r1005",
+  "life": "“I still remember waiting on a late babysitter outside a closed salon.” Friday often includes a stop at the courtyard by Ferry Street Rooms, where Leah prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I thought a free manicure made it fair. The technician asked who would watch her sleeping children.",
+  "appearance": "Leah has a scattering of freckles across the bridge of the nose. Look for close-cropped dark curls. Away from the heat of the kitchen, the familiar outfit is a gray fisher's sweater with a copper-colored clasp that has been repaired by hand. In conversation Leah draws breath as if to speak and lets someone else go first.",
+  "personality": "Leah admires skill and distrusts the idea that skill gives anyone permission to be rude. Leah learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To price childcare into the proposed evening.",
+  "family": "Noel Berry is Leah’s cousin raised in the same household. Leah is free to hang up first. Noel makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The broken till*, Noel says, “I took a lunch for a patient and forgot to sign.”",
+  "connections": "Sadie Carver. Paying for a babysitter is part of deciding which name can go on the staff letter.",
+  "familyIds": [
+    "AH-R0398"
+  ],
+  "connectionIds": [
+    "AH-R1007"
+  ],
+  "reactions": [
+    {
+      "situation": "A promotional client insists on keeping the booking",
+      "response": "Leah asks who will be paid to staff the booking before promising it can go ahead.",
+      "asWritten": "A promotional client insists on keeping the booking. Leah asks who will be paid to staff the booking before promising it can go ahead."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Leah writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Leah writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Leah describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Leah describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

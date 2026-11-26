@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0815",
+  "personId": "AH-R0815",
+  "name": "Eli Fong",
+  "age": 39,
+  "occupation": "Payroll translator",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Reading the payslip",
+  "biography": "stories/residents/06/07-reading-the-payslip.md#ah-r0815",
+  "life": "“I still remember trying to translate a deduction with no ordinary name.” On Tuesday, near the market by Market Flats, Eli often waits until the delivery baskets are stacked before going in.",
+  "voice": "I translate payroll terms into two languages. Both have a better word for money you never see.",
+  "appearance": "Eli is easy to recognize by a dark undercut with a longer wave on top and fine brows over wide-set eyes. Usually dressed in a plum-colored cardigan with a pen clipped inside the neckline, Eli counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Eli listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To translate deductions into ordinary language.",
+  "family": "Laura Bhandari is Eli’s second cousin. Eli brings the paper and a pen. Laura decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The new language at dinner*, Laura says, “I am his daughter and never learned it. I want lessons even if he gets better faster than I do.”",
+  "connections": "Olivia Teo. A signed wage query has to make sense in both languages before it travels.",
+  "familyIds": [
+    "AH-R1182"
+  ],
+  "connectionIds": [
+    "AH-R0812"
+  ],
+  "reactions": [
+    {
+      "situation": "A classmate asks for help reading a real wage slip",
+      "response": "Eli sits beside the classmate and covers personal figures that aren't part of the question.",
+      "asWritten": "A classmate asks for help reading a real wage slip. Eli sits beside the classmate and covers personal figures that aren't part of the question."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Eli helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Eli helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Eli keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Eli keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

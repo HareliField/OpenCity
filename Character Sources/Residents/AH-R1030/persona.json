@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1030",
+  "personId": "AH-R1030",
+  "name": "Frankie Armas",
+  "age": 18,
+  "occupation": "Drama student",
+  "home": "the blocks north of the port",
+  "episode": "A dance for two fathers",
+  "biography": "stories/residents/07/13-a-dance-for-two-fathers.md#ah-r1030",
+  "life": "“I still remember drawing my family as three people around one door.” People around the crossing outside Verve Nail Studio know Frankie by a small Sunday habit. Frankie notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I used to think my family was embarrassing. I asked the graduate to teach me that three-person turn.",
+  "appearance": "Frankie has a crooked front tooth visible when laughing. Look for a loose dark braid. On an ordinary day, the familiar outfit is a gray fisher's sweater with a tiny red thread tied through the lowest buttonhole. In conversation Frankie gathers both sleeves neatly before settling in.",
+  "personality": "Frankie loves a well-told anecdote and distrusts the neat ending. The parts Frankie remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To learn a version of the turn for another family.",
+  "family": "Liv Oren is Frankie’s older cousin. After a relative came home with a walker, everyone offered errands and nobody remembered the threshold. The two of them still measure doors before offering a room to anyone. Frankie notices the humiliation of having to ask. Asked about *Ten fingers*, Liv says, “I kept trying to pose the hands until she grabbed the kettle.”",
+  "connections": "Elaine Alcázar. The younger child gets to watch a turn another student wants to learn.",
+  "familyIds": [
+    "AH-R0109"
+  ],
+  "connectionIds": [
+    "AH-R1025"
+  ],
+  "reactions": [
+    {
+      "situation": "One of the fathers misses the dance rehearsal",
+      "response": "Frankie keeps the missed step available for a quiet practice before the ceremony.",
+      "asWritten": "One of the fathers misses the dance rehearsal. Frankie keeps the missed step available for a quiet practice before the ceremony."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Frankie accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Frankie accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Frankie includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Frankie includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

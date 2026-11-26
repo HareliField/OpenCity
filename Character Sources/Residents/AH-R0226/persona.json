@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0226",
+  "personId": "AH-R0226",
+  "name": "Lina Carey",
+  "age": 35,
+  "occupation": "Coastal volunteer and plasterer",
+  "home": "Old Town",
+  "episode": "Low water music",
+  "biography": "stories/residents/02/08-low-water-music.md#ah-r0226",
+  "life": "“I learned to follow crabs under the rocks before I knew the tide had a timetable.” On Friday, near the crossing outside Verve Nail Studio, Lina notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I climbed down to paint a marker and saw a crab with eggs. I carried the paint back unopened.",
+  "appearance": "Lina has a blunt cut just below the ears, a round face with a pronounced chin, and a favorite piece of clothing, a mustard canvas overshirt. It usually goes with one loose pocket corner secured with green thread. When somebody else has the floor, Lina folds a paper napkin into quarters without noticing.",
+  "personality": "Lina is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Lina is concerned.",
+  "agenda": "To keep paint and visitors away from the crab eggs.",
+  "family": "Rae Kelly is Lina’s stepsibling. Lina keeps the photographs. Rae knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The tide clock*, Rae says, “I left a note saying see you at high. My old friend understood and the receptionist didn't.”",
+  "connections": "Kathleen Lu. The changing wet note gives the marker painter another reason to leave the rock alone.",
+  "familyIds": [
+    "AH-R0448"
+  ],
+  "connectionIds": [
+    "AH-R0224"
+  ],
+  "reactions": [
+    {
+      "situation": "A child asks to listen with bare feet",
+      "response": "Lina checks where the wet stone is stable and lets the child listen from there.",
+      "asWritten": "A child asks to listen with bare feet. Lina checks where the wet stone is stable and lets the child listen from there."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Lina takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Lina takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Lina asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Lina asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

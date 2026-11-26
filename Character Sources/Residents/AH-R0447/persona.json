@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0447",
+  "personId": "AH-R0447",
+  "name": "Harold Pike",
+  "age": 71,
+  "occupation": "Retired harbor porter",
+  "home": "Coast Ridge",
+  "episode": "The tide clock",
+  "biography": "stories/residents/03/15-the-tide-clock.md#ah-r0447",
+  "life": "“I still remember opening the harbor gate at five winters' dawn.” Sunday often includes a stop at Lighthouse Cove, where Harold takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I used to tell time from harbor smells. I took the new hire along on my early round.",
+  "appearance": "Harold has one cheek that creases before the other. Look for soft white hair brushed sideways. On an ordinary day, the familiar outfit is a moss-green cardigan with a stitched row of blue crosses along an old repair. In conversation Harold holds eye contact until the other person has finished.",
+  "personality": "Harold gets protective of anybody who comes into a meeting unprepared. Harold privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To teach the new hire the harbor's morning sounds.",
+  "family": "Olivia Nielsen is Harold’s younger cousin. Harold brings a spare shopping bag. Olivia chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The worker who couldn't read the joke*, Olivia says, “I translated it too gently the first time. My friend deserves to know which actual word upset everybody.”",
+  "connections": "Frances Ortiz. The keeper of harbor sounds helps confirm the repaired dial follows water again.",
+  "familyIds": [
+    "AH-R1214"
+  ],
+  "connectionIds": [
+    "AH-R0449"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor blames the new hire for missing the time",
+      "response": "Harold checks which dial the worker saw before accepting a lateness entry.",
+      "asWritten": "A supervisor blames the new hire for missing the time. Harold checks which dial the worker saw before accepting a lateness entry."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Harold moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Harold moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Harold offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Harold offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0661",
+  "personId": "AH-R0661",
+  "name": "Tali Allen",
+  "age": 49,
+  "occupation": "Plumbing estimator",
+  "home": "the blocks north of the port",
+  "episode": "A shelf of apologies",
+  "biography": "stories/residents/05/07-a-shelf-of-apologies.md#ah-r0661",
+  "life": "“I still remember pretending to enjoy a mystery to impress somebody.” On Thursday, near the courtyard by Ferry Street Rooms, Tali prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I am giving back a detective novel I stole to impress a girl who hated mysteries.",
+  "appearance": "Tali is easy to recognize by a swept fringe and a closely clipped nape and a flat bridge to the nose and a mobile brow. Usually dressed in an unlined tan jacket with a pressed flower kept in the clear back of a phone case, Tali looks toward the door whenever a name is called when listening.",
+  "personality": "Tali takes a rejection personally for a day and analytically on the second morning. Tali can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To return the detective novel in person.",
+  "family": "Vera Hardy is Tali’s half-sibling. Tali is free to hang up first. Vera makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A wall of birthdays*, Vera says, “My landlord says the wall belongs to him. I'd like him to meet the grandmother who owns the pencil.”",
+  "connections": "Devin Bruno. They look through remembered nicknames for the first owner of a borrowed mystery. Also in the story is Elaine Aguilar (fellow borrower).",
+  "familyIds": [
+    "AH-R0238"
+  ],
+  "connectionIds": [
+    "AH-R0669",
+    "AH-R0667"
+  ],
+  "reactions": [
+    {
+      "situation": "The book's original owner asks to keep the apology private",
+      "response": "Tali lets the book go back with the note folded inside.",
+      "asWritten": "The book's original owner asks to keep the apology private. Tali lets the book go back with the note folded inside."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Tali offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Tali offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Tali turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Tali turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

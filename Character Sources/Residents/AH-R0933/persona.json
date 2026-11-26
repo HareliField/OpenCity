@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0933",
+  "personId": "ah-pd-115",
+  "name": "Tom Reyes",
+  "age": 43,
+  "occupation": "Air support officer",
+  "home": "Eastside",
+  "episode": "A civilian apology",
+  "biography": "stories/residents/07/04-a-civilian-apology.md#ah-r0933",
+  "life": "“I still remember the unveiling where the woman in the picture stood outside the crowd.” People around the brick passage off the shop row know Tom by a small Sunday habit. Tom takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I pushed for the original display because it made our work look simple. The correction needs the same size type.",
+  "appearance": "Tom has close-cropped dark curls, a wide brow and a narrow jaw, and a favorite piece of clothing, a cream pullover. It usually goes with a printed handkerchief folded into the pocket. When somebody else has the floor, Tom gathers both sleeves neatly before settling in.",
+  "personality": "Tom listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To give the correction the original display's prominence.",
+  "family": "Drew Lai is Tom’s cousin raised in the same household. Tom decides what stays off the paper. Drew brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *A chair of one's own*, Drew says, “I work the shop door at Coastal. The women asked to see our numbers before agreeing to any new lease.”",
+  "connections": "Jay Owens. The colleague who wanted the unveiling public now has to insist the correction be public too.",
+  "familyIds": [
+    "AH-R0859"
+  ],
+  "connectionIds": [
+    "AH-R0940"
+  ],
+  "reactions": [
+    {
+      "situation": "A newspaper repeats the old display caption",
+      "response": "Tom gets the shopkeeper's preferred wording to the editor before passing the story on.",
+      "asWritten": "A newspaper repeats the old display caption. Tom gets the shopkeeper's preferred wording to the editor before passing the story on."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Tom takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Tom takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Tom keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Tom keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

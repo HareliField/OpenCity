@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1143",
+  "personId": "AH-R1143",
+  "name": "Frances Mendez",
+  "age": 43,
+  "occupation": "Home carer and translator",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The first delivery fee",
+  "biography": "stories/residents/08/10-the-first-delivery-fee.md#ah-r1143",
+  "life": "“I still remember ordering soup from a mother who couldn't lift a full pan.” On Wednesday, near the market by Market Flats, Frances often waits until the delivery baskets are stacked before going in.",
+  "voice": "My mother orders one small lunch. We can't pay a delivery charge five times a week and she can't store five meals.",
+  "appearance": "Frances has a round face with a pronounced chin. Look for brown hair pinned away from the temples. On an ordinary day, the familiar outfit is a soft blue checked shirt with a thin silver ring worn on a cord. In conversation Frances turns fully toward the person speaking.",
+  "personality": "Frances treats a small promise with the gravity others reserve for a contract. This makes Frances lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To keep the mother's lunches affordable and fresh.",
+  "family": "Emma Carbone is Frances’s stepsibling. Frances is free to hang up first. Emma makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Level with the window*, Emma says, “I wanted to photograph the window from the bus.”",
+  "connections": "Jasper Baker. Three neighbors' lunch rounds can keep the mother's meals fresh enough to eat.",
+  "familyIds": [
+    "AH-R0718"
+  ],
+  "connectionIds": [
+    "AH-R1150"
+  ],
+  "reactions": [
+    {
+      "situation": "A housebound customer cannot afford the delivery fee",
+      "response": "Frances asks whether combining a delivery with a willing neighbor would help.",
+      "asWritten": "A housebound customer cannot afford the delivery fee. Frances asks whether combining a delivery with a willing neighbor would help."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Frances writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Frances writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Frances says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Frances says what can be returned and asks whether that will do."
+    }
+  ]
+}

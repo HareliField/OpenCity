@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1208",
+  "personId": "AH-R1208",
+  "name": "Isaac Mendez",
+  "age": 36,
+  "occupation": "Illustrator",
+  "home": "Coast Ridge",
+  "episode": "A room above the dryers",
+  "biography": "stories/residents/09/01-a-room-above-the-dryers.md#ah-r1208",
+  "life": "“I still remember drawing a person I had good reason to distrust.” People around the foot of Harbor Viaduct know Isaac by a small Tuesday habit. Isaac pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I want to draw somebody who dislikes me. The worker offered to sit after I explained the complaint I made.",
+  "appearance": "Isaac has close-cropped dark curls, a narrow face with an expressive upper lip, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a copper-colored clasp that has been repaired by hand. When somebody else has the floor, Isaac steadies a cup with both hands while listening.",
+  "personality": "Isaac feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To sit for a portrait after discussing the complaint.",
+  "family": "John Machado is Isaac’s older relative by marriage. Isaac keeps the photographs. John knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The gift nobody wants*, John says, “I am the father's old partner and I remember what he sacrificed to get out from under his own father.”",
+  "connections": "Robin Atwood. An unfinished art course and a difficult portrait bring two adult learners to the doors of the same studio.",
+  "familyIds": [
+    "AH-R1376"
+  ],
+  "connectionIds": [
+    "AH-R1207"
+  ],
+  "reactions": [
+    {
+      "situation": "An investor offers free publicity for the studio",
+      "response": "Isaac asks what cost the publicity will cover before agreeing to an exhibition.",
+      "asWritten": "An investor offers free publicity for the studio. Isaac asks what cost the publicity will cover before agreeing to an exhibition."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Isaac starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Isaac starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Isaac lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Isaac lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

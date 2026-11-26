@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1164",
+  "personId": "AH-R1164",
+  "name": "Karina Heller",
+  "age": 37,
+  "occupation": "Office bookkeeper",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The high road home",
+  "biography": "stories/residents/08/12-the-high-road-home.md#ah-r1164",
+  "life": "“I still remember the old office lift stopping with its floor just below mine.” Wednesday often includes a stop at Ferris Deli, where Karina asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I have vertigo in an ordinary lift. I will ride along if I can look out at the horizon.",
+  "appearance": "Karina is easy to recognize by a long plait tucked inside the collar and a broad nose and a deep dimple on one cheek. Usually dressed in a cropped bottle-green coat with a copper-colored clasp that has been repaired by hand, Karina rubs a thumb along the edge of the nearest pocket when listening.",
+  "personality": "Karina treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To take a passenger trip with a clear horizon.",
+  "family": "Sylvia Reeves is Karina’s cousin raised in the same household. Karina keeps the photographs. Sylvia knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The return of a witness*, Sylvia says, “I want to see my aunt without strangers assuming my visit is another statement.”",
+  "connections": "John Starr. Two passengers who dislike the height each find a different fixed place to look.",
+  "familyIds": [
+    "AH-R1391"
+  ],
+  "connectionIds": [
+    "AH-R1167"
+  ],
+  "reactions": [
+    {
+      "situation": "A friend insists the return journey must happen that night",
+      "response": "Karina asks the learner when they want to try again, leaving the friend's timetable out of it.",
+      "asWritten": "A friend insists the return journey must happen that night. Karina asks the learner when they want to try again, leaving the friend's timetable out of it."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Karina offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Karina offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Karina changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Karina changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

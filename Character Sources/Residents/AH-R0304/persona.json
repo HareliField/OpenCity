@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0304",
+  "personId": "AH-R0304",
+  "name": "Russell Hooper",
+  "age": 32,
+  "occupation": "New parent and florist",
+  "home": "Old Town",
+  "episode": "Spin cycle choir",
+  "biography": "stories/residents/03/01-spin-cycle-choir.md#ah-r0304",
+  "life": "“I still remember my baby's first nap through the bakery alarm.” Wednesday often includes a stop at the steps at Pier Beach, where Russell watches the working part of the waterfront before turning toward the open water.",
+  "voice": "My baby sleeps only during the spin cycle. The regulars saved the gentlest machine for us.",
+  "appearance": "On an ordinary day, look for a black overshirt with pearl buttons and a narrow brass watch set a little fast. Russell has a flat bridge to the nose and a mobile brow, with a soft fringe that falls across one eyebrow. Russell looks toward the door whenever a name is called during a conversation.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To save a gentle cycle for the baby's naps.",
+  "family": "Nolan Costa is Russell’s older relative by marriage. Russell is allowed to ask about the bad news afterward. Nolan calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Saturday keys*, Nolan says, “I memorized which doors stick because I couldn't read the old tags.”",
+  "connections": "Irene Baptiste. A useful lullaby depends on choosing the right machine and the right load.",
+  "familyIds": [
+    "AH-R0281"
+  ],
+  "connectionIds": [
+    "AH-R0305"
+  ],
+  "reactions": [
+    {
+      "situation": "A tired neighbor asks the singers to move",
+      "response": "Russell asks when the neighbor sleeps and helps arrange a quieter hour.",
+      "asWritten": "A tired neighbor asks the singers to move. Russell asks when the neighbor sleeps and helps arrange a quieter hour."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Russell offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Russell offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Russell listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Russell listens first to the account of how it was actually used."
+    }
+  ]
+}

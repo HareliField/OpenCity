@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1246",
+  "personId": "AH-R1246",
+  "name": "Jonathan Grant",
+  "age": 37,
+  "occupation": "Bus inspector",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A clean coat for court",
+  "biography": "stories/residents/09/05-a-clean-coat-for-court.md#ah-r1246",
+  "life": "“I still remember stepping out of a cinema into my old friend's worst night.” On Friday, near the brick passage off the shop row, Jonathan takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I found a cinema ticket in the pocket. The lender and I were at that showing the week the business closed.",
+  "appearance": "Jonathan has a long face and high cheekbones. Look for short black hair swept back. On an ordinary day, the familiar outfit is a cream pullover with a pen clipped inside the neckline. In conversation Jonathan squares up pieces of paper while thinking.",
+  "personality": "Jonathan can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To identify the old cinema date with the lender.",
+  "family": "Clara Ferreira is Jonathan’s stepsibling. Jonathan sets the time to leave. Clara picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A play in a pocket*, Clara says, “I want to perform to someone who speaks no words of my language and still make them laugh.”",
+  "connections": "Joy Nelson. A damp old cinema ticket reminds a former receiver that a real relationship outlives its account of stolen goods.",
+  "familyIds": [
+    "AH-R0578"
+  ],
+  "connectionIds": [
+    "AH-R1247"
+  ],
+  "reactions": [
+    {
+      "situation": "The borrower wants to return the coat before the hearing",
+      "response": "Jonathan checks whether the borrower has something suitable to wear through the hearing.",
+      "asWritten": "The borrower wants to return the coat before the hearing. Jonathan checks whether the borrower has something suitable to wear through the hearing."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Jonathan offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Jonathan offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Jonathan asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Jonathan asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

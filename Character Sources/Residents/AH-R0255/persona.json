@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0255",
+  "personId": "AH-R0255",
+  "name": "Grey Foster",
+  "age": 66,
+  "occupation": "Retired tailor",
+  "home": "the streets inland from Pier Beach",
+  "episode": "One sleeve short",
+  "biography": "stories/residents/02/11-one-sleeve-short.md#ah-r0255",
+  "life": "“I used to leave a spare fold in every apprentice's coat.” Tuesday often includes a stop at Lighthouse Cove, where Grey takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I shortened the sleeve too far on purpose for a child to grow into it. I can reverse my own work.",
+  "appearance": "Grey has gray hair trimmed very close behind the ears, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a moss-green cardigan. It usually goes with a small enamel bird on the lapel. When somebody else has the floor, Grey gives a little nod before asking a hard question.",
+  "personality": "Grey feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To reverse the old allowance before replacing good cloth.",
+  "family": "Cara Carvalho is Grey’s first cousin once removed. Grey asks before bringing somebody along. Cara can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The first language*, Cara says, “I can read every word but my classmates think my voice changes when I do.”",
+  "connections": "Amira Lam. The donated button makes sense to the tailor who left cloth for growth.",
+  "familyIds": [
+    "AH-R0961"
+  ],
+  "connectionIds": [
+    "AH-R0252"
+  ],
+  "reactions": [
+    {
+      "situation": "Somebody offers to buy a complete suit for the applicant",
+      "response": "Grey asks the applicant whether a whole donated suit would actually be welcome.",
+      "asWritten": "Somebody offers to buy a complete suit for the applicant. Grey asks the applicant whether a whole donated suit would actually be welcome."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Grey moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Grey moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Grey lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Grey lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

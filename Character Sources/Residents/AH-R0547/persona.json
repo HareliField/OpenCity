@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0547",
+  "personId": "AH-R0547",
+  "name": "Nico Ibrahim",
+  "age": 50,
+  "occupation": "Park gardener",
+  "home": "the blocks north of the port",
+  "episode": "Closing soup",
+  "biography": "stories/residents/04/10-closing-soup.md#ah-r0547",
+  "life": "“I still remember one thermos shared between two addresses.” On Tuesday, near the public end of the South Shore boardwalk, Nico checks the shade on the benches before deciding how long to stay.",
+  "voice": "I brought a thermos for my ex. We still buy food for each other even though we cannot share a table.",
+  "appearance": "Nico is easy to recognize by close-cropped dark curls and heavy brows and an unusually delicate jaw. Usually dressed in a brown corduroy jacket with one loose pocket corner secured with green thread, Nico starts to lift a hand, then waits to be invited to speak when listening.",
+  "personality": "Nico has a quick wit and an equally quick sense of shame. A joke is often Nico's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To keep one thermos moving between the separated homes.",
+  "family": "Robin Cao is Nico’s stepsibling. Nico makes the call. Robin is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *An address in pencil*, Robin says, “I make numbers for office buildings. I cut a new one big enough to see without crossing the road.”",
+  "connections": "Asa Roberts. A thermos for a separated household travels with the names of the closing crew.",
+  "familyIds": [
+    "AH-R0683"
+  ],
+  "connectionIds": [
+    "AH-R0549"
+  ],
+  "reactions": [
+    {
+      "situation": "The cook asks for an exact recipe",
+      "response": "Nico records what went into this particular pot and when the cooks tasted it.",
+      "asWritten": "The cook asks for an exact recipe. Nico records what went into this particular pot and when the cooks tasted it."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Nico asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Nico asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Nico seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Nico seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1107",
+  "personId": "AH-R1107",
+  "name": "Sam Fox",
+  "age": 50,
+  "occupation": "Sorting office worker",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Two names on the chart",
+  "biography": "stories/residents/08/06-two-names-on-the-chart.md#ah-r1107",
+  "life": "“I still remember adding a clinic address to a relative's holiday list.” Monday often includes a stop at Studio Boulevard, where Sam waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I copied her old hospital number onto a holiday card once. That silly habit gave us the link.",
+  "appearance": "Sam is easy to recognize by a center part and straight chestnut hair and a round face with a pronounced chin. Usually dressed in a red windbreaker with a square of clean cloth for polishing smudges, Sam touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Sam always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Sam is trying to tell the difference before the bill arrives.",
+  "agenda": "To verify the old hospital number from the holiday card.",
+  "family": "Elizabeth Osei is Sam’s older cousin. Sam can always ask for five minutes alone. Elizabeth asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The button card*, Elizabeth says, “I can identify the old maternity uniforms by their flat-backed buttons.”",
+  "connections": "Denise Zhou. The old index and an old holiday card give the clerks a second identity check.",
+  "familyIds": [
+    "AH-R0459"
+  ],
+  "connectionIds": [
+    "AH-R1103"
+  ],
+  "reactions": [
+    {
+      "situation": "A clerk calls the wrong surname in the waiting room",
+      "response": "Sam waits for the patient to give a preferred public name before repeating it.",
+      "asWritten": "A clerk calls the wrong surname in the waiting room. Sam waits for the patient to give a preferred public name before repeating it."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Sam takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Sam takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Sam suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Sam suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

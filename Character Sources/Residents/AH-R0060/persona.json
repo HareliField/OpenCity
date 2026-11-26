@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0060",
+  "personId": "AH-R0060",
+  "name": "Ilan Peretz",
+  "age": 34,
+  "occupation": "Patient's liaison and former patient",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Window seven",
+  "biography": "stories/residents/01/06-window-seven.md#ah-r0060",
+  "life": "Ilan kept counting windows from his treatment bed to remind himself there was a street outside. The liaison badge lets him offer people company in a waiting room he used to know by its ceiling. People around the foot of Harbor Viaduct know Ilan by a small Friday habit. Ilan pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I took the picture for the man whose scan moved. My own scans always made me feel as if the city had carried on without me. I printed him one with the ward reflected in the glass.",
+  "appearance": "On an ordinary day, look for a cropped bottle-green coat and a stitched row of blue crosses along an old repair. Ilan has a crooked front tooth visible when laughing, with a high puff tied with plain cord. Ilan gives a little nod before asking a hard question during a conversation.",
+  "personality": "Ilan often says yes too quickly out of pride in being useful. The people closest to Ilan have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To put a printed sunrise photograph into the waiting patient's hand.",
+  "family": "Dora Iyer is Ilan’s older relative by marriage. Ilan calls about good news first. Dora is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The hair after illness*, Dora says, “I had the same change years ago. I kept my advice in my pocket until she asked.”",
+  "connections": "Remy Stowe. They are the two people who can get the displaced scan patient his picture and his new time.",
+  "familyIds": [
+    "AH-R1158"
+  ],
+  "connectionIds": [
+    "AH-R0055"
+  ],
+  "reactions": [
+    {
+      "situation": "A different patient needs the same porter",
+      "response": "Ilan checks which part can wait and makes sure the other patient hears about the delay.",
+      "asWritten": "A different patient needs the same porter. Ilan checks which part can wait and makes sure the other patient hears about the delay."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Ilan takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Ilan takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Ilan rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Ilan rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1109",
+  "personId": "AH-R1109",
+  "name": "Fernando Arendt",
+  "age": 68,
+  "occupation": "Retired clinic patient and florist",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Two names on the chart",
+  "biography": "stories/residents/08/06-two-names-on-the-chart.md#ah-r1109",
+  "life": "“I still remember a nurse finding my village's actual spelling.” Thursday often includes a stop at the entrance to the Wash House, where Fernando stops for local notices even on a day without a load to wash.",
+  "voice": "I kept a clinic letter because the doctor spelled our village correctly. Its date fills the last gap.",
+  "appearance": "Fernando is easy to recognize by tightly curled gray hair and two dimples that appear only with a full smile. Usually dressed in an olive canvas jacket with a pressed flower kept in the clear back of a phone case, Fernando gives a little nod before asking a hard question when listening.",
+  "personality": "Fernando enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To close the last gap using the village letter.",
+  "family": "Keir Zhou is Fernando’s younger cousin. Fernando sets the time to leave. Keir picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The margin reader*, Keir says, “I erased three lines before I understood. I've written down the one I remember.”",
+  "connections": "Dana Harris. Old letters help the former spouse confirm dates without reopening the marriage.",
+  "familyIds": [
+    "AH-R0214"
+  ],
+  "connectionIds": [
+    "AH-R1102"
+  ],
+  "reactions": [
+    {
+      "situation": "A clerk calls the wrong surname in the waiting room",
+      "response": "Fernando waits for the patient to give a preferred public name before repeating it.",
+      "asWritten": "A clerk calls the wrong surname in the waiting room. Fernando waits for the patient to give a preferred public name before repeating it."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Fernando offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem.",
+      "asWritten": "A friend asks for a loan due back before payday. Fernando offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Fernando puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Fernando puts the deal away and suggests a walk."
+    }
+  ]
+}

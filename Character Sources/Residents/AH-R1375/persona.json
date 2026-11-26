@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1375",
+  "personId": "AH-R1375",
+  "name": "Ivan Ruiz",
+  "age": 38,
+  "occupation": "School cleaner",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The gift nobody wants",
+  "biography": "stories/residents/10/03-the-gift-nobody-wants.md#ah-r1375",
+  "life": "“I still remember meeting an heir who needed permission to disappoint a parent.” People around the market by Market Flats know Ivan by a small Friday habit. Ivan often waits until the delivery baskets are stacked before going in.",
+  "voice": "I would give my right arm to inherit a place. Listening to the daughter made me reconsider what a gift with no exit costs.",
+  "appearance": "Ivan has black hair twisted into a small knot, a long face and high cheekbones, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a tiny red thread tied through the lowest buttonhole. When somebody else has the floor, Ivan looks down for a moment before saying something difficult.",
+  "personality": "Ivan has a talent for getting adversaries to laugh at exactly the same thing. Ivan knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To listen to the heir without comparing family fortunes.",
+  "family": "Cynthia Barrett is Ivan’s second cousin. Ivan gets to change the plan. Cynthia offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The first language*, Cynthia says, “I wrote an alphabet on the inside of my lunch tin so I could practice without answering questions.”",
+  "connections": "Keir Rios. A donor's dinner gets easier once two people can explain why it is possible to refuse a gift.",
+  "familyIds": [
+    "AH-R0967"
+  ],
+  "connectionIds": [
+    "AH-R1378"
+  ],
+  "reactions": [
+    {
+      "situation": "The daughter declines the property gift",
+      "response": "Ivan takes the daughter's preferred shop seriously before proposing another gift.",
+      "asWritten": "The daughter declines the property gift. Ivan takes the daughter's preferred shop seriously before proposing another gift."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Ivan asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Ivan asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Ivan asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Ivan asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

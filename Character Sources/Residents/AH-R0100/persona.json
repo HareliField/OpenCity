@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0100",
+  "personId": "AH-R0100",
+  "name": "Nora Reiss",
+  "age": 42,
+  "occupation": "Small business lender",
+  "home": "Coast Ridge",
+  "episode": "The thirteenth doughnut",
+  "biography": "stories/residents/01/10-the-thirteenth-doughnut.md#ah-r0100",
+  "life": "Nora once refused credit to a café that fed late workers for free. The café closed and the workers' lateness rose across the street. She is still working out what a lender should have seen in that sequence. Sunday often includes a stop at the courtyard by Ferry Street Rooms, where Nora prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "The bank wants a sales forecast for the spare slot. I've sat through three dawns trying to find a number for it. I'm lending against the dozen and leaving the extra one out.",
+  "appearance": "On an ordinary day, look for a soft blue checked shirt and a train token tied to a zipper pull. Nora has a softly rounded chin under sharp cheekbones, with short copper curls. Nora steadies a cup with both hands while listening during a conversation.",
+  "personality": "Nora has a quick wit and an equally quick sense of shame. A joke is often Nora's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To get the loan approved on what a dozen actually earns.",
+  "family": "Geraldine Quintero is Nora’s parent’s cousin. Nora makes the call. Geraldine is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The spare spectacles*, Geraldine says, “I got my old glasses back and finally read the note I found in their case.”",
+  "connections": "Teri Okafor. The packaging error cannot become a bank forecast until someone decides whether the thirteenth slot is for sale.",
+  "familyIds": [
+    "AH-R0337"
+  ],
+  "connectionIds": [
+    "AH-R0094"
+  ],
+  "reactions": [
+    {
+      "situation": "A late worker finds somebody has eaten the saved breakfast",
+      "response": "Nora finds out which shift the breakfast was for before offering a replacement.",
+      "asWritten": "A late worker finds somebody has eaten the saved breakfast. Nora finds out which shift the breakfast was for before offering a replacement."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Nora looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Nora looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Nora seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Nora seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

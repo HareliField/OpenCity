@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1332",
+  "personId": "AH-R1332",
+  "name": "Cora Adair",
+  "age": 46,
+  "occupation": "Family care planner",
+  "home": "Eastside",
+  "episode": "The missing Sunday",
+  "biography": "stories/residents/09/14-the-missing-sunday.md#ah-r1332",
+  "life": "“I still remember finishing a lovely plan and leaving nobody at the table.” Sunday often includes a stop at Lighthouse Cove, where Cora takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I arranged every important task. My father asked what hour I'd set aside to waste with him.",
+  "appearance": "Cora has short sandy hair and a marked widow's peak, a crooked front tooth visible when laughing, and a favorite piece of clothing, a charcoal zip cardigan. It usually goes with a printed handkerchief folded into the pocket. When somebody else has the floor, Cora leans a shoulder against the wall during long conversations.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Cora takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To set aside actual time to waste together.",
+  "family": "William Nielsen is Cora’s half-sibling. Cora knows which ones can be shared. William keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Level with the window*, William says, “I put up a score on match days. The passengers started holding up their predictions on the return journey.”",
+  "connections": "Avery Williams (father). They renegotiate the difference between managing Sunday's tasks and spending Sunday together.",
+  "familyIds": [
+    "AH-R0717"
+  ],
+  "connectionIds": [
+    "AH-R1331"
+  ],
+  "reactions": [
+    {
+      "situation": "One volunteer cannot make the match",
+      "response": "Cora gives the widower a timely message and lets him decide whether he wants another visitor.",
+      "asWritten": "One volunteer cannot make the match. Cora gives the widower a timely message and lets him decide whether he wants another visitor."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Cora sits beside them without expecting a performance and asks if they want to go outside.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Cora sits beside them without expecting a performance and asks if they want to go outside."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Cora asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Cora asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1463",
+  "personId": "AH-R1463",
+  "name": "Alex Miranda",
+  "age": 36,
+  "occupation": "Maintenance van driver",
+  "home": "Eastside",
+  "episode": "Three minutes at the bridge",
+  "biography": "stories/residents/10/12-three-minutes-at-the-bridge.md#ah-r1463",
+  "life": "“I still remember keeping my dad's car seat free of greasy tools.” People around the public end of the South Shore boardwalk know Alex by a small Thursday habit. Alex checks the shade on the benches before deciding how long to stay.",
+  "voice": "I own the van and want a clean seat for my father on the way home from his appointment.",
+  "appearance": "Alex is easy to recognize by a cropped cut that shows the shape of the ears and heavy brows and an unusually delicate jaw. Usually dressed in a pale blue work shirt with a comb in a sleeve sewn into the lining, Alex touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Alex is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Alex is concerned.",
+  "agenda": "To keep one clean seat for the father.",
+  "family": "Paloma Diaz is Alex’s stepsibling. Alex chooses the music. Paloma puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Saturday keys*, Paloma says, “I had the locks changed before they found the keys.”",
+  "connections": "Lou Carver. A reserved passenger seat and a Friday prescription become two explicit parts of the carpool.",
+  "familyIds": [
+    "AH-R0284"
+  ],
+  "connectionIds": [
+    "AH-R1468"
+  ],
+  "reactions": [
+    {
+      "situation": "A shift changes by exactly three minutes",
+      "response": "Alex checks the school pickup and shift clocks together before changing the route.",
+      "asWritten": "A shift changes by exactly three minutes. Alex checks the school pickup and shift clocks together before changing the route."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Alex offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem.",
+      "asWritten": "A friend asks for a loan due back before payday. Alex offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Alex asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Alex asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

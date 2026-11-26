@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1458",
+  "personId": "AH-R1458",
+  "name": "Kai Berry",
+  "age": 44,
+  "occupation": "Shop cleaner",
+  "home": "the neighborhood around Market Flats",
+  "episode": "An ordinary mirror",
+  "biography": "stories/residents/10/11-an-ordinary-mirror.md#ah-r1458",
+  "life": "“I still remember cleaning a mirror that still held its dawn mist.” On Sunday, near the corner outside Coastal Barber, Kai usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I clean the mirrors on quiet mornings. I offered the widow those mornings before we decide who takes the glass.",
+  "appearance": "Kai is easy to recognize by a center part and straight chestnut hair and heavy brows and an unusually delicate jaw. Usually dressed in a soft blue checked shirt with one cuff folded back twice, Kai gives a little nod before asking a hard question when listening.",
+  "personality": "Kai prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To open quiet mornings for private visits.",
+  "family": "Edward Roy is Kai’s stepsibling. Kai is allowed to ask about the bad news afterward. Edward calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The first language*, Edward says, “I once changed my name to make school easier.”",
+  "connections": "Layla Colón. Morning cleaning gives the restorer a chance to explain the gray patch to the widow in private.",
+  "familyIds": [
+    "AH-R0965"
+  ],
+  "connectionIds": [
+    "AH-R1455"
+  ],
+  "reactions": [
+    {
+      "situation": "Another customer asks for a last fitting in front of it",
+      "response": "Kai sets aside an ordinary fitting time before making plans for the sale.",
+      "asWritten": "Another customer asks for a last fitting in front of it. Kai sets aside an ordinary fitting time before making plans for the sale."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Kai asks which other bill repayment would displace, then offers only what the household can afford to give.",
+      "asWritten": "A friend asks for a loan due back before payday. Kai asks which other bill repayment would displace, then offers only what the household can afford to give."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Kai clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Kai clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

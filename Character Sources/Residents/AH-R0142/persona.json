@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0142",
+  "personId": "AH-R0142",
+  "name": "Ivo Carden",
+  "age": 48,
+  "occupation": "Boat mechanic",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The empty berth",
+  "biography": "stories/residents/01/15-the-empty-berth.md#ah-r0142",
+  "life": "Ivo makes bent timbers the slow way when the result warrants it. His grandfather taught using short silences instead of instructions. Ivo worries that his impatient apprentice might mistake one of those silences for dismissal. Saturday often includes a stop at the approach to Seabright Court, where Ivo likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "The boat needs a plank my grandfather steamed into shape forty years ago. I could finish by Tuesday with plywood. I've asked the owner for a week and a chance to teach an apprentice the bend.",
+  "appearance": "Back on the street, look for a long navy raincoat and a square of clean cloth for polishing smudges. Ivo has heavy brows and an unusually delicate jaw, with brown hair pinned away from the temples. Ivo listens with the head tilted a little to the left during a conversation.",
+  "personality": "Ivo has a quick wit and an equally quick sense of shame. A joke is often Ivo's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To teach the apprentice to bend the replacement plank.",
+  "family": "Anthony Clement is Ivo’s older cousin. Ivo brings the paper and a pen. Anthony decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Reopening at six*, Anthony says, “I thought my pension meant timing didn't matter.”",
+  "connections": "Robin Kiln (sailing student). The student can tell the mechanic what a beginner's foot does on the slippery step.",
+  "familyIds": [
+    "AH-R1056"
+  ],
+  "connectionIds": [
+    "AH-R0149"
+  ],
+  "reactions": [
+    {
+      "situation": "A junior rower says the wet step feels unsafe",
+      "response": "Ivo stops the lesson there and asks the rower to show the troublesome patch from a stable spot.",
+      "asWritten": "A junior rower says the wet step feels unsafe. Ivo stops the lesson there and asks the rower to show the troublesome patch from a stable spot."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Ivo offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Ivo offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Ivo seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Ivo seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

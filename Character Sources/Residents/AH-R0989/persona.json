@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0989",
+  "personId": "AH-R0989",
+  "name": "Emery Rogers",
+  "age": 57,
+  "occupation": "Next-door tenant and ship clerk",
+  "home": "Old Town",
+  "episode": "A tenant who stays",
+  "biography": "stories/residents/07/09-a-tenant-who-stays.md#ah-r0989",
+  "life": "“I still remember digging after dusk so a tree wouldn't dry out.” Sunday often includes a stop at the brick passage off the shop row, where Emery takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I am the neighbor who has enjoyed that garden without lifting a finger. I offered my ground for two of the trees.",
+  "appearance": "Emery is easy to recognize by black hair twisted into a small knot and a round face with a pronounced chin. Usually dressed in a red windbreaker with one loose pocket corner secured with green thread, Emery counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Emery finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To offer soil for the threatened trees.",
+  "family": "Adrian Roche is Emery’s younger relative by marriage. Emery offers the first invitation. Adrian gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The missing Sunday*, Adrian says, “I took my baby to visit and got tossed out at halftime for being too loud.”",
+  "connections": "Kai Gross. The tenant's trees have an actual place to go because a neighbor offers some ground.",
+  "familyIds": [
+    "AH-R1337"
+  ],
+  "connectionIds": [
+    "AH-R0982"
+  ],
+  "reactions": [
+    {
+      "situation": "The future tenant asks when the garden will be empty",
+      "response": "Emery asks the gardener which roots are most vulnerable before agreeing to a date.",
+      "asWritten": "The future tenant asks when the garden will be empty. Emery asks the gardener which roots are most vulnerable before agreeing to a date."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Emery offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem.",
+      "asWritten": "A friend asks for a loan due back before payday. Emery offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Emery waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Emery waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

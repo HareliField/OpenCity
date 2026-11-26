@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0337",
+  "personId": "AH-R0337",
+  "name": "Geraldine Quintero",
+  "age": 65,
+  "occupation": "Retired stagehand",
+  "home": "the western residential streets",
+  "episode": "The spare spectacles",
+  "biography": "stories/residents/03/04-the-spare-spectacles.md#ah-r0337",
+  "life": "“I still remember hiding a love letter in a leather case.” Thursday often includes a stop at Harbour Bakery, where Geraldine buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I got my old glasses back and finally read the note I found in their case.",
+  "appearance": "Geraldine has a gray streak running back from the forehead, a heart-shaped face and prominent ears, and a favorite piece of clothing, a rust-colored canvas coat. It usually goes with a pair of reading glasses in a cloth sleeve. When somebody else has the floor, Geraldine looks at people's hands before looking at what they carry.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Geraldine takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To return the old note to its addressee.",
+  "family": "Nora Reiss is Geraldine’s cousin’s child. Geraldine is free to hang up first. Nora makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The thirteenth doughnut*, Nora says, “The bank wants a sales forecast for the spare slot.”",
+  "connections": "Jody Mehta. The temple repair identifies the frame and the note in its case.",
+  "familyIds": [
+    "AH-R0100"
+  ],
+  "connectionIds": [
+    "AH-R0332"
+  ],
+  "reactions": [
+    {
+      "situation": "The witness asks to read the page alone",
+      "response": "Geraldine finds a quiet place for the witness and waits without reading over a shoulder.",
+      "asWritten": "The witness asks to read the page alone. Geraldine finds a quiet place for the witness and waits without reading over a shoulder."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Geraldine offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Geraldine offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Geraldine asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Geraldine asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

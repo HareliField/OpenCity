@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0782",
+  "personId": "ah-pd-104",
+  "name": "Ruth Kim",
+  "age": 34,
+  "occupation": "Patrol officer",
+  "home": "Old Town",
+  "episode": "The Saturday swap",
+  "biography": "stories/residents/06/04-the-saturday-swap.md#ah-r0782",
+  "life": "“I still remember an old family holiday I spent in a station doorway.” On Sunday, near Paper & Pine Books, Ruth starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I can work Saturday. My wife wants me to admit I prefer the station to another afternoon with her father.",
+  "appearance": "Ruth has a cropped cut that shows the shape of the ears, a long face and high cheekbones, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Ruth leans a shoulder against the wall during long conversations.",
+  "personality": "Ruth reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Ruth trusts most.",
+  "agenda": "To tell the family why another watch feels easier than Sunday lunch.",
+  "family": "Sebastian Hudson is Ruth’s stepsibling. Ruth sets the time to leave. Sebastian picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *Level with the window*, Sebastian says, “I painted a sea view on a screen because the real sea is behind the bus.”",
+  "connections": "Eli Moreno. The officer who prefers working Saturdays has to put an honest answer on a colleague's spreadsheet.",
+  "familyIds": [
+    "AH-R0716"
+  ],
+  "connectionIds": [
+    "AH-R0788"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member asks for a definite promise about Saturday",
+      "response": "Ruth promises a definite check-in time even if the watch itself is still uncertain.",
+      "asWritten": "A family member asks for a definite promise about Saturday. Ruth promises a definite check-in time even if the watch itself is still uncertain."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Ruth starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Ruth starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Ruth does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Ruth does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

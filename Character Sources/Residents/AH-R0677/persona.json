@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0677",
+  "personId": "AH-R0677",
+  "name": "Rowan Armas",
+  "age": 26,
+  "occupation": "Beach portraitist",
+  "home": "the western residential streets",
+  "episode": "The misplaced umbrella",
+  "biography": "stories/residents/05/08-the-misplaced-umbrella.md#ah-r0677",
+  "life": "“I still remember my mother picking the background detail in every photograph.” On Saturday, near Paper & Pine Books, Rowan starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I wanted an elegant beach photograph. The patch in the background is the one thing my mother recognized.",
+  "appearance": "On an ordinary day, look for a washed violet jersey and one loose pocket corner secured with green thread. Rowan has a flat bridge to the nose and a mobile brow, with short black hair swept back. Rowan looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Rowan finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To send Mum the photograph with the familiar patch.",
+  "family": "Kit Porter is Rowan’s stepsibling. A lost family paycheck once turned up in the lining of a coat. Their relatives still describe that week by the three people who quietly extended credit. Rowan pays a small debt exactly when promised. Asked about *The upstairs piano*, Kit says, “I played scales while the adults argued. By the time they stopped, I could play with both hands.”",
+  "connections": "Carlo Leung. The rescued man and a family photograph give the patched umbrella two independent witnesses.",
+  "familyIds": [
+    "AH-R0388"
+  ],
+  "connectionIds": [
+    "AH-R0676"
+  ],
+  "reactions": [
+    {
+      "situation": "Both umbrella owners turn up at the beach",
+      "response": "Rowan gets the two families together in the shade to identify the items.",
+      "asWritten": "Both umbrella owners turn up at the beach. Rowan gets the two families together in the shade to identify the items."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Rowan offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Rowan offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Rowan waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Rowan waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

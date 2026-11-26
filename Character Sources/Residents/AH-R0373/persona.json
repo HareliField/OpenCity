@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0373",
+  "personId": "AH-R0373",
+  "name": "Hannah Hewitt",
+  "age": 47,
+  "occupation": "Former summer attendant",
+  "home": "Old Town",
+  "episode": "The painted footprint",
+  "biography": "stories/residents/03/08-the-painted-footprint.md#ah-r0373",
+  "life": "“I still remember an orange sandal caught against the rocks.” People around Juniper Street know Hannah by a small Wednesday habit. Hannah knows which of the west-side porches has a seat in the shade.",
+  "voice": "I remember the girl standing on one foot. She was waiting for her other sandal to wash back.",
+  "appearance": "Hannah has brown hair pinned away from the temples, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, an olive canvas jacket. It usually goes with a little coil of soft measuring tape. When somebody else has the floor, Hannah looks toward the door whenever a name is called.",
+  "personality": "Hannah feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To trace the missing sandal's owner.",
+  "family": "Terry Perry is Hannah’s stepsibling. Hannah saves a place. Terry chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The returned daughter*, Terry says, “I am her partner. We picked one word she can say when she's ready to get back in the car.”",
+  "connections": "Charlotte Bruno. They tell a child why a bare foot stayed still on that particular day.",
+  "familyIds": [
+    "AH-R1289"
+  ],
+  "connectionIds": [
+    "AH-R0374"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor insists the footprint must belong to a famous runner",
+      "response": "Hannah checks for a family photograph before accepting the famous name.",
+      "asWritten": "A visitor insists the footprint must belong to a famous runner. Hannah checks for a family photograph before accepting the famous name."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Hannah brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Hannah brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Hannah lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Hannah lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

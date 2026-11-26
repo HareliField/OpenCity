@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1138",
+  "personId": "AH-R1138",
+  "name": "Maria Dias",
+  "age": 39,
+  "occupation": "Night shift silk printer",
+  "home": "the western residential streets",
+  "episode": "The third bedroom",
+  "biography": "stories/residents/08/09-the-third-bedroom.md#ah-r1138",
+  "life": "“I still remember a homework session interrupted by the night neighbor coming home.” People around the window at Night Shift Donuts know Maria by a small Saturday habit. Maria knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I can rent a room to the lodger but I have a noisy night shift. We are trying a weekend first.",
+  "appearance": "Maria is easy to recognize by short copper curls and a straight nose and deep-set eyes. Usually dressed in a red windbreaker with a partly rubbed-away embroidered initial, Maria turns fully toward the person speaking when listening.",
+  "personality": "Maria finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To test the offered room through a night shift.",
+  "family": "Malcolm Garrett is Maria’s second cousin. Maria offers the first invitation. Malcolm gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The driving lesson fund*, Malcolm says, “I paid for my license by cleaning the instructor's flat.”",
+  "connections": "Roland Bloom. Trying a noisy room and keeping Thursday supper give the move an ordinary weekly rhythm.",
+  "familyIds": [
+    "AH-R1311"
+  ],
+  "connectionIds": [
+    "AH-R1140"
+  ],
+  "reactions": [
+    {
+      "situation": "The lodger is asked to leave on short notice",
+      "response": "Maria checks where the lodger can go before treating an empty room as a settled fact.",
+      "asWritten": "The lodger is asked to leave on short notice. Maria checks where the lodger can go before treating an empty room as a settled fact."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Maria stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Maria stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Maria waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Maria waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

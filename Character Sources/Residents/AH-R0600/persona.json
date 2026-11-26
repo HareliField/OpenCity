@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0600",
+  "personId": "AH-R0600",
+  "name": "Alex Carbone",
+  "age": 32,
+  "occupation": "Music arranger",
+  "home": "Old Town",
+  "episode": "The engine lullaby",
+  "biography": "stories/residents/04/15-the-engine-lullaby.md#ah-r0600",
+  "life": "“I still remember tapping a cradle rail with my toe while mending a net.” People around the bank steps know Alex by a small Saturday habit. Alex takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I counted the pulses and set a cradle-rocking tune to them. The skipper asked for a copy for his grandson.",
+  "appearance": "Alex has a small notch in the left eyebrow. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a mustard canvas overshirt with a pen clipped inside the neckline. In conversation Alex draws small circles on a tabletop while waiting.",
+  "personality": "Alex is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Alex is concerned.",
+  "agenda": "To get the rocking tune to the skipper's grandson.",
+  "family": "Oakley Ibrahim is Alex’s older relative by marriage. Alex gets to change the plan. Oakley offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The hospital radio*, Oakley says, “I promised the old one to a collector. I told him the people who touched it get first choice.”",
+  "connections": "Amanda Kerr. The singer and tune arranger each try setting a melody against the harbor's actual note.",
+  "familyIds": [
+    "AH-R0360"
+  ],
+  "connectionIds": [
+    "AH-R0594"
+  ],
+  "reactions": [
+    {
+      "situation": "A family offers to pay to keep the old sound",
+      "response": "Alex asks the engine owner what can be kept without postponing necessary repairs.",
+      "asWritten": "A family offers to pay to keep the old sound. Alex asks the engine owner what can be kept without postponing necessary repairs."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Alex asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Alex asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Alex asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Alex asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0841",
+  "personId": "AH-R0841",
+  "name": "Maya Abreu",
+  "age": 24,
+  "occupation": "Family-trained baker",
+  "home": "the blocks north of the port",
+  "episode": "One paid trial",
+  "biography": "stories/residents/06/10-one-paid-trial.md#ah-r0841",
+  "life": "“I still remember setting pastries with the clock taken off our kitchen wall.” On Tuesday, near the steps at Pier Beach, Maya watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I learned with my grandmother's stove and have never worked on a timer. I brought her wristwatch.",
+  "appearance": "Maya is easy to recognize by brown hair pinned away from the temples and a heart-shaped face and prominent ears. Usually dressed in a dark green knitted vest with a cloth patch so neatly matched it only shows in strong light, Maya squares up pieces of paper while thinking when listening.",
+  "personality": "Maya can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To get a real chance to learn the timed oven.",
+  "family": "Malcolm Hayes is Maya’s older relative by marriage. Maya makes room at the table. Malcolm brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The day sailor's divorce*, Malcolm says, “I can take Saturdays if somebody swaps my carer's weekend.”",
+  "connections": "Remy Rose. Extra delivery cover creates a real oven opportunity for the self-taught applicant.",
+  "familyIds": [
+    "AH-R1046"
+  ],
+  "connectionIds": [
+    "AH-R0846"
+  ],
+  "reactions": [
+    {
+      "situation": "The new baker gets the first oven slot",
+      "response": "Maya makes sure the other applicant gets a comparable chance with the same oven.",
+      "asWritten": "The new baker gets the first oven slot. Maya makes sure the other applicant gets a comparable chance with the same oven."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Maya agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Maya agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Maya asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Maya asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

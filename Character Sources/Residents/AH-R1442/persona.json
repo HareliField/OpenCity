@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1442",
+  "personId": "AH-R1442",
+  "name": "Lee Roche",
+  "age": 41,
+  "occupation": "Night baker",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The kitchen without a boss",
+  "biography": "stories/residents/10/10-the-kitchen-without-a-boss.md#ah-r1442",
+  "life": "“I still remember the night loaf I learned to make without looking at a clock.” Sunday often includes a stop at the blocks below Foundry Lofts, where Lee checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I bake the quiet-shift bread nobody photographs. I want that work counted before we raise the flashy pastry prices.",
+  "appearance": "Lee is easy to recognize by a long plait tucked inside the collar and a long face and high cheekbones. Usually dressed in a sand-colored linen shirt with a narrow brass watch set a little fast, Lee takes off the watch before a long conversation when listening.",
+  "personality": "Lee is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Lee is by the number of tiny errands suddenly being done.",
+  "agenda": "To keep the unphotographed night loaves affordable.",
+  "family": "Yasmin Vega is Lee’s stepsibling. Lee can always ask for five minutes alone. Yasmin asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A chair of one's own*, Yasmin says, “I have enough clients until one of them goes on maternity leave.”",
+  "connections": "Nina Khan. The quiet loaf specialist meets a regular who counts breakfast in coins.",
+  "familyIds": [
+    "AH-R0851"
+  ],
+  "connectionIds": [
+    "AH-R1447"
+  ],
+  "reactions": [
+    {
+      "situation": "Two kitchen workers disagree on the new shift rota",
+      "response": "Lee puts both proposed rotas beside the actual delivery and childcare times.",
+      "asWritten": "Two kitchen workers disagree on the new shift rota. Lee puts both proposed rotas beside the actual delivery and childcare times."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Lee checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Lee checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Lee agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Lee agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

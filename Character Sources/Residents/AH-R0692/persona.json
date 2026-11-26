@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0692",
+  "personId": "AH-R0692",
+  "name": "Carlo Gil",
+  "age": 55,
+  "occupation": "Spice wholesaler",
+  "home": "the western residential streets",
+  "episode": "Midnight cinnamon",
+  "biography": "stories/residents/05/10-midnight-cinnamon.md#ah-r0692",
+  "life": "“I still remember packing the smallest parcels for the customers counting coins.” On Wednesday, near Breakwater Way, Carlo stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I sell cinnamon by weight. I am trying to price the little packets customers buy just to carry home.",
+  "appearance": "On an ordinary day, look for a pale blue work shirt and one cuff folded back twice. Carlo has a deep crease beside the mouth when smiling, with short black hair swept back. Carlo squares up pieces of paper while thinking during a conversation.",
+  "personality": "Carlo takes a rejection personally for a day and analytically on the second morning. Carlo can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To sell small scent packets at a fair price.",
+  "family": "Walter Ray is Carlo’s stepsibling. Carlo makes room at the table. Walter brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The other side of the cove*, Walter says, “I want my mother's work named with her proper job title.”",
+  "connections": "Elsa Allen. The seller sets a little spice packet aside for a customer fasting until night.",
+  "familyIds": [
+    "AH-R1274"
+  ],
+  "connectionIds": [
+    "AH-R0696"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer wants a bun saved until evening",
+      "response": "Carlo writes the customer's name and collection time on the wrapped bun.",
+      "asWritten": "A customer wants a bun saved until evening. Carlo writes the customer's name and collection time on the wrapped bun."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Carlo finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Carlo finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Carlo turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Carlo turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

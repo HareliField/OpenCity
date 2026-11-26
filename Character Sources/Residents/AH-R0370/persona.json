@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0370",
+  "personId": "AH-R0370",
+  "name": "Devin Rhodes",
+  "age": 55,
+  "occupation": "Bookshop event host",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Overdue by a lifetime",
+  "biography": "stories/residents/03/07-overdue-by-a-lifetime.md#ah-r0370",
+  "life": "“I still remember arguing with an ending until my bus went by.” On Wednesday, near the corner by Juniper Tailor, Devin looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I hated that ending at ten. At fifty I still hate it and finally have a room in which to say why.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a printed handkerchief folded into the pocket. Devin has full cheeks and a mouth that pulls slightly to one side, with close-cropped dark curls. Devin draws breath as if to speak and lets someone else go first during a conversation.",
+  "personality": "Devin prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To defend a different ending in the adult reading group.",
+  "family": "Nell Rios is Devin’s half-sibling. Devin remembers the birthdays. Nell asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Care with a clock*, Nell says, “I keep our local accounts. Four households together can afford a floating quarter hour if everybody agrees.”",
+  "connections": "Liam Roberts. They debate the ending with the knowledge of the missing words.",
+  "familyIds": [
+    "AH-R0887"
+  ],
+  "connectionIds": [
+    "AH-R0367"
+  ],
+  "reactions": [
+    {
+      "situation": "The school asks to display the borrower's name",
+      "response": "Devin asks the former pupil to choose how their name appears.",
+      "asWritten": "The school asks to display the borrower's name. Devin asks the former pupil to choose how their name appears."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Devin stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Devin stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Devin clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Devin clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

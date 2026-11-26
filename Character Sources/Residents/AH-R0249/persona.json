@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0249",
+  "personId": "AH-R0249",
+  "name": "Fiona Mann",
+  "age": 40,
+  "occupation": "Event planner",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The bitter orange",
+  "biography": "stories/residents/02/10-the-bitter-orange.md#ah-r0249",
+  "life": "“I paid for my kitchen course making favors for weddings I never saw.” On Wednesday, near Ferris Deli, Fiona asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I can't eat the memorial sandwich. I chose the paper it will be wrapped in.",
+  "appearance": "Fiona is easy to recognize by a cropped cut that shows the shape of the ears and a straight nose and deep-set eyes. Usually dressed in an unlined tan jacket with a watch on a cracked leather band, Fiona counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Fiona has a quick wit and an equally quick sense of shame. A joke is often Fiona's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To choose paper that will carry the order without collapsing.",
+  "family": "Rowan Davis is Fiona’s half-sibling. Fiona makes the call. Rowan is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *School after sixty*, Rowan says, “I took the day off with a stomach ache. I don't want my boss at the bank to know I'm learning to read his notices.”",
+  "connections": "Jules Drake. The remaining change and the wrapper give the anniversary order a price and a proper finish.",
+  "familyIds": [
+    "AH-R1268"
+  ],
+  "connectionIds": [
+    "AH-R0244"
+  ],
+  "reactions": [
+    {
+      "situation": "The deli proposes serving the memorial sandwich every Sunday",
+      "response": "Fiona asks the family what they would want to eat on an ordinary Sunday.",
+      "asWritten": "The deli proposes serving the memorial sandwich every Sunday. Fiona asks the family what they would want to eat on an ordinary Sunday."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Fiona walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Fiona walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Fiona seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Fiona seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

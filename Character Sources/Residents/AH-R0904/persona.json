@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0904",
+  "personId": "AH-R0904",
+  "name": "Keir Pierce",
+  "age": 32,
+  "occupation": "Laundry mechanic",
+  "home": "the western residential streets",
+  "episode": "The uniform money",
+  "biography": "stories/residents/07/01-the-uniform-money.md#ah-r0904",
+  "life": "“I still remember my own uniform left to dry over the shop till.” Monday often includes a stop at Maré Coffee, where Keir likes the table where people coming off shift stop checking the time.",
+  "voice": "I caused the leak moving a hose to mop the floor. I reopened the shop on my evening off.",
+  "appearance": "Keir is easy to recognize by thick, tightly coiled hair and two dimples that appear only with a full smile. Usually dressed in a cropped bottle-green coat with a knotted piece of sail thread on a key ring, Keir looks down for a moment before saying something difficult when listening.",
+  "personality": "Keir can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Keir can afford to give, and family knows to take it seriously.",
+  "agenda": "To cover an evening wash shift to undo the damage.",
+  "family": "Lena Osborne is Keir’s half-sibling. Keir chooses whether they walk home or sit a while. Lena brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The upstairs piano*, Lena says, “I bought it so my son would come home to practice.”",
+  "connections": "Rae Vargas. The repair shift is ordered by the bus schedule the pupils worked out for the iron. Also in the story is Dale Valdez (school contact).",
+  "familyIds": [
+    "AH-R0381"
+  ],
+  "connectionIds": [
+    "AH-R0909",
+    "AH-R0910"
+  ],
+  "reactions": [
+    {
+      "situation": "A donor asks to photograph the children receiving clothes",
+      "response": "Keir asks the children and families whether they want to appear in the picture.",
+      "asWritten": "A donor asks to photograph the children receiving clothes. Keir asks the children and families whether they want to appear in the picture."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Keir brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Keir brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Keir suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Keir suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

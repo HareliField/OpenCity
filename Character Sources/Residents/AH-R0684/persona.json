@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0684",
+  "personId": "AH-R0684",
+  "name": "Clara Ngo",
+  "age": 49,
+  "occupation": "Letterpress assistant",
+  "home": "the streets around Foundry Lofts",
+  "episode": "An address in pencil",
+  "biography": "stories/residents/05/09-an-address-in-pencil.md#ah-r0684",
+  "life": "“I still remember the envelope I carried past a neighbor's gate twice.” People around Paper & Pine Books know Clara by a small Friday habit. Clara starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I used to live opposite. The penciled number reminded me that I had a letter I never sent.",
+  "appearance": "Clara has a strong profile and a little space between the front teeth. Look for thick, tightly coiled hair. On an ordinary day, the familiar outfit is a cropped bottle-green coat with a folded shopping list secured by a miniature clip. In conversation Clara draws small circles on a tabletop while waiting.",
+  "personality": "Clara tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Clara will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To hand the unsent letter over.",
+  "family": "Levi Lau is Clara’s younger cousin. A grown relative showed up at the family table in work clothes one holiday because taking extra time to change would mean missing the meal. The dusty chair is now part of the telling. Clara gets people inside before commenting on how they look. Asked about *A chair of one's own*, Levi says, “I gave her a lift to view another shop. I hope she'll stay but I want it to be a choice.”",
+  "connections": "Rain Malik. A delayed letter and the misdelivered flowers travel to neighboring porches.",
+  "familyIds": [
+    "AH-R0856"
+  ],
+  "connectionIds": [
+    "AH-R0682"
+  ],
+  "reactions": [
+    {
+      "situation": "A resident asks for the old metal number back",
+      "response": "Clara asks who has already taken the metal down and where it was left.",
+      "asWritten": "A resident asks for the old metal number back. Clara asks who has already taken the metal down and where it was left."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Clara takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Clara takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Clara repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Clara repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

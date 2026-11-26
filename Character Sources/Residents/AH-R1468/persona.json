@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1468",
+  "personId": "AH-R1468",
+  "name": "Lou Carver",
+  "age": 45,
+  "occupation": "Mechanic",
+  "home": "the western residential streets",
+  "episode": "Three minutes at the bridge",
+  "biography": "stories/residents/10/12-three-minutes-at-the-bridge.md#ah-r1468",
+  "life": "“I still remember collecting a parent's prescription before a port shift.” Wednesday often includes a stop at the brick passage off the shop row, where Lou takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I promised no detours and need a stop for my dad's medicine on Fridays. We wrote Friday into the arrangement.",
+  "appearance": "Lou has a round face with a pronounced chin. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a cream pullover with a pen clipped inside the neckline. In conversation Lou presses the lips together to keep a smile in.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To include a Friday pharmacy stop.",
+  "family": "Darcy Ray is Lou’s stepsibling. Lou asks what the birthday guest would like this year. Darcy remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The release address*, Darcy says, “I attended court with his victim. Her family deserves notice of a return without becoming his welcoming committee.”",
+  "connections": "Alex Miranda. A reserved passenger seat and a Friday prescription become two explicit parts of the carpool.",
+  "familyIds": [
+    "AH-R0944"
+  ],
+  "connectionIds": [
+    "AH-R1463"
+  ],
+  "reactions": [
+    {
+      "situation": "A carpool passenger needs an unplanned Friday stop",
+      "response": "Lou asks the pharmacy passenger and the other riders which stop works for them.",
+      "asWritten": "A carpool passenger needs an unplanned Friday stop. Lou asks the pharmacy passenger and the other riders which stop works for them."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Lou asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Lou asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Lou listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Lou listens first to the account of how it was actually used."
+    }
+  ]
+}

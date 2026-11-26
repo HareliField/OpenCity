@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1384",
+  "personId": "ah-pd-142",
+  "name": "Milan Gray",
+  "age": 39,
+  "occupation": "Metro SWAT officer",
+  "home": "Midtown",
+  "episode": "Names on the night wall",
+  "biography": "stories/residents/10/04-names-on-the-night-wall.md#ah-r1384",
+  "life": "“I still remember being walked to a taxi in two different sorts of uniform.” People around the approach to Seabright Court know Milan by a small Sunday habit. Milan likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I put down the cleaner who sits on the steps until my taxi comes. I only learned her surname yesterday.",
+  "appearance": "Milan has short, uneven waves that refuse to lie flat, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a cloth patch so neatly matched it only shows in strong light. When somebody else has the floor, Milan draws breath as if to speak and lets someone else go first.",
+  "personality": "Milan often says yes too quickly out of pride in being useful. The people closest to Milan have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To learn and use the cleaner's full name.",
+  "family": "Aria Starr is Milan’s cousin. Milan sets the time to leave. Aria picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A tenant who stays*, Aria says, “I can finally afford to move home and did not know somebody else had spent a life there.”",
+  "connections": "Max King. A late taxi escort and a neighbor watering tomatoes reveal the second shift behind an ordinary watch.",
+  "familyIds": [
+    "AH-R0981"
+  ],
+  "connectionIds": [
+    "AH-R1382"
+  ],
+  "reactions": [
+    {
+      "situation": "A neighbor named on several cards asks for a favor in return",
+      "response": "Milan asks the neighbor what kind of help they actually need now.",
+      "asWritten": "A neighbor named on several cards asks for a favor in return. Milan asks the neighbor what kind of help they actually need now."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Milan looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Milan looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Milan rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Milan rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

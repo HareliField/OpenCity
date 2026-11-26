@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0053",
+  "personId": "AH-R0053",
+  "name": "Mika Drew",
+  "age": 36,
+  "occupation": "Hospital curtain fitter",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Window seven",
+  "biography": "stories/residents/01/06-window-seven.md#ah-r0053",
+  "life": "Mika charges hospital jobs by the rail and domestic jobs by the hour. A squeak at night feels very different in those two accounts. Mika is collecting real complaints before bidding for the next ward contract. Wednesday often includes a stop at the public end of the South Shore boardwalk, where Mika checks the shade on the benches before deciding how long to stay.",
+  "voice": "The rail squealed when I moved it and woke three people. I returned after supper to quiet the other rails too. A day's work can have a different ending from the one on the invoice.",
+  "appearance": "Mika is easy to recognize by short black hair swept back and an aquiline nose and a square chin. Usually dressed in an old plum windbreaker with a pen clipped inside the neckline, Mika presses the lips together to keep a smile in when listening.",
+  "personality": "Mika has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To quiet the rails on the adjoining beds before the next night shift.",
+  "family": "Greta Hassan is Mika’s second cousin. Mika saves a place. Greta chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The returned daughter*, Greta says, “I am the half sister born later. Today's visit is the first time anyone explained the family photograph with a cut edge.”",
+  "connections": "Bea Rial. The last obstacles between the bed and the view are a sticky rail and a pane with an old handprint.",
+  "familyIds": [
+    "AH-R1287"
+  ],
+  "connectionIds": [
+    "AH-R0056"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants the sunrise streamed to a phone",
+      "response": "Mika asks the patient whether they want a camera in this particular morning.",
+      "asWritten": "A relative wants the sunrise streamed to a phone. Mika asks the patient whether they want a camera in this particular morning."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Mika tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Mika tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Mika explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Mika explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

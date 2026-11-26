@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0106",
+  "personId": "AH-R0106",
+  "name": "Lark Kane",
+  "age": 31,
+  "occupation": "Deaf dance teacher",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Ten fingers",
+  "biography": "stories/residents/01/11-ten-fingers.md#ah-r0106",
+  "life": "Lark ran a children's dance class with the music turned off so the pupils would watch each other breathe. Parents called it silence. The children remember how noisy ten pairs of socks could be on a clean floor. Thursday often includes a stop at the window at Night Shift Donuts, where Lark knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I picked a green that flashes under stage light because I watch hands for a living. I've invited her to stand in the front row and conduct the warmup with those fingers.",
+  "appearance": "Lark is easy to recognize by a cropped cut that shows the shape of the ears and a straight nose and deep-set eyes. Usually dressed in a cream pullover with a fabric zip pull cut from a school scarf, Lark gives a little nod before asking a hard question when listening.",
+  "personality": "Lark feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To give the birthday client control of the warmup at one dance class.",
+  "family": "Beatrice Su is Lark’s older cousin. Lark asks before bringing somebody along. Beatrice can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The boy on the corner*, Beatrice says, “I used to buy from the boy's dad. I'm offering childcare and he has good reason to check on me first.”",
+  "connections": "Liv Oren. Conducting with ten bright fingers gives the photographer a way of taking the picture without posing the hands.",
+  "familyIds": [
+    "AH-R1092"
+  ],
+  "connectionIds": [
+    "AH-R0109"
+  ],
+  "reactions": [
+    {
+      "situation": "The birthday woman asks for five minutes by herself",
+      "response": "Lark lets the room empty and puts the next invitation in her hands.",
+      "asWritten": "The birthday woman asks for five minutes by herself. Lark lets the room empty and puts the next invitation in her hands."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Lark asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Lark asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Lark lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Lark lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

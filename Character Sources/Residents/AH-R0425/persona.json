@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0425",
+  "personId": "AH-R0425",
+  "name": "Esther Mills",
+  "age": 57,
+  "occupation": "Divorced rehearsals director",
+  "home": "Coast Ridge",
+  "episode": "The empty drum stool",
+  "biography": "stories/residents/03/13-the-empty-drum-stool.md#ah-r0425",
+  "life": "“I still remember the envelope my former wife folded backward.” Sunday often includes a stop at the window at Night Shift Donuts, where Esther knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I recognized the handwriting as my old wife's. We still use the same little double underline.",
+  "appearance": "Esther has black hair twisted into a small knot, a wide brow and a narrow jaw, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Esther draws breath as if to speak and lets someone else go first.",
+  "personality": "Esther can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To return the handwritten invitation to the ex.",
+  "family": "Cynthia Bloom is Esther’s cousin raised in the same household. Esther brings a spare shopping bag. Cynthia chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The crash anniversary*, Cynthia says, “I am arranging a meal instead of a ceremony.”",
+  "connections": "Ren Trent. The old invitation helps an orchestra librarian make a new, personal one.",
+  "familyIds": [
+    "AH-R1020"
+  ],
+  "connectionIds": [
+    "AH-R0430"
+  ],
+  "reactions": [
+    {
+      "situation": "The drummer asks the substitute to keep the stool",
+      "response": "Esther asks whether the drummer means a loan or a gift.",
+      "asWritten": "The drummer asks the substitute to keep the stool. Esther asks whether the drummer means a loan or a gift."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Esther tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Esther tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Esther asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Esther asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

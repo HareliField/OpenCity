@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0223",
+  "personId": "AH-R0223",
+  "name": "Joseph Randall",
+  "age": 41,
+  "occupation": "Dance accompanist",
+  "home": "Midtown",
+  "episode": "Low water music",
+  "biography": "stories/residents/02/08-low-water-music.md#ah-r0223",
+  "life": "“I kept rhythm for dancers for years before wearing hearing aids.” On Sunday, near Juniper Street, Joseph knows which of the west-side porches has a seat in the shade.",
+  "voice": "I can only hear it through my bare heels. I'm asking the singers to take off their shoes.",
+  "appearance": "Joseph has short copper curls, a narrow face with an expressive upper lip, and a favorite piece of clothing, an olive canvas jacket. It usually goes with a pair of reading glasses in a cloth sleeve. When somebody else has the floor, Joseph turns fully toward the person speaking.",
+  "personality": "Joseph uses precise names for tools and very approximate names for feelings. People who know Joseph well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To let listeners feel the rock's note through bare feet.",
+  "family": "Ramon Lloyd is Joseph’s cousin. Joseph makes room at the table. Ramon brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The hair after illness*, Ramon says, “I am a barber losing my own hair. Today the customer told me she could see the shape of my head too.”",
+  "connections": "Eric Hassan. They compare a sound felt through feet with the old story about a fog bell.",
+  "familyIds": [
+    "AH-R1159"
+  ],
+  "connectionIds": [
+    "AH-R0227"
+  ],
+  "reactions": [
+    {
+      "situation": "The choir wants to claim the rock's official name",
+      "response": "Joseph asks for the neighborhood names to stay with the choir's name.",
+      "asWritten": "The choir wants to claim the rock's official name. Joseph asks for the neighborhood names to stay with the choir's name."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Joseph asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Joseph asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Joseph brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Joseph brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

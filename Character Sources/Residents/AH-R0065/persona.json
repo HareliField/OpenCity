@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0065",
+  "personId": "AH-R0065",
+  "name": "Una Vida",
+  "age": 44,
+  "occupation": "Adult literacy tutor",
+  "home": "the neighborhood around Market Flats",
+  "episode": "An unfinished atlas",
+  "biography": "stories/residents/01/07-an-unfinished-atlas.md#ah-r0065",
+  "life": "Una learned to read at the same table where she now tutors. She deliberately leaves the teacher's chair empty on Thursday evenings so a student with another kind of knowledge can use it first. Monday often includes a stop at the foot of Harbor Viaduct, where Una pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "One of my students can read the tiny block letters upside down. He learned setting type. I asked him to teach Thursday's class and chose a seat at the back.",
+  "appearance": "On an ordinary day, look for a boxy denim jacket and a stitched row of blue crosses along an old repair. Una has a crooked front tooth visible when laughing, with short black hair swept back. Una steadies a cup with both hands while listening during a conversation.",
+  "personality": "Una enjoys routines and will defend the right of someone else to break one. As a result, Una is often everyone's favorite cover for a missed morning.",
+  "agenda": "To give the former typesetter an evening at the front of the class.",
+  "family": "Dina Hooper is Una’s half-sibling. Una picks the meeting place. Dina sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The missing name on the stern*, Dina says, “I kept the original stencil on the back of a cupboard door.”",
+  "connections": "Cal Esmond. A reading class and a thesis both depend on letting a former typesetter correct the map.",
+  "familyIds": [
+    "AH-R1344"
+  ],
+  "connectionIds": [
+    "AH-R0069"
+  ],
+  "reactions": [
+    {
+      "situation": "A collector offers cash for the unexamined atlas",
+      "response": "Una asks the bookseller to put the atlas somewhere safe while its ownership is checked.",
+      "asWritten": "A collector offers cash for the unexamined atlas. Una asks the bookseller to put the atlas somewhere safe while its ownership is checked."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Una asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Una asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Una keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Una keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

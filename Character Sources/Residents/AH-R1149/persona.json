@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1149",
+  "personId": "AH-R1149",
+  "name": "Erin Roche",
+  "age": 39,
+  "occupation": "Deli cashier",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The first delivery fee",
+  "biography": "stories/residents/08/10-the-first-delivery-fee.md#ah-r1149",
+  "life": "“I still remember splitting a tip meant for the absent worker.” Saturday often includes a stop at the public road outside the Port of Asphalt, where Erin can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I work the deli counter. The first paid rider wants the tips I used to divide among the cooks.",
+  "appearance": "Away from the heat of the kitchen, look for an olive canvas jacket and a cloth patch so neatly matched it only shows in strong light. Erin has a heart-shaped face and prominent ears, with a center part and straight chestnut hair. Erin starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Erin has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To divide current tips with the paid rider.",
+  "family": "Denise Barker is Erin’s half-sibling. Erin gets to change the plan. Denise offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The savings club*, Denise says, “I used to draw the winning number with my mother.”",
+  "connections": "Tom Clement. A walking courier and the person dividing the tips need a clear agreement on the charged delivery. Also in the story is Penelope Tang (former volunteer rider).",
+  "familyIds": [
+    "AH-R0476"
+  ],
+  "connectionIds": [
+    "AH-R1146",
+    "AH-R1141"
+  ],
+  "reactions": [
+    {
+      "situation": "A housebound customer cannot afford the delivery fee",
+      "response": "Erin asks whether combining a delivery with a willing neighbor would help.",
+      "asWritten": "A housebound customer cannot afford the delivery fee. Erin asks whether combining a delivery with a willing neighbor would help."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Erin asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Erin asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Erin asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Erin asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

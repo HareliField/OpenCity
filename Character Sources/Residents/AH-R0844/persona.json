@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0844",
+  "personId": "AH-R0844",
+  "name": "Edward Pike",
+  "age": 38,
+  "occupation": "Pastry teacher",
+  "home": "Coast Ridge",
+  "episode": "One paid trial",
+  "biography": "stories/residents/06/10-one-paid-trial.md#ah-r0844",
+  "life": "“I still remember tasting food served by somebody I had just broken up with.” On Thursday, near Harbour Bakery, Edward buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I tasted both loaves blind and chose my ex's. I'm standing by it even though nobody will believe me.",
+  "appearance": "Edward has a wide brow and a narrow jaw. Look for a soft fringe that falls across one eyebrow. On an ordinary day, the familiar outfit is a long navy raincoat with a little coil of soft measuring tape. In conversation Edward counts on the side of one finger where hardly anybody notices.",
+  "personality": "Edward has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To defend a blind tasting despite the old relationship.",
+  "family": "Dora Garza is Edward’s cousin raised in the same household. Edward keeps the photographs. Dora knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *A prize nobody entered*, Dora says, “I own the bookshop. I have given the author the keys after closing so the decision doesn't happen in front of a queue.”",
+  "connections": "Frances Acosta. The certificate holder and the blind taster disagree about where expertise is visible.",
+  "familyIds": [
+    "AH-R1119"
+  ],
+  "connectionIds": [
+    "AH-R0848"
+  ],
+  "reactions": [
+    {
+      "situation": "The apprentice asks for an old promise in writing",
+      "response": "Edward writes down the remembered promise including who was there to hear it.",
+      "asWritten": "The apprentice asks for an old promise in writing. Edward writes down the remembered promise including who was there to hear it."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Edward brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Edward brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Edward says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Edward says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

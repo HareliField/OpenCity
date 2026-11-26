@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0746",
+  "personId": "AH-R0746",
+  "name": "Sam Sharp",
+  "age": 37,
+  "occupation": "Boat polish contractor",
+  "home": "Midtown",
+  "episode": "A boat for sale twice",
+  "biography": "stories/residents/05/15-a-boat-for-sale-twice.md#ah-r0746",
+  "life": "“I still remember polishing a tiller for an extra hour on the water.” People around the steps at Pier Beach know Sam by a small Monday habit. Sam watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I used to polish that boat for a season pass. I want the new owner's promise to honor one unfinished summer.",
+  "appearance": "Sam has short, uneven waves that refuse to lie flat, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, an olive canvas jacket. It usually goes with a braided bracelet with a single wooden bead. When somebody else has the floor, Sam leans a shoulder against the wall during long conversations.",
+  "personality": "Sam uses precise names for tools and very approximate names for feelings. People who know Sam well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To protect the remaining seasonal pass.",
+  "family": "Audrey Hughes is Sam’s stepsibling. Sam chooses whether they walk home or sit a while. Audrey brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The button card*, Audrey says, “I kept taking the plain black ones for work shirts.”",
+  "connections": "Ruben Yoon. A found invoice helps establish whether the old polishing agreement ought to survive the sale.",
+  "familyIds": [
+    "AH-R0458"
+  ],
+  "connectionIds": [
+    "AH-R0743"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer wants the old name painted over immediately",
+      "response": "Sam checks who owns the name before anyone comes down with a paint tin.",
+      "asWritten": "A buyer wants the old name painted over immediately. Sam checks who owns the name before anyone comes down with a paint tin."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Sam keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Sam keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Sam brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Sam brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

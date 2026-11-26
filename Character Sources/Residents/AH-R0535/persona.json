@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0535",
+  "personId": "AH-R0535",
+  "name": "Laurence Salcedo",
+  "age": 49,
+  "occupation": "Physiotherapy patient and editor",
+  "home": "the blocks north of the port",
+  "episode": "The porch auction",
+  "biography": "stories/residents/04/09-the-porch-auction.md#ah-r0535",
+  "life": "“I still remember the first porch I could reach after surgery.” People around the approach to Seabright Court know Laurence by a small Monday habit. Laurence likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I needed somewhere to sit on my way home after surgery. They left that chair outside for a whole season.",
+  "appearance": "Laurence has short copper curls, an aquiline nose and a square chin, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with a narrow brass watch set a little fast. When somebody else has the floor, Laurence gathers both sleeves neatly before settling in.",
+  "personality": "Laurence tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Laurence will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To leave a resting chair outside for the next recovering walker.",
+  "family": "Cameron Kelly is Laurence’s half-sibling. Laurence keeps the photographs. Cameron knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The guarantee*, Cameron says, “I want to downsize while the house is still ours to choose.”",
+  "connections": "Grey Lopez. A resting place proves more useful than an empty porch someone always envied.",
+  "familyIds": [
+    "AH-R1080"
+  ],
+  "connectionIds": [
+    "AH-R0537"
+  ],
+  "reactions": [
+    {
+      "situation": "Two visitors bid against each other for the porch chair",
+      "response": "Laurence asks whether both people want the object itself or a particular memory of it.",
+      "asWritten": "Two visitors bid against each other for the porch chair. Laurence asks whether both people want the object itself or a particular memory of it."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Laurence keeps the neighbor's place and finds out whether the stranger needs a different kind of help.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Laurence keeps the neighbor's place and finds out whether the stranger needs a different kind of help."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Laurence repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Laurence repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

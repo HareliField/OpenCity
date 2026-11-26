@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1293",
+  "personId": "AH-R1293",
+  "name": "Anita Porter",
+  "age": 16,
+  "occupation": "Secondary school pupil",
+  "home": "the western residential streets",
+  "episode": "A four o'clock kitchen",
+  "biography": "stories/residents/09/10-a-four-o-clock-kitchen.md#ah-r1293",
+  "life": "“I still remember forgetting my own breakfast while preparing my sister's.” Thursday often includes a stop at the courtyard by Ferry Street Rooms, where Anita prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I am the cook's older daughter. I can run breakfast, but I'm tired of adults praising how little help I need.",
+  "appearance": "Anita has a scattering of freckles across the bridge of the nose. Look for a dark undercut with a longer wave on top. Outside school, the familiar outfit is a plum-colored cardigan with a knotted piece of sail thread on a key ring. In conversation Anita touches a knuckle to the chin when searching for a word.",
+  "personality": "Anita is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Anita is by the number of tiny errands suddenly being done.",
+  "agenda": "To stop carrying the whole weekday breakfast alone.",
+  "family": "Franklin Cole is Anita’s older cousin. In one winter of double shifts family news traveled in notes tucked under the bread bin. Some notes solved practical problems. The favorites never asked anybody to do anything. Anita sometimes writes for the plain pleasure of being answered. Asked about *Saturday keys*, Franklin says, “I missed lunch waiting for the knock. I want a window of time I can rely on without sitting in my coat.”",
+  "connections": "Zara Barclay (mother). The cook and the oldest child finally talk about who has been making breakfast at home.",
+  "familyIds": [
+    "AH-R0286"
+  ],
+  "connectionIds": [
+    "AH-R1291"
+  ],
+  "reactions": [
+    {
+      "situation": "A port buyer asks the cook to start still earlier",
+      "response": "Anita checks what the earlier start would do to the cook's family breakfast.",
+      "asWritten": "A port buyer asks the cook to start still earlier. Anita checks what the earlier start would do to the cook's family breakfast."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Anita asks the cashier to hold it and lets a claimant identify the writing and amount privately.",
+      "asWritten": "An envelope of wages is found under a café chair. Anita asks the cashier to hold it and lets a claimant identify the writing and amount privately."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Anita agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Anita agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0520",
+  "personId": "AH-R0520",
+  "name": "Stevie Rose",
+  "age": 49,
+  "occupation": "Restaurant host",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A borrowed name",
+  "biography": "stories/residents/04/07-a-borrowed-name.md#ah-r0520",
+  "life": "“I still remember cooking a dinner for two people who loathed each other's books.” On Saturday, near the public end of the South Shore boardwalk, Stevie checks the shade on the benches before deciding how long to stay.",
+  "voice": "I dislike the book and adore the man. I'm organizing a dinner where nobody has to choose.",
+  "appearance": "Stevie is easy to recognize by thick, tightly coiled hair and a narrow face with an expressive upper lip. Usually dressed in a striped cotton shirt with one loose pocket corner secured with green thread, Stevie presses the lips together to keep a smile in when listening.",
+  "personality": "Stevie never tires of being shown how somebody makes a living. Stevie can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To host dinner without requiring agreement about the novel.",
+  "family": "Marnie Phelps is Stevie’s younger cousin. Stevie decides what stays off the paper. Marnie brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The blue suit*, Marnie says, “I signed the machine off yesterday because the test towel came back clean.”",
+  "connections": "Petra Jones. A bookseller guarding a customer's privacy finds a host for a quieter discussion.",
+  "familyIds": [
+    "AH-R0004"
+  ],
+  "connectionIds": [
+    "AH-R0515"
+  ],
+  "reactions": [
+    {
+      "situation": "A reader asks the real person to autograph the novel",
+      "response": "Stevie gives the customer a graceful way to decline the autograph.",
+      "asWritten": "A reader asks the real person to autograph the novel. Stevie gives the customer a graceful way to decline the autograph."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Stevie puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Stevie puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Stevie may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Stevie may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

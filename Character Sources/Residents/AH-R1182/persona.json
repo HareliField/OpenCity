@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1182",
+  "personId": "AH-R1182",
+  "name": "Laura Bhandari",
+  "age": 46,
+  "occupation": "Family carer",
+  "home": "Old Town",
+  "episode": "The new language at dinner",
+  "biography": "stories/residents/08/14-the-new-language-at-dinner.md#ah-r1182",
+  "life": "“I still remember my father's first joke I only understood in translation.” People around the bank steps know Laura by a small Tuesday habit. Laura takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I am his daughter and never learned it. I want lessons even if he gets better faster than I do.",
+  "appearance": "Laura has short black hair swept back, fine brows over wide-set eyes, and a favorite piece of clothing, a boxy denim jacket. It usually goes with a printed handkerchief folded into the pocket. When somebody else has the floor, Laura squares up pieces of paper while thinking.",
+  "personality": "Laura enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To learn the father's words while there is time.",
+  "family": "Eli Fong is Laura’s second cousin. Laura decides what stays off the paper. Eli brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Reading the payslip*, Eli says, “I translate payroll terms into two languages.”",
+  "connections": "Luis Gross (father). The father needs a familiar language now and the daughter wants to learn it for the future.",
+  "familyIds": [
+    "AH-R0815"
+  ],
+  "connectionIds": [
+    "AH-R1181"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone asks a family member to translate an intimate question",
+      "response": "Laura offers a qualified interpreter and lets the client decide how much family should hear.",
+      "asWritten": "Someone asks a family member to translate an intimate question. Laura offers a qualified interpreter and lets the client decide how much family should hear."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Laura asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Laura asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Laura puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Laura puts the deal away and suggests a walk."
+    }
+  ]
+}

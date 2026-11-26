@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0458",
+  "personId": "AH-R0458",
+  "name": "Audrey Hughes",
+  "age": 37,
+  "occupation": "Warehouse loader",
+  "home": "Coast Ridge",
+  "episode": "The button card",
+  "biography": "stories/residents/04/01-the-button-card.md#ah-r0458",
+  "life": "“I still remember work shirts handed down from a cousin half my size.” On Wednesday, near the corner outside Coastal Barber, Audrey usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I kept taking the plain black ones for work shirts. Today I bought a whole packet to leave.",
+  "appearance": "Audrey has close-cropped dark curls, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, a dark green knitted vest. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Audrey grins on one side while the eyes stay serious.",
+  "personality": "Audrey carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To replenish the common black buttons.",
+  "family": "Sam Sharp is Audrey’s stepsibling. Audrey brings a spare shopping bag. Sam chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *A boat for sale twice*, Sam says, “I used to polish that boat for a season pass.”",
+  "connections": "Tali Moreno. Common work buttons let the card keep giving after the valuable ones go.",
+  "familyIds": [
+    "AH-R0746"
+  ],
+  "connectionIds": [
+    "AH-R0451"
+  ],
+  "reactions": [
+    {
+      "situation": "The donor recognizes the uniform it came from",
+      "response": "Audrey asks the owner which garment the donor wants remembered.",
+      "asWritten": "The donor recognizes the uniform it came from. Audrey asks the owner which garment the donor wants remembered."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Audrey keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Audrey keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Audrey offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Audrey offers to accompany them while they tell the truth."
+    }
+  ]
+}

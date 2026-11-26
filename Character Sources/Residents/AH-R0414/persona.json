@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0414",
+  "personId": "AH-R0414",
+  "name": "Remy Monroe",
+  "age": 48,
+  "occupation": "Street cleaner",
+  "home": "Coast Ridge",
+  "episode": "One unposted detour",
+  "biography": "stories/residents/03/12-one-unposted-detour.md#ah-r0414",
+  "life": "“I still remember earning a tip for directions I drew in dust.” People around the courtyard by Ferry Street Rooms know Remy by a small Tuesday habit. Remy prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I stood by the turn and gave directions in three languages. My shift started without me.",
+  "appearance": "Remy has a long face and high cheekbones. Look for a high puff tied with plain cord. On an ordinary day, the familiar outfit is a dark green knitted vest with a little coil of soft measuring tape. In conversation Remy squares up pieces of paper while thinking.",
+  "personality": "Remy has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To make the diversion directions work in three languages.",
+  "family": "Casey Armas is Remy’s half-sibling. Remy is allowed to ask about the bad news afterward. Casey calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *A red mitten*, Casey says, “My sister and I disagreed about the color. Our mother called it tomato and settled a thirty-year argument.”",
+  "connections": "Amos Tate. A lost ice sale and a morning spent translating become two claims on the same contractor.",
+  "familyIds": [
+    "AH-R0209"
+  ],
+  "connectionIds": [
+    "AH-R0413"
+  ],
+  "reactions": [
+    {
+      "situation": "The diversion sign is only legible from close up",
+      "response": "Remy reads the sign from the distance a driver really gets and reports the result.",
+      "asWritten": "The diversion sign is only legible from close up. Remy reads the sign from the distance a driver really gets and reports the result."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Remy asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Remy asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Remy says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Remy says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

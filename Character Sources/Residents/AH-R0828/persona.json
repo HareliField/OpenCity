@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0828",
+  "personId": "AH-R0828",
+  "name": "Ronan Vidal",
+  "age": 54,
+  "occupation": "Flag repairer",
+  "home": "Midtown",
+  "episode": "Summer staff",
+  "biography": "stories/residents/06/08-summer-staff.md#ah-r0828",
+  "life": "“I still remember the last flag I mended by candlelight.” People around Paper & Pine Books know Ronan by a small Tuesday habit. Ronan starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I sew flag repairs by the piece. All the flags came in at once and I won't have enough for autumn.",
+  "appearance": "Ronan has a broad nose and a deep dimple on one cheek. Look for a high puff tied with plain cord. On an ordinary day, the familiar outfit is a charcoal zip cardigan with a copper-colored clasp that has been repaired by hand. In conversation Ronan counts on the side of one finger where hardly anybody notices.",
+  "personality": "Ronan is kind in very practical ways and prickly about being thanked in public. Ronan loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To spread flag repairs far enough to bridge autumn.",
+  "family": "Martin Arrieta is Ronan’s stepsibling. A relative came back from a stay in hospital to a house rearranged for convenience and walked straight into the new chair. The family learned to ask before making helpful changes. Ronan will change a whole arrangement back without arguing. Asked about *Overdue by a lifetime*, Martin says, “I can tell which classroom it came from by the paste we used in winter.”",
+  "connections": "Catherine Easton. A traveling summer contract looks different from the viewpoint of the worker who mends its flags.",
+  "familyIds": [
+    "AH-R0364"
+  ],
+  "connectionIds": [
+    "AH-R0827"
+  ],
+  "reactions": [
+    {
+      "situation": "Two workers are offered one extra paid week",
+      "response": "Ronan asks both workers what commitments they made on the strength of the old end date.",
+      "asWritten": "Two workers are offered one extra paid week. Ronan asks both workers what commitments they made on the strength of the old end date."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Ronan walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Ronan walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Ronan gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Ronan gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

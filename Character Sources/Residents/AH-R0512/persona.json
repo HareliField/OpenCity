@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0512",
+  "personId": "AH-R0512",
+  "name": "Josephine Fields",
+  "age": 45,
+  "occupation": "Home baker",
+  "home": "Eastside",
+  "episode": "A borrowed name",
+  "biography": "stories/residents/04/07-a-borrowed-name.md#ah-r0512",
+  "life": "“I still remember my mother telling private jokes at public markets.” People around the bank steps know Josephine by a small Sunday habit. Josephine takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I thought my mother had told the author our story. She'd been telling half the city since before I was born.",
+  "appearance": "Josephine is easy to recognize by black hair twisted into a small knot and a heart-shaped face and prominent ears. Usually dressed in a rust-colored canvas coat with a comb in a sleeve sewn into the lining, Josephine steadies a cup with both hands while listening when listening.",
+  "personality": "Josephine takes a rejection personally for a day and analytically on the second morning. Josephine can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To ask the mother how far the family story traveled.",
+  "family": "Shay Poole is Josephine’s second cousin. Josephine calls back when there is finally a little privacy. Shay leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *Low water music*, Shay says, “I sell postcards of a silent cove. I'm leaving a blank on the next edition for people to write what they heard.”",
+  "connections": "Adrian Dias. A mother's widely told story sounds different in the real person's preferred words.",
+  "familyIds": [
+    "AH-R0228"
+  ],
+  "connectionIds": [
+    "AH-R0514"
+  ],
+  "reactions": [
+    {
+      "situation": "A reader asks the real person to autograph the novel",
+      "response": "Josephine gives the customer a graceful way to decline the autograph.",
+      "asWritten": "A reader asks the real person to autograph the novel. Josephine gives the customer a graceful way to decline the autograph."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Josephine offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Josephine offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Josephine turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Josephine turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

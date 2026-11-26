@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0680",
+  "personId": "AH-R0680",
+  "name": "Gabriel Han",
+  "age": 39,
+  "occupation": "Boat trip attendant",
+  "home": "Midtown",
+  "episode": "The misplaced umbrella",
+  "biography": "stories/residents/05/08-the-misplaced-umbrella.md#ah-r0680",
+  "life": "“I still remember a parasol jumping a hotel fence during tea.” Tuesday often includes a stop at the corner by Juniper Tailor, where Gabriel looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I promised never to leave things on the beach. I stayed until both owners went home dry.",
+  "appearance": "Gabriel has a crooked front tooth visible when laughing. Look for brown hair pinned away from the temples. Back on the street, the familiar outfit is a cropped bottle-green coat with a seam let out by a narrow strip of contrasting fabric. In conversation Gabriel rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Gabriel takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To wait until nobody has to go home in the rain.",
+  "family": "Olivia Teo is Gabriel’s half-sibling. Gabriel offers the first invitation. Olivia gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Reading the payslip*, Olivia says, “I sign my wife's name for deliveries. Tonight I want to learn to write mine on a wage dispute.”",
+  "connections": "Eileen Reed. The fabric worker helps distinguish two umbrellas before anyone walks home in rain.",
+  "familyIds": [
+    "AH-R0812"
+  ],
+  "connectionIds": [
+    "AH-R0675"
+  ],
+  "reactions": [
+    {
+      "situation": "A hotel worker asks to throw the patched umbrella away",
+      "response": "Gabriel puts the patched umbrella aside until the owner can explain the repair.",
+      "asWritten": "A hotel worker asks to throw the patched umbrella away. Gabriel puts the patched umbrella aside until the owner can explain the repair."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Gabriel stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Gabriel stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Gabriel asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Gabriel asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

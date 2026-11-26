@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0269",
+  "personId": "AH-R0269",
+  "name": "Stella Hull",
+  "age": 51,
+  "occupation": "Access consultant",
+  "home": "Coast Ridge",
+  "episode": "The sheltered corner",
+  "biography": "stories/residents/02/12-the-sheltered-corner.md#ah-r0269",
+  "life": "“I first measured pavement slopes with a marble and a plumb line.” Tuesday often includes a stop at the brick passage off the shop row, where Stella takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "My wheelchair fits the new turn. I brought the planners cake and asked them to hear the old riders too.",
+  "appearance": "Stella has brown hair pinned away from the temples, one cheek that creases before the other, and a favorite piece of clothing, an unlined tan jacket. It usually goes with a small enamel bird on the lapel. When somebody else has the floor, Stella holds eye contact until the other person has finished.",
+  "personality": "Stella is fond of ambitious ideas and deeply suspicious of grand openings. The question Stella asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To preserve the easier wheelchair turn and hear the displaced riders.",
+  "family": "Dario Flint is Stella’s second cousin. A relative kept reporting household news on postcards long after everybody could afford to phone. Reading one takes the family back to an ordinary morning rather than a big event. Stella saves apparently unimportant details. Asked about *A tide at noon*, Dario says, “I let children freeze the turrets in my cart.”",
+  "connections": "Alicia Nielsen. An old-stop regular walks the new wheelchair turn alongside its advocate. Also in the story is Lou Arnett (route planner).",
+  "familyIds": [
+    "AH-R0072"
+  ],
+  "connectionIds": [
+    "AH-R0262",
+    "AH-R0265"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver goes past the old stop in the rain",
+      "response": "Stella stays with the stranded rider and helps check the next usable stop.",
+      "asWritten": "A driver goes past the old stop in the rain. Stella stays with the stranded rider and helps check the next usable stop."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Stella asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Stella asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Stella accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Stella accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

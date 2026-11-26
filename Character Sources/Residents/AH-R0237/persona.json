@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0237",
+  "personId": "AH-R0237",
+  "name": "Sam Collins",
+  "age": 29,
+  "occupation": "Glass engraver",
+  "home": "Midtown",
+  "episode": "A wall of birthdays",
+  "biography": "stories/residents/02/09-a-wall-of-birthdays.md#ah-r0237",
+  "life": "“I engraved the name of somebody not yet born onto my first order.” People around the blocks below Foundry Lofts know Sam by a small Saturday habit. Sam checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I put the marks on transparent paper so families who rent can take their years with them.",
+  "appearance": "Sam has one cheek that creases before the other. Look for a blunt cut just below the ears. On an ordinary day, the familiar outfit is a cropped bottle-green coat with a partly rubbed-away embroidered initial. In conversation Sam looks down for a moment before saying something difficult.",
+  "personality": "Sam tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Sam will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To make a tracing the renters can take to their next home.",
+  "family": "Hugo Paul is Sam’s parent’s cousin. Sam keeps the photographs. Hugo knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The housecoat commission*, Hugo says, “My partner left me three silk ties. They're becoming the pockets she specifically asked for.”",
+  "connections": "Jaime Holt. They design a sheet that can move house on the back of a child's growing board. Also in the story is Grey Good (wall custodian).",
+  "familyIds": [
+    "AH-R0433"
+  ],
+  "connectionIds": [
+    "AH-R0240",
+    "AH-R0232"
+  ],
+  "reactions": [
+    {
+      "situation": "The landlord wants the height marks covered today",
+      "response": "Sam offers to help trace the height marks before work continues.",
+      "asWritten": "The landlord wants the height marks covered today. Sam offers to help trace the height marks before work continues."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Sam moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Sam moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Sam repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Sam repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

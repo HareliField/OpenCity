@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1012",
+  "personId": "AH-R1012",
+  "name": "June Brady",
+  "age": 64,
+  "occupation": "Flower customer and cook",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The crash anniversary",
+  "biography": "stories/residents/07/12-the-crash-anniversary.md#ah-r1012",
+  "life": "“I still remember walking the viaduct with an empty bunch of wet paper.” Saturday often includes a stop at Studio Boulevard, where June waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I bought the cheapest flowers every Friday. Today the shopkeeper asked who I was remembering and I could answer.",
+  "appearance": "Away from the heat of the kitchen, look for a narrow-striped sweater and a tiny red thread tied through the lowest buttonhole. June has a wide brow and a narrow jaw, with a gray streak running back from the forehead. June steadies a cup with both hands while listening during a conversation.",
+  "personality": "June gets protective of anybody who comes into a meeting unprepared. June privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To tell the florist whom the weekly flowers remember.",
+  "family": "Malcolm Soto is June’s younger cousin. June chooses whether to use it. Malcolm saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The margin reader*, Malcolm says, “I thought the pencil insults were aimed at me.”",
+  "connections": "Salma Hayward. A person leaving flowers and a person writing from another loss discuss what the family can accept.",
+  "familyIds": [
+    "AH-R0213"
+  ],
+  "connectionIds": [
+    "AH-R1017"
+  ],
+  "reactions": [
+    {
+      "situation": "The victim's family wants a private anniversary meal",
+      "response": "June lets the family make its own guest list and keeps press questions away from the table.",
+      "asWritten": "The victim's family wants a private anniversary meal. June lets the family make its own guest list and keeps press questions away from the table."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "June offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. June offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "June offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, June offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0606",
+  "personId": "AH-R0606",
+  "name": "Daniel Song",
+  "age": 51,
+  "occupation": "Ferry attendant",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Salt in the pockets",
+  "biography": "stories/residents/05/01-salt-in-the-pockets.md#ah-r0606",
+  "life": "“I still remember a ferry seat warmed through by a folded coat.” Tuesday often includes a stop at the window at Night Shift Donuts, where Daniel knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I need the big coat to keep my knees warm on the early ferry. The owner gave me the name of its maker.",
+  "appearance": "Daniel has a center part and straight chestnut hair, fine brows over wide-set eyes, and a favorite piece of clothing, a cream pullover. It usually goes with a small enamel bird on the lapel. When somebody else has the floor, Daniel steadies a cup with both hands while listening.",
+  "personality": "Daniel can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Daniel can afford to give, and family knows to take it seriously.",
+  "agenda": "To find a warm coat cut like the old ferry one.",
+  "family": "Gil Atwood is Daniel’s second cousin. Daniel knows which ones can be shared. Gil keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The small signature*, Gil says, “My eleven dollars were the change regulars left in a jar after a boy broke the chess table.”",
+  "connections": "Miguel Grant (workwear repairer). A familiar stain helps a family recognize a coat the ferry passenger wants to copy.",
+  "familyIds": [
+    "AH-R0022"
+  ],
+  "connectionIds": [
+    "AH-R0609"
+  ],
+  "reactions": [
+    {
+      "situation": "An employer wants every coat returned before supper",
+      "response": "Daniel asks the employer which garments are actually needed for tonight's shift.",
+      "asWritten": "An employer wants every coat returned before supper. Daniel asks the employer which garments are actually needed for tonight's shift."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Daniel asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Daniel asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Daniel suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Daniel suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

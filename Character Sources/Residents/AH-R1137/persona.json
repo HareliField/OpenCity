@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1137",
+  "personId": "AH-R1137",
+  "name": "Katherine Mack",
+  "age": 31,
+  "occupation": "Former foster child and pharmacy clerk",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The third bedroom",
+  "biography": "stories/residents/08/09-the-third-bedroom.md#ah-r1137",
+  "life": "“I still remember sharing a room that everybody else called cozy.” People around the blocks below Foundry Lofts know Katherine by a small Saturday habit. Katherine checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I was fostered on this street and hated sharing. I'm resisting the urge to decide for these particular boys.",
+  "appearance": "On an ordinary day, look for a long navy raincoat and a little coil of soft measuring tape. Katherine has a narrow face with an expressive upper lip, with a swept fringe and a closely clipped nape. Katherine counts on the side of one finger where hardly anybody notices during a conversation.",
+  "personality": "Katherine is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To help without projecting a separate childhood onto the boys.",
+  "family": "Sage Nielsen is Katherine’s first cousin once removed. Katherine can always ask for five minutes alone. Sage asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The soft wharf chalk*, Sage says, “I was the one they were waiting for. I missed the ship and built my whole life here.”",
+  "connections": "Walter Colón. The former foster child warns the teacher what happens when two children's voices get confused.",
+  "familyIds": [
+    "AH-R0470"
+  ],
+  "connectionIds": [
+    "AH-R1139"
+  ],
+  "reactions": [
+    {
+      "situation": "A caseworker asks the foster siblings to describe sharing",
+      "response": "Katherine gives each sibling room to describe sharing separately.",
+      "asWritten": "A caseworker asks the foster siblings to describe sharing. Katherine gives each sibling room to describe sharing separately."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Katherine asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Katherine asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Katherine helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Katherine helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

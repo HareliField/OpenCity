@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1316",
+  "personId": "AH-R1316",
+  "name": "Gareth Mercer",
+  "age": 27,
+  "occupation": "Hotel cleaner",
+  "home": "Old Town",
+  "episode": "The driving lesson fund",
+  "biography": "stories/residents/09/12-the-driving-lesson-fund.md#ah-r1316",
+  "life": "“I still remember taking a new road alone for the first time.” On Thursday, near Tideline Market, Gareth picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I am the student who got the lesson. My employer tried to take the credit and I quietly corrected the newsletter.",
+  "appearance": "On an ordinary day, look for an olive canvas jacket and a tiny red thread tied through the lowest buttonhole. Gareth has a straight nose and deep-set eyes, with thick, tightly coiled hair. Gareth leans a shoulder against the wall during long conversations during a conversation.",
+  "personality": "Gareth enjoys routines and will defend the right of someone else to break one. As a result, Gareth is often everyone's favorite cover for a missed morning.",
+  "agenda": "To correct the employer's claim to the lesson.",
+  "family": "Barbara Jackson is Gareth’s half-sibling. Gareth calls back when there is finally a little privacy. Barbara leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The expensive summer*, Barbara says, “I carry plates and survive on tips. The dessert table stayed two hours and tipped me in four currencies.”",
+  "connections": "Desmond Calloway. Job applicants who can drive still have to find a fair way to be tested. Also in the story is Malcolm Garrett (instructor).",
+  "familyIds": [
+    "AH-R0973"
+  ],
+  "connectionIds": [
+    "AH-R1313",
+    "AH-R1311"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone asks whether the grant might buy a bus pass instead",
+      "response": "Gareth prices a usable bus pass before dismissing it as a different kind of grant.",
+      "asWritten": "Someone asks whether the grant might buy a bus pass instead. Gareth prices a usable bus pass before dismissing it as a different kind of grant."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Gareth asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Gareth asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Gareth keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Gareth keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

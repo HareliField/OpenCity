@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0967",
+  "personId": "AH-R0967",
+  "name": "Cynthia Barrett",
+  "age": 30,
+  "occupation": "Language student and shelf stocker",
+  "home": "the western residential streets",
+  "episode": "The first language",
+  "biography": "stories/residents/07/07-the-first-language.md#ah-r0967",
+  "life": "“I still remember the first word I wrote under a lunch tin.” On Monday, near the corner by Juniper Tailor, Cynthia looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I wrote an alphabet on the inside of my lunch tin so I could practice without answering questions.",
+  "appearance": "Cynthia has brown hair pinned away from the temples, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a little coil of soft measuring tape. When somebody else has the floor, Cynthia looks toward the door whenever a name is called.",
+  "personality": "Cynthia never tires of being shown how somebody makes a living. Cynthia can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To read a whole page without hiding the practice.",
+  "family": "Ivan Ruiz is Cynthia’s second cousin. Cynthia offers the first invitation. Ivan gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The gift nobody wants*, Ivan says, “I would give my right arm to inherit a place.”",
+  "connections": "Morgan Gil. An adult practicing after a flour shift shares a quiet place with the learner practicing on a tin.",
+  "familyIds": [
+    "AH-R1375"
+  ],
+  "connectionIds": [
+    "AH-R0966"
+  ],
+  "reactions": [
+    {
+      "situation": "A pupil chooses another language halfway through the reading",
+      "response": "Cynthia lets the pupil finish in the language they chose.",
+      "asWritten": "A pupil chooses another language halfway through the reading. Cynthia lets the pupil finish in the language they chose."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Cynthia offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Cynthia offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Cynthia may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Cynthia may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

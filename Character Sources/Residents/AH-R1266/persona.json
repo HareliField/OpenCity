@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1266",
+  "personId": "AH-R1266",
+  "name": "Miles Sato",
+  "age": 73,
+  "occupation": "Retired school cook",
+  "home": "Eastside",
+  "episode": "School after sixty",
+  "biography": "stories/residents/09/07-school-after-sixty.md#ah-r1266",
+  "life": "“I still remember buying a fountain pen with one week's first wages.” People around the blocks below Foundry Lofts know Miles by a small Wednesday habit. Miles checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I brought the fountain pen I saved for finishing school. It's older than the examiner.",
+  "appearance": "Away from the heat of the kitchen, look for a sand-colored linen shirt and a pocket notebook shaped by years of sitting on it. Miles has a strong profile and a little space between the front teeth, with silver temples and a dark fringe. Miles presses the lips together to keep a smile in during a conversation.",
+  "personality": "Miles loves a well-told anecdote and distrusts the neat ending. The parts Miles remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To write the exam with the long-saved pen.",
+  "family": "Lane Clegg is Miles’s younger relative by marriage. Miles asks the question the rest of the family avoided. Lane chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The thirteenth doughnut*, Lane says, “I cut the gift into four and gave three pieces away.”",
+  "connections": "Pascal Boone. An old pen and an unconditional lunch make this examination day quite unlike school.",
+  "familyIds": [
+    "AH-R0092"
+  ],
+  "connectionIds": [
+    "AH-R1270"
+  ],
+  "reactions": [
+    {
+      "situation": "An examiner offers to read a question aloud",
+      "response": "Miles asks the learner how they want the question presented before the examiner begins.",
+      "asWritten": "An examiner offers to read a question aloud. Miles asks the learner how they want the question presented before the examiner begins."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Miles takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Miles takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Miles includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Miles includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

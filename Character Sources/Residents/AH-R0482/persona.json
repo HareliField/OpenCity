@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0482",
+  "personId": "AH-R0482",
+  "name": "Marlowe Nolasco",
+  "age": 45,
+  "occupation": "Estate porter",
+  "home": "Old Town",
+  "episode": "Station steps in rain",
+  "biography": "stories/residents/04/04-station-steps-in-rain.md#ah-r0482",
+  "life": "“I still remember passing a raincoat to a stranger in a waiting room.” On Friday, near the public road outside the Port of Asphalt, Marlowe can recognize shift change by the lull between two groups of walkers.",
+  "voice": "A soaked man mistook my coat for a uniform. I listened long enough to find the person he needed.",
+  "appearance": "Marlowe is easy to recognize by a dark undercut with a longer wave on top and a wide brow and a narrow jaw. Usually dressed in a gray fisher's sweater with a fabric zip pull cut from a school scarf, Marlowe listens with the head tilted a little to the left when listening.",
+  "personality": "Marlowe is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To take the wet visitor to someone who can help.",
+  "family": "Annette Levin is Marlowe’s second cousin. Marlowe leaves the first voice message. Annette calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The upstairs lease*, Annette says, “I like our flat less than I like the neighbors who know my son's sounds through the ceiling.”",
+  "connections": "Quinn Navarro. Someone mistaken for staff can still hold the sheltered entrance clear.",
+  "familyIds": [
+    "AH-R0758"
+  ],
+  "connectionIds": [
+    "AH-R0484"
+  ],
+  "reactions": [
+    {
+      "situation": "An officer asks whether the wet event should still count as a hearing",
+      "response": "Marlowe asks who missed the chance to speak before calling the hearing complete.",
+      "asWritten": "An officer asks whether the wet event should still count as a hearing. Marlowe asks who missed the chance to speak before calling the hearing complete."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Marlowe offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Marlowe offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Marlowe helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Marlowe helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

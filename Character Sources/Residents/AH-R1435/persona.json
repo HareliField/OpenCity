@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1435",
+  "personId": "AH-R1435",
+  "name": "Charlie Black",
+  "age": 53,
+  "occupation": "Land surveyor",
+  "home": "the blocks north of the port",
+  "episode": "A house divided kindly",
+  "biography": "stories/residents/10/09-a-house-divided-kindly.md#ah-r1435",
+  "life": "“I still remember surveying a legal boundary that no fence ever followed.” People around Tideline Market know Charlie by a small Sunday habit. Charlie picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I drew the boundary as a junior surveyor. This is the first time a client asked me how to make it friendlier.",
+  "appearance": "On an ordinary day, look for a faded indigo overshirt and a train token tied to a zipper pull. Charlie has a straight nose and deep-set eyes, with a cropped cut that shows the shape of the ears. Charlie looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Charlie is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To make the friendly boundary legal and clear.",
+  "family": "Jo Wong is Charlie’s cousin. Charlie brings whatever was actually growing or affordable that week. Jo makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Winter afloat*, Jo says, “I live in a flat above the coast road. I'm exchanging winter housing for summer sailing lessons I might be scared to take.”",
+  "connections": "Stella Choi. The old childhood gap is a better starting point for the survey than the center of the hedge.",
+  "familyIds": [
+    "AH-R0896"
+  ],
+  "connectionIds": [
+    "AH-R1436"
+  ],
+  "reactions": [
+    {
+      "situation": "The older neighbors disagree on where the gate should go",
+      "response": "Charlie gets both neighbors to mark a trial gate position before any hedge is cut.",
+      "asWritten": "The older neighbors disagree on where the gate should go. Charlie gets both neighbors to mark a trial gate position before any hedge is cut."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Charlie looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Charlie looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Charlie helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Charlie helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

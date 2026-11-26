@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1288",
+  "personId": "AH-R1288",
+  "name": "Teresa Arendt",
+  "age": 48,
+  "occupation": "Porch carpenter",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The returned daughter",
+  "biography": "stories/residents/09/09-the-returned-daughter.md#ah-r1288",
+  "life": "“I still remember repairing a rail while the owner practiced an apology upstairs.” Monday often includes a stop at the blocks below Foundry Lofts, where Teresa checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I agreed to fix the banister. Nobody asked me to mend the whole family and I won't promise it.",
+  "appearance": "Teresa has a broad nose and a deep dimple on one cheek. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is an old plum windbreaker with a folded shopping list secured by a miniature clip. In conversation Teresa gives a little nod before asking a hard question.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To finish the rail without mediating the reunion.",
+  "family": "Naomi Tate is Teresa’s cousin raised in the same household. Teresa puts the kettle on. Naomi chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *One last dress rehearsal*, Naomi says, “I came straight from a kitchen shift expecting a quick song.”",
+  "connections": "Arthur Colón. The father practices his first words while the carpenter finishes the banister.",
+  "familyIds": [
+    "AH-R1472"
+  ],
+  "connectionIds": [
+    "AH-R1283"
+  ],
+  "reactions": [
+    {
+      "situation": "The father offers a letter instead of speaking",
+      "response": "Teresa asks whether the daughter wants to take the letter now or leave it closed for another day.",
+      "asWritten": "The father offers a letter instead of speaking. Teresa asks whether the daughter wants to take the letter now or leave it closed for another day."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Teresa asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Teresa asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Teresa listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Teresa listens first to the account of how it was actually used."
+    }
+  ]
+}

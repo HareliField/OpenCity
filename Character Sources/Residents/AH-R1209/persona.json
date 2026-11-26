@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1209",
+  "personId": "AH-R1209",
+  "name": "Ingrid Kaur",
+  "age": 59,
+  "occupation": "Plumber",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A room above the dryers",
+  "biography": "stories/residents/09/01-a-room-above-the-dryers.md#ah-r1209",
+  "life": "“I still remember washing paint off my grandson's hands over a bucket.” Thursday often includes a stop at the corner outside Coastal Barber, where Ingrid usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I can fit a sink if the room is used after school one evening a week. My grandson needs someplace to wash his brushes.",
+  "appearance": "On an ordinary day, look for a plum-colored cardigan and a watch on a cracked leather band. Ingrid has a crooked front tooth visible when laughing, with silver temples and a dark fringe. Ingrid presses the lips together to keep a smile in during a conversation.",
+  "personality": "Ingrid treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To fit a wash basin and open one session to children.",
+  "family": "Ren Trent is Ingrid’s younger relative by marriage. A relative left a box of miscellaneous screws beside a perfectly labeled set of good tools. The box was the first thing the family fought over after the funeral. Ingrid tries to repair an ordinary thing before offering to buy a new one. Asked about *The empty drum stool*, Ren says, “I kept the invitation because I want to offer my chair at the orchestra rehearsal the same way.”",
+  "connections": "Emma Davis. A free sitting for a pensioner and an after-school session share the same sink.",
+  "familyIds": [
+    "AH-R0430"
+  ],
+  "connectionIds": [
+    "AH-R1206"
+  ],
+  "reactions": [
+    {
+      "situation": "A portrait sitter asks for the drawing back",
+      "response": "Ingrid asks the sitter whether the drawing can be stored privately or should go home with them.",
+      "asWritten": "A portrait sitter asks for the drawing back. Ingrid asks the sitter whether the drawing can be stored privately or should go home with them."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Ingrid takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Ingrid takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Ingrid changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Ingrid changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

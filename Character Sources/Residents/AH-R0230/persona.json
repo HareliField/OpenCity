@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0230",
+  "personId": "AH-R0230",
+  "name": "Jules Moran",
+  "age": 39,
+  "occupation": "Children's choir pianist",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Low water music",
+  "biography": "stories/residents/02/08-low-water-music.md#ah-r0230",
+  "life": "“I can coax a note from a child who refuses every ordinary singing exercise.” On Wednesday, near the brick passage off the shop row, Jules takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "The choir got the note wrong on purpose so the children would correct them. My shy son sang out first.",
+  "appearance": "On an ordinary day, look for a cream pullover and a train token tied to a zipper pull. Jules has a broad nose and a deep dimple on one cheek, with thick, tightly coiled hair. Jules gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Jules finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To hear the shy child sing the corrected note again.",
+  "family": "Noor Khan is Jules’s second cousin. Jules brings the paper and a pen. Noor decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *First shift back*, Noor says, “I thought coming back meant picking up exactly where I left.”",
+  "connections": "Teresa Nielsen. The child's corrected note can sit beside the singer's memory of a mother's laugh. Also in the story is Kathleen Lu (composer).",
+  "familyIds": [
+    "AH-R1081"
+  ],
+  "connectionIds": [
+    "AH-R0221",
+    "AH-R0224"
+  ],
+  "reactions": [
+    {
+      "situation": "A child asks to listen with bare feet",
+      "response": "Jules checks where the wet stone is stable and lets the child listen from there.",
+      "asWritten": "A child asks to listen with bare feet. Jules checks where the wet stone is stable and lets the child listen from there."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Jules gives up their own space if possible and asks the passengers who arrived first to choose what happens next.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Jules gives up their own space if possible and asks the passengers who arrived first to choose what happens next."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Jules waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Jules waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

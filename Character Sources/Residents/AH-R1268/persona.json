@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1268",
+  "personId": "AH-R1268",
+  "name": "Rowan Davis",
+  "age": 47,
+  "occupation": "Bank cleaner",
+  "home": "Coast Ridge",
+  "episode": "School after sixty",
+  "biography": "stories/residents/09/07-school-after-sixty.md#ah-r1268",
+  "life": "“I still remember reading shop notices with the help of the lunchtime cleaner.” Thursday often includes a stop at the crossing outside Verve Nail Studio, where Rowan notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I took the day off with a stomach ache. I don't want my boss at the bank to know I'm learning to read his notices.",
+  "appearance": "On an ordinary day, look for a boxy denim jacket and a printed handkerchief folded into the pocket. Rowan has two dimples that appear only with a full smile, with a center part and straight chestnut hair. Rowan rubs a thumb along the edge of the nearest pocket during a conversation.",
+  "personality": "Rowan finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To read workplace notices without disclosing the class.",
+  "family": "Fiona Mann is Rowan’s half-sibling. Rowan is free to hang up first. Fiona makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The bitter orange*, Fiona says, “I can't eat the memorial sandwich. I chose the paper it will be wrapped in.”",
+  "connections": "Yvette Tsai. Two workers using different strategies for private reading try the same examination paper.",
+  "familyIds": [
+    "AH-R0249"
+  ],
+  "connectionIds": [
+    "AH-R1262"
+  ],
+  "reactions": [
+    {
+      "situation": "An examiner offers to read a question aloud",
+      "response": "Rowan asks the learner how they want the question presented before the examiner begins.",
+      "asWritten": "An examiner offers to read a question aloud. Rowan asks the learner how they want the question presented before the examiner begins."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Rowan says what they know in their own name and refuses to treat a guess as something the child has to disprove.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Rowan says what they know in their own name and refuses to treat a guess as something the child has to disprove."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Rowan points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Rowan points to the person who noticed the original mistake."
+    }
+  ]
+}

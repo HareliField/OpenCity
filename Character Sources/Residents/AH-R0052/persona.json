@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0052",
+  "personId": "AH-R0052",
+  "name": "Nessa Wren",
+  "age": 42,
+  "occupation": "Palliative-care nurse",
+  "home": "Midtown",
+  "episode": "Window seven",
+  "biography": "stories/residents/01/06-window-seven.md#ah-r0052",
+  "life": "Nessa used to promise impossible comforts to people she loved. In nursing school she learned precise language. Her hard days are the ones when precision starts sounding to a family like indifference. On Thursday, near the corner by Juniper Tailor, Nessa looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I promised her we'd try. I kept saying try because of the time I promised my father a trip he never got to make. This time I told the family exactly when to arrive.",
+  "appearance": "Nessa has short sandy hair and a marked widow's peak, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Nessa grins on one side while the eyes stay serious.",
+  "personality": "Nessa admires skill and distrusts the idea that skill gives anyone permission to be rude. Nessa learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To let the patient decide how far to go on the morning.",
+  "family": "Marc Ramos is Nessa’s cousin’s child. Nessa makes room at the table. Marc brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Saturday keys*, Marc says, “I delivered the missing keys on my skates. It's the first time a grown-up thanked me for using the pavement.”",
+  "connections": "Cass Pennell. They ask the patient what colors and timing she would want her family to remember.",
+  "familyIds": [
+    "AH-R0287"
+  ],
+  "connectionIds": [
+    "AH-R0057"
+  ],
+  "reactions": [
+    {
+      "situation": "A different patient needs the same porter",
+      "response": "Nessa checks which part can wait and makes sure the other patient hears about the delay.",
+      "asWritten": "A different patient needs the same porter. Nessa checks which part can wait and makes sure the other patient hears about the delay."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Nessa gets the people at the next doorway away from the smoke and asks a bystander to make the call.",
+      "asWritten": "Smoke appears under a shop door after closing. Nessa gets the people at the next doorway away from the smoke and asks a bystander to make the call."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Nessa describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Nessa describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

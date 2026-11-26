@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1008",
+  "personId": "AH-R1008",
+  "name": "Hollis Aranda",
+  "age": 29,
+  "occupation": "Advertising coordinator",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The salon on strike",
+  "biography": "stories/residents/07/11-the-salon-on-strike.md#ah-r1008",
+  "life": "“I still remember deleting a party invitation after my host got ill.” People around the steps at Pier Beach know Hollis by a small Sunday habit. Hollis watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I promoted the party online and quietly deleted the post. Now I need to publish why.",
+  "appearance": "On an ordinary day, look for an olive canvas jacket and a comb in a sleeve sewn into the lining. Hollis has full cheeks and a mouth that pulls slightly to one side, with a soft fringe that falls across one eyebrow. Hollis gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Hollis has a quick wit and an equally quick sense of shame. A joke is often Hollis's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To correct the public invitation in public.",
+  "family": "Jack Saito is Hollis’s cousin. Hollis can always ask for five minutes alone. Jack asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Level with the window*, Jack says, “I share a smile with a passenger every morning.”",
+  "connections": "Milo Roche. A meeting next door gives the advertiser a real public update on the canceled event.",
+  "familyIds": [
+    "AH-R0713"
+  ],
+  "connectionIds": [
+    "AH-R1006"
+  ],
+  "reactions": [
+    {
+      "situation": "An apprentice asks if declining will cost future shifts",
+      "response": "Hollis asks the owner to give the apprentice a direct answer in front of a witness of their choosing.",
+      "asWritten": "An apprentice asks if declining will cost future shifts. Hollis asks the owner to give the apprentice a direct answer in front of a witness of their choosing."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Hollis asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Hollis asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Hollis seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Hollis seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

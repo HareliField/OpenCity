@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1185",
+  "personId": "AH-R1185",
+  "name": "Ariel Pinto",
+  "age": 41,
+  "occupation": "Interpreter",
+  "home": "Eastside",
+  "episode": "The new language at dinner",
+  "biography": "stories/residents/08/14-the-new-language-at-dinner.md#ah-r1185",
+  "life": "“I still remember my own parent's accent surprising me at someone else's bedside.” Tuesday often includes a stop at Ferris Deli, where Ariel asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I translated our first visit and cried in the lift because he sounded exactly like my late father.",
+  "appearance": "On an ordinary day, look for a faded indigo overshirt and a seam let out by a narrow strip of contrasting fabric. Ariel has a flat bridge to the nose and a mobile brow, with short black hair swept back. Ariel turns fully toward the person speaking during a conversation.",
+  "personality": "Ariel admires skill and distrusts the idea that skill gives anyone permission to be rude. Ariel learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To interpret the dinner visit accurately.",
+  "family": "Della Keys is Ariel’s half-sibling. Ariel calls back when there is finally a little privacy. Della leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The porch light*, Della says, “We offered to buy the lamp as a landmark. He reminded me his wife's sister is still alive.”",
+  "connections": "Allen Baker. A joke recorded before the stroke gives the interpreter a familiar voice to begin with.",
+  "familyIds": [
+    "AH-R0090"
+  ],
+  "connectionIds": [
+    "AH-R1188"
+  ],
+  "reactions": [
+    {
+      "situation": "The client uses a word nobody in the room knows",
+      "response": "Ariel asks the client which person they want to help with the word.",
+      "asWritten": "The client uses a word nobody in the room knows. Ariel asks the client which person they want to help with the word."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Ariel sits beside them without expecting a performance and asks if they want to go outside.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Ariel sits beside them without expecting a performance and asks if they want to go outside."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Ariel describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Ariel describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

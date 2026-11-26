@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1278",
+  "personId": "AH-R1278",
+  "name": "Yusuf Bennett",
+  "age": 36,
+  "occupation": "Beach cleaner",
+  "home": "Coast Ridge",
+  "episode": "The other side of the cove",
+  "biography": "stories/residents/09/08-the-other-side-of-the-cove.md#ah-r1278",
+  "life": "“I still remember emptying bins before a photographer would take the picture.” On Friday, near the window at Night Shift Donuts, Yusuf knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I am the cleaner who came after her. A plaque can't promise working wages and I want both issues on the agenda.",
+  "appearance": "Yusuf is easy to recognize by short black hair swept back and full cheeks and a mouth that pulls slightly to one side. Usually dressed in a mustard canvas overshirt with a tiny red thread tied through the lowest buttonhole, Yusuf turns fully toward the person speaking when listening.",
+  "personality": "Yusuf prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To raise actual cleaning wages alongside the dedication.",
+  "family": "Reuben Marsh is Yusuf’s cousin. Yusuf chooses an ordinary story to tell. Reuben asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *An ordinary mirror*, Reuben says, “I used that mirror to adjust my first work coat.”",
+  "connections": "Walter Ray. Mother and successor become visible to the committee as two paid workers.",
+  "familyIds": [
+    "AH-R1460"
+  ],
+  "connectionIds": [
+    "AH-R1274"
+  ],
+  "reactions": [
+    {
+      "situation": "A former cleaner wants to try the seat before it is installed",
+      "response": "Yusuf gets the seat tested by the person who will actually need to stand up from it.",
+      "asWritten": "A former cleaner wants to try the seat before it is installed. Yusuf gets the seat tested by the person who will actually need to stand up from it."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Yusuf stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Yusuf stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Yusuf clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Yusuf clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

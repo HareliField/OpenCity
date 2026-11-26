@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1151",
+  "personId": "AH-R1151",
+  "name": "Robin Gomes",
+  "age": 44,
+  "occupation": "Recovering client and sculptor",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The hair after illness",
+  "biography": "stories/residents/08/11-the-hair-after-illness.md#ah-r1151",
+  "life": "“I still remember watching my old hair collect in the hospital basin.” Wednesday often includes a stop at Ferris Deli, where Robin asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I wanted my old photograph. In the chair I saw how much I like this new cowlick.",
+  "appearance": "Robin has a crooked front tooth visible when laughing. Look for a cropped cut that shows the shape of the ears. On an ordinary day, the familiar outfit is a brown corduroy jacket with a pocket notebook shaped by years of sitting on it. In conversation Robin gives a little nod before asking a hard question.",
+  "personality": "Robin enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To choose a haircut that honors the new texture.",
+  "family": "Talia Carvalho is Robin’s half-sibling. Robin chooses whether to use it. Talia saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The ladder crossing*, Talia says, “I balanced my shopping on a rung while we waited.”",
+  "connections": "Ivy Arnett (stylist). The client talks to the stylist about what to keep of the new texture.",
+  "familyIds": [
+    "AH-R0566"
+  ],
+  "connectionIds": [
+    "AH-R1153"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone asks to take a photograph before the haircut",
+      "response": "Robin waits for the customer's permission before anyone takes a picture.",
+      "asWritten": "Someone asks to take a photograph before the haircut. Robin waits for the customer's permission before anyone takes a picture."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Robin says what they know in their own name and refuses to treat a guess as something the child has to disprove.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Robin says what they know in their own name and refuses to treat a guess as something the child has to disprove."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Robin puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Robin puts the deal away and suggests a walk."
+    }
+  ]
+}

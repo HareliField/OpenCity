@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0128",
+  "personId": "AH-R0128",
+  "name": "Nia Oak",
+  "age": 35,
+  "occupation": "Park ranger",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The borrowed bass",
+  "biography": "stories/residents/01/13-the-borrowed-bass.md#ah-r0128",
+  "life": "Nia took park work to spend more time outdoors and spends most of it negotiating who gets to make noise. Her private map of the fountain is divided into places where conversation will travel and places where it won't. On Tuesday, near Juniper Street, Nia knows which of the west-side porches has a seat in the shade.",
+  "voice": "I usually have to tell bands to turn down. I loaned this one the quiet side of the fountain for the phone call. Their drummer came back afterwards and asked how loud the ducks like it.",
+  "appearance": "Nia is easy to recognize by short copper curls and a wide brow and a narrow jaw. Usually dressed in a plum-colored cardigan with a braided bracelet with a single wooden bead, Nia counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Nia admires skill and distrusts the idea that skill gives anyone permission to be rude. Nia learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To keep a quiet place free beside the fountain for the call.",
+  "family": "Elise Cotton is Nia’s stepsibling. Nia asks before bringing somebody along. Elise can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *One unposted detour*, Elise says, “I wrote the notice in tiny type to save paper.”",
+  "connections": "Elin Watts. They give the teenager somewhere quiet to make a call without having to surrender the audition.",
+  "familyIds": [
+    "AH-R0417"
+  ],
+  "connectionIds": [
+    "AH-R0129"
+  ],
+  "reactions": [
+    {
+      "situation": "The band is called early for its audition",
+      "response": "Nia finds out how many minutes the band actually has before treating the slot as lost.",
+      "asWritten": "The band is called early for its audition. Nia finds out how many minutes the band actually has before treating the slot as lost."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Nia checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Nia checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Nia describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Nia describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

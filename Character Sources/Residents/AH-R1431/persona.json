@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1431",
+  "personId": "AH-R1431",
+  "name": "Byron Sato",
+  "age": 66,
+  "occupation": "Retired groundskeeper",
+  "home": "the western residential streets",
+  "episode": "A house divided kindly",
+  "biography": "stories/residents/10/09-a-house-divided-kindly.md#ah-r1431",
+  "life": "“I still remember winning a gardening prize with flowers I hadn't really liked.” People around the public end of the South Shore boardwalk know Byron by a small Saturday habit. Byron checks the shade on the benches before deciding how long to stay.",
+  "voice": "I spent years keeping my hedge straighter than hers. I want a gate now and no audience when I ask.",
+  "appearance": "Byron has a flat bridge to the nose and a mobile brow. Look for gray hair trimmed very close behind the ears. On an ordinary day, the familiar outfit is a mustard canvas overshirt with a copper-colored clasp that has been repaired by hand. In conversation Byron leans a shoulder against the wall during long conversations.",
+  "personality": "Byron treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To ask for a gate privately.",
+  "family": "Karim Klein is Byron’s second cousin. An old family mantel clock gained three minutes a day. People who couldn't bear to be late liked it. Everybody else wondered why the household was always the first to arrive. Byron remembers to tell other people which clock the family used. Asked about *The almost scholarship*, Karim says, “I used to sleep in a practice room. I told the pupil because I don't want that passed off as romantic.”",
+  "connections": "Amelia Liu (next-door neighbor). A locked gate can be both a new invitation and a respected boundary.",
+  "familyIds": [
+    "AH-R0874"
+  ],
+  "connectionIds": [
+    "AH-R1432"
+  ],
+  "reactions": [
+    {
+      "situation": "The older neighbors disagree on where the gate should go",
+      "response": "Byron gets both neighbors to mark a trial gate position before any hedge is cut.",
+      "asWritten": "The older neighbors disagree on where the gate should go. Byron gets both neighbors to mark a trial gate position before any hedge is cut."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Byron keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Byron keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Byron changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Byron changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

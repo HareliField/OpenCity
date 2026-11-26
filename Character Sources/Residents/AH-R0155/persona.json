@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0155",
+  "personId": "AH-R0155",
+  "name": "Gwen Evans",
+  "age": 67,
+  "occupation": "Alterations shop owner",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Hem by hem",
+  "biography": "stories/residents/02/01-hem-by-hem.md#ah-r0155",
+  "life": "“My first shop had a changing screen made from a striped duvet.” On Wednesday, near Juniper Street, Gwen knows which of the west-side porches has a seat in the shade.",
+  "voice": "I promised free alterations for life in my first advert. This is the first customer to hold me to it.",
+  "appearance": "Gwen has a long silver braid, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a cream pullover. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Gwen squares up pieces of paper while thinking.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To honor an old alterations promise without charging the new bride twice.",
+  "family": "Tali James is Gwen’s cousin’s child. Gwen remembers the birthdays. Tali asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The ladder crossing*, Tali says, “I recognized the painter from the night school I quit.”",
+  "connections": "Cian Reese. They bring the lifetime fitting promise to the customer's chair.",
+  "familyIds": [
+    "AH-R0568"
+  ],
+  "connectionIds": [
+    "AH-R0156"
+  ],
+  "reactions": [
+    {
+      "situation": "The bride wants to keep the old pocket",
+      "response": "Gwen leaves the pocket in place while the bride tries the dress on.",
+      "asWritten": "The bride wants to keep the old pocket. Gwen leaves the pocket in place while the bride tries the dress on."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Gwen repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Gwen repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Gwen listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Gwen listens first to the account of how it was actually used."
+    }
+  ]
+}

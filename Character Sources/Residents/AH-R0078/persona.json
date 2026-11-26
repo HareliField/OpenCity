@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0078",
+  "personId": "AH-R0078",
+  "name": "Cato Hull",
+  "age": 41,
+  "occupation": "Ferry deckhand",
+  "home": "Old Town",
+  "episode": "A tide at noon",
+  "biography": "stories/residents/01/08-a-tide-at-noon.md#ah-r0078",
+  "life": "Cato worked boats before learning to swim properly. He dislikes stories that make seafarers sound fearless. Changing currents, failed castles and children's honest questions are more interesting to him than brave poses. Sunday often includes a stop at the steps at Pier Beach, where Cato watches the working part of the waterfront before turning toward the open water.",
+  "voice": "On my break I taught three children how water moves around a pier. Their castle vanished first. They want me back next year to show them how to build the same thing again.",
+  "appearance": "Cato has a blunt cut just below the ears, fine brows over wide-set eyes, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a fabric zip pull cut from a school scarf. When somebody else has the floor, Cato holds eye contact until the other person has finished.",
+  "personality": "Cato loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To return next summer to try a new water channel with the children.",
+  "family": "Victor Sun is Cato’s older relative by marriage. Cato makes the call. Victor is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A wall of birthdays*, Victor says, “I want to measure myself again. Chemotherapy stole a little of my height and a lot of my nerve.”",
+  "connections": "Aster Loy. One knows where the line should have gone. The other knows how the water reached it anyway.",
+  "familyIds": [
+    "AH-R0231"
+  ],
+  "connectionIds": [
+    "AH-R0073"
+  ],
+  "reactions": [
+    {
+      "situation": "The judges ask the fastest builder to speak for everyone",
+      "response": "Cato asks each child how they would enter their own castle.",
+      "asWritten": "The judges ask the fastest builder to speak for everyone. Cato asks each child how they would enter their own castle."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Cato walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Cato walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Cato offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Cato offers one about their own embarrassment instead."
+    }
+  ]
+}

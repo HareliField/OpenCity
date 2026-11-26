@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1173",
+  "personId": "AH-R1173",
+  "name": "Chloe Briggs",
+  "age": 42,
+  "occupation": "Publicity manager",
+  "home": "Eastside",
+  "episode": "The understudy sings",
+  "biography": "stories/residents/08/13-the-understudy-sings.md#ah-r1173",
+  "life": "“I still remember printing an understudy's name on the last poster of a season.” Thursday often includes a stop at the corner outside Coastal Barber, where Chloe usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I promoted the show around one voice. I put the understudy's full name on every remaining poster.",
+  "appearance": "Chloe has a strong profile and a little space between the front teeth. Look for auburn hair cut square at the nape. On an ordinary day, the familiar outfit is a cropped bottle-green coat with a train token tied to a zipper pull. In conversation Chloe presses the lips together to keep a smile in.",
+  "personality": "Chloe has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To give the understudy proper billing.",
+  "family": "Carol Dunn is Chloe’s stepsibling. Chloe decides what stays off the paper. Carol brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The late crossing*, Carol says, “I thought all six of us wanted a bus. One wants his license back and another wants work nearer her dad.”",
+  "connections": "Briar Wong. A replacement poster and a borrowed library score can carry the understudy's full name.",
+  "familyIds": [
+    "AH-R0870"
+  ],
+  "connectionIds": [
+    "AH-R1180"
+  ],
+  "reactions": [
+    {
+      "situation": "The understudy is offered the lead before the announcement",
+      "response": "Chloe asks that the lead singer hear the change directly before it is advertised.",
+      "asWritten": "The understudy is offered the lead before the announcement. Chloe asks that the lead singer hear the change directly before it is advertised."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Chloe takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Chloe takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Chloe says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Chloe says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

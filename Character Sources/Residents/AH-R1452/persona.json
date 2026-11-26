@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1452",
+  "personId": "AH-R1452",
+  "name": "Gregory Lang",
+  "age": 60,
+  "occupation": "Tailor and mirror owner",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "An ordinary mirror",
+  "biography": "stories/residents/10/11-an-ordinary-mirror.md#ah-r1452",
+  "life": "“I still remember carrying a large mirror up to a first-floor shop.” People around the market by Market Flats know Gregory by a small Monday habit. Gregory often waits until the delivery baskets are stacked before going in.",
+  "voice": "I own the mirror and have seen a hundred other lives in it. I don't want to price them.",
+  "appearance": "Gregory has soft white hair brushed sideways, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a cream pullover. It usually goes with a pair of reading glasses in a cloth sleeve. When somebody else has the floor, Gregory squares up pieces of paper while thinking.",
+  "personality": "Gregory admires skill and distrusts the idea that skill gives anyone permission to be rude. Gregory learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To preserve access for other longtime clients.",
+  "family": "Adela Griffin is Gregory’s cousin. Gregory sets the time to leave. Adela picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The hospital radio*, Adela says, “I never learned the stations' names. I memorized how far the dial turned from the crack.”",
+  "connections": "Lara Carey. A would-be mirror buyer and its owner each have a personal history the other cannot put a price on.",
+  "familyIds": [
+    "AH-R0352"
+  ],
+  "connectionIds": [
+    "AH-R1451"
+  ],
+  "reactions": [
+    {
+      "situation": "Another customer asks for a last fitting in front of it",
+      "response": "Gregory sets aside an ordinary fitting time before making plans for the sale.",
+      "asWritten": "Another customer asks for a last fitting in front of it. Gregory sets aside an ordinary fitting time before making plans for the sale."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Gregory moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Gregory moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Gregory describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Gregory describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

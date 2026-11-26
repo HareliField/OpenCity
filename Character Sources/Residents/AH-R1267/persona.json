@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1267",
+  "personId": "AH-R1267",
+  "name": "Kai Mercer",
+  "age": 38,
+  "occupation": "Evening interpreter",
+  "home": "Old Town",
+  "episode": "School after sixty",
+  "biography": "stories/residents/09/07-school-after-sixty.md#ah-r1267",
+  "life": "“I still remember my aunt taking my dictionary away before I could answer for her.” People around the corner by Juniper Tailor know Kai by a small Monday habit. Kai looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I can translate the questions but not the answer my aunt wants to give. She asked to sit the exam on her own.",
+  "appearance": "Kai is easy to recognize by a swept fringe and a closely clipped nape and a round face with a pronounced chin. Usually dressed in a mustard canvas overshirt with a little coil of soft measuring tape, Kai looks down for a moment before saying something difficult when listening.",
+  "personality": "Kai has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To let the aunt give her own answers.",
+  "family": "Chris Moss is Kai’s second cousin. Kai knows which ones can be shared. Chris keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The salon on strike*, Chris says, “I make commission on the bottles. I brought my sales figures so the assistants can point to what their work earns.”",
+  "connections": "Ramona Vargas. A clean practice copy lets an adult decide when a translating relative can help.",
+  "familyIds": [
+    "AH-R1004"
+  ],
+  "connectionIds": [
+    "AH-R1264"
+  ],
+  "reactions": [
+    {
+      "situation": "An older learner freezes in front of the blackboard",
+      "response": "Kai offers to turn the learner's chair without announcing the reason to the class.",
+      "asWritten": "An older learner freezes in front of the blackboard. Kai offers to turn the learner's chair without announcing the reason to the class."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Kai offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Kai offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Kai asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Kai asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0316",
+  "personId": "AH-R0316",
+  "name": "August Jackson",
+  "age": 57,
+  "occupation": "Deck cook",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A ship without postcards",
+  "biography": "stories/residents/03/02-a-ship-without-postcards.md#ah-r0316",
+  "life": "“I still remember a letter arriving on the wrong continent.” People around the foot of Harbor Viaduct know August by a small Saturday habit. August pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I fold the cards into boats. My granddaughter can open them only by reading flags.",
+  "appearance": "August has short copper curls, a softly rounded chin under sharp cheekbones, and a favorite piece of clothing, an olive canvas jacket. It usually goes with a folded shopping list secured by a miniature clip. When somebody else has the floor, August takes off the watch before a long conversation.",
+  "personality": "August keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. August wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To teach the grandchild to unfold the flagged card.",
+  "family": "Patricia Ramos is August’s younger relative by marriage. August offers the first invitation. Patricia gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The late crossing*, Patricia says, “I used to get lifts from my boss until I felt I couldn't refuse overtime.”",
+  "connections": "Lee Murphy. A folded boat reaches one grandchild while a dance-hall print finds an old partner.",
+  "familyIds": [
+    "AH-R0864"
+  ],
+  "connectionIds": [
+    "AH-R0318"
+  ],
+  "reactions": [
+    {
+      "situation": "A souvenir shop offers to print the cards as an advert",
+      "response": "August checks whether the families want their messages used outside the envelopes.",
+      "asWritten": "A souvenir shop offers to print the cards as an advert. August checks whether the families want their messages used outside the envelopes."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "August asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. August asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "August offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, August offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

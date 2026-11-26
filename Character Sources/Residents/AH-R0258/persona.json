@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0258",
+  "personId": "AH-R0258",
+  "name": "Jack Bellamy",
+  "age": 49,
+  "occupation": "Alterations clerk",
+  "home": "Eastside",
+  "episode": "One sleeve short",
+  "biography": "stories/residents/02/11-one-sleeve-short.md#ah-r0258",
+  "life": "“The first sleeve I shortened belonged to the coach who paid my bus fare.” On Tuesday, near Ferris Deli, Jack asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I thought he was embarrassed about his arm. He was embarrassed about mine being the only shop offering help.",
+  "appearance": "Jack is easy to recognize by auburn hair cut square at the nape and heavy brows and an unusually delicate jaw. Usually dressed in a red windbreaker with a square of clean cloth for polishing smudges, Jack folds a paper napkin into quarters without noticing when listening.",
+  "personality": "Jack loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To ask the applicant what actually matters about the garment.",
+  "family": "Albert Bay is Jack’s cousin raised in the same household. Jack picks the meeting place. Albert sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *One clean day*, Albert says, “I used to steal lunches here. A woman whose sandwich I took asked if I had eaten today.”",
+  "connections": "Emilio Walker. They both learn why the wearer wanted to keep one personal, unfinished sleeve.",
+  "familyIds": [
+    "AH-R0635"
+  ],
+  "connectionIds": [
+    "AH-R0253"
+  ],
+  "reactions": [
+    {
+      "situation": "The interview is advanced before the jacket is ready",
+      "response": "Jack checks which part of the jacket can be finished in the time available.",
+      "asWritten": "The interview is advanced before the jacket is ready. Jack checks which part of the jacket can be finished in the time available."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Jack keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Jack keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Jack offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Jack offers one about their own embarrassment instead."
+    }
+  ]
+}

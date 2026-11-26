@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1015",
+  "personId": "AH-R1015",
+  "name": "Faye Tate",
+  "age": 45,
+  "occupation": "Street cleaner",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The crash anniversary",
+  "biography": "stories/residents/07/12-the-crash-anniversary.md#ah-r1015",
+  "life": "“I still remember picking up someone's ribbon on a quiet Tuesday.” People around Lighthouse Cove know Faye by a small Sunday habit. Faye takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I take flowers home after they wilt so the family doesn't have to see them wet and gray.",
+  "appearance": "On an ordinary day, look for a black overshirt with pearl buttons and a copper-colored clasp that has been repaired by hand. Faye has an aquiline nose and a square chin, with short black hair swept back. Faye gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Faye treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To remove wilted memorials with family permission.",
+  "family": "Howard Heller is Faye’s cousin raised in the same household. Faye chooses whether they walk home or sit a while. Howard brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The fountain score*, Howard says, “I came prepared to laugh at the performance.”",
+  "connections": "Cynthia Bloom. Fading flowers and a side-door meal give the family two ways to leave the memorial quietly.",
+  "familyIds": [
+    "AH-R0723"
+  ],
+  "connectionIds": [
+    "AH-R1020"
+  ],
+  "reactions": [
+    {
+      "situation": "A memorial is proposed where the survivor walks to work",
+      "response": "Faye checks whether the survivor wants to pass the proposed site every day.",
+      "asWritten": "A memorial is proposed where the survivor walks to work. Faye checks whether the survivor wants to pass the proposed site every day."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Faye accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Faye accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Faye changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Faye changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

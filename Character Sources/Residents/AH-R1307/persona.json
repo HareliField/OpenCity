@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1307",
+  "personId": "AH-R1307",
+  "name": "Riley Evans",
+  "age": 45,
+  "occupation": "Factory worker",
+  "home": "Old Town",
+  "episode": "A scar at the salon",
+  "biography": "stories/residents/09/11-a-scar-at-the-salon.md#ah-r1307",
+  "life": "“I still remember working my first shift after the bandages came off.” Thursday often includes a stop at Lighthouse Cove, where Riley takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I used to hide my fingers after a factory injury. I asked to sit as a separate model on my own terms.",
+  "appearance": "On an ordinary day, look for a dark green knitted vest and a tiny red thread tied through the lowest buttonhole. Riley has a wide brow and a narrow jaw, with short black hair swept back. Riley starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Riley listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To make a separate portrait on independent terms.",
+  "family": "Ignacio Schmidt is Riley’s second cousin. Riley brings something that can still be enjoyed tomorrow. Ignacio checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The skipper goes ashore*, Ignacio says, “I can face a hard crossing and can't face my crew seeing me wait for the nausea to settle.”",
+  "connections": "Casey Hunter. The original fishing partner meets a second worker who will model an injury on separate terms.",
+  "familyIds": [
+    "AH-R1191"
+  ],
+  "connectionIds": [
+    "AH-R1303"
+  ],
+  "reactions": [
+    {
+      "situation": "A campaign manager wants to enlarge the scar",
+      "response": "Riley asks the model whether the original permission covers the scar.",
+      "asWritten": "A campaign manager wants to enlarge the scar. Riley asks the model whether the original permission covers the scar."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Riley repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Riley repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Riley keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Riley keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

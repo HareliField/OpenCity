@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1289",
+  "personId": "AH-R1289",
+  "name": "Terry Perry",
+  "age": 49,
+  "occupation": "School administrator",
+  "home": "Coast Ridge",
+  "episode": "The returned daughter",
+  "biography": "stories/residents/09/09-the-returned-daughter.md#ah-r1289",
+  "life": "“I still remember a family visit that ended after one shared word.” People around the public road outside the Port of Asphalt know Terry by a small Thursday habit. Terry can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I am her partner. We picked one word she can say when she's ready to get back in the car.",
+  "appearance": "Terry is easy to recognize by close-cropped dark curls and a softly rounded chin under sharp cheekbones. Usually dressed in a washed violet jersey with a partly rubbed-away embroidered initial, Terry looks toward the door whenever a name is called when listening.",
+  "personality": "Terry is kind in very practical ways and prickly about being thanked in public. Terry loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To honor the agreed signal to return to the car.",
+  "family": "Hannah Hewitt is Terry’s stepsibling. Terry chooses whether to use it. Hannah saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The painted footprint*, Hannah says, “I remember the girl standing on one foot. She was waiting for her other sandal to wash back.”",
+  "connections": "Willa Rizzo. The protective partner can ask the old neighbor what help the teenager once needed. Also in the story is Iva Salas (partner).",
+  "familyIds": [
+    "AH-R0373"
+  ],
+  "connectionIds": [
+    "AH-R1285",
+    "AH-R1281"
+  ],
+  "reactions": [
+    {
+      "situation": "The estranged daughter asks to leave before the meal",
+      "response": "Terry helps the daughter leave without forcing a final conversation at the door.",
+      "asWritten": "The estranged daughter asks to leave before the meal. Terry helps the daughter leave without forcing a final conversation at the door."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Terry asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Terry asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Terry gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Terry gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

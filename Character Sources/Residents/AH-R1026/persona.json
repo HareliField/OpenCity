@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1026",
+  "personId": "AH-R1026",
+  "name": "Faye Tran",
+  "age": 54,
+  "occupation": "Dance instructor",
+  "home": "the western residential streets",
+  "episode": "A dance for two fathers",
+  "biography": "stories/residents/07/13-a-dance-for-two-fathers.md#ah-r1026",
+  "life": "“I still remember teaching a man whose shoes were still white from a bakery shift.” People around Paper & Pine Books know Faye by a small Monday habit. Faye starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I trained both men on separate nights. Neither wanted the other to know how scared he was.",
+  "appearance": "Faye has one cheek that creases before the other. Look for a high puff tied with plain cord. On an ordinary day, the familiar outfit is a black overshirt with pearl buttons with one cuff folded back twice. In conversation Faye listens with the head tilted a little to the left.",
+  "personality": "Faye is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Faye is by the number of tiny errands suddenly being done.",
+  "agenda": "To help the fathers rehearse without rivalry.",
+  "family": "Sam Kaur is Faye’s younger cousin. Faye can stop the walk at any corner. Sam chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Low water music*, Sam says, “I miss my first language most when somebody asks me to name a thing.”",
+  "connections": "Agnes Lin. The choreographer and dance teacher work out where each father has room to move.",
+  "familyIds": [
+    "AH-R0229"
+  ],
+  "connectionIds": [
+    "AH-R1021"
+  ],
+  "reactions": [
+    {
+      "situation": "One of the fathers misses the dance rehearsal",
+      "response": "Faye keeps the missed step available for a quiet practice before the ceremony.",
+      "asWritten": "One of the fathers misses the dance rehearsal. Faye keeps the missed step available for a quiet practice before the ceremony."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Faye asks the cashier to hold it and lets a claimant identify the writing and amount privately.",
+      "asWritten": "An envelope of wages is found under a café chair. Faye asks the cashier to hold it and lets a claimant identify the writing and amount privately."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Faye agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Faye agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

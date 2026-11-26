@@ -1,0 +1,42 @@
+{
+  "residentId": "AH-R1091",
+  "personId": "AH-R1091",
+  "name": "Charles Mack",
+  "age": 22,
+  "occupation": "Young street dealer",
+  "home": "the brick passage",
+  "episode": "The boy on the corner",
+  "biography": "stories/residents/08/05-the-boy-on-the-corner.md#ah-r1091",
+  "life": "“I still remember my brother asking for a badge like the drivers wear.” On Monday, near the brick passage off the shop row, Charles takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I told my brother I worked in deliveries. He drew me in a uniform I have never owned.",
+  "appearance": "Charles is easy to recognize by a high puff tied with plain cord and full cheeks and a mouth that pulls slightly to one side. Usually dressed in a rust-colored canvas coat with a train token tied to a zipper pull, Charles draws small circles on a tabletop while waiting when listening.",
+  "personality": "Charles enjoys routines and will defend the right of someone else to break one. As a result, Charles is often everyone's favorite cover for a missed morning.",
+  "agenda": "To arrange reliable care and tell the younger brother the truth.",
+  "family": "Ren Cullen is Charles’s first cousin once removed. Charles brings something that can still be enjoyed tomorrow. Ren checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The fitting mirror*, Ren says, “I like the tailor's light better. I saw the silver in my hair there and canceled my dye appointment.”",
+  "connections": "Sam Knight. They need to agree where the younger child can wait at the end of school. Other connections include Jade Hunter (aunt), Noel Gomes (former babysitter).",
+  "familyIds": [
+    "AH-R0551"
+  ],
+  "connectionIds": [
+    "AH-R1095",
+    "AH-R1097",
+    "AH-R1094"
+  ],
+  "reactions": [
+    {
+      "situation": "The boy's babysitter takes a new job",
+      "response": "Charles helps the family identify the next uncovered school pickup.",
+      "asWritten": "The boy's babysitter takes a new job. Charles helps the family identify the next uncovered school pickup."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Charles starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Charles starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Charles keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Charles keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

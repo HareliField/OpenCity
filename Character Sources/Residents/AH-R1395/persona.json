@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1395",
+  "personId": "AH-R1395",
+  "name": "Basil Hunter",
+  "age": 54,
+  "occupation": "Corner shop operator",
+  "home": "Coast Ridge",
+  "episode": "The return of a witness",
+  "biography": "stories/residents/10/05-the-return-of-a-witness.md#ah-r1395",
+  "life": "“I still remember the first shop opening after a hard neighborhood hearing.” Thursday often includes a stop at the corner outside Coastal Barber, where Basil usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I own the corner shop. I watched the old argument from my counter and want her to know what I saw afterward.",
+  "appearance": "On an ordinary day, look for a sand-colored linen shirt and a fabric zip pull cut from a school scarf. Basil has a long face and high cheekbones, with a smooth side part with one rebellious curl. Basil touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Basil can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To offer the witness an account of what followed.",
+  "family": "Marina Bly is Basil’s stepsibling. Basil gets to change the plan. Marina offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The quiet verse*, Marina says, “I bought concert tickets for grandparents who expected a solo.”",
+  "connections": "Camille Breen. A shopkeeper offering personal observations meets someone refusing to carry another man's messages.",
+  "familyIds": [
+    "AH-R0272"
+  ],
+  "connectionIds": [
+    "AH-R1399"
+  ],
+  "reactions": [
+    {
+      "situation": "The witness runs into a convicted neighbor's family",
+      "response": "Basil gives both parties the space to pass or speak without an audience.",
+      "asWritten": "The witness runs into a convicted neighbor's family. Basil gives both parties the space to pass or speak without an audience."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Basil walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Basil walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Basil asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Basil asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

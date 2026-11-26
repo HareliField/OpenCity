@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0729",
+  "personId": "AH-R0729",
+  "name": "Kai Chan",
+  "age": 36,
+  "occupation": "Whistle seller",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The fountain score",
+  "biography": "stories/residents/05/13-the-fountain-score.md#ah-r0729",
+  "life": "“I still remember selling my first whistle to my own uncle.” On Wednesday, near the window at Night Shift Donuts, Kai knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I sell whistles and dislike giving them away. I loaned my voice for the afternoon instead.",
+  "appearance": "Kai has fine brows over wide-set eyes. Look for short, uneven waves that refuse to lie flat. On an ordinary day, the familiar outfit is a striped cotton shirt with a knotted piece of sail thread on a key ring. In conversation Kai gathers both sleeves neatly before settling in.",
+  "personality": "Kai tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Kai will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To loan a tune without selling an instrument.",
+  "family": "Rowan Reyes is Kai’s second cousin. Kai sets the time to leave. Rowan picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The housecoat commission*, Rowan says, “I am the neighbor invited last. I promised to dress up until she told me to come straight from work.”",
+  "connections": "Kai Williams. A rule snapping shut and a borrowed whistle stop the handwritten score sounding too polite.",
+  "familyIds": [
+    "AH-R0440"
+  ],
+  "connectionIds": [
+    "AH-R0722"
+  ],
+  "reactions": [
+    {
+      "situation": "An instrument breaks before the fountain piece begins",
+      "response": "Kai asks the player whether a different everyday object can carry the missing note.",
+      "asWritten": "An instrument breaks before the fountain piece begins. Kai asks the player whether a different everyday object can carry the missing note."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Kai offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Kai offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Kai repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Kai repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

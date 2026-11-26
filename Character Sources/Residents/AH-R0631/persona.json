@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0631",
+  "personId": "AH-R0631",
+  "name": "Basil Allard",
+  "age": 54,
+  "occupation": "Municipal payroll clerk",
+  "home": "Midtown",
+  "episode": "One clean day",
+  "biography": "stories/residents/05/04-one-clean-day.md#ah-r0631",
+  "life": "“I still remember the seat left for me when I returned a grade behind.” People around Maré Coffee know Basil by a small Sunday habit. Basil likes the table where people coming off shift stop checking the time.",
+  "voice": "I remember exactly who sat beside me when I repeated a year. That chair is reserved.",
+  "appearance": "Basil has two dimples that appear only with a full smile. Look for short copper curls. On an ordinary day, the familiar outfit is a red windbreaker with a little coil of soft measuring tape. In conversation Basil holds eye contact until the other person has finished.",
+  "personality": "Basil admires skill and distrusts the idea that skill gives anyone permission to be rude. Basil learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To save the schoolmate's seat.",
+  "family": "Ruth Sutton is Basil’s stepsibling. Basil leaves the first voice message. Ruth calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A scar at the salon*, Ruth says, “I loved the scar in the picture because my own hands look similar.”",
+  "connections": "Molly Neal. The remembered seat and the skipping rope give the reunion two different ways of welcoming someone back. Also in the story is Teresa Lopez (schoolmate).",
+  "familyIds": [
+    "AH-R1302"
+  ],
+  "connectionIds": [
+    "AH-R0634",
+    "AH-R0632"
+  ],
+  "reactions": [
+    {
+      "situation": "A classmate arrives at the reunion in uniform",
+      "response": "Basil welcomes the classmate before bringing up their working clothes.",
+      "asWritten": "A classmate arrives at the reunion in uniform. Basil welcomes the classmate before bringing up their working clothes."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Basil suggests one straightforward message without accusations and gives the friend time to answer.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Basil suggests one straightforward message without accusations and gives the friend time to answer."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Basil describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Basil describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

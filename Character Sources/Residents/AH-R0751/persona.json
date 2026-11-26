@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0751",
+  "personId": "AH-R0751",
+  "name": "Dale Lloyd",
+  "age": 38,
+  "occupation": "Hotel cleaner",
+  "home": "the shop row",
+  "episode": "The upstairs lease",
+  "biography": "stories/residents/06/01-the-upstairs-lease.md#ah-r0751",
+  "life": "“I still remember my first rent receipt written in hotel laundry ink.” People around the corner outside Coastal Barber know Dale by a small Monday habit. Dale usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I took the larger bedroom after the divorce. Now the little one costs more than my old house payment.",
+  "appearance": "On an ordinary day, look for a mustard canvas overshirt and a folded shopping list secured by a miniature clip. Dale has a scattering of freckles across the bridge of the nose, with a cropped cut that shows the shape of the ears. Dale counts on the side of one finger where hardly anybody notices during a conversation.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To renew without sacrificing the children's room.",
+  "family": "George Stahl is Dale’s cousin. Dale can stop the walk at any corner. George chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The spare spectacles*, George says, “My market stall sells cheap frames. I want a basket of new pairs where witnesses can reach.”",
+  "connections": "Amelia Kahn. They price real school clothes and real rent in the same week's money. Also in the story is Aidan Song (mortgage adviser).",
+  "familyIds": [
+    "AH-R0334"
+  ],
+  "connectionIds": [
+    "AH-R0759",
+    "AH-R0754"
+  ],
+  "reactions": [
+    {
+      "situation": "The household must choose between paying a deposit and renewing",
+      "response": "Dale lays out the two household costs and asks which deadline comes first.",
+      "asWritten": "The household must choose between paying a deposit and renewing. Dale lays out the two household costs and asks which deadline comes first."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Dale keeps the neighbor's place and finds out whether the stranger needs a different kind of help.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Dale keeps the neighbor's place and finds out whether the stranger needs a different kind of help."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Dale listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Dale listens first to the account of how it was actually used."
+    }
+  ]
+}

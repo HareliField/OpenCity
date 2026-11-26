@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0181",
+  "personId": "AH-R0181",
+  "name": "Eden Sun",
+  "age": 38,
+  "occupation": "Florist's delivery driver",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The second dog",
+  "biography": "stories/residents/02/04-the-second-dog.md#ah-r0181",
+  "life": "“I've driven flowers to seven apologies at one address.” On Thursday, near the entrance to the Wash House, Eden stops for local notices even on a day without a load to wash.",
+  "voice": "I adopted him after he jumped into my van. I never noticed the other family's number under his tag.",
+  "appearance": "On an ordinary day, look for a sand-colored linen shirt and a pair of reading glasses in a cloth sleeve. Eden has a straight nose and deep-set eyes, with short black hair swept back. Eden takes off the watch before a long conversation during a conversation.",
+  "personality": "Eden is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Eden is concerned.",
+  "agenda": "To find the household whose number is under the dog's tag.",
+  "family": "June Wicks is Eden’s younger cousin. Eden knows which ones can be shared. June keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The porch light*, June says, “I thought the dark porch meant he'd died. I left six papers to make sure people would stop.”",
+  "connections": "Shay Lloyd (former dog fosterer). The fosterer helps the new guardian distinguish two members of one litter.",
+  "familyIds": [
+    "AH-R0088"
+  ],
+  "connectionIds": [
+    "AH-R0184"
+  ],
+  "reactions": [
+    {
+      "situation": "A child takes the other dog's lead",
+      "response": "Eden separates the leads and asks both families what the dogs respond to.",
+      "asWritten": "A child takes the other dog's lead. Eden separates the leads and asks both families what the dogs respond to."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Eden offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Eden offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Eden asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Eden asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

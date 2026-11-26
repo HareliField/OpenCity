@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1386",
+  "personId": "ah-pd-144",
+  "name": "Theo Hall",
+  "age": 48,
+  "occupation": "Detective",
+  "home": "Old Town",
+  "episode": "Names on the night wall",
+  "biography": "stories/residents/10/04-names-on-the-night-wall.md#ah-r1386",
+  "life": "“I still remember an afternoon among readers who didn't know my job.” On Friday, near the bank steps, Theo takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I named the librarian who doesn't mention my job in the reading group. That hour makes me somebody else again.",
+  "appearance": "Theo is easy to recognize by short black hair swept back and a small notch in the left eyebrow. Usually dressed in a dark green knitted vest with a square of clean cloth for polishing smudges, Theo leans a shoulder against the wall during long conversations when listening.",
+  "personality": "Theo gets protective of anybody who comes into a meeting unprepared. Theo privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To protect the quiet reading group.",
+  "family": "Thomas Banks is Theo’s half-sibling. Theo chooses whether they walk home or sit a while. Thomas brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The widow's razor*, Thomas says, “I wanted to buy it for a collector. Then I saw the tiny rent figures written inside the lid.”",
+  "connections": "Kit Hale. A librarian's discretion helps the colleague whose helper has asked to stay unnamed.",
+  "familyIds": [
+    "AH-R0403"
+  ],
+  "connectionIds": [
+    "AH-R1387"
+  ],
+  "reactions": [
+    {
+      "situation": "A neighbor named on several cards asks for a favor in return",
+      "response": "Theo asks the neighbor what kind of help they actually need now.",
+      "asWritten": "A neighbor named on several cards asks for a favor in return. Theo asks the neighbor what kind of help they actually need now."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Theo takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Theo takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Theo offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Theo offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

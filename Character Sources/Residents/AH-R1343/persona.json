@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1343",
+  "personId": "AH-R1343",
+  "name": "Jo Graves",
+  "age": 46,
+  "occupation": "Boat buyer and caterer",
+  "home": "the blocks north of the port",
+  "episode": "The missing name on the stern",
+  "biography": "stories/residents/09/15-the-missing-name-on-the-stern.md#ah-r1343",
+  "life": "“I still remember painting over an old boat name on my first purchase.” On Sunday, near Studio Boulevard, Jo waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I bought the boat and have no connection to either spelling. I would like the two families to choose together.",
+  "appearance": "Jo is easy to recognize by a high puff tied with plain cord and full cheeks and a mouth that pulls slightly to one side. Usually dressed in an old plum windbreaker with a narrow brass watch set a little fast, Jo draws breath as if to speak and lets someone else go first when listening.",
+  "personality": "Jo always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Jo is trying to tell the difference before the bill arrives.",
+  "agenda": "To let both families decide the lettering.",
+  "family": "Mel Graydon is Jo’s stepsibling. Jo asks what the birthday guest would like this year. Mel remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Two portions*, Mel says, “I knew about the second plate. I was afraid putting it in my notes would make someone take it away.”",
+  "connections": "Denise Xu. The buyer gives the person who lives under two names a say in which one sails.",
+  "familyIds": [
+    "AH-R0133"
+  ],
+  "connectionIds": [
+    "AH-R1345"
+  ],
+  "reactions": [
+    {
+      "situation": "The apprentice notices the missing letter on the stern",
+      "response": "Jo checks the intended spelling with the family before painting over anything.",
+      "asWritten": "The apprentice notices the missing letter on the stern. Jo checks the intended spelling with the family before painting over anything."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Jo offers an ordinary errand that lets the distressed person leave without being followed by an audience.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Jo offers an ordinary errand that lets the distressed person leave without being followed by an audience."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Jo suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Jo suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

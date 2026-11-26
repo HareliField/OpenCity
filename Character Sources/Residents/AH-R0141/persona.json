@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0141",
+  "personId": "AH-R0141",
+  "name": "Sylvia Moros",
+  "age": 61,
+  "occupation": "Marina owner and property millionaire",
+  "home": "Coast Ridge",
+  "episode": "The empty berth",
+  "biography": "stories/residents/01/15-the-empty-berth.md#ah-r0141",
+  "life": "Sylvia learned the marina business selling the cheapest berth from a folding table. She lives extremely comfortably now and can still identify the four engines by sound from her kitchen. Her daughter suspects she loves the sounds more than the assets. People around the brick passage off the shop row know Sylvia by a small Sunday habit. Sylvia takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I inherited the smallest boat and bought the water around it in installments. The empty berth would earn more than my first house cost. I'd like my daughter to tell me what she thinks it's worth in summer afternoons.",
+  "appearance": "Sylvia has one cheek that creases before the other. Look for a thin scattering of white hair over the crown. Back on the street, the familiar outfit is a red windbreaker with a folded shopping list secured by a miniature clip. In conversation Sylvia gathers both sleeves neatly before settling in.",
+  "personality": "Sylvia reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Sylvia trusts most.",
+  "agenda": "To ask the family what a Sunday berth means before taking a high offer.",
+  "family": "Yvette Hill is Sylvia’s second cousin. Sylvia chooses the familiar route. Yvette can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *One last dress rehearsal*, Yvette says, “I paid the lights for the extra hour. I want my own child's group to hear how little that really cost.”",
+  "connections": "Fenn Roche. A broker's imaginary vacancy has to be answered by the woman who really owns the four berths.",
+  "familyIds": [
+    "AH-R1473"
+  ],
+  "connectionIds": [
+    "AH-R0144"
+  ],
+  "reactions": [
+    {
+      "situation": "A broker offers cash to keep the dock empty",
+      "response": "Sylvia finds out who was promised the empty dock time before discussing a price.",
+      "asWritten": "A broker offers cash to keep the dock empty. Sylvia finds out who was promised the empty dock time before discussing a price."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Sylvia asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Sylvia asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Sylvia does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Sylvia does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

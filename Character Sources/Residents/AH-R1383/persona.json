@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1383",
+  "personId": "ah-pd-141",
+  "name": "Pia Burke",
+  "age": 45,
+  "occupation": "Metro SWAT officer",
+  "home": "Coast Ridge",
+  "episode": "Names on the night wall",
+  "biography": "stories/residents/10/04-names-on-the-night-wall.md#ah-r1383",
+  "life": "“I still remember watching a custody handover go perfectly quietly.” On Saturday, near the blocks below Foundry Lofts, Pia checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I thanked my ex. A good custody calendar is worth more to both of us than another argument over uniforms.",
+  "appearance": "Pia has thick, tightly coiled hair, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Pia steadies a cup with both hands while listening.",
+  "personality": "Pia never tires of being shown how somebody makes a living. Pia can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To recognize the ex's work on the custody calendar.",
+  "family": "Jody Breen is Pia’s parent’s cousin. Pia chooses whether to use it. Jody saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The million-dollar flat*, Jody says, “I built the first kitchen cabinets here. I'd like to recover them before a rich buyer throws them away.”",
+  "connections": "Remy Cruz. A dependable custody handover and a year of treatment both earn places on the thank-you wall.",
+  "familyIds": [
+    "AH-R1228"
+  ],
+  "connectionIds": [
+    "AH-R1388"
+  ],
+  "reactions": [
+    {
+      "situation": "A colleague leaves a name off the thank-you wall",
+      "response": "Pia allows a private thank-you to stay private even on unveiling day.",
+      "asWritten": "A colleague leaves a name off the thank-you wall. Pia allows a private thank-you to stay private even on unveiling day."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Pia keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Pia keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Pia may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Pia may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

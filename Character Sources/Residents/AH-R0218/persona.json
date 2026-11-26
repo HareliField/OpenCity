@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0218",
+  "personId": "AH-R0218",
+  "name": "Nell Marks",
+  "age": 42,
+  "occupation": "Freelance translator",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The margin reader",
+  "biography": "stories/residents/02/07-the-margin-reader.md#ah-r0218",
+  "life": "“I learned my second language translating the insults in our football league.” Tuesday often includes a stop at Harbour Bakery, where Nell buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I'm translating the swear words first. They tell me where two polite people finally trusted each other.",
+  "appearance": "Nell is easy to recognize by a dark undercut with a longer wave on top and an aquiline nose and a square chin. Usually dressed in a long navy raincoat with a pen clipped inside the neckline, Nell looks toward the door whenever a name is called when listening.",
+  "personality": "Nell has a quick wit and an equally quick sense of shame. A joke is often Nell's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To produce a translation that preserves the risky jokes.",
+  "family": "Rain Salcedo is Nell’s older cousin. Nell chooses the familiar route. Rain can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The widow's dividend*, Rain says, “I had a silent share. My children still think my wealth came from my second husband.”",
+  "connections": "Malcolm Soto. A blunt translation establishes who the old insults actually addressed.",
+  "familyIds": [
+    "AH-R0322"
+  ],
+  "connectionIds": [
+    "AH-R0213"
+  ],
+  "reactions": [
+    {
+      "situation": "Two people remember writing the same line",
+      "response": "Nell lets both readers identify the line privately before adding a name.",
+      "asWritten": "Two people remember writing the same line. Nell lets both readers identify the line privately before adding a name."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Nell tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Nell tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Nell seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Nell seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

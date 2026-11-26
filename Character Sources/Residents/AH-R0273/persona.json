@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0273",
+  "personId": "AH-R0273",
+  "name": "Wesley Carr",
+  "age": 16,
+  "occupation": "Student interpreter",
+  "home": "Old Town",
+  "episode": "The quiet verse",
+  "biography": "stories/residents/02/13-the-quiet-verse.md#ah-r0273",
+  "life": "“I signed prayers with Gran long before I could spell their opening words.” On Friday, near the window at Night Shift Donuts, Wesley knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I signed the words so my sister could follow. She saw the withheld verse in my hands at rehearsal.",
+  "appearance": "Wesley has auburn hair cut square at the nape, a broad nose and a deep dimple on one cheek, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a replacement button a shade darker than the others. When somebody else has the floor, Wesley presses the lips together to keep a smile in.",
+  "personality": "Wesley has a talent for getting adversaries to laugh at exactly the same thing. Wesley knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To agree with the writer which signs may appear at the show.",
+  "family": "Gavin Roche is Wesley’s first cousin once removed. Wesley puts the kettle on. Gavin chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The guarantee*, Gavin says, “I processed the loan in six minutes and spent an hour telling the family how that was possible.”",
+  "connections": "Maeve Hamm. Signing in the pause makes room for a listener who heard the fountain underneath it.",
+  "familyIds": [
+    "AH-R1073"
+  ],
+  "connectionIds": [
+    "AH-R0278"
+  ],
+  "reactions": [
+    {
+      "situation": "The silent verse gets applause in the wrong place",
+      "response": "Wesley gives the singer time to resume instead of trying to conduct the applause.",
+      "asWritten": "The silent verse gets applause in the wrong place. Wesley gives the singer time to resume instead of trying to conduct the applause."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Wesley takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Wesley takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Wesley asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Wesley asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

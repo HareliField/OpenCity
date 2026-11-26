@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1493",
+  "personId": "AH-R1493",
+  "name": "Adrian Keller",
+  "age": 32,
+  "occupation": "Marine photographer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The last light at the harbor",
+  "biography": "stories/residents/10/15-the-last-light-at-the-harbor.md#ah-r1493",
+  "life": "“I still remember photographing the owner locking a very small gate.” People around Maré Coffee know Adrian by a small Monday habit. Adrian likes the table where people coming off shift stop checking the time.",
+  "voice": "I have been photographing glamorous boats. The owner asked me to photograph the little walk from deck to door instead.",
+  "appearance": "Adrian has a swept fringe and a closely clipped nape, one cheek that creases before the other, and a favorite piece of clothing, a dark green knitted vest. It usually goes with a pair of reading glasses in a cloth sleeve. When somebody else has the floor, Adrian listens with the head tilted a little to the left.",
+  "personality": "Adrian has a talent for getting adversaries to laugh at exactly the same thing. Adrian knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To photograph the unglamorous trip home.",
+  "family": "Mateo Katz is Adrian’s second cousin. Adrian chooses whether they walk home or sit a while. Mateo brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The empty chair on nights*, Mateo says, “I want one quiet breakfast with her outside work.”",
+  "connections": "Joel Sun. A photographer learns which ordinary walk once belonged to the resident watching a former boat from shore.",
+  "familyIds": [
+    "AH-R0960"
+  ],
+  "connectionIds": [
+    "AH-R1495"
+  ],
+  "reactions": [
+    {
+      "situation": "A cabin light stays on after its usual time",
+      "response": "Adrian checks in through an ordinary contact before treating the late light as an emergency.",
+      "asWritten": "A cabin light stays on after its usual time. Adrian checks in through an ordinary contact before treating the late light as an emergency."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Adrian gives up their own space if possible and asks the passengers who arrived first to choose what happens next.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Adrian gives up their own space if possible and asks the passengers who arrived first to choose what happens next."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Adrian asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Adrian asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

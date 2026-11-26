@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0192",
+  "personId": "AH-R0192",
+  "name": "Erin Hubbard",
+  "age": 42,
+  "occupation": "Brass band tutor",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The pawned trumpet",
+  "biography": "stories/residents/02/05-the-pawned-trumpet.md#ah-r0192",
+  "life": "“I got thrown out of my first band for always asking to play the slow piece.” On Thursday, near the steps at Pier Beach, Erin watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I recognized that bent third valve from downstairs. I kept quiet until they played my late teacher's exercise.",
+  "appearance": "Erin has a wide brow and a narrow jaw. Look for short copper curls. On an ordinary day, the familiar outfit is a pale blue work shirt with a comb in a sleeve sewn into the lining. In conversation Erin raises one eyebrow long before saying yes.",
+  "personality": "Erin tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Erin will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To identify the former teacher by the exercise.",
+  "family": "Harold Levin is Erin’s older relative by marriage. Erin picks the meeting place. Harold sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *Two left slippers*, Harold says, “I am keeping a single slipper by the front door.”",
+  "connections": "Talia Valdez. Two teachers recognize two different stages of the trumpet's working life.",
+  "familyIds": [
+    "AH-R0660"
+  ],
+  "connectionIds": [
+    "AH-R0198"
+  ],
+  "reactions": [
+    {
+      "situation": "The teenager gets an audition the morning the horn is due back",
+      "response": "Erin contacts the owner before treating an audition as permission to keep the horn.",
+      "asWritten": "The teenager gets an audition the morning the horn is due back. Erin contacts the owner before treating an audition as permission to keep the horn."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Erin asks the cashier to hold it and lets a claimant identify the writing and amount privately.",
+      "asWritten": "An envelope of wages is found under a café chair. Erin asks the cashier to hold it and lets a claimant identify the writing and amount privately."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Erin repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Erin repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0387",
+  "personId": "AH-R0387",
+  "name": "Alexei Taylor",
+  "age": 21,
+  "occupation": "Student and shop cashier",
+  "home": "the ground floor of a Midtown walk-up",
+  "episode": "The upstairs piano",
+  "biography": "stories/residents/03/09-the-upstairs-piano.md#ah-r0387",
+  "life": "“I still remember my landlady teaching me the loud pedal.” People around the market by Market Flats know Alexei by a small Sunday habit. Alexei often waits until the delivery baskets are stacked before going in.",
+  "voice": "I rent the ground floor. I asked for lessons in exchange for living with somebody else's piano.",
+  "appearance": "Alexei has a small notch in the left eyebrow. Look for short black hair swept back. On an ordinary day, the familiar outfit is a soft blue checked shirt with a replacement button a shade darker than the others. In conversation Alexei steadies a cup with both hands while listening.",
+  "personality": "Alexei is fond of ambitious ideas and deeply suspicious of grand openings. The question Alexei asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To exchange room in the flat for lessons.",
+  "family": "Anthony Bell is Alexei’s older cousin. Alexei makes the call. Anthony is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The rescue hut mural*, Anthony says, “I sell postcards from the wrong angle and people prefer them.”",
+  "connections": "Lena Osborne (piano owner). The owner and the ground-floor tenant have to agree on lessons as well as rent.",
+  "familyIds": [
+    "AH-R0524"
+  ],
+  "connectionIds": [
+    "AH-R0381"
+  ],
+  "reactions": [
+    {
+      "situation": "A neighbor demands that the piano be taken off the landing",
+      "response": "Alexei asks how much clear passage is needed today before arranging another move.",
+      "asWritten": "A neighbor demands that the piano be taken off the landing. Alexei asks how much clear passage is needed today before arranging another move."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Alexei offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Alexei offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Alexei accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Alexei accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

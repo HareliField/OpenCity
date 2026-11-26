@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0219",
+  "personId": "AH-R0219",
+  "name": "Georgia Kwan",
+  "age": 37,
+  "occupation": "Secondary school teacher",
+  "home": "Coast Ridge",
+  "episode": "The margin reader",
+  "biography": "stories/residents/02/07-the-margin-reader.md#ah-r0219",
+  "life": "“My least promising student became the adult who recommended my best book.” People around the corner by Juniper Tailor know Georgia by a small Monday habit. Georgia looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I need one clean copy for class. I traded it away because the messy one explains why anybody reads.",
+  "appearance": "Georgia has short black hair swept back, a heart-shaped face and prominent ears, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a partly rubbed-away embroidered initial. When somebody else has the floor, Georgia steadies a cup with both hands while listening.",
+  "personality": "Georgia listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To teach the class from the readers' disputed edition.",
+  "family": "Darcy Lewis is Georgia’s stepsibling. In this family birthdays are measured by the breakfast somebody requests. A person choosing plain toast or an elaborate fried meal gets the same fuss for one morning. Georgia gets the guest away from the sink before the dishes need doing. Asked about *Land without cranes*, Darcy says, “I stored my first fishing gear in that shed.”",
+  "connections": "Keir Zhou. The teacher wants the erased sentence restored before the class reads the copy.",
+  "familyIds": [
+    "AH-R1062"
+  ],
+  "connectionIds": [
+    "AH-R0214"
+  ],
+  "reactions": [
+    {
+      "situation": "A reader asks to erase a personal inscription",
+      "response": "Georgia puts a clean sheet over the inscription while its writer decides.",
+      "asWritten": "A reader asks to erase a personal inscription. Georgia puts a clean sheet over the inscription while its writer decides."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Georgia keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Georgia keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Georgia keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Georgia keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

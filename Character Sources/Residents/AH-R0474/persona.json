@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0474",
+  "personId": "AH-R0474",
+  "name": "Mia Sloan",
+  "age": 46,
+  "occupation": "School dinner worker",
+  "home": "Old Town",
+  "episode": "The savings club",
+  "biography": "stories/residents/04/03-the-savings-club.md#ah-r0474",
+  "life": "“I still remember a magazine holiday family with nobody washing dishes.” Sunday often includes a stop at the downtown fountain, where Mia keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "The holiday photograph on my fridge is of somebody else's holiday. I want one ordinary breakfast picture of my own.",
+  "appearance": "Mia is easy to recognize by short sandy hair and a marked widow's peak and heavy brows and an unusually delicate jaw. Usually dressed in a red windbreaker with a small enamel bird on the lapel, Mia folds a paper napkin into quarters without noticing when listening.",
+  "personality": "Mia prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To take one unposed breakfast photograph on holiday.",
+  "family": "Alan Ko is Mia’s cousin. Mia calls about good news first. Alan is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The split visit*, Alan says, “I am the son who books the visits from overseas.”",
+  "connections": "Ravi Foster. A holiday photograph doesn't need a sponsor's name across the front.",
+  "familyIds": [
+    "AH-R0736"
+  ],
+  "connectionIds": [
+    "AH-R0477"
+  ],
+  "reactions": [
+    {
+      "situation": "A donor asks for the club's name in return for a ticket",
+      "response": "Mia asks the members to hear the terms before deciding on a name.",
+      "asWritten": "A donor asks for the club's name in return for a ticket. Mia asks the members to hear the terms before deciding on a name."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Mia asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Mia asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Mia clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Mia clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

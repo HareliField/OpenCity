@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0578",
+  "personId": "AH-R0578",
+  "name": "Clara Ferreira",
+  "age": 44,
+  "occupation": "School drama tutor",
+  "home": "the western residential streets",
+  "episode": "A play in a pocket",
+  "biography": "stories/residents/04/13-a-play-in-a-pocket.md#ah-r0578",
+  "life": "“I still remember making a stranger laugh without knowing the language.” On Monday, near Lighthouse Cove, Clara takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I want to perform to someone who speaks no words of my language and still make them laugh.",
+  "appearance": "On an ordinary day, look for a red windbreaker and a cloth patch so neatly matched it only shows in strong light. Clara has a flat bridge to the nose and a mobile brow, with a swept fringe and a closely clipped nape. Clara squares up pieces of paper while thinking during a conversation.",
+  "personality": "Clara treats a small promise with the gravity others reserve for a contract. This makes Clara lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To make one listener laugh across a language difference.",
+  "family": "Jonathan Grant is Clara’s stepsibling. Clara picks the meeting place. Jonathan sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A clean coat for court*, Jonathan says, “I found a cinema ticket in the pocket. The lender and I were at that showing the week the business closed.”",
+  "connections": "Rowan Jimenez (playwright). They test whether a private scene works across a language difference.",
+  "familyIds": [
+    "AH-R1246"
+  ],
+  "connectionIds": [
+    "AH-R0571"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor wants to record a private performance",
+      "response": "Clara asks the actor and the sole listener separately before allowing a recording.",
+      "asWritten": "A visitor wants to record a private performance. Clara asks the actor and the sole listener separately before allowing a recording."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Clara asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Clara asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Clara says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Clara says what can be returned and asks whether that will do."
+    }
+  ]
+}

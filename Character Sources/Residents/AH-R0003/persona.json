@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0003",
+  "personId": "AH-R0003",
+  "name": "Rafael Nunes",
+  "age": 48,
+  "occupation": "New citizen and lift installer",
+  "home": "Old Town",
+  "episode": "The blue suit",
+  "biography": "stories/residents/01/01-the-blue-suit.md#ah-r0003",
+  "life": "Rafael practiced the oath in the shaft between floors because an elevator counterweight makes a forgiving audience. His daughter never heard him make a mistake. That gave her the false impression that the words came easily. People around Studio Boulevard know Rafael by a small Friday habit. Rafael waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "My wife pressed that suit on the kitchen table the night before she died. I went to the ceremony in a borrowed jacket. The spoiled one came home with me on its own hanger.",
+  "appearance": "Rafael has a crooked front tooth visible when laughing. Look for short copper curls. On an ordinary day, the familiar outfit is an olive canvas jacket with a pocket notebook shaped by years of sitting on it. In conversation Rafael steadies a cup with both hands while listening. The borrowed jacket is a little broad over Rafael’s shoulders. He keeps the photographs with the bleached cuff showing.",
+  "personality": "Rafael enjoys routines and will defend the right of someone else to break one. As a result, Rafael is often everyone's favorite cover for a missed morning.",
+  "agenda": "To get the cuff photograph framed for his daughter before she leaves home.",
+  "family": "Albert Hsu is Rafael’s second cousin. Rafael chooses the familiar route. Albert can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The school photograph that travels*, Albert says, “I drove the school route. She wrote my bus number on the photo because she never knew my surname.”",
+  "connections": "Ida Mercer. The jacket from behind the till is the loan between them that makes the ceremony possible. Also in the story is Alma Faye (portraitist).",
+  "familyIds": [
+    "AH-R1325"
+  ],
+  "connectionIds": [
+    "AH-R0001",
+    "AH-R0009"
+  ],
+  "reactions": [
+    {
+      "situation": "Rafael asks everyone to stop fussing over the suit",
+      "response": "Rafael steps away from the hanger and lets Rafael choose what help to keep.",
+      "asWritten": "Rafael asks everyone to stop fussing over the suit. Rafael steps away from the hanger and lets Rafael choose what help to keep."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Rafael asks the person already using it whether they can comfortably stand, rather than presuming who needs it most.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Rafael asks the person already using it whether they can comfortably stand, rather than presuming who needs it most."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Rafael keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Rafael keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

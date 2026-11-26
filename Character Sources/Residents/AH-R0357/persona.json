@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0357",
+  "personId": "AH-R0357",
+  "name": "Charlotte Hsu",
+  "age": 32,
+  "occupation": "Shop window artist",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The hospital radio",
+  "biography": "stories/residents/03/06-the-hospital-radio.md#ah-r0357",
+  "life": "“I still remember a hospital talent show in the wrong key.” Friday often includes a stop at Maré Coffee, where Charlotte likes the table where people coming off shift stop checking the time.",
+  "voice": "I was the child who painted the tuning mark pink. My mum recognizes the set by that stain.",
+  "appearance": "Charlotte is easy to recognize by short sandy hair and a marked widow's peak and fine brows over wide-set eyes. Usually dressed in a red windbreaker with a stitched row of blue crosses along an old repair, Charlotte draws breath as if to speak and lets someone else go first when listening.",
+  "personality": "Charlotte is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To preserve the pink tuning mark.",
+  "family": "Luis Gross is Charlotte’s first cousin once removed. Charlotte brings the paper and a pen. Luis decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The new language at dinner*, Luis says, “I know what I mean. At home the words come out in the language I used before primary school.”",
+  "connections": "Dale Zhou. They photograph the folded requests and the pink tuning mark before removing the set.",
+  "familyIds": [
+    "AH-R1181"
+  ],
+  "connectionIds": [
+    "AH-R0355"
+  ],
+  "reactions": [
+    {
+      "situation": "The replacement radio drowns out a patient's match",
+      "response": "Charlotte asks the two patients which part of the match each wants to hear.",
+      "asWritten": "The replacement radio drowns out a patient's match. Charlotte asks the two patients which part of the match each wants to hear."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Charlotte asks which other bill repayment would displace, then offers only what the household can afford to give.",
+      "asWritten": "A friend asks for a loan due back before payday. Charlotte asks which other bill repayment would displace, then offers only what the household can afford to give."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Charlotte thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Charlotte thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0714",
+  "personId": "AH-R0714",
+  "name": "Pablo Thomas",
+  "age": 71,
+  "occupation": "Retired window gardener",
+  "home": "Eastside",
+  "episode": "Level with the window",
+  "biography": "stories/residents/05/12-level-with-the-window.md#ah-r0714",
+  "life": "“I still remember counting our plants after a storm blew two down.” Friday often includes a stop at the public end of the South Shore boardwalk, where Pablo checks the shade on the benches before deciding how long to stay.",
+  "voice": "I was angry about the noise until I saw the pensioners on the upper deck counting our flowerpots.",
+  "appearance": "Pablo is easy to recognize by short white hair and darker eyebrows and an aquiline nose and a square chin. Usually dressed in a gray fisher's sweater with a watch on a cracked leather band, Pablo counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Pablo gets protective of anybody who comes into a meeting unprepared. Pablo privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To learn the upper-deck passengers' favorite plant.",
+  "family": "Catherine Easton is Pablo’s younger cousin. Pablo makes room at the table. Catherine brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Summer staff*, Catherine says, “I can move to a warm coast for another season.”",
+  "connections": "Sebastian Hudson. Two home decorators compare the view from an overfull bus.",
+  "familyIds": [
+    "AH-R0827"
+  ],
+  "connectionIds": [
+    "AH-R0716"
+  ],
+  "reactions": [
+    {
+      "situation": "The resident closes the curtains during the morning detour",
+      "response": "Pablo treats the closed curtain as the resident's answer for that day.",
+      "asWritten": "The resident closes the curtains during the morning detour. Pablo treats the closed curtain as the resident's answer for that day."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Pablo asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Pablo asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Pablo offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Pablo offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

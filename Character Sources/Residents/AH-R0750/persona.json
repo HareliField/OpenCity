@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0750",
+  "personId": "AH-R0750",
+  "name": "Lennon Ahmed",
+  "age": 31,
+  "occupation": "Family liaison and marine clerk",
+  "home": "the western residential streets",
+  "episode": "A boat for sale twice",
+  "biography": "stories/residents/05/15-a-boat-for-sale-twice.md#ah-r0750",
+  "life": "“I still remember answering two parents' letters on the same sheet.” People around the brick passage off the shop row know Lennon by a small Wednesday habit. Lennon takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I answered both numbers. It was the first time our separated parents had asked me the same question all year.",
+  "appearance": "Lennon is easy to recognize by auburn hair cut square at the nape and a heart-shaped face and prominent ears. Usually dressed in an olive canvas jacket with a fabric zip pull cut from a school scarf, Lennon draws breath as if to speak and lets someone else go first when listening.",
+  "personality": "Lennon loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To let both parents hear the same answer.",
+  "family": "Sadie Breen is Lennon’s stepsibling. Lennon keeps the photographs. Sadie knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *A widow bids again*, Sadie says, “I was the original landlady's granddaughter.”",
+  "connections": "Sasha Wong (parent). The parent who wrote the wrong number finally gets the same question answered by the child.",
+  "familyIds": [
+    "AH-R0922"
+  ],
+  "connectionIds": [
+    "AH-R0741"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer wants the old name painted over immediately",
+      "response": "Lennon checks who owns the name before anyone comes down with a paint tin.",
+      "asWritten": "A buyer wants the old name painted over immediately. Lennon checks who owns the name before anyone comes down with a paint tin."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Lennon asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Lennon asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Lennon offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Lennon offers one about their own embarrassment instead."
+    }
+  ]
+}

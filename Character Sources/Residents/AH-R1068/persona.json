@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1068",
+  "personId": "AH-R1068",
+  "name": "Ellen Boone",
+  "age": 29,
+  "occupation": "Warehouse worker and evening student",
+  "home": "the western residential streets",
+  "episode": "Land without cranes",
+  "biography": "stories/residents/08/02-land-without-cranes.md#ah-r1068",
+  "life": "“I still remember a class I rushed to in my warehouse shoes.” People around Harbour Bakery know Ellen by a small Saturday habit. Ellen buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I am taking an office course in secret. I want the conversion to include a room where I could actually learn.",
+  "appearance": "Ellen has a wide brow and a narrow jaw. Look for a dark undercut with a longer wave on top. On an ordinary day, the familiar outfit is a black overshirt with pearl buttons with a cloth patch so neatly matched it only shows in strong light. In conversation Ellen folds a paper napkin into quarters without noticing.",
+  "personality": "Ellen carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To find a training room inside the conversion.",
+  "family": "Aubrey Yates is Ellen’s stepsibling. Ellen sets the time to leave. Aubrey picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The misplaced umbrella*, Aubrey says, “I manage the hotel that owns the stripes. I took the patched one to lunch and liked the shade better.”",
+  "connections": "Lars James. A desk-job ambition gets its first practical offer from a warehouse evening student.",
+  "familyIds": [
+    "AH-R0672"
+  ],
+  "connectionIds": [
+    "AH-R1061"
+  ],
+  "reactions": [
+    {
+      "situation": "A worker says their job was left out of the consultation",
+      "response": "Ellen records the missing job in the worker's own words for the consultation.",
+      "asWritten": "A worker says their job was left out of the consultation. Ellen records the missing job in the worker's own words for the consultation."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Ellen asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Ellen asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Ellen offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Ellen offers to accompany them while they tell the truth."
+    }
+  ]
+}

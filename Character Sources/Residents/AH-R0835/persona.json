@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0835",
+  "personId": "AH-R0835",
+  "name": "Adriana Diaz",
+  "age": 15,
+  "occupation": "School pupil",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A room for a father",
+  "biography": "stories/residents/06/09-a-room-for-a-father.md#ah-r0835",
+  "life": "“I still remember learning which grandfather left-handedness came from.” Thursday often includes a stop at the public road outside the Port of Asphalt, where Adriana can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I want my grandfather to teach me one thing with his hands before anybody asks him to explain.",
+  "appearance": "Outside school, look for a boxy denim jacket and a little coil of soft measuring tape. Adriana has a flat bridge to the nose and a mobile brow, with thick, tightly coiled hair. Adriana counts on the side of one finger where hardly anybody notices during a conversation.",
+  "personality": "Adriana is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To learn one practical skill from the grandfather.",
+  "family": "Oakley Carbone is Adriana’s older cousin. When the family split between two addresses, the good frying pan traveled with whoever cooked Sunday dinner. The pan has outlasted the quarrel and both kitchens. Adriana can see when a sensible rule has become an insult. Asked about *The skipper goes ashore*, Oakley says, “I was her first sailing student. I asked her to teach my child from the pier without pretending she was still on board.”",
+  "connections": "Ismael Fong (parent). One family welcome has to make room for both an adult's anger and a child's curiosity.",
+  "familyIds": [
+    "AH-R1197"
+  ],
+  "connectionIds": [
+    "AH-R0831"
+  ],
+  "reactions": [
+    {
+      "situation": "The returning father wants a family photograph immediately",
+      "response": "Adriana asks each household member privately whether they want to be in the picture.",
+      "asWritten": "The returning father wants a family photograph immediately. Adriana asks each household member privately whether they want to be in the picture."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Adriana takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Adriana takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Adriana thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Adriana thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

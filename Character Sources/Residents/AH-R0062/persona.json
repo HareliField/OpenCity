@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0062",
+  "personId": "AH-R0062",
+  "name": "Rene Mott",
+  "age": 52,
+  "occupation": "Map conservator",
+  "home": "Old Town",
+  "episode": "An unfinished atlas",
+  "biography": "stories/residents/01/07-an-unfinished-atlas.md#ah-r0062",
+  "life": "Rene spent a year repairing flood-damaged school papers, most of which nobody famous had touched. He developed a tenderness for cheap glue. It is often the only signature a child leaves on a map. People around the blocks below Foundry Lofts know Rene by a small Monday habit. Rene checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "My hand shook the day I ruined a school register with too much water. I can lift this page, but the paste itself tells us when it was made. I want photographs before anyone reaches for a brush.",
+  "appearance": "Rene is easy to recognize by short, uneven waves that refuse to lie flat and a long face and high cheekbones. Usually dressed in a pale blue work shirt with a partly rubbed-away embroidered initial, Rene takes off the watch before a long conversation when listening.",
+  "personality": "Rene treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To document both sides of the handmade page before lifting anything.",
+  "family": "Charlie Starr is Rene’s cousin. Rene asks before bringing somebody along. Charlie can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A room for a father*, Charlie says, “I painted the spare room blue. He called it a color for a nursery and I nearly sent him packing.”",
+  "connections": "Ona Voss. They compare the age of the paste with the direction of a child's hand stitches.",
+  "familyIds": [
+    "AH-R0834"
+  ],
+  "connectionIds": [
+    "AH-R0067"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member disputes the penciled street",
+      "response": "Rene marks the disputed piece of street in pencil and keeps the alternative name beside it.",
+      "asWritten": "A family member disputes the penciled street. Rene marks the disputed piece of street in pencil and keeps the alternative name beside it."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Rene gives up their own space if possible and asks the passengers who arrived first to choose what happens next.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Rene gives up their own space if possible and asks the passengers who arrived first to choose what happens next."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Rene changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Rene changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

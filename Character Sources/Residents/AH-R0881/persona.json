@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0881",
+  "personId": "AH-R0881",
+  "name": "Alex Hamm",
+  "age": 71,
+  "occupation": "Retired engraver",
+  "home": "the western residential streets",
+  "episode": "Care with a clock",
+  "biography": "stories/residents/06/14-care-with-a-clock.md#ah-r0881",
+  "life": "“I still remember choosing a shirt for the first day of retirement.” People around Juniper Street know Alex by a small Thursday habit. Alex knows which of the west-side porches has a seat in the shade.",
+  "voice": "I can dress in sixteen minutes. I will not practice being ashamed of the sixteenth.",
+  "appearance": "Alex has a thin scattering of white hair over the crown, a round face with a pronounced chin, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with a comb in a sleeve sewn into the lining. When somebody else has the floor, Alex raises one eyebrow long before saying yes.",
+  "personality": "Alex keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Alex wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To take the sixteenth minute without apology.",
+  "family": "Albert Bennett is Alex’s cousin raised in the same household. Alex brings something that can still be enjoyed tomorrow. Albert checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The widow's razor*, Albert says, “I can sharpen it until it forgets its shape.”",
+  "connections": "Gwen Hooper. They discuss an easier fastening without assuming an old wedding shirt is disposable. Also in the story is Martha Ueda (adult child).",
+  "familyIds": [
+    "AH-R0402"
+  ],
+  "connectionIds": [
+    "AH-R0885",
+    "AH-R0884"
+  ],
+  "reactions": [
+    {
+      "situation": "A visit runs into a second billing block",
+      "response": "Alex records the extra time actually spent with the client.",
+      "asWritten": "A visit runs into a second billing block. Alex records the extra time actually spent with the client."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Alex offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem.",
+      "asWritten": "A friend asks for a loan due back before payday. Alex offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Alex offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Alex offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

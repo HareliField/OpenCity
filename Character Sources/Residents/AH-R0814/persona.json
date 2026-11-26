@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0814",
+  "personId": "AH-R0814",
+  "name": "Taylor Lucas",
+  "age": 36,
+  "occupation": "Restaurant server",
+  "home": "Coast Ridge",
+  "episode": "Reading the payslip",
+  "biography": "stories/residents/06/07-reading-the-payslip.md#ah-r0814",
+  "life": "“I still remember the tip that looked enormous until I added my hours.” People around the approach to Seabright Court know Taylor by a small Monday habit. Taylor likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I earned more in tips last month than my own manager. I want him to understand why that feels so precarious.",
+  "appearance": "Taylor has a long plait tucked inside the collar, a small notch in the left eyebrow, and a favorite piece of clothing, a red windbreaker. It usually goes with one loose pocket corner secured with green thread. When somebody else has the floor, Taylor squares up pieces of paper while thinking.",
+  "personality": "Taylor has a quick wit and an equally quick sense of shame. A joke is often Taylor's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To explain what tipping uncertainty does to a budget.",
+  "family": "Winifred Osborne is Taylor’s second cousin. Taylor chooses whether they walk home or sit a while. Winifred brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Salt in the pockets*, Winifred says, “I folded my note asking for a raise into that pocket.”",
+  "connections": "Jean Miranda. Tips create an arithmetic problem worth staying to solve beside the sharpened pencils.",
+  "familyIds": [
+    "AH-R0607"
+  ],
+  "connectionIds": [
+    "AH-R0816"
+  ],
+  "reactions": [
+    {
+      "situation": "An employer asks who is attending the class",
+      "response": "Taylor protects the attendance list and offers general information about the class.",
+      "asWritten": "An employer asks who is attending the class. Taylor protects the attendance list and offers general information about the class."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Taylor brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Taylor brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Taylor seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Taylor seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

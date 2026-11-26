@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0072",
+  "personId": "AH-R0072",
+  "name": "Dario Flint",
+  "age": 45,
+  "occupation": "Ice cream vendor",
+  "home": "Old Town",
+  "episode": "A tide at noon",
+  "biography": "stories/residents/01/08-a-tide-at-noon.md#ah-r0072",
+  "life": "Dario's cart is the second business he has owned. The first failed because he never charged friends. He has devised elaborate small jobs children can do in return for treats, a system nobody mistakes for sound accounting. On Sunday, near the public end of the South Shore boardwalk, Dario checks the shade on the benches before deciding how long to stay.",
+  "voice": "I let children freeze the turrets in my cart. They kept opening the lid and my stock softened. I sold the soft ones cheap and put their names on the receipts as architects.",
+  "appearance": "Dario has a center part and straight chestnut hair, a round face with a pronounced chin, and a favorite piece of clothing, a cream pullover. It usually goes with one loose pocket corner secured with green thread. When somebody else has the floor, Dario leans a shoulder against the wall during long conversations.",
+  "personality": "Dario thinks best while walking. Sitting beneath someone's office clock makes Dario sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To replace the softened stock without charging the children for their turrets.",
+  "family": "Stella Hull is Dario’s second cousin. A relative kept reporting household news on postcards long after everybody could afford to phone. Reading one takes the family back to an ordinary morning rather than a big event. Dario prefers an ordinary request to a grand declaration of affection. Asked about *The sheltered corner*, Stella says, “My wheelchair fits the new turn. I brought the planners cake and asked them to hear the old riders too.”",
+  "connections": "Ada Firth. Turrets from the ice cart and flags from the old competition meet in the families' photograph.",
+  "familyIds": [
+    "AH-R0269"
+  ],
+  "connectionIds": [
+    "AH-R0079"
+  ],
+  "reactions": [
+    {
+      "situation": "The judges ask the fastest builder to speak for everyone",
+      "response": "Dario asks each child how they would enter their own castle.",
+      "asWritten": "The judges ask the fastest builder to speak for everyone. Dario asks each child how they would enter their own castle."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Dario takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Dario takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Dario asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Dario asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

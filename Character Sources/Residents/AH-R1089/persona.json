@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1089",
+  "personId": "ah-pd-131",
+  "name": "Nico Wells",
+  "age": 40,
+  "occupation": "Air support officer",
+  "home": "Eastside",
+  "episode": "First shift back",
+  "biography": "stories/residents/08/04-first-shift-back.md#ah-r1089",
+  "life": "“I still remember coming back to work a day earlier than I was ready.” People around Lighthouse Cove know Nico by a small Wednesday habit. Nico takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I know what it costs to return without being cured of ordinary sadness. I am walking home with my colleague twice this week.",
+  "appearance": "Nico has a deep crease beside the mouth when smiling. Look for a long plait tucked inside the collar. Off duty, the familiar outfit is a brown corduroy jacket with a watch on a cracked leather band. In conversation Nico turns fully toward the person speaking.",
+  "personality": "Nico uses precise names for tools and very approximate names for feelings. People who know Nico well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To keep the two promised walks home.",
+  "family": "Remy Rizzo is Nico’s cousin. Nico gets to change the plan. Remy offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The pawned trumpet*, Remy says, “I lent my birthday room for a joint rehearsal.”",
+  "connections": "Omar Blake. A private call home and a quiet walk away from work serve different parts of the same return.",
+  "familyIds": [
+    "AH-R0200"
+  ],
+  "connectionIds": [
+    "AH-R1086"
+  ],
+  "reactions": [
+    {
+      "situation": "The returning colleague finds another name on the desk",
+      "response": "Nico lets both workers describe what happened to the assignment during leave.",
+      "asWritten": "The returning colleague finds another name on the desk. Nico lets both workers describe what happened to the assignment during leave."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Nico asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Nico asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Nico brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Nico brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

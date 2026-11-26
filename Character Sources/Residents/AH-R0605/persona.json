@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0605",
+  "personId": "AH-R0605",
+  "name": "Teresa Ellis",
+  "age": 42,
+  "occupation": "Laundry sorter",
+  "home": "Midtown",
+  "episode": "Salt in the pockets",
+  "biography": "stories/residents/05/01-salt-in-the-pockets.md#ah-r0605",
+  "life": "“I still remember three brothers ordering the same size jacket.” Wednesday often includes a stop at Tideline Market, where Teresa picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I wanted to return every coat to the right worker. It turns out three brothers trade them.",
+  "appearance": "Teresa has a long plait tucked inside the collar, two dimples that appear only with a full smile, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a replacement button a shade darker than the others. When somebody else has the floor, Teresa takes off the watch before a long conversation.",
+  "personality": "Teresa can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To return all three coats to the brothers together.",
+  "family": "Pari Zed is Teresa’s second cousin. Teresa brings something that can still be enjoyed tomorrow. Pari checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Ten fingers*, Pari says, “I made the wrong red three summers ago. She wore it to her anniversary dinner anyway.”",
+  "connections": "Dale Malik. They establish which salt coat belongs to which member of the deck crew.",
+  "familyIds": [
+    "AH-R0104"
+  ],
+  "connectionIds": [
+    "AH-R0601"
+  ],
+  "reactions": [
+    {
+      "situation": "A coat's owner claims the crystals in the lining",
+      "response": "Teresa sets the coat aside until the owner can identify the crystals privately.",
+      "asWritten": "A coat's owner claims the crystals in the lining. Teresa sets the coat aside until the owner can identify the crystals privately."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Teresa starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Teresa starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Teresa asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Teresa asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

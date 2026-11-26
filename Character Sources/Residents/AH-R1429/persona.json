@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1429",
+  "personId": "AH-R1429",
+  "name": "Milo Neal",
+  "age": 69,
+  "occupation": "Retired postal driver",
+  "home": "Midtown",
+  "episode": "No lifeguard at dusk",
+  "biography": "stories/residents/10/08-no-lifeguard-at-dusk.md#ah-r1429",
+  "life": "“I still remember being asked to accompany someone without offering advice.” People around Paper & Pine Books know Milo by a small Saturday habit. Milo starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I am the sibling who asked her to stop swimming. This evening she asked me to sit quietly and watch the sky with her.",
+  "appearance": "Milo has a gray streak running back from the forehead, a straight nose and deep-set eyes, and a favorite piece of clothing, an olive canvas jacket. It usually goes with a knotted piece of sail thread on a key ring. When somebody else has the floor, Milo gives a little nod before asking a hard question.",
+  "personality": "Milo often says yes too quickly out of pride in being useful. The people closest to Milo have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To sit alongside the sibling without arguing about swimming.",
+  "family": "Lennon Price is Milo’s younger cousin. Milo can stop the walk at any corner. Lennon chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *A borrowed name*, Lennon says, “I want royalties for the joke my granddad wrote on his toolbox.”",
+  "connections": "Harold Crawford. The swimmer's sibling and physician both give up the temptation to decide for someone else.",
+  "familyIds": [
+    "AH-R0516"
+  ],
+  "connectionIds": [
+    "AH-R1424"
+  ],
+  "reactions": [
+    {
+      "situation": "The swimmer stays on the steps after the final shift",
+      "response": "Milo checks whether the swimmer intends to go into the water before deciding what help is wanted.",
+      "asWritten": "The swimmer stays on the steps after the final shift. Milo checks whether the swimmer intends to go into the water before deciding what help is wanted."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Milo brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Milo brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Milo rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Milo rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

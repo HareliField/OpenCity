@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1371",
+  "personId": "AH-R1371",
+  "name": "Joseph Moran",
+  "age": 67,
+  "occupation": "Property developer and millionaire",
+  "home": "Coast Ridge",
+  "episode": "The gift nobody wants",
+  "biography": "stories/residents/10/03-the-gift-nobody-wants.md#ah-r1371",
+  "life": "“I still remember selling my first strip of land to a family with a van.” Friday often includes a stop at Studio Boulevard, where Joseph waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I made money selling buildings. I thought the finest gift I could give her was never having to ask a landlord for anything.",
+  "appearance": "Joseph is easy to recognize by gray hair trimmed very close behind the ears and a straight nose and deep-set eyes. Usually dressed in a boxy denim jacket with a thin silver ring worn on a cord, Joseph raises one eyebrow long before saying yes when listening.",
+  "personality": "Joseph has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To offer the daughter security on terms she can decline.",
+  "family": "Jo Bloom is Joseph’s younger cousin. Joseph is allowed to ask about the bad news afterward. Jo calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The soft wharf chalk*, Jo says, “I thought it was a safety warning and stopped a delivery.”",
+  "connections": "Cassandra Collins (daughter). A wealthy father and a young tailor disagree about whether owning a whole building constitutes freedom.",
+  "familyIds": [
+    "AH-R0463"
+  ],
+  "connectionIds": [
+    "AH-R1372"
+  ],
+  "reactions": [
+    {
+      "situation": "The daughter declines the property gift",
+      "response": "Joseph takes the daughter's preferred shop seriously before proposing another gift.",
+      "asWritten": "The daughter declines the property gift. Joseph takes the daughter's preferred shop seriously before proposing another gift."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Joseph asks which other bill repayment would displace, then offers only what the household can afford to give.",
+      "asWritten": "A friend asks for a loan due back before payday. Joseph asks which other bill repayment would displace, then offers only what the household can afford to give."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Joseph asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Joseph asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

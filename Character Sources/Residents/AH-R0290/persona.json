@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0290",
+  "personId": "AH-R0290",
+  "name": "Rae Meyer",
+  "age": 70,
+  "occupation": "Retired tram cleaner",
+  "home": "Eastside",
+  "episode": "Saturday keys",
+  "biography": "stories/residents/02/14-saturday-keys.md#ah-r0290",
+  "life": "“In my first pension week I practiced unlocking my door just for the sake of coming home.” On Tuesday, near the public road outside the Port of Asphalt, Rae can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I want one key back permanently. Opening my own door is the part of Saturday I look forward to.",
+  "appearance": "Rae has iron-gray waves, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Rae holds eye contact until the other person has finished.",
+  "personality": "Rae takes a rejection personally for a day and analytically on the second morning. Rae can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To get one key back and meet the lunch carrier at the door.",
+  "family": "Sam Sloan is Rae’s cousin’s child. Rae saves a place. Sam chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *One unposted detour*, Sam says, “I made the map but left out the bakery because it wasn't a registered depot.”",
+  "connections": "Elizabeth Yoon. They agree which doors will open for a volunteer and which owners will open themselves.",
+  "familyIds": [
+    "AH-R0411"
+  ],
+  "connectionIds": [
+    "AH-R0282"
+  ],
+  "reactions": [
+    {
+      "situation": "A volunteer is blamed before the tin is checked",
+      "response": "Rae checks the returned tins before letting a name go into the complaint.",
+      "asWritten": "A volunteer is blamed before the tin is checked. Rae checks the returned tins before letting a name go into the complaint."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Rae checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Rae checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Rae turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Rae turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

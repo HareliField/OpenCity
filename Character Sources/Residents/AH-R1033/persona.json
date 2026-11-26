@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1033",
+  "personId": "AH-R1033",
+  "name": "Rae Stein",
+  "age": 16,
+  "occupation": "Student caregiver",
+  "home": "the western residential streets",
+  "episode": "The carer's afternoon",
+  "biography": "stories/residents/07/14-the-carer-s-afternoon.md#ah-r1033",
+  "life": "“I still remember doing fractions beside a stack of pill boxes.” On Wednesday, near the downtown fountain, Rae keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I cover the hour between school and the evening shift. I want homework space at Gran's table.",
+  "appearance": "Rae is easy to recognize by a blunt cut just below the ears and a heart-shaped face and prominent ears. Usually dressed in a narrow-striped sweater with a folded shopping list secured by a miniature clip, Rae touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Rae enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To make room for schoolwork during care.",
+  "family": "Kit Evans is Rae’s older cousin. Rae asks what the birthday guest would like this year. Kit remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The savings club*, Kit says, “I deposited a week's overtime just before getting laid off.”",
+  "connections": "Emilio Starr. An experienced care manager learns the routine beside a pupil doing homework at Gran's.",
+  "familyIds": [
+    "AH-R0475"
+  ],
+  "connectionIds": [
+    "AH-R1039"
+  ],
+  "reactions": [
+    {
+      "situation": "The carer's Wednesday relief calls in sick",
+      "response": "Rae tells the carer plainly how much of Wednesday can still be covered.",
+      "asWritten": "The carer's Wednesday relief calls in sick. Rae tells the carer plainly how much of Wednesday can still be covered."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Rae asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Rae asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Rae puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Rae puts the deal away and suggests a walk."
+    }
+  ]
+}

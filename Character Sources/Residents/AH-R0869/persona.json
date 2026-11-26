@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0869",
+  "personId": "AH-R0869",
+  "name": "Jay Leung",
+  "age": 53,
+  "occupation": "Breakfast baker",
+  "home": "Midtown",
+  "episode": "The late crossing",
+  "biography": "stories/residents/06/12-the-late-crossing.md#ah-r0869",
+  "life": "“I still remember trying not to laugh at a driver's wake-up song.” On Sunday, near Harbour Bakery, Jay buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I used to laugh at the driver who sings himself awake. Now I know the words that get us over the ridge.",
+  "appearance": "Jay has a scattering of freckles across the bridge of the nose. Look for a swept fringe and a closely clipped nape. Away from the heat of the kitchen, the familiar outfit is a long navy raincoat with a pressed flower kept in the clear back of a phone case. In conversation Jay draws breath as if to speak and lets someone else go first.",
+  "personality": "Jay enjoys routines and will defend the right of someone else to break one. As a result, Jay is often everyone's favorite cover for a missed morning.",
+  "agenda": "To learn the song that keeps the driver awake.",
+  "family": "Darcy Lopez is Jay’s second cousin. Jay chooses whether to use it. Darcy saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The fitting mirror*, Darcy says, “My brother left a fingerprint where he always straightened his collar.”",
+  "connections": "Charlotte Sawyer. The anxious passenger decides when a sing-along in the shared car will help rather than hurt.",
+  "familyIds": [
+    "AH-R0555"
+  ],
+  "connectionIds": [
+    "AH-R0865"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver on the rota asks for petrol money",
+      "response": "Jay agrees what the fuel actually cost and discusses the contribution privately.",
+      "asWritten": "A driver on the rota asks for petrol money. Jay agrees what the fuel actually cost and discusses the contribution privately."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Jay offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem.",
+      "asWritten": "A friend asks for a loan due back before payday. Jay offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Jay keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Jay keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1411",
+  "personId": "AH-R1411",
+  "name": "Eva Bay",
+  "age": 51,
+  "occupation": "Novelist",
+  "home": "the streets around Foundry Lofts",
+  "episode": "An empty dedication",
+  "biography": "stories/residents/10/07-an-empty-dedication.md#ah-r1411",
+  "life": "“I still remember my husband reading pages aloud over a cooking pot.” On Friday, near the brick passage off the shop row, Eva takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I wrote the book while my husband cooked. He hates public thanks and likes a hot meal waiting for him.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a folded shopping list secured by a miniature clip. Eva has a round face with a pronounced chin, with thick, tightly coiled hair. Eva counts on the side of one finger where hardly anybody notices during a conversation.",
+  "personality": "Eva is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Eva is by the number of tiny errands suddenly being done.",
+  "agenda": "To thank the husband in a form he actually likes.",
+  "family": "Gloria Batista is Eva’s stepsibling. Eva chooses the music. Gloria puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The million-dollar flat*, Gloria says, “I valued the view and overlooked the years she carried her shopping up without a lift.”",
+  "connections": "Sofia Brady. The novelist hears the difference between giving a caregiver wages and giving them public credit. Also in the story is Blake Liu (former spouse).",
+  "familyIds": [
+    "AH-R1222"
+  ],
+  "connectionIds": [
+    "AH-R1413",
+    "AH-R1419"
+  ],
+  "reactions": [
+    {
+      "situation": "The author offers the dedication to someone who dislikes public praise",
+      "response": "Eva asks the intended recipient which kind of thanks would actually feel welcome.",
+      "asWritten": "The author offers the dedication to someone who dislikes public praise. Eva asks the intended recipient which kind of thanks would actually feel welcome."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Eva puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Eva puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Eva agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Eva agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

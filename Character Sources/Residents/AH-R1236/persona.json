@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1236",
+  "personId": "ah-pd-136",
+  "name": "Ana West",
+  "age": 34,
+  "occupation": "Patrol officer",
+  "home": "Old Town",
+  "episode": "A call heard twice",
+  "biography": "stories/residents/09/04-a-call-heard-twice.md#ah-r1236",
+  "life": "“I still remember carrying water for someone who couldn't put the phone down.” People around Maré Coffee know Ana by a small Wednesday habit. Ana likes the table where people coming off shift stop checking the time.",
+  "voice": "I walked over with a cup of water. I am grateful the letter didn't mention me because I cried afterward.",
+  "appearance": "Ana has a narrow face with an expressive upper lip. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a plum-colored cardigan with a tiny red thread tied through the lowest buttonhole. In conversation Ana listens with the head tilted a little to the left.",
+  "personality": "Ana thinks best while walking. Sitting beneath someone's office clock makes Ana sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To ask the coworker for an ordinary lunch after the call.",
+  "family": "Paul Smith is Ana’s half-sibling. Ana knows which ones can be shared. Paul keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The misplaced umbrella*, Paul says, “I saw the switch but the toddler holding both had just learned mine and yours.”",
+  "connections": "Ravi Stone. Bringing water into a quiet room was the part both can discuss without disclosing the call.",
+  "familyIds": [
+    "AH-R0673"
+  ],
+  "connectionIds": [
+    "AH-R1235"
+  ],
+  "reactions": [
+    {
+      "situation": "The resident asks for a reply in somebody's own words",
+      "response": "Ana asks the caller how they want to receive a personal reply.",
+      "asWritten": "The resident asks for a reply in somebody's own words. Ana asks the caller how they want to receive a personal reply."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Ana asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Ana asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Ana asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Ana asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

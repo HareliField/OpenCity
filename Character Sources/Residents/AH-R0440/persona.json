@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0440",
+  "personId": "AH-R0440",
+  "name": "Rowan Reyes",
+  "age": 46,
+  "occupation": "Postal carrier",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The housecoat commission",
+  "biography": "stories/residents/03/14-the-housecoat-commission.md#ah-r0440",
+  "life": "“I still remember bringing post to a woman still dressed for a party.” People around the corner outside Coastal Barber know Rowan by a small Wednesday habit. Rowan usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I am the neighbor invited last. I promised to dress up until she told me to come straight from work.",
+  "appearance": "Rowan has heavy brows and an unusually delicate jaw. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a boxy denim jacket with a thin silver ring worn on a cord. In conversation Rowan folds a paper napkin into quarters without noticing.",
+  "personality": "Rowan admires skill and distrusts the idea that skill gives anyone permission to be rude. Rowan learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To turn up in the work clothes the host invited.",
+  "family": "Kai Chan is Rowan’s second cousin. Rowan picks the meeting place. Kai sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The fountain score*, Kai says, “I sell whistles and dislike giving them away.”",
+  "connections": "Hugo Paul. A visitor straight from work notices the ties inside the pockets.",
+  "familyIds": [
+    "AH-R0729"
+  ],
+  "connectionIds": [
+    "AH-R0433"
+  ],
+  "reactions": [
+    {
+      "situation": "The diner wants to fasten the new cuff unaided",
+      "response": "Rowan leaves the cuff in reach and lets the diner set the pace.",
+      "asWritten": "The diner wants to fasten the new cuff unaided. Rowan leaves the cuff in reach and lets the diner set the pace."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Rowan finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Rowan finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Rowan describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Rowan describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

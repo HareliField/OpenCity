@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0090",
+  "personId": "AH-R0090",
+  "name": "Della Keys",
+  "age": 58,
+  "occupation": "Neighborhood association treasurer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The porch light",
+  "biography": "stories/residents/01/09-the-porch-light.md#ah-r0090",
+  "life": "Della is very good at raising money for things a committee can own. Paying for a journey whose only result is seeing a sister again feels uncomfortably difficult to photograph for the annual report. On Friday, near Lighthouse Cove, Della takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "We offered to buy the lamp as a landmark. He reminded me his wife's sister is still alive. I changed the vote to a travel allowance so he can deliver it himself.",
+  "appearance": "Della has a blunt cut just below the ears, a crooked front tooth visible when laughing, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a fabric zip pull cut from a school scarf. When somebody else has the floor, Della rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Della is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To pay for the owner's visit to his wife's sister.",
+  "family": "Ariel Pinto is Della’s half-sibling. Della leaves the first voice message. Ariel calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The new language at dinner*, Ariel says, “I translated our first visit and cried in the lift because he sounded exactly like my late father.”",
+  "connections": "Gus Lark. The hardware ledger gives the committee a less costly way to commemorate the lamp than buying it.",
+  "familyIds": [
+    "AH-R1185"
+  ],
+  "connectionIds": [
+    "AH-R0086"
+  ],
+  "reactions": [
+    {
+      "situation": "A shift worker turns up after the porch goes dark",
+      "response": "Della keeps the worker company at the gate and lets the homeowner explain the dark.",
+      "asWritten": "A shift worker turns up after the porch goes dark. Della keeps the worker company at the gate and lets the homeowner explain the dark."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Della asks the cashier to hold it and lets a claimant identify the writing and amount privately.",
+      "asWritten": "An envelope of wages is found under a café chair. Della asks the cashier to hold it and lets a claimant identify the writing and amount privately."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Della thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Della thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

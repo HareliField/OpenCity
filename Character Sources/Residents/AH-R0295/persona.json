@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0295",
+  "personId": "AH-R0295",
+  "name": "Ian Palmer",
+  "age": 32,
+  "occupation": "Sailing instructor",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A sail cut small",
+  "biography": "stories/residents/02/15-a-sail-cut-small.md#ah-r0295",
+  "life": "“I taught on a dinghy that could just carry two children and a picnic.” People around the public end of the South Shore boardwalk know Ian by a small Friday habit. Ian checks the shade on the benches before deciding how long to stay.",
+  "voice": "I can make six small sails for beginners. Their parents asked why every panel was a different shade.",
+  "appearance": "On an ordinary day, look for a pale blue work shirt and a pair of reading glasses in a cloth sleeve. Ian has a broad nose and a deep dimple on one cheek, with auburn hair cut square at the nape. Ian starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Ian never tires of being shown how somebody makes a living. Ian can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To make six safe sails from the different-colored panels.",
+  "family": "Benedict Lund is Ian’s cousin raised in the same household. Ian puts the kettle on. Benedict chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The almost scholarship*, Benedict says, “I offered a lift to the first lesson. I'm asking everybody who came to the celebration where they will be in February.”",
+  "connections": "Charlotte Barker. Untwisting the seam provides the cord for six little practice sails. Also in the story is Owen Brandt (pattern cutter).",
+  "familyIds": [
+    "AH-R0880"
+  ],
+  "connectionIds": [
+    "AH-R0297",
+    "AH-R0296"
+  ],
+  "reactions": [
+    {
+      "situation": "Two makers want the same piece of sail",
+      "response": "Ian lays both paper patterns on the piece before anybody cuts.",
+      "asWritten": "Two makers want the same piece of sail. Ian lays both paper patterns on the piece before anybody cuts."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Ian asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Ian asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Ian may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Ian may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

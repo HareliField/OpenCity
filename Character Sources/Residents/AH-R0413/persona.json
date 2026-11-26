@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0413",
+  "personId": "AH-R0413",
+  "name": "Amos Tate",
+  "age": 32,
+  "occupation": "Ice supplier",
+  "home": "the western residential streets",
+  "episode": "One unposted detour",
+  "biography": "stories/residents/03/12-one-unposted-detour.md#ah-r0413",
+  "life": "“I still remember wrapping my first frozen order in a football shirt.” Sunday often includes a stop at the market by Market Flats, where Amos often waits until the delivery baskets are stacked before going in.",
+  "voice": "I lost a day's ice. I want the contractor to pay the stallholders who lost sales too.",
+  "appearance": "Amos has a crooked front tooth visible when laughing. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is a cream pullover with a pair of reading glasses in a cloth sleeve. In conversation Amos raises one eyebrow long before saying yes.",
+  "personality": "Amos carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To recover the stallholders' lost ice sales.",
+  "family": "Harriet Sloan is Amos’s half-sibling. Amos chooses whether to use it. Harriet saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The aquarium*, Harriet says, “I wrote abandoned on the inventory because the flat was empty.”",
+  "connections": "Remy Monroe. A lost ice sale and a morning spent translating become two claims on the same contractor.",
+  "familyIds": [
+    "AH-R0042"
+  ],
+  "connectionIds": [
+    "AH-R0414"
+  ],
+  "reactions": [
+    {
+      "situation": "A delivery customer refuses the late parcel",
+      "response": "Amos checks with the intended recipient before leaving a late parcel.",
+      "asWritten": "A delivery customer refuses the late parcel. Amos checks with the intended recipient before leaving a late parcel."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Amos checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Amos checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Amos offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Amos offers to accompany them while they tell the truth."
+    }
+  ]
+}

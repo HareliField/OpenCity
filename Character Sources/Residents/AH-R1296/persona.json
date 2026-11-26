@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1296",
+  "personId": "AH-R1296",
+  "name": "Francis Lim",
+  "age": 40,
+  "occupation": "Quay dispatcher",
+  "home": "the blocks north of the port",
+  "episode": "A four o'clock kitchen",
+  "biography": "stories/residents/09/10-a-four-o-clock-kitchen.md#ah-r1296",
+  "life": "“I still remember carrying a bargain cup through a cold port gate.” On Wednesday, near the public end of the South Shore boardwalk, Francis checks the shade on the benches before deciding how long to stay.",
+  "voice": "I was asking for cheaper coffee before I learned the cook was paying someone to wake her youngest.",
+  "appearance": "Francis has short sandy hair and a marked widow's peak, a broad nose and a deep dimple on one cheek, and a favorite piece of clothing, a cream pullover. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Francis draws small circles on a tabletop while waiting.",
+  "personality": "Francis is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To pay a fair share of the pre-dawn service.",
+  "family": "Penelope Jeong is Francis’s cousin. A relative always brought two cakes, the good one and the one that had collapsed. People at home learned to ask for the collapsed one first so the baker could sit down. Francis thinks that counted as good manners. Asked about *Nine unpaid hours*, Penelope says, “I am the boss's daughter. The lads asked for my signature and didn't ask me to defend him.”",
+  "connections": "Greta Ryan. The quay worker learns what a low price costs on the morning a coworker serves the cook at her own table.",
+  "familyIds": [
+    "AH-R0767"
+  ],
+  "connectionIds": [
+    "AH-R1300"
+  ],
+  "reactions": [
+    {
+      "situation": "The cook's teenager wants an ordinary breakfast together",
+      "response": "Francis moves practical work away from the table for the time that the teenager asked for.",
+      "asWritten": "The cook's teenager wants an ordinary breakfast together. Francis moves practical work away from the table for the time that the teenager asked for."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Francis takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Francis takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Francis thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Francis thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

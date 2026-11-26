@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1119",
+  "personId": "AH-R1119",
+  "name": "Dora Garza",
+  "age": 51,
+  "occupation": "Bookshop proprietor",
+  "home": "the western residential streets",
+  "episode": "A prize nobody entered",
+  "biography": "stories/residents/08/07-a-prize-nobody-entered.md#ah-r1119",
+  "life": "“I still remember locking the shop doors so a writer could change their mind.” On Monday, near the courtyard by Ferry Street Rooms, Dora prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I own the bookshop. I have given the author the keys after closing so the decision doesn't happen in front of a queue.",
+  "appearance": "Dora has two dimples that appear only with a full smile. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a charcoal zip cardigan with a tiny red thread tied through the lowest buttonhole. In conversation Dora looks toward the door whenever a name is called.",
+  "personality": "Dora gets protective of anybody who comes into a meeting unprepared. Dora privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To provide a closed room for the decision.",
+  "family": "Edward Pike is Dora’s cousin raised in the same household. Dora knows which ones can be shared. Edward keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *One paid trial*, Edward says, “I tasted both loaves blind and chose my ex's.”",
+  "connections": "Lou Diaz. The printer's costs can be settled without taking away the writer's closed room.",
+  "familyIds": [
+    "AH-R0844"
+  ],
+  "connectionIds": [
+    "AH-R1115"
+  ],
+  "reactions": [
+    {
+      "situation": "The prize organizer asks the writer to appear onstage",
+      "response": "Dora asks the organizer to wait for the writer's own answer.",
+      "asWritten": "The prize organizer asks the writer to appear onstage. Dora asks the organizer to wait for the writer's own answer."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Dora sits beside them without expecting a performance and asks if they want to go outside.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Dora sits beside them without expecting a performance and asks if they want to go outside."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Dora offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Dora offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

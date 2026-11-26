@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0406",
+  "personId": "AH-R0406",
+  "name": "Patricia Lang",
+  "age": 33,
+  "occupation": "Hairdressing trainee",
+  "home": "Old Town",
+  "episode": "The widow's razor",
+  "biography": "stories/residents/03/11-the-widow-s-razor.md#ah-r0406",
+  "life": "“I still remember a polishing cloth cut from a party dress.” People around the foot of Harbor Viaduct know Patricia by a small Saturday habit. Patricia pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I want to polish just the bit her thumb wore bright. Nothing else remembers a hand so precisely.",
+  "appearance": "Patricia is easy to recognize by a long plait tucked inside the collar and a straight nose and deep-set eyes. Usually dressed in a faded indigo overshirt with one cuff folded back twice, Patricia listens with the head tilted a little to the left when listening.",
+  "personality": "Patricia is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Patricia is concerned.",
+  "agenda": "To preserve the bright place where the thumb rested.",
+  "family": "Grey Lopez is Patricia’s stepsibling. Patricia saves a place. Grey chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The porch auction*, Grey says, “I always envied their porch. Buying a chair taught me I liked the people who sat on it more.”",
+  "connections": "Albert Bennett (razor sharpener). They work out where to polish the blade and where to keep the thumbprint bright.",
+  "familyIds": [
+    "AH-R0537"
+  ],
+  "connectionIds": [
+    "AH-R0402"
+  ],
+  "reactions": [
+    {
+      "situation": "The widow wants to tell the apprentice who held it first",
+      "response": "Patricia makes space for the widow and the apprentice to talk without buyers listening.",
+      "asWritten": "The widow wants to tell the apprentice who held it first. Patricia makes space for the widow and the apprentice to talk without buyers listening."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Patricia lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Patricia lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Patricia asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Patricia asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

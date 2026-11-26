@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1356",
+  "personId": "AH-R1356",
+  "name": "Chris Lowe",
+  "age": 52,
+  "occupation": "Rival laundromat operator",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A closing hour",
+  "biography": "stories/residents/10/01-a-closing-hour.md#ah-r1356",
+  "life": "“I still remember opening my rival's customers' bags for the first time.” Monday often includes a stop at the entrance to the Wash House, where Chris stops for local notices even on a day without a load to wash.",
+  "voice": "I own the rival laundry. I offered to take the regulars for one day and give them back on Monday.",
+  "appearance": "Chris has a straight nose and deep-set eyes. Look for thick, tightly coiled hair. On an ordinary day, the familiar outfit is a cream pullover with a pair of reading glasses in a cloth sleeve. In conversation Chris draws small circles on a tabletop while waiting.",
+  "personality": "Chris uses precise names for tools and very approximate names for feelings. People who know Chris well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To serve the visitors and direct them back to their regular shop.",
+  "family": "Howard Poole is Chris’s cousin. Chris asks the question the rest of the family avoided. Howard chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The trust with a typo*, Howard says, “I had been addressing her as madam for eighteen years.”",
+  "connections": "June Sawyer. The regular is offered a wash at the rival's shop and a way back to the usual counter on Monday.",
+  "familyIds": [
+    "AH-R0627"
+  ],
+  "connectionIds": [
+    "AH-R1352"
+  ],
+  "reactions": [
+    {
+      "situation": "A regular needs a coat locked in the shop",
+      "response": "Chris checks whether the coat is needed that day before interrupting the owner.",
+      "asWritten": "A regular needs a coat locked in the shop. Chris checks whether the coat is needed that day before interrupting the owner."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Chris writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Chris writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Chris brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Chris brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

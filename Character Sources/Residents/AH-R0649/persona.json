@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0649",
+  "personId": "AH-R0649",
+  "name": "Zachary Khan",
+  "age": 54,
+  "occupation": "Clock restorer",
+  "home": "Midtown",
+  "episode": "The clean ledger",
+  "biography": "stories/residents/05/05-the-clean-ledger.md#ah-r0649",
+  "life": "“I still remember winding a broken clock out of old habit.” People around the downtown fountain know Zachary by a small Wednesday habit. Zachary keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I reclaimed a clock that won't run and felt richer than I did when it worked.",
+  "appearance": "Zachary is easy to recognize by close-cropped dark curls and a strong profile and a little space between the front teeth. Usually dressed in a striped cotton shirt with a pen clipped inside the neckline, Zachary holds eye contact until the other person has finished when listening.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Zachary takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To recover the clock that stopped years ago.",
+  "family": "Marcel Briggs is Zachary’s second cousin. Zachary chooses an ordinary story to tell. Marcel asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The last light at the harbor*, Marcel says, “I sat through all four lights with the sister I hadn't spoken to for a year.”",
+  "connections": "Mia Nair. One wants an object back and the other would like to leave with an apology.",
+  "familyIds": [
+    "AH-R1500"
+  ],
+  "connectionIds": [
+    "AH-R0650"
+  ],
+  "reactions": [
+    {
+      "situation": "The former fence offers to pay money for something irreplaceable",
+      "response": "Zachary asks the owner what returning money would and wouldn't settle.",
+      "asWritten": "The former fence offers to pay money for something irreplaceable. Zachary asks the owner what returning money would and wouldn't settle."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Zachary takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Zachary takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Zachary asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Zachary asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

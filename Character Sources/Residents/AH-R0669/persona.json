@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0669",
+  "personId": "AH-R0669",
+  "name": "Devin Bruno",
+  "age": 38,
+  "occupation": "Pet sitter",
+  "home": "Coast Ridge",
+  "episode": "A shelf of apologies",
+  "biography": "stories/residents/05/07-a-shelf-of-apologies.md#ah-r0669",
+  "life": "“I still remember a dog with a finer name than anyone on our street.” People around Tideline Market know Devin by a small Tuesday habit. Devin picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I don't know who loaned it to me. I remember their dog's name and hope somebody recognizes it.",
+  "appearance": "Devin has a wide brow and a narrow jaw. Look for short black hair swept back. On an ordinary day, the familiar outfit is a pale blue work shirt with a pressed flower kept in the clear back of a phone case. In conversation Devin gives a little nod before asking a hard question.",
+  "personality": "Devin never tires of being shown how somebody makes a living. Devin can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To identify the lender through the old dog's name.",
+  "family": "Ivy Scott is Devin’s older relative by marriage. Devin can always ask for five minutes alone. Ivy asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The painted footprint*, Ivy says, “I came to see whether it was my foot before my toes began to curl.”",
+  "connections": "Tali Allen. They look through remembered nicknames for the first owner of a borrowed mystery.",
+  "familyIds": [
+    "AH-R0371"
+  ],
+  "connectionIds": [
+    "AH-R0661"
+  ],
+  "reactions": [
+    {
+      "situation": "The book's original owner asks to keep the apology private",
+      "response": "Devin lets the book go back with the note folded inside.",
+      "asWritten": "The book's original owner asks to keep the apology private. Devin lets the book go back with the note folded inside."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Devin asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Devin asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Devin may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Devin may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

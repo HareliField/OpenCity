@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0310",
+  "personId": "AH-R0310",
+  "name": "Alex Gomez",
+  "age": 29,
+  "occupation": "Visiting tour cook",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Spin cycle choir",
+  "biography": "stories/residents/03/01-spin-cycle-choir.md#ah-r0310",
+  "life": "“I still remember burning dumplings the morning I left home.” People around Ferris Deli know Alex by a small Tuesday habit. Alex asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I sat in the wrong laundromat listening for it. A stranger walked me all the way here.",
+  "appearance": "Alex has a wide brow and a narrow jaw. Look for a high puff tied with plain cord. Away from the heat of the kitchen, the familiar outfit is a charcoal zip cardigan with a stitched row of blue crosses along an old repair. In conversation Alex counts on the side of one finger where hardly anybody notices.",
+  "personality": "Alex has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To thank the stranger who found the correct shop.",
+  "family": "Dana Sanders is Alex’s parent’s cousin. Alex asks before bringing somebody along. Dana can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A summer marriage*, Dana says, “I sew uniforms. The couple asked for formal clothes they can go straight back to work in.”",
+  "connections": "Lucia Starr. The dancer gives the lost visitor directions to a morning rehearsal.",
+  "familyIds": [
+    "AH-R1126"
+  ],
+  "connectionIds": [
+    "AH-R0308"
+  ],
+  "reactions": [
+    {
+      "situation": "A tired neighbor asks the singers to move",
+      "response": "Alex asks when the neighbor sleeps and helps arrange a quieter hour.",
+      "asWritten": "A tired neighbor asks the singers to move. Alex asks when the neighbor sleeps and helps arrange a quieter hour."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Alex takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Alex takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Alex says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Alex says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

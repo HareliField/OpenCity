@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1309",
+  "personId": "AH-R1309",
+  "name": "Silas Voss",
+  "age": 30,
+  "occupation": "Ad copywriter",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A scar at the salon",
+  "biography": "stories/residents/09/11-a-scar-at-the-salon.md#ah-r1309",
+  "life": "“I still remember rewriting a slogan I couldn't defend at the kitchen table.” On Wednesday, near the window at Night Shift Donuts, Silas knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I wrote a manipulative slogan about survival and took it out before the presentation.",
+  "appearance": "Silas has black hair twisted into a small knot, fine brows over wide-set eyes, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a fabric zip pull cut from a school scarf. When somebody else has the floor, Silas raises one eyebrow long before saying yes.",
+  "personality": "Silas prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To replace the survival slogan with the model's own words.",
+  "family": "Oakley Han is Silas’s older cousin. Silas asks what the birthday guest would like this year. Oakley remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The housecoat commission*, Oakley says, “I want it lined in cold blue like the restaurant I used to run.”",
+  "connections": "Ariel Morse. The investor cannot approve the campaign until the copywriter replaces its presumptions.",
+  "familyIds": [
+    "AH-R0431"
+  ],
+  "connectionIds": [
+    "AH-R1304"
+  ],
+  "reactions": [
+    {
+      "situation": "A campaign manager wants to enlarge the scar",
+      "response": "Silas asks the model whether the original permission covers the scar.",
+      "asWritten": "A campaign manager wants to enlarge the scar. Silas asks the model whether the original permission covers the scar."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Silas walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Silas walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Silas clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Silas clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0585",
+  "personId": "AH-R0585",
+  "name": "Melanie Arendt",
+  "age": 44,
+  "occupation": "Seamstress",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Laundry for a stranger",
+  "biography": "stories/residents/04/14-laundry-for-a-stranger.md#ah-r0585",
+  "life": "“I still remember my family keeping sweets in a medicine bottle.” Friday often includes a stop at the brick passage off the shop row, where Melanie takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I fitted a pocket for the tablets he won't carry. He keeps boiled sweets in it for my grandchildren.",
+  "appearance": "Melanie has a broad nose and a deep dimple on one cheek. Look for short black hair swept back. On an ordinary day, the familiar outfit is a dark green knitted vest with a square of clean cloth for polishing smudges. In conversation Melanie turns fully toward the person speaking.",
+  "personality": "Melanie has a talent for getting adversaries to laugh at exactly the same thing. Melanie knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To fit a pocket that can hold medicine or treats.",
+  "family": "Winifred Starr is Melanie’s stepsibling. Melanie asks what the birthday guest would like this year. Winifred remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The pawned trumpet*, Winifred says, “I'm the downstairs dealer everyone suspected of taking it.”",
+  "connections": "Merritt Parker. A pocket and an unequal sleeve solve two different problems in a familiar shirt.",
+  "familyIds": [
+    "AH-R0199"
+  ],
+  "connectionIds": [
+    "AH-R0590"
+  ],
+  "reactions": [
+    {
+      "situation": "A staff supervisor demands the stranger's laundry back",
+      "response": "Melanie checks with the shirt's owner before handing it over to anyone else.",
+      "asWritten": "A staff supervisor demands the stranger's laundry back. Melanie checks with the shirt's owner before handing it over to anyone else."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Melanie walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Melanie walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Melanie asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Melanie asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

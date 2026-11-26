@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0470",
+  "personId": "AH-R0470",
+  "name": "Sage Nielsen",
+  "age": 71,
+  "occupation": "Retired harbor dispatcher",
+  "home": "the blocks north of the port",
+  "episode": "The soft wharf chalk",
+  "biography": "stories/residents/04/02-the-soft-wharf-chalk.md#ah-r0470",
+  "life": "“I still remember a missed sailing followed by an unexpectedly good dinner.” Thursday often includes a stop at the window at Night Shift Donuts, where Sage knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I was the one they were waiting for. I missed the ship and built my whole life here.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a comb in a sleeve sewn into the lining. Sage has a broad nose and a deep dimple on one cheek, with salt-and-pepper curls. Sage gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Sage takes a rejection personally for a day and analytically on the second morning. Sage can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To tell the writer what missing the ship made possible.",
+  "family": "Katherine Mack is Sage’s first cousin once removed. Sage asks before bringing somebody along. Katherine can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The third bedroom*, Katherine says, “I was fostered on this street and hated sharing.”",
+  "connections": "Ella Tran. The message at last reaches the person it asked to wait.",
+  "familyIds": [
+    "AH-R1137"
+  ],
+  "connectionIds": [
+    "AH-R0461"
+  ],
+  "reactions": [
+    {
+      "situation": "A handwriting expert contradicts an old dock worker",
+      "response": "Sage puts the expert's reading beside the dock worker's account and asks for the date of each.",
+      "asWritten": "A handwriting expert contradicts an old dock worker. Sage puts the expert's reading beside the dock worker's account and asks for the date of each."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Sage stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Sage stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Sage turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Sage turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0461",
+  "personId": "AH-R0461",
+  "name": "Ella Tran",
+  "age": 62,
+  "occupation": "Retired crew runner",
+  "home": "Midtown",
+  "episode": "The soft wharf chalk",
+  "biography": "stories/residents/04/02-the-soft-wharf-chalk.md#ah-r0461",
+  "life": "“I still remember chalk dust on a brother's borrowed collar.” Wednesday often includes a stop at the courtyard by Ferry Street Rooms, where Ella prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I wrote WAIT FOR ME there when my brother was posted away. I finally want it photographed.",
+  "appearance": "Ella is easy to recognize by soft white hair brushed sideways and a crooked front tooth visible when laughing. Usually dressed in a cream pullover with a thin silver ring worn on a cord, Ella rubs a thumb along the edge of the nearest pocket when listening.",
+  "personality": "Ella is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To bring the brother a photograph of the old message.",
+  "family": "Paula Tan is Ella’s half-sibling. Ella chooses the familiar route. Paula can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Home with stairs*, Paula says, “I manage the building. The owner approved a handrail after I showed him how his own dad climbs.”",
+  "connections": "Sage Nielsen. The message at last reaches the person it asked to wait.",
+  "familyIds": [
+    "AH-R0808"
+  ],
+  "connectionIds": [
+    "AH-R0470"
+  ],
+  "reactions": [
+    {
+      "situation": "A contractor wants to scrub the chalk under the quay",
+      "response": "Ella takes a photograph and asks whose permission is needed before the chalk is touched.",
+      "asWritten": "A contractor wants to scrub the chalk under the quay. Ella takes a photograph and asks whose permission is needed before the chalk is touched."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Ella alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Ella alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Ella thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Ella thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

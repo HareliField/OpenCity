@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0081",
+  "personId": "AH-R0081",
+  "name": "Abel Weaver",
+  "age": 73,
+  "occupation": "Widowed homeowner",
+  "home": "the western residential streets",
+  "episode": "The porch light",
+  "biography": "stories/residents/01/09-the-porch-light.md#ah-r0081",
+  "life": "Abel wired the porch on their first wedding anniversary because he had forgotten to buy a gift. His wife never told the neighbors that part. Losing the house without telling somebody the whole story worries him more than moving. Friday often includes a stop at Harbour Bakery, where Abel buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "My wife left the lamp on for the last nurse walking home from St. Mary. People think it was for me. I'll sell the house if the buyer lets me take the lamp to her sister.",
+  "appearance": "Abel is easy to recognize by soft white hair brushed sideways and a straight nose and deep-set eyes. Usually dressed in an old plum windbreaker with a thin silver ring worn on a cord, Abel gives a little nod before asking a hard question when listening.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Abel takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To deliver the working lamp to his sister-in-law.",
+  "family": "Winifred Reese is Abel’s cousin’s child. The family has a birthday plate with a shallow crack. Whoever borrows it is responsible for returning it in person, which has salvaged more than one bad goodbye. Abel insists on washing it by hand. Asked about *Salt in the pockets*, Winifred says, “My mother used to shake out our coats over a blue plate and read the weather in the grains.”",
+  "connections": "Orla Till (neighbor who works nights). The night route and the porch lamp turn out to have been part of the same marriage without the nurse ever knowing it.",
+  "familyIds": [
+    "AH-R0602"
+  ],
+  "connectionIds": [
+    "AH-R0084"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer offers extra for the porch lamp",
+      "response": "Abel asks the owner whether the lamp is even part of the sale before discussing the offer.",
+      "asWritten": "A buyer offers extra for the porch lamp. Abel asks the owner whether the lamp is even part of the sale before discussing the offer."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Abel asks which other bill repayment would displace, then offers only what the household can afford to give.",
+      "asWritten": "A friend asks for a loan due back before payday. Abel asks which other bill repayment would displace, then offers only what the household can afford to give."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Abel asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Abel asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

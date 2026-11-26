@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1031",
+  "personId": "AH-R1031",
+  "name": "Maria Delgado",
+  "age": 43,
+  "occupation": "Full-time family carer",
+  "home": "the western residential streets",
+  "episode": "The carer's afternoon",
+  "biography": "stories/residents/07/14-the-carer-s-afternoon.md#ah-r1031",
+  "life": "“I still remember reading the same paragraph beside an unanswered care bell.” On Saturday, near the approach to Seabright Court, Maria likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I want to sit in Paper & Pine and read the same page four times if that's what the afternoon takes.",
+  "appearance": "Maria is easy to recognize by a smooth side part with one rebellious curl and a scattering of freckles across the bridge of the nose. Usually dressed in a sand-colored linen shirt with a knotted piece of sail thread on a key ring, Maria takes off the watch before a long conversation when listening.",
+  "personality": "Maria always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Maria is trying to tell the difference before the bill arrives.",
+  "agenda": "To keep the weekly four hours free of conditions.",
+  "family": "Oscar Salas is Maria’s cousin raised in the same household. Maria checks the date twice. Oscar brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *A clean coat for court*, Oscar says, “I let the coat out at the shoulders. You can undo my stitches without leaving marks, which matters to both men.”",
+  "connections": "Nelson Darzi (parent). Mother and daughter both have a use for four unscheduled hours apart. Also in the story is Alicia Sáenz (sibling).",
+  "familyIds": [
+    "AH-R1245"
+  ],
+  "connectionIds": [
+    "AH-R1034",
+    "AH-R1032"
+  ],
+  "reactions": [
+    {
+      "situation": "The carer's Wednesday relief calls in sick",
+      "response": "Maria tells the carer plainly how much of Wednesday can still be covered.",
+      "asWritten": "The carer's Wednesday relief calls in sick. Maria tells the carer plainly how much of Wednesday can still be covered."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Maria keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Maria keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Maria suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Maria suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

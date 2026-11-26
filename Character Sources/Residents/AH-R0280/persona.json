@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0280",
+  "personId": "AH-R0280",
+  "name": "Casey King",
+  "age": 74,
+  "occupation": "Retired PE teacher",
+  "home": "Old Town",
+  "episode": "The quiet verse",
+  "biography": "stories/residents/02/13-the-quiet-verse.md#ah-r0280",
+  "life": "“At school I sat through an assembly about a secret nobody should have told.” On Thursday, near the steps at Pier Beach, Casey watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I was furious there was a secret verse until my grandson asked which page of my diary he could read.",
+  "appearance": "Casey is easy to recognize by soft white hair brushed sideways and a narrow face with an expressive upper lip. Usually dressed in a pale blue work shirt with a stitched row of blue crosses along an old repair, Casey looks toward the door whenever a name is called when listening.",
+  "personality": "Casey has a quick wit and an equally quick sense of shame. A joke is often Casey's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To share a memory with the grandson without asking for his diary.",
+  "family": "Molly Neal is Casey’s niece by marriage. Casey picks the meeting place. Molly sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *One clean day*, Molly says, “I had a speech ready about service. My old desk mate handed me a skipping rope and counted out loud.”",
+  "connections": "Marina Bly. The adult buying the tickets meets a grandparent with a story about private pages.",
+  "familyIds": [
+    "AH-R0634"
+  ],
+  "connectionIds": [
+    "AH-R0272"
+  ],
+  "reactions": [
+    {
+      "situation": "A parent demands to hear the private words",
+      "response": "Casey leaves the private verse with its writer.",
+      "asWritten": "A parent demands to hear the private words. Casey leaves the private verse with its writer."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Casey walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Casey walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Casey seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Casey seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

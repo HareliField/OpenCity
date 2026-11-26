@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1297",
+  "personId": "AH-R1297",
+  "name": "Liam Moreno",
+  "age": 68,
+  "occupation": "Retired night nurse",
+  "home": "the western residential streets",
+  "episode": "A four o'clock kitchen",
+  "biography": "stories/residents/09/10-a-four-o-clock-kitchen.md#ah-r1297",
+  "life": "“I still remember raising children with notes left beneath the teapot.” People around the market by Market Flats know Liam by a small Thursday habit. Liam often waits until the delivery baskets are stacked before going in.",
+  "voice": "I raised my children on opposite shifts. I'm lending the family the notebook where we used to leave bad drawings for each other.",
+  "appearance": "Liam has a neat white crop, a straight nose and deep-set eyes, and a favorite piece of clothing, a cream pullover. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Liam draws breath as if to speak and lets someone else go first.",
+  "personality": "Liam loves a well-told anecdote and distrusts the neat ending. The parts Liam remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To give the family a practical way to leave each other news.",
+  "family": "Dev Cole is Liam’s younger relative by marriage. Liam chooses the music. Dev puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The Saturday swap*, Dev says, “I told the childcare center I'd be home by closing.”",
+  "connections": "Vera Brandt. A possible shift trade gains a way to share family news from an older night worker.",
+  "familyIds": [
+    "AH-R0786"
+  ],
+  "connectionIds": [
+    "AH-R1294"
+  ],
+  "reactions": [
+    {
+      "situation": "A port buyer asks the cook to start still earlier",
+      "response": "Liam checks what the earlier start would do to the cook's family breakfast.",
+      "asWritten": "A port buyer asks the cook to start still earlier. Liam checks what the earlier start would do to the cook's family breakfast."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Liam tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Liam tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Liam includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Liam includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

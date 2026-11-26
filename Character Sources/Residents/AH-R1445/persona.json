@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1445",
+  "personId": "AH-R1445",
+  "name": "Selena Lin",
+  "age": 61,
+  "occupation": "Bakery owner",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The kitchen without a boss",
+  "biography": "stories/residents/10/10-the-kitchen-without-a-boss.md#ah-r1445",
+  "life": "“I still remember phoning my shop from a room where I was supposed to rest.” On Saturday, near Harbour Bakery, Selena buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I am the ill owner. I rang to find out what burned and for once three people refused to tell me.",
+  "appearance": "Away from the heat of the kitchen, look for a moss-green cardigan and one loose pocket corner secured with green thread. Selena has two dimples that appear only with a full smile, with steel-colored hair cut square above the collar. Selena draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Selena is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To let the workers finish the trial without remote interference.",
+  "family": "Silas Watts is Selena’s cousin raised in the same household. Selena can stop the walk at any corner. Silas chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The upstairs piano*, Silas says, “I wanted to cut a new door. The downstairs tenant offered the piano a room of its own.”",
+  "connections": "Ren Ruiz (temporary bakery manager). A worker who wanted responsibility gets a whole month in which the owner has to let the decisions stand.",
+  "familyIds": [
+    "AH-R0389"
+  ],
+  "connectionIds": [
+    "AH-R1441"
+  ],
+  "reactions": [
+    {
+      "situation": "The absent owner calls to ask which pastry burned",
+      "response": "Selena gives the owner a truthful account without handing back all three workers' decisions.",
+      "asWritten": "The absent owner calls to ask which pastry burned. Selena gives the owner a truthful account without handing back all three workers' decisions."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Selena tells the first helper what they actually saw and makes room for the rider to answer for themself.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Selena tells the first helper what they actually saw and makes room for the rider to answer for themself."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Selena thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Selena thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

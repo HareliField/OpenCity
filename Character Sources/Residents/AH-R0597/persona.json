@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0597",
+  "personId": "AH-R0597",
+  "name": "Anita Gill",
+  "age": 58,
+  "occupation": "Sound editor",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The engine lullaby",
+  "biography": "stories/residents/04/15-the-engine-lullaby.md#ah-r0597",
+  "life": "“I still remember a wedding recording that began with somebody dropping cutlery.” Friday often includes a stop at Lighthouse Cove, where Anita takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I recorded it with my wedding tape by mistake. Now my spouse wants the hum restored between our vows.",
+  "appearance": "Anita has brown hair pinned away from the temples, a softly rounded chin under sharp cheekbones, and a favorite piece of clothing, an unlined tan jacket. It usually goes with a pair of reading glasses in a cloth sleeve. When somebody else has the floor, Anita steadies a cup with both hands while listening.",
+  "personality": "Anita uses precise names for tools and very approximate names for feelings. People who know Anita well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To restore the harbor sound to the wedding tape.",
+  "family": "Willa True is Anita’s stepsibling. Anita is allowed to ask about the bad news afterward. Willa calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *A chair on the quay*, Willa says, “Somebody once took my mother's effects from a loading bay marked free.”",
+  "connections": "Scout Mendez. A child with a whale story gives the wedding recording a new pair of listeners.",
+  "familyIds": [
+    "AH-R0016"
+  ],
+  "connectionIds": [
+    "AH-R0596"
+  ],
+  "reactions": [
+    {
+      "situation": "The dock engine falls silent in mid-recording",
+      "response": "Anita notes the time the hum stopped before discussing a replacement recording.",
+      "asWritten": "The dock engine falls silent in mid-recording. Anita notes the time the hum stopped before discussing a replacement recording."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Anita takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Anita takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Anita brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Anita brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0659",
+  "personId": "AH-R0659",
+  "name": "Alan Chapman",
+  "age": 44,
+  "occupation": "Dance costumer",
+  "home": "Midtown",
+  "episode": "Two left slippers",
+  "biography": "stories/residents/05/06-two-left-slippers.md#ah-r0659",
+  "life": "“I still remember dancing in shoes from two different shows.” On Monday, near the foot of Harbor Viaduct, Alan pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I sew nonmatching shoes for a dance act. My costume box solved one ordinary morning.",
+  "appearance": "Alan has a deep crease beside the mouth when smiling. Look for a dark undercut with a longer wave on top. On an ordinary day, the familiar outfit is a boxy denim jacket with a train token tied to a zipper pull. In conversation Alan looks toward the door whenever a name is called.",
+  "personality": "Alan keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Alan wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To offer a mismatched stage pair for a useful purpose.",
+  "family": "Alba Nolasco is Alan’s first cousin once removed. Alan puts the kettle on. Alba chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The last home visit*, Alba says, “I was too proud to ask for the good cup. I told the new worker which shelf my visitors use.”",
+  "connections": "Frances Jimenez. A right slipper found on the bus can join the spare shoes from a dancing troupe.",
+  "familyIds": [
+    "AH-R1484"
+  ],
+  "connectionIds": [
+    "AH-R0656"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient opens the bag and finds two left slippers",
+      "response": "Alan sets out the pair and asks the discharge worker to check the right foot too.",
+      "asWritten": "A patient opens the bag and finds two left slippers. Alan sets out the pair and asks the discharge worker to check the right foot too."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Alan stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Alan stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Alan offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Alan offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

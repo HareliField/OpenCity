@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0356",
+  "personId": "AH-R0356",
+  "name": "Maria Ayala",
+  "age": 74,
+  "occupation": "Retired ward electrician",
+  "home": "the western residential streets",
+  "episode": "The hospital radio",
+  "biography": "stories/residents/03/06-the-hospital-radio.md#ah-r0356",
+  "life": "“I still remember an apprentice knitting a cover for the radio.” People around the corner by Juniper Tailor know Maria by a small Wednesday habit. Maria looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I hid a note to my successor inside the back. Thirty years later I'm well enough to answer it.",
+  "appearance": "Maria is easy to recognize by soft white hair brushed sideways and a crooked front tooth visible when laughing. Usually dressed in a plum-colored cardigan with one loose pocket corner secured with green thread, Maria raises one eyebrow long before saying yes when listening.",
+  "personality": "Maria is fond of ambitious ideas and deeply suspicious of grand openings. The question Maria asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To answer the note addressed to a future repairer.",
+  "family": "Merritt Parker is Maria’s younger cousin. Maria chooses the familiar route. Merritt can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Laundry for a stranger*, Merritt says, “I noticed the sleeves differ in length. I want my arthritic husband to meet whoever figured out that cut.”",
+  "connections": "Hector Lang. They discuss which old parts can be kept by the bedside.",
+  "familyIds": [
+    "AH-R0590"
+  ],
+  "connectionIds": [
+    "AH-R0351"
+  ],
+  "reactions": [
+    {
+      "situation": "The old tuning wheel goes missing from the shelf",
+      "response": "Maria checks the repair bench before assuming anyone took the dial.",
+      "asWritten": "The old tuning wheel goes missing from the shelf. Maria checks the repair bench before assuming anyone took the dial."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Maria tells the first helper what they actually saw and makes room for the rider to answer for themself.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Maria tells the first helper what they actually saw and makes room for the rider to answer for themself."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Maria accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Maria accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

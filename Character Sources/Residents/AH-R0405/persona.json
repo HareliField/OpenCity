@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0405",
+  "personId": "AH-R0405",
+  "name": "Daria Singh",
+  "age": 72,
+  "occupation": "Salon owner",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The widow's razor",
+  "biography": "stories/residents/03/11-the-widow-s-razor.md#ah-r0405",
+  "life": "“I still remember separate sets of keys for our two shop doors.” People around Paper & Pine Books know Daria by a small Thursday habit. Daria starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I keep the spare handle. It belonged to a matched pair we bought the day we opened separate shops.",
+  "appearance": "Daria is easy to recognize by two white streaks in otherwise dark hair and full cheeks and a mouth that pulls slightly to one side. Usually dressed in a dark green knitted vest with a pressed flower kept in the clear back of a phone case, Daria takes off the watch before a long conversation when listening.",
+  "personality": "Daria treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To reunite the two handles for one photograph.",
+  "family": "Noam Booth is Daria’s cousin. Daria chooses whether to use it. Noam saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *An unfinished atlas*, Noam says, “The blue isn't sea. We used that ink for drains because it was free from the shipyard.”",
+  "connections": "Sabine Ito. The widow can visit the shop with both handles present.",
+  "familyIds": [
+    "AH-R0064"
+  ],
+  "connectionIds": [
+    "AH-R0409"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer makes a high offer for the old razor",
+      "response": "Daria lets the widow hear the price privately and keep the box in hand.",
+      "asWritten": "A buyer makes a high offer for the old razor. Daria lets the widow hear the price privately and keep the box in hand."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Daria asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Daria asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Daria changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Daria changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

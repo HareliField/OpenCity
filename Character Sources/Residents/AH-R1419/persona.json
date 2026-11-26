@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1419",
+  "personId": "AH-R1419",
+  "name": "Blake Liu",
+  "age": 54,
+  "occupation": "Former spouse and nurse",
+  "home": "the western residential streets",
+  "episode": "An empty dedication",
+  "biography": "stories/residents/10/07-an-empty-dedication.md#ah-r1419",
+  "life": "“I still remember living with an author who forgot where breakfast was.” People around the foot of Harbor Viaduct know Blake by a small Tuesday habit. Blake pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I used to be her wife. I know there's a reason the first page is blank and I'm not asking for my name.",
+  "appearance": "Out of work clothes, look for a brown corduroy jacket and a copper-colored clasp that has been repaired by hand. Blake has one cheek that creases before the other, with a center part and straight chestnut hair. Blake squares up pieces of paper while thinking during a conversation.",
+  "personality": "Blake always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Blake is trying to tell the difference before the bill arrives.",
+  "agenda": "To respect the blank dedication page.",
+  "family": "Linden Lewis is Blake’s cousin raised in the same household. Blake is free to hang up first. Linden makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The hospital radio*, Linden says, “I announce local football and heard my own voice from a hospital bed.”",
+  "connections": "Ellen Soto. The former spouse and the person accidentally portrayed agree on one legitimate use of a blank page. Also in the story is Eva Bay (former spouse).",
+  "familyIds": [
+    "AH-R0354"
+  ],
+  "connectionIds": [
+    "AH-R1414",
+    "AH-R1411"
+  ],
+  "reactions": [
+    {
+      "situation": "The author offers the dedication to someone who dislikes public praise",
+      "response": "Blake asks the intended recipient which kind of thanks would actually feel welcome.",
+      "asWritten": "The author offers the dedication to someone who dislikes public praise. Blake asks the intended recipient which kind of thanks would actually feel welcome."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Blake writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Blake writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Blake suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Blake suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

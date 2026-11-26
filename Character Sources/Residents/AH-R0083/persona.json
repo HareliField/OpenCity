@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0083",
+  "personId": "AH-R0083",
+  "name": "Lev Adair",
+  "age": 54,
+  "occupation": "Electrician",
+  "home": "Old Town",
+  "episode": "The porch light",
+  "biography": "stories/residents/01/09-the-porch-light.md#ah-r0083",
+  "life": "Lev tested signs for a shop chain until it replaced his team. He opened his repair business with one bulb over the door and kept a private count of drivers who slowed down on the first evening. Monday often includes a stop at the corner by Juniper Tailor, where Lev looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "The switch worked. He'd unscrewed the bulb to see who would notice. I recognized the trick because I once did it to my shop sign. I left a spare on his kitchen table.",
+  "appearance": "Lev is easy to recognize by a smooth side part with one rebellious curl and an aquiline nose and a square chin. Usually dressed in a moss-green cardigan with a copper-colored clasp that has been repaired by hand, Lev looks toward the door whenever a name is called when listening.",
+  "personality": "Lev can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Lev can afford to give, and family knows to take it seriously.",
+  "agenda": "To leave a working spare without exposing the owner's private test.",
+  "family": "Logan Calder is Lev’s second cousin. Lev brings a spare shopping bag. Logan chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Five missing lunches*, Logan says, “I changed the roster to save wages. Now I eat alone next to five imaginary people.”",
+  "connections": "Nabil Reed. They need to open the porch post without destroying the dates hidden behind the wiring.",
+  "familyIds": [
+    "AH-R0167"
+  ],
+  "connectionIds": [
+    "AH-R0087"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer offers extra for the porch lamp",
+      "response": "Lev asks the owner whether the lamp is even part of the sale before discussing the offer.",
+      "asWritten": "A buyer offers extra for the porch lamp. Lev asks the owner whether the lamp is even part of the sale before discussing the offer."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Lev asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Lev asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Lev suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Lev suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

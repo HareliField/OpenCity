@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0348",
+  "personId": "AH-R0348",
+  "name": "Ren Alston",
+  "age": 29,
+  "occupation": "Deli cashier",
+  "home": "the blocks north of the port",
+  "episode": "Rent in a biscuit tin",
+  "biography": "stories/residents/03/05-rent-in-a-biscuit-tin.md#ah-r0348",
+  "life": "“I still remember renting a mattress from a cousin for a single winter.” People around the foot of Harbor Viaduct know Ren by a small Wednesday habit. Ren pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I owed her one month and found she'd put in a little every week herself.",
+  "appearance": "Ren has a smooth side part with one rebellious curl, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a long navy raincoat. It usually goes with a square of clean cloth for polishing smudges. When somebody else has the floor, Ren holds eye contact until the other person has finished.",
+  "personality": "Ren always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Ren is trying to tell the difference before the bill arrives.",
+  "agenda": "To thank the elder who quietly covered the shortfall.",
+  "family": "Reuben Grant is Ren’s stepsibling. Ren remembers the birthdays. Reuben asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Closing soup*, Reuben says, “I donated the fennel nobody bought. In the soup people asked me to grow extra.”",
+  "connections": "Scout Nord. The two renters compare finding money that somebody else had quietly put aside.",
+  "familyIds": [
+    "AH-R0543"
+  ],
+  "connectionIds": [
+    "AH-R0347"
+  ],
+  "reactions": [
+    {
+      "situation": "A family asks to come back later without explanation",
+      "response": "Ren arranges a second visit without repeating the family's explanation.",
+      "asWritten": "A family asks to come back later without explanation. Ren arranges a second visit without repeating the family's explanation."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Ren takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Ren takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Ren suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Ren suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

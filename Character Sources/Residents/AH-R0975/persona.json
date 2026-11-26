@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0975",
+  "personId": "AH-R0975",
+  "name": "Esme Knight",
+  "age": 61,
+  "occupation": "Restaurant landlord",
+  "home": "the blocks north of the port",
+  "episode": "The expensive summer",
+  "biography": "stories/residents/07/08-the-expensive-summer.md#ah-r0975",
+  "life": "“I still remember sitting in my tenant's empty restaurant in good weather.” Wednesday often includes a stop at the public end of the South Shore boardwalk, where Esme checks the shade on the benches before deciding how long to stay.",
+  "voice": "I am the landlord. I counted empty tables during a summer evening for the first time.",
+  "appearance": "Esme has a narrow face with an expressive upper lip. Look for two white streaks in otherwise dark hair. On an ordinary day, the familiar outfit is a faded indigo overshirt with a braided bracelet with a single wooden bead. In conversation Esme listens with the head tilted a little to the left.",
+  "personality": "Esme finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To cost rent against a real summer evening.",
+  "family": "Kathleen Miranda is Esme’s cousin raised in the same household. Esme can stop the walk at any corner. Kathleen chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The sandwich board*, Kathleen says, “I used to eat there on credit. I added my unpaid tab to the winning bid.”",
+  "connections": "Eric Romero (restaurant tenant). The restaurant and its landlord have to work out what another expensive summer actually earns.",
+  "familyIds": [
+    "AH-R0174"
+  ],
+  "connectionIds": [
+    "AH-R0972"
+  ],
+  "reactions": [
+    {
+      "situation": "A waiter offers to split one birthday dessert among everybody",
+      "response": "Esme checks that the birthday guest likes the dessert before calculating the portions.",
+      "asWritten": "A waiter offers to split one birthday dessert among everybody. Esme checks that the birthday guest likes the dessert before calculating the portions."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Esme asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Esme asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Esme waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Esme waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

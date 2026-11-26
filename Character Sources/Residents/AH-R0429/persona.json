@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0429",
+  "personId": "AH-R0429",
+  "name": "Riley Fox",
+  "age": 46,
+  "occupation": "Session percussionist",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The empty drum stool",
+  "biography": "stories/residents/03/13-the-empty-drum-stool.md#ah-r0429",
+  "life": "“I still remember a substitute who played my part beautifully.” Tuesday often includes a stop at Studio Boulevard, where Riley waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I was the usual replacement and nobody called. I played the tambourine until the jealousy passed.",
+  "appearance": "Riley is easy to recognize by a swept fringe and a closely clipped nape and two dimples that appear only with a full smile. Usually dressed in an old plum windbreaker with a partly rubbed-away embroidered initial, Riley presses the lips together to keep a smile in when listening.",
+  "personality": "Riley treats a small promise with the gravity others reserve for a contract. This makes Riley lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To offer percussion support without trying to reclaim the stool.",
+  "family": "Nia Brooks is Riley’s cousin raised in the same household. Riley picks the meeting place. Nia sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The Saturday swap*, Nia says, “I need to sing at a funeral. The man we're burying once complained about my conduct, and he was right.”",
+  "connections": "Samuel Drew (regular drummer). The original drummer promises the overlooked substitute a private rehearsal.",
+  "familyIds": [
+    "AH-R0787"
+  ],
+  "connectionIds": [
+    "AH-R0421"
+  ],
+  "reactions": [
+    {
+      "situation": "The drummer asks the substitute to keep the stool",
+      "response": "Riley asks whether the drummer means a loan or a gift.",
+      "asWritten": "The drummer asks the substitute to keep the stool. Riley asks whether the drummer means a loan or a gift."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Riley asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Riley asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Riley says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Riley says what can be returned and asks whether that will do."
+    }
+  ]
+}

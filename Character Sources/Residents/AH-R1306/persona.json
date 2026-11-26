@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1306",
+  "personId": "AH-R1306",
+  "name": "Bailey Solis",
+  "age": 39,
+  "occupation": "Photo retoucher",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A scar at the salon",
+  "biography": "stories/residents/09/11-a-scar-at-the-salon.md#ah-r1306",
+  "life": "“I still remember retouching a family picture until its owner looked unfamiliar.” On Sunday, near the crossing outside Verve Nail Studio, Bailey notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I can retouch it away. I offered a print with no edits so the client could make the first choice.",
+  "appearance": "Bailey is easy to recognize by a swept fringe and a closely clipped nape and two dimples that appear only with a full smile. Usually dressed in a striped cotton shirt with a tiny red thread tied through the lowest buttonhole, Bailey grins on one side while the eyes stay serious when listening.",
+  "personality": "Bailey has a quick wit and an equally quick sense of shame. A joke is often Bailey's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To deliver the unaltered print first.",
+  "family": "Nora Ray is Bailey’s stepsibling. Bailey chooses the music. Nora puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A ship without postcards*, Nora says, “I wrote my address on the picture side because the picture looks more like home than my address does.”",
+  "connections": "Keiko Cross. The unretouched picture and the blank postcard leave the client two personal choices.",
+  "familyIds": [
+    "AH-R0317"
+  ],
+  "connectionIds": [
+    "AH-R1310"
+  ],
+  "reactions": [
+    {
+      "situation": "The model asks to see the unedited print",
+      "response": "Bailey gets the model a private look before anybody else comments on the hand.",
+      "asWritten": "The model asks to see the unedited print. Bailey gets the model a private look before anybody else comments on the hand."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Bailey waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Bailey waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Bailey seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Bailey seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

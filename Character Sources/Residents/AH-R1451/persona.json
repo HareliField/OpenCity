@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1451",
+  "personId": "AH-R1451",
+  "name": "Lara Carey",
+  "age": 62,
+  "occupation": "Recently widowed care coordinator",
+  "home": "Coast Ridge",
+  "episode": "An ordinary mirror",
+  "biography": "stories/residents/10/11-an-ordinary-mirror.md#ah-r1451",
+  "life": "“I still remember seeing my first grown-up skirt reflected in three panels.” On Friday, near Juniper Street, Lara knows which of the west-side porches has a seat in the shade.",
+  "voice": "I want it for the mornings when I can't imagine another version of myself getting dressed.",
+  "appearance": "Lara has closely cropped salt-and-pepper hair, a round face with a pronounced chin, and a favorite piece of clothing, a red windbreaker. It usually goes with a stitched row of blue crosses along an old repair. When somebody else has the floor, Lara holds eye contact until the other person has finished.",
+  "personality": "Lara takes a rejection personally for a day and analytically on the second morning. Lara can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To see a next chapter in the familiar mirror.",
+  "family": "Wynn Kapoor is Lara’s cousin’s child. Lara can always ask for five minutes alone. Wynn asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Nine unpaid hours*, Wynn says, “I missed child support because the transfer didn't come.”",
+  "connections": "Gregory Lang. A would-be mirror buyer and its owner each have a personal history the other cannot put a price on. Also in the story is Laurence Williams (brother-in-law).",
+  "familyIds": [
+    "AH-R0768"
+  ],
+  "connectionIds": [
+    "AH-R1452",
+    "AH-R1454"
+  ],
+  "reactions": [
+    {
+      "situation": "The widow asks to buy the fitting mirror",
+      "response": "Lara asks the tailor and widow what access others would lose if the mirror moved.",
+      "asWritten": "The widow asks to buy the fitting mirror. Lara asks the tailor and widow what access others would lose if the mirror moved."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Lara tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Lara tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Lara turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Lara turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

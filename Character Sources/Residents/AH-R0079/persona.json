@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0079",
+  "personId": "AH-R0079",
+  "name": "Ada Firth",
+  "age": 68,
+  "occupation": "Beachcomber and pensioner",
+  "home": "Midtown",
+  "episode": "A tide at noon",
+  "biography": "stories/residents/01/08-a-tide-at-noon.md#ah-r0079",
+  "life": "Ada associates every beach flag with the summer somebody mended it. She cannot remember who won most years. She can remember whose child was learning to knot a thread when the wind turned. Tuesday often includes a stop at the foot of Harbor Viaduct, where Ada pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I found the old finish flag under the new tide. My husband sewed the sleeve on it the year our twins competed. I loaned it for the photo and brought it home.",
+  "appearance": "Ada has silver temples and a dark fringe, a wide brow and a narrow jaw, and a favorite piece of clothing, an unlined tan jacket. It usually goes with one loose pocket corner secured with green thread. When somebody else has the floor, Ada raises one eyebrow long before saying yes.",
+  "personality": "Ada enjoys routines and will defend the right of someone else to break one. As a result, Ada is often everyone's favorite cover for a missed morning.",
+  "agenda": "To get the family flag home after the closing picture.",
+  "family": "Briar Henry is Ada’s younger relative by marriage. Ada leaves the first voice message. Briar calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The split visit*, Briar says, “I was coming to fix the porch rail and ended up assembling a folding lunch table for three.”",
+  "connections": "Dario Flint. Turrets from the ice cart and flags from the old competition meet in the families' photograph.",
+  "familyIds": [
+    "AH-R0737"
+  ],
+  "connectionIds": [
+    "AH-R0072"
+  ],
+  "reactions": [
+    {
+      "situation": "The water reaches a child's castle before judging",
+      "response": "Ada gives the builder time to show the judges what the water took.",
+      "asWritten": "The water reaches a child's castle before judging. Ada gives the builder time to show the judges what the water took."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Ada brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Ada brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Ada keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Ada keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

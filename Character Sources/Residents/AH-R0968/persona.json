@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0968",
+  "personId": "AH-R0968",
+  "name": "Sage Barclay",
+  "age": 76,
+  "occupation": "Retired music teacher",
+  "home": "Coast Ridge",
+  "episode": "The first language",
+  "biography": "stories/residents/07/07-the-first-language.md#ah-r0968",
+  "life": "“I still remember learning a neighborhood word from my granddaughter.” Thursday often includes a stop at the approach to Seabright Court, where Sage likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "My grandchild knows words for the city that I don't. I asked for a lesson before offering one.",
+  "appearance": "On an ordinary day, look for a moss-green cardigan and a comb in a sleeve sewn into the lining. Sage has heavy brows and an unusually delicate jaw, with a thin scattering of white hair over the crown. Sage folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Sage often says yes too quickly out of pride in being useful. The people closest to Sage have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To learn the city's words from the grandchild.",
+  "family": "Emery Fields is Sage’s first cousin once removed. Sage puts the kettle on. Emery chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The skipper goes ashore*, Emery says, “I keep marine accounts. She has forgotten more about invoices than our last consultant knew.”",
+  "connections": "Victor Lowe. The books bought by one generation finally get used in a lesson taught by another.",
+  "familyIds": [
+    "AH-R1196"
+  ],
+  "connectionIds": [
+    "AH-R0963"
+  ],
+  "reactions": [
+    {
+      "situation": "A grandparent tries to correct a word in front of classmates",
+      "response": "Sage asks the grandparent to save the correction until the pupil asks for it.",
+      "asWritten": "A grandparent tries to correct a word in front of classmates. Sage asks the grandparent to save the correction until the pupil asks for it."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Sage tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Sage tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Sage rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Sage rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

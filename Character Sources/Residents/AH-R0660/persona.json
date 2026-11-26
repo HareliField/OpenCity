@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0660",
+  "personId": "AH-R0660",
+  "name": "Harold Levin",
+  "age": 66,
+  "occupation": "Retired merchant",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Two left slippers",
+  "biography": "stories/residents/05/06-two-left-slippers.md#ah-r0660",
+  "life": "“I still remember learning to wait on the doorstep without apologizing.” Thursday often includes a stop at Lighthouse Cove, where Harold takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I am keeping a single slipper by the front door. It reminds my family to wait until I have both feet under me.",
+  "appearance": "Harold has an aquiline nose and a square chin. Look for iron-gray waves. On an ordinary day, the familiar outfit is a striped cotton shirt with a copper-colored clasp that has been repaired by hand. In conversation Harold counts on the side of one finger where hardly anybody notices.",
+  "personality": "Harold always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Harold is trying to tell the difference before the bill arrives.",
+  "agenda": "To let the family wait until the wearer is steady.",
+  "family": "Erin Hubbard is Harold’s younger relative by marriage. Harold sets the time to leave. Erin picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The pawned trumpet*, Erin says, “I recognized that bent third valve from downstairs.”",
+  "connections": "Irene Franco. A barefoot loan gets a patient home to a family prepared to wait at the door.",
+  "familyIds": [
+    "AH-R0192"
+  ],
+  "connectionIds": [
+    "AH-R0654"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor offers shoes that are far too large",
+      "response": "Harold offers to look for a usable pair before anyone is asked to walk in loose shoes.",
+      "asWritten": "A visitor offers shoes that are far too large. Harold offers to look for a usable pair before anyone is asked to walk in loose shoes."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Harold takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Harold takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Harold suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Harold suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

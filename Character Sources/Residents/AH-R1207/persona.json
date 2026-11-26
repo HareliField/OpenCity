@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1207",
+  "personId": "AH-R1207",
+  "name": "Robin Atwood",
+  "age": 39,
+  "occupation": "Former art student and printer",
+  "home": "Midtown",
+  "episode": "A room above the dryers",
+  "biography": "stories/residents/09/01-a-room-above-the-dryers.md#ah-r1207",
+  "life": "“I still remember failing to finish a portrait of the friend who lent me the easel.” People around Tideline Market know Robin by a small Saturday habit. Robin picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I failed my art course for never finishing a portrait. I'm lending the artist a desk and a lamp that both still work.",
+  "appearance": "Robin has dark brown curls cut close behind the ears, two dimples that appear only with a full smile, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a partly rubbed-away embroidered initial. When somebody else has the floor, Robin gives a little nod before asking a hard question.",
+  "personality": "Robin uses precise names for tools and very approximate names for feelings. People who know Robin well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To put the unused art desk and lamp back to work.",
+  "family": "Agnes Colón is Robin’s second cousin. Robin can stop the walk at any corner. Agnes chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The understudy sings*, Agnes says, “I tuned the monitors lower for the lead and accidentally made the understudy sound wonderful too.”",
+  "connections": "Isaac Mendez. An unfinished art course and a difficult portrait bring two adult learners to the doors of the same studio.",
+  "familyIds": [
+    "AH-R1178"
+  ],
+  "connectionIds": [
+    "AH-R1208"
+  ],
+  "reactions": [
+    {
+      "situation": "A portrait sitter asks for the drawing back",
+      "response": "Robin asks the sitter whether the drawing can be stored privately or should go home with them.",
+      "asWritten": "A portrait sitter asks for the drawing back. Robin asks the sitter whether the drawing can be stored privately or should go home with them."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Robin asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Robin asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Robin brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Robin brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

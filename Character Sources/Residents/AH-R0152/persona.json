@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0152",
+  "personId": "AH-R0152",
+  "name": "Cory Colón",
+  "age": 27,
+  "occupation": "Civil wedding celebrant",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Hem by hem",
+  "biography": "stories/residents/02/01-hem-by-hem.md#ah-r0152",
+  "life": "“Our first registry office was above a fish stall. We always smelled of pepper.” People around the entrance to the Wash House know Cory by a small Wednesday habit. Cory stops for local notices even on a day without a load to wash.",
+  "voice": "I paid for silk believing it was new. Now I want the old fabric back in our vows.",
+  "appearance": "Cory is easy to recognize by auburn hair cut square at the nape and an aquiline nose and a square chin. Usually dressed in a sand-colored linen shirt with a replacement button a shade darker than the others, Cory looks toward the door whenever a name is called when listening.",
+  "personality": "Cory enjoys routines and will defend the right of someone else to break one. As a result, Cory is often everyone's favorite cover for a missed morning.",
+  "agenda": "To put the dress's real history into the wedding reading.",
+  "family": "Remy Carey is Cory’s older cousin. Cory chooses the familiar route. Remy can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *A shelf of apologies*, Remy says, “I want the owner to know I read every line aloud to my dad before he died.”",
+  "connections": "Talia Dai. The ceremony words depend on a name recovered from the cutting bill.",
+  "familyIds": [
+    "AH-R0662"
+  ],
+  "connectionIds": [
+    "AH-R0154"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative asks to hide the changed seam",
+      "response": "Cory asks the bride herself what should show above the hem.",
+      "asWritten": "A relative asks to hide the changed seam. Cory asks the bride herself what should show above the hem."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Cory keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Cory keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Cory keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Cory keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0930",
+  "personId": "AH-R0930",
+  "name": "Wynn Montoya",
+  "age": 49,
+  "occupation": "Retail bidder",
+  "home": "Old Town",
+  "episode": "A widow bids again",
+  "biography": "stories/residents/07/03-a-widow-bids-again.md#ah-r0930",
+  "life": "“I still remember sitting opposite a rich bidder who let me finish.” Wednesday often includes a stop at Lighthouse Cove, where Wynn takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I put in a deliberately low bid to find out who would laugh. The wealthiest woman in the room took me seriously.",
+  "appearance": "Wynn has a scattering of freckles across the bridge of the nose. Look for short copper curls. On an ordinary day, the familiar outfit is a moss-green cardigan with a train token tied to a zipper pull. In conversation Wynn holds eye contact until the other person has finished.",
+  "personality": "Wynn has a long memory for unfair prices and a short one for small insults. Wynn can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To keep even a small bidder's voice in the sale.",
+  "family": "Gerard Marquez is Wynn’s younger relative by marriage. Wynn asks the question the rest of the family avoided. Gerard chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *A play in a pocket*, Gerard says, “I played a landlord until my actual landlord sat down.”",
+  "connections": "Carol Reed. A family pension offer and a deliberately low bid test how seriously small investors are taken.",
+  "familyIds": [
+    "AH-R0572"
+  ],
+  "connectionIds": [
+    "AH-R0925"
+  ],
+  "reactions": [
+    {
+      "situation": "A tenant calls attention to damp during the viewing",
+      "response": "Wynn allows a proper look at the damp before returning to the argument about price.",
+      "asWritten": "A tenant calls attention to damp during the viewing. Wynn allows a proper look at the damp before returning to the argument about price."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Wynn asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Wynn asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Wynn agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Wynn agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

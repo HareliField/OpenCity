@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0408",
+  "personId": "AH-R0408",
+  "name": "Aidan Hayward",
+  "age": 68,
+  "occupation": "Retired fish seller",
+  "home": "the blocks north of the port",
+  "episode": "The widow's razor",
+  "biography": "stories/residents/03/11-the-widow-s-razor.md#ah-r0408",
+  "life": "“I still remember paying for a trim with a very small fish.” On Friday, near Breakwater Way, Aidan stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I bought my first haircut with fish. The widow remembered the fish before she remembered me.",
+  "appearance": "On an ordinary day, look for a washed violet jersey and a folded shopping list secured by a miniature clip. Aidan has a flat bridge to the nose and a mobile brow, with a thin scattering of white hair over the crown. Aidan folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Aidan enjoys routines and will defend the right of someone else to break one. As a result, Aidan is often everyone's favorite cover for a missed morning.",
+  "agenda": "To share the fish-barter story with the next shop generation.",
+  "family": "Marco Fox is Aidan’s cousin raised in the same household. Aidan asks the question the rest of the family avoided. Marco chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *Hem by hem*, Marco says, “I was the first groom's witness. I still have the tie made from the offcut.”",
+  "connections": "Quinn Fong. The maker's name finally goes beside the old haircut bought with fish.",
+  "familyIds": [
+    "AH-R0158"
+  ],
+  "connectionIds": [
+    "AH-R0407"
+  ],
+  "reactions": [
+    {
+      "situation": "The widow wants to tell the apprentice who held it first",
+      "response": "Aidan makes space for the widow and the apprentice to talk without buyers listening.",
+      "asWritten": "The widow wants to tell the apprentice who held it first. Aidan makes space for the widow and the apprentice to talk without buyers listening."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Aidan takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Aidan takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Aidan keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Aidan keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

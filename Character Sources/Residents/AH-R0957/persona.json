@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0957",
+  "personId": "AH-R0957",
+  "name": "Rosa Taylor",
+  "age": 41,
+  "occupation": "Pharmacy cleaner",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The empty chair on nights",
+  "biography": "stories/residents/07/06-the-empty-chair-on-nights.md#ah-r0957",
+  "life": "“I still remember sitting in a neighbor's kitchen while the whole ward rang her doorbell.” On Wednesday, near the corner by Juniper Tailor, Rosa looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I am her neighbor. I can deliver soup but I refuse to carry gossip in either direction.",
+  "appearance": "Rosa is easy to recognize by auburn hair cut square at the nape and a small notch in the left eyebrow. Usually dressed in a mustard canvas overshirt with a tiny red thread tied through the lowest buttonhole, Rosa squares up pieces of paper while thinking when listening.",
+  "personality": "Rosa keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Rosa wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To deliver a meal without relaying gossip.",
+  "family": "Ariel Jain is Rosa’s second cousin. Rosa gets to change the plan. Ariel offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Money after marriage*, Ariel says, “I am the child who loves both parents and has no interest in inheriting their chair at the bank.”",
+  "connections": "Javier Aguilar. They decide which farewells a neighbor can actually deliver without violating a confidence.",
+  "familyIds": [
+    "AH-R0774"
+  ],
+  "connectionIds": [
+    "AH-R0951"
+  ],
+  "reactions": [
+    {
+      "situation": "A replacement nurse receives the permanent badge",
+      "response": "Rosa welcomes the new nurse and saves the old worker's goodbye for a separate conversation.",
+      "asWritten": "A replacement nurse receives the permanent badge. Rosa welcomes the new nurse and saves the old worker's goodbye for a separate conversation."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Rosa asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Rosa asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Rosa offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Rosa offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

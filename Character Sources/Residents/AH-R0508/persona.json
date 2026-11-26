@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0508",
+  "personId": "AH-R0508",
+  "name": "Rowan Roman",
+  "age": 52,
+  "occupation": "Building porter",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The waiting-room plant",
+  "biography": "stories/residents/04/06-the-waiting-room-plant.md#ah-r0508",
+  "life": "“I still remember rinsing a planter in the night staff sink.” On Wednesday, near the steps at Pier Beach, Rowan watches the working part of the waterfront before turning toward the open water.",
+  "voice": "My partner and I argued about who kept it alive. The night cleaner brought us her watering diary.",
+  "appearance": "On an ordinary day, look for a long navy raincoat and one cuff folded back twice. Rowan has an aquiline nose and a square chin, with a dark undercut with a longer wave on top. Rowan takes off the watch before a long conversation during a conversation.",
+  "personality": "Rowan has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To reconcile the two watering accounts with the cleaner's diary.",
+  "family": "Roland Pierce is Rowan’s younger cousin. Rowan remembers the birthdays. Roland asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The crash anniversary*, Roland says, “I wanted a mural until the survivor told me she would have to pass her face twice every day.”",
+  "connections": "Sara Romero. The cleaner's diary settles what nearly killed the roots.",
+  "familyIds": [
+    "AH-R1016"
+  ],
+  "connectionIds": [
+    "AH-R0502"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient asks to be alone with the plant",
+      "response": "Rowan leaves the patient with the plant and returns at an agreed time.",
+      "asWritten": "A patient asks to be alone with the plant. Rowan leaves the patient with the plant and returns at an agreed time."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Rowan waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Rowan waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Rowan asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Rowan asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

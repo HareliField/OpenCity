@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0973",
+  "personId": "AH-R0973",
+  "name": "Barbara Jackson",
+  "age": 28,
+  "occupation": "Restaurant server",
+  "home": "the western residential streets",
+  "episode": "The expensive summer",
+  "biography": "stories/residents/07/08-the-expensive-summer.md#ah-r0973",
+  "life": "“I still remember paying for a birthday dinner in restaurant tips.” Saturday often includes a stop at Lighthouse Cove, where Barbara takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I carry plates and survive on tips. The dessert table stayed two hours and tipped me in four currencies.",
+  "appearance": "Barbara has a soft fringe that falls across one eyebrow, a long face and high cheekbones, and a favorite piece of clothing, an unlined tan jacket. It usually goes with a replacement button a shade darker than the others. When somebody else has the floor, Barbara looks toward the door whenever a name is called.",
+  "personality": "Barbara enjoys routines and will defend the right of someone else to break one. As a result, Barbara is often everyone's favorite cover for a missed morning.",
+  "agenda": "To keep the dessert table welcome through closing.",
+  "family": "Gareth Mercer is Barbara’s half-sibling. Barbara leaves the first voice message. Gareth calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The driving lesson fund*, Gareth says, “I am the student who got the lesson. My employer tried to take the credit and I quietly corrected the newsletter.”",
+  "connections": "Elizabeth Campos. Both tips and an affordable birthday cake depend on the dessert table being welcomed.",
+  "familyIds": [
+    "AH-R1316"
+  ],
+  "connectionIds": [
+    "AH-R0978"
+  ],
+  "reactions": [
+    {
+      "situation": "A waiter offers to split one birthday dessert among everybody",
+      "response": "Barbara checks that the birthday guest likes the dessert before calculating the portions.",
+      "asWritten": "A waiter offers to split one birthday dessert among everybody. Barbara checks that the birthday guest likes the dessert before calculating the portions."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Barbara clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience.",
+      "asWritten": "A family supper turns into an argument about old debt. Barbara clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Barbara keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Barbara keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

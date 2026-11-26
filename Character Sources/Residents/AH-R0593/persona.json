@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0593",
+  "personId": "AH-R0593",
+  "name": "Jacqueline Clarke",
+  "age": 52,
+  "occupation": "Harbor neighbor and grocer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The engine lullaby",
+  "biography": "stories/residents/04/15-the-engine-lullaby.md#ah-r0593",
+  "life": "“I still remember waking up the first morning a ferry didn't run.” Friday often includes a stop at Lighthouse Cove, where Jacqueline takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I complained about it last year. Now I need to tell the owner what I missed when it stopped.",
+  "appearance": "Jacqueline has a heart-shaped face and prominent ears. Look for auburn hair cut square at the nape. On an ordinary day, the familiar outfit is a rust-colored canvas coat with a pocket notebook shaped by years of sitting on it. In conversation Jacqueline raises one eyebrow long before saying yes.",
+  "personality": "Jacqueline never tires of being shown how somebody makes a living. Jacqueline can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To tell the owner why its silence mattered.",
+  "family": "Anthony Penn is Jacqueline’s stepsibling. Jacqueline puts the kettle on. Anthony chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Reading the payslip*, Anthony says, “I was too proud to sit with my former student.”",
+  "connections": "Val Moss. A complaint about noise turns into an invitation for a more peaceful evening walk.",
+  "familyIds": [
+    "AH-R0813"
+  ],
+  "connectionIds": [
+    "AH-R0598"
+  ],
+  "reactions": [
+    {
+      "situation": "The dock engine falls silent in mid-recording",
+      "response": "Jacqueline notes the time the hum stopped before discussing a replacement recording.",
+      "asWritten": "The dock engine falls silent in mid-recording. Jacqueline notes the time the hum stopped before discussing a replacement recording."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Jacqueline asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Jacqueline asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Jacqueline may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Jacqueline may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0620",
+  "personId": "AH-R0620",
+  "name": "Jack Gomez",
+  "age": 41,
+  "occupation": "Wedding planner",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The crane shadow",
+  "biography": "stories/residents/05/02-the-crane-shadow.md#ah-r0620",
+  "life": "“I still remember a newlywed asking for all the cleaners in the wedding picture.” Saturday often includes a stop at the blocks below Foundry Lofts, where Jack checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I booked a wedding picture at that exact spot. My partner wants the crane crew in it too.",
+  "appearance": "Jack has a high puff tied with plain cord, a crooked front tooth visible when laughing, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a knotted piece of sail thread on a key ring. When somebody else has the floor, Jack draws breath as if to speak and lets someone else go first.",
+  "personality": "Jack admires skill and distrusts the idea that skill gives anyone permission to be rude. Jack learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To include the crew in the wedding portrait.",
+  "family": "Parker Anders is Jack’s second cousin. Jack makes room at the table. Parker brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The empty chair on nights*, Parker says, “I voted against the farewell. Her leaving made me realize I need to ask for leave myself.”",
+  "connections": "Zachary Teo. The design portfolio and wedding photograph both need the correct crane.",
+  "familyIds": [
+    "AH-R0959"
+  ],
+  "connectionIds": [
+    "AH-R0614"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor reaches the quay too late to see it",
+      "response": "Jack shows the visitor where the shadow fell and when the next chance comes.",
+      "asWritten": "A visitor reaches the quay too late to see it. Jack shows the visitor where the shadow fell and when the next chance comes."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Jack asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Jack asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Jack describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Jack describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0829",
+  "personId": "AH-R0829",
+  "name": "Terry Fong",
+  "age": 33,
+  "occupation": "Seasonal swimming teacher",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Summer staff",
+  "biography": "stories/residents/06/08-summer-staff.md#ah-r0829",
+  "life": "“I still remember emptying my refund purse for a frightened visitor.” People around the crossing outside Verve Nail Studio know Terry by a small Saturday habit. Terry notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I took deposits for sunset lessons. I'll refund the ones I can't teach even if it means losing my room.",
+  "appearance": "Terry has a smooth side part with one rebellious curl, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, a long navy raincoat. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Terry takes off the watch before a long conversation.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Terry takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To refund buyers whose lessons cannot run.",
+  "family": "Winifred Bell is Terry’s stepsibling. Terry offers the first invitation. Winifred gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The return of a witness*, Winifred says, “I am her daughter. I know why we moved and I still miss the tree outside my first bedroom.”",
+  "connections": "Jesse Ngo. A server putting the date on a board helps a teacher stop selling lessons after that date.",
+  "familyIds": [
+    "AH-R1396"
+  ],
+  "connectionIds": [
+    "AH-R0824"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor demands a refund after the season ends early",
+      "response": "Terry checks the actual dates printed on the booking before discussing its refund.",
+      "asWritten": "A visitor demands a refund after the season ends early. Terry checks the actual dates printed on the booking before discussing its refund."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Terry gets the people at the next doorway away from the smoke and asks a bystander to make the call.",
+      "asWritten": "Smoke appears under a shop door after closing. Terry gets the people at the next doorway away from the smoke and asks a bystander to make the call."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Terry asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Terry asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

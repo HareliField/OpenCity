@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0013",
+  "personId": "AH-R0013",
+  "name": "Ivor Lake",
+  "age": 54,
+  "occupation": "Furniture restorer",
+  "home": "Midtown",
+  "episode": "A chair on the quay",
+  "biography": "stories/residents/01/02-a-chair-on-the-quay.md#ah-r0013",
+  "life": "Ivor charges by the finished repair because disability makes his hours unpredictable. Families sometimes mistake the quiet pace of his workshop for leisure. He has been trying to get his apprentice to quote without embarrassment. Tuesday often includes a stop at Ferris Deli, where Ivor asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "The lower marks run down instead of up. Somebody measured a child on their knees. I offered to mend the seat and leave the pencil lines exactly where the family put them.",
+  "appearance": "Ivor has short, uneven waves that refuse to lie flat, a long face and high cheekbones, and a favorite piece of clothing, a mustard canvas overshirt. It usually goes with a tiny red thread tied through the lowest buttonhole. When somebody else has the floor, Ivor leans a shoulder against the wall during long conversations.",
+  "personality": "Ivor is fond of ambitious ideas and deeply suspicious of grand openings. The question Ivor asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To make the cane seat sound enough for an adult without disturbing the marks.",
+  "family": "Javier Lai is Ivor’s cousin raised in the same household. Ivor leaves the first voice message. Javier calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *No lifeguard at dusk*, Javier says, “I own the cart beside the steps. I can sit for company after the shutters come down, without promising to be a lifeguard.”",
+  "connections": "Owen Vale. One wants the family to recognize a childhood chair. The other has to decide which repairs would erase its history.",
+  "familyIds": [
+    "AH-R1423"
+  ],
+  "connectionIds": [
+    "AH-R0011"
+  ],
+  "reactions": [
+    {
+      "situation": "Two families claim the kitchen chair",
+      "response": "Ivor asks each claimant what they remember about the seat before the marks are shown.",
+      "asWritten": "Two families claim the kitchen chair. Ivor asks each claimant what they remember about the seat before the marks are shown."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Ivor asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Ivor asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Ivor accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Ivor accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

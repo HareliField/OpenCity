@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0231",
+  "personId": "AH-R0231",
+  "name": "Victor Sun",
+  "age": 71,
+  "occupation": "Retired laboratory assistant",
+  "home": "the western residential streets",
+  "episode": "A wall of birthdays",
+  "biography": "stories/residents/02/09-a-wall-of-birthdays.md#ah-r0231",
+  "life": "“I used to check other people's scales using a little weight in my pocket.” On Monday, near the brick passage off the shop row, Victor takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I want to measure myself again. Chemotherapy stole a little of my height and a lot of my nerve.",
+  "appearance": "On an ordinary day, look for a faded indigo overshirt and a narrow brass watch set a little fast. Victor has two dimples that appear only with a full smile, with tightly curled gray hair. Victor leans a shoulder against the wall during long conversations during a conversation.",
+  "personality": "Victor can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To add one present-day height mark after treatment.",
+  "family": "Cato Hull is Victor’s younger relative by marriage. Victor is free to hang up first. Cato makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A tide at noon*, Cato says, “On my break I taught three children how water moves around a pier.”",
+  "connections": "Stefan Tate. A new adult height mark fits beside names the former childminder still remembers.",
+  "familyIds": [
+    "AH-R0078"
+  ],
+  "connectionIds": [
+    "AH-R0235"
+  ],
+  "reactions": [
+    {
+      "situation": "The landlord wants the height marks covered today",
+      "response": "Victor offers to help trace the height marks before work continues.",
+      "asWritten": "The landlord wants the height marks covered today. Victor offers to help trace the height marks before work continues."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Victor draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Victor draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Victor asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Victor asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

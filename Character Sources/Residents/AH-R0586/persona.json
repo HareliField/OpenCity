@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0586",
+  "personId": "AH-R0586",
+  "name": "Briar Patel",
+  "age": 52,
+  "occupation": "Food stall seller",
+  "home": "Midtown",
+  "episode": "Laundry for a stranger",
+  "biography": "stories/residents/04/14-laundry-for-a-stranger.md#ah-r0586",
+  "life": "“I still remember the coat my son wore to plead for a second chance.” Monday often includes a stop at the entrance to the Wash House, where Briar stops for local notices even on a day without a load to wash.",
+  "voice": "My son needs a good shirt for court. I asked the volunteer if the stranger might lend it.",
+  "appearance": "Briar has a soft fringe that falls across one eyebrow, a small notch in the left eyebrow, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a copper-colored clasp that has been repaired by hand. When somebody else has the floor, Briar touches a knuckle to the chin when searching for a word.",
+  "personality": "Briar enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To borrow a respectable shirt for court with permission.",
+  "family": "Leon Armas is Briar’s second cousin. Briar gets to change the plan. Leon offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *A chair on the quay*, Leon says, “Everybody wants a retirement speech. He wants his granddaughter admitted past the gate for ten minutes.”",
+  "connections": "Lola Vidal. Borrowing a court shirt depends on knowing the person who actually runs the linen round.",
+  "familyIds": [
+    "AH-R0018"
+  ],
+  "connectionIds": [
+    "AH-R0587"
+  ],
+  "reactions": [
+    {
+      "situation": "An elderly tenant wants to iron the collar personally",
+      "response": "Briar lets the tenant do the collar at a safe height and takes the heavier laundry.",
+      "asWritten": "An elderly tenant wants to iron the collar personally. Briar lets the tenant do the collar at a safe height and takes the heavier laundry."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Briar offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Briar offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Briar puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Briar puts the deal away and suggests a walk."
+    }
+  ]
+}

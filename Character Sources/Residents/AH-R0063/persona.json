@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0063",
+  "personId": "AH-R0063",
+  "name": "Elsa Venn",
+  "age": 63,
+  "occupation": "Taxi driver",
+  "home": "the neighborhood around Market Flats",
+  "episode": "An unfinished atlas",
+  "biography": "stories/residents/01/07-an-unfinished-atlas.md#ah-r0063",
+  "life": "Elsa knows the town by what a passenger might smell with the window open. Street names have changed twice on her old taxi route. The woman with the coffee always stood in the same breeze. People around the blocks below Foundry Lofts know Elsa by a small Saturday habit. Elsa checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I drove that lane on my first night shift. It dead-ended at a woman selling coffee from a thermos. I'm trying to remember her name before the map gets a label.",
+  "appearance": "Elsa is easy to recognize by a long silver braid and a wide brow and a narrow jaw. Usually dressed in a brown corduroy jacket with a square of clean cloth for polishing smudges, Elsa leans a shoulder against the wall during long conversations when listening.",
+  "personality": "Elsa is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Elsa is concerned.",
+  "agenda": "To recover the coffee seller's name while the old route can still be walked.",
+  "family": "Patricia Ryan is Elsa’s younger cousin. Elsa makes room at the table. Patricia brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The guarantee*, Patricia says, “I can pay the interest for six months if the family stops calling it a rescue every time we eat.”",
+  "connections": "Melle Juric. They walk the likely street with somebody who remembers a face more easily than a name.",
+  "familyIds": [
+    "AH-R1076"
+  ],
+  "connectionIds": [
+    "AH-R0068"
+  ],
+  "reactions": [
+    {
+      "situation": "A collector offers cash for the unexamined atlas",
+      "response": "Elsa asks the bookseller to put the atlas somewhere safe while its ownership is checked.",
+      "asWritten": "A collector offers cash for the unexamined atlas. Elsa asks the bookseller to put the atlas somewhere safe while its ownership is checked."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Elsa draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Elsa draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Elsa asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Elsa asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0681",
+  "personId": "AH-R0681",
+  "name": "Bruna Andrade",
+  "age": 70,
+  "occupation": "Retired tile setter",
+  "home": "the western residential streets",
+  "episode": "An address in pencil",
+  "biography": "stories/residents/05/09-an-address-in-pencil.md#ah-r0681",
+  "life": "“I still remember our family painting its first house number together.” On Wednesday, near the bank steps, Bruna takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I wrote the figure the way Dad did and nobody under thirty could read it.",
+  "appearance": "On an ordinary day, look for a cream pullover and a replacement button a shade darker than the others. Bruna has a broad nose and a deep dimple on one cheek, with silver temples and a dark fringe. Bruna looks at people's hands before looking at what they carry during a conversation.",
+  "personality": "Bruna has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To write an address visitors can read.",
+  "family": "Sam Ochoa is Bruna’s first cousin once removed. Bruna makes room at the table. Sam brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Winter afloat*, Sam says, “I want him to keep feeding the gull with the broken foot.”",
+  "connections": "Robin Cao (sign maker). A metal cutter reads the penciled number from the far side of the street.",
+  "familyIds": [
+    "AH-R0894"
+  ],
+  "connectionIds": [
+    "AH-R0683"
+  ],
+  "reactions": [
+    {
+      "situation": "A delivery goes to the newly renumbered neighbor",
+      "response": "Bruna checks both doorways before moving the delivery.",
+      "asWritten": "A delivery goes to the newly renumbered neighbor. Bruna checks both doorways before moving the delivery."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Bruna offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Bruna offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Bruna says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Bruna says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

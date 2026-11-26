@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0574",
+  "personId": "AH-R0574",
+  "name": "Hamish Baxter",
+  "age": 16,
+  "occupation": "Student performer",
+  "home": "Coast Ridge",
+  "episode": "A play in a pocket",
+  "biography": "stories/residents/04/13-a-play-in-a-pocket.md#ah-r0574",
+  "life": "“I still remember an audience member giving me time to remember a word.” People around Studio Boulevard know Hamish by a small Sunday habit. Hamish waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I had ten lines. The listener cried after the first two and asked if we could wait.",
+  "appearance": "Hamish is easy to recognize by a blunt cut just below the ears and a scattering of freckles across the bridge of the nose. Usually dressed in a gray fisher's sweater with a cloth patch so neatly matched it only shows in strong light, Hamish counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Hamish can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To let the distressed listener choose when to resume.",
+  "family": "Saul Rosner is Hamish’s older cousin. Hamish asks what the birthday guest would like this year. Saul remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The last green*, Saul says, “I can name the color of each light with my eyes closed.”",
+  "connections": "Hazel Fraser. A familiar stool gives the hesitant listener a place to pause the performance.",
+  "familyIds": [
+    "AH-R0111"
+  ],
+  "connectionIds": [
+    "AH-R0573"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor wants to record a private performance",
+      "response": "Hamish asks the actor and the sole listener separately before allowing a recording.",
+      "asWritten": "A visitor wants to record a private performance. Hamish asks the actor and the sole listener separately before allowing a recording."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Hamish asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Hamish asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Hamish asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Hamish asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1150",
+  "personId": "AH-R1150",
+  "name": "Jasper Baker",
+  "age": 67,
+  "occupation": "Pensioned print worker",
+  "home": "the blocks north of the port",
+  "episode": "The first delivery fee",
+  "biography": "stories/residents/08/10-the-first-delivery-fee.md#ah-r1150",
+  "life": "“I still remember marking the days each neighbor preferred lentil soup.” On Monday, near Maré Coffee, Jasper likes the table where people coming off shift stop checking the time.",
+  "voice": "I agreed to collect three neighbors' lunches on one run. I want my Wednesday soup taken seriously as payment.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a printed handkerchief folded into the pocket. Jasper has one cheek that creases before the other, with salt-and-pepper curls. Jasper draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Jasper finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To exchange a shared round for a useful meal.",
+  "family": "Linden Joseph is Jasper’s first cousin once removed. Jasper puts the kettle on. Linden chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The return of a witness*, Linden says, “I used to sell drugs alongside the person she named.”",
+  "connections": "Frances Mendez. Three neighbors' lunch rounds can keep the mother's meals fresh enough to eat.",
+  "familyIds": [
+    "AH-R1392"
+  ],
+  "connectionIds": [
+    "AH-R1143"
+  ],
+  "reactions": [
+    {
+      "situation": "The new rider asks who received last year's tips",
+      "response": "Jasper asks who did the work and who was paid before the shop divides today's tips.",
+      "asWritten": "The new rider asks who received last year's tips. Jasper asks who did the work and who was paid before the shop divides today's tips."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Jasper lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Jasper lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Jasper points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Jasper points to the person who noticed the original mistake."
+    }
+  ]
+}

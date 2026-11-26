@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0633",
+  "personId": "AH-R0633",
+  "name": "Sam Yeo",
+  "age": 52,
+  "occupation": "Former class secretary",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "One clean day",
+  "biography": "stories/residents/05/04-one-clean-day.md#ah-r0633",
+  "life": "“I still remember keeping score of classmates' changed surnames.” On Thursday, near Breakwater Way, Sam stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I carried the list of absent classmates and ended up talking about the living ones for once.",
+  "appearance": "Sam has two dimples that appear only with a full smile. Look for a loose dark braid. On an ordinary day, the familiar outfit is a brown corduroy jacket with a stitched row of blue crosses along an old repair. In conversation Sam takes off the watch before a long conversation.",
+  "personality": "Sam reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Sam trusts most.",
+  "agenda": "To give the living classmates a turn at the microphone.",
+  "family": "Adrian Andrade is Sam’s second cousin. Sam brings the paper and a pen. Adrian decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The skipper goes ashore*, Adrian says, “I do not want to sell our house because she earns less ashore.”",
+  "connections": "Eden Tran. The absent names help the badge writer work out whom to invite next year.",
+  "familyIds": [
+    "AH-R1198"
+  ],
+  "connectionIds": [
+    "AH-R0638"
+  ],
+  "reactions": [
+    {
+      "situation": "A classmate arrives at the reunion in uniform",
+      "response": "Sam welcomes the classmate before bringing up their working clothes.",
+      "asWritten": "A classmate arrives at the reunion in uniform. Sam welcomes the classmate before bringing up their working clothes."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Sam sits beside them without expecting a performance and asks if they want to go outside.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Sam sits beside them without expecting a performance and asks if they want to go outside."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Sam does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Sam does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

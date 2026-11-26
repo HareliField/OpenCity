@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0786",
+  "personId": "ah-pd-108",
+  "name": "Dev Cole",
+  "age": 35,
+  "occupation": "Patrol officer",
+  "home": "Old Town",
+  "episode": "The Saturday swap",
+  "biography": "stories/residents/06/04-the-saturday-swap.md#ah-r0786",
+  "life": "“I still remember the late fee I paid with the last cash in my coat.” On Tuesday, near Juniper Street, Dev knows which of the west-side porches has a seat in the shade.",
+  "voice": "I told the childcare center I'd be home by closing. Last time the receptionist sat with my boy for forty unpaid minutes.",
+  "appearance": "On an ordinary day, look for a brown corduroy jacket and a seam let out by a narrow strip of contrasting fabric. Dev has a softly rounded chin under sharp cheekbones, with short, uneven waves that refuse to lie flat. Dev squares up pieces of paper while thinking during a conversation.",
+  "personality": "Dev prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To reach the childcare desk before it closes.",
+  "family": "Liam Moreno is Dev’s older relative by marriage. Dev puts the kettle on. Liam chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A four o'clock kitchen*, Liam says, “I raised my children on opposite shifts. I'm lending the family the notebook where we used to leave bad drawings for each other.”",
+  "connections": "Samir Shah. A promised swimming lesson and a childcare closing time leave very little slack in one watch swap.",
+  "familyIds": [
+    "AH-R1297"
+  ],
+  "connectionIds": [
+    "AH-R0781"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member asks for a definite promise about Saturday",
+      "response": "Dev promises a definite check-in time even if the watch itself is still uncertain.",
+      "asWritten": "A family member asks for a definite promise about Saturday. Dev promises a definite check-in time even if the watch itself is still uncertain."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Dev takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Dev takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Dev clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Dev clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1007",
+  "personId": "AH-R1007",
+  "name": "Sadie Carver",
+  "age": 34,
+  "occupation": "Commission nail technician",
+  "home": "Eastside",
+  "episode": "The salon on strike",
+  "biography": "stories/residents/07/11-the-salon-on-strike.md#ah-r1007",
+  "life": "“I still remember a misprinted payslip under my legal surname.” On Saturday, near Tideline Market, Sadie picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I work under a name my family doesn't know. I want to sign the letter with the name on my pay slip.",
+  "appearance": "After the last appointment, look for a cream pullover and a fabric zip pull cut from a school scarf. Sadie has a softly rounded chin under sharp cheekbones, with auburn hair cut square at the nape. Sadie touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Sadie reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Sadie trusts most.",
+  "agenda": "To sign the pay letter under the working name.",
+  "family": "Ava Bernal is Sadie’s half-sibling. Sadie can always ask for five minutes alone. Ava asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Saturday keys*, Ava says, “I was about to accuse a new volunteer when my own scribble turned up on the tin.”",
+  "connections": "Leah Smith. Paying for a babysitter is part of deciding which name can go on the staff letter.",
+  "familyIds": [
+    "AH-R0288"
+  ],
+  "connectionIds": [
+    "AH-R1005"
+  ],
+  "reactions": [
+    {
+      "situation": "A promotional client insists on keeping the booking",
+      "response": "Sadie asks who will be paid to staff the booking before promising it can go ahead.",
+      "asWritten": "A promotional client insists on keeping the booking. Sadie asks who will be paid to staff the booking before promising it can go ahead."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Sadie asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Sadie asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Sadie does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Sadie does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

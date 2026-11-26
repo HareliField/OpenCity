@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1193",
+  "personId": "AH-R1193",
+  "name": "Scout Ames",
+  "age": 60,
+  "occupation": "Yacht owner and investor",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The skipper goes ashore",
+  "biography": "stories/residents/08/15-the-skipper-goes-ashore.md#ah-r1193",
+  "life": "“I still remember asking a retired pilot to lend a boat his good name.” Thursday often includes a stop at the downtown fountain, where Scout keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I own the boat. I want her to keep a title because the buyers know her, and she wants a real desk with work on it.",
+  "appearance": "Scout has a broad nose and a deep dimple on one cheek. Look for silver temples and a dark fringe. On an ordinary day, the familiar outfit is a plum-colored cardigan with a comb in a sleeve sewn into the lining. In conversation Scout presses the lips together to keep a smile in.",
+  "personality": "Scout keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Scout wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To agree a real office assignment.",
+  "family": "Willa Rizzo is Scout’s cousin raised in the same household. Scout asks before bringing somebody along. Willa can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The returned daughter*, Willa says, “I was the neighbor who opened a door for her.”",
+  "connections": "Emery Fields. The boat's owner gets a real office assignment costed by the marine accountant.",
+  "familyIds": [
+    "AH-R1285"
+  ],
+  "connectionIds": [
+    "AH-R1196"
+  ],
+  "reactions": [
+    {
+      "situation": "An owner offers the former skipper a title with no clear duties",
+      "response": "Scout asks what actual work, hours and wage go with the shore title.",
+      "asWritten": "An owner offers the former skipper a title with no clear duties. Scout asks what actual work, hours and wage go with the shore title."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Scout asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Scout asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Scout offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Scout offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

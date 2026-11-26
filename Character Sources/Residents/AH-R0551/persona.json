@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0551",
+  "personId": "AH-R0551",
+  "name": "Ren Cullen",
+  "age": 55,
+  "occupation": "Salon customer and architect",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The fitting mirror",
+  "biography": "stories/residents/04/11-the-fitting-mirror.md#ah-r0551",
+  "life": "“I still remember seeing gray at my temple in a train window.” Friday often includes a stop at Breakwater Way, where Ren stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I like the tailor's light better. I saw the silver in my hair there and canceled my dye appointment.",
+  "appearance": "After the last appointment, look for an old plum windbreaker and a thin silver ring worn on a cord. Ren has a scattering of freckles across the bridge of the nose, with a soft fringe that falls across one eyebrow. Ren starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Ren gets protective of anybody who comes into a meeting unprepared. Ren privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To leave the new silver hair visible.",
+  "family": "Charles Mack is Ren’s first cousin once removed. Ren checks the date twice. Charles brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The boy on the corner*, Charles says, “I told my brother I worked in deliveries. He drew me in a uniform I have never owned.”",
+  "connections": "Darcy Lopez. The mirror shows one person's silver hair and another's remembered fingerprint.",
+  "familyIds": [
+    "AH-R1091"
+  ],
+  "connectionIds": [
+    "AH-R0555"
+  ],
+  "reactions": [
+    {
+      "situation": "A client asks to sit outside the shared mirror's view",
+      "response": "Ren puts the person's chair outside the reflection and lets them choose when to look.",
+      "asWritten": "A client asks to sit outside the shared mirror's view. Ren puts the person's chair outside the reflection and lets them choose when to look."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Ren keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Ren keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Ren offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Ren offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

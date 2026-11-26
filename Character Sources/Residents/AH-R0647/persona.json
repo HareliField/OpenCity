@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0647",
+  "personId": "AH-R0647",
+  "name": "Toby Diaz",
+  "age": 33,
+  "occupation": "Street drug dealer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The clean ledger",
+  "biography": "stories/residents/05/05-the-clean-ledger.md#ah-r0647",
+  "life": "“I still remember a birthday my customer remembered and I forgot.” Wednesday often includes a stop at Ferris Deli, where Toby asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I sell drugs and used to think settling money settled everything. One customer asked me to remember a birthday instead.",
+  "appearance": "On an ordinary day, look for a plum-colored cardigan and a comb in a sleeve sewn into the lining. Toby has fine brows over wide-set eyes, with brown hair pinned away from the temples. Toby touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To remember the former customer's birthday.",
+  "family": "Nell Graves is Toby’s half-sibling. Toby chooses whether they walk home or sit a while. Nell brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Hem by hem*, Nell says, “I've come to photograph the three waistlines.”",
+  "connections": "Melanie Nelson. A creditor asking for labor gives the dealer who owes a birthday a different idea of repayment.",
+  "familyIds": [
+    "AH-R0160"
+  ],
+  "connectionIds": [
+    "AH-R0644"
+  ],
+  "reactions": [
+    {
+      "situation": "The former fence offers to pay money for something irreplaceable",
+      "response": "Toby asks the owner what returning money would and wouldn't settle.",
+      "asWritten": "The former fence offers to pay money for something irreplaceable. Toby asks the owner what returning money would and wouldn't settle."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Toby tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Toby tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Toby listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Toby listens first to the account of how it was actually used."
+    }
+  ]
+}

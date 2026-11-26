@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1392",
+  "personId": "AH-R1392",
+  "name": "Linden Joseph",
+  "age": 42,
+  "occupation": "Former drug dealer and cook",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The return of a witness",
+  "biography": "stories/residents/10/05-the-return-of-a-witness.md#ah-r1392",
+  "life": "“I still remember seeing the person who got hurt weeks after the gossip died down.” People around the downtown fountain know Linden by a small Tuesday habit. Linden keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I used to sell drugs alongside the person she named. I believed I was betrayed until I saw who was injured.",
+  "appearance": "Away from the heat of the kitchen, look for a cream pullover and a tiny red thread tied through the lowest buttonhole. Linden has a narrow face with an expressive upper lip, with dark brown curls cut close behind the ears. Linden looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To speak to the returning witness without rewriting past harm.",
+  "family": "Jasper Baker is Linden’s first cousin once removed. Linden chooses the music. Jasper puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The first delivery fee*, Jasper says, “I agreed to collect three neighbors' lunches on one run.”",
+  "connections": "Alexei Walsh. A former dealer and the convicted man's brother have different reasons to let an encounter stay ordinary.",
+  "familyIds": [
+    "AH-R1150"
+  ],
+  "connectionIds": [
+    "AH-R1393"
+  ],
+  "reactions": [
+    {
+      "situation": "A reporter wants to attend the visit",
+      "response": "Linden asks the family whether a reporter was invited before sharing a time or an address.",
+      "asWritten": "A reporter wants to attend the visit. Linden asks the family whether a reporter was invited before sharing a time or an address."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Linden asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Linden asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Linden listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Linden listens first to the account of how it was actually used."
+    }
+  ]
+}

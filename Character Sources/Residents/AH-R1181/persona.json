@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1181",
+  "personId": "AH-R1181",
+  "name": "Luis Gross",
+  "age": 73,
+  "occupation": "Retired reservoir worker",
+  "home": "the western residential streets",
+  "episode": "The new language at dinner",
+  "biography": "stories/residents/08/14-the-new-language-at-dinner.md#ah-r1181",
+  "life": "“I still remember the sounds I made before learning my school language.” On Thursday, near the crossing outside Verve Nail Studio, Luis notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I know what I mean. At home the words come out in the language I used before primary school.",
+  "appearance": "Luis has tightly curled gray hair, a broad nose and a deep dimple on one cheek, and a favorite piece of clothing, a black overshirt with pearl buttons. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Luis looks toward the door whenever a name is called.",
+  "personality": "Luis has a talent for getting adversaries to laugh at exactly the same thing. Luis knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To be understood in the language that comes most easily.",
+  "family": "Charlotte Hsu is Luis’s first cousin once removed. Luis decides what stays off the paper. Charlotte brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The hospital radio*, Charlotte says, “I was the child who painted the tuning mark pink.”",
+  "connections": "Laura Bhandari (daughter). The father needs a familiar language now and the daughter wants to learn it for the future.",
+  "familyIds": [
+    "AH-R0357"
+  ],
+  "connectionIds": [
+    "AH-R1182"
+  ],
+  "reactions": [
+    {
+      "situation": "The client uses a word nobody in the room knows",
+      "response": "Luis asks the client which person they want to help with the word.",
+      "asWritten": "The client uses a word nobody in the room knows. Luis asks the client which person they want to help with the word."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Luis writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Luis writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Luis asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Luis asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

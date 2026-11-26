@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1081",
+  "personId": "ah-pd-123",
+  "name": "Noor Khan",
+  "age": 43,
+  "occupation": "Patrol officer",
+  "home": "Eastside",
+  "episode": "First shift back",
+  "biography": "stories/residents/08/04-first-shift-back.md#ah-r1081",
+  "life": "“I still remember cleaning my desk before leave so returning would be easy.” On Monday, near the corner outside Coastal Barber, Noor usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I thought coming back meant picking up exactly where I left. My old chair has another person's back cushion.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and a cloth patch so neatly matched it only shows in strong light. Noor has a round face with a pronounced chin, with black hair twisted into a small knot. Noor looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Noor has a quick wit and an equally quick sense of shame. A joke is often Noor's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To return to useful work without taking everything back.",
+  "family": "Jules Moran is Noor’s second cousin. Noor decides what stays off the paper. Jules brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Low water music*, Jules says, “The choir got the note wrong on purpose so the children would correct them.”",
+  "connections": "Finn Ross (watch cover). They discuss which work can be returned and which skills the temporary cover should keep.",
+  "familyIds": [
+    "AH-R0230"
+  ],
+  "connectionIds": [
+    "AH-R1082"
+  ],
+  "reactions": [
+    {
+      "situation": "The returning colleague finds another name on the desk",
+      "response": "Noor lets both workers describe what happened to the assignment during leave.",
+      "asWritten": "The returning colleague finds another name on the desk. Noor lets both workers describe what happened to the assignment during leave."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Noor accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Noor accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Noor seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Noor seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

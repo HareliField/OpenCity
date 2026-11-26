@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0502",
+  "personId": "AH-R0502",
+  "name": "Sara Romero",
+  "age": 39,
+  "occupation": "Ward volunteer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The waiting-room plant",
+  "biography": "stories/residents/04/06-the-waiting-room-plant.md#ah-r0502",
+  "life": "“I still remember drowning an orchid while trying to keep busy.” People around the bank steps know Sara by a small Tuesday habit. Sara takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I watered it so often its roots rotted. I am learning that leaving something alone counts as care.",
+  "appearance": "On an ordinary day, look for a rust-colored canvas coat and a small enamel bird on the lapel. Sara has a crooked front tooth visible when laughing, with auburn hair cut square at the nape. Sara looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Sara treats a small promise with the gravity others reserve for a contract. This makes Sara lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To repair the roots by learning when to stop watering.",
+  "family": "Frankie Kent is Sara’s cousin. Sara keeps the photographs. Frankie knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The first straight paycheck*, Frankie says, “I want his job reference. I'm forty and I've never had anyone say I turned up three Mondays in a row.”",
+  "connections": "Rowan Roman. The cleaner's diary settles what nearly killed the roots.",
+  "familyIds": [
+    "AH-R0799"
+  ],
+  "connectionIds": [
+    "AH-R0508"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient asks to be alone with the plant",
+      "response": "Sara leaves the patient with the plant and returns at an agreed time.",
+      "asWritten": "A patient asks to be alone with the plant. Sara leaves the patient with the plant and returns at an agreed time."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Sara stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Sara stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Sara says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Sara says what can be returned and asks whether that will do."
+    }
+  ]
+}

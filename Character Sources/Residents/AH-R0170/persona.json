@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0170",
+  "personId": "AH-R0170",
+  "name": "Ellen Baran",
+  "age": 44,
+  "occupation": "Rail maintenance worker",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Five missing lunches",
+  "biography": "stories/residents/02/02-five-missing-lunches.md#ah-r0170",
+  "life": "“I left machine work for the railroad when the cold started to hurt my fingers.” People around the corner by Juniper Tailor know Ellen by a small Friday habit. Ellen looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I store nuts in my tin. Finding somebody else's lunch inside made me remember to eat.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and a partly rubbed-away embroidered initial. Ellen has a heart-shaped face and prominent ears, with a long plait tucked inside the collar. Ellen presses the lips together to keep a smile in during a conversation.",
+  "personality": "Ellen enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To bring something edible to the next railway break.",
+  "family": "Jo Emery is Ellen’s cousin raised in the same household. Ellen checks the date twice. Jo brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The driving lesson fund*, Jo says, “I cannot fund another hour. I offered a place to wait for children whose parents are out with the car.”",
+  "connections": "Joanna Ellis. They arrange a lunchtime domino rematch with actual food in the tins.",
+  "familyIds": [
+    "AH-R1317"
+  ],
+  "connectionIds": [
+    "AH-R0169"
+  ],
+  "reactions": [
+    {
+      "situation": "The night shift misses the collection time",
+      "response": "Ellen puts the unclaimed tin by for a later handover.",
+      "asWritten": "The night shift misses the collection time. Ellen puts the unclaimed tin by for a later handover."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Ellen gives up their own space if possible and asks the passengers who arrived first to choose what happens next.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Ellen gives up their own space if possible and asks the passengers who arrived first to choose what happens next."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Ellen puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Ellen puts the deal away and suggests a walk."
+    }
+  ]
+}

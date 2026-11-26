@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1103",
+  "personId": "AH-R1103",
+  "name": "Denise Zhou",
+  "age": 71,
+  "occupation": "Retired index clerk",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Two names on the chart",
+  "biography": "stories/residents/08/06-two-names-on-the-chart.md#ah-r1103",
+  "life": "“I still remember writing thousands of names on thin index cards.” People around the entrance to the Wash House know Denise by a small Wednesday habit. Denise stops for local notices even on a day without a load to wash.",
+  "voice": "I built the paper index and recognized my teenage handwriting. I was proud then of alphabetizing so quickly.",
+  "appearance": "Denise has silver temples and a dark fringe, a softly rounded chin under sharp cheekbones, and a favorite piece of clothing, an olive canvas jacket. It usually goes with one cuff folded back twice. When somebody else has the floor, Denise gathers both sleeves neatly before settling in.",
+  "personality": "Denise loves a well-told anecdote and distrusts the neat ending. The parts Denise remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To correct the old alphabetical division.",
+  "family": "Greta Falk is Denise’s younger cousin. Denise chooses whether they walk home or sit a while. Greta brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Ten fingers*, Greta says, “I was halfway through arranging the colors into a gradient when she caught me.”",
+  "connections": "Sam Fox. The old index and an old holiday card give the clerks a second identity check.",
+  "familyIds": [
+    "AH-R0105"
+  ],
+  "connectionIds": [
+    "AH-R1107"
+  ],
+  "reactions": [
+    {
+      "situation": "A clerk calls the wrong surname in the waiting room",
+      "response": "Denise waits for the patient to give a preferred public name before repeating it.",
+      "asWritten": "A clerk calls the wrong surname in the waiting room. Denise waits for the patient to give a preferred public name before repeating it."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Denise starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Denise starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Denise includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Denise includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

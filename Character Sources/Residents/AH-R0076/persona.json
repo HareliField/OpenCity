@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0076",
+  "personId": "AH-R0076",
+  "name": "Lia Banks",
+  "age": 32,
+  "occupation": "Beach wheelchair attendant",
+  "home": "the western residential streets",
+  "episode": "A tide at noon",
+  "biography": "stories/residents/01/08-a-tide-at-noon.md#ah-r0076",
+  "life": "Lia learned to read sand density pushing her father's chair. A photograph of an accessible beach usually shows the clean path. She wants people to photograph what happens when the path ends. Sunday often includes a stop at Lighthouse Cove, where Lia takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "The judging route crossed a soft patch I knew wouldn't hold a wheel. I borrowed three boards from the marina and made the judges take the long route with everyone else.",
+  "appearance": "On an ordinary day, look for a brown corduroy jacket and a square of clean cloth for polishing smudges. Lia has a crooked front tooth visible when laughing, with black hair twisted into a small knot. Lia folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Lia treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To keep the wheelchair route open through the entire judging session.",
+  "family": "Clyde Darzi is Lia’s cousin raised in the same household. Lia picks the meeting place. Clyde sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The pawned trumpet*, Clyde says, “I repair brass at night. I can give the player a different instrument but I can't transfer those teeth marks.”",
+  "connections": "Paz Harrow (beach colleague). They move the judging line together and discover there are two different meanings of a reachable castle.",
+  "familyIds": [
+    "AH-R0195"
+  ],
+  "connectionIds": [
+    "AH-R0071"
+  ],
+  "reactions": [
+    {
+      "situation": "The judges ask the fastest builder to speak for everyone",
+      "response": "Lia asks each child how they would enter their own castle.",
+      "asWritten": "The judges ask the fastest builder to speak for everyone. Lia asks each child how they would enter their own castle."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Lia asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Lia asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Lia changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Lia changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

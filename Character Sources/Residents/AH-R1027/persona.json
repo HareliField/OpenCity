@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1027",
+  "personId": "AH-R1027",
+  "name": "Dale Crawford",
+  "age": 46,
+  "occupation": "Shoe hire clerk",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A dance for two fathers",
+  "biography": "stories/residents/07/13-a-dance-for-two-fathers.md#ah-r1027",
+  "life": "“I still remember lending dress shoes to someone afraid to dance.” On Saturday, near Paper & Pine Books, Dale starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I lend formal shoes. I exchanged two right shoes so the men had to meet before the ceremony.",
+  "appearance": "On an ordinary day, look for a mustard canvas overshirt and a replacement button a shade darker than the others. Dale has fine brows over wide-set eyes, with a center part and straight chestnut hair. Dale grins on one side while the eyes stay serious during a conversation.",
+  "personality": "Dale tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Dale will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To get the fathers into the same room before the event.",
+  "family": "Lisa Anders is Dale’s cousin raised in the same household. Dale is allowed to ask about the bad news afterward. Lisa calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The hospital radio*, Lisa says, “I can rebuild the cabinet as a bedside shelf.”",
+  "connections": "Layla March. A pair of formal shoes and the last stack of chairs get two adults into the room early.",
+  "familyIds": [
+    "AH-R0358"
+  ],
+  "connectionIds": [
+    "AH-R1029"
+  ],
+  "reactions": [
+    {
+      "situation": "The school prints only one father's name",
+      "response": "Dale asks the student which names and relationships should appear before reprinting.",
+      "asWritten": "The school prints only one father's name. Dale asks the student which names and relationships should appear before reprinting."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Dale suggests one straightforward message without accusations and gives the friend time to answer.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Dale suggests one straightforward message without accusations and gives the friend time to answer."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Dale repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Dale repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

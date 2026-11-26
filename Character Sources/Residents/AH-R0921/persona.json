@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0921",
+  "personId": "AH-R0921",
+  "name": "Priya Vance",
+  "age": 67,
+  "occupation": "Property millionaire and former importer",
+  "home": "the western residential streets",
+  "episode": "A widow bids again",
+  "biography": "stories/residents/07/03-a-widow-bids-again.md#ah-r0921",
+  "life": "“I still remember my wife's first room with one cracked window latch.” People around the downtown fountain know Priya by a small Wednesday habit. Priya keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I can outbid them without touching my everyday account. That fact has been keeping me awake.",
+  "appearance": "On an ordinary day, look for a mustard canvas overshirt and a stitched row of blue crosses along an old repair. Priya has one cheek that creases before the other, with a thin scattering of white hair over the crown. Priya looks toward the door whenever a name is called during a conversation.",
+  "personality": "Priya is fond of ambitious ideas and deeply suspicious of grand openings. The question Priya asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To secure a future for the remembered room and its tenants.",
+  "family": "Grace Reeves is Priya’s younger cousin. Priya calls about good news first. Grace is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *School after sixty*, Grace says, “I am younger than everyone taking my class.”",
+  "connections": "Bianca Ward (property broker). A bidder who can raise the price in seconds asks the broker to read her the actual names.",
+  "familyIds": [
+    "AH-R1263"
+  ],
+  "connectionIds": [
+    "AH-R0924"
+  ],
+  "reactions": [
+    {
+      "situation": "The millionaire bidder offers a private deal",
+      "response": "Priya gets the offer written down where the tenant group can consider it.",
+      "asWritten": "The millionaire bidder offers a private deal. Priya gets the offer written down where the tenant group can consider it."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Priya asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Priya asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Priya accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Priya accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

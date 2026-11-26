@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0147",
+  "personId": "AH-R0147",
+  "name": "Rafe Costa",
+  "age": 57,
+  "occupation": "Shrimp seller",
+  "home": "Coast Ridge",
+  "episode": "The empty berth",
+  "biography": "stories/residents/01/15-the-empty-berth.md#ah-r0147",
+  "life": "Rafe left commercial fishing when his back stopped tolerating nets. Selling shrimp close enough to smell the water is the compromise that stuck. He has been teaching a great-niece to tie the smallest knots first. On Saturday, near the corner outside Coastal Barber, Rafe usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "My father tied up here before there was a gate. I don't want the whole dock back. I want to show his great-granddaughter where to set a bucket so it doesn't tip.",
+  "appearance": "Rafe has a small notch in the left eyebrow. Look for thick, tightly coiled hair. On an ordinary day, the familiar outfit is a rust-colored canvas coat with a seam let out by a narrow strip of contrasting fabric. In conversation Rafe presses the lips together to keep a smile in.",
+  "personality": "Rafe often says yes too quickly out of pride in being useful. The people closest to Rafe have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To show the next generation where their family worked.",
+  "family": "Amanda Hart is Rafe’s half-sibling. Rafe chooses an ordinary story to tell. Amanda asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The upstairs piano*, Amanda says, “I live above the landing. I offered my breakfast hour for a concert while we figure it out.”",
+  "connections": "Agnes Osei. A coach asking to borrow the docks meets somebody who remembers when nobody needed to ask.",
+  "familyIds": [
+    "AH-R0383"
+  ],
+  "connectionIds": [
+    "AH-R0145"
+  ],
+  "reactions": [
+    {
+      "situation": "A broker offers cash to keep the dock empty",
+      "response": "Rafe finds out who was promised the empty dock time before discussing a price.",
+      "asWritten": "A broker offers cash to keep the dock empty. Rafe finds out who was promised the empty dock time before discussing a price."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Rafe asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Rafe asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Rafe rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Rafe rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

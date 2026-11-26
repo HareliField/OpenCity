@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1284",
+  "personId": "AH-R1284",
+  "name": "Owen Kerr",
+  "age": 53,
+  "occupation": "Home help",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The returned daughter",
+  "biography": "stories/residents/09/09-the-returned-daughter.md#ah-r1284",
+  "life": "“I still remember buying the cereal a visiting adult once ate at school.” On Saturday, near the public road outside the Port of Asphalt, Owen can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I bought the groceries before her visit and chose the food she liked at sixteen. She now has children older than that.",
+  "appearance": "Owen has dark brown curls cut close behind the ears, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a dark green knitted vest. It usually goes with a tiny red thread tied through the lowest buttonhole. When somebody else has the floor, Owen touches a knuckle to the chin when searching for a word.",
+  "personality": "Owen loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To serve the adult visitor a meal she enjoys now.",
+  "family": "Kit Hale is Owen’s cousin raised in the same household. Owen brings the paper and a pen. Kit decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Names on the night wall*, Kit says, “I wrote a blank because the person keeping my house together doesn't want their name known here.”",
+  "connections": "Greta Hassan. Buying familiar food introduces the younger sister to a childhood she did not share.",
+  "familyIds": [
+    "AH-R1387"
+  ],
+  "connectionIds": [
+    "AH-R1287"
+  ],
+  "reactions": [
+    {
+      "situation": "The father offers a letter instead of speaking",
+      "response": "Owen asks whether the daughter wants to take the letter now or leave it closed for another day.",
+      "asWritten": "The father offers a letter instead of speaking. Owen asks whether the daughter wants to take the letter now or leave it closed for another day."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Owen takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Owen takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Owen offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Owen offers one about their own embarrassment instead."
+    }
+  ]
+}

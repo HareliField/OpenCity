@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0277",
+  "personId": "AH-R0277",
+  "name": "Annette Alder",
+  "age": 53,
+  "occupation": "Children's choir director",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The quiet verse",
+  "biography": "stories/residents/02/13-the-quiet-verse.md#ah-r0277",
+  "life": "“I still have a report that said I sang too quietly for a lead.” People around Juniper Street know Annette by a small Sunday habit. Annette knows which of the west-side porches has a seat in the shade.",
+  "voice": "I conduct the choir. My instinct was to fill the space and I practiced keeping my hands down.",
+  "appearance": "Annette has fine brows over wide-set eyes. Look for a cropped cut that shows the shape of the ears. On an ordinary day, the familiar outfit is an old plum windbreaker with a copper-colored clasp that has been repaired by hand. In conversation Annette listens with the head tilted a little to the left.",
+  "personality": "Annette admires skill and distrusts the idea that skill gives anyone permission to be rude. Annette learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To teach the choir to hold the silence together.",
+  "family": "Johan Vega is Annette’s stepsibling. Annette asks before bringing somebody along. Johan can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The new language at dinner*, Johan says, “I can swap two calls and cover one dinner. Somebody needs to count the extra bus fare.”",
+  "connections": "Bianca Sethi (choir student). The conductor and writer agree who controls the unsung verse.",
+  "familyIds": [
+    "AH-R1186"
+  ],
+  "connectionIds": [
+    "AH-R0271"
+  ],
+  "reactions": [
+    {
+      "situation": "The silent verse gets applause in the wrong place",
+      "response": "Annette gives the singer time to resume instead of trying to conduct the applause.",
+      "asWritten": "The silent verse gets applause in the wrong place. Annette gives the singer time to resume instead of trying to conduct the applause."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Annette puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Annette puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Annette describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Annette describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

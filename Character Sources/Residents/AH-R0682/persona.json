@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0682",
+  "personId": "AH-R0682",
+  "name": "Rain Malik",
+  "age": 33,
+  "occupation": "Flower courier",
+  "home": "the western residential streets",
+  "episode": "An address in pencil",
+  "biography": "stories/residents/05/09-an-address-in-pencil.md#ah-r0682",
+  "life": "“I still remember delivering birthday flowers a street too far south.” On Saturday, near Lighthouse Cove, Rain takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I delivered flowers to the wrong widow. She walked them over and stayed for dinner.",
+  "appearance": "Rain has a strong profile and a little space between the front teeth. Look for thick, tightly coiled hair. On an ordinary day, the familiar outfit is a washed violet jersey with a stitched row of blue crosses along an old repair. In conversation Rain steadies a cup with both hands while listening.",
+  "personality": "Rain treats a small promise with the gravity others reserve for a contract. This makes Rain lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To deliver the birthday flowers to both doorsteps gracefully.",
+  "family": "Adriana Ingram is Rain’s cousin. Rain saves a place. Adriana chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The expensive summer*, Adriana says, “I know the former chef's recipe. The family asked for it and I want her blessing before passing it on.”",
+  "connections": "Clara Ngo. A delayed letter and the misdelivered flowers travel to neighboring porches.",
+  "familyIds": [
+    "AH-R0976"
+  ],
+  "connectionIds": [
+    "AH-R0684"
+  ],
+  "reactions": [
+    {
+      "situation": "A resident asks for the old metal number back",
+      "response": "Rain asks who has already taken the metal down and where it was left.",
+      "asWritten": "A resident asks for the old metal number back. Rain asks who has already taken the metal down and where it was left."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Rain keeps the neighbor's place and finds out whether the stranger needs a different kind of help.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Rain keeps the neighbor's place and finds out whether the stranger needs a different kind of help."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Rain says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Rain says what can be returned and asks whether that will do."
+    }
+  ]
+}

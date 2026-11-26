@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0457",
+  "personId": "AH-R0457",
+  "name": "Celia Lai",
+  "age": 57,
+  "occupation": "Part-time receptionist",
+  "home": "the blocks north of the port",
+  "episode": "The button card",
+  "biography": "stories/residents/04/01-the-button-card.md#ah-r0457",
+  "life": "“I still remember the first clasp I could close without help.” People around the market by Market Flats know Celia by a small Friday habit. Celia often waits until the delivery baskets are stacked before going in.",
+  "voice": "I need an enormous button I can close with one useful thumb.",
+  "appearance": "Celia has a long plait tucked inside the collar, two dimples that appear only with a full smile, and a favorite piece of clothing, an unlined tan jacket. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Celia folds a paper napkin into quarters without noticing.",
+  "personality": "Celia can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Celia can afford to give, and family knows to take it seriously.",
+  "agenda": "To fasten a coat one-handed.",
+  "family": "Cecil Hassan is Celia’s stepsibling. Celia checks the date twice. Cecil brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The free fringe*, Cecil says, “I used to dye my fringe to hide a scar. I came to have the scar shown for the first time.”",
+  "connections": "Nelson Gallagher. They put the largest easy fastening where the person who needs it can actually reach.",
+  "familyIds": [
+    "AH-R0706"
+  ],
+  "connectionIds": [
+    "AH-R0456"
+  ],
+  "reactions": [
+    {
+      "situation": "A child takes the most valuable button",
+      "response": "Celia lets the child show what the button is for before calling it too valuable.",
+      "asWritten": "A child takes the most valuable button. Celia lets the child show what the button is for before calling it too valuable."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Celia asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Celia asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Celia suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Celia suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1088",
+  "personId": "ah-pd-130",
+  "name": "Leo Hart",
+  "age": 46,
+  "occupation": "Forensic analyst",
+  "home": "Midtown",
+  "episode": "First shift back",
+  "biography": "stories/residents/08/04-first-shift-back.md#ah-r1088",
+  "life": "“I still remember walking a grieving colleague down the ordinary service stairs.” On Thursday, near the approach to Seabright Court, Leo likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I was the first person they asked for advice. I'm better at explaining shifts than asking how someone's father died.",
+  "appearance": "Off duty, look for a moss-green cardigan and a knotted piece of sail thread on a key ring. Leo has a flat bridge to the nose and a mobile brow, with a high puff tied with plain cord. Leo takes off the watch before a long conversation during a conversation.",
+  "personality": "Leo gets protective of anybody who comes into a meeting unprepared. Leo privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To offer practical support without pretending to understand bereavement.",
+  "family": "Amelia Liu is Leo’s older cousin. Leo asks before bringing somebody along. Amelia can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A house divided kindly*, Amelia says, “I grew up with no front door of my own. I'd like a shared gate I can close at night.”",
+  "connections": "Eva Moss. Private family information only reaches the station with the returning worker's say.",
+  "familyIds": [
+    "AH-R1432"
+  ],
+  "connectionIds": [
+    "AH-R1083"
+  ],
+  "reactions": [
+    {
+      "situation": "A coworker asks for private details about the leave",
+      "response": "Leo leaves the reason for leave with the returning colleague and redirects the question to working arrangements.",
+      "asWritten": "A coworker asks for private details about the leave. Leo leaves the reason for leave with the returning colleague and redirects the question to working arrangements."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Leo writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Leo writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Leo offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Leo offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

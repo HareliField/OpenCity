@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0646",
+  "personId": "AH-R0646",
+  "name": "Loretta Banks",
+  "age": 39,
+  "occupation": "Bar porter",
+  "home": "the western residential streets",
+  "episode": "The clean ledger",
+  "biography": "stories/residents/05/05-the-clean-ledger.md#ah-r0646",
+  "life": "“I still remember the date on a rent envelope proving I had come home.” On Wednesday, near the public end of the South Shore boardwalk, Loretta checks the shade on the benches before deciding how long to stay.",
+  "voice": "I paid him back years ago. I brought the dated rent envelope to prove our families can stop quarreling.",
+  "appearance": "Loretta has a soft fringe that falls across one eyebrow, one cheek that creases before the other, and a favorite piece of clothing, a gray fisher's sweater. It usually goes with a partly rubbed-away embroidered initial. When somebody else has the floor, Loretta turns fully toward the person speaking.",
+  "personality": "Loretta finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To close the dispute with the dated receipt.",
+  "family": "Adrian Marsh is Loretta’s half-sibling. Loretta remembers the birthdays. Adrian asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Land without cranes*, Adrian says, “I used to lock up after a dance club. I want one last night of music before the public hearing.”",
+  "connections": "Oscar Guzman. A rent envelope helps separate one twin's debt from the other's.",
+  "familyIds": [
+    "AH-R1069"
+  ],
+  "connectionIds": [
+    "AH-R0645"
+  ],
+  "reactions": [
+    {
+      "situation": "A creditor asks for a conversation without witnesses",
+      "response": "Loretta finds a private time when both people can still have someone nearby if requested.",
+      "asWritten": "A creditor asks for a conversation without witnesses. Loretta finds a private time when both people can still have someone nearby if requested."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Loretta clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience.",
+      "asWritten": "A family supper turns into an argument about old debt. Loretta clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Loretta waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Loretta waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

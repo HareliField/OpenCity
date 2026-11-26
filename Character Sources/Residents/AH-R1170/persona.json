@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1170",
+  "personId": "AH-R1170",
+  "name": "Dale Pierce",
+  "age": 31,
+  "occupation": "Night café worker",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The high road home",
+  "biography": "stories/residents/08/12-the-high-road-home.md#ah-r1170",
+  "life": "“I still remember coffee going cold while the headlights turned back.” People around Maré Coffee know Dale by a small Monday habit. Dale likes the table where people coming off shift stop checking the time.",
+  "voice": "I waited at the far end with coffee. I am proud that the first cup went cold and they still tried again.",
+  "appearance": "Dale has thick, tightly coiled hair, a long face and high cheekbones, and a favorite piece of clothing, a cropped bottle-green coat. It usually goes with a small enamel bird on the lapel. When somebody else has the floor, Dale rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To wait at the far end on another morning.",
+  "family": "Kathleen Garza is Dale’s older cousin. Dale sets the time to leave. Kathleen picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The porch auction*, Kathleen says, “I left my weekly pay in the cushion years ago.”",
+  "connections": "Sofia Valdez. A familiar song and a cup at the far end provide two markers for a practice drive.",
+  "familyIds": [
+    "AH-R0534"
+  ],
+  "connectionIds": [
+    "AH-R1169"
+  ],
+  "reactions": [
+    {
+      "situation": "A friend insists the return journey must happen that night",
+      "response": "Dale asks the learner when they want to try again, leaving the friend's timetable out of it.",
+      "asWritten": "A friend insists the return journey must happen that night. Dale asks the learner when they want to try again, leaving the friend's timetable out of it."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Dale asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Dale asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Dale listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Dale listens first to the account of how it was actually used."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0049",
+  "personId": "AH-R0049",
+  "name": "Tessa Abreu",
+  "age": 37,
+  "occupation": "Probation officer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The aquarium",
+  "biography": "stories/residents/01/05-the-aquarium.md#ah-r0049",
+  "life": "Tessa can finish a form in a moving bus. She is trying to learn when a form completed that efficiently leaves out the only reason the visit mattered. People around the steps at Pier Beach know Tessa by a small Sunday habit. Tessa watches the working part of the waterfront before turning toward the open water.",
+  "voice": "My appointment with the glazier ended up on a pavement with our sleeves wet. He was late because he was holding up one corner. That's the sentence I put in his file.",
+  "appearance": "Tessa has a strong profile and a little space between the front teeth. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a moss-green cardigan with a partly rubbed-away embroidered initial. In conversation Tessa rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Tessa keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Tessa wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To make sure the glazier's missed minutes are understood in context.",
+  "family": "Gerard Ito is Tessa’s half-sibling. Tessa calls about good news first. Gerard is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The expensive summer*, Gerard says, “I suggested pretending we'd already eaten. My mum turned the menu over and told the children the truth.”",
+  "connections": "Pat Doran (supervised client). They finish a probation conversation with a heavy corner of glass between their hands.",
+  "familyIds": [
+    "AH-R0971"
+  ],
+  "connectionIds": [
+    "AH-R0044"
+  ],
+  "reactions": [
+    {
+      "situation": "A reporter asks which neighbor held the aquarium key",
+      "response": "Tessa asks whether the tenant wants the key holder named before saying anything to the reporter.",
+      "asWritten": "A reporter asks which neighbor held the aquarium key. Tessa asks whether the tenant wants the key holder named before saying anything to the reporter."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Tessa takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Tessa takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Tessa offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Tessa offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

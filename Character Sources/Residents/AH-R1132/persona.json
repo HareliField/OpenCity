@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1132",
+  "personId": "AH-R1132",
+  "name": "Dale Lane",
+  "age": 14,
+  "occupation": "Foster child and secondary pupil",
+  "home": "the western residential streets",
+  "episode": "The third bedroom",
+  "biography": "stories/residents/08/09-the-third-bedroom.md#ah-r1132",
+  "life": "“I still remember the first room I could sit in with the light turned off.” People around Harbour Bakery know Dale by a small Monday habit. Dale buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I would like a private room so I can cry without making him think it's his fault.",
+  "appearance": "Dale has a narrow face with an expressive upper lip. Look for short black hair swept back. Outside school, the familiar outfit is a dark green knitted vest with a narrow brass watch set a little fast. In conversation Dale holds eye contact until the other person has finished.",
+  "personality": "Dale feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To get room to cry without alarming the brother.",
+  "family": "Dana Wong is Dale’s first cousin once removed. Dale chooses whether they walk home or sit a while. Dana brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The day sailor's divorce*, Dana says, “I co-own the boat and am tired of becoming a messenger between people who know each other's numbers.”",
+  "connections": "Cyrus Keller (foster sibling). The siblings want different things from the same closed bedroom door. Also in the story is Ivy Burke (foster parent).",
+  "familyIds": [
+    "AH-R1043"
+  ],
+  "connectionIds": [
+    "AH-R1131",
+    "AH-R1133"
+  ],
+  "reactions": [
+    {
+      "situation": "The lodger is asked to leave on short notice",
+      "response": "Dale checks where the lodger can go before treating an empty room as a settled fact.",
+      "asWritten": "The lodger is asked to leave on short notice. Dale checks where the lodger can go before treating an empty room as a settled fact."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Dale tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Dale tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Dale lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Dale lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

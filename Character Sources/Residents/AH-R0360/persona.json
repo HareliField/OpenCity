@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0360",
+  "personId": "AH-R0360",
+  "name": "Oakley Ibrahim",
+  "age": 68,
+  "occupation": "Retired ward attendant",
+  "home": "the western residential streets",
+  "episode": "The hospital radio",
+  "biography": "stories/residents/03/06-the-hospital-radio.md#ah-r0360",
+  "life": "“I still remember a cabinet brought into care as somebody's one luxury.” People around the approach to Seabright Court know Oakley by a small Sunday habit. Oakley likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I promised the old one to a collector. I told him the people who touched it get first choice.",
+  "appearance": "Oakley is easy to recognize by a gray streak running back from the forehead and heavy brows and an unusually delicate jaw. Usually dressed in an unlined tan jacket with one cuff folded back twice, Oakley presses the lips together to keep a smile in when listening.",
+  "personality": "Oakley finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To ask regular ward listeners before selling any radio part.",
+  "family": "Alex Carbone is Oakley’s younger relative by marriage. Oakley offers the first invitation. Alex gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The engine lullaby*, Alex says, “I counted the pulses and set a cradle-rocking tune to them.”",
+  "connections": "Stevie Heath. A shoelace repair makes the retired keeper rethink sending the radio to a collector.",
+  "familyIds": [
+    "AH-R0600"
+  ],
+  "connectionIds": [
+    "AH-R0353"
+  ],
+  "reactions": [
+    {
+      "situation": "The old tuning wheel goes missing from the shelf",
+      "response": "Oakley checks the repair bench before assuming anyone took the dial.",
+      "asWritten": "The old tuning wheel goes missing from the shelf. Oakley checks the repair bench before assuming anyone took the dial."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Oakley walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Oakley walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Oakley points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Oakley points to the person who noticed the original mistake."
+    }
+  ]
+}

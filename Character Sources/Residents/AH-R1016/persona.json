@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1016",
+  "personId": "AH-R1016",
+  "name": "Roland Pierce",
+  "age": 31,
+  "occupation": "Mural artist",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The crash anniversary",
+  "biography": "stories/residents/07/12-the-crash-anniversary.md#ah-r1016",
+  "life": "“I still remember a painted face turning familiar on my daily commute.” Monday often includes a stop at the steps at Pier Beach, where Roland watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I wanted a mural until the survivor told me she would have to pass her face twice every day.",
+  "appearance": "On an ordinary day, look for a pale blue work shirt and a knotted piece of sail thread on a key ring. Roland has a round face with a pronounced chin, with a blunt cut just below the ears. Roland draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Roland is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Roland is concerned.",
+  "agenda": "To get the survivor's consent before designing any mural.",
+  "family": "Rowan Roman is Roland’s older cousin. Roland asks what the birthday guest would like this year. Rowan remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The waiting-room plant*, Rowan says, “My partner and I argued about who kept it alive.”",
+  "connections": "Lee Ingram. The survivor can choose whether a picture should mark a road they must travel every day.",
+  "familyIds": [
+    "AH-R0508"
+  ],
+  "connectionIds": [
+    "AH-R1011"
+  ],
+  "reactions": [
+    {
+      "situation": "The victim's family wants a private anniversary meal",
+      "response": "Roland lets the family make its own guest list and keeps press questions away from the table.",
+      "asWritten": "The victim's family wants a private anniversary meal. Roland lets the family make its own guest list and keeps press questions away from the table."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Roland asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Roland asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Roland asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Roland asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

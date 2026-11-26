@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0498",
+  "personId": "AH-R0498",
+  "name": "Carla Lam",
+  "age": 46,
+  "occupation": "Defense attorney",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The dead man's tab",
+  "biography": "stories/residents/04/05-the-dead-man-s-tab.md#ah-r0498",
+  "life": "“I still remember a client apologizing to an empty chair.” On Wednesday, near the entrance to the Wash House, Carla stops for local notices even on a day without a load to wash.",
+  "voice": "I was his lawyer. He never once asked me to wipe out this particular debt.",
+  "appearance": "Carla has black hair twisted into a small knot, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with a cloth patch so neatly matched it only shows in strong light. When somebody else has the floor, Carla looks at people's hands before looking at what they carry.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To preserve the one bill the client never disputed.",
+  "family": "Denise Emery is Carla’s cousin. Carla offers the first invitation. Denise gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Two left slippers*, Denise says, “I ticked footwear present on the form. I have added a chair where people can actually try the pair.”",
+  "connections": "Karen Pierce. A date on the old bill belongs in the lawyer's account of the unclaimed debt.",
+  "familyIds": [
+    "AH-R0653"
+  ],
+  "connectionIds": [
+    "AH-R0494"
+  ],
+  "reactions": [
+    {
+      "situation": "The deli is asked to publish the whole tab",
+      "response": "Carla asks who owns the personal information on the tab before any of it leaves the counter.",
+      "asWritten": "The deli is asked to publish the whole tab. Carla asks who owns the personal information on the tab before any of it leaves the counter."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Carla asks which other bill repayment would displace, then offers only what the household can afford to give.",
+      "asWritten": "A friend asks for a loan due back before payday. Carla asks which other bill repayment would displace, then offers only what the household can afford to give."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Carla listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Carla listens first to the account of how it was actually used."
+    }
+  ]
+}

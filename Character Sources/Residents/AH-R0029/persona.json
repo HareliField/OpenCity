@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0029",
+  "personId": "AH-R0029",
+  "name": "Min Calder",
+  "age": 39,
+  "occupation": "Foundation bookkeeper",
+  "home": "Old Town",
+  "episode": "The small signature",
+  "biography": "stories/residents/01/03-the-small-signature.md#ah-r0029",
+  "life": "Min used to balance the books for a dance hall that ran out of money with six weddings still to host. Public accounts make her nervous when they only record what happened to the cash. Monday often includes a stop at the market by Market Flats, where Min often waits until the delivery baskets are stacked before going in.",
+  "voice": "The bank charged more to print the display than the cart raised. I separated those lines on the public statement. It will make our winter appeal awkward, and it ought to.",
+  "appearance": "Min is easy to recognize by close-cropped dark curls and a long face and high cheekbones. Usually dressed in a sand-colored linen shirt with a thin silver ring worn on a cord, Min looks at people's hands before looking at what they carry when listening.",
+  "personality": "Min often says yes too quickly out of pride in being useful. The people closest to Min have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To publish the cost of promoting the donation alongside the donation.",
+  "family": "Jesse Arnett is Min’s cousin raised in the same household. Min offers the first invitation. Jesse gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Nine unpaid hours*, Jesse says, “I took another job at sea before the meeting.”",
+  "connections": "Luz Aranda. They count the little donations against the costs the formal accounts left out.",
+  "familyIds": [
+    "AH-R0766"
+  ],
+  "connectionIds": [
+    "AH-R0023"
+  ],
+  "reactions": [
+    {
+      "situation": "The paper wants a photograph with only the biggest donor",
+      "response": "Min asks the vendor where they would like to stand and tells the photographer who paid the eleven dollars.",
+      "asWritten": "The paper wants a photograph with only the biggest donor. Min asks the vendor where they would like to stand and tells the photographer who paid the eleven dollars."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Min checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Min checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Min rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Min rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

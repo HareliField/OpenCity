@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0018",
+  "personId": "AH-R0018",
+  "name": "Leon Armas",
+  "age": 56,
+  "occupation": "Union delegate",
+  "home": "Midtown",
+  "episode": "A chair on the quay",
+  "biography": "stories/residents/01/02-a-chair-on-the-quay.md#ah-r0018",
+  "life": "Leon has given fifteen retirement speeches, all of them wrong about one thing. Now he takes the person concerned for tea first and asks which story they would hate to hear repeated at the microphone. On Thursday, near the public road outside the Port of Asphalt, Leon can recognize shift change by the lull between two groups of walkers.",
+  "voice": "Everybody wants a retirement speech. He wants his granddaughter admitted past the gate for ten minutes. I spent the morning finding a quiet place on the public side for the picture.",
+  "appearance": "Leon is easy to recognize by a high puff tied with plain cord and a long face and high cheekbones. Usually dressed in a boxy denim jacket with a tiny red thread tied through the lowest buttonhole, Leon presses the lips together to keep a smile in when listening.",
+  "personality": "Leon keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Leon wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To get the granddaughter a place at the farewell within reach of her grandfather.",
+  "family": "Briar Patel is Leon’s second cousin. Leon offers the first invitation. Briar gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Laundry for a stranger*, Briar says, “My son needs a good shirt for court. I asked the volunteer if the stranger might lend it.”",
+  "connections": "Mateo Serrat. They have undertaken to get a retirement meal and a granddaughter to the same side of the port gate.",
+  "familyIds": [
+    "AH-R0586"
+  ],
+  "connectionIds": [
+    "AH-R0015"
+  ],
+  "reactions": [
+    {
+      "situation": "A farewell photographer asks everyone to move aside",
+      "response": "Leon checks that the granddaughter can see the chair before people start arranging the adults.",
+      "asWritten": "A farewell photographer asks everyone to move aside. Leon checks that the granddaughter can see the chair before people start arranging the adults."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Leon sits beside them without expecting a performance and asks if they want to go outside.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Leon sits beside them without expecting a performance and asks if they want to go outside."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Leon offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Leon offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

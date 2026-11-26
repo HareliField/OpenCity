@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1420",
+  "personId": "AH-R1420",
+  "name": "Cameron Tsai",
+  "age": 51,
+  "occupation": "Bookshop owner",
+  "home": "the streets around Foundry Lofts",
+  "episode": "An empty dedication",
+  "biography": "stories/residents/10/07-an-empty-dedication.md#ah-r1420",
+  "life": "“I still remember selling two identical books for entirely different family reasons.” Friday often includes a stop at the market by Market Flats, where Cameron often waits until the delivery baskets are stacked before going in.",
+  "voice": "I own Paper & Pine. We are selling a few copies with the dedication still blank for readers to give away.",
+  "appearance": "Cameron is easy to recognize by short copper curls and full cheeks and a mouth that pulls slightly to one side. Usually dressed in a red windbreaker with a tiny red thread tied through the lowest buttonhole, Cameron looks at people's hands before looking at what they carry when listening.",
+  "personality": "Cameron has a talent for getting adversaries to laugh at exactly the same thing. Cameron knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To offer a few copies readers can dedicate themselves.",
+  "family": "Penelope Hong is Cameron’s cousin raised in the same household. Cameron can always ask for five minutes alone. Penelope asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The upstairs piano*, Penelope says, “I trained as a mover before I played professionally.”",
+  "connections": "Miriam Lim. The bookseller can leave copies blank for teachers who have a story of their own to dedicate.",
+  "familyIds": [
+    "AH-R0382"
+  ],
+  "connectionIds": [
+    "AH-R1416"
+  ],
+  "reactions": [
+    {
+      "situation": "A reader asks for a copy with the page still blank",
+      "response": "Cameron keeps a clean, blank copy aside for the reader to dedicate.",
+      "asWritten": "A reader asks for a copy with the page still blank. Cameron keeps a clean, blank copy aside for the reader to dedicate."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Cameron brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Cameron brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Cameron asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Cameron asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

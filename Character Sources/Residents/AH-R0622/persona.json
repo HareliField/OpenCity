@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0622",
+  "personId": "AH-R0622",
+  "name": "Clara Baines",
+  "age": 19,
+  "occupation": "Scholarship applicant",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The trust with a typo",
+  "biography": "stories/residents/05/03-the-trust-with-a-typo.md#ah-r0622",
+  "life": "“I still remember waiting at a mailbox for my examination date.” Wednesday often includes a stop at the window at Night Shift Donuts, where Clara knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I feared the nickname would disqualify my form and missed the deadline trying to replace it.",
+  "appearance": "Clara has a center part and straight chestnut hair, one cheek that creases before the other, and a favorite piece of clothing, a boxy denim jacket. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Clara holds eye contact until the other person has finished.",
+  "personality": "Clara talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Clara's ways of saying that it is all right to leave.",
+  "agenda": "To get the delayed application accepted.",
+  "family": "Emil Lund is Clara’s second cousin. Clara brings the paper and a pen. Emil decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *A chair of one's own*, Emil says, “I have always wanted my own salon. I sat in that chair after closing and costed the dream down to the last bottle.”",
+  "connections": "Rae Villa. A discarded envelope is proof that a missed deadline began with a plausible mistake.",
+  "familyIds": [
+    "AH-R0857"
+  ],
+  "connectionIds": [
+    "AH-R0628"
+  ],
+  "reactions": [
+    {
+      "situation": "The founder is asked to use a formal name",
+      "response": "Clara leaves the founder to decide what her own name on a letter should be.",
+      "asWritten": "The founder is asked to use a formal name. Clara leaves the founder to decide what her own name on a letter should be."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Clara accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Clara accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Clara says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Clara says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

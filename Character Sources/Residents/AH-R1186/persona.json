@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1186",
+  "personId": "AH-R1186",
+  "name": "Johan Vega",
+  "age": 39,
+  "occupation": "Care rota coordinator",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The new language at dinner",
+  "biography": "stories/residents/08/14-the-new-language-at-dinner.md#ah-r1186",
+  "life": "“I still remember taking two buses to the home across the valley.” Sunday often includes a stop at the entrance to the Wash House, where Johan stops for local notices even on a day without a load to wash.",
+  "voice": "I can swap two calls and cover one dinner. Somebody needs to count the extra bus fare.",
+  "appearance": "Johan has a center part and straight chestnut hair, a narrow face with an expressive upper lip, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with one cuff folded back twice. When somebody else has the floor, Johan draws small circles on a tabletop while waiting.",
+  "personality": "Johan has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To pay for the extra journey behind a shift swap.",
+  "family": "Annette Alder is Johan’s stepsibling. Johan can always ask for five minutes alone. Annette asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The quiet verse*, Annette says, “I conduct the choir. My instinct was to fill the space and I practiced keeping my hands down.”",
+  "connections": "Remy Knight. An extra dinner trip puts a worker who recognizes the client's hand beside the plate.",
+  "familyIds": [
+    "AH-R0277"
+  ],
+  "connectionIds": [
+    "AH-R1190"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone asks a family member to translate an intimate question",
+      "response": "Johan offers a qualified interpreter and lets the client decide how much family should hear.",
+      "asWritten": "Someone asks a family member to translate an intimate question. Johan offers a qualified interpreter and lets the client decide how much family should hear."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Johan offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Johan offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Johan explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Johan explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

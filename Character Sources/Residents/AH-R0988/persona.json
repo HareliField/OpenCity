@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0988",
+  "personId": "AH-R0988",
+  "name": "Georgia Myers",
+  "age": 48,
+  "occupation": "Builder",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A tenant who stays",
+  "biography": "stories/residents/07/09-a-tenant-who-stays.md#ah-r0988",
+  "life": "“I still remember designing a room that blocked the only kitchen light.” On Monday, near the blocks below Foundry Lofts, Georgia checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I build tiny flats. I priced an addition and told everyone whose window it would shadow.",
+  "appearance": "Georgia has heavy brows and an unusually delicate jaw. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a long navy raincoat with a thin silver ring worn on a cord. In conversation Georgia gathers both sleeves neatly before settling in.",
+  "personality": "Georgia is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To price an addition without hiding the shadow it casts.",
+  "family": "Tali Ross is Georgia’s stepsibling. Georgia remembers the birthdays. Tali asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A clean coat for court*, Tali says, “I work the courthouse door and recognize that coat from its owner's weekly jury-duty arguments.”",
+  "connections": "Diana Romero. The manager has to see which resident's light a new room would take.",
+  "familyIds": [
+    "AH-R1248"
+  ],
+  "connectionIds": [
+    "AH-R0983"
+  ],
+  "reactions": [
+    {
+      "situation": "An elderly gardener wants to move just one tree",
+      "response": "Georgia checks that the tree can survive the move before it is lifted.",
+      "asWritten": "An elderly gardener wants to move just one tree. Georgia checks that the tree can survive the move before it is lifted."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Georgia offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Georgia offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Georgia helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Georgia helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

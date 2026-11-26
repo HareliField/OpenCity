@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0759",
+  "personId": "AH-R0759",
+  "name": "Amelia Kahn",
+  "age": 48,
+  "occupation": "Housing budget adviser",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The upstairs lease",
+  "biography": "stories/residents/06/01-the-upstairs-lease.md#ah-r0759",
+  "life": "“I still remember pricing shoes with one child in each size.” Friday often includes a stop at the steps at Pier Beach, where Amelia watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I wrote a budget in which nobody grows, gets ill or buys new shoes. I'm writing a second one with my daughter.",
+  "appearance": "Amelia is easy to recognize by a cropped cut that shows the shape of the ears and a straight nose and deep-set eyes. Usually dressed in a charcoal zip cardigan with a stitched row of blue crosses along an old repair, Amelia gives a little nod before asking a hard question when listening.",
+  "personality": "Amelia is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Amelia is by the number of tiny errands suddenly being done.",
+  "agenda": "To put school shoes and sick days into the budget.",
+  "family": "Sadie Cross is Amelia’s second cousin. Amelia saves a place. Sadie chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *A prize nobody entered*, Sadie says, “I wrote the piece to understand my brother's death.”",
+  "connections": "Dale Lloyd. They price real school clothes and real rent in the same week's money.",
+  "familyIds": [
+    "AH-R1111"
+  ],
+  "connectionIds": [
+    "AH-R0751"
+  ],
+  "reactions": [
+    {
+      "situation": "The household must choose between paying a deposit and renewing",
+      "response": "Amelia lays out the two household costs and asks which deadline comes first.",
+      "asWritten": "The household must choose between paying a deposit and renewing. Amelia lays out the two household costs and asks which deadline comes first."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Amelia walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Amelia walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Amelia agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Amelia agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

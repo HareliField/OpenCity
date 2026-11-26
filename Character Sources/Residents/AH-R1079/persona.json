@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1079",
+  "personId": "AH-R1079",
+  "name": "Parker Osborne",
+  "age": 54,
+  "occupation": "Estate clerk",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The guarantee",
+  "biography": "stories/residents/08/03-the-guarantee.md#ah-r1079",
+  "life": "“I still remember opening a debt letter addressed to a dead parent.” Wednesday often includes a stop at Paper & Pine Books, where Parker starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I once inherited a similar debt. I offered my ledger, including the years when I didn't speak to my brother.",
+  "appearance": "Parker has an aquiline nose and a square chin. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is an olive canvas jacket with a watch on a cracked leather band. In conversation Parker presses the lips together to keep a smile in.",
+  "personality": "Parker has a long memory for unfair prices and a short one for small insults. Parker can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To get siblings to read the old repayment ledger together.",
+  "family": "Charlotte Noel is Parker’s stepsibling. Parker can stop the walk at any corner. Charlotte chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The second dog*, Charlotte says, “I can't keep a dog in my flat. I've been feeding him through the fence and calling it ownership.”",
+  "connections": "Dale Hamm. A supplier's small mortgage explains why a carefully recorded old debt is worth studying.",
+  "familyIds": [
+    "AH-R0185"
+  ],
+  "connectionIds": [
+    "AH-R1075"
+  ],
+  "reactions": [
+    {
+      "situation": "A borrower learns exactly what the guarantee cost",
+      "response": "Parker puts the actual pledged property and repayment date on paper.",
+      "asWritten": "A borrower learns exactly what the guarantee cost. Parker puts the actual pledged property and repayment date on paper."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Parker asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Parker asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Parker agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Parker agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0475",
+  "personId": "AH-R0475",
+  "name": "Kit Evans",
+  "age": 38,
+  "occupation": "Recently laid-off line worker",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The savings club",
+  "biography": "stories/residents/04/03-the-savings-club.md#ah-r0475",
+  "life": "“I still remember being paid my last week's wages in coins.” Thursday often includes a stop at the approach to Seabright Court, where Kit likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I deposited a week's overtime just before getting laid off. I need to ask for it back in front of friends.",
+  "appearance": "Kit is easy to recognize by black hair twisted into a small knot and two dimples that appear only with a full smile. Usually dressed in a long navy raincoat with a printed handkerchief folded into the pocket, Kit touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Kit never tires of being shown how somebody makes a living. Kit can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To recover enough savings to bridge the lost wage.",
+  "family": "Rae Stein is Kit’s younger cousin. Kit remembers the birthdays. Rae asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The carer's afternoon*, Rae says, “I cover the hour between school and the evening shift.”",
+  "connections": "Sasha Perez. One member can give a room even as the other needs some of the savings back.",
+  "familyIds": [
+    "AH-R1033"
+  ],
+  "connectionIds": [
+    "AH-R0473"
+  ],
+  "reactions": [
+    {
+      "situation": "The club draws the name of someone who cannot travel",
+      "response": "Kit lets the winner describe where they actually want the money to go.",
+      "asWritten": "The club draws the name of someone who cannot travel. Kit lets the winner describe where they actually want the money to go."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Kit brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Kit brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Kit may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Kit may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

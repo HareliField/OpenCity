@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0046",
+  "personId": "AH-R0046",
+  "name": "Miro Quade",
+  "age": 30,
+  "occupation": "Grocery stocker",
+  "home": "Old Town",
+  "episode": "The aquarium",
+  "biography": "stories/residents/01/05-the-aquarium.md#ah-r0046",
+  "life": "Miro works split shifts so his boy can stay at one school. Their walk by the aquarium takes six minutes. On a week when other things have changed without warning, both of them rely more than they admit on those six minutes. On Wednesday, near the corner outside Coastal Barber, Miro usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "Those orange fish were the first things my boy named. I brought a bucket and promised him they would be fine. Now I have a child who expects daily news and two fish who don't know my name.",
+  "appearance": "On an ordinary day, look for a boxy denim jacket and a train token tied to a zipper pull. Miro has two dimples that appear only with a full smile, with a high puff tied with plain cord. Miro presses the lips together to keep a smile in during a conversation.",
+  "personality": "Miro loves a well-told anecdote and distrusts the neat ending. The parts Miro remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To keep the boy updated even if the fish have to go elsewhere.",
+  "family": "Marco Lam is Miro’s parent’s cousin. Miro leaves the first voice message. Marco calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A house divided kindly*, Marco says, “I want a paved path for my walking frame. The other gardener's favorite flowers are growing exactly where it should go.”",
+  "connections": "Leni Crow. One owes a child news of the fish. The other owes the tenant a chance to hear a song before anyone else does.",
+  "familyIds": [
+    "AH-R1437"
+  ],
+  "connectionIds": [
+    "AH-R0050"
+  ],
+  "reactions": [
+    {
+      "situation": "The tenant calls while everyone is arguing over the tank",
+      "response": "Miro quietens the group long enough for the tenant to hear the tank and decide what should happen next.",
+      "asWritten": "The tenant calls while everyone is arguing over the tank. Miro quietens the group long enough for the tenant to hear the tank and decide what should happen next."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Miro accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Miro accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Miro includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Miro includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

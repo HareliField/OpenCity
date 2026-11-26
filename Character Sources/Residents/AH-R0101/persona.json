@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0101",
+  "personId": "AH-R0101",
+  "name": "Suki Mossman",
+  "age": 47,
+  "occupation": "Nail technician",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Ten fingers",
+  "biography": "stories/residents/01/11-ten-fingers.md#ah-r0101",
+  "life": "Suki learned nails on her grandmother's hands, knuckles bent from long hospital shifts. She offers her wrist for clients to lean on and lets them decide when to take their own hand back. People around the courtyard by Ferry Street Rooms know Suki by a small Saturday habit. Suki prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I knew her husband by the hand he held out for her on our front step. This is her first birthday without him. I saved the untidiest finger for the shade he bought her by mistake.",
+  "appearance": "Suki has a narrow face with an expressive upper lip. Look for a dark undercut with a longer wave on top. After the last appointment, the familiar outfit is a plum-colored cardigan with a folded shopping list secured by a miniature clip. In conversation Suki looks toward the door whenever a name is called.",
+  "personality": "Suki never tires of being shown how somebody makes a living. Suki can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To keep the birthday appointment a celebration the client directs.",
+  "family": "Layla March is Suki’s second cousin. Suki offers the first invitation. Layla gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *A dance for two fathers*, Layla says, “I am the other father who didn't get invited.”",
+  "connections": "Fay March (birthday customer). The birthday woman has trusted these hands with every difficult appointment since her husband died.",
+  "familyIds": [
+    "AH-R1029"
+  ],
+  "connectionIds": [
+    "AH-R0102"
+  ],
+  "reactions": [
+    {
+      "situation": "A birthday guest starts rearranging other people's colors",
+      "response": "Suki asks the birthday client whether she wants the colors moved.",
+      "asWritten": "A birthday guest starts rearranging other people's colors. Suki asks the birthday client whether she wants the colors moved."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Suki asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Suki asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Suki may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Suki may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

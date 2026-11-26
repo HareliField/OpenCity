@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1462",
+  "personId": "AH-R1462",
+  "name": "Alexei Zhang",
+  "age": 49,
+  "occupation": "Delivery coordinator",
+  "home": "the blocks north of the port",
+  "episode": "Three minutes at the bridge",
+  "biography": "stories/residents/10/12-three-minutes-at-the-bridge.md#ah-r1462",
+  "life": "“I still remember letting another worker receive a difficult supplier.” People around the window at Night Shift Donuts know Alexei by a small Thursday habit. Alexei knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I can start earlier if someone else receives the first delivery. I've been pretending to be indispensable there for years.",
+  "appearance": "Alexei has a flat bridge to the nose and a mobile brow. Look for a soft fringe that falls across one eyebrow. On an ordinary day, the familiar outfit is a rust-colored canvas coat with a train token tied to a zipper pull. In conversation Alexei touches a knuckle to the chin when searching for a word.",
+  "personality": "Alexei treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To share the first supplier visit.",
+  "family": "Frances Jimenez is Alexei’s younger cousin. Alexei is allowed to ask about the bad news afterward. Frances calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Two left slippers*, Frances says, “I kept the wrong slipper as a joke until someone at the bus stop offered me its mate.”",
+  "connections": "Patricia Keane. Sharing the first supplier visit protects a parent's last minutes at the school gate. Also in the story is Sylvia Kang (payroll colleague).",
+  "familyIds": [
+    "AH-R0656"
+  ],
+  "connectionIds": [
+    "AH-R1461",
+    "AH-R1469"
+  ],
+  "reactions": [
+    {
+      "situation": "A carpool passenger needs an unplanned Friday stop",
+      "response": "Alexei asks the pharmacy passenger and the other riders which stop works for them.",
+      "asWritten": "A carpool passenger needs an unplanned Friday stop. Alexei asks the pharmacy passenger and the other riders which stop works for them."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Alexei offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Alexei offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Alexei changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Alexei changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0150",
+  "personId": "AH-R0150",
+  "name": "Petra Noel",
+  "age": 54,
+  "occupation": "Harbor pilot",
+  "home": "the western residential streets",
+  "episode": "The empty berth",
+  "biography": "stories/residents/01/15-the-empty-berth.md#ah-r0150",
+  "life": "Petra navigates large vessels for people who assume watching the horizon is a purely professional habit. Guiding a boat into one precise spot so her mother can see an old front porch will be her smallest and most exacting pilotage job. People around the downtown fountain know Petra by a small Thursday habit. Petra keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "From offshore you can see straight through the gap to the porch where I grew up. I asked the mechanic for the exact hour the hull goes back so I can take my mother out to see it once.",
+  "appearance": "Petra has one cheek that creases before the other. Look for short sandy hair and a marked widow's peak. Back on the street, the familiar outfit is a narrow-striped sweater with a braided bracelet with a single wooden bead. In conversation Petra folds a paper napkin into quarters without noticing.",
+  "personality": "Petra uses precise names for tools and very approximate names for feelings. People who know Petra well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To get her mother onto the water while the porch is visible.",
+  "family": "Valentina Carey is Petra’s second cousin. Somebody once took a family child's drawing to be framed and trimmed away the signature. The trimming hurt worse than spoiling the picture. At home they still ask where the signature goes. Petra checks whether its maker actually wants credit. Asked about *An address in pencil*, Valentina says, “I didn't know we had two numbering systems before the viaduct opened.”",
+  "connections": "Fern Gillen. They are arranging two very different little family outings during the same week of repair.",
+  "familyIds": [
+    "AH-R0686"
+  ],
+  "connectionIds": [
+    "AH-R0146"
+  ],
+  "reactions": [
+    {
+      "situation": "A junior rower says the wet step feels unsafe",
+      "response": "Petra stops the lesson there and asks the rower to show the troublesome patch from a stable spot.",
+      "asWritten": "A junior rower says the wet step feels unsafe. Petra stops the lesson there and asks the rower to show the troublesome patch from a stable spot."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Petra asks the neighbor privately what they want, without treating their place as something for sale.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Petra asks the neighbor privately what they want, without treating their place as something for sale."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Petra brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Petra brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

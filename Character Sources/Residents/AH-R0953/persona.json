@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0953",
+  "personId": "AH-R0953",
+  "name": "Lara Moss",
+  "age": 36,
+  "occupation": "Shift nurse",
+  "home": "Eastside",
+  "episode": "The empty chair on nights",
+  "biography": "stories/residents/07/06-the-empty-chair-on-nights.md#ah-r0953",
+  "life": "“I still remember forgetting a promise to my daughter during a double shift.” On Sunday, near the blocks below Foundry Lofts, Lara checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I covered four shifts and I am tired of being generous in ways that make me unreliable at home.",
+  "appearance": "Lara has a narrow face with an expressive upper lip. Look for a soft fringe that falls across one eyebrow. Out of work clothes, the familiar outfit is a mustard canvas overshirt with one loose pocket corner secured with green thread. In conversation Lara listens with the head tilted a little to the left.",
+  "personality": "Lara is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To protect time at home after extra shifts.",
+  "family": "Maria Kent is Lara’s cousin. Lara brings the paper and a pen. Maria decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Land without cranes*, Maria says, “I make lunch for sixteen day laborers there.”",
+  "connections": "Parker Anders. A worker covering repeated shifts meets the one who is finally asking for leave.",
+  "familyIds": [
+    "AH-R1067"
+  ],
+  "connectionIds": [
+    "AH-R0959"
+  ],
+  "reactions": [
+    {
+      "situation": "A replacement nurse receives the permanent badge",
+      "response": "Lara welcomes the new nurse and saves the old worker's goodbye for a separate conversation.",
+      "asWritten": "A replacement nurse receives the permanent badge. Lara welcomes the new nurse and saves the old worker's goodbye for a separate conversation."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Lara alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Lara alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Lara thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Lara thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1412",
+  "personId": "AH-R1412",
+  "name": "Tobias Starr",
+  "age": 44,
+  "occupation": "Print worker",
+  "home": "Coast Ridge",
+  "episode": "An empty dedication",
+  "biography": "stories/residents/10/07-an-empty-dedication.md#ah-r1412",
+  "life": "“I still remember getting ink under my sleeve while printing a friend's draft.” Sunday often includes a stop at Maré Coffee, where Tobias likes the table where people coming off shift stop checking the time.",
+  "voice": "I printed the first draft on my lunch break. I want the other print workers credited for covering for me.",
+  "appearance": "Tobias has short copper curls, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a red windbreaker. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Tobias turns fully toward the person speaking.",
+  "personality": "Tobias tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Tobias will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To credit the workers who covered the printing.",
+  "family": "Yasmin Arrieta is Tobias’s cousin. Tobias chooses the music. Yasmin puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The widow's dividend*, Yasmin says, “I recorded the founding meeting on a birthday cassette.”",
+  "connections": "Morgan Lim. A translation and a lunch-break proof both owe part of their existence to uncredited coworkers.",
+  "familyIds": [
+    "AH-R0328"
+  ],
+  "connectionIds": [
+    "AH-R1417"
+  ],
+  "reactions": [
+    {
+      "situation": "A reader asks for a copy with the page still blank",
+      "response": "Tobias keeps a clean, blank copy aside for the reader to dedicate.",
+      "asWritten": "A reader asks for a copy with the page still blank. Tobias keeps a clean, blank copy aside for the reader to dedicate."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Tobias offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Tobias offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Tobias repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Tobias repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

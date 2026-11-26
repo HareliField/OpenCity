@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0604",
+  "personId": "AH-R0604",
+  "name": "Jean Shen",
+  "age": 35,
+  "occupation": "Neighborhood photographer",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Salt in the pockets",
+  "biography": "stories/residents/05/01-salt-in-the-pockets.md#ah-r0604",
+  "life": "“I still remember taking pictures on the day nobody remembered the camera.” People around Tideline Market know Jean by a small Monday habit. Jean picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I took a photograph because it looked like our street under the one snowfall I remember.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and a replacement button a shade darker than the others. Jean has an aquiline nose and a square chin, with dark brown curls cut close behind the ears. Jean squares up pieces of paper while thinking during a conversation.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Jean takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To print a picture of the white crystals.",
+  "family": "Galen Howe is Jean’s cousin raised in the same household. Jean chooses whether to use it. Galen saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *Ten fingers*, Galen says, “We used to compete for the same corner lease.”",
+  "connections": "Desmond Baldwin. The photograph of the white table picks up a small embroidered fish.",
+  "familyIds": [
+    "AH-R0108"
+  ],
+  "connectionIds": [
+    "AH-R0608"
+  ],
+  "reactions": [
+    {
+      "situation": "An employer wants every coat returned before supper",
+      "response": "Jean asks the employer which garments are actually needed for tonight's shift.",
+      "asWritten": "An employer wants every coat returned before supper. Jean asks the employer which garments are actually needed for tonight's shift."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Jean asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Jean asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Jean asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Jean asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1159",
+  "personId": "AH-R1159",
+  "name": "Ramon Lloyd",
+  "age": 56,
+  "occupation": "Barber",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The hair after illness",
+  "biography": "stories/residents/08/11-the-hair-after-illness.md#ah-r1159",
+  "life": "“I still remember seeing my bare scalp reflected in the ceiling at work.” On Saturday, near the crossing outside Verve Nail Studio, Ramon notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I am a barber losing my own hair. Today the customer told me she could see the shape of my head too.",
+  "appearance": "Ramon has fine brows over wide-set eyes. Look for short copper curls. After the last appointment, the familiar outfit is a boxy denim jacket with a pair of reading glasses in a cloth sleeve. In conversation Ramon squares up pieces of paper while thinking.",
+  "personality": "Ramon talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Ramon's ways of saying that it is all right to leave.",
+  "agenda": "To wear the changing hairline more openly.",
+  "family": "Joseph Randall is Ramon’s cousin. Ramon brings whatever was actually growing or affordable that week. Joseph makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Low water music*, Joseph says, “I can only hear it through my bare heels. I'm asking the singers to take off their shoes.”",
+  "connections": "Carol Mack. Someone who only knew the client during illness notices the barber's changing hair too.",
+  "familyIds": [
+    "AH-R0223"
+  ],
+  "connectionIds": [
+    "AH-R1157"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone asks to take a photograph before the haircut",
+      "response": "Ramon waits for the customer's permission before anyone takes a picture.",
+      "asWritten": "Someone asks to take a photograph before the haircut. Ramon waits for the customer's permission before anyone takes a picture."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Ramon puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Ramon puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Ramon says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Ramon says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

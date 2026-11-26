@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1048",
+  "personId": "AH-R1048",
+  "name": "Kieran Colón",
+  "age": 41,
+  "occupation": "Marine letterer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The day sailor's divorce",
+  "biography": "stories/residents/07/15-the-day-sailor-s-divorce.md#ah-r1048",
+  "life": "“I still remember painting over a spouse's nickname with two coats.” Tuesday often includes a stop at the entrance to the Wash House, where Kieran stops for local notices even on a day without a load to wash.",
+  "voice": "I called the boat by my ex's name. For the first time I would like to change it.",
+  "appearance": "Kieran has a softly rounded chin under sharp cheekbones. Look for a soft fringe that falls across one eyebrow. On an ordinary day, the familiar outfit is an unlined tan jacket with a watch on a cracked leather band. In conversation Kieran holds eye contact until the other person has finished.",
+  "personality": "Kieran loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To choose a workable new boat name.",
+  "family": "Alexei Walsh is Kieran’s second cousin. Kieran keeps the photographs. Alexei knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The return of a witness*, Alexei says, “I am the brother of the convicted man. I can pass her on the pavement without either of us apologizing for existing.”",
+  "connections": "Dana Wong. A co-owner who refuses to relay messages still has to hear the proposal for a new boat name.",
+  "familyIds": [
+    "AH-R1393"
+  ],
+  "connectionIds": [
+    "AH-R1043"
+  ],
+  "reactions": [
+    {
+      "situation": "A spouse asks to count repair hours toward Sunday time",
+      "response": "Kieran checks the maintenance log before treating Sundays as the only contribution.",
+      "asWritten": "A spouse asks to count repair hours toward Sunday time. Kieran checks the maintenance log before treating Sundays as the only contribution."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Kieran lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Kieran lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Kieran offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Kieran offers one about their own embarrassment instead."
+    }
+  ]
+}

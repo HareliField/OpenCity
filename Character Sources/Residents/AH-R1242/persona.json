@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1242",
+  "personId": "AH-R1242",
+  "name": "Cassandra Joseph",
+  "age": 57,
+  "occupation": "Cheated workshop owner",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A clean coat for court",
+  "biography": "stories/residents/09/05-a-clean-coat-for-court.md#ah-r1242",
+  "life": "“I still remember receiving my business ledger with three pages missing.” Friday often includes a stop at Ferris Deli, where Cassandra asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I lent the coat because his daughter will see him in it. I am still owed money and want no confusion about that.",
+  "appearance": "Cassandra has auburn hair cut square at the nape, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with a knotted piece of sail thread on a key ring. When somebody else has the floor, Cassandra gathers both sleeves neatly before settling in.",
+  "personality": "Cassandra finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To see the daughter meet her father in good clothes.",
+  "family": "Teresa Glass is Cassandra’s stepsibling. Cassandra decides what stays off the paper. Teresa brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *A sail cut small*, Teresa says, “I cut out a grocery bag and found the boat's number across the bottom.”",
+  "connections": "Gareth Rivera (debtor). Lending the coat does not settle the fraud debt. Both men have to live with that distinction.",
+  "familyIds": [
+    "AH-R0291"
+  ],
+  "connectionIds": [
+    "AH-R1241"
+  ],
+  "reactions": [
+    {
+      "situation": "The borrower wants to return the coat before the hearing",
+      "response": "Cassandra checks whether the borrower has something suitable to wear through the hearing.",
+      "asWritten": "The borrower wants to return the coat before the hearing. Cassandra checks whether the borrower has something suitable to wear through the hearing."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Cassandra moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Cassandra moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Cassandra waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Cassandra waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

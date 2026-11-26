@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1487",
+  "personId": "AH-R1487",
+  "name": "Jody Schmidt",
+  "age": 38,
+  "occupation": "Van driver",
+  "home": "the western residential streets",
+  "episode": "The last home visit",
+  "biography": "stories/residents/10/14-the-last-home-visit.md#ah-r1487",
+  "life": "“I still remember sharing a car through a week of family hospital visits.” People around Studio Boulevard know Jody by a small Thursday habit. Jody waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I borrowed her car when my mother was dying. I am giving the successor a lift on the first dark morning.",
+  "appearance": "Jody has a narrow face with an expressive upper lip. Look for a dark undercut with a longer wave on top. On an ordinary day, the familiar outfit is an olive canvas jacket with a knotted piece of sail thread on a key ring. In conversation Jody steadies a cup with both hands while listening.",
+  "personality": "Jody is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Jody is by the number of tiny errands suddenly being done.",
+  "agenda": "To give the new worker a lift through the first dark morning.",
+  "family": "Desmond Green is Jody’s younger cousin. Jody chooses the music. Desmond puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A clean coat for court*, Desmond says, “I want the court artist to draw my father in the shirt underneath.”",
+  "connections": "Teal Starr. A payroll worker records the lost quarter hours and a neighbor supplies the first dark-morning lift.",
+  "familyIds": [
+    "AH-R1244"
+  ],
+  "connectionIds": [
+    "AH-R1486"
+  ],
+  "reactions": [
+    {
+      "situation": "A client tells the retiring carer what they disliked",
+      "response": "Jody lets the client finish the uncomfortable answer before proposing a fix.",
+      "asWritten": "A client tells the retiring carer what they disliked. Jody lets the client finish the uncomfortable answer before proposing a fix."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Jody helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Jody helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Jody agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Jody agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0562",
+  "personId": "AH-R0562",
+  "name": "Valentina Berry",
+  "age": 37,
+  "occupation": "Bus scheduler",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The ladder crossing",
+  "biography": "stories/residents/04/12-the-ladder-crossing.md#ah-r0562",
+  "life": "“I still remember a driver recognizing his lost thermos in my bag.” People around Lighthouse Cove know Valentina by a small Monday habit. Valentina takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I held up a bus and lost the driver's goodwill. I paid for the coffees at the next terminus.",
+  "appearance": "Valentina has thick, tightly coiled hair, a crooked front tooth visible when laughing, and a favorite piece of clothing, a red windbreaker. It usually goes with one cuff folded back twice. When somebody else has the floor, Valentina takes off the watch before a long conversation.",
+  "personality": "Valentina never tires of being shown how somebody makes a living. Valentina can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To bring the delayed driver coffee.",
+  "family": "Marcel Easton is Valentina’s cousin raised in the same household. Valentina checks the date twice. Marcel brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *A last ship together*, Marcel says, “I thought goodbye would sound like a whistle.”",
+  "connections": "Tali James. A missed bus brings a driver and a former pupil back into the same evening.",
+  "familyIds": [
+    "AH-R1370"
+  ],
+  "connectionIds": [
+    "AH-R0568"
+  ],
+  "reactions": [
+    {
+      "situation": "A painter asks to put the ladder down",
+      "response": "Valentina finds an empty, stable place to set it down while the painter rests.",
+      "asWritten": "A painter asks to put the ladder down. Valentina finds an empty, stable place to set it down while the painter rests."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Valentina offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Valentina offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Valentina may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Valentina may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

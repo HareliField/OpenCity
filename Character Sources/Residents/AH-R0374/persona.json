@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0374",
+  "personId": "AH-R0374",
+  "name": "Charlotte Bruno",
+  "age": 38,
+  "occupation": "Primary teacher",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The painted footprint",
+  "biography": "stories/residents/03/08-the-painted-footprint.md#ah-r0374",
+  "life": "“I still remember learning what frightened my son by what he drew.” On Wednesday, near the courtyard by Ferry Street Rooms, Charlotte prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "My son thought the print marked a buried person. I fetched the painter so he could ask.",
+  "appearance": "Charlotte has a soft fringe that falls across one eyebrow, a crooked front tooth visible when laughing, and a favorite piece of clothing, a boxy denim jacket. It usually goes with a square of clean cloth for polishing smudges. When somebody else has the floor, Charlotte gathers both sleeves neatly before settling in.",
+  "personality": "Charlotte treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To introduce the frightened child to the painter.",
+  "family": "Scout Saito is Charlotte’s cousin raised in the same household. Charlotte picks the meeting place. Scout sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *An old restaurant debt*, Scout says, “I heard my father left us debt. Seeing one debt turn into a family dinner has softened that memory.”",
+  "connections": "Hannah Hewitt. They tell a child why a bare foot stayed still on that particular day. Also in the story is Darcy Baran (volunteer survey interviewer).",
+  "familyIds": [
+    "AH-R0998"
+  ],
+  "connectionIds": [
+    "AH-R0373",
+    "AH-R0378"
+  ],
+  "reactions": [
+    {
+      "situation": "A child wants to trace a different sort of foot",
+      "response": "Charlotte gives the child paper and room for a footprint that goes home with them.",
+      "asWritten": "A child wants to trace a different sort of foot. Charlotte gives the child paper and room for a footprint that goes home with them."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Charlotte finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Charlotte finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Charlotte changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Charlotte changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

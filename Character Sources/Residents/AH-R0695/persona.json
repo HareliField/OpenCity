@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0695",
+  "personId": "AH-R0695",
+  "name": "Drew Aguilar",
+  "age": 40,
+  "occupation": "Holiday banquet planner",
+  "home": "Midtown",
+  "episode": "Midnight cinnamon",
+  "biography": "stories/residents/05/10-midnight-cinnamon.md#ah-r0695",
+  "life": "“I still remember a guest teaching me to pronounce the name on a cake.” People around the public road outside the Port of Asphalt know Drew by a small Saturday habit. Drew can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I want the staff to choose one bake from each of the three holidays and teach me the pronunciations.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a small enamel bird on the lapel. Drew has fine brows over wide-set eyes, with a cropped cut that shows the shape of the ears. Drew folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Drew reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Drew trusts most.",
+  "agenda": "To bake a recipe from all three holidays.",
+  "family": "Hollis Bowen is Drew’s first cousin once removed. Drew keeps the photographs. Hollis knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *An ordinary mirror*, Hollis says, “I remember making her school uniform wider at the shoulder so she could throw a ball.”",
+  "connections": "Frankie Palmer. One worker chooses the holidays and the other can buy the finished buns after a hard shift.",
+  "familyIds": [
+    "AH-R1453"
+  ],
+  "connectionIds": [
+    "AH-R0698"
+  ],
+  "reactions": [
+    {
+      "situation": "The spice buyer wants the mistaken sack returned",
+      "response": "Drew sets aside a sample and confirms which holiday orders depend on it.",
+      "asWritten": "The spice buyer wants the mistaken sack returned. Drew sets aside a sample and confirms which holiday orders depend on it."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Drew finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Drew finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Drew does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Drew does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

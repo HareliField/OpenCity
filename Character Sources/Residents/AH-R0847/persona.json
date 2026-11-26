@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0847",
+  "personId": "AH-R0847",
+  "name": "Devin Bernal",
+  "age": 32,
+  "occupation": "Closing cleaner",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "One paid trial",
+  "biography": "stories/residents/06/10-one-paid-trial.md#ah-r0847",
+  "life": "“I still remember a cleaning shift nobody could remember putting on the board.” Monday often includes a stop at the blocks below Foundry Lofts, where Devin checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I cleaned with the apprentice for a year. I'm helping her write down every extra thing she learned unpaid.",
+  "appearance": "On an ordinary day, look for a dark green knitted vest and a pair of reading glasses in a cloth sleeve. Devin has heavy brows and an unusually delicate jaw, with thick, tightly coiled hair. Devin listens with the head tilted a little to the left during a conversation.",
+  "personality": "Devin tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Devin will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To document the apprentice's actual skills.",
+  "family": "Talia Drew is Devin’s first cousin once removed. Devin calls back when there is finally a little privacy. Talia leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The waiting-room plant*, Talia says, “I built the rolling stand from my own discarded hospital tray.”",
+  "connections": "Ida Boyd. The closer helps the apprentice list the unpaid work behind the old promotion promise.",
+  "familyIds": [
+    "AH-R0504"
+  ],
+  "connectionIds": [
+    "AH-R0842"
+  ],
+  "reactions": [
+    {
+      "situation": "The new baker gets the first oven slot",
+      "response": "Devin makes sure the other applicant gets a comparable chance with the same oven.",
+      "asWritten": "The new baker gets the first oven slot. Devin makes sure the other applicant gets a comparable chance with the same oven."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Devin accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Devin accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Devin repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Devin repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0655",
+  "personId": "AH-R0655",
+  "name": "Rain Daniels",
+  "age": 56,
+  "occupation": "Linen embroiderer",
+  "home": "Eastside",
+  "episode": "Two left slippers",
+  "biography": "stories/residents/05/06-two-left-slippers.md#ah-r0655",
+  "life": "“I still remember an embroidered name too small for its owner to see.” People around the public end of the South Shore boardwalk know Rain by a small Thursday habit. Rain checks the shade on the benches before deciding how long to stay.",
+  "voice": "I embroider names inside slippers. I'm going to ask first who can bend far enough to read them.",
+  "appearance": "On an ordinary day, look for a long navy raincoat and a little coil of soft measuring tape. Rain has fine brows over wide-set eyes, with a smooth side part with one rebellious curl. Rain gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Rain is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To put labels where their wearers can see them.",
+  "family": "Benjamin Lewis is Rain’s younger relative by marriage. Rain asks what the birthday guest would like this year. Benjamin remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The button card*, Benjamin says, “I collect glass buttons but gave away the best one because the boy needed a moon for his costume.”",
+  "connections": "Cecil Hooper. The courier's route makes a practical place for easy-to-find names on labels.",
+  "familyIds": [
+    "AH-R0453"
+  ],
+  "connectionIds": [
+    "AH-R0658"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient opens the bag and finds two left slippers",
+      "response": "Rain sets out the pair and asks the discharge worker to check the right foot too.",
+      "asWritten": "A patient opens the bag and finds two left slippers. Rain sets out the pair and asks the discharge worker to check the right foot too."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Rain stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Rain stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Rain thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Rain thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

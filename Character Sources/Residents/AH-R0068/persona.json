@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0068",
+  "personId": "AH-R0068",
+  "name": "Melle Juric",
+  "age": 38,
+  "occupation": "Speech therapist",
+  "home": "the western residential streets",
+  "episode": "An unfinished atlas",
+  "biography": "stories/residents/01/07-an-unfinished-atlas.md#ah-r0068",
+  "life": "Melle became a speech therapist after learning that her father could name a place if his feet remembered the approach. She buys comfortable shoes before buying a new set of picture cards. On Saturday, near the blocks below Foundry Lofts, Melle checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "My father remembers the coffee seller's face but loses names halfway through a sentence. We walked the old route with no questions until he named her on his own.",
+  "appearance": "Melle has a round face with a pronounced chin. Look for a blunt cut just below the ears. Out of work clothes, the familiar outfit is a long navy raincoat with a printed handkerchief folded into the pocket. In conversation Melle turns fully toward the person speaking.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To give her father a walk on which he can find the name himself.",
+  "family": "Dominic Alvarez is Melle’s parent’s cousin. Melle leaves the first voice message. Dominic calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The dead man's tab*, Dominic says, “I'm his old victim's sister. I offered to cover only the meals that went to people still alive.”",
+  "connections": "Elsa Venn. They walk the likely street with somebody who remembers a face more easily than a name.",
+  "familyIds": [
+    "AH-R0500"
+  ],
+  "connectionIds": [
+    "AH-R0063"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member disputes the penciled street",
+      "response": "Melle marks the disputed piece of street in pencil and keeps the alternative name beside it.",
+      "asWritten": "A family member disputes the penciled street. Melle marks the disputed piece of street in pencil and keeps the alternative name beside it."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Melle finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Melle finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Melle listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Melle listens first to the account of how it was actually used."
+    }
+  ]
+}

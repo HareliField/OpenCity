@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0035",
+  "personId": "AH-R0035",
+  "name": "Jude Wick",
+  "age": 50,
+  "occupation": "Bicycle repairer",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The wrong bicycle",
+  "biography": "stories/residents/01/04-the-wrong-bicycle.md#ah-r0035",
+  "life": "Jude built wheels for speed until a neighborhood kid asked for one that could survive falling over every day. He has had a box of mismatched practice spokes by the counter ever since. On Saturday, near Juniper Street, Jude knows which of the west-side porches has a seat in the shade.",
+  "voice": "Both wheels were built in my shop. I spoke for the wheel I remembered, and the child corrected me. I keep her drawing of the spoke pattern over the truing stand.",
+  "appearance": "Jude is easy to recognize by a blunt cut just below the ears and full cheeks and a mouth that pulls slightly to one side. Usually dressed in a long navy raincoat with a copper-colored clasp that has been repaired by hand, Jude looks down for a moment before saying something difficult when listening.",
+  "personality": "Jude is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To give the child credit for identifying the wheel.",
+  "family": "Samuel Mehta is Jude’s half-sibling. Jude leaves the first voice message. Samuel calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The last light at the harbor*, Samuel says, “I turn ours off from below because my hands no longer reach the switch.”",
+  "connections": "Opal Finch. They trust the child's description after the bell and the spokes offer two independent ways to identify the bike.",
+  "familyIds": [
+    "AH-R1492"
+  ],
+  "connectionIds": [
+    "AH-R0033"
+  ],
+  "reactions": [
+    {
+      "situation": "A child's account contradicts the adult at the counter",
+      "response": "Jude lets the child finish describing the bicycle and asks to hear the bell.",
+      "asWritten": "A child's account contradicts the adult at the counter. Jude lets the child finish describing the bicycle and asks to hear the bell."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Jude checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Jude checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Jude helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Jude helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

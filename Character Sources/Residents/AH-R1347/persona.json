@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1347",
+  "personId": "AH-R1347",
+  "name": "Amanda Quintero",
+  "age": 41,
+  "occupation": "Flag maker",
+  "home": "Coast Ridge",
+  "episode": "The missing name on the stern",
+  "biography": "stories/residents/09/15-the-missing-name-on-the-stern.md#ah-r1347",
+  "life": "“I still remember sewing reversible letters onto a marina pennant.” On Friday, near the foot of Harbor Viaduct, Amanda pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I make marine flags. I suggested one name on each side so a boat leaving and returning tells the whole story.",
+  "appearance": "On an ordinary day, look for a washed violet jersey and a pen clipped inside the neckline. Amanda has a wide brow and a narrow jaw, with short black hair swept back. Amanda draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Amanda takes a rejection personally for a day and analytically on the second morning. Amanda can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To offer a reversible family pennant.",
+  "family": "Lane Marsh is Amanda’s cousin. Amanda can always ask for five minutes alone. Lane asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The trust with a typo*, Lane says, “I am keeping the wrong envelopes for rejection letters.”",
+  "connections": "Merritt Hart. A flag maker and a bookkeeper practice the spoken name before they put it in different alphabets.",
+  "familyIds": [
+    "AH-R0630"
+  ],
+  "connectionIds": [
+    "AH-R1349"
+  ],
+  "reactions": [
+    {
+      "situation": "The apprentice notices the missing letter on the stern",
+      "response": "Amanda checks the intended spelling with the family before painting over anything.",
+      "asWritten": "The apprentice notices the missing letter on the stern. Amanda checks the intended spelling with the family before painting over anything."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Amanda takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Amanda takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Amanda turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Amanda turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

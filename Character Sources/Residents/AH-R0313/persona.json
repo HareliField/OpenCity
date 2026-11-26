@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0313",
+  "personId": "AH-R0313",
+  "name": "Ida Henry",
+  "age": 36,
+  "occupation": "Crew steward",
+  "home": "the western residential streets",
+  "episode": "A ship without postcards",
+  "biography": "stories/residents/03/02-a-ship-without-postcards.md#ah-r0313",
+  "life": "“I still remember orange rind kept dry in my sea bag.” Tuesday often includes a stop at Harbour Bakery, where Ida buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I bought a blank card to send my aunt the smell of her old soap.",
+  "appearance": "Ida is easy to recognize by short black hair swept back and a straight nose and deep-set eyes. Usually dressed in a dark green knitted vest with a pressed flower kept in the clear back of a phone case, Ida gives a little nod before asking a hard question when listening.",
+  "personality": "Ida loves a well-told anecdote and distrusts the neat ending. The parts Ida remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To send the familiar scent without damaging the card.",
+  "family": "Idris Yeo is Ida’s cousin raised in the same household. Ida brings the paper and a pen. Idris decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The misplaced umbrella*, Idris says, “I stitched the patch from a dress my aunt wore on her only holiday.”",
+  "connections": "Nora Ray. They compare how little room a parcel needs to carry the idea of home.",
+  "familyIds": [
+    "AH-R0671"
+  ],
+  "connectionIds": [
+    "AH-R0317"
+  ],
+  "reactions": [
+    {
+      "situation": "A family ashore asks for a picture of the crew",
+      "response": "Ida asks the crew who wants to be visible in the family picture.",
+      "asWritten": "A family ashore asks for a picture of the crew. Ida asks the crew who wants to be visible in the family picture."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Ida offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Ida offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Ida includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Ida includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

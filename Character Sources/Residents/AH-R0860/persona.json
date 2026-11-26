@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0860",
+  "personId": "AH-R0860",
+  "name": "Rowan Peters",
+  "age": 42,
+  "occupation": "Part-time nail artist",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A chair of one's own",
+  "biography": "stories/residents/06/11-a-chair-of-one-s-own.md#ah-r0860",
+  "life": "“I still remember folding my work week around a partner's long appointment.” People around Maré Coffee know Rowan by a small Saturday habit. Rowan likes the table where people coming off shift stop checking the time.",
+  "voice": "I offered two days a week instead of six. I have a sick partner and I know exactly what three empty days cost.",
+  "appearance": "Rowan has a heart-shaped face and prominent ears. Look for a soft fringe that falls across one eyebrow. After the last appointment, the familiar outfit is a striped cotton shirt with a printed handkerchief folded into the pocket. In conversation Rowan turns fully toward the person speaking.",
+  "personality": "Rowan listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To make two affordable days work around a partner's care.",
+  "family": "Billie Wilson is Rowan’s stepsibling. Rowan brings whatever was actually growing or affordable that week. Billie makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The broken till*, Billie says, “I came for change for the bus. I stayed because somebody owed exactly the fare I needed.”",
+  "connections": "Georgia Reid. A regular with a budget and a worker with a sick partner try pricing a long-term appointment fairly.",
+  "familyIds": [
+    "AH-R0394"
+  ],
+  "connectionIds": [
+    "AH-R0853"
+  ],
+  "reactions": [
+    {
+      "situation": "A regular cancels the week's most valuable appointment",
+      "response": "Rowan revises the week's numbers with the cancellation included before making any promise.",
+      "asWritten": "A regular cancels the week's most valuable appointment. Rowan revises the week's numbers with the cancellation included before making any promise."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Rowan helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Rowan helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Rowan keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Rowan keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

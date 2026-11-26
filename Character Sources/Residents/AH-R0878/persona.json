@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0878",
+  "personId": "AH-R0878",
+  "name": "Ren Su",
+  "age": 54,
+  "occupation": "Dry cleaner",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The almost scholarship",
+  "biography": "stories/residents/06/13-the-almost-scholarship.md#ah-r0878",
+  "life": "“I still remember washing a white shirt with a button sewn under the label.” On Monday, near Paper & Pine Books, Ren starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I can't give money. I can wash twenty shirts while the school uniform fund catches up.",
+  "appearance": "Ren has a long face and high cheekbones. Look for short black hair swept back. On an ordinary day, the familiar outfit is a sand-colored linen shirt with a braided bracelet with a single wooden bead. In conversation Ren leans a shoulder against the wall during long conversations.",
+  "personality": "Ren tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Ren will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To supply clean shirts through the first term.",
+  "family": "Shay Gray is Ren’s cousin raised in the same household. Ren makes the call. Shay is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The missing name on the stern*, Shay says, “I changed the family name when I arrived here.”",
+  "connections": "Karim Klein. A former musician who slept at school understands the price of a clean practice shirt.",
+  "familyIds": [
+    "AH-R1342"
+  ],
+  "connectionIds": [
+    "AH-R0874"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative urges the pupil to accept in public",
+      "response": "Ren lets the pupil answer privately before relatives announce an acceptance.",
+      "asWritten": "A relative urges the pupil to accept in public. Ren lets the pupil answer privately before relatives announce an acceptance."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Ren finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Ren finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Ren repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Ren repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

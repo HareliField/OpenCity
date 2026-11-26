@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1169",
+  "personId": "AH-R1169",
+  "name": "Sofia Valdez",
+  "age": 34,
+  "occupation": "Carpool driver",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The high road home",
+  "biography": "stories/residents/08/12-the-high-road-home.md#ah-r1169",
+  "life": "“I still remember trying to learn a driver's breathing from their choice of music.” Thursday often includes a stop at Paper & Pine Books, where Sofia starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I can tell when the driver is scared because the radio gets louder. We agreed on one quiet song.",
+  "appearance": "On an ordinary day, look for a washed violet jersey and a narrow brass watch set a little fast. Sofia has a round face with a pronounced chin, with a soft fringe that falls across one eyebrow. Sofia presses the lips together to keep a smile in during a conversation.",
+  "personality": "Sofia finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To agree one quiet song for the hard section.",
+  "family": "Carmen Kapoor is Sofia’s cousin. Sofia brings whatever was actually growing or affordable that week. Carmen makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Nine unpaid hours*, Carmen says, “I used to accept cash so nobody asked about my papers.”",
+  "connections": "Dale Pierce. A familiar song and a cup at the far end provide two markers for a practice drive.",
+  "familyIds": [
+    "AH-R0769"
+  ],
+  "connectionIds": [
+    "AH-R1170"
+  ],
+  "reactions": [
+    {
+      "situation": "The learner turns back before the crest",
+      "response": "Sofia treats turning back as a completed decision and finds somewhere calm to stop.",
+      "asWritten": "The learner turns back before the crest. Sofia treats turning back as a completed decision and finds somewhere calm to stop."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Sofia writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Sofia writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Sofia waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Sofia waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

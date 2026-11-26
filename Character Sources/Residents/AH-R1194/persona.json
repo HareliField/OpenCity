@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1194",
+  "personId": "AH-R1194",
+  "name": "Mika Lam",
+  "age": 35,
+  "occupation": "New skipper",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The skipper goes ashore",
+  "biography": "stories/residents/08/15-the-skipper-goes-ashore.md#ah-r1194",
+  "life": "“I still remember putting my name on a locker where someone else's still showed.” Monday often includes a stop at Paper & Pine Books, where Mika starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I got the vacant berth job. I am happy and afraid every passenger will compare us.",
+  "appearance": "Mika has a flat bridge to the nose and a mobile brow. Look for thick, tightly coiled hair. Back on the street, the familiar outfit is a rust-colored canvas coat with a printed handkerchief folded into the pocket. In conversation Mika looks down for a moment before saying something difficult.",
+  "personality": "Mika always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Mika is trying to tell the difference before the bill arrives.",
+  "agenda": "To build confidence as skipper without comparisons.",
+  "family": "Lily Parra is Mika’s cousin raised in the same household. Mika chooses the music. Lily puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The uniform money*, Lily says, “I have a spare blazer with another child's name in it.”",
+  "connections": "Irene Baines. The outgoing skipper's deckhand and the successor compare how to honor the old routine. Also in the story is Ignacio Schmidt (predecessor).",
+  "familyIds": [
+    "AH-R0902"
+  ],
+  "connectionIds": [
+    "AH-R1192",
+    "AH-R1191"
+  ],
+  "reactions": [
+    {
+      "situation": "The new skipper changes the departure routine",
+      "response": "Mika gives the new skipper space to explain the change before measuring it against the former routine.",
+      "asWritten": "The new skipper changes the departure routine. Mika gives the new skipper space to explain the change before measuring it against the former routine."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Mika asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Mika asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Mika suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Mika suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

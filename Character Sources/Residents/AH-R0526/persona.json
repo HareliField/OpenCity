@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0526",
+  "personId": "AH-R0526",
+  "name": "Jody Gao",
+  "age": 56,
+  "occupation": "Running coach",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The rescue hut mural",
+  "biography": "stories/residents/04/08-the-rescue-hut-mural.md#ah-r0526",
+  "life": "“I still remember sharing a dressing after a relay race.” On Thursday, near the foot of Harbor Viaduct, Jody pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I recognize the scar on her painted calf. My old teammate got it in the same meet I lost.",
+  "appearance": "On an ordinary day, look for a sand-colored linen shirt and one loose pocket corner secured with green thread. Jody has one cheek that creases before the other, with black hair twisted into a small knot. Jody takes off the watch before a long conversation during a conversation.",
+  "personality": "Jody enjoys routines and will defend the right of someone else to break one. As a result, Jody is often everyone's favorite cover for a missed morning.",
+  "agenda": "To identify the teammate who shared the old injury.",
+  "family": "Ismael Wu is Jody’s cousin raised in the same household. Jody leaves the first voice message. Ismael calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The school photograph that travels*, Ismael says, “I paid postage for the last copy. It is the first letter the girl's father will open in his new home.”",
+  "connections": "Ava Boyd. They propose a new panel beside the original painted scar.",
+  "familyIds": [
+    "AH-R1330"
+  ],
+  "connectionIds": [
+    "AH-R0530"
+  ],
+  "reactions": [
+    {
+      "situation": "The old model asks to choose the viewing angle",
+      "response": "Jody walks the observers to the angle the model chose.",
+      "asWritten": "The old model asks to choose the viewing angle. Jody walks the observers to the angle the model chose."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Jody asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Jody asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Jody keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Jody keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

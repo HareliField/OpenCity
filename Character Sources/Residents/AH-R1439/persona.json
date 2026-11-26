@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1439",
+  "personId": "AH-R1439",
+  "name": "Martha Laurent",
+  "age": 44,
+  "occupation": "Tenant and shipping clerk",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A house divided kindly",
+  "biography": "stories/residents/10/09-a-house-divided-kindly.md#ah-r1439",
+  "life": "“I still remember building my first bench out of a crate marked tomatoes.” People around the crossing outside Verve Nail Studio know Martha by a small Wednesday habit. Martha notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I am a tenant on the same street. I can't move a fence but I can share the bench I built from packing wood.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a little coil of soft measuring tape. Martha has a strong profile and a little space between the front teeth, with a high puff tied with plain cord. Martha draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Martha takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To loan a handmade bench for shared use.",
+  "family": "Tara Dean is Martha’s second cousin. Martha is free to hang up first. Tara makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *One paid trial*, Tara says, “I sponsored the trial wage. My name can stay off the winner's contract.”",
+  "connections": "Peyton Myers. A loaned bench and two salt pots give different households real things they can still choose separately.",
+  "familyIds": [
+    "AH-R0845"
+  ],
+  "connectionIds": [
+    "AH-R1440"
+  ],
+  "reactions": [
+    {
+      "situation": "The older neighbors disagree on where the gate should go",
+      "response": "Martha gets both neighbors to mark a trial gate position before any hedge is cut.",
+      "asWritten": "The older neighbors disagree on where the gate should go. Martha gets both neighbors to mark a trial gate position before any hedge is cut."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Martha asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Martha asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Martha asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Martha asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0822",
+  "personId": "AH-R0822",
+  "name": "Ida Gupta",
+  "age": 20,
+  "occupation": "Summer hut attendant",
+  "home": "Eastside",
+  "episode": "Summer staff",
+  "biography": "stories/residents/06/08-summer-staff.md#ah-r0822",
+  "life": "“I still remember taking my little brother out before the beach opened.” On Wednesday, near the entrance to the Wash House, Ida stops for local notices even on a day without a load to wash.",
+  "voice": "I promised my little brother he could work his first shift beside me. I am training him for a day I can't pay him for.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a square of clean cloth for polishing smudges. Ida has a round face with a pronounced chin, with a center part and straight chestnut hair. Ida holds eye contact until the other person has finished during a conversation.",
+  "personality": "Ida is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Ida is concerned.",
+  "agenda": "To train the younger brother for useful future work.",
+  "family": "Jules Rice is Ida’s older cousin. Ida keeps the photographs. Jules knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *A call heard twice*, Jules says, “I want the young staff to see that a good handover can sound like an ordinary conversation.”",
+  "connections": "Tali Peters. The younger workers get a direct explanation about the huts closing before school starts.",
+  "familyIds": [
+    "AH-R1238"
+  ],
+  "connectionIds": [
+    "AH-R0830"
+  ],
+  "reactions": [
+    {
+      "situation": "Two workers are offered one extra paid week",
+      "response": "Ida asks both workers what commitments they made on the strength of the old end date.",
+      "asWritten": "Two workers are offered one extra paid week. Ida asks both workers what commitments they made on the strength of the old end date."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Ida asks what the friend actually said last time and checks whether anybody is expecting them at home.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Ida asks what the friend actually said last time and checks whether anybody is expecting them at home."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Ida asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Ida asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

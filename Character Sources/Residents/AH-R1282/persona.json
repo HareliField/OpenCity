@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1282",
+  "personId": "AH-R1282",
+  "name": "Caroline Diaz",
+  "age": 70,
+  "occupation": "Retired foster carer",
+  "home": "the western residential streets",
+  "episode": "The returned daughter",
+  "biography": "stories/residents/09/09-the-returned-daughter.md#ah-r1282",
+  "life": "“I still remember washing sheets for an unexpected child who stayed years.” People around the public end of the South Shore boardwalk know Caroline by a small Friday habit. Caroline checks the shade on the benches before deciding how long to stay.",
+  "voice": "I raised her after she left. I want her to know going back doesn't cancel the years she calls me Mum.",
+  "appearance": "Caroline has a deep crease beside the mouth when smiling. Look for a long silver braid. On an ordinary day, the familiar outfit is an old plum windbreaker with a braided bracelet with a single wooden bead. In conversation Caroline counts on the side of one finger where hardly anybody notices.",
+  "personality": "Caroline treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To keep the daughter's present home open to her.",
+  "family": "Avery Lai is Caroline’s younger relative by marriage. Caroline can always ask for five minutes alone. Avery asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The fitting mirror*, Avery says, “I used it to practice asking for my old job back.”",
+  "connections": "Iva Salas (foster daughter). The foster mother gives the returning adult permission to love more than one home.",
+  "familyIds": [
+    "AH-R0553"
+  ],
+  "connectionIds": [
+    "AH-R1281"
+  ],
+  "reactions": [
+    {
+      "situation": "The father offers a letter instead of speaking",
+      "response": "Caroline asks whether the daughter wants to take the letter now or leave it closed for another day.",
+      "asWritten": "The father offers a letter instead of speaking. Caroline asks whether the daughter wants to take the letter now or leave it closed for another day."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Caroline puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Caroline puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Caroline changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Caroline changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

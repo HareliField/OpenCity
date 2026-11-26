@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0540",
+  "personId": "AH-R0540",
+  "name": "Miguel Tsai",
+  "age": 44,
+  "occupation": "Catering driver",
+  "home": "the western residential streets",
+  "episode": "The porch auction",
+  "biography": "stories/residents/04/09-the-porch-auction.md#ah-r0540",
+  "life": "“I still remember the first Sunday invitation addressed to my new flat.” On Monday, near Maré Coffee, Miguel likes the table where people coming off shift stop checking the time.",
+  "voice": "I left without a chair. I got the new address and a Sunday invitation instead.",
+  "appearance": "Miguel is easy to recognize by a swept fringe and a closely clipped nape and one cheek that creases before the other. Usually dressed in a pale blue work shirt with a comb in a sleeve sewn into the lining, Miguel gives a little nod before asking a hard question when listening.",
+  "personality": "Miguel finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To keep the Sunday invitation at the new address.",
+  "family": "Marlowe Nord is Miguel’s stepsibling. Miguel calls about good news first. Marlowe is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Money after marriage*, Marlowe says, “I own a small share from the year we couldn't pay wages.”",
+  "connections": "Tariq Wells. An aunt's name on the furniture leads to a Sunday invitation at the smaller flat.",
+  "familyIds": [
+    "AH-R0772"
+  ],
+  "connectionIds": [
+    "AH-R0539"
+  ],
+  "reactions": [
+    {
+      "situation": "A repair reveals a family name under the cushion",
+      "response": "Miguel invites the family to see the full name before the repair is closed.",
+      "asWritten": "A repair reveals a family name under the cushion. Miguel invites the family to see the full name before the repair is closed."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Miguel suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Miguel suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Miguel points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Miguel points to the person who noticed the original mistake."
+    }
+  ]
+}

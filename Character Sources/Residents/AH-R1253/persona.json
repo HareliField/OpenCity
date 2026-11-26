@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1253",
+  "personId": "AH-R1253",
+  "name": "Sam Lim",
+  "age": 32,
+  "occupation": "Junior physician",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A doctor moves away",
+  "biography": "stories/residents/09/06-a-doctor-moves-away.md#ah-r1253",
+  "life": "“I still remember taking down a retired colleague's framed qualifications.” On Friday, near the courtyard by Ferry Street Rooms, Sam prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I am the young physician replacing her. My first week's schedule is full of people who want to say goodbye.",
+  "appearance": "Sam has a flat bridge to the nose and a mobile brow. Look for short sandy hair and a marked widow's peak. Out of work clothes, the familiar outfit is a plum-colored cardigan with one loose pocket corner secured with green thread. In conversation Sam takes off the watch before a long conversation.",
+  "personality": "Sam has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To learn the regular patients' histories from them.",
+  "family": "Luz Dean is Sam’s stepsibling. Sam remembers the birthdays. Luz asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Names on the night wall*, Luz says, “I wrote the name of the grocer who holds my daughter's school bag when my watch runs late.”",
+  "connections": "Bailey Moran. The longtime patient meets the successor while the departing physician can still make the introduction. Also in the story is Riley Macrae (departing physician).",
+  "familyIds": [
+    "AH-R1381"
+  ],
+  "connectionIds": [
+    "AH-R1252",
+    "AH-R1251"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient asks the leaving doctor to stay one more month",
+      "response": "Sam asks what handover would help the patient if the move date stands.",
+      "asWritten": "A patient asks the leaving doctor to stay one more month. Sam asks what handover would help the patient if the move date stands."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Sam alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Sam alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Sam asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Sam asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

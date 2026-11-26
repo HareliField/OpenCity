@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1491",
+  "personId": "AH-R1491",
+  "name": "Ashley West",
+  "age": 38,
+  "occupation": "Night marina porter",
+  "home": "Eastside",
+  "episode": "The last light at the harbor",
+  "biography": "stories/residents/10/15-the-last-light-at-the-harbor.md#ah-r1491",
+  "life": "“I still remember walking home with the water lights still on my sleeve.” Sunday often includes a stop at the corner outside Coastal Barber, where Ashley usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I always leave my lamp longest because nobody is waiting in my flat. Tonight somebody asked me to walk back together.",
+  "appearance": "Ashley is easy to recognize by dark brown curls cut close behind the ears and one cheek that creases before the other. Usually dressed in a cream pullover with a fabric zip pull cut from a school scarf, Ashley draws small circles on a tabletop while waiting when listening.",
+  "personality": "Ashley keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Ashley wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To share one walk home after the last light.",
+  "family": "Harley Cao is Ashley’s stepsibling. Ashley knows which ones can be shared. Harley keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The sandwich board*, Harley says, “My mum wrote that last price for the kids from the court.”",
+  "connections": "Micah Hassan (marina manager). The night porter and the marina manager compare who still needs company after the office closes.",
+  "familyIds": [
+    "AH-R0171"
+  ],
+  "connectionIds": [
+    "AH-R1497"
+  ],
+  "reactions": [
+    {
+      "situation": "A cabin light stays on after its usual time",
+      "response": "Ashley checks in through an ordinary contact before treating the late light as an emergency.",
+      "asWritten": "A cabin light stays on after its usual time. Ashley checks in through an ordinary contact before treating the late light as an emergency."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Ashley suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Ashley suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Ashley offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Ashley offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1310",
+  "personId": "AH-R1310",
+  "name": "Keiko Cross",
+  "age": 51,
+  "occupation": "Postcard seller",
+  "home": "Coast Ridge",
+  "episode": "A scar at the salon",
+  "biography": "stories/residents/09/11-a-scar-at-the-salon.md#ah-r1310",
+  "life": "“I still remember writing a nearly anonymous postcard from a hospital café.” On Thursday, near Studio Boulevard, Keiko waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I bought a plain postcard of the hand. I want the client to choose what to write on the back.",
+  "appearance": "Keiko has a heart-shaped face and prominent ears. Look for short black hair swept back. On an ordinary day, the familiar outfit is a moss-green cardigan with a train token tied to a zipper pull. In conversation Keiko steadies a cup with both hands while listening.",
+  "personality": "Keiko never tires of being shown how somebody makes a living. Keiko can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To let the model decide what the postcard says.",
+  "family": "Orla Jain is Keiko’s younger cousin. Keiko decides what stays off the paper. Orla brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Overdue by a lifetime*, Orla says, “I bought the whole box for the cookbook on top.”",
+  "connections": "Bailey Solis. The unretouched picture and the blank postcard leave the client two personal choices.",
+  "familyIds": [
+    "AH-R0368"
+  ],
+  "connectionIds": [
+    "AH-R1306"
+  ],
+  "reactions": [
+    {
+      "situation": "The model asks to see the unedited print",
+      "response": "Keiko gets the model a private look before anybody else comments on the hand.",
+      "asWritten": "The model asks to see the unedited print. Keiko gets the model a private look before anybody else comments on the hand."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Keiko keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Keiko keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Keiko may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Keiko may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

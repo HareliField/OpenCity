@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0009",
+  "personId": "AH-R0009",
+  "name": "Alma Faye",
+  "age": 33,
+  "occupation": "Portrait photographer",
+  "home": "Coast Ridge",
+  "episode": "The blue suit",
+  "biography": "stories/residents/01/01-the-blue-suit.md#ah-r0009",
+  "life": "Alma learned portraits taking passport pictures behind a copy counter. She likes the half-second after a person stops smiling on instruction. Brides pay her bills, but that half-second is what makes her keep the camera. Wednesday often includes a stop at the bank steps, where Alma takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "In the photograph you can see one white cuff. His daughter asked me to take it out. He asked me to leave it in. I made him the first print and put the negative away.",
+  "appearance": "Alma has thick, tightly coiled hair, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, an old plum windbreaker. It usually goes with a comb in a sleeve sewn into the lining. When somebody else has the floor, Alma starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Alma can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To give Rafael final say over which portrait leaves the studio.",
+  "family": "Jody Graves is Alma’s cousin. Alma chooses an ordinary story to tell. Jody asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The bitter orange*, Jody says, “I remember mustard because she'd send it back if we skimped.”",
+  "connections": "Kit Salcedo. One finishes the borrowed shoes while the other frames the cuff that won't match them. Also in the story is Rafael Nunes (client).",
+  "familyIds": [
+    "AH-R0241"
+  ],
+  "connectionIds": [
+    "AH-R0007",
+    "AH-R0003"
+  ],
+  "reactions": [
+    {
+      "situation": "Rafael asks everyone to stop fussing over the suit",
+      "response": "Alma steps away from the hanger and lets Rafael choose what help to keep.",
+      "asWritten": "Rafael asks everyone to stop fussing over the suit. Alma steps away from the hanger and lets Rafael choose what help to keep."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Alma calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Alma calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Alma asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Alma asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

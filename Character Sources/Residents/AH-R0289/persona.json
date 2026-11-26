@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0289",
+  "personId": "AH-R0289",
+  "name": "Marina Carvalho",
+  "age": 72,
+  "occupation": "Retired chorister",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Saturday keys",
+  "biography": "stories/residents/02/14-saturday-keys.md#ah-r0289",
+  "life": "“I sang the same opening hymn in three different meeting houses.” On Wednesday, near Breakwater Way, Marina stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I keep an emergency key list in my hymn book. I'm making a second copy that can leave my house.",
+  "appearance": "On an ordinary day, look for a striped cotton shirt and a cloth patch so neatly matched it only shows in strong light. Marina has a scattering of freckles across the bridge of the nose, with a long silver braid. Marina takes off the watch before a long conversation during a conversation.",
+  "personality": "Marina has a long memory for unfair prices and a short one for small insults. Marina can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To make a second private copy of the emergency list.",
+  "family": "Denny Ames is Marina’s younger cousin. Marina brings whatever was actually growing or affordable that week. Denny makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The aquarium*, Denny says, “I used to feed those fish while the tenant did dialysis.”",
+  "connections": "Paloma Diaz. A better-fitting lock goes into a backup list that can leave its keeper's house.",
+  "familyIds": [
+    "AH-R0041"
+  ],
+  "connectionIds": [
+    "AH-R0284"
+  ],
+  "reactions": [
+    {
+      "situation": "A tenant refuses to hand back a spare key",
+      "response": "Marina asks the tenant what access they would be giving up.",
+      "asWritten": "A tenant refuses to hand back a spare key. Marina asks the tenant what access they would be giving up."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Marina brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Marina brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Marina agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Marina agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1230",
+  "personId": "AH-R1230",
+  "name": "Ruben Ali",
+  "age": 34,
+  "occupation": "Property reporter",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The million-dollar flat",
+  "biography": "stories/residents/09/03-the-million-dollar-flat.md#ah-r1230",
+  "life": "“I still remember a renovation that made the bathroom too beautiful to use.” On Thursday, near Tideline Market, Ruben picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I came for a property feature. She introduced me to the fitter who can make the bath usable for another ten years.",
+  "appearance": "Ruben has a smooth side part with one rebellious curl, a long face and high cheekbones, and a favorite piece of clothing, a gray fisher's sweater. It usually goes with a replacement button a shade darker than the others. When somebody else has the floor, Ruben raises one eyebrow long before saying yes.",
+  "personality": "Ruben admires skill and distrusts the idea that skill gives anyone permission to be rude. Ruben learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To price an accessible bath beside the headline valuation.",
+  "family": "Dina Locke is Ruben’s older cousin. Ruben knows which ones can be shared. Dina keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The thirteenth doughnut*, Dina says, “I get there after every good thing is gone.”",
+  "connections": "Gloria Batista. The journalist tests the dramatic valuation against the unglamorous price of a usable bath.",
+  "familyIds": [
+    "AH-R0099"
+  ],
+  "connectionIds": [
+    "AH-R1222"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative asks for a loan against the house",
+      "response": "Ruben puts the monthly cost of the suggested loan beside the home's paper value.",
+      "asWritten": "A relative asks for a loan against the house. Ruben puts the monthly cost of the suggested loan beside the home's paper value."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Ruben asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Ruben asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Ruben describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Ruben describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

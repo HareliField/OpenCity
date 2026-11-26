@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0055",
+  "personId": "AH-R0055",
+  "name": "Remy Stowe",
+  "age": 35,
+  "occupation": "Hospital scheduler",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Window seven",
+  "biography": "stories/residents/01/06-window-seven.md#ah-r0055",
+  "life": "Remy once shuffled appointments to free a consultant's afternoon and left six patients waiting in gowns. He now writes the name of the person giving up time beside the name of the person gaining it. Wednesday often includes a stop at the entrance to the Wash House, where Remy stops for local notices even on a day without a load to wash.",
+  "voice": "Those eight minutes belonged to a patient waiting for a scan. I phoned him before moving the slot. He asked if we could send him a picture of what he'd bought.",
+  "appearance": "Remy has auburn hair cut square at the nape, fine brows over wide-set eyes, and a favorite piece of clothing, a rust-colored canvas coat. It usually goes with a braided bracelet with a single wooden bead. When somebody else has the floor, Remy turns fully toward the person speaking.",
+  "personality": "Remy has a quick wit and an equally quick sense of shame. A joke is often Remy's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To get the waiting scan patient an answer about the changed time.",
+  "family": "Elise Kapoor is Remy’s stepsibling. Remy keeps the photographs. Elise knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The spare spectacles*, Elise says, “I drew the scene instead of spelling it. The witness moved the desk six inches on paper.”",
+  "connections": "Ilan Peretz. They are the two people who can get the displaced scan patient his picture and his new time.",
+  "familyIds": [
+    "AH-R0338"
+  ],
+  "connectionIds": [
+    "AH-R0060"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants the sunrise streamed to a phone",
+      "response": "Remy asks the patient whether they want a camera in this particular morning.",
+      "asWritten": "A relative wants the sunrise streamed to a phone. Remy asks the patient whether they want a camera in this particular morning."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Remy stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Remy stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Remy seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Remy seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

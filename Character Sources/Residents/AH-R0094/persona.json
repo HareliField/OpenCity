@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0094",
+  "personId": "AH-R0094",
+  "name": "Teri Okafor",
+  "age": 34,
+  "occupation": "Box designer",
+  "home": "Coast Ridge",
+  "episode": "The thirteenth doughnut",
+  "biography": "stories/residents/01/10-the-thirteenth-doughnut.md#ah-r0094",
+  "life": "Teri still has the envelope containing the first rejection from a packaging firm. She'd printed sample boxes that wasted a strip of card. What an accountant calls waste has often been the part people remember. Tuesday often includes a stop at the public end of the South Shore boardwalk, where Teri checks the shade on the benches before deciding how long to stay.",
+  "voice": "The thirteenth slot was a cutting mistake I was ashamed of. I'm taking the old die to the design school with a box full of people's notes and a copy of the rejected invoice.",
+  "appearance": "Teri is easy to recognize by a long plait tucked inside the collar and a strong profile and a little space between the front teeth. Usually dressed in a mustard canvas overshirt with a cloth patch so neatly matched it only shows in strong light, Teri grins on one side while the eyes stay serious when listening.",
+  "personality": "Teri enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To show the cutting mistake to students together with the actual box.",
+  "family": "Owen Green is Teri’s cousin. Teri brings a spare shopping bag. Owen chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *A summer marriage*, Owen says, “I am their oldest friend. My speech is mostly about the groom's ex and I'm rewriting every line.”",
+  "connections": "Nora Reiss. The packaging error cannot become a bank forecast until someone decides whether the thirteenth slot is for sale.",
+  "familyIds": [
+    "AH-R1124"
+  ],
+  "connectionIds": [
+    "AH-R0100"
+  ],
+  "reactions": [
+    {
+      "situation": "A late worker finds somebody has eaten the saved breakfast",
+      "response": "Teri finds out which shift the breakfast was for before offering a replacement.",
+      "asWritten": "A late worker finds somebody has eaten the saved breakfast. Teri finds out which shift the breakfast was for before offering a replacement."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Teri stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Teri stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Teri puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Teri puts the deal away and suggests a walk."
+    }
+  ]
+}

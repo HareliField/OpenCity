@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0720",
+  "personId": "AH-R0720",
+  "name": "Ismael Gross",
+  "age": 64,
+  "occupation": "Home-based translator",
+  "home": "Old Town",
+  "episode": "Level with the window",
+  "biography": "stories/residents/05/12-level-with-the-window.md#ah-r0720",
+  "life": "“I still remember recognizing the first silence after a road reopened.” People around the steps at Pier Beach know Ismael by a small Friday habit. Ismael watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I kept my curtains closed for years. The final empty morning was when I missed strangers most.",
+  "appearance": "On an ordinary day, look for a pale blue work shirt and one loose pocket corner secured with green thread. Ismael has two dimples that appear only with a full smile, with two white streaks in otherwise dark hair. Ismael raises one eyebrow long before saying yes during a conversation.",
+  "personality": "Ismael enjoys routines and will defend the right of someone else to break one. As a result, Ismael is often everyone's favorite cover for a missed morning.",
+  "agenda": "To reopen the curtain on an ordinary morning.",
+  "family": "Pascal Boone is Ismael’s cousin. Ismael chooses the familiar route. Pascal can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *School after sixty*, Pascal says, “I brought sandwiches for after, regardless of marks.”",
+  "connections": "Jack Saito. A commuter's wave and a newly reopened curtain survive the end of the detour.",
+  "familyIds": [
+    "AH-R1270"
+  ],
+  "connectionIds": [
+    "AH-R0713"
+  ],
+  "reactions": [
+    {
+      "situation": "The resident closes the curtains during the morning detour",
+      "response": "Ismael treats the closed curtain as the resident's answer for that day.",
+      "asWritten": "The resident closes the curtains during the morning detour. Ismael treats the closed curtain as the resident's answer for that day."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Ismael asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Ismael asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Ismael keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Ismael keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

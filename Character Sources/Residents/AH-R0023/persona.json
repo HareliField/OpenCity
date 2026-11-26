@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0023",
+  "personId": "AH-R0023",
+  "name": "Luz Aranda",
+  "age": 27,
+  "occupation": "Bank teller",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The small signature",
+  "biography": "stories/residents/01/03-the-small-signature.md#ah-r0023",
+  "life": "Luz counts tips separately from wages because her mother once lost benefits over money somebody only thought she'd earned. She thinks collecting coins deserves as much paper trail as accepting a six-figure transfer. Monday often includes a stop at the courtyard by Ferry Street Rooms, where Luz prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I counted the jar twice and kept the bent coin. It's in my drawer because I liked knowing exactly which part of that giant number came from us. I've offered to count the next jar in public.",
+  "appearance": "Luz has a smooth side part with one rebellious curl, fine brows over wide-set eyes, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with a thin silver ring worn on a cord. When somebody else has the floor, Luz looks toward the door whenever a name is called.",
+  "personality": "Luz reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Luz trusts most.",
+  "agenda": "To have each little contribution visible in the endowment record.",
+  "family": "Sonia Neal is Luz’s parent’s cousin. Luz makes the call. Sonia is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The kitchen without a boss*, Sonia says, “I supply eggs and normally ask for the boss.”",
+  "connections": "Min Calder. They count the little donations against the costs the formal accounts left out.",
+  "familyIds": [
+    "AH-R1444"
+  ],
+  "connectionIds": [
+    "AH-R0029"
+  ],
+  "reactions": [
+    {
+      "situation": "The paper wants a photograph with only the biggest donor",
+      "response": "Luz asks the vendor where they would like to stand and tells the photographer who paid the eleven dollars.",
+      "asWritten": "The paper wants a photograph with only the biggest donor. Luz asks the vendor where they would like to stand and tells the photographer who paid the eleven dollars."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Luz gives up their own space if possible and asks the passengers who arrived first to choose what happens next.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Luz gives up their own space if possible and asks the passengers who arrived first to choose what happens next."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Luz does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Luz does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0451",
+  "personId": "AH-R0451",
+  "name": "Tali Moreno",
+  "age": 42,
+  "occupation": "Uniform fitter",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The button card",
+  "biography": "stories/residents/04/01-the-button-card.md#ah-r0451",
+  "life": "“I still remember a returned blazer that still had bus tickets in it.” Tuesday often includes a stop at the crossing outside Verve Nail Studio, where Tali notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I recognized the button from my first school blazer and came back with its twin.",
+  "appearance": "Tali has a softly rounded chin under sharp cheekbones. Look for a cropped cut that shows the shape of the ears. On an ordinary day, the familiar outfit is a charcoal zip cardigan with a knotted piece of sail thread on a key ring. In conversation Tali counts on the side of one finger where hardly anybody notices.",
+  "personality": "Tali is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To return the twin button to the original blazer.",
+  "family": "Sera Noor is Tali’s cousin raised in the same household. Tali brings whatever was actually growing or affordable that week. Sera makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The thirteenth doughnut*, Sera says, “Our night crew never attends the monthly breakfast meeting.”",
+  "connections": "Audrey Hughes. Common work buttons let the card keep giving after the valuable ones go.",
+  "familyIds": [
+    "AH-R0096"
+  ],
+  "connectionIds": [
+    "AH-R0458"
+  ],
+  "reactions": [
+    {
+      "situation": "A child takes the most valuable button",
+      "response": "Tali lets the child show what the button is for before calling it too valuable.",
+      "asWritten": "A child takes the most valuable button. Tali lets the child show what the button is for before calling it too valuable."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Tali waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Tali waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Tali helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Tali helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

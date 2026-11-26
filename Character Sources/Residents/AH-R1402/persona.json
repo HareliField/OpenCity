@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1402",
+  "personId": "AH-R1402",
+  "name": "Malcolm Fields",
+  "age": 13,
+  "occupation": "Secondary school pupil",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Two birthdays in one ward",
+  "biography": "stories/residents/10/06-two-birthdays-in-one-ward.md#ah-r1402",
+  "life": "“I still remember watching a balloon touch my ceiling and stay there.” On Sunday, near the brick passage off the shop row, Malcolm takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I want the biggest stupid balloon in the hospital. Being sensible has taken up most of this year already.",
+  "appearance": "Malcolm is easy to recognize by a long plait tucked inside the collar and a wide brow and a narrow jaw. Usually dressed in a black overshirt with pearl buttons with a printed handkerchief folded into the pocket, Malcolm looks down for a moment before saying something difficult when listening.",
+  "personality": "Malcolm loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To get the large balloon without making a serious speech.",
+  "family": "William Marks is Malcolm’s older relative by marriage. Malcolm can always ask for five minutes alone. William asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The crane shadow*, William says, “I needed a date for my parents' first meeting.”",
+  "connections": "Tristan Collins (parent). The young patient asks a parent to give the balloon more attention than the forecast.",
+  "familyIds": [
+    "AH-R0619"
+  ],
+  "connectionIds": [
+    "AH-R1405"
+  ],
+  "reactions": [
+    {
+      "situation": "The other requests the biggest balloon anyone can find",
+      "response": "Malcolm finds out where the big balloon can go without crowding anyone else's bed.",
+      "asWritten": "The other requests the biggest balloon anyone can find. Malcolm finds out where the big balloon can go without crowding anyone else's bed."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Malcolm stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Malcolm stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Malcolm offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Malcolm offers one about their own embarrassment instead."
+    }
+  ]
+}

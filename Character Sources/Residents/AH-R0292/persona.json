@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0292",
+  "personId": "AH-R0292",
+  "name": "Lily Wilcox",
+  "age": 57,
+  "occupation": "Boat carpenter",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A sail cut small",
+  "biography": "stories/residents/02/15-a-sail-cut-small.md#ah-r0292",
+  "life": "“I started boat work building shelves for a ferry lunchroom.” Thursday often includes a stop at the entrance to the Wash House, where Lily stops for local notices even on a day without a load to wash.",
+  "voice": "I wanted the stained piece because my niece spilled her first cup of tea there in a swell.",
+  "appearance": "Lily is easy to recognize by a blunt cut just below the ears and a narrow face with an expressive upper lip. Usually dressed in an olive canvas jacket with a knotted piece of sail thread on a key ring, Lily raises one eyebrow long before saying yes when listening.",
+  "personality": "Lily listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To give the stained panel to the niece who made the mark.",
+  "family": "Javier Aguilar is Lily’s younger cousin. Lily calls about good news first. Javier is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The empty chair on nights*, Javier says, “I want the farewell because last time I left work sick nobody even phoned.”",
+  "connections": "Mateo Alston. The tea stain and the racing patch tell two stories from the very same piece of sail.",
+  "familyIds": [
+    "AH-R0951"
+  ],
+  "connectionIds": [
+    "AH-R0298"
+  ],
+  "reactions": [
+    {
+      "situation": "The marina asks to put its name on every finished piece",
+      "response": "Lily asks the makers whether they want a brand name on what they take home.",
+      "asWritten": "The marina asks to put its name on every finished piece. Lily asks the makers whether they want a brand name on what they take home."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Lily looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Lily looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Lily keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Lily keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

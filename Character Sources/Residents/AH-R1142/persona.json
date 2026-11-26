@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1142",
+  "personId": "AH-R1142",
+  "name": "Jonas Osborne",
+  "age": 51,
+  "occupation": "Deli customer and mechanic",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The first delivery fee",
+  "biography": "stories/residents/08/10-the-first-delivery-fee.md#ah-r1142",
+  "life": "“I still remember finding out a favor I expected was someone's unpaid afternoon.” Wednesday often includes a stop at the downtown fountain, where Jonas keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I am the regular who complained first. I believed the owner paid for delivery all these years.",
+  "appearance": "Jonas has full cheeks and a mouth that pulls slightly to one side. Look for a smooth side part with one rebellious curl. Away from the heat of the kitchen, the familiar outfit is a rust-colored canvas coat with a seam let out by a narrow strip of contrasting fabric. In conversation Jonas holds eye contact until the other person has finished.",
+  "personality": "Jonas has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To correct the complaint about the new fee.",
+  "family": "Dominic Cho is Jonas’s cousin raised in the same household. Jonas asks what the birthday guest would like this year. Dominic remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A shelf of apologies*, Dominic says, “I am returning a book to a closed classroom.”",
+  "connections": "Penelope Tang. The former volunteer tells a regular who really paid for delivery time.",
+  "familyIds": [
+    "AH-R0668"
+  ],
+  "connectionIds": [
+    "AH-R1141"
+  ],
+  "reactions": [
+    {
+      "situation": "The new rider asks who received last year's tips",
+      "response": "Jonas asks who did the work and who was paid before the shop divides today's tips.",
+      "asWritten": "The new rider asks who received last year's tips. Jonas asks who did the work and who was paid before the shop divides today's tips."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Jonas repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Jonas repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Jonas says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Jonas says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

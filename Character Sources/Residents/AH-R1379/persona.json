@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1379",
+  "personId": "AH-R1379",
+  "name": "Tom Crane",
+  "age": 43,
+  "occupation": "Building manager",
+  "home": "Coast Ridge",
+  "episode": "The gift nobody wants",
+  "biography": "stories/residents/10/03-the-gift-nobody-wants.md#ah-r1379",
+  "life": "“I still remember a tenant asking me the landlord's own first rent.” On Wednesday, near Maré Coffee, Tom likes the table where people coming off shift stop checking the time.",
+  "voice": "I am the property manager. I offered to explain the tenants' part before the family wrote another letter.",
+  "appearance": "Tom has a strong profile and a little space between the front teeth. Look for a high puff tied with plain cord. On an ordinary day, the familiar outfit is a rust-colored canvas coat with a square of clean cloth for polishing smudges. In conversation Tom raises one eyebrow long before saying yes.",
+  "personality": "Tom admires skill and distrusts the idea that skill gives anyone permission to be rude. Tom learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To brief both adult parties about the tenants.",
+  "family": "Hamish Nichols is Tom’s second cousin. Tom can stop the walk at any corner. Hamish chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Five missing lunches*, Hamish says, “The tins got blamed on casual workers. I found my own name under the stack.”",
+  "connections": "Cassandra Knight. The valuation and the tenants' explanation give the daughter a realistic picture of ownership.",
+  "familyIds": [
+    "AH-R0163"
+  ],
+  "connectionIds": [
+    "AH-R1373"
+  ],
+  "reactions": [
+    {
+      "situation": "The daughter declines the property gift",
+      "response": "Tom takes the daughter's preferred shop seriously before proposing another gift.",
+      "asWritten": "The daughter declines the property gift. Tom takes the daughter's preferred shop seriously before proposing another gift."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Tom offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Tom offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Tom describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Tom describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

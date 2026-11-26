@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0086",
+  "personId": "AH-R0086",
+  "name": "Gus Lark",
+  "age": 64,
+  "occupation": "Hardware merchant",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The porch light",
+  "biography": "stories/residents/01/09-the-porch-light.md#ah-r0086",
+  "life": "Gus can remember the size of a light fitting from the way its owner cups both hands. The old ledger interests him because it records his shop under three successive names and never once misspells his. On Tuesday, near Studio Boulevard, Gus waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I sold the owner two bulbs every winter. He always wrote my name in a little book beside the price. I'd like to borrow the book for the shop's fiftieth birthday.",
+  "appearance": "Gus has tightly curled gray hair, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a fabric zip pull cut from a school scarf. When somebody else has the floor, Gus squares up pieces of paper while thinking.",
+  "personality": "Gus treats a small promise with the gravity others reserve for a contract. This makes Gus lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To display the bulb ledger alongside a photograph of the old shop sign.",
+  "family": "Reuben Sawyer is Gus’s cousin. Gus saves a place. Reuben chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The widow's dividend*, Reuben says, “I want one share for my grandson so somebody younger will keep asking how the rent is set.”",
+  "connections": "Della Keys. The hardware ledger gives the committee a less costly way to commemorate the lamp than buying it.",
+  "familyIds": [
+    "AH-R0330"
+  ],
+  "connectionIds": [
+    "AH-R0090"
+  ],
+  "reactions": [
+    {
+      "situation": "A shift worker turns up after the porch goes dark",
+      "response": "Gus keeps the worker company at the gate and lets the homeowner explain the dark.",
+      "asWritten": "A shift worker turns up after the porch goes dark. Gus keeps the worker company at the gate and lets the homeowner explain the dark."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Gus separates the money question from the broken promise and asks which one the family wants to discuss first.",
+      "asWritten": "A family supper turns into an argument about old debt. Gus separates the money question from the broken promise and asks which one the family wants to discuss first."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Gus says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Gus says what can be returned and asks whether that will do."
+    }
+  ]
+}

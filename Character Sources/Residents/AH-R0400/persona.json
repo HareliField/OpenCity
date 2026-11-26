@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0400",
+  "personId": "AH-R0400",
+  "name": "Sasha Crane",
+  "age": 51,
+  "occupation": "Divorced taxi dispatcher",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The broken till",
+  "biography": "stories/residents/03/10-the-broken-till.md#ah-r0400",
+  "life": "“I still remember buying our divorce dinner from two counters.” On Tuesday, near the courtyard by Ferry Street Rooms, Sasha prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I wasn't hungry. I joined the queue because it felt like the first real conversation since my divorce.",
+  "appearance": "On an ordinary day, look for a brown corduroy jacket and a pressed flower kept in the clear back of a phone case. Sasha has a round face with a pronounced chin, with a cropped cut that shows the shape of the ears. Sasha looks toward the door whenever a name is called during a conversation.",
+  "personality": "Sasha talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Sasha's ways of saying that it is all right to leave.",
+  "agenda": "To find another reason to join the deli regulars.",
+  "family": "Ruben Keller is Sasha’s half-sibling. Sasha sets the time to leave. Ruben picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *Low water music*, Ruben says, “Our boat club wants an official name. I brought nine unofficial ones on a damp receipt.”",
+  "connections": "Marlowe May. A manager timing the line hears from a customer who liked how long the conversation took.",
+  "familyIds": [
+    "AH-R0225"
+  ],
+  "connectionIds": [
+    "AH-R0399"
+  ],
+  "reactions": [
+    {
+      "situation": "A manager asks for the handwritten sandwich tally",
+      "response": "Sasha makes sure customers' names needn't travel with the tally.",
+      "asWritten": "A manager asks for the handwritten sandwich tally. Sasha makes sure customers' names needn't travel with the tally."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Sasha asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Sasha asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Sasha says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Sasha says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

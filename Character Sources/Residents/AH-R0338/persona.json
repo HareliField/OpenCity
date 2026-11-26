@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0338",
+  "personId": "AH-R0338",
+  "name": "Elise Kapoor",
+  "age": 19,
+  "occupation": "Student illustrator",
+  "home": "the blocks north of the port",
+  "episode": "The spare spectacles",
+  "biography": "stories/residents/03/04-the-spare-spectacles.md#ah-r0338",
+  "life": "“I still remember drawing directions for the person who found my bag.” Sunday often includes a stop at the foot of Harbor Viaduct, where Elise pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I drew the scene instead of spelling it. The witness moved the desk six inches on paper.",
+  "appearance": "Elise has heavy brows and an unusually delicate jaw. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a narrow-striped sweater with a knotted piece of sail thread on a key ring. In conversation Elise leans a shoulder against the wall during long conversations.",
+  "personality": "Elise can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To produce a drawing the witness can correct.",
+  "family": "Remy Stowe is Elise’s stepsibling. Elise knows which ones can be shared. Remy keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Window seven*, Remy says, “Those eight minutes belonged to a patient waiting for a scan.”",
+  "connections": "Noel Holmes. A drawing of the room gives the hesitant witness a less public way to begin.",
+  "familyIds": [
+    "AH-R0055"
+  ],
+  "connectionIds": [
+    "AH-R0340"
+  ],
+  "reactions": [
+    {
+      "situation": "The counter is busy and another visitor starts to hurry the signing",
+      "response": "Elise puts a time on when the counter will be free again and protects the witness's time to read.",
+      "asWritten": "The counter is busy and another visitor starts to hurry the signing. Elise puts a time on when the counter will be free again and protects the witness's time to read."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Elise finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Elise finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Elise asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Elise asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

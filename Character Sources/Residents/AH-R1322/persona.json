@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1322",
+  "personId": "AH-R1322",
+  "name": "Jasmine Moreau",
+  "age": 48,
+  "occupation": "School cleaner",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The school photograph that travels",
+  "biography": "stories/residents/09/13-the-school-photograph-that-travels.md#ah-r1322",
+  "life": "“I still remember unlocking a school library while the streetlights were on.” People around the corner outside Coastal Barber know Jasmine by a small Monday habit. Jasmine usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I am the cleaner who opened the library early. I kept my copy inside the first book she asked to borrow.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a tiny red thread tied through the lowest buttonhole. Jasmine has a heart-shaped face and prominent ears, with short, uneven waves that refuse to lie flat. Jasmine looks toward the door whenever a name is called during a conversation.",
+  "personality": "Jasmine has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To keep the class picture in the child's favorite book.",
+  "family": "Ren Ruiz is Jasmine’s second cousin. Jasmine saves a place. Ren chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The kitchen without a boss*, Ren says, “I have wanted this job for years. I learned on day two that the deliveries call before the children wake.”",
+  "connections": "Marlowe Nunes. The library copy and the bicycle drawing are two ways a helper can receive thanks.",
+  "familyIds": [
+    "AH-R1441"
+  ],
+  "connectionIds": [
+    "AH-R1329"
+  ],
+  "reactions": [
+    {
+      "situation": "A recipient wants to say thanks without being pictured",
+      "response": "Jasmine offers a written reply or an ordinary visit without requiring a photograph in return.",
+      "asWritten": "A recipient wants to say thanks without being pictured. Jasmine offers a written reply or an ordinary visit without requiring a photograph in return."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Jasmine starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Jasmine starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Jasmine says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Jasmine says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

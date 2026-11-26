@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0492",
+  "personId": "AH-R0492",
+  "name": "Marc Ward",
+  "age": 49,
+  "occupation": "Former prisoner and warehouse packer",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The dead man's tab",
+  "biography": "stories/residents/04/05-the-dead-man-s-tab.md#ah-r0492",
+  "life": "“I still remember returning from prison to a kitchen with unfamiliar cups.” Tuesday often includes a stop at the bank steps, where Marc takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I shared his flat after prison. The tab includes meals for men whose first paycheck hadn't come.",
+  "appearance": "Marc has a swept fringe and a closely clipped nape, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a cream pullover. It usually goes with a braided bracelet with a single wooden bead. When somebody else has the floor, Marc gathers both sleeves neatly before settling in.",
+  "personality": "Marc treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To recognize the meals bought for new arrivals after prison.",
+  "family": "Terry Acosta is Marc’s half-sibling. Marc sets the time to leave. Terry picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The upstairs piano*, Terry says, “My father scratched the piano name off after the creditors came.”",
+  "connections": "Faye Daniels. They discuss who gets to direct the memorial money after shared prison housing ends.",
+  "familyIds": [
+    "AH-R0385"
+  ],
+  "connectionIds": [
+    "AH-R0495"
+  ],
+  "reactions": [
+    {
+      "situation": "The deli is asked to publish the whole tab",
+      "response": "Marc asks who owns the personal information on the tab before any of it leaves the counter.",
+      "asWritten": "The deli is asked to publish the whole tab. Marc asks who owns the personal information on the tab before any of it leaves the counter."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Marc moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Marc moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Marc changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Marc changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

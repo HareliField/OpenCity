@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0749",
+  "personId": "AH-R0749",
+  "name": "Alex Cotton",
+  "age": 34,
+  "occupation": "Lettering artist",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A boat for sale twice",
+  "biography": "stories/residents/05/15-a-boat-for-sale-twice.md#ah-r0749",
+  "life": "“I still remember changing a name on a boat that had never moved.” Monday often includes a stop at the foot of Harbor Viaduct, where Alex pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I want the name painted over. It's my mother's name and she wants it back for her own dinghy.",
+  "appearance": "Alex has auburn hair cut square at the nape, a crooked front tooth visible when laughing, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with a pair of reading glasses in a cloth sleeve. When somebody else has the floor, Alex rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Alex is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Alex is concerned.",
+  "agenda": "To reclaim the mother's name for her own dinghy.",
+  "family": "Ari Pennrose is Alex’s half-sibling. Alex is free to hang up first. Ari makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The porch light*, Ari says, “I used that lit window in a slide about waste.”",
+  "connections": "Elinor Stein. The family may separate the little dinghy from the larger boat's borrowed name.",
+  "familyIds": [
+    "AH-R0089"
+  ],
+  "connectionIds": [
+    "AH-R0744"
+  ],
+  "reactions": [
+    {
+      "situation": "The boat's owners give two answers about selling",
+      "response": "Alex asks both owners which decision has actually been made.",
+      "asWritten": "The boat's owners give two answers about selling. Alex asks both owners which decision has actually been made."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Alex asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Alex asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Alex asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Alex asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

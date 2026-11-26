@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0832",
+  "personId": "AH-R0832",
+  "name": "Anita Abbott",
+  "age": 43,
+  "occupation": "Child care manager",
+  "home": "the western residential streets",
+  "episode": "A room for a father",
+  "biography": "stories/residents/06/09-a-room-for-a-father.md#ah-r0832",
+  "life": "“I still remember the winter we postponed three dental appointments.” Friday often includes a stop at the courtyard by Ferry Street Rooms, where Anita prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I forgave the man years ago. I am still furious about the rent he left and the teeth we couldn't afford to fix.",
+  "appearance": "Anita has a high puff tied with plain cord, a narrow face with an expressive upper lip, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Anita holds eye contact until the other person has finished.",
+  "personality": "Anita is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Anita is by the number of tiny errands suddenly being done.",
+  "agenda": "To name the old rent loss without forbidding the visit.",
+  "family": "Gilbert Moss is Anita’s half-sibling. Anita picks the meeting place. Gilbert sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *One last dress rehearsal*, Gilbert says, “I sewed the costumes. This was the first audience member who noticed we had put real pockets in all the work clothes.”",
+  "connections": "Jeff Jones. The relative who paid the fare admits a hope the relative who paid the back rent already understands.",
+  "familyIds": [
+    "AH-R1476"
+  ],
+  "connectionIds": [
+    "AH-R0839"
+  ],
+  "reactions": [
+    {
+      "situation": "A sibling leaves the room during the welcome dinner",
+      "response": "Anita leaves the departing sibling room to get out without turning supper into a vote.",
+      "asWritten": "A sibling leaves the room during the welcome dinner. Anita leaves the departing sibling room to get out without turning supper into a vote."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Anita asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Anita asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Anita agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Anita agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

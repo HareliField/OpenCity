@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1248",
+  "personId": "AH-R1248",
+  "name": "Tali Ross",
+  "age": 51,
+  "occupation": "Courthouse security worker",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A clean coat for court",
+  "biography": "stories/residents/09/05-a-clean-coat-for-court.md#ah-r1248",
+  "life": "“I still remember recognizing a coat even when I couldn't see its owner.” On Tuesday, near the brick passage off the shop row, Tali takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I work the courthouse door and recognize that coat from its owner's weekly jury-duty arguments.",
+  "appearance": "Tali has short sandy hair and a marked widow's peak, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, a dark green knitted vest. It usually goes with a folded shopping list secured by a miniature clip. When somebody else has the floor, Tali looks at people's hands before looking at what they carry.",
+  "personality": "Tali carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To let the two men collect the coat privately.",
+  "family": "Georgia Myers is Tali’s stepsibling. Tali asks what the birthday guest would like this year. Georgia remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A tenant who stays*, Georgia says, “I build tiny flats. I priced an addition and told everyone whose window it would shadow.”",
+  "connections": "Julian Kapoor. The insurance assessor and court worker recognize different parts of the claimant's history.",
+  "familyIds": [
+    "AH-R0988"
+  ],
+  "connectionIds": [
+    "AH-R1243"
+  ],
+  "reactions": [
+    {
+      "situation": "The borrower wants to return the coat before the hearing",
+      "response": "Tali checks whether the borrower has something suitable to wear through the hearing.",
+      "asWritten": "The borrower wants to return the coat before the hearing. Tali checks whether the borrower has something suitable to wear through the hearing."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Tali takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Tali takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Tali offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Tali offers to accompany them while they tell the truth."
+    }
+  ]
+}

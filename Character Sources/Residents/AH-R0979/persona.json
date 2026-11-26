@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0979",
+  "personId": "AH-R0979",
+  "name": "Dora Villa",
+  "age": 47,
+  "occupation": "Boat surveyor",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The expensive summer",
+  "biography": "stories/residents/07/08-the-expensive-summer.md#ah-r0979",
+  "life": "“I still remember taking the bill from my father when I finally earned more than him.” Wednesday often includes a stop at Studio Boulevard, where Dora waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I used to be the kid with no money at this party. I overpaid the bill before anyone could stop me.",
+  "appearance": "Back on the street, look for a cropped bottle-green coat and a replacement button a shade darker than the others. Dora has one cheek that creases before the other, with a smooth side part with one rebellious curl. Dora folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Dora can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To take the pressure off the host without embarrassing them.",
+  "family": "Cyrus Keller is Dora’s younger cousin. Dora puts the kettle on. Cyrus chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The third bedroom*, Cyrus says, “I have shared a room with my brother ever since the night we left.”",
+  "connections": "Gerard Ito. One relative wants to admit what supper costs. The other has already covered more than a fair share.",
+  "familyIds": [
+    "AH-R1131"
+  ],
+  "connectionIds": [
+    "AH-R0971"
+  ],
+  "reactions": [
+    {
+      "situation": "A waiter offers to split one birthday dessert among everybody",
+      "response": "Dora checks that the birthday guest likes the dessert before calculating the portions.",
+      "asWritten": "A waiter offers to split one birthday dessert among everybody. Dora checks that the birthday guest likes the dessert before calculating the portions."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Dora stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Dora stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Dora asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Dora asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

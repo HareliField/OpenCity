@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0570",
+  "personId": "AH-R0570",
+  "name": "Cory Stahl",
+  "age": 49,
+  "occupation": "Crossing attendant",
+  "home": "Old Town",
+  "episode": "The ladder crossing",
+  "biography": "stories/residents/04/12-the-ladder-crossing.md#ah-r0570",
+  "life": "“I still remember a crossing sound I could hear through a closed door.” People around the market by Market Flats know Cory by a small Saturday habit. Cory often waits until the delivery baskets are stacked before going in.",
+  "voice": "I rang the crossing bell with my elbow. The blind man beside me thought I'd done it for him, and then I did.",
+  "appearance": "Cory has short, uneven waves that refuse to lie flat, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a boxy denim jacket. It usually goes with a small enamel bird on the lapel. When somebody else has the floor, Cory looks toward the door whenever a name is called.",
+  "personality": "Cory loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To ask which crossing signal the blind commuter can actually hear.",
+  "family": "Adela Hull is Cory’s half-sibling. Cory leaves the first voice message. Adela calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A room above the dryers*, Adela says, “I buy art from millionaires and want to pay the laundress in exposure.”",
+  "connections": "Zara Kang. The family playing among the rungs moves aside for a crossing signal somebody can hear.",
+  "familyIds": [
+    "AH-R1205"
+  ],
+  "connectionIds": [
+    "AH-R0567"
+  ],
+  "reactions": [
+    {
+      "situation": "A painter asks to put the ladder down",
+      "response": "Cory finds an empty, stable place to set it down while the painter rests.",
+      "asWritten": "A painter asks to put the ladder down. Cory finds an empty, stable place to set it down while the painter rests."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Cory asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Cory asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Cory offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Cory offers one about their own embarrassment instead."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1321",
+  "personId": "AH-R1321",
+  "name": "Casey Zhou",
+  "age": 16,
+  "occupation": "Secondary pupil",
+  "home": "Eastside",
+  "episode": "The school photograph that travels",
+  "biography": "stories/residents/09/13-the-school-photograph-that-travels.md#ah-r1321",
+  "life": "“I still remember a breakfast roll wrapped around a small encouraging note.” Friday often includes a stop at the public end of the South Shore boardwalk, where Casey checks the shade on the benches before deciding how long to stay.",
+  "voice": "I marked the bakery worker who fed me on the way in. Her name turns out to have two more syllables than we used.",
+  "appearance": "Casey has heavy brows and an unusually delicate jaw. Look for a swept fringe and a closely clipped nape. Outside school, the familiar outfit is an olive canvas jacket with a small enamel bird on the lapel. In conversation Casey folds a paper napkin into quarters without noticing.",
+  "personality": "Casey carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To thank the breakfast worker under her full name.",
+  "family": "Toby Miles is Casey’s cousin raised in the same household. Casey brings something that can still be enjoyed tomorrow. Toby checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Reopening at six*, Toby says, “I close the shop. The last train leaves thirteen minutes before the last dryer stops.”",
+  "connections": "Quinn Avery. The pupil leaving the school and the classmate leaving for another coast choose copies for different reasons. Also in the story is Aldo Cao (classroom teacher).",
+  "familyIds": [
+    "AH-R1053"
+  ],
+  "connectionIds": [
+    "AH-R1324",
+    "AH-R1323"
+  ],
+  "reactions": [
+    {
+      "situation": "The departing pupil leaves a teacher off the photograph list",
+      "response": "Casey asks the pupil privately what the photograph list means to them.",
+      "asWritten": "The departing pupil leaves a teacher off the photograph list. Casey asks the pupil privately what the photograph list means to them."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Casey offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Casey offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Casey offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Casey offers to accompany them while they tell the truth."
+    }
+  ]
+}

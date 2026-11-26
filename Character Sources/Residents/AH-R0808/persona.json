@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0808",
+  "personId": "AH-R0808",
+  "name": "Paula Tan",
+  "age": 58,
+  "occupation": "Building manager",
+  "home": "the western residential streets",
+  "episode": "Home with stairs",
+  "biography": "stories/residents/06/06-home-with-stairs.md#ah-r0808",
+  "life": "“I still remember measuring a badly placed rail while wearing a new suit.” People around the public end of the South Shore boardwalk know Paula by a small Sunday habit. Paula checks the shade on the benches before deciding how long to stay.",
+  "voice": "I manage the building. The owner approved a handrail after I showed him how his own dad climbs.",
+  "appearance": "On an ordinary day, look for a striped cotton shirt and a train token tied to a zipper pull. Paula has a strong profile and a little space between the front teeth, with a smooth side part with one rebellious curl. Paula presses the lips together to keep a smile in during a conversation.",
+  "personality": "Paula keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Paula wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To secure a permanent accessible rail.",
+  "family": "Ella Tran is Paula’s half-sibling. Paula can stop the walk at any corner. Ella chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The soft wharf chalk*, Ella says, “I wrote WAIT FOR ME there when my brother was posted away.”",
+  "connections": "Jules Wong. The building manager has to approve the rail the fitter can actually install.",
+  "familyIds": [
+    "AH-R0461"
+  ],
+  "connectionIds": [
+    "AH-R0803"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative offers to carry the patient up the stairs",
+      "response": "Paula asks the patient whether being carried is an offer they want to take up.",
+      "asWritten": "A relative offers to carry the patient up the stairs. Paula asks the patient whether being carried is an offer they want to take up."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Paula offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Paula offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Paula offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Paula offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

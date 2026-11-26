@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1065",
+  "personId": "AH-R1065",
+  "name": "Bianca Gallagher",
+  "age": 55,
+  "occupation": "Rail worker",
+  "home": "Old Town",
+  "episode": "Land without cranes",
+  "biography": "stories/residents/08/02-land-without-cranes.md#ah-r1065",
+  "life": "“I still remember one detour adding a whole hour to an easy shift.” Friday often includes a stop at the entrance to the Wash House, where Bianca stops for local notices even on a day without a load to wash.",
+  "voice": "I work the rail siding. Moving the warehouse shifts half my day onto the road.",
+  "appearance": "Bianca has short, uneven waves that refuse to lie flat, a softly rounded chin under sharp cheekbones, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Bianca folds a paper napkin into quarters without noticing.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Bianca takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To protect workable freight access.",
+  "family": "Essie Good is Bianca’s younger cousin. Bianca is allowed to ask about the bad news afterward. Essie calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Two portions*, Essie says, “The spare portion is mine. I go home before the register calls me a resident and come back before breakfast.”",
+  "connections": "Bailey Sato. A rail route and an old wall give the retired shareholder something tangible to show the grandson. Also in the story is Lars James (warehouse trainee).",
+  "familyIds": [
+    "AH-R0132"
+  ],
+  "connectionIds": [
+    "AH-R1066",
+    "AH-R1061"
+  ],
+  "reactions": [
+    {
+      "situation": "A developer brings a drawing of the finished offices",
+      "response": "Bianca asks where existing workers are shown in the finished picture.",
+      "asWritten": "A developer brings a drawing of the finished offices. Bianca asks where existing workers are shown in the finished picture."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Bianca asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Bianca asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Bianca asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Bianca asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

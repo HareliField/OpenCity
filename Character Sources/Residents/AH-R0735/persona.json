@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0735",
+  "personId": "AH-R0735",
+  "name": "Mateo Park",
+  "age": 49,
+  "occupation": "Family baker",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The split visit",
+  "biography": "stories/residents/05/14-the-split-visit.md#ah-r0735",
+  "life": "“I still remember a cake that fed three visitors nobody expected.” On Friday, near Breakwater Way, Mateo stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I baked one cake to thank two people. They finally got to cut it while we were all in the same room.",
+  "appearance": "Mateo has brown hair pinned away from the temples, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a watch on a cracked leather band. When somebody else has the floor, Mateo draws breath as if to speak and lets someone else go first.",
+  "personality": "Mateo enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To cut the cake in company.",
+  "family": "Byron Carbone is Mateo’s cousin. Mateo sets the time to leave. Byron picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *Overdue by a lifetime*, Byron says, “I kept the fine in coins for years. The library wants a story hour instead.”",
+  "connections": "David Marks. The cake and teapot become a real visit beyond the allotted care tasks.",
+  "familyIds": [
+    "AH-R0363"
+  ],
+  "connectionIds": [
+    "AH-R0740"
+  ],
+  "reactions": [
+    {
+      "situation": "Two carers turn up for one visit",
+      "response": "Mateo asks the client which ordinary task would be easier with two people present.",
+      "asWritten": "Two carers turn up for one visit. Mateo asks the client which ordinary task would be easier with two people present."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Mateo asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Mateo asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Mateo puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Mateo puts the deal away and suggests a walk."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0391",
+  "personId": "AH-R0391",
+  "name": "Nadia Hayes",
+  "age": 53,
+  "occupation": "Tomato vendor",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The broken till",
+  "biography": "stories/residents/03/10-the-broken-till.md#ah-r0391",
+  "life": "“I still remember my mother totaling a stall's takings in song.” On Monday, near the courtyard by Ferry Street Rooms, Nadia prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I learned sums selling tomatoes. I ran the paper till and earned my first paid shift.",
+  "appearance": "On an ordinary day, look for an olive canvas jacket and a small enamel bird on the lapel. Nadia has a narrow face with an expressive upper lip, with a soft fringe that falls across one eyebrow. Nadia steadies a cup with both hands while listening during a conversation.",
+  "personality": "Nadia has a talent for getting adversaries to laugh at exactly the same thing. Nadia knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To earn a first paid shift on the counter.",
+  "family": "Jo Johnson is Nadia’s cousin raised in the same household. Nadia checks the date twice. Jo brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Level with the window*, Jo says, “I delivered a complaint and a cake to the same desk.”",
+  "connections": "Nadia Holland. Drawings and mental arithmetic keep the lunch queue moving.",
+  "familyIds": [
+    "AH-R0719"
+  ],
+  "connectionIds": [
+    "AH-R0396"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer cannot pay until the till opens",
+      "response": "Nadia asks the cashier what can safely go on a temporary tab.",
+      "asWritten": "A customer cannot pay until the till opens. Nadia asks the cashier what can safely go on a temporary tab."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Nadia accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Nadia accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Nadia asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Nadia asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1102",
+  "personId": "AH-R1102",
+  "name": "Dana Harris",
+  "age": 66,
+  "occupation": "Divorced parcel courier",
+  "home": "Eastside",
+  "episode": "Two names on the chart",
+  "biography": "stories/residents/08/06-two-names-on-the-chart.md#ah-r1102",
+  "life": "“I still remember a clinic letter turning up months after our divorce.” People around the market by Market Flats know Dana by a small Wednesday habit. Dana often waits until the delivery baskets are stacked before going in.",
+  "voice": "I am the divorced spouse whose surname still turns up. I can confirm the dates without renewing the argument.",
+  "appearance": "Dana is easy to recognize by two white streaks in otherwise dark hair and a flat bridge to the nose and a mobile brow. Usually dressed in a cropped bottle-green coat with a stitched row of blue crosses along an old repair, Dana turns fully toward the person speaking when listening.",
+  "personality": "Dana is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To confirm the dates without reviving a divorce dispute.",
+  "family": "Iris Cade is Dana’s younger cousin. The family spent one holiday with the electricity off. They remember who found the candles, who kept the food cold and who cracked the joke that let the children stop being brave. Dana is proudest of the practical part. Asked about *The borrowed bass*, Iris says, “I lent the bass because I remembered what it was like to be the kid with empty hands.”",
+  "connections": "Fernando Arendt. Old letters help the former spouse confirm dates without reopening the marriage. Also in the story is Paloma Arendt (former spouse).",
+  "familyIds": [
+    "AH-R0122"
+  ],
+  "connectionIds": [
+    "AH-R1109",
+    "AH-R1101"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member asks to see both old folders",
+      "response": "Dana checks what the patient has authorized before handing over either folder.",
+      "asWritten": "A family member asks to see both old folders. Dana checks what the patient has authorized before handing over either folder."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Dana looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Dana looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Dana thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Dana thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

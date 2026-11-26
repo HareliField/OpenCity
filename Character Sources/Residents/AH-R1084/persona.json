@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1084",
+  "personId": "ah-pd-126",
+  "name": "Drew Silva",
+  "age": 36,
+  "occupation": "Metro SWAT officer",
+  "home": "Midtown",
+  "episode": "First shift back",
+  "biography": "stories/residents/08/04-first-shift-back.md#ah-r1084",
+  "life": "“I still remember teaching my old mentor a new form on a borrowed laptop.” Thursday often includes a stop at the public road outside the Port of Asphalt, where Drew can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I trained under the returning worker. Now we have to admit I'm the one who knows the new forms.",
+  "appearance": "Drew has auburn hair cut square at the nape, a small notch in the left eyebrow, and a favorite piece of clothing, a mustard canvas overshirt. It usually goes with a stitched row of blue crosses along an old repair. When somebody else has the floor, Drew gives a little nod before asking a hard question.",
+  "personality": "Drew prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To teach the new forms without belittling the mentor.",
+  "family": "Ona Voss is Drew’s stepsibling. Drew is free to hang up first. Ona makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *An unfinished atlas*, Ona says, “I can tell a right-handed child did the sewing.”",
+  "connections": "Mia Frost. The colleague learning the new form has reason to answer a message that stopped too early.",
+  "familyIds": [
+    "AH-R0067"
+  ],
+  "connectionIds": [
+    "AH-R1085"
+  ],
+  "reactions": [
+    {
+      "situation": "A coworker asks for private details about the leave",
+      "response": "Drew leaves the reason for leave with the returning colleague and redirects the question to working arrangements.",
+      "asWritten": "A coworker asks for private details about the leave. Drew leaves the reason for leave with the returning colleague and redirects the question to working arrangements."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Drew asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Drew asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Drew clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Drew clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

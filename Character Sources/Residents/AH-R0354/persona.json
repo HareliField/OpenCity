@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0354",
+  "personId": "AH-R0354",
+  "name": "Linden Lewis",
+  "age": 48,
+  "occupation": "Football commentator",
+  "home": "Midtown",
+  "episode": "The hospital radio",
+  "biography": "stories/residents/03/06-the-hospital-radio.md#ah-r0354",
+  "life": "“I still remember hearing an entire crowd through one small speaker.” On Tuesday, near Ferris Deli, Linden asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I announce local football and heard my own voice from a hospital bed. I'd like the next patient to choose silence.",
+  "appearance": "On an ordinary day, look for a cream pullover and a little coil of soft measuring tape. Linden has a wide brow and a narrow jaw, with thick, tightly coiled hair. Linden draws breath as if to speak and lets someone else go first during a conversation.",
+  "personality": "Linden is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Linden is by the number of tiny errands suddenly being done.",
+  "agenda": "To let both patients choose when the commentary plays.",
+  "family": "Blake Liu is Linden’s cousin raised in the same household. Linden makes the call. Blake is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *An empty dedication*, Blake says, “I used to be her wife. I know there's a reason the first page is blank and I'm not asking for my name.”",
+  "connections": "Cory Walsh. They arrange a shared score without making the entire ward hear the same game.",
+  "familyIds": [
+    "AH-R1419"
+  ],
+  "connectionIds": [
+    "AH-R0359"
+  ],
+  "reactions": [
+    {
+      "situation": "The old tuning wheel goes missing from the shelf",
+      "response": "Linden checks the repair bench before assuming anyone took the dial.",
+      "asWritten": "The old tuning wheel goes missing from the shelf. Linden checks the repair bench before assuming anyone took the dial."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Linden asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Linden asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Linden agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Linden agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

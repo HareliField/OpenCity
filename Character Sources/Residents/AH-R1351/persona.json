@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1351",
+  "personId": "AH-R1351",
+  "name": "Dana Randall",
+  "age": 48,
+  "occupation": "Laundry operator",
+  "home": "the blocks north of the port",
+  "episode": "A closing hour",
+  "biography": "stories/residents/10/01-a-closing-hour.md#ah-r1351",
+  "life": "“I still remember turning the laundromat key while my daughter slept upstairs.” Wednesday often includes a stop at Maré Coffee, where Dana likes the table where people coming off shift stop checking the time.",
+  "voice": "I advertised always open before I had a daughter. She asked which of those two promises I intended to keep.",
+  "appearance": "On an ordinary day, look for a pale blue work shirt and a braided bracelet with a single wooden bead. Dana has a scattering of freckles across the bridge of the nose, with a high puff tied with plain cord. Dana turns fully toward the person speaking during a conversation.",
+  "personality": "Dana prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To make the birthday a real day off.",
+  "family": "Silas Pike is Dana’s stepsibling. Dana calls back when there is finally a little privacy. Silas leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The small signature*, Silas says, “I wrote the gift restriction in language the vendor couldn't read.”",
+  "connections": "Idris Marsh. The family birthday only remains a real commitment if the owner and organizer set the same hour. Also in the story is Jonathan Lund (laundry employee).",
+  "familyIds": [
+    "AH-R0024"
+  ],
+  "connectionIds": [
+    "AH-R1357",
+    "AH-R1353"
+  ],
+  "reactions": [
+    {
+      "situation": "The operator closes the doors for a family birthday",
+      "response": "Dana looks for a neighboring wash service and leaves the family birthday intact.",
+      "asWritten": "The operator closes the doors for a family birthday. Dana looks for a neighboring wash service and leaves the family birthday intact."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Dana asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Dana asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Dana clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Dana clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

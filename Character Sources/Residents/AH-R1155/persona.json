@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1155",
+  "personId": "AH-R1155",
+  "name": "Duncan Hsu",
+  "age": 35,
+  "occupation": "Shift worker",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The hair after illness",
+  "biography": "stories/residents/08/11-the-hair-after-illness.md#ah-r1155",
+  "life": "“I still remember telling a friend they looked brave when they wanted to look sleepy.” On Wednesday, near the bank steps, Duncan takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I used to say she looked brave. I asked what she'd like me to notice and she said her earrings.",
+  "appearance": "On an ordinary day, look for a charcoal zip cardigan and one cuff folded back twice. Duncan has a wide brow and a narrow jaw, with dark brown curls cut close behind the ears. Duncan starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Duncan has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To notice something the client wants noticed.",
+  "family": "Mia Taylor is Duncan’s cousin. Duncan brings whatever was actually growing or affordable that week. Mia makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *A play in a pocket*, Mia says, “I used a fare ticket for the curtain. It came from the bus that brought me to my first audition.”",
+  "connections": "Dora Iyer. The person who used to say brave learns when another survivor prefers ordinary conversation.",
+  "familyIds": [
+    "AH-R0576"
+  ],
+  "connectionIds": [
+    "AH-R1158"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone asks to take a photograph before the haircut",
+      "response": "Duncan waits for the customer's permission before anyone takes a picture.",
+      "asWritten": "Someone asks to take a photograph before the haircut. Duncan waits for the customer's permission before anyone takes a picture."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Duncan takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Duncan takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Duncan explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Duncan explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0934",
+  "personId": "ah-pd-116",
+  "name": "Maya Scott",
+  "age": 51,
+  "occupation": "Command officer",
+  "home": "Old Town",
+  "episode": "A civilian apology",
+  "biography": "stories/residents/07/04-a-civilian-apology.md#ah-r0934",
+  "life": "“I still remember the awkwardness of apologizing in work clothes.” People around Harbour Bakery know Maya by a small Saturday habit. Maya buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I don't like apologies delivered in uniform. I have offered to come back after my watch.",
+  "appearance": "Maya has a swept fringe and a closely clipped nape, a narrow face with an expressive upper lip, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a little coil of soft measuring tape. When somebody else has the floor, Maya rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Maya talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Maya's ways of saying that it is all right to leave.",
+  "agenda": "To meet the shopkeeper without a uniform if requested.",
+  "family": "Olivia Hu is Maya’s second cousin. Maya asks what the birthday guest would like this year. Olivia remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Five missing lunches*, Olivia says, “I bought the empty tins by weight at the charity sale.”",
+  "connections": "Bea Morgan. A visit after watch gives a worker time to check the photograph against the dates of leave.",
+  "familyIds": [
+    "AH-R0166"
+  ],
+  "connectionIds": [
+    "AH-R0937"
+  ],
+  "reactions": [
+    {
+      "situation": "The shopkeeper asks for a public correction",
+      "response": "Maya agrees a place and size for the correction with the person who was named.",
+      "asWritten": "The shopkeeper asks for a public correction. Maya agrees a place and size for the correction with the person who was named."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Maya asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Maya asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Maya says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Maya says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

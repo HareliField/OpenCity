@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0874",
+  "personId": "AH-R0874",
+  "name": "Karim Klein",
+  "age": 69,
+  "occupation": "Retired touring player",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The almost scholarship",
+  "biography": "stories/residents/06/13-the-almost-scholarship.md#ah-r0874",
+  "life": "“I still remember taking a night's rest beside my own instrument case.” Tuesday often includes a stop at the window at Night Shift Donuts, where Karim knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I used to sleep in a practice room. I told the pupil because I don't want that passed off as romantic.",
+  "appearance": "Karim has silver temples and a dark fringe, a heart-shaped face and prominent ears, and a favorite piece of clothing, an olive canvas jacket. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Karim gathers both sleeves neatly before settling in.",
+  "personality": "Karim carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To find accommodation that doesn't repeat the practice-room years.",
+  "family": "Byron Sato is Karim’s second cousin. An old family mantel clock gained three minutes a day. People who couldn't bear to be late liked it. Everybody else wondered why the household was always the first to arrive. Karim shows up early and finds a small job until things start. Asked about *A house divided kindly*, Byron says, “I spent years keeping my hedge straighter than hers.”",
+  "connections": "Ren Su. A former musician who slept at school understands the price of a clean practice shirt.",
+  "familyIds": [
+    "AH-R1431"
+  ],
+  "connectionIds": [
+    "AH-R0878"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative urges the pupil to accept in public",
+      "response": "Karim lets the pupil answer privately before relatives announce an acceptance.",
+      "asWritten": "A relative urges the pupil to accept in public. Karim lets the pupil answer privately before relatives announce an acceptance."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Karim offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Karim offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Karim offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Karim offers to accompany them while they tell the truth."
+    }
+  ]
+}

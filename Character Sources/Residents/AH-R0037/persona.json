@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0037",
+  "personId": "AH-R0037",
+  "name": "Art Robles",
+  "age": 68,
+  "occupation": "Retired detective",
+  "home": "Midtown",
+  "episode": "The wrong bicycle",
+  "biography": "stories/residents/01/04-the-wrong-bicycle.md#ah-r0037",
+  "life": "Art was a detective long enough to give a persuasive answer even when a less tidy one was true. Retirement has put him in a family full of children who don't accept his first answer. People around the bank steps know Art by a small Monday habit. Art takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I gave one of those bikes to my grandson and told him it was new. Now the former owner wants to say hello. I have to decide whether a pretty lie is worth another one.",
+  "appearance": "Art is easy to recognize by steel-colored hair cut square above the collar and a round face with a pronounced chin. Usually dressed in a washed violet jersey with a narrow brass watch set a little fast, Art looks at people's hands before looking at what they carry when listening.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To tell his grandson where the gift actually came from.",
+  "family": "Elena Mehta is Art’s half-sibling. Art brings the paper and a pen. Elena decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The trust with a typo*, Elena says, “I endowed the second scholarship only after I heard her laugh at the error.”",
+  "connections": "Alim Ward. They both owe a child an honest account of why adults became so invested in a yellow bicycle.",
+  "familyIds": [
+    "AH-R0625"
+  ],
+  "connectionIds": [
+    "AH-R0040"
+  ],
+  "reactions": [
+    {
+      "situation": "A child's account contradicts the adult at the counter",
+      "response": "Art lets the child finish describing the bicycle and asks to hear the bell.",
+      "asWritten": "A child's account contradicts the adult at the counter. Art lets the child finish describing the bicycle and asks to hear the bell."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Art asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Art asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Art listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Art listens first to the account of how it was actually used."
+    }
+  ]
+}

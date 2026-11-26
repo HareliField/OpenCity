@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1163",
+  "personId": "AH-R1163",
+  "name": "David Soto",
+  "age": 55,
+  "occupation": "Parent and tire fitter",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The high road home",
+  "biography": "stories/residents/08/12-the-high-road-home.md#ah-r1163",
+  "life": "“I still remember standing at a crossing long after my daughter reached the other side.” Monday often includes a stop at Harbour Bakery, where David buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I trust my daughter and distrust the road. I had to say both things without making her fear bigger.",
+  "appearance": "David has a straight nose and deep-set eyes. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a dark green knitted vest with a small enamel bird on the lapel. In conversation David leans a shoulder against the wall during long conversations.",
+  "personality": "David feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To offer support without lending the daughter extra fear.",
+  "family": "Marcel Lai is David’s stepsibling. David decides what stays off the paper. Marcel brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *An address in pencil*, Marcel says, “I saved the old numeral for scrap and realized it matched the dent on my first motorcycle.”",
+  "connections": "Eileen Bloom (daughter). A parent has to let the learner speak first about what happened on the ridge.",
+  "familyIds": [
+    "AH-R0688"
+  ],
+  "connectionIds": [
+    "AH-R1161"
+  ],
+  "reactions": [
+    {
+      "situation": "The learner turns back before the crest",
+      "response": "David treats turning back as a completed decision and finds somewhere calm to stop.",
+      "asWritten": "The learner turns back before the crest. David treats turning back as a completed decision and finds somewhere calm to stop."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "David offers an ordinary errand that lets the distressed person leave without being followed by an audience.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. David offers an ordinary errand that lets the distressed person leave without being followed by an audience."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "David lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, David lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

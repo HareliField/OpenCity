@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0616",
+  "personId": "AH-R0616",
+  "name": "Edmund Porter",
+  "age": 70,
+  "occupation": "Retired crane operator",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The crane shadow",
+  "biography": "stories/residents/05/02-the-crane-shadow.md#ah-r0616",
+  "life": "“I still remember the last ladder I climbed without stopping.” People around the public end of the South Shore boardwalk know Edmund by a small Thursday habit. Edmund checks the shade on the benches before deciding how long to stay.",
+  "voice": "I can no longer climb the cab ladder. I stood inside its shadow and taught a child the controls from memory.",
+  "appearance": "Edmund has a round face with a pronounced chin. Look for a thin scattering of white hair over the crown. Back on the street, the familiar outfit is an olive canvas jacket with a stitched row of blue crosses along an old repair. In conversation Edmund steadies a cup with both hands while listening.",
+  "personality": "Edmund has a talent for getting adversaries to laugh at exactly the same thing. Edmund knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To teach one child from the quay level.",
+  "family": "Dev Ferris is Edmund’s second cousin. Edmund gets to change the plan. Dev offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The borrowed bass*, Dev says, “Somebody paid the ticket years ago and never removed it.”",
+  "connections": "William Marks. A father's dated picture gives a retired crane operator the time of the gull's next meeting.",
+  "familyIds": [
+    "AH-R0123"
+  ],
+  "connectionIds": [
+    "AH-R0619"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor reaches the quay too late to see it",
+      "response": "Edmund shows the visitor where the shadow fell and when the next chance comes.",
+      "asWritten": "A visitor reaches the quay too late to see it. Edmund shows the visitor where the shadow fell and when the next chance comes."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Edmund asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Edmund asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Edmund asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Edmund asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

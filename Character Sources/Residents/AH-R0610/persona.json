@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0610",
+  "personId": "AH-R0610",
+  "name": "Cian Khan",
+  "age": 31,
+  "occupation": "Chemistry technician",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Salt in the pockets",
+  "biography": "stories/residents/05/01-salt-in-the-pockets.md#ah-r0610",
+  "life": "“I still remember crystals growing on a saucer over my childhood bed.” On Sunday, near the public road outside the Port of Asphalt, Cian can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I wanted a scientific name for every crystal until the dockers started giving me better names.",
+  "appearance": "Cian is easy to recognize by brown hair pinned away from the temples and one cheek that creases before the other. Usually dressed in a soft blue checked shirt with a stitched row of blue crosses along an old repair, Cian starts to lift a hand, then waits to be invited to speak when listening.",
+  "personality": "Cian is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Cian is by the number of tiny errands suddenly being done.",
+  "agenda": "To get the dock workers' words alongside the scientific names.",
+  "family": "Gita Moss is Cian’s older relative by marriage. Cian sets the time to leave. Gita picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *Window seven*, Gita says, “I delivered yellow roses to the wrong bed here once.”",
+  "connections": "Winifred Reese. They label the crystals in both scientific and household terms.",
+  "familyIds": [
+    "AH-R0054"
+  ],
+  "connectionIds": [
+    "AH-R0602"
+  ],
+  "reactions": [
+    {
+      "situation": "An employer wants every coat returned before supper",
+      "response": "Cian asks the employer which garments are actually needed for tonight's shift.",
+      "asWritten": "An employer wants every coat returned before supper. Cian asks the employer which garments are actually needed for tonight's shift."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Cian walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Cian walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Cian agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Cian agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

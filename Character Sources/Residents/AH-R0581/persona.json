@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0581",
+  "personId": "AH-R0581",
+  "name": "Orla March",
+  "age": 72,
+  "occupation": "Retired domestic worker",
+  "home": "the western residential streets",
+  "episode": "Laundry for a stranger",
+  "biography": "stories/residents/04/14-laundry-for-a-stranger.md#ah-r0581",
+  "life": "“I still remember a hand taking mine in an ambulance queue.” On Monday, near Breakwater Way, Orla stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I iron for the young man opposite because he held my hand when the ambulance took my wife.",
+  "appearance": "Orla is easy to recognize by a long silver braid and a crooked front tooth visible when laughing. Usually dressed in a gray fisher's sweater with a pressed flower kept in the clear back of a phone case, Orla draws small circles on a tabletop while waiting when listening.",
+  "personality": "Orla has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To finish a clean shirt for the bereaved neighbor.",
+  "family": "Chris Valdez is Orla’s first cousin once removed. Orla offers the first invitation. Chris gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The free fringe*, Chris says, “I timed the conversation like a normal trim.”",
+  "connections": "Jorge Nash (owner of the pressed shirt). A grateful customer tries to pay the neighbor who irons the stranger's shirt.",
+  "familyIds": [
+    "AH-R0702"
+  ],
+  "connectionIds": [
+    "AH-R0582"
+  ],
+  "reactions": [
+    {
+      "situation": "A staff supervisor demands the stranger's laundry back",
+      "response": "Orla checks with the shirt's owner before handing it over to anyone else.",
+      "asWritten": "A staff supervisor demands the stranger's laundry back. Orla checks with the shirt's owner before handing it over to anyone else."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Orla finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Orla finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Orla asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Orla asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

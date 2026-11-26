@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0075",
+  "personId": "AH-R0075",
+  "name": "Ely Kern",
+  "age": 43,
+  "occupation": "Hotel concierge",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A tide at noon",
+  "biography": "stories/residents/01/08-a-tide-at-noon.md#ah-r0075",
+  "life": "Ely's concierge notebook contains the quickest remedies for a hundred small disappointments. He is trying to fill the last pages with things that only become possible after a plan goes slightly wrong. On Saturday, near the brick passage off the shop row, Ely takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I sent guests down in polished shoes. One guest took hers off and stayed for hours. I want our welcome card to say when wet sand starts and who has towels.",
+  "appearance": "On an ordinary day, look for a moss-green cardigan and a square of clean cloth for polishing smudges. Ely has a broad nose and a deep dimple on one cheek, with a dark undercut with a longer wave on top. Ely leans a shoulder against the wall during long conversations during a conversation.",
+  "personality": "Ely feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To add practical tide and towel information to the hotel card.",
+  "family": "Joel Arendt is Ely’s older cousin. Ely saves a place. Joel chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *A last ship together*, Joel says, “I spent forty years packing those two lunches.”",
+  "connections": "Mona Neri. They help small visitors find both a dry towel and an unthreatening way to collect their prize.",
+  "familyIds": [
+    "AH-R1366"
+  ],
+  "connectionIds": [
+    "AH-R0077"
+  ],
+  "reactions": [
+    {
+      "situation": "The water reaches a child's castle before judging",
+      "response": "Ely gives the builder time to show the judges what the water took.",
+      "asWritten": "The water reaches a child's castle before judging. Ely gives the builder time to show the judges what the water took."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Ely asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Ely asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Ely lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Ely lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

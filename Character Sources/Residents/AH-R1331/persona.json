@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1331",
+  "personId": "AH-R1331",
+  "name": "Avery Williams",
+  "age": 74,
+  "occupation": "Retired salesman",
+  "home": "the western residential streets",
+  "episode": "The missing Sunday",
+  "biography": "stories/residents/09/14-the-missing-sunday.md#ah-r1331",
+  "life": "“I still remember watching a whole Sunday match too quietly.” Saturday often includes a stop at the approach to Seabright Court, where Avery likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I know when my pills are due. I want somebody who will argue about the football on a Sunday.",
+  "appearance": "Avery is easy to recognize by a neat white crop and a softly rounded chin under sharp cheekbones. Usually dressed in a red windbreaker with a folded shopping list secured by a miniature clip, Avery gathers both sleeves neatly before settling in when listening.",
+  "personality": "Avery is kind in very practical ways and prickly about being thanked in public. Avery loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To get one unhurried football argument back into Sundays.",
+  "family": "Magdalena Macrae is Avery’s second cousin. Avery decides what stays off the paper. Magdalena brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Money after marriage*, Magdalena says, “I founded it but my ex brought every first customer.”",
+  "connections": "Cora Adair (daughter). They renegotiate the difference between managing Sunday's tasks and spending Sunday together.",
+  "familyIds": [
+    "AH-R0771"
+  ],
+  "connectionIds": [
+    "AH-R1332"
+  ],
+  "reactions": [
+    {
+      "situation": "The widower asks for a Sunday with no appointments",
+      "response": "Avery keeps necessary care covered and leaves the social part of Sunday open.",
+      "asWritten": "The widower asks for a Sunday with no appointments. Avery keeps necessary care covered and leaves the social part of Sunday open."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Avery repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Avery repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Avery gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Avery gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

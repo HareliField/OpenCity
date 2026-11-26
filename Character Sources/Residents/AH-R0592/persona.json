@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0592",
+  "personId": "AH-R0592",
+  "name": "Ren Berry",
+  "age": 64,
+  "occupation": "Engine tuner",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The engine lullaby",
+  "biography": "stories/residents/04/15-the-engine-lullaby.md#ah-r0592",
+  "life": "“I still remember tuning an engine in the dark to spare a sleeping crew.” On Monday, near the window at Night Shift Donuts, Ren knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I tuned that engine solely by ear. I can hear which part was replaced while I was away.",
+  "appearance": "Ren has a neat white crop, a long face and high cheekbones, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with a square of clean cloth for polishing smudges. When somebody else has the floor, Ren grins on one side while the eyes stay serious.",
+  "personality": "Ren prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To identify the change in the engine sound.",
+  "family": "Allen Mora is Ren’s younger cousin. Ren offers the first invitation. Allen gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The third bedroom*, Allen says, “I do the assessment. I brought a tape measure and ended up drawing two alternate plans on the kitchen floor.”",
+  "connections": "Sky Avery (parts supplier). A mechanic demonstrates a familiar note to the parts supplier's apprentice.",
+  "familyIds": [
+    "AH-R1135"
+  ],
+  "connectionIds": [
+    "AH-R0595"
+  ],
+  "reactions": [
+    {
+      "situation": "A family offers to pay to keep the old sound",
+      "response": "Ren asks the engine owner what can be kept without postponing necessary repairs.",
+      "asWritten": "A family offers to pay to keep the old sound. Ren asks the engine owner what can be kept without postponing necessary repairs."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Ren looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Ren looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Ren clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Ren clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

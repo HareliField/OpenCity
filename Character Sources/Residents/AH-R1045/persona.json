@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1045",
+  "personId": "AH-R1045",
+  "name": "Lennon Sanders",
+  "age": 35,
+  "occupation": "Primary teacher",
+  "home": "the western residential streets",
+  "episode": "The day sailor's divorce",
+  "biography": "stories/residents/07/15-the-day-sailor-s-divorce.md#ah-r1045",
+  "life": "“I still remember breakfast after a child's first early sailing lesson.” On Tuesday, near Breakwater Way, Lennon stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I teach their son. His favorite part of Sunday is actually the walk to breakfast afterward.",
+  "appearance": "Lennon is easy to recognize by a center part and straight chestnut hair and fine brows over wide-set eyes. Usually dressed in a faded indigo overshirt with a seam let out by a narrow strip of contrasting fabric, Lennon folds a paper napkin into quarters without noticing when listening.",
+  "personality": "Lennon feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To keep the breakfast ritual the son really likes.",
+  "family": "Marlowe Paige is Lennon’s half-sibling. Lennon chooses whether they walk home or sit a while. Marlowe brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The broken till*, Marlowe says, “I put down too much money to avoid looking broke.”",
+  "connections": "Alfred Ross. The teacher and new partner have reasons to preserve a morning at the breakfast table ashore.",
+  "familyIds": [
+    "AH-R0392"
+  ],
+  "connectionIds": [
+    "AH-R1049"
+  ],
+  "reactions": [
+    {
+      "situation": "A child wants both separated adults on the same boat",
+      "response": "Lennon asks each adult whether sharing one trip is possible without putting the child in the middle.",
+      "asWritten": "A child wants both separated adults on the same boat. Lennon asks each adult whether sharing one trip is possible without putting the child in the middle."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Lennon offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Lennon offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Lennon lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Lennon lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

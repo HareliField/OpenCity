@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0452",
+  "personId": "AH-R0452",
+  "name": "Bruno Gao",
+  "age": 53,
+  "occupation": "Family carer",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The button card",
+  "biography": "stories/residents/04/01-the-button-card.md#ah-r0452",
+  "life": "“I still remember sewing a coin into my father's lapel for luck.” On Sunday, near Juniper Street, Bruno knows which of the west-side porches has a seat in the shade.",
+  "voice": "I've been sewing pockets shut since my mother began losing coins. I want her to choose her own fastening.",
+  "appearance": "Bruno has a long face and high cheekbones. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a boxy denim jacket with a little coil of soft measuring tape. In conversation Bruno rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Bruno finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To let the father choose a fastening he can use.",
+  "family": "Peter Patel is Bruno’s cousin. Bruno calls back when there is finally a little privacy. Peter leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A red mitten*, Peter says, “It fit my prosthetic thumb. For five minutes I remembered the weight of holding hands with a child.”",
+  "connections": "Carmen Ali. They distinguish the helpful sewn coin from the anchor someone wants to reclaim.",
+  "familyIds": [
+    "AH-R0206"
+  ],
+  "connectionIds": [
+    "AH-R0454"
+  ],
+  "reactions": [
+    {
+      "situation": "The donor recognizes the uniform it came from",
+      "response": "Bruno asks the owner which garment the donor wants remembered.",
+      "asWritten": "The donor recognizes the uniform it came from. Bruno asks the owner which garment the donor wants remembered."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Bruno offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Bruno offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Bruno waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Bruno waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

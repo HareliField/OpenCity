@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0999",
+  "personId": "AH-R0999",
+  "name": "Finn Kahn",
+  "age": 44,
+  "occupation": "Deli co-owner",
+  "home": "Old Town",
+  "episode": "An old restaurant debt",
+  "biography": "stories/residents/07/10-an-old-restaurant-debt.md#ah-r0999",
+  "life": "“I still remember a sibling partnership that began at a catering sink.” People around the window at Night Shift Donuts know Finn by a small Saturday habit. Finn knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I would use the returned money for repairs. My sister wants a permanent free wake fund. We own equal halves.",
+  "appearance": "Away from the heat of the kitchen, look for a pale blue work shirt and a printed handkerchief folded into the pocket. Finn has a strong profile and a little space between the front teeth, with short copper curls. Finn draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Finn loves a well-told anecdote and distrusts the neat ending. The parts Finn remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To agree with the sibling whether to repair or fund wakes.",
+  "family": "Samir Shah is Finn’s cousin. Finn can stop the walk at any corner. Samir chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The Saturday swap*, Samir says, “I promised to watch my son's first swim and never wrote the date down.”",
+  "connections": "Annette Marquez. The recovered invoice gives co-owners figures for a serious disagreement about the money.",
+  "familyIds": [
+    "AH-R0781"
+  ],
+  "connectionIds": [
+    "AH-R0994"
+  ],
+  "reactions": [
+    {
+      "situation": "A family returns to settle the old wake invoice",
+      "response": "Finn brings out the old book and lets the family say how they want the payment recorded.",
+      "asWritten": "A family returns to settle the old wake invoice. Finn brings out the old book and lets the family say how they want the payment recorded."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Finn sits beside them without expecting a performance and asks if they want to go outside.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Finn sits beside them without expecting a performance and asks if they want to go outside."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Finn includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Finn includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

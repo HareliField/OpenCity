@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0110",
+  "personId": "AH-R0110",
+  "name": "Marta Ely",
+  "age": 59,
+  "occupation": "Salon landlord",
+  "home": "Coast Ridge",
+  "episode": "Ten fingers",
+  "biography": "stories/residents/01/11-ten-fingers.md#ah-r0110",
+  "life": "Marta owns the salon walls after a long career maintaining other people's properties. She still sees a repair bill behind every pretty display. The birthday client is unusually good at making her see the display as well. Sunday often includes a stop at the blocks below Foundry Lofts, where Marta checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I came to talk about the rent and found myself holding a tiny bottle of mauve. I came back the next morning with the figures. She deserved one evening without them.",
+  "appearance": "Marta has a softly rounded chin under sharp cheekbones. Look for silver temples and a dark fringe. After the last appointment, the familiar outfit is a striped cotton shirt with a copper-colored clasp that has been repaired by hand. In conversation Marta steadies a cup with both hands while listening.",
+  "personality": "Marta enjoys routines and will defend the right of someone else to break one. As a result, Marta is often everyone's favorite cover for a missed morning.",
+  "agenda": "To bring the rent figures back on a day that belongs to business.",
+  "family": "Terry March is Marta’s younger relative by marriage. Marta keeps the photographs. Terry knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The driving lesson fund*, Terry says, “I have a wealthy dad. The teacher asked me how many free practice hours he gave me before I called my pass hard-earned.”",
+  "connections": "Galen Howe. The borrowed barber chair goes into a room whose rent will have to be negotiated tomorrow.",
+  "familyIds": [
+    "AH-R1318"
+  ],
+  "connectionIds": [
+    "AH-R0108"
+  ],
+  "reactions": [
+    {
+      "situation": "The birthday woman asks for five minutes by herself",
+      "response": "Marta lets the room empty and puts the next invitation in her hands.",
+      "asWritten": "The birthday woman asks for five minutes by herself. Marta lets the room empty and puts the next invitation in her hands."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Marta keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Marta keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Marta keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Marta keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

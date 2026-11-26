@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0330",
+  "personId": "AH-R0330",
+  "name": "Reuben Sawyer",
+  "age": 69,
+  "occupation": "Retired letting clerk",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The widow's dividend",
+  "biography": "stories/residents/03/03-the-widow-s-dividend.md#ah-r0330",
+  "life": "“I still remember the smell of a new envelope containing an old promise.” People around the corner outside Coastal Barber know Reuben by a small Thursday habit. Reuben usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I want one share for my grandson so somebody younger will keep asking how the rent is set.",
+  "appearance": "On an ordinary day, look for an old plum windbreaker and a folded shopping list secured by a miniature clip. Reuben has a small notch in the left eyebrow, with a neat white crop. Reuben turns fully toward the person speaking during a conversation.",
+  "personality": "Reuben uses precise names for tools and very approximate names for feelings. People who know Reuben well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To buy a share the grandson can responsibly vote.",
+  "family": "Gus Lark is Reuben’s cousin. Reuben chooses whether to use it. Gus saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The porch light*, Gus says, “I sold the owner two bulbs every winter. He always wrote my name in a little book beside the price.”",
+  "connections": "Rain Salcedo. A silent shareholder discusses what a child would gain from one small voting share.",
+  "familyIds": [
+    "AH-R0086"
+  ],
+  "connectionIds": [
+    "AH-R0322"
+  ],
+  "reactions": [
+    {
+      "situation": "An unexpected dividend arrives in the wrong envelope",
+      "response": "Reuben checks the payee's name with the teller before opening the envelope.",
+      "asWritten": "An unexpected dividend arrives in the wrong envelope. Reuben checks the payee's name with the teller before opening the envelope."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Reuben asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Reuben asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Reuben brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Reuben brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0883",
+  "personId": "AH-R0883",
+  "name": "Jody Ito",
+  "age": 39,
+  "occupation": "Billing programmer",
+  "home": "the western residential streets",
+  "episode": "Care with a clock",
+  "biography": "stories/residents/06/14-care-with-a-clock.md#ah-r0883",
+  "life": "“I still remember meeting the first real user of the schedule I designed.” On Monday, near Ferris Deli, Jody asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I wrote the billing software and never watched somebody fasten a row of small buttons.",
+  "appearance": "On an ordinary day, look for a faded indigo overshirt and a partly rubbed-away embroidered initial. Jody has a straight nose and deep-set eyes, with a smooth side part with one rebellious curl. Jody counts on the side of one finger where hardly anybody notices during a conversation.",
+  "personality": "Jody has a talent for getting adversaries to laugh at exactly the same thing. Jody knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To watch a full dressing visit before revising the software.",
+  "family": "Evan Koch is Jody’s cousin raised in the same household. Jody brings a spare shopping bag. Evan chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *A closing hour*, Evan says, “I work next door and hear the spinners every day.”",
+  "connections": "Jasmine Boyd. The stopwatch and the billing software meet a person who laughs at minute thirteen.",
+  "familyIds": [
+    "AH-R1359"
+  ],
+  "connectionIds": [
+    "AH-R0888"
+  ],
+  "reactions": [
+    {
+      "situation": "A visit runs into a second billing block",
+      "response": "Jody records the extra time actually spent with the client.",
+      "asWritten": "A visit runs into a second billing block. Jody records the extra time actually spent with the client."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Jody accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Jody accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Jody asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Jody asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

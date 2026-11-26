@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0952",
+  "personId": "AH-R0952",
+  "name": "Billie Hunt",
+  "age": 45,
+  "occupation": "Clinical receptionist",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The empty chair on nights",
+  "biography": "stories/residents/07/06-the-empty-chair-on-nights.md#ah-r0952",
+  "life": "“I still remember visiting someone who asked me to leave my badge in the car.” People around Maré Coffee know Billie by a small Wednesday habit. Billie likes the table where people coming off shift stop checking the time.",
+  "voice": "I know why she left. It's her marriage and her choice to tell the ward if she wants.",
+  "appearance": "Billie is easy to recognize by a loose dark braid and a strong profile and a little space between the front teeth. Usually dressed in a faded indigo overshirt with a narrow brass watch set a little fast, Billie presses the lips together to keep a smile in when listening.",
+  "personality": "Billie is fond of ambitious ideas and deeply suspicious of grand openings. The question Billie asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To keep the reason for leaving confidential.",
+  "family": "Emilia Dean is Billie’s cousin. Billie chooses whether to use it. Emilia saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *Overdue by a lifetime*, Emilia says, “My mother signed the slip. It's the earliest sample I've seen of the married name she later gave up.”",
+  "connections": "Mateo Katz. A breakfast invitation can reach the departed nurse without explaining her marriage to the ward.",
+  "familyIds": [
+    "AH-R0362"
+  ],
+  "connectionIds": [
+    "AH-R0960"
+  ],
+  "reactions": [
+    {
+      "situation": "The departing nurse asks for an ordinary breakfast",
+      "response": "Billie keeps the breakfast small and sets work questions aside.",
+      "asWritten": "The departing nurse asks for an ordinary breakfast. Billie keeps the breakfast small and sets work questions aside."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Billie asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Billie asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Billie accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Billie accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

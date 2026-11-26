@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1337",
+  "personId": "AH-R1337",
+  "name": "Adrian Roche",
+  "age": 31,
+  "occupation": "New parent and librarian",
+  "home": "Eastside",
+  "episode": "The missing Sunday",
+  "biography": "stories/residents/09/14-the-missing-sunday.md#ah-r1337",
+  "life": "“I still remember a baby crying just as the winning goal went in.” On Sunday, near the corner by Juniper Tailor, Adrian looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I took my baby to visit and got tossed out at halftime for being too loud. That felt like being family.",
+  "appearance": "Adrian has auburn hair cut square at the nape, a narrow face with an expressive upper lip, and a favorite piece of clothing, a plum-colored cardigan. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Adrian presses the lips together to keep a smile in.",
+  "personality": "Adrian treats a small promise with the gravity others reserve for a contract. This makes Adrian lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To bring the child back after halftime.",
+  "family": "Emery Rogers is Adrian’s older relative by marriage. Adrian gets to change the plan. Emery offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *A tenant who stays*, Emery says, “I am the neighbor who has enjoyed that garden without lifting a finger.”",
+  "connections": "Maia Molina. A noisy baby and a well-timed phone call both make room for the widower to talk after a loss.",
+  "familyIds": [
+    "AH-R0989"
+  ],
+  "connectionIds": [
+    "AH-R1340"
+  ],
+  "reactions": [
+    {
+      "situation": "The widower asks for a Sunday with no appointments",
+      "response": "Adrian keeps necessary care covered and leaves the social part of Sunday open.",
+      "asWritten": "The widower asks for a Sunday with no appointments. Adrian keeps necessary care covered and leaves the social part of Sunday open."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Adrian finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Adrian finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Adrian says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Adrian says what can be returned and asks whether that will do."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0533",
+  "personId": "AH-R0533",
+  "name": "Catherine Leung",
+  "age": 68,
+  "occupation": "Retired speech coach",
+  "home": "Eastside",
+  "episode": "The porch auction",
+  "biography": "stories/residents/04/09-the-porch-auction.md#ah-r0533",
+  "life": "“I still remember getting married in a chair with one short leg.” People around the crossing outside Verve Nail Studio know Catherine by a small Wednesday habit. Catherine notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I proposed to my second husband in the low chair. He bought the pair without telling me.",
+  "appearance": "Catherine is easy to recognize by soft white hair brushed sideways and full cheeks and a mouth that pulls slightly to one side. Usually dressed in a faded indigo overshirt with a small enamel bird on the lapel, Catherine presses the lips together to keep a smile in when listening.",
+  "personality": "Catherine treats a small promise with the gravity others reserve for a contract. This makes Catherine lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To keep the low pair together in the new home.",
+  "family": "Rowan Katz is Catherine’s second cousin. Catherine saves a place. Rowan chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The trust with a typo*, Rowan says, “I chose that nickname to survive school. Seeing it on bank stationery made me feel sixteen again.”",
+  "connections": "Logan Walker. They compare the hidden repair to the actual curve left by a seated couple.",
+  "familyIds": [
+    "AH-R0621"
+  ],
+  "connectionIds": [
+    "AH-R0538"
+  ],
+  "reactions": [
+    {
+      "situation": "Two visitors bid against each other for the porch chair",
+      "response": "Catherine asks whether both people want the object itself or a particular memory of it.",
+      "asWritten": "Two visitors bid against each other for the porch chair. Catherine asks whether both people want the object itself or a particular memory of it."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Catherine alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Catherine alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Catherine says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Catherine says what can be returned and asks whether that will do."
+    }
+  ]
+}

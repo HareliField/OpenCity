@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0274",
+  "personId": "AH-R0274",
+  "name": "Lucinda Reyes",
+  "age": 47,
+  "occupation": "Choral accompanist",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The quiet verse",
+  "biography": "stories/residents/02/13-the-quiet-verse.md#ah-r0274",
+  "life": "“I nearly quit piano when my teacher stopped counting during our rests.” People around Harbour Bakery know Lucinda by a small Sunday habit. Lucinda buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I count rests by tapping my left shoe. A child who stammers asked to stand beside me.",
+  "appearance": "Lucinda has short black hair swept back, a softly rounded chin under sharp cheekbones, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with one loose pocket corner secured with green thread. When somebody else has the floor, Lucinda draws breath as if to speak and lets someone else go first.",
+  "personality": "Lucinda enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To give the pupil a quiet way to count the rest.",
+  "family": "Jorge Nash is Lucinda’s cousin raised in the same household. Lucinda chooses an ordinary story to tell. Jorge asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *Laundry for a stranger*, Jorge says, “I thought my landlord paid for laundry. I want to repay the neighbor in a way she can decline.”",
+  "connections": "Martin Martin. The accompanist's foot tapping stays on the recording along with the held breath.",
+  "familyIds": [
+    "AH-R0582"
+  ],
+  "connectionIds": [
+    "AH-R0279"
+  ],
+  "reactions": [
+    {
+      "situation": "A parent demands to hear the private words",
+      "response": "Lucinda leaves the private verse with its writer.",
+      "asWritten": "A parent demands to hear the private words. Lucinda leaves the private verse with its writer."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Lucinda tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Lucinda tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Lucinda puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Lucinda puts the deal away and suggests a walk."
+    }
+  ]
+}

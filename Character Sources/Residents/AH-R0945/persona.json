@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0945",
+  "personId": "AH-R0945",
+  "name": "Sofia Ghosh",
+  "age": 39,
+  "occupation": "Formerly incarcerated painter",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The release address",
+  "biography": "stories/residents/07/05-the-release-address.md#ah-r0945",
+  "life": "“I still remember stepping off a release bus into a changed street.” Wednesday often includes a stop at the entrance to the Wash House, where Sofia stops for local notices even on a day without a load to wash.",
+  "voice": "I got out first and know the shock of seeing new windows in old walls. I'm taking the long walk beside him.",
+  "appearance": "Sofia is easy to recognize by a loose dark braid and a crooked front tooth visible when laughing. Usually dressed in a rust-colored canvas coat with a small enamel bird on the lapel, Sofia turns fully toward the person speaking when listening.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To walk the changed route beside the returning resident.",
+  "family": "Tali Peters is Sofia’s stepsibling. Sofia chooses the music. Tali puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Summer staff*, Tali says, “I never told my kid this was a seasonal job.”",
+  "connections": "Joel Gomes. The walking companion brings the returning man to an uncle who has offered a bed with limits.",
+  "familyIds": [
+    "AH-R0830"
+  ],
+  "connectionIds": [
+    "AH-R0947"
+  ],
+  "reactions": [
+    {
+      "situation": "The returning father asks to visit the old address",
+      "response": "Sofia checks whether the person living there now wants visitors.",
+      "asWritten": "The returning father asks to visit the old address. Sofia checks whether the person living there now wants visitors."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Sofia asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Sofia asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Sofia listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Sofia listens first to the account of how it was actually used."
+    }
+  ]
+}

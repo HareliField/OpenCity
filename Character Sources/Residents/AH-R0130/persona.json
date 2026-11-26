@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0130",
+  "personId": "AH-R0130",
+  "name": "Rami Bose",
+  "age": 38,
+  "occupation": "Busking cellist",
+  "home": "Eastside",
+  "episode": "The borrowed bass",
+  "biography": "stories/residents/01/13-the-borrowed-bass.md#ah-r0130",
+  "life": "Rami's street performances have taught him how a crowd can be drawn by one recognizable mistake in a familiar tune. Giving the old musician his wrong note back seems to him a more personal invitation than a formal letter. On Thursday, near the corner by Juniper Tailor, Rami looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I know the old owner's favorite tune. I wrote the bass line on a grocery bag so these kids can play it when he walks into the park. There's a wrong note he always insisted on.",
+  "appearance": "Rami has two dimples that appear only with a full smile. Look for short copper curls. On an ordinary day, the familiar outfit is a striped cotton shirt with a thin silver ring worn on a cord. In conversation Rami looks at people's hands before looking at what they carry.",
+  "personality": "Rami reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Rami trusts most.",
+  "agenda": "To teach the old musician's favorite bass line before he arrives.",
+  "family": "Jay Arendt is Rami’s second cousin. Rami saves a place. Jay chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *A doctor moves away*, Jay says, “I translated her visits for sixteen years. We know each other's pauses better than some married people.”",
+  "connections": "Otis Wolff. They are the only two who know why the wrong note in the welcome tune is an act of kindness.",
+  "familyIds": [
+    "AH-R1258"
+  ],
+  "connectionIds": [
+    "AH-R0126"
+  ],
+  "reactions": [
+    {
+      "situation": "The band is called early for its audition",
+      "response": "Rami finds out how many minutes the band actually has before treating the slot as lost.",
+      "asWritten": "The band is called early for its audition. Rami finds out how many minutes the band actually has before treating the slot as lost."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Rami puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Rami puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Rami does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Rami does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

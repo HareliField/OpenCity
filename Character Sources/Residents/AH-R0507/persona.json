@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0507",
+  "personId": "AH-R0507",
+  "name": "Anton Shah",
+  "age": 48,
+  "occupation": "Hospital schoolteacher",
+  "home": "Eastside",
+  "episode": "The waiting-room plant",
+  "biography": "stories/residents/04/06-the-waiting-room-plant.md#ah-r0507",
+  "life": "“I still remember a child's shadow puppet shaped like a leaf.” Thursday often includes a stop at the foot of Harbor Viaduct, where Anton pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I used the leaves to teach shadows to a child in isolation. She still draws the missing leaf.",
+  "appearance": "Anton is easy to recognize by short, uneven waves that refuse to lie flat and a heart-shaped face and prominent ears. Usually dressed in a boxy denim jacket with a printed handkerchief folded into the pocket, Anton starts to lift a hand, then waits to be invited to speak when listening.",
+  "personality": "Anton loves a well-told anecdote and distrusts the neat ending. The parts Anton remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To give the isolated pupil a new leaf shadow.",
+  "family": "Pat Fraser is Anton’s cousin. Anton calls about good news first. Pat is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The free fringe*, Pat says, “I heard their conversation through the wall and realized I owed my old shop partner a call.”",
+  "connections": "Jay Knight. A patient remembered by the smell of leaves becomes part of the child's shadow lesson.",
+  "familyIds": [
+    "AH-R0707"
+  ],
+  "connectionIds": [
+    "AH-R0503"
+  ],
+  "reactions": [
+    {
+      "situation": "A ward wants the plant for the full week",
+      "response": "Anton checks the visiting list for the patients who will miss their turn.",
+      "asWritten": "A ward wants the plant for the full week. Anton checks the visiting list for the patients who will miss their turn."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Anton draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Anton draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Anton includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Anton includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1428",
+  "personId": "AH-R1428",
+  "name": "Gregory Lowe",
+  "age": 48,
+  "occupation": "Clothing retailer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "No lifeguard at dusk",
+  "biography": "stories/residents/10/08-no-lifeguard-at-dusk.md#ah-r1428",
+  "life": "“I still remember saving a coat on a peg until its owner got off the bus.” Thursday often includes a stop at the blocks below Foundry Lofts, where Gregory checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I sold the swimmer a warm coat on credit. She leaves it in my stall until the bus touches the corner.",
+  "appearance": "Gregory is easy to recognize by black hair twisted into a small knot and a narrow face with an expressive upper lip. Usually dressed in a black overshirt with pearl buttons with a replacement button a shade darker than the others, Gregory takes off the watch before a long conversation when listening.",
+  "personality": "Gregory never tires of being shown how somebody makes a living. Gregory can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To keep the warm coat ready for the last bus.",
+  "family": "Rae Cole is Gregory’s cousin. Gregory can always ask for five minutes alone. Rae asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Closing soup*, Rae says, “I need tonight's exact recipe because this was the first full meal my wife kept down in weeks.”",
+  "connections": "Javier Lai. The beach cart and the coat stall provide two places to wait ashore with ordinary company.",
+  "familyIds": [
+    "AH-R0542"
+  ],
+  "connectionIds": [
+    "AH-R1423"
+  ],
+  "reactions": [
+    {
+      "situation": "A passerby assumes the beach is still staffed",
+      "response": "Gregory points out the published end of cover and gets the passerby an accurate answer about tomorrow.",
+      "asWritten": "A passerby assumes the beach is still staffed. Gregory points out the published end of cover and gets the passerby an accurate answer about tomorrow."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Gregory offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Gregory offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Gregory may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Gregory may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

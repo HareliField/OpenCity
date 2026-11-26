@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0334",
+  "personId": "AH-R0334",
+  "name": "George Stahl",
+  "age": 54,
+  "occupation": "Market optician",
+  "home": "Coast Ridge",
+  "episode": "The spare spectacles",
+  "biography": "stories/residents/03/04-the-spare-spectacles.md#ah-r0334",
+  "life": "“I still remember a customer paying half now and half after the harvest.” On Thursday, near the courtyard by Ferry Street Rooms, George prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "My market stall sells cheap frames. I want a basket of new pairs where witnesses can reach.",
+  "appearance": "George is easy to recognize by a swept fringe and a closely clipped nape and a strong profile and a little space between the front teeth. Usually dressed in an olive canvas jacket with a fabric zip pull cut from a school scarf, George holds eye contact until the other person has finished when listening.",
+  "personality": "George finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To stock a publicly reachable basket of reading glasses.",
+  "family": "Dale Lloyd is George’s cousin. George chooses the familiar route. Dale can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The upstairs lease*, Dale says, “I took the larger bedroom after the divorce.”",
+  "connections": "Dario Allard. The father's glasses help test the new reading basket at the desk.",
+  "familyIds": [
+    "AH-R0751"
+  ],
+  "connectionIds": [
+    "AH-R0336"
+  ],
+  "reactions": [
+    {
+      "situation": "The counter is busy and another visitor starts to hurry the signing",
+      "response": "George puts a time on when the counter will be free again and protects the witness's time to read.",
+      "asWritten": "The counter is busy and another visitor starts to hurry the signing. George puts a time on when the counter will be free again and protects the witness's time to read."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "George brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. George brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "George waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, George waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

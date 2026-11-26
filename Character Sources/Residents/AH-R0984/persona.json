@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0984",
+  "personId": "AH-R0984",
+  "name": "Hollis Osei",
+  "age": 70,
+  "occupation": "Retired library assistant",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A tenant who stays",
+  "biography": "stories/residents/07/09-a-tenant-who-stays.md#ah-r0984",
+  "life": "“I still remember sharing a study with a stranger who became a friend.” People around the bank steps know Hollis by a small Sunday habit. Hollis takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I would share the big room for a season. Nobody asked because they thought an old person always wants silence.",
+  "appearance": "Hollis has a wide brow and a narrow jaw. Look for silver temples and a dark fringe. On an ordinary day, the familiar outfit is an unlined tan jacket with a fabric zip pull cut from a school scarf. In conversation Hollis looks down for a moment before saying something difficult.",
+  "personality": "Hollis treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To test a shared-room arrangement for a season.",
+  "family": "Fen Ellis is Hollis’s younger relative by marriage. Hollis asks what the birthday guest would like this year. Fen remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A chair on the quay*, Fen says, “The chalk gull underneath is mine. I used to draw birds under things at friends' houses.”",
+  "connections": "Neal Ferraro. A penciled drawing gives both women a chance to say what they recognize as home.",
+  "familyIds": [
+    "AH-R0017"
+  ],
+  "connectionIds": [
+    "AH-R0990"
+  ],
+  "reactions": [
+    {
+      "situation": "An elderly gardener wants to move just one tree",
+      "response": "Hollis checks that the tree can survive the move before it is lifted.",
+      "asWritten": "An elderly gardener wants to move just one tree. Hollis checks that the tree can survive the move before it is lifted."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Hollis asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Hollis asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Hollis changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Hollis changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0980",
+  "personId": "AH-R0980",
+  "name": "Teresa Berg",
+  "age": 32,
+  "occupation": "Birthday celebrant and photographer",
+  "home": "Coast Ridge",
+  "episode": "The expensive summer",
+  "biography": "stories/residents/07/08-the-expensive-summer.md#ah-r0980",
+  "life": "“I still remember a birthday when everybody forgot to ask my favorite flavor.” On Saturday, near Breakwater Way, Teresa stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I want a birthday where the people at the table can argue about movies instead of arithmetic.",
+  "appearance": "Teresa has a scattering of freckles across the bridge of the nose. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is a soft blue checked shirt with a pair of reading glasses in a cloth sleeve. In conversation Teresa draws breath as if to speak and lets someone else go first.",
+  "personality": "Teresa can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Teresa can afford to give, and family knows to take it seriously.",
+  "agenda": "To celebrate one birthday without counting portions aloud.",
+  "family": "Ida Bruno is Teresa’s older cousin. Teresa calls back when there is finally a little privacy. Ida leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A shelf of apologies*, Ida says, “I lent this book so a friend would have to see me again.”",
+  "connections": "Toby Webb. A grandparent counting coins and the person celebrating would both like to change the subject.",
+  "familyIds": [
+    "AH-R0664"
+  ],
+  "connectionIds": [
+    "AH-R0974"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative tries to pay the whole restaurant bill in secret",
+      "response": "Teresa speaks to the host privately and lets them decide whether the bill is shared.",
+      "asWritten": "A relative tries to pay the whole restaurant bill in secret. Teresa speaks to the host privately and lets them decide whether the bill is shared."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Teresa offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Teresa offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Teresa suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Teresa suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1257",
+  "personId": "AH-R1257",
+  "name": "Nadine Lam",
+  "age": 51,
+  "occupation": "Live-in carer",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A doctor moves away",
+  "biography": "stories/residents/09/06-a-doctor-moves-away.md#ah-r1257",
+  "life": "“I still remember making up a parent's bed before the daughter arrived by train.” On Monday, near Tideline Market, Nadine picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I am the parent's carer in the other city. I want the daughter to come home as family before she comes home as a doctor.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a narrow brass watch set a little fast. Nadine has a wide brow and a narrow jaw, with a smooth side part with one rebellious curl. Nadine draws breath as if to speak and lets someone else go first during a conversation.",
+  "personality": "Nadine has a talent for getting adversaries to laugh at exactly the same thing. Nadine knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To let the returning daughter and father meet as family.",
+  "family": "Milo Rizzo is Nadine’s cousin raised in the same household. Nadine chooses the music. Milo puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The button card*, Milo says, “The yellow button came from the first coat I ever bought without asking permission.”",
+  "connections": "Riley Macrae. The doctor and the father's carer settle what returning as a daughter will mean at home.",
+  "familyIds": [
+    "AH-R0455"
+  ],
+  "connectionIds": [
+    "AH-R1251"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient asks the leaving doctor to stay one more month",
+      "response": "Nadine asks what handover would help the patient if the move date stands.",
+      "asWritten": "A patient asks the leaving doctor to stay one more month. Nadine asks what handover would help the patient if the move date stands."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Nadine asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Nadine asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Nadine asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Nadine asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

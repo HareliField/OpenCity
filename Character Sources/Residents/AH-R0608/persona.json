@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0608",
+  "personId": "AH-R0608",
+  "name": "Desmond Baldwin",
+  "age": 56,
+  "occupation": "Lining repairer",
+  "home": "Midtown",
+  "episode": "Salt in the pockets",
+  "biography": "stories/residents/05/01-salt-in-the-pockets.md#ah-r0608",
+  "life": "“I still remember embroidering a tiny fish on a torn school satchel.” On Sunday, near Tideline Market, Desmond picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I fix linings. Someone had stitched a tiny silk fish beneath the salt line.",
+  "appearance": "Desmond has a straight nose and deep-set eyes. Look for short, uneven waves that refuse to lie flat. On an ordinary day, the familiar outfit is a red windbreaker with a tiny red thread tied through the lowest buttonhole. In conversation Desmond squares up pieces of paper while thinking.",
+  "personality": "Desmond has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To find the maker of the fish hidden in the lining.",
+  "family": "Ole Finchley is Desmond’s half-sibling. Desmond asks the question the rest of the family avoided. Ole chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The last green*, Ole says, “I watched him do everything right until two things happened together.”",
+  "connections": "Jean Shen. The photograph of the white table picks up a small embroidered fish.",
+  "familyIds": [
+    "AH-R0114"
+  ],
+  "connectionIds": [
+    "AH-R0604"
+  ],
+  "reactions": [
+    {
+      "situation": "An employer wants every coat returned before supper",
+      "response": "Desmond asks the employer which garments are actually needed for tonight's shift.",
+      "asWritten": "An employer wants every coat returned before supper. Desmond asks the employer which garments are actually needed for tonight's shift."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Desmond offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem.",
+      "asWritten": "A friend asks for a loan due back before payday. Desmond offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Desmond says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Desmond says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

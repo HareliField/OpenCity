@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0892",
+  "personId": "AH-R0892",
+  "name": "Scout Marin",
+  "age": 56,
+  "occupation": "Overnight baker",
+  "home": "Eastside",
+  "episode": "Winter afloat",
+  "biography": "stories/residents/06/15-winter-afloat.md#ah-r0892",
+  "life": "“I still remember a sofa whose cushion stayed marked by a visitor's elbow.” Friday often includes a stop at Breakwater Way, where Scout stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I can offer a sofa but my son needs a place to come back to when he's sober.",
+  "appearance": "Scout has a loose dark braid, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a charcoal zip cardigan. It usually goes with a knotted piece of sail thread on a key ring. When somebody else has the floor, Scout leans a shoulder against the wall during long conversations.",
+  "personality": "Scout often says yes too quickly out of pride in being useful. The people closest to Scout have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To offer a sofa without closing the door on the son.",
+  "family": "Felix Rubio is Scout’s younger cousin. Scout chooses whether they walk home or sit a while. Felix brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The housecoat commission*, Felix says, “I cook her Sunday lunch. She's invited me to eat my own food with the guests this time.”",
+  "connections": "Jo Wong. Two people offering space compare the limits of a sofa and a winter flat.",
+  "familyIds": [
+    "AH-R0436"
+  ],
+  "connectionIds": [
+    "AH-R0896"
+  ],
+  "reactions": [
+    {
+      "situation": "A friend offers a sofa for an uncertain number of weeks",
+      "response": "Scout agrees a first review date for the sofa without pretending it settles the winter.",
+      "asWritten": "A friend offers a sofa for an uncertain number of weeks. Scout agrees a first review date for the sofa without pretending it settles the winter."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Scout asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Scout asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Scout rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Scout rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

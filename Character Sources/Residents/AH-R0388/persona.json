@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0388",
+  "personId": "AH-R0388",
+  "name": "Kit Porter",
+  "age": 11,
+  "occupation": "Primary school pupil",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The upstairs piano",
+  "biography": "stories/residents/03/09-the-upstairs-piano.md#ah-r0388",
+  "life": "“I still remember drumming on every tall step before school.” People around the downtown fountain know Kit by a small Sunday habit. Kit keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I played scales while the adults argued. By the time they stopped, I could play with both hands.",
+  "appearance": "Kit is easy to recognize by short copper curls and a wide brow and a narrow jaw. Usually dressed in a charcoal zip cardigan with a folded shopping list secured by a miniature clip, Kit draws small circles on a tabletop while waiting when listening.",
+  "personality": "Kit is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To learn the landing tune with both hands.",
+  "family": "Rowan Armas is Kit’s stepsibling. A lost family paycheck once turned up in the lining of a coat. Their relatives still describe that week by the three people who quietly extended credit. Kit would rather forgive a debt than make a friend cross the street. Asked about *The misplaced umbrella*, Rowan says, “I wanted an elegant beach photograph. The patch in the background is the one thing my mother recognized.”",
+  "connections": "Amanda Hart. A breakfast listener gives the child an unhurried first audience.",
+  "familyIds": [
+    "AH-R0677"
+  ],
+  "connectionIds": [
+    "AH-R0383"
+  ],
+  "reactions": [
+    {
+      "situation": "The owner asks a child to play first",
+      "response": "Kit finds a steady seat for the child and waits for the opening notes.",
+      "asWritten": "The owner asks a child to play first. Kit finds a steady seat for the child and waits for the opening notes."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Kit suggests one straightforward message without accusations and gives the friend time to answer.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Kit suggests one straightforward message without accusations and gives the friend time to answer."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Kit thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Kit thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

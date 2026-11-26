@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1040",
+  "personId": "AH-R1040",
+  "name": "Benedict Holt",
+  "age": 39,
+  "occupation": "Home help",
+  "home": "Coast Ridge",
+  "episode": "The carer's afternoon",
+  "biography": "stories/residents/07/14-the-carer-s-afternoon.md#ah-r1040",
+  "life": "“I still remember waiting for a sister to volunteer her own piece of good news.” On Thursday, near the courtyard by Ferry Street Rooms, Benedict prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I always ask what she did with her time. This Wednesday I put the kettle on and let her offer the first word.",
+  "appearance": "On an ordinary day, look for a mustard canvas overshirt and a tiny red thread tied through the lowest buttonhole. Benedict has heavy brows and an unusually delicate jaw, with a center part and straight chestnut hair. Benedict squares up pieces of paper while thinking during a conversation.",
+  "personality": "Benedict listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To allow a returning carer to choose what to share.",
+  "family": "Nell Zane is Benedict’s cousin raised in the same household. Benedict is allowed to ask about the bad news afterward. Nell calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The empty berth*, Nell says, “The best sample is right in the private berth.”",
+  "connections": "Amir Jain. The neighbor who enjoys Wednesdays helps the family let the carer come home without a report.",
+  "familyIds": [
+    "AH-R0143"
+  ],
+  "connectionIds": [
+    "AH-R1037"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative demands to know how the free time was spent",
+      "response": "Benedict leaves the free afternoon private unless the carer wants to talk about it.",
+      "asWritten": "A relative demands to know how the free time was spent. Benedict leaves the free afternoon private unless the carer wants to talk about it."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Benedict checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Benedict checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Benedict keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Benedict keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

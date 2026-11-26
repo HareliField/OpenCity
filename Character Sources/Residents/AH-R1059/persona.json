@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1059",
+  "personId": "AH-R1059",
+  "name": "Bailey Valdez",
+  "age": 42,
+  "occupation": "Cleaning contractor",
+  "home": "Midtown",
+  "episode": "Reopening at six",
+  "biography": "stories/residents/08/01-reopening-at-six.md#ah-r1059",
+  "life": "“I still remember being asked to clean round the workers still using the floor.” On Friday, near Paper & Pine Books, Bailey starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I clean before opening. Every extra hour someone wins is an hour somebody else lifts out of a wet bin.",
+  "appearance": "On an ordinary day, look for a red windbreaker and a watch on a cracked leather band. Bailey has heavy brows and an unusually delicate jaw, with close-cropped dark curls. Bailey gives a little nod before asking a hard question during a conversation.",
+  "personality": "Bailey feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To budget hours for cleaning the longer opening.",
+  "family": "Darcy Wu is Bailey’s half-sibling. Bailey keeps the photographs. Darcy knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The driving lesson fund*, Darcy says, “I turned down my slot because I don't want to drive.”",
+  "connections": "Ariel Pierce. A night bus rider sees the extra cleaning work behind an extra open hour.",
+  "familyIds": [
+    "AH-R1320"
+  ],
+  "connectionIds": [
+    "AH-R1052"
+  ],
+  "reactions": [
+    {
+      "situation": "The laundromat chooses between dawn and late-night opening",
+      "response": "Bailey asks which households lose their only usable wash time under either plan.",
+      "asWritten": "The laundromat chooses between dawn and late-night opening. Bailey asks which households lose their only usable wash time under either plan."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Bailey asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Bailey asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Bailey lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Bailey lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

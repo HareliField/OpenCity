@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0187",
+  "personId": "AH-R0187",
+  "name": "Jules Sun",
+  "age": 44,
+  "occupation": "School bus aide",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The second dog",
+  "biography": "stories/residents/02/04-the-second-dog.md#ah-r0187",
+  "life": "“I helped a frightened pupil learn the whole bus route by barking dog stickers.” On Monday, near the bank steps, Jules takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "The first owner got angry at me for smiling. I was trying to stop the child beside me crying.",
+  "appearance": "Jules is easy to recognize by a long plait tucked inside the collar and a strong profile and a little space between the front teeth. Usually dressed in a black overshirt with pearl buttons with a replacement button a shade darker than the others, Jules folds a paper napkin into quarters without noticing when listening.",
+  "personality": "Jules is kind in very practical ways and prickly about being thanked in public. Jules loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To put the child at ease before calling the owners together.",
+  "family": "Judith Hong is Jules’s second cousin. Jules calls about good news first. Judith is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The housecoat commission*, Judith says, “My first outfit after surgery tied in back.”",
+  "connections": "Charlotte Noel. They help a tenant who loves the dog take part without claiming ownership.",
+  "familyIds": [
+    "AH-R0437"
+  ],
+  "connectionIds": [
+    "AH-R0185"
+  ],
+  "reactions": [
+    {
+      "situation": "A child takes the other dog's lead",
+      "response": "Jules separates the leads and asks both families what the dogs respond to.",
+      "asWritten": "A child takes the other dog's lead. Jules separates the leads and asks both families what the dogs respond to."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Jules tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Jules tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Jules gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Jules gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

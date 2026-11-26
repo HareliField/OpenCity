@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0442",
+  "personId": "AH-R0442",
+  "name": "Jesse Starr",
+  "age": 44,
+  "occupation": "Marina shift supervisor",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The tide clock",
+  "biography": "stories/residents/03/15-the-tide-clock.md#ah-r0442",
+  "life": "“I still remember a half shift recorded as a full day's absence.” Friday often includes a stop at Maré Coffee, where Jesse likes the table where people coming off shift stop checking the time.",
+  "voice": "I gave the employee a warning before I checked the dial. I want the correction in her file.",
+  "appearance": "Jesse has a swept fringe and a closely clipped nape, a broad nose and a deep dimple on one cheek, and a favorite piece of clothing, a gray fisher's sweater. It usually goes with a pair of reading glasses in a cloth sleeve. When somebody else has the floor, Jesse takes off the watch before a long conversation.",
+  "personality": "Jesse talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Jesse's ways of saying that it is all right to leave.",
+  "agenda": "To correct the warning in the employee's file.",
+  "family": "Vera Price is Jesse’s half-sibling. Jesse remembers the birthdays. Vera asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The savings club*, Vera says, “I'm the bookkeeper. I found the money for a second ticket in a refund none of us claimed.”",
+  "connections": "Harley Hooper. They arrange for a real time clock beside the one that misled the new hire.",
+  "familyIds": [
+    "AH-R0480"
+  ],
+  "connectionIds": [
+    "AH-R0446"
+  ],
+  "reactions": [
+    {
+      "situation": "The owner considers taking the tide clock down",
+      "response": "Jesse asks the workers whether a second, clearly labeled clock would solve the actual problem.",
+      "asWritten": "The owner considers taking the tide clock down. Jesse asks the workers whether a second, clearly labeled clock would solve the actual problem."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Jesse asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Jesse asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Jesse says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Jesse says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

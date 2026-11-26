@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0541",
+  "personId": "AH-R0541",
+  "name": "Milo Saito",
+  "age": 42,
+  "occupation": "Soup cook",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Closing soup",
+  "biography": "stories/residents/04/10-closing-soup.md#ah-r0541",
+  "life": "“I still remember my dad tasting burnt toast and saying it was perfect.” On Tuesday, near the courtyard by Ferry Street Rooms, Milo prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I taste the stock first because Dad lost his sense of smell before he told us.",
+  "appearance": "Milo is easy to recognize by a blunt cut just below the ears and full cheeks and a mouth that pulls slightly to one side. Usually dressed in a mustard canvas overshirt with a partly rubbed-away embroidered initial, Milo touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Milo enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To share a tasting with the father whose smell is fading.",
+  "family": "Walter Colón is Milo’s cousin raised in the same household. Milo brings a spare shopping bag. Walter chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The third bedroom*, Walter says, “I am one boy's teacher. I met the brother and discovered which drawings I'd been praising the wrong child for.”",
+  "connections": "Rae Cole. The family rebuilding an exact recipe needs the first cook's taste of the stock.",
+  "familyIds": [
+    "AH-R1139"
+  ],
+  "connectionIds": [
+    "AH-R0542"
+  ],
+  "reactions": [
+    {
+      "situation": "The cook asks for an exact recipe",
+      "response": "Milo records what went into this particular pot and when the cooks tasted it.",
+      "asWritten": "The cook asks for an exact recipe. Milo records what went into this particular pot and when the cooks tasted it."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Milo stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Milo stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Milo puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Milo puts the deal away and suggests a walk."
+    }
+  ]
+}

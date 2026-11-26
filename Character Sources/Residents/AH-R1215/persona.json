@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1215",
+  "personId": "AH-R1215",
+  "name": "Bianca Breen",
+  "age": 49,
+  "occupation": "Break room manager",
+  "home": "the blocks north of the port",
+  "episode": "The worker who couldn't read the joke",
+  "biography": "stories/residents/09/02-the-worker-who-couldn-t-read-the-joke.md#ah-r1215",
+  "life": "“I still remember serving lunch the week two crews stopped sharing tables.” On Saturday, near Studio Boulevard, Bianca waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I run the break room. I won't make the wronged worker stand up at a meeting unless he wants to.",
+  "appearance": "Bianca has short, uneven waves that refuse to lie flat, a heart-shaped face and prominent ears, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a comb in a sleeve sewn into the lining. When somebody else has the floor, Bianca draws breath as if to speak and lets someone else go first.",
+  "personality": "Bianca can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To protect the worker's choice about speaking publicly.",
+  "family": "Joss Farin is Bianca’s stepsibling. Bianca chooses the music. Joss puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The thirteenth doughnut*, Joss says, “I made the first one with lemon because my husband hated lemon and wouldn't eat it on the way.”",
+  "connections": "Finn Heller. The break-room manager and staffing contractor agree on a private way to hear individual workers.",
+  "familyIds": [
+    "AH-R0091"
+  ],
+  "connectionIds": [
+    "AH-R1217"
+  ],
+  "reactions": [
+    {
+      "situation": "A manager wants the photographed worker to address the crew",
+      "response": "Bianca offers the pictured worker a private conversation before any meeting with the crew.",
+      "asWritten": "A manager wants the photographed worker to address the crew. Bianca offers the pictured worker a private conversation before any meeting with the crew."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Bianca asks the person already using it whether they can comfortably stand, rather than presuming who needs it most.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Bianca asks the person already using it whether they can comfortably stand, rather than presuming who needs it most."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Bianca asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Bianca asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

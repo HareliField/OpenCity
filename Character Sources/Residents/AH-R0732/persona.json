@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0732",
+  "personId": "AH-R0732",
+  "name": "Dolores Yeo",
+  "age": 44,
+  "occupation": "Personal assistant",
+  "home": "Coast Ridge",
+  "episode": "The split visit",
+  "biography": "stories/residents/05/14-the-split-visit.md#ah-r0732",
+  "life": "“I still remember the crooked diploma my father was too proud to show.” People around the steps at Pier Beach know Dolores by a small Monday habit. Dolores watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I am paid for only one visit. I used the extra pair of hands to hang Dad's old framed diploma.",
+  "appearance": "Dolores has close-cropped dark curls, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a black overshirt with pearl buttons. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Dolores rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Dolores keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Dolores wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To hang the father's diploma.",
+  "family": "Leona Navarro is Dolores’s cousin. Dolores chooses an ordinary story to tell. Leona asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *A prize nobody entered*, Leona says, “I would like the piece read once to the people in it before anybody publishes a line.”",
+  "connections": "Sam Rose. An old diploma goes on the wall during the overlap the accountant is examining.",
+  "familyIds": [
+    "AH-R1118"
+  ],
+  "connectionIds": [
+    "AH-R0738"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor objects to the overlap",
+      "response": "Dolores records what the overlap let the client do before judging its cost.",
+      "asWritten": "A supervisor objects to the overlap. Dolores records what the overlap let the client do before judging its cost."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Dolores asks the cashier to hold it and lets a claimant identify the writing and amount privately.",
+      "asWritten": "An envelope of wages is found under a café chair. Dolores asks the cashier to hold it and lets a claimant identify the writing and amount privately."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Dolores offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Dolores offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

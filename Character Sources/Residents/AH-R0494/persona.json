@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0494",
+  "personId": "AH-R0494",
+  "name": "Karen Pierce",
+  "age": 39,
+  "occupation": "Mail clerk",
+  "home": "Old Town",
+  "episode": "The dead man's tab",
+  "biography": "stories/residents/04/05-the-dead-man-s-tab.md#ah-r0494",
+  "life": "“I still remember the last correctly addressed letter my cousin sent.” People around the public end of the South Shore boardwalk know Karen by a small Wednesday habit. Karen checks the shade on the benches before deciding how long to stay.",
+  "voice": "I need his lunch hours to date a letter he sent me. The price of soup is my only clue.",
+  "appearance": "Karen is easy to recognize by thick, tightly coiled hair and a softly rounded chin under sharp cheekbones. Usually dressed in a rust-colored canvas coat with a thin silver ring worn on a cord, Karen listens with the head tilted a little to the left when listening.",
+  "personality": "Karen loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To date the letter from the price of lunch.",
+  "family": "Allen Marin is Karen’s older relative by marriage. Karen sets the time to leave. Allen picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A red mitten*, Allen says, “I knitted it left-handed. I can still make its mate if the owner remembers the stripes.”",
+  "connections": "Carla Lam. A date on the old bill belongs in the lawyer's account of the unclaimed debt.",
+  "familyIds": [
+    "AH-R0203"
+  ],
+  "connectionIds": [
+    "AH-R0498"
+  ],
+  "reactions": [
+    {
+      "situation": "The deli is asked to publish the whole tab",
+      "response": "Karen asks who owns the personal information on the tab before any of it leaves the counter.",
+      "asWritten": "The deli is asked to publish the whole tab. Karen asks who owns the personal information on the tab before any of it leaves the counter."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Karen starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Karen starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Karen offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Karen offers one about their own embarrassment instead."
+    }
+  ]
+}

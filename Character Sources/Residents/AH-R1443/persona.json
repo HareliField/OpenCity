@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1443",
+  "personId": "AH-R1443",
+  "name": "Dale Garrett",
+  "age": 28,
+  "occupation": "Dishwasher",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The kitchen without a boss",
+  "biography": "stories/residents/10/10-the-kitchen-without-a-boss.md#ah-r1443",
+  "life": "“I still remember washing a plate an elderly customer was saving for tomorrow.” Sunday often includes a stop at the blocks below Foundry Lofts, where Dale checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I came in to wash dishes. I was the one who remembered the owner's list of regulars who need softer rolls.",
+  "appearance": "Dale is easy to recognize by short black hair swept back and heavy brows and an unusually delicate jaw. Usually dressed in a pale blue work shirt with a cloth patch so neatly matched it only shows in strong light, Dale looks down for a moment before saying something difficult when listening.",
+  "personality": "Dale tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Dale will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To retain the softer rolls for their regular customers.",
+  "family": "Paloma Arendt is Dale’s aunt by marriage. Dale can stop the walk at any corner. Paloma chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Two names on the chart*, Paloma says, “I have been telling the same story twice for years.”",
+  "connections": "Marlowe Gross. A worker washing plates tells the reviewer what was missed in the rushed opening morning.",
+  "familyIds": [
+    "AH-R1101"
+  ],
+  "connectionIds": [
+    "AH-R1448"
+  ],
+  "reactions": [
+    {
+      "situation": "The absent owner calls to ask which pastry burned",
+      "response": "Dale gives the owner a truthful account without handing back all three workers' decisions.",
+      "asWritten": "The absent owner calls to ask which pastry burned. Dale gives the owner a truthful account without handing back all three workers' decisions."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Dale keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Dale keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Dale repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Dale repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

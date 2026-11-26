@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0947",
+  "personId": "AH-R0947",
+  "name": "Joel Gomes",
+  "age": 67,
+  "occupation": "Catering worker",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The release address",
+  "biography": "stories/residents/07/05-the-release-address.md#ah-r0947",
+  "life": "“I still remember making up a bed too far from my own phone.” On Wednesday, near the public road outside the Port of Asphalt, Joel can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I am the uncle who promised a bed. My partner wants a departure date on the same calendar as the welcome dinner.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a narrow brass watch set a little fast. Joel has a long face and high cheekbones, with a long silver braid. Joel folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Joel takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To agree how long the guest can stay.",
+  "family": "Cecil Aubin is Joel’s stepsibling. Joel chooses whether to use it. Cecil saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The engine lullaby*, Cecil says, “I was the night guard when the engine fell silent.”",
+  "connections": "Sofia Ghosh. The walking companion brings the returning man to an uncle who has offered a bed with limits. Also in the story is Cian Farrell (nephew).",
+  "familyIds": [
+    "AH-R0599"
+  ],
+  "connectionIds": [
+    "AH-R0945",
+    "AH-R0941"
+  ],
+  "reactions": [
+    {
+      "situation": "The returning father asks to visit the old address",
+      "response": "Joel checks whether the person living there now wants visitors.",
+      "asWritten": "The returning father asks to visit the old address. Joel checks whether the person living there now wants visitors."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Joel offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem.",
+      "asWritten": "A friend asks for a loan due back before payday. Joel offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Joel asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Joel asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

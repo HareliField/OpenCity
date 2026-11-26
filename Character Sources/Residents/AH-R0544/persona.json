@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0544",
+  "personId": "AH-R0544",
+  "name": "Ken Calloway",
+  "age": 34,
+  "occupation": "Catering assistant",
+  "home": "Eastside",
+  "episode": "Closing soup",
+  "biography": "stories/residents/04/10-closing-soup.md#ah-r0544",
+  "life": "“I still remember counting the family change into a cabbage basket.” On Thursday, near the foot of Harbor Viaduct, Ken pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I was ashamed my family lived on leftovers. The visiting cook asked if she could come to our house.",
+  "appearance": "Ken has heavy brows and an unusually delicate jaw. Look for a swept fringe and a closely clipped nape. On an ordinary day, the familiar outfit is a striped cotton shirt with a seam let out by a narrow strip of contrasting fabric. In conversation Ken holds eye contact until the other person has finished.",
+  "personality": "Ken admires skill and distrusts the idea that skill gives anyone permission to be rude. Ken learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To invite the visiting cook for a family supper.",
+  "family": "Ivy Burke is Ken’s cousin raised in the same household. Ken saves a place. Ivy chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The third bedroom*, Ivy says, “I want to stay their carer. Our spare room pays the mortgage with a lodger in it.”",
+  "connections": "Ashley Lang. A leftover meal brings the visiting cook and a family language into one kitchen.",
+  "familyIds": [
+    "AH-R1133"
+  ],
+  "connectionIds": [
+    "AH-R0550"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone in the soup line cannot eat one ingredient",
+      "response": "Ken asks the cook to identify the ingredients before offering a separate bowl.",
+      "asWritten": "Someone in the soup line cannot eat one ingredient. Ken asks the cook to identify the ingredients before offering a separate bowl."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Ken takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Ken takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Ken describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Ken describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

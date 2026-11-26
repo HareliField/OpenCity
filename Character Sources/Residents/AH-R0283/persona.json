@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0283",
+  "personId": "AH-R0283",
+  "name": "Billie Morrow",
+  "age": 38,
+  "occupation": "Soup kitchen volunteer",
+  "home": "the western residential streets",
+  "episode": "Saturday keys",
+  "biography": "stories/residents/02/14-saturday-keys.md#ah-r0283",
+  "life": "“My first senior route was two dinners and one very heavy holiday cake.” Sunday often includes a stop at Tideline Market, where Billie picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I returned the ring inside a soup tin to keep it dry. Nobody checked the empty containers.",
+  "appearance": "Billie has a center part and straight chestnut hair, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Billie gathers both sleeves neatly before settling in.",
+  "personality": "Billie has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To tell the route leader where the dry soup tin went.",
+  "family": "Eden Diaz is Billie’s second cousin. Billie offers the first invitation. Eden gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The rescue hut mural*, Eden says, “I always thought she was diving. From my wheelchair she's clearly reaching for somebody.”",
+  "connections": "Marc Ramos. The soup tin has to travel another route with a rider who now knows where it belongs.",
+  "familyIds": [
+    "AH-R0521"
+  ],
+  "connectionIds": [
+    "AH-R0287"
+  ],
+  "reactions": [
+    {
+      "situation": "A tenant refuses to hand back a spare key",
+      "response": "Billie asks the tenant what access they would be giving up.",
+      "asWritten": "A tenant refuses to hand back a spare key. Billie asks the tenant what access they would be giving up."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Billie lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Billie lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Billie asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Billie asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

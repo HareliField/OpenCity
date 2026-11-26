@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0793",
+  "personId": "AH-R0793",
+  "name": "Basil Levi",
+  "age": 48,
+  "occupation": "Warehouse trainer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The first straight paycheck",
+  "biography": "stories/residents/06/05-the-first-straight-paycheck.md#ah-r0793",
+  "life": "“I still remember the warehouse induction where nobody knew my last address.” People around the blocks below Foundry Lofts know Basil by a small Sunday habit. Basil checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I taught him to lift boxes. When someone recognized him on the floor he had to decide who told the foreman first.",
+  "appearance": "Basil has thick, tightly coiled hair, fine brows over wide-set eyes, and a favorite piece of clothing, a cropped bottle-green coat. It usually goes with a folded shopping list secured by a miniature clip. When somebody else has the floor, Basil steadies a cup with both hands while listening.",
+  "personality": "Basil enjoys routines and will defend the right of someone else to break one. As a result, Basil is often everyone's favorite cover for a missed morning.",
+  "agenda": "To let the new hire speak to the foreman first.",
+  "family": "Liam Roberts is Basil’s stepsibling. Basil can stop the walk at any corner. Liam chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Overdue by a lifetime*, Liam says, “I translated the difficult words for my desk mate.”",
+  "connections": "Tali Martin. The warehouse trainer and the bus-fare lender can make the next Monday possible together. Also in the story is Santiago Montoya (trainee).",
+  "familyIds": [
+    "AH-R0367"
+  ],
+  "connectionIds": [
+    "AH-R0798",
+    "AH-R0791"
+  ],
+  "reactions": [
+    {
+      "situation": "An old customer arrives during the new warehouse shift",
+      "response": "Basil asks the two people to talk away from the work floor and leaves disclosure to the new hire.",
+      "asWritten": "An old customer arrives during the new warehouse shift. Basil asks the two people to talk away from the work floor and leaves disclosure to the new hire."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Basil takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Basil takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Basil keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Basil keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

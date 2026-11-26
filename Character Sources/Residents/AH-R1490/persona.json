@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1490",
+  "personId": "AH-R1490",
+  "name": "Willa Bishop",
+  "age": 80,
+  "occupation": "Retired knitter",
+  "home": "Eastside",
+  "episode": "The last home visit",
+  "biography": "stories/residents/10/14-the-last-home-visit.md#ah-r1490",
+  "life": "“I still remember unraveling the last row of a very neat scarf.” People around Paper & Pine Books know Willa by a small Sunday habit. Willa starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I knitted her a retirement scarf with a loose end deliberately sticking out. I want her to come back and complain about my finishing.",
+  "appearance": "Willa is easy to recognize by gray hair trimmed very close behind the ears and a heart-shaped face and prominent ears. Usually dressed in a black overshirt with pearl buttons with a knotted piece of sail thread on a key ring, Willa holds eye contact until the other person has finished when listening.",
+  "personality": "Willa is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To give the retiree a reason to come back and tease.",
+  "family": "Harriet Chapman is Willa’s younger relative by marriage. Willa calls back when there is finally a little privacy. Harriet leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *Home with stairs*, Harriet says, “I want my mother at home but can't lift her.”",
+  "connections": "Teal Ruiz. An open window and a loose end of knitting make two invitations to come back in ordinary clothes.",
+  "familyIds": [
+    "AH-R0802"
+  ],
+  "connectionIds": [
+    "AH-R1485"
+  ],
+  "reactions": [
+    {
+      "situation": "The successor asks for a private introduction at the door",
+      "response": "Willa introduces the successor quietly and gives the client a chance to set the routine.",
+      "asWritten": "The successor asks for a private introduction at the door. Willa introduces the successor quietly and gives the client a chance to set the routine."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Willa separates the money question from the broken promise and asks which one the family wants to discuss first.",
+      "asWritten": "A family supper turns into an argument about old debt. Willa separates the money question from the broken promise and asks which one the family wants to discuss first."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Willa thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Willa thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

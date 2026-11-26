@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0327",
+  "personId": "AH-R0327",
+  "name": "Grey Garza",
+  "age": 37,
+  "occupation": "Delivery coordinator",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The widow's dividend",
+  "biography": "stories/residents/03/03-the-widow-s-dividend.md#ah-r0327",
+  "life": "“I still remember confusing our birthday tape with a board meeting.” Saturday often includes a stop at the brick passage off the shop row, where Grey takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I forecast a loss and delayed moving home. One unexpected payment could bring my wife back to the coast.",
+  "appearance": "On an ordinary day, look for a cream pullover and a printed handkerchief folded into the pocket. Grey has a small notch in the left eyebrow, with a soft fringe that falls across one eyebrow. Grey gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Grey often says yes too quickly out of pride in being useful. The people closest to Grey have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To play the founding cassette to the shareholders.",
+  "family": "Lane Bose is Grey’s stepsibling. Grey offers the first invitation. Lane gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *A prize nobody entered*, Lane says, “I posted it because the author never took chances.”",
+  "connections": "Frances Brady. The seller's old pen helps date the cassette of the founding meeting.",
+  "familyIds": [
+    "AH-R1112"
+  ],
+  "connectionIds": [
+    "AH-R0326"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member wants the ledger locked away",
+      "response": "Grey asks whether the heirs can look at copies without parting with the old ledger.",
+      "asWritten": "A family member wants the ledger locked away. Grey asks whether the heirs can look at copies without parting with the old ledger."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Grey writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Grey writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Grey rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Grey rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0643",
+  "personId": "AH-R0643",
+  "name": "Daryl Akers",
+  "age": 41,
+  "occupation": "Formerly incarcerated dishwasher",
+  "home": "Eastside",
+  "episode": "The clean ledger",
+  "biography": "stories/residents/05/05-the-clean-ledger.md#ah-r0643",
+  "life": "“I still remember underlining my family name in a prison workbook.” People around the foot of Harbor Viaduct know Daryl by a small Wednesday habit. Daryl pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I learned to read in prison. My own name on that page was the first word I didn't want to see.",
+  "appearance": "Daryl has black hair twisted into a small knot, a broad nose and a deep dimple on one cheek, and a favorite piece of clothing, an olive canvas jacket. It usually goes with a stitched row of blue crosses along an old repair. When somebody else has the floor, Daryl squares up pieces of paper while thinking.",
+  "personality": "Daryl loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To read the name on the debt page aloud.",
+  "family": "Gareth Arrieta is Daryl’s half-sibling. Daryl chooses whether to use it. Gareth saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The sheltered corner*, Gareth says, “I listen for the doors before putting toast down.”",
+  "connections": "Anita Lund. A newly literate reader finds the keeper of the ledger is personally involved.",
+  "familyIds": [
+    "AH-R0268"
+  ],
+  "connectionIds": [
+    "AH-R0648"
+  ],
+  "reactions": [
+    {
+      "situation": "The former fence offers to pay money for something irreplaceable",
+      "response": "Daryl asks the owner what returning money would and wouldn't settle.",
+      "asWritten": "The former fence offers to pay money for something irreplaceable. Daryl asks the owner what returning money would and wouldn't settle."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Daryl waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Daryl waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Daryl offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Daryl offers one about their own embarrassment instead."
+    }
+  ]
+}

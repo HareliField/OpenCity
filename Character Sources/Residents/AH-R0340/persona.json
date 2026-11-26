@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0340",
+  "personId": "AH-R0340",
+  "name": "Noel Holmes",
+  "age": 49,
+  "occupation": "Court usher",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The spare spectacles",
+  "biography": "stories/residents/03/04-the-spare-spectacles.md#ah-r0340",
+  "life": "“I still remember an usher who set his chair beside mine.” On Saturday, near the blocks below Foundry Lofts, Noel checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I sat beside her because my own witness statement had cost me a friend. This time she chose when to sign.",
+  "appearance": "On an ordinary day, look for a black overshirt with pearl buttons and a watch on a cracked leather band. Noel has heavy brows and an unusually delicate jaw, with a smooth side part with one rebellious curl. Noel leans a shoulder against the wall during long conversations during a conversation.",
+  "personality": "Noel carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To help a hesitant witness leave with a signed copy.",
+  "family": "Katherine Lowe is Noel’s younger cousin. Noel asks what the birthday guest would like this year. Katherine remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A red mitten*, Katherine says, “I found the other mitten in the lift. I've put the pair on a cord long enough to cover two chairs.”",
+  "connections": "Elise Kapoor. A drawing of the room gives the hesitant witness a less public way to begin.",
+  "familyIds": [
+    "AH-R0210"
+  ],
+  "connectionIds": [
+    "AH-R0338"
+  ],
+  "reactions": [
+    {
+      "situation": "The counter is busy and another visitor starts to hurry the signing",
+      "response": "Noel puts a time on when the counter will be free again and protects the witness's time to read.",
+      "asWritten": "The counter is busy and another visitor starts to hurry the signing. Noel puts a time on when the counter will be free again and protects the witness's time to read."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Noel offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Noel offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Noel offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Noel offers to accompany them while they tell the truth."
+    }
+  ]
+}

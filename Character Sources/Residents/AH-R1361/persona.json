@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1361",
+  "personId": "AH-R1361",
+  "name": "Mika Williams",
+  "age": 64,
+  "occupation": "Retiring stevedore",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A last ship together",
+  "biography": "stories/residents/10/02-a-last-ship-together.md#ah-r1361",
+  "life": "“I still remember being given the first cup of tea on a shift with strangers.” Friday often includes a stop at the foot of Harbor Viaduct, where Mika pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I started beside a stranger and want one final day's work beside my friend even if we talk about nothing important.",
+  "appearance": "Mika is easy to recognize by iron-gray waves and a wide brow and a narrow jaw. Usually dressed in a pale blue work shirt with a replacement button a shade darker than the others, Mika looks down for a moment before saying something difficult when listening.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To work a final ordinary shift beside a friend.",
+  "family": "Zachary Silva is Mika’s half-sibling. Mika sets the time to leave. Zachary picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A call heard twice*, Zachary says, “I was off duty and brought the letter from my neighbor to the desk.”",
+  "connections": "Ariel Sawyer (longtime workmate). The two retiring workers have earned both a shared shift and a few private minutes at its end.",
+  "familyIds": [
+    "AH-R1240"
+  ],
+  "connectionIds": [
+    "AH-R1362"
+  ],
+  "reactions": [
+    {
+      "situation": "The two old workers are offered separate farewell days",
+      "response": "Mika asks each worker separately what kind of last day they want.",
+      "asWritten": "The two old workers are offered separate farewell days. Mika asks each worker separately what kind of last day they want."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Mika finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Mika finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Mika listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Mika listens first to the account of how it was actually used."
+    }
+  ]
+}

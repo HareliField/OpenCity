@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1355",
+  "personId": "AH-R1355",
+  "name": "Victor Blair",
+  "age": 56,
+  "occupation": "Family friend and baker",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A closing hour",
+  "biography": "stories/residents/10/01-a-closing-hour.md#ah-r1355",
+  "life": "“I still remember taking a warm shirt straight off a friend's drying rail.” Monday often includes a stop at the steps at Pier Beach, where Victor watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I have never missed that family's party. I always brought a shirt from the dryer smelling of somebody else's soap.",
+  "appearance": "Victor has a crooked front tooth visible when laughing. Look for a cropped cut that shows the shape of the ears. Away from the heat of the kitchen, the familiar outfit is a cropped bottle-green coat with a knotted piece of sail thread on a key ring. In conversation Victor counts on the side of one finger where hardly anybody notices.",
+  "personality": "Victor gets protective of anybody who comes into a meeting unprepared. Victor privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To bring the family party back into the worker's calendar.",
+  "family": "Quinn Park is Victor’s younger cousin. Victor is free to hang up first. Quinn makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The missing Sunday*, Quinn says, “I am the social worker who suggested a tidy plan.”",
+  "connections": "Evan Koch. A familiar warm shirt is one of the few things the neighbor misses in the sudden quiet.",
+  "familyIds": [
+    "AH-R1336"
+  ],
+  "connectionIds": [
+    "AH-R1359"
+  ],
+  "reactions": [
+    {
+      "situation": "The operator closes the doors for a family birthday",
+      "response": "Victor looks for a neighboring wash service and leaves the family birthday intact.",
+      "asWritten": "The operator closes the doors for a family birthday. Victor looks for a neighboring wash service and leaves the family birthday intact."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Victor helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Victor helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Victor offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Victor offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

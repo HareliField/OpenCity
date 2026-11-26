@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0651",
+  "personId": "AH-R0651",
+  "name": "Cecilia Woods",
+  "age": 48,
+  "occupation": "Retail cashier",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Two left slippers",
+  "biography": "stories/residents/05/06-two-left-slippers.md#ah-r0651",
+  "life": "“I still remember a father's shoes going unworn beside the stove.” People around the corner outside Coastal Barber know Cecilia by a small Saturday habit. Cecilia usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I bought my dad those slippers after he fell. I visited three wards to find the missing right.",
+  "appearance": "Cecilia has fine brows over wide-set eyes. Look for a blunt cut just below the ears. On an ordinary day, the familiar outfit is a pale blue work shirt with a braided bracelet with a single wooden bead. In conversation Cecilia presses the lips together to keep a smile in.",
+  "personality": "Cecilia treats a small promise with the gravity others reserve for a contract. This makes Cecilia lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To recover the father's missing right slipper.",
+  "family": "Gloria Smith is Cecilia’s first cousin once removed. Cecilia brings whatever was actually growing or affordable that week. Gloria makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *A sail cut small*, Gloria says, “I kept a postage-stamp square. It fits inside the passport I could never afford when that boat was new.”",
+  "connections": "Miles Marks. A family looking for a right slipper meets the wearer who can pass on an unused left.",
+  "familyIds": [
+    "AH-R0300"
+  ],
+  "connectionIds": [
+    "AH-R0652"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient opens the bag and finds two left slippers",
+      "response": "Cecilia sets out the pair and asks the discharge worker to check the right foot too.",
+      "asWritten": "A patient opens the bag and finds two left slippers. Cecilia sets out the pair and asks the discharge worker to check the right foot too."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Cecilia calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Cecilia calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Cecilia says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Cecilia says what can be returned and asks whether that will do."
+    }
+  ]
+}

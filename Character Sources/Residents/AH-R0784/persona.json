@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0784",
+  "personId": "ah-pd-106",
+  "name": "Tess Walker",
+  "age": 44,
+  "occupation": "Patrol officer",
+  "home": "Midtown",
+  "episode": "The Saturday swap",
+  "biography": "stories/residents/06/04-the-saturday-swap.md#ah-r0784",
+  "life": "“I still remember the strange handwriting in my father's will.” On Tuesday, near Juniper Street, Tess knows which of the west-side porches has a seat in the shade.",
+  "voice": "I want to swap so I can meet the sister my father only mentioned in his will.",
+  "appearance": "Tess has short sandy hair and a marked widow's peak, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, a charcoal zip cardigan. It usually goes with a square of clean cloth for polishing smudges. When somebody else has the floor, Tess draws breath as if to speak and lets someone else go first.",
+  "personality": "Tess listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To meet the sister named in the will.",
+  "family": "Stanley Hull is Tess’s half-sibling. Tess remembers the birthdays. Stanley asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A last ship together*, Stanley says, “I am the foreman who cannot offer both options.”",
+  "connections": "Kai Chen. An unexpected sibling meeting calls for a favor from someone uneasy about asking an old partner.",
+  "familyIds": [
+    "AH-R1363"
+  ],
+  "connectionIds": [
+    "AH-R0789"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member asks for a definite promise about Saturday",
+      "response": "Tess promises a definite check-in time even if the watch itself is still uncertain.",
+      "asWritten": "A family member asks for a definite promise about Saturday. Tess promises a definite check-in time even if the watch itself is still uncertain."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Tess stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Tess stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Tess keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Tess keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

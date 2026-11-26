@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0950",
+  "personId": "AH-R0950",
+  "name": "Isaac Nord",
+  "age": 23,
+  "occupation": "Retail apprentice",
+  "home": "the blocks north of the port",
+  "episode": "The release address",
+  "biography": "stories/residents/07/05-the-release-address.md#ah-r0950",
+  "life": "“I still remember buying my first stationery that didn't have a parent's name on it.” People around the crossing outside Verve Nail Studio know Isaac by a small Monday habit. Isaac notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I was the child writing envelopes for my mother. I would like one letter addressed to me under the name I use now.",
+  "appearance": "On an ordinary day, look for a sand-colored linen shirt and a printed handkerchief folded into the pocket. Isaac has a strong profile and a little space between the front teeth, with brown hair pinned away from the temples. Isaac presses the lips together to keep a smile in during a conversation.",
+  "personality": "Isaac carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To get a letter in the child's current name.",
+  "family": "Mara Massey is Isaac’s older relative by marriage. Isaac brings whatever was actually growing or affordable that week. Mara makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The fountain score*, Mara says, “I can't stand the sound of running water at night.”",
+  "connections": "Cian Farrell (parent). Returning parent and grown child try addressing one another by the right names.",
+  "familyIds": [
+    "AH-R0725"
+  ],
+  "connectionIds": [
+    "AH-R0941"
+  ],
+  "reactions": [
+    {
+      "situation": "A child wants to leave the homecoming meal early",
+      "response": "Isaac gives the child an ordinary excuse to step outside without suggesting they reject the father.",
+      "asWritten": "A child wants to leave the homecoming meal early. Isaac gives the child an ordinary excuse to step outside without suggesting they reject the father."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Isaac says what they know in their own name and refuses to treat a guess as something the child has to disprove.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Isaac says what they know in their own name and refuses to treat a guess as something the child has to disprove."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Isaac offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Isaac offers to accompany them while they tell the truth."
+    }
+  ]
+}

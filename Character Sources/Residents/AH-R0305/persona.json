@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0305",
+  "personId": "AH-R0305",
+  "name": "Irene Baptiste",
+  "age": 23,
+  "occupation": "Kitchen hand",
+  "home": "Eastside",
+  "episode": "Spin cycle choir",
+  "biography": "stories/residents/03/01-spin-cycle-choir.md#ah-r0305",
+  "life": "“I still remember washing a restaurant apron until it turned pink.” On Wednesday, near Breakwater Way, Irene stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I put three different loads in to test my theory and dyed my best shirt.",
+  "appearance": "Irene has a flat bridge to the nose and a mobile brow. Look for a cropped cut that shows the shape of the ears. Away from the heat of the kitchen, the familiar outfit is a striped cotton shirt with a train token tied to a zipper pull. In conversation Irene listens with the head tilted a little to the left.",
+  "personality": "Irene is kind in very practical ways and prickly about being thanked in public. Irene loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To replace the shirt without blaming the washers.",
+  "family": "Mia Nair is Irene’s first cousin once removed. Irene offers the first invitation. Mia gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The clean ledger*, Mia says, “I want to be the last name he reads. I owe him an apology he never put in his ledger.”",
+  "connections": "Russell Hooper. A useful lullaby depends on choosing the right machine and the right load.",
+  "familyIds": [
+    "AH-R0650"
+  ],
+  "connectionIds": [
+    "AH-R0304"
+  ],
+  "reactions": [
+    {
+      "situation": "The washer bearing goes quiet mid-song",
+      "response": "Irene listens for the missing note and lets maintenance know what changed.",
+      "asWritten": "The washer bearing goes quiet mid-song. Irene listens for the missing note and lets maintenance know what changed."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Irene finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Irene finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Irene gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Irene gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0203",
+  "personId": "AH-R0203",
+  "name": "Allen Marin",
+  "age": 68,
+  "occupation": "Retired knitwear worker",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A red mitten",
+  "biography": "stories/residents/02/06-a-red-mitten.md#ah-r0203",
+  "life": "“I once knitted a wedding shawl while waiting for a delayed ferry.” On Wednesday, near the courtyard by Ferry Street Rooms, Allen prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I knitted it left-handed. I can still make its mate if the owner remembers the stripes.",
+  "appearance": "Allen is easy to recognize by a thin scattering of white hair over the crown and a flat bridge to the nose and a mobile brow. Usually dressed in an olive canvas jacket with a replacement button a shade darker than the others, Allen listens with the head tilted a little to the left when listening.",
+  "personality": "Allen reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Allen trusts most.",
+  "agenda": "To knit the mate with the stripes in their proper order.",
+  "family": "Karen Pierce is Allen’s younger relative by marriage. Allen picks the meeting place. Karen sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The dead man's tab*, Karen says, “I need his lunch hours to date a letter he sent me.”",
+  "connections": "Katherine Lowe. They reunite the pair and choose the cord between them.",
+  "familyIds": [
+    "AH-R0494"
+  ],
+  "connectionIds": [
+    "AH-R0210"
+  ],
+  "reactions": [
+    {
+      "situation": "The waiting-room mitten is about to be thrown away",
+      "response": "Allen asks whether the other mitten is still being looked for.",
+      "asWritten": "The waiting-room mitten is about to be thrown away. Allen asks whether the other mitten is still being looked for."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Allen checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Allen checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Allen does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Allen does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

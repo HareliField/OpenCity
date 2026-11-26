@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0981",
+  "personId": "AH-R0981",
+  "name": "Aria Starr",
+  "age": 35,
+  "occupation": "Recently separated groundskeeper",
+  "home": "the western residential streets",
+  "episode": "A tenant who stays",
+  "biography": "stories/residents/07/09-a-tenant-who-stays.md#ah-r0981",
+  "life": "“I still remember bringing my last flat's key to a family supper.” People around the market by Market Flats know Aria by a small Thursday habit. Aria often waits until the delivery baskets are stacked before going in.",
+  "voice": "I can finally afford to move home and did not know somebody else had spent a life there.",
+  "appearance": "Aria has dark brown curls cut close behind the ears, a straight nose and deep-set eyes, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Aria listens with the head tilted a little to the left.",
+  "personality": "Aria gets protective of anybody who comes into a meeting unprepared. Aria privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To find secure housing after the breakup.",
+  "family": "Milan Gray is Aria’s cousin. Aria picks the meeting place. Milan sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *Names on the night wall*, Milan says, “I put down the cleaner who sits on the steps until my taxi comes.”",
+  "connections": "Tariq Hamilton (sibling). Siblings have to hear the same old voicemail before arguing over who was promised the house.",
+  "familyIds": [
+    "AH-R1384"
+  ],
+  "connectionIds": [
+    "AH-R0987"
+  ],
+  "reactions": [
+    {
+      "situation": "The future tenant asks when the garden will be empty",
+      "response": "Aria asks the gardener which roots are most vulnerable before agreeing to a date.",
+      "asWritten": "The future tenant asks when the garden will be empty. Aria asks the gardener which roots are most vulnerable before agreeing to a date."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Aria offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Aria offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Aria offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Aria offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0625",
+  "personId": "AH-R0625",
+  "name": "Elena Mehta",
+  "age": 58,
+  "occupation": "Insurance company owner",
+  "home": "the blocks north of the port",
+  "episode": "The trust with a typo",
+  "biography": "stories/residents/05/03-the-trust-with-a-typo.md#ah-r0625",
+  "life": "“I still remember meeting a future banker in a night school queue.” On Wednesday, near Studio Boulevard, Elena waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I endowed the second scholarship only after I heard her laugh at the error.",
+  "appearance": "Elena has short copper curls, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a narrow brass watch set a little fast. When somebody else has the floor, Elena steadies a cup with both hands while listening.",
+  "personality": "Elena often says yes too quickly out of pride in being useful. The people closest to Elena have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To fund a second place for an overlooked pupil.",
+  "family": "Art Robles is Elena’s half-sibling. Elena decides what stays off the paper. Art brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The wrong bicycle*, Art says, “I gave one of those bikes to my grandson and told him it was new.”",
+  "connections": "Jay Montoya. Two new contributions give the trust reason to revise the shorthand on the forms.",
+  "familyIds": [
+    "AH-R0037"
+  ],
+  "connectionIds": [
+    "AH-R0629"
+  ],
+  "reactions": [
+    {
+      "situation": "A recipient thinks the nickname makes the letter a joke",
+      "response": "Elena confirms the letter with the trust before asking the recipient to respond.",
+      "asWritten": "A recipient thinks the nickname makes the letter a joke. Elena confirms the letter with the trust before asking the recipient to respond."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Elena offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Elena offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Elena rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Elena rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

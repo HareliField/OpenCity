@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0858",
+  "personId": "AH-R0858",
+  "name": "Cynthia Hall",
+  "age": 59,
+  "occupation": "Retired estate clerk",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A chair of one's own",
+  "biography": "stories/residents/06/11-a-chair-of-one-s-own.md#ah-r0858",
+  "life": "“I still remember sending my daughter's course deposit in small transfers.” People around the downtown fountain know Cynthia by a small Thursday habit. Cynthia keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I am the mother lending the deposit. I'd like my daughter to stop describing family money as luck.",
+  "appearance": "Cynthia is easy to recognize by tightly curled gray hair and heavy brows and an unusually delicate jaw. Usually dressed in a dark green knitted vest with one loose pocket corner secured with green thread, Cynthia counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Cynthia reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Cynthia trusts most.",
+  "agenda": "To make the family loan explicit.",
+  "family": "Jamie Grant is Cynthia’s half-sibling. Cynthia chooses the familiar route. Jamie can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *An old restaurant debt*, Jamie says, “I cooked that wake after a fight with the man who died.”",
+  "connections": "Yasmin Vega (daughter). Mother and daughter put the chair deposit down as a family loan, with terms both understand.",
+  "familyIds": [
+    "AH-R0993"
+  ],
+  "connectionIds": [
+    "AH-R0851"
+  ],
+  "reactions": [
+    {
+      "situation": "A regular cancels the week's most valuable appointment",
+      "response": "Cynthia revises the week's numbers with the cancellation included before making any promise.",
+      "asWritten": "A regular cancels the week's most valuable appointment. Cynthia revises the week's numbers with the cancellation included before making any promise."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Cynthia walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Cynthia walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Cynthia does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Cynthia does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

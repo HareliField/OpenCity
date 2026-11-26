@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1106",
+  "personId": "AH-R1106",
+  "name": "Marco Bennett",
+  "age": 43,
+  "occupation": "Label printer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Two names on the chart",
+  "biography": "stories/residents/08/06-two-names-on-the-chart.md#ah-r1106",
+  "life": "“I still remember labels peeling off my own school uniform.” Sunday often includes a stop at the steps at Pier Beach, where Marco watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I make labels that stay readable after washing. I'm bringing the ward two names on one band in the order she chose.",
+  "appearance": "Marco has short black hair swept back, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Marco starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Marco keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Marco wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To print both names in the patient's preferred order.",
+  "family": "Talia Bloom is Marco’s second cousin. Marco brings whatever was actually growing or affordable that week. Talia makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The porch auction*, Talia says, “I broke a rung at sixteen and blamed the dog.”",
+  "connections": "Lennon Pereira. A safer printed band starts with asking which name the patient wants the room to hear.",
+  "familyIds": [
+    "AH-R0532"
+  ],
+  "connectionIds": [
+    "AH-R1105"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member asks to see both old folders",
+      "response": "Marco checks what the patient has authorized before handing over either folder.",
+      "asWritten": "A family member asks to see both old folders. Marco checks what the patient has authorized before handing over either folder."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Marco asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Marco asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Marco offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Marco offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

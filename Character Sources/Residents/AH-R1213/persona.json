@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1213",
+  "personId": "AH-R1213",
+  "name": "Barbara Frost",
+  "age": 29,
+  "occupation": "Dock rigger",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The worker who couldn't read the joke",
+  "biography": "stories/residents/09/02-the-worker-who-couldn-t-read-the-joke.md#ah-r1213",
+  "life": "“I still remember sending a picture of the first crew that took me in.” Tuesday often includes a stop at the entrance to the Wash House, where Barbara stops for local notices even on a day without a load to wash.",
+  "voice": "I took the picture to show my brother the crew. I didn't even notice the wall until his reply came.",
+  "appearance": "Barbara is easy to recognize by brown hair pinned away from the temples and a softly rounded chin under sharp cheekbones. Usually dressed in a charcoal zip cardigan with a thin silver ring worn on a cord, Barbara turns fully toward the person speaking when listening.",
+  "personality": "Barbara is kind in very practical ways and prickly about being thanked in public. Barbara loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To control further circulation of the misunderstood photograph.",
+  "family": "Roland Bloom is Barbara’s second cousin. Barbara asks the question the rest of the family avoided. Roland chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The third bedroom*, Roland says, “I want the family to keep eating at one table after the doors go up.”",
+  "connections": "Oliver Aranda. A family copy of the crew portrait becomes evidence of how far the joke traveled.",
+  "familyIds": [
+    "AH-R1140"
+  ],
+  "connectionIds": [
+    "AH-R1220"
+  ],
+  "reactions": [
+    {
+      "situation": "A manager wants the photographed worker to address the crew",
+      "response": "Barbara offers the pictured worker a private conversation before any meeting with the crew.",
+      "asWritten": "A manager wants the photographed worker to address the crew. Barbara offers the pictured worker a private conversation before any meeting with the crew."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Barbara walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Barbara walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Barbara gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Barbara gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

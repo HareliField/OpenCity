@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1121",
+  "personId": "AH-R1121",
+  "name": "Nadia Fraser",
+  "age": 33,
+  "occupation": "Hotel reception worker",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A summer marriage",
+  "biography": "stories/residents/08/08-a-summer-marriage.md#ah-r1121",
+  "life": "“I still remember ordering inexpensive flowers without the hotel owner's card.” On Wednesday, near the public road outside the Port of Asphalt, Nadia can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I do not want free hotel flowers if every guest is going to hear where they came from.",
+  "appearance": "Nadia is easy to recognize by close-cropped dark curls and a scattering of freckles across the bridge of the nose. Usually dressed in a dark green knitted vest with a thin silver ring worn on a cord, Nadia looks down for a moment before saying something difficult when listening.",
+  "personality": "Nadia has a long memory for unfair prices and a short one for small insults. Nadia can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To avoid a sponsor's claim on the wedding.",
+  "family": "Frank Hull is Nadia’s half-sibling. Nadia chooses whether to use it. Frank saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The pawned trumpet*, Frank says, “I paid cash without asking why it was cheap.”",
+  "connections": "Emil Palmer (spouse). The two partners settle the lifeguard's shift and the hotel employee's flower offer between them.",
+  "familyIds": [
+    "AH-R0191"
+  ],
+  "connectionIds": [
+    "AH-R1129"
+  ],
+  "reactions": [
+    {
+      "situation": "A guest brings additional people to the boardwalk wedding",
+      "response": "Nadia checks whether the couple can actually feed and seat the additional people.",
+      "asWritten": "A guest brings additional people to the boardwalk wedding. Nadia checks whether the couple can actually feed and seat the additional people."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Nadia asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Nadia asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Nadia agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Nadia agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

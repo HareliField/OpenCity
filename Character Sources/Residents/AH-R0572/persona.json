@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0572",
+  "personId": "AH-R0572",
+  "name": "Gerard Marquez",
+  "age": 19,
+  "occupation": "Youth theater student",
+  "home": "the western residential streets",
+  "episode": "A play in a pocket",
+  "biography": "stories/residents/04/13-a-play-in-a-pocket.md#ah-r0572",
+  "life": "“I still remember forgetting my line when my uncle sat down.” On Saturday, near Studio Boulevard, Gerard waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I played a landlord until my actual landlord sat down. I delivered the same lines and held his gaze.",
+  "appearance": "Gerard has a center part and straight chestnut hair, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, a cream pullover. It usually goes with a replacement button a shade darker than the others. When somebody else has the floor, Gerard leans a shoulder against the wall during long conversations.",
+  "personality": "Gerard is kind in very practical ways and prickly about being thanked in public. Gerard loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To keep the scene honest with the landlord watching.",
+  "family": "Wynn Montoya is Gerard’s older relative by marriage. Gerard chooses an ordinary story to tell. Wynn asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *A widow bids again*, Wynn says, “I put in a deliberately low bid to find out who would laugh.”",
+  "connections": "Diego Mitchell. The pretend landlord is the listener who guesses where the missing character went.",
+  "familyIds": [
+    "AH-R0930"
+  ],
+  "connectionIds": [
+    "AH-R0580"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor wants to record a private performance",
+      "response": "Gerard asks the actor and the sole listener separately before allowing a recording.",
+      "asWritten": "A visitor wants to record a private performance. Gerard asks the actor and the sole listener separately before allowing a recording."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Gerard offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Gerard offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Gerard gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Gerard gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

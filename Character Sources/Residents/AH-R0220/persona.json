@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0220",
+  "personId": "AH-R0220",
+  "name": "Julian Oh",
+  "age": 73,
+  "occupation": "Retired packaging designer",
+  "home": "Coast Ridge",
+  "episode": "The margin reader",
+  "biography": "stories/residents/02/07-the-margin-reader.md#ah-r0220",
+  "life": "“I used to paint fake whiskers on packages with badly printed faces.” People around the downtown fountain know Julian by a small Tuesday habit. Julian keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I drew a moustache on the author. Decades later my granddaughter guessed it was me from the shape.",
+  "appearance": "Julian is easy to recognize by tightly curled gray hair and a softly rounded chin under sharp cheekbones. Usually dressed in a dark green knitted vest with a partly rubbed-away embroidered initial, Julian raises one eyebrow long before saying yes when listening.",
+  "personality": "Julian talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Julian's ways of saying that it is all right to leave.",
+  "agenda": "To give the granddaughter the original mustache drawing.",
+  "family": "Remy Knight is Julian’s first cousin once removed. When a family elder realized nobody could pronounce a friend's original name, she spent a whole evening teaching the table the three difficult sounds. Under pressure the family still says the names slowly. Julian will correct a mistake even if it makes a meal awkward. Asked about *The new language at dinner*, Remy says, “I hold the client's hand at meals. Yesterday he said my name correctly in a language I have never spoken.”",
+  "connections": "Lina King. The missing chapter and the penciled mustache finally find their way into the same conversation. Also in the story is Bess Lai (fellow margin writer).",
+  "familyIds": [
+    "AH-R1190"
+  ],
+  "connectionIds": [
+    "AH-R0217",
+    "AH-R0211"
+  ],
+  "reactions": [
+    {
+      "situation": "Two people remember writing the same line",
+      "response": "Julian lets both readers identify the line privately before adding a name.",
+      "asWritten": "Two people remember writing the same line. Julian lets both readers identify the line privately before adding a name."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Julian asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Julian asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Julian says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Julian says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

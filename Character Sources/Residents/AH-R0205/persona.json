@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0205",
+  "personId": "AH-R0205",
+  "name": "George Crawford",
+  "age": 37,
+  "occupation": "Hospital property clerk",
+  "home": "Old Town",
+  "episode": "A red mitten",
+  "biography": "stories/residents/02/06-a-red-mitten.md#ah-r0205",
+  "life": "“I sort lost objects because I once waited three years for a returned ring.” People around the market by Market Flats know George by a small Saturday habit. George often waits until the delivery baskets are stacked before going in.",
+  "voice": "I photograph everything we find. In every frame there is a different hand reaching into the corner.",
+  "appearance": "George has close-cropped dark curls, a heart-shaped face and prominent ears, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a watch on a cracked leather band. When somebody else has the floor, George squares up pieces of paper while thinking.",
+  "personality": "George listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To identify who moved the mitten without posting ward photographs.",
+  "family": "Sonia Garza is George’s half-sibling. George makes the call. Sonia is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A room for a father*, Sonia says, “I gave him my old bed. I asked the family to keep one night a week when I can stay too.”",
+  "connections": "Peter Patel. The property photograph catches the patient discovering that the mitten will fit.",
+  "familyIds": [
+    "AH-R0837"
+  ],
+  "connectionIds": [
+    "AH-R0206"
+  ],
+  "reactions": [
+    {
+      "situation": "The waiting-room mitten is about to be thrown away",
+      "response": "George asks whether the other mitten is still being looked for.",
+      "asWritten": "The waiting-room mitten is about to be thrown away. George asks whether the other mitten is still being looked for."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "George walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. George walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "George keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, George keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

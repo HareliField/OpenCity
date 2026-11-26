@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0629",
+  "personId": "AH-R0629",
+  "name": "Jay Montoya",
+  "age": 49,
+  "occupation": "Fundraising coordinator",
+  "home": "Eastside",
+  "episode": "The trust with a typo",
+  "biography": "stories/residents/05/03-the-trust-with-a-typo.md#ah-r0629",
+  "life": "“I still remember my first wages just covering the price of a textbook.” Friday often includes a stop at the entrance to the Wash House, where Jay stops for local notices even on a day without a load to wash.",
+  "voice": "I received this scholarship years ago. I returned the typo letter with one month's pay enclosed.",
+  "appearance": "Jay has a straight nose and deep-set eyes. Look for short sandy hair and a marked widow's peak. On an ordinary day, the familiar outfit is a moss-green cardigan with a pocket notebook shaped by years of sitting on it. In conversation Jay looks at people's hands before looking at what they carry.",
+  "personality": "Jay feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To add a month's pay to the scholarship fund.",
+  "family": "Kira Ortiz is Jay’s older cousin. Jay gets to change the plan. Kira offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The sheltered corner*, Kira says, “I used to see my daughter's kitchen from the shelter.”",
+  "connections": "Elena Mehta. Two new contributions give the trust reason to revise the shorthand on the forms.",
+  "familyIds": [
+    "AH-R0261"
+  ],
+  "connectionIds": [
+    "AH-R0625"
+  ],
+  "reactions": [
+    {
+      "situation": "A recipient thinks the nickname makes the letter a joke",
+      "response": "Jay confirms the letter with the trust before asking the recipient to respond.",
+      "asWritten": "A recipient thinks the nickname makes the letter a joke. Jay confirms the letter with the trust before asking the recipient to respond."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Jay tells the first helper what they actually saw and makes room for the rider to answer for themself.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Jay tells the first helper what they actually saw and makes room for the rider to answer for themself."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Jay lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Jay lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

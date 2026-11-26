@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1423",
+  "personId": "AH-R1423",
+  "name": "Javier Lai",
+  "age": 45,
+  "occupation": "Beach cart owner",
+  "home": "the streets inland from Pier Beach",
+  "episode": "No lifeguard at dusk",
+  "biography": "stories/residents/10/08-no-lifeguard-at-dusk.md#ah-r1423",
+  "life": "“I still remember closing the cart while a neighbor waited on the steps.” On Sunday, near the corner outside Coastal Barber, Javier usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I own the cart beside the steps. I can sit for company after the shutters come down, without promising to be a lifeguard.",
+  "appearance": "Javier is easy to recognize by short, uneven waves that refuse to lie flat and two dimples that appear only with a full smile. Usually dressed in a moss-green cardigan with a train token tied to a zipper pull, Javier holds eye contact until the other person has finished when listening.",
+  "personality": "Javier reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Javier trusts most.",
+  "agenda": "To offer company while being clear about available help.",
+  "family": "Ivor Lake is Javier’s cousin raised in the same household. Javier calls back when there is finally a little privacy. Ivor leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A chair on the quay*, Ivor says, “The lower marks run down instead of up. Somebody measured a child on their knees.”",
+  "connections": "Gregory Lowe. The beach cart and the coat stall provide two places to wait ashore with ordinary company.",
+  "familyIds": [
+    "AH-R0013"
+  ],
+  "connectionIds": [
+    "AH-R1428"
+  ],
+  "reactions": [
+    {
+      "situation": "The swimmer stays on the steps after the final shift",
+      "response": "Javier checks whether the swimmer intends to go into the water before deciding what help is wanted.",
+      "asWritten": "The swimmer stays on the steps after the final shift. Javier checks whether the swimmer intends to go into the water before deciding what help is wanted."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Javier stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Javier stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Javier does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Javier does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0775",
+  "personId": "AH-R0775",
+  "name": "Basil Guzman",
+  "age": 44,
+  "occupation": "Delivery driver",
+  "home": "Eastside",
+  "episode": "Money after marriage",
+  "biography": "stories/residents/06/03-money-after-marriage.md#ah-r0775",
+  "life": "“I still remember drivers buying one another replacement gloves.” Monday often includes a stop at the downtown fountain, where Basil keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I want to buy the delivery side with the drivers. My house is the only collateral I have.",
+  "appearance": "Basil is easy to recognize by short black hair swept back and a crooked front tooth visible when laughing. Usually dressed in a moss-green cardigan with a comb in a sleeve sewn into the lining, Basil gathers both sleeves neatly before settling in when listening.",
+  "personality": "Basil has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To organize the drivers' bid without risking every house.",
+  "family": "Pablo Armas is Basil’s cousin raised in the same household. Basil puts the kettle on. Pablo chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The high road home*, Pablo says, “I offer rides for cash. Free practice sounds nice until I remember how much it cost me to learn.”",
+  "connections": "Ansel Colón. The driver's buyout would have to honor the supplier's outstanding invoices.",
+  "familyIds": [
+    "AH-R1165"
+  ],
+  "connectionIds": [
+    "AH-R0779"
+  ],
+  "reactions": [
+    {
+      "situation": "The divorcing founders ask staff to pick a side",
+      "response": "Basil asks when the next wages will arrive before giving either founder a public endorsement.",
+      "asWritten": "The divorcing founders ask staff to pick a side. Basil asks when the next wages will arrive before giving either founder a public endorsement."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Basil asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Basil asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Basil asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Basil asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

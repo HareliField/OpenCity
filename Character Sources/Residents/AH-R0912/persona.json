@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0912",
+  "personId": "AH-R0912",
+  "name": "Amalia Keller",
+  "age": 46,
+  "occupation": "Dock lease co-owner",
+  "home": "the western residential streets",
+  "episode": "The absent signature",
+  "biography": "stories/residents/07/02-the-absent-signature.md#ah-r0912",
+  "life": "“I still remember my first berth lease sharing space with the house keys.” People around the blocks below Foundry Lofts know Amalia by a small Monday habit. Amalia checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I want to sell so my wife can retire. My missing sister thinks I want my childhood erased.",
+  "appearance": "Amalia is easy to recognize by a center part and straight chestnut hair and a straight nose and deep-set eyes. Usually dressed in a gray fisher's sweater with a knotted piece of sail thread on a key ring, Amalia steadies a cup with both hands while listening when listening.",
+  "personality": "Amalia is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To sell in time for the spouse to retire.",
+  "family": "Logan Gupta is Amalia’s second cousin. The family gave a child a coin for every question asked at an appointment. By the third visit the child was paying the others to keep quiet and let the professional answer. Amalia asks one question at a time. Asked about *A shelf of apologies*, Logan says, “I am not sorry I kept it. It got me out of the marriage described in chapter twelve.”",
+  "connections": "Lily Lucas (elder relative and lease co-owner). Two generations of lease owners are each entitled to decide what can be signed.",
+  "familyIds": [
+    "AH-R0666"
+  ],
+  "connectionIds": [
+    "AH-R0918"
+  ],
+  "reactions": [
+    {
+      "situation": "A creditor asks why the berth decision is taking so long",
+      "response": "Amalia gives the creditor an accurate update without exposing private family correspondence.",
+      "asWritten": "A creditor asks why the berth decision is taking so long. Amalia gives the creditor an accurate update without exposing private family correspondence."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Amalia moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Amalia moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Amalia helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Amalia helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

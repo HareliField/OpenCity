@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0436",
+  "personId": "AH-R0436",
+  "name": "Felix Rubio",
+  "age": 38,
+  "occupation": "Home cook",
+  "home": "Coast Ridge",
+  "episode": "The housecoat commission",
+  "biography": "stories/residents/03/14-the-housecoat-commission.md#ah-r0436",
+  "life": "“I still remember getting invited into the dining room after washing up.” Thursday often includes a stop at the corner by Juniper Tailor, where Felix looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I cook her Sunday lunch. She's invited me to eat my own food with the guests this time.",
+  "appearance": "Felix has an aquiline nose and a square chin. Look for dark brown curls cut close behind the ears. Away from the heat of the kitchen, the familiar outfit is a soft blue checked shirt with a little coil of soft measuring tape. In conversation Felix takes off the watch before a long conversation.",
+  "personality": "Felix has a talent for getting adversaries to laugh at exactly the same thing. Felix knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To eat a whole meal with the client this Sunday.",
+  "family": "Scout Marin is Felix’s older cousin. Felix brings a spare shopping bag. Scout chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Winter afloat*, Scout says, “I can offer a sofa but my son needs a place to come back to when he's sober.”",
+  "connections": "Dennis Perry. The home cook gets to sit beside the person who ironed the collar.",
+  "familyIds": [
+    "AH-R0892"
+  ],
+  "connectionIds": [
+    "AH-R0439"
+  ],
+  "reactions": [
+    {
+      "situation": "The diner wants to fasten the new cuff unaided",
+      "response": "Felix leaves the cuff in reach and lets the diner set the pace.",
+      "asWritten": "The diner wants to fasten the new cuff unaided. Felix leaves the cuff in reach and lets the diner set the pace."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Felix tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Felix tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Felix asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Felix asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

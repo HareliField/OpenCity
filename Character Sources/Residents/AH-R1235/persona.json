@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1235",
+  "personId": "ah-pd-135",
+  "name": "Ravi Stone",
+  "age": 37,
+  "occupation": "Patrol officer",
+  "home": "Eastside",
+  "episode": "A call heard twice",
+  "biography": "stories/residents/09/04-a-call-heard-twice.md#ah-r1235",
+  "life": "“I still remember leaving a quiet room alone although the lights were still on.” Tuesday often includes a stop at the downtown fountain, where Ravi keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I left a quiet room in the station free for the person who needed to finish that call.",
+  "appearance": "Ravi has an aquiline nose and a square chin. Look for a swept fringe and a closely clipped nape. On an ordinary day, the familiar outfit is a cropped bottle-green coat with a stitched row of blue crosses along an old repair. In conversation Ravi touches a knuckle to the chin when searching for a word.",
+  "personality": "Ravi often says yes too quickly out of pride in being useful. The people closest to Ravi have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To keep a quiet call room available.",
+  "family": "Ansel Colón is Ravi’s older cousin. Their family used to get a different front-door key cut for each visiting relative. One returned key meant someone had left in anger. They keep in touch even when nobody wants to hand the key back. Ravi remembers to make a second invitation later in the week. Asked about *Money after marriage*, Ansel says, “I supplied them on credit. I want a way to stay sympathetic without becoming their involuntary bank.”",
+  "connections": "Ana West. Bringing water into a quiet room was the part both can discuss without disclosing the call.",
+  "familyIds": [
+    "AH-R0779"
+  ],
+  "connectionIds": [
+    "AH-R1236"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor offers thanks to only one call taker",
+      "response": "Ravi gets both halves of the call into the account before a name goes up.",
+      "asWritten": "A supervisor offers thanks to only one call taker. Ravi gets both halves of the call into the account before a name goes up."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Ravi asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Ravi asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Ravi rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Ravi rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

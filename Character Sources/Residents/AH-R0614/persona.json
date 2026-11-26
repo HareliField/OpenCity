@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0614",
+  "personId": "AH-R0614",
+  "name": "Zachary Teo",
+  "age": 24,
+  "occupation": "Industrial design trainee",
+  "home": "the western residential streets",
+  "episode": "The crane shadow",
+  "biography": "stories/residents/05/02-the-crane-shadow.md#ah-r0614",
+  "life": "“I still remember sketching an engine I had never seen from the back.” People around the public road outside the Port of Asphalt know Zachary by a small Sunday habit. Zachary can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I drew the wrong crane in my design portfolio. A rigger showed me which silhouette was ours.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a seam let out by a narrow strip of contrasting fabric. Zachary has a small notch in the left eyebrow, with short black hair swept back. Zachary looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Zachary keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Zachary wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To correct the crane in the design portfolio.",
+  "family": "Cass Pennell is Zachary’s cousin. Zachary calls back when there is finally a little privacy. Cass leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *Window seven*, Cass says, “She used her breath to name the colors instead of answering my questions.”",
+  "connections": "Jack Gomez. The design portfolio and wedding photograph both need the correct crane. Also in the story is Martin Rahman (quay painter).",
+  "familyIds": [
+    "AH-R0057"
+  ],
+  "connectionIds": [
+    "AH-R0620",
+    "AH-R0611"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor reaches the quay too late to see it",
+      "response": "Zachary shows the visitor where the shadow fell and when the next chance comes.",
+      "asWritten": "A visitor reaches the quay too late to see it. Zachary shows the visitor where the shadow fell and when the next chance comes."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Zachary finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Zachary finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Zachary offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Zachary offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

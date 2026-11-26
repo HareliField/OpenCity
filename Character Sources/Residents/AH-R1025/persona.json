@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1025",
+  "personId": "AH-R1025",
+  "name": "Elaine Alcázar",
+  "age": 35,
+  "occupation": "Hotel linen worker",
+  "home": "the blocks north of the port",
+  "episode": "A dance for two fathers",
+  "biography": "stories/residents/07/13-a-dance-for-two-fathers.md#ah-r1025",
+  "life": "“I still remember watching my daughter search a crowd for both familiar faces.” On Tuesday, near Juniper Street, Elaine knows which of the west-side porches has a seat in the shade.",
+  "voice": "I want my little girl to see grown men making room without one of them having to disappear.",
+  "appearance": "Elaine is easy to recognize by a center part and straight chestnut hair and heavy brows and an unusually delicate jaw. Usually dressed in a cream pullover with a comb in a sleeve sewn into the lining, Elaine steadies a cup with both hands while listening when listening.",
+  "personality": "Elaine treats a small promise with the gravity others reserve for a contract. This makes Elaine lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To show the younger child two adults making room.",
+  "family": "Taylor Beck is Elaine’s older relative by marriage. Elaine is free to hang up first. Taylor makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The widow's dividend*, Taylor says, “I want the first dividend in cash to tip the woman who cleaned our first office.”",
+  "connections": "Frankie Armas. The younger child gets to watch a turn another student wants to learn.",
+  "familyIds": [
+    "AH-R0321"
+  ],
+  "connectionIds": [
+    "AH-R1030"
+  ],
+  "reactions": [
+    {
+      "situation": "The school prints only one father's name",
+      "response": "Elaine asks the student which names and relationships should appear before reprinting.",
+      "asWritten": "The school prints only one father's name. Elaine asks the student which names and relationships should appear before reprinting."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Elaine finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Elaine finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Elaine says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Elaine says what can be returned and asks whether that will do."
+    }
+  ]
+}

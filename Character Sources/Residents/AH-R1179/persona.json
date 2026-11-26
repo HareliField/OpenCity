@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1179",
+  "personId": "AH-R1179",
+  "name": "Ana Crane",
+  "age": 39,
+  "occupation": "Family friend and machinist",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The understudy sings",
+  "biography": "stories/residents/08/13-the-understudy-sings.md#ah-r1179",
+  "life": "“I still remember taking a singer's bins out while everyone else offered music.” On Friday, near the corner outside Coastal Barber, Ana usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I am the parent's friend who wanted a benefit concert. The family said they'd rather have groceries and a lift.",
+  "appearance": "Ana has a straight nose and deep-set eyes. Look for a long plait tucked inside the collar. On an ordinary day, the familiar outfit is a faded indigo overshirt with a fabric zip pull cut from a school scarf. In conversation Ana looks at people's hands before looking at what they carry.",
+  "personality": "Ana loves a well-told anecdote and distrusts the neat ending. The parts Ana remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To trade a grand benefit for requested groceries and rides.",
+  "family": "Tali Harris is Ana’s second cousin. Ana asks what the birthday guest would like this year. Tali remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The salon on strike*, Tali says, “I own the salon. I used to complain about my own boss doing exactly this, which the oldest technician remembers.”",
+  "connections": "Amos Ferraro. The director discovers practical help the family would rather have than another performance.",
+  "familyIds": [
+    "AH-R1010"
+  ],
+  "connectionIds": [
+    "AH-R1175"
+  ],
+  "reactions": [
+    {
+      "situation": "The understudy is offered the lead before the announcement",
+      "response": "Ana asks that the lead singer hear the change directly before it is advertised.",
+      "asWritten": "The understudy is offered the lead before the announcement. Ana asks that the lead singer hear the change directly before it is advertised."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Ana moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Ana moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Ana includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Ana includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

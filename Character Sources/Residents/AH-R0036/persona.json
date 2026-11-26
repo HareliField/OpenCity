@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0036",
+  "personId": "AH-R0036",
+  "name": "Cleo Penn",
+  "age": 34,
+  "occupation": "Evidence clerk",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The wrong bicycle",
+  "biography": "stories/residents/01/04-the-wrong-bicycle.md#ah-r0036",
+  "life": "Cleo grew up dividing one dresser drawer with two sisters. She assumed everyone could keep track of their things by memory. The station shelves cured her of that notion within a week. On Sunday, near the steps at Pier Beach, Cleo watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I used two identical bags for the keys. I've made a little station where owners can photograph their property with the collection slip. My supervisor wants to know whose idea it was.",
+  "appearance": "Cleo has a softly rounded chin under sharp cheekbones. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a cropped bottle-green coat with one loose pocket corner secured with green thread. In conversation Cleo takes off the watch before a long conversation.",
+  "personality": "Cleo finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To leave both owners with photographs of what they collected.",
+  "family": "Anita Lund is Cleo’s older relative by marriage. Cleo chooses the familiar route. Anita can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The clean ledger*, Anita says, “I kept the notebook safe through three burglaries.”",
+  "connections": "Priya Tal. The new collection slip has to satisfy both the counter and the person who will lose wages collecting it.",
+  "familyIds": [
+    "AH-R0648"
+  ],
+  "connectionIds": [
+    "AH-R0034"
+  ],
+  "reactions": [
+    {
+      "situation": "The courier asks who will cover the lost delivery",
+      "response": "Cleo gets the dispatcher and the courier looking at the same delivery entry.",
+      "asWritten": "The courier asks who will cover the lost delivery. Cleo gets the dispatcher and the courier looking at the same delivery entry."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Cleo asks the person already using it whether they can comfortably stand, rather than presuming who needs it most.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Cleo asks the person already using it whether they can comfortably stand, rather than presuming who needs it most."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Cleo waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Cleo waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

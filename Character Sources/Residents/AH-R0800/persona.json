@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0800",
+  "personId": "AH-R0800",
+  "name": "Cara Holt",
+  "age": 68,
+  "occupation": "Retired patrol officer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The first straight paycheck",
+  "biography": "stories/residents/06/05-the-first-straight-paycheck.md#ah-r0800",
+  "life": "“I still remember being recognized at a counter without my uniform.” Monday often includes a stop at the crossing outside Verve Nail Studio, where Cara notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I used to arrest him. We're both waiting at the same bank window and I want to let him greet me first.",
+  "appearance": "Cara has a crooked front tooth visible when laughing. Look for two white streaks in otherwise dark hair. On an ordinary day, the familiar outfit is an unlined tan jacket with a narrow brass watch set a little fast. In conversation Cara looks down for a moment before saying something difficult.",
+  "personality": "Cara can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Cara can afford to give, and family knows to take it seriously.",
+  "agenda": "To let the former defendant choose whether to greet the officer.",
+  "family": "Hazel Fraser is Cara’s cousin. Cara brings something that can still be enjoyed tomorrow. Hazel checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *A play in a pocket*, Hazel says, “I brought my own folding stool because being offered a chair makes me feel ancient.”",
+  "connections": "Briar Poole. A former customer and a retired officer both have to let the new worker choose how they greet in public.",
+  "familyIds": [
+    "AH-R0573"
+  ],
+  "connectionIds": [
+    "AH-R0792"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative says the first check is embarrassingly small",
+      "response": "Cara asks what the check has paid for this week before making a comparison with street money.",
+      "asWritten": "A relative says the first check is embarrassingly small. Cara asks what the check has paid for this week before making a comparison with street money."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Cara keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Cara keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Cara suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Cara suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

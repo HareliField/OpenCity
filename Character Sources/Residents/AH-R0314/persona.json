@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0314",
+  "personId": "AH-R0314",
+  "name": "Hank Fry",
+  "age": 49,
+  "occupation": "Souvenir seller",
+  "home": "Midtown",
+  "episode": "A ship without postcards",
+  "biography": "stories/residents/03/02-a-ship-without-postcards.md#ah-r0314",
+  "life": "“I still remember cards my mother displayed facing the wall.” People around Breakwater Way know Hank by a small Saturday habit. Hank stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I sell lighthouse cards printed inland. I asked the crew to show me their view from the bunk.",
+  "appearance": "Hank is easy to recognize by short sandy hair and a marked widow's peak and a wide brow and a narrow jaw. Usually dressed in a black overshirt with pearl buttons with a cloth patch so neatly matched it only shows in strong light, Hank holds eye contact until the other person has finished when listening.",
+  "personality": "Hank has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To stock a view from the crew bunks.",
+  "family": "Merritt Hart is Hank’s second cousin. Hank calls about good news first. Merritt is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The missing name on the stern*, Merritt says, “I thought I was hiring a painter. The apprentice taught me to say the owner's name without flattening the last sound.”",
+  "connections": "Edgar Joseph. An onboard drawing gives the souvenir seller an alternative to the hotel view.",
+  "familyIds": [
+    "AH-R1349"
+  ],
+  "connectionIds": [
+    "AH-R0311"
+  ],
+  "reactions": [
+    {
+      "situation": "A souvenir shop offers to print the cards as an advert",
+      "response": "Hank checks whether the families want their messages used outside the envelopes.",
+      "asWritten": "A souvenir shop offers to print the cards as an advert. Hank checks whether the families want their messages used outside the envelopes."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Hank offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem.",
+      "asWritten": "A friend asks for a loan due back before payday. Hank offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Hank asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Hank asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0143",
+  "personId": "AH-R0143",
+  "name": "Nell Zane",
+  "age": 35,
+  "occupation": "Municipal water sampler",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The empty berth",
+  "biography": "stories/residents/01/15-the-empty-berth.md#ah-r0143",
+  "life": "Nell became a municipal sampler after her family stopped swimming near a private slip. She keeps a private inventory of the best city views that you can only see while doing a poorly paid public job. On Thursday, near Ferris Deli, Nell asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "The best sample is right in the private berth. I have been reaching around a hull for three years. I asked for permanent access and brought the owners the first clear jar to look at.",
+  "appearance": "Nell has a loose dark braid, two dimples that appear only with a full smile, and a favorite piece of clothing, a sand-colored linen shirt. It usually goes with a folded shopping list secured by a miniature clip. When somebody else has the floor, Nell counts on the side of one finger where hardly anybody notices.",
+  "personality": "Nell listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To get dependable sample access even after the boat comes back.",
+  "family": "Benedict Holt is Nell’s cousin raised in the same household. Nell calls about good news first. Benedict is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The carer's afternoon*, Benedict says, “I always ask what she did with her time. This Wednesday I put the kettle on and let her offer the first word.”",
+  "connections": "Esme Valejo. They inspect the same private water from the very different viewpoints of safety and public access.",
+  "familyIds": [
+    "AH-R1040"
+  ],
+  "connectionIds": [
+    "AH-R0148"
+  ],
+  "reactions": [
+    {
+      "situation": "A broker offers cash to keep the dock empty",
+      "response": "Nell finds out who was promised the empty dock time before discussing a price.",
+      "asWritten": "A broker offers cash to keep the dock empty. Nell finds out who was promised the empty dock time before discussing a price."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Nell asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Nell asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Nell keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Nell keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

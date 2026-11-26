@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0040",
+  "personId": "AH-R0040",
+  "name": "Alim Ward",
+  "age": 45,
+  "occupation": "Community mediator",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The wrong bicycle",
+  "biography": "stories/residents/01/04-the-wrong-bicycle.md#ah-r0040",
+  "life": "Alim became a mediator after a neighborhood football league split over a painted line. His best meetings start with an object on the table and enough time for its owners to contradict each other. Monday often includes a stop at the brick passage off the shop row, where Alim takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "The adults wanted separate appointments. The two riders wanted to compare yellow paint. I booked one long table and made everyone leave room at the ends for the bikes.",
+  "appearance": "Alim has heavy brows and an unusually delicate jaw. Look for short copper curls. On an ordinary day, the familiar outfit is a washed violet jersey with a printed handkerchief folded into the pocket. In conversation Alim counts on the side of one finger where hardly anybody notices.",
+  "personality": "Alim can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To get both bicycles and both riders to one table.",
+  "family": "Franklin Davila is Alim’s half-sibling. A cousin asked for help with the rent and got six different lectures. The family now tries to agree on the amount it can offer before composing any advice. Alim will say exactly how much help is possible. Asked about *The understudy sings*, Franklin says, “I am the lead. I want the audience to know why I am in the front row and not to spend the whole song looking at me.”",
+  "connections": "Art Robles. They both owe a child an honest account of why adults became so invested in a yellow bicycle.",
+  "familyIds": [
+    "AH-R1172"
+  ],
+  "connectionIds": [
+    "AH-R0037"
+  ],
+  "reactions": [
+    {
+      "situation": "The courier asks who will cover the lost delivery",
+      "response": "Alim gets the dispatcher and the courier looking at the same delivery entry.",
+      "asWritten": "The courier asks who will cover the lost delivery. Alim gets the dispatcher and the courier looking at the same delivery entry."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Alim asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Alim asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Alim asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Alim asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

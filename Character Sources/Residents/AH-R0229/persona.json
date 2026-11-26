@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0229",
+  "personId": "AH-R0229",
+  "name": "Sam Kaur",
+  "age": 30,
+  "occupation": "Bilingual tour guide",
+  "home": "the blocks north of the port",
+  "episode": "Low water music",
+  "biography": "stories/residents/02/08-low-water-music.md#ah-r0229",
+  "life": "“My aunt taught me the inland word for the low-tide smell.” Monday often includes a stop at the bank steps, where Sam takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I miss my first language most when somebody asks me to name a thing. I've invited my aunt to answer.",
+  "appearance": "Sam has auburn hair cut square at the nape, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with one cuff folded back twice. When somebody else has the floor, Sam starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Sam is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To give the aunt the first word when the name goes public.",
+  "family": "Faye Tran is Sam’s older cousin. Sam chooses the familiar route. Faye can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *A dance for two fathers*, Faye says, “I trained both men on separate nights. Neither wanted the other to know how scared he was.”",
+  "connections": "Shay Poole. A postcard with an empty line lets the visiting aunt use her own word for the cove.",
+  "familyIds": [
+    "AH-R1026"
+  ],
+  "connectionIds": [
+    "AH-R0228"
+  ],
+  "reactions": [
+    {
+      "situation": "The choir wants to claim the rock's official name",
+      "response": "Sam asks for the neighborhood names to stay with the choir's name.",
+      "asWritten": "The choir wants to claim the rock's official name. Sam asks for the neighborhood names to stay with the choir's name."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Sam brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Sam brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Sam helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Sam helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

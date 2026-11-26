@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1380",
+  "personId": "AH-R1380",
+  "name": "Allen Clay",
+  "age": 52,
+  "occupation": "Family archivist",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The gift nobody wants",
+  "biography": "stories/residents/10/03-the-gift-nobody-wants.md#ah-r1380",
+  "life": "“I still remember lifting a faded receipt out of its gilded frame.” Wednesday often includes a stop at the steps at Pier Beach, where Allen watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I found the father's first rent receipt. It is framed in the corner where he tells young people to start from nothing.",
+  "appearance": "On an ordinary day, look for a moss-green cardigan and a pair of reading glasses in a cloth sleeve. Allen has a heart-shaped face and prominent ears, with a loose dark braid. Allen looks at people's hands before looking at what they carry during a conversation.",
+  "personality": "Allen has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To bring the father's framed rent receipt to the conversation.",
+  "family": "Fiona Nord is Allen’s younger cousin. Allen brings whatever was actually growing or affordable that week. Fiona makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The margin reader*, Fiona says, “I recognized my old teacher by the way she corrects a question mark.”",
+  "connections": "John Machado. An early rent receipt substantiates a business partner's account of the father's own struggle for independence.",
+  "familyIds": [
+    "AH-R0212"
+  ],
+  "connectionIds": [
+    "AH-R1376"
+  ],
+  "reactions": [
+    {
+      "situation": "A tenant hears about the building sale secondhand",
+      "response": "Allen gives the tenant a reliable contact for the sale information and a real date to expect an answer.",
+      "asWritten": "A tenant hears about the building sale secondhand. Allen gives the tenant a reliable contact for the sale information and a real date to expect an answer."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Allen stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Allen stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Allen explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Allen explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0238",
+  "personId": "AH-R0238",
+  "name": "Vera Hardy",
+  "age": 54,
+  "occupation": "Tenants' representative",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A wall of birthdays",
+  "biography": "stories/residents/02/09-a-wall-of-birthdays.md#ah-r0238",
+  "life": "“Our old landlord sold the building complete with our borrowed curtains.” On Sunday, near the crossing outside Verve Nail Studio, Vera notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "My landlord says the wall belongs to him. I'd like him to meet the grandmother who owns the pencil.",
+  "appearance": "Vera has fine brows over wide-set eyes. Look for thick, tightly coiled hair. On an ordinary day, the familiar outfit is a striped cotton shirt with a braided bracelet with a single wooden bead. In conversation Vera listens with the head tilted a little to the left.",
+  "personality": "Vera is fond of ambitious ideas and deeply suspicious of grand openings. The question Vera asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To let the landlord hear from the grandmother who owned the pencil.",
+  "family": "Tali Allen is Vera’s half-sibling. Vera makes the call. Tali is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A shelf of apologies*, Tali says, “I am giving back a detective novel I stole to impress a girl who hated mysteries.”",
+  "connections": "Grey Good. The decision about uncovering a dead child's mark needs the tenant, as well as the landlord, in the room.",
+  "familyIds": [
+    "AH-R0661"
+  ],
+  "connectionIds": [
+    "AH-R0232"
+  ],
+  "reactions": [
+    {
+      "situation": "A family asks for a tracing to take away",
+      "response": "Vera asks which pencil marks the family recognizes as their own.",
+      "asWritten": "A family asks for a tracing to take away. Vera asks which pencil marks the family recognizes as their own."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Vera asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Vera asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Vera accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Vera accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

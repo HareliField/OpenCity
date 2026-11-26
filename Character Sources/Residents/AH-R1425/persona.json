@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1425",
+  "personId": "AH-R1425",
+  "name": "Olive Baines",
+  "age": 68,
+  "occupation": "Widowed retired carpenter",
+  "home": "the streets inland from Pier Beach",
+  "episode": "No lifeguard at dusk",
+  "biography": "stories/residents/10/08-no-lifeguard-at-dusk.md#ah-r1425",
+  "life": "“I still remember learning to enjoy the shore after losing my swimming companion.” On Monday, near Ferris Deli, Olive asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I used to swim beside my wife. I returned to the dry steps to see if I could still like the cove without her.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a copper-colored clasp that has been repaired by hand. Olive has a round face with a pronounced chin, with gray hair trimmed very close behind the ears. Olive takes off the watch before a long conversation during a conversation.",
+  "personality": "Olive listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To return to the dry steps and see how they feel.",
+  "family": "Vera Brandt is Olive’s cousin’s child. Olive can stop the walk at any corner. Vera chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *A four o'clock kitchen*, Vera says, “I can share half the early shift if my partner gets the van on Tuesdays.”",
+  "connections": "Olivia Neal. A widowed regular shows a learner what an evening at the sea can be without entering it.",
+  "familyIds": [
+    "AH-R1294"
+  ],
+  "connectionIds": [
+    "AH-R1430"
+  ],
+  "reactions": [
+    {
+      "situation": "The swimmer stays on the steps after the final shift",
+      "response": "Olive checks whether the swimmer intends to go into the water before deciding what help is wanted.",
+      "asWritten": "The swimmer stays on the steps after the final shift. Olive checks whether the swimmer intends to go into the water before deciding what help is wanted."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Olive stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Olive stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Olive keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Olive keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

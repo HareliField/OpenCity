@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0668",
+  "personId": "AH-R0668",
+  "name": "Dominic Cho",
+  "age": 45,
+  "occupation": "Library shelf clerk",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A shelf of apologies",
+  "biography": "stories/residents/05/07-a-shelf-of-apologies.md#ah-r0668",
+  "life": "“I still remember knocking at the old school after the desks were sold.” Saturday often includes a stop at Lighthouse Cove, where Dominic takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I am returning a book to a closed classroom. The retired teacher offered to meet me at the till.",
+  "appearance": "On an ordinary day, look for a brown corduroy jacket and a small enamel bird on the lapel. Dominic has a wide brow and a narrow jaw, with short sandy hair and a marked widow's peak. Dominic grins on one side while the eyes stay serious during a conversation.",
+  "personality": "Dominic prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To meet the retired teacher at the bookshop.",
+  "family": "Jonas Osborne is Dominic’s cousin raised in the same household. Dominic remembers the birthdays. Jonas asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The first delivery fee*, Jonas says, “I am the regular who complained first. I believed the owner paid for delivery all these years.”",
+  "connections": "Silas Murphy. A retired teacher gets a visit and an apology drafted under the writer's own name.",
+  "familyIds": [
+    "AH-R1142"
+  ],
+  "connectionIds": [
+    "AH-R0670"
+  ],
+  "reactions": [
+    {
+      "situation": "A bookseller wants to display the most surprising note",
+      "response": "Dominic asks the writer who was supposed to receive the note.",
+      "asWritten": "A bookseller wants to display the most surprising note. Dominic asks the writer who was supposed to receive the note."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Dominic starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Dominic starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Dominic clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Dominic clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

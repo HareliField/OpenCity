@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0259",
+  "personId": "AH-R0259",
+  "name": "Celia Baxter",
+  "age": 55,
+  "occupation": "Adult education coordinator",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "One sleeve short",
+  "biography": "stories/residents/02/11-one-sleeve-short.md#ah-r0259",
+  "life": "“I have watched people change the pitch of their voice after trying on an interview jacket.” Sunday often includes a stop at the downtown fountain, where Celia keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "My first interview was in my mother's jacket. I wrote its story inside the donated clothes cupboard.",
+  "appearance": "Celia has a swept fringe and a closely clipped nape, an aquiline nose and a square chin, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with a cloth patch so neatly matched it only shows in strong light. When somebody else has the floor, Celia leans a shoulder against the wall during long conversations.",
+  "personality": "Celia enjoys routines and will defend the right of someone else to break one. As a result, Celia is often everyone's favorite cover for a missed morning.",
+  "agenda": "To put family clothing histories into the lending cupboard.",
+  "family": "Quinn Shaw is Celia’s cousin raised in the same household. Celia keeps the photographs. Quinn knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *First shift back*, Quinn says, “I organized a big welcome lunch and changed it to breakfast for two at the returning worker's request.”",
+  "connections": "Alvin Chapman. The cupboard organizer finds an employer willing to let the new hire choose real work clothes.",
+  "familyIds": [
+    "AH-R1090"
+  ],
+  "connectionIds": [
+    "AH-R0260"
+  ],
+  "reactions": [
+    {
+      "situation": "Somebody offers to buy a complete suit for the applicant",
+      "response": "Celia asks the applicant whether a whole donated suit would actually be welcome.",
+      "asWritten": "Somebody offers to buy a complete suit for the applicant. Celia asks the applicant whether a whole donated suit would actually be welcome."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Celia asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Celia asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Celia keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Celia keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

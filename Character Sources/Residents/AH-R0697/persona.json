@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0697",
+  "personId": "AH-R0697",
+  "name": "Devin Ames",
+  "age": 36,
+  "occupation": "Spice delivery driver",
+  "home": "Eastside",
+  "episode": "Midnight cinnamon",
+  "biography": "stories/residents/05/10-midnight-cinnamon.md#ah-r0697",
+  "life": "“I still remember spilling red pepper all over the warehouse stairs.” On Thursday, near the foot of Harbor Viaduct, Devin pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I brought the wrong sack and almost lost the account. The apprentices wanted a repeat of the mistake.",
+  "appearance": "Devin has auburn hair cut square at the nape, a long face and high cheekbones, and a favorite piece of clothing, a cream pullover. It usually goes with a folded shopping list secured by a miniature clip. When somebody else has the floor, Devin takes off the watch before a long conversation.",
+  "personality": "Devin listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To keep the account after the supplier's mistake.",
+  "family": "Toby Hsu is Devin’s first cousin once removed. Devin leaves the first voice message. Toby calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The missing Sunday*, Toby says, “I live next door and didn't know he followed our team.”",
+  "connections": "Nina Fraser. The wrongly delivered sack still carries the aunt's recognizably old packing mark. Also in the story is Seth Roberts (baker).",
+  "familyIds": [
+    "AH-R1335"
+  ],
+  "connectionIds": [
+    "AH-R0699",
+    "AH-R0691"
+  ],
+  "reactions": [
+    {
+      "situation": "The spice buyer wants the mistaken sack returned",
+      "response": "Devin sets aside a sample and confirms which holiday orders depend on it.",
+      "asWritten": "The spice buyer wants the mistaken sack returned. Devin sets aside a sample and confirms which holiday orders depend on it."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Devin brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Devin brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Devin keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Devin keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

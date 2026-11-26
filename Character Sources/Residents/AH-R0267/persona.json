@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0267",
+  "personId": "AH-R0267",
+  "name": "Ada Ellis",
+  "age": 31,
+  "occupation": "Street merchant",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The sheltered corner",
+  "biography": "stories/residents/02/12-the-sheltered-corner.md#ah-r0267",
+  "life": "“I sold shoe polish from a crate before the stall had a roof.” On Monday, near the public end of the South Shore boardwalk, Ada checks the shade on the benches before deciding how long to stay.",
+  "voice": "I gave directions using the old stop. A stranger arrived late for a reunion and I want to write to the host.",
+  "appearance": "On an ordinary day, look for a washed violet jersey and a fabric zip pull cut from a school scarf. Ada has an aquiline nose and a square chin, with short black hair swept back. Ada folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Ada is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Ada is by the number of tiny errands suddenly being done.",
+  "agenda": "To send proper directions to the visitor who missed the reunion.",
+  "family": "Jody Thomas is Ada’s cousin raised in the same household. Ada makes room at the table. Jody brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The other side of the cove*, Jody says, “I am hoping for a quiet place to feed my baby.”",
+  "connections": "Gareth Arrieta. They trade better directions for the warning sound that once timed the morning toast.",
+  "familyIds": [
+    "AH-R1279"
+  ],
+  "connectionIds": [
+    "AH-R0268"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver goes past the old stop in the rain",
+      "response": "Ada stays with the stranded rider and helps check the next usable stop.",
+      "asWritten": "A driver goes past the old stop in the rain. Ada stays with the stranded rider and helps check the next usable stop."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Ada asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Ada asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Ada agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Ada agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

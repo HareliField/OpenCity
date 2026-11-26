@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0794",
+  "personId": "AH-R0794",
+  "name": "Eileen Teo",
+  "age": 29,
+  "occupation": "Street drug dealer",
+  "home": "Midtown",
+  "episode": "The first straight paycheck",
+  "biography": "stories/residents/06/05-the-first-straight-paycheck.md#ah-r0794",
+  "life": "“I still remember the first rent increase that made dealing look tempting.” People around the public end of the South Shore boardwalk know Eileen by a small Friday habit. Eileen checks the shade on the benches before deciding how long to stay.",
+  "voice": "I sold alongside him. Hearing how little he makes honestly has not convinced me to follow yet.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a pocket notebook shaped by years of sitting on it. Eileen has a softly rounded chin under sharp cheekbones, with short copper curls. Eileen counts on the side of one finger where hardly anybody notices during a conversation.",
+  "personality": "Eileen is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To decide whether leaving the trade would pay the present rent.",
+  "family": "Keiko Ames is Eileen’s older cousin. Eileen decides what stays off the paper. Keiko brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The painted footprint*, Keiko says, “I saw that foot in my wedding photograph. I'm meeting a stranger to compare summers.”",
+  "connections": "Frankie Kent. The dealer wavering about leaving hears what three Mondays of a good reference could mean.",
+  "familyIds": [
+    "AH-R0379"
+  ],
+  "connectionIds": [
+    "AH-R0799"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative says the first check is embarrassingly small",
+      "response": "Eileen asks what the check has paid for this week before making a comparison with street money.",
+      "asWritten": "A relative says the first check is embarrassingly small. Eileen asks what the check has paid for this week before making a comparison with street money."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Eileen finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Eileen finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Eileen helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Eileen helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1019",
+  "personId": "AH-R1019",
+  "name": "Winifred Kerr",
+  "age": 41,
+  "occupation": "Commercial driver",
+  "home": "the western residential streets",
+  "episode": "The crash anniversary",
+  "biography": "stories/residents/07/12-the-crash-anniversary.md#ah-r1019",
+  "life": "“I still remember the first passenger who asked to take the slow road.” On Tuesday, near the courtyard by Ferry Street Rooms, Winifred prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I still drive over it because my livelihood depends on the road. I asked my dispatcher for this morning free.",
+  "appearance": "Winifred has a round face with a pronounced chin. Look for auburn hair cut square at the nape. On an ordinary day, the familiar outfit is a pale blue work shirt with a thin silver ring worn on a cord. In conversation Winifred raises one eyebrow long before saying yes.",
+  "personality": "Winifred is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To take the anniversary morning away from driving.",
+  "family": "Adrian Bhandari is Winifred’s stepsibling. Winifred chooses the music. Adrian puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Station steps in rain*, Adrian says, “I put my complaint in my pocket. A young constable came outside later to ask if I still wanted to make it.”",
+  "connections": "Frances Duran. A required route brings a practicing driver back to the engineer's design after the anniversary.",
+  "familyIds": [
+    "AH-R0488"
+  ],
+  "connectionIds": [
+    "AH-R1014"
+  ],
+  "reactions": [
+    {
+      "situation": "A memorial is proposed where the survivor walks to work",
+      "response": "Winifred checks whether the survivor wants to pass the proposed site every day.",
+      "asWritten": "A memorial is proposed where the survivor walks to work. Winifred checks whether the survivor wants to pass the proposed site every day."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Winifred asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Winifred asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Winifred helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Winifred helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

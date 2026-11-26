@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0433",
+  "personId": "AH-R0433",
+  "name": "Hugo Paul",
+  "age": 53,
+  "occupation": "Widowed textile worker",
+  "home": "the western residential streets",
+  "episode": "The housecoat commission",
+  "biography": "stories/residents/03/14-the-housecoat-commission.md#ah-r0433",
+  "life": "“I still remember my widowed aunt refusing to throw away neckties.” On Wednesday, near the bank steps, Hugo takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "My partner left me three silk ties. They're becoming the pockets she specifically asked for.",
+  "appearance": "Hugo has a loose dark braid, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a gray fisher's sweater. It usually goes with one cuff folded back twice. When somebody else has the floor, Hugo gathers both sleeves neatly before settling in.",
+  "personality": "Hugo finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To turn the late partner's ties into real pockets.",
+  "family": "Sam Collins is Hugo’s cousin’s child. Hugo knows which ones can be shared. Sam keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *A wall of birthdays*, Sam says, “I put the marks on transparent paper so families who rent can take their years with them.”",
+  "connections": "Rowan Reyes. A visitor straight from work notices the ties inside the pockets.",
+  "familyIds": [
+    "AH-R0237"
+  ],
+  "connectionIds": [
+    "AH-R0440"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor asks where the housecoat was bought",
+      "response": "Hugo gives the maker the chance to be credited without revealing what the garment cost.",
+      "asWritten": "A visitor asks where the housecoat was bought. Hugo gives the maker the chance to be credited without revealing what the garment cost."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Hugo asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Hugo asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Hugo points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Hugo points to the person who noticed the original mistake."
+    }
+  ]
+}

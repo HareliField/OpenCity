@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0395",
+  "personId": "AH-R0395",
+  "name": "Duncan Griffin",
+  "age": 47,
+  "occupation": "Till repairer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The broken till",
+  "biography": "stories/residents/03/10-the-broken-till.md#ah-r0395",
+  "life": "“I still remember a jammed drawer my mentor opened with patience.” On Saturday, near Ferris Deli, Duncan asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I offered to repair the till free. The spring had been bent around a coin from my old country.",
+  "appearance": "Duncan has two dimples that appear only with a full smile. Look for a high puff tied with plain cord. On an ordinary day, the familiar outfit is a rust-colored canvas coat with a pair of reading glasses in a cloth sleeve. In conversation Duncan looks at people's hands before looking at what they carry.",
+  "personality": "Duncan admires skill and distrusts the idea that skill gives anyone permission to be rude. Duncan learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To repair the till and name the coin that bent its spring.",
+  "family": "Silas Rubio is Duncan’s cousin. Duncan saves a place. Silas chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The release address*, Silas says, “I own the shop he robbed. My own kids know him only as the man who sends birthday cards.”",
+  "connections": "Cian Malik. An old shorthand entry and a foreign coin give the fault a history.",
+  "familyIds": [
+    "AH-R0948"
+  ],
+  "connectionIds": [
+    "AH-R0393"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer cannot pay until the till opens",
+      "response": "Duncan asks the cashier what can safely go on a temporary tab.",
+      "asWritten": "A customer cannot pay until the till opens. Duncan asks the cashier what can safely go on a temporary tab."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Duncan separates the money question from the broken promise and asks which one the family wants to discuss first.",
+      "asWritten": "A family supper turns into an argument about old debt. Duncan separates the money question from the broken promise and asks which one the family wants to discuss first."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Duncan describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Duncan describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

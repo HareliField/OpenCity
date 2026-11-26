@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0742",
+  "personId": "AH-R0742",
+  "name": "Eden Fisher",
+  "age": 38,
+  "occupation": "Hotel purchasing clerk",
+  "home": "the western residential streets",
+  "episode": "A boat for sale twice",
+  "biography": "stories/residents/05/15-a-boat-for-sale-twice.md#ah-r0742",
+  "life": "“I still remember returning a boat share nobody ever got to use.” On Sunday, near the bank steps, Eden takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I can afford half a boat. I asked another bidder what half a Saturday looks like.",
+  "appearance": "Eden is easy to recognize by dark brown curls cut close behind the ears and a heart-shaped face and prominent ears. Usually dressed in a long navy raincoat with a braided bracelet with a single wooden bead, Eden takes off the watch before a long conversation when listening.",
+  "personality": "Eden never tires of being shown how somebody makes a living. Eden can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To price a shared Saturday.",
+  "family": "Jesse Ngo is Eden’s stepsibling. Eden puts the kettle on. Jesse chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Summer staff*, Jesse says, “I told tourists everything was normal because I needed their tips.”",
+  "connections": "Xavier Ray. The half-share bidder and the person returning to the gate both ask what entry would really cost.",
+  "familyIds": [
+    "AH-R0824"
+  ],
+  "connectionIds": [
+    "AH-R0748"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer wants the old name painted over immediately",
+      "response": "Eden checks who owns the name before anyone comes down with a paint tin.",
+      "asWritten": "A buyer wants the old name painted over immediately. Eden checks who owns the name before anyone comes down with a paint tin."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Eden asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Eden asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Eden may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Eden may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

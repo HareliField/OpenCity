@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1499",
+  "personId": "AH-R1499",
+  "name": "Nico Lin",
+  "age": 41,
+  "occupation": "School librarian",
+  "home": "Old Town",
+  "episode": "The last light at the harbor",
+  "biography": "stories/residents/10/15-the-last-light-at-the-harbor.md#ah-r1499",
+  "life": "“I still remember holding a corner of the bench for my wife's coat.” Saturday often includes a stop at the courtyard by Ferry Street Rooms, where Nico prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I wait on the public benches for my wife's shift to end. I know which boat will blink first when the wind comes round.",
+  "appearance": "Nico has full cheeks and a mouth that pulls slightly to one side. Look for a soft fringe that falls across one eyebrow. On an ordinary day, the familiar outfit is a long navy raincoat with a copper-colored clasp that has been repaired by hand. In conversation Nico gathers both sleeves neatly before settling in.",
+  "personality": "Nico reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Nico trusts most.",
+  "agenda": "To keep the bench invitation open through the wife's shift.",
+  "family": "Anthony Carey is Nico’s cousin raised in the same household. Nico brings whatever was actually growing or affordable that week. Anthony makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The empty drum stool*, Anthony says, “I mended the cracked foot by wrapping it in cloth from my graduation gown.”",
+  "connections": "Albert Wilson. A hospital shift and a waiting spouse use the same set of lights to mark opposite ends of the day.",
+  "familyIds": [
+    "AH-R0427"
+  ],
+  "connectionIds": [
+    "AH-R1494"
+  ],
+  "reactions": [
+    {
+      "situation": "A cabin light stays on after its usual time",
+      "response": "Nico checks in through an ordinary contact before treating the late light as an emergency.",
+      "asWritten": "A cabin light stays on after its usual time. Nico checks in through an ordinary contact before treating the late light as an emergency."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Nico keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Nico keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Nico does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Nico does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

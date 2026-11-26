@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0163",
+  "personId": "AH-R0163",
+  "name": "Hamish Nichols",
+  "age": 35,
+  "occupation": "Freight loader",
+  "home": "the blocks north of the port",
+  "episode": "Five missing lunches",
+  "biography": "stories/residents/02/02-five-missing-lunches.md#ah-r0163",
+  "life": "“I kept my first union card in a tin that once held my sister's paints.” People around the bank steps know Hamish by a small Sunday habit. Hamish takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "The tins got blamed on casual workers. I found my own name under the stack.",
+  "appearance": "Hamish has a dark undercut with a longer wave on top, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a boxy denim jacket. It usually goes with a comb in a sleeve sewn into the lining. When somebody else has the floor, Hamish steadies a cup with both hands while listening.",
+  "personality": "Hamish is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To correct the story about casual workers abandoning the tins.",
+  "family": "Tom Crane is Hamish’s second cousin. Hamish chooses the familiar route. Tom can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The gift nobody wants*, Tom says, “I am the property manager. I offered to explain the tenants' part before the family wrote another letter.”",
+  "connections": "Teal Alder. They help return the named tins without blaming the casual crews.",
+  "familyIds": [
+    "AH-R1379"
+  ],
+  "connectionIds": [
+    "AH-R0164"
+  ],
+  "reactions": [
+    {
+      "situation": "An old tin is claimed by two crews",
+      "response": "Hamish invites both crews to describe the lid without putting either at fault.",
+      "asWritten": "An old tin is claimed by two crews. Hamish invites both crews to describe the lid without putting either at fault."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Hamish asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Hamish asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Hamish thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Hamish thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

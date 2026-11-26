@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0915",
+  "personId": "AH-R0915",
+  "name": "Linden Owen",
+  "age": 31,
+  "occupation": "Casual rail loader",
+  "home": "Eastside",
+  "episode": "The absent signature",
+  "biography": "stories/residents/07/02-the-absent-signature.md#ah-r0915",
+  "life": "“I still remember a holiday paycheck held up by one empty signature box.” People around the approach to Seabright Court know Linden by a small Saturday habit. Linden likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I need the papers to renew my job. I'm willing to wait longer than either side thinks.",
+  "appearance": "Linden is easy to recognize by a high puff tied with plain cord and a straight nose and deep-set eyes. Usually dressed in a cream pullover with a thin silver ring worn on a cord, Linden folds a paper napkin into quarters without noticing when listening.",
+  "personality": "Linden is kind in very practical ways and prickly about being thanked in public. Linden loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To renew work without rushing the decision.",
+  "family": "Omar Blake is Linden’s second cousin. Linden checks the date twice. Omar brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *First shift back*, Omar says, “I want a private room to make a call home. My coworkers keep generously offering to listen.”",
+  "connections": "Lina Carbone. The worker waiting for renewal learns that the last call was ordinary and probably precious.",
+  "familyIds": [
+    "AH-R1086"
+  ],
+  "connectionIds": [
+    "AH-R0916"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants the absent signer's address",
+      "response": "Linden asks the absent person what address, if any, can be shared.",
+      "asWritten": "A relative wants the absent signer's address. Linden asks the absent person what address, if any, can be shared."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Linden takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Linden takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Linden gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Linden gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

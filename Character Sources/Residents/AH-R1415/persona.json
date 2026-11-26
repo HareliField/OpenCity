@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1415",
+  "personId": "AH-R1415",
+  "name": "Hamish Yeo",
+  "age": 53,
+  "occupation": "Family wage earner and tiler",
+  "home": "Old Town",
+  "episode": "An empty dedication",
+  "biography": "stories/residents/10/07-an-empty-dedication.md#ah-r1415",
+  "life": "“I still remember paying a writer's light bill with my winter bonus.” People around the foot of Harbor Viaduct know Hamish by a small Sunday habit. Hamish pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I paid the electricity through a lean winter. My price was one honest conversation after the launch.",
+  "appearance": "Hamish is easy to recognize by a blunt cut just below the ears and a heart-shaped face and prominent ears. Usually dressed in a faded indigo overshirt with a pair of reading glasses in a cloth sleeve, Hamish looks down for a moment before saying something difficult when listening.",
+  "personality": "Hamish loves a well-told anecdote and distrusts the neat ending. The parts Hamish remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To have one honest post-launch conversation.",
+  "family": "Eric Hassan is Hamish’s stepsibling. Hamish is free to hang up first. Eric makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Low water music*, Eric says, “I thought the sound came from the old fog bell.”",
+  "connections": "Jacqueline Glass. One supporter paid to keep the lights on while another kept the writer's own voice audible.",
+  "familyIds": [
+    "AH-R0227"
+  ],
+  "connectionIds": [
+    "AH-R1418"
+  ],
+  "reactions": [
+    {
+      "situation": "The author offers the dedication to someone who dislikes public praise",
+      "response": "Hamish asks the intended recipient which kind of thanks would actually feel welcome.",
+      "asWritten": "The author offers the dedication to someone who dislikes public praise. Hamish asks the intended recipient which kind of thanks would actually feel welcome."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Hamish stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Hamish stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Hamish includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Hamish includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0365",
+  "personId": "AH-R0365",
+  "name": "Val Evans",
+  "age": 57,
+  "occupation": "Retired theater technician",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Overdue by a lifetime",
+  "biography": "stories/residents/03/07-overdue-by-a-lifetime.md#ah-r0365",
+  "life": "“I still remember wearing a cloak held shut with washing pegs.” On Monday, near the blocks below Foundry Lofts, Val checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I played the villain in the school production. I want a rematch in front of my own grandchildren.",
+  "appearance": "Val has two dimples that appear only with a full smile. Look for short copper curls. On an ordinary day, the familiar outfit is a moss-green cardigan with a pair of reading glasses in a cloth sleeve. In conversation Val draws breath as if to speak and lets someone else go first.",
+  "personality": "Val has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To perform the villain again for the grandchildren.",
+  "family": "Jody Gomez is Val’s stepsibling. Val makes the call. Jody is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Care with a clock*, Jody says, “I care for my uncle free. I'm learning what calling my labor free has cost my own pension.”",
+  "connections": "Orla Jain. Sorting the box unearths the old school production remembered by its villain.",
+  "familyIds": [
+    "AH-R0889"
+  ],
+  "connectionIds": [
+    "AH-R0368"
+  ],
+  "reactions": [
+    {
+      "situation": "The former pupil offers to pay forty years of fines",
+      "response": "Val asks the library what it actually needs from the returning reader.",
+      "asWritten": "The former pupil offers to pay forty years of fines. Val asks the library what it actually needs from the returning reader."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Val keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Val keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Val explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Val explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

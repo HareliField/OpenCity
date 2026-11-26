@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0509",
+  "personId": "AH-R0509",
+  "name": "Elaine Marquez",
+  "age": 37,
+  "occupation": "Hospital social worker",
+  "home": "Eastside",
+  "episode": "The waiting-room plant",
+  "biography": "stories/residents/04/06-the-waiting-room-plant.md#ah-r0509",
+  "life": "“I still remember finding dust inside a plastic daisy.” On Friday, near the brick passage off the shop row, Elaine takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I want a cutting in the grief room because the plastic flowers look the same every morning.",
+  "appearance": "Elaine has a wide brow and a narrow jaw. Look for auburn hair cut square at the nape. Out of work clothes, the familiar outfit is a gray fisher's sweater with a partly rubbed-away embroidered initial. In conversation Elaine presses the lips together to keep a smile in.",
+  "personality": "Elaine finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To start a living plant in the grief room.",
+  "family": "Aisha Ortiz is Elaine’s second cousin. Elaine offers the first invitation. Aisha gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Level with the window*, Aisha says, “I saw my old maths teacher cooking dinner and realized he'd lived here the entire time I was away.”",
+  "connections": "Lennon Adair. One inherited name and one new cutting go to rooms where the plant can be welcomed.",
+  "familyIds": [
+    "AH-R0711"
+  ],
+  "connectionIds": [
+    "AH-R0510"
+  ],
+  "reactions": [
+    {
+      "situation": "A ward wants the plant for the full week",
+      "response": "Elaine checks the visiting list for the patients who will miss their turn.",
+      "asWritten": "A ward wants the plant for the full week. Elaine checks the visiting list for the patients who will miss their turn."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Elaine helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Elaine helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Elaine points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Elaine points to the person who noticed the original mistake."
+    }
+  ]
+}

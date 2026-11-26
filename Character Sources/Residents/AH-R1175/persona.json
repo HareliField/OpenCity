@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1175",
+  "personId": "AH-R1175",
+  "name": "Amos Ferraro",
+  "age": 48,
+  "occupation": "Show director",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The understudy sings",
+  "biography": "stories/residents/08/13-the-understudy-sings.md#ah-r1175",
+  "life": "“I still remember the rehearsal that revealed nobody could cover the solo.” On Thursday, near Lighthouse Cove, Amos takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I am the director who waited too long to rehearse a second cast. We lost a whole good afternoon to my vanity.",
+  "appearance": "Amos has a deep crease beside the mouth when smiling. Look for a dark undercut with a longer wave on top. On an ordinary day, the familiar outfit is a sand-colored linen shirt with a printed handkerchief folded into the pocket. In conversation Amos draws breath as if to speak and lets someone else go first.",
+  "personality": "Amos is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Amos is by the number of tiny errands suddenly being done.",
+  "agenda": "To give the second cast real rehearsal time.",
+  "family": "Morgan Lim is Amos’s half-sibling. Amos keeps the photographs. Morgan knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *An empty dedication*, Morgan says, “I translated the title. I want readers to understand that the word home in our language has a plural.”",
+  "connections": "Ana Crane. The director discovers practical help the family would rather have than another performance.",
+  "familyIds": [
+    "AH-R1417"
+  ],
+  "connectionIds": [
+    "AH-R1179"
+  ],
+  "reactions": [
+    {
+      "situation": "The understudy is offered the lead before the announcement",
+      "response": "Amos asks that the lead singer hear the change directly before it is advertised.",
+      "asWritten": "The understudy is offered the lead before the announcement. Amos asks that the lead singer hear the change directly before it is advertised."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Amos repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Amos repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Amos agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Amos agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

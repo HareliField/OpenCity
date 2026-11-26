@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0687",
+  "personId": "AH-R0687",
+  "name": "Darcy Bay",
+  "age": 42,
+  "occupation": "Community driver",
+  "home": "Coast Ridge",
+  "episode": "An address in pencil",
+  "biography": "stories/residents/05/09-an-address-in-pencil.md#ah-r0687",
+  "life": "“I still remember waiting outside the wrong building with two heavy cases.” On Saturday, near Paper & Pine Books, Darcy starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I missed the correct door collecting my pensioner fares. The family made me a card with the porch drawn on it.",
+  "appearance": "Darcy is easy to recognize by a soft fringe that falls across one eyebrow and a softly rounded chin under sharp cheekbones. Usually dressed in an old plum windbreaker with a pocket notebook shaped by years of sitting on it, Darcy raises one eyebrow long before saying yes when listening.",
+  "personality": "Darcy loves a well-told anecdote and distrusts the neat ending. The parts Darcy remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To find the right porch for every fare.",
+  "family": "Drew Hayward is Darcy’s cousin. Darcy chooses the familiar route. Drew can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Winter afloat*, Drew says, “I am the person who has to empty that room.”",
+  "connections": "Carla Molina. A substitute carrier draws the porch on a card for the pensioner driver.",
+  "familyIds": [
+    "AH-R0898"
+  ],
+  "connectionIds": [
+    "AH-R0685"
+  ],
+  "reactions": [
+    {
+      "situation": "A delivery goes to the newly renumbered neighbor",
+      "response": "Darcy checks both doorways before moving the delivery.",
+      "asWritten": "A delivery goes to the newly renumbered neighbor. Darcy checks both doorways before moving the delivery."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Darcy keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Darcy keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Darcy includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Darcy includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0726",
+  "personId": "AH-R0726",
+  "name": "Kate Dinh",
+  "age": 62,
+  "occupation": "Former typist",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The fountain score",
+  "biography": "stories/residents/05/13-the-fountain-score.md#ah-r0726",
+  "life": "“I still remember typing my brother's first play without correcting it.” On Monday, near the window at Night Shift Donuts, Kate knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I typed the program on my late partner's machine and got cast as its percussionist.",
+  "appearance": "Kate has salt-and-pepper curls, fine brows over wide-set eyes, and a favorite piece of clothing, a dark green knitted vest. It usually goes with a little coil of soft measuring tape. When somebody else has the floor, Kate grins on one side while the eyes stay serious.",
+  "personality": "Kate has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To play the typewriter on a public stage.",
+  "family": "Eileen Bloom is Kate’s younger cousin. A family picnic once turned into a six-hour wait at a bus shelter. What they remember best is the oldest relative teaching everyone to keep score with gravel. Kate always checks the last journey home. Asked about *The high road home*, Eileen says, “I passed my test and kept turning down jobs east of the ridge.”",
+  "connections": "Beatrice Ko. A dented saucepan and a typewriter find neighboring places in the same score.",
+  "familyIds": [
+    "AH-R1161"
+  ],
+  "connectionIds": [
+    "AH-R0721"
+  ],
+  "reactions": [
+    {
+      "situation": "The student asks the least confident player to start",
+      "response": "Kate gives the player a clear first beat and permission to pass the opening on.",
+      "asWritten": "The student asks the least confident player to start. Kate gives the player a clear first beat and permission to pass the opening on."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Kate asks what the friend actually said last time and checks whether anybody is expecting them at home.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Kate asks what the friend actually said last time and checks whether anybody is expecting them at home."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Kate says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Kate says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

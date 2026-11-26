@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0480",
+  "personId": "AH-R0480",
+  "name": "Vera Price",
+  "age": 54,
+  "occupation": "Savings club treasurer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The savings club",
+  "biography": "stories/residents/04/03-the-savings-club.md#ah-r0480",
+  "life": "“I still remember the first interest payment smaller than its postage stamp.” Friday often includes a stop at Lighthouse Cove, where Vera takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I'm the bookkeeper. I found the money for a second ticket in a refund none of us claimed.",
+  "appearance": "Vera has a soft fringe that falls across one eyebrow, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a folded shopping list secured by a miniature clip. When somebody else has the floor, Vera listens with the head tilted a little to the left.",
+  "personality": "Vera feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To recover the unused refund for a second ticket.",
+  "family": "Jesse Starr is Vera’s half-sibling. Vera asks what the birthday guest would like this year. Jesse remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The tide clock*, Jesse says, “I gave the employee a warning before I checked the dial.”",
+  "connections": "Kai Ibrahim (savings club member). A deferred holiday and an unused refund may create a second journey.",
+  "familyIds": [
+    "AH-R0442"
+  ],
+  "connectionIds": [
+    "AH-R0472"
+  ],
+  "reactions": [
+    {
+      "situation": "A donor asks for the club's name in return for a ticket",
+      "response": "Vera asks the members to hear the terms before deciding on a name.",
+      "asWritten": "A donor asks for the club's name in return for a ticket. Vera asks the members to hear the terms before deciding on a name."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Vera keeps listening through the pause and lets the musician choose the next note.",
+      "asWritten": "A street musician can't finish a familiar song. Vera keeps listening through the pause and lets the musician choose the next note."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Vera lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Vera lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

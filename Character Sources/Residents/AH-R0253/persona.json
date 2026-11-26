@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0253",
+  "personId": "AH-R0253",
+  "name": "Emilio Walker",
+  "age": 60,
+  "occupation": "Wardrobe volunteer",
+  "home": "Old Town",
+  "episode": "One sleeve short",
+  "biography": "stories/residents/02/11-one-sleeve-short.md#ah-r0253",
+  "life": "“I set out the wardrobe cupboard so a job seeker can browse without asking.” People around the approach to Seabright Court know Emilio by a small Saturday habit. Emilio likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I offered a loan jacket and he refused. I had forgotten what it feels like to want one thing that's yours.",
+  "appearance": "Emilio is easy to recognize by short white hair and darker eyebrows and a round face with a pronounced chin. Usually dressed in a black overshirt with pearl buttons with a replacement button a shade darker than the others, Emilio squares up pieces of paper while thinking when listening.",
+  "personality": "Emilio gets protective of anybody who comes into a meeting unprepared. Emilio privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To give the customer a choice between alterations and a loan.",
+  "family": "Jean King is Emilio’s cousin. Emilio checks the date twice. Jean brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Reopening at six*, Jean says, “I own the doors and the landlord owns the timer.”",
+  "connections": "Jack Bellamy. They both learn why the wearer wanted to keep one personal, unfinished sleeve.",
+  "familyIds": [
+    "AH-R1058"
+  ],
+  "connectionIds": [
+    "AH-R0258"
+  ],
+  "reactions": [
+    {
+      "situation": "Somebody offers to buy a complete suit for the applicant",
+      "response": "Emilio asks the applicant whether a whole donated suit would actually be welcome.",
+      "asWritten": "Somebody offers to buy a complete suit for the applicant. Emilio asks the applicant whether a whole donated suit would actually be welcome."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Emilio stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Emilio stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Emilio offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Emilio offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

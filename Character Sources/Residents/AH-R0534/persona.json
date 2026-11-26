@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0534",
+  "personId": "AH-R0534",
+  "name": "Kathleen Garza",
+  "age": 52,
+  "occupation": "Shop mechanic",
+  "home": "Eastside",
+  "episode": "The porch auction",
+  "biography": "stories/residents/04/09-the-porch-auction.md#ah-r0534",
+  "life": "“I still remember padding an envelope with the lining of a cushion.” On Sunday, near the brick passage off the shop row, Kathleen takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I left my weekly pay in the cushion years ago. Finding the envelope would mean more than the money.",
+  "appearance": "On an ordinary day, look for a red windbreaker and a square of clean cloth for polishing smudges. Kathleen has a broad nose and a deep dimple on one cheek, with a long plait tucked inside the collar. Kathleen gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Kathleen is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Kathleen is by the number of tiny errands suddenly being done.",
+  "agenda": "To find the old pay envelope even if it is empty.",
+  "family": "Dale Pierce is Kathleen’s younger cousin. Kathleen picks the meeting place. Dale sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The high road home*, Dale says, “I waited at the far end with coffee. I am proud that the first cup went cold and they still tried again.”",
+  "connections": "Grace Palmer. Both want chairs for memories that wouldn't appear in the auction catalogue.",
+  "familyIds": [
+    "AH-R1170"
+  ],
+  "connectionIds": [
+    "AH-R0531"
+  ],
+  "reactions": [
+    {
+      "situation": "A repair reveals a family name under the cushion",
+      "response": "Kathleen invites the family to see the full name before the repair is closed.",
+      "asWritten": "A repair reveals a family name under the cushion. Kathleen invites the family to see the full name before the repair is closed."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Kathleen takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Kathleen takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Kathleen agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Kathleen agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

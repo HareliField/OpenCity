@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0565",
+  "personId": "AH-R0565",
+  "name": "Javier Lam",
+  "age": 36,
+  "occupation": "Tool salesman",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The ladder crossing",
+  "biography": "stories/residents/04/12-the-ladder-crossing.md#ah-r0565",
+  "life": "“I still remember demonstrating a new tool to somebody loyal to the old one.” People around the bank steps know Javier by a small Monday habit. Javier takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I sell folding ladders and offered a trade. They wanted the cedar smell, which mine will never have.",
+  "appearance": "Javier is easy to recognize by a dark undercut with a longer wave on top and a crooked front tooth visible when laughing. Usually dressed in a moss-green cardigan with a fabric zip pull cut from a school scarf, Javier rubs a thumb along the edge of the nearest pocket when listening.",
+  "personality": "Javier gets protective of anybody who comes into a meeting unprepared. Javier privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To find a folding option without taking the cedar away.",
+  "family": "Ashley Hsu is Javier’s half-sibling. Javier makes room at the table. Ashley brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *No lifeguard at dusk*, Ashley says, “I have watched this woman swim every evening.”",
+  "connections": "Arlo Lee. The person carrying the ladder explains why a modern replacement is an awkward gift. Also in the story is Dario Moreau (crossing surveyor).",
+  "familyIds": [
+    "AH-R1421"
+  ],
+  "connectionIds": [
+    "AH-R0561",
+    "AH-R0564"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver sounds a horn halfway through the crossing",
+      "response": "Javier asks for a pause until the people carrying the ladder can clear the crossing safely.",
+      "asWritten": "A driver sounds a horn halfway through the crossing. Javier asks for a pause until the people carrying the ladder can clear the crossing safely."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Javier asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Javier asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Javier offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Javier offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

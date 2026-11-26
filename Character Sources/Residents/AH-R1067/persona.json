@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1067",
+  "personId": "AH-R1067",
+  "name": "Maria Kent",
+  "age": 47,
+  "occupation": "Food cart owner",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Land without cranes",
+  "biography": "stories/residents/08/02-land-without-cranes.md#ah-r1067",
+  "life": "“I still remember opening a lunch cart nobody counted as a workplace.” Sunday often includes a stop at Juniper Street, where Maria knows which of the west-side porches has a seat in the shade.",
+  "voice": "I make lunch for sixteen day laborers there. They're missing from the formal occupancy list.",
+  "appearance": "Maria is easy to recognize by short black hair swept back and a straight nose and deep-set eyes. Usually dressed in a long navy raincoat with a small enamel bird on the lapel, Maria holds eye contact until the other person has finished when listening.",
+  "personality": "Maria can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Maria can afford to give, and family knows to take it seriously.",
+  "agenda": "To count the lunch customers in the occupancy review.",
+  "family": "Lara Moss is Maria’s cousin. Maria decides what stays off the paper. Lara brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The empty chair on nights*, Lara says, “I covered four shifts and I am tired of being generous in ways that make me unreliable at home.”",
+  "connections": "Darcy Lewis. The apprentice's kit and the informal food cart need to be counted in the space plan.",
+  "familyIds": [
+    "AH-R0953"
+  ],
+  "connectionIds": [
+    "AH-R1062"
+  ],
+  "reactions": [
+    {
+      "situation": "A developer brings a drawing of the finished offices",
+      "response": "Maria asks where existing workers are shown in the finished picture.",
+      "asWritten": "A developer brings a drawing of the finished offices. Maria asks where existing workers are shown in the finished picture."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Maria checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Maria checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Maria suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Maria suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0734",
+  "personId": "AH-R0734",
+  "name": "Ethan Anand",
+  "age": 37,
+  "occupation": "Visiting nurse",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The split visit",
+  "biography": "stories/residents/05/14-the-split-visit.md#ah-r0734",
+  "life": "“I still remember meeting the client who never laughed on the afternoon shift.” Sunday often includes a stop at the foot of Harbor Viaduct, where Ethan pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I usually get the cheerful version of our client. The afternoon carer introduced me to her furious version.",
+  "appearance": "Out of work clothes, look for an olive canvas jacket and one cuff folded back twice. Ethan has an aquiline nose and a square chin, with dark brown curls cut close behind the ears. Ethan touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Ethan has a talent for getting adversaries to laugh at exactly the same thing. Ethan knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To hear the client's afternoon point of view.",
+  "family": "Kai Gross is Ethan’s older cousin. Ethan brings a spare shopping bag. Kai chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *A tenant who stays*, Kai says, “I planted a tree after each miscarriage. I never told the man who owns the ground.”",
+  "connections": "Nathan Neal (care colleague). The carer who stays for breakfast finally hears the version of the client known on afternoons.",
+  "familyIds": [
+    "AH-R0982"
+  ],
+  "connectionIds": [
+    "AH-R0731"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor objects to the overlap",
+      "response": "Ethan records what the overlap let the client do before judging its cost.",
+      "asWritten": "A supervisor objects to the overlap. Ethan records what the overlap let the client do before judging its cost."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Ethan writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Ethan writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Ethan asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Ethan asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

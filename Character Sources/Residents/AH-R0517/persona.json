@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0517",
+  "personId": "AH-R0517",
+  "name": "Sage Rhodes",
+  "age": 50,
+  "occupation": "Reading tutor",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A borrowed name",
+  "biography": "stories/residents/04/07-a-borrowed-name.md#ah-r0517",
+  "life": "“I still remember a boisterous reader taking the shy pupil's part.” People around Breakwater Way know Sage by a small Tuesday habit. Sage stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I read it aloud in class. The customer came in and taught us what fiction leaves out.",
+  "appearance": "Sage has a dark undercut with a longer wave on top, fine brows over wide-set eyes, and a favorite piece of clothing, a charcoal zip cardigan. It usually goes with a cloth patch so neatly matched it only shows in strong light. When somebody else has the floor, Sage looks toward the door whenever a name is called.",
+  "personality": "Sage listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To let the visitor show pupils what the novel omitted.",
+  "family": "Eli Moreno is Sage’s second cousin. Sage brings the paper and a pen. Eli decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The Saturday swap*, Eli says, “I made the spreadsheet. Seeing every family obligation as a blank square made me ring each person instead.”",
+  "connections": "Lena Crane. Hearing the customer teach makes the publisher rethink the old publicity copy.",
+  "familyIds": [
+    "AH-R0788"
+  ],
+  "connectionIds": [
+    "AH-R0513"
+  ],
+  "reactions": [
+    {
+      "situation": "An author is asked to identify the living inspiration",
+      "response": "Sage asks the person being represented whether they want to be identified.",
+      "asWritten": "An author is asked to identify the living inspiration. Sage asks the person being represented whether they want to be identified."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Sage agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Sage agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Sage keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Sage keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

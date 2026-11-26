@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0145",
+  "personId": "AH-R0145",
+  "name": "Agnes Osei",
+  "age": 42,
+  "occupation": "Rowing coach",
+  "home": "the western residential streets",
+  "episode": "The empty berth",
+  "biography": "stories/residents/01/15-the-empty-berth.md#ah-r0145",
+  "life": "Agnes coaches children whose families assume rowing is too expensive. The first lesson is how to stand on a wet dock without looking as if you're scared. She admits to the children that sometimes she is scared too. Tuesday often includes a stop at the blocks below Foundry Lofts, where Agnes checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "My juniors need a place to learn how to step off a dock as much as they need water. I asked for Sunday mornings until the repair is finished. I'll sign for every scratch on the timber.",
+  "appearance": "On an ordinary day, look for a dark green knitted vest and a pressed flower kept in the clear back of a phone case. Agnes has an aquiline nose and a square chin, with a blunt cut just below the ears. Agnes raises one eyebrow long before saying yes during a conversation.",
+  "personality": "Agnes prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To give the juniors supervised time on the empty dock.",
+  "family": "Alex Scott is Agnes’s cousin. Agnes offers the first invitation. Alex gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *Closing soup*, Alex says, “I put a rind in that was meant for my own dinner.”",
+  "connections": "Rafe Costa. A coach asking to borrow the docks meets somebody who remembers when nobody needed to ask.",
+  "familyIds": [
+    "AH-R0545"
+  ],
+  "connectionIds": [
+    "AH-R0147"
+  ],
+  "reactions": [
+    {
+      "situation": "A broker offers cash to keep the dock empty",
+      "response": "Agnes finds out who was promised the empty dock time before discussing a price.",
+      "asWritten": "A broker offers cash to keep the dock empty. Agnes finds out who was promised the empty dock time before discussing a price."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Agnes asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Agnes asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Agnes clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Agnes clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

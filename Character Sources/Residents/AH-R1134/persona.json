@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1134",
+  "personId": "AH-R1134",
+  "name": "Patrick Osborne",
+  "age": 33,
+  "occupation": "Lodger and warehouse worker",
+  "home": "the western residential streets",
+  "episode": "The third bedroom",
+  "biography": "stories/residents/08/09-the-third-bedroom.md#ah-r1134",
+  "life": "“I still remember finding a room through a note in a newsagent's window.” On Wednesday, near Ferris Deli, Patrick asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I am the lodger who offered to leave. I need six weeks and a guarantor, which nobody remembered to ask about.",
+  "appearance": "Patrick has short, uneven waves that refuse to lie flat, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a gray fisher's sweater. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Patrick grins on one side while the eyes stay serious.",
+  "personality": "Patrick is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Patrick is concerned.",
+  "agenda": "To secure another room and guarantor before moving.",
+  "family": "Diego Mitchell is Patrick’s first cousin once removed. Patrick is free to hang up first. Diego makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A play in a pocket*, Diego says, “I did the same scene six times and only the oldest listener guessed where the missing brother had gone.”",
+  "connections": "Ivy Burke. The carer and the lodger negotiate two families' housing at once.",
+  "familyIds": [
+    "AH-R0580"
+  ],
+  "connectionIds": [
+    "AH-R1133"
+  ],
+  "reactions": [
+    {
+      "situation": "The lodger is asked to leave on short notice",
+      "response": "Patrick checks where the lodger can go before treating an empty room as a settled fact.",
+      "asWritten": "The lodger is asked to leave on short notice. Patrick checks where the lodger can go before treating an empty room as a settled fact."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Patrick asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Patrick asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Patrick asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Patrick asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

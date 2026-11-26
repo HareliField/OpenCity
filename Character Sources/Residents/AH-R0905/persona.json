@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0905",
+  "personId": "AH-R0905",
+  "name": "Neal Clement",
+  "age": 57,
+  "occupation": "Garment worker",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The uniform money",
+  "biography": "stories/residents/07/01-the-uniform-money.md#ah-r0905",
+  "life": "“I still remember embroidering a plain garment to make it feel chosen.” On Sunday, near the crossing outside Verve Nail Studio, Neal notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I do not wear the school colors for religious reasons. I can still sew every child a dry collar.",
+  "appearance": "On an ordinary day, look for a pale blue work shirt and a pressed flower kept in the clear back of a phone case. Neal has an aquiline nose and a square chin, with black hair twisted into a small knot. Neal looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Neal carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To sew usable dry collars.",
+  "family": "Kathleen Warren is Neal’s younger cousin. Neal can stop the walk at any corner. Kathleen chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The fitting mirror*, Kathleen says, “I put a little stool in front of it. Children deserve a full-length view too.”",
+  "connections": "Javier Turner. They source individual collars that work for families who cannot buy whole sets.",
+  "familyIds": [
+    "AH-R0560"
+  ],
+  "connectionIds": [
+    "AH-R0906"
+  ],
+  "reactions": [
+    {
+      "situation": "A student turns up in the wrong uniform",
+      "response": "Neal gets the child through the gate before discussing the uniform with an adult.",
+      "asWritten": "A student turns up in the wrong uniform. Neal gets the child through the gate before discussing the uniform with an adult."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Neal finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Neal finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Neal offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Neal offers to accompany them while they tell the truth."
+    }
+  ]
+}

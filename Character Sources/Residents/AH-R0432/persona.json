@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0432",
+  "personId": "AH-R0432",
+  "name": "Noel Aubin",
+  "age": 49,
+  "occupation": "Seated-fashion tailor",
+  "home": "the western residential streets",
+  "episode": "The housecoat commission",
+  "biography": "stories/residents/03/14-the-housecoat-commission.md#ah-r0432",
+  "life": "“I still remember sewing a coat around a seated client's favorite chair.” People around the window at Night Shift Donuts know Noel by a small Sunday habit. Noel knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I measured seated and standing because dignity shouldn't disappear when she leans forward.",
+  "appearance": "Noel has two dimples that appear only with a full smile. Look for a swept fringe and a closely clipped nape. On an ordinary day, the familiar outfit is a mustard canvas overshirt with a knotted piece of sail thread on a key ring. In conversation Noel looks down for a moment before saying something difficult.",
+  "personality": "Noel has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To make the wearer comfortable seated and standing.",
+  "family": "Rosa Marr is Noel’s cousin raised in the same household. Noel asks what the birthday guest would like this year. Rosa remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The wrong bicycle*, Rosa says, “I found the missing bell screw in my dustpan.”",
+  "connections": "Oakley Han (housecoat client). They measure a garment for a whole Sunday, including sitting at the head of the table.",
+  "familyIds": [
+    "AH-R0039"
+  ],
+  "connectionIds": [
+    "AH-R0431"
+  ],
+  "reactions": [
+    {
+      "situation": "The diner wants to fasten the new cuff unaided",
+      "response": "Noel leaves the cuff in reach and lets the diner set the pace.",
+      "asWritten": "The diner wants to fasten the new cuff unaided. Noel leaves the cuff in reach and lets the diner set the pace."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Noel asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Noel asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Noel asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Noel asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

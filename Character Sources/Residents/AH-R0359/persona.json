@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0359",
+  "personId": "AH-R0359",
+  "name": "Cory Walsh",
+  "age": 48,
+  "occupation": "Radio retailer",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The hospital radio",
+  "biography": "stories/residents/03/06-the-hospital-radio.md#ah-r0359",
+  "life": "“I still remember the first match Dad let me choose.” Wednesday often includes a stop at the approach to Seabright Court, where Cory likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I brought a pocket radio so two roommates can listen to different matches and still keep score together.",
+  "appearance": "Cory has a long face and high cheekbones. Look for a swept fringe and a closely clipped nape. On an ordinary day, the familiar outfit is a gray fisher's sweater with a fabric zip pull cut from a school scarf. In conversation Cory leans a shoulder against the wall during long conversations.",
+  "personality": "Cory has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To bring two pocket sets to the shared room.",
+  "family": "Toby Lin is Cory’s half-sibling. Cory is allowed to ask about the bad news afterward. Toby calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The wrong bicycle*, Toby says, “I docked the courier for arriving late. His customer had watched the entire mix-up.”",
+  "connections": "Linden Lewis. They arrange a shared score without making the entire ward hear the same game.",
+  "familyIds": [
+    "AH-R0038"
+  ],
+  "connectionIds": [
+    "AH-R0354"
+  ],
+  "reactions": [
+    {
+      "situation": "The replacement radio drowns out a patient's match",
+      "response": "Cory asks the two patients which part of the match each wants to hear.",
+      "asWritten": "The replacement radio drowns out a patient's match. Cory asks the two patients which part of the match each wants to hear."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Cory asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Cory asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Cory asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Cory asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

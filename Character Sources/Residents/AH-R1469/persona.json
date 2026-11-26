@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1469",
+  "personId": "AH-R1469",
+  "name": "Sylvia Kang",
+  "age": 53,
+  "occupation": "Payroll supervisor",
+  "home": "Eastside",
+  "episode": "Three minutes at the bridge",
+  "biography": "stories/residents/10/12-three-minutes-at-the-bridge.md#ah-r1469",
+  "life": "“I still remember watching the same early minute count twice on two clocks.” Tuesday often includes a stop at the foot of Harbor Viaduct, where Sylvia pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I manage payroll and discovered our time clock rounds those exact three minutes away in one department.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a knotted piece of sail thread on a key ring. Sylvia has a broad nose and a deep dimple on one cheek, with dark brown curls cut close behind the ears. Sylvia presses the lips together to keep a smile in during a conversation.",
+  "personality": "Sylvia is kind in very practical ways and prickly about being thanked in public. Sylvia loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To fix unequal clock rounding across the departments.",
+  "family": "Remy Morris is Sylvia’s cousin raised in the same household. Sylvia knows which ones can be shared. Remy keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The upstairs piano*, Remy says, “I calculated the turn perfectly and forgot the banister finial my grandmother carved.”",
+  "connections": "Kit Curtis. The worker living on costly taxis takes an actual statement to the person checking the clock rounding. Also in the story is Alexei Zhang (freight colleague).",
+  "familyIds": [
+    "AH-R0386"
+  ],
+  "connectionIds": [
+    "AH-R1464",
+    "AH-R1462"
+  ],
+  "reactions": [
+    {
+      "situation": "A shift changes by exactly three minutes",
+      "response": "Sylvia checks the school pickup and shift clocks together before changing the route.",
+      "asWritten": "A shift changes by exactly three minutes. Sylvia checks the school pickup and shift clocks together before changing the route."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Sylvia asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Sylvia asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Sylvia gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Sylvia gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

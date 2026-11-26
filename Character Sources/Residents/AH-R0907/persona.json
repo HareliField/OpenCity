@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0907",
+  "personId": "AH-R0907",
+  "name": "Neal Day",
+  "age": 37,
+  "occupation": "Restaurant cleaner",
+  "home": "the flat above the Wash House",
+  "episode": "The uniform money",
+  "biography": "stories/residents/07/01-the-uniform-money.md#ah-r0907",
+  "life": "“I still remember starting term in shoes already scuffed by somebody else.” On Monday, near the foot of Harbor Viaduct, Neal pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I showed up in a football shirt on my first day. I'm lending mine to anyone waiting for a blazer.",
+  "appearance": "Neal has a round face with a pronounced chin. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a long navy raincoat with a cloth patch so neatly matched it only shows in strong light. In conversation Neal draws small circles on a tabletop while waiting.",
+  "personality": "Neal treats a small promise with the gravity others reserve for a contract. This makes Neal lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To lend the sports shirt without stigma.",
+  "family": "Alexei Aguilar is Neal’s younger cousin. Neal chooses the music. Alexei puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The empty drum stool*, Alexei says, “My grandmother made me sit on my hands at concerts.”",
+  "connections": "Taylor Sethi. One open offer of a sports shirt makes another donor reconsider anonymity.",
+  "familyIds": [
+    "AH-R0422"
+  ],
+  "connectionIds": [
+    "AH-R0908"
+  ],
+  "reactions": [
+    {
+      "situation": "A student turns up in the wrong uniform",
+      "response": "Neal gets the child through the gate before discussing the uniform with an adult.",
+      "asWritten": "A student turns up in the wrong uniform. Neal gets the child through the gate before discussing the uniform with an adult."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Neal accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Neal accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Neal says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Neal says what can be returned and asks whether that will do."
+    }
+  ]
+}

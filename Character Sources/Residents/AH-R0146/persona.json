@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0146",
+  "personId": "AH-R0146",
+  "name": "Fern Gillen",
+  "age": 29,
+  "occupation": "Boat cleaner",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The empty berth",
+  "biography": "stories/residents/01/15-the-empty-berth.md#ah-r0146",
+  "life": "Fern cleans below decks where the expensive conversations above arrive as muffled footsteps. Taking an uncle to hear the shrimp promises the pleasure of introducing him to a sound the paying guests all miss. On Saturday, near the blocks below Foundry Lofts, Fern checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I know the four boats by the noises their owners leave behind. The empty slot is the first place I've heard the little shrimp click. I'm bringing my hard-of-hearing uncle down on a quiet morning.",
+  "appearance": "Fern has black hair twisted into a small knot, a long face and high cheekbones, and a favorite piece of clothing, a cropped bottle-green coat. It usually goes with a partly rubbed-away embroidered initial. When somebody else has the floor, Fern counts on the side of one finger where hardly anybody notices.",
+  "personality": "Fern never tires of being shown how somebody makes a living. Fern can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To bring the uncle to hear the marina during its quietest hour.",
+  "family": "Mika Black is Fern’s cousin. Fern puts the kettle on. Mika chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The waiting-room plant*, Mika says, “I mistook its red tie for an allergy marker.”",
+  "connections": "Petra Noel. They are arranging two very different little family outings during the same week of repair.",
+  "familyIds": [
+    "AH-R0506"
+  ],
+  "connectionIds": [
+    "AH-R0150"
+  ],
+  "reactions": [
+    {
+      "situation": "A junior rower says the wet step feels unsafe",
+      "response": "Fern stops the lesson there and asks the rower to show the troublesome patch from a stable spot.",
+      "asWritten": "A junior rower says the wet step feels unsafe. Fern stops the lesson there and asks the rower to show the troublesome patch from a stable spot."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Fern starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Fern starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Fern may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Fern may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

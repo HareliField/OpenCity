@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1285",
+  "personId": "AH-R1285",
+  "name": "Willa Rizzo",
+  "age": 71,
+  "occupation": "Retired neighbor and dressmaker",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The returned daughter",
+  "biography": "stories/residents/09/09-the-returned-daughter.md#ah-r1285",
+  "life": "“I still remember watching a frightened girl try three doorbells.” On Sunday, near the blocks below Foundry Lofts, Willa checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I was the neighbor who opened a door for her. I stayed polite to the father for decades and regret the cost of that.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a comb in a sleeve sewn into the lining. Willa has a wide brow and a narrow jaw, with gray hair trimmed very close behind the ears. Willa raises one eyebrow long before saying yes during a conversation.",
+  "personality": "Willa enjoys routines and will defend the right of someone else to break one. As a result, Willa is often everyone's favorite cover for a missed morning.",
+  "agenda": "To tell the daughter what the neighbor saw back then.",
+  "family": "Scout Ames is Willa’s cousin raised in the same household. Willa can always ask for five minutes alone. Scout asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The skipper goes ashore*, Scout says, “I own the boat. I want her to keep a title because the buyers know her, and she wants a real desk with work on it.”",
+  "connections": "Terry Perry. The protective partner can ask the old neighbor what help the teenager once needed.",
+  "familyIds": [
+    "AH-R1193"
+  ],
+  "connectionIds": [
+    "AH-R1289"
+  ],
+  "reactions": [
+    {
+      "situation": "The estranged daughter asks to leave before the meal",
+      "response": "Willa helps the daughter leave without forcing a final conversation at the door.",
+      "asWritten": "The estranged daughter asks to leave before the meal. Willa helps the daughter leave without forcing a final conversation at the door."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Willa asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Willa asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Willa keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Willa keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

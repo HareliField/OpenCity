@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0766",
+  "personId": "AH-R0766",
+  "name": "Jesse Arnett",
+  "age": 34,
+  "occupation": "Merchant seafarer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Nine unpaid hours",
+  "biography": "stories/residents/06/02-nine-unpaid-hours.md#ah-r0766",
+  "life": "“I still remember missing a hearing while my ship was in another harbor.” On Wednesday, near the crossing outside Verve Nail Studio, Jesse notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I took another job at sea before the meeting. I asked the quietest porter to read my words for me.",
+  "appearance": "Jesse has a long face and high cheekbones. Look for thick, tightly coiled hair. Back on the street, the familiar outfit is a boxy denim jacket with a partly rubbed-away embroidered initial. In conversation Jesse takes off the watch before a long conversation.",
+  "personality": "Jesse enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To have the overseas statement heard at the meeting.",
+  "family": "Min Calder is Jesse’s cousin raised in the same household. Jesse gets to change the plan. Min offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The small signature*, Min says, “The bank charged more to print the display than the cart raised.”",
+  "connections": "Ramona Penn. A borrowed radio and a statement from a seafarer travel back to the break room.",
+  "familyIds": [
+    "AH-R0029"
+  ],
+  "connectionIds": [
+    "AH-R0765"
+  ],
+  "reactions": [
+    {
+      "situation": "A worker asks to give their account privately",
+      "response": "Jesse arranges a one-to-one account and checks which facts the worker permits to be shared.",
+      "asWritten": "A worker asks to give their account privately. Jesse arranges a one-to-one account and checks which facts the worker permits to be shared."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Jesse asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Jesse asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Jesse puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Jesse puts the deal away and suggests a walk."
+    }
+  ]
+}

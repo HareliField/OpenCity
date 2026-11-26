@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0430",
+  "personId": "AH-R0430",
+  "name": "Ren Trent",
+  "age": 34,
+  "occupation": "Orchestra librarian",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The empty drum stool",
+  "biography": "stories/residents/03/13-the-empty-drum-stool.md#ah-r0430",
+  "life": "“I still remember the smell of rosin above worn rehearsal carpets.” Saturday often includes a stop at Breakwater Way, where Ren stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I kept the invitation because I want to offer my chair at the orchestra rehearsal the same way.",
+  "appearance": "On an ordinary day, look for a soft blue checked shirt and a square of clean cloth for polishing smudges. Ren has a narrow face with an expressive upper lip, with short sandy hair and a marked widow's peak. Ren turns fully toward the person speaking during a conversation.",
+  "personality": "Ren is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Ren is by the number of tiny errands suddenly being done.",
+  "agenda": "To pass the orchestra chair to a willing guest.",
+  "family": "Ingrid Kaur is Ren’s older relative by marriage. A relative left a box of miscellaneous screws beside a perfectly labeled set of good tools. The box was the first thing the family fought over after the funeral. Ren remembers who needs to be asked before the repair. Asked about *A room above the dryers*, Ingrid says, “I can fit a sink if the room is used after school one evening a week.”",
+  "connections": "Esther Mills. The old invitation helps an orchestra librarian make a new, personal one.",
+  "familyIds": [
+    "AH-R1209"
+  ],
+  "connectionIds": [
+    "AH-R0425"
+  ],
+  "reactions": [
+    {
+      "situation": "A child freezes halfway through the song",
+      "response": "Ren lets the beat drop out and waits for the child to choose whether to rejoin.",
+      "asWritten": "A child freezes halfway through the song. Ren lets the beat drop out and waits for the child to choose whether to rejoin."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Ren offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Ren offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Ren agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Ren agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0506",
+  "personId": "AH-R0506",
+  "name": "Mika Black",
+  "age": 34,
+  "occupation": "Clinical support worker",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The waiting-room plant",
+  "biography": "stories/residents/04/06-the-waiting-room-plant.md#ah-r0506",
+  "life": "“I still remember labels changing colors after several washes.” People around the public end of the South Shore boardwalk know Mika by a small Friday habit. Mika checks the shade on the benches before deciding how long to stay.",
+  "voice": "I mistook its red tie for an allergy marker. I promised to make a label that explains the joke.",
+  "appearance": "Mika has a strong profile and a little space between the front teeth. Look for a blunt cut just below the ears. Out of work clothes, the familiar outfit is a long navy raincoat with a folded shopping list secured by a miniature clip. In conversation Mika folds a paper napkin into quarters without noticing.",
+  "personality": "Mika is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To replace the misleading red tie label.",
+  "family": "Fern Gillen is Mika’s cousin. Mika chooses the music. Fern puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The empty berth*, Fern says, “I know the four boats by the noises their owners leave behind.”",
+  "connections": "Talia Drew. They put the watering information on the repaired stand.",
+  "familyIds": [
+    "AH-R0146"
+  ],
+  "connectionIds": [
+    "AH-R0504"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient asks to be alone with the plant",
+      "response": "Mika leaves the patient with the plant and returns at an agreed time.",
+      "asWritten": "A patient asks to be alone with the plant. Mika leaves the patient with the plant and returns at an agreed time."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Mika writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Mika writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Mika thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Mika thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

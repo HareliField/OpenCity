@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0598",
+  "personId": "AH-R0598",
+  "name": "Val Moss",
+  "age": 35,
+  "occupation": "Call center worker",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The engine lullaby",
+  "biography": "stories/residents/04/15-the-engine-lullaby.md#ah-r0598",
+  "life": "“I still remember taking the long waterside way home after a quarrel.” People around the brick passage off the shop row know Val by a small Thursday habit. Val takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I can't hear it from our new flat. I walk here after arguments so I don't say the cruel thing first.",
+  "appearance": "Val has short sandy hair and a marked widow's peak, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a pair of reading glasses in a cloth sleeve. When somebody else has the floor, Val squares up pieces of paper while thinking.",
+  "personality": "Val feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To keep the evening walk when home gets tense.",
+  "family": "Nolan Reed is Val’s half-sibling. Val makes room at the table. Nolan brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *A civilian apology*, Nolan says, “I brought the shopkeeper a new sign and discovered she wants the old one saved as evidence of what happened.”",
+  "connections": "Jacqueline Clarke. A complaint about noise turns into an invitation for a more peaceful evening walk.",
+  "familyIds": [
+    "AH-R0935"
+  ],
+  "connectionIds": [
+    "AH-R0593"
+  ],
+  "reactions": [
+    {
+      "situation": "A family offers to pay to keep the old sound",
+      "response": "Val asks the engine owner what can be kept without postponing necessary repairs.",
+      "asWritten": "A family offers to pay to keep the old sound. Val asks the engine owner what can be kept without postponing necessary repairs."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Val asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Val asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Val lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Val lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

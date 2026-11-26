@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1082",
+  "personId": "ah-pd-124",
+  "name": "Finn Ross",
+  "age": 39,
+  "occupation": "Patrol officer",
+  "home": "Old Town",
+  "episode": "First shift back",
+  "biography": "stories/residents/08/04-first-shift-back.md#ah-r1082",
+  "life": "“I still remember the month my temporary assignment started to feel like home.” Saturday often includes a stop at the market by Market Flats, where Finn often waits until the delivery baskets are stacked before going in.",
+  "voice": "I covered for the absent colleague and finally felt good at my job. I don't want generosity to cost me every useful task.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and one loose pocket corner secured with green thread. Finn has a wide brow and a narrow jaw, with a loose dark braid. Finn looks toward the door whenever a name is called during a conversation.",
+  "personality": "Finn listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To keep one task that made the temporary post worthwhile.",
+  "family": "Eli Aranda is Finn’s half-sibling. Finn can stop the walk at any corner. Eli chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The free fringe*, Eli says, “I collected the clippings for a school play and got ten people telling me about their first haircuts.”",
+  "connections": "Noor Khan (returning colleague). They discuss which work can be returned and which skills the temporary cover should keep.",
+  "familyIds": [
+    "AH-R0709"
+  ],
+  "connectionIds": [
+    "AH-R1081"
+  ],
+  "reactions": [
+    {
+      "situation": "A coworker asks for private details about the leave",
+      "response": "Finn leaves the reason for leave with the returning colleague and redirects the question to working arrangements.",
+      "asWritten": "A coworker asks for private details about the leave. Finn leaves the reason for leave with the returning colleague and redirects the question to working arrangements."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Finn keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Finn keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Finn keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Finn keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

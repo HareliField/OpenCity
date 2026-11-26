@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1393",
+  "personId": "AH-R1393",
+  "name": "Alexei Walsh",
+  "age": 48,
+  "occupation": "Warehouse worker",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The return of a witness",
+  "biography": "stories/residents/10/05-the-return-of-a-witness.md#ah-r1393",
+  "life": "“I still remember an ordinary breakfast with my brother before his sentence.” Wednesday often includes a stop at the public road outside the Port of Asphalt, where Alexei can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I am the brother of the convicted man. I can pass her on the pavement without either of us apologizing for existing.",
+  "appearance": "Alexei is easy to recognize by brown hair pinned away from the temples and a small notch in the left eyebrow. Usually dressed in an old plum windbreaker with a partly rubbed-away embroidered initial, Alexei raises one eyebrow long before saying yes when listening.",
+  "personality": "Alexei is kind in very practical ways and prickly about being thanked in public. Alexei loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To share the pavement without forcing a reconciliation.",
+  "family": "Kieran Colón is Alexei’s second cousin. Alexei knows which ones can be shared. Kieran keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The day sailor's divorce*, Kieran says, “I called the boat by my ex's name. For the first time I would like to change it.”",
+  "connections": "Linden Joseph. A former dealer and the convicted man's brother have different reasons to let an encounter stay ordinary.",
+  "familyIds": [
+    "AH-R1048"
+  ],
+  "connectionIds": [
+    "AH-R1392"
+  ],
+  "reactions": [
+    {
+      "situation": "The witness runs into a convicted neighbor's family",
+      "response": "Alexei gives both parties the space to pass or speak without an audience.",
+      "asWritten": "The witness runs into a convicted neighbor's family. Alexei gives both parties the space to pass or speak without an audience."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Alexei takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Alexei takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Alexei gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Alexei gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

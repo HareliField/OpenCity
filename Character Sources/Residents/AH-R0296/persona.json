@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0296",
+  "personId": "AH-R0296",
+  "name": "Owen Brandt",
+  "age": 39,
+  "occupation": "Pattern cutter",
+  "home": "Old Town",
+  "episode": "A sail cut small",
+  "biography": "stories/residents/02/15-a-sail-cut-small.md#ah-r0296",
+  "life": "“I cut my first kite from the wrong side of an old tent.” Wednesday often includes a stop at the window at Night Shift Donuts, where Owen knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I cut a pattern from the wrong edge and ruined my plan. My son designed a kite around the missing corner.",
+  "appearance": "On an ordinary day, look for an old plum windbreaker and a comb in a sleeve sewn into the lining. Owen has two dimples that appear only with a full smile, with thick, tightly coiled hair. Owen holds eye contact until the other person has finished during a conversation.",
+  "personality": "Owen often says yes too quickly out of pride in being useful. The people closest to Owen have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To fly a kite shaped around the missing corner.",
+  "family": "Adrian Trent is Owen’s older cousin. Owen chooses an ordinary story to tell. Adrian asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *Spin cycle choir*, Adrian says, “I remember a shipboard work song with the same interval.”",
+  "connections": "Marin Ramos. They negotiate a useful pattern around the letter wanted for a hat. Also in the story is Ian Palmer (sail borrower).",
+  "familyIds": [
+    "AH-R0306"
+  ],
+  "connectionIds": [
+    "AH-R0294",
+    "AH-R0295"
+  ],
+  "reactions": [
+    {
+      "situation": "The marina asks to put its name on every finished piece",
+      "response": "Owen asks the makers whether they want a brand name on what they take home.",
+      "asWritten": "The marina asks to put its name on every finished piece. Owen asks the makers whether they want a brand name on what they take home."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Owen asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Owen asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Owen rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Owen rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

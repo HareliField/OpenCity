@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0798",
+  "personId": "AH-R0798",
+  "name": "Tali Martin",
+  "age": 45,
+  "occupation": "Bus mechanic",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The first straight paycheck",
+  "biography": "stories/residents/06/05-the-first-straight-paycheck.md#ah-r0798",
+  "life": "“I still remember lending bus fare out of my own lunch money.” On Tuesday, near Paper & Pine Books, Tali starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I lend money too easily. I agreed to help with bus fare and refused to take over another month's rent.",
+  "appearance": "Tali has short copper curls, a round face with a pronounced chin, and a favorite piece of clothing, a cropped bottle-green coat. It usually goes with a copper-colored clasp that has been repaired by hand. When somebody else has the floor, Tali looks toward the door whenever a name is called.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Tali takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To cover a bus fare without taking over the household.",
+  "family": "Ignacio Paige is Tali’s cousin. Tali can always ask for five minutes alone. Ignacio asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A sail cut small*, Ignacio says, “I promised a bag to each carer on the western route.”",
+  "connections": "Basil Levi. The warehouse trainer and the bus-fare lender can make the next Monday possible together.",
+  "familyIds": [
+    "AH-R0299"
+  ],
+  "connectionIds": [
+    "AH-R0793"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative says the first check is embarrassingly small",
+      "response": "Tali asks what the check has paid for this week before making a comparison with street money.",
+      "asWritten": "A relative says the first check is embarrassingly small. Tali asks what the check has paid for this week before making a comparison with street money."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Tali asks what the friend actually said last time and checks whether anybody is expecting them at home.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Tali asks what the friend actually said last time and checks whether anybody is expecting them at home."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Tali asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Tali asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

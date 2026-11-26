@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0411",
+  "personId": "AH-R0411",
+  "name": "Sam Sloan",
+  "age": 39,
+  "occupation": "Delivery route planner",
+  "home": "the western residential streets",
+  "episode": "One unposted detour",
+  "biography": "stories/residents/03/12-one-unposted-detour.md#ah-r0411",
+  "life": "“I still remember missing my stop on my first morning as a planner.” Friday often includes a stop at Studio Boulevard, where Sam waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I made the map but left out the bakery because it wasn't a registered depot.",
+  "appearance": "On an ordinary day, look for a striped cotton shirt and a partly rubbed-away embroidered initial. Sam has an aquiline nose and a square chin, with a smooth side part with one rebellious curl. Sam touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Sam can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To put the unofficial depot on the delivery route.",
+  "family": "Rae Meyer is Sam’s parent’s cousin. Sam chooses whether to use it. Rae saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *Saturday keys*, Rae says, “I want one key back permanently. Opening my own door is the part of Saturday I look forward to.”",
+  "connections": "Elise Cotton (notice printer). They redesign the printed diversion around the users it left out.",
+  "familyIds": [
+    "AH-R0290"
+  ],
+  "connectionIds": [
+    "AH-R0417"
+  ],
+  "reactions": [
+    {
+      "situation": "A delivery customer refuses the late parcel",
+      "response": "Sam checks with the intended recipient before leaving a late parcel.",
+      "asWritten": "A delivery customer refuses the late parcel. Sam checks with the intended recipient before leaving a late parcel."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Sam stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Sam stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Sam asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Sam asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

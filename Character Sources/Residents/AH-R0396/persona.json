@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0396",
+  "personId": "AH-R0396",
+  "name": "Nadia Holland",
+  "age": 23,
+  "occupation": "Menu illustrator",
+  "home": "Midtown",
+  "episode": "The broken till",
+  "biography": "stories/residents/03/10-the-broken-till.md#ah-r0396",
+  "life": "“I still remember sketching my first lunch before eating it.” On Wednesday, near the foot of Harbor Viaduct, Nadia pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I wrote everyone's sandwiches in pictures. The cook hung the sheet beside the menu.",
+  "appearance": "Nadia has a straight nose and deep-set eyes. Look for short black hair swept back. On an ordinary day, the familiar outfit is a moss-green cardigan with a square of clean cloth for polishing smudges. In conversation Nadia folds a paper napkin into quarters without noticing.",
+  "personality": "Nadia has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To give the kitchen the illustrated tally.",
+  "family": "Warren Lyle is Nadia’s older cousin. Nadia asks what the birthday guest would like this year. Warren remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The blue suit*, Warren says, “I used to work on a hotel laundry line. I found three identical claims under three different machine numbers.”",
+  "connections": "Nadia Hayes. Drawings and mental arithmetic keep the lunch queue moving. Also in the story is Noel Berry (lunch collector).",
+  "familyIds": [
+    "AH-R0006"
+  ],
+  "connectionIds": [
+    "AH-R0391",
+    "AH-R0398"
+  ],
+  "reactions": [
+    {
+      "situation": "A manager asks for the handwritten sandwich tally",
+      "response": "Nadia makes sure customers' names needn't travel with the tally.",
+      "asWritten": "A manager asks for the handwritten sandwich tally. Nadia makes sure customers' names needn't travel with the tally."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Nadia calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Nadia calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Nadia explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Nadia explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

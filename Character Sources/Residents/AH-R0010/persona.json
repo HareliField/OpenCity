@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0010",
+  "personId": "AH-R0010",
+  "name": "Dee Varma",
+  "age": 51,
+  "occupation": "Hotel linen buyer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The blue suit",
+  "biography": "stories/residents/01/01-the-blue-suit.md#ah-r0010",
+  "life": "Dee once walked into the staff changing room in a skirt stiff with laundry chemicals. The housekeepers laughed and washed it for her. She has asked them to judge every linen sample since. On Wednesday, near the corner by Juniper Tailor, Dee looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "My hotel contract would keep the place open through winter. My staff wash their own clothes here too. I offered a week of trial loads with one of our housekeepers choosing the test pieces.",
+  "appearance": "Dee is easy to recognize by a loose dark braid and full cheeks and a mouth that pulls slightly to one side. Usually dressed in a rust-colored canvas coat with a narrow brass watch set a little fast, Dee counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Dee can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Dee can afford to give, and family knows to take it seriously.",
+  "agenda": "To sign a contract that lets the housekeepers reject a bad test load.",
+  "family": "Jade Hunter is Dee’s half-sibling. Dee checks the date twice. Jade brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The boy on the corner*, Jade says, “I want to be their foster aunt. My flat is smaller than the official assessor expected and larger than the boys remember.”",
+  "connections": "Warren Lyle. Their next conversation will decide what evidence the hotel needs before sending its linen here.",
+  "familyIds": [
+    "AH-R1097"
+  ],
+  "connectionIds": [
+    "AH-R0006"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone wants to post the ruined cuff online",
+      "response": "Dee asks Rafael which version he wants a stranger to see before anyone shares the picture.",
+      "asWritten": "Someone wants to post the ruined cuff online. Dee asks Rafael which version he wants a stranger to see before anyone shares the picture."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Dee tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Dee tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Dee suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Dee suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

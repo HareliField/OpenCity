@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1243",
+  "personId": "AH-R1243",
+  "name": "Julian Kapoor",
+  "age": 50,
+  "occupation": "Business insurance assessor",
+  "home": "Coast Ridge",
+  "episode": "A clean coat for court",
+  "biography": "stories/residents/09/05-a-clean-coat-for-court.md#ah-r1243",
+  "life": "“I still remember declining a claim that followed me home.” Friday often includes a stop at the corner by Juniper Tailor, where Julian looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I insured his old business and denied the first claim. I'm taking the morning off to hear what actually happened.",
+  "appearance": "Julian is easy to recognize by a long plait tucked inside the collar and a softly rounded chin under sharp cheekbones. Usually dressed in an old plum windbreaker with a narrow brass watch set a little fast, Julian starts to lift a hand, then waits to be invited to speak when listening.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To hear an account the old claim file omitted.",
+  "family": "Olivia Neal is Julian’s younger cousin. Julian offers the first invitation. Olivia gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *No lifeguard at dusk*, Olivia says, “I am learning to swim and wanted a heroic last lesson.”",
+  "connections": "Tali Ross. The insurance assessor and court worker recognize different parts of the claimant's history.",
+  "familyIds": [
+    "AH-R1430"
+  ],
+  "connectionIds": [
+    "AH-R1248"
+  ],
+  "reactions": [
+    {
+      "situation": "A stranger asks why the lender came to court",
+      "response": "Julian lets the lender tell or withhold the coat's history.",
+      "asWritten": "A stranger asks why the lender came to court. Julian lets the lender tell or withhold the coat's history."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Julian offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Julian offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Julian listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Julian listens first to the account of how it was actually used."
+    }
+  ]
+}

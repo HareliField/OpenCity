@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0490",
+  "personId": "AH-R0490",
+  "name": "Cecilia Aranda",
+  "age": 51,
+  "occupation": "Station premises custodian",
+  "home": "Old Town",
+  "episode": "Station steps in rain",
+  "biography": "stories/residents/04/04-station-steps-in-rain.md#ah-r0490",
+  "life": "“I still remember the long walk around to the only open side door.” People around Lighthouse Cove know Cecilia by a small Thursday habit. Cecilia takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I opened the side door too late. I owe the person who left before we found a dry route a second invitation.",
+  "appearance": "Cecilia has a wide brow and a narrow jaw. Look for dark brown curls cut close behind the ears. On an ordinary day, the familiar outfit is a moss-green cardigan with one loose pocket corner secured with green thread. In conversation Cecilia draws breath as if to speak and lets someone else go first.",
+  "personality": "Cecilia has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To invite the visitor back through the accessible entrance.",
+  "family": "Carlo Sharp is Cecilia’s cousin raised in the same household. Cecilia checks the date twice. Carlo brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Home with stairs*, Carlo says, “I clean the stairs after midnight. I cleared a place for a resting stool on the twenty-eighth.”",
+  "connections": "Jasmine Laurent. The new side-door invitation lets a nervous visitor come back for property without a crowd. Also in the story is Nora Nolasco (petition organizer).",
+  "familyIds": [
+    "AH-R0809"
+  ],
+  "connectionIds": [
+    "AH-R0485",
+    "AH-R0483"
+  ],
+  "reactions": [
+    {
+      "situation": "An officer asks whether the wet event should still count as a hearing",
+      "response": "Cecilia asks who missed the chance to speak before calling the hearing complete.",
+      "asWritten": "An officer asks whether the wet event should still count as a hearing. Cecilia asks who missed the chance to speak before calling the hearing complete."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Cecilia tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Cecilia tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Cecilia says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Cecilia says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

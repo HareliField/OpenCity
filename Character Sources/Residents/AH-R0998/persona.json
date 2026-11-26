@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0998",
+  "personId": "AH-R0998",
+  "name": "Scout Saito",
+  "age": 47,
+  "occupation": "Debt adviser",
+  "home": "Midtown",
+  "episode": "An old restaurant debt",
+  "biography": "stories/residents/07/10-an-old-restaurant-debt.md#ah-r0998",
+  "life": "“I still remember learning how many separate debts one small funeral could leave.” On Sunday, near the brick passage off the shop row, Scout takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I heard my father left us debt. Seeing one debt turn into a family dinner has softened that memory.",
+  "appearance": "Scout has full cheeks and a mouth that pulls slightly to one side. Look for short black hair swept back. On an ordinary day, the familiar outfit is a dark green knitted vest with one loose pocket corner secured with green thread. In conversation Scout looks at people's hands before looking at what they carry.",
+  "personality": "Scout is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To tell the younger family about the settled bill.",
+  "family": "Charlotte Bruno is Scout’s cousin raised in the same household. Scout sets the time to leave. Charlotte picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The painted footprint*, Charlotte says, “My son thought the print marked a buried person.”",
+  "connections": "Jamie Grant. A cook remembers the quarrel while a debtor's relative remembers the meal that survived it.",
+  "familyIds": [
+    "AH-R0374"
+  ],
+  "connectionIds": [
+    "AH-R0993"
+  ],
+  "reactions": [
+    {
+      "situation": "The shop owners disagree on what to do with the payment",
+      "response": "Scout asks both owners for figures before anyone promises a fund or a repair.",
+      "asWritten": "The shop owners disagree on what to do with the payment. Scout asks both owners for figures before anyone promises a fund or a repair."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Scout offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Scout offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Scout thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Scout thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

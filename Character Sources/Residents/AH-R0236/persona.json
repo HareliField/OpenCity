@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0236",
+  "personId": "AH-R0236",
+  "name": "Cedric Arrieta",
+  "age": 39,
+  "occupation": "Decorator",
+  "home": "the blocks north of the port",
+  "episode": "A wall of birthdays",
+  "biography": "stories/residents/02/09-a-wall-of-birthdays.md#ah-r0236",
+  "life": "“The first wallpaper I ever hung concealed my own school drawing.” People around Maré Coffee know Cedric by a small Sunday habit. Cedric likes the table where people coming off shift stop checking the time.",
+  "voice": "I took down one sheet too fast and split a date. I'm looking for the boy born that spring.",
+  "appearance": "Cedric is easy to recognize by auburn hair cut square at the nape and two dimples that appear only with a full smile. Usually dressed in a boxy denim jacket with a pressed flower kept in the clear back of a phone case, Cedric gathers both sleeves neatly before settling in when listening.",
+  "personality": "Cedric is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Cedric is by the number of tiny errands suddenly being done.",
+  "agenda": "To restore the damaged date with someone who remembers the spring.",
+  "family": "Quinn Avery is Cedric’s younger cousin. Cedric picks the meeting place. Quinn sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The school photograph that travels*, Quinn says, “I am moving to another coast and the picture is proof there was a time when my whole world fitted on two rows.”",
+  "connections": "Nora Ford. A torn date helps settle the argument about wearing high heels to be measured.",
+  "familyIds": [
+    "AH-R1324"
+  ],
+  "connectionIds": [
+    "AH-R0234"
+  ],
+  "reactions": [
+    {
+      "situation": "A family asks for a tracing to take away",
+      "response": "Cedric asks which pencil marks the family recognizes as their own.",
+      "asWritten": "A family asks for a tracing to take away. Cedric asks which pencil marks the family recognizes as their own."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Cedric gives up their own space if possible and asks the passengers who arrived first to choose what happens next.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Cedric gives up their own space if possible and asks the passengers who arrived first to choose what happens next."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Cedric agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Cedric agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

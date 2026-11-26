@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0758",
+  "personId": "AH-R0758",
+  "name": "Annette Levin",
+  "age": 39,
+  "occupation": "Support worker",
+  "home": "the shop row",
+  "episode": "The upstairs lease",
+  "biography": "stories/residents/06/01-the-upstairs-lease.md#ah-r0758",
+  "life": "“I still remember a neighbor hearing my boy's cough before I did.” On Tuesday, near the downtown fountain, Annette keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I like our flat less than I like the neighbors who know my son's sounds through the ceiling.",
+  "appearance": "Annette has short copper curls, a long face and high cheekbones, and a favorite piece of clothing, a cropped bottle-green coat. It usually goes with a narrow brass watch set a little fast. When somebody else has the floor, Annette holds eye contact until the other person has finished.",
+  "personality": "Annette treats a small promise with the gravity others reserve for a contract. This makes Annette lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To stay near the neighbors who recognize the son's sounds.",
+  "family": "Marlowe Nolasco is Annette’s second cousin. Annette calls back when there is finally a little privacy. Marlowe leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *Station steps in rain*, Marlowe says, “A soaked man mistook my coat for a uniform.”",
+  "connections": "Agnes Kramer. A family tie to the rent collector makes honesty with the next-door neighbor essential.",
+  "familyIds": [
+    "AH-R0482"
+  ],
+  "connectionIds": [
+    "AH-R0757"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative offers the family a sofa with conditions",
+      "response": "Annette asks what using the sofa would mean for the people already living there.",
+      "asWritten": "A relative offers the family a sofa with conditions. Annette asks what using the sofa would mean for the people already living there."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Annette asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Annette asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Annette says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Annette says what can be returned and asks whether that will do."
+    }
+  ]
+}

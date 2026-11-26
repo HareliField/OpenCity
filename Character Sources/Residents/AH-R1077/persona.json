@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1077",
+  "personId": "AH-R1077",
+  "name": "Martin Henry",
+  "age": 32,
+  "occupation": "Office associate",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The guarantee",
+  "biography": "stories/residents/08/03-the-guarantee.md#ah-r1077",
+  "life": "“I still remember a colleague pretending an inherited opportunity was a lottery win.” People around Lighthouse Cove know Martin by a small Wednesday habit. Martin takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "My parents owned nothing they could pledge. I joined the firm because I thought everybody here knew how exceptional that guarantee was.",
+  "appearance": "On an ordinary day, look for a plum-colored cardigan and a folded shopping list secured by a miniature clip. Martin has two dimples that appear only with a full smile, with auburn hair cut square at the nape. Martin presses the lips together to keep a smile in during a conversation.",
+  "personality": "Martin has a talent for getting adversaries to laugh at exactly the same thing. Martin knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To name the family's advantage truthfully.",
+  "family": "Salma Ilyas is Martin’s second cousin. Martin is allowed to ask about the bad news afterward. Salma calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The blue suit*, Salma says, “At my own ceremony nobody could pronounce my mother's name.”",
+  "connections": "Patricia Ryan. The six-month interest offer has to be named honestly by the people who will benefit.",
+  "familyIds": [
+    "AH-R0005"
+  ],
+  "connectionIds": [
+    "AH-R1076"
+  ],
+  "reactions": [
+    {
+      "situation": "A borrower learns exactly what the guarantee cost",
+      "response": "Martin puts the actual pledged property and repayment date on paper.",
+      "asWritten": "A borrower learns exactly what the guarantee cost. Martin puts the actual pledged property and repayment date on paper."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Martin asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Martin asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Martin asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Martin asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

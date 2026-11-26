@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0954",
+  "personId": "AH-R0954",
+  "name": "Victor Armas",
+  "age": 33,
+  "occupation": "Ward aide",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The empty chair on nights",
+  "biography": "stories/residents/07/06-the-empty-chair-on-nights.md#ah-r0954",
+  "life": "“I still remember a pair of shoes shared between two workers.” People around Studio Boulevard know Victor by a small Sunday habit. Victor waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I borrowed her spare trainers on my first night. I want to return them with the eight years still visible.",
+  "appearance": "Victor is easy to recognize by a swept fringe and a closely clipped nape and a narrow face with an expressive upper lip. Usually dressed in a plum-colored cardigan with a comb in a sleeve sewn into the lining, Victor leans a shoulder against the wall during long conversations when listening.",
+  "personality": "Victor loves a well-told anecdote and distrusts the neat ending. The parts Victor remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To return the trainers in person.",
+  "family": "Lena Price is Victor’s half-sibling. Victor can always ask for five minutes alone. Lena asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The Saturday swap*, Lena says, “I agreed to work half the shift so my neighbor could take her citizenship oath.”",
+  "connections": "Gale Felix. The loaned shoes and the surplus cake are two practical thank-yous with very different recipients.",
+  "familyIds": [
+    "AH-R0790"
+  ],
+  "connectionIds": [
+    "AH-R0958"
+  ],
+  "reactions": [
+    {
+      "situation": "The departing nurse asks for an ordinary breakfast",
+      "response": "Victor keeps the breakfast small and sets work questions aside.",
+      "asWritten": "The departing nurse asks for an ordinary breakfast. Victor keeps the breakfast small and sets work questions aside."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Victor offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Victor offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Victor includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Victor includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0279",
+  "personId": "AH-R0279",
+  "name": "Martin Martin",
+  "age": 44,
+  "occupation": "Community radio editor",
+  "home": "Old Town",
+  "episode": "The quiet verse",
+  "biography": "stories/residents/02/13-the-quiet-verse.md#ah-r0279",
+  "life": "“I edited the last news bulletin in my father's voice before he retired.” People around Ferris Deli know Martin by a small Friday habit. Martin asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I promised a recording to my sister overseas. I left in the sound of somebody taking a breath.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a replacement button a shade darker than the others. Martin has heavy brows and an unusually delicate jaw, with a dark undercut with a longer wave on top. Martin rubs a thumb along the edge of the nearest pocket during a conversation.",
+  "personality": "Martin reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Martin trusts most.",
+  "agenda": "To send the untouched pause to the sister overseas.",
+  "family": "Elliot Cotton is Martin’s half-sibling. Martin saves a place. Elliot chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *A prize nobody entered*, Elliot says, “I am the brother's former girlfriend. There is a paragraph I never wanted my child to read.”",
+  "connections": "Lucinda Reyes. The accompanist's foot tapping stays on the recording along with the held breath.",
+  "familyIds": [
+    "AH-R1116"
+  ],
+  "connectionIds": [
+    "AH-R0274"
+  ],
+  "reactions": [
+    {
+      "situation": "The silent verse gets applause in the wrong place",
+      "response": "Martin gives the singer time to resume instead of trying to conduct the applause.",
+      "asWritten": "The silent verse gets applause in the wrong place. Martin gives the singer time to resume instead of trying to conduct the applause."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Martin asks the cashier to hold it and lets a claimant identify the writing and amount privately.",
+      "asWritten": "An envelope of wages is found under a café chair. Martin asks the cashier to hold it and lets a claimant identify the writing and amount privately."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Martin does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Martin does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

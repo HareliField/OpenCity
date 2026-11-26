@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1397",
+  "personId": "AH-R1397",
+  "name": "Reina Sanders",
+  "age": 50,
+  "occupation": "Court reporter",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The return of a witness",
+  "biography": "stories/residents/10/05-the-return-of-a-witness.md#ah-r1397",
+  "life": "“I still remember being recognized by a photograph I had taken rather than any article.” On Tuesday, near the courtyard by Ferry Street Rooms, Reina prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I covered the hearing as a reporter. I am here to deliver her old photograph, with my notebook at home.",
+  "appearance": "Reina has thick, tightly coiled hair, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with one loose pocket corner secured with green thread. When somebody else has the floor, Reina grins on one side while the eyes stay serious.",
+  "personality": "Reina carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To return the photograph with the notebook closed.",
+  "family": "Harry Gill is Reina’s cousin raised in the same household. Reina calls back when there is finally a little privacy. Harry leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The first delivery fee*, Harry says, “I designed an efficient route and forgot half the addresses need somebody to wait for them to answer.”",
+  "connections": "Winifred Bell. The reporter returns a photograph that contains the daughter's old neighborhood as well as the witness.",
+  "familyIds": [
+    "AH-R1144"
+  ],
+  "connectionIds": [
+    "AH-R1396"
+  ],
+  "reactions": [
+    {
+      "situation": "The witness runs into a convicted neighbor's family",
+      "response": "Reina gives both parties the space to pass or speak without an audience.",
+      "asWritten": "The witness runs into a convicted neighbor's family. Reina gives both parties the space to pass or speak without an audience."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Reina helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Reina helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Reina offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Reina offers to accompany them while they tell the truth."
+    }
+  ]
+}

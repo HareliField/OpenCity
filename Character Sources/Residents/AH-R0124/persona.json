@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0124",
+  "personId": "AH-R0124",
+  "name": "Pax Orr",
+  "age": 32,
+  "occupation": "Sound technician",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The borrowed bass",
+  "biography": "stories/residents/01/13-the-borrowed-bass.md#ah-r0124",
+  "life": "Pax started doing sound work in order to learn what his absent father knew. The more successful he became, the less sure he was that a repaired instrument could answer any of his original questions. People around Maré Coffee know Pax by a small Tuesday habit. Pax likes the table where people coming off shift stop checking the time.",
+  "voice": "I recognized the wiring by a burned thumbprint in the solder. My father repaired it the week he left us. I want a photo of the wiring and no part of the ownership argument.",
+  "appearance": "On an ordinary day, look for a dark green knitted vest and a seam let out by a narrow strip of contrasting fabric. Pax has a scattering of freckles across the bridge of the nose, with auburn hair cut square at the nape. Pax steadies a cup with both hands while listening during a conversation.",
+  "personality": "Pax has a talent for getting adversaries to laugh at exactly the same thing. Pax knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To take a wiring photograph without claiming the instrument.",
+  "family": "Rae Nelson is Pax’s cousin raised in the same household. Pax puts the kettle on. Rae chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The painted footprint*, Rae says, “I wear an artificial foot. I want to trace mine beside it on paper and take the pair home.”",
+  "connections": "Sid Idris. They discuss how a photograph of a repair could stay with the family while the instrument goes on earning its keep.",
+  "familyIds": [
+    "AH-R0380"
+  ],
+  "connectionIds": [
+    "AH-R0127"
+  ],
+  "reactions": [
+    {
+      "situation": "The band is called early for its audition",
+      "response": "Pax finds out how many minutes the band actually has before treating the slot as lost.",
+      "asWritten": "The band is called early for its audition. Pax finds out how many minutes the band actually has before treating the slot as lost."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Pax offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Pax offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Pax asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Pax asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

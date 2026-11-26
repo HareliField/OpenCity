@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0623",
+  "personId": "AH-R0623",
+  "name": "Alexei Gibbs",
+  "age": 39,
+  "occupation": "Typesetter",
+  "home": "Midtown",
+  "episode": "The trust with a typo",
+  "biography": "stories/residents/05/03-the-trust-with-a-typo.md#ah-r0623",
+  "life": "“I still remember printing the wrong accent on a teacher's name.” On Saturday, near Juniper Street, Alexei knows which of the west-side porches has a seat in the shade.",
+  "voice": "I made the typo from a penciled instruction the founder wrote herself. I kept the instruction.",
+  "appearance": "Alexei has close-cropped dark curls, a wide brow and a narrow jaw, and a favorite piece of clothing, a red windbreaker. It usually goes with a printed handkerchief folded into the pocket. When somebody else has the floor, Alexei draws small circles on a tabletop while waiting.",
+  "personality": "Alexei prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To keep the penciled instruction with the print proof.",
+  "family": "Dennis Perry is Alexei’s cousin. At home the birthday guest used to get first choice of song. One quiet relative chose silence and got ten wonderful minutes in which everybody could hear the sea. Alexei can keep a good gathering from becoming an obligation to entertain. Asked about *The housecoat commission*, Dennis says, “I iron on a child's old desk. The collar turned out square because the desk was, and she liked it.”",
+  "connections": "Lane Marsh. The instruction preserved by the printer determines which letters the founder will sign.",
+  "familyIds": [
+    "AH-R0439"
+  ],
+  "connectionIds": [
+    "AH-R0630"
+  ],
+  "reactions": [
+    {
+      "situation": "A recipient thinks the nickname makes the letter a joke",
+      "response": "Alexei confirms the letter with the trust before asking the recipient to respond.",
+      "asWritten": "A recipient thinks the nickname makes the letter a joke. Alexei confirms the letter with the trust before asking the recipient to respond."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Alexei helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Alexei helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Alexei clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Alexei clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0201",
+  "personId": "AH-R0201",
+  "name": "Cory Palmer",
+  "age": 48,
+  "occupation": "Medical transcriptionist",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A red mitten",
+  "biography": "stories/residents/02/06-a-red-mitten.md#ah-r0201",
+  "life": "“I worked first in a ward where patients signed their lunch trays with stickers.” On Monday, near the brick passage off the shop row, Cory takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I put it on the chair where my sister was sitting before her diagnosis. Somebody thought it was lost property.",
+  "appearance": "Cory is easy to recognize by a blunt cut just below the ears and a small notch in the left eyebrow. Usually dressed in a moss-green cardigan with a little coil of soft measuring tape, Cory holds eye contact until the other person has finished when listening.",
+  "personality": "Cory admires skill and distrusts the idea that skill gives anyone permission to be rude. Cory learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To keep a chair available without making the ward think it is reserved forever.",
+  "family": "Frances Duran is Cory’s cousin raised in the same household. A holiday photograph lost its names when somebody replaced the frame. Between them they have identified every person except the one holding the camera. Cory can date a whole summer by somebody's shoes. Asked about *The crash anniversary*, Frances says, “I designed the crossing and have read four reports.”",
+  "connections": "Dale Nielsen. A saved seat and a child's game account for the mitten's first small journey.",
+  "familyIds": [
+    "AH-R1014"
+  ],
+  "connectionIds": [
+    "AH-R0202"
+  ],
+  "reactions": [
+    {
+      "situation": "The waiting-room mitten is about to be thrown away",
+      "response": "Cory asks whether the other mitten is still being looked for.",
+      "asWritten": "The waiting-room mitten is about to be thrown away. Cory asks whether the other mitten is still being looked for."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Cory takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Cory takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Cory describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Cory describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

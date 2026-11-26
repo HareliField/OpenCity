@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0154",
+  "personId": "AH-R0154",
+  "name": "Talia Dai",
+  "age": 64,
+  "occupation": "Family records researcher",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Hem by hem",
+  "biography": "stories/residents/02/01-hem-by-hem.md#ah-r0154",
+  "life": "“I started tracing relatives after an aunt's death notice gave the wrong birthplace.” On Sunday, near the public road outside the Port of Asphalt, Talia can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I kept the original cutting bill through two moves. It names a woman the family stopped mentioning.",
+  "appearance": "Talia has two dimples that appear only with a full smile. Look for gray hair trimmed very close behind the ears. On an ordinary day, the familiar outfit is a rust-colored canvas coat with a little coil of soft measuring tape. In conversation Talia touches a knuckle to the chin when searching for a word.",
+  "personality": "Talia finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To invite the omitted relative to help date the dress.",
+  "family": "Briar Wong is Talia’s second cousin. Talia calls about good news first. Briar is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The understudy sings*, Briar says, “I was at the rehearsal nobody filmed. I will remember the two women laughing halfway through the duet.”",
+  "connections": "Cory Colón. The ceremony words depend on a name recovered from the cutting bill.",
+  "familyIds": [
+    "AH-R1180"
+  ],
+  "connectionIds": [
+    "AH-R0152"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative asks to hide the changed seam",
+      "response": "Talia asks the bride herself what should show above the hem.",
+      "asWritten": "A relative asks to hide the changed seam. Talia asks the bride herself what should show above the hem."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Talia keeps the neighbor's place and finds out whether the stranger needs a different kind of help.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Talia keeps the neighbor's place and finds out whether the stranger needs a different kind of help."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Talia waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Talia waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

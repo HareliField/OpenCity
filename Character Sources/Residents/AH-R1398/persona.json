@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1398",
+  "personId": "AH-R1398",
+  "name": "Walter Easton",
+  "age": 57,
+  "occupation": "Plant keeper and grocer",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The return of a witness",
+  "biography": "stories/residents/10/05-the-return-of-a-witness.md#ah-r1398",
+  "life": "“I still remember repotting a friend's plant for the third year since she left.” People around Harbour Bakery know Walter by a small Monday habit. Walter buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I kept her houseplants all these years. They have become much too big for a gesture at the bus stop.",
+  "appearance": "Walter is easy to recognize by thick, tightly coiled hair and full cheeks and a mouth that pulls slightly to one side. Usually dressed in an unlined tan jacket with a replacement button a shade darker than the others, Walter presses the lips together to keep a smile in when listening.",
+  "personality": "Walter has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To agree how to move the now enormous plants.",
+  "family": "Marcel Braun is Walter’s second cousin. Walter chooses whether to use it. Marcel saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *Care with a clock*, Marcel says, “I lost a good carer because I complained that she rushed.”",
+  "connections": "Sylvia Reeves. A person returning for a visit and a gardener with enormous plants have to decide what can actually go home.",
+  "familyIds": [
+    "AH-R0886"
+  ],
+  "connectionIds": [
+    "AH-R1391"
+  ],
+  "reactions": [
+    {
+      "situation": "A reporter wants to attend the visit",
+      "response": "Walter asks the family whether a reporter was invited before sharing a time or an address.",
+      "asWritten": "A reporter wants to attend the visit. Walter asks the family whether a reporter was invited before sharing a time or an address."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Walter draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Walter draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Walter says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Walter says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0116",
+  "personId": "AH-R0116",
+  "name": "Len Brune",
+  "age": 50,
+  "occupation": "Road painter",
+  "home": "Eastside",
+  "episode": "The last green",
+  "biography": "stories/residents/01/12-the-last-green.md#ah-r0116",
+  "life": "Len painted the crooked arrow before he discovered how a driver's eye reads a bend. The complaints died down, but the driver who teased him became a customer for life. On Sunday, near the foot of Harbor Viaduct, Len pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "His old route passes the crooked arrow I painted in my first week. He has teased me about it for years. I've left it until after Friday so he can get in the last word.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a train token tied to a zipper pull. Len has a wide brow and a narrow jaw, with a loose dark braid. Len takes off the watch before a long conversation during a conversation.",
+  "personality": "Len has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To give the retired cabdriver a last chance to tease about the arrow.",
+  "family": "Harley Dias is Len’s younger cousin. Len brings a spare shopping bag. Harley chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *A call heard twice*, Harley says, “I called the resident later about paperwork.”",
+  "connections": "Nita Ellisby. The road arrow and the seat dip are two marks of the same career that these workers can preserve for a little longer.",
+  "familyIds": [
+    "AH-R1239"
+  ],
+  "connectionIds": [
+    "AH-R0117"
+  ],
+  "reactions": [
+    {
+      "situation": "The old driver wants to change the farewell route",
+      "response": "Len takes the changed route seriously and checks who needs to know the new return time.",
+      "asWritten": "The old driver wants to change the farewell route. Len takes the changed route seriously and checks who needs to know the new return time."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Len asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Len asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Len says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Len says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

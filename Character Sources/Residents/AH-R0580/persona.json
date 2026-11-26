@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0580",
+  "personId": "AH-R0580",
+  "name": "Diego Mitchell",
+  "age": 74,
+  "occupation": "Retired public librarian",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A play in a pocket",
+  "biography": "stories/residents/04/13-a-play-in-a-pocket.md#ah-r0580",
+  "life": "“I still remember the missing brother in our first classroom play.” People around the brick passage off the shop row know Diego by a small Sunday habit. Diego takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I did the same scene six times and only the oldest listener guessed where the missing brother had gone.",
+  "appearance": "On an ordinary day, look for a charcoal zip cardigan and a watch on a cracked leather band. Diego has a small notch in the left eyebrow, with salt-and-pepper curls. Diego holds eye contact until the other person has finished during a conversation.",
+  "personality": "Diego tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Diego will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To meet the listener who understood the ending.",
+  "family": "Patrick Osborne is Diego’s first cousin once removed. Diego makes the call. Patrick is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The third bedroom*, Patrick says, “I am the lodger who offered to leave. I need six weeks and a guarantor, which nobody remembered to ask about.”",
+  "connections": "Gerard Marquez. The pretend landlord is the listener who guesses where the missing character went.",
+  "familyIds": [
+    "AH-R1134"
+  ],
+  "connectionIds": [
+    "AH-R0572"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor wants to record a private performance",
+      "response": "Diego asks the actor and the sole listener separately before allowing a recording.",
+      "asWritten": "A visitor wants to record a private performance. Diego asks the actor and the sole listener separately before allowing a recording."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Diego asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Diego asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Diego repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Diego repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

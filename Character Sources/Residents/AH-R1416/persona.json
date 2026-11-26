@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1416",
+  "personId": "AH-R1416",
+  "name": "Miriam Lim",
+  "age": 72,
+  "occupation": "Retired teacher",
+  "home": "Old Town",
+  "episode": "An empty dedication",
+  "biography": "stories/residents/10/07-an-empty-dedication.md#ah-r1416",
+  "life": "“I still remember confiscating a school note too funny to throw away.” People around the brick passage off the shop row know Miriam by a small Monday habit. Miriam takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I taught the novelist to read. My favorite thing she wrote is still a vulgar note passed at school.",
+  "appearance": "Miriam has a crooked front tooth visible when laughing. Look for two white streaks in otherwise dark hair. On an ordinary day, the familiar outfit is an unlined tan jacket with a small enamel bird on the lapel. In conversation Miriam touches a knuckle to the chin when searching for a word.",
+  "personality": "Miriam has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To let the novelist keep the embarrassing school note private.",
+  "family": "Gerard Garza is Miriam’s cousin. Miriam decides what stays off the paper. Gerard brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *An old restaurant debt*, Gerard says, “I lent the family my black coat and got the wrong one back.”",
+  "connections": "Cameron Tsai. The bookseller can leave copies blank for teachers who have a story of their own to dedicate.",
+  "familyIds": [
+    "AH-R0997"
+  ],
+  "connectionIds": [
+    "AH-R1420"
+  ],
+  "reactions": [
+    {
+      "situation": "A reader asks for a copy with the page still blank",
+      "response": "Miriam keeps a clean, blank copy aside for the reader to dedicate.",
+      "asWritten": "A reader asks for a copy with the page still blank. Miriam keeps a clean, blank copy aside for the reader to dedicate."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Miriam moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Miriam moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Miriam asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Miriam asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

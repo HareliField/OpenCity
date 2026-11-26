@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0488",
+  "personId": "AH-R0488",
+  "name": "Adrian Bhandari",
+  "age": 28,
+  "occupation": "Courier",
+  "home": "the western residential streets",
+  "episode": "Station steps in rain",
+  "biography": "stories/residents/04/04-station-steps-in-rain.md#ah-r0488",
+  "life": "“I still remember a folded complaint saved in my work belt.” People around Studio Boulevard know Adrian by a small Tuesday habit. Adrian waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I put my complaint in my pocket. A young constable came outside later to ask if I still wanted to make it.",
+  "appearance": "Adrian is easy to recognize by a smooth side part with one rebellious curl and one cheek that creases before the other. Usually dressed in a narrow-striped sweater with a knotted piece of sail thread on a key ring, Adrian counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Adrian can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Adrian can afford to give, and family knows to take it seriously.",
+  "agenda": "To bring the complaint to the quieter second meeting.",
+  "family": "Winifred Kerr is Adrian’s stepsibling. Adrian puts the kettle on. Winifred chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The crash anniversary*, Winifred says, “I still drive over it because my livelihood depends on the road.”",
+  "connections": "Vivian Acosta. They arrange two private ways to finish a complaint after the storm.",
+  "familyIds": [
+    "AH-R1019"
+  ],
+  "connectionIds": [
+    "AH-R0481"
+  ],
+  "reactions": [
+    {
+      "situation": "An officer asks whether the wet event should still count as a hearing",
+      "response": "Adrian asks who missed the chance to speak before calling the hearing complete.",
+      "asWritten": "An officer asks whether the wet event should still count as a hearing. Adrian asks who missed the chance to speak before calling the hearing complete."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Adrian offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Adrian offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Adrian suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Adrian suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

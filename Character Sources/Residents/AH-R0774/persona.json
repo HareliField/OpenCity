@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0774",
+  "personId": "AH-R0774",
+  "name": "Ariel Jain",
+  "age": 35,
+  "occupation": "Delivery planner",
+  "home": "Eastside",
+  "episode": "Money after marriage",
+  "biography": "stories/residents/06/03-money-after-marriage.md#ah-r0774",
+  "life": "“I still remember reading a will before I understood what I liked doing.” On Wednesday, near the foot of Harbor Viaduct, Ariel pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I am the child who loves both parents and has no interest in inheriting their chair at the bank.",
+  "appearance": "Ariel has full cheeks and a mouth that pulls slightly to one side. Look for a swept fringe and a closely clipped nape. On an ordinary day, the familiar outfit is a boxy denim jacket with a watch on a cracked leather band. In conversation Ariel leans a shoulder against the wall during long conversations.",
+  "personality": "Ariel loves a well-told anecdote and distrusts the neat ending. The parts Ariel remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To decline the inherited management chair gracefully.",
+  "family": "Rosa Taylor is Ariel’s second cousin. Ariel offers the first invitation. Rosa gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The empty chair on nights*, Rosa says, “I am her neighbor. I can deliver soup but I refuse to carry gossip in either direction.”",
+  "connections": "Charles Shah. Unpaid parental work explains why the adult child sees inheriting the chair as an obligation. Also in the story is Magdalena Macrae (parent).",
+  "familyIds": [
+    "AH-R0957"
+  ],
+  "connectionIds": [
+    "AH-R0773",
+    "AH-R0771"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver says payday matters more than the settlement",
+      "response": "Ariel checks what money is ring-fenced for the drivers already on the rota.",
+      "asWritten": "A driver says payday matters more than the settlement. Ariel checks what money is ring-fenced for the drivers already on the rota."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Ariel keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Ariel keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Ariel includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Ariel includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

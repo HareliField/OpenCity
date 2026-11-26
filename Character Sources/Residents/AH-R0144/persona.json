@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0144",
+  "personId": "AH-R0144",
+  "name": "Fenn Roche",
+  "age": 40,
+  "occupation": "Yacht broker",
+  "home": "the western residential streets",
+  "episode": "The empty berth",
+  "biography": "stories/residents/01/15-the-empty-berth.md#ah-r0144",
+  "life": "Fenn has sold boats to people who never once left the marina in them. He is very good at selling the feeling of a Saturday that doesn't yet exist. A buyer with new cushions and nowhere to put them makes the trick too literal for comfort. Thursday often includes a stop at the corner outside Coastal Barber, where Fenn usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I've been selling an imaginary fifth berth in people's daydreams. One client has already bought cushions. I owe her a phone call before she buys the boat.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a watch on a cracked leather band. Fenn has heavy brows and an unusually delicate jaw, with short black hair swept back. Fenn looks toward the door whenever a name is called during a conversation.",
+  "personality": "Fenn talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Fenn's ways of saying that it is all right to leave.",
+  "agenda": "To tell the buyer the truth about the nonexistent vacancy.",
+  "family": "Jules Wong is Fenn’s cousin. Fenn remembers the birthdays. Jules asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Home with stairs*, Jules says, “I priced the missing rail. My family did the original job and used the cheapest possible ending.”",
+  "connections": "Sylvia Moros. A broker's imaginary vacancy has to be answered by the woman who really owns the four berths.",
+  "familyIds": [
+    "AH-R0803"
+  ],
+  "connectionIds": [
+    "AH-R0141"
+  ],
+  "reactions": [
+    {
+      "situation": "A junior rower says the wet step feels unsafe",
+      "response": "Fenn stops the lesson there and asks the rower to show the troublesome patch from a stable spot.",
+      "asWritten": "A junior rower says the wet step feels unsafe. Fenn stops the lesson there and asks the rower to show the troublesome patch from a stable spot."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Fenn asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Fenn asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Fenn says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Fenn says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

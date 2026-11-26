@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0862",
+  "personId": "AH-R0862",
+  "name": "Ellen Randall",
+  "age": 41,
+  "occupation": "Bus mechanic",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The late crossing",
+  "biography": "stories/residents/06/12-the-late-crossing.md#ah-r0862",
+  "life": "“I still remember a taxi window stuck shut with four passengers inside.” People around Maré Coffee know Ellen by a small Thursday habit. Ellen likes the table where people coming off shift stop checking the time.",
+  "voice": "I can help if nobody smokes in the car. Asking made me feel more fragile than giving lifts.",
+  "appearance": "On an ordinary day, look for an old plum windbreaker and a comb in a sleeve sewn into the lining. Ellen has a scattering of freckles across the bridge of the nose, with a swept fringe and a closely clipped nape. Ellen presses the lips together to keep a smile in during a conversation.",
+  "personality": "Ellen thinks best while walking. Sitting beneath someone's office clock makes Ellen sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To keep the shared van smoke-free.",
+  "family": "Gavin Jones is Ellen’s second cousin. Ellen sets the time to leave. Gavin picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The free fringe*, Gavin says, “I was the next in line and angry. The customer gave me a ride to my interview when our time ran over.”",
+  "connections": "Bianca Spencer. The no-smoking driver agrees to handle fuel money out of the rider's children's hearing.",
+  "familyIds": [
+    "AH-R0705"
+  ],
+  "connectionIds": [
+    "AH-R0867"
+  ],
+  "reactions": [
+    {
+      "situation": "A shift worker is late to the meeting point",
+      "response": "Ellen checks whether waiting will make the whole shift late and tells the rider the decision.",
+      "asWritten": "A shift worker is late to the meeting point. Ellen checks whether waiting will make the whole shift late and tells the rider the decision."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Ellen gets the people at the next doorway away from the smoke and asks a bystander to make the call.",
+      "asWritten": "Smoke appears under a shop door after closing. Ellen gets the people at the next doorway away from the smoke and asks a bystander to make the call."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Ellen asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Ellen asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0166",
+  "personId": "AH-R0166",
+  "name": "Olivia Hu",
+  "age": 58,
+  "occupation": "Charity shop sorter",
+  "home": "Old Town",
+  "episode": "Five missing lunches",
+  "biography": "stories/residents/02/02-five-missing-lunches.md#ah-r0166",
+  "life": "“I used to be too proud to let the charity shop save things for me.” People around the bank steps know Olivia by a small Saturday habit. Olivia takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I bought the empty tins by weight at the charity sale. I'm trying to buy the lunches back too.",
+  "appearance": "Olivia is easy to recognize by brown hair pinned away from the temples and a deep crease beside the mouth when smiling. Usually dressed in an old plum windbreaker with a pressed flower kept in the clear back of a phone case, Olivia takes off the watch before a long conversation when listening.",
+  "personality": "Olivia finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To trace the lunches that ought to have gone with the tins.",
+  "family": "Maya Scott is Olivia’s second cousin. Olivia remembers the birthdays. Maya asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A civilian apology*, Maya says, “I don't like apologies delivered in uniform.”",
+  "connections": "Logan Calder. They compare the price of buying back a tin with the cost of losing a shared break.",
+  "familyIds": [
+    "AH-R0934"
+  ],
+  "connectionIds": [
+    "AH-R0167"
+  ],
+  "reactions": [
+    {
+      "situation": "The night shift misses the collection time",
+      "response": "Olivia puts the unclaimed tin by for a later handover.",
+      "asWritten": "The night shift misses the collection time. Olivia puts the unclaimed tin by for a later handover."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Olivia brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Olivia brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Olivia points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Olivia points to the person who noticed the original mistake."
+    }
+  ]
+}

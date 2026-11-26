@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0241",
+  "personId": "AH-R0241",
+  "name": "Jody Graves",
+  "age": 46,
+  "occupation": "Deli sandwich maker",
+  "home": "the blocks north of the port",
+  "episode": "The bitter orange",
+  "biography": "stories/residents/02/10-the-bitter-orange.md#ah-r0241",
+  "life": "“I learned fillings from the person who remembered which customers had dentures.” Friday often includes a stop at the courtyard by Ferry Street Rooms, where Jody prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I remember mustard because she'd send it back if we skimped. Her son insists she hated mustard at home.",
+  "appearance": "Jody has a broad nose and a deep dimple on one cheek. Look for a swept fringe and a closely clipped nape. Away from the heat of the kitchen, the familiar outfit is a brown corduroy jacket with a pen clipped inside the neckline. In conversation Jody gives a little nod before asking a hard question.",
+  "personality": "Jody always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Jody is trying to tell the difference before the bill arrives.",
+  "agenda": "To give the regular's son the chance to taste the mustard version.",
+  "family": "Alma Faye is Jody’s cousin. Jody asks the question the rest of the family avoided. Alma chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The blue suit*, Alma says, “In the photograph you can see one white cuff.”",
+  "connections": "Anya Li. They compare the mustard remembered at the counter with the orange remembered on the walk home.",
+  "familyIds": [
+    "AH-R0009"
+  ],
+  "connectionIds": [
+    "AH-R0242"
+  ],
+  "reactions": [
+    {
+      "situation": "The deli proposes serving the memorial sandwich every Sunday",
+      "response": "Jody asks the family what they would want to eat on an ordinary Sunday.",
+      "asWritten": "The deli proposes serving the memorial sandwich every Sunday. Jody asks the family what they would want to eat on an ordinary Sunday."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Jody asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Jody asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Jody suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Jody suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

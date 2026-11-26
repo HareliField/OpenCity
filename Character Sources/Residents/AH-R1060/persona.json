@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1060",
+  "personId": "AH-R1060",
+  "name": "Daniel Fraser",
+  "age": 17,
+  "occupation": "Secondary school pupil",
+  "home": "Eastside",
+  "episode": "Reopening at six",
+  "biography": "stories/residents/08/01-reopening-at-six.md#ah-r1060",
+  "life": "“I still remember my first weekend spent earning instead of seeing my friends.” On Saturday, near Tideline Market, Daniel picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I am the teenager everyone expects to cover late. I want a reference for the mornings I already worked.",
+  "appearance": "Daniel is easy to recognize by short sandy hair and a marked widow's peak and a deep crease beside the mouth when smiling. Usually dressed in a black overshirt with pearl buttons with a square of clean cloth for polishing smudges, Daniel squares up pieces of paper while thinking when listening.",
+  "personality": "Daniel treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To earn a reference for the early shifts already completed.",
+  "family": "Noel Emery is Daniel’s parent’s cousin. Daniel makes the call. Noel is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A house divided kindly*, Noel says, “I can move one rosebush and cannot promise it will flower again.”",
+  "connections": "Toby Miles. Closing time affects both the last train and the youngest member of staff.",
+  "familyIds": [
+    "AH-R1434"
+  ],
+  "connectionIds": [
+    "AH-R1053"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer offers to pay for an extra private hour",
+      "response": "Daniel gets the cost of staffing the hour into the conversation before accepting a private fee.",
+      "asWritten": "A customer offers to pay for an extra private hour. Daniel gets the cost of staffing the hour into the conversation before accepting a private fee."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Daniel puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Daniel puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Daniel changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Daniel changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

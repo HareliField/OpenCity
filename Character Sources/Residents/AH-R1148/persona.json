@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1148",
+  "personId": "AH-R1148",
+  "name": "Amanda Roy",
+  "age": 56,
+  "occupation": "Former meal courier",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The first delivery fee",
+  "biography": "stories/residents/08/10-the-first-delivery-fee.md#ah-r1148",
+  "life": "“I still remember comforting my baby with the rhythm of a delivery bike.” Friday often includes a stop at the approach to Seabright Court, where Amanda likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I used to do those drops while my baby slept in the sling. Now my baby earns more on his bicycle than I did.",
+  "appearance": "On an ordinary day, look for an old plum windbreaker and a comb in a sleeve sewn into the lining. Amanda has a straight nose and deep-set eyes, with short black hair swept back. Amanda takes off the watch before a long conversation during a conversation.",
+  "personality": "Amanda loves a well-told anecdote and distrusts the neat ending. The parts Amanda remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To document how the original family deliveries worked.",
+  "family": "Vincent Trent is Amanda’s younger cousin. Amanda remembers the birthdays. Vincent asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A last ship together*, Vincent says, “I used to be their apprentice. I want them to stand back and see a lift go right without either of them directing it.”",
+  "connections": "Harry Gill. A route drawn on paper gets checked against a carrier's years of actual door waits.",
+  "familyIds": [
+    "AH-R1364"
+  ],
+  "connectionIds": [
+    "AH-R1144"
+  ],
+  "reactions": [
+    {
+      "situation": "The new rider asks who received last year's tips",
+      "response": "Amanda asks who did the work and who was paid before the shop divides today's tips.",
+      "asWritten": "The new rider asks who received last year's tips. Amanda asks who did the work and who was paid before the shop divides today's tips."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Amanda keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Amanda keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Amanda includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Amanda includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

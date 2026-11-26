@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0015",
+  "personId": "AH-R0015",
+  "name": "Mateo Serrat",
+  "age": 59,
+  "occupation": "Seafarers' cook",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A chair on the quay",
+  "biography": "stories/residents/01/02-a-chair-on-the-quay.md#ah-r0015",
+  "life": "Mateo packed his kitchen into one fish crate when his first shore lease ended. He can cook a week's dinners with the contents of that crate and can still describe the flat by counting the steps to the landing. On Wednesday, near the bank steps, Mateo takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I remember carrying that chair up four flights to my first shore flat. I'm sending the family the curry recipe I had to stand on it to reach.",
+  "appearance": "Mateo has a thin scattering of white hair over the crown, two dimples that appear only with a full smile, and a favorite piece of clothing, a black overshirt with pearl buttons. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Mateo leans a shoulder against the wall during long conversations.",
+  "personality": "Mateo loves a well-told anecdote and distrusts the neat ending. The parts Mateo remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To cook the old shore-flat supper for both sides of the family.",
+  "family": "Briar Poole is Mateo’s younger cousin. Mateo brings the paper and a pen. Briar decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The first straight paycheck*, Briar says, “I bought from him regularly. Losing his number matters less than losing the only person who asked if I'd eaten.”",
+  "connections": "Leon Armas. They have undertaken to get a retirement meal and a granddaughter to the same side of the port gate.",
+  "familyIds": [
+    "AH-R0792"
+  ],
+  "connectionIds": [
+    "AH-R0018"
+  ],
+  "reactions": [
+    {
+      "situation": "Two families claim the kitchen chair",
+      "response": "Mateo asks each claimant what they remember about the seat before the marks are shown.",
+      "asWritten": "Two families claim the kitchen chair. Mateo asks each claimant what they remember about the seat before the marks are shown."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Mateo sits beside them without expecting a performance and asks if they want to go outside.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Mateo sits beside them without expecting a performance and asks if they want to go outside."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Mateo includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Mateo includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

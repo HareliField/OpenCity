@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1394",
+  "personId": "AH-R1394",
+  "name": "Parker Parker",
+  "age": 62,
+  "occupation": "Family host and home help",
+  "home": "Eastside",
+  "episode": "The return of a witness",
+  "biography": "stories/residents/10/05-the-return-of-a-witness.md#ah-r1394",
+  "life": "“I still remember resetting a dinner table after explaining who was invited.” On Friday, near the foot of Harbor Viaduct, Parker pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I invited her for lunch and didn't tell her who would be at the table. I called back to give her the names.",
+  "appearance": "Parker is easy to recognize by iron-gray waves and a long face and high cheekbones. Usually dressed in a dark green knitted vest with a seam let out by a narrow strip of contrasting fabric, Parker starts to lift a hand, then waits to be invited to speak when listening.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Parker takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To give each lunch guest the names before they arrive.",
+  "family": "Wynn Martin is Parker’s cousin’s child. Parker brings something that can still be enjoyed tomorrow. Wynn checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The first language*, Wynn says, “I am the classmate she fears. I thought she was showing off until I tried one of those lines myself.”",
+  "connections": "Gabriel Ibrahim. The host and the aunt's carer agree on both the guest list and the hour lunch will end.",
+  "familyIds": [
+    "AH-R0970"
+  ],
+  "connectionIds": [
+    "AH-R1400"
+  ],
+  "reactions": [
+    {
+      "situation": "A reporter wants to attend the visit",
+      "response": "Parker asks the family whether a reporter was invited before sharing a time or an address.",
+      "asWritten": "A reporter wants to attend the visit. Parker asks the family whether a reporter was invited before sharing a time or an address."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Parker asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Parker asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Parker asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Parker asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

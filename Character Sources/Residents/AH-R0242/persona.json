@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0242",
+  "personId": "AH-R0242",
+  "name": "Anya Li",
+  "age": 51,
+  "occupation": "Former home-care worker",
+  "home": "Old Town",
+  "episode": "The bitter orange",
+  "biography": "stories/residents/02/10-the-bitter-orange.md#ah-r0242",
+  "life": "“For a year I tasted everything on a client's plate before she would eat.” On Monday, near Juniper Street, Anya knows which of the west-side porches has a seat in the shade.",
+  "voice": "I squeezed the orange she carried in her pocket. Nobody knew her medicine left a bitter taste.",
+  "appearance": "Anya is easy to recognize by black hair twisted into a small knot and a round face with a pronounced chin. Usually dressed in an unlined tan jacket with a seam let out by a narrow strip of contrasting fabric, Anya gathers both sleeves neatly before settling in when listening.",
+  "personality": "Anya has a talent for getting adversaries to laugh at exactly the same thing. Anya knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To re-create the orange's bitterness in the patient's usual order.",
+  "family": "Morgan Freeman is Anya’s cousin. Anya checks the date twice. Morgan brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *A widow bids again*, Morgan says, “I still have a lease written on a birthday card.”",
+  "connections": "Jody Graves. They compare the mustard remembered at the counter with the orange remembered on the walk home.",
+  "familyIds": [
+    "AH-R0927"
+  ],
+  "connectionIds": [
+    "AH-R0241"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative hates the ingredient everyone remembers",
+      "response": "Anya lets the relative choose a different sandwich without defending the menu.",
+      "asWritten": "A relative hates the ingredient everyone remembers. Anya lets the relative choose a different sandwich without defending the menu."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Anya gives up their own space if possible and asks the passengers who arrived first to choose what happens next.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Anya gives up their own space if possible and asks the passengers who arrived first to choose what happens next."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Anya asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Anya asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1064",
+  "personId": "AH-R1064",
+  "name": "Roman Wade",
+  "age": 40,
+  "occupation": "Former prisoner and warehouse cleaner",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Land without cranes",
+  "biography": "stories/residents/08/02-land-without-cranes.md#ah-r1064",
+  "life": "“I still remember getting a broom on my first morning after release.” People around Maré Coffee know Roman by a small Sunday habit. Roman likes the table where people coming off shift stop checking the time.",
+  "voice": "I got my first contract sweeping that floor after a conviction. Offices need cleaners too, and I want the hiring terms in writing.",
+  "appearance": "Roman has fine brows over wide-set eyes. Look for a dark undercut with a longer wave on top. On an ordinary day, the familiar outfit is a black overshirt with pearl buttons with a copper-colored clasp that has been repaired by hand. In conversation Roman takes off the watch before a long conversation.",
+  "personality": "Roman is kind in very practical ways and prickly about being thanked in public. Roman loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To get fair hiring terms recorded.",
+  "family": "Priya Solis is Roman’s half-sibling. Roman can stop the walk at any corner. Priya chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *A shelf of apologies*, Priya says, “I took mine on a ship and carried it through three oceans.”",
+  "connections": "Damian Fadel. The worker hired after prison shows the keyholder which overlooked jobs should be visible on the tour.",
+  "familyIds": [
+    "AH-R0665"
+  ],
+  "connectionIds": [
+    "AH-R1070"
+  ],
+  "reactions": [
+    {
+      "situation": "A worker says their job was left out of the consultation",
+      "response": "Roman records the missing job in the worker's own words for the consultation.",
+      "asWritten": "A worker says their job was left out of the consultation. Roman records the missing job in the worker's own words for the consultation."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Roman writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Roman writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Roman gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Roman gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

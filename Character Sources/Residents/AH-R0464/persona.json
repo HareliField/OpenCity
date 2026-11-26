@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0464",
+  "personId": "AH-R0464",
+  "name": "Ruth Tran",
+  "age": 43,
+  "occupation": "Salvage joiner",
+  "home": "Midtown",
+  "episode": "The soft wharf chalk",
+  "biography": "stories/residents/04/02-the-soft-wharf-chalk.md#ah-r0464",
+  "life": "“I still remember a salvage crate that smelled of figs.” On Sunday, near Tideline Market, Ruth picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I saved the piece of wood during repairs. It still smells of the crate my mother unpacked.",
+  "appearance": "Ruth is easy to recognize by short black hair swept back and full cheeks and a mouth that pulls slightly to one side. Usually dressed in a soft blue checked shirt with a braided bracelet with a single wooden bead, Ruth raises one eyebrow long before saying yes when listening.",
+  "personality": "Ruth finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To keep the marked wood in the family's possession.",
+  "family": "Hugo Barron is Ruth’s younger cousin. Ruth chooses whether to use it. Hugo saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The bitter orange*, Hugo says, “I used to hide from her behind the fridge because she'd ask about my exams.”",
+  "connections": "Jo Bloom. The shift stopped for a warning gives a carpenter time to save the marked board.",
+  "familyIds": [
+    "AH-R0246"
+  ],
+  "connectionIds": [
+    "AH-R0463"
+  ],
+  "reactions": [
+    {
+      "situation": "A handwriting expert contradicts an old dock worker",
+      "response": "Ruth puts the expert's reading beside the dock worker's account and asks for the date of each.",
+      "asWritten": "A handwriting expert contradicts an old dock worker. Ruth puts the expert's reading beside the dock worker's account and asks for the date of each."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Ruth tells the first helper what they actually saw and makes room for the rider to answer for themself.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Ruth tells the first helper what they actually saw and makes room for the rider to answer for themself."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Ruth points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Ruth points to the person who noticed the original mistake."
+    }
+  ]
+}

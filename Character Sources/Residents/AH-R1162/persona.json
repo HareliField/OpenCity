@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1162",
+  "personId": "AH-R1162",
+  "name": "Jacob Nelson",
+  "age": 44,
+  "occupation": "Driving instructor",
+  "home": "the blocks north of the port",
+  "episode": "The high road home",
+  "biography": "stories/residents/08/12-the-high-road-home.md#ah-r1162",
+  "life": "“I still remember a student who could turn a wheel and still couldn't leave the driveway.” On Thursday, near the public road outside the Port of Asphalt, Jacob can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I trained the driver. I taught a maneuver and missed the part where the view disappears for a second.",
+  "appearance": "Jacob has thick, tightly coiled hair, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a cloth patch so neatly matched it only shows in strong light. When somebody else has the floor, Jacob leans a shoulder against the wall during long conversations.",
+  "personality": "Jacob uses precise names for tools and very approximate names for feelings. People who know Jacob well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To teach the disappearing view as well as the maneuver.",
+  "family": "Victor Marks is Jacob’s half-sibling. Jacob saves a place. Victor chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *A four o'clock kitchen*, Victor says, “I keep the books. Early breakfasts double sales but also the number of taxis the kitchen staff buy.”",
+  "connections": "Briar Barrett. The instructor and painter compare the view through a moving windscreen.",
+  "familyIds": [
+    "AH-R1295"
+  ],
+  "connectionIds": [
+    "AH-R1166"
+  ],
+  "reactions": [
+    {
+      "situation": "A friend insists the return journey must happen that night",
+      "response": "Jacob asks the learner when they want to try again, leaving the friend's timetable out of it.",
+      "asWritten": "A friend insists the return journey must happen that night. Jacob asks the learner when they want to try again, leaving the friend's timetable out of it."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Jacob brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Jacob brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Jacob brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Jacob brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

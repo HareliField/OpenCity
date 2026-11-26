@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0529",
+  "personId": "AH-R0529",
+  "name": "Daphne Mills",
+  "age": 40,
+  "occupation": "Bus mechanic",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The rescue hut mural",
+  "biography": "stories/residents/04/08-the-rescue-hut-mural.md#ah-r0529",
+  "life": "“I still remember a brother who used to follow his own shadow.” On Monday, near Paper & Pine Books, Daphne starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "The shadow makes her look like my brother at four. I bring my dad down at that exact hour.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and a train token tied to a zipper pull. Daphne has a softly rounded chin under sharp cheekbones, with a loose dark braid. Daphne starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To bring the father at the hour of the familiar shadow.",
+  "family": "Nadia Carvalho is Daphne’s cousin. Daphne calls about good news first. Nadia is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *A widow bids again*, Nadia says, “I was asked to testify the building was sound.”",
+  "connections": "Anthony Bell. Two angles fit on a postcard that the father can revisit.",
+  "familyIds": [
+    "AH-R0929"
+  ],
+  "connectionIds": [
+    "AH-R0524"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor wants the painted figure made easier to recognize",
+      "response": "Daphne asks the original model which part has been misunderstood.",
+      "asWritten": "A visitor wants the painted figure made easier to recognize. Daphne asks the original model which part has been misunderstood."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Daphne stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Daphne stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Daphne listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Daphne listens first to the account of how it was actually used."
+    }
+  ]
+}

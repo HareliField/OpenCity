@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0919",
+  "personId": "AH-R0919",
+  "name": "Sasha Watts",
+  "age": 42,
+  "occupation": "Quay maintenance worker",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The absent signature",
+  "biography": "stories/residents/07/02-the-absent-signature.md#ah-r0919",
+  "life": "“I still remember a wedding photograph where everyone stood around one gap.” Thursday often includes a stop at Harbour Bakery, where Sasha buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I married into the family after she left. I'd like to know why there isn't a single photograph of her on the quay.",
+  "appearance": "Sasha has a scattering of freckles across the bridge of the nose. Look for a high puff tied with plain cord. Back on the street, the familiar outfit is a charcoal zip cardigan with a copper-colored clasp that has been repaired by hand. In conversation Sasha draws small circles on a tabletop while waiting.",
+  "personality": "Sasha carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To learn why the missing relative never appeared in a quay photograph.",
+  "family": "Alan Williams is Sasha’s stepsibling. Sasha decides what stays off the paper. Alan brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The spare spectacles*, Alan says, “I thought her hesitation meant doubt. She could describe the room exactly once the letters stayed still.”",
+  "connections": "Leon White. A berth used for pocket money belongs to a family whose photographs omitted a member.",
+  "familyIds": [
+    "AH-R0335"
+  ],
+  "connectionIds": [
+    "AH-R0913"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants the absent signer's address",
+      "response": "Sasha asks the absent person what address, if any, can be shared.",
+      "asWritten": "A relative wants the absent signer's address. Sasha asks the absent person what address, if any, can be shared."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Sasha brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Sasha brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Sasha offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Sasha offers to accompany them while they tell the truth."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0165",
+  "personId": "AH-R0165",
+  "name": "John Hong",
+  "age": 62,
+  "occupation": "Local museum registrar",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Five missing lunches",
+  "biography": "stories/residents/02/02-five-missing-lunches.md#ah-r0165",
+  "life": "“I learned to label exhibits from a mother who wrote dates on jam jars.” People around Maré Coffee know John by a small Thursday habit. John likes the table where people coming off shift stop checking the time.",
+  "voice": "I wanted the red tin for our museum display. Its owner still needs somewhere to put lunch.",
+  "appearance": "John has one cheek that creases before the other. Look for a neat white crop. On an ordinary day, the familiar outfit is an old plum windbreaker with a small enamel bird on the lapel. In conversation John gives a little nod before asking a hard question.",
+  "personality": "John has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To record the tin without taking it out of useful circulation.",
+  "family": "Scout Nord is John’s younger cousin. John calls about good news first. Scout is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Rent in a biscuit tin*, Scout says, “I thought the extra rent was a gift. I had already bought school shoes when the owner knocked.”",
+  "connections": "Wesley Joseph. They argue over whether a working lunch tin is ready to become a museum piece.",
+  "familyIds": [
+    "AH-R0347"
+  ],
+  "connectionIds": [
+    "AH-R0161"
+  ],
+  "reactions": [
+    {
+      "situation": "An old tin is claimed by two crews",
+      "response": "John invites both crews to describe the lid without putting either at fault.",
+      "asWritten": "An old tin is claimed by two crews. John invites both crews to describe the lid without putting either at fault."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "John calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. John calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "John asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, John asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

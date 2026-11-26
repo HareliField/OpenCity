@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0899",
+  "personId": "AH-R0899",
+  "name": "Sasha Gil",
+  "age": 49,
+  "occupation": "Berth scheduler",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Winter afloat",
+  "biography": "stories/residents/06/15-winter-afloat.md#ah-r0899",
+  "life": "“I still remember a yard gate shutting with someone still looking for a bed.” People around the courtyard by Ferry Street Rooms know Sasha by a small Tuesday habit. Sasha prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I want the berth clear on Friday. The owner asked me what time checkout is for someone whose home floats.",
+  "appearance": "Sasha has a dark undercut with a longer wave on top, a softly rounded chin under sharp cheekbones, and a favorite piece of clothing, a cropped bottle-green coat. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Sasha turns fully toward the person speaking.",
+  "personality": "Sasha loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To agree a departure time the resident can meet.",
+  "family": "Cian Farrell is Sasha’s half-sibling. Sasha keeps the photographs. Cian knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The release address*, Cian says, “I have addressed birthday envelopes to a demolition site for two years.”",
+  "connections": "Sam Ochoa. A departing berth holder is still somebody a dock neighbor is counting on to feed a gull.",
+  "familyIds": [
+    "AH-R0941"
+  ],
+  "connectionIds": [
+    "AH-R0894"
+  ],
+  "reactions": [
+    {
+      "situation": "A yard manager asks the liveaboard to leave by Friday",
+      "response": "Sasha asks where the resident can sleep on the first night ashore.",
+      "asWritten": "A yard manager asks the liveaboard to leave by Friday. Sasha asks where the resident can sleep on the first night ashore."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Sasha offers an ordinary errand that lets the distressed person leave without being followed by an audience.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Sasha offers an ordinary errand that lets the distressed person leave without being followed by an audience."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Sasha offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Sasha offers one about their own embarrassment instead."
+    }
+  ]
+}

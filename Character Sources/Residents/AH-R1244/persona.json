@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1244",
+  "personId": "AH-R1244",
+  "name": "Desmond Green",
+  "age": 19,
+  "occupation": "Court visitor and student",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A clean coat for court",
+  "biography": "stories/residents/09/05-a-clean-coat-for-court.md#ah-r1244",
+  "life": "“I still remember drawing my father as tall as the courthouse door.” On Monday, near Tideline Market, Desmond picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I want the court artist to draw my father in the shirt underneath. That is the man I live with.",
+  "appearance": "Desmond has a softly rounded chin under sharp cheekbones. Look for auburn hair cut square at the nape. On an ordinary day, the familiar outfit is a red windbreaker with a printed handkerchief folded into the pocket. In conversation Desmond squares up pieces of paper while thinking.",
+  "personality": "Desmond is kind in very practical ways and prickly about being thanked in public. Desmond loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To get a court drawing that still looks like Dad.",
+  "family": "Jody Schmidt is Desmond’s older cousin. Desmond puts the kettle on. Jody chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The last home visit*, Jody says, “I borrowed her car when my mother was dying.”",
+  "connections": "Oscar Salas. The child can see the shirt under the alteration the tailor made for the hearing. Also in the story is Gareth Rivera (father).",
+  "familyIds": [
+    "AH-R1487"
+  ],
+  "connectionIds": [
+    "AH-R1245",
+    "AH-R1241"
+  ],
+  "reactions": [
+    {
+      "situation": "The borrower wants to return the coat before the hearing",
+      "response": "Desmond checks whether the borrower has something suitable to wear through the hearing.",
+      "asWritten": "The borrower wants to return the coat before the hearing. Desmond checks whether the borrower has something suitable to wear through the hearing."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Desmond keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Desmond keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Desmond gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Desmond gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

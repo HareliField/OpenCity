@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0245",
+  "personId": "AH-R0245",
+  "name": "Blake Baker",
+  "age": 38,
+  "occupation": "Deli partner",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The bitter orange",
+  "biography": "stories/residents/02/10-the-bitter-orange.md#ah-r0245",
+  "life": "“I bought the keys and inherited eighteen decades of other people's expectations.” People around Breakwater Way know Blake by a small Monday habit. Blake stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I'm the new owner. I promised a memorial special before I'd ever tasted what she ate.",
+  "appearance": "Blake has short black hair swept back, a round face with a pronounced chin, and a favorite piece of clothing, a washed violet jersey. It usually goes with a pair of reading glasses in a cloth sleeve. When somebody else has the floor, Blake turns fully toward the person speaking.",
+  "personality": "Blake takes a rejection personally for a day and analytically on the second morning. Blake can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To approve a memorial special only after tasting it.",
+  "family": "Karina May is Blake’s cousin raised in the same household. Blake makes room at the table. Karina brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Land without cranes*, Karina says, “I draw architectural renderings. I put a worker in mine and realized there'd be no job for the person I drew.”",
+  "connections": "Lou Khan. A new deli owner learns who used to eat the other half. Also in the story is Freya King (menu adviser).",
+  "familyIds": [
+    "AH-R1063"
+  ],
+  "connectionIds": [
+    "AH-R0243",
+    "AH-R0250"
+  ],
+  "reactions": [
+    {
+      "situation": "The deli proposes serving the memorial sandwich every Sunday",
+      "response": "Blake asks the family what they would want to eat on an ordinary Sunday.",
+      "asWritten": "The deli proposes serving the memorial sandwich every Sunday. Blake asks the family what they would want to eat on an ordinary Sunday."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Blake asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Blake asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Blake turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Blake turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

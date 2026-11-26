@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0771",
+  "personId": "AH-R0771",
+  "name": "Magdalena Macrae",
+  "age": 62,
+  "occupation": "Cold-chain company founder",
+  "home": "the western residential streets",
+  "episode": "Money after marriage",
+  "biography": "stories/residents/06/03-money-after-marriage.md#ah-r0771",
+  "life": "“I still remember the first freezer our family bought at auction.” People around the market by Market Flats know Magdalena by a small Friday habit. Magdalena often waits until the delivery baskets are stacked before going in.",
+  "voice": "I founded it but my ex brought every first customer. I can't teach a valuation spreadsheet their names.",
+  "appearance": "On an ordinary day, look for a cropped bottle-green coat and a replacement button a shade darker than the others. Magdalena has a round face with a pronounced chin, with silver temples and a dark fringe. Magdalena looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Magdalena tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Magdalena will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To agree a valuation that recognizes the customer relationships.",
+  "family": "Avery Williams is Magdalena’s second cousin. Magdalena brings the paper and a pen. Avery decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The missing Sunday*, Avery says, “I know when my pills are due. I want somebody who will argue about the football on a Sunday.”",
+  "connections": "Terry Lin. They put the value of established customers beside the company's formal valuations. Also in the story is Ariel Jain (adult child).",
+  "familyIds": [
+    "AH-R1331"
+  ],
+  "connectionIds": [
+    "AH-R0778",
+    "AH-R0774"
+  ],
+  "reactions": [
+    {
+      "situation": "The divorcing founders ask staff to pick a side",
+      "response": "Magdalena asks when the next wages will arrive before giving either founder a public endorsement.",
+      "asWritten": "The divorcing founders ask staff to pick a side. Magdalena asks when the next wages will arrive before giving either founder a public endorsement."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Magdalena calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Magdalena calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Magdalena repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Magdalena repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

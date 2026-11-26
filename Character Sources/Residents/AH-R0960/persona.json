@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0960",
+  "personId": "AH-R0960",
+  "name": "Mateo Katz",
+  "age": 40,
+  "occupation": "Breakfast cook",
+  "home": "the blocks north of the port",
+  "episode": "The empty chair on nights",
+  "biography": "stories/residents/07/06-the-empty-chair-on-nights.md#ah-r0960",
+  "life": "“I still remember breakfast in daylight after working beneath fluorescent strips.” On Friday, near Studio Boulevard, Mateo waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I want one quiet breakfast with her outside work. She used to know how I took my eggs.",
+  "appearance": "Mateo has a wide brow and a narrow jaw. Look for short sandy hair and a marked widow's peak. Away from the heat of the kitchen, the familiar outfit is a faded indigo overshirt with a folded shopping list secured by a miniature clip. In conversation Mateo raises one eyebrow long before saying yes.",
+  "personality": "Mateo enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To have breakfast away from the ward.",
+  "family": "Adrian Keller is Mateo’s second cousin. Mateo brings a spare shopping bag. Adrian chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The last light at the harbor*, Adrian says, “I have been photographing glamorous boats. The owner asked me to photograph the little walk from deck to door instead.”",
+  "connections": "Billie Hunt. A breakfast invitation can reach the departed nurse without explaining her marriage to the ward.",
+  "familyIds": [
+    "AH-R1493"
+  ],
+  "connectionIds": [
+    "AH-R0952"
+  ],
+  "reactions": [
+    {
+      "situation": "The departing nurse asks for an ordinary breakfast",
+      "response": "Mateo keeps the breakfast small and sets work questions aside.",
+      "asWritten": "The departing nurse asks for an ordinary breakfast. Mateo keeps the breakfast small and sets work questions aside."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Mateo moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Mateo moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Mateo puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Mateo puts the deal away and suggests a walk."
+    }
+  ]
+}

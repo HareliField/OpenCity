@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0555",
+  "personId": "AH-R0555",
+  "name": "Darcy Lopez",
+  "age": 64,
+  "occupation": "Widowed grocer",
+  "home": "Coast Ridge",
+  "episode": "The fitting mirror",
+  "biography": "stories/residents/04/11-the-fitting-mirror.md#ah-r0555",
+  "life": "“I still remember cleaning an old thumbprint off the wrong window.” On Sunday, near the approach to Seabright Court, Darcy likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "My brother left a fingerprint where he always straightened his collar. I clean carefully around that corner.",
+  "appearance": "On an ordinary day, look for a cream pullover and a folded shopping list secured by a miniature clip. Darcy has a small notch in the left eyebrow, with short white hair and darker eyebrows. Darcy gives a little nod before asking a hard question during a conversation.",
+  "personality": "Darcy is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Darcy is concerned.",
+  "agenda": "To protect the remembered fingerprint for one more visit.",
+  "family": "Jay Leung is Darcy’s second cousin. Darcy saves a place. Jay chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The late crossing*, Jay says, “I used to laugh at the driver who sings himself awake.”",
+  "connections": "Ren Cullen. The mirror shows one person's silver hair and another's remembered fingerprint.",
+  "familyIds": [
+    "AH-R0869"
+  ],
+  "connectionIds": [
+    "AH-R0551"
+  ],
+  "reactions": [
+    {
+      "situation": "A client asks to sit outside the shared mirror's view",
+      "response": "Darcy puts the person's chair outside the reflection and lets them choose when to look.",
+      "asWritten": "A client asks to sit outside the shared mirror's view. Darcy puts the person's chair outside the reflection and lets them choose when to look."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Darcy draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Darcy draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Darcy asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Darcy asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

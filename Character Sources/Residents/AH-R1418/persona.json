@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1418",
+  "personId": "AH-R1418",
+  "name": "Jacqueline Glass",
+  "age": 48,
+  "occupation": "Book editor",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "An empty dedication",
+  "biography": "stories/residents/10/07-an-empty-dedication.md#ah-r1418",
+  "life": "“I still remember returning a paragraph with just its finest line intact.” On Sunday, near the approach to Seabright Court, Jacqueline likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I edited the manuscript so heavily I was beginning to hear my own voice. I'm pleased it's hers again.",
+  "appearance": "On an ordinary day, look for a black overshirt with pearl buttons and one cuff folded back twice. Jacqueline has a flat bridge to the nose and a mobile brow, with brown hair pinned away from the temples. Jacqueline looks toward the door whenever a name is called during a conversation.",
+  "personality": "Jacqueline keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Jacqueline wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To return the pages in the author's own voice.",
+  "family": "Emery Colón is Jacqueline’s half-sibling. Jacqueline is allowed to ask about the bad news afterward. Emery calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *One paid trial*, Emery says, “I caught a bus across town for the cheap day-old bread.”",
+  "connections": "Hamish Yeo. One supporter paid to keep the lights on while another kept the writer's own voice audible.",
+  "familyIds": [
+    "AH-R0849"
+  ],
+  "connectionIds": [
+    "AH-R1415"
+  ],
+  "reactions": [
+    {
+      "situation": "A reader asks for a copy with the page still blank",
+      "response": "Jacqueline keeps a clean, blank copy aside for the reader to dedicate.",
+      "asWritten": "A reader asks for a copy with the page still blank. Jacqueline keeps a clean, blank copy aside for the reader to dedicate."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Jacqueline keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Jacqueline keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Jacqueline offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Jacqueline offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

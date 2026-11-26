@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0102",
+  "personId": "AH-R0102",
+  "name": "Fay March",
+  "age": 78,
+  "occupation": "Retired seamstress",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Ten fingers",
+  "biography": "stories/residents/01/11-ten-fingers.md#ah-r0102",
+  "life": "Fay sewed wedding dresses for women who had opinions and mothers who had more. She trained herself to hear the quietest voice in the fitting room. Now that family speaks softly around her she would rather they raise a cheerful racket. People around the window at Night Shift Donuts know Fay by a small Monday habit. Fay knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I am the birthday girl. Everybody has taken to speaking softly around me. I asked for ten colors because I wanted to hear them quarrel over something cheerful.",
+  "appearance": "Fay has a softly rounded chin under sharp cheekbones. Look for silver temples and a dark fringe. On an ordinary day, the familiar outfit is a mustard canvas overshirt with a printed handkerchief folded into the pocket. In conversation Fay looks at people's hands before looking at what they carry.",
+  "personality": "Fay often says yes too quickly out of pride in being useful. The people closest to Fay have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To hear her friends argue and laugh over the ten colors.",
+  "family": "Ivy Perreault is Fay’s younger relative by marriage. Fay puts the kettle on. Ivy chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The second dog*, Ivy says, “I took the first report and wrote brown. The little girl gave me nine different browns to choose from.”",
+  "connections": "Suki Mossman (longtime nail technician). The birthday woman has trusted these hands with every difficult appointment since her husband died.",
+  "familyIds": [
+    "AH-R0183"
+  ],
+  "connectionIds": [
+    "AH-R0101"
+  ],
+  "reactions": [
+    {
+      "situation": "The birthday woman asks for five minutes by herself",
+      "response": "Fay lets the room empty and puts the next invitation in her hands.",
+      "asWritten": "The birthday woman asks for five minutes by herself. Fay lets the room empty and puts the next invitation in her hands."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Fay writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Fay writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Fay rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Fay rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

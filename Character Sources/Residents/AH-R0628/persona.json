@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0628",
+  "personId": "AH-R0628",
+  "name": "Rae Villa",
+  "age": 22,
+  "occupation": "Shop assistant",
+  "home": "Eastside",
+  "episode": "The trust with a typo",
+  "biography": "stories/residents/05/03-the-trust-with-a-typo.md#ah-r0628",
+  "life": "“I still remember recovering a real invitation from the kitchen bin.” Monday often includes a stop at Ferris Deli, where Rae asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I threw out the letter as a joke. The post carrier came back after work to tell me it counted.",
+  "appearance": "Rae has an aquiline nose and a square chin. Look for brown hair pinned away from the temples. On an ordinary day, the familiar outfit is a cropped bottle-green coat with a square of clean cloth for polishing smudges. In conversation Rae turns fully toward the person speaking.",
+  "personality": "Rae uses precise names for tools and very approximate names for feelings. People who know Rae well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To recover the real invitation before the closing date.",
+  "family": "Judith Dai is Rae’s older cousin. Rae checks the date twice. Judith brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The late crossing*, Judith says, “I work in traffic planning. I brought the ride log to the meeting that was going to cut another late bus.”",
+  "connections": "Clara Baines. A discarded envelope is proof that a missed deadline began with a plausible mistake.",
+  "familyIds": [
+    "AH-R0868"
+  ],
+  "connectionIds": [
+    "AH-R0622"
+  ],
+  "reactions": [
+    {
+      "situation": "The founder is asked to use a formal name",
+      "response": "Rae leaves the founder to decide what her own name on a letter should be.",
+      "asWritten": "The founder is asked to use a formal name. Rae leaves the founder to decide what her own name on a letter should be."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Rae puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Rae puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Rae brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Rae brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

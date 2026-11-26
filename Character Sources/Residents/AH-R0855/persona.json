@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0855",
+  "personId": "AH-R0855",
+  "name": "Joel Myers",
+  "age": 34,
+  "occupation": "Salon receptionist",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A chair of one's own",
+  "biography": "stories/residents/06/11-a-chair-of-one-s-own.md#ah-r0855",
+  "life": "“I still remember a regular fading from our calendar one appointment at a time.” Saturday often includes a stop at Paper & Pine Books, where Joel starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I cover the reception desk. I can tell from cancellations which technicians lose the same customers every summer.",
+  "appearance": "Joel has a smooth side part with one rebellious curl, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Joel looks toward the door whenever a name is called.",
+  "personality": "Joel takes a rejection personally for a day and analytically on the second morning. Joel can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To show the technicians their own seasonal cancellation patterns.",
+  "family": "Tom Clement is Joel’s half-sibling. Joel keeps the photographs. Tom knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The first delivery fee*, Tom says, “I can deliver on foot as far as the park. A hot lunch becomes a cold one exactly halfway across it.”",
+  "connections": "Levi Lau. A receptionist can name the seasonal gaps while a driver can show the worker another chair.",
+  "familyIds": [
+    "AH-R1146"
+  ],
+  "connectionIds": [
+    "AH-R0856"
+  ],
+  "reactions": [
+    {
+      "situation": "The studio asks for its chair deposit by Friday",
+      "response": "Joel checks whether the chair renter has seen the terms before the deposit is due.",
+      "asWritten": "The studio asks for its chair deposit by Friday. Joel checks whether the chair renter has seen the terms before the deposit is due."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Joel asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Joel asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Joel turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Joel turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

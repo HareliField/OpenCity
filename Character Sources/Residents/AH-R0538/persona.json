@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0538",
+  "personId": "AH-R0538",
+  "name": "Logan Walker",
+  "age": 50,
+  "occupation": "Costume repairer",
+  "home": "the blocks north of the port",
+  "episode": "The porch auction",
+  "biography": "stories/residents/04/09-the-porch-auction.md#ah-r0538",
+  "life": "“I still remember a cushion stitched with a curve from my thumb.” Sunday often includes a stop at the corner by Juniper Tailor, where Logan looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I took the torn cushion because I sewed the hidden patch for pocket money.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a pressed flower kept in the clear back of a phone case. Logan has an aquiline nose and a square chin, with close-cropped dark curls. Logan gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Logan loves a well-told anecdote and distrusts the neat ending. The parts Logan remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To save the torn cushion's hidden patch.",
+  "family": "Alex Yu is Logan’s half-sibling. Logan chooses the familiar route. Alex can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *A call heard twice*, Alex says, “I heard my colleague say a silly phrase that calmed the caller.”",
+  "connections": "Catherine Leung. They compare the hidden repair to the actual curve left by a seated couple. Also in the story is Ruben Choi (chair buyer).",
+  "familyIds": [
+    "AH-R1234"
+  ],
+  "connectionIds": [
+    "AH-R0533",
+    "AH-R0536"
+  ],
+  "reactions": [
+    {
+      "situation": "A repair reveals a family name under the cushion",
+      "response": "Logan invites the family to see the full name before the repair is closed.",
+      "asWritten": "A repair reveals a family name under the cushion. Logan invites the family to see the full name before the repair is closed."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Logan offers a little space from the crowd and waits for the player to indicate whether company is wanted.",
+      "asWritten": "A street musician can't finish a familiar song. Logan offers a little space from the crowd and waits for the player to indicate whether company is wanted."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Logan includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Logan includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0694",
+  "personId": "AH-R0694",
+  "name": "Layla Jimenez",
+  "age": 58,
+  "occupation": "Former kitchen lead",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Midnight cinnamon",
+  "biography": "stories/residents/05/10-midnight-cinnamon.md#ah-r0694",
+  "life": "“I still remember tasting everything in the shop before a fever took my sense of smell.” On Tuesday, near the corner outside Coastal Barber, Layla usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I lost my sense of smell in a fever. I recognized everybody's faces from last winter's batch.",
+  "appearance": "Layla has dark brown curls cut close behind the ears, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, a black overshirt with pearl buttons. It usually goes with a fabric zip pull cut from a school scarf. When somebody else has the floor, Layla takes off the watch before a long conversation.",
+  "personality": "Layla has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To recognize a fresh batch by another sense.",
+  "family": "Tom Moreno is Layla’s stepsibling. Layla picks the meeting place. Tom sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A dance for two fathers*, Tom says, “I raised her. The song she picked was the one her birth father used to play for her and I know every word.”",
+  "connections": "Keiko Ruiz. A cook who can't smell can still follow a holiday gift to the right neighbor.",
+  "familyIds": [
+    "AH-R1022"
+  ],
+  "connectionIds": [
+    "AH-R0700"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer wants a bun saved until evening",
+      "response": "Layla writes the customer's name and collection time on the wrapped bun.",
+      "asWritten": "A customer wants a bun saved until evening. Layla writes the customer's name and collection time on the wrapped bun."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Layla asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Layla asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Layla explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Layla explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

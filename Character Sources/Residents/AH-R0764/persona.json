@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0764",
+  "personId": "AH-R0764",
+  "name": "Bruna Morse",
+  "age": 43,
+  "occupation": "Payroll administrator",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Nine unpaid hours",
+  "biography": "stories/residents/06/02-nine-unpaid-hours.md#ah-r0764",
+  "life": "“I still remember the morning a payroll transfer stopped halfway through.” People around the window at Night Shift Donuts know Bruna by a small Saturday habit. Bruna knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I ran payroll. I warned management on Wednesday and told the crews on Friday. I can't get Thursday back.",
+  "appearance": "Bruna is easy to recognize by auburn hair cut square at the nape and two dimples that appear only with a full smile. Usually dressed in a striped cotton shirt with a square of clean cloth for polishing smudges, Bruna rubs a thumb along the edge of the nearest pocket when listening.",
+  "personality": "Bruna always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Bruna is trying to tell the difference before the bill arrives.",
+  "agenda": "To tell the crew exactly when management got the warning.",
+  "family": "Anton Dove is Bruna’s half-sibling. Bruna can always ask for five minutes alone. Anton asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Window seven*, Anton says, “Window seven is the first place I saw the sea after I moved here.”",
+  "connections": "Penelope Jeong. The manager's daughter hears which day the payroll worker knew about the shortfall. Also in the story is Simon Hunter (freight worker).",
+  "familyIds": [
+    "AH-R0051"
+  ],
+  "connectionIds": [
+    "AH-R0767",
+    "AH-R0761"
+  ],
+  "reactions": [
+    {
+      "situation": "A worker asks to give their account privately",
+      "response": "Bruna arranges a one-to-one account and checks which facts the worker permits to be shared.",
+      "asWritten": "A worker asks to give their account privately. Bruna arranges a one-to-one account and checks which facts the worker permits to be shared."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Bruna says what they know in their own name and refuses to treat a guess as something the child has to disprove.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Bruna says what they know in their own name and refuses to treat a guess as something the child has to disprove."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Bruna suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Bruna suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

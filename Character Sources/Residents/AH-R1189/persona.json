@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1189",
+  "personId": "AH-R1189",
+  "name": "Elise Sharp",
+  "age": 33,
+  "occupation": "Speech therapy assistant",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The new language at dinner",
+  "biography": "stories/residents/08/14-the-new-language-at-dinner.md#ah-r1189",
+  "life": "“I still remember putting a family's pet names onto a practice card.” Saturday often includes a stop at the courtyard by Ferry Street Rooms, where Elise prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I am the speech assistant. I want family words in the exercise cards alongside the hospital's safe examples.",
+  "appearance": "Elise is easy to recognize by a smooth side part with one rebellious curl and two dimples that appear only with a full smile. Usually dressed in a long navy raincoat with a little coil of soft measuring tape, Elise draws small circles on a tabletop while waiting when listening.",
+  "personality": "Elise listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To build practice cards around actual family phrases.",
+  "family": "Denise Hamm is Elise’s older cousin. Elise is allowed to ask about the bad news afterward. Denise calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The misplaced umbrella*, Denise says, “I am teaching mending. I want that patch on the poster with the owner's name underneath.”",
+  "connections": "Helena Alston. The existing carer helps the therapy assistant collect the client's own domestic words.",
+  "familyIds": [
+    "AH-R0678"
+  ],
+  "connectionIds": [
+    "AH-R1184"
+  ],
+  "reactions": [
+    {
+      "situation": "The client uses a word nobody in the room knows",
+      "response": "Elise asks the client which person they want to help with the word.",
+      "asWritten": "The client uses a word nobody in the room knows. Elise asks the client which person they want to help with the word."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Elise stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Elise stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Elise keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Elise keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

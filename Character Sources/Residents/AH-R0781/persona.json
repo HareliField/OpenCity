@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0781",
+  "personId": "ah-pd-103",
+  "name": "Samir Shah",
+  "age": 39,
+  "occupation": "Patrol officer",
+  "home": "Eastside",
+  "episode": "The Saturday swap",
+  "biography": "stories/residents/06/04-the-saturday-swap.md#ah-r0781",
+  "life": "“I still remember a promised sports day ruined by my overtime.” People around the window at Night Shift Donuts know Samir by a small Tuesday habit. Samir knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I promised to watch my son's first swim and never wrote the date down. He's stopped asking if I'm coming.",
+  "appearance": "On an ordinary day, look for a pale blue work shirt and a replacement button a shade darker than the others. Samir has a straight nose and deep-set eyes, with auburn hair cut square at the nape. Samir starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Samir has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To keep a promise about the son's swim.",
+  "family": "Finn Kahn is Samir’s cousin. Samir chooses the familiar route. Finn can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *An old restaurant debt*, Finn says, “I would use the returned money for repairs.”",
+  "connections": "Dev Cole. A promised swimming lesson and a childcare closing time leave very little slack in one watch swap.",
+  "familyIds": [
+    "AH-R0999"
+  ],
+  "connectionIds": [
+    "AH-R0786"
+  ],
+  "reactions": [
+    {
+      "situation": "A watch swap falls through overnight",
+      "response": "Samir tells the households relying on the swap before looking for a replacement.",
+      "asWritten": "A watch swap falls through overnight. Samir tells the households relying on the swap before looking for a replacement."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Samir stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Samir stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Samir explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Samir explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

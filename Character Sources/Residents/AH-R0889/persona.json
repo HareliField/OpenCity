@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0889",
+  "personId": "AH-R0889",
+  "name": "Jody Gomez",
+  "age": 51,
+  "occupation": "Unpaid family carer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Care with a clock",
+  "biography": "stories/residents/06/14-care-with-a-clock.md#ah-r0889",
+  "life": "“I still remember my pension statement arriving during a week of unpaid care.” Wednesday often includes a stop at the public end of the South Shore boardwalk, where Jody checks the shade on the benches before deciding how long to stay.",
+  "voice": "I care for my uncle free. I'm learning what calling my labor free has cost my own pension.",
+  "appearance": "Jody has two dimples that appear only with a full smile. Look for short copper curls. On an ordinary day, the familiar outfit is a sand-colored linen shirt with a thin silver ring worn on a cord. In conversation Jody touches a knuckle to the chin when searching for a word.",
+  "personality": "Jody reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Jody trusts most.",
+  "agenda": "To find out what unpaid years mean for the pension.",
+  "family": "Val Evans is Jody’s stepsibling. Jody is free to hang up first. Val makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Overdue by a lifetime*, Val says, “I played the villain in the school production.”",
+  "connections": "Olivia Farrell. A worker's unpaid sixteenth minute makes the family carer ask where all their pension hours went.",
+  "familyIds": [
+    "AH-R0365"
+  ],
+  "connectionIds": [
+    "AH-R0882"
+  ],
+  "reactions": [
+    {
+      "situation": "A visit runs into a second billing block",
+      "response": "Jody records the extra time actually spent with the client.",
+      "asWritten": "A visit runs into a second billing block. Jody records the extra time actually spent with the client."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Jody accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Jody accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Jody does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Jody does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

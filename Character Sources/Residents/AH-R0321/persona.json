@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0321",
+  "personId": "AH-R0321",
+  "name": "Taylor Beck",
+  "age": 63,
+  "occupation": "Property company cofounder",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The widow's dividend",
+  "biography": "stories/residents/03/03-the-widow-s-dividend.md#ah-r0321",
+  "life": "“I still remember borrowing a refrigerator to cool the founders' lunch.” On Saturday, near Tideline Market, Taylor picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I want the first dividend in cash to tip the woman who cleaned our first office.",
+  "appearance": "Taylor is easy to recognize by a neat white crop and a narrow face with an expressive upper lip. Usually dressed in a gray fisher's sweater with a tiny red thread tied through the lowest buttonhole, Taylor raises one eyebrow long before saying yes when listening.",
+  "personality": "Taylor reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Taylor trusts most.",
+  "agenda": "To give the first dividend to the original cleaner.",
+  "family": "Elaine Alcázar is Taylor’s younger relative by marriage. Taylor makes the call. Elaine is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A dance for two fathers*, Elaine says, “I want my little girl to see grown men making room without one of them having to disappear.”",
+  "connections": "Samuel Choi. They trace the first cleaner's tip back to an unpaid ledger line.",
+  "familyIds": [
+    "AH-R1025"
+  ],
+  "connectionIds": [
+    "AH-R0323"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member wants the ledger locked away",
+      "response": "Taylor asks whether the heirs can look at copies without parting with the old ledger.",
+      "asWritten": "A family member wants the ledger locked away. Taylor asks whether the heirs can look at copies without parting with the old ledger."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Taylor takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Taylor takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Taylor does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Taylor does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

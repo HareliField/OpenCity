@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1197",
+  "personId": "AH-R1197",
+  "name": "Oakley Carbone",
+  "age": 38,
+  "occupation": "Former sailing pupil and teacher",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The skipper goes ashore",
+  "biography": "stories/residents/08/15-the-skipper-goes-ashore.md#ah-r1197",
+  "life": "“I still remember my first skipper letting me board before my nerves settled.” Monday often includes a stop at Maré Coffee, where Oakley likes the table where people coming off shift stop checking the time.",
+  "voice": "I was her first sailing student. I asked her to teach my child from the pier without pretending she was still on board.",
+  "appearance": "Oakley has a round face with a pronounced chin. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is a sand-colored linen shirt with a replacement button a shade darker than the others. In conversation Oakley squares up pieces of paper while thinking.",
+  "personality": "Oakley has a long memory for unfair prices and a short one for small insults. Oakley can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To arrange a lesson on the pier for the child.",
+  "family": "Adriana Diaz is Oakley’s younger cousin. When the family split between two addresses, the good frying pan traveled with whoever cooked Sunday dinner. The pan has outlasted the quarrel and both kitchens. Oakley likes a clear rule for sharing a disputed thing. Asked about *A room for a father*, Adriana says, “I want my grandfather to teach me one thing with his hands before anybody asks him to explain.”",
+  "connections": "Diana Baldwin. A docking tune gives a child a first pier lesson they can remember at home.",
+  "familyIds": [
+    "AH-R0835"
+  ],
+  "connectionIds": [
+    "AH-R1199"
+  ],
+  "reactions": [
+    {
+      "situation": "An owner offers the former skipper a title with no clear duties",
+      "response": "Oakley asks what actual work, hours and wage go with the shore title.",
+      "asWritten": "An owner offers the former skipper a title with no clear duties. Oakley asks what actual work, hours and wage go with the shore title."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Oakley takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Oakley takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Oakley agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Oakley agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

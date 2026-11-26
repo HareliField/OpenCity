@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1455",
+  "personId": "AH-R1455",
+  "name": "Layla Colón",
+  "age": 55,
+  "occupation": "Mirror restorer",
+  "home": "the western residential streets",
+  "episode": "An ordinary mirror",
+  "biography": "stories/residents/10/11-an-ordinary-mirror.md#ah-r1455",
+  "life": "“I still remember losing a ring while emptying a flooded studio.” On Wednesday, near the brick passage off the shop row, Layla takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I polished the silvering after the shop flooded. A small gray patch hides the dreadful corner where I lost my wedding band.",
+  "appearance": "Layla is easy to recognize by brown hair pinned away from the temples and a crooked front tooth visible when laughing. Usually dressed in a moss-green cardigan with a copper-colored clasp that has been repaired by hand, Layla presses the lips together to keep a smile in when listening.",
+  "personality": "Layla has a quick wit and an equally quick sense of shame. A joke is often Layla's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To keep the gray repair visible.",
+  "family": "Una Curtis is Layla’s stepsibling. Layla gets to change the plan. Una offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *School after sixty*, Una says, “I teach at the university. This is my first attempt to learn bookkeeping and I am the slowest in class.”",
+  "connections": "Kai Berry. Morning cleaning gives the restorer a chance to explain the gray patch to the widow in private.",
+  "familyIds": [
+    "AH-R1265"
+  ],
+  "connectionIds": [
+    "AH-R1458"
+  ],
+  "reactions": [
+    {
+      "situation": "The widow asks to buy the fitting mirror",
+      "response": "Layla asks the tailor and widow what access others would lose if the mirror moved.",
+      "asWritten": "The widow asks to buy the fitting mirror. Layla asks the tailor and widow what access others would lose if the mirror moved."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Layla offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Layla offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Layla seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Layla seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

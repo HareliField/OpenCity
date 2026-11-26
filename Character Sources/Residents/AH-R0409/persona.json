@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0409",
+  "personId": "AH-R0409",
+  "name": "Sabine Ito",
+  "age": 49,
+  "occupation": "Accessible taxi driver",
+  "home": "Midtown",
+  "episode": "The widow's razor",
+  "biography": "stories/residents/03/11-the-widow-s-razor.md#ah-r0409",
+  "life": "“I still remember learning that silence can be a paid part of a journey.” Monday often includes a stop at the steps at Pier Beach, where Sabine watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I drove the widow here and never asked why the box stayed in her lap. She told me on the way back.",
+  "appearance": "On an ordinary day, look for a washed violet jersey and one cuff folded back twice. Sabine has a narrow face with an expressive upper lip, with a blunt cut just below the ears. Sabine leans a shoulder against the wall during long conversations during a conversation.",
+  "personality": "Sabine is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To collect the widow after an unhurried visit.",
+  "family": "Alec Nielsen is Sabine’s cousin. Sabine makes the call. Alec is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The savings club*, Alec says, “I want the ticket home before my father forgets the songs we sing together.”",
+  "connections": "Daria Singh. The widow can visit the shop with both handles present.",
+  "familyIds": [
+    "AH-R0471"
+  ],
+  "connectionIds": [
+    "AH-R0405"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer makes a high offer for the old razor",
+      "response": "Sabine lets the widow hear the price privately and keep the box in hand.",
+      "asWritten": "A buyer makes a high offer for the old razor. Sabine lets the widow hear the price privately and keep the box in hand."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Sabine stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Sabine stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Sabine helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Sabine helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

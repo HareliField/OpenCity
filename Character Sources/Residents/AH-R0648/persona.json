@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0648",
+  "personId": "AH-R0648",
+  "name": "Anita Lund",
+  "age": 59,
+  "occupation": "Pawnshop caretaker",
+  "home": "the blocks north of the port",
+  "episode": "The clean ledger",
+  "biography": "stories/residents/05/05-the-clean-ledger.md#ah-r0648",
+  "life": "“I still remember storing strangers' possessions behind a supermarket fridge.” People around the approach to Seabright Court know Anita by a small Wednesday habit. Anita likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I kept the notebook safe through three burglaries. I never knew my daughter's name was on the last page.",
+  "appearance": "Anita has a wide brow and a narrow jaw. Look for two white streaks in otherwise dark hair. On an ordinary day, the familiar outfit is a plum-colored cardigan with a stitched row of blue crosses along an old repair. In conversation Anita holds eye contact until the other person has finished.",
+  "personality": "Anita is kind in very practical ways and prickly about being thanked in public. Anita loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To speak to the daughter about the last page.",
+  "family": "Cleo Penn is Anita’s younger relative by marriage. Anita can stop the walk at any corner. Cleo chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The wrong bicycle*, Cleo says, “I used two identical bags for the keys. I've made a little station where owners can photograph their property with the collection slip.”",
+  "connections": "Daryl Akers. A newly literate reader finds the keeper of the ledger is personally involved.",
+  "familyIds": [
+    "AH-R0036"
+  ],
+  "connectionIds": [
+    "AH-R0643"
+  ],
+  "reactions": [
+    {
+      "situation": "A creditor asks for a conversation without witnesses",
+      "response": "Anita finds a private time when both people can still have someone nearby if requested.",
+      "asWritten": "A creditor asks for a conversation without witnesses. Anita finds a private time when both people can still have someone nearby if requested."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Anita asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Anita asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Anita gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Anita gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

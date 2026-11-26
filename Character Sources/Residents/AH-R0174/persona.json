@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0174",
+  "personId": "AH-R0174",
+  "name": "Kathleen Miranda",
+  "age": 53,
+  "occupation": "Hotel night clerk",
+  "home": "the blocks north of the port",
+  "episode": "The sandwich board",
+  "biography": "stories/residents/02/03-the-sandwich-board.md#ah-r0174",
+  "life": "“The first lunch anybody bought me here came wrapped in a crossword puzzle.” People around the courtyard by Ferry Street Rooms know Kathleen by a small Saturday habit. Kathleen prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I used to eat there on credit. I added my unpaid tab to the winning bid.",
+  "appearance": "On an ordinary day, look for a sand-colored linen shirt and one loose pocket corner secured with green thread. Kathleen has a wide brow and a narrow jaw, with auburn hair cut square at the nape. Kathleen looks at people's hands before looking at what they carry during a conversation.",
+  "personality": "Kathleen listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To settle an old sandwich debt with the former cook.",
+  "family": "Esme Knight is Kathleen’s cousin raised in the same household. Kathleen chooses the familiar route. Esme can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The expensive summer*, Esme says, “I am the landlord. I counted empty tables during a summer evening for the first time.”",
+  "connections": "Lara Emery. Getting the board home gives an old customer somewhere to settle the tab.",
+  "familyIds": [
+    "AH-R0975"
+  ],
+  "connectionIds": [
+    "AH-R0178"
+  ],
+  "reactions": [
+    {
+      "situation": "An old customer wants a debt to stay between two people",
+      "response": "Kathleen keeps the amount beside the old customer's name off the public board.",
+      "asWritten": "An old customer wants a debt to stay between two people. Kathleen keeps the amount beside the old customer's name off the public board."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Kathleen walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Kathleen walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Kathleen keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Kathleen keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

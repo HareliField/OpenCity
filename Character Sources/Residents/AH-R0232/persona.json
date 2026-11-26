@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0232",
+  "personId": "AH-R0232",
+  "name": "Grey Good",
+  "age": 63,
+  "occupation": "Widowed shift supervisor",
+  "home": "the western residential streets",
+  "episode": "A wall of birthdays",
+  "biography": "stories/residents/02/09-a-wall-of-birthdays.md#ah-r0232",
+  "life": "“I ran shifts through a winter when the whole family lived in two rooms.” Sunday often includes a stop at the downtown fountain, where Grey keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I papered over the wall because my boy never reached his next mark. His sister wants hers back.",
+  "appearance": "Grey has full cheeks and a mouth that pulls slightly to one side. Look for a neat white crop. On an ordinary day, the familiar outfit is a brown corduroy jacket with one cuff folded back twice. In conversation Grey counts on the side of one finger where hardly anybody notices.",
+  "personality": "Grey can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Grey can afford to give, and family knows to take it seriously.",
+  "agenda": "To give the surviving daughter back the marks she remembers.",
+  "family": "Keiko Ruiz is Grey’s half-sibling. Grey brings a spare shopping bag. Keiko chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Midnight cinnamon*, Keiko says, “I have the recipe nobody else remembers. It calls for leaving one bun on a lonely neighbor's step.”",
+  "connections": "Vera Hardy. The decision about uncovering a dead child's mark needs the tenant, as well as the landlord, in the room. Also in the story is Sam Collins (trace maker).",
+  "familyIds": [
+    "AH-R0700"
+  ],
+  "connectionIds": [
+    "AH-R0238",
+    "AH-R0237"
+  ],
+  "reactions": [
+    {
+      "situation": "A family asks for a tracing to take away",
+      "response": "Grey asks which pencil marks the family recognizes as their own.",
+      "asWritten": "A family asks for a tracing to take away. Grey asks which pencil marks the family recognizes as their own."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Grey asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Grey asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Grey suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Grey suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0929",
+  "personId": "AH-R0929",
+  "name": "Nadia Carvalho",
+  "age": 46,
+  "occupation": "Building surveyor",
+  "home": "Old Town",
+  "episode": "A widow bids again",
+  "biography": "stories/residents/07/03-a-widow-bids-again.md#ah-r0929",
+  "life": "“I still remember finding a leak concealed behind newly hung paper.” People around the market by Market Flats know Nadia by a small Monday habit. Nadia often waits until the delivery baskets are stacked before going in.",
+  "voice": "I was asked to testify the building was sound. I won't lose my sister's friendship by concealing the damp.",
+  "appearance": "Nadia has a narrow face with an expressive upper lip. Look for a loose dark braid. On an ordinary day, the familiar outfit is a plum-colored cardigan with a tiny red thread tied through the lowest buttonhole. In conversation Nadia leans a shoulder against the wall during long conversations.",
+  "personality": "Nadia enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To document the damp without family pressure.",
+  "family": "Daphne Mills is Nadia’s cousin. Nadia is allowed to ask about the bad news afterward. Daphne calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The rescue hut mural*, Daphne says, “The shadow makes her look like my brother at four.”",
+  "connections": "Stella Easton. The cleaner who knew the first room takes the surveyor to the less romantic damp wall.",
+  "familyIds": [
+    "AH-R0529"
+  ],
+  "connectionIds": [
+    "AH-R0926"
+  ],
+  "reactions": [
+    {
+      "situation": "The millionaire bidder offers a private deal",
+      "response": "Nadia gets the offer written down where the tenant group can consider it.",
+      "asWritten": "The millionaire bidder offers a private deal. Nadia gets the offer written down where the tenant group can consider it."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Nadia tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Nadia tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Nadia puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Nadia puts the deal away and suggests a walk."
+    }
+  ]
+}

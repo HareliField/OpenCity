@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0755",
+  "personId": "AH-R0755",
+  "name": "Hollis Wick",
+  "age": 45,
+  "occupation": "Tenant and night nurse",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The upstairs lease",
+  "biography": "stories/residents/06/01-the-upstairs-lease.md#ah-r0755",
+  "life": "“I still remember the stairs where my mother first asked for my arm.” People around the corner outside Coastal Barber know Hollis by a small Thursday habit. Hollis usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I want to swap homes with the upstairs family because my mother can't climb my stairs anymore.",
+  "appearance": "Out of work clothes, look for a moss-green cardigan and a stitched row of blue crosses along an old repair. Hollis has an aquiline nose and a square chin, with a soft fringe that falls across one eyebrow. Hollis folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Hollis can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Hollis can afford to give, and family knows to take it seriously.",
+  "agenda": "To test a home swap before either tenant gives notice.",
+  "family": "Alma Pike is Hollis’s half-sibling. Hollis is allowed to ask about the bad news afterward. Alma calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Overdue by a lifetime*, Alma says, “The head said I wasn't ready for this book.”",
+  "connections": "Franklin Pike. A housing swap takes somebody willing to carry furniture and witness the paperwork.",
+  "familyIds": [
+    "AH-R0369"
+  ],
+  "connectionIds": [
+    "AH-R0760"
+  ],
+  "reactions": [
+    {
+      "situation": "The household must choose between paying a deposit and renewing",
+      "response": "Hollis lays out the two household costs and asks which deadline comes first.",
+      "asWritten": "The household must choose between paying a deposit and renewing. Hollis lays out the two household costs and asks which deadline comes first."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Hollis separates the money question from the broken promise and asks which one the family wants to discuss first.",
+      "asWritten": "A family supper turns into an argument about old debt. Hollis separates the money question from the broken promise and asks which one the family wants to discuss first."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Hollis suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Hollis suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

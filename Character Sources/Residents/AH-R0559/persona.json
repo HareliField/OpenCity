@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0559",
+  "personId": "AH-R0559",
+  "name": "Marisol Lane",
+  "age": 69,
+  "occupation": "Retired film editor",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The fitting mirror",
+  "biography": "stories/residents/04/11-the-fitting-mirror.md#ah-r0559",
+  "life": "“I still remember finding my own reflection in another family's wedding album.” Monday often includes a stop at Studio Boulevard, where Marisol waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I don't remember my wedding outfit. The salon owner found me reflected in another bride's photograph.",
+  "appearance": "Marisol is easy to recognize by silver temples and a dark fringe and a long face and high cheekbones. Usually dressed in a rust-colored canvas coat with a printed handkerchief folded into the pocket, Marisol squares up pieces of paper while thinking when listening.",
+  "personality": "Marisol finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To take home a photograph of the forgotten wedding outfit.",
+  "family": "Elias Lau is Marisol’s younger relative by marriage. Marisol leaves the first voice message. Elias calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The million-dollar flat*, Elias says, “I own the identical flat downstairs and owe the bank more than anyone imagines.”",
+  "connections": "Avery Lai. A new interview and an old wedding both turn up unexpectedly in reflections.",
+  "familyIds": [
+    "AH-R1225"
+  ],
+  "connectionIds": [
+    "AH-R0553"
+  ],
+  "reactions": [
+    {
+      "situation": "A client asks to sit outside the shared mirror's view",
+      "response": "Marisol puts the person's chair outside the reflection and lets them choose when to look.",
+      "asWritten": "A client asks to sit outside the shared mirror's view. Marisol puts the person's chair outside the reflection and lets them choose when to look."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Marisol stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Marisol stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Marisol waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Marisol waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

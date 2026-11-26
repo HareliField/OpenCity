@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1158",
+  "personId": "AH-R1158",
+  "name": "Dora Iyer",
+  "age": 62,
+  "occupation": "Illness survivor and designer",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The hair after illness",
+  "biography": "stories/residents/08/11-the-hair-after-illness.md#ah-r1158",
+  "life": "“I still remember letting another customer ask about my headscarf first.” On Tuesday, near the market by Market Flats, Dora often waits until the delivery baskets are stacked before going in.",
+  "voice": "I had the same change years ago. I kept my advice in my pocket until she asked.",
+  "appearance": "Dora has fine brows over wide-set eyes. Look for a gray streak running back from the forehead. On an ordinary day, the familiar outfit is a gray fisher's sweater with a pair of reading glasses in a cloth sleeve. In conversation Dora draws small circles on a tabletop while waiting.",
+  "personality": "Dora listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To provide advice on request.",
+  "family": "Ilan Peretz is Dora’s younger relative by marriage. Dora is allowed to ask about the bad news afterward. Ilan calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Window seven*, Ilan says, “I took the picture for the man whose scan moved.”",
+  "connections": "Duncan Hsu. The person who used to say brave learns when another survivor prefers ordinary conversation.",
+  "familyIds": [
+    "AH-R0060"
+  ],
+  "connectionIds": [
+    "AH-R1155"
+  ],
+  "reactions": [
+    {
+      "situation": "The recovering client changes their mind about the wig",
+      "response": "Dora lets the client keep or give away the wig without explaining the change of mind.",
+      "asWritten": "The recovering client changes their mind about the wig. Dora lets the client keep or give away the wig without explaining the change of mind."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Dora calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Dora calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Dora keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Dora keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

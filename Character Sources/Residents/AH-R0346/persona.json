@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0346",
+  "personId": "AH-R0346",
+  "name": "Ramona Ahmed",
+  "age": 59,
+  "occupation": "Biscuit factory packer",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Rent in a biscuit tin",
+  "biography": "stories/residents/03/05-rent-in-a-biscuit-tin.md#ah-r0346",
+  "life": "“I still remember the factory tour where we ate all the samples.” People around the foot of Harbor Viaduct know Ramona by a small Sunday habit. Ramona pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "My bakery made the biscuits. I can date the tin from the misspelled ingredients.",
+  "appearance": "Ramona has a wide brow and a narrow jaw. Look for silvery hair gathered at the nape. On an ordinary day, the familiar outfit is a faded indigo overshirt with a replacement button a shade darker than the others. In conversation Ramona gathers both sleeves neatly before settling in.",
+  "personality": "Ramona finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To date the biscuit tin from the factory stamp.",
+  "family": "Morgan Gil is Ramona’s cousin. Ramona brings the paper and a pen. Morgan decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The first language*, Morgan says, “I come after work in floury trousers because there are no books in our language at the staff flat.”",
+  "connections": "Graham Jackson. They date the old tin without discarding the wife's envelope.",
+  "familyIds": [
+    "AH-R0966"
+  ],
+  "connectionIds": [
+    "AH-R0343"
+  ],
+  "reactions": [
+    {
+      "situation": "A family asks to come back later without explanation",
+      "response": "Ramona arranges a second visit without repeating the family's explanation.",
+      "asWritten": "A family asks to come back later without explanation. Ramona arranges a second visit without repeating the family's explanation."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Ramona brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Ramona brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Ramona points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Ramona points to the person who noticed the original mistake."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0265",
+  "personId": "AH-R0265",
+  "name": "Lou Arnett",
+  "age": 42,
+  "occupation": "Bus stop planner",
+  "home": "the western residential streets",
+  "episode": "The sheltered corner",
+  "biography": "stories/residents/02/12-the-sheltered-corner.md#ah-r0265",
+  "life": "“I learned transport planning on the bus I took to two part-time jobs.” Saturday often includes a stop at the entrance to the Wash House, where Lou stops for local notices even on a day without a load to wash.",
+  "voice": "I set the distance in a planning office. My father made me walk it with his groceries.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a little coil of soft measuring tape. Lou has two dimples that appear only with a full smile, with a long plait tucked inside the collar. Lou looks at people's hands before looking at what they carry during a conversation.",
+  "personality": "Lou has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To walk the twenty paces with groceries before signing off.",
+  "family": "Franklin Brandt is Lou’s stepsibling. Lou brings a spare shopping bag. Franklin chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Spin cycle choir*, Franklin says, “I wanted the noisy bearing replaced. Hearing the song hasn't changed my mind about my night shift.”",
+  "connections": "Agnes Kahn. The planner learns why the new morning light matters to a lip reader. Also in the story is Stella Hull (access reviewer).",
+  "familyIds": [
+    "AH-R0309"
+  ],
+  "connectionIds": [
+    "AH-R0263",
+    "AH-R0269"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver goes past the old stop in the rain",
+      "response": "Lou stays with the stranded rider and helps check the next usable stop.",
+      "asWritten": "A driver goes past the old stop in the rain. Lou stays with the stranded rider and helps check the next usable stop."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Lou walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Lou walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Lou says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Lou says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

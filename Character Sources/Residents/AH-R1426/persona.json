@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1426",
+  "personId": "AH-R1426",
+  "name": "Dolores Taylor",
+  "age": 33,
+  "occupation": "Equipment steward",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "No lifeguard at dusk",
+  "biography": "stories/residents/10/08-no-lifeguard-at-dusk.md#ah-r1426",
+  "life": "“I still remember bringing two wet flags home to a dark kitchen.” Sunday often includes a stop at the approach to Seabright Court, where Dolores likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I came to collect the flags and found the guard unable to hand them over. We agreed a time to meet for breakfast.",
+  "appearance": "On an ordinary day, look for a red windbreaker and a little coil of soft measuring tape. Dolores has a deep crease beside the mouth when smiling, with a high puff tied with plain cord. Dolores gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Dolores talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Dolores's ways of saying that it is all right to leave.",
+  "agenda": "To take the guard to breakfast after the flags are handed over.",
+  "family": "Ashley Lang is Dolores’s cousin. Dolores decides what stays off the paper. Ashley brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Closing soup*, Ashley says, “I heard my mother say supper in a language I haven't used for years.”",
+  "connections": "Thomas Sun. Flag collection and published coverage need to describe the same last shift.",
+  "familyIds": [
+    "AH-R0550"
+  ],
+  "connectionIds": [
+    "AH-R1427"
+  ],
+  "reactions": [
+    {
+      "situation": "A passerby assumes the beach is still staffed",
+      "response": "Dolores points out the published end of cover and gets the passerby an accurate answer about tomorrow.",
+      "asWritten": "A passerby assumes the beach is still staffed. Dolores points out the published end of cover and gets the passerby an accurate answer about tomorrow."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Dolores clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience.",
+      "asWritten": "A family supper turns into an argument about old debt. Dolores clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Dolores says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Dolores says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

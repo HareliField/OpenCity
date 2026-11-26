@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0821",
+  "personId": "AH-R0821",
+  "name": "Scout Hull",
+  "age": 28,
+  "occupation": "Seasonal lifeguard",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Summer staff",
+  "biography": "stories/residents/06/08-summer-staff.md#ah-r0821",
+  "life": "“I still remember getting my first room over a surf shop.” People around Juniper Street know Scout by a small Thursday habit. Scout knows which of the west-side porches has a seat in the shade.",
+  "voice": "I rented a room through September and my final lifeguard check comes in August.",
+  "appearance": "Scout has a loose dark braid, a heart-shaped face and prominent ears, and a favorite piece of clothing, a cropped bottle-green coat. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Scout listens with the head tilted a little to the left.",
+  "personality": "Scout treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To cover the last three weeks of the room rental.",
+  "family": "Ruben King is Scout’s cousin. Scout picks the meeting place. Ruben sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The understudy sings*, Ruben says, “I spent my student loan on a ticket to hear the original singer.”",
+  "connections": "Levi Boyd (hotel employer). An early last paycheck has the hotel manager reconsidering where a retention bonus belongs.",
+  "familyIds": [
+    "AH-R1177"
+  ],
+  "connectionIds": [
+    "AH-R0825"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor demands a refund after the season ends early",
+      "response": "Scout checks the actual dates printed on the booking before discussing its refund.",
+      "asWritten": "A visitor demands a refund after the season ends early. Scout checks the actual dates printed on the booking before discussing its refund."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Scout offers an ordinary errand that lets the distressed person leave without being followed by an audience.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Scout offers an ordinary errand that lets the distressed person leave without being followed by an audience."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Scout changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Scout changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

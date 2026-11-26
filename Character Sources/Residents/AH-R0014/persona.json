@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0014",
+  "personId": "AH-R0014",
+  "name": "Tamsin Leung",
+  "age": 42,
+  "occupation": "Rail clerk",
+  "home": "Old Town",
+  "episode": "A chair on the quay",
+  "biography": "stories/residents/01/02-a-chair-on-the-quay.md#ah-r0014",
+  "life": "After having her first child Tamsin expressed milk in a locked rail office. She has never forgotten the humiliation of asking for a key to a room nobody was using. She makes a fuss about chairs because a chair once mattered that much. Wednesday often includes a stop at the window at Night Shift Donuts, where Tamsin knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I put the chair in lost property under freight fittings. That's where I used to sit on breaks during my pregnancy. I'd like the old break room reopened before we give it away.",
+  "appearance": "Tamsin is easy to recognize by a soft fringe that falls across one eyebrow and a wide brow and a narrow jaw. Usually dressed in a cream pullover with a stitched row of blue crosses along an old repair, Tamsin touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Tamsin is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To restore a break-room seat for the next worker returning from leave.",
+  "family": "Cian Ingram is Tamsin’s stepsibling. Tamsin chooses the familiar route. Cian can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The expensive summer*, Cian says, “I brought takeaway chips to the public bench.”",
+  "connections": "Fen Ellis. A chalk gull lets them test two very different ideas about who used to sit here.",
+  "familyIds": [
+    "AH-R0977"
+  ],
+  "connectionIds": [
+    "AH-R0017"
+  ],
+  "reactions": [
+    {
+      "situation": "A farewell photographer asks everyone to move aside",
+      "response": "Tamsin checks that the granddaughter can see the chair before people start arranging the adults.",
+      "asWritten": "A farewell photographer asks everyone to move aside. Tamsin checks that the granddaughter can see the chair before people start arranging the adults."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Tamsin offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Tamsin offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Tamsin thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Tamsin thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

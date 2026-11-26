@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1295",
+  "personId": "AH-R1295",
+  "name": "Victor Marks",
+  "age": 52,
+  "occupation": "Bakery bookkeeper",
+  "home": "Eastside",
+  "episode": "A four o'clock kitchen",
+  "biography": "stories/residents/09/10-a-four-o-clock-kitchen.md#ah-r1295",
+  "life": "“I still remember a kitchen profitable on paper only if nobody took a taxi.” Saturday often includes a stop at Juniper Street, where Victor knows which of the west-side porches has a seat in the shade.",
+  "voice": "I keep the books. Early breakfasts double sales but also the number of taxis the kitchen staff buy.",
+  "appearance": "Victor has an aquiline nose and a square chin. Look for brown hair pinned away from the temples. Away from the heat of the kitchen, the familiar outfit is a black overshirt with pearl buttons with a narrow brass watch set a little fast. In conversation Victor draws breath as if to speak and lets someone else go first.",
+  "personality": "Victor is fond of ambitious ideas and deeply suspicious of grand openings. The question Victor asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To include late taxis in the bakery's real costs.",
+  "family": "Jacob Nelson is Victor’s half-sibling. Victor chooses whether to use it. Jacob saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The high road home*, Jacob says, “I trained the driver. I taught a maneuver and missed the part where the view disappears for a second.”",
+  "connections": "Sam Lucas. The bookkeeper and the box designer put the price of getting breakfast home beside its price in the shop.",
+  "familyIds": [
+    "AH-R1162"
+  ],
+  "connectionIds": [
+    "AH-R1298"
+  ],
+  "reactions": [
+    {
+      "situation": "A port buyer asks the cook to start still earlier",
+      "response": "Victor checks what the earlier start would do to the cook's family breakfast.",
+      "asWritten": "A port buyer asks the cook to start still earlier. Victor checks what the earlier start would do to the cook's family breakfast."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Victor offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Victor offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Victor accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Victor accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

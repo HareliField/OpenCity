@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0813",
+  "personId": "AH-R0813",
+  "name": "Anthony Penn",
+  "age": 68,
+  "occupation": "Retired school secretary",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Reading the payslip",
+  "biography": "stories/residents/06/07-reading-the-payslip.md#ah-r0813",
+  "life": "“I still remember a former pupil turning over my question sheet kindly.” Sunday often includes a stop at the foot of Harbor Viaduct, where Anthony pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I was too proud to sit with my former student. He knows every deduction I kept looking past.",
+  "appearance": "Anthony is easy to recognize by tightly curled gray hair and a long face and high cheekbones. Usually dressed in a striped cotton shirt with a replacement button a shade darker than the others, Anthony steadies a cup with both hands while listening when listening.",
+  "personality": "Anthony reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Anthony trusts most.",
+  "agenda": "To take a lesson from the former pupil.",
+  "family": "Jacqueline Clarke is Anthony’s stepsibling. Anthony chooses the music. Jacqueline puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The engine lullaby*, Jacqueline says, “I complained about it last year. Now I need to tell the owner what I missed when it stopped.”",
+  "connections": "Vera Gallagher. A former pupil teaches a former teacher a deduction neither understood in school. Also in the story is Jean Miranda (classmate).",
+  "familyIds": [
+    "AH-R0593"
+  ],
+  "connectionIds": [
+    "AH-R0811",
+    "AH-R0816"
+  ],
+  "reactions": [
+    {
+      "situation": "A classmate asks for help reading a real wage slip",
+      "response": "Anthony sits beside the classmate and covers personal figures that aren't part of the question.",
+      "asWritten": "A classmate asks for help reading a real wage slip. Anthony sits beside the classmate and covers personal figures that aren't part of the question."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Anthony asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Anthony asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Anthony does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Anthony does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

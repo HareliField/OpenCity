@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0831",
+  "personId": "AH-R0831",
+  "name": "Ismael Fong",
+  "age": 40,
+  "occupation": "Hotel night clerk",
+  "home": "the western residential streets",
+  "episode": "A room for a father",
+  "biography": "stories/residents/06/09-a-room-for-a-father.md#ah-r0831",
+  "life": "“I still remember waiting for my father beside a gate nobody used.” Tuesday often includes a stop at the blocks below Foundry Lofts, where Ismael checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I want to meet him at the gate so my mother can choose when to see him.",
+  "appearance": "Ismael has a crooked front tooth visible when laughing. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is an old plum windbreaker with a copper-colored clasp that has been repaired by hand. In conversation Ismael leans a shoulder against the wall during long conversations.",
+  "personality": "Ismael treats a small promise with the gravity others reserve for a contract. This makes Ismael lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To let the mother choose the moment of contact.",
+  "family": "Bianca Moreau is Ismael’s cousin. Ismael saves a place. Bianca chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The driving lesson fund*, Bianca says, “I voted to give the slot to a parent. The single person who lost gets up at four to visit her dad.”",
+  "connections": "Adriana Diaz (child). One family welcome has to make room for both an adult's anger and a child's curiosity.",
+  "familyIds": [
+    "AH-R1314"
+  ],
+  "connectionIds": [
+    "AH-R0835"
+  ],
+  "reactions": [
+    {
+      "situation": "The returning father wants a family photograph immediately",
+      "response": "Ismael asks each household member privately whether they want to be in the picture.",
+      "asWritten": "The returning father wants a family photograph immediately. Ismael asks each household member privately whether they want to be in the picture."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Ismael asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Ismael asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Ismael says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Ismael says what can be returned and asks whether that will do."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0674",
+  "personId": "AH-R0674",
+  "name": "Audrey Kahn",
+  "age": 28,
+  "occupation": "Parasol rental worker",
+  "home": "Eastside",
+  "episode": "The misplaced umbrella",
+  "biography": "stories/residents/05/08-the-misplaced-umbrella.md#ah-r0674",
+  "life": "“I still remember hiring a chair by the hour during a wet summer.” On Saturday, near the foot of Harbor Viaduct, Audrey pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I rented the parasol by the hour. Its whole day's income is now sitting over a street chess game.",
+  "appearance": "On an ordinary day, look for a cropped bottle-green coat and a square of clean cloth for polishing smudges. Audrey has a broad nose and a deep dimple on one cheek, with a high puff tied with plain cord. Audrey turns fully toward the person speaking during a conversation.",
+  "personality": "Audrey loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To recover the day's rental or agree to forgive it.",
+  "family": "Jorge Dias is Audrey’s first cousin once removed. Audrey brings whatever was actually growing or affordable that week. Jorge makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *Overdue by a lifetime*, Jorge says, “I borrowed it after failing a reading test.”",
+  "connections": "Aubrey Yates (hotel manager). They trace a striped hotel parasol from the hire stand to the chess game.",
+  "familyIds": [
+    "AH-R0361"
+  ],
+  "connectionIds": [
+    "AH-R0672"
+  ],
+  "reactions": [
+    {
+      "situation": "A hotel worker asks to throw the patched umbrella away",
+      "response": "Audrey puts the patched umbrella aside until the owner can explain the repair.",
+      "asWritten": "A hotel worker asks to throw the patched umbrella away. Audrey puts the patched umbrella aside until the owner can explain the repair."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Audrey keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Audrey keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Audrey offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Audrey offers one about their own embarrassment instead."
+    }
+  ]
+}

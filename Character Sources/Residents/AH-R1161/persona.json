@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1161",
+  "personId": "AH-R1161",
+  "name": "Eileen Bloom",
+  "age": 27,
+  "occupation": "New driver and job seeker",
+  "home": "the blocks north of the port",
+  "episode": "The high road home",
+  "biography": "stories/residents/08/12-the-high-road-home.md#ah-r1161",
+  "life": "“I still remember tearing up a job application that mentioned the ridge.” Tuesday often includes a stop at Breakwater Way, where Eileen stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I passed my test and kept turning down jobs east of the ridge. Nobody knew the real reason.",
+  "appearance": "Eileen is easy to recognize by a loose dark braid and a small notch in the left eyebrow. Usually dressed in a red windbreaker with a replacement button a shade darker than the others, Eileen gathers both sleeves neatly before settling in when listening.",
+  "personality": "Eileen gets protective of anybody who comes into a meeting unprepared. Eileen privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To reach the far side at a pace the learner chooses.",
+  "family": "Kate Dinh is Eileen’s older cousin. A family picnic once turned into a six-hour wait at a bus shelter. What they remember best is the oldest relative teaching everyone to keep score with gravel. Eileen is very good company when everybody is stranded. Asked about *The fountain score*, Kate says, “I typed the program on my late partner's machine and got cast as its percussionist.”",
+  "connections": "David Soto (parent). A parent has to let the learner speak first about what happened on the ridge.",
+  "familyIds": [
+    "AH-R0726"
+  ],
+  "connectionIds": [
+    "AH-R1163"
+  ],
+  "reactions": [
+    {
+      "situation": "The learner turns back before the crest",
+      "response": "Eileen treats turning back as a completed decision and finds somewhere calm to stop.",
+      "asWritten": "The learner turns back before the crest. Eileen treats turning back as a completed decision and finds somewhere calm to stop."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Eileen offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Eileen offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Eileen offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Eileen offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

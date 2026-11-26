@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0248",
+  "personId": "AH-R0248",
+  "name": "Cynthia Moran",
+  "age": 31,
+  "occupation": "Fruit seller",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The bitter orange",
+  "biography": "stories/residents/02/10-the-bitter-orange.md#ah-r0248",
+  "life": "“My first boss called everybody darling because he couldn't read our name badges.” On Monday, near the foot of Harbor Viaduct, Cynthia pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "She had my name wrong for twenty years. I put the wrong name on my contribution to the recipe.",
+  "appearance": "Cynthia is easy to recognize by a dark undercut with a longer wave on top and heavy brows and an unusually delicate jaw. Usually dressed in a charcoal zip cardigan with a pen clipped inside the neckline, Cynthia grins on one side while the eyes stay serious when listening.",
+  "personality": "Cynthia reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Cynthia trusts most.",
+  "agenda": "To write the customer's version of the cook's name on the menu.",
+  "family": "Arlo Lee is Cynthia’s older cousin. A family member returned from a difficult year elsewhere and wanted dinner without a welcome speech. They made such a point of ordinary dinner that it became a permanent tradition. Cynthia can eat a whole meal beside a person who isn't ready to talk. Asked about *The ladder crossing*, Arlo says, “I was at the front and couldn't see the painter crying at the back.”",
+  "connections": "Martin Chen. The delivery driver's Sunday version belongs on the card under the nickname the regular remembered.",
+  "familyIds": [
+    "AH-R0561"
+  ],
+  "connectionIds": [
+    "AH-R0247"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative hates the ingredient everyone remembers",
+      "response": "Cynthia lets the relative choose a different sandwich without defending the menu.",
+      "asWritten": "A relative hates the ingredient everyone remembers. Cynthia lets the relative choose a different sandwich without defending the menu."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Cynthia keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Cynthia keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Cynthia does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Cynthia does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

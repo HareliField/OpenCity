@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0773",
+  "personId": "AH-R0773",
+  "name": "Charles Shah",
+  "age": 70,
+  "occupation": "Retired bookkeeper",
+  "home": "the blocks north of the port",
+  "episode": "Money after marriage",
+  "biography": "stories/residents/06/03-money-after-marriage.md#ah-r0773",
+  "life": "“I still remember doing two salaries' worth of work on one pregnancy.” People around Juniper Street know Charles by a small Sunday habit. Charles knows which of the west-side porches has a seat in the shade.",
+  "voice": "I managed their books through both pregnancies. I want the years of unpaid work named before anyone divides the money.",
+  "appearance": "Charles has iron-gray waves, a crooked front tooth visible when laughing, and a favorite piece of clothing, a plum-colored cardigan. It usually goes with one cuff folded back twice. When somebody else has the floor, Charles counts on the side of one finger where hardly anybody notices.",
+  "personality": "Charles is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To record the years of unpaid work.",
+  "family": "Charlie Emery is Charles’s half-sibling. Charles remembers the birthdays. Charlie asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The missing name on the stern*, Charlie says, “I ran the last voyage under that old spelling.”",
+  "connections": "Ariel Jain. Unpaid parental work explains why the adult child sees inheriting the chair as an obligation.",
+  "familyIds": [
+    "AH-R1350"
+  ],
+  "connectionIds": [
+    "AH-R0774"
+  ],
+  "reactions": [
+    {
+      "situation": "The divorcing founders ask staff to pick a side",
+      "response": "Charles asks when the next wages will arrive before giving either founder a public endorsement.",
+      "asWritten": "The divorcing founders ask staff to pick a side. Charles asks when the next wages will arrive before giving either founder a public endorsement."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Charles asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Charles asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Charles thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Charles thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

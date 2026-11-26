@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0987",
+  "personId": "AH-R0987",
+  "name": "Tariq Hamilton",
+  "age": 40,
+  "occupation": "House painter",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A tenant who stays",
+  "biography": "stories/residents/07/09-a-tenant-who-stays.md#ah-r0987",
+  "life": "“I still remember finding my father's saved messages on a broken handset.” Sunday often includes a stop at the steps at Pier Beach, where Tariq watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I thought my father had promised the house to me. An old voicemail has finally settled what he actually said.",
+  "appearance": "On an ordinary day, look for a brown corduroy jacket and a seam let out by a narrow strip of contrasting fabric. Tariq has a small notch in the left eyebrow, with a smooth side part with one rebellious curl. Tariq listens with the head tilted a little to the left during a conversation.",
+  "personality": "Tariq enjoys routines and will defend the right of someone else to break one. As a result, Tariq is often everyone's favorite cover for a missed morning.",
+  "agenda": "To clear up the promise remembered from the father's voicemail.",
+  "family": "Parker Cho is Tariq’s stepsibling. Tariq brings something that can still be enjoyed tomorrow. Parker checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Hem by hem*, Parker says, “I mistook the worn hem for dirt and almost scrubbed away the original chalk marks.”",
+  "connections": "Aria Starr (sibling). Siblings have to hear the same old voicemail before arguing over who was promised the house.",
+  "familyIds": [
+    "AH-R0159"
+  ],
+  "connectionIds": [
+    "AH-R0981"
+  ],
+  "reactions": [
+    {
+      "situation": "The future tenant asks when the garden will be empty",
+      "response": "Tariq asks the gardener which roots are most vulnerable before agreeing to a date.",
+      "asWritten": "The future tenant asks when the garden will be empty. Tariq asks the gardener which roots are most vulnerable before agreeing to a date."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Tariq writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Tariq writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Tariq keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Tariq keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

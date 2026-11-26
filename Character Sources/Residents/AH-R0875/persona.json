@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0875",
+  "personId": "AH-R0875",
+  "name": "Elias Hart",
+  "age": 41,
+  "occupation": "Student placement clerk",
+  "home": "the western residential streets",
+  "episode": "The almost scholarship",
+  "biography": "stories/residents/06/13-the-almost-scholarship.md#ah-r0875",
+  "life": "“I still remember hosting a pupil who missed supper to practice.” On Monday, near the bank steps, Elias takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I found a host family. They have an empty room and a curfew the winner's evening job can't meet.",
+  "appearance": "Elias has full cheeks and a mouth that pulls slightly to one side. Look for a long plait tucked inside the collar. On an ordinary day, the familiar outfit is a striped cotton shirt with a comb in a sleeve sewn into the lining. In conversation Elias starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Elias has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To negotiate an evening curfew a working pupil can keep.",
+  "family": "Terry Lau is Elias’s older cousin. Elias saves a place. Terry chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The guarantee*, Terry says, “I declined to be a guarantor for my own child.”",
+  "connections": "Benedict Lund. A proposed host family's curfew has to work on the far less glamorous February journeys too.",
+  "familyIds": [
+    "AH-R1078"
+  ],
+  "connectionIds": [
+    "AH-R0880"
+  ],
+  "reactions": [
+    {
+      "situation": "The school wants a deposit before travel support is settled",
+      "response": "Elias gets the school to specify the last date a deposit can be returned.",
+      "asWritten": "The school wants a deposit before travel support is settled. Elias gets the school to specify the last date a deposit can be returned."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Elias tells the first helper what they actually saw and makes room for the rider to answer for themself.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Elias tells the first helper what they actually saw and makes room for the rider to answer for themself."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Elias says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Elias says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

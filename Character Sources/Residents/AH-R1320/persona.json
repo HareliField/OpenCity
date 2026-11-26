@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1320",
+  "personId": "AH-R1320",
+  "name": "Darcy Wu",
+  "age": 33,
+  "occupation": "Bus pass advocate",
+  "home": "Eastside",
+  "episode": "The driving lesson fund",
+  "biography": "stories/residents/09/12-the-driving-lesson-fund.md#ah-r1320",
+  "life": "“I still remember learning I was allowed to prefer the back seat.” People around the public end of the South Shore boardwalk know Darcy by a small Friday habit. Darcy checks the shade on the benches before deciding how long to stay.",
+  "voice": "I turned down my slot because I don't want to drive. I asked the panel to take my bus-pass idea seriously too.",
+  "appearance": "Darcy is easy to recognize by short black hair swept back and a flat bridge to the nose and a mobile brow. Usually dressed in a mustard canvas overshirt with a braided bracelet with a single wooden bead, Darcy rubs a thumb along the edge of the nearest pocket when listening.",
+  "personality": "Darcy is kind in very practical ways and prickly about being thanked in public. Darcy loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To get a bus pass considered beside driving tuition.",
+  "family": "Bailey Valdez is Darcy’s half-sibling. Darcy knows which ones can be shared. Bailey keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Reopening at six*, Bailey says, “I clean before opening. Every extra hour someone wins is an hour somebody else lifts out of a wet bin.”",
+  "connections": "Bianca Moreau. A bus pass complicates a panel vote framed entirely around parents who need to drive.",
+  "familyIds": [
+    "AH-R1059"
+  ],
+  "connectionIds": [
+    "AH-R1314"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone asks whether the grant might buy a bus pass instead",
+      "response": "Darcy prices a usable bus pass before dismissing it as a different kind of grant.",
+      "asWritten": "Someone asks whether the grant might buy a bus pass instead. Darcy prices a usable bus pass before dismissing it as a different kind of grant."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Darcy stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Darcy stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Darcy gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Darcy gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

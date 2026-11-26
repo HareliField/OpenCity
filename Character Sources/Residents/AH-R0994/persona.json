@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0994",
+  "personId": "AH-R0994",
+  "name": "Annette Marquez",
+  "age": 37,
+  "occupation": "Deli bookkeeper",
+  "home": "the streets inland from Pier Beach",
+  "episode": "An old restaurant debt",
+  "biography": "stories/residents/07/10-an-old-restaurant-debt.md#ah-r0994",
+  "life": "“I still remember entering twenty years of invoices into one blank screen.” On Saturday, near the crossing outside Verve Nail Studio, Annette notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I deleted the old invoice when we digitized. I'm delighted somebody kept a messier book.",
+  "appearance": "Away from the heat of the kitchen, look for a mustard canvas overshirt and a tiny red thread tied through the lowest buttonhole. Annette has full cheeks and a mouth that pulls slightly to one side, with a long plait tucked inside the collar. Annette listens with the head tilted a little to the left during a conversation.",
+  "personality": "Annette treats a small promise with the gravity others reserve for a contract. This makes Annette lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To restore the invoice as a family record.",
+  "family": "Jacqueline Darzi is Annette’s second cousin. Annette chooses the music. Jacqueline puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The upstairs lease*, Jacqueline says, “I spent our deposit on the dental work that let me return to the counter.”",
+  "connections": "Finn Kahn. The recovered invoice gives co-owners figures for a serious disagreement about the money.",
+  "familyIds": [
+    "AH-R0753"
+  ],
+  "connectionIds": [
+    "AH-R0999"
+  ],
+  "reactions": [
+    {
+      "situation": "The shop owners disagree on what to do with the payment",
+      "response": "Annette asks both owners for figures before anyone promises a fund or a repair.",
+      "asWritten": "The shop owners disagree on what to do with the payment. Annette asks both owners for figures before anyone promises a fund or a repair."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Annette walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Annette walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Annette says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Annette says what can be returned and asks whether that will do."
+    }
+  ]
+}

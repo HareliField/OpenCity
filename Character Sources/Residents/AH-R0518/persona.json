@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0518",
+  "personId": "AH-R0518",
+  "name": "Melanie Breen",
+  "age": 33,
+  "occupation": "Hotel receptionist",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A borrowed name",
+  "biography": "stories/residents/04/07-a-borrowed-name.md#ah-r0518",
+  "life": "“I still remember a border official asking which signature felt more mine.” People around the entrance to the Wash House know Melanie by a small Sunday habit. Melanie stops for local notices even on a day without a load to wash.",
+  "voice": "My own name was changed at immigration. I lent the writer the two spellings I live under.",
+  "appearance": "Melanie has short, uneven waves that refuse to lie flat, a heart-shaped face and prominent ears, and a favorite piece of clothing, a mustard canvas overshirt. It usually goes with a watch on a cracked leather band. When somebody else has the floor, Melanie starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Melanie talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Melanie's ways of saying that it is all right to leave.",
+  "agenda": "To keep both spellings in the writer's notes.",
+  "family": "Eileen Reed is Melanie’s parent’s cousin. Melanie calls about good news first. Eileen is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The misplaced umbrella*, Eileen says, “I can name the maker of the stripe from the faded blue.”",
+  "connections": "Valentina Villa. They compare a name that changed in public with a story a parent wants to correct in private.",
+  "familyIds": [
+    "AH-R0675"
+  ],
+  "connectionIds": [
+    "AH-R0519"
+  ],
+  "reactions": [
+    {
+      "situation": "A reader asks the real person to autograph the novel",
+      "response": "Melanie gives the customer a graceful way to decline the autograph.",
+      "asWritten": "A reader asks the real person to autograph the novel. Melanie gives the customer a graceful way to decline the autograph."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Melanie alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Melanie alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Melanie says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Melanie says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0179",
+  "personId": "AH-R0179",
+  "name": "Pascal Cullen",
+  "age": 69,
+  "occupation": "Retired supermarket millionaire",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The sandwich board",
+  "biography": "stories/residents/02/03-the-sandwich-board.md#ah-r0179",
+  "life": "“My first store had a dented freezer and a landlord who shopped elsewhere.” On Monday, near the foot of Harbor Viaduct, Pascal pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I sold my own shop for millions. I'm bidding for my first customer's handwriting, which nobody can appraise.",
+  "appearance": "On an ordinary day, look for a mustard canvas overshirt and a tiny red thread tied through the lowest buttonhole. Pascal has a round face with a pronounced chin, with steel-colored hair cut square above the collar. Pascal gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Pascal thinks best while walking. Sitting beneath someone's office clock makes Pascal sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To buy the handwriting without taking it from the neighborhood.",
+  "family": "Greta Ryan is Pascal’s younger cousin. Pascal puts the kettle on. Greta chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A four o'clock kitchen*, Greta says, “I came in on my day off to take one breakfast order from the cook and serve it to her with her children.”",
+  "connections": "Hank Meyer. They try dating the menu before the millionaire bidder buys a personal memory.",
+  "familyIds": [
+    "AH-R1300"
+  ],
+  "connectionIds": [
+    "AH-R0175"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer offers to erase the board and repaint it",
+      "response": "Pascal asks the former owner to record the board before the paint is changed.",
+      "asWritten": "A buyer offers to erase the board and repaint it. Pascal asks the former owner to record the board before the paint is changed."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Pascal separates the money question from the broken promise and asks which one the family wants to discuss first.",
+      "asWritten": "A family supper turns into an argument about old debt. Pascal separates the money question from the broken promise and asks which one the family wants to discuss first."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Pascal asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Pascal asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

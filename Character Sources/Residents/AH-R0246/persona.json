@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0246",
+  "personId": "AH-R0246",
+  "name": "Hugo Barron",
+  "age": 24,
+  "occupation": "Graduate apprentice",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The bitter orange",
+  "biography": "stories/residents/02/10-the-bitter-orange.md#ah-r0246",
+  "life": "“I passed my exams behind the chip fryer while it heated up.” On Wednesday, near Harbour Bakery, Hugo buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I used to hide from her behind the fridge because she'd ask about my exams. I passed and never told her.",
+  "appearance": "Hugo has dark brown curls cut close behind the ears, a small notch in the left eyebrow, and a favorite piece of clothing, a washed violet jersey. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Hugo listens with the head tilted a little to the left.",
+  "personality": "Hugo admires skill and distrusts the idea that skill gives anyone permission to be rude. Hugo learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To tell the family about the exam the regular used to ask after.",
+  "family": "Ruth Tran is Hugo’s older cousin. Hugo saves a place. Ruth chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The soft wharf chalk*, Ruth says, “I saved the piece of wood during repairs. It still smells of the crate my mother unpacked.”",
+  "connections": "Freya King. The son hears about a long-ago exam his mother asked after.",
+  "familyIds": [
+    "AH-R0464"
+  ],
+  "connectionIds": [
+    "AH-R0250"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative hates the ingredient everyone remembers",
+      "response": "Hugo lets the relative choose a different sandwich without defending the menu.",
+      "asWritten": "A relative hates the ingredient everyone remembers. Hugo lets the relative choose a different sandwich without defending the menu."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Hugo asks what the friend actually said last time and checks whether anybody is expecting them at home.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Hugo asks what the friend actually said last time and checks whether anybody is expecting them at home."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Hugo describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Hugo describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

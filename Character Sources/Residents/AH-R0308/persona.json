@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0308",
+  "personId": "AH-R0308",
+  "name": "Lucia Starr",
+  "age": 30,
+  "occupation": "Choreographer",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Spin cycle choir",
+  "biography": "stories/residents/03/01-spin-cycle-choir.md#ah-r0308",
+  "life": "“I still remember rehearsing in a room with no mirrors.” On Friday, near the public end of the South Shore boardwalk, Lucia checks the shade on the benches before deciding how long to stay.",
+  "voice": "I wrote my first dance to those machines. I want to rehearse before customers start arriving.",
+  "appearance": "Lucia has auburn hair cut square at the nape, a heart-shaped face and prominent ears, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Lucia looks down for a moment before saying something difficult.",
+  "personality": "Lucia can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Lucia can afford to give, and family knows to take it seriously.",
+  "agenda": "To rehearse before opening without delaying work.",
+  "family": "Nelson Darzi is Lucia’s first cousin once removed. Lucia checks the date twice. Nelson brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The carer's afternoon*, Nelson says, “I am the parent needing care. My daughter doesn't know I've wanted an afternoon without her questions too.”",
+  "connections": "Alex Gomez. The dancer gives the lost visitor directions to a morning rehearsal.",
+  "familyIds": [
+    "AH-R1034"
+  ],
+  "connectionIds": [
+    "AH-R0310"
+  ],
+  "reactions": [
+    {
+      "situation": "A tired neighbor asks the singers to move",
+      "response": "Lucia asks when the neighbor sleeps and helps arrange a quieter hour.",
+      "asWritten": "A tired neighbor asks the singers to move. Lucia asks when the neighbor sleeps and helps arrange a quieter hour."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Lucia asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Lucia asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Lucia suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Lucia suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

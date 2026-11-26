@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1480",
+  "personId": "AH-R1480",
+  "name": "Kai Bruno",
+  "age": 51,
+  "occupation": "Stage manager",
+  "home": "the streets around Foundry Lofts",
+  "episode": "One last dress rehearsal",
+  "biography": "stories/residents/10/13-one-last-dress-rehearsal.md#ah-r1480",
+  "life": "“I still remember a whole rehearsal run for the adult who usually locked the hall.” People around the corner by Juniper Tailor know Kai by a small Thursday habit. Kai looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I was the stage manager who almost canceled. My own parents missed all my shows and I wanted this one ordinary person to get in.",
+  "appearance": "Kai has a center part and straight chestnut hair, a narrow face with an expressive upper lip, and a favorite piece of clothing, a cream pullover. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Kai squares up pieces of paper while thinking.",
+  "personality": "Kai is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To keep the room open for one working audience member.",
+  "family": "Sara Hall is Kai’s stepsibling. Kai gets to change the plan. Sara offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The soft wharf chalk*, Sara says, “The dates put my dad here months after he supposedly left town.”",
+  "connections": "Yusuf Solis. The student villain and the stage manager both have memories riding on a parent getting into the room.",
+  "familyIds": [
+    "AH-R0465"
+  ],
+  "connectionIds": [
+    "AH-R1474"
+  ],
+  "reactions": [
+    {
+      "situation": "The stage manager asks if anybody can stay for a second ending",
+      "response": "Kai checks who can actually stay and which ride home would be lost.",
+      "asWritten": "The stage manager asks if anybody can stay for a second ending. Kai checks who can actually stay and which ride home would be lost."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Kai brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Kai brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Kai helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Kai helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

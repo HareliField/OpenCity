@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0958",
+  "personId": "AH-R0958",
+  "name": "Gale Felix",
+  "age": 47,
+  "occupation": "Cafeteria baker",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The empty chair on nights",
+  "biography": "stories/residents/07/06-the-empty-chair-on-nights.md#ah-r0958",
+  "life": "“I still remember buying a cake with a retirement date written wrong.” People around the public road outside the Port of Asphalt know Gale by a small Tuesday habit. Gale can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I paid for a cake before the decision was made. I let the housekeeping shift eat it together.",
+  "appearance": "Away from the heat of the kitchen, look for an old plum windbreaker and a cloth patch so neatly matched it only shows in strong light. Gale has a narrow face with an expressive upper lip, with short copper curls. Gale looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Gale always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Gale is trying to tell the difference before the bill arrives.",
+  "agenda": "To share the spare cake with housekeeping.",
+  "family": "Lucia Ferreira is Gale’s half-sibling. Gale chooses an ordinary story to tell. Lucia asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *A summer marriage*, Lucia says, “I promised a sea view and the fog came down.”",
+  "connections": "Victor Armas. The loaned shoes and the surplus cake are two practical thank-yous with very different recipients.",
+  "familyIds": [
+    "AH-R1130"
+  ],
+  "connectionIds": [
+    "AH-R0954"
+  ],
+  "reactions": [
+    {
+      "situation": "The departing nurse asks for an ordinary breakfast",
+      "response": "Gale keeps the breakfast small and sets work questions aside.",
+      "asWritten": "The departing nurse asks for an ordinary breakfast. Gale keeps the breakfast small and sets work questions aside."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Gale brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Gale brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Gale suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Gale suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

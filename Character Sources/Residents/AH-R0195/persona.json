@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0195",
+  "personId": "AH-R0195",
+  "name": "Clyde Darzi",
+  "age": 33,
+  "occupation": "Brass repairer",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The pawned trumpet",
+  "biography": "stories/residents/02/05-the-pawned-trumpet.md#ah-r0195",
+  "life": "“I started repairing brass with a dented cornet rescued after a school flood.” On Tuesday, near the brick passage off the shop row, Clyde takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I repair brass at night. I can give the player a different instrument but I can't transfer those teeth marks.",
+  "appearance": "Clyde has a swept fringe and a closely clipped nape, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Clyde turns fully toward the person speaking.",
+  "personality": "Clyde loves a well-told anecdote and distrusts the neat ending. The parts Clyde remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To provide a playable loan horn during the argument.",
+  "family": "Lia Banks is Clyde’s cousin raised in the same household. Clyde sets the time to leave. Lia picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A tide at noon*, Lia says, “The judging route crossed a soft patch I knew wouldn't hold a wheel.”",
+  "connections": "Helena Neal. They discuss a loan horn without making a parent explain the funeral money in public. Also in the story is Lydia Ames (pawn counter contact).",
+  "familyIds": [
+    "AH-R0076"
+  ],
+  "connectionIds": [
+    "AH-R0194",
+    "AH-R0197"
+  ],
+  "reactions": [
+    {
+      "situation": "A neighbor demands the trumpet stop playing",
+      "response": "Clyde asks the player and the neighbor to choose a practice time they can both live with.",
+      "asWritten": "A neighbor demands the trumpet stop playing. Clyde asks the player and the neighbor to choose a practice time they can both live with."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Clyde asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Clyde asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Clyde includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Clyde includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

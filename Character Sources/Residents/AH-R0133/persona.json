@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0133",
+  "personId": "AH-R0133",
+  "name": "Mel Graydon",
+  "age": 45,
+  "occupation": "Home-care aide",
+  "home": "the western residential streets",
+  "episode": "Two portions",
+  "biography": "stories/residents/01/14-two-portions.md#ah-r0133",
+  "life": "Mel learned home care in flats with elevators and had to learn her job a second time on western porches. People sitting in their own doorway are often waiting to be invited further into their own life. People around Paper & Pine Books know Mel by a small Saturday habit. Mel starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I knew about the second plate. I was afraid putting it in my notes would make someone take it away. I've invited the coordinator to join us and bring her own lunch.",
+  "appearance": "On an ordinary day, look for a dark green knitted vest and a pair of reading glasses in a cloth sleeve. Mel has two dimples that appear only with a full smile, with short copper curls. Mel squares up pieces of paper while thinking during a conversation.",
+  "personality": "Mel often says yes too quickly out of pride in being useful. The people closest to Mel have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To get the coordinator and both diners around one table.",
+  "family": "Jo Graves is Mel’s stepsibling. Mel remembers the birthdays. Jo asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The missing name on the stern*, Jo says, “I bought the boat and have no connection to either spelling.”",
+  "connections": "Mae Linford. The coordinator eats a visit's worth of lunch alongside the aide before deciding what goes on the register.",
+  "familyIds": [
+    "AH-R1343"
+  ],
+  "connectionIds": [
+    "AH-R0131"
+  ],
+  "reactions": [
+    {
+      "situation": "A visiting supervisor wants the second dinner withdrawn",
+      "response": "Mel asks for a meal to be held while the people who eat it explain the second portion.",
+      "asWritten": "A visiting supervisor wants the second dinner withdrawn. Mel asks for a meal to be held while the people who eat it explain the second portion."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Mel asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Mel asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Mel rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Mel rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

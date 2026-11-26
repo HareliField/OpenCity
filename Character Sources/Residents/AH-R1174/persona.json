@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1174",
+  "personId": "AH-R1174",
+  "name": "Gareth Jiang",
+  "age": 39,
+  "occupation": "Caption editor",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The understudy sings",
+  "biography": "stories/residents/08/13-the-understudy-sings.md#ah-r1174",
+  "life": "“I still remember realizing I read familiar lips before hearing the sound.” On Friday, near Tideline Market, Gareth picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I read lips in rehearsals. I offered to teach both singers without asking either for a diagnosis.",
+  "appearance": "Gareth has a high puff tied with plain cord, a wide brow and a narrow jaw, and a favorite piece of clothing, a long navy raincoat. It usually goes with a printed handkerchief folded into the pocket. When somebody else has the floor, Gareth draws small circles on a tabletop while waiting.",
+  "personality": "Gareth treats a small promise with the gravity others reserve for a contract. This makes Gareth lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To share accessible rehearsal habits without prying.",
+  "family": "Harold Crawford is Gareth’s cousin raised in the same household. Gareth picks the meeting place. Harold sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *No lifeguard at dusk*, Harold says, “I am her doctor and emphatically don't get to decide how she spends an ordinary evening.”",
+  "connections": "Agnes Colón. A caption worker and monitor technician help two performers share the same rehearsal.",
+  "familyIds": [
+    "AH-R1424"
+  ],
+  "connectionIds": [
+    "AH-R1178"
+  ],
+  "reactions": [
+    {
+      "situation": "The original singer asks to choose a seat in the audience",
+      "response": "Gareth lets the singer choose a seat without alerting the whole audience.",
+      "asWritten": "The original singer asks to choose a seat in the audience. Gareth lets the singer choose a seat without alerting the whole audience."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Gareth offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Gareth offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Gareth says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Gareth says what can be returned and asks whether that will do."
+    }
+  ]
+}

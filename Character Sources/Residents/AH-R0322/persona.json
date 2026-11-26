@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0322",
+  "personId": "AH-R0322",
+  "name": "Rain Salcedo",
+  "age": 70,
+  "occupation": "Retired silent investor",
+  "home": "Eastside",
+  "episode": "The widow's dividend",
+  "biography": "stories/residents/03/03-the-widow-s-dividend.md#ah-r0322",
+  "life": "“I still remember an office key stamped with my maiden initials.” People around Paper & Pine Books know Rain by a small Saturday habit. Rain starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I had a silent share. My children still think my wealth came from my second husband.",
+  "appearance": "On an ordinary day, look for a boxy denim jacket and a replacement button a shade darker than the others. Rain has a softly rounded chin under sharp cheekbones, with a gray streak running back from the forehead. Rain counts on the side of one finger where hardly anybody notices during a conversation.",
+  "personality": "Rain has a quick wit and an equally quick sense of shame. A joke is often Rain's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To let the children hear about their mother's share.",
+  "family": "Nell Marks is Rain’s younger cousin. Rain can stop the walk at any corner. Nell chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The margin reader*, Nell says, “I'm translating the swear words first. They tell me where two polite people finally trusted each other.”",
+  "connections": "Reuben Sawyer. A silent shareholder discusses what a child would gain from one small voting share. Also in the story is Samuel Choi (ledger reader).",
+  "familyIds": [
+    "AH-R0218"
+  ],
+  "connectionIds": [
+    "AH-R0330",
+    "AH-R0323"
+  ],
+  "reactions": [
+    {
+      "situation": "An unexpected dividend arrives in the wrong envelope",
+      "response": "Rain checks the payee's name with the teller before opening the envelope.",
+      "asWritten": "An unexpected dividend arrives in the wrong envelope. Rain checks the payee's name with the teller before opening the envelope."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Rain asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Rain asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Rain seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Rain seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

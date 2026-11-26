@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0449",
+  "personId": "AH-R0449",
+  "name": "Frances Ortiz",
+  "age": 45,
+  "occupation": "Clock repairer",
+  "home": "Eastside",
+  "episode": "The tide clock",
+  "biography": "stories/residents/03/15-the-tide-clock.md#ah-r0449",
+  "life": "“I still remember trying to put back a borrowed hour hand.” People around the entrance to the Wash House know Frances by a small Friday habit. Frances stops for local notices even on a day without a load to wash.",
+  "voice": "I fixed the minute hand before I knew it wasn't minutes. I am repainting the scratches myself.",
+  "appearance": "Frances is easy to recognize by a center part and straight chestnut hair and a broad nose and a deep dimple on one cheek. Usually dressed in an old plum windbreaker with a partly rubbed-away embroidered initial, Frances looks toward the door whenever a name is called when listening.",
+  "personality": "Frances feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To restore the scratches left by the attempted repair.",
+  "family": "Harriet Ho is Frances’s cousin. Frances makes room at the table. Harriet brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *One paid trial*, Harriet says, “I wanted to announce a winner. They came back with a split-shift proposal and asked me to cost it.”",
+  "connections": "Harold Pike. The keeper of harbor sounds helps confirm the repaired dial follows water again.",
+  "familyIds": [
+    "AH-R0850"
+  ],
+  "connectionIds": [
+    "AH-R0447"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor blames the new hire for missing the time",
+      "response": "Frances checks which dial the worker saw before accepting a lateness entry.",
+      "asWritten": "A supervisor blames the new hire for missing the time. Frances checks which dial the worker saw before accepting a lateness entry."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Frances repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Frances repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Frances lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Frances lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

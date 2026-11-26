@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1277",
+  "personId": "AH-R1277",
+  "name": "Opal Felix",
+  "age": 50,
+  "occupation": "Park maintenance clerk",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The other side of the cove",
+  "biography": "stories/residents/09/08-the-other-side-of-the-cove.md#ah-r1277",
+  "life": "“I still remember the donor who cared more about direction than inscription.” People around the courtyard by Ferry Street Rooms know Opal by a small Sunday habit. Opal prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I saved the original donor letter. It specified a sea view and made no mention of who's looking.",
+  "appearance": "On an ordinary day, look for a faded indigo overshirt and a braided bracelet with a single wooden bead. Opal has a narrow face with an expressive upper lip, with short, uneven waves that refuse to lie flat. Opal looks toward the door whenever a name is called during a conversation.",
+  "personality": "Opal talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Opal's ways of saying that it is all right to leave.",
+  "agenda": "To verify the original gift's view requirement.",
+  "family": "Lou Reed is Opal’s cousin raised in the same household. Their relatives kept a holiday fund in a boot that still had its mate. Even after the family acquired bank accounts, an envelope of change at supper meant somebody was planning a journey. Opal works out what it costs to bring everybody. Asked about *The release address*, Lou says, “I moved without giving him the new number because I needed one quiet Christmas.”",
+  "connections": "Vincent Albright. A saved donor letter helps a reluctant walker see how a name could earn its place on the bench.",
+  "familyIds": [
+    "AH-R0942"
+  ],
+  "connectionIds": [
+    "AH-R1276"
+  ],
+  "reactions": [
+    {
+      "situation": "A public donor asks to approve the wording on the bench",
+      "response": "Opal asks the cleaner and the donor for separate views on the wording.",
+      "asWritten": "A public donor asks to approve the wording on the bench. Opal asks the cleaner and the donor for separate views on the wording."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Opal tells the first helper what they actually saw and makes room for the rider to answer for themself.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Opal tells the first helper what they actually saw and makes room for the rider to answer for themself."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Opal says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Opal says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1251",
+  "personId": "AH-R1251",
+  "name": "Riley Macrae",
+  "age": 54,
+  "occupation": "Departing hospital physician",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A doctor moves away",
+  "biography": "stories/residents/09/06-a-doctor-moves-away.md#ah-r1251",
+  "life": "“I still remember waiting for a parent to finish breakfast before asking about pain.” Wednesday often includes a stop at the brick passage off the shop row, where Riley takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I asked my patients what mattered for years. My father asked me the same question at his kitchen sink.",
+  "appearance": "Riley is easy to recognize by a dark undercut with a longer wave on top and a flat bridge to the nose and a mobile brow. Usually dressed in a rust-colored canvas coat with a partly rubbed-away embroidered initial, Riley presses the lips together to keep a smile in when listening.",
+  "personality": "Riley is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To move close enough to see the father each week.",
+  "family": "Hamish James is Riley’s half-sibling. Riley calls back when there is finally a little privacy. Hamish leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The clean ledger*, Hamish says, “I bought the man's tools and lost my shop anyway.”",
+  "connections": "Nadine Lam. The doctor and the father's carer settle what returning as a daughter will mean at home. Also in the story is Sam Lim (succeeding physician).",
+  "familyIds": [
+    "AH-R0642"
+  ],
+  "connectionIds": [
+    "AH-R1257",
+    "AH-R1253"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient asks the leaving doctor to stay one more month",
+      "response": "Riley asks what handover would help the patient if the move date stands.",
+      "asWritten": "A patient asks the leaving doctor to stay one more month. Riley asks what handover would help the patient if the move date stands."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Riley asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Riley asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Riley thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Riley thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

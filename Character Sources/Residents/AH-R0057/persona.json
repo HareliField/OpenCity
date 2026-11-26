@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0057",
+  "personId": "AH-R0057",
+  "name": "Cass Pennell",
+  "age": 39,
+  "occupation": "Respiratory therapist",
+  "home": "the neighborhood around Market Flats",
+  "episode": "Window seven",
+  "biography": "stories/residents/01/06-window-seven.md#ah-r0057",
+  "life": "Cass keeps a collection of patient descriptions of breath, from tight shirts to small rooms. Those ordinary comparisons have done more for her bedside manner than any of her examination answers. Thursday often includes a stop at Ferris Deli, where Cass asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "She used her breath to name the colors instead of answering my questions. I wrote them down in order for her granddaughter. It's the only clinical note I've ever copied in orange pencil.",
+  "appearance": "Cass has thick, tightly coiled hair, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a cream pullover. It usually goes with a little coil of soft measuring tape. When somebody else has the floor, Cass folds a paper napkin into quarters without noticing.",
+  "personality": "Cass talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Cass's ways of saying that it is all right to leave.",
+  "agenda": "To pass the sequence of colors to the granddaughter in the patient's own words.",
+  "family": "Zachary Teo is Cass’s cousin. Cass leaves the first voice message. Zachary calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The crane shadow*, Zachary says, “I drew the wrong crane in my design portfolio.”",
+  "connections": "Nessa Wren. They ask the patient what colors and timing she would want her family to remember.",
+  "familyIds": [
+    "AH-R0614"
+  ],
+  "connectionIds": [
+    "AH-R0052"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants the sunrise streamed to a phone",
+      "response": "Cass asks the patient whether they want a camera in this particular morning.",
+      "asWritten": "A relative wants the sunrise streamed to a phone. Cass asks the patient whether they want a camera in this particular morning."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Cass asks the person already using it whether they can comfortably stand, rather than presuming who needs it most.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Cass asks the person already using it whether they can comfortably stand, rather than presuming who needs it most."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Cass says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Cass says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

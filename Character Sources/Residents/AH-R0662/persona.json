@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0662",
+  "personId": "AH-R0662",
+  "name": "Remy Carey",
+  "age": 52,
+  "occupation": "Family reader and florist",
+  "home": "the blocks north of the port",
+  "episode": "A shelf of apologies",
+  "biography": "stories/residents/05/07-a-shelf-of-apologies.md#ah-r0662",
+  "life": "“I still remember the first book I read to my frightened father.” On Saturday, near the entrance to the Wash House, Remy stops for local notices even on a day without a load to wash.",
+  "voice": "I want the owner to know I read every line aloud to my dad before he died.",
+  "appearance": "Remy is easy to recognize by short copper curls and a crooked front tooth visible when laughing. Usually dressed in a boxy denim jacket with a pressed flower kept in the clear back of a phone case, Remy rubs a thumb along the edge of the nearest pocket when listening.",
+  "personality": "Remy admires skill and distrusts the idea that skill gives anyone permission to be rude. Remy learns fastest from somebody willing to show how they made a mistake.",
+  "agenda": "To tell the owner how the book helped the father.",
+  "family": "Cory Colón is Remy’s younger cousin. Remy can stop the walk at any corner. Cory chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Hem by hem*, Cory says, “I paid for silk believing it was new. Now I want the old fabric back in our vows.”",
+  "connections": "Priya Solis. The recorded reading and the sea route both belong inside the owner's returned book.",
+  "familyIds": [
+    "AH-R0152"
+  ],
+  "connectionIds": [
+    "AH-R0665"
+  ],
+  "reactions": [
+    {
+      "situation": "A bookseller wants to display the most surprising note",
+      "response": "Remy asks the writer who was supposed to receive the note.",
+      "asWritten": "A bookseller wants to display the most surprising note. Remy asks the writer who was supposed to receive the note."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Remy keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Remy keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "When a beginner is embarrassed",
+      "response": "Remy describes a first attempt of their own in enough detail to make the comparison fair.",
+      "asWritten": "When a beginner is embarrassed, Remy describes a first attempt of their own in enough detail to make the comparison fair."
+    }
+  ]
+}

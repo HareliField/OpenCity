@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0185",
+  "personId": "AH-R0185",
+  "name": "Charlotte Noel",
+  "age": 55,
+  "occupation": "Tenant and parcel sorter",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The second dog",
+  "biography": "stories/residents/02/04-the-second-dog.md#ah-r0185",
+  "life": "“I used to rent somewhere people could keep boats but couldn't keep animals.” On Tuesday, near the bank steps, Charlotte takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I can't keep a dog in my flat. I've been feeding him through the fence and calling it ownership.",
+  "appearance": "Charlotte has dark brown curls cut close behind the ears, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, a soft blue checked shirt. It usually goes with a knotted piece of sail thread on a key ring. When somebody else has the floor, Charlotte presses the lips together to keep a smile in.",
+  "personality": "Charlotte finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To offer dog walking without asserting a claim to the dog.",
+  "family": "Parker Osborne is Charlotte’s stepsibling. Charlotte chooses the familiar route. Parker can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The guarantee*, Parker says, “I once inherited a similar debt. I offered my ledger, including the years when I didn't speak to my brother.”",
+  "connections": "Jules Sun. They help a tenant who loves the dog take part without claiming ownership.",
+  "familyIds": [
+    "AH-R1079"
+  ],
+  "connectionIds": [
+    "AH-R0187"
+  ],
+  "reactions": [
+    {
+      "situation": "A child takes the other dog's lead",
+      "response": "Charlotte separates the leads and asks both families what the dogs respond to.",
+      "asWritten": "A child takes the other dog's lead. Charlotte separates the leads and asks both families what the dogs respond to."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Charlotte tells the first helper what they actually saw and makes room for the rider to answer for themself.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Charlotte tells the first helper what they actually saw and makes room for the rider to answer for themself."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Charlotte waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Charlotte waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

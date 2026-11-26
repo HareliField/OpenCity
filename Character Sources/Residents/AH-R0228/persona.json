@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0228",
+  "personId": "AH-R0228",
+  "name": "Shay Poole",
+  "age": 61,
+  "occupation": "Postcard artist",
+  "home": "Old Town",
+  "episode": "Low water music",
+  "biography": "stories/residents/02/08-low-water-music.md#ah-r0228",
+  "life": "“My first coastal postcard was printed with the lighthouse facing the wrong way.” On Sunday, near the crossing outside Verve Nail Studio, Shay notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I sell postcards of a silent cove. I'm leaving a blank on the next edition for people to write what they heard.",
+  "appearance": "On an ordinary day, look for a sand-colored linen shirt and a partly rubbed-away embroidered initial. Shay has a softly rounded chin under sharp cheekbones, with silver temples and a dark fringe. Shay listens with the head tilted a little to the left during a conversation.",
+  "personality": "Shay enjoys routines and will defend the right of someone else to break one. As a result, Shay is often everyone's favorite cover for a missed morning.",
+  "agenda": "To leave room on a postcard for a visitor's own sound.",
+  "family": "Josephine Fields is Shay’s second cousin. Shay leaves the first voice message. Josephine calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A borrowed name*, Josephine says, “I thought my mother had told the author our story.”",
+  "connections": "Sam Kaur. A postcard with an empty line lets the visiting aunt use her own word for the cove.",
+  "familyIds": [
+    "AH-R0512"
+  ],
+  "connectionIds": [
+    "AH-R0229"
+  ],
+  "reactions": [
+    {
+      "situation": "A child asks to listen with bare feet",
+      "response": "Shay checks where the wet stone is stable and lets the child listen from there.",
+      "asWritten": "A child asks to listen with bare feet. Shay checks where the wet stone is stable and lets the child listen from there."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Shay moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Shay moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Shay keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Shay keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

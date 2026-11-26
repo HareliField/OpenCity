@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0399",
+  "personId": "AH-R0399",
+  "name": "Marlowe May",
+  "age": 48,
+  "occupation": "Shop manager",
+  "home": "Midtown",
+  "episode": "The broken till",
+  "biography": "stories/residents/03/10-the-broken-till.md#ah-r0399",
+  "life": "“I still remember my first audit being off by one sweet.” People around Harbour Bakery know Marlowe by a small Thursday habit. Marlowe buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I manage a cashless shop. I want to know why the pencil line moved faster than ours.",
+  "appearance": "On an ordinary day, look for a narrow-striped sweater and a copper-colored clasp that has been repaired by hand. Marlowe has a small notch in the left eyebrow, with a dark undercut with a longer wave on top. Marlowe starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Marlowe listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To time the paper method on a busy day.",
+  "family": "Manuel Peters is Marlowe’s half-sibling. Marlowe leaves the first voice message. Manuel calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The crash anniversary*, Manuel says, “I was driving the other vehicle. My letter to the family has stayed in the same drawer for eleven months.”",
+  "connections": "Sasha Crane. A manager timing the line hears from a customer who liked how long the conversation took.",
+  "familyIds": [
+    "AH-R1013"
+  ],
+  "connectionIds": [
+    "AH-R0400"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer cannot pay until the till opens",
+      "response": "Marlowe asks the cashier what can safely go on a temporary tab.",
+      "asWritten": "A customer cannot pay until the till opens. Marlowe asks the cashier what can safely go on a temporary tab."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Marlowe asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Marlowe asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Marlowe keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Marlowe keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

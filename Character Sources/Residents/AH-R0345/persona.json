@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0345",
+  "personId": "AH-R0345",
+  "name": "Gareth Yeo",
+  "age": 35,
+  "occupation": "Household budget tutor",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Rent in a biscuit tin",
+  "biography": "stories/residents/03/05-rent-in-a-biscuit-tin.md#ah-r0345",
+  "life": "“I still remember borrowing a pot and returning it full of rice.” People around the approach to Seabright Court know Gareth by a small Tuesday habit. Gareth likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I wanted the money counted in public. Then I learned somebody was saving to leave home quietly.",
+  "appearance": "Gareth has a straight nose and deep-set eyes. Look for a high puff tied with plain cord. On an ordinary day, the familiar outfit is a boxy denim jacket with a pocket notebook shaped by years of sitting on it. In conversation Gareth looks down for a moment before saying something difficult.",
+  "personality": "Gareth has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To give the person saving to leave a private chance to collect.",
+  "family": "Marin Lim is Gareth’s first cousin once removed. Gareth chooses the familiar route. Marin can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *A doctor moves away*, Marin says, “I never liked her manner and liked her thoroughness.”",
+  "connections": "Tariq Banks. The envelope for driving lessons goes into the count only with its owner's permission. Also in the story is Reina Gallagher (rent collector).",
+  "familyIds": [
+    "AH-R1256"
+  ],
+  "connectionIds": [
+    "AH-R0342",
+    "AH-R0344"
+  ],
+  "reactions": [
+    {
+      "situation": "One renter wants the tin counted in public",
+      "response": "Gareth asks each renter how much of the count they want heard in public.",
+      "asWritten": "One renter wants the tin counted in public. Gareth asks each renter how much of the count they want heard in public."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Gareth calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Gareth calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Gareth asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Gareth asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

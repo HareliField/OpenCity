@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0038",
+  "personId": "AH-R0038",
+  "name": "Toby Lin",
+  "age": 40,
+  "occupation": "Delivery dispatcher",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The wrong bicycle",
+  "biography": "stories/residents/01/04-the-wrong-bicycle.md#ah-r0038",
+  "life": "Toby's drivers measure his decisions against a clock they cannot see. He used to think lateness was the only fair measure because everyone got the same seconds. He is discovering what a second costs a courier with a bad hip. On Monday, near Maré Coffee, Toby likes the table where people coming off shift stop checking the time.",
+  "voice": "I docked the courier for arriving late. His customer had watched the entire mix-up. I restored the fee and put a blank line beside the automatic lateness code.",
+  "appearance": "Toby has thick, tightly coiled hair, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Toby grins on one side while the eyes stay serious.",
+  "personality": "Toby is kind in very practical ways and prickly about being thanked in public. Toby loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To restore the courier's pay and hear the next late driver's account.",
+  "family": "Cory Walsh is Toby’s half-sibling. Toby calls about good news first. Cory is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The hospital radio*, Cory says, “I brought a pocket radio so two roommates can listen to different matches and still keep score together.”",
+  "connections": "Rosa Marr. The screw found in the dustpan helps establish why the delayed delivery really took as long as it did. Also in the story is Hollis Fry (courier).",
+  "familyIds": [
+    "AH-R0359"
+  ],
+  "connectionIds": [
+    "AH-R0039",
+    "AH-R0032"
+  ],
+  "reactions": [
+    {
+      "situation": "The courier asks who will cover the lost delivery",
+      "response": "Toby gets the dispatcher and the courier looking at the same delivery entry.",
+      "asWritten": "The courier asks who will cover the lost delivery. Toby gets the dispatcher and the courier looking at the same delivery entry."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Toby keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Toby keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Toby gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Toby gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0549",
+  "personId": "AH-R0549",
+  "name": "Asa Roberts",
+  "age": 54,
+  "occupation": "Food cooperative organizer",
+  "home": "Old Town",
+  "episode": "Closing soup",
+  "biography": "stories/residents/04/10-closing-soup.md#ah-r0549",
+  "life": "“I still remember a closing crew that never appeared on the menus.” Saturday often includes a stop at the public road outside the Port of Asphalt, where Asa can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I want the recipe credited to the people who chop after their shift ends.",
+  "appearance": "Asa is easy to recognize by black hair twisted into a small knot and an aquiline nose and a square chin. Usually dressed in a dark green knitted vest with a comb in a sleeve sewn into the lining, Asa takes off the watch before a long conversation when listening.",
+  "personality": "Asa talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Asa's ways of saying that it is all right to leave.",
+  "agenda": "To credit the closing crew by name.",
+  "family": "Oscar Guzman is Asa’s cousin. Asa chooses the familiar route. Oscar can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The clean ledger*, Oscar says, “I carried a debt for my brother because the old man never knew which twin was which.”",
+  "connections": "Nico Ibrahim. A thermos for a separated household travels with the names of the closing crew.",
+  "familyIds": [
+    "AH-R0645"
+  ],
+  "connectionIds": [
+    "AH-R0547"
+  ],
+  "reactions": [
+    {
+      "situation": "The cook asks for an exact recipe",
+      "response": "Asa records what went into this particular pot and when the cooks tasted it.",
+      "asWritten": "The cook asks for an exact recipe. Asa records what went into this particular pot and when the cooks tasted it."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Asa calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Asa calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Asa says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Asa says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

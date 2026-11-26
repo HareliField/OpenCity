@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1136",
+  "personId": "AH-R1136",
+  "name": "Shay Valdez",
+  "age": 51,
+  "occupation": "Cabinet fitter",
+  "home": "Midtown",
+  "episode": "The third bedroom",
+  "biography": "stories/residents/08/09-the-third-bedroom.md#ah-r1136",
+  "life": "“I still remember building a wardrobe around a precious patch of sunlight.” People around Breakwater Way know Shay by a small Thursday habit. Shay stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I build wardrobes. A proper partition would eat the window, so I'm pricing a different door.",
+  "appearance": "Shay has a softly rounded chin under sharp cheekbones. Look for a swept fringe and a closely clipped nape. On an ordinary day, the familiar outfit is a black overshirt with pearl buttons with one cuff folded back twice. In conversation Shay steadies a cup with both hands while listening.",
+  "personality": "Shay enjoys routines and will defend the right of someone else to break one. As a result, Shay is often everyone's favorite cover for a missed morning.",
+  "agenda": "To design a division that preserves daylight.",
+  "family": "Rain Scott is Shay’s cousin raised in the same household. Shay calls about good news first. Rain is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The missing name on the stern*, Rain says, “I was embarrassed by the old name growing up.”",
+  "connections": "Allen Mora. The assessor's second plan depends on a partition the fitter can build without losing the window.",
+  "familyIds": [
+    "AH-R1348"
+  ],
+  "connectionIds": [
+    "AH-R1135"
+  ],
+  "reactions": [
+    {
+      "situation": "The lodger is asked to leave on short notice",
+      "response": "Shay checks where the lodger can go before treating an empty room as a settled fact.",
+      "asWritten": "The lodger is asked to leave on short notice. Shay checks where the lodger can go before treating an empty room as a settled fact."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Shay alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Shay alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Shay keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Shay keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0454",
+  "personId": "AH-R0454",
+  "name": "Carmen Ali",
+  "age": 62,
+  "occupation": "Port receptionist",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The button card",
+  "biography": "stories/residents/04/01-the-button-card.md#ah-r0454",
+  "life": "“I still remember washing an anchor button until the gold wore through.” Sunday often includes a stop at the approach to Seabright Court, where Carmen likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I found a brass anchor from a uniform my sister swore she'd burned.",
+  "appearance": "Carmen is easy to recognize by a long silver braid and a long face and high cheekbones. Usually dressed in a cream pullover with a pen clipped inside the neckline, Carmen grins on one side while the eyes stay serious when listening.",
+  "personality": "Carmen is kind in very practical ways and prickly about being thanked in public. Carmen loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To ask the sister what happened to the anchor uniform.",
+  "family": "Joanna Ellis is Carmen’s stepsibling. Carmen asks the question the rest of the family avoided. Joanna chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *Five missing lunches*, Joanna says, “The dents on those lids came from our lunchtime domino games.”",
+  "connections": "Bruno Gao. They distinguish the helpful sewn coin from the anchor someone wants to reclaim.",
+  "familyIds": [
+    "AH-R0169"
+  ],
+  "connectionIds": [
+    "AH-R0452"
+  ],
+  "reactions": [
+    {
+      "situation": "The donor recognizes the uniform it came from",
+      "response": "Carmen asks the owner which garment the donor wants remembered.",
+      "asWritten": "The donor recognizes the uniform it came from. Carmen asks the owner which garment the donor wants remembered."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Carmen asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Carmen asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Carmen gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Carmen gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

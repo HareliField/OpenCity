@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0131",
+  "personId": "AH-R0131",
+  "name": "Mae Linford",
+  "age": 49,
+  "occupation": "Meal coordinator",
+  "home": "the western residential streets",
+  "episode": "Two portions",
+  "biography": "stories/residents/01/14-two-portions.md#ah-r0131",
+  "life": "Mae can shop for twenty people in less time than her brother takes buying for one. Her father taught her that skill and most of her best recipes. He also taught her how easily efficient shopping can obscure who will share the meal. Sunday often includes a stop at the public road outside the Port of Asphalt, where Mae can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I nearly canceled the extra dinner. Then I remembered the winter my father fed our neighbor off his own plate. I want our form to have a box for someone you'd like to eat with.",
+  "appearance": "Mae has short black hair swept back, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a stitched row of blue crosses along an old repair. When somebody else has the floor, Mae squares up pieces of paper while thinking. A stub of green shopping pencil lives in the hem of Mae’s apron.",
+  "personality": "Mae prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To keep the unregistered diner on the food round.",
+  "family": "Miles Price is Mae’s cousin. Mae brings the paper and a pen. Miles decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The margin reader*, Miles says, “I donated the books during a divorce. My ex kept replying after I'd already moved out.”",
+  "connections": "Mel Graydon. The coordinator eats a visit's worth of lunch alongside the aide before deciding what goes on the register.",
+  "familyIds": [
+    "AH-R0215"
+  ],
+  "connectionIds": [
+    "AH-R0133"
+  ],
+  "reactions": [
+    {
+      "situation": "A visiting supervisor wants the second dinner withdrawn",
+      "response": "Mae asks for a meal to be held while the people who eat it explain the second portion.",
+      "asWritten": "A visiting supervisor wants the second dinner withdrawn. Mae asks for a meal to be held while the people who eat it explain the second portion."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Mae finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Mae finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Mae clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Mae clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

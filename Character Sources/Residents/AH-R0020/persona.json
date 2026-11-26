@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0020",
+  "personId": "AH-R0020",
+  "name": "Nell Oram",
+  "age": 31,
+  "occupation": "Oral historian",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A chair on the quay",
+  "biography": "stories/residents/01/02-a-chair-on-the-quay.md#ah-r0020",
+  "life": "Nell has a splendid memory for voices and a terrible memory for places. She asks interviewees to walk while they talk. It makes the recordings windy and prevents her inventing a street somebody never walked. Tuesday often includes a stop at Tideline Market, where Nell picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "He told me three versions of who cut the first mark. I asked his permission to record all three. Families ought to be allowed to change their minds on tape.",
+  "appearance": "On an ordinary day, look for a brown corduroy jacket and a replacement button a shade darker than the others. Nell has a straight nose and deep-set eyes, with brown hair pinned away from the temples. Nell presses the lips together to keep a smile in during a conversation.",
+  "personality": "Nell has a talent for getting adversaries to laugh at exactly the same thing. Nell knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To let people listen to the conflicting accounts with their speakers' permission.",
+  "family": "Terry Sullivan is Nell’s cousin raised in the same household. Nell chooses an ordinary story to tell. Terry asks the question the rest of the family avoided. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *Midnight cinnamon*, Terry says, “I thought it was my grandmother's spice bread.”",
+  "connections": "Merit Shaw. The shipping quote and the recorded recollections are the only things the absent sister can receive without taking ownership.",
+  "familyIds": [
+    "AH-R0693"
+  ],
+  "connectionIds": [
+    "AH-R0019"
+  ],
+  "reactions": [
+    {
+      "situation": "A farewell photographer asks everyone to move aside",
+      "response": "Nell checks that the granddaughter can see the chair before people start arranging the adults.",
+      "asWritten": "A farewell photographer asks everyone to move aside. Nell checks that the granddaughter can see the chair before people start arranging the adults."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Nell repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Nell repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Nell asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Nell asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

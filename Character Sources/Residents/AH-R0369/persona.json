@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0369",
+  "personId": "AH-R0369",
+  "name": "Alma Pike",
+  "age": 53,
+  "occupation": "Classroom teacher",
+  "home": "Midtown",
+  "episode": "Overdue by a lifetime",
+  "biography": "stories/residents/03/07-overdue-by-a-lifetime.md#ah-r0369",
+  "life": "“I still remember a pupil reading aloud to an empty chair.” People around the crossing outside Verve Nail Studio know Alma by a small Sunday habit. Alma notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "The head said I wasn't ready for this book. I've read it to my pupils thirty-seven times.",
+  "appearance": "Alma has a heart-shaped face and prominent ears. Look for short, uneven waves that refuse to lie flat. On an ordinary day, the familiar outfit is a mustard canvas overshirt with a printed handkerchief folded into the pocket. In conversation Alma holds eye contact until the other person has finished.",
+  "personality": "Alma talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Alma's ways of saying that it is all right to leave.",
+  "agenda": "To read the difficult chapter to the former teacher.",
+  "family": "Hollis Wick is Alma’s half-sibling. Alma calls about good news first. Hollis is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The upstairs lease*, Hollis says, “I want to swap homes with the upstairs family because my mother can't climb my stairs anymore.”",
+  "connections": "Damian Neal. A child's declaration of love gives the teacher a difficult margin to read aloud.",
+  "familyIds": [
+    "AH-R0755"
+  ],
+  "connectionIds": [
+    "AH-R0366"
+  ],
+  "reactions": [
+    {
+      "situation": "The former pupil offers to pay forty years of fines",
+      "response": "Alma asks the library what it actually needs from the returning reader.",
+      "asWritten": "The former pupil offers to pay forty years of fines. Alma asks the library what it actually needs from the returning reader."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Alma calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Alma calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Alma says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Alma says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

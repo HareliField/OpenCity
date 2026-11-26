@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0207",
+  "personId": "AH-R0207",
+  "name": "Aria Colón",
+  "age": 64,
+  "occupation": "Retired postal inspector",
+  "home": "Old Town",
+  "episode": "A red mitten",
+  "biography": "stories/residents/02/06-a-red-mitten.md#ah-r0207",
+  "life": "“I delivered the hospital mail long before I needed a hospital bed.” Monday often includes a stop at the blocks below Foundry Lofts, where Aria checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I was sitting in that chair on the worst day of my life. I came back to sit in it on a good day.",
+  "appearance": "On an ordinary day, look for a red windbreaker and a pocket notebook shaped by years of sitting on it. Aria has a heart-shaped face and prominent ears, with soft white hair brushed sideways. Aria turns fully toward the person speaking during a conversation.",
+  "personality": "Aria prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To come back to sit in the chair on a day of good news.",
+  "family": "Joanna Zhou is Aria’s younger cousin. Aria chooses the familiar route. Joanna can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *A room above the dryers*, Joanna says, “I sat for the first drawing. I love it and absolutely do not want strangers to see it.”",
+  "connections": "Casey Armas. They choose a time when returning to the chair will feel like an ordinary visit.",
+  "familyIds": [
+    "AH-R1203"
+  ],
+  "connectionIds": [
+    "AH-R0209"
+  ],
+  "reactions": [
+    {
+      "situation": "The waiting-room mitten is about to be thrown away",
+      "response": "Aria asks whether the other mitten is still being looked for.",
+      "asWritten": "The waiting-room mitten is about to be thrown away. Aria asks whether the other mitten is still being looked for."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Aria asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Aria asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Aria clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Aria clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

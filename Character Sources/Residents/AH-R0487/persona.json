@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0487",
+  "personId": "AH-R0487",
+  "name": "Lucia Webb",
+  "age": 39,
+  "occupation": "Interpreter",
+  "home": "Coast Ridge",
+  "episode": "Station steps in rain",
+  "biography": "stories/residents/04/04-station-steps-in-rain.md#ah-r0487",
+  "life": "“I still remember different languages using the same word for thunder.” People around Studio Boulevard know Lucia by a small Sunday habit. Lucia waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I came to interpret for one family and ended up translating an argument about a wet dog.",
+  "appearance": "Lucia is easy to recognize by short copper curls and a round face with a pronounced chin. Usually dressed in a boxy denim jacket with a cloth patch so neatly matched it only shows in strong light, Lucia touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Lucia can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To let each family hear the wet-dog story correctly.",
+  "family": "Esme Valejo is Lucia’s stepsibling. Lucia brings something that can still be enjoyed tomorrow. Esme checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The empty berth*, Esme says, “I put a price on a storm that might come once in fifty years.”",
+  "connections": "Nora Nolasco. The petitions reach signers in more than one language.",
+  "familyIds": [
+    "AH-R0148"
+  ],
+  "connectionIds": [
+    "AH-R0483"
+  ],
+  "reactions": [
+    {
+      "situation": "Rain blurs the names on the petition",
+      "response": "Lucia records the petitioners who are present and asks them how to recover the others.",
+      "asWritten": "Rain blurs the names on the petition. Lucia records the petitioners who are present and asks them how to recover the others."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Lucia asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Lucia asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Lucia asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Lucia asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

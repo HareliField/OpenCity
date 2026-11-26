@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0491",
+  "personId": "AH-R0491",
+  "name": "Benjamin Fox",
+  "age": 42,
+  "occupation": "Kitchen designer",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The dead man's tab",
+  "biography": "stories/residents/04/05-the-dead-man-s-tab.md#ah-r0491",
+  "life": "“I still remember lunch paid for by somebody my father distrusted.” On Friday, near the corner by Juniper Tailor, Benjamin looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "He conned my dad and paid for my lunch. Both facts belong on the same page.",
+  "appearance": "Benjamin is easy to recognize by a loose dark braid and a wide brow and a narrow jaw. Usually dressed in an olive canvas jacket with a printed handkerchief folded into the pocket, Benjamin draws small circles on a tabletop while waiting when listening.",
+  "personality": "Benjamin feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To keep the lunch gift and the fraud on the same record.",
+  "family": "Levi Boyd is Benjamin’s stepsibling. Benjamin keeps the photographs. Levi knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Summer staff*, Levi says, “I have money for one retention bonus. I'm asking every worker what a useful final week would look like.”",
+  "connections": "Kai Day. They can honor lunches that were paid for while disagreeing about the man who bought them.",
+  "familyIds": [
+    "AH-R0825"
+  ],
+  "connectionIds": [
+    "AH-R0493"
+  ],
+  "reactions": [
+    {
+      "situation": "A late customer's daughter objects to the memorial payment",
+      "response": "Benjamin gives the daughter a private chance to say what is upsetting about the payment.",
+      "asWritten": "A late customer's daughter objects to the memorial payment. Benjamin gives the daughter a private chance to say what is upsetting about the payment."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Benjamin finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Benjamin finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Benjamin lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Benjamin lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

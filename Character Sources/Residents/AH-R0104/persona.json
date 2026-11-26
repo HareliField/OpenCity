@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0104",
+  "personId": "AH-R0104",
+  "name": "Pari Zed",
+  "age": 39,
+  "occupation": "Color mixer",
+  "home": "the blocks north of the port",
+  "episode": "Ten fingers",
+  "biography": "stories/residents/01/11-ten-fingers.md#ah-r0104",
+  "life": "Pari mixes shade samples by the salon window because half the colors fashionable under the lamp look dead outdoors. An odd red taught her to let a client name what went wrong before trying to repair it. Sunday often includes a stop at Tideline Market, where Pari picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I made the wrong red three summers ago. She wore it to her anniversary dinner anyway. I'm bringing the original sample and letting her name it.",
+  "appearance": "On an ordinary day, look for a long navy raincoat and a folded shopping list secured by a miniature clip. Pari has a long face and high cheekbones, with thick, tightly coiled hair. Pari starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Pari gets protective of anybody who comes into a meeting unprepared. Pari privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To let the customer give the difficult red its permanent salon name.",
+  "family": "Teresa Ellis is Pari’s second cousin. Pari checks the date twice. Teresa brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Salt in the pockets*, Teresa says, “I wanted to return every coat to the right worker.”",
+  "connections": "Imri Black. Clear varnish and a wrongly mixed red give them an unexpected argument about who gets to name a color.",
+  "familyIds": [
+    "AH-R0605"
+  ],
+  "connectionIds": [
+    "AH-R0103"
+  ],
+  "reactions": [
+    {
+      "situation": "The birthday woman asks for five minutes by herself",
+      "response": "Pari lets the room empty and puts the next invitation in her hands.",
+      "asWritten": "The birthday woman asks for five minutes by herself. Pari lets the room empty and puts the next invitation in her hands."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Pari writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Pari writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Pari offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Pari offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

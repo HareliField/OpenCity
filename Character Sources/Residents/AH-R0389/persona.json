@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0389",
+  "personId": "AH-R0389",
+  "name": "Silas Watts",
+  "age": 57,
+  "occupation": "Landlord and plumber",
+  "home": "the western residential streets",
+  "episode": "The upstairs piano",
+  "biography": "stories/residents/03/09-the-upstairs-piano.md#ah-r0389",
+  "life": "“I still remember fitting a window for a neighbor's parrot.” On Saturday, near the corner outside Coastal Barber, Silas usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I wanted to cut a new door. The downstairs tenant offered the piano a room of its own.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and a pair of reading glasses in a cloth sleeve. Silas has an aquiline nose and a square chin, with short copper curls. Silas turns fully toward the person speaking during a conversation.",
+  "personality": "Silas loves a well-told anecdote and distrusts the neat ending. The parts Silas remembers are the interruptions, unfinished jobs and people who had to go back to work halfway through.",
+  "agenda": "To agree a ground-floor home for the piano.",
+  "family": "Selena Lin is Silas’s cousin raised in the same household. Silas chooses the familiar route. Selena can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The kitchen without a boss*, Selena says, “I am the ill owner. I rang to find out what burned and for once three people refused to tell me.”",
+  "connections": "Terry Acosta. They weigh the damaged maker's name against the cost of a new door.",
+  "familyIds": [
+    "AH-R1445"
+  ],
+  "connectionIds": [
+    "AH-R0385"
+  ],
+  "reactions": [
+    {
+      "situation": "A neighbor demands that the piano be taken off the landing",
+      "response": "Silas asks how much clear passage is needed today before arranging another move.",
+      "asWritten": "A neighbor demands that the piano be taken off the landing. Silas asks how much clear passage is needed today before arranging another move."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Silas repeats the correct name quietly, making the correction easy to hear without turning it into a performance.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Silas repeats the correct name quietly, making the correction easy to hear without turning it into a performance."
+    },
+    {
+      "situation": "When invited to tell the story later",
+      "response": "Silas includes the name of the person who arrived after the photograph.",
+      "asWritten": "When invited to tell the story later, Silas includes the name of the person who arrived after the photograph."
+    }
+  ]
+}

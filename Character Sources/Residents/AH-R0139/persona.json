@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0139",
+  "personId": "AH-R0139",
+  "name": "Sybil Rey",
+  "age": 46,
+  "occupation": "Social services auditor",
+  "home": "Coast Ridge",
+  "episode": "Two portions",
+  "biography": "stories/residents/01/14-two-portions.md#ah-r0139",
+  "life": "Sybil was once praised for spotting a small overpayment while the service was losing a fortune in mileage. She has never forgotten what the praise taught her about which details rise through an office. People around the corner outside Coastal Barber know Sybil by a small Wednesday habit. Sybil usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "The second portion costs less than my mileage for investigating it. I can't erase the charge, but I can put both numbers on the same sheet for the person reviewing it.",
+  "appearance": "On an ordinary day, look for a boxy denim jacket and a stitched row of blue crosses along an old repair. Sybil has full cheeks and a mouth that pulls slightly to one side, with brown hair pinned away from the temples. Sybil folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Sybil is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Sybil is concerned.",
+  "agenda": "To show both the food cost and the investigation cost on the review.",
+  "family": "Elsa Allen is Sybil’s cousin. Sybil asks before bringing somebody along. Elsa can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Midnight cinnamon*, Elsa says, “I was fasting when the first tray came out.”",
+  "connections": "Amin Bach. The cost of a twist of pepper is the auditor's smallest example of the difference between meals and people.",
+  "familyIds": [
+    "AH-R0696"
+  ],
+  "connectionIds": [
+    "AH-R0136"
+  ],
+  "reactions": [
+    {
+      "situation": "A visiting supervisor wants the second dinner withdrawn",
+      "response": "Sybil asks for a meal to be held while the people who eat it explain the second portion.",
+      "asWritten": "A visiting supervisor wants the second dinner withdrawn. Sybil asks for a meal to be held while the people who eat it explain the second portion."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Sybil stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Sybil stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Sybil asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Sybil asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

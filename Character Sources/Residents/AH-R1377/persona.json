@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1377",
+  "personId": "AH-R1377",
+  "name": "Marin Brady",
+  "age": 55,
+  "occupation": "Master tailor",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The gift nobody wants",
+  "biography": "stories/residents/10/03-the-gift-nobody-wants.md#ah-r1377",
+  "life": "“I still remember teaching a young tailor to measure a room before a suit.” Sunday often includes a stop at the bank steps, where Marin takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I trained the daughter in tailoring. She told me exactly how little space her first shop needs.",
+  "appearance": "On an ordinary day, look for a mustard canvas overshirt and a pressed flower kept in the clear back of a phone case. Marin has a crooked front tooth visible when laughing, with a smooth side part with one rebellious curl. Marin rubs a thumb along the edge of the nearest pocket during a conversation.",
+  "personality": "Marin has a long memory for unfair prices and a short one for small insults. Marin can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To price a suitably small first tailoring shop.",
+  "family": "Anton Roman is Marin’s younger relative by marriage. Marin can always ask for five minutes alone. Anton asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Two names on the chart*, Anton says, “I had to tell a waiting patient why the counter was busy.”",
+  "connections": "Grey Black. A tenant's actual upstairs neighbor is one of the people measuring how little room a tailor needs. Also in the story is Cassandra Collins (former tailoring pupil).",
+  "familyIds": [
+    "AH-R1110"
+  ],
+  "connectionIds": [
+    "AH-R1374",
+    "AH-R1372"
+  ],
+  "reactions": [
+    {
+      "situation": "The daughter declines the property gift",
+      "response": "Marin takes the daughter's preferred shop seriously before proposing another gift.",
+      "asWritten": "The daughter declines the property gift. Marin takes the daughter's preferred shop seriously before proposing another gift."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Marin offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Marin offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Marin agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Marin agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

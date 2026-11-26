@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1488",
+  "personId": "AH-R1488",
+  "name": "Harry Rhodes",
+  "age": 75,
+  "occupation": "Retired geography teacher",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The last home visit",
+  "biography": "stories/residents/10/14-the-last-home-visit.md#ah-r1488",
+  "life": "“I still remember standing on my own to fetch my first full pill box.” Thursday often includes a stop at the approach to Seabright Court, where Harry likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I can reach my own medicine from a lower shelf. I wanted to tell the old worker before she stopped seeing me.",
+  "appearance": "On an ordinary day, look for an old plum windbreaker and a partly rubbed-away embroidered initial. Harry has full cheeks and a mouth that pulls slightly to one side, with two white streaks in otherwise dark hair. Harry draws breath as if to speak and lets someone else go first during a conversation.",
+  "personality": "Harry tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Harry will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To lower the medicine shelf and fetch it personally.",
+  "family": "Terry Aranda is Harry’s younger cousin. When an older relative began losing nouns, they drew a map of places where familiar words came back. The map still gets folded correctly every time it comes out. Harry marks the places where asking a question helped. Asked about *The almost scholarship*, Terry says, “My own scholarship fell apart over an unpaid deposit.”",
+  "connections": "Yvette Weber. A private introduction lets a client ask both for a particular knock and for medicine on a reachable shelf.",
+  "familyIds": [
+    "AH-R0879"
+  ],
+  "connectionIds": [
+    "AH-R1482"
+  ],
+  "reactions": [
+    {
+      "situation": "The successor asks for a private introduction at the door",
+      "response": "Harry introduces the successor quietly and gives the client a chance to set the routine.",
+      "asWritten": "The successor asks for a private introduction at the door. Harry introduces the successor quietly and gives the client a chance to set the routine."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Harry suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Harry suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Harry repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Harry repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

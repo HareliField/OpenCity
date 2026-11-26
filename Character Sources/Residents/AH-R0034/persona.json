@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0034",
+  "personId": "AH-R0034",
+  "name": "Priya Tal",
+  "age": 35,
+  "occupation": "Public defender",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The wrong bicycle",
+  "biography": "stories/residents/01/04-the-wrong-bicycle.md#ah-r0034",
+  "life": "Priya's first case ended with a client getting his wallet back but missing work to do it. She still counts the cost of taking a morning off whenever an official calls a procedure straightforward. People around Ferris Deli know Priya by a small Thursday habit. Priya asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "My client had a receipt and no photograph. I found myself asking him for proof I'd never ask my neighbors for. I want our property checklist to fit on the back of a library card.",
+  "appearance": "Priya has one cheek that creases before the other. Look for a long plait tucked inside the collar. On an ordinary day, the familiar outfit is an old plum windbreaker with a small enamel bird on the lapel. In conversation Priya takes off the watch before a long conversation.",
+  "personality": "Priya enjoys routines and will defend the right of someone else to break one. As a result, Priya is often everyone's favorite cover for a missed morning.",
+  "agenda": "To get the property checklist down to something a hurried client can carry.",
+  "family": "Peyton Mitchell is Priya’s first cousin once removed. Priya makes the call. Peyton is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The first language*, Peyton says, “I want to read to the shop cat first. It has yet to interrupt anybody's pronunciation.”",
+  "connections": "Cleo Penn. The new collection slip has to satisfy both the counter and the person who will lose wages collecting it.",
+  "familyIds": [
+    "AH-R0969"
+  ],
+  "connectionIds": [
+    "AH-R0036"
+  ],
+  "reactions": [
+    {
+      "situation": "The courier asks who will cover the lost delivery",
+      "response": "Priya gets the dispatcher and the courier looking at the same delivery entry.",
+      "asWritten": "The courier asks who will cover the lost delivery. Priya gets the dispatcher and the courier looking at the same delivery entry."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Priya asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Priya asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Priya keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Priya keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

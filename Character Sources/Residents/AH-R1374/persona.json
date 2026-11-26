@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1374",
+  "personId": "AH-R1374",
+  "name": "Grey Black",
+  "age": 45,
+  "occupation": "Downstairs shop tenant",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The gift nobody wants",
+  "biography": "stories/residents/10/03-the-gift-nobody-wants.md#ah-r1374",
+  "life": "“I still remember renewing a lease before my family knew we could stay.” On Saturday, near Juniper Street, Grey knows which of the west-side porches has a seat in the shade.",
+  "voice": "I rent the shop below. The family's generosity could decide where my family eats next year.",
+  "appearance": "Grey has a flat bridge to the nose and a mobile brow. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a black overshirt with pearl buttons with a fabric zip pull cut from a school scarf. In conversation Grey starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Grey always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Grey is trying to tell the difference before the bill arrives.",
+  "agenda": "To obtain the proposed building's actual tenant terms.",
+  "family": "Mo Gill is Grey’s half-sibling. Grey decides what stays off the paper. Mo brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The aquarium*, Mo says, “I gave them an old pump marked display only.”",
+  "connections": "Marin Brady. A tenant's actual upstairs neighbor is one of the people measuring how little room a tailor needs.",
+  "familyIds": [
+    "AH-R0048"
+  ],
+  "connectionIds": [
+    "AH-R1377"
+  ],
+  "reactions": [
+    {
+      "situation": "A tenant hears about the building sale secondhand",
+      "response": "Grey gives the tenant a reliable contact for the sale information and a real date to expect an answer.",
+      "asWritten": "A tenant hears about the building sale secondhand. Grey gives the tenant a reliable contact for the sale information and a real date to expect an answer."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Grey asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Grey asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Grey suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Grey suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

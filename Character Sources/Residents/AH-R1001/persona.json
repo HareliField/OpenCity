@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1001",
+  "personId": "AH-R1001",
+  "name": "Karim Byrd",
+  "age": 31,
+  "occupation": "Salon freelancer",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The salon on strike",
+  "biography": "stories/residents/07/11-the-salon-on-strike.md#ah-r1001",
+  "life": "“I still remember agreeing to a display in return for a better chair.” People around Tideline Market know Karim by a small Saturday habit. Karim picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I volunteered because I need new clients. I forgot my coworkers need the hours paid today.",
+  "appearance": "Karim has a heart-shaped face and prominent ears. Look for short black hair swept back. After the last appointment, the familiar outfit is a rust-colored canvas coat with a pocket notebook shaped by years of sitting on it. In conversation Karim grins on one side while the eyes stay serious.",
+  "personality": "Karim has a talent for getting adversaries to laugh at exactly the same thing. Karim knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To gain new business without obliging coworkers to work free.",
+  "family": "Tori Gran is Karim’s cousin. Karim chooses the music. Tori puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Two portions*, Tori says, “Our shop donated tins nobody likes. I was embarrassed hearing what the cook did to make them edible.”",
+  "connections": "Isla Joseph. A worker hoping to gain clients speaks directly with the person who booked the unpaid promotion.",
+  "familyIds": [
+    "AH-R0135"
+  ],
+  "connectionIds": [
+    "AH-R1003"
+  ],
+  "reactions": [
+    {
+      "situation": "A promotional client insists on keeping the booking",
+      "response": "Karim asks who will be paid to staff the booking before promising it can go ahead.",
+      "asWritten": "A promotional client insists on keeping the booking. Karim asks who will be paid to staff the booking before promising it can go ahead."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Karim asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Karim asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Karim asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Karim asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

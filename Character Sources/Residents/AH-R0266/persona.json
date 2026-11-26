@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0266",
+  "personId": "AH-R0266",
+  "name": "Jamie Calloway",
+  "age": 57,
+  "occupation": "After-school childminder",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The sheltered corner",
+  "biography": "stories/residents/02/12-the-sheltered-corner.md#ah-r0266",
+  "life": "“I keep stray mittens sorted by school because the children change stop every term.” People around Ferris Deli know Jamie by a small Friday habit. Jamie asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "Our porch got quieter. I miss knowing school is out by the sudden noise.",
+  "appearance": "Jamie is easy to recognize by a loose dark braid and two dimples that appear only with a full smile. Usually dressed in a pale blue work shirt with a replacement button a shade darker than the others, Jamie folds a paper napkin into quarters without noticing when listening.",
+  "personality": "Jamie treats a small promise with the gravity others reserve for a contract. This makes Jamie lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To keep one ordinary after-school sound in the house.",
+  "family": "Benjamin Sun is Jamie’s younger cousin. Jamie asks before bringing somebody along. Benjamin can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The school photograph that travels*, Benjamin says, “I taught her to swim at Pier Beach. I didn't recognize the quiet uniformed girl with her hair dry.”",
+  "connections": "Kira Ortiz. They compare the morning wave lost at one window with the silence gained at another.",
+  "familyIds": [
+    "AH-R1328"
+  ],
+  "connectionIds": [
+    "AH-R0261"
+  ],
+  "reactions": [
+    {
+      "situation": "The route manager declares the move a success",
+      "response": "Jamie asks one rider from each corner to walk the new distance.",
+      "asWritten": "The route manager declares the move a success. Jamie asks one rider from each corner to walk the new distance."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Jamie alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Jamie alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Jamie says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Jamie says what can be returned and asks whether that will do."
+    }
+  ]
+}

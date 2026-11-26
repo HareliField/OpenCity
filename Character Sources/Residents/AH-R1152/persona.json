@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1152",
+  "personId": "AH-R1152",
+  "name": "Peyton Ho",
+  "age": 48,
+  "occupation": "Family carer",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The hair after illness",
+  "biography": "stories/residents/08/11-the-hair-after-illness.md#ah-r1152",
+  "life": "“I still remember washing a comb I was afraid to use on someone else.” On Friday, near the crossing outside Verve Nail Studio, Peyton notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I kept her old brush through treatment and got angry when she didn't want it back.",
+  "appearance": "Peyton has a loose dark braid, a round face with a pronounced chin, and a favorite piece of clothing, a moss-green cardigan. It usually goes with one loose pocket corner secured with green thread. When somebody else has the floor, Peyton leans a shoulder against the wall during long conversations.",
+  "personality": "Peyton has a long memory for unfair prices and a short one for small insults. Peyton can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To ask what to do with the old brush.",
+  "family": "Dennis Shaw is Peyton’s stepsibling. Peyton brings something that can still be enjoyed tomorrow. Dennis checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The soft wharf chalk*, Dennis says, “I read the line in another language first. Both readings fit the two workers on that shift.”",
+  "connections": "Leon Mehta. Giving away the old wig takes a different decision from keeping an old brush.",
+  "familyIds": [
+    "AH-R0468"
+  ],
+  "connectionIds": [
+    "AH-R1154"
+  ],
+  "reactions": [
+    {
+      "situation": "The recovering client changes their mind about the wig",
+      "response": "Peyton lets the client keep or give away the wig without explaining the change of mind.",
+      "asWritten": "The recovering client changes their mind about the wig. Peyton lets the client keep or give away the wig without explaining the change of mind."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Peyton takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Peyton takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Peyton agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Peyton agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

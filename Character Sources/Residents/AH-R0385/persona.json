@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0385",
+  "personId": "AH-R0385",
+  "name": "Terry Acosta",
+  "age": 45,
+  "occupation": "Piano teacher",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The upstairs piano",
+  "biography": "stories/residents/03/09-the-upstairs-piano.md#ah-r0385",
+  "life": "“I still remember a cabinet with its maker's name sanded off.” On Friday, near the steps at Pier Beach, Terry watches the working part of the waterfront before turning toward the open water.",
+  "voice": "My father scratched the piano name off after the creditors came. I recognized his chisel work.",
+  "appearance": "Terry has a soft fringe that falls across one eyebrow, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a faded indigo overshirt. It usually goes with a narrow brass watch set a little fast. When somebody else has the floor, Terry turns fully toward the person speaking.",
+  "personality": "Terry is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Terry is by the number of tiny errands suddenly being done.",
+  "agenda": "To identify the removed makers' plate.",
+  "family": "Marc Ward is Terry’s half-sibling. Terry picks the meeting place. Marc sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The dead man's tab*, Marc says, “I shared his flat after prison. The tab includes meals for men whose first paycheck hadn't come.”",
+  "connections": "Silas Watts. They weigh the damaged maker's name against the cost of a new door.",
+  "familyIds": [
+    "AH-R0492"
+  ],
+  "connectionIds": [
+    "AH-R0389"
+  ],
+  "reactions": [
+    {
+      "situation": "A neighbor demands that the piano be taken off the landing",
+      "response": "Terry asks how much clear passage is needed today before arranging another move.",
+      "asWritten": "A neighbor demands that the piano be taken off the landing. Terry asks how much clear passage is needed today before arranging another move."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Terry keeps the neighbor's place and finds out whether the stranger needs a different kind of help.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Terry keeps the neighbor's place and finds out whether the stranger needs a different kind of help."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Terry agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Terry agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

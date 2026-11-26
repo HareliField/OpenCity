@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0567",
+  "personId": "AH-R0567",
+  "name": "Zara Kang",
+  "age": 55,
+  "occupation": "Market gardener",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The ladder crossing",
+  "biography": "stories/residents/04/12-the-ladder-crossing.md#ah-r0567",
+  "life": "“I still remember my wife jumping a puddle in her interview shoes.” People around the steps at Pier Beach know Zara by a small Saturday habit. Zara watches the working part of the waterfront before turning toward the open water.",
+  "voice": "My wife stepped between the rungs laughing. It's the first time I've seen her laugh in town since our son left.",
+  "appearance": "Zara has a wide brow and a narrow jaw. Look for a swept fringe and a closely clipped nape. On an ordinary day, the familiar outfit is a plum-colored cardigan with a narrow brass watch set a little fast. In conversation Zara presses the lips together to keep a smile in.",
+  "personality": "Zara feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To let the family keep the memory of the laugh.",
+  "family": "Anton Long is Zara’s cousin raised in the same household. Zara picks the meeting place. Anton sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A shelf of apologies*, Anton says, “I spilled coffee on page six and copied the page by hand.”",
+  "connections": "Cory Stahl. The family playing among the rungs moves aside for a crossing signal somebody can hear.",
+  "familyIds": [
+    "AH-R0663"
+  ],
+  "connectionIds": [
+    "AH-R0570"
+  ],
+  "reactions": [
+    {
+      "situation": "A driver sounds a horn halfway through the crossing",
+      "response": "Zara asks for a pause until the people carrying the ladder can clear the crossing safely.",
+      "asWritten": "A driver sounds a horn halfway through the crossing. Zara asks for a pause until the people carrying the ladder can clear the crossing safely."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Zara takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Zara takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Zara lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Zara lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

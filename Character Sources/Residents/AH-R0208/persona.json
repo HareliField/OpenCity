@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0208",
+  "personId": "AH-R0208",
+  "name": "Astrid Reed",
+  "age": 27,
+  "occupation": "Ward porter",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A red mitten",
+  "biography": "stories/residents/02/06-a-red-mitten.md#ah-r0208",
+  "life": "“I learned the ward numbers by where the trolleys rattled.” People around the blocks below Foundry Lofts know Astrid by a small Sunday habit. Astrid checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I sorted it into clothing twice. Twice a porter brought it upstairs. I asked whom we were keeping it for.",
+  "appearance": "Astrid has black hair twisted into a small knot, a narrow face with an expressive upper lip, and a favorite piece of clothing, a washed violet jersey. It usually goes with a stitched row of blue crosses along an old repair. When somebody else has the floor, Astrid touches a knuckle to the chin when searching for a word.",
+  "personality": "Astrid never tires of being shown how somebody makes a living. Astrid can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To ask the porter which patient is actually waiting for the mitten.",
+  "family": "Sam Lucas is Astrid’s cousin raised in the same household. Astrid brings the paper and a pen. Sam decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *A four o'clock kitchen*, Sam says, “I designed a breakfast box the cook can bring home intact.”",
+  "connections": "Audrey Mason. They trace how the bit of warm wool reached the coldest waiting-room armrest. Also in the story is Dale Nielsen (ward visitor).",
+  "familyIds": [
+    "AH-R1298"
+  ],
+  "connectionIds": [
+    "AH-R0204",
+    "AH-R0202"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient wants the chair kept empty for a while",
+      "response": "Astrid saves the chair for a short agreed interval and checks who else needs it.",
+      "asWritten": "A patient wants the chair kept empty for a while. Astrid saves the chair for a short agreed interval and checks who else needs it."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Astrid offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Astrid offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Astrid may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Astrid may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0421",
+  "personId": "AH-R0421",
+  "name": "Samuel Drew",
+  "age": 41,
+  "occupation": "Tour drummer",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The empty drum stool",
+  "biography": "stories/residents/03/13-the-empty-drum-stool.md#ah-r0421",
+  "life": "“I still remember a gig where I played as the curtain fell.” Monday often includes a stop at the entrance to the Wash House, where Samuel stops for local notices even on a day without a load to wash.",
+  "voice": "I walked away because my wrists hurt. I want the new drummer to know that was a choice, too.",
+  "appearance": "On an ordinary day, look for a cream pullover and a thin silver ring worn on a cord. Samuel has a straight nose and deep-set eyes, with black hair twisted into a small knot. Samuel draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Samuel finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To explain the choice to stop drumming to the replacement.",
+  "family": "Julius Mitchell is Samuel’s stepsibling. The eldest person in the family used to sign cards with a large unsteady X. Everyone took this as a flourish until she asked someone to teach her the rest of her name. Samuel checks whether there is a way to sign or answer in private. Asked about *The hair after illness*, Julius says, “I print portrait cards. I offered one photograph from behind so she could look before sharing it.”",
+  "connections": "Riley Fox (regular substitute). The original drummer promises the overlooked substitute a private rehearsal.",
+  "familyIds": [
+    "AH-R1156"
+  ],
+  "connectionIds": [
+    "AH-R0429"
+  ],
+  "reactions": [
+    {
+      "situation": "The drummer asks the substitute to keep the stool",
+      "response": "Samuel asks whether the drummer means a loan or a gift.",
+      "asWritten": "The drummer asks the substitute to keep the stool. Samuel asks whether the drummer means a loan or a gift."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Samuel asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Samuel asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Samuel waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Samuel waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

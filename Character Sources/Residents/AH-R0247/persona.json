@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0247",
+  "personId": "AH-R0247",
+  "name": "Martin Chen",
+  "age": 60,
+  "occupation": "Bread driver",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The bitter orange",
+  "biography": "stories/residents/02/10-the-bitter-orange.md#ah-r0247",
+  "life": "“I once delivered Sunday bread in my daughter's decorated sports wagon.” People around the steps at Pier Beach know Martin by a small Saturday habit. Martin watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I delivered bread six mornings a week. On the seventh she ate with my family. I know the Sunday order.",
+  "appearance": "On an ordinary day, look for a black overshirt with pearl buttons and one cuff folded back twice. Martin has a heart-shaped face and prominent ears, with a neat white crop. Martin looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Martin has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To put the family's Sunday sandwich into the record.",
+  "family": "Cora Yates is Martin’s younger cousin. Martin picks the meeting place. Cora sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The free fringe*, Cora says, “I gave up my slot because I remembered the first day I had nowhere to go before work.”",
+  "connections": "Cynthia Moran. The delivery driver's Sunday version belongs on the card under the nickname the regular remembered.",
+  "familyIds": [
+    "AH-R0703"
+  ],
+  "connectionIds": [
+    "AH-R0248"
+  ],
+  "reactions": [
+    {
+      "situation": "The deli proposes serving the memorial sandwich every Sunday",
+      "response": "Martin asks the family what they would want to eat on an ordinary Sunday.",
+      "asWritten": "The deli proposes serving the memorial sandwich every Sunday. Martin asks the family what they would want to eat on an ordinary Sunday."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Martin looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Martin looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Martin explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Martin explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

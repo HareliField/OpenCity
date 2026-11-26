@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1232",
+  "personId": "ah-pd-145",
+  "name": "Fern Lin",
+  "age": 42,
+  "occupation": "Police communications dispatcher",
+  "home": "Coast Ridge",
+  "episode": "A call heard twice",
+  "biography": "stories/residents/09/04-a-call-heard-twice.md#ah-r1232",
+  "life": "“I still remember a colleague giving me exactly one fact before handing over a voice.” Thursday often includes a stop at the bank steps, where Fern takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I took the second call and inherited the trust the first voice had built. I want the writer to hear both names.",
+  "appearance": "Fern is easy to recognize by a soft fringe that falls across one eyebrow and a deep crease beside the mouth when smiling. Usually dressed in a pale blue work shirt with a pocket notebook shaped by years of sitting on it, Fern rubs a thumb along the edge of the nearest pocket when listening.",
+  "personality": "Fern talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Fern's ways of saying that it is all right to leave.",
+  "agenda": "To credit both conversations equally.",
+  "family": "Stella Choi is Fern’s cousin. Fern offers the first invitation. Stella gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *A house divided kindly*, Stella says, “I used to squeeze through the gap to see my best friend.”",
+  "connections": "Imani Ford (first call taker). Restoring both voices to the letter is their first shared task after the interrupted call.",
+  "familyIds": [
+    "AH-R1436"
+  ],
+  "connectionIds": [
+    "AH-R1231"
+  ],
+  "reactions": [
+    {
+      "situation": "The resident asks for a reply in somebody's own words",
+      "response": "Fern asks the caller how they want to receive a personal reply.",
+      "asWritten": "The resident asks for a reply in somebody's own words. Fern asks the caller how they want to receive a personal reply."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Fern asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Fern asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Fern says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Fern says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

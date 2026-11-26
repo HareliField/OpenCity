@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0149",
+  "personId": "AH-R0149",
+  "name": "Robin Kiln",
+  "age": 19,
+  "occupation": "Sailing student",
+  "home": "the western residential streets",
+  "episode": "The empty berth",
+  "biography": "stories/residents/01/15-the-empty-berth.md#ah-r0149",
+  "life": "Robin got the sailing place on a very good essay about the sea and had to borrow nearly everything required to reach it. Offering the next pupil a shelf of shoes is a way to improve the award without disparaging the people who made it. People around Maré Coffee know Robin by a small Monday habit. Robin likes the table where people coming off shift stop checking the time.",
+  "voice": "My scholarship covers lessons and nothing you wear to them. I came in borrowed shoes and fell on that step. I want a shelf where the next beginner can borrow a pair that fits.",
+  "appearance": "Robin is easy to recognize by auburn hair cut square at the nape and a crooked front tooth visible when laughing. Usually dressed in a charcoal zip cardigan with one cuff folded back twice, Robin rubs a thumb along the edge of the nearest pocket when listening.",
+  "personality": "Robin gets protective of anybody who comes into a meeting unprepared. Robin privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To stock a shelf of properly fitting loan shoes.",
+  "family": "Jody Baker is Robin’s first cousin once removed. Robin brings a spare shopping bag. Jody chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *Hem by hem*, Jody says, “I thought the small pocket held a ring. It held bus money in case she wanted to leave.”",
+  "connections": "Ivo Carden (dockside mentor). The student can tell the mechanic what a beginner's foot does on the slippery step.",
+  "familyIds": [
+    "AH-R0157"
+  ],
+  "connectionIds": [
+    "AH-R0142"
+  ],
+  "reactions": [
+    {
+      "situation": "A broker offers cash to keep the dock empty",
+      "response": "Robin finds out who was promised the empty dock time before discussing a price.",
+      "asWritten": "A broker offers cash to keep the dock empty. Robin finds out who was promised the empty dock time before discussing a price."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Robin keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Robin keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Robin offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Robin offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

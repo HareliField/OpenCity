@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0096",
+  "personId": "AH-R0096",
+  "name": "Sera Noor",
+  "age": 45,
+  "occupation": "Union organizer",
+  "home": "Eastside",
+  "episode": "The thirteenth doughnut",
+  "biography": "stories/residents/01/10-the-thirteenth-doughnut.md#ah-r0096",
+  "life": "Sera spent years recording decisions people never saw because they were working while the meeting took place. She now tries to place a vote somewhere floury or noisy enough to prove workers actually came. Monday often includes a stop at the window at Night Shift Donuts, where Sera knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "Our night crew never attends the monthly breakfast meeting. I put a question under each doughnut and collected answers after midnight. We moved the vote to shift change.",
+  "appearance": "Sera is easy to recognize by a swept fringe and a closely clipped nape and one cheek that creases before the other. Usually dressed in a charcoal zip cardigan with a square of clean cloth for polishing smudges, Sera gives a little nod before asking a hard question when listening.",
+  "personality": "Sera takes a rejection personally for a day and analytically on the second morning. Sera can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To hold the vote at an hour the night crew can attend.",
+  "family": "Tali Moreno is Sera’s cousin raised in the same household. Sera makes room at the table. Tali brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The button card*, Tali says, “I recognized the button from my first school blazer and came back with its twin.”",
+  "connections": "Dina Locke. The breakfast vote now has to reach the worker who shows up after everybody else leaves. Also in the story is Joss Farin (breakfast supplier).",
+  "familyIds": [
+    "AH-R0451"
+  ],
+  "connectionIds": [
+    "AH-R0099",
+    "AH-R0091"
+  ],
+  "reactions": [
+    {
+      "situation": "A late worker finds somebody has eaten the saved breakfast",
+      "response": "Sera finds out which shift the breakfast was for before offering a replacement.",
+      "asWritten": "A late worker finds somebody has eaten the saved breakfast. Sera finds out which shift the breakfast was for before offering a replacement."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Sera moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Sera moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Sera turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Sera turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

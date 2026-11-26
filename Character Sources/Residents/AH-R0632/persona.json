@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0632",
+  "personId": "AH-R0632",
+  "name": "Teresa Lopez",
+  "age": 49,
+  "occupation": "School liaison volunteer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "One clean day",
+  "biography": "stories/residents/05/04-one-clean-day.md#ah-r0632",
+  "life": "“I still remember attending a family dinner in an unfamiliar uniform.” Monday often includes a stop at Paper & Pine Books, where Teresa starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "I came in uniform because changing clothes would make me late. Half my friends thought I was there to stop the party.",
+  "appearance": "On an ordinary day, look for a plum-colored cardigan and one cuff folded back twice. Teresa has a flat bridge to the nose and a mobile brow, with close-cropped dark curls. Teresa takes off the watch before a long conversation during a conversation.",
+  "personality": "Teresa has a strong competitive streak and a very soft spot for the person finishing last. A prize tastes better when everybody had enough time to enter.",
+  "agenda": "To join the reunion without stopping it.",
+  "family": "Ramona Vargas is Teresa’s half-sibling. Teresa chooses the familiar route. Ramona can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *School after sixty*, Ramona says, “I made a clean copy of the practice paper because my partner was embarrassed about crossing out every line.”",
+  "connections": "Samuel Molina. A uniform and a school nickname briefly belong to the same young-looking person. Also in the story is Basil Allard (schoolmate).",
+  "familyIds": [
+    "AH-R1264"
+  ],
+  "connectionIds": [
+    "AH-R0636",
+    "AH-R0631"
+  ],
+  "reactions": [
+    {
+      "situation": "The person everyone expects to speak wants to sit down",
+      "response": "Teresa gives the expected speaker a seat and lets the old classmates start talking amongst themselves.",
+      "asWritten": "The person everyone expects to speak wants to sit down. Teresa gives the expected speaker a seat and lets the old classmates start talking amongst themselves."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Teresa writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Teresa writes down the shift time accurately, then helps them explain the circumstances without having to tell the whole room."
+    },
+    {
+      "situation": "If accused of favoritism",
+      "response": "Teresa explains exactly what help was offered and offers the same practical help to the accuser.",
+      "asWritten": "If accused of favoritism, Teresa explains exactly what help was offered and offers the same practical help to the accuser."
+    }
+  ]
+}

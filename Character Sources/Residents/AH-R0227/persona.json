@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0227",
+  "personId": "AH-R0227",
+  "name": "Eric Hassan",
+  "age": 54,
+  "occupation": "Garage estimator",
+  "home": "the blocks north of the port",
+  "episode": "Low water music",
+  "biography": "stories/residents/02/08-low-water-music.md#ah-r0227",
+  "life": "“I left garage work for a year to look after my brother's little boys.” Saturday often includes a stop at the market by Market Flats, where Eric often waits until the delivery baskets are stacked before going in.",
+  "voice": "I thought the sound came from the old fog bell. That's what my brother told me when I was small.",
+  "appearance": "On an ordinary day, look for a brown corduroy jacket and one cuff folded back twice. Eric has one cheek that creases before the other, with black hair twisted into a small knot. Eric counts on the side of one finger where hardly anybody notices during a conversation.",
+  "personality": "Eric loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To ask the brother how the fog-bell story started.",
+  "family": "Hamish Yeo is Eric’s stepsibling. Eric makes the call. Hamish is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *An empty dedication*, Hamish says, “I paid the electricity through a lean winter.”",
+  "connections": "Joseph Randall. They compare a sound felt through feet with the old story about a fog bell.",
+  "familyIds": [
+    "AH-R1415"
+  ],
+  "connectionIds": [
+    "AH-R0223"
+  ],
+  "reactions": [
+    {
+      "situation": "The choir wants to claim the rock's official name",
+      "response": "Eric asks for the neighborhood names to stay with the choir's name.",
+      "asWritten": "The choir wants to claim the rock's official name. Eric asks for the neighborhood names to stay with the choir's name."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Eric separates the money question from the broken promise and asks which one the family wants to discuss first.",
+      "asWritten": "A family supper turns into an argument about old debt. Eric separates the money question from the broken promise and asks which one the family wants to discuss first."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Eric offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Eric offers one about their own embarrassment instead."
+    }
+  ]
+}

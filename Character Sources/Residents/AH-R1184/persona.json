@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1184",
+  "personId": "AH-R1184",
+  "name": "Helena Alston",
+  "age": 54,
+  "occupation": "Home care worker",
+  "home": "the blocks north of the port",
+  "episode": "The new language at dinner",
+  "biography": "stories/residents/08/14-the-new-language-at-dinner.md#ah-r1184",
+  "life": "“I still remember learning a man's dinner order without learning his first word for pain.” On Saturday, near the bank steps, Helena takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I am the carer he loves. I can cook his favorite food and I cannot ask where it hurts.",
+  "appearance": "On an ordinary day, look for a long navy raincoat and one cuff folded back twice. Helena has a broad nose and a deep dimple on one cheek, with black hair twisted into a small knot. Helena gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Helena takes a rejection personally for a day and analytically on the second morning. Helena can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To learn how the client names discomfort.",
+  "family": "Eden Tran is Helena’s cousin raised in the same household. Some years the only new thing anybody in the family got was a pair of shoes. Buying the right size for someone with plans of their own mattered much more than buying a surprise. Helena does the unglamorous measuring. Asked about *One clean day*, Eden says, “I hate reunion badges. I made ones that let people write what they're doing tomorrow.”",
+  "connections": "Elise Sharp. The existing carer helps the therapy assistant collect the client's own domestic words.",
+  "familyIds": [
+    "AH-R0638"
+  ],
+  "connectionIds": [
+    "AH-R1189"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone asks a family member to translate an intimate question",
+      "response": "Helena offers a qualified interpreter and lets the client decide how much family should hear.",
+      "asWritten": "Someone asks a family member to translate an intimate question. Helena offers a qualified interpreter and lets the client decide how much family should hear."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Helena helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Helena helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Helena turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Helena turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

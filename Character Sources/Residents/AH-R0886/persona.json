@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0886",
+  "personId": "AH-R0886",
+  "name": "Marcel Braun",
+  "age": 73,
+  "occupation": "Retired merchant",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Care with a clock",
+  "biography": "stories/residents/06/14-care-with-a-clock.md#ah-r0886",
+  "life": "“I still remember waiting for a carer who had been assigned too many homes.” Sunday often includes a stop at the downtown fountain, where Marcel keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I lost a good carer because I complained that she rushed. I want to tell her I know who set the clock.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a replacement button a shade darker than the others. Marcel has a long face and high cheekbones, with closely cropped salt-and-pepper hair. Marcel looks at people's hands before looking at what they carry during a conversation.",
+  "personality": "Marcel takes a rejection personally for a day and analytically on the second morning. Marcel can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To tell the former carer who really imposed the rush.",
+  "family": "Walter Easton is Marcel’s second cousin. Marcel saves a place. Walter chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The return of a witness*, Walter says, “I kept her houseplants all these years. They have become much too big for a gesture at the bus stop.”",
+  "connections": "Nelson Mercer. The new visitor learns from a client whose best carer left after being asked to rush.",
+  "familyIds": [
+    "AH-R1398"
+  ],
+  "connectionIds": [
+    "AH-R0890"
+  ],
+  "reactions": [
+    {
+      "situation": "A client wants another minute to finish a button",
+      "response": "Marcel lets the client finish the button and asks where time can be saved without hurrying them.",
+      "asWritten": "A client wants another minute to finish a button. Marcel lets the client finish the button and asks where time can be saved without hurrying them."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Marcel waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Marcel waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Marcel turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Marcel turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

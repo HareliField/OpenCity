@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0315",
+  "personId": "AH-R0315",
+  "name": "Iris Vidal",
+  "age": 32,
+  "occupation": "Industrial photographer",
+  "home": "Old Town",
+  "episode": "A ship without postcards",
+  "biography": "stories/residents/03/02-a-ship-without-postcards.md#ah-r0315",
+  "life": "“I still remember my first roll of film exposed through a torn pocket.” People around the corner outside Coastal Barber know Iris by a small Tuesday habit. Iris usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I am saving the crooked rail that proves my photograph was taken on the early shift.",
+  "appearance": "On an ordinary day, look for a moss-green cardigan and a cloth patch so neatly matched it only shows in strong light. Iris has a crooked front tooth visible when laughing, with short black hair swept back. Iris presses the lips together to keep a smile in during a conversation.",
+  "personality": "Iris finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To save an unmistakable print of the early rail shift.",
+  "family": "Luis Soto is Iris’s stepsibling. Iris remembers the birthdays. Luis asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *A civilian apology*, Luis says, “I was a probationer then. I kept quiet because the man signing the note was my mentor.”",
+  "connections": "Anton March. The crane shadows and the crooked rail fit into one unmistakable postcard. Also in the story is Selena Roberts (night shift subject).",
+  "familyIds": [
+    "AH-R0938"
+  ],
+  "connectionIds": [
+    "AH-R0312",
+    "AH-R0319"
+  ],
+  "reactions": [
+    {
+      "situation": "A family ashore asks for a picture of the crew",
+      "response": "Iris asks the crew who wants to be visible in the family picture.",
+      "asWritten": "A family ashore asks for a picture of the crew. Iris asks the crew who wants to be visible in the family picture."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Iris asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Iris asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Iris points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Iris points to the person who noticed the original mistake."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1365",
+  "personId": "AH-R1365",
+  "name": "Jamie Hamilton",
+  "age": 47,
+  "occupation": "Industrial engraver",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A last ship together",
+  "biography": "stories/residents/10/02-a-last-ship-together.md#ah-r1365",
+  "life": "“I still remember spelling a nickname the way a man actually said it.” People around Maré Coffee know Jamie by a small Tuesday habit. Jamie likes the table where people coming off shift stop checking the time.",
+  "voice": "I make the retirement plaques. One misspelling on the old time sheets has become a nickname they both want on the brass.",
+  "appearance": "Jamie has short black hair swept back, one cheek that creases before the other, and a favorite piece of clothing, a red windbreaker. It usually goes with a folded shopping list secured by a miniature clip. When somebody else has the floor, Jamie turns fully toward the person speaking.",
+  "personality": "Jamie can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Jamie can afford to give, and family knows to take it seriously.",
+  "agenda": "To put the familiar spellings on the plaques.",
+  "family": "Parker Valdez is Jamie’s stepsibling. Jamie is free to hang up first. Parker makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The ladder crossing*, Parker says, “I was late for an interview. I described the crossing when they asked how I handle delays.”",
+  "connections": "Marcel Easton. The person making the plaque brings it to the room where the kettle and the crew actually are.",
+  "familyIds": [
+    "AH-R0569"
+  ],
+  "connectionIds": [
+    "AH-R1370"
+  ],
+  "reactions": [
+    {
+      "situation": "The two old workers are offered separate farewell days",
+      "response": "Jamie asks each worker separately what kind of last day they want.",
+      "asWritten": "The two old workers are offered separate farewell days. Jamie asks each worker separately what kind of last day they want."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Jamie stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Jamie stays where the child can see the shop door and asks the neighboring counter to help find the adult expected there."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Jamie suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Jamie suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1495",
+  "personId": "AH-R1495",
+  "name": "Joel Sun",
+  "age": 51,
+  "occupation": "Former liveaboard and bus driver",
+  "home": "Coast Ridge",
+  "episode": "The last light at the harbor",
+  "biography": "stories/residents/10/15-the-last-light-at-the-harbor.md#ah-r1495",
+  "life": "“I still remember lying awake on a boat after signing divorce papers.” People around the public road outside the Port of Asphalt know Joel by a small Saturday habit. Joel can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I lived on the smallest boat after my divorce and still count its light even though another family sleeps there.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and a tiny red thread tied through the lowest buttonhole. Joel has a strong profile and a little space between the front teeth, with a long plait tucked inside the collar. Joel steadies a cup with both hands while listening during a conversation.",
+  "personality": "Joel has a long memory for unfair prices and a short one for small insults. Joel can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To recognize the new family living on the old boat.",
+  "family": "Jules Drake is Joel’s younger relative by marriage. Joel can always ask for five minutes alone. Jules asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *The bitter orange*, Jules says, “I still have her loose change in a jar. It buys exactly one sandwich at the old price.”",
+  "connections": "Adrian Keller. A photographer learns which ordinary walk once belonged to the resident watching a former boat from shore.",
+  "familyIds": [
+    "AH-R0244"
+  ],
+  "connectionIds": [
+    "AH-R1493"
+  ],
+  "reactions": [
+    {
+      "situation": "A cabin light stays on after its usual time",
+      "response": "Joel checks in through an ordinary contact before treating the late light as an emergency.",
+      "asWritten": "A cabin light stays on after its usual time. Joel checks in through an ordinary contact before treating the late light as an emergency."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Joel asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Joel asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Joel agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Joel agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

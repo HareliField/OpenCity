@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0728",
+  "personId": "AH-R0728",
+  "name": "Damian Harris",
+  "age": 38,
+  "occupation": "Glassworker",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The fountain score",
+  "biography": "stories/residents/05/13-the-fountain-score.md#ah-r0728",
+  "life": "“I still remember a glass pitch that changed after I chipped its rim.” Friday often includes a stop at the window at Night Shift Donuts, where Damian knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I wanted the right pitch so badly I broke my best glass. I played the replacement with a wooden spoon.",
+  "appearance": "Damian has dark brown curls cut close behind the ears, a heart-shaped face and prominent ears, and a favorite piece of clothing, a long navy raincoat. It usually goes with a comb in a sleeve sewn into the lining. When somebody else has the floor, Damian counts on the side of one finger where hardly anybody notices.",
+  "personality": "Damian is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Damian is by the number of tiny errands suddenly being done.",
+  "agenda": "To replace the glass without chasing exactly the old note.",
+  "family": "Ivy Arnett is Damian’s second cousin. Damian keeps the photographs. Ivy knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The hair after illness*, Ivy says, “I know how to cut this texture. I need her mother to stop telling me what she looked like at twelve.”",
+  "connections": "Mara Massey. Breaking a pitched glass gives the player who hates running water a way to write silence into it.",
+  "familyIds": [
+    "AH-R1153"
+  ],
+  "connectionIds": [
+    "AH-R0725"
+  ],
+  "reactions": [
+    {
+      "situation": "The student asks the least confident player to start",
+      "response": "Damian gives the player a clear first beat and permission to pass the opening on.",
+      "asWritten": "The student asks the least confident player to start. Damian gives the player a clear first beat and permission to pass the opening on."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Damian offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Damian offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Damian agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Damian agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

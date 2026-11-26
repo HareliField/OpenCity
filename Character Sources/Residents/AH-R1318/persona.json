@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1318",
+  "personId": "AH-R1318",
+  "name": "Terry March",
+  "age": 22,
+  "occupation": "University student",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The driving lesson fund",
+  "biography": "stories/residents/09/12-the-driving-lesson-fund.md#ah-r1318",
+  "life": "“I still remember arguing with my dad in the car after a free practice run.” People around Juniper Street know Terry by a small Wednesday habit. Terry knows which of the west-side porches has a seat in the shade.",
+  "voice": "I have a wealthy dad. The teacher asked me how many free practice hours he gave me before I called my pass hard-earned.",
+  "appearance": "Terry has a long face and high cheekbones. Look for short sandy hair and a marked widow's peak. On an ordinary day, the familiar outfit is a brown corduroy jacket with a narrow brass watch set a little fast. In conversation Terry looks toward the door whenever a name is called.",
+  "personality": "Terry finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To recognize the practice time a wealthier family supplied.",
+  "family": "Marta Ely is Terry’s older relative by marriage. Terry knows which ones can be shared. Marta keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Ten fingers*, Marta says, “I came to talk about the rent and found myself holding a tiny bottle of mauve.”",
+  "connections": "Louis Law. The instructor hears the difference between paid lessons and years of parental practice.",
+  "familyIds": [
+    "AH-R0110"
+  ],
+  "connectionIds": [
+    "AH-R1315"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone asks whether the grant might buy a bus pass instead",
+      "response": "Terry prices a usable bus pass before dismissing it as a different kind of grant.",
+      "asWritten": "Someone asks whether the grant might buy a bus pass instead. Terry prices a usable bus pass before dismissing it as a different kind of grant."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Terry brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Terry brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Terry waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Terry waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

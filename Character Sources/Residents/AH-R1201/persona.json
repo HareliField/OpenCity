@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1201",
+  "personId": "AH-R1201",
+  "name": "Dora Frost",
+  "age": 31,
+  "occupation": "Laundry worker and portraitist",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A room above the dryers",
+  "biography": "stories/residents/09/01-a-room-above-the-dryers.md#ah-r1201",
+  "life": "“I still remember sketching a face in the blur on the laundry window.” Monday often includes a stop at the market by Market Flats, where Dora often waits until the delivery baskets are stacked before going in.",
+  "voice": "I draw the people who wait for their washing and forget what their own faces are doing.",
+  "appearance": "Dora has a blunt cut just below the ears, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a dark green knitted vest. It usually goes with a partly rubbed-away embroidered initial. When somebody else has the floor, Dora listens with the head tilted a little to the left.",
+  "personality": "Dora talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Dora's ways of saying that it is all right to leave.",
+  "agenda": "To rent a small studio while retaining control of the portraits.",
+  "family": "Katherine Nielsen is Dora’s cousin. Dora chooses the music. Katherine puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The first straight paycheck*, Katherine says, “I found the wage slip on the pavement. I knew what it might cost him if the wrong friend saw it.”",
+  "connections": "Joanna Zhou. Artist and sitter discuss what making a likeness entitles anyone else to see. Also in the story is Lucia Byrd (partner).",
+  "familyIds": [
+    "AH-R0797"
+  ],
+  "connectionIds": [
+    "AH-R1203",
+    "AH-R1204"
+  ],
+  "reactions": [
+    {
+      "situation": "A portrait sitter asks for the drawing back",
+      "response": "Dora asks the sitter whether the drawing can be stored privately or should go home with them.",
+      "asWritten": "A portrait sitter asks for the drawing back. Dora asks the sitter whether the drawing can be stored privately or should go home with them."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Dora accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Dora accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Dora says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Dora says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

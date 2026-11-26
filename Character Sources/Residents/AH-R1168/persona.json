@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1168",
+  "personId": "AH-R1168",
+  "name": "Lee Ochoa",
+  "age": 38,
+  "occupation": "Bakery buyer",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The high road home",
+  "biography": "stories/residents/08/12-the-high-road-home.md#ah-r1168",
+  "life": "“I still remember ordering buns for a lesson that didn't leave the car park.” On Tuesday, near Ferris Deli, Lee asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I booked a dawn bakery collection as a reason to try. The bread can wait if we turn back.",
+  "appearance": "Lee has a softly rounded chin under sharp cheekbones. Look for a cropped cut that shows the shape of the ears. Away from the heat of the kitchen, the familiar outfit is a gray fisher's sweater with a watch on a cracked leather band. In conversation Lee gives a little nod before asking a hard question.",
+  "personality": "Lee is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To keep the bakery run optional.",
+  "family": "Esme Gross is Lee’s stepsibling. Lee brings the paper and a pen. Esme decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *One last dress rehearsal*, Esme says, “I do captions. The parent arrived without her reading glasses and I changed the size while the cast waited.”",
+  "connections": "Pablo Armas. The taxi owner's fuel bill makes a useful comparison with the optional bakery run.",
+  "familyIds": [
+    "AH-R1477"
+  ],
+  "connectionIds": [
+    "AH-R1165"
+  ],
+  "reactions": [
+    {
+      "situation": "A friend insists the return journey must happen that night",
+      "response": "Lee asks the learner when they want to try again, leaving the friend's timetable out of it.",
+      "asWritten": "A friend insists the return journey must happen that night. Lee asks the learner when they want to try again, leaving the friend's timetable out of it."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Lee clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience.",
+      "asWritten": "A family supper turns into an argument about old debt. Lee clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Lee helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Lee helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0372",
+  "personId": "AH-R0372",
+  "name": "Eli Mason",
+  "age": 53,
+  "occupation": "Boardwalk painter",
+  "home": "the blocks north of the port",
+  "episode": "The painted footprint",
+  "biography": "stories/residents/03/08-the-painted-footprint.md#ah-r0372",
+  "life": "“I still remember painting carnival numbers on bare shoulders.” People around the downtown fountain know Eli by a small Sunday habit. Eli keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I drew it with house paint because the lifeguard had used up all our chalk.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and one cuff folded back twice. Eli has a straight nose and deep-set eyes, with short copper curls. Eli starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Eli uses precise names for tools and very approximate names for feelings. People who know Eli well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To preserve the paint recipe and its first date.",
+  "family": "Eva Moss is Eli’s half-sibling. Eli makes room at the table. Eva brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *First shift back*, Eva says, “I visited the family off duty. I am learning which parts of that visit never belong in the break room.”",
+  "connections": "Ivy Scott. They check whether the print came from the foot or the painter's brush.",
+  "familyIds": [
+    "AH-R1083"
+  ],
+  "connectionIds": [
+    "AH-R0371"
+  ],
+  "reactions": [
+    {
+      "situation": "A child wants to trace a different sort of foot",
+      "response": "Eli gives the child paper and room for a footprint that goes home with them.",
+      "asWritten": "A child wants to trace a different sort of foot. Eli gives the child paper and room for a footprint that goes home with them."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Eli asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Eli asks who can manage the stairs and who would rather wait by the landing, without attempting a move on their behalf."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Eli brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Eli brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1166",
+  "personId": "AH-R1166",
+  "name": "Briar Barrett",
+  "age": 49,
+  "occupation": "Road painter",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The high road home",
+  "biography": "stories/residents/08/12-the-high-road-home.md#ah-r1166",
+  "life": "“I still remember repainting a line that was hard to see only in drizzle.” People around the brick passage off the shop row know Briar by a small Sunday habit. Briar takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I paint the edge line. The driver pointed out the place where the existing paint disappears in reflected light.",
+  "appearance": "Briar has close-cropped dark curls, an aquiline nose and a square chin, and a favorite piece of clothing, a striped cotton shirt. It usually goes with one cuff folded back twice. When somebody else has the floor, Briar presses the lips together to keep a smile in.",
+  "personality": "Briar loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To repaint the section that vanishes under reflection.",
+  "family": "Cole Dunn is Briar’s cousin raised in the same household. Briar leaves the first voice message. Cole calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A call heard twice*, Cole says, “I typed the reply and changed saved you to stayed with you.”",
+  "connections": "Jacob Nelson. The instructor and painter compare the view through a moving windscreen.",
+  "familyIds": [
+    "AH-R1237"
+  ],
+  "connectionIds": [
+    "AH-R1162"
+  ],
+  "reactions": [
+    {
+      "situation": "A friend insists the return journey must happen that night",
+      "response": "Briar asks the learner when they want to try again, leaving the friend's timetable out of it.",
+      "asWritten": "A friend insists the return journey must happen that night. Briar asks the learner when they want to try again, leaving the friend's timetable out of it."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Briar offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Briar offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Briar offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Briar offers one about their own embarrassment instead."
+    }
+  ]
+}

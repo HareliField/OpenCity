@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0785",
+  "personId": "ah-pd-107",
+  "name": "Inez Park",
+  "age": 38,
+  "occupation": "Patrol officer",
+  "home": "Eastside",
+  "episode": "The Saturday swap",
+  "biography": "stories/residents/06/04-the-saturday-swap.md#ah-r0785",
+  "life": "“I still remember trading days off with a colleague before we became friends.” On Monday, near the public end of the South Shore boardwalk, Inez checks the shade on the benches before deciding how long to stay.",
+  "voice": "I took everyone's unwanted Saturdays last year. I kept the tally because asking directly felt too much like begging.",
+  "appearance": "Inez has dark brown curls cut close behind the ears, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a red windbreaker. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Inez presses the lips together to keep a smile in.",
+  "personality": "Inez talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Inez's ways of saying that it is all right to leave.",
+  "agenda": "To ask for one of the Saturdays already earned.",
+  "family": "Vera Baines is Inez’s stepsibling. Inez offers the first invitation. Vera gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The missing Sunday*, Vera says, “I have the Sunday key and normally clean silently.”",
+  "connections": "Nia Brooks. A funeral slot is covered using one of the unwanted Saturdays still on the informal tally.",
+  "familyIds": [
+    "AH-R1333"
+  ],
+  "connectionIds": [
+    "AH-R0787"
+  ],
+  "reactions": [
+    {
+      "situation": "A watch swap falls through overnight",
+      "response": "Inez tells the households relying on the swap before looking for a replacement.",
+      "asWritten": "A watch swap falls through overnight. Inez tells the households relying on the swap before looking for a replacement."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Inez checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Inez checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Inez says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Inez says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

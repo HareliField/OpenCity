@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0093",
+  "personId": "AH-R0093",
+  "name": "Drew Milo",
+  "age": 51,
+  "occupation": "Night security guard",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The thirteenth doughnut",
+  "biography": "stories/residents/01/10-the-thirteenth-doughnut.md#ah-r0093",
+  "life": "Drew found the guard work after a restaurant closure and is tired of people describing the empty night as restful. He knows how much company a lighted bakery can provide somebody walking a long round. Monday often includes a stop at the window at Night Shift Donuts, where Drew knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I got the first free one and ate it sitting on the loading step. I'd just learned my son was moving out. I've paid for the next man's breakfast every Friday since.",
+  "appearance": "Drew is easy to recognize by black hair twisted into a small knot and heavy brows and an unusually delicate jaw. Usually dressed in a cream pullover with a pen clipped inside the neckline, Drew looks down for a moment before saying something difficult when listening.",
+  "personality": "Drew has a talent for getting adversaries to laugh at exactly the same thing. Drew knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To keep the Friday breakfast paid ahead for the next tired worker.",
+  "family": "Terry Morse is Drew’s second cousin. Drew checks the date twice. Terry brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The uniform money*, Terry says, “I thought my daughter was being vain about the right shade of skirt until I remembered my first day here.”",
+  "connections": "Joss Farin. A lemon doughnut passed between their shifts before either knew why the other was awake.",
+  "familyIds": [
+    "AH-R0903"
+  ],
+  "connectionIds": [
+    "AH-R0091"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer tries to sell the spare doughnut story to a brand",
+      "response": "Drew asks the baker and the intended recipient for their separate consent.",
+      "asWritten": "A customer tries to sell the spare doughnut story to a brand. Drew asks the baker and the intended recipient for their separate consent."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Drew asks which other bill repayment would displace, then offers only what the household can afford to give.",
+      "asWritten": "A friend asks for a loan due back before payday. Drew asks which other bill repayment would displace, then offers only what the household can afford to give."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Drew asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Drew asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

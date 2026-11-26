@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0560",
+  "personId": "AH-R0560",
+  "name": "Kathleen Warren",
+  "age": 29,
+  "occupation": "Shop assistant",
+  "home": "Coast Ridge",
+  "episode": "The fitting mirror",
+  "biography": "stories/residents/04/11-the-fitting-mirror.md#ah-r0560",
+  "life": "“I still remember getting lifted onto a chair for my first fitting.” Saturday often includes a stop at the entrance to the Wash House, where Kathleen stops for local notices even on a day without a load to wash.",
+  "voice": "I put a little stool in front of it. Children deserve a full-length view too.",
+  "appearance": "Kathleen is easy to recognize by a smooth side part with one rebellious curl and a small notch in the left eyebrow. Usually dressed in a striped cotton shirt with a seam let out by a narrow strip of contrasting fabric, Kathleen presses the lips together to keep a smile in when listening.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To give children a safe view of their entire outfit.",
+  "family": "Neal Clement is Kathleen’s older cousin. Kathleen chooses the familiar route. Neal can stop the walk at any corner. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *The uniform money*, Neal says, “I do not wear the school colors for religious reasons.”",
+  "connections": "Sam Park. The street painter tests the view from a child's stool.",
+  "familyIds": [
+    "AH-R0905"
+  ],
+  "connectionIds": [
+    "AH-R0557"
+  ],
+  "reactions": [
+    {
+      "situation": "The mirror owner wants it back during a fitting",
+      "response": "Kathleen asks the two shops for enough time to finish the fitting in privacy.",
+      "asWritten": "The mirror owner wants it back during a fitting. Kathleen asks the two shops for enough time to finish the fitting in privacy."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Kathleen offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Kathleen offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Kathleen listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Kathleen listens first to the account of how it was actually used."
+    }
+  ]
+}

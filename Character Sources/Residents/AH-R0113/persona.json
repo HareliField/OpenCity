@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0113",
+  "personId": "AH-R0113",
+  "name": "Mara Tev",
+  "age": 53,
+  "occupation": "Cab dispatcher",
+  "home": "Coast Ridge",
+  "episode": "The last green",
+  "biography": "stories/residents/01/12-the-last-green.md#ah-r0113",
+  "life": "Mara became a dispatcher after losing a thumb joint in a luggage door. She understands the small indignity of a job being taken away piece by piece. Retiring a callsign deserves more ceremony than clearing a screen. Saturday often includes a stop at the foot of Harbor Viaduct, where Mara pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "His callsign has been on my board since I joined. I took it off and put it on the passenger booking. I want the younger drivers to hear how a farewell sounds on the radio.",
+  "appearance": "Mara has a high puff tied with plain cord, a softly rounded chin under sharp cheekbones, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a tiny red thread tied through the lowest buttonhole. When somebody else has the floor, Mara touches a knuckle to the chin when searching for a word.",
+  "personality": "Mara can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To turn the old callsign into a final passenger booking.",
+  "family": "Leon White is Mara’s cousin. Mara puts the kettle on. Leon chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The absent signature*, Leon says, “I used the berth for pocket money and never asked whose money repaired it.”",
+  "connections": "Carmen Saye. The retired callsign gives the payroll worker a way to book a last trip before drawing routes for the bus.",
+  "familyIds": [
+    "AH-R0913"
+  ],
+  "connectionIds": [
+    "AH-R0118"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative asks to keep the driver's keys in secret",
+      "response": "Mara asks Saul when he wants to hand over the keys.",
+      "asWritten": "A relative asks to keep the driver's keys in secret. Mara asks Saul when he wants to hand over the keys."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Mara tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Mara tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Mara asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Mara asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0377",
+  "personId": "AH-R0377",
+  "name": "Logan Dinh",
+  "age": 39,
+  "occupation": "Podiatry technician",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The painted footprint",
+  "biography": "stories/residents/03/08-the-painted-footprint.md#ah-r0377",
+  "life": "“I still remember wet plaster setting around a gull's wing.” Tuesday often includes a stop at Breakwater Way, where Logan stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I brought the plaster cast my father took. It belongs to a gull hunter with enormous feet.",
+  "appearance": "Logan has a high puff tied with plain cord, a straight nose and deep-set eyes, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a small enamel bird on the lapel. When somebody else has the floor, Logan turns fully toward the person speaking.",
+  "personality": "Logan enjoys routines and will defend the right of someone else to break one. As a result, Logan is often everyone's favorite cover for a missed morning.",
+  "agenda": "To match the plaster cast to a real former swimmer.",
+  "family": "Zachary Abbott is Logan’s second cousin. Logan leaves the first voice message. Zachary calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The understudy sings*, Zachary says, “I want the part and hate the thought that I might be happy about someone else's bad news.”",
+  "connections": "Darcy Baran. A real plaster cast gives the class a comparison that can remain anonymous.",
+  "familyIds": [
+    "AH-R1171"
+  ],
+  "connectionIds": [
+    "AH-R0378"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor insists the footprint must belong to a famous runner",
+      "response": "Logan checks for a family photograph before accepting the famous name.",
+      "asWritten": "A visitor insists the footprint must belong to a famous runner. Logan checks for a family photograph before accepting the famous name."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Logan says what they know in their own name and refuses to treat a guess as something the child has to disprove.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Logan says what they know in their own name and refuses to treat a guess as something the child has to disprove."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Logan keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Logan keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

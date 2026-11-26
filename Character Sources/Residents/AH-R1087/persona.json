@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1087",
+  "personId": "ah-pd-129",
+  "name": "Rae Dove",
+  "age": 45,
+  "occupation": "Police communications dispatcher",
+  "home": "Coast Ridge",
+  "episode": "First shift back",
+  "biography": "stories/residents/08/04-first-shift-back.md#ah-r1087",
+  "life": "“I still remember packing a friend's favorite mug where it would be safe.” Sunday often includes a stop at the entrance to the Wash House, where Rae stops for local notices even on a day without a load to wash.",
+  "voice": "I saved an old mug and lost it on the very morning of the return. The owner recognized the tea stain on the shelf.",
+  "appearance": "Off duty, look for an olive canvas jacket and a stitched row of blue crosses along an old repair. Rae has a heart-shaped face and prominent ears, with a blunt cut just below the ears. Rae raises one eyebrow long before saying yes during a conversation.",
+  "personality": "Rae thinks best while walking. Sitting beneath someone's office clock makes Rae sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To recover the missing mug or explain the memory behind it.",
+  "family": "Kira Holmes is Rae’s cousin. Rae decides what stays off the paper. Kira brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *Home with stairs*, Kira says, “I live on the ground floor and offered my bedroom.”",
+  "connections": "Quinn Shaw. A lost mug and a breakfast for two make a less public welcome than a full station lunch.",
+  "familyIds": [
+    "AH-R0804"
+  ],
+  "connectionIds": [
+    "AH-R1090"
+  ],
+  "reactions": [
+    {
+      "situation": "The returning colleague finds another name on the desk",
+      "response": "Rae lets both workers describe what happened to the assignment during leave.",
+      "asWritten": "The returning colleague finds another name on the desk. Rae lets both workers describe what happened to the assignment during leave."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Rae gets the people at the next doorway away from the smoke and asks a bystander to make the call.",
+      "asWritten": "Smoke appears under a shop door after closing. Rae gets the people at the next doorway away from the smoke and asks a bystander to make the call."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Rae asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Rae asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

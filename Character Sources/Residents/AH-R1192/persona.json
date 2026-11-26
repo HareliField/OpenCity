@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1192",
+  "personId": "AH-R1192",
+  "name": "Irene Baines",
+  "age": 40,
+  "occupation": "Deckhand",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The skipper goes ashore",
+  "biography": "stories/residents/08/15-the-skipper-goes-ashore.md#ah-r1192",
+  "life": "“I still remember holding a helm after another person's bad news.” On Sunday, near the bank steps, Irene takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I served under the skipper. She kept steering with a broken heart after her wife's death, so stopping now is hers to choose.",
+  "appearance": "Back on the street, look for a gray fisher's sweater and one cuff folded back twice. Irene has a scattering of freckles across the bridge of the nose, with a center part and straight chestnut hair. Irene touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Irene finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To give the former skipper room to choose.",
+  "family": "Frankie Reyes is Irene’s cousin. Irene chooses the music. Frankie puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *One clean day*, Frankie says, “I took a call during the photograph. My friends left a space and took another after I came back.”",
+  "connections": "Mika Lam. The outgoing skipper's deckhand and the successor compare how to honor the old routine.",
+  "familyIds": [
+    "AH-R0637"
+  ],
+  "connectionIds": [
+    "AH-R1194"
+  ],
+  "reactions": [
+    {
+      "situation": "The new skipper changes the departure routine",
+      "response": "Irene gives the new skipper space to explain the change before measuring it against the former routine.",
+      "asWritten": "The new skipper changes the departure routine. Irene gives the new skipper space to explain the change before measuring it against the former routine."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Irene clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience.",
+      "asWritten": "A family supper turns into an argument about old debt. Irene clears the dishes, lets the angriest speaker cool off, and resumes the conversation with a smaller audience."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Irene points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Irene points to the person who noticed the original mistake."
+    }
+  ]
+}

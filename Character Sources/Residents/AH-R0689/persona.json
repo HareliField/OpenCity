@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0689",
+  "personId": "AH-R0689",
+  "name": "Jasmine Miranda",
+  "age": 44,
+  "occupation": "Jewelry maker",
+  "home": "Old Town",
+  "episode": "An address in pencil",
+  "biography": "stories/residents/05/09-an-address-in-pencil.md#ah-r0689",
+  "life": "“I still remember a necklace my mother could read upside down.” People around Lighthouse Cove know Jasmine by a small Tuesday habit. Jasmine takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I wanted the house number on a necklace so my mother can tell a driver where she lives.",
+  "appearance": "On an ordinary day, look for a dark green knitted vest and a watch on a cracked leather band. Jasmine has a deep crease beside the mouth when smiling, with a smooth side part with one rebellious curl. Jasmine steadies a cup with both hands while listening during a conversation.",
+  "personality": "Jasmine finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To engrave a wearable address the mother approves.",
+  "family": "Clyde Schmidt is Jasmine’s second cousin. Jasmine calls about good news first. Clyde is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *A last ship together*, Clyde says, “I am the younger hand who gets the vacancy.”",
+  "connections": "Marcel Lai. Scrap metal and an engraved address have two very different futures in the same workshop.",
+  "familyIds": [
+    "AH-R1367"
+  ],
+  "connectionIds": [
+    "AH-R0688"
+  ],
+  "reactions": [
+    {
+      "situation": "A delivery goes to the newly renumbered neighbor",
+      "response": "Jasmine checks both doorways before moving the delivery.",
+      "asWritten": "A delivery goes to the newly renumbered neighbor. Jasmine checks both doorways before moving the delivery."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Jasmine tells the stranger when the next opening is, then stays with the neighbor until their turn comes.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Jasmine tells the stranger when the next opening is, then stays with the neighbor until their turn comes."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Jasmine points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Jasmine points to the person who noticed the original mistake."
+    }
+  ]
+}

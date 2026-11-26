@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1477",
+  "personId": "AH-R1477",
+  "name": "Esme Gross",
+  "age": 32,
+  "occupation": "Caption editor",
+  "home": "the streets inland from Pier Beach",
+  "episode": "One last dress rehearsal",
+  "biography": "stories/residents/10/13-one-last-dress-rehearsal.md#ah-r1477",
+  "life": "“I still remember moving a caption so a child could see both it and the singer.” People around Breakwater Way know Esme by a small Thursday habit. Esme stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I do captions. The parent arrived without her reading glasses and I changed the size while the cast waited.",
+  "appearance": "Esme is easy to recognize by a center part and straight chestnut hair and a crooked front tooth visible when laughing. Usually dressed in a brown corduroy jacket with a cloth patch so neatly matched it only shows in strong light, Esme presses the lips together to keep a smile in when listening.",
+  "personality": "Esme is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Esme is concerned.",
+  "agenda": "To make both the words and the singer visible.",
+  "family": "Lee Ochoa is Esme’s stepsibling. Esme decides what stays off the paper. Lee brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The high road home*, Lee says, “I booked a dawn bakery collection as a reason to try.”",
+  "connections": "Gilbert Moss. Pockets that actually work and captions a parent can read return two overlooked details to the show.",
+  "familyIds": [
+    "AH-R1168"
+  ],
+  "connectionIds": [
+    "AH-R1476"
+  ],
+  "reactions": [
+    {
+      "situation": "The working parent arrives after the curtain time",
+      "response": "Esme waits for the parent to be seated before asking the cast to start.",
+      "asWritten": "The working parent arrives after the curtain time. Esme waits for the parent to be seated before asking the cast to start."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Esme brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Esme brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Esme asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Esme asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

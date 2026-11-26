@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0754",
+  "personId": "AH-R0754",
+  "name": "Aidan Song",
+  "age": 47,
+  "occupation": "Mortgage clerk",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The upstairs lease",
+  "biography": "stories/residents/06/01-the-upstairs-lease.md#ah-r0754",
+  "life": "“I still remember our mortgage officer closing the blinds for a difficult meeting.” People around the blocks below Foundry Lofts know Aidan by a small Sunday habit. Aidan checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I can approve reasonable leases. Nobody at the bank has ever told me what reasonable means for a night worker.",
+  "appearance": "Aidan is easy to recognize by short sandy hair and a marked widow's peak and an aquiline nose and a square chin. Usually dressed in a long navy raincoat with a replacement button a shade darker than the others, Aidan turns fully toward the person speaking when listening.",
+  "personality": "Aidan can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To get a rent figure the family can use through winter.",
+  "family": "Merritt Gomes is Aidan’s cousin raised in the same household. Aidan knows which ones can be shared. Merritt keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The pawned trumpet*, Merritt says, “I used to buy stolen instruments. This time there's a receipt and a real hurt that the receipt doesn't cover.”",
+  "connections": "Jacqueline Darzi. A paid dental bill shows why a bank's reasonable deposit wasn't sitting in the account. Also in the story is Dale Lloyd (tenant).",
+  "familyIds": [
+    "AH-R0193"
+  ],
+  "connectionIds": [
+    "AH-R0753",
+    "AH-R0751"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative offers the family a sofa with conditions",
+      "response": "Aidan asks what using the sofa would mean for the people already living there.",
+      "asWritten": "A relative offers the family a sofa with conditions. Aidan asks what using the sofa would mean for the people already living there."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Aidan stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Aidan stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Aidan asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Aidan asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

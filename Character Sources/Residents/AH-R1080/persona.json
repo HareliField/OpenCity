@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1080",
+  "personId": "AH-R1080",
+  "name": "Cameron Kelly",
+  "age": 63,
+  "occupation": "Property co-owner",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The guarantee",
+  "biography": "stories/residents/08/03-the-guarantee.md#ah-r1080",
+  "life": "“I still remember measuring a sofa in a house I hadn't decided to leave.” Wednesday often includes a stop at the window at Night Shift Donuts, where Cameron knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I want to downsize while the house is still ours to choose. I've already measured the furniture.",
+  "appearance": "Cameron has a round face with a pronounced chin. Look for silver temples and a dark fringe. On an ordinary day, the familiar outfit is a faded indigo overshirt with a printed handkerchief folded into the pocket. In conversation Cameron folds a paper napkin into quarters without noticing.",
+  "personality": "Cameron takes a rejection personally for a day and analytically on the second morning. Cameron can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To keep downsizing possible while there is still a choice.",
+  "family": "Laurence Salcedo is Cameron’s half-sibling. Cameron knows which ones can be shared. Laurence keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The porch auction*, Laurence says, “I needed somewhere to sit on my way home after surgery.”",
+  "connections": "Gavin Roche. A loan processed in minutes can undo a downsizing plan worked on for months.",
+  "familyIds": [
+    "AH-R0535"
+  ],
+  "connectionIds": [
+    "AH-R1073"
+  ],
+  "reactions": [
+    {
+      "situation": "A sibling wants the bank figures read at a family meal",
+      "response": "Cameron asks the guarantor what can be shared at dinner before reading out any figures.",
+      "asWritten": "A sibling wants the bank figures read at a family meal. Cameron asks the guarantor what can be shared at dinner before reading out any figures."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Cameron writes down their exact words with room left for uncertainty and gives them back to check.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Cameron writes down their exact words with room left for uncertainty and gives them back to check."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Cameron turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Cameron turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

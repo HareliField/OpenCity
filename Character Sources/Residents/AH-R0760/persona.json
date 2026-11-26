@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0760",
+  "personId": "AH-R0760",
+  "name": "Franklin Pike",
+  "age": 27,
+  "occupation": "Removals runner",
+  "home": "Eastside",
+  "episode": "The upstairs lease",
+  "biography": "stories/residents/06/01-the-upstairs-lease.md#ah-r0760",
+  "life": "“I still remember carrying a cupboard while somebody cried behind it.” Thursday often includes a stop at the approach to Seabright Court, where Franklin likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I offered boxes and got asked to be a witness at the lease meeting. I'm wearing my good shoes for that.",
+  "appearance": "Franklin has a broad nose and a deep dimple on one cheek. Look for black hair twisted into a small knot. On an ordinary day, the familiar outfit is a gray fisher's sweater with a printed handkerchief folded into the pocket. In conversation Franklin looks toward the door whenever a name is called.",
+  "personality": "Franklin tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Franklin will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To stand beside the family at the lease meeting.",
+  "family": "Darcy Fadel is Franklin’s half-sibling. Franklin picks the meeting place. Darcy sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The worker who couldn't read the joke*, Darcy says, “I laughed because my boss looked right at me.”",
+  "connections": "Hollis Wick. A housing swap takes somebody willing to carry furniture and witness the paperwork.",
+  "familyIds": [
+    "AH-R1211"
+  ],
+  "connectionIds": [
+    "AH-R0755"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative offers the family a sofa with conditions",
+      "response": "Franklin asks what using the sofa would mean for the people already living there.",
+      "asWritten": "A relative offers the family a sofa with conditions. Franklin asks what using the sofa would mean for the people already living there."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Franklin agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Franklin agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Franklin repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Franklin repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

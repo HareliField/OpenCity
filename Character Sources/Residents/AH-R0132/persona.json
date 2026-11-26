@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0132",
+  "personId": "AH-R0132",
+  "name": "Essie Good",
+  "age": 36,
+  "occupation": "Unpaid family carer",
+  "home": "the western residential streets",
+  "episode": "Two portions",
+  "biography": "stories/residents/01/14-two-portions.md#ah-r0132",
+  "life": "Essie's paid job starts two hours after her caring day begins. She owns a work badge for one and has no name at all in the other service's register. A second plate would recognize something she already does every day. Monday often includes a stop at the blocks below Foundry Lofts, where Essie checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "The spare portion is mine. I go home before the register calls me a resident and come back before breakfast. I'd like to eat sitting down without justifying my address to anybody.",
+  "appearance": "Essie has a narrow face with an expressive upper lip. Look for a long plait tucked inside the collar. On an ordinary day, the familiar outfit is a red windbreaker with a folded shopping list secured by a miniature clip. In conversation Essie rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Essie never tires of being shown how somebody makes a living. Essie can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To sit down to a whole meal without having to prove residence.",
+  "family": "Bianca Gallagher is Essie’s older cousin. Essie calls about good news first. Bianca is allowed to ask about the bad news afterward. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Land without cranes*, Bianca says, “I work the rail siding. Moving the warehouse shifts half my day onto the road.”",
+  "connections": "Eamon Tor (relative receiving care). They are the two people the argument about a second portion is actually about.",
+  "familyIds": [
+    "AH-R1065"
+  ],
+  "connectionIds": [
+    "AH-R0134"
+  ],
+  "reactions": [
+    {
+      "situation": "The diner asks to have company without being asked about care",
+      "response": "Essie lets the diner start an ordinary conversation and leaves the care questions for another time.",
+      "asWritten": "The diner asks to have company without being asked about care. Essie lets the diner start an ordinary conversation and leaves the care questions for another time."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Essie asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Essie asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Essie may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Essie may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

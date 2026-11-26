@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1330",
+  "personId": "AH-R1330",
+  "name": "Ismael Wu",
+  "age": 46,
+  "occupation": "Postal clerk",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The school photograph that travels",
+  "biography": "stories/residents/09/13-the-school-photograph-that-travels.md#ah-r1330",
+  "life": "“I still remember addressing a letter to a father whose home had changed.” Saturday often includes a stop at the brick passage off the shop row, where Ismael takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I paid postage for the last copy. It is the first letter the girl's father will open in his new home.",
+  "appearance": "On an ordinary day, look for a long navy raincoat and one cuff folded back twice. Ismael has one cheek that creases before the other, with short sandy hair and a marked widow's peak. Ismael gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Ismael finds it easier to own up to a mistake than to accept praise. The worse the mistake, the more precise the account of exactly when it happened.",
+  "agenda": "To deliver a letter to the father's current home.",
+  "family": "Jody Gao is Ismael’s cousin raised in the same household. Ismael calls back when there is finally a little privacy. Jody leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The rescue hut mural*, Jody says, “I recognize the scar on her painted calf. My old teammate got it in the same meet I lost.”",
+  "connections": "Albert Hsu. A bus number and a new home address help the final copy get where it belongs.",
+  "familyIds": [
+    "AH-R0526"
+  ],
+  "connectionIds": [
+    "AH-R1325"
+  ],
+  "reactions": [
+    {
+      "situation": "A recipient wants to say thanks without being pictured",
+      "response": "Ismael offers a written reply or an ordinary visit without requiring a photograph in return.",
+      "asWritten": "A recipient wants to say thanks without being pictured. Ismael offers a written reply or an ordinary visit without requiring a photograph in return."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Ismael asks what evidence supports the accusation and declines to supply a name on gossip alone.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Ismael asks what evidence supports the accusation and declines to supply a name on gossip alone."
+    },
+    {
+      "situation": "When thanked for a shared success",
+      "response": "Ismael points to the person who noticed the original mistake.",
+      "asWritten": "When thanked for a shared success, Ismael points to the person who noticed the original mistake."
+    }
+  ]
+}

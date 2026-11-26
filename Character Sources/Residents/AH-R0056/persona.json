@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0056",
+  "personId": "AH-R0056",
+  "name": "Bea Rial",
+  "age": 49,
+  "occupation": "Window cleaner",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "Window seven",
+  "biography": "stories/residents/01/06-window-seven.md#ah-r0056",
+  "life": "Bea has cleaned most city landmarks without ever being invited to an opening. She likes the ward because somebody always notices when the sea suddenly becomes clearer. Saturday often includes a stop at Ferris Deli, where Bea asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "You can see an old handprint when the sun catches that pane. My daughter left it on a visit years ago. I cleaned the rest and asked the patient whether she minded the hand.",
+  "appearance": "On an ordinary day, look for a cropped bottle-green coat and a pair of reading glasses in a cloth sleeve. Bea has one cheek that creases before the other, with a cropped cut that shows the shape of the ears. Bea draws breath as if to speak and lets someone else go first during a conversation.",
+  "personality": "Bea listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To leave or remove the little handprint according to the patient's wishes.",
+  "family": "Denise Ho is Bea’s half-sibling. Bea makes the call. Denise is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The late crossing*, Denise says, “I lost my license and kept quiet. I contribute by watching the driver's children for the round trip.”",
+  "connections": "Mika Drew. The last obstacles between the bed and the view are a sticky rail and a pane with an old handprint.",
+  "familyIds": [
+    "AH-R0863"
+  ],
+  "connectionIds": [
+    "AH-R0053"
+  ],
+  "reactions": [
+    {
+      "situation": "A different patient needs the same porter",
+      "response": "Bea checks which part can wait and makes sure the other patient hears about the delay.",
+      "asWritten": "A different patient needs the same porter. Bea checks which part can wait and makes sure the other patient hears about the delay."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Bea offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Bea offers to walk to the next staffed place together, at the stranger's pace, to ask about another ride."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Bea keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Bea keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

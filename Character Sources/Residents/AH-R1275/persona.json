@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1275",
+  "personId": "AH-R1275",
+  "name": "Warren Ito",
+  "age": 44,
+  "occupation": "Lettering artist",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The other side of the cove",
+  "biography": "stories/residents/09/08-the-other-side-of-the-cove.md#ah-r1275",
+  "life": "“I still remember cutting one long name in brass without losing its final letter.” People around the bank steps know Warren by a small Thursday habit. Warren takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I work in metal lettering. Both names fit if we give up the decorative crest.",
+  "appearance": "Warren is easy to recognize by thick, tightly coiled hair and a small notch in the left eyebrow. Usually dressed in an olive canvas jacket with a braided bracelet with a single wooden bead, Warren grins on one side while the eyes stay serious when listening.",
+  "personality": "Warren has a quick wit and an equally quick sense of shame. A joke is often Warren's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To fit both names clearly on the metal.",
+  "family": "Nelson Mercer is Warren’s younger cousin. Warren calls back when there is finally a little privacy. Nelson leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *Care with a clock*, Nelson says, “I am the newest visitor. I asked for training time with the slow client rather than the tidy example house.”",
+  "connections": "Peyton Waters. The person who used to carry newspapers finds the lettering artist space on the public proof.",
+  "familyIds": [
+    "AH-R0890"
+  ],
+  "connectionIds": [
+    "AH-R1273"
+  ],
+  "reactions": [
+    {
+      "situation": "A public donor asks to approve the wording on the bench",
+      "response": "Warren asks the cleaner and the donor for separate views on the wording.",
+      "asWritten": "A public donor asks to approve the wording on the bench. Warren asks the cleaner and the donor for separate views on the wording."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Warren keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Warren keeps the money and the rumor out of the conversation and shares only firsthand observations with the person taking the report."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Warren seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Warren seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0416",
+  "personId": "AH-R0416",
+  "name": "Jeff Jiang",
+  "age": 68,
+  "occupation": "Retired highway inspector",
+  "home": "the neighborhood around Market Flats",
+  "episode": "One unposted detour",
+  "biography": "stories/residents/03/12-one-unposted-detour.md#ah-r0416",
+  "life": "“I still remember placing pegs along a flooded road as a boy.” Friday often includes a stop at the public end of the South Shore boardwalk, where Jeff checks the shade on the benches before deciding how long to stay.",
+  "voice": "I recognized the detour from a flood when I was small. The map and my memory disagree at the viaduct.",
+  "appearance": "On an ordinary day, look for a soft blue checked shirt and a copper-colored clasp that has been repaired by hand. Jeff has fine brows over wide-set eyes, with silver temples and a dark fringe. Jeff touches a knuckle to the chin when searching for a word during a conversation.",
+  "personality": "Jeff is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Jeff is by the number of tiny errands suddenly being done.",
+  "agenda": "To test the old flood route against the new map.",
+  "family": "Sam Knight is Jeff’s younger cousin. The family once kept the wrong suitcase for a week while the carrier found its owner. They never opened it. Everybody still has a different private theory about what it held. Jeff has a clear idea of where curiosity ought to stop. Asked about *The boy on the corner*, Sam says, “I am the teacher who noticed the uncollected child.”",
+  "connections": "Javier Anders. They try the route by bicycle and by memories of the old flood road.",
+  "familyIds": [
+    "AH-R1095"
+  ],
+  "connectionIds": [
+    "AH-R0415"
+  ],
+  "reactions": [
+    {
+      "situation": "The diversion sign is only legible from close up",
+      "response": "Jeff reads the sign from the distance a driver really gets and reports the result.",
+      "asWritten": "The diversion sign is only legible from close up. Jeff reads the sign from the distance a driver really gets and reports the result."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Jeff asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Jeff asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Jeff agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Jeff agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1269",
+  "personId": "AH-R1269",
+  "name": "Maria Tanner",
+  "age": 67,
+  "occupation": "Retired factory mechanic",
+  "home": "the western residential streets",
+  "episode": "School after sixty",
+  "biography": "stories/residents/09/07-school-after-sixty.md#ah-r1269",
+  "life": "“I still remember a childhood insult surviving into a pension-age dining room.” People around the corner outside Coastal Barber know Maria by a small Sunday habit. Maria usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I am the old class bully. The classmate I frightened has chosen the chair opposite me and asked me to keep quiet.",
+  "appearance": "On an ordinary day, look for a mustard canvas overshirt and a pressed flower kept in the clear back of a phone case. Maria has two dimples that appear only with a full smile, with silvery hair gathered at the nape. Maria listens with the head tilted a little to the left during a conversation.",
+  "personality": "Maria keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Maria wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To respect the former classmate's choice of silence.",
+  "family": "Iva Allard is Maria’s second cousin. Maria decides what stays off the paper. Iva brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The widow's dividend*, Iva says, “I countersigned every page. The one missing signature is from the day I walked out.”",
+  "connections": "Una Curtis. The lecturer and former bully both return to a room where their previous authority has no special force.",
+  "familyIds": [
+    "AH-R0324"
+  ],
+  "connectionIds": [
+    "AH-R1265"
+  ],
+  "reactions": [
+    {
+      "situation": "An older learner freezes in front of the blackboard",
+      "response": "Maria offers to turn the learner's chair without announcing the reason to the class.",
+      "asWritten": "An older learner freezes in front of the blackboard. Maria offers to turn the learner's chair without announcing the reason to the class."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Maria asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Maria asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Maria offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Maria offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

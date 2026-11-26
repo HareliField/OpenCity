@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0435",
+  "personId": "AH-R0435",
+  "name": "Alice Brooks",
+  "age": 26,
+  "occupation": "Nail artist",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The housecoat commission",
+  "biography": "stories/residents/03/14-the-housecoat-commission.md#ah-r0435",
+  "life": "“I still remember filing a chipped nail in a bus shelter.” People around Lighthouse Cove know Alice by a small Saturday habit. Alice takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I painted her nails to match before the cloth came. Now we have to laugh about two different reds.",
+  "appearance": "Alice has dark brown curls cut close behind the ears, a narrow face with an expressive upper lip, and a favorite piece of clothing, a mustard canvas overshirt. It usually goes with one cuff folded back twice. When somebody else has the floor, Alice holds eye contact until the other person has finished.",
+  "personality": "Alice always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Alice is trying to tell the difference before the bill arrives.",
+  "agenda": "To find a nail shade that works with the different red.",
+  "family": "Javier Rahman is Alice’s first cousin once removed. Alice checks the date twice. Javier brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *Summer staff*, Javier says, “I sold my van to afford the cart permit. I'm asking the council whether the permit can follow me inland.”",
+  "connections": "Max Clay. They choose a color the daytime receipt and salon lamp can both explain.",
+  "familyIds": [
+    "AH-R0823"
+  ],
+  "connectionIds": [
+    "AH-R0434"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor asks where the housecoat was bought",
+      "response": "Alice gives the maker the chance to be credited without revealing what the garment cost.",
+      "asWritten": "A visitor asks where the housecoat was bought. Alice gives the maker the chance to be credited without revealing what the garment cost."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Alice moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Alice moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Alice suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Alice suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

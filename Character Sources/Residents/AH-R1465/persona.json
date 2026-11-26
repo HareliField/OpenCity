@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1465",
+  "personId": "AH-R1465",
+  "name": "Rain Fisher",
+  "age": 41,
+  "occupation": "Cleaning worker",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Three minutes at the bridge",
+  "biography": "stories/residents/10/12-three-minutes-at-the-bridge.md#ah-r1465",
+  "life": "“I still remember turning the seat covers inside out between shifts.” On Tuesday, near Breakwater Way, Rain stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I am the only rider who can't drive. I offered to handle the mechanic appointments and the laundry for the seat covers.",
+  "appearance": "Rain is easy to recognize by a cropped cut that shows the shape of the ears and a small notch in the left eyebrow. Usually dressed in a long navy raincoat with a watch on a cracked leather band, Rain gives a little nod before asking a hard question when listening.",
+  "personality": "Rain enjoys routines and will defend the right of someone else to break one. As a result, Rain is often everyone's favorite cover for a missed morning.",
+  "agenda": "To arrange the van service and wash the seat covers.",
+  "family": "Talia Wong is Rain’s half-sibling. Rain knows which ones can be shared. Talia keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The almost scholarship*, Talia says, “I already sold concert tickets for the fundraiser.”",
+  "connections": "Lennon Wang. Looking after the van gives a non-driver a useful stake in the shared rides.",
+  "familyIds": [
+    "AH-R0877"
+  ],
+  "connectionIds": [
+    "AH-R1470"
+  ],
+  "reactions": [
+    {
+      "situation": "A shift changes by exactly three minutes",
+      "response": "Rain checks the school pickup and shift clocks together before changing the route.",
+      "asWritten": "A shift changes by exactly three minutes. Rain checks the school pickup and shift clocks together before changing the route."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Rain offers the shortfall once and accepts the answer, including a refusal.",
+      "asWritten": "A customer is short at the till while a queue forms. Rain offers the shortfall once and accepts the answer, including a refusal."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Rain keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Rain keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

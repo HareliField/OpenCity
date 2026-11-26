@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0353",
+  "personId": "AH-R0353",
+  "name": "Stevie Heath",
+  "age": 56,
+  "occupation": "Radio repairer",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The hospital radio",
+  "biography": "stories/residents/03/06-the-hospital-radio.md#ah-r0353",
+  "life": "“I still remember a long aerial made from our first clothesline.” On Thursday, near the courtyard by Ferry Street Rooms, Stevie prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I fixed the radio with a shoelace during a strike. The lace was a present from my daughter.",
+  "appearance": "Stevie has one cheek that creases before the other. Look for short copper curls. On an ordinary day, the familiar outfit is a faded indigo overshirt with a watch on a cracked leather band. In conversation Stevie gives a little nod before asking a hard question.",
+  "personality": "Stevie treats a small promise with the gravity others reserve for a contract. This makes Stevie lovely to rely on and surprisingly difficult to invite on a whim.",
+  "agenda": "To save the old shoelace during the repair.",
+  "family": "June Sawyer is Stevie’s younger cousin. At home an argument could last exactly as long as it took the kettle to boil. Whoever put it back on was admitting there was more to say. Stevie is usually the one who refills it. Asked about *A closing hour*, June says, “I am his regular dawn customer. His first day off was the first time I remembered to ask his name.”",
+  "connections": "Oakley Ibrahim. A shoelace repair makes the retired keeper rethink sending the radio to a collector. Also in the story is Lisa Anders (cabinet maker).",
+  "familyIds": [
+    "AH-R1352"
+  ],
+  "connectionIds": [
+    "AH-R0360",
+    "AH-R0358"
+  ],
+  "reactions": [
+    {
+      "situation": "The replacement radio drowns out a patient's match",
+      "response": "Stevie asks the two patients which part of the match each wants to hear.",
+      "asWritten": "The replacement radio drowns out a patient's match. Stevie asks the two patients which part of the match each wants to hear."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Stevie stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Stevie stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "When offered a favor with ambiguous terms",
+      "response": "Stevie says what can be returned and asks whether that will do.",
+      "asWritten": "When offered a favor with ambiguous terms, Stevie says what can be returned and asks whether that will do."
+    }
+  ]
+}

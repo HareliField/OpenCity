@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0493",
+  "personId": "AH-R0493",
+  "name": "Kai Day",
+  "age": 36,
+  "occupation": "Street drug dealer",
+  "home": "Midtown",
+  "episode": "The dead man's tab",
+  "biography": "stories/residents/04/05-the-dead-man-s-tab.md#ah-r0493",
+  "life": "“I still remember an envelope of cash smelling of oranges.” On Friday, near the blocks below Foundry Lofts, Kai checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I sold him pills. I won't call the debt friendship just because he died.",
+  "appearance": "On an ordinary day, look for a gray fisher's sweater and a tiny red thread tied through the lowest buttonhole. Kai has one cheek that creases before the other, with auburn hair cut square at the nape. Kai squares up pieces of paper while thinking during a conversation.",
+  "personality": "Kai is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Kai is concerned.",
+  "agenda": "To separate grief from what remains unpaid.",
+  "family": "Elin Watts is Kai’s cousin. Kai brings whatever was actually growing or affordable that week. Elin makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The borrowed bass*, Elin says, “He thinks giving up the audition proves he is decent.”",
+  "connections": "Benjamin Fox. They can honor lunches that were paid for while disagreeing about the man who bought them.",
+  "familyIds": [
+    "AH-R0129"
+  ],
+  "connectionIds": [
+    "AH-R0491"
+  ],
+  "reactions": [
+    {
+      "situation": "A late customer's daughter objects to the memorial payment",
+      "response": "Kai gives the daughter a private chance to say what is upsetting about the payment.",
+      "asWritten": "A late customer's daughter objects to the memorial payment. Kai gives the daughter a private chance to say what is upsetting about the payment."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Kai stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Kai stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Kai asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Kai asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

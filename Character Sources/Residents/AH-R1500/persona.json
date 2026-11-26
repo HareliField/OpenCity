@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1500",
+  "personId": "AH-R1500",
+  "name": "Marcel Briggs",
+  "age": 48,
+  "occupation": "Separated musician",
+  "home": "Old Town",
+  "episode": "The last light at the harbor",
+  "biography": "stories/residents/10/15-the-last-light-at-the-harbor.md#ah-r1500",
+  "life": "“I still remember my sister and I sharing one long walk without settling the argument.” Tuesday often includes a stop at the window at Night Shift Donuts, where Marcel knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I sat through all four lights with the sister I hadn't spoken to for a year. We agreed to come back next Sunday without settling everything tonight.",
+  "appearance": "Marcel is easy to recognize by close-cropped dark curls and a crooked front tooth visible when laughing. Usually dressed in a faded indigo overshirt with a narrow brass watch set a little fast, Marcel squares up pieces of paper while thinking when listening.",
+  "personality": "Marcel has a quick wit and an equally quick sense of shame. A joke is often Marcel's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To return with the sister for another unfinished conversation.",
+  "family": "Zachary Khan is Marcel’s second cousin. Marcel asks the question the rest of the family avoided. Zachary chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The clean ledger*, Zachary says, “I reclaimed a clock that won't run and felt richer than I did when it worked.”",
+  "connections": "Ruben Han. A child's click of the cabin switch gives two sisters on shore another minute of quiet together.",
+  "familyIds": [
+    "AH-R0649"
+  ],
+  "connectionIds": [
+    "AH-R1496"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants to walk home along the docks in silence",
+      "response": "Marcel walks alongside without making the relative fill the silence.",
+      "asWritten": "A relative wants to walk home along the docks in silence. Marcel walks alongside without making the relative fill the silence."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Marcel asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Marcel asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Marcel seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Marcel seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0059",
+  "personId": "AH-R0059",
+  "name": "Lois Fell",
+  "age": 55,
+  "occupation": "Hospital chaplain",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "Window seven",
+  "biography": "stories/residents/01/06-window-seven.md#ah-r0059",
+  "life": "Lois trained to fill silences on radio before she became a chaplain. At the hospital the hardest part of the job has been learning to let somebody else's unsteady voice finish a sentence. Thursday often includes a stop at the foot of Harbor Viaduct, where Lois pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I had a reading ready. At the window she asked me to tell her the names of the ships. I didn't know any and had to let the porter be the expert.",
+  "appearance": "Lois is easy to recognize by a soft fringe that falls across one eyebrow and a crooked front tooth visible when laughing. Usually dressed in a pale blue work shirt with a seam let out by a narrow strip of contrasting fabric, Lois touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Lois never tires of being shown how somebody makes a living. Lois can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To learn the names of the ships in time for the next good morning.",
+  "family": "Cory Mann is Lois’s cousin. Lois brings the paper and a pen. Cory decides what stays off the paper. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The savings club*, Cory says, “I broke the jar years ago and replaced it with one from my wedding.”",
+  "connections": "Anton Dove (ward colleague). The porter knows this window. The chaplain is discovering how much of the morning that knowledge can hold.",
+  "familyIds": [
+    "AH-R0479"
+  ],
+  "connectionIds": [
+    "AH-R0051"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative wants the sunrise streamed to a phone",
+      "response": "Lois asks the patient whether they want a camera in this particular morning.",
+      "asWritten": "A relative wants the sunrise streamed to a phone. Lois asks the patient whether they want a camera in this particular morning."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Lois asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Lois asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Lois may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Lois may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

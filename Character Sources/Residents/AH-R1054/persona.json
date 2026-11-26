@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1054",
+  "personId": "AH-R1054",
+  "name": "Vincent Armas",
+  "age": 70,
+  "occupation": "Retired garment cutter",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Reopening at six",
+  "biography": "stories/residents/08/01-reopening-at-six.md#ah-r1054",
+  "life": "“I still remember a night customer who wanted company more than ironing.” People around the entrance to the Wash House know Vincent by a small Friday habit. Vincent stops for local notices even on a day without a load to wash.",
+  "voice": "I used to pay the old owner's daughter to sit with me when the place emptied. Now she manages a hotel.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and one cuff folded back twice. Vincent has a scattering of freckles across the bridge of the nose, with silver temples and a dark fringe. Vincent squares up pieces of paper while thinking during a conversation.",
+  "personality": "Vincent never tires of being shown how somebody makes a living. Vincent can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To keep safe company available for the late customer.",
+  "family": "Sasha Perez is Vincent’s cousin raised in the same household. Vincent decides what stays off the paper. Sasha brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The savings club*, Sasha says, “I can contribute time in a spare room on the route, which our rules don't count.”",
+  "connections": "Faye Boone. A former night customer and the resident upstairs devise an evening with less machine noise.",
+  "familyIds": [
+    "AH-R0473"
+  ],
+  "connectionIds": [
+    "AH-R1057"
+  ],
+  "reactions": [
+    {
+      "situation": "A customer offers to pay for an extra private hour",
+      "response": "Vincent gets the cost of staffing the hour into the conversation before accepting a private fee.",
+      "asWritten": "A customer offers to pay for an extra private hour. Vincent gets the cost of staffing the hour into the conversation before accepting a private fee."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Vincent looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Vincent looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Vincent may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Vincent may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

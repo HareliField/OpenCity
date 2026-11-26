@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0477",
+  "personId": "AH-R0477",
+  "name": "Ravi Foster",
+  "age": 49,
+  "occupation": "Estate assistant",
+  "home": "the western residential streets",
+  "episode": "The savings club",
+  "biography": "stories/residents/04/03-the-savings-club.md#ah-r0477",
+  "life": "“I still remember a dinner where the host bought every vacant chair.” Tuesday often includes a stop at Maré Coffee, where Ravi likes the table where people coming off shift stop checking the time.",
+  "voice": "My millionaire employer offered the balance on condition we name the club after her. I asked for train vouchers instead.",
+  "appearance": "On an ordinary day, look for a cream pullover and a small enamel bird on the lapel. Ravi has a deep crease beside the mouth when smiling, with a swept fringe and a closely clipped nape. Ravi listens with the head tilted a little to the left during a conversation.",
+  "personality": "Ravi thinks best while walking. Sitting beneath someone's office clock makes Ravi sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To secure travel help without renaming the club.",
+  "family": "Aubrey Carver is Ravi’s stepsibling. Ravi puts the kettle on. Aubrey chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The upstairs lease*, Aubrey says, “I offered to move in with my sister until she showed me where three children would sleep.”",
+  "connections": "Mia Sloan. A holiday photograph doesn't need a sponsor's name across the front.",
+  "familyIds": [
+    "AH-R0752"
+  ],
+  "connectionIds": [
+    "AH-R0474"
+  ],
+  "reactions": [
+    {
+      "situation": "The club draws the name of someone who cannot travel",
+      "response": "Ravi lets the winner describe where they actually want the money to go.",
+      "asWritten": "The club draws the name of someone who cannot travel. Ravi lets the winner describe where they actually want the money to go."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Ravi offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Ravi offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Ravi asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Ravi asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1336",
+  "personId": "AH-R1336",
+  "name": "Quinn Park",
+  "age": 38,
+  "occupation": "Social worker",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The missing Sunday",
+  "biography": "stories/residents/09/14-the-missing-sunday.md#ah-r1336",
+  "life": "“I still remember trying to schedule the part of care that takes no fixed time.” People around the approach to Seabright Court know Quinn by a small Sunday habit. Quinn likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I am the social worker who suggested a tidy plan. I want to write companionship down without turning it into a timed chore.",
+  "appearance": "Quinn has a softly rounded chin under sharp cheekbones. Look for auburn hair cut square at the nape. On an ordinary day, the familiar outfit is a moss-green cardigan with a narrow brass watch set a little fast. In conversation Quinn folds a paper napkin into quarters without noticing.",
+  "personality": "Quinn has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To support companionship without billing it as a task.",
+  "family": "Victor Blair is Quinn’s older cousin. Quinn makes the call. Victor is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A closing hour*, Victor says, “I have never missed that family's party. I always brought a shirt from the dryer smelling of somebody else's soap.”",
+  "connections": "Jody Clay. A sustainable family date gives the social worker a better measure of companionship than a timed task.",
+  "familyIds": [
+    "AH-R1355"
+  ],
+  "connectionIds": [
+    "AH-R1334"
+  ],
+  "reactions": [
+    {
+      "situation": "One volunteer cannot make the match",
+      "response": "Quinn gives the widower a timely message and lets him decide whether he wants another visitor.",
+      "asWritten": "One volunteer cannot make the match. Quinn gives the widower a timely message and lets him decide whether he wants another visitor."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Quinn brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Quinn brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Quinn says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Quinn says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

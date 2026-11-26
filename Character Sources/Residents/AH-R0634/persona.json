@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0634",
+  "personId": "AH-R0634",
+  "name": "Molly Neal",
+  "age": 48,
+  "occupation": "Wardrobe supervisor",
+  "home": "the streets inland from Pier Beach",
+  "episode": "One clean day",
+  "biography": "stories/residents/05/04-one-clean-day.md#ah-r0634",
+  "life": "“I still remember skipping rope on a badly tilted playground.” On Sunday, near Studio Boulevard, Molly waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I had a speech ready about service. My old desk mate handed me a skipping rope and counted out loud.",
+  "appearance": "Molly is easy to recognize by a loose dark braid and a straight nose and deep-set eyes. Usually dressed in a red windbreaker with a little coil of soft measuring tape, Molly draws small circles on a tabletop while waiting when listening.",
+  "personality": "Molly has a quick wit and an equally quick sense of shame. A joke is often Molly's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To play one round with the old skipping rope.",
+  "family": "Casey King is Molly’s older relative by marriage. Molly sets the time to leave. Casey picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The quiet verse*, Casey says, “I was furious there was a secret verse until my grandson asked which page of my diary he could read.”",
+  "connections": "Basil Allard. The remembered seat and the skipping rope give the reunion two different ways of welcoming someone back.",
+  "familyIds": [
+    "AH-R0280"
+  ],
+  "connectionIds": [
+    "AH-R0631"
+  ],
+  "reactions": [
+    {
+      "situation": "The person everyone expects to speak wants to sit down",
+      "response": "Molly gives the expected speaker a seat and lets the old classmates start talking amongst themselves.",
+      "asWritten": "The person everyone expects to speak wants to sit down. Molly gives the expected speaker a seat and lets the old classmates start talking amongst themselves."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Molly asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Molly asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Molly seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Molly seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0820",
+  "personId": "AH-R0820",
+  "name": "Eden Song",
+  "age": 38,
+  "occupation": "Bookkeeper",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Reading the payslip",
+  "biography": "stories/residents/06/07-reading-the-payslip.md#ah-r0820",
+  "life": "“I still remember finding my father's pension stamp book behind his wedding photograph.” People around the foot of Harbor Viaduct know Eden by a small Wednesday habit. Eden pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I found a pension contribution and called my father. I wanted the first money conversation we've ever got through without fighting.",
+  "appearance": "Eden has short sandy hair and a marked widow's peak, full cheeks and a mouth that pulls slightly to one side, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a partly rubbed-away embroidered initial. When somebody else has the floor, Eden looks at people's hands before looking at what they carry.",
+  "personality": "Eden thinks best while walking. Sitting beneath someone's office clock makes Eden sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To talk to the father about the newly found pension contribution.",
+  "family": "Teal Holmes is Eden’s older cousin. Eden knows which ones can be shared. Teal keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The sheltered corner*, Teal says, “I found a ring under the old shelter. The date inside matches a couple who used to catch separate buses.”",
+  "connections": "Frances Finch. A missed class and a rediscovered pension both lead to calls made after work.",
+  "familyIds": [
+    "AH-R0270"
+  ],
+  "connectionIds": [
+    "AH-R0819"
+  ],
+  "reactions": [
+    {
+      "situation": "An employer asks who is attending the class",
+      "response": "Eden protects the attendance list and offers general information about the class.",
+      "asWritten": "An employer asks who is attending the class. Eden protects the attendance list and offers general information about the class."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Eden brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Eden brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Eden asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Eden asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1305",
+  "personId": "AH-R1305",
+  "name": "Louise Hooper",
+  "age": 25,
+  "occupation": "Nail studio assistant",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "A scar at the salon",
+  "biography": "stories/residents/09/11-a-scar-at-the-salon.md#ah-r1305",
+  "life": "“I still remember recognizing my own work on a poster that named someone else.” On Friday, near the public road outside the Port of Asphalt, Louise can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I am the junior worker who polished the scarred hand. My name was left off the credit sheet.",
+  "appearance": "Louise has a strong profile and a little space between the front teeth. Look for a cropped cut that shows the shape of the ears. On an ordinary day, the familiar outfit is a striped cotton shirt with a partly rubbed-away embroidered initial. In conversation Louise squares up pieces of paper while thinking.",
+  "personality": "Louise reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Louise trusts most.",
+  "agenda": "To get the nail technician's credit restored.",
+  "family": "Kit Gill is Louise’s older cousin. Louise can always ask for five minutes alone. Kit asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Winter afloat*, Kit says, “I loaned him the key to the workshop shower.”",
+  "connections": "Eva Bhandari. The studio assistant and the wall owner discuss giving local workers their own credits.",
+  "familyIds": [
+    "AH-R0895"
+  ],
+  "connectionIds": [
+    "AH-R1308"
+  ],
+  "reactions": [
+    {
+      "situation": "A campaign manager wants to enlarge the scar",
+      "response": "Louise asks the model whether the original permission covers the scar.",
+      "asWritten": "A campaign manager wants to enlarge the scar. Louise asks the model whether the original permission covers the scar."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Louise asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Louise asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Louise does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Louise does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

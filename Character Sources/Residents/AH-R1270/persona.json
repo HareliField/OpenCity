@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1270",
+  "personId": "AH-R1270",
+  "name": "Pascal Boone",
+  "age": 54,
+  "occupation": "Community cook",
+  "home": "Midtown",
+  "episode": "School after sixty",
+  "biography": "stories/residents/09/07-school-after-sixty.md#ah-r1270",
+  "life": "“I still remember cutting sandwiches before anybody knew their marks.” People around Tideline Market know Pascal by a small Friday habit. Pascal picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I brought sandwiches for after, regardless of marks. We all know what a celebration conditional on passing feels like.",
+  "appearance": "Away from the heat of the kitchen, look for a cream pullover and a pressed flower kept in the clear back of a phone case. Pascal has heavy brows and an unusually delicate jaw, with auburn hair cut square at the nape. Pascal draws small circles on a tabletop while waiting during a conversation.",
+  "personality": "Pascal always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Pascal is trying to tell the difference before the bill arrives.",
+  "agenda": "To serve everyone the same lunch after the exam.",
+  "family": "Ismael Gross is Pascal’s cousin. Pascal can stop the walk at any corner. Ismael chooses the familiar route. Walking side by side makes it easier to disagree without turning each disagreement into a contest. Asked about *Level with the window*, Ismael says, “I kept my curtains closed for years. The final empty morning was when I missed strangers most.”",
+  "connections": "Miles Sato. An old pen and an unconditional lunch make this examination day quite unlike school.",
+  "familyIds": [
+    "AH-R0720"
+  ],
+  "connectionIds": [
+    "AH-R1266"
+  ],
+  "reactions": [
+    {
+      "situation": "An examiner offers to read a question aloud",
+      "response": "Pascal asks the learner how they want the question presented before the examiner begins.",
+      "asWritten": "An examiner offers to read a question aloud. Pascal asks the learner how they want the question presented before the examiner begins."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Pascal brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Pascal brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Pascal suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Pascal suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

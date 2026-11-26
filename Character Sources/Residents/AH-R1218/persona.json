@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1218",
+  "personId": "AH-R1218",
+  "name": "Yasmin Mason",
+  "age": 35,
+  "occupation": "Interpreter",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The worker who couldn't read the joke",
+  "biography": "stories/residents/09/02-the-worker-who-couldn-t-read-the-joke.md#ah-r1218",
+  "life": "“I still remember letting a hurtful joke pass because it was nearly time to go.” Monday often includes a stop at Studio Boulevard, where Yasmin waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I was the only one who understood both languages and looked away. I want to make a proper introduction now.",
+  "appearance": "Yasmin has a loose dark braid, an aquiline nose and a square chin, and a favorite piece of clothing, a boxy denim jacket. It usually goes with a little coil of soft measuring tape. When somebody else has the floor, Yasmin takes off the watch before a long conversation.",
+  "personality": "Yasmin has an appetite for a good argument about little things and works hard to keep a serious disagreement from being turned into entertainment.",
+  "agenda": "To introduce the colleagues properly.",
+  "family": "Hank Meyer is Yasmin’s second cousin. Yasmin decides what stays off the paper. Hank brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *The sandwich board*, Hank says, “I thought the numbers were dates. My father can still remember what each filling cost.”",
+  "connections": "Remy Macrae. The writer and the silent bystander each owe a different conversation to the person in the picture.",
+  "familyIds": [
+    "AH-R0175"
+  ],
+  "connectionIds": [
+    "AH-R1212"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative forwards the break-room picture",
+      "response": "Yasmin asks that the picture stop traveling while the worker decides what to say.",
+      "asWritten": "A relative forwards the break-room picture. Yasmin asks that the picture stop traveling while the worker decides what to say."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Yasmin asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Yasmin asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "When a private quarrel becomes a public joke",
+      "response": "Yasmin says the plainest truthful thing possible and changes the subject.",
+      "asWritten": "When a private quarrel becomes a public joke, Yasmin says the plainest truthful thing possible and changes the subject."
+    }
+  ]
+}

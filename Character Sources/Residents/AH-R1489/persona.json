@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1489",
+  "personId": "AH-R1489",
+  "name": "Geraldine Andrade",
+  "age": 72,
+  "occupation": "Retired neighbor and switchboard worker",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The last home visit",
+  "biography": "stories/residents/10/14-the-last-home-visit.md#ah-r1489",
+  "life": "“I still remember being called by a pet name I refused to answer to.” On Friday, near the corner outside Coastal Barber, Geraldine usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I hate being called darling and will miss the only person who could get away with it.",
+  "appearance": "Geraldine has steel-colored hair cut square above the collar, one cheek that creases before the other, and a favorite piece of clothing, a gray fisher's sweater. It usually goes with a tiny red thread tied through the lowest buttonhole. When somebody else has the floor, Geraldine looks toward the door whenever a name is called.",
+  "personality": "Geraldine is fond of ambitious ideas and deeply suspicious of grand openings. The question Geraldine asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To say goodbye to the one permitted pet name.",
+  "family": "Agnes Kahn is Geraldine’s younger relative by marriage. Geraldine asks the question the rest of the family avoided. Agnes chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The sheltered corner*, Agnes says, “The new stop faces the sun. I can read the driver's lips for the first time.”",
+  "connections": "Alba Nolasco. A pensioner who wants the good cup and a pensioner who dislikes pet names insist on two different kinds of respect.",
+  "familyIds": [
+    "AH-R0263"
+  ],
+  "connectionIds": [
+    "AH-R1484"
+  ],
+  "reactions": [
+    {
+      "situation": "A client tells the retiring carer what they disliked",
+      "response": "Geraldine lets the client finish the uncomfortable answer before proposing a fix.",
+      "asWritten": "A client tells the retiring carer what they disliked. Geraldine lets the client finish the uncomfortable answer before proposing a fix."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Geraldine asks the filmer to lower the phone and gets another familiar face to stand by the person crying.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Geraldine asks the filmer to lower the phone and gets another familiar face to stand by the person crying."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Geraldine accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Geraldine accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

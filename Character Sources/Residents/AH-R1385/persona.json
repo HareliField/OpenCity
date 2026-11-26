@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1385",
+  "personId": "ah-pd-143",
+  "name": "Zoe Nash",
+  "age": 36,
+  "occupation": "Detective",
+  "home": "Eastside",
+  "episode": "Names on the night wall",
+  "biography": "stories/residents/10/04-names-on-the-night-wall.md#ah-r1385",
+  "life": "“I still remember phoning a brother who only asked about the weather.” On Thursday, near the bank steps, Zoe takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I chose the brother who hears my ordinary complaints and never asks for an exciting case.",
+  "appearance": "Off duty, look for an old plum windbreaker and a printed handkerchief folded into the pocket. Zoe has a long face and high cheekbones, with short, uneven waves that refuse to lie flat. Zoe presses the lips together to keep a smile in during a conversation.",
+  "personality": "Zoe thinks best while walking. Sitting beneath someone's office clock makes Zoe sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To give the brother one ordinary story from home.",
+  "family": "Jay Knight is Zoe’s cousin raised in the same household. A parcel came home years late with the handwriting still recognizable. Since then nobody in the family opens a hard letter alone unless they specifically ask to. Zoe stays for the silence after the call. Asked about *The waiting-room plant*, Jay says, “I know it by the smell on my fingers after my daughter's surgery.”",
+  "connections": "Oakley Roman. The sign painter asks how the brother who listens would want his name spelled.",
+  "familyIds": [
+    "AH-R0503"
+  ],
+  "connectionIds": [
+    "AH-R1390"
+  ],
+  "reactions": [
+    {
+      "situation": "A colleague leaves a name off the thank-you wall",
+      "response": "Zoe allows a private thank-you to stay private even on unveiling day.",
+      "asWritten": "A colleague leaves a name off the thank-you wall. Zoe allows a private thank-you to stay private even on unveiling day."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Zoe tells the first helper what they actually saw and makes room for the rider to answer for themself.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Zoe tells the first helper what they actually saw and makes room for the rider to answer for themself."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Zoe asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Zoe asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

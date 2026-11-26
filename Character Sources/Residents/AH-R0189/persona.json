@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0189",
+  "personId": "AH-R0189",
+  "name": "Adela Ferraro",
+  "age": 24,
+  "occupation": "Children's illustrator",
+  "home": "the blocks north of the port",
+  "episode": "The second dog",
+  "biography": "stories/residents/02/04-the-second-dog.md#ah-r0189",
+  "life": "“A spelling mistake got my first picture book stocked under detective fiction.” Tuesday often includes a stop at the steps at Pier Beach, where Adela watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I turned the photographs into a spot-the-difference game so my little niece would give evidence in her own words.",
+  "appearance": "Adela is easy to recognize by a loose dark braid and a strong profile and a little space between the front teeth. Usually dressed in a rust-colored canvas coat with a cloth patch so neatly matched it only shows in strong light, Adela touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Adela can be wonderfully decisive about an emergency and maddeningly undecided about a gift. This is because a person can say precisely what hurts and rarely says exactly what they want.",
+  "agenda": "To let the niece present the differences without interruption.",
+  "family": "Evelyn Gupta is Adela’s first cousin once removed. Adela offers the first invitation. Evelyn gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The carer's afternoon*, Evelyn says, “I made a rota that divided time equally and forgot my brother's bus takes an hour each way.”",
+  "connections": "Ivy Perreault. The child's drawing gives the counter volunteer more to record than the color brown.",
+  "familyIds": [
+    "AH-R1035"
+  ],
+  "connectionIds": [
+    "AH-R0183"
+  ],
+  "reactions": [
+    {
+      "situation": "A child takes the other dog's lead",
+      "response": "Adela separates the leads and asks both families what the dogs respond to.",
+      "asWritten": "A child takes the other dog's lead. Adela separates the leads and asks both families what the dogs respond to."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Adela asks everybody to retrace their own last ordinary actions before asking the young worker a question.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Adela asks everybody to retrace their own last ordinary actions before asking the young worker a question."
+    },
+    {
+      "situation": "If a neighbor offers a costly present",
+      "response": "Adela asks for an afternoon to work out whether accepting it would put someone else in debt.",
+      "asWritten": "If a neighbor offers a costly present, Adela asks for an afternoon to work out whether accepting it would put someone else in debt."
+    }
+  ]
+}

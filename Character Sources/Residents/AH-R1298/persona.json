@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1298",
+  "personId": "AH-R1298",
+  "name": "Sam Lucas",
+  "age": 32,
+  "occupation": "Packaging designer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "A four o'clock kitchen",
+  "biography": "stories/residents/09/10-a-four-o-clock-kitchen.md#ah-r1298",
+  "life": "“I still remember seeing the cook's child spill breakfast in a paper bag.” On Saturday, near the approach to Seabright Court, Sam likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I designed a breakfast box the cook can bring home intact. Her children want her to sit with them while they open it.",
+  "appearance": "Sam has close-cropped dark curls, a small notch in the left eyebrow, and a favorite piece of clothing, an old plum windbreaker. It usually goes with a stitched row of blue crosses along an old repair. When somebody else has the floor, Sam starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Sam has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To get an intact breakfast box to the family table.",
+  "family": "Astrid Reed is Sam’s cousin raised in the same household. Sam decides what stays off the paper. Astrid brings the paper and a pen. They have helped each other make decisions that were far easier to discuss once the figures could be moved around. The decisions themselves still belong to the person asking. Asked about *A red mitten*, Astrid says, “I sorted it into clothing twice. Twice a porter brought it upstairs.”",
+  "connections": "Victor Marks. The bookkeeper and the box designer put the price of getting breakfast home beside its price in the shop.",
+  "familyIds": [
+    "AH-R0208"
+  ],
+  "connectionIds": [
+    "AH-R1295"
+  ],
+  "reactions": [
+    {
+      "situation": "The cook's teenager wants an ordinary breakfast together",
+      "response": "Sam moves practical work away from the table for the time that the teenager asked for.",
+      "asWritten": "The cook's teenager wants an ordinary breakfast together. Sam moves practical work away from the table for the time that the teenager asked for."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Sam helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Sam helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Sam asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Sam asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

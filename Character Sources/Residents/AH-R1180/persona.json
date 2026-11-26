@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1180",
+  "personId": "AH-R1180",
+  "name": "Briar Wong",
+  "age": 50,
+  "occupation": "Music librarian",
+  "home": "Midtown",
+  "episode": "The understudy sings",
+  "biography": "stories/residents/08/13-the-understudy-sings.md#ah-r1180",
+  "life": "“I still remember filing a score that still had two people's laughter in the margin.” People around the foot of Harbor Viaduct know Briar by a small Saturday habit. Briar pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I was at the rehearsal nobody filmed. I will remember the two women laughing halfway through the duet.",
+  "appearance": "Briar has auburn hair cut square at the nape, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, a rust-colored canvas coat. It usually goes with a knotted piece of sail thread on a key ring. When somebody else has the floor, Briar counts on the side of one finger where hardly anybody notices.",
+  "personality": "Briar has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To save the duet as something the singers shared.",
+  "family": "Talia Dai is Briar’s second cousin. Briar is allowed to ask about the bad news afterward. Talia calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *Hem by hem*, Talia says, “I kept the original cutting bill through two moves.”",
+  "connections": "Chloe Briggs. A replacement poster and a borrowed library score can carry the understudy's full name.",
+  "familyIds": [
+    "AH-R0154"
+  ],
+  "connectionIds": [
+    "AH-R1173"
+  ],
+  "reactions": [
+    {
+      "situation": "The original singer asks to choose a seat in the audience",
+      "response": "Briar lets the singer choose a seat without alerting the whole audience.",
+      "asWritten": "The original singer asks to choose a seat in the audience. Briar lets the singer choose a seat without alerting the whole audience."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Briar looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Briar looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Briar asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Briar asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

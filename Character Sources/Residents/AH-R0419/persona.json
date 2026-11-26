@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0419",
+  "personId": "AH-R0419",
+  "name": "Darcy Osei",
+  "age": 57,
+  "occupation": "Tea cart operator",
+  "home": "Old Town",
+  "episode": "One unposted detour",
+  "biography": "stories/residents/03/12-one-unposted-detour.md#ah-r0419",
+  "life": "“I still remember ringing for customers through a week of fog.” People around the foot of Harbor Viaduct know Darcy by a small Thursday habit. Darcy pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I left my old route bell ringing on the corner so regulars would know where our cart had gone.",
+  "appearance": "Darcy is easy to recognize by a swept fringe and a closely clipped nape and one cheek that creases before the other. Usually dressed in a narrow-striped sweater with a tiny red thread tied through the lowest buttonhole, Darcy touches a knuckle to the chin when searching for a word when listening.",
+  "personality": "Darcy is firm about boundaries and unusually forgiving of somebody who admits to crossing one. Demands to act grateful for unwanted help can end a friendship.",
+  "agenda": "To bring old customers to the cart's temporary corner.",
+  "family": "Morgan Moreau is Darcy’s second cousin. Darcy keeps the photographs. Morgan knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The almost scholarship*, Morgan says, “I trained the runner-up. I'm helping the winner find travel money even though I wanted my own student selected.”",
+  "connections": "Una Roman. A rescued cart's regulars become the first people counted in the help survey.",
+  "familyIds": [
+    "AH-R0873"
+  ],
+  "connectionIds": [
+    "AH-R0420"
+  ],
+  "reactions": [
+    {
+      "situation": "A delivery customer refuses the late parcel",
+      "response": "Darcy checks with the intended recipient before leaving a late parcel.",
+      "asWritten": "A delivery customer refuses the late parcel. Darcy checks with the intended recipient before leaving a late parcel."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Darcy finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Darcy finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "If a relative arrives with a solution nobody requested",
+      "response": "Darcy thanks them for coming and explains the part that still belongs to the household.",
+      "asWritten": "If a relative arrives with a solution nobody requested, Darcy thanks them for coming and explains the part that still belongs to the household."
+    }
+  ]
+}

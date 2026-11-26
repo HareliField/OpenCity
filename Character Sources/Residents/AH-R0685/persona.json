@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0685",
+  "personId": "AH-R0685",
+  "name": "Carla Molina",
+  "age": 28,
+  "occupation": "Substitute postal worker",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "An address in pencil",
+  "biography": "stories/residents/05/09-an-address-in-pencil.md#ah-r0685",
+  "life": "“I still remember the porch with the permanently crooked curtain.” On Monday, near the entrance to the Wash House, Carla stops for local notices even on a day without a load to wash.",
+  "voice": "I am the postal substitute. I know the houses by curtains until everybody changes them.",
+  "appearance": "On an ordinary day, look for a cropped bottle-green coat and a partly rubbed-away embroidered initial. Carla has a narrow face with an expressive upper lip, with dark brown curls cut close behind the ears. Carla takes off the watch before a long conversation during a conversation.",
+  "personality": "Carla is fond of ambitious ideas and deeply suspicious of grand openings. The question Carla asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To draw a route that works after the curtains change.",
+  "family": "Faye Boone is Carla’s cousin. Carla makes the call. Faye is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Reopening at six*, Faye says, “I live over the machines. I want one night when I can hear my husband's voice in bed.”",
+  "connections": "Darcy Bay. A substitute carrier draws the porch on a card for the pensioner driver.",
+  "familyIds": [
+    "AH-R1057"
+  ],
+  "connectionIds": [
+    "AH-R0687"
+  ],
+  "reactions": [
+    {
+      "situation": "A delivery goes to the newly renumbered neighbor",
+      "response": "Carla checks both doorways before moving the delivery.",
+      "asWritten": "A delivery goes to the newly renumbered neighbor. Carla checks both doorways before moving the delivery."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Carla brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Carla brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Carla accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Carla accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

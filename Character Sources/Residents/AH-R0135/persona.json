@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0135",
+  "personId": "AH-R0135",
+  "name": "Tori Gran",
+  "age": 43,
+  "occupation": "Grocer",
+  "home": "the western residential streets",
+  "episode": "Two portions",
+  "biography": "stories/residents/01/14-two-portions.md#ah-r0135",
+  "life": "Tori took over the shop after her mum retired and discovered how much of the firm's charitable reputation rested on giving away things nobody wanted. She has started pricing donations at what a customer would actually choose. Sunday often includes a stop at the courtyard by Ferry Street Rooms, where Tori prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "Our shop donated tins nobody likes. I was embarrassed hearing what the cook did to make them edible. Next week I'm letting the diners write the shopping list.",
+  "appearance": "Tori is easy to recognize by thick, tightly coiled hair and a deep crease beside the mouth when smiling. Usually dressed in a soft blue checked shirt with a comb in a sleeve sewn into the lining, Tori takes off the watch before a long conversation when listening.",
+  "personality": "Tori gets protective of anybody who comes into a meeting unprepared. Tori privately wishes people would notice the amount of preparation behind this apparent ease.",
+  "agenda": "To let the diners choose the next useful donation.",
+  "family": "Karim Byrd is Tori’s cousin. Tori puts the kettle on. Karim chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *The salon on strike*, Karim says, “I volunteered because I need new clients. I forgot my coworkers need the hours paid today.”",
+  "connections": "Pia Mercerly. They exchange a blank shopping list for some of the diner's most opinionated recipes.",
+  "familyIds": [
+    "AH-R1001"
+  ],
+  "connectionIds": [
+    "AH-R0140"
+  ],
+  "reactions": [
+    {
+      "situation": "A visiting supervisor wants the second dinner withdrawn",
+      "response": "Tori asks for a meal to be held while the people who eat it explain the second portion.",
+      "asWritten": "A visiting supervisor wants the second dinner withdrawn. Tori asks for a meal to be held while the people who eat it explain the second portion."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Tori draws the route by its turns and entrances and has the person show which turn comes first.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Tori draws the route by its turns and entrances and has the person show which turn comes first."
+    },
+    {
+      "situation": "If a colleague lies to save face",
+      "response": "Tori offers one private chance to correct it before the next conversation.",
+      "asWritten": "If a colleague lies to save face, Tori offers one private chance to correct it before the next conversation."
+    }
+  ]
+}

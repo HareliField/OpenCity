@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0824",
+  "personId": "AH-R0824",
+  "name": "Jesse Ngo",
+  "age": 26,
+  "occupation": "Beach restaurant server",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Summer staff",
+  "biography": "stories/residents/06/08-summer-staff.md#ah-r0824",
+  "life": "“I still remember smiling through the day we ran out of towels.” People around Juniper Street know Jesse by a small Wednesday habit. Jesse knows which of the west-side porches has a seat in the shade.",
+  "voice": "I told tourists everything was normal because I needed their tips. Today I wrote the closing date on the board.",
+  "appearance": "Jesse is easy to recognize by close-cropped dark curls and a strong profile and a little space between the front teeth. Usually dressed in a dark green knitted vest with a stitched row of blue crosses along an old repair, Jesse counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Jesse enjoys routines and will defend the right of someone else to break one. As a result, Jesse is often everyone's favorite cover for a missed morning.",
+  "agenda": "To post the real closing date for visitors.",
+  "family": "Eden Fisher is Jesse’s stepsibling. Jesse chooses the music. Eden puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *A boat for sale twice*, Eden says, “I can afford half a boat. I asked another bidder what half a Saturday looks like.”",
+  "connections": "Terry Fong. A server putting the date on a board helps a teacher stop selling lessons after that date.",
+  "familyIds": [
+    "AH-R0742"
+  ],
+  "connectionIds": [
+    "AH-R0829"
+  ],
+  "reactions": [
+    {
+      "situation": "Two workers are offered one extra paid week",
+      "response": "Jesse asks both workers what commitments they made on the strength of the old end date.",
+      "asWritten": "Two workers are offered one extra paid week. Jesse asks both workers what commitments they made on the strength of the old end date."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Jesse asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Jesse asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "If a family plan changes at the door",
+      "response": "Jesse keeps a place for the late person without making the others postpone their meal.",
+      "asWritten": "If a family plan changes at the door, Jesse keeps a place for the late person without making the others postpone their meal."
+    }
+  ]
+}

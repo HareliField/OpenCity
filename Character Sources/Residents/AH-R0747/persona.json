@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0747",
+  "personId": "AH-R0747",
+  "name": "Cara Mann",
+  "age": 29,
+  "occupation": "Fabric cutter",
+  "home": "Eastside",
+  "episode": "A boat for sale twice",
+  "biography": "stories/residents/05/15-a-boat-for-sale-twice.md#ah-r0747",
+  "life": "“I still remember saving a patch of blue canvas in my winter wallet.” On Monday, near the brick passage off the shop row, Cara takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I bought a yard of the same blue canvas to take home. Sometimes a shade is all the boat you want.",
+  "appearance": "Cara has close-cropped dark curls, a deep crease beside the mouth when smiling, and a favorite piece of clothing, a rust-colored canvas coat. It usually goes with a copper-colored clasp that has been repaired by hand. When somebody else has the floor, Cara looks at people's hands before looking at what they carry.",
+  "personality": "Cara feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To take the canvas sample home.",
+  "family": "Gregory Chen is Cara’s parent’s cousin. Cara makes room at the table. Gregory brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *A room above the dryers*, Gregory says, “I own the room and was saving it for a child who has no intention of moving home.”",
+  "connections": "Jacqueline Ueda. A withdrawn bidder and a canvas buyer discover how little boat each actually wanted.",
+  "familyIds": [
+    "AH-R1202"
+  ],
+  "connectionIds": [
+    "AH-R0745"
+  ],
+  "reactions": [
+    {
+      "situation": "The boat's owners give two answers about selling",
+      "response": "Cara asks both owners which decision has actually been made.",
+      "asWritten": "The boat's owners give two answers about selling. Cara asks both owners which decision has actually been made."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Cara asks the cashier quietly which item can be set aside without making the customer explain their finances to the line.",
+      "asWritten": "A customer is short at the till while a queue forms. Cara asks the cashier quietly which item can be set aside without making the customer explain their finances to the line."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Cara lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Cara lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

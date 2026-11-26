@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0737",
+  "personId": "AH-R0737",
+  "name": "Briar Henry",
+  "age": 38,
+  "occupation": "Porch carpenter",
+  "home": "the blocks north of the port",
+  "episode": "The split visit",
+  "biography": "stories/residents/05/14-the-split-visit.md#ah-r0737",
+  "life": "“I still remember building a tiny table from leftover porch boards.” People around the market by Market Flats know Briar by a small Thursday habit. Briar often waits until the delivery baskets are stacked before going in.",
+  "voice": "I was coming to fix the porch rail and ended up assembling a folding lunch table for three.",
+  "appearance": "Briar is easy to recognize by brown hair pinned away from the temples and a broad nose and a deep dimple on one cheek. Usually dressed in a plum-colored cardigan with a pair of reading glasses in a cloth sleeve, Briar holds eye contact until the other person has finished when listening.",
+  "personality": "Briar takes a rejection personally for a day and analytically on the second morning. Briar can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To leave a table that seats three.",
+  "family": "Ada Firth is Briar’s older relative by marriage. Briar calls back when there is finally a little privacy. Ada leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *A tide at noon*, Ada says, “I found the old finish flag under the new tide.”",
+  "connections": "Mateo Adair. A folding table and a walk to the corner both make the extra half hour count.",
+  "familyIds": [
+    "AH-R0079"
+  ],
+  "connectionIds": [
+    "AH-R0739"
+  ],
+  "reactions": [
+    {
+      "situation": "Two carers turn up for one visit",
+      "response": "Briar asks the client which ordinary task would be easier with two people present.",
+      "asWritten": "Two carers turn up for one visit. Briar asks the client which ordinary task would be easier with two people present."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Briar offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Briar offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Briar turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Briar turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

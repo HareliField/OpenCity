@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1413",
+  "personId": "AH-R1413",
+  "name": "Sofia Brady",
+  "age": 49,
+  "occupation": "Paid childminder",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "An empty dedication",
+  "biography": "stories/residents/10/07-an-empty-dedication.md#ah-r1413",
+  "life": "“I still remember watching a toddler fall asleep to the rhythm of somebody typing.” People around the corner outside Coastal Barber know Sofia by a small Monday habit. Sofia usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I held the author's baby every Thursday. I was paid and I'm proud of the work that payment bought.",
+  "appearance": "Sofia has a soft fringe that falls across one eyebrow, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a dark green knitted vest. It usually goes with a little coil of soft measuring tape. When somebody else has the floor, Sofia touches a knuckle to the chin when searching for a word.",
+  "personality": "Sofia is fond of ambitious ideas and deeply suspicious of grand openings. The question Sofia asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To have the paid care work named accurately.",
+  "family": "Gloria Sloan is Sofia’s cousin raised in the same household. Sofia asks the question the rest of the family avoided. Gloria chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *Station steps in rain*, Gloria says, “I took the photo everyone liked. The man in the front doesn't want his face online and I'm collecting the copies.”",
+  "connections": "Eva Bay. The novelist hears the difference between giving a caregiver wages and giving them public credit.",
+  "familyIds": [
+    "AH-R0489"
+  ],
+  "connectionIds": [
+    "AH-R1411"
+  ],
+  "reactions": [
+    {
+      "situation": "The author offers the dedication to someone who dislikes public praise",
+      "response": "Sofia asks the intended recipient which kind of thanks would actually feel welcome.",
+      "asWritten": "The author offers the dedication to someone who dislikes public praise. Sofia asks the intended recipient which kind of thanks would actually feel welcome."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Sofia suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Sofia suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Sofia accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Sofia accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

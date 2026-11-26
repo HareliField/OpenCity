@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0588",
+  "personId": "AH-R0588",
+  "name": "Clement Mitchell",
+  "age": 39,
+  "occupation": "Chef de partie",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Laundry for a stranger",
+  "biography": "stories/residents/04/14-laundry-for-a-stranger.md#ah-r0588",
+  "life": "“I still remember scraping starch out of my first cook's collar.” On Sunday, near Lighthouse Cove, Clement takes a few minutes by the low rocks, where conversation sounds different as the tide turns.",
+  "voice": "I can't stand a starched collar since catering school. I asked for one shirt to be ironed differently.",
+  "appearance": "Away from the heat of the kitchen, look for a cream pullover and a watch on a cracked leather band. Clement has fine brows over wide-set eyes, with short black hair swept back. Clement holds eye contact until the other person has finished during a conversation.",
+  "personality": "Clement takes a rejection personally for a day and analytically on the second morning. Clement can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To order one shirt without starch.",
+  "family": "Reina Gallagher is Clement’s cousin. Clement calls back when there is finally a little privacy. Reina leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *Rent in a biscuit tin*, Reina says, “I collected rent in the rain and swapped the tins.”",
+  "connections": "Anton Wong. A secret laundry mark tells the cook who can leave the collar unstarched.",
+  "familyIds": [
+    "AH-R0344"
+  ],
+  "connectionIds": [
+    "AH-R0583"
+  ],
+  "reactions": [
+    {
+      "situation": "An elderly tenant wants to iron the collar personally",
+      "response": "Clement lets the tenant do the collar at a safe height and takes the heavier laundry.",
+      "asWritten": "An elderly tenant wants to iron the collar personally. Clement lets the tenant do the collar at a safe height and takes the heavier laundry."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Clement asks what the friend actually said last time and checks whether anybody is expecting them at home.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Clement asks what the friend actually said last time and checks whether anybody is expecting them at home."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Clement turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Clement turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

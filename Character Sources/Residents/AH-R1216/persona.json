@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1216",
+  "personId": "AH-R1216",
+  "name": "Amos Choi",
+  "age": 40,
+  "occupation": "Merchant seafarer",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The worker who couldn't read the joke",
+  "biography": "stories/residents/09/02-the-worker-who-couldn-t-read-the-joke.md#ah-r1216",
+  "life": "“I still remember a port sign that read differently in my home language.” On Sunday, near the window at Night Shift Donuts, Amos knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I thought the joke was about me because of a word that means something else at home.",
+  "appearance": "Amos has short, uneven waves that refuse to lie flat, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a partly rubbed-away embroidered initial. When somebody else has the floor, Amos leans a shoulder against the wall during long conversations.",
+  "personality": "Amos can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Amos can afford to give, and family knows to take it seriously.",
+  "agenda": "To explain the difference between the two home meanings.",
+  "family": "Stevie Dain is Amos’s younger cousin. Amos asks the question the rest of the family avoided. Stevie chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The borrowed bass*, Stevie says, “My friend thinks an audition happens once. I got the other acts to agree to go first.”",
+  "connections": "Lee Carr. A misunderstood home word gives the lunch organizer a starting point for the next meal.",
+  "familyIds": [
+    "AH-R0125"
+  ],
+  "connectionIds": [
+    "AH-R1219"
+  ],
+  "reactions": [
+    {
+      "situation": "A relative forwards the break-room picture",
+      "response": "Amos asks that the picture stop traveling while the worker decides what to say.",
+      "asWritten": "A relative forwards the break-room picture. Amos asks that the picture stop traveling while the worker decides what to say."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Amos accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Amos accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Amos suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Amos suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

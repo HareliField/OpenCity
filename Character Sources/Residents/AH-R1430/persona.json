@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1430",
+  "personId": "AH-R1430",
+  "name": "Olivia Neal",
+  "age": 28,
+  "occupation": "Learner swimmer and deli worker",
+  "home": "the western residential streets",
+  "episode": "No lifeguard at dusk",
+  "biography": "stories/residents/10/08-no-lifeguard-at-dusk.md#ah-r1430",
+  "life": "“I still remember turning back from a lesson I had already told my friends about.” People around the corner by Juniper Tailor know Olivia by a small Friday habit. Olivia looks at the things people actually bring in for repair before looking in the display window.",
+  "voice": "I am learning to swim and wanted a heroic last lesson. The guard taught me to read the signs and choose tomorrow instead.",
+  "appearance": "Olivia is easy to recognize by short black hair swept back and a strong profile and a little space between the front teeth. Usually dressed in an olive canvas jacket with a stitched row of blue crosses along an old repair, Olivia listens with the head tilted a little to the left when listening.",
+  "personality": "Olivia thinks best while walking. Sitting beneath someone's office clock makes Olivia sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To learn when to choose a different swimming day.",
+  "family": "Julian Kapoor is Olivia’s older cousin. Olivia gets to change the plan. Julian offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *A clean coat for court*, Julian says, “I insured his old business and denied the first claim.”",
+  "connections": "Olive Baines. A widowed regular shows a learner what an evening at the sea can be without entering it.",
+  "familyIds": [
+    "AH-R1243"
+  ],
+  "connectionIds": [
+    "AH-R1425"
+  ],
+  "reactions": [
+    {
+      "situation": "A passerby assumes the beach is still staffed",
+      "response": "Olivia points out the published end of cover and gets the passerby an accurate answer about tomorrow.",
+      "asWritten": "A passerby assumes the beach is still staffed. Olivia points out the published end of cover and gets the passerby an accurate answer about tomorrow."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Olivia keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Olivia keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Olivia asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Olivia asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

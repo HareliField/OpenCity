@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0725",
+  "personId": "AH-R0725",
+  "name": "Mara Massey",
+  "age": 53,
+  "occupation": "Sleep clinic receptionist",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The fountain score",
+  "biography": "stories/residents/05/13-the-fountain-score.md#ah-r0725",
+  "life": "“I still remember trying to sleep beside a fountain that ran all night.” Monday often includes a stop at the crossing outside Verve Nail Studio, where Mara notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I can't stand the sound of running water at night. The student gave me the part that stops it.",
+  "appearance": "Mara is easy to recognize by a dark undercut with a longer wave on top and a round face with a pronounced chin. Usually dressed in a mustard canvas overshirt with a comb in a sleeve sewn into the lining, Mara starts to lift a hand, then waits to be invited to speak when listening.",
+  "personality": "Mara carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To give the piece a real ending.",
+  "family": "Isaac Nord is Mara’s younger relative by marriage. Mara makes room at the table. Isaac brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The release address*, Isaac says, “I was the child writing envelopes for my mother.”",
+  "connections": "Damian Harris. Breaking a pitched glass gives the player who hates running water a way to write silence into it.",
+  "familyIds": [
+    "AH-R0950"
+  ],
+  "connectionIds": [
+    "AH-R0728"
+  ],
+  "reactions": [
+    {
+      "situation": "An instrument breaks before the fountain piece begins",
+      "response": "Mara asks the player whether a different everyday object can carry the missing note.",
+      "asWritten": "An instrument breaks before the fountain piece begins. Mara asks the player whether a different everyday object can carry the missing note."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Mara offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Mara offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Mara offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Mara offers to accompany them while they tell the truth."
+    }
+  ]
+}

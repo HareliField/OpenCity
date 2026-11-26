@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1286",
+  "personId": "AH-R1286",
+  "name": "Charles Stone",
+  "age": 42,
+  "occupation": "Paid carer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The returned daughter",
+  "biography": "stories/residents/09/09-the-returned-daughter.md#ah-r1286",
+  "life": "“I still remember seeing an old man's private grief during an ordinary paid visit.” People around the market by Market Flats know Charles by a small Monday habit. Charles often waits until the delivery baskets are stacked before going in.",
+  "voice": "I care for the old man. I have no business telling his daughter how frailty ought to make her feel.",
+  "appearance": "On an ordinary day, look for a black overshirt with pearl buttons and a narrow brass watch set a little fast. Charles has a strong profile and a little space between the front teeth, with a smooth side part with one rebellious curl. Charles squares up pieces of paper while thinking during a conversation.",
+  "personality": "Charles is cheerful on a bad morning and unexpectedly melancholy after a success. Finishing a hard thing means losing the daily company of the people who worked on it.",
+  "agenda": "To protect the old man's care without prescribing forgiveness.",
+  "family": "Astrid Olsen is Charles’s older cousin. Charles is free to hang up first. Astrid makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The rescue hut mural*, Astrid says, “I painted the original under a supervision order.”",
+  "connections": "Valentina Jiang. The paid carer and the person holding the letter agree that nobody's frailty requires a forced answer.",
+  "familyIds": [
+    "AH-R0525"
+  ],
+  "connectionIds": [
+    "AH-R1290"
+  ],
+  "reactions": [
+    {
+      "situation": "The father offers a letter instead of speaking",
+      "response": "Charles asks whether the daughter wants to take the letter now or leave it closed for another day.",
+      "asWritten": "The father offers a letter instead of speaking. Charles asks whether the daughter wants to take the letter now or leave it closed for another day."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Charles asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Charles asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "When everyone else wants to celebrate immediately",
+      "response": "Charles helps set the table, then takes a short turn outside alone.",
+      "asWritten": "When everyone else wants to celebrate immediately, Charles helps set the table, then takes a short turn outside alone."
+    }
+  ]
+}

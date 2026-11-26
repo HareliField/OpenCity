@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1369",
+  "personId": "AH-R1369",
+  "name": "Maria Jackson",
+  "age": 38,
+  "occupation": "Public port tour guide",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "A last ship together",
+  "biography": "stories/residents/10/02-a-last-ship-together.md#ah-r1369",
+  "life": "“I still remember seeing two cranes in the space between a fence and my father's hat.” People around the steps at Pier Beach know Maria by a small Thursday habit. Maria watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I watched the ship berth from the road as a child. The two workers promised my daughter she can see it too.",
+  "appearance": "Maria is easy to recognize by short copper curls and a round face with a pronounced chin. Usually dressed in a cropped bottle-green coat with a copper-colored clasp that has been repaired by hand, Maria leans a shoulder against the wall during long conversations when listening.",
+  "personality": "Maria is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Maria is by the number of tiny errands suddenly being done.",
+  "agenda": "To bring the daughter to a safe public view of the berth.",
+  "family": "Rosemary Heller is Maria’s second cousin. Maria chooses whether they walk home or sit a while. Rosemary brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The boy on the corner*, Rosemary says, “I rent the shop. I cleared a table for homework and asked the oldest brother to respect what happens at it.”",
+  "connections": "Vincent Trent. A parent's request to see the ship lets an apprentice demonstrate a clean lift where the family can see it.",
+  "familyIds": [
+    "AH-R1098"
+  ],
+  "connectionIds": [
+    "AH-R1364"
+  ],
+  "reactions": [
+    {
+      "situation": "The two old workers are offered separate farewell days",
+      "response": "Maria asks each worker separately what kind of last day they want.",
+      "asWritten": "The two old workers are offered separate farewell days. Maria asks each worker separately what kind of last day they want."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Maria puts distance between the frightened person and the argument and asks nearby staff for help.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Maria puts distance between the frightened person and the argument and asks nearby staff for help."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Maria agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Maria agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

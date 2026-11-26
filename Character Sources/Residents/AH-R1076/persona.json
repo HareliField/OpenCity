@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1076",
+  "personId": "AH-R1076",
+  "name": "Patricia Ryan",
+  "age": 45,
+  "occupation": "Kitchen designer",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The guarantee",
+  "biography": "stories/residents/08/03-the-guarantee.md#ah-r1076",
+  "life": "“I still remember giving interest money as a birthday present.” People around Ferris Deli know Patricia by a small Wednesday habit. Patricia asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I can pay the interest for six months if the family stops calling it a rescue every time we eat.",
+  "appearance": "Away from the heat of the kitchen, look for a soft blue checked shirt and one cuff folded back twice. Patricia has fine brows over wide-set eyes, with black hair twisted into a small knot. Patricia gives a little nod before asking a hard question during a conversation.",
+  "personality": "Patricia always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Patricia is trying to tell the difference before the bill arrives.",
+  "agenda": "To offer limited interest help without permanent dependence.",
+  "family": "Elsa Venn is Patricia’s older cousin. Patricia brings whatever was actually growing or affordable that week. Elsa makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *An unfinished atlas*, Elsa says, “I drove that lane on my first night shift. It dead-ended at a woman selling coffee from a thermos.”",
+  "connections": "Martin Henry. The six-month interest offer has to be named honestly by the people who will benefit.",
+  "familyIds": [
+    "AH-R0063"
+  ],
+  "connectionIds": [
+    "AH-R1077"
+  ],
+  "reactions": [
+    {
+      "situation": "A sibling wants the bank figures read at a family meal",
+      "response": "Patricia asks the guarantor what can be shared at dinner before reading out any figures.",
+      "asWritten": "A sibling wants the bank figures read at a family meal. Patricia asks the guarantor what can be shared at dinner before reading out any figures."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Patricia stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Patricia stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Patricia suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Patricia suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

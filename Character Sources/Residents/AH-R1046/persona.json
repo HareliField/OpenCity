@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1046",
+  "personId": "AH-R1046",
+  "name": "Malcolm Hayes",
+  "age": 48,
+  "occupation": "Part-time home carer",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The day sailor's divorce",
+  "biography": "stories/residents/07/15-the-day-sailor-s-divorce.md#ah-r1046",
+  "life": "“I still remember trying to swap weekends with another tired carer.” Sunday often includes a stop at Harbour Bakery, where Malcolm buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I can take Saturdays if somebody swaps my carer's weekend. It's the first practical proposal nobody cried over.",
+  "appearance": "On an ordinary day, look for a red windbreaker and a train token tied to a zipper pull. Malcolm has two dimples that appear only with a full smile, with short, uneven waves that refuse to lie flat. Malcolm holds eye contact until the other person has finished during a conversation.",
+  "personality": "Malcolm treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To swap a care weekend for a sailing Saturday.",
+  "family": "Maya Abreu is Malcolm’s younger relative by marriage. Malcolm brings whatever was actually growing or affordable that week. Maya makes room at the table. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *One paid trial*, Maya says, “I learned with my grandmother's stove and have never worked on a timer.”",
+  "connections": "Quinn Laurent. A care rota and a maintenance log set the practical limits on who can sail when.",
+  "familyIds": [
+    "AH-R0841"
+  ],
+  "connectionIds": [
+    "AH-R1047"
+  ],
+  "reactions": [
+    {
+      "situation": "A spouse asks to count repair hours toward Sunday time",
+      "response": "Malcolm checks the maintenance log before treating Sundays as the only contribution.",
+      "asWritten": "A spouse asks to count repair hours toward Sunday time. Malcolm checks the maintenance log before treating Sundays as the only contribution."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Malcolm asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Malcolm asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Malcolm changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Malcolm changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

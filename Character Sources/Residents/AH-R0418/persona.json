@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0418",
+  "personId": "AH-R0418",
+  "name": "Jo Briggs",
+  "age": 36,
+  "occupation": "Crew bus driver",
+  "home": "the neighborhood around Market Flats",
+  "episode": "One unposted detour",
+  "biography": "stories/residents/03/12-one-unposted-detour.md#ah-r0418",
+  "life": "“I still remember our crew sang when the traffic queue got long.” People around the corner outside Coastal Barber know Jo by a small Thursday habit. Jo usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I drove the crew car. The person we made wait was my mum, who hasn't waited for me in years.",
+  "appearance": "Jo has auburn hair cut square at the nape, heavy brows and an unusually delicate jaw, and a favorite piece of clothing, an old plum windbreaker. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Jo rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Jo is fond of ambitious ideas and deeply suspicious of grand openings. The question Jo asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To keep the delayed parent informed on the next round.",
+  "family": "Laurence Williams is Jo’s first cousin once removed. A family supper used to end the moment somebody mentioned money. They invented a second meal, eaten standing at the sink, where that was the only thing anybody was allowed to discuss. Jo can tell when honesty needs to wait until everyone has eaten. Asked about *An ordinary mirror*, Laurence says, “I am the late husband's brother. We look alike and I hate accidentally frightening her in reflections.”",
+  "connections": "Emery Rahman. Breakfast and a family lift turn a delayed route into a pair of personal calls.",
+  "familyIds": [
+    "AH-R1454"
+  ],
+  "connectionIds": [
+    "AH-R0412"
+  ],
+  "reactions": [
+    {
+      "situation": "The diversion sign is only legible from close up",
+      "response": "Jo reads the sign from the distance a driver really gets and reports the result.",
+      "asWritten": "The diversion sign is only legible from close up. Jo reads the sign from the distance a driver really gets and reports the result."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Jo brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Jo brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Jo accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Jo accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

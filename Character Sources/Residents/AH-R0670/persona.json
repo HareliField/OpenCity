@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0670",
+  "personId": "AH-R0670",
+  "name": "Silas Murphy",
+  "age": 56,
+  "occupation": "Executive secretary",
+  "home": "Eastside",
+  "episode": "A shelf of apologies",
+  "biography": "stories/residents/05/07-a-shelf-of-apologies.md#ah-r0670",
+  "life": "“I still remember writing a customer's apology for damaged stage curtains.” People around the courtyard by Ferry Street Rooms know Silas by a small Thursday habit. Silas prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I used to write apologies for my boss. This is the first one I signed with my own name.",
+  "appearance": "Silas is easy to recognize by a high puff tied with plain cord and a flat bridge to the nose and a mobile brow. Usually dressed in a soft blue checked shirt with a braided bracelet with a single wooden bead, Silas squares up pieces of paper while thinking when listening.",
+  "personality": "Silas often says yes too quickly out of pride in being useful. The people closest to Silas have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To sign the apology personally this time.",
+  "family": "Adele Gomez is Silas’s half-sibling. Silas chooses whether to use it. Adele saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The tide clock*, Adele says, “I collect clocks that measure something worth waiting for.”",
+  "connections": "Dominic Cho. A retired teacher gets a visit and an apology drafted under the writer's own name.",
+  "familyIds": [
+    "AH-R0450"
+  ],
+  "connectionIds": [
+    "AH-R0668"
+  ],
+  "reactions": [
+    {
+      "situation": "A bookseller wants to display the most surprising note",
+      "response": "Silas asks the writer who was supposed to receive the note.",
+      "asWritten": "A bookseller wants to display the most surprising note. Silas asks the writer who was supposed to receive the note."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Silas stays with the rider after the people who saw the fall start drifting away.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Silas stays with the rider after the people who saw the fall start drifting away."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Silas rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Silas rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

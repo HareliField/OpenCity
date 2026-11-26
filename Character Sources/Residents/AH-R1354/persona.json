@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1354",
+  "personId": "AH-R1354",
+  "name": "Sonia Lang",
+  "age": 41,
+  "occupation": "Rental cleaner",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A closing hour",
+  "biography": "stories/residents/10/01-a-closing-hour.md#ah-r1354",
+  "life": "“I still remember a handwritten birthday sign melting in wet weather.” People around Studio Boulevard know Sonia by a small Saturday habit. Sonia waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I arrived with wet bedding and bad temper. The handwritten birthday sign made me ring my own father.",
+  "appearance": "Sonia has a strong profile and a little space between the front teeth. Look for a center part and straight chestnut hair. On an ordinary day, the familiar outfit is a rust-colored canvas coat with a narrow brass watch set a little fast. In conversation Sonia presses the lips together to keep a smile in.",
+  "personality": "Sonia thinks best while walking. Sitting beneath someone's office clock makes Sonia sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To collect the bedding on an agreed day.",
+  "family": "Edwin Wilson is Sonia’s half-sibling. Sonia calls back when there is finally a little privacy. Edwin leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The day sailor's divorce*, Edwin says, “I want our first trip after signing the papers to be the children's choice of route and breakfast.”",
+  "connections": "Jody Hewitt. A complaint about wet bedding and an appliance worker's birthday card arrive on the same shut door.",
+  "familyIds": [
+    "AH-R1050"
+  ],
+  "connectionIds": [
+    "AH-R1360"
+  ],
+  "reactions": [
+    {
+      "situation": "A regular needs a coat locked in the shop",
+      "response": "Sonia checks whether the coat is needed that day before interrupting the owner.",
+      "asWritten": "A regular needs a coat locked in the shop. Sonia checks whether the coat is needed that day before interrupting the owner."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Sonia brings the envelope to the counter unopened and stays long enough to make a note of who accepted it.",
+      "asWritten": "An envelope of wages is found under a café chair. Sonia brings the envelope to the counter unopened and stays long enough to make a note of who accepted it."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Sonia asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Sonia asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

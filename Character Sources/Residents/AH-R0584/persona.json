@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0584",
+  "personId": "AH-R0584",
+  "name": "Aubrey Farah",
+  "age": 69,
+  "occupation": "Pensioned cook",
+  "home": "Old Town",
+  "episode": "Laundry for a stranger",
+  "biography": "stories/residents/04/14-laundry-for-a-stranger.md#ah-r0584",
+  "life": "“I still remember apologizing to somebody I had paid to be polite.” On Thursday, near Juniper Street, Aubrey knows which of the west-side porches has a seat in the shade.",
+  "voice": "I accused my carer of mixing up the bags. I am taking the apology to her home on foot.",
+  "appearance": "Away from the heat of the kitchen, look for a cropped bottle-green coat and a comb in a sleeve sewn into the lining. Aubrey has a crooked front tooth visible when laughing, with soft white hair brushed sideways. Aubrey gives a little nod before asking a hard question during a conversation.",
+  "personality": "Aubrey always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Aubrey is trying to tell the difference before the bill arrives.",
+  "agenda": "To deliver an apology to the carer at home.",
+  "family": "Cyrus Cole is Aubrey’s younger relative by marriage. Aubrey sets the time to leave. Cyrus picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The aquarium*, Cyrus says, “One fish has a crooked jaw. It needs its food dropped on the left.”",
+  "connections": "Ruth Farah. A house call to apologize becomes an opportunity to return the mended iron rest.",
+  "familyIds": [
+    "AH-R0043"
+  ],
+  "connectionIds": [
+    "AH-R0589"
+  ],
+  "reactions": [
+    {
+      "situation": "An elderly tenant wants to iron the collar personally",
+      "response": "Aubrey lets the tenant do the collar at a safe height and takes the heavier laundry.",
+      "asWritten": "An elderly tenant wants to iron the collar personally. Aubrey lets the tenant do the collar at a safe height and takes the heavier laundry."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Aubrey asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Aubrey asks the nearest shop worker to stay too, then talks about ordinary things until the child can explain who is late."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Aubrey suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Aubrey suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

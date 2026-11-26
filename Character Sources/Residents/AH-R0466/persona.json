@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0466",
+  "personId": "AH-R0466",
+  "name": "Daniel Morris",
+  "age": 68,
+  "occupation": "Retired platform cleaner",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The soft wharf chalk",
+  "biography": "stories/residents/04/02-the-soft-wharf-chalk.md#ah-r0466",
+  "life": "“I still remember scrubbing a dock wall before I could read the words on it.” On Tuesday, near the crossing outside Verve Nail Studio, Daniel notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I was supposed to wash the underside. My wrists gave out halfway through and spared the words.",
+  "appearance": "Daniel has a broad nose and a deep dimple on one cheek. Look for iron-gray waves. On an ordinary day, the familiar outfit is a red windbreaker with a watch on a cracked leather band. In conversation Daniel steadies a cup with both hands while listening.",
+  "personality": "Daniel always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Daniel is trying to tell the difference before the bill arrives.",
+  "agenda": "To meet the writer whose words accidentally survived.",
+  "family": "Tariq Banks is Daniel’s younger relative by marriage. Daniel knows which ones can be shared. Tariq keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Rent in a biscuit tin*, Tariq says, “My envelope held money for driving lessons.”",
+  "connections": "Sara Hall. The family researching dates meets the worker whose unfinished washing preserved them. Also in the story is Lara Hart (conservation volunteer).",
+  "familyIds": [
+    "AH-R0342"
+  ],
+  "connectionIds": [
+    "AH-R0465",
+    "AH-R0469"
+  ],
+  "reactions": [
+    {
+      "situation": "A handwriting expert contradicts an old dock worker",
+      "response": "Daniel puts the expert's reading beside the dock worker's account and asks for the date of each.",
+      "asWritten": "A handwriting expert contradicts an old dock worker. Daniel puts the expert's reading beside the dock worker's account and asks for the date of each."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Daniel takes a small plate to the quieter end of the table and saves the seat beside it.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Daniel takes a small plate to the quieter end of the table and saves the seat beside it."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Daniel suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Daniel suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

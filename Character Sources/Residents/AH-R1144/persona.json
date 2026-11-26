@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1144",
+  "personId": "AH-R1144",
+  "name": "Harry Gill",
+  "age": 38,
+  "occupation": "Delivery planner",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The first delivery fee",
+  "biography": "stories/residents/08/10-the-first-delivery-fee.md#ah-r1144",
+  "life": "“I still remember a route plan with no time for front steps.” Sunday often includes a stop at the courtyard by Ferry Street Rooms, where Harry prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I designed an efficient route and forgot half the addresses need somebody to wait for them to answer.",
+  "appearance": "On an ordinary day, look for a moss-green cardigan and a fabric zip pull cut from a school scarf. Harry has an aquiline nose and a square chin, with thick, tightly coiled hair. Harry rubs a thumb along the edge of the nearest pocket during a conversation.",
+  "personality": "Harry is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Harry is by the number of tiny errands suddenly being done.",
+  "agenda": "To allow enough time for every customer to answer.",
+  "family": "Reina Sanders is Harry’s cousin raised in the same household. Harry leaves the first voice message. Reina calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The return of a witness*, Reina says, “I covered the hearing as a reporter. I am here to deliver her old photograph, with my notebook at home.”",
+  "connections": "Amanda Roy. A route drawn on paper gets checked against a carrier's years of actual door waits.",
+  "familyIds": [
+    "AH-R1397"
+  ],
+  "connectionIds": [
+    "AH-R1148"
+  ],
+  "reactions": [
+    {
+      "situation": "The new rider asks who received last year's tips",
+      "response": "Harry asks who did the work and who was paid before the shop divides today's tips.",
+      "asWritten": "The new rider asks who received last year's tips. Harry asks who did the work and who was paid before the shop divides today's tips."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Harry looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Harry looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Harry agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Harry agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0443",
+  "personId": "AH-R0443",
+  "name": "Victor Anders",
+  "age": 26,
+  "occupation": "Marina attendant and weekend cleaner",
+  "home": "the blocks north of the port",
+  "episode": "The tide clock",
+  "biography": "stories/residents/03/15-the-tide-clock.md#ah-r0443",
+  "life": "“I still remember sitting first in an empty waiting room.” People around the approach to Seabright Court know Victor by a small Tuesday habit. Victor likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I arrived at the dentist six hours early and left with a vacancy on his cleaning crew.",
+  "appearance": "Back on the street, look for a narrow-striped sweater and a seam let out by a narrow strip of contrasting fabric. Victor has one cheek that creases before the other, with black hair twisted into a small knot. Victor squares up pieces of paper while thinking during a conversation.",
+  "personality": "Victor prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To get the times for the new cleaning shift right.",
+  "family": "Elsa Guzman is Victor’s older cousin. Victor offers the first invitation. Elsa gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The waiting-room plant*, Elsa says, “I never have visitors. I booked the plant for Thursday and three gardeners turned up.”",
+  "connections": "Lorenzo Mack (clock setter). The tide setter shows the worker exactly what time the wall never promised.",
+  "familyIds": [
+    "AH-R0505"
+  ],
+  "connectionIds": [
+    "AH-R0441"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor blames the new hire for missing the time",
+      "response": "Victor checks which dial the worker saw before accepting a lateness entry.",
+      "asWritten": "A supervisor blames the new hire for missing the time. Victor checks which dial the worker saw before accepting a lateness entry."
+    },
+    {
+      "situation": "An envelope of wages is found under a café chair",
+      "response": "Victor finds a second person to witness its return so an honest mistake won't cost a worker their pay.",
+      "asWritten": "An envelope of wages is found under a café chair. Victor finds a second person to witness its return so an honest mistake won't cost a worker their pay."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Victor clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Victor clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

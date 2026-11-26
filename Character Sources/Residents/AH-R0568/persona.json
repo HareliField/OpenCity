@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0568",
+  "personId": "AH-R0568",
+  "name": "Tali James",
+  "age": 24,
+  "occupation": "Evening college student",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The ladder crossing",
+  "biography": "stories/residents/04/12-the-ladder-crossing.md#ah-r0568",
+  "life": "“I still remember walking back into a classroom after twelve years.” Thursday often includes a stop at the market by Market Flats, where Tali often waits until the delivery baskets are stacked before going in.",
+  "voice": "I recognized the painter from the night school I quit. I'm going back to finish the term.",
+  "appearance": "Tali is easy to recognize by a swept fringe and a closely clipped nape and a straight nose and deep-set eyes. Usually dressed in an olive canvas jacket with a tiny red thread tied through the lowest buttonhole, Tali gives a little nod before asking a hard question when listening.",
+  "personality": "Tali treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To finish the interrupted night-school course.",
+  "family": "Gwen Evans is Tali’s parent’s cousin. Tali asks what the birthday guest would like this year. Gwen remembers the birthdays. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *Hem by hem*, Gwen says, “I promised free alterations for life in my first advert.”",
+  "connections": "Valentina Berry. A missed bus brings a driver and a former pupil back into the same evening.",
+  "familyIds": [
+    "AH-R0155"
+  ],
+  "connectionIds": [
+    "AH-R0562"
+  ],
+  "reactions": [
+    {
+      "situation": "A painter asks to put the ladder down",
+      "response": "Tali finds an empty, stable place to set it down while the painter rests.",
+      "asWritten": "A painter asks to put the ladder down. Tali finds an empty, stable place to set it down while the painter rests."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Tali asks the counter staff for a receipt so its return can be traced even after their shift changes.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Tali asks the counter staff for a receipt so its return can be traced even after their shift changes."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Tali changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Tali changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

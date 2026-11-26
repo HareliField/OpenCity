@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0254",
+  "personId": "AH-R0254",
+  "name": "Quinn Pereira",
+  "age": 29,
+  "occupation": "Job-seeking retail clerk",
+  "home": "Coast Ridge",
+  "episode": "One sleeve short",
+  "biography": "stories/residents/02/11-one-sleeve-short.md#ah-r0254",
+  "life": "“I trained in a shop that made new hires pay for their name badges.” People around the approach to Seabright Court know Quinn by a small Saturday habit. Quinn likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I practiced my handshake with the unaltered arm. The interviewer noticed and asked about the tailor.",
+  "appearance": "On an ordinary day, look for a brown corduroy jacket and a pressed flower kept in the clear back of a phone case. Quinn has a scattering of freckles across the bridge of the nose, with a long plait tucked inside the collar. Quinn looks toward the door whenever a name is called during a conversation.",
+  "personality": "Quinn uses precise names for tools and very approximate names for feelings. People who know Quinn well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To keep the interview appointment with a jacket that feels like their own.",
+  "family": "Cassandra Knight is Quinn’s older cousin. Quinn brings a spare shopping bag. Cassandra chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The gift nobody wants*, Cassandra says, “I was hired to value the gift. I asked whether the young woman wanted to be a landlord at all.”",
+  "connections": "Norman Armas. The interviewer and applicant eventually discuss the deliberate switch of handshake. Also in the story is Alvin Chapman (hiring manager).",
+  "familyIds": [
+    "AH-R1373"
+  ],
+  "connectionIds": [
+    "AH-R0251",
+    "AH-R0260"
+  ],
+  "reactions": [
+    {
+      "situation": "The interview is advanced before the jacket is ready",
+      "response": "Quinn checks which part of the jacket can be finished in the time available.",
+      "asWritten": "The interview is advanced before the jacket is ready. Quinn checks which part of the jacket can be finished in the time available."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Quinn asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Quinn asks where they stood and what they could hear, leaving the rest open instead of filling it with guesses."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Quinn brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Quinn brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

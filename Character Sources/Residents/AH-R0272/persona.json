@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0272",
+  "personId": "AH-R0272",
+  "name": "Marina Bly",
+  "age": 43,
+  "occupation": "Car body painter",
+  "home": "the blocks north of the port",
+  "episode": "The quiet verse",
+  "biography": "stories/residents/02/13-the-quiet-verse.md#ah-r0272",
+  "life": "“I once paid for a solo coach and my child wanted drumming instead.” On Friday, near Tideline Market, Marina picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I bought concert tickets for grandparents who expected a solo. I need to explain why silence is still a performance.",
+  "appearance": "Marina has a strong profile and a little space between the front teeth. Look for short black hair swept back. On an ordinary day, the familiar outfit is a striped cotton shirt with a partly rubbed-away embroidered initial. In conversation Marina counts on the side of one finger where hardly anybody notices.",
+  "personality": "Marina always notices who paid for the last round. In a group that can be a kindness or a small tyranny, and Marina is trying to tell the difference before the bill arrives.",
+  "agenda": "To help the grandparents understand their ticket bought a child's whole performance.",
+  "family": "Basil Hunter is Marina’s stepsibling. Marina offers the first invitation. Basil gets to change the plan. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The return of a witness*, Basil says, “I own the corner shop. I watched the old argument from my counter and want her to know what I saw afterward.”",
+  "connections": "Casey King. The adult buying the tickets meets a grandparent with a story about private pages.",
+  "familyIds": [
+    "AH-R1395"
+  ],
+  "connectionIds": [
+    "AH-R0280"
+  ],
+  "reactions": [
+    {
+      "situation": "A parent demands to hear the private words",
+      "response": "Marina leaves the private verse with its writer.",
+      "asWritten": "A parent demands to hear the private words. Marina leaves the private verse with its writer."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Marina offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem.",
+      "asWritten": "A friend asks for a loan due back before payday. Marina offers to cover one concrete expense and leaves the friend room to say the expense isn't the real problem."
+    },
+    {
+      "situation": "If somebody tries to repay an old favor all at once",
+      "response": "Marina suggests a smaller gesture they can repeat without hardship.",
+      "asWritten": "If somebody tries to repay an old favor all at once, Marina suggests a smaller gesture they can repeat without hardship."
+    }
+  ]
+}

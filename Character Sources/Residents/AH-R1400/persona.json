@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1400",
+  "personId": "AH-R1400",
+  "name": "Gabriel Ibrahim",
+  "age": 51,
+  "occupation": "Paid carer",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The return of a witness",
+  "biography": "stories/residents/10/05-the-return-of-a-witness.md#ah-r1400",
+  "life": "“I still remember learning where a family visit should end for everybody's sake.” Wednesday often includes a stop at the blocks below Foundry Lofts, where Gabriel checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I care for the aunt. We set a lunchtime end so a hard visit can still have an ordinary evening after it.",
+  "appearance": "Gabriel is easy to recognize by close-cropped dark curls and two dimples that appear only with a full smile. Usually dressed in a black overshirt with pearl buttons with a thin silver ring worn on a cord, Gabriel counts on the side of one finger where hardly anybody notices when listening.",
+  "personality": "Gabriel is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Gabriel is by the number of tiny errands suddenly being done.",
+  "agenda": "To protect a quiet evening after the hard visit.",
+  "family": "Levi Lucas is Gabriel’s cousin’s child. Gabriel is allowed to ask about the bad news afterward. Levi calls about good news first. Neither wants every family conversation to begin with a bill, a diagnosis or an apology. Asked about *The sandwich board*, Levi says, “I copied the typeface for a design job and never credited the woman holding the chalk.”",
+  "connections": "Parker Parker. The host and the aunt's carer agree on both the guest list and the hour lunch will end.",
+  "familyIds": [
+    "AH-R0176"
+  ],
+  "connectionIds": [
+    "AH-R1394"
+  ],
+  "reactions": [
+    {
+      "situation": "A reporter wants to attend the visit",
+      "response": "Gabriel asks the family whether a reporter was invited before sharing a time or an address.",
+      "asWritten": "A reporter wants to attend the visit. Gabriel asks the family whether a reporter was invited before sharing a time or an address."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Gabriel offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Gabriel offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Gabriel agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Gabriel agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

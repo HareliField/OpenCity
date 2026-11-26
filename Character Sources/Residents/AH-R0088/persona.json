@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0088",
+  "personId": "AH-R0088",
+  "name": "June Wicks",
+  "age": 16,
+  "occupation": "Newspaper carrier",
+  "home": "Old Town",
+  "episode": "The porch light",
+  "biography": "stories/residents/01/09-the-porch-light.md#ah-r0088",
+  "life": "June is saving paper-route wages for a secondhand keyboard. She stopped to look at the dark porch on a morning when lateness would cost her the whole route's tip. Thursday often includes a stop at the corner outside Coastal Barber, where June usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I thought the dark porch meant he'd died. I left six papers to make sure people would stop. Now he wants me to come in for coffee and explain the headlines to him.",
+  "appearance": "On an ordinary day, look for a mustard canvas overshirt and a partly rubbed-away embroidered initial. June has a broad nose and a deep dimple on one cheek, with a center part and straight chestnut hair. June starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "June tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far June will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To read the headlines with the man behind the dark porch.",
+  "family": "Eden Sun is June’s older cousin. June keeps the photographs. Eden knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The second dog*, Eden says, “I adopted him after he jumped into my van. I never noticed the other family's number under his tag.”",
+  "connections": "Ari Pennrose. One has the morning papers and the other the night-light figures. Together they can reconstruct how long the porch stayed dark.",
+  "familyIds": [
+    "AH-R0181"
+  ],
+  "connectionIds": [
+    "AH-R0089"
+  ],
+  "reactions": [
+    {
+      "situation": "A shift worker turns up after the porch goes dark",
+      "response": "June keeps the worker company at the gate and lets the homeowner explain the dark.",
+      "asWritten": "A shift worker turns up after the porch goes dark. June keeps the worker company at the gate and lets the homeowner explain the dark."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "June waits at the lit stop with them and checks whether the next service is one they can actually board.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. June waits at the lit stop with them and checks whether the next service is one they can actually board."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "June repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, June repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

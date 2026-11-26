@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1231",
+  "personId": "ah-pd-133",
+  "name": "Imani Ford",
+  "age": 45,
+  "occupation": "Patrol officer",
+  "home": "Coast Ridge",
+  "episode": "A call heard twice",
+  "biography": "stories/residents/09/04-a-call-heard-twice.md#ah-r1231",
+  "life": "“I still remember a disconnected call followed by a whole afternoon wondering.” On Thursday, near the approach to Seabright Court, Imani likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I took the first call and lost the connection. I have never known whether she got somebody back.",
+  "appearance": "Imani is easy to recognize by close-cropped dark curls and a small notch in the left eyebrow. Usually dressed in a plum-colored cardigan with a comb in a sleeve sewn into the lining, Imani gathers both sleeves neatly before settling in when listening.",
+  "personality": "Imani listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To learn how the interrupted call ended.",
+  "family": "Wesley Joseph is Imani’s half-sibling. Imani is free to hang up first. Wesley makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *Five missing lunches*, Wesley says, “We used to swap the sweet things. With my new shift I don't know anybody's favorite.”",
+  "connections": "Fern Lin (second call taker). Restoring both voices to the letter is their first shared task after the interrupted call.",
+  "familyIds": [
+    "AH-R0161"
+  ],
+  "connectionIds": [
+    "AH-R1232"
+  ],
+  "reactions": [
+    {
+      "situation": "A supervisor offers thanks to only one call taker",
+      "response": "Imani gets both halves of the call into the account before a name goes up.",
+      "asWritten": "A supervisor offers thanks to only one call taker. Imani gets both halves of the call into the account before a name goes up."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Imani walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Imani walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Imani keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Imani keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

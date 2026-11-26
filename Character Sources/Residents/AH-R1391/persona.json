@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1391",
+  "personId": "AH-R1391",
+  "name": "Sylvia Reeves",
+  "age": 46,
+  "occupation": "Returning witness and postal clerk",
+  "home": "Midtown",
+  "episode": "The return of a witness",
+  "biography": "stories/residents/10/05-the-return-of-a-witness.md#ah-r1391",
+  "life": "“I still remember walking past the brick passage without looking up.” On Saturday, near Tideline Market, Sylvia picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I want to see my aunt without strangers assuming my visit is another statement.",
+  "appearance": "Sylvia is easy to recognize by a dark undercut with a longer wave on top and a small notch in the left eyebrow. Usually dressed in a dark green knitted vest with a printed handkerchief folded into the pocket, Sylvia looks down for a moment before saying something difficult when listening.",
+  "personality": "Sylvia finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To visit the aunt without giving a fresh statement.",
+  "family": "Karina Heller is Sylvia’s cousin raised in the same household. Sylvia knows which ones can be shared. Karina keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The high road home*, Karina says, “I have vertigo in an ordinary lift. I will ride along if I can look out at the horizon.”",
+  "connections": "Walter Easton. A person returning for a visit and a gardener with enormous plants have to decide what can actually go home. Also in the story is Winifred Bell (adult daughter).",
+  "familyIds": [
+    "AH-R1164"
+  ],
+  "connectionIds": [
+    "AH-R1398",
+    "AH-R1396"
+  ],
+  "reactions": [
+    {
+      "situation": "The witness runs into a convicted neighbor's family",
+      "response": "Sylvia gives both parties the space to pass or speak without an audience.",
+      "asWritten": "The witness runs into a convicted neighbor's family. Sylvia gives both parties the space to pass or speak without an audience."
+    },
+    {
+      "situation": "A diner goes silent in the middle of a noisy family celebration",
+      "response": "Sylvia asks one close relative to check in privately instead of stopping the party for a public inquiry.",
+      "asWritten": "A diner goes silent in the middle of a noisy family celebration. Sylvia asks one close relative to check in privately instead of stopping the party for a public inquiry."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Sylvia waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Sylvia waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

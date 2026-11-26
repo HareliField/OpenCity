@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1335",
+  "personId": "AH-R1335",
+  "name": "Toby Hsu",
+  "age": 68,
+  "occupation": "Retired football steward",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The missing Sunday",
+  "biography": "stories/residents/09/14-the-missing-sunday.md#ah-r1335",
+  "life": "“I still remember putting the wrong club scarf in my father's shopping.” Tuesday often includes a stop at Tideline Market, where Toby picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I live next door and didn't know he followed our team. I have two scarves and an ordinary invitation.",
+  "appearance": "Toby is easy to recognize by a neat white crop and a heart-shaped face and prominent ears. Usually dressed in an olive canvas jacket with a pocket notebook shaped by years of sitting on it, Toby looks down for a moment before saying something difficult when listening.",
+  "personality": "Toby carries anger into a conversation very slowly. Once it arrives, a quiet statement of facts can be considerably harder to sidestep than a shout.",
+  "agenda": "To watch a match with the neighbor.",
+  "family": "Devin Ames is Toby’s first cousin once removed. Toby calls back when there is finally a little privacy. Devin leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *Midnight cinnamon*, Devin says, “I brought the wrong sack and almost lost the account.”",
+  "connections": "Ruth Spencer. An old scarf and a working away-match radio let two neighbors bring the club home.",
+  "familyIds": [
+    "AH-R0697"
+  ],
+  "connectionIds": [
+    "AH-R1339"
+  ],
+  "reactions": [
+    {
+      "situation": "The widower asks for a Sunday with no appointments",
+      "response": "Toby keeps necessary care covered and leaves the social part of Sunday open.",
+      "asWritten": "The widower asks for a Sunday with no appointments. Toby keeps necessary care covered and leaves the social part of Sunday open."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Toby suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Toby suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "If a friend asks for a false alibi for an ordinary missed appointment",
+      "response": "Toby offers to accompany them while they tell the truth.",
+      "asWritten": "If a friend asks for a false alibi for an ordinary missed appointment, Toby offers to accompany them while they tell the truth."
+    }
+  ]
+}

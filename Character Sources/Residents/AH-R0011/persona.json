@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0011",
+  "personId": "AH-R0011",
+  "name": "Owen Vale",
+  "age": 65,
+  "occupation": "Retiring crane operator",
+  "home": "the western residential streets",
+  "episode": "A chair on the quay",
+  "biography": "stories/residents/01/02-a-chair-on-the-quay.md#ah-r0011",
+  "life": "Owen learned the crane in a cab still marked with his predecessor's cigarette burns. He made a point of leaving it clean for the next worker and now feels embarrassed by how much he wants his own marks preserved on the chair. People around Paper & Pine Books know Owen by a small Sunday habit. Owen starts with the handwritten shelf cards and often leaves with a suggestion for somebody else.",
+  "voice": "My dad marked my height on that chair after every voyage. When my parents split, we thought it went to the dump. I want one last picture of it hanging above the quay, which my supervisor thinks is a terrible idea.",
+  "appearance": "Back on the street, look for a brown corduroy jacket and a small enamel bird on the lapel. Owen has two dimples that appear only with a full smile, with a neat white crop. Owen leans a shoulder against the wall during long conversations during a conversation.",
+  "personality": "Owen is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Owen is by the number of tiny errands suddenly being done.",
+  "agenda": "To bring the chair home with a picture his granddaughter can keep.",
+  "family": "Una Bell is Owen’s younger cousin. Owen keeps the photographs. Una knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *Two birthdays in one ward*, Una says, “I work the kitchen. The boy asked me to save one slice for the cleaner who comes when everybody else has gone.”",
+  "connections": "Ivor Lake. One wants the family to recognize a childhood chair. The other has to decide which repairs would erase its history. Also in the story is Fen Ellis (childhood friend).",
+  "familyIds": [
+    "AH-R1409"
+  ],
+  "connectionIds": [
+    "AH-R0013",
+    "AH-R0017"
+  ],
+  "reactions": [
+    {
+      "situation": "Two families claim the kitchen chair",
+      "response": "Owen asks each claimant what they remember about the seat before the marks are shown.",
+      "asWritten": "Two families claim the kitchen chair. Owen asks each claimant what they remember about the seat before the marks are shown."
+    },
+    {
+      "situation": "Someone offers a cash reward for naming a rumored culprit",
+      "response": "Owen checks privately on the person being talked about and offers to accompany a real witness who wants to speak.",
+      "asWritten": "Someone offers a cash reward for naming a rumored culprit. Owen checks privately on the person being talked about and offers to accompany a real witness who wants to speak."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Owen agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Owen agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

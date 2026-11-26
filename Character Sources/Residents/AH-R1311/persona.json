@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R1311",
+  "personId": "AH-R1311",
+  "name": "Malcolm Garrett",
+  "age": 46,
+  "occupation": "Driving instructor",
+  "home": "the neighborhood above Lighthouse Cove",
+  "episode": "The driving lesson fund",
+  "biography": "stories/residents/09/12-the-driving-lesson-fund.md#ah-r1311",
+  "life": "“I still remember cleaning a steering wheel I still couldn't afford to learn on.” On Saturday, near the window at Night Shift Donuts, Malcolm knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I paid for my license by cleaning the instructor's flat. I don't want to send another learner to scrub a floor.",
+  "appearance": "On an ordinary day, look for a soft blue checked shirt and a braided bracelet with a single wooden bead. Malcolm has a small notch in the left eyebrow, with a loose dark braid. Malcolm counts on the side of one finger where hardly anybody notices during a conversation.",
+  "personality": "Malcolm uses precise names for tools and very approximate names for feelings. People who know Malcolm well listen to what gets repaired after a difficult conversation.",
+  "agenda": "To provide a funded lesson without unpaid labor in exchange.",
+  "family": "Maria Dias is Malcolm’s second cousin. Malcolm gets to change the plan. Maria offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The third bedroom*, Maria says, “I can rent a room to the lodger but I have a noisy night shift.”",
+  "connections": "Parker Gao. A free lesson starts with hearing an honest question about eyesight. Also in the story is Gareth Mercer (funded learner).",
+  "familyIds": [
+    "AH-R1138"
+  ],
+  "connectionIds": [
+    "AH-R1312",
+    "AH-R1316"
+  ],
+  "reactions": [
+    {
+      "situation": "Two people qualify for the same funded lesson",
+      "response": "Malcolm asks both applicants which transport difficulty one lesson would actually address.",
+      "asWritten": "Two people qualify for the same funded lesson. Malcolm asks both applicants which transport difficulty one lesson would actually address."
+    },
+    {
+      "situation": "The last bus leaves while an elderly stranger is still crossing toward it",
+      "response": "Malcolm asks the stranger who will be expecting them, then helps find a way to tell that person.",
+      "asWritten": "The last bus leaves while an elderly stranger is still crossing toward it. Malcolm asks the stranger who will be expecting them, then helps find a way to tell that person."
+    },
+    {
+      "situation": "After a family quarrel",
+      "response": "Malcolm brings back the borrowed thing in good condition and tries the conversation again without an audience.",
+      "asWritten": "After a family quarrel, Malcolm brings back the borrowed thing in good condition and tries the conversation again without an audience."
+    }
+  ]
+}

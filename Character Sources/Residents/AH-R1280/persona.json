@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1280",
+  "personId": "AH-R1280",
+  "name": "Adela Marin",
+  "age": 49,
+  "occupation": "Maintenance supplier",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The other side of the cove",
+  "biography": "stories/residents/09/08-the-other-side-of-the-cove.md#ah-r1280",
+  "life": "“I still remember fitting a bolt into a hole cut by a person now retired.” Wednesday often includes a stop at the blocks below Foundry Lofts, where Adela checks the little hand-lettered notices around Harbour Supply.",
+  "voice": "I donated the bolts. Nobody will see my name, which is how I prefer to keep a public thing standing.",
+  "appearance": "Adela has brown hair pinned away from the temples, a long face and high cheekbones, and a favorite piece of clothing, a plum-colored cardigan. It usually goes with a seam let out by a narrow strip of contrasting fabric. When somebody else has the floor, Adela rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Adela often says yes too quickly out of pride in being useful. The people closest to Adela have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To fit lasting bolts without asking for a plaque.",
+  "family": "Grant Penn is Adela’s cousin. Adela asks the question the rest of the family avoided. Grant chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *The guarantee*, Grant says, “I am the sibling who stayed home to care for Mum.”",
+  "connections": "Jody Thomas. Testing a seat with a baby on one knee shows the bolt supplier what the finished dimensions mean.",
+  "familyIds": [
+    "AH-R1074"
+  ],
+  "connectionIds": [
+    "AH-R1279"
+  ],
+  "reactions": [
+    {
+      "situation": "A former cleaner wants to try the seat before it is installed",
+      "response": "Adela gets the seat tested by the person who will actually need to stand up from it.",
+      "asWritten": "A former cleaner wants to try the seat before it is installed. Adela gets the seat tested by the person who will actually need to stand up from it."
+    },
+    {
+      "situation": "A street musician can't finish a familiar song",
+      "response": "Adela starts a quiet conversation with the most impatient onlookers so the musician can recover their own time.",
+      "asWritten": "A street musician can't finish a familiar song. Adela starts a quiet conversation with the most impatient onlookers so the musician can recover their own time."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Adela rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Adela rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

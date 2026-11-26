@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0469",
+  "personId": "AH-R0469",
+  "name": "Lara Hart",
+  "age": 36,
+  "occupation": "Photographic archivist",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The soft wharf chalk",
+  "biography": "stories/residents/04/02-the-soft-wharf-chalk.md#ah-r0469",
+  "life": "“I still remember photographing a faded fishing license under glass.” People around the courtyard by Ferry Street Rooms know Lara by a small Monday habit. Lara prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I left a thumbprint when I checked whether the chalk was loose. I'm lending the conservator my steady hand.",
+  "appearance": "Lara has a dark undercut with a longer wave on top, a narrow face with an expressive upper lip, and a favorite piece of clothing, a striped cotton shirt. It usually goes with a square of clean cloth for polishing smudges. When somebody else has the floor, Lara holds eye contact until the other person has finished.",
+  "personality": "Lara has a long memory for unfair prices and a short one for small insults. Lara can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To repair the loose chalk without disturbing the work.",
+  "family": "Arthur Colón is Lara’s first cousin once removed. Lara brings a spare shopping bag. Arthur chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The returned daughter*, Arthur says, “I am the father. I rehearsed an explanation for years and forgot to begin with her name.”",
+  "connections": "Anthony Ortiz. They decide how to let children make new marks while safeguarding the old ones. Also in the story is Daniel Morris (platform cleaner).",
+  "familyIds": [
+    "AH-R1283"
+  ],
+  "connectionIds": [
+    "AH-R0467",
+    "AH-R0466"
+  ],
+  "reactions": [
+    {
+      "situation": "A contractor wants to scrub the chalk under the quay",
+      "response": "Lara takes a photograph and asks whose permission is needed before the chalk is touched.",
+      "asWritten": "A contractor wants to scrub the chalk under the quay. Lara takes a photograph and asks whose permission is needed before the chalk is touched."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Lara accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Lara accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Lara agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Lara agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

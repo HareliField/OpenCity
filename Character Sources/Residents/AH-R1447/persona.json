@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1447",
+  "personId": "AH-R1447",
+  "name": "Nina Khan",
+  "age": 36,
+  "occupation": "Night security guard",
+  "home": "Eastside",
+  "episode": "The kitchen without a boss",
+  "biography": "stories/residents/10/10-the-kitchen-without-a-boss.md#ah-r1447",
+  "life": "“I still remember buying the cheapest roll before a long night on watch.” Friday often includes a stop at Tideline Market, where Nina picks out the bruised fruit first and asks the seller what will ripen by supper.",
+  "voice": "I buy breakfast on a night wage. I want these new bosses to remember what two coins used to buy.",
+  "appearance": "On an ordinary day, look for a long navy raincoat and a knotted piece of sail thread on a key ring. Nina has a round face with a pronounced chin, with short black hair swept back. Nina counts on the side of one finger where hardly anybody notices during a conversation.",
+  "personality": "Nina has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To preserve a useful two-coin breakfast.",
+  "family": "Dale Nielsen is Nina’s second cousin. Nina chooses whether to use it. Dale saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *A red mitten*, Dale says, “My toddler kept moving it to save a seat for his dad.”",
+  "connections": "Lee Roche. The quiet loaf specialist meets a regular who counts breakfast in coins.",
+  "familyIds": [
+    "AH-R0202"
+  ],
+  "connectionIds": [
+    "AH-R1442"
+  ],
+  "reactions": [
+    {
+      "situation": "The absent owner calls to ask which pastry burned",
+      "response": "Nina gives the owner a truthful account without handing back all three workers' decisions.",
+      "asWritten": "The absent owner calls to ask which pastry burned. Nina gives the owner a truthful account without handing back all three workers' decisions."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Nina agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip.",
+      "asWritten": "A friend asks for a loan due back before payday. Nina agrees on a sum and a date with the friend in private, keeping the arrangement out of family gossip."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Nina asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Nina asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

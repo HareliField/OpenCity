@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1195",
+  "personId": "AH-R1195",
+  "name": "Rosa Vance",
+  "age": 43,
+  "occupation": "Seafront café worker",
+  "home": "the blocks north of the port",
+  "episode": "The skipper goes ashore",
+  "biography": "stories/residents/08/15-the-skipper-goes-ashore.md#ah-r1195",
+  "life": "“I still remember learning where the harbor looks most level from a bench.” On Saturday, near Ferris Deli, Rosa asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I have always been seasick. I told the skipper which bench has the best steady horizon for talking after a trip.",
+  "appearance": "Rosa has a swept fringe and a closely clipped nape, a small notch in the left eyebrow, and a favorite piece of clothing, a black overshirt with pearl buttons. It usually goes with a narrow brass watch set a little fast. When somebody else has the floor, Rosa steadies a cup with both hands while listening.",
+  "personality": "Rosa has a talent for getting adversaries to laugh at exactly the same thing. Rosa knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To provide a steady place to meet on land.",
+  "family": "Elizabeth Campos is Rosa’s cousin raised in the same household. Rosa gets to change the plan. Elizabeth offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The expensive summer*, Elizabeth says, “I make fancy cakes. I delivered one small enough to share without pretending it was a feast.”",
+  "connections": "Cyrus Berg. A steady patch of horizon by the café makes a place for the first shore payday lunch.",
+  "familyIds": [
+    "AH-R0978"
+  ],
+  "connectionIds": [
+    "AH-R1200"
+  ],
+  "reactions": [
+    {
+      "situation": "An owner offers the former skipper a title with no clear duties",
+      "response": "Rosa asks what actual work, hours and wage go with the shore title.",
+      "asWritten": "An owner offers the former skipper a title with no clear duties. Rosa asks what actual work, hours and wage go with the shore title."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Rosa suggests one straightforward message without accusations and gives the friend time to answer.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Rosa suggests one straightforward message without accusations and gives the friend time to answer."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Rosa asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Rosa asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

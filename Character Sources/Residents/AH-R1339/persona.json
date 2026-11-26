@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1339",
+  "personId": "AH-R1339",
+  "name": "Ruth Spencer",
+  "age": 55,
+  "occupation": "Radio fitter",
+  "home": "Old Town",
+  "episode": "The missing Sunday",
+  "biography": "stories/residents/09/14-the-missing-sunday.md#ah-r1339",
+  "life": "“I still remember receiving spare batteries for a radio I never switched off.” People around the public road outside the Port of Asphalt know Ruth by a small Saturday habit. Ruth can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I saved his old radio when he moved. It still gets the away matches better than my phone.",
+  "appearance": "On an ordinary day, look for a mustard canvas overshirt and a narrow brass watch set a little fast. Ruth has a heart-shaped face and prominent ears, with a swept fringe and a closely clipped nape. Ruth raises one eyebrow long before saying yes during a conversation.",
+  "personality": "Ruth tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Ruth will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To restore the away-game radio.",
+  "family": "Tait Wynn is Ruth’s cousin raised in the same household. Ruth chooses whether to use it. Tait saves a place. The invitation means something because declining it has never ended the friendship between their households. Asked about *The last green*, Tait says, “He told me to get a proper job when I was a kid.”",
+  "connections": "Toby Hsu. An old scarf and a working away-match radio let two neighbors bring the club home.",
+  "familyIds": [
+    "AH-R0119"
+  ],
+  "connectionIds": [
+    "AH-R1335"
+  ],
+  "reactions": [
+    {
+      "situation": "The widower asks for a Sunday with no appointments",
+      "response": "Ruth keeps necessary care covered and leaves the social part of Sunday open.",
+      "asWritten": "The widower asks for a Sunday with no appointments. Ruth keeps necessary care covered and leaves the social part of Sunday open."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Ruth offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Ruth offers to help correct the printed name and leaves it to the colleague whether any public explanation is wanted."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Ruth repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Ruth repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

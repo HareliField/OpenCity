@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1211",
+  "personId": "AH-R1211",
+  "name": "Darcy Fadel",
+  "age": 37,
+  "occupation": "Freight handler",
+  "home": "Coast Ridge",
+  "episode": "The worker who couldn't read the joke",
+  "biography": "stories/residents/09/02-the-worker-who-couldn-t-read-the-joke.md#ah-r1211",
+  "life": "“I still remember laughing at a break-room story a moment too late.” People around Juniper Street know Darcy by a small Thursday habit. Darcy knows which of the west-side porches has a seat in the shade.",
+  "voice": "I laughed because my boss looked right at me. I want the people who saw the picture to know that.",
+  "appearance": "On an ordinary day, look for a soft blue checked shirt and a fabric zip pull cut from a school scarf. Darcy has a crooked front tooth visible when laughing, with short copper curls. Darcy gives a little nod before asking a hard question during a conversation.",
+  "personality": "Darcy finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To tell the crew what the laugh actually meant.",
+  "family": "Franklin Pike is Darcy’s half-sibling. Darcy sets the time to leave. Franklin picks the meeting place. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *The upstairs lease*, Franklin says, “I offered boxes and got asked to be a witness at the lease meeting.”",
+  "connections": "Olivia Nielsen (bilingual colleague). A truthful translation gives the photographed worker the words to challenge the apparent laugh.",
+  "familyIds": [
+    "AH-R0760"
+  ],
+  "connectionIds": [
+    "AH-R1214"
+  ],
+  "reactions": [
+    {
+      "situation": "A manager wants the photographed worker to address the crew",
+      "response": "Darcy offers the pictured worker a private conversation before any meeting with the crew.",
+      "asWritten": "A manager wants the photographed worker to address the crew. Darcy offers the pictured worker a private conversation before any meeting with the crew."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Darcy finds out what the destination actually looks like to the traveler and gives directions in those terms.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Darcy finds out what the destination actually looks like to the traveler and gives directions in those terms."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Darcy waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Darcy waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

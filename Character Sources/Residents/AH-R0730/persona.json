@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0730",
+  "personId": "AH-R0730",
+  "name": "Una Kapoor",
+  "age": 47,
+  "occupation": "Primary music teacher",
+  "home": "the western residential streets",
+  "episode": "The fountain score",
+  "biography": "stories/residents/05/13-the-fountain-score.md#ah-r0730",
+  "life": "“I still remember giving a concert for a class with no instruments.” People around Ferris Deli know Una by a small Saturday habit. Una asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "I am writing the instructions so a class inland can play the same score with whatever is in their pockets.",
+  "appearance": "On an ordinary day, look for a long navy raincoat and a small enamel bird on the lapel. Una has a strong profile and a little space between the front teeth, with short, uneven waves that refuse to lie flat. Una listens with the head tilted a little to the left during a conversation.",
+  "personality": "Una is fond of ambitious ideas and deeply suspicious of grand openings. The question Una asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To write a playable version for an inland class.",
+  "family": "Camille Marks is Una’s cousin. Una leaves the first voice message. Camille calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *Reading the payslip*, Camille says, “I used a fake example until a cleaner spotted the exact deduction her daughter pays.”",
+  "connections": "Logan Hill. The teacher adapting the piece inland hears a singer find a voice for the first time. Also in the story is Kai Williams (musician).",
+  "familyIds": [
+    "AH-R0817"
+  ],
+  "connectionIds": [
+    "AH-R0724",
+    "AH-R0722"
+  ],
+  "reactions": [
+    {
+      "situation": "The student asks the least confident player to start",
+      "response": "Una gives the player a clear first beat and permission to pass the opening on.",
+      "asWritten": "The student asks the least confident player to start. Una gives the player a clear first beat and permission to pass the opening on."
+    },
+    {
+      "situation": "A witness is embarrassed about remembering only a little",
+      "response": "Una tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer.",
+      "asWritten": "A witness is embarrassed about remembering only a little. Una tells them which ordinary detail proved helpful on a previous occasion, then listens without suggesting an answer."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Una accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Una accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

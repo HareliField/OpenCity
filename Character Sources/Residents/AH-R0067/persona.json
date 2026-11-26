@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0067",
+  "personId": "AH-R0067",
+  "name": "Ona Voss",
+  "age": 51,
+  "occupation": "Bookbinder",
+  "home": "the neighborhood around Market Flats",
+  "episode": "An unfinished atlas",
+  "biography": "stories/residents/01/07-an-unfinished-atlas.md#ah-r0067",
+  "life": "Ona repaired hotel menus before anybody entrusted her with books. She earns more rebinding legal registers, but a child's uneven stitches still hold her attention longer than a perfect office volume. People around the window at Night Shift Donuts know Ona by a small Wednesday habit. Ona knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I can tell a right-handed child did the sewing. The knots point away from the working hand. I brought thread for visitors to try it before they believe me.",
+  "appearance": "Ona has auburn hair cut square at the nape, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a rust-colored canvas coat. It usually goes with a train token tied to a zipper pull. When somebody else has the floor, Ona gives a little nod before asking a hard question.",
+  "personality": "Ona finds names easy and faces hard on a crowded street. People who assume they have been snubbed usually get a warmer greeting once they speak.",
+  "agenda": "To teach pupils to read the direction of the stitches.",
+  "family": "Drew Silva is Ona’s stepsibling. Ona makes the call. Drew is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *First shift back*, Drew says, “I trained under the returning worker. Now we have to admit I'm the one who knows the new forms.”",
+  "connections": "Rene Mott. They compare the age of the paste with the direction of a child's hand stitches.",
+  "familyIds": [
+    "AH-R1084"
+  ],
+  "connectionIds": [
+    "AH-R0062"
+  ],
+  "reactions": [
+    {
+      "situation": "A collector offers cash for the unexamined atlas",
+      "response": "Ona asks the bookseller to put the atlas somewhere safe while its ownership is checked.",
+      "asWritten": "A collector offers cash for the unexamined atlas. Ona asks the bookseller to put the atlas somewhere safe while its ownership is checked."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Ona suggests one straightforward message without accusations and gives the friend time to answer.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Ona suggests one straightforward message without accusations and gives the friend time to answer."
+    },
+    {
+      "situation": "When somebody waves from across traffic",
+      "response": "Ona waits at the corner to hear their voice and give them a proper answer.",
+      "asWritten": "When somebody waves from across traffic, Ona waits at the corner to hear their voice and give them a proper answer."
+    }
+  ]
+}

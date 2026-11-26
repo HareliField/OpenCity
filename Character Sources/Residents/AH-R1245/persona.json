@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1245",
+  "personId": "AH-R1245",
+  "name": "Oscar Salas",
+  "age": 44,
+  "occupation": "Coat tailor",
+  "home": "Old Town",
+  "episode": "A clean coat for court",
+  "biography": "stories/residents/09/05-a-clean-coat-for-court.md#ah-r1245",
+  "life": "“I still remember the lender returning a jacket with my stitch intact.” People around the foot of Harbor Viaduct know Oscar by a small Thursday habit. Oscar pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I let the coat out at the shoulders. You can undo my stitches without leaving marks, which matters to both men.",
+  "appearance": "On an ordinary day, look for a charcoal zip cardigan and a partly rubbed-away embroidered initial. Oscar has a broad nose and a deep dimple on one cheek, with a center part and straight chestnut hair. Oscar looks at people's hands before looking at what they carry during a conversation.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Oscar takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To undo the sleeve adjustment without harming the coat.",
+  "family": "Maria Delgado is Oscar’s cousin raised in the same household. Oscar brings something that can still be enjoyed tomorrow. Maria checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The carer's afternoon*, Maria says, “I want to sit in Paper & Pine and read the same page four times if that's what the afternoon takes.”",
+  "connections": "Desmond Green. The child can see the shirt under the alteration the tailor made for the hearing.",
+  "familyIds": [
+    "AH-R1031"
+  ],
+  "connectionIds": [
+    "AH-R1244"
+  ],
+  "reactions": [
+    {
+      "situation": "A stranger asks why the lender came to court",
+      "response": "Oscar lets the lender tell or withhold the coat's history.",
+      "asWritten": "A stranger asks why the lender came to court. Oscar lets the lender tell or withhold the coat's history."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Oscar asks each person to say what they believe is actually owed before anybody proposes a payment.",
+      "asWritten": "A family supper turns into an argument about old debt. Oscar asks each person to say what they believe is actually owed before anybody proposes a payment."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Oscar asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Oscar asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

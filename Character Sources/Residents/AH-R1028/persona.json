@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1028",
+  "personId": "AH-R1028",
+  "name": "Morgan Day",
+  "age": 71,
+  "occupation": "Retired head teacher",
+  "home": "the blocks north of the port",
+  "episode": "A dance for two fathers",
+  "biography": "stories/residents/07/13-a-dance-for-two-fathers.md#ah-r1028",
+  "life": "“I still remember buying corsages for girls who came without escorts.” People around Studio Boulevard know Morgan by a small Thursday habit. Morgan waits by the window where the whole crossing can be seen without leaning into the road.",
+  "voice": "I wrote the school's old dance rule years ago. I wanted daughters without dates to feel welcome.",
+  "appearance": "Morgan has a small notch in the left eyebrow. Look for salt-and-pepper curls. On an ordinary day, the familiar outfit is a striped cotton shirt with a fabric zip pull cut from a school scarf. In conversation Morgan draws small circles on a tabletop while waiting.",
+  "personality": "Morgan is fond of ambitious ideas and deeply suspicious of grand openings. The question Morgan asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To explain what the rule originally tried to protect.",
+  "family": "Seth Roberts is Morgan’s first cousin once removed. Morgan can always ask for five minutes alone. Seth asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *Midnight cinnamon*, Seth says, “I hated that holiday until the sack opened.”",
+  "connections": "Noel Mota. The ceremony organizer asks the retired author of the rule what it was designed to protect.",
+  "familyIds": [
+    "AH-R0691"
+  ],
+  "connectionIds": [
+    "AH-R1024"
+  ],
+  "reactions": [
+    {
+      "situation": "One of the fathers misses the dance rehearsal",
+      "response": "Morgan keeps the missed step available for a quiet practice before the ceremony.",
+      "asWritten": "One of the fathers misses the dance rehearsal. Morgan keeps the missed step available for a quiet practice before the ceremony."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Morgan asks for help with a task the neighbor does well, so both people get to contribute something.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Morgan asks for help with a task the neighbor does well, so both people get to contribute something."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Morgan accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Morgan accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

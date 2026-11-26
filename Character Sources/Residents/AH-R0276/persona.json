@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0276",
+  "personId": "AH-R0276",
+  "name": "Lucinda Duran",
+  "age": 27,
+  "occupation": "Audio technician",
+  "home": "the blocks north of the port",
+  "episode": "The quiet verse",
+  "biography": "stories/residents/02/13-the-quiet-verse.md#ah-r0276",
+  "life": "“I got into sound by fixing the microphone at a terrible wedding speech.” People around the public road outside the Port of Asphalt know Lucinda by a small Monday habit. Lucinda can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I thought the microphone had failed and ran onto the stage. They wrote me into the second performance.",
+  "appearance": "Lucinda has a cropped cut that shows the shape of the ears, a softly rounded chin under sharp cheekbones, and a favorite piece of clothing, a red windbreaker. It usually goes with a pocket notebook shaped by years of sitting on it. When somebody else has the floor, Lucinda presses the lips together to keep a smile in.",
+  "personality": "Lucinda takes a rejection personally for a day and analytically on the second morning. Lucinda can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To play the joking microphone inspection on cue next time.",
+  "family": "Sage Jeong is Lucinda’s cousin. Lucinda brings a spare shopping bag. Sage chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The absent signature*, Sage says, “I found her address on an old recipe card. I won't give it away until she asks me to.”",
+  "connections": "Lily Thomas. They sort out which interruption was an accident and which one belongs in the second show.",
+  "familyIds": [
+    "AH-R0911"
+  ],
+  "connectionIds": [
+    "AH-R0275"
+  ],
+  "reactions": [
+    {
+      "situation": "A parent demands to hear the private words",
+      "response": "Lucinda leaves the private verse with its writer.",
+      "asWritten": "A parent demands to hear the private words. Lucinda leaves the private verse with its writer."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Lucinda suggests breakfast together and lets the offer rest until another day.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Lucinda suggests breakfast together and lets the offer rest until another day."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Lucinda turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Lucinda turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

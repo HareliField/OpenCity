@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1408",
+  "personId": "AH-R1408",
+  "name": "Elias Rios",
+  "age": 30,
+  "occupation": "Ward musician",
+  "home": "the streets inland from Pier Beach",
+  "episode": "Two birthdays in one ward",
+  "biography": "stories/residents/10/06-two-birthdays-in-one-ward.md#ah-r1408",
+  "life": "“I still remember quieting a guitar string with my dressing gown belt.” Saturday often includes a stop at the corner outside Coastal Barber, where Elias usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I play guitar on the ward. The old worker wanted a saucy song at a volume the child couldn't hear.",
+  "appearance": "On an ordinary day, look for a long navy raincoat and a comb in a sleeve sewn into the lining. Elias has a long face and high cheekbones, with a center part and straight chestnut hair. Elias gathers both sleeves neatly before settling in during a conversation.",
+  "personality": "Likes beautiful, unnecessary things and gets cross with people who mistake poverty for a lack of taste. Elias takes longer choosing a cheap birthday card than an expensive coat.",
+  "agenda": "To play the private song at a considerate volume.",
+  "family": "Marin Ramos is Elias’s older cousin. Elias gets to change the plan. Marin offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *A sail cut small*, Marin says, “I sold the boat but kept its name. I didn't know I wanted the letter H until somebody made a hat of it.”",
+  "connections": "Alexei Macrae. The guitarist and old nursing aide agree which jokes the young patient shouldn't have to overhear.",
+  "familyIds": [
+    "AH-R0294"
+  ],
+  "connectionIds": [
+    "AH-R1406"
+  ],
+  "reactions": [
+    {
+      "situation": "The other requests the biggest balloon anyone can find",
+      "response": "Elias finds out where the big balloon can go without crowding anyone else's bed.",
+      "asWritten": "The other requests the biggest balloon anyone can find. Elias finds out where the big balloon can go without crowding anyone else's bed."
+    },
+    {
+      "situation": "An unfamiliar person asks for directions but cannot read the street signs",
+      "response": "Elias walks with them as far as the first landmark and points to the next one from there.",
+      "asWritten": "An unfamiliar person asks for directions but cannot read the street signs. Elias walks with them as far as the first landmark and points to the next one from there."
+    },
+    {
+      "situation": "When a relative dismisses a little luxury",
+      "response": "Elias asks which ordinary pleasure the relative would give up first.",
+      "asWritten": "When a relative dismisses a little luxury, Elias asks which ordinary pleasure the relative would give up first."
+    }
+  ]
+}

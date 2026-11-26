@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0204",
+  "personId": "AH-R0204",
+  "name": "Audrey Mason",
+  "age": 39,
+  "occupation": "Orderly",
+  "home": "the western residential streets",
+  "episode": "A red mitten",
+  "biography": "stories/residents/02/06-a-red-mitten.md#ah-r0204",
+  "life": "“My first patient taught me to warm a metal chair with a folded newspaper.” People around the courtyard by Ferry Street Rooms know Audrey by a small Thursday habit. Audrey prefers the bench where the sound of the shop door reaches before the visitor does.",
+  "voice": "I used the mitten to warm the metal armrest for a man in a thin shirt. He came back asking for it.",
+  "appearance": "On an ordinary day, look for an old plum windbreaker and a little coil of soft measuring tape. Audrey has a narrow face with an expressive upper lip, with a smooth side part with one rebellious curl. Audrey takes off the watch before a long conversation during a conversation.",
+  "personality": "Audrey has a quick wit and an equally quick sense of shame. A joke is often Audrey's way of finding out whether a room is friendly enough for a serious question.",
+  "agenda": "To get a little warmth to the patient who needs the cold chair.",
+  "family": "Mavis Yeo is Audrey’s cousin. Audrey chooses whether they walk home or sit a while. Mavis brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *An unfinished atlas*, Mavis says, “I priced the atlas at four dollars before I saw the paste.”",
+  "connections": "Astrid Reed. They trace how the bit of warm wool reached the coldest waiting-room armrest.",
+  "familyIds": [
+    "AH-R0061"
+  ],
+  "connectionIds": [
+    "AH-R0208"
+  ],
+  "reactions": [
+    {
+      "situation": "A patient wants the chair kept empty for a while",
+      "response": "Audrey saves the chair for a short agreed interval and checks who else needs it.",
+      "asWritten": "A patient wants the chair kept empty for a while. Audrey saves the chair for a short agreed interval and checks who else needs it."
+    },
+    {
+      "situation": "A stranger waves a phone camera in a crying person's face",
+      "response": "Audrey asks the person crying whether they want to go somewhere quieter, leaving them control over the next step.",
+      "asWritten": "A stranger waves a phone camera in a crying person's face. Audrey asks the person crying whether they want to go somewhere quieter, leaving them control over the next step."
+    },
+    {
+      "situation": "If the joke lands badly",
+      "response": "Audrey seeks out the person it hurt before telling anybody why it was supposed to be funny.",
+      "asWritten": "If the joke lands badly, Audrey seeks out the person it hurt before telling anybody why it was supposed to be funny."
+    }
+  ]
+}

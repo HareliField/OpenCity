@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0873",
+  "personId": "AH-R0873",
+  "name": "Morgan Moreau",
+  "age": 52,
+  "occupation": "Orchestra tutor",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The almost scholarship",
+  "biography": "stories/residents/06/13-the-almost-scholarship.md#ah-r0873",
+  "life": "“I still remember applauding a rival pupil at an empty rehearsal.” On Thursday, near the bank steps, Morgan takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I trained the runner-up. I'm helping the winner find travel money even though I wanted my own student selected.",
+  "appearance": "Morgan has a dark undercut with a longer wave on top, a flat bridge to the nose and a mobile brow, and a favorite piece of clothing, a long navy raincoat. It usually goes with a narrow brass watch set a little fast. When somebody else has the floor, Morgan leans a shoulder against the wall during long conversations.",
+  "personality": "Morgan can be lavish with time and quite careful with cash. A free afternoon is sometimes the biggest gift Morgan can afford to give, and family knows to take it seriously.",
+  "agenda": "To help the winner travel while supporting the runner-up.",
+  "family": "Darcy Osei is Morgan’s second cousin. Morgan knows which ones can be shared. Darcy keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *One unposted detour*, Darcy says, “I left my old route bell ringing on the corner so regulars would know where our cart had gone.”",
+  "connections": "Talia Wong. A runner-up's teacher helps the fundraiser keep the winner's choice open.",
+  "familyIds": [
+    "AH-R0419"
+  ],
+  "connectionIds": [
+    "AH-R0877"
+  ],
+  "reactions": [
+    {
+      "situation": "The school wants a deposit before travel support is settled",
+      "response": "Morgan gets the school to specify the last date a deposit can be returned.",
+      "asWritten": "The school wants a deposit before travel support is settled. Morgan gets the school to specify the last date a deposit can be returned."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Morgan takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Morgan takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "If invited to an expensive outing",
+      "response": "Morgan suggests meeting afterward and explains why without asking the others to abandon their plans.",
+      "asWritten": "If invited to an expensive outing, Morgan suggests meeting afterward and explains why without asking the others to abandon their plans."
+    }
+  ]
+}

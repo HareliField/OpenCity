@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1014",
+  "personId": "AH-R1014",
+  "name": "Frances Duran",
+  "age": 53,
+  "occupation": "Junction engineer",
+  "home": "the streets around Foundry Lofts",
+  "episode": "The crash anniversary",
+  "biography": "stories/residents/07/12-the-crash-anniversary.md#ah-r1014",
+  "life": "“I still remember a junction sketch that never showed how a person would cross carrying flowers.” People around the corner outside Coastal Barber know Frances by a small Saturday habit. Frances usually checks the board before the regulars give a more colorful account of the news.",
+  "voice": "I designed the crossing and have read four reports. None of them mention how hard it is to take your child back there.",
+  "appearance": "Frances has a straight nose and deep-set eyes. Look for a cropped cut that shows the shape of the ears. On an ordinary day, the familiar outfit is a striped cotton shirt with a fabric zip pull cut from a school scarf. In conversation Frances counts on the side of one finger where hardly anybody notices.",
+  "personality": "Frances feels a room through sound. A door slammed in high spirits can produce the same instant startle as an angry one, and it takes a little while to hear what actually follows.",
+  "agenda": "To test the crossing with a family returning there.",
+  "family": "Cory Palmer is Frances’s cousin raised in the same household. A holiday photograph lost its names when somebody replaced the frame. Between them they have identified every person except the one holding the camera. Frances remembers faces very well and dates badly. Asked about *A red mitten*, Cory says, “I put it on the chair where my sister was sitting before her diagnosis.”",
+  "connections": "Winifred Kerr. A required route brings a practicing driver back to the engineer's design after the anniversary.",
+  "familyIds": [
+    "AH-R0201"
+  ],
+  "connectionIds": [
+    "AH-R1019"
+  ],
+  "reactions": [
+    {
+      "situation": "The victim's family wants a private anniversary meal",
+      "response": "Frances lets the family make its own guest list and keeps press questions away from the table.",
+      "asWritten": "The victim's family wants a private anniversary meal. Frances lets the family make its own guest list and keeps press questions away from the table."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Frances calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Frances calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "If an argument gets loud at home",
+      "response": "Frances lowers their own voice and asks for one thought at a time.",
+      "asWritten": "If an argument gets loud at home, Frances lowers their own voice and asks for one thought at a time."
+    }
+  ]
+}

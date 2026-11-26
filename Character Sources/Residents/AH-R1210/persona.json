@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1210",
+  "personId": "AH-R1210",
+  "name": "Fiona Kelly",
+  "age": 28,
+  "occupation": "Portrait buyer and bus driver",
+  "home": "the streets around Foundry Lofts",
+  "episode": "A room above the dryers",
+  "biography": "stories/residents/09/01-a-room-above-the-dryers.md#ah-r1210",
+  "life": "“I still remember buying a frame a week before I could buy the picture.” On Monday, near the steps at Pier Beach, Fiona watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I bought the first drawing with an installment plan. Every payment makes me see a different person in it.",
+  "appearance": "Fiona has two dimples that appear only with a full smile. Look for auburn hair cut square at the nape. On an ordinary day, the familiar outfit is a long navy raincoat with a watch on a cracked leather band. In conversation Fiona rubs a thumb along the edge of the nearest pocket.",
+  "personality": "Fiona is patient with a person learning and fiercely impatient with somebody pretending to know. A half-finished job left where a beginner can see it is an invitation, as far as Fiona is concerned.",
+  "agenda": "To bring home the first purchased portrait on affordable terms.",
+  "family": "Lola Lowe is Fiona’s first cousin once removed. Fiona chooses the music. Lola puts the kettle on. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *Rent in a biscuit tin*, Lola says, “I asked to count it at the deli table. Behind a counter everybody starts looking like a suspect.”",
+  "connections": "Adela Hull. The paying buyer gives the commercial gallerist a useful example of what support actually costs.",
+  "familyIds": [
+    "AH-R0350"
+  ],
+  "connectionIds": [
+    "AH-R1205"
+  ],
+  "reactions": [
+    {
+      "situation": "An investor offers free publicity for the studio",
+      "response": "Fiona asks what cost the publicity will cover before agreeing to an exhibition.",
+      "asWritten": "An investor offers free publicity for the studio. Fiona asks what cost the publicity will cover before agreeing to an exhibition."
+    },
+    {
+      "situation": "A stranger offers money to cut ahead of an exhausted neighbor",
+      "response": "Fiona keeps the neighbor's place and finds out whether the stranger needs a different kind of help.",
+      "asWritten": "A stranger offers money to cut ahead of an exhausted neighbor. Fiona keeps the neighbor's place and finds out whether the stranger needs a different kind of help."
+    },
+    {
+      "situation": "When someone invents an answer",
+      "response": "Fiona asks them to try it in front of the person who will have to live with it.",
+      "asWritten": "When someone invents an answer, Fiona asks them to try it in front of the person who will have to live with it."
+    }
+  ]
+}

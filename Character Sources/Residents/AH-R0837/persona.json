@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0837",
+  "personId": "AH-R0837",
+  "name": "Sonia Garza",
+  "age": 46,
+  "occupation": "Frequent visitor and loader",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "A room for a father",
+  "biography": "stories/residents/06/09-a-room-for-a-father.md#ah-r0837",
+  "life": "“I still remember the first train ticket I bought for a grown adult.” On Friday, near the approach to Seabright Court, Sonia likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I gave him my old bed. I asked the family to keep one night a week when I can stay too.",
+  "appearance": "Sonia has a swept fringe and a closely clipped nape, a narrow face with an expressive upper lip, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with a replacement button a shade darker than the others. When somebody else has the floor, Sonia presses the lips together to keep a smile in.",
+  "personality": "Sonia has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To keep one regular family overnight visit.",
+  "family": "George Crawford is Sonia’s half-sibling. Sonia is free to hang up first. George makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *A red mitten*, George says, “I photograph everything we find. In every frame there is a different hand reaching into the corner.”",
+  "connections": "Charlie Starr. Preparing a bedroom competes with the guest's own need for occasional space in the house.",
+  "familyIds": [
+    "AH-R0205"
+  ],
+  "connectionIds": [
+    "AH-R0834"
+  ],
+  "reactions": [
+    {
+      "situation": "The returning father wants a family photograph immediately",
+      "response": "Sonia asks each household member privately whether they want to be in the picture.",
+      "asWritten": "The returning father wants a family photograph immediately. Sonia asks each household member privately whether they want to be in the picture."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Sonia calls for emergency assistance from outside and waits to give the street number.",
+      "asWritten": "Smoke appears under a shop door after closing. Sonia calls for emergency assistance from outside and waits to give the street number."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Sonia asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Sonia asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0212",
+  "personId": "AH-R0212",
+  "name": "Fiona Nord",
+  "age": 33,
+  "occupation": "Library clerk",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The margin reader",
+  "biography": "stories/residents/02/07-the-margin-reader.md#ah-r0212",
+  "life": "“I learned to shelve books before I learned how late their readers stayed up.” Sunday often includes a stop at the foot of Harbor Viaduct, where Fiona pauses where the machinery overhead makes two people stand close enough to hear each other.",
+  "voice": "I recognized my old teacher by the way she corrects a question mark. I want to answer the one she left me.",
+  "appearance": "Fiona is easy to recognize by a blunt cut just below the ears and a deep crease beside the mouth when smiling. Usually dressed in an unlined tan jacket with a printed handkerchief folded into the pocket, Fiona turns fully toward the person speaking when listening.",
+  "personality": "Fiona enjoys bargaining, including over things already settled. It is partly a joke and partly a test of whether the other person feels able to say no.",
+  "agenda": "To ask the retired teacher one more question in the margin.",
+  "family": "Allen Clay is Fiona’s older cousin. Fiona makes room at the table. Allen brings whatever was actually growing or affordable that week. The meal sometimes produces a solution. Even when it does not, everyone goes away knowing what the other household is up against. Asked about *The gift nobody wants*, Allen says, “I found the father's first rent receipt. It is framed in the corner where he tells young people to start from nothing.”",
+  "connections": "Carlo Ueda. They turn a long argument in pencil into something an older reader can hear aloud.",
+  "familyIds": [
+    "AH-R1380"
+  ],
+  "connectionIds": [
+    "AH-R0216"
+  ],
+  "reactions": [
+    {
+      "situation": "Two people remember writing the same line",
+      "response": "Fiona lets both readers identify the line privately before adding a name.",
+      "asWritten": "Two people remember writing the same line. Fiona lets both readers identify the line privately before adding a name."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Fiona asks which apartment is expecting someone home and makes sure that household knows about the delay.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Fiona asks which apartment is expecting someone home and makes sure that household knows about the delay."
+    },
+    {
+      "situation": "When a friend starts agreeing too quickly",
+      "response": "Fiona puts the deal away and suggests a walk.",
+      "asWritten": "When a friend starts agreeing too quickly, Fiona puts the deal away and suggests a walk."
+    }
+  ]
+}

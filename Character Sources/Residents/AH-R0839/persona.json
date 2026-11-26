@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0839",
+  "personId": "AH-R0839",
+  "name": "Jeff Jones",
+  "age": 51,
+  "occupation": "Travel agent",
+  "home": "Midtown",
+  "episode": "A room for a father",
+  "biography": "stories/residents/06/09-a-room-for-a-father.md#ah-r0839",
+  "life": "“I still remember sharing the cost of a return nobody expected.” On Wednesday, near the crossing outside Verve Nail Studio, Jeff notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I paid for the train fare and secretly hoped he'd miss the train. I'm glad my sister knows that.",
+  "appearance": "Jeff is easy to recognize by a soft fringe that falls across one eyebrow and a straight nose and deep-set eyes. Usually dressed in a rust-colored canvas coat with a pressed flower kept in the clear back of a phone case, Jeff looks toward the door whenever a name is called when listening.",
+  "personality": "Jeff keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Jeff wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To admit mixed feelings about the paid ticket.",
+  "family": "Aster Loy is Jeff’s older cousin. Jeff can always ask for five minutes alone. Aster asks before bringing somebody along. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *A tide at noon*, Aster says, “I painted the line with a tide table from the wrong year.”",
+  "connections": "Anita Abbott. The relative who paid the fare admits a hope the relative who paid the back rent already understands.",
+  "familyIds": [
+    "AH-R0073"
+  ],
+  "connectionIds": [
+    "AH-R0832"
+  ],
+  "reactions": [
+    {
+      "situation": "The returning father wants a family photograph immediately",
+      "response": "Jeff asks each household member privately whether they want to be in the picture.",
+      "asWritten": "The returning father wants a family photograph immediately. Jeff asks each household member privately whether they want to be in the picture."
+    },
+    {
+      "situation": "Smoke appears under a shop door after closing",
+      "response": "Jeff alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared.",
+      "asWritten": "Smoke appears under a shop door after closing. Jeff alerts the nearest occupied shop, stays outside and writes down when the smoke first appeared."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Jeff offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Jeff offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

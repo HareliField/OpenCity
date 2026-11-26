@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0937",
+  "personId": "ah-pd-119",
+  "name": "Bea Morgan",
+  "age": 34,
+  "occupation": "Patrol officer",
+  "home": "Eastside",
+  "episode": "A civilian apology",
+  "biography": "stories/residents/07/04-a-civilian-apology.md#ah-r0937",
+  "life": "“I still remember dating three holidays by the age of my child.” Sunday often includes a stop at the downtown fountain, where Bea keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I checked the dates by my own maternity leave. The case had been over three weeks before the photograph was taken.",
+  "appearance": "On an ordinary day, look for an old plum windbreaker and a thin silver ring worn on a cord. Bea has a wide brow and a narrow jaw, with a long plait tucked inside the collar. Bea starts to lift a hand, then waits to be invited to speak during a conversation.",
+  "personality": "Bea often says yes too quickly out of pride in being useful. The people closest to Bea have learned to ask again the next morning, when the answer is more likely to account for sleep.",
+  "agenda": "To date the photograph accurately.",
+  "family": "Santiago Montoya is Bea’s second cousin. Bea calls back when there is finally a little privacy. Santiago leaves the first voice message. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The first straight paycheck*, Santiago says, “I kept expecting that fat pay envelope. Seeing tax withheld made me furious until my daughter asked what the receipt proved.”",
+  "connections": "Maya Scott. A visit after watch gives a worker time to check the photograph against the dates of leave.",
+  "familyIds": [
+    "AH-R0791"
+  ],
+  "connectionIds": [
+    "AH-R0934"
+  ],
+  "reactions": [
+    {
+      "situation": "A newspaper repeats the old display caption",
+      "response": "Bea gets the shopkeeper's preferred wording to the editor before passing the story on.",
+      "asWritten": "A newspaper repeats the old display caption. Bea gets the shopkeeper's preferred wording to the editor before passing the story on."
+    },
+    {
+      "situation": "Someone begins blaming the youngest worker for a missing item",
+      "response": "Bea brings the worker into the conversation and asks what they remember without feeding them a story.",
+      "asWritten": "Someone begins blaming the youngest worker for a missing item. Bea brings the worker into the conversation and asks what they remember without feeding them a story."
+    },
+    {
+      "situation": "When two people ask for the same hour",
+      "response": "Bea rings both of them before quietly counting on somebody else to fill in.",
+      "asWritten": "When two people ask for the same hour, Bea rings both of them before quietly counting on somebody else to fill in."
+    }
+  ]
+}

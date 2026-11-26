@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1438",
+  "personId": "AH-R1438",
+  "name": "Jo Allard",
+  "age": 30,
+  "occupation": "Hotel assistant",
+  "home": "the neighborhood around Market Flats",
+  "episode": "A house divided kindly",
+  "biography": "stories/residents/10/09-a-house-divided-kindly.md#ah-r1438",
+  "life": "“I still remember visiting a childhood hedge after I had outgrown its gap.” People around the approach to Seabright Court know Jo by a small Tuesday habit. Jo likes to watch the beach traffic thin enough for workers going the other way.",
+  "voice": "I am the grandchild who expected to inherit this house. The garden they enjoy now matters at least as much as my future fence.",
+  "appearance": "Jo has a high puff tied with plain cord, a small notch in the left eyebrow, and a favorite piece of clothing, a cropped bottle-green coat. It usually goes with a comb in a sleeve sewn into the lining. When somebody else has the floor, Jo looks at people's hands before looking at what they carry.",
+  "personality": "Jo is kind in very practical ways and prickly about being thanked in public. Jo loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To let the grandparents enjoy the present garden.",
+  "family": "Mona Neri is Jo’s parent’s cousin. Jo knows which ones can be shared. Mona keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *A tide at noon*, Mona says, “I donated the prize bucket. The winning child was afraid to come near my white shirt.”",
+  "connections": "Joy Johannsen. The scale drawing lets two adult generations see the older gardeners' plan before objecting.",
+  "familyIds": [
+    "AH-R0077"
+  ],
+  "connectionIds": [
+    "AH-R1433"
+  ],
+  "reactions": [
+    {
+      "situation": "A grandchild objects to the garden plan",
+      "response": "Jo asks the household members who will use the garden how they want to live in it now.",
+      "asWritten": "A grandchild objects to the garden plan. Jo asks the household members who will use the garden how they want to live in it now."
+    },
+    {
+      "situation": "A power cut leaves two neighbors waiting on the stairs",
+      "response": "Jo stays where both neighbors can hear a familiar voice and gets news from the caretaker.",
+      "asWritten": "A power cut leaves two neighbors waiting on the stairs. Jo stays where both neighbors can hear a familiar voice and gets news from the caretaker."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Jo gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Jo gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

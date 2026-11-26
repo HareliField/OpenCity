@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1146",
+  "personId": "AH-R1146",
+  "name": "Tom Clement",
+  "age": 31,
+  "occupation": "Walking courier",
+  "home": "Eastside",
+  "episode": "The first delivery fee",
+  "biography": "stories/residents/08/10-the-first-delivery-fee.md#ah-r1146",
+  "life": "“I still remember carrying a hot box all the way round the fountain in wind.” On Wednesday, near the entrance to the Wash House, Tom stops for local notices even on a day without a load to wash.",
+  "voice": "I can deliver on foot as far as the park. A hot lunch becomes a cold one exactly halfway across it.",
+  "appearance": "Tom has a center part and straight chestnut hair, a strong profile and a little space between the front teeth, and a favorite piece of clothing, a narrow-striped sweater. It usually goes with a pen clipped inside the neckline. When somebody else has the floor, Tom leans a shoulder against the wall during long conversations.",
+  "personality": "Tom is fond of ambitious ideas and deeply suspicious of grand openings. The question Tom asks at any launch is who has the keys for cleaning up a month later.",
+  "agenda": "To test how far a hot lunch can actually travel.",
+  "family": "Joel Myers is Tom’s half-sibling. Tom knows which ones can be shared. Joel keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *A chair of one's own*, Joel says, “I cover the reception desk. I can tell from cancellations which technicians lose the same customers every summer.”",
+  "connections": "Erin Roche. A walking courier and the person dividing the tips need a clear agreement on the charged delivery.",
+  "familyIds": [
+    "AH-R0855"
+  ],
+  "connectionIds": [
+    "AH-R1149"
+  ],
+  "reactions": [
+    {
+      "situation": "The new rider asks who received last year's tips",
+      "response": "Tom asks who did the work and who was paid before the shop divides today's tips.",
+      "asWritten": "The new rider asks who received last year's tips. Tom asks who did the work and who was paid before the shop divides today's tips."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Tom asks which other bill repayment would displace, then offers only what the household can afford to give.",
+      "asWritten": "A friend asks for a loan due back before payday. Tom asks which other bill repayment would displace, then offers only what the household can afford to give."
+    },
+    {
+      "situation": "If offered a ceremonial role",
+      "response": "Tom accepts only after finding out whether the person doing the regular work can come too.",
+      "asWritten": "If offered a ceremonial role, Tom accepts only after finding out whether the person doing the regular work can come too."
+    }
+  ]
+}

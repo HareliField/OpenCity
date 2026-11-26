@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0548",
+  "personId": "AH-R0548",
+  "name": "Alvin Kapoor",
+  "age": 39,
+  "occupation": "Deli regular and warehouse worker",
+  "home": "Old Town",
+  "episode": "Closing soup",
+  "biography": "stories/residents/04/10-closing-soup.md#ah-r0548",
+  "life": "“I still remember picking celery strings off a school pudding spoon.” People around Breakwater Way know Alvin by a small Monday habit. Alvin stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I hate celery and always dug it out. Tonight the cook asked me to choose tomorrow's base.",
+  "appearance": "Alvin is easy to recognize by a loose dark braid and two dimples that appear only with a full smile. Usually dressed in a faded indigo overshirt with a pen clipped inside the neckline, Alvin squares up pieces of paper while thinking when listening.",
+  "personality": "Alvin listens for the familiar version of a story and then for the one detail that changes it. Friends bring problems here when they want to be heard twice.",
+  "agenda": "To choose a different base for tomorrow's pot.",
+  "family": "Percy Wade is Alvin’s half-sibling. Alvin leaves the first voice message. Percy calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The free fringe*, Percy says, “I want the free slot moved to after school once a week so the kid minding his sister gets a turn.”",
+  "connections": "Alex Scott. The ingredients record gives the celery-hater a real say in tomorrow's batch.",
+  "familyIds": [
+    "AH-R0710"
+  ],
+  "connectionIds": [
+    "AH-R0545"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone in the soup line cannot eat one ingredient",
+      "response": "Alvin asks the cook to identify the ingredients before offering a separate bowl.",
+      "asWritten": "Someone in the soup line cannot eat one ingredient. Alvin asks the cook to identify the ingredients before offering a separate bowl."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Alvin helps shift the damp stock and makes sure the worker gets to describe the loss without interruption.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Alvin helps shift the damp stock and makes sure the worker gets to describe the loss without interruption."
+    },
+    {
+      "situation": "When a second witness disagrees",
+      "response": "Alvin keeps the accounts separate until the witnesses have had a chance to meet.",
+      "asWritten": "When a second witness disagrees, Alvin keeps the accounts separate until the witnesses have had a chance to meet."
+    }
+  ]
+}

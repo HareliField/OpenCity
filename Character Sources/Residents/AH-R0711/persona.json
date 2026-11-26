@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0711",
+  "personId": "AH-R0711",
+  "name": "Aisha Ortiz",
+  "age": 34,
+  "occupation": "Delivery passenger and editor",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Level with the window",
+  "biography": "stories/residents/05/12-level-with-the-window.md#ah-r0711",
+  "life": "“I still remember a famous teacher buying very ordinary frozen peas.” People around the public road outside the Port of Asphalt know Aisha by a small Sunday habit. Aisha can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I saw my old maths teacher cooking dinner and realized he'd lived here the entire time I was away.",
+  "appearance": "Aisha has thick, tightly coiled hair, a scattering of freckles across the bridge of the nose, and a favorite piece of clothing, a brown corduroy jacket. It usually goes with a pressed flower kept in the clear back of a phone case. When somebody else has the floor, Aisha raises one eyebrow long before saying yes.",
+  "personality": "Aisha never tires of being shown how somebody makes a living. Aisha can ask an expert question of a craftsperson and still mishandle a simple emotional cue from a friend.",
+  "agenda": "To visit the former maths teacher properly.",
+  "family": "Elaine Marquez is Aisha’s second cousin. Aisha gets to change the plan. Elaine offers the first invitation. They learned that a promise to visit is easier to keep when changing a time does not count as letting down the whole family. Asked about *The waiting-room plant*, Elaine says, “I want a cutting in the grief room because the plastic flowers look the same every morning.”",
+  "connections": "William Nielsen. The passenger who recognized a teacher starts looking out for the match score.",
+  "familyIds": [
+    "AH-R0509"
+  ],
+  "connectionIds": [
+    "AH-R0717"
+  ],
+  "reactions": [
+    {
+      "situation": "A passenger asks to photograph a stranger through the kitchen window",
+      "response": "Aisha waits for the resident to give permission before a camera goes up.",
+      "asWritten": "A passenger asks to photograph a stranger through the kitchen window. Aisha waits for the resident to give permission before a camera goes up."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Aisha takes one immediate task off their hands and asks when they want to tell the supervisor.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Aisha takes one immediate task off their hands and asks when they want to tell the supervisor."
+    },
+    {
+      "situation": "When a relative hints at needing company",
+      "response": "Aisha may initially offer a repair, but sits down as soon as the request becomes clear.",
+      "asWritten": "When a relative hints at needing company, Aisha may initially offer a repair, but sits down as soon as the request becomes clear."
+    }
+  ]
+}

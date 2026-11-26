@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0087",
+  "personId": "AH-R0087",
+  "name": "Nabil Reed",
+  "age": 48,
+  "occupation": "Porch carpenter",
+  "home": "Eastside",
+  "episode": "The porch light",
+  "biography": "stories/residents/01/09-the-porch-light.md#ah-r0087",
+  "life": "Nabil used to hide dates on roof timbers to prove he'd had a part in a house. Since his daughter started asking about his jobs he has preferred marks that future owners can actually find. People around Ferris Deli know Nabil by a small Saturday habit. Nabil asks for the end slice and listens to the names the counter workers use for regulars.",
+  "voice": "We rebuilt the post around that live lamp during a blackout anniversary. I can take it down without losing the pencil dates inside. I want the daughters there when I open it.",
+  "appearance": "Nabil is easy to recognize by black hair twisted into a small knot and a round face with a pronounced chin. Usually dressed in an olive canvas jacket with a folded shopping list secured by a miniature clip, Nabil starts to lift a hand, then waits to be invited to speak when listening.",
+  "personality": "Nabil is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Nabil is by the number of tiny errands suddenly being done.",
+  "agenda": "To save the pencil dates when dismantling the porch post.",
+  "family": "Lou Diaz is Nabil’s cousin raised in the same household. Nabil picks the meeting place. Lou sets the time to leave. It lets them stay close without turning a family visit into the loss of an entire day. They have both had stretches when that distinction mattered. Asked about *A prize nobody entered*, Lou says, “I promised the prize money to a printer before the author answered.”",
+  "connections": "Lev Adair. They need to open the porch post without destroying the dates hidden behind the wiring.",
+  "familyIds": [
+    "AH-R1115"
+  ],
+  "connectionIds": [
+    "AH-R0083"
+  ],
+  "reactions": [
+    {
+      "situation": "A buyer offers extra for the porch lamp",
+      "response": "Nabil asks the owner whether the lamp is even part of the sale before discussing the offer.",
+      "asWritten": "A buyer offers extra for the porch lamp. Nabil asks the owner whether the lamp is even part of the sale before discussing the offer."
+    },
+    {
+      "situation": "A colleague says somebody used the wrong name in public",
+      "response": "Nabil asks which name they want to hear next time and uses it in the next ordinary introduction.",
+      "asWritten": "A colleague says somebody used the wrong name in public. Nabil asks which name they want to hear next time and uses it in the next ordinary introduction."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Nabil agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Nabil agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

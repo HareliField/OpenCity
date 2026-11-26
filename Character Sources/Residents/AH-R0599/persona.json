@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0599",
+  "personId": "AH-R0599",
+  "name": "Cecil Aubin",
+  "age": 50,
+  "occupation": "Night guard",
+  "home": "the streets inland from Pier Beach",
+  "episode": "The engine lullaby",
+  "biography": "stories/residents/04/15-the-engine-lullaby.md#ah-r0599",
+  "life": "“I still remember sitting one whole night with a boat owner in the yard.” People around the public end of the South Shore boardwalk know Cecil by a small Tuesday habit. Cecil checks the shade on the benches before deciding how long to stay.",
+  "voice": "I was the night guard when the engine fell silent. I stayed with the owner till the repairer came.",
+  "appearance": "Cecil has a narrow face with an expressive upper lip. Look for close-cropped dark curls. On an ordinary day, the familiar outfit is a long navy raincoat with a pen clipped inside the neckline. In conversation Cecil leans a shoulder against the wall during long conversations.",
+  "personality": "Cecil treats keeping somebody waiting as a serious discourtesy. This can turn a helpful person into an impatient one when everybody else needs a slower conversation.",
+  "agenda": "To stay beside the owner until a repair time is agreed.",
+  "family": "Joel Gomes is Cecil’s stepsibling. Cecil saves a place. Joel chooses whether to use it. The invitation means something because declining it has never ended the friendship between their households. Asked about *The release address*, Joel says, “I am the uncle who promised a bed. My partner wants a departure date on the same calendar as the welcome dinner.”",
+  "connections": "Alice Ortiz. The engine once rocked a child and now keeps two adults company beside a silent hull.",
+  "familyIds": [
+    "AH-R0947"
+  ],
+  "connectionIds": [
+    "AH-R0591"
+  ],
+  "reactions": [
+    {
+      "situation": "The dock engine falls silent in mid-recording",
+      "response": "Cecil notes the time the hum stopped before discussing a replacement recording.",
+      "asWritten": "The dock engine falls silent in mid-recording. Cecil notes the time the hum stopped before discussing a replacement recording."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Cecil keeps the documents out of view and lets the person claiming it identify it before hearing any details.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Cecil keeps the documents out of view and lets the person claiming it identify it before hearing any details."
+    },
+    {
+      "situation": "If a frightened person needs longer",
+      "response": "Cecil changes the plan openly and takes responsibility for the delay.",
+      "asWritten": "If a frightened person needs longer, Cecil changes the plan openly and takes responsibility for the delay."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0618",
+  "personId": "AH-R0618",
+  "name": "Rafael Sloan",
+  "age": 29,
+  "occupation": "Freight planner",
+  "home": "the blocks north of the port",
+  "episode": "The crane shadow",
+  "biography": "stories/residents/05/02-the-crane-shadow.md#ah-r0618",
+  "life": "“I still remember the first load I guided without looking at my feet.” People around the bank steps know Rafael by a small Monday habit. Rafael takes a few minutes to read the public notices, especially the ones written in a hurry.",
+  "voice": "I spent my first year here looking down. This gull was the first thing that made me look up.",
+  "appearance": "On an ordinary day, look for a pale blue work shirt and a cloth patch so neatly matched it only shows in strong light. Rafael has a wide brow and a narrow jaw, with short black hair swept back. Rafael folds a paper napkin into quarters without noticing during a conversation.",
+  "personality": "Rafael has a long memory for unfair prices and a short one for small insults. Rafael can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To learn which movements make the crane shadow change.",
+  "family": "Douglas Waters is Rafael’s cousin raised in the same household. Rafael brings a spare shopping bag. Douglas chooses whether they walk home or sit a while. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The release address*, Douglas says, “I rented his old room. The first letter that arrived asked my permission to send another.”",
+  "connections": "Ana Powell. A parent waiting through another spring finds company in a new worker learning to look up.",
+  "familyIds": [
+    "AH-R0943"
+  ],
+  "connectionIds": [
+    "AH-R0612"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor reaches the quay too late to see it",
+      "response": "Rafael shows the visitor where the shadow fell and when the next chance comes.",
+      "asWritten": "A visitor reaches the quay too late to see it. Rafael shows the visitor where the shadow fell and when the next chance comes."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Rafael walks with the bystander to a staffed doorway and checks whether they want someone called.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Rafael walks with the bystander to a staffed doorway and checks whether they want someone called."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Rafael agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Rafael agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

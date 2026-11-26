@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0846",
+  "personId": "AH-R0846",
+  "name": "Remy Rose",
+  "age": 42,
+  "occupation": "Bread courier",
+  "home": "the streets around Foundry Lofts",
+  "episode": "One paid trial",
+  "biography": "stories/residents/06/10-one-paid-trial.md#ah-r0846",
+  "life": "“I still remember leaving bread on a doorstep before the customer's illness became public.” People around the public end of the South Shore boardwalk know Remy by a small Friday habit. Remy checks the shade on the benches before deciding how long to stay.",
+  "voice": "I can take morning deliveries for one week so both bakers get a fair turn at the oven.",
+  "appearance": "Remy has two dimples that appear only with a full smile. Look for a cropped cut that shows the shape of the ears. On an ordinary day, the familiar outfit is a red windbreaker with a thin silver ring worn on a cord. In conversation Remy grins on one side while the eyes stay serious.",
+  "personality": "Remy is good at starting things, dreadful at waiting for them to take effect. Close family can tell how worried Remy is by the number of tiny errands suddenly being done.",
+  "agenda": "To give each baker equal oven access.",
+  "family": "Eric Romero is Remy’s stepsibling. Remy leaves the first voice message. Eric calls back when there is finally a little privacy. In their family a missed ring can mean a bus, a customer, a sleeping child or a bad hour. Neither treats it as an answer in itself. Asked about *The expensive summer*, Eric says, “I own the restaurant and cannot feed a table at last year's rent.”",
+  "connections": "Maya Abreu. Extra delivery cover creates a real oven opportunity for the self-taught applicant.",
+  "familyIds": [
+    "AH-R0972"
+  ],
+  "connectionIds": [
+    "AH-R0841"
+  ],
+  "reactions": [
+    {
+      "situation": "The apprentice asks for an old promise in writing",
+      "response": "Remy writes down the remembered promise including who was there to hear it.",
+      "asWritten": "The apprentice asks for an old promise in writing. Remy writes down the remembered promise including who was there to hear it."
+    },
+    {
+      "situation": "A friend asks for a loan due back before payday",
+      "response": "Remy asks which other bill repayment would displace, then offers only what the household can afford to give.",
+      "asWritten": "A friend asks for a loan due back before payday. Remy asks which other bill repayment would displace, then offers only what the household can afford to give."
+    },
+    {
+      "situation": "When asked to wait without intervening",
+      "response": "Remy agrees on a check-in time and keeps busy somewhere out of sight.",
+      "asWritten": "When asked to wait without intervening, Remy agrees on a check-in time and keeps busy somewhere out of sight."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1153",
+  "personId": "AH-R1153",
+  "name": "Ivy Arnett",
+  "age": 39,
+  "occupation": "Textured hair stylist",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The hair after illness",
+  "biography": "stories/residents/08/11-the-hair-after-illness.md#ah-r1153",
+  "life": "“I still remember learning a new texture on a client's spare hairpiece.” On Sunday, near the steps at Pier Beach, Ivy watches the working part of the waterfront before turning toward the open water.",
+  "voice": "I know how to cut this texture. I need her mother to stop telling me what she looked like at twelve.",
+  "appearance": "After the last appointment, look for a cream pullover and a pen clipped inside the neckline. Ivy has a strong profile and a little space between the front teeth, with a blunt cut just below the ears. Ivy leans a shoulder against the wall during long conversations during a conversation.",
+  "personality": "Ivy takes a rejection personally for a day and analytically on the second morning. Ivy can be generous with a rival once the first night's sleep has intervened.",
+  "agenda": "To let the client choose without childhood photographs.",
+  "family": "Damian Harris is Ivy’s second cousin. Ivy knows which ones can be shared. Damian keeps the photographs. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The fountain score*, Damian says, “I wanted the right pitch so badly I broke my best glass.”",
+  "connections": "Robin Gomes (salon client). The client talks to the stylist about what to keep of the new texture.",
+  "familyIds": [
+    "AH-R0728"
+  ],
+  "connectionIds": [
+    "AH-R1151"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone asks to take a photograph before the haircut",
+      "response": "Ivy waits for the customer's permission before anyone takes a picture.",
+      "asWritten": "Someone asks to take a photograph before the haircut. Ivy waits for the customer's permission before anyone takes a picture."
+    },
+    {
+      "situation": "A traveler asks for the last seat at the bus stop",
+      "response": "Ivy looks for a second safe place to sit and stays long enough for the waiting people to settle.",
+      "asWritten": "A traveler asks for the last seat at the bus stop. Ivy looks for a second safe place to sit and stays long enough for the waiting people to settle."
+    },
+    {
+      "situation": "If someone else wins the opportunity",
+      "response": "Ivy turns up the next morning with the one piece of advice that would have helped either of them.",
+      "asWritten": "If someone else wins the opportunity, Ivy turns up the next morning with the one piece of advice that would have helped either of them."
+    }
+  ]
+}

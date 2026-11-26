@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1362",
+  "personId": "AH-R1362",
+  "name": "Ariel Sawyer",
+  "age": 66,
+  "occupation": "Retiring crane worker",
+  "home": "Midtown",
+  "episode": "A last ship together",
+  "biography": "stories/residents/10/02-a-last-ship-together.md#ah-r1362",
+  "life": "“I still remember shutting a crane cab door after a hard goodbye.” On Thursday, near Breakwater Way, Ariel stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I had planned to sit in the cab alone and cry. I need him to know a shared shift still allows one closed door.",
+  "appearance": "Back on the street, look for a plum-colored cardigan and a cloth patch so neatly matched it only shows in strong light. Ariel has heavy brows and an unusually delicate jaw, with a long silver braid. Ariel listens with the head tilted a little to the left during a conversation.",
+  "personality": "Ariel is kind in very practical ways and prickly about being thanked in public. Ariel loves being recognized by the people who notice what happens after the guests have left.",
+  "agenda": "To arrange one private goodbye inside the crane cab.",
+  "family": "Hollis Fong is Ariel’s younger relative by marriage. Ariel brings something that can still be enjoyed tomorrow. Hollis checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The empty drum stool*, Hollis says, “I only play on kitchen pots. The stool was higher than our worktop, so I stood up.”",
+  "connections": "Mika Williams (longtime workmate). The two retiring workers have earned both a shared shift and a few private minutes at its end.",
+  "familyIds": [
+    "AH-R0424"
+  ],
+  "connectionIds": [
+    "AH-R1361"
+  ],
+  "reactions": [
+    {
+      "situation": "A younger worker is asked to perform the final lift",
+      "response": "Ariel lets the trainee carry out the job they are qualified for and keeps space for the retirees to watch.",
+      "asWritten": "A younger worker is asked to perform the final lift. Ariel lets the trainee carry out the job they are qualified for and keeps space for the retirees to watch."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Ariel moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Ariel moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "If somebody calls for applause",
+      "response": "Ariel gives the credit to a specific helper and slips out before the photograph.",
+      "asWritten": "If somebody calls for applause, Ariel gives the credit to a specific helper and slips out before the photograph."
+    }
+  ]
+}

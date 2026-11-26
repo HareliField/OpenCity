@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0591",
+  "personId": "AH-R0591",
+  "name": "Alice Ortiz",
+  "age": 42,
+  "occupation": "Boat owner's grown child and teacher",
+  "home": "Coast Ridge",
+  "episode": "The engine lullaby",
+  "biography": "stories/residents/04/15-the-engine-lullaby.md#ah-r0591",
+  "life": "“I still remember a childhood nap over the sound of a bilge pump.” Tuesday often includes a stop at the market by Market Flats, where Alice often waits until the delivery baskets are stacked before going in.",
+  "voice": "My father took me aboard whenever I couldn't sleep. I want the same sound for the night he moves into care.",
+  "appearance": "Back on the street, look for a sand-colored linen shirt and a little coil of soft measuring tape. Alice has a deep crease beside the mouth when smiling, with short, uneven waves that refuse to lie flat. Alice looks down for a moment before saying something difficult during a conversation.",
+  "personality": "Alice talks very little about private fear and recognizes it quickly in strangers. Offering a choice of seats is one of Alice's ways of saying that it is all right to leave.",
+  "agenda": "To get the father a recording for the move into care.",
+  "family": "Carol Mack is Alice’s second cousin. Alice remembers the birthdays. Carol asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The hair after illness*, Carol says, “I met her during treatment and have never seen the woman her friends keep insisting she used to be.”",
+  "connections": "Cecil Aubin. The engine once rocked a child and now keeps two adults company beside a silent hull.",
+  "familyIds": [
+    "AH-R1157"
+  ],
+  "connectionIds": [
+    "AH-R0599"
+  ],
+  "reactions": [
+    {
+      "situation": "The dock engine falls silent in mid-recording",
+      "response": "Alice notes the time the hum stopped before discussing a replacement recording.",
+      "asWritten": "The dock engine falls silent in mid-recording. Alice notes the time the hum stopped before discussing a replacement recording."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Alice moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Alice moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "When pressed to explain someone else's silence",
+      "response": "Alice says only what happened and lets the absent person keep their reasons.",
+      "asWritten": "When pressed to explain someone else's silence, Alice says only what happened and lets the absent person keep their reasons."
+    }
+  ]
+}

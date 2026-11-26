@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0341",
+  "personId": "AH-R0341",
+  "name": "Grey Ibrahim",
+  "age": 38,
+  "occupation": "Former street dealer and cleaner",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "Rent in a biscuit tin",
+  "biography": "stories/residents/03/05-rent-in-a-biscuit-tin.md#ah-r0341",
+  "life": "“I still remember earning a landlord's trust one damp banknote at a time.” Tuesday often includes a stop at the downtown fountain, where Grey keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I used her kitchen as my savings bank when I sold pills. It's the only clean rent record I have.",
+  "appearance": "Grey has thick, tightly coiled hair, fine brows over wide-set eyes, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a small enamel bird on the lapel. When somebody else has the floor, Grey turns fully toward the person speaking.",
+  "personality": "Grey tells a better story in a kitchen than at a microphone. Family members sometimes underestimate how far Grey will go to back a quiet opinion once it is actually challenged.",
+  "agenda": "To get a dated rent receipt the old neighbors recognize.",
+  "family": "Lou Khan is Grey’s cousin raised in the same household. Grey chooses whether they walk home or sit a while. Lou brings a spare shopping bag. That small arrangement gives both a reason to see each other on weeks when asking for company outright feels difficult. Asked about *The bitter orange*, Lou says, “She ordered two slices after her husband died.”",
+  "connections": "Reina Gallagher. They get the former dealer a reliable record of which rent was actually collected.",
+  "familyIds": [
+    "AH-R0243"
+  ],
+  "connectionIds": [
+    "AH-R0344"
+  ],
+  "reactions": [
+    {
+      "situation": "One renter wants the tin counted in public",
+      "response": "Grey asks each renter how much of the count they want heard in public.",
+      "asWritten": "One renter wants the tin counted in public. Grey asks each renter how much of the count they want heard in public."
+    },
+    {
+      "situation": "A customer is short at the till while a queue forms",
+      "response": "Grey keeps the customer's place while they check the amount and gets the impatient people talking about something else.",
+      "asWritten": "A customer is short at the till while a queue forms. Grey keeps the customer's place while they check the amount and gets the impatient people talking about something else."
+    },
+    {
+      "situation": "If a relative makes a joke at a child's expense",
+      "response": "Grey repeats the child's actual point and waits for a reply to that.",
+      "asWritten": "If a relative makes a joke at a child's expense, Grey repeats the child's actual point and waits for a reply to that."
+    }
+  ]
+}

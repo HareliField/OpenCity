@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0542",
+  "personId": "AH-R0542",
+  "name": "Rae Cole",
+  "age": 52,
+  "occupation": "Family caregiver",
+  "home": "the streets around Foundry Lofts",
+  "episode": "Closing soup",
+  "biography": "stories/residents/04/10-closing-soup.md#ah-r0542",
+  "life": "“I still remember keeping a partner's lunch warm inside my coat.” Tuesday often includes a stop at the window at Night Shift Donuts, where Rae knows when the going-home crowd and the coming-to-work crowd will both be there.",
+  "voice": "I need tonight's exact recipe because this was the first full meal my wife kept down in weeks.",
+  "appearance": "Rae has full cheeks and a mouth that pulls slightly to one side. Look for thick, tightly coiled hair. On an ordinary day, the familiar outfit is a faded indigo overshirt with a copper-colored clasp that has been repaired by hand. In conversation Rae listens with the head tilted a little to the left.",
+  "personality": "Rae has a long memory for unfair prices and a short one for small insults. Rae can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To make one meal the wife can tolerate.",
+  "family": "Gregory Lowe is Rae’s cousin. Rae asks before bringing somebody along. Gregory can always ask for five minutes alone. It keeps a conversation between two people from unexpectedly turning into a family committee. Asked about *No lifeguard at dusk*, Gregory says, “I sold the swimmer a warm coat on credit. She leaves it in my stall until the bus touches the corner.”",
+  "connections": "Milo Saito. The family rebuilding an exact recipe needs the first cook's taste of the stock.",
+  "familyIds": [
+    "AH-R1428"
+  ],
+  "connectionIds": [
+    "AH-R0541"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone in the soup line cannot eat one ingredient",
+      "response": "Rae asks the cook to identify the ingredients before offering a separate bowl.",
+      "asWritten": "Someone in the soup line cannot eat one ingredient. Rae asks the cook to identify the ingredients before offering a separate bowl."
+    },
+    {
+      "situation": "A family supper turns into an argument about old debt",
+      "response": "Rae separates the money question from the broken promise and asks which one the family wants to discuss first.",
+      "asWritten": "A family supper turns into an argument about old debt. Rae separates the money question from the broken promise and asks which one the family wants to discuss first."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Rae agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Rae agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}

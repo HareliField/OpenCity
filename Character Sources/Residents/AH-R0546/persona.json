@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0546",
+  "personId": "AH-R0546",
+  "name": "Noel Wade",
+  "age": 29,
+  "occupation": "Night baker",
+  "home": "the blocks north of the port",
+  "episode": "Closing soup",
+  "biography": "stories/residents/04/10-closing-soup.md#ah-r0546",
+  "life": "“I still remember a diner turning pale over an unlisted ingredient.” Friday often includes a stop at Harbour Bakery, where Noel buys one familiar thing and asks who chose the unfamiliar thing in the window.",
+  "voice": "I count what goes in because somebody eating with us has allergies. Guessing is a luxury I can't afford.",
+  "appearance": "Noel is easy to recognize by a high puff tied with plain cord and a small notch in the left eyebrow. Usually dressed in an old plum windbreaker with a pen clipped inside the neckline, Noel squares up pieces of paper while thinking when listening.",
+  "personality": "Noel reads little signals of discomfort very accurately and has an unfortunate habit of overruling people for their own good. The friends who say stop are the ones Noel trusts most.",
+  "agenda": "To list every ingredient a diner might react to.",
+  "family": "Jody Dunn is Noel’s second cousin. Noel keeps the photographs. Jody knows which ones can be shared. They enjoy remembering people in public and also know what it feels like to have a private afternoon turned into an anecdote for strangers. Asked about *The boy on the corner*, Jody says, “I sell drugs too. This family crisis exposes how little loyalty there is when a friend stops being useful.”",
+  "connections": "Reuben Grant. A fennel donation changes what the late cook has left to take home.",
+  "familyIds": [
+    "AH-R1096"
+  ],
+  "connectionIds": [
+    "AH-R0543"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone in the soup line cannot eat one ingredient",
+      "response": "Noel asks the cook to identify the ingredients before offering a separate bowl.",
+      "asWritten": "Someone in the soup line cannot eat one ingredient. Noel asks the cook to identify the ingredients before offering a separate bowl."
+    },
+    {
+      "situation": "A cyclist goes down in a crowded crossing",
+      "response": "Noel moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help.",
+      "asWritten": "A cyclist goes down in a crowded crossing. Noel moves the onlookers' bags out of the way, asks the rider what hurts, and asks one named bystander to call for help."
+    },
+    {
+      "situation": "If told to back off",
+      "response": "Noel does so immediately and stays available at a distance the other person chooses.",
+      "asWritten": "If told to back off, Noel does so immediately and stays available at a distance the other person chooses."
+    }
+  ]
+}

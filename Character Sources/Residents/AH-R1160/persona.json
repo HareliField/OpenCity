@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1160",
+  "personId": "AH-R1160",
+  "name": "Julius Zhou",
+  "age": 41,
+  "occupation": "Family photographer",
+  "home": "Coast Ridge",
+  "episode": "The hair after illness",
+  "biography": "stories/residents/08/11-the-hair-after-illness.md#ah-r1160",
+  "life": "“I still remember waiting for my mum to choose our first family picture.” On Wednesday, near Breakwater Way, Julius stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I wanted a family picture. We gave her the remote shutter so she decided which smile stayed.",
+  "appearance": "On an ordinary day, look for a mustard canvas overshirt and a narrow brass watch set a little fast. Julius has a scattering of freckles across the bridge of the nose, with close-cropped dark curls. Julius listens with the head tilted a little to the left during a conversation.",
+  "personality": "Julius prefers exact instructions at work and pleasant surprises at home. The two standards occasionally collide, especially when a relative thinks dropping by counts as notice.",
+  "agenda": "To let the client control the family shutter.",
+  "family": "Kai Williams is Julius’s stepsibling. Julius brings something that can still be enjoyed tomorrow. Kai checks the date twice. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The fountain score*, Kai says, “I offered my carpenter's rule. Snapped shut, it sounds exactly like the fountain starting.”",
+  "connections": "Julius Mitchell. The portrait printer and the relative taking the picture agree the first view belongs to the client.",
+  "familyIds": [
+    "AH-R0722"
+  ],
+  "connectionIds": [
+    "AH-R1156"
+  ],
+  "reactions": [
+    {
+      "situation": "The recovering client changes their mind about the wig",
+      "response": "Julius lets the client keep or give away the wig without explaining the change of mind.",
+      "asWritten": "The recovering client changes their mind about the wig. Julius lets the client keep or give away the wig without explaining the change of mind."
+    },
+    {
+      "situation": "An argument on the pavement makes a bystander feel unsafe",
+      "response": "Julius stays beside the bystander in a public place and reports only what happened in sight and earshot.",
+      "asWritten": "An argument on the pavement makes a bystander feel unsafe. Julius stays beside the bystander in a public place and reports only what happened in sight and earshot."
+    },
+    {
+      "situation": "When a visitor arrives unexpectedly",
+      "response": "Julius clears one chair and says honestly how long the visit can last.",
+      "asWritten": "When a visitor arrives unexpectedly, Julius clears one chair and says honestly how long the visit can last."
+    }
+  ]
+}

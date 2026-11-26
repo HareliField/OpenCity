@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1075",
+  "personId": "AH-R1075",
+  "name": "Dale Hamm",
+  "age": 46,
+  "occupation": "Business supplier",
+  "home": "the western blocks near Ferry Street Rooms",
+  "episode": "The guarantee",
+  "biography": "stories/residents/08/03-the-guarantee.md#ah-r1075",
+  "life": "“I still remember loading stock bought with a domestic mortgage.” People around the brick passage off the shop row know Dale by a small Saturday habit. Dale takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I bought supplies for the new business. My own small mortgage now depends on that family's next argument.",
+  "appearance": "On an ordinary day, look for an unlined tan jacket and a seam let out by a narrow strip of contrasting fabric. Dale has a crooked front tooth visible when laughing, with a smooth side part with one rebellious curl. Dale looks at people's hands before looking at what they carry during a conversation.",
+  "personality": "Dale keeps other people's confidences so well that friends sometimes mistake discretion for taking sides. Dale wants to be trusted and resents being asked for proof of it.",
+  "agenda": "To receive payment for stock without pressuring the guarantor.",
+  "family": "Finn Ryan is Dale’s second cousin. Dale is free to hang up first. Finn makes the call. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The carer's afternoon*, Finn says, “I work the night before. I can do tea but nobody should ask me to drive.”",
+  "connections": "Parker Osborne. A supplier's small mortgage explains why a carefully recorded old debt is worth studying.",
+  "familyIds": [
+    "AH-R1038"
+  ],
+  "connectionIds": [
+    "AH-R1079"
+  ],
+  "reactions": [
+    {
+      "situation": "A borrower learns exactly what the guarantee cost",
+      "response": "Dale puts the actual pledged property and repayment date on paper.",
+      "asWritten": "A borrower learns exactly what the guarantee cost. Dale puts the actual pledged property and repayment date on paper."
+    },
+    {
+      "situation": "A coworker arrives late after a night at the hospital",
+      "response": "Dale asks them privately what can be shared about the delay and respects the answer.",
+      "asWritten": "A coworker arrives late after a night at the hospital. Dale asks them privately what can be shared about the delay and respects the answer."
+    },
+    {
+      "situation": "When somebody asks who said it first",
+      "response": "Dale offers to introduce them to the person willing to put a name to it.",
+      "asWritten": "When somebody asks who said it first, Dale offers to introduce them to the person willing to put a name to it."
+    }
+  ]
+}

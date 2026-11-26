@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0006",
+  "personId": "AH-R0006",
+  "name": "Warren Lyle",
+  "age": 44,
+  "occupation": "Insurance adjuster",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The blue suit",
+  "biography": "stories/residents/01/01-the-blue-suit.md#ah-r0006",
+  "life": "Warren took an office job after hot linen burned his forearm. He is still quickest to spot a bad laundry claim by looking at the worker's hands. A neat report with no trace of the people who did the work makes him uneasy. People around the crossing outside Verve Nail Studio know Warren by a small Monday habit. Warren notices whose chair is empty and who has stayed talking after an appointment.",
+  "voice": "I used to work on a hotel laundry line. I found three identical claims under three different machine numbers. I want the service company to come and point to each machine in person.",
+  "appearance": "Warren has two dimples that appear only with a full smile. Look for short sandy hair and a marked widow's peak. On an ordinary day, the familiar outfit is a charcoal zip cardigan with a pen clipped inside the neckline. In conversation Warren gives a little nod before asking a hard question.",
+  "personality": "Is a careful borrower and a reckless lender. Things leave this person's house with elaborate instructions and very little expectation of ever coming back.",
+  "agenda": "To settle the failed-valve claim before the Wash House loses its hotel work.",
+  "family": "Nadia Holland is Warren’s younger cousin. Warren remembers the birthdays. Nadia asks what the birthday guest would like this year. A present that was perfect at sixteen may be completely wrong at forty. They take the trouble of finding out. Asked about *The broken till*, Nadia says, “I wrote everyone's sandwiches in pictures. The cook hung the sheet beside the menu.”",
+  "connections": "Dee Varma. Their next conversation will decide what evidence the hotel needs before sending its linen here.",
+  "familyIds": [
+    "AH-R0396"
+  ],
+  "connectionIds": [
+    "AH-R0010"
+  ],
+  "reactions": [
+    {
+      "situation": "Someone wants to post the ruined cuff online",
+      "response": "Warren asks Rafael which version he wants a stranger to see before anyone shares the picture.",
+      "asWritten": "Someone wants to post the ruined cuff online. Warren asks Rafael which version he wants a stranger to see before anyone shares the picture."
+    },
+    {
+      "situation": "Somebody finds a lost wallet outside the bank",
+      "response": "Warren takes it to a staffed counter with a second person present and leaves contact details for the owner.",
+      "asWritten": "Somebody finds a lost wallet outside the bank. Warren takes it to a staffed counter with a second person present and leaves contact details for the owner."
+    },
+    {
+      "situation": "If a stranger returns something damaged",
+      "response": "Warren listens first to the account of how it was actually used.",
+      "asWritten": "If a stranger returns something damaged, Warren listens first to the account of how it was actually used."
+    }
+  ]
+}

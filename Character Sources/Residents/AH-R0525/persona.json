@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0525",
+  "personId": "AH-R0525",
+  "name": "Astrid Olsen",
+  "age": 60,
+  "occupation": "Mural painter",
+  "home": "the neighborhood around Market Flats",
+  "episode": "The rescue hut mural",
+  "biography": "stories/residents/04/08-the-rescue-hut-mural.md#ah-r0525",
+  "life": "“I still remember my first public painting signed with only my initials.” People around the market by Market Flats know Astrid by a small Tuesday habit. Astrid often waits until the delivery baskets are stacked before going in.",
+  "voice": "I painted the original under a supervision order. This time I came back on my day off.",
+  "appearance": "On an ordinary day, look for a cream pullover and a knotted piece of sail thread on a key ring. Astrid has two dimples that appear only with a full smile, with salt-and-pepper curls. Astrid draws breath as if to speak and lets someone else go first during a conversation.",
+  "personality": "Astrid loves an audience until a private hurt enters the room. Then the performer disappears and someone very good at getting other people through a door takes over.",
+  "agenda": "To restore the original only with the neighborhood's agreement.",
+  "family": "Charles Stone is Astrid’s younger cousin. Astrid makes the call. Charles is free to hang up first. Some of their best calls last less than a minute. A change of tone is sometimes all the news either one needs. Asked about *The returned daughter*, Charles says, “I care for the old man. I have no business telling his daughter how frailty ought to make her feel.”",
+  "connections": "Dario Oh (mural model). The model and the original painter finally explain the sandwich.",
+  "familyIds": [
+    "AH-R1286"
+  ],
+  "connectionIds": [
+    "AH-R0522"
+  ],
+  "reactions": [
+    {
+      "situation": "A visitor wants the painted figure made easier to recognize",
+      "response": "Astrid asks the original model which part has been misunderstood.",
+      "asWritten": "A visitor wants the painted figure made easier to recognize. Astrid asks the original model which part has been misunderstood."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Astrid offers the worker something dry first and leaves it to them whether to pursue the apology.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Astrid offers the worker something dry first and leaves it to them whether to pursue the apology."
+    },
+    {
+      "situation": "If a stranger asks to hear a private story",
+      "response": "Astrid offers one about their own embarrassment instead.",
+      "asWritten": "If a stranger asks to hear a private story, Astrid offers one about their own embarrassment instead."
+    }
+  ]
+}

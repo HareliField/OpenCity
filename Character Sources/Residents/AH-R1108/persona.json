@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R1108",
+  "personId": "AH-R1108",
+  "name": "Naomi Jones",
+  "age": 36,
+  "occupation": "Hospital courier",
+  "home": "Old Town",
+  "episode": "Two names on the chart",
+  "biography": "stories/residents/08/06-two-names-on-the-chart.md#ah-r1108",
+  "life": "“I still remember seeing a photograph of Mum before we children knew her.” On Monday, near the public road outside the Port of Asphalt, Naomi can recognize shift change by the lull between two groups of walkers.",
+  "voice": "I am her grown daughter. Reading the childhood name made me realize she was someone before she became Mum.",
+  "appearance": "Naomi has a dark undercut with a longer wave on top, fine brows over wide-set eyes, and a favorite piece of clothing, a pale blue work shirt. It usually goes with a thin silver ring worn on a cord. When somebody else has the floor, Naomi looks toward the door whenever a name is called.",
+  "personality": "Naomi has a talent for getting adversaries to laugh at exactly the same thing. Naomi knows better than to expect the laugh to settle what they are arguing about.",
+  "agenda": "To learn the mother's history before marriage.",
+  "family": "Amira Lam is Naomi’s cousin raised in the same household. Naomi asks the question the rest of the family avoided. Amira chooses an ordinary story to tell. They tend to get further with an important subject when it arrives in the middle of talk about dinner or work. Asked about *One sleeve short*, Amira says, “I gave him my old cuff button. It got me through the interview that paid for my divorce.”",
+  "connections": "Paloma Arendt (mother). The mother's childhood folder opens a part of her life her daughter never knew.",
+  "familyIds": [
+    "AH-R0252"
+  ],
+  "connectionIds": [
+    "AH-R1101"
+  ],
+  "reactions": [
+    {
+      "situation": "A family member asks to see both old folders",
+      "response": "Naomi checks what the patient has authorized before handing over either folder.",
+      "asWritten": "A family member asks to see both old folders. Naomi checks what the patient has authorized before handing over either folder."
+    },
+    {
+      "situation": "A driver splashes a market worker and tries to laugh it off",
+      "response": "Naomi asks the driver to come back on foot and look at the damaged goods before discussing cost.",
+      "asWritten": "A driver splashes a market worker and tries to laugh it off. Naomi asks the driver to come back on foot and look at the damaged goods before discussing cost."
+    },
+    {
+      "situation": "When people declare an argument over too soon",
+      "response": "Naomi asks them to describe one concrete thing that will be different tomorrow.",
+      "asWritten": "When people declare an argument over too soon, Naomi asks them to describe one concrete thing that will be different tomorrow."
+    }
+  ]
+}

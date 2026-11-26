@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0196",
+  "personId": "AH-R0196",
+  "name": "Hannah Peters",
+  "age": 55,
+  "occupation": "Apartment building caretaker",
+  "home": "the neighborhood around Seabright Court",
+  "episode": "The pawned trumpet",
+  "biography": "stories/residents/02/05-the-pawned-trumpet.md#ah-r0196",
+  "life": "“Our tenants once held a full concert for the man who mended the lift.” On Tuesday, near the downtown fountain, Hannah keeps a little time free to hear who is playing at the far end of the park.",
+  "voice": "I recorded the tune through the ceiling because I wanted to complain about the noise. Now it's evidence of a reunion.",
+  "appearance": "Hannah has a scattering of freckles across the bridge of the nose. Look for thick, tightly coiled hair. On an ordinary day, the familiar outfit is a dark green knitted vest with a seam let out by a narrow strip of contrasting fabric. In conversation Hannah presses the lips together to keep a smile in.",
+  "personality": "Hannah has excellent recall for voices and a poor memory for official titles. Someone who waited patiently at a counter years ago is more likely to be remembered than the person in charge.",
+  "agenda": "To give the recording to the family before registering a complaint.",
+  "family": "Sam Rose is Hannah’s cousin raised in the same household. One year the family all bought gifts for the same child and overlooked the adult cooking supper. Nobody wants an important celebration planned without a place for the cook to sit. Hannah counts the chairs before the guests. Asked about *The split visit*, Sam says, “I pay the carers and once claimed overlap was waste.”",
+  "connections": "Remy Rizzo. A noise complaint and a rehearsal invite turn one ceiling recording into something worth keeping.",
+  "familyIds": [
+    "AH-R0738"
+  ],
+  "connectionIds": [
+    "AH-R0200"
+  ],
+  "reactions": [
+    {
+      "situation": "The teenager gets an audition the morning the horn is due back",
+      "response": "Hannah contacts the owner before treating an audition as permission to keep the horn.",
+      "asWritten": "The teenager gets an audition the morning the horn is due back. Hannah contacts the owner before treating an audition as permission to keep the horn."
+    },
+    {
+      "situation": "A frightened child is waiting outside a shuttered shop",
+      "response": "Hannah lets the child choose whether to stand by the door or sit beside the window while another adult gets help.",
+      "asWritten": "A frightened child is waiting outside a shuttered shop. Hannah lets the child choose whether to stand by the door or sit beside the window while another adult gets help."
+    },
+    {
+      "situation": "When somebody trades on a title",
+      "response": "Hannah asks for the name of the person who will still be around tomorrow.",
+      "asWritten": "When somebody trades on a title, Hannah asks for the name of the person who will still be around tomorrow."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0328",
+  "personId": "AH-R0328",
+  "name": "Yasmin Arrieta",
+  "age": 45,
+  "occupation": "Family archive volunteer",
+  "home": "the western residential streets",
+  "episode": "The widow's dividend",
+  "biography": "stories/residents/03/03-the-widow-s-dividend.md#ah-r0328",
+  "life": "“I still remember the spare cup left in our empty room.” Sunday often includes a stop at Breakwater Way, where Yasmin stops on the landward side of the cycle track to watch the first boats turn for home.",
+  "voice": "I recorded the founding meeting on a birthday cassette. I need a working player before the general meeting.",
+  "appearance": "Yasmin has a wide brow and a narrow jaw. Look for a swept fringe and a closely clipped nape. On an ordinary day, the familiar outfit is a rust-colored canvas coat with a seam let out by a narrow strip of contrasting fabric. In conversation Yasmin counts on the side of one finger where hardly anybody notices.",
+  "personality": "Yasmin thinks best while walking. Sitting beneath someone's office clock makes Yasmin sound more certain than they feel, an effect close friends have learned to distrust.",
+  "agenda": "To bring the wife back to the coast.",
+  "family": "Tobias Starr is Yasmin’s cousin. Yasmin puts the kettle on. Tobias chooses the music. The cups come out before either brings up the reason for the visit. They trust a difficult conversation more if it has had an ordinary beginning. Asked about *An empty dedication*, Tobias says, “I printed the first draft on my lunch break.”",
+  "connections": "Lydia Macrae. They compare using a dividend for a reunion with using one to make a family repayment.",
+  "familyIds": [
+    "AH-R1412"
+  ],
+  "connectionIds": [
+    "AH-R0329"
+  ],
+  "reactions": [
+    {
+      "situation": "An unexpected dividend arrives in the wrong envelope",
+      "response": "Yasmin checks the payee's name with the teller before opening the envelope.",
+      "asWritten": "An unexpected dividend arrives in the wrong envelope. Yasmin checks the payee's name with the teller before opening the envelope."
+    },
+    {
+      "situation": "A neighbor offers to pay for a favor that was meant kindly",
+      "response": "Yasmin accepts a small agreed amount if paying lets the neighbor keep their pride.",
+      "asWritten": "A neighbor offers to pay for a favor that was meant kindly. Yasmin accepts a small agreed amount if paying lets the neighbor keep their pride."
+    },
+    {
+      "situation": "When family demands an immediate answer",
+      "response": "Yasmin asks them to walk to the corner together and listen until the corner comes.",
+      "asWritten": "When family demands an immediate answer, Yasmin asks them to walk to the corner together and listen until the corner comes."
+    }
+  ]
+}

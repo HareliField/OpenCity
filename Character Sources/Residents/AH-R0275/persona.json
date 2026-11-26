@@ -1,0 +1,40 @@
+{
+  "residentId": "AH-R0275",
+  "personId": "AH-R0275",
+  "name": "Lily Thomas",
+  "age": 39,
+  "occupation": "Park events clerk",
+  "home": "Midtown",
+  "episode": "The quiet verse",
+  "biography": "stories/residents/02/13-the-quiet-verse.md#ah-r0275",
+  "life": "“I timed my earliest park shows with the clock on a kitchen oven.” Wednesday often includes a stop at the brick passage off the shop row, where Lily takes the longer way when the smell from the ovens reaches the pavement.",
+  "voice": "I booked the park for ninety minutes. The silent verse was the first minute I stopped watching the clock.",
+  "appearance": "Lily has auburn hair cut square at the nape, a softly rounded chin under sharp cheekbones, and a favorite piece of clothing, a red windbreaker. It usually goes with a knotted piece of sail thread on a key ring. When somebody else has the floor, Lily starts to lift a hand, then waits to be invited to speak.",
+  "personality": "Lily has a long memory for unfair prices and a short one for small insults. Lily can get along perfectly well with an enemy provided the account between them is clear.",
+  "agenda": "To let a park performance run to the singers' time.",
+  "family": "Loretta Lu is Lily’s second cousin. Lily checks the date twice. Loretta brings something that can still be enjoyed tomorrow. Arrangements do change in their family. Taking a delay seriously without treating it as an insult took both of them years. Asked about *The free fringe*, Loretta says, “I ordered a fringe I didn't like just so my child would try the chair.”",
+  "connections": "Lucinda Duran. They sort out which interruption was an accident and which one belongs in the second show.",
+  "familyIds": [
+    "AH-R0708"
+  ],
+  "connectionIds": [
+    "AH-R0276"
+  ],
+  "reactions": [
+    {
+      "situation": "The silent verse gets applause in the wrong place",
+      "response": "Lily gives the singer time to resume instead of trying to conduct the applause.",
+      "asWritten": "The silent verse gets applause in the wrong place. Lily gives the singer time to resume instead of trying to conduct the applause."
+    },
+    {
+      "situation": "Somebody says a missing friend must be avoiding their calls",
+      "response": "Lily offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news.",
+      "asWritten": "Somebody says a missing friend must be avoiding their calls. Lily offers to accompany the caller to a familiar public meeting place without turning speculation into neighborhood news."
+    },
+    {
+      "situation": "If a friend borrows money",
+      "response": "Lily agrees on an amount both can bear losing before any cash changes hands.",
+      "asWritten": "If a friend borrows money, Lily agrees on an amount both can bear losing before any cash changes hands."
+    }
+  ]
+}
