@@ -30,7 +30,7 @@ function updateOutdoorModels(dt,x,z){
   if(!promise)continue;
   p.started=true;
   promise.then(template=>{
-   if(!template)return;
+   if(!template){p.started=false;return;}
    const node=modelInstance(template,p.dims,p.id);
    node.position.set(p.x,p.y,p.z);
    node.rotation.y=p.heading;
@@ -41,7 +41,7 @@ function updateOutdoorModels(dt,x,z){
   });
  }
  updatePropModels(x,z);
- const coupe=cars.find(c=>c.heroWanted&&!c.heroLoading&&!c.dead&&Math.hypot(x-c.pos.x,z-c.pos.z)<85);
+ const coupe=cars.find(c=>c.heroWanted&&!c.heroLoading&&!c.dead&&!(c.retryAfter>performance.now())&&Math.hypot(x-c.pos.x,z-c.pos.z)<85);
  if(coupe&&INTERIORS.catalog.coupe)loadHeroCoupe(coupe);
 }
 
@@ -86,7 +86,7 @@ function updatePropModels(x,z){
   if(!promise)continue;
   p.artStarted=true;
   promise.then(template=>{
-   if(!template)return;
+   if(!template){p.artStarted=false;return;}
    const node=modelInstance(template,dims,id);
    node.traverse(o=>{if(o.isMesh)o.castShadow=p.t!=='lamp';});
    p.display=node;
@@ -156,8 +156,10 @@ function loadHeroCoupe(car){
    }).catch(()=>null);
  }
  coupeModel.then(template=>{
-  if(!template||!cars.includes(car)||!car.heroWanted||car.dead)return;
+  if(!template){coupeModel=null;car.heroLoading=false;car.retryAfter=performance.now()+10000;return;}
+  if(!cars.includes(car)||!car.heroWanted||car.dead)return;
   const shell=template.shell.clone(true),wheels=[];
+  shell.traverse(o=>{if(o.isMesh){o.material=o.material.clone();if(car.repainted)o.material.color.copy(lin(car.paintColor));}});
   car.mesh.add(shell);
   car.body3.visible=false;
   for(let i=0;i<4;i++){
@@ -206,7 +208,7 @@ function removeHeroCoupe(car){
  const {shell,wheels,lenses,deformed}=car.hero;
  car.mesh.remove(shell,...lenses);
  scene.remove(...wheels);
- if(deformed)shell.traverse(o=>{if(o.isMesh)o.geometry.dispose();});
+ shell.traverse(o=>{if(o.isMesh){if(deformed)o.geometry.dispose();if(o.material!==burntMat)o.material.dispose();}});
  car.hero=null;
  car.body3.visible=true;
 }

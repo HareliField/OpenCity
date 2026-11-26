@@ -149,7 +149,7 @@ function syncDoorRegion(x,z){
    if(request){
     d.modelPending=true;
     request.then(template=>{
-     if(!template)return;
+     if(!template){d.modelPending=false;return;}
      d.model=modelInstance(template,[d.w,d.h,.107],d.modelId);
      scene.add(d.model);
      d.dirty=true;
@@ -180,20 +180,6 @@ function collideDoors(pos,r){
   if(overlap){pos.x=overlap.x;pos.z=overlap.z;normal=overlap.normal;}
  });
  return normal;
-}
-
-function traceClosedDoors(ax,az,bx,bz,limit){
- const cx=(ax+bx)*.5,cz=(az+bz)*.5;
- forDoorsNear(cx,cz,d=>{
-  if(d.kind==='glass'||d.kind==='shutter'&&d.phase>.70)return;
-  const pose=doorwayPose(d,d.phase),a=Math.cos(pose.yaw),b=Math.sin(pose.yaw);
-  const sx=ax-pose.x,sz=az-pose.z,dx=bx-ax,dz=bz-az;
-  const t=segRect(sx*a-sz*b,sx*b+sz*a,dx*a-dz*b,dx*b+dz*a,{
-   x0:-d.w*.5,x1:d.w*.5,z0:-d.thickness*.5,z1:d.thickness*.5
-  });
-  if(t>=0&&t<limit)limit=t;
- });
- return limit;
 }
 
 function animateDoorBodies(dt){
@@ -287,18 +273,26 @@ function buildAccessibleShell(block,R,settings={}){
 
  if(!rooms||kind==='garage')return true;
  const {matrix:M,width:span,depth:run}=lotFace(R,sides[0]);
+ // Keep the approach inside every entrance clear, including doors on the side walls.
+ const entries=sides.map(side=>lrect(lotFace(R,side).matrix,-gap/2-.36,gap/2+.36,-.4,2.15));
+ function furnish(kind,u,v,dims){
+  const [w,,d]=dims,area=lrect(M,u-w/2,u+w/2,v-d/2,v+d/2);
+  if(entries.some(e=>e.x0<area.x1&&e.x1>area.x0&&e.z0<area.z1&&e.z1>area.z0))return;
+  placeRoomFurniture(block,M,kind,u,v,base,dims);
+ }
  const usable=Math.min(run,15);
  const counterWidth=Math.min(span*.27,3.05);
  const offset=Math.min(span*.29,4.5);
  const key=kind==='home'?'reading-table':kind==='lobby'?'counter':'display';
  const counter=kind==='home'?[1.11,.73,1.11]:[counterWidth,.97,.65];
- placeRoomFurniture(block,M,key,offset,usable*.50,base,counter);
+ if(offset-counter[0]/2<gap/2+.5||usable<4.5)return true;
+ furnish(key,offset,usable*.50,counter);
  if(kind==='home'){
-  placeRoomFurniture(block,M,'seat',offset,usable*.50+.94,base,[.53,.84,.54]);
-  placeRoomFurniture(block,M,'bookcase',-offset,usable*.68,base,[1.28,1.92,.40]);
+  furnish('seat',offset,usable*.50+.94,[.53,.84,.54]);
+  furnish('bookcase',-offset,usable*.68,[1.28,1.92,.40]);
  }else{
-  placeRoomFurniture(block,M,'stock',-offset,usable*.63,base,[Math.min(span*.29,2.96),1.82,.44]);
-  placeRoomFurniture(block,M,'stock',offset,usable*.78,base,[Math.min(span*.28,2.93),1.82,.44]);
+  furnish('stock',-offset,usable*.63,[Math.min(span*.29,2.96),1.82,.44]);
+  furnish('stock',offset,usable*.78,[Math.min(span*.28,2.93),1.82,.44]);
  }
  const lamp=lpt(M,offset*.48,usable*.57);
  INTERIORS.emitters.push({x:lamp.x,y:ceiling-.25,z:lamp.z,cool:kind==='garage'});

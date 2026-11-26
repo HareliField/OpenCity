@@ -50,12 +50,14 @@ function buildHarbor(){
   }
   const stripe=i%2===0?MAT.whiteMetal:MAT.trim;
   for(const z of [z0+.36,z1-.36]){
+   STATIC.push({x0:x1-.49,x1:x1-.27,z0:z-.11,z1:z+.11,y0:dock.y,h:dock.y+.52,radius:.11});
    cyl(MAT.darkMetal,x1-.38,dock.y,z,.065,.11,.52,8);
    cyl(stripe,x1-.38,dock.y+.43,z,.069,.07,.08,8);
   }
  }
 
  for(const z of [949,963,981,994]){
+  STATIC.push({x0:quay.x1-.91,x1:quay.x1-.65,z0:z-.13,z1:z+.13,y0:.25,h:3.22,radius:.13});
   cyl(MAT.darkMetal,quay.x1-.78,.25,z,.075,.13,2.92,8);
   cyl(MAT.trim,quay.x1-.78,3.09,z,.16,.11,.13,8);
  }

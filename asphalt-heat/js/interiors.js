@@ -301,6 +301,7 @@ function makeFixture(kind,[w,h,d]){
 
 function requestScenery(id){
  const record=INTERIORS.catalog[id];
+ if(record?.retryAfter>performance.now())return null;
  if(!record)return null;
  if(!INTERIORS.models.has(id)){
   const url='models/scenery/'+record.file;
@@ -325,7 +326,10 @@ function requestScenery(id){
     });
     root.userData.dimensions=_assetSize.toArray();
     return root;
-   }).catch(()=>null);
+   }).catch(()=>null).then(model=>{
+    if(!model){record.retryAfter=performance.now()+10000;INTERIORS.models.delete(id);}
+    return model;
+   });
   INTERIORS.models.set(id,result);
  }
  return INTERIORS.models.get(id);
@@ -356,7 +360,7 @@ function updateInteriors(dt,x,z){
    if(!asset)continue;
    f.pending=true;
    asset.then(template=>{
-    if(!template)return;
+    if(!template){f.pending=false;return;}
     const model=modelInstance(template,f.dims,f.id);
     f.node.remove(f.fallback);
     f.fallback.traverse(o=>{if(o.isMesh)o.geometry.dispose();});

@@ -23,8 +23,9 @@ Open [Asphalt Heat](http://127.0.0.1:8765/index.html). The game and its assets l
 | Cycle follow, low, and aerial cameras | V |
 | Hide or restore the HUD and world markers | H |
 | Cycle weapons | Z |
+| Exit a car beside a garage service or shutter | E |
 
-Touch devices show an on-screen stick and action controls.
+Touch devices show an on-screen stick, action controls, camera and HUD buttons. To sell or respray a car, open the garage shutter, stop on the marker inside, and press the action button.
 
 ## Places to look
 
@@ -39,7 +40,7 @@ Touch devices show an on-screen stick and action controls.
 
 Vehicles use a 90 Hz physics step, individual suspension and wheel contact, separate steering angles for the front wheels, and different traction on wet roads, concrete, and sand. Store entrances, house doors, and warehouse shutters open and close on real collision shapes. Many loose objects, including salon chairs and street bins, move when pushed. Trunks, counters, fences, poles, fountains, and railings are solid. Avatar falls use articulated constraints.
 
-The coupe bench test measured 6.00 seconds to 100 km/h and 37.0 metres to brake from that speed. Release the accelerator to slow down gradually, or press S for firmer braking.
+The coupe bench test measured 6.00 seconds to 100 km/h and 37.0 metres to brake from that speed. Release the accelerator to slow down gradually, or hold the down arrow for firmer braking.
 
 Run `node tools/ptest.js` to check acceleration, braking, steering, curbs, wall collisions, surface traction, object toppling, and consistency across update rates.
 

@@ -126,10 +126,10 @@ function initCarLenses(){
   for(const name of names)LENS[name].map=map;
  }
 }
-let plateMat=null;
-function carPlateMat(){if(plateMat)return plateMat;const c=document.createElement('canvas');c.width=256;c.height=64;const g=c.getContext('2d');g.fillStyle='#f3f1e4';g.fillRect(0,0,256,64);g.strokeStyle='#223';g.lineWidth=4;g.strokeRect(3,3,250,58);g.fillStyle='#1a2a55';g.font='bold 44px Anton, Impact, monospace';g.textAlign='center';g.textBaseline='middle';g.fillText('AH 2817',128,37);const t=new THREE.CanvasTexture(c);t.encoding=THREE.sRGBEncoding;return plateMat=new THREE.MeshStandardMaterial({map:t,roughness:.5,polygonOffset:true,polygonOffsetFactor:-3,polygonOffsetUnits:-3});}
+let nextPlate=2817;
+function carPlateMat(){const c=document.createElement('canvas');c.width=256;c.height=64;const g=c.getContext('2d');g.fillStyle='#f3f1e4';g.fillRect(0,0,256,64);g.strokeStyle='#223';g.lineWidth=4;g.strokeRect(3,3,250,58);g.fillStyle='#1a2a55';g.font='bold 44px Anton, Impact, monospace';g.textAlign='center';g.textBaseline='middle';g.fillText('AH '+nextPlate++,128,37);const t=new THREE.CanvasTexture(c);t.encoding=THREE.sRGBEncoding;return new THREE.MeshStandardMaterial({map:t,roughness:.5,polygonOffset:true,polygonOffsetFactor:-3,polygonOffsetUnits:-3});}
 function carPaint(type,color,livery){const k=type+color+livery;if(CARMATS[k])return CARMATS[k];const M=QUALITY.physical?THREE.MeshPhysicalMaterial:THREE.MeshStandardMaterial;
- const m=new M({color:new THREE.Color(livery==='none'||livery==='taxi'?color:0xf2f2f2).convertSRGBToLinear(),map:carSeamTex(type,livery),roughness:livery==='swat'?.6:.26,metalness:livery==='swat'?.2:.55,envMapIntensity:1.25});
+ const m=new M({color:new THREE.Color(color).convertSRGBToLinear(),map:carSeamTex(type,livery),roughness:livery==='swat'?.6:.26,metalness:livery==='swat'?.2:.55,envMapIntensity:1.25});
  if(QUALITY.physical){m.clearcoat=livery==='swat'?0:1;m.clearcoatRoughness=.13;}return CARMATS[k]=m;}
 const burntMat=new THREE.MeshStandardMaterial({color:0x100e0d,roughness:1});
 /* wheels: two shared instanced meshes for every car in the world */
@@ -178,7 +178,7 @@ function carDent(c,lx,ly,lz,amount){
  if(c.hero){
   c.hero.shell.traverse(o=>{if(o.isMesh)meshes.push(o);});
   if(!c.hero.deformed){
-   for(const mesh of meshes)mesh.geometry=mesh.geometry.clone();
+   for(const mesh of meshes){mesh.userData.undented=mesh.geometry;mesh.geometry=mesh.geometry.clone();}
    c.hero.deformed=true;
   }
  }else{

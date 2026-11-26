@@ -39,10 +39,6 @@ function initStreetMaterials(){
   map:glowTex(),color:new THREE.Color(1.42,.83,.41),transparent:true,
   opacity:.19,depthWrite:false,blending:THREE.AdditiveBlending,polygonOffset:true,polygonOffsetFactor:-2
  });
- m.streetLight=new THREE.MeshBasicMaterial({
-  map:glowTex(),color:new THREE.Color(1.60,.99,.46),transparent:true,
-  opacity:.12,depthWrite:false,blending:THREE.AdditiveBlending
- });
  m.cyan=new THREE.MeshBasicMaterial({color:new THREE.Color(.19,1.85,2.55)});
  m.rose=new THREE.MeshBasicMaterial({color:new THREE.Color(2.4,.61,1.26)});
  m.barberPole=makeBarberPole();
@@ -282,11 +278,7 @@ function finishStreetDetails(){
   const r=.13+size*.05;
   STATIC.push({x0:x-r,x1:x+r,z0:z-r,z1:z+r,h:4.1*size});
  }
- for(const p of LAMPS){
-  const x=p.x+Math.sin(p.ry)*2.35,z=p.z+Math.cos(p.ry)*2.35;
-  const y=blockOf(x,z)?.16:.025;
-  topQuad(m.streetLight,x-5.2,x+5.2,y,z-5.2,z+5.2,10.4,null,false);
- }
+
  for(let i=0;i<4;i++){
   const light=new THREE.PointLight(0xffbb78,0,17,2);
   STREET.lights.push(light);

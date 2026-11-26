@@ -51,10 +51,13 @@ const SKYSUN=new V3(.991,.136,0);
 scene.fog=new THREE.FogExp2(0xffffff,.00315);
 /* ---- lights ---- */
 const hemi=new THREE.HemisphereLight(lin(0xc1cee8),lin(0x66584d),1.06);scene.add(hemi);
-const sun=new THREE.DirectionalLight(lin(0xffaa72),3.1);sun.castShadow=true;
+const sun=new THREE.DirectionalLight(lin(0xffaa72),2.35);sun.castShadow=true;
 sun.shadow.mapSize.set(QUALITY.shadow,QUALITY.shadow);{const sc=sun.shadow.camera;sc.left=-48;sc.right=48;sc.top=48;sc.bottom=-48;sc.near=1;sc.far=500;}
 sun.shadow.bias=-.00019;sun.shadow.normalBias=.023;scene.add(sun,sun.target);
 const muzzleL=new THREE.PointLight(0xffc070,0,14,2);scene.add(muzzleL);
+// A shared headlamp illuminates the road, nearby walls and traffic for the occupied car.
+const drivingLight=new THREE.SpotLight(0xffedcf,0,22,.43,.55,1);
+scene.add(drivingLight,drivingLight.target);
 const boomL=new THREE.PointLight(0xff8a30,0,60,2);scene.add(boomL);
 /* ---- sky dome ---- */
 const skyMat=new THREE.ShaderMaterial({side:THREE.BackSide,depthWrite:false,fog:false,uniforms:{tSky:{value:null},uExp:{value:1}},
@@ -83,9 +86,9 @@ function renderReflection(){if(!REFL.on)return;const rc=REFL.cam,c=camera;
  _rp.setFromNormalAndCoplanarPoint(_rn,new V3(0,.02,0));_rp.applyMatrix4(rc.matrixWorldInverse);_rc.set(_rp.normal.x,_rp.normal.y,_rp.normal.z,_rp.constant);
  const pm=rc.projectionMatrix;_rq.x=(Math.sign(_rc.x)+pm.elements[8])/pm.elements[0];_rq.y=(Math.sign(_rc.y)+pm.elements[9])/pm.elements[5];_rq.z=-1;_rq.w=(1+pm.elements[10])/pm.elements[14];
  _rc.multiplyScalar(2/_rc.dot(_rq));pm.elements[2]=_rc.x;pm.elements[6]=_rc.y;pm.elements[10]=_rc.z+1;pm.elements[14]=_rc.w;
- rc.layers.set(0);rc.layers.enable(1);
- const sh=renderer.shadowMap.autoUpdate;renderer.shadowMap.autoUpdate=false;for(const o of REFL.hide)o.visible=false;
- const tv=REFL.uniforms.tRefl.value;REFL.uniforms.tRefl.value=null;REFL.uniforms.reflOn.value=0;renderer.setRenderTarget(REFL.rt);renderer.clear();renderer.render(scene,rc);REFL.uniforms.tRefl.value=tv;REFL.uniforms.reflOn.value=1;for(const o of REFL.hide)o.visible=true;renderer.shadowMap.autoUpdate=sh;}
+ rc.layers.mask=camera.layers.mask;rc.layers.enable(1);
+ const sh=renderer.shadowMap.autoUpdate;renderer.shadowMap.autoUpdate=false;const hidden=REFL.hide.filter(o=>o.visible);for(const o of hidden)o.visible=false;
+ const tv=REFL.uniforms.tRefl.value;REFL.uniforms.tRefl.value=null;REFL.uniforms.reflOn.value=0;renderer.setRenderTarget(REFL.rt);renderer.clear();renderer.render(scene,rc);REFL.uniforms.tRefl.value=tv;REFL.uniforms.reflOn.value=1;for(const o of hidden)o.visible=true;renderer.shadowMap.autoUpdate=sh;}
 REFL.hide=[];
 /* inject wet-ground reflections into a MeshStandardMaterial */
 const WETCODE=`
@@ -122,7 +125,7 @@ function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
 const PP={};
 function fsq(frag,uniforms){return new THREE.ShaderMaterial({uniforms,vertexShader:'varying vec2 vUv;void main(){vUv=uv;gl_Position=vec4(position.xy,0.,1.);}',fragmentShader:frag,depthTest:false,depthWrite:false});}
 function postInit(){if(!POST)return;PP.scene=new THREE.Scene();PP.cam=new THREE.OrthographicCamera(-1,1,1,-1,0,1);PP.quad=new THREE.Mesh(new THREE.PlaneGeometry(2,2),null);PP.quad.frustumCulled=false;PP.scene.add(PP.quad);
- PP.bright=fsq(`uniform sampler2D t;uniform float th;varying vec2 vUv;void main(){vec3 c=texture2D(t,vUv).rgb;float l=max(c.r,max(c.g,c.b));float k=clamp((l-th)/(l+.0001),0.,1.);gl_FragColor=vec4(min(c*k,vec3(40.)),1.);}`,{t:{value:null},th:{value:1.05}});
+ PP.bright=fsq(`uniform sampler2D t;uniform float th;varying vec2 vUv;void main(){vec3 c=texture2D(t,vUv).rgb;float l=max(c.r,max(c.g,c.b));float k=clamp((l-th)/(l+.0001),0.,1.);gl_FragColor=vec4(min(c*k,vec3(5.)),1.);}`,{t:{value:null},th:{value:1.05}});
  PP.blur=fsq(`uniform sampler2D t;uniform vec2 d;varying vec2 vUv;void main(){vec3 c=texture2D(t,vUv).rgb*.227;c+=(texture2D(t,vUv+d*1.385).rgb+texture2D(t,vUv-d*1.385).rgb)*.316;c+=(texture2D(t,vUv+d*3.23).rgb+texture2D(t,vUv-d*3.23).rgb)*.07;gl_FragColor=vec4(c,1.);}`,{t:{value:null},d:{value:new THREE.Vector2()}});
  PP.final=fsq(`uniform sampler2D t;uniform sampler2D b1;uniform sampler2D b2;uniform sampler2D b3;uniform float bs;uniform float ex;uniform float time;uniform float hurt;varying vec2 vUv;
   vec3 aces(vec3 x){mat3 m1=mat3(.59719,.07600,.02840,.35458,.90834,.13383,.04823,.01566,.83777);mat3 m2=mat3(1.60475,-.10208,-.00327,-.53108,1.10813,-.07276,-.07367,-.00605,1.07602);vec3 v=m1*x;vec3 a=v*(v+.0245786)-.000090537;vec3 b=v*(.983729*v+.4329510)+.238081;return clamp(m2*(a/b),0.,1.);}
@@ -141,7 +144,7 @@ function renderFrame(t){renderReflection();
  if(!POST){renderer.setRenderTarget(null);renderer.render(scene,camera);return;}
  renderer.setRenderTarget(PP.main);renderer.clear();renderer.render(scene,camera);
  const F=PP.final.uniforms;F.t.value=PP.main.texture;F.time.value=t%10;
- if(QUALITY.bloom){PP.bright.uniforms.t.value=PP.main.texture;pass(PP.bright,PP.b0);blurTo(PP.b0,PP.b1a,PP.b1b);blurTo(PP.b1b,PP.b2a,PP.b2b);blurTo(PP.b2b,PP.b3a,PP.b3b);F.b1.value=PP.b1b.texture;F.b2.value=PP.b2b.texture;F.b3.value=PP.b3b.texture;F.bs.value=.33;}
+ if(QUALITY.bloom){PP.bright.uniforms.t.value=PP.main.texture;pass(PP.bright,PP.b0);blurTo(PP.b0,PP.b1a,PP.b1b);blurTo(PP.b1b,PP.b2a,PP.b2b);blurTo(PP.b2b,PP.b3a,PP.b3b);F.b1.value=PP.b1b.texture;F.b2.value=PP.b2b.texture;F.b3.value=PP.b3b.texture;F.bs.value=.24;}
  else{F.b1.value=F.b2.value=F.b3.value=PP.main.texture;F.bs.value=0;}
  pass(PP.final,null);}
 function resize(){const w=innerWidth,h=innerHeight;renderer.setPixelRatio(QUALITY.pr);renderer.setSize(w,h,false);camera.aspect=w/h;camera.fov=w<h?72:58;camera.updateProjectionMatrix();postResize(w,h);reflResize(Math.floor(w*QUALITY.pr),Math.floor(h*QUALITY.pr));}

@@ -2,9 +2,9 @@
 const GRADE_ROADS={routes:[],grid:new Map()};
 const GRADE_PROFILES=[
  {name:'Harbor Viaduct',width:8.5,points:[
-  [383,.035,704],[418,.045,704],[454,1.27,702.25],[490,4.05,701.98],
+  [383,.035,704],[401,.10,704],[430,3.55,702.9],[454,5.6,702.25],[490,6.65,701.98],
   [532,7.0,703.4],[594,8.45,705.58],[662,8.75,705.65],[720,8.35,704.0],
-  [762,6.78,702.37],[812,3.85,701.78],[855,1.25,702.94],[891,.07,704],[921,.043,704]
+  [762,6.78,702.37],[812,6.2,701.78],[847,4.2,702.94],[874,.8,704],[895,.08,704],[921,.043,704]
  ]},
  {name:'Coast Ridge Road',width:7.7,points:[
   [832,.039,561],[832,.055,594],[839,.53,615],[850,1.57,641],[873,3.3,667],
@@ -166,7 +166,7 @@ function orientedRoadBox(mat,p,q,w,h,d,{road,visual,omitTop=false}){
  g.computeBoundingBox();
  const {min,max}=g.boundingBox;
  if(road)STATIC.push({
-  x0:min.x,x1:max.x,z0:min.z,z1:max.z,y0:min.y,h:max.y,walkIgnore:true,
+  x0:min.x,x1:max.x,z0:min.z,z1:max.z,y0:min.y,h:max.y,walkIgnore:true,asphalt:omitTop,normal:omitTop?new V3(0,1,0).applyQuaternion(q):null,
   obb:{p:p.clone(),q:q.clone(),w,h,d}
  });
  if(visual){
