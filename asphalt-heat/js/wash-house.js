@@ -211,20 +211,92 @@ globalThis.WashHouse = (() => {
  }
  function lightResident(model,ambient){
   const materials=new Set();
+  // The reference scan contains the highlights photographed in the fabric.
+  // Calibrate the three cloth lobes separately under the shop's working lights.
+  const reflectance={Cloth_tshirt:[.62,.53,.48],Cloth_jacket:[.80,.84,.65],Cloth_jeans:[1.37,1.20,1.06]};
   model.traverse(node=>{
-   if(node.isMesh)for(const mat of Array.isArray(node.material)?node.material:[node.material])materials.add(mat);
+   if(!node.isMesh)return;
+   const scale=reflectance[node.name];
+   if(scale&&node.material.name==="Ida's scanned workwear"){
+    node.material=node.material.clone();node.material.color.multiply(new THREE.Color(...scale));
+   }
+   if(node.name==='Body'&&node.material.name==='Body PBR'&&node.isSkinnedMesh){
+    // Restore the photographed warm hand tone to the shared skin map. Joint
+    // weights carry it down each finger and blend at the cuffs in every pose.
+    const g=node.geometry,idx=g.attributes.skinIndex,weight=g.attributes.skinWeight,previous=g.attributes.color;
+    const arm=node.skeleton.bones.map(b=>/^(lowerarm|hand|thumb|index|middle|ring|pinky)_/.test(b.name)?1:0);
+    const colors=new Float32Array(idx.count*3);
+    for(let i=0;i<idx.count;i++){
+     const t=Math.min(1,weight.getX(i)*arm[idx.getX(i)]+weight.getY(i)*arm[idx.getY(i)]
+      +weight.getZ(i)*arm[idx.getZ(i)]+weight.getW(i)*arm[idx.getW(i)]);
+     colors[i*3]=(previous?.getX(i)??1)*(1+.13*t);
+     colors[i*3+1]=(previous?.getY(i)??1)*(1-.20*t);
+     colors[i*3+2]=(previous?.getZ(i)??1)*(1-.43*t);
+    }
+    g.setAttribute('color',new THREE.Float32BufferAttribute(colors,3));node.material.vertexColors=true;
+   }
+   for(const mat of Array.isArray(node.material)?node.material:[node.material]){
+    if(mat.name==='captured-hair'){
+     // Write the solid part of the crown to depth first. Its rear triangles
+     // otherwise blend over the forehead through the transparent fringe sheet.
+     mat.transparent=false;mat.alphaTest=.28;mat.depthWrite=true;node.renderOrder=0;
+    }else if(mat.name==='Photographic facial skin'){
+     // Near-opaque skin must occlude the far side of the nose in profile.
+     // Keep the feathered edges translucent and skip almost invisible texels.
+     mat.depthWrite=true;mat.alphaTest=.055;node.renderOrder=1;
+    }else if(mat.name==='frontal-locks'){
+     node.renderOrder=2;
+     // Just the photographed side wisps are view-dependent. The bun and the
+     // scanned crown carry the actual silhouette when her head turns away.
+     const geometry=node.geometry,verts=geometry.attributes.position;
+     geometry.computeBoundingBox();
+     const box=geometry.boundingBox,midX=(box.min.x+box.max.x)*.5,halfWidth=(box.max.x-box.min.x)*.5;
+     const temple=new Float32Array(verts.count);
+     for(let i=0;i<verts.count;i++){
+      const lateral=Math.abs(verts.getX(i)-midX)/halfWidth,height=(verts.getY(i)-box.min.y)/(box.max.y-box.min.y);
+      const lower=1-THREE.MathUtils.smoothstep(height,.54,.78);
+      // The same front photograph wraps up the upper temple. Keep its center
+      // over the brow while revealing the real rear hair at grazing angles.
+      temple[i]=THREE.MathUtils.smoothstep(lateral,.29,.75)*(.94+.06*lower);
+     }
+     geometry.setAttribute('templeCoverage',new THREE.Float32BufferAttribute(temple,1));
+    }
+    materials.add(mat);
+   }
   });
   for(const mat of materials){
    if(!mat.isMeshStandardMaterial)continue;
    for(const slot of ['map','normalMap','roughnessMap'])if(mat[slot])mat[slot].anisotropy=4;
    const inherited=mat.onBeforeCompile,programKey=mat.customProgramCacheKey();
+   const jaw=mat.name==='Photographed jaw and neckline';
+   const indirect=['#include <aomap_fragment>','reflectedLight.indirectDiffuse*=shopAmbient;',
+    'reflectedLight.indirectSpecular*=mix(.32,1.,shopAmbient);'];
+   // The jaw scan already carries a photographed shadow. Add the soft return
+   // from the shop floor only on the diffuse downward-facing skin.
+   if(jaw)indirect.push('float floorFacing=-inverseTransformDirection(normal,viewMatrix).y;',
+    'reflectedLight.indirectDiffuse+=diffuseColor.rgb*(.11*smoothstep(.25,.75,floorFacing));');
+   const lightChunk=indirect.join('\n');
    mat.onBeforeCompile=function(shader,renderer){
     inherited.call(this,shader,renderer);
+    if(mat.name==='frontal-locks'){
+     const normals=THREE.ShaderChunk.normal_fragment_begin.replace('normal = normal * faceDirection;',
+      'if(dot(normal,vViewPosition)<0.0) normal=-normal;');
+     // The overlay is a rigid child of the head bone, so its model-view
+     // basis tracks each nod and turn, including the floor-recovery action.
+     const varyings='varying float vTemple; varying vec3 vHairAxis;';
+     shader.vertexShader=shader.vertexShader
+      .replace('#include <common>','#include <common>\nattribute float templeCoverage; '+varyings)
+      .replace('#include <project_vertex>','#include <project_vertex>\nvTemple=templeCoverage;vHairAxis=normalize(mat3(modelViewMatrix)*vec3(0.,0.,1.));');
+     shader.fragmentShader=shader.fragmentShader
+      .replace('#include <common>','#include <common>\n'+varyings)
+      .replace('#include <alphamap_fragment>','#include <alphamap_fragment>\nfloat facing=dot(normalize(vViewPosition),normalize(vHairAxis));diffuseColor.a*=mix(1.,.12+.88*smoothstep(.40,.82,facing),vTemple);')
+      .replace('#include <normal_fragment_begin>',normals);
+    }
     shader.uniforms.shopAmbient=ambient;
     shader.fragmentShader=shader.fragmentShader.replace('#include <common>','#include <common>\nuniform float shopAmbient;')
-     .replace('#include <aomap_fragment>','#include <aomap_fragment>\nreflectedLight.indirectDiffuse*=shopAmbient;reflectedLight.indirectSpecular*=mix(.32,1.,shopAmbient);');
+     .replace('#include <aomap_fragment>',lightChunk);
    };
-   mat.customProgramCacheKey=()=>programKey+'-resident-sky-exposure';
+   mat.customProgramCacheKey=()=>programKey+'-resident-sky-exposure'+(jaw?'-jaw':mat.name==='frontal-locks'?'-fringe':'');
   }
  }
  function install(gltf){
@@ -236,7 +308,7 @@ globalThis.WashHouse = (() => {
   lightResident(model,ambient);
   model.traverse(node=>{
    if(node.isBone)bones[node.name]=node;
-   if(node.isMesh){node.receiveShadow=true;node.castShadow=!/Combed.scalp|Loose.temple/i.test(node.name);node.frustumCulled=false;}
+   if(node.isMesh){node.receiveShadow=true;node.castShadow=!/Combed.scalp|Loose.temple|Captured.bun.*fringe/i.test(node.name);node.frustumCulled=false;}
   });
   for(const [name] of [...collisionBones,['middle_01_l'],['middle_01_r']])if(!bones[name])throw Error('Ida is missing joint '+name);
   root.add(model);root.name='Ida Mercer | Wash House';root.userData.personId=id;
@@ -252,7 +324,7 @@ globalThis.WashHouse = (() => {
   const volumes=[];
   function volume(name,r,end=name,t=0){
    body.addShape(new CANNON.Sphere(r));
-   volumes.push({r,start:joint(name),end:joint(end),t,center:new THREE.Vector3()});
+   volumes.push({name,r,start:joint(name),end:joint(end),t,center:new THREE.Vector3()});
   }
   for(const [name,r] of collisionBones)volume(name,r);
   // Overlapping samples fill the gaps between joint centers as arms and legs flex.
@@ -260,6 +332,11 @@ globalThis.WashHouse = (() => {
    const spans=[['upperarm','lowerarm',.095,2],['lowerarm','hand',.077,2],['hand','middle_01',.065,1],
     ['thigh','calf',.125,3],['calf','foot',.098,3],['foot','ball',.088,2]];
    for(const [from,to,r,steps] of spans)for(let j=1;j<=steps;j++)volume(from+'_'+side,r,to+'_'+side,j/(steps+1));
+   volume('middle_02_'+side,.051,'middle_03_'+side,.42);volume('ball_'+side,.078);
+   for(const finger of ['thumb','index','middle','ring','pinky']){
+    volume(finger+'_02_'+side,.018,finger+'_03_'+side,.43);
+    volume(finger+'_03_'+side,finger==='thumb'?.020:.016);
+   }
   }
   const a={root,clips,ambient,mixer:new THREE.AnimationMixer(model),body,volumes,jointPoints,palms:[bones.middle_02_l,bones.middle_02_r],
    arms:['l','r'].map(side=>({upper:bones['upperarm_'+side],lower:bones['lowerarm_'+side],end:bones['hand_'+side],
@@ -269,7 +346,12 @@ globalThis.WashHouse = (() => {
   a.contactShadow=contactShadow(bones);
   buildBasket(a);
   a.nextStation='washer';a.gait=measureGait(a,model,bones);a.turn=0;
-  scene.add(root);PH.w.addBody(body);actor=a;play('Idle',2.8);syncContacts();
+  scene.add(root);PH.w.addBody(body);actor=a;play('Idle',2.8);
+  // Async streaming can complete between simulation ticks. Present the performed
+  // first pose and its indoor exposure immediately, even when the city is paused.
+  a.mixer.update(0);
+  if(site.lighting)a.ambient.value=roomLightAt(site.lighting,root.position);
+  syncContacts();a.secondary?.update(0);updateBasket(a,0);
   body.addEventListener('collide',e=>{
    if(Math.abs(e.contact.getImpactVelocityAlongNormal())>3.8)fall();
   });
@@ -564,7 +646,7 @@ globalThis.WashHouse = (() => {
   }
   return near;
  }
- function push(p,r,y){
+ function pushEndpoint(p,r,y){
   if(!actor)return null;
   let normal=pushBasket(actor,p,r,y);
   if(Math.abs(p.x-actor.root.position.x)>r+2||Math.abs(p.z-actor.root.position.z)>r+2)return normal;
@@ -577,6 +659,46 @@ globalThis.WashHouse = (() => {
    p.x+=nx*(reach-d);p.z+=nz*(reach-d);normal=[nx,nz];
   }
   return normal;
+ }
+ function push(p,r,y,motion){
+  if(!actor||!motion)return pushEndpoint(p,r,y);
+  // Sample the player's continuous path against the animated joints, including
+  // a whole sprint frame that starts on one side and ends outside the other.
+  const startX=motion.startX??p.x-motion.dx,startZ=motion.startZ??p.z-motion.dz;
+  const dx=p.x-startX,dz=p.z-startZ,length=Math.hypot(dx,dz);
+  if(!length)return pushEndpoint(p,r,y);
+  const margin=r+1.8,at=actor.root.position,load=actor.basket.position;
+  const near=q=>q.x>=Math.min(startX,p.x)-margin&&q.x<=Math.max(startX,p.x)+margin&&
+   q.z>=Math.min(startZ,p.z)-margin&&q.z<=Math.max(startZ,p.z)+margin;
+  if(!near(at)&&!near(load))return null;
+  const steps=Math.ceil(length/Math.max(.06,(r+.051)*.45));
+  if(steps<=1)return pushEndpoint(p,r,y);
+  p.x=startX;p.z=startZ;let hit=null,stepX=dx/steps,stepZ=dz/steps;
+  for(let i=0;i<steps;i++){
+   p.x+=stepX;p.z+=stepZ;
+   const contact=pushEndpoint(p,r,y);
+   if(contact){
+    hit=contact;
+    const inward=Math.min(0,stepX*contact[0]+stepZ*contact[1]);
+    stepX-=inward*contact[0];stepZ-=inward*contact[1];
+   }
+  }
+  return hit;
+ }
+ // Signed clearance of the player's vertical capsule along the resolved motion.
+ // Use the same posed volumes and height interval as the contact solver.
+ function movementClearance(start,end,r,y){
+  if(!actor)return {distance:Infinity,joint:null};
+  const dx=end.x-start.x,dz=end.z-start.z,length2=dx*dx+dz*dz;
+  let distance=Infinity,joint=null;
+  for(const v of actor.volumes){
+   const c=v.center;
+   if(y+.08>c.y+v.r||y+1.72<c.y-v.r)continue;
+   const t=length2?THREE.MathUtils.clamp(((c.x-start.x)*dx+(c.z-start.z)*dz)/length2,0,1):0;
+   const gap=Math.hypot(start.x+t*dx-c.x,start.z+t*dz-c.z)-r-v.r;
+   if(gap<distance){distance=gap;joint=v.name;}
+  }
+  return {distance,joint};
  }
  function bodyRay(start,delta,pad){
   if(!actor)return 1;
@@ -670,5 +792,5 @@ globalThis.WashHouse = (() => {
   return [{id,personId:id,name:'Ida Mercer',team:'civilian',kind:'Laundromat operator',position:{x,y,z},
    yaw:actor.root.rotation.y,activity:actor.mode,animationTime:actor.action.time,clip:actor.action.getClip().name,basketHeld:!!actor.held,colliders:actor.volumes.length}];
  }
- return {isShop,shelfStock,register,destination,tick,push,ray,hit,contactTrace,interaction,portrait,record,get error(){return loadingError;}};
+ return {isShop,shelfStock,register,destination,tick,push,movementClearance,ray,hit,contactTrace,interaction,portrait,record,get error(){return loadingError;}};
 })();

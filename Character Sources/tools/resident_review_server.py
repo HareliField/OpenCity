@@ -42,7 +42,7 @@ class ReviewHandler(GameHandler):
         self.wfile.write(data)
 
     def do_POST(self):
-        match = re.fullmatch(r"/__frames/(work|talk|detail|recovery)/(\d{4})", self.path)
+        match = re.fullmatch(r"/__frames/(work|talk|detail|recovery|standing)/(\d{4})", self.path)
         expected = "http://127.0.0.1:" + str(self.server.server_port)
         if (
             not match

@@ -1,7 +1,7 @@
 {
-  "Idle": {"capture":"idle_shift","frames":[12,78],"loop":true,"ground":true},
-  "Walk": {"capture":"slow_stride","frames":[32,64],"loop":true,"loopBlendFrames":2,"ground":true},
-  "Talk": {"take":"character.blend","frames":[59,130],"brow":[[0,0.6],[0.16,1],[0.65,0.9],[1.25,0],[2.91,0]]},
+  "Idle": {"capture":"idle_shift","performance":"counter_rest","frames":[12,78],"loop":true,"ground":true},
+  "Walk": {"capture":"slow_stride","performance":"work_stride","frames":[32,64],"loop":true,"loopBlendFrames":2,"ground":true},
+  "Talk": {"take":"character.blend","performance":"listening_hands","frames":[59,130],"brow":[[0,0.6],[0.16,1],[0.65,0.9],[1.25,0],[2.91,0]]},
   "Laundry": {"take":"laundry-shift.blend","returnToStart":true},
   "PickUp": {"take":"laundry-shift.blend","frames":[0,21],"grip":{"phase":"lift","span":0.620}},
   "Carry": {"baseAction":"Walk","holdAction":"PickUp","grip":{"phase":"carry","span":0.620}},

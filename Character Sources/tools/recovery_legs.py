@@ -87,7 +87,15 @@ def pelvis_path(scene, rig, action, start, stop):
 
 
 def leg_pose(
-    rig, side, original, target, knee_direction, foot_rotation, weight, knee_min
+    rig,
+    side,
+    original,
+    target,
+    knee_direction,
+    foot_rotation,
+    weight,
+    knee_min,
+    knee_load,
 ):
     joints = [
         rig.pose.bones[name + "_" + side] for name in ("thigh", "calf", "foot", "ball")
@@ -110,15 +118,17 @@ def leg_pose(
     if (
         radius > 0.0001
         and vertical.length > 0.0001
-        and (center + pole * radius).z < min_z
+        and ((center + pole * radius).z < min_z or knee_load > 0)
     ):
         rise = max(-1, min(1, (min_z - center.z) / (radius * vertical.length)))
         side_axis = ray.cross(vertical.normalized())
         if side_axis.x * (1 if side == "l" else -1) < 0:
             side_axis.negate()
-        pole = vertical.normalized() * rise + side_axis * math.sqrt(
+        fitted = vertical.normalized() * rise + side_axis * math.sqrt(
             max(0, 1 - rise * rise)
         )
+        strength = 1 if (center + pole * radius).z < min_z else knee_load
+        pole = pole.lerp(fitted, strength).normalized()
     knee = center + pole * radius
     ankle = a + ray * reach
     quats = {}
@@ -161,6 +171,8 @@ def fit_legs(scene, rig, action, start, stop, shoes, jeans):
         & np.array([0.36 < v.co.z < 0.66 for v in jeans.data.vertices])
         for s in "lr"
     }
+    bag = action.layers[0].strips[0].channelbag(action.slots[0])
+    z_curve = bag.fcurves.find("location", index=2)
     updates = {}
     planted_soles = {}
     for frame in range(enter, finish + 1):
@@ -177,57 +189,85 @@ def fit_legs(scene, rig, action, start, stop, shoes, jeans):
         weight = smooth((frame - enter) / 8)
         if finish < scene.frame_end:
             weight *= smooth((finish - frame) / 8)
-        for s in "rl":
-            sign = 1 if s == "l" else -1
-            begin, end = (25, 40) if s == "r" else (43, 58)
-            step = smooth((dt - begin) / (end - begin))
-            pitch = math.radians(144 - 144 * step)
-            yaw = math.radians(sign * (8 + 5 * step))
-            rotation = Quaternion((0, 0, 1), yaw) @ Quaternion((1, 0, 0), pitch)
-            goal = rear[s].lerp(fronts[s], step)
-            arc = math.sin(math.pi * step)
-            goal.x += sign * 0.036 * arc
-            goal.z = 0.145 * (1 - step) + 0.082 * step + 0.105 * arc
-            floor = 0.0015 + 0.105 * arc
-            kneel = smooth((dt - 23) / 20)
-            pole = Vector(
-                (
-                    sign * (0.12 + 0.20 * kneel + 0.12 * arc),
-                    -0.36 * kneel - step,
-                    -1 + step,
+        # The loaded hip can press the cut of the trousers below either knee.
+        # Raise the pelvis by the measured deficit, then refit both limbs in world
+        # space so the toe and denim contact patches remain on the same tile.
+        for attempt in range(4):
+            for s in "rl":
+                sign = 1 if s == "l" else -1
+                begin, end = (25, 40) if s == "r" else (43, 58)
+                step = smooth((dt - begin) / (end - begin))
+                pitch = math.radians(144 - 144 * step)
+                yaw = math.radians(sign * (8 + 5 * step))
+                rotation = Quaternion((0, 0, 1), yaw) @ Quaternion((1, 0, 0), pitch)
+                goal = rear[s].lerp(fronts[s], step)
+                arc = math.sin(math.pi * step)
+                goal.x += sign * 0.036 * arc
+                goal.z = 0.145 * (1 - step) + 0.082 * step + 0.105 * arc
+                floor = 0.0015 + 0.105 * arc
+                kneel = smooth((dt - 23) / 20)
+                pole = Vector(
+                    (
+                        sign * (0.12 + 0.20 * kneel + 0.12 * arc),
+                        -0.36 * kneel - step,
+                        -1 + step,
+                    )
                 )
-            )
-            knee_z = 0.073
-            for _ in range(5):
-                joints = leg_pose(
-                    rig, s, original, goal, pole, rotation, weight, knee_z
-                )
-                bpy.context.view_layer.update()
-                surface = positions(shoes)
-                low = float(surface[shoe_masks[s], 2].min())
-                knee_low = float(positions(jeans)[knees[s], 2].min())
-                z_error = floor - low
-                if weight < 0.999:
-                    break
-                knee_error = max(0, 0.001 - knee_low)
-                # The shoe includes elastic upper weights reaching into the shin.
-                # Lock the same load-bearing sole vertices through the knee extension.
-                drift = np.zeros(2)
-                if s in planted_soles:
-                    patch, anchor = planted_soles[s]
-                    drift = anchor - surface[patch, :2].mean(axis=0)
-                if max(abs(z_error), knee_error, np.linalg.norm(drift)) < 0.00035:
-                    break
-                goal.x += drift[0]
-                goal.y += drift[1]
-                goal.z += z_error
-                knee_z += knee_error
-            if dt == end:
-                patch = shoe_masks[s] & (surface[:, 2] <= low + 0.004)
-                planted_soles[s] = patch, surface[patch, :2].mean(axis=0)
-            for j in joints:
-                q = j.rotation_quaternion.copy()
-                values = updates.setdefault(j.name, {})
-                q.make_compatible(values.get(frame - 1, original[j.name][2]))
-                values[frame] = q
+                knee_z = 0.073
+                # Load the denim on the tile while the hands move beneath the shoulders.
+                # Release each knee ahead of its foot, starting on the stepping side.
+                knee_load = smooth((dt + 8) / 8) * (1 - smooth((dt - begin + 7) / 7))
+                for _ in range(8):
+                    joints = leg_pose(
+                        rig,
+                        s,
+                        original,
+                        goal,
+                        pole,
+                        rotation,
+                        weight,
+                        knee_z,
+                        knee_load,
+                    )
+                    bpy.context.view_layer.update()
+                    surface = positions(shoes)
+                    low = float(surface[shoe_masks[s], 2].min())
+                    knee_low = float(positions(jeans)[knees[s], 2].min())
+                    z_error = floor - low
+                    if weight < 0.999:
+                        break
+                    knee_error = 0.001 - knee_low
+                    if knee_error < 0:
+                        knee_error *= knee_load
+                    # The shoe includes elastic upper weights reaching into the shin.
+                    # Lock the same load-bearing sole vertices through the knee extension.
+                    drift = np.zeros(2)
+                    if s in planted_soles:
+                        patch, anchor = planted_soles[s]
+                        drift = anchor - surface[patch, :2].mean(axis=0)
+                    if (
+                        max(abs(z_error), abs(knee_error), np.linalg.norm(drift))
+                        < 0.00035
+                    ):
+                        break
+                    goal.x += drift[0]
+                    goal.y += drift[1]
+                    goal.z += z_error
+                    knee_z += knee_error
+                if dt == end:
+                    patch = shoe_masks[s] & (surface[:, 2] <= low + 0.004)
+                    planted_soles[s] = patch, surface[patch, :2].mean(axis=0)
+                for j in joints:
+                    q = j.rotation_quaternion.copy()
+                    values = updates.setdefault(j.name, {})
+                    q.make_compatible(values.get(frame - 1, original[j.name][2]))
+                    values[frame] = q
+            lowest = float(positions(jeans)[:, 2].min())
+            if lowest >= 0.0 or weight < 0.999 or attempt == 3:
+                break
+            lift = 0.0005 - 1.25 * lowest
+            rig.location.z += lift
+            z_curve.keyframe_points[frame - 1].co.y += lift
+            bpy.context.view_layer.update()
+    z_curve.update()
     write_curves(action, rig, updates)

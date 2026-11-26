@@ -195,8 +195,8 @@ def register_casting_face(folder, detail, marks):
     )
     weight = cv2.GaussianBlur(((mx >= 0) * (1 - hair)).astype("f"), (0, 0), 2)
     base = cv2.GaussianBlur(detail, (0, 0), 3.5)
-    corrected = lifted + 0.88 * (detail - base)
-    return np.clip(detail + (corrected - detail) * weight[:, :, None] * 0.70, 0, 1)
+    corrected = lifted + 0.58 * (detail - base)
+    return np.clip(detail + (corrected - detail) * weight[:, :, None] * 0.98, 0, 1)
 
 
 def skin(folder):
@@ -211,10 +211,19 @@ def skin(folder):
     fine = gray - cv2.GaussianBlur(gray, (0, 0), 4.0)
     # Preserve age lines and pores while leaving room for the scene lights.
     albedo = np.clip(
-        (photo * (0.89, np.float32(0.85), 0.83) + pores[:, :, None] * 0.25) * 255,
+        (photo * (0.985, np.float32(0.98), 0.975) + pores[:, :, None] * 0.12) * 255,
         0,
         255,
     )
+    calibration = folder / "skin-calibration.png"
+    if calibration.is_file():
+        log_gain = (
+            np.asarray(Image.open(calibration).convert("RGB"), dtype="f") - 128
+        ) / 267
+        gain = cv2.resize(
+            log_gain, (albedo.shape[1], albedo.shape[0]), interpolation=cv2.INTER_CUBIC
+        )
+        albedo *= np.exp(gain / 2.15)
     save(folder / "skin-albedo.jpg", albedo)
     save(folder / "skin-normal.png", normal(pores * 0.17 + fine * 0.07))
     marks = np.fromfile(folder / "skin-uv.bin", dtype="<f4").reshape(468, 2)
@@ -260,13 +269,13 @@ def hair(folder):
     alpha = cv2.GaussianBlur(mask.astype("f"), (0, 0), 0.47)
     # A continuous scalp texture joins the photographed fringe to the combed side
     # and back. Alpha follows individual frontal locks and softens at the nape.
-    from hair_shape import shell
+    from hair_shape import shell, profile
 
     hh, ww = 768, 1536
     vv, uu = np.indices((hh, ww))
     t = vv / (hh - 1)
     angle = (uu / (ww - 1) - 0.5) * 2 * np.pi
-    xx, _, zz = shell(angle, t, 1)
+    xx, _, zz = shell(angle, t, 1, profile(g))
     uu_photo = (g["eyes"][0] + xx * g["span"]).astype("f")
     vv_photo = (g["eyes"][1] - zz * g["span"]).astype("f")
     front = cv2.remap(
@@ -309,13 +318,13 @@ def hair(folder):
     texture += (8 * np.maximum(0, np.cos(flow * 117 + 1.1)) ** 30)[:, :, None]
     # Composite the plate on the anterior hemisphere. At the pole the radial
     # parametrisation converges, so a narrow band uses a common root tone.
-    mix = np.clip((np.cos(angle) - 0.08) / 0.45, 0, 1) * np.clip(
-        (t - 0.02) / 0.11, 0, 1
-    )
+    # Continue the photograph all the way to each temple. The hand-combed
+    # posterior material meets the frontal plate on the rear of the head.
+    mix = np.clip((np.cos(angle) + 0.25) / 0.35, 0, 1)
     mix = mix * mix * (3 - 2 * mix)
     painted = (
         texture * (1 - mix[:, :, None])
-        + front * np.array([0.91, 0.86, 0.82]) * mix[:, :, None]
+        + front * np.array([0.98, 0.98, 0.98]) * mix[:, :, None]
     )
     nape = np.clip((1 - t) / 0.047, 0, 1)
     edge = 0.018 * np.sin(flow * 233) + 0.011 * np.cos(flow * 457)
@@ -382,7 +391,10 @@ def build(folder):
         fabric(folder, garment, name, rgb, roughness)
     if skin_reference:
         skin(folder)
-        if use_wash_house_groom(folder.name, art):
+        if (
+            use_wash_house_groom(folder.name, art)
+            and not (folder / "scan-pilot.glb").is_file()
+        ):
             hair(folder)
 
 

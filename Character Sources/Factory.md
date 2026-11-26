@@ -27,9 +27,25 @@ The editable master is `character.blend`. The fitted face, skinned body and clot
 
 ## Ida’s source build
 
-A neutral camera render can be compared directly with the original casting photograph. The comparison aligns the eye positions and scale and preserves each image’s lighting. The full-length photograph supplies the measured facial shape, expression and primary color. A second, higher-resolution photograph supplies fine skin detail and the exposed neck. The hair shell carries the frontal fringe mask. Separate strips form the bun, loose locks and flyaways. The jacket, jeans and shirt use individual color, roughness and normal maps. The windbreaker includes skinned welt pockets, zip tapes, teeth, snaps, eyelets and drawcords. [Aligned likeness comparison](Residents/AH-R0001/likeness-review.jpg)
+Ida’s original full-length casting photograph supplies the facial proportions, fringe, hairline, garment colours and standing landmarks. The approved 4K capture supplies the actual open windbreaker, hood, shirt, denim folds and worn trainers. A 4K colour atlas transfers the original photographed clothing detail onto the visible fitted garment triangles. Only the shaded colour difference in the registered standing view is baked. Unseen areas retain their scanned albedo, and the original normal and roughness maps continue to describe the fabric. Each garment is fitted in her standing pose, then transformed back into skeleton rest space so it drapes around the moving body. The capture supplies one continuous head and throat beneath the frontal facial detail. Her fitted head, earrings, hair, eyelids and rotation pivot share the same full-length registration. [Full-length comparison](Residents/AH-R0001/standing-comparison.jpg) · [Clothing and hair detail](Residents/AH-R0001/clothing-and-hair.jpg)
 
-The source build starts with three casting photographs, Ida’s persona and approved art direction. It reuses the installed landmark models, anatomy library, motion captures and garment and groom recipes. Creating a new look, fitting an unfamiliar garment, directing new performances and reviewing them in the city take additional artist time. The source build stores editable geometry, and the factory hashes each photographic stage’s inputs for reuse during revisions.
+The side locks follow curved paths around her temples. The fitted surface preserves the depth of the scanned ears and hair roots. The scalp underneath follows the head when Ida bows or pushes up from the floor. The game renders the rear crown with a depth-writing cutout and keeps the soft photographed fringe over it. The face has an animated listening brow, and its skin writes depth so the near cheek and nose occlude the far side. Each short nail follows its own distal finger joint. The Wash House lights her with ceiling strips, window fill and reflected light beneath her jaw. [Game frame beside the casting photograph](Residents/AH-R0001/wash-house-comparison.jpg)
+
+The production runner hashes the photographs, capture, anatomy, motion inputs and build tools. A new resident requires their own visual inputs and garment fitting. A receipt can reproduce an existing look or skip an unchanged package. Artist time spent fitting and reviewing a new look is additional.
+
+### Transfer the photographed fabric
+
+In a private working copy, build the fitted standing character with `wardrobeScan` set and `workwearAlbedo` omitted from the art direction. Export its game package and register the standing landmarks to the original photograph. The transfer tool poses that package in Idle, renders it at the registered camera, and projects the visible fabric differences back onto the scan's UV map. It needs a C++17 compiler and the same Python environment as the factory.
+
+```sh
+resident='Character Sources/Residents/AH-R0001'
+python 'Character Sources/tools/bake_workwear.py' /path/to/uncorrected-ida.glb \
+  "$resident/scan-pilot.glb" "$resident/reference.jpg" "$resident/standing-fit.json" \
+  "$resident/captured-workwear.png" --segmenter /path/to/hair.tflite \
+  --report "$resident/workwear-lineage.json"
+```
+
+Set `workwearAlbedo` to `captured-workwear.png` for the final build. For a different outfit, supply a photo-size single-channel `--garment-mask` in place of the example segmenter. Its pixel labels are 0 for background and skin, 1 for the jacket, 2 for the shirt, 3 for the jeans and 4 for the shoes. Verify new silhouettes and occlusion against the resident’s standing photograph.
 
 ## Package a resident for the game
 
@@ -43,15 +59,9 @@ blender -b --factory-startup --python-exit-code 1 \
 
 Each resident can supply a `game-actions.json` beside the Blender master. It selects clips from shared captures or that resident’s own performances. Ida’s package includes her laundry-basket lift, a conversational eyebrow raise and her corrected recovery. The exporter writes the joints, skin weights, garment materials and performances into one GLB. Running it again checks the saved file against its content hash. Add `--texture-size 512` after the output path to make a smaller copy for a character viewed at a distance.
 
-The final playable model is 6,721,596 bytes and contains nine clips. The pickup, carry and set-down actions fit the individual arms and curled fingers to handles 620 mm apart. The game blends per-foot planting with a complete walking stride to turn the body around a washer. Loose hair, the windbreaker hood and the hem follow the moving joints with damped motion. Each sleeve folds according to its elbow angle.
+Ida has 53 deforming joints and nine exported actions. The pickup, carry and set-down clips fit her arms and curled fingers to the basket handles. Her standing wrists, elbows, fingers and ankles are checked against the original full-length photograph, and her shoes are tested through the planted phase of each stride. [Standing measurements](Residents/AH-R0001/standing-fit.json)
 
-| Texture size | Raw GLB | Lossless gzip storage | 1,500 at the compressed size |
-| --- | ---: | ---: | ---: |
-| Full resolution | 6.72 MB | 4.70 MB | 7.05 GB |
-| Maximum dimension 512 pixels | 4.56 MB | 2.54 MB | 3.81 GB |
-| Maximum dimension 256 pixels | 4.16 MB | 2.14 MB | 3.21 GB |
-
-The last column extrapolates from Ida and covers game packages only. Keep full resolution for close interactions and smaller copies for background residents. Reserve space for casting photographs, editable sources, temporary build files and review media within the overall 5 GB allowance.
+A full-resolution resident with a dedicated scan uses considerably more than the 3.33 MB per resident available if the entire 5 GB allowance were split evenly across 1,500 people. The allowance also covers source scenes and casting images. Reuse shared rest geometry, UVs and motion, and measure the resident-specific geometry and textures before committing a production batch.
 
 ## Build an approved cast
 
@@ -65,11 +75,11 @@ python 'Character Sources/tools/approved_cast.py' /path/to/approved.txt \
 
 Omit `--texture-size` and `--gzip` for the full-resolution GLB used in the Wash House. With `--gzip`, the runner stores a `.glb.gz`. The local game server serves its decoded bytes at the ordinary `.glb` URL. Use `--dry-run` to see which packages would rebuild. One shared skeleton and motion library serve the cast. Each dossier supplies its own appearance and performance. The Wash House outfit and groom can also be selected independently using the `wardrobeRecipe` and `groomRecipe` fields. [Appearance recipes](tools/appearance_recipes.py)
 
-The manufacturing run uses the approved photographs, art direction and authored takes, builds the fitted model in private scratch, then exports directly. On the shared Mac, a clean full-resolution run took 13.31 seconds. Its GLB was byte-for-byte identical to the one filmed in the game. Checking the input receipt and the complete output hash took 0.38 seconds on a repeat run. The earlier route through the studio portrait, turntable, review and packed-master stages took 67.63 seconds with other renders running. Use the full studio build when revising a look or producing an editable master.
+The production command builds one resident at a time in private scratch space. It skips studio review images and movie encoding. An unchanged package is reused only after its complete output hash and all input hashes match the stored receipt. On the shared Mac, rebuilding Ida’s full-resolution package from her fitted sources took 55.74 seconds and reproduced all 19,300,852 bytes filmed in the game. Verifying the unchanged build took 0.76 seconds. Both timings exclude art direction, original capture and the one-time fabric transfer.
 
 ## Review Ida in the Wash House
 
-Open the game with `?visit=wash-house`. Press Play with sound off. Approach Ida and press **C** to talk. If she is down, **C** offers to help her up. Her body follows the animated joints during both interactions. Measured on the exported recovery, palm clearance stayed within 2.38 mm and palm travel within 0.12 mm during the weight-bearing interval. The nearest knee was within 0.99 mm during that plant. The largest remaining floor intersection in the exported shoe or denim was 1.13 mm. [Recovery measurements](Residents/AH-R0001/recovery-contact.json) · [Recorded gameplay](../asphalt-heat/films/ida-at-the-wash-house.mp4)
+Open the game with `?visit=wash-house`. Press Play with sound off. Approach Ida and press **C** to talk. If she is down, **C** offers to help her up. Her contact volumes follow the moving joints, including the head, feet and fingers. The standing probe checks 56 rays through visible body parts and the swept player capsule at sprint speed from all four directions. The recovery measurement follows the actual palm, knee, shoe and cloth surfaces. [Recovery measurements](Residents/AH-R0001/recovery-contact.json) · [Recorded gameplay](../asphalt-heat/films/ida-at-the-wash-house.mp4)
 
 Run `node asphalt-heat/tools/resident-test.js` to exercise gait, grip, dialogue, collisions and recovery. Run `node asphalt-heat/tools/resident-secondary-test.js` to check garment settling and elbow folds. To capture new footage, run the following command, then open `http://127.0.0.1:8797/index.html?agent=1&visit=wash-house` in a separate Codex in-app browser tab. Press Play and verify **Sound off**. The camera buttons save numbered frames from the active game to the selected directory.
 

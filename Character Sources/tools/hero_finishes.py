@@ -234,7 +234,7 @@ def tailor(rig, folder, direction):
     obj["cut"] = "Gathered windbreaker waist and cuffs with folded hood"
 
 
-def bun_and_fringe(rig, folder):
+def bun_and_fringe(rig, folder, use_capture):
 
     scene = bpy.context.scene
     deps = bpy.context.evaluated_depsgraph_get()
@@ -267,22 +267,29 @@ def bun_and_fringe(rig, folder):
         bs.inputs["Specular IOR Level"].default_value = 0.22
     from hair_cards import groom as card_groom
 
-    card_groom(rig, folder, ez, (eyes[:, 0].max() - eyes[:, 0].min()) * 0.97, center)
+    card_groom(rig, folder, ez, (eyes[:, 0].max() - eyes[:, 0].min()) * 0.97, center, use_capture)
     loose = []
     for side in (-1, 1):
         for strand in range(22):
             offset = rng.uniform(-0.003, 0.003)
-            base_x = side * (0.075 + offset)
+            base_x = side * (0.080 + offset)
             base_y = -0.087 + rng.uniform(-0.008, 0.008)
             top = ez + 0.035 + offset
-            length = rng.uniform(0.059, 0.10)
+            length = (
+                rng.uniform(0.052, 0.105) if side == -1 else rng.uniform(0.072, 0.132)
+            )
             points = []
             for k in range(7):
                 t = k / 6
                 points.append(
                     (
                         base_x
-                        + side * (0.005 * math.sin(1.7 * math.pi * t) + 0.002 * t),
+                        + side
+                        * (
+                            (0.011 if side == 1 else 0.006)
+                            * math.sin(1.3 * math.pi * t)
+                            - 0.003 * t
+                        ),
                         base_y
                         + 0.020 * t
                         + 0.006 * math.sin(t * math.tau + strand * 0.17),
@@ -324,13 +331,20 @@ def apply(rig, folder):
     direction = json.loads(source.read_text()) if source.is_file() else {}
     if use_wash_house_outfit(folder.name, direction):
         tailor(rig, folder, direction)
-    if (
+    use_capture = bool(direction.get("wardrobeScan"))
+    groom_maps = (
+        ("captured-hair.npz", "captured-hair.png", "frontal-locks.png")
+        if use_capture else ("combed-hair.png", "hair-fibres.png")
+    )
+    groomed = (
         use_wash_house_groom(folder.name, direction)
         and (folder / "skin-reference.jpg").is_file()
-        and all(
-            (folder / name).is_file() for name in ("combed-hair.png", "hair-fibres.png")
-        )
-    ):
-        bun_and_fringe(rig, folder)
-        return True
-    return False
+        and all((folder / name).is_file() for name in groom_maps)
+    )
+    if groomed:
+        bun_and_fringe(rig, folder, use_capture)
+    if direction.get("wardrobeScan"):
+        from scan_workwear import transfer
+
+        transfer(rig, folder, direction["wardrobeScan"], direction.get("workwearAlbedo"))
+    return groomed

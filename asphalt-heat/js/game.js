@@ -112,7 +112,7 @@ function collideWorld(p,r,motion=null){
  if(grade)hit=grade;
  const door=collideDoors(p,r);
  if(door)hit=door;
- const resident=globalThis.WashHouse?.push(p,r,y);if(resident)hit=resident;
+ const resident=globalThis.WashHouse?.push(p,r,y,motion);if(resident)hit=resident;
  const prop=collideProps(p,r,y,motion);
  if(prop)hit=prop;
  const freight=inFreightPort(p.x,p.z,r);

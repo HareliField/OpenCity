@@ -2,11 +2,11 @@
   "frames": 160,
   "fps": 24,
   "action": "Ida Mercer | Walk, listen, give room",
-  "peakLeftShoeClearanceMeters": 0.0862,
-  "peakRightShoeClearanceMeters": 0.0323,
+  "peakLeftShoeClearanceMeters": 0.1285,
+  "peakRightShoeClearanceMeters": 0.0752,
   "medianSupportTravelPerFrameMeters": 0.0001,
-  "p95SupportTravelPerFrameMeters": 0.0008,
+  "p95SupportTravelPerFrameMeters": 0.0013,
   "supportHeightRangeMeters": 0.0,
-  "foreAftTravelMeters": 1.7222,
-  "wristHeightRangeMeters": 0.7167
+  "foreAftTravelMeters": 1.4483,
+  "wristHeightRangeMeters": 0.7315
 }

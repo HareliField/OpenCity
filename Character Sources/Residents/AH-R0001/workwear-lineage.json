@@ -1,0 +1,42 @@
+{
+  "residentId": "AH-R0001",
+  "referenceSha256": "6a6e16106d9ed2eac61111138aff2876c77108fd5bf17a10cfdb6da109e6719b",
+  "registrationSha256": "2595e8d6f145f45a9f7b4af0e5148555ffefc7f307f3e263534b2d6f07adb85f",
+  "gameplayPackageSha256": "1c7a4256d35b2f691bfdeac41581ef56c37c06f78d99681eb82f4dcbefbca2ea",
+  "scanPackageSha256": "e2d16cc29e94a784bfca1a21a9aa29e232dda7a744481d0c78167b4a7776e182",
+  "untouchedScanBaseColorSha256": "ab514505bfc41bccd7f35839d13950e985f474be188436a02d034e31a5bfd5c1",
+  "baselineGameplayBaseColorSha256": "f7f2c5c1a5499c0c34d0744ee564b9b03a873dff3a02b8833ed23c35ad8d2607",
+  "renderSha256": "0168f4a4eb72ea675939f448e67e5b127677ff467c0deccfc286d0fbc59b9383",
+  "maskSourceSha256": "c6748b1253a99067ef71f7e26ca71096cd449baefa8f101900ea23016507e0e0",
+  "outputSha256": "6b4190179ed9fe06109455e4b0bf805b4cb96cb5b100399f53572fd7b5c33457",
+  "dimensions": [
+    4096,
+    4096
+  ],
+  "originalMeanScanToGameplayRgbError": 1.218,
+  "renderMaskOverlap": 0.99999,
+  "changedGameplayTexels": 2482632,
+  "changedScanTexels": 2482628,
+  "supportedPhotoPixels": {
+    "1": {
+      "validPhotoPixels": 189412,
+      "projectedPixels": 195982
+    },
+    "2": {
+      "validPhotoPixels": 38392,
+      "projectedPixels": 41668
+    },
+    "3": {
+      "validPhotoPixels": 176246,
+      "projectedPixels": 176781
+    },
+    "4": {
+      "validPhotoPixels": 12220,
+      "projectedPixels": 21503
+    }
+  },
+  "pose": {
+    "action": "Idle",
+    "frame": 13
+  }
+}

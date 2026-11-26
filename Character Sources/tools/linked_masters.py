@@ -317,8 +317,14 @@ def create(folder, review):
     bpy.context.view_layer.update()
     sculpt(rig, folder)
     custom_groom = apply_finishes(rig, folder)
+    from casting_head import fit as fit_casting_head
+
+    fit_casting_head(rig, folder)
     if fit.exists():
         reference_stance(rig, json.loads(fit.read_text()))
+    from hand_details import add as add_hand_details
+
+    add_hand_details(rig, folder)
     listening(rig, person)
     bpy.context.view_layer.update()
     if not custom_groom:

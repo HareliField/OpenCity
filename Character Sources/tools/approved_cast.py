@@ -88,10 +88,28 @@ def resident_inputs(resident, catalog):
     inputs = [folder / "persona.json", required(folder / "reference.jpg")]
     if (folder / "skin-reference.jpg").exists():
         inputs.append(required(folder / "skin-reference.jpg"))
+    if (folder / "skin-calibration.png").is_file():
+        inputs.append(required(folder / "skin-calibration.png"))
     art_file = folder / "art-direction.json"
     if art_file.exists():
         art = read_object(art_file)
         inputs.append(art_file)
+        if "wardrobeScan" in art:
+            scan = art["wardrobeScan"]
+            if (
+                not isinstance(scan, str)
+                or Path(scan).name != scan
+                or not scan.lower().endswith(".glb")
+            ):
+                raise ValueError(
+                    f"{resident}: wardrobeScan must be a local rigged GLB filename"
+                )
+            inputs.append(required(folder / scan))
+        if "workwearAlbedo" in art:
+            albedo = art["workwearAlbedo"]
+            if not isinstance(albedo, str) or Path(albedo).name != albedo or not art.get("wardrobeScan"):
+                raise ValueError(f"{resident}: workwearAlbedo needs a local texture and wardrobeScan")
+            inputs.append(required(folder / albedo))
         if art.get("rearPanel"):
             inputs.append(required(folder / "turnaround-reference.jpg"))
         if art.get("performance"):

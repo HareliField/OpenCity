@@ -325,7 +325,7 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
   const speed=player.pace,dx=Math.sin(player.yaw)*speed*dt,dz=Math.cos(player.yaw)*speed*dt;
   const sx=player.pos.x,sz=player.pos.z;
   player.pos.x+=dx;player.pos.z+=dz;
-  const hitWall=collideWorld(player.pos,.36,{dx,dz,dt});
+  const hitWall=collideWorld(player.pos,.36,{dx,dz,dt,startX:sx,startZ:sz});
   if(hitWall){
    const actual=Math.min(Math.abs(speed),Math.hypot(player.pos.x-sx,player.pos.z-sz)/Math.max(dt,.001));
    player.pace=Math.sign(speed)*actual;

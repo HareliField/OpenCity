@@ -9,7 +9,7 @@
       "lastFrame": 198,
       "maximumPalmClearanceMm": 2.38,
       "deepestHandPenetrationMm": 0,
-      "palmHorizontalTravelMm": 0.12
+      "palmHorizontalTravelMm": 0.13
     },
     {
       "side": "r",
@@ -17,7 +17,7 @@
       "lastFrame": 198,
       "maximumPalmClearanceMm": 2.38,
       "deepestHandPenetrationMm": 0,
-      "palmHorizontalTravelMm": 0.11
+      "palmHorizontalTravelMm": 0.12
     }
   ],
   "lowerSupport": {
@@ -25,13 +25,15 @@
     "lastFrame": 248,
     "framesMeasured": 83,
     "maximumNearestShoeClearanceMm": 1.5,
-    "maximumNearestKneeDenimClearanceDuringPalmPlantMm": 0.99,
-    "deepestShoeDenimOrBodyPenetrationMm": 0.93,
+    "maximumNearestKneeDenimClearanceDuringPalmPlantMm": 1.05,
+    "deepestShoeDenimOrBodyPenetrationMm": 0.0,
     "minimumOuterLayerHeightMm": {
-      "Cloth_jacket": 2.57,
-      "Cloth_tshirt": 34.55,
-      "Windbreaker zip, snaps and welt pockets": 0.0,
-      "Elastic cuffs, hem and crew-neck rib": 24.37
+      "Cloth_jacket": 0.0,
+      "Cloth_tshirt": 4.48
+    },
+    "rawMinimumOuterLayerHeightMm": {
+      "Cloth_jacket": 0.0,
+      "Cloth_tshirt": 4.48
     },
     "plantedPhases": [
       {
@@ -40,7 +42,7 @@
         "firstFrame": 166,
         "lastFrame": 190,
         "maximumShoeClearanceMm": 1.5,
-        "shoeHorizontalTravelMm": 0.15
+        "shoeHorizontalTravelMm": 0.0
       },
       {
         "phase": "prone toes",
@@ -48,7 +50,7 @@
         "firstFrame": 166,
         "lastFrame": 190,
         "maximumShoeClearanceMm": 1.5,
-        "shoeHorizontalTravelMm": 0.46
+        "shoeHorizontalTravelMm": 0.0
       },
       {
         "phase": "left rear support",
@@ -56,37 +58,38 @@
         "firstFrame": 191,
         "lastFrame": 208,
         "maximumShoeClearanceMm": 1.5,
-        "shoeHorizontalTravelMm": 0.87
+        "shoeHorizontalTravelMm": 0.0
       },
       {
         "phase": "right sole",
         "side": "r",
         "firstFrame": 206,
         "lastFrame": 248,
-        "maximumShoeClearanceMm": 1.76,
-        "shoeHorizontalTravelMm": 0.04
+        "maximumShoeClearanceMm": 1.5,
+        "shoeHorizontalTravelMm": 0.02
       },
       {
         "phase": "left sole",
         "side": "l",
         "firstFrame": 224,
         "lastFrame": 248,
-        "maximumShoeClearanceMm": 1.5,
-        "shoeHorizontalTravelMm": 0.02
+        "maximumShoeClearanceMm": 1.56,
+        "shoeHorizontalTravelMm": 0.09
       }
     ],
     "maximumJointDisplacementPerFrameMm": {
-      "pelvis": 45.2,
-      "leftElbow": 79.86,
-      "rightElbow": 79.67,
+      "pelvis": 42.42,
+      "leftElbow": 79.83,
+      "rightElbow": 79.69,
       "leftWrist": 65.59,
       "rightWrist": 62.78,
-      "leftKnee": 50.5,
-      "rightKnee": 64.28,
-      "leftAnkle": 58.45,
-      "rightAnkle": 58.02
+      "leftKnee": 49.4,
+      "rightKnee": 77.14,
+      "leftAnkle": 52.36,
+      "rightAnkle": 53.84
     }
   },
+  "gameModelSha256": "047ae0908550ad50d8a9a3c7a45468c5d7b085227fbc8b8c75285bad82da94ee",
   "gameContacts": [
     {
       "side": "l",
@@ -94,7 +97,7 @@
       "lastFrame": 32,
       "maximumPalmClearanceMm": 2.38,
       "deepestHandPenetrationMm": 0,
-      "palmHorizontalTravelMm": 0.12
+      "palmHorizontalTravelMm": 0.13
     },
     {
       "side": "r",
@@ -102,21 +105,23 @@
       "lastFrame": 32,
       "maximumPalmClearanceMm": 2.38,
       "deepestHandPenetrationMm": 0,
-      "palmHorizontalTravelMm": 0.11
+      "palmHorizontalTravelMm": 0.12
     }
   ],
   "gameLowerSupport": {
     "firstFrame": 0,
     "lastFrame": 82,
     "framesMeasured": 83,
-    "maximumNearestShoeClearanceMm": 4.83,
-    "maximumNearestKneeDenimClearanceDuringPalmPlantMm": 0.99,
-    "deepestShoeDenimOrBodyPenetrationMm": 1.13,
+    "maximumNearestShoeClearanceMm": 1.5,
+    "maximumNearestKneeDenimClearanceDuringPalmPlantMm": 1.05,
+    "deepestShoeDenimOrBodyPenetrationMm": 0.0,
     "minimumOuterLayerHeightMm": {
-      "Cloth_jacket": 2.73,
-      "Cloth_tshirt": 34.55,
-      "Windbreaker zip, snaps and welt pockets": 0.28,
-      "Elastic cuffs, hem and crew-neck rib": 24.37
+      "Cloth_jacket": -0.0,
+      "Cloth_tshirt": 4.48
+    },
+    "rawMinimumOuterLayerHeightMm": {
+      "Cloth_jacket": -0.0,
+      "Cloth_tshirt": 4.48
     },
     "plantedPhases": [
       {
@@ -124,56 +129,103 @@
         "side": "l",
         "firstFrame": 0,
         "lastFrame": 24,
-        "maximumShoeClearanceMm": 4.84,
-        "shoeHorizontalTravelMm": 0.2
+        "maximumShoeClearanceMm": 1.5,
+        "shoeHorizontalTravelMm": 0.0
       },
       {
         "phase": "prone toes",
         "side": "r",
         "firstFrame": 0,
         "lastFrame": 24,
-        "maximumShoeClearanceMm": 4.4,
-        "shoeHorizontalTravelMm": 0.6
+        "maximumShoeClearanceMm": 1.5,
+        "shoeHorizontalTravelMm": 0.0
       },
       {
         "phase": "left rear support",
         "side": "l",
         "firstFrame": 25,
         "lastFrame": 42,
-        "maximumShoeClearanceMm": 4.83,
-        "shoeHorizontalTravelMm": 1.17
+        "maximumShoeClearanceMm": 1.5,
+        "shoeHorizontalTravelMm": 0.0
       },
       {
         "phase": "right sole",
         "side": "r",
         "firstFrame": 40,
         "lastFrame": 82,
-        "maximumShoeClearanceMm": 3.72,
-        "shoeHorizontalTravelMm": 7.56
+        "maximumShoeClearanceMm": 1.5,
+        "shoeHorizontalTravelMm": 0.02
       },
       {
         "phase": "left sole",
         "side": "l",
         "firstFrame": 58,
         "lastFrame": 82,
-        "maximumShoeClearanceMm": 2.7,
-        "shoeHorizontalTravelMm": 4.7
+        "maximumShoeClearanceMm": 1.56,
+        "shoeHorizontalTravelMm": 0.09
       }
     ],
     "maximumJointDisplacementPerFrameMm": {
-      "pelvis": 45.2,
-      "leftElbow": 79.86,
-      "rightElbow": 79.67,
+      "pelvis": 42.42,
+      "leftElbow": 79.83,
+      "rightElbow": 79.69,
       "leftWrist": 65.59,
       "rightWrist": 62.78,
-      "leftKnee": 50.5,
-      "rightKnee": 64.28,
-      "leftAnkle": 58.45,
-      "rightAnkle": 58.02
+      "leftKnee": 49.4,
+      "rightKnee": 77.14,
+      "leftAnkle": 52.36,
+      "rightAnkle": 53.84
+    }
+  },
+  "gameActionEndpoints": {
+    "Fall to Recover": {
+      "jointsMeasured": 53,
+      "maximumJointGapMm": 0.0,
+      "maximumBoneTipGapMm": 0.0
+    },
+    "PickUp to SetDown": {
+      "jointsMeasured": 53,
+      "maximumJointGapMm": 0.001,
+      "maximumBoneTipGapMm": 0.001
+    },
+    "Idle to Idle": {
+      "jointsMeasured": 53,
+      "maximumJointGapMm": 0.0,
+      "maximumBoneTipGapMm": 0.0
+    },
+    "Walk to Walk": {
+      "jointsMeasured": 53,
+      "maximumJointGapMm": 0.0,
+      "maximumBoneTipGapMm": 0.0
+    },
+    "Carry to Carry": {
+      "jointsMeasured": 53,
+      "maximumJointGapMm": 0.0,
+      "maximumBoneTipGapMm": 0.0
     }
   },
   "gameFallToRecover": {
     "jointsMeasured": 53,
     "maximumEndpointGapMm": 0.0
+  },
+  "washHouseRuntimePalmPlant": {
+    "engine": "Shipped Three.js GLTFLoader, AnimationMixer and WashHouse.tick",
+    "sequence": "Talk, Fall, down, Help Ida Up",
+    "firstRecoverFrame": 21,
+    "lastRecoverFrame": 32,
+    "palms": {
+      "l": {
+        "verticesMeasured": 151,
+        "floorY": 0.174,
+        "maximumPalmClearanceMm": 2.377,
+        "palmHorizontalTravelMm": 0.132
+      },
+      "r": {
+        "verticesMeasured": 151,
+        "floorY": 0.174,
+        "maximumPalmClearanceMm": 2.377,
+        "palmHorizontalTravelMm": 0.123
+      }
+    }
   }
 }

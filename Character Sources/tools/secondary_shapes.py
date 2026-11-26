@@ -10,6 +10,7 @@ def add_target(obj, coords, name, displacement):
         obj.shape_key_add(name="Rest")
     key = obj.shape_key_add(name=name)
     key.slider_min = -1
+    key.value = 0.0
     key.data.foreach_set("co", (coords + displacement).astype("f").ravel())
 
 
@@ -63,6 +64,18 @@ def add_secondary_shapes(obj, rig):
     add_target(obj, coords, prefix + " drag", drag)
 
     if garment:
+        if obj.get("scanWorkwear"):
+            # The scanned hood is part of the jacket. Let the rear fold lift
+            # off the shoulders while the front collar and zipper stay anchored.
+            collar = bones["neck_01"].head_local
+            fold = np.clip((z - collar.z + 0.18) / 0.14, 0, 1)
+            fold *= np.clip((y - collar.y + 0.035) / 0.11, 0, 1)
+            fold *= np.clip((0.22 - abs(x - collar.x)) / 0.11, 0, 1)
+            for axis, label in ((0, "Hood side"), (1, "Hood drag")):
+                displacement = np.zeros_like(coords)
+                displacement[:, axis] = 0.017 * fold
+                displacement[:, 2] = 0.002 * fold
+                add_target(obj, coords, label, displacement)
         normals = np.empty_like(coords)
         mesh.vertices.foreach_get("normal", normals.ravel())
         for suffix in ("l", "r"):
@@ -75,6 +88,21 @@ def add_secondary_shapes(obj, rig):
             radial = np.linalg.norm(offset - axial[:, None] * forearm, axis=1)
             envelope = np.exp(-(((axial - 0.015) / 0.070) ** 2))
             envelope *= np.clip((0.110 - radial) / 0.035, 0, 1)
-            # As the elbow closes, three diagonal folds gather over the sleeve.
-            height = 0.006 * envelope * np.sin(108 * axial + 21 * offset[:, 1])
+            # As the elbow closes, cloth gathers towards the inside of the hinge.
+            # The outside extends over the elbow point with a longer, shallower fold.
+            shoulder = np.asarray(bones["upperarm_" + suffix].head_local)
+            inward = (shoulder - elbow) - forearm * np.dot(shoulder - elbow, forearm)
+            inward /= max(0.001, np.linalg.norm(inward))
+            away = offset - axial[:, None] * forearm
+            direction = away / np.maximum(radial[:, None], 0.001)
+            inside = np.clip((direction @ inward + 0.32) / 1.32, 0, 1)
+            side = direction[:, 0] * (1 if suffix == "l" else -1)
+            bias = axial + 0.024 * side + 0.012 * (direction @ inward)
+            ridge = np.exp(-(((bias - 0.020) / 0.014) ** 2)) - 0.52 * np.exp(
+                -(((bias + 0.004) / 0.011) ** 2)
+            )
+            ridge += 0.78 * np.exp(-(((bias - 0.066) / 0.012) ** 2)) - 0.37 * np.exp(
+                -(((bias - 0.049) / 0.014) ** 2)
+            )
+            height = envelope * (0.003 + 0.009 * inside) * ridge
             add_target(obj, coords, "Sleeve fold " + suffix, normals * height[:, None])

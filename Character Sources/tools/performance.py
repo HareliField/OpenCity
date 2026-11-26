@@ -82,6 +82,12 @@ def perform(folder):
         portion(captured(rig, key), start, stop, length)
         for key, start, stop, length in direction["cuts"]
     ]
+    workday = direction.get("gestureProfile") == "workday"
+    if workday:
+        from workday_performance import casting_targets, fingers, fit_story_arms
+
+        fit_story_arms(rig, parts[0], walking=True)
+        fit_story_arms(rig, parts[-1], walking=False, photo=casting_targets(folder,scene)[0])
     for beat in direction.get("plantedBeats", []):
         # Her feet remain where she stopped while her torso answers Rafael.
         for key, values in parts[beat].items():
@@ -104,16 +110,20 @@ def perform(folder):
         [0, pause, pause + 18, pause + 45, pause + 66, len(frames) - 1],
         [0, 0, 1, 1, 0, 0],
     )
-    for side in ("l", "r"):
-        for i, digit in enumerate(("index", "middle", "ring", "pinky")):
-            for joint in ("01", "02"):
-                k = f"{digit}_{joint}_{side}"
-                track[k] = np.asarray(
-                    [
-                        Quaternion((1, 0, 0), math.radians((12 + i * 3) * (1 - t)))
-                        for t in release
-                    ]
-                )
+    if workday:
+        for f, opening in enumerate(release):
+            fingers(rig, track, f, f / max(1, len(frames)-1), "listening_hands", opening)
+    else:
+        for side in ("l", "r"):
+            for i, digit in enumerate(("index", "middle", "ring", "pinky")):
+                for joint in ("01", "02"):
+                    k = f"{digit}_{joint}_{side}"
+                    track[k] = np.asarray(
+                        [
+                            Quaternion((1, 0, 0), math.radians((12 + i * 3) * (1 - t)))
+                            for t in release
+                        ]
+                    )
     name = person["name"] + " | " + direction["take"]
     previous = bpy.data.actions.get(name)
     if previous and previous.get("residentId") == person["residentId"]:

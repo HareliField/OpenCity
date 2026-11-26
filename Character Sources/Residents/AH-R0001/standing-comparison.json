@@ -1,0 +1,33 @@
+{
+  "camera": "Single frontal orthographic casting camera, same Idle time and image scale for both game exports. RGB error uses overlapping semantic pixels in the neutral studio. 0 is an exact RGB match.",
+  "measurements": {
+    "previous": {
+      "wholeBody": {
+        "silhouetteIoU": 0.6017,
+        "meanAbsoluteRgbError": 23.51
+      },
+      "hair": {
+        "silhouetteIoU": 0.1057,
+        "meanAbsoluteRgbError": 31.61
+      },
+      "clothes": {
+        "silhouetteIoU": 0.5955,
+        "meanAbsoluteRgbError": 19.9
+      }
+    },
+    "revised": {
+      "wholeBody": {
+        "silhouetteIoU": 0.8191,
+        "meanAbsoluteRgbError": 11.91
+      },
+      "hair": {
+        "silhouetteIoU": 0.7454,
+        "meanAbsoluteRgbError": 22.48
+      },
+      "clothes": {
+        "silhouetteIoU": 0.7574,
+        "meanAbsoluteRgbError": 10.39
+      }
+    }
+  }
+}

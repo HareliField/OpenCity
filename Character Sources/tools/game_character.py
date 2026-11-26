@@ -115,6 +115,10 @@ def clips(folder, recipe):
                     a[-n + i] = a[-n + i] * (1 - t) + end * t
                     if k != "location":
                         a[-n + i] /= np.linalg.norm(a[-n + i])
+        if "performance" in entry:
+            from workday_performance import fit_performance
+
+            fit_performance(rig, track, entry["performance"], folder)
         if entry.get("ground"):
             idle = write_action(rig, "Measure supporting soles", track)
             activate(rig, idle)
@@ -168,10 +172,23 @@ def remove_covered_skin(obj, rig):
     bm.from_mesh(obj.data)
     wrist = abs(rig.data.bones["hand_l"].head_local.x) - 0.028
     neck = rig.data.bones["neck_01"].head_local.z - 0.045
+    # In rest space the opposing thumb crosses this wrist plane. Keep a face
+    # touching any articulated finger, including skin blending into the palm.
+    finger_prefixes = ("thumb_", "index_", "middle_", "ring_", "pinky_")
+    fingers = {g.index for g in obj.vertex_groups if g.name.startswith(finger_prefixes)}
+    hand_verts = {
+        v.index
+        for v in obj.data.vertices
+        if any(g.group in fingers and g.weight > 0.05 for g in v.groups)
+    }
     hidden = []
     for f in bm.faces:
         center = f.calc_center_median()
-        covered = center.z < neck and abs(center.x) < wrist
+        covered = (
+            center.z < neck
+            and abs(center.x) < wrist
+            and all(v.index not in hand_verts for v in f.verts)
+        )
         if covered:
             hidden.append(f)
     bmesh.ops.delete(bm, geom=hidden, context="FACES")
@@ -271,6 +288,12 @@ def prepare(folder, cache, rig):
             continue
         if o.hide_render and not o.get("runtimeHair"):
             continue
+        if o.name.startswith("Loose temple wisps and captured fringe"):
+            # The live renderer applies the head-relative angle blend. Export
+            # its photographic opacity directly through glTF's alpha channel.
+            tree = o.data.materials[0].node_tree
+            texture = next(n for n in tree.nodes if n.type == "TEX_IMAGE")
+            tree.links.new(texture.outputs["Alpha"], tree.nodes.get("Principled BSDF").inputs["Alpha"])
         if o.type == "CURVE" and o.name == "Loose temple wisps":
             o.data = o.data.copy()
             o.data.resolution_u = 1
@@ -303,14 +326,18 @@ def prepare(folder, cache, rig):
                 raised.vertices.foreach_get("co", alternate)
                 brow.value = 0
         o.hide_set(False)
+        authored_coverage = o.name == "Body" and any(
+            m.type == "MASK" and m.show_viewport for m in o.modifiers
+        )
         o = rest_mesh(o, rig)
         if alternate is not None:
             o.shape_key_add(name="Rest")
-            o.shape_key_add(name="Listening brow lift").data.foreach_set(
-                "co", alternate
-            )
+            expression = o.shape_key_add(name="Listening brow lift")
+            expression.data.foreach_set("co", alternate)
+            expression.value = 0.0
         if (
             o.name == "Body"
+            and not authored_coverage
             and scene.objects.get("Cloth_jacket")
             and scene.objects.get("Cloth_jeans")
         ):
@@ -385,10 +412,14 @@ def export(folder, output, cache_root, texture_limit=None):
         Path(__file__).with_name("game_expression.py"),
         Path(__file__).with_name("secondary_shapes.py"),
         Path(__file__).with_name("handle_grip.py"),
+        Path(__file__).with_name("workday_performance.py"),
+        Path(__file__).with_name("recovery_contact.py"),
         Path(__file__).with_name("resident_motion.py"),
         folder / "character.blend",
         ROOT / "Anatomy/sculpts.blend",
     }
+    if any(entry.get("performance") == "counter_rest" for entry in recipe.values()):
+        inputs.update((folder/"photo-fit.json", folder/"art-direction.json"))
     if recipe_file.exists():
         inputs.add(recipe_file)
     for entry in recipe.values():

@@ -27,10 +27,11 @@ def positions(obj):
 
 def region(body, names, threshold):
     indices = {g.index for g in body.vertex_groups if g.name in names}
+    evaluated = body.evaluated_get(bpy.context.evaluated_depsgraph_get())
     return np.asarray(
         [
             sum(g.weight for g in v.groups if g.group in indices) > threshold
-            for v in body.data.vertices
+            for v in evaluated.data.vertices
         ]
     )
 
@@ -242,6 +243,13 @@ def fit_recovery(scene, rig, action, start, stop):
         )
         for s in ("l", "r")
     }
+    sleeve_edges = {}
+    for side in ("l", "r"):
+        sleeve_edges[side] = []
+        for garment in tops:
+            mask = region(garment, {"lowerarm_" + side, "hand_" + side}, 0.55)
+            if mask.any():
+                sleeve_edges[side].append((garment, mask))
     enter = max(1, start - 4)
     leave = min(stop, start + 60)
     bag = action.layers[0].strips[0].channelbag(action.slots[0])
@@ -309,6 +317,7 @@ def fit_recovery(scene, rig, action, start, stop):
         for side in ("l", "r"):
             original_wrist = rig.matrix_world @ original["hand_" + side][0]
             release = 35 if side == "l" else 38
+            release_frames = 14 if ida_fit else 9
             blend = smooth((frame - enter) / 5)
             # Move from the prone placement onto the support pads underneath the shoulders.
             reposition = smooth((dt - 10) / 10)
@@ -326,7 +335,6 @@ def fit_recovery(scene, rig, action, start, stop):
             pressure = 1 - 0.65 * approach
             carry = 0.0
             if dt > release:
-                release_frames = 14 if ida_fit else 9
                 carry = smooth((dt - release) / release_frames)
                 low = float(baseline_skin[hands[side], 2].min())
                 released = original_wrist + UP * max(0, 0.055 - low)
@@ -350,6 +358,17 @@ def fit_recovery(scene, rig, action, start, stop):
                 if blend < 0.999:
                     # Once released, only lift a hand that would cross the floor.
                     err = max(0, -low + 0.001)
+                if (
+                    ida_fit
+                    and 32 < dt < release + release_frames
+                    and sleeve_edges[side]
+                ):
+                    # Once the other supports have the load, allow the wrist to
+                    # lift as far as its elastic casing needs on the tile.
+                    cuff = min(
+                        positions(o)[mask, 2].min() for o, mask in sleeve_edges[side]
+                    )
+                    err = max(err, 0.0004 - cuff)
                 if abs(err) < 0.0006:
                     break
                 goal.z += err / max(blend, 0.03)
@@ -497,6 +516,31 @@ def audit_support(scene, rig, start, last):
     def mm(value):
         return round(float(value) * 1000, 2)
 
+    # Studio cloth compresses against the tile after skinning. Measure the
+    # unconstrained skinned shell too, so the take can be checked for export.
+    raw_layer_min = layer_min.copy()
+    limited = [
+        (o, m)
+        for o in outer_layers
+        for m in o.modifiers
+        if m.name == "Cuff floor contact" and m.show_viewport
+    ]
+    if limited:
+        try:
+            for o, m in limited:
+                m.show_viewport = False
+                raw_layer_min[o.name] = float("inf")
+            for frame in range(start, start + count):
+                scene.frame_set(frame)
+                for o, _ in limited:
+                    raw_layer_min[o.name] = min(
+                        raw_layer_min[o.name], positions(o)[:, 2].min()
+                    )
+        finally:
+            for _, m in limited:
+                m.show_viewport = True
+            scene.frame_set(start + count - 1)
+
     named_plants = []
     for index, (label, side, first, end) in enumerate(plants):
         end = min(end, count - 1)
@@ -528,6 +572,9 @@ def audit_support(scene, rig, start, last):
         "minimumOuterLayerHeightMm": {
             name: mm(height) for name, height in layer_min.items()
         },
+        "rawMinimumOuterLayerHeightMm": {
+            name: mm(height) for name, height in raw_layer_min.items()
+        },
         "plantedPhases": named_plants,
         "maximumJointDisplacementPerFrameMm": {
             name: mm(np.linalg.norm(np.diff(p, axis=0), axis=1).max())
@@ -536,8 +583,52 @@ def audit_support(scene, rig, start, last):
     }
 
 
+def activate_imported(rig, action):
+    rig.animation_data.action = action
+    rig.animation_data.action_slot = action.slots[0]
+    # glTF omits joints held at their bind transform. Blender's importer leaves
+    # unkeyed bases in the first action's pose when switching the active action.
+    for bone in rig.pose.bones:
+        bone.matrix_basis = Matrix.Identity(4)
+
+
+def game_endpoints(scene, rig, actions):
+    """Check imported loops and reversible take joins across every joint and bone tip."""
+    bones = tuple(rig.pose.bones)
+
+    def endpoints(action, end):
+        activate_imported(rig, action)
+        scene.frame_set(int(action.frame_range[1 if end else 0]))
+        return np.asarray(
+            [[rig.matrix_world @ b.head, rig.matrix_world @ b.tail] for b in bones]
+        )
+
+    comparisons = [
+        ("Fall", "Recover"),
+        ("PickUp", "SetDown"),
+        ("Idle", "Idle"),
+        ("Walk", "Walk"),
+        ("Carry", "Carry"),
+    ]
+    report = {}
+    for first, second in comparisons:
+        if first not in actions or second not in actions:
+            continue
+        gap = np.linalg.norm(
+            endpoints(actions[first], True) - endpoints(actions[second], False),
+            axis=2,
+        )
+        report[f"{first} to {second}"] = {
+            "jointsMeasured": len(bones),
+            "maximumJointGapMm": round(float(gap[:, 0].max()) * 1000, 3),
+            "maximumBoneTipGapMm": round(float(gap[:, 1].max()) * 1000, 3),
+        }
+    return report
+
+
 if __name__ == "__main__":
     import argparse
+    import hashlib
     import json
     import sys
     from pathlib import Path
@@ -572,6 +663,9 @@ if __name__ == "__main__":
     if ida:
         result["lowerSupport"] = audit_support(scene, rig, start, scene.frame_end)
     if args.game_model:
+        result["gameModelSha256"] = hashlib.sha256(
+            args.game_model.read_bytes()
+        ).hexdigest()
         bpy.ops.wm.read_factory_settings(use_empty=True)
         scene = bpy.context.scene
         scene.render.fps = result["fps"]
@@ -580,8 +674,7 @@ if __name__ == "__main__":
         action = bpy.data.actions["Recover"]
         for track in rig.animation_data.nla_tracks:
             track.mute = True
-        rig.animation_data.action = action
-        rig.animation_data.action_slot = action.slots[0]
+        activate_imported(rig, action)
         shift = int(action.frame_range[0]) - start
         result["gameContacts"] = audit(
             scene, [(f + shift, l + shift, s) for f, l, s in windows]
@@ -590,20 +683,13 @@ if __name__ == "__main__":
             result["gameLowerSupport"] = audit_support(
                 scene, rig, start + shift, int(action.frame_range[1])
             )
-            fall = bpy.data.actions.get("Fall")
-            if fall:
-                scene.frame_set(int(action.frame_range[0]))
-                incoming = [rig.matrix_world @ b.head for b in rig.pose.bones]
-                rig.animation_data.action = fall
-                rig.animation_data.action_slot = fall.slots[0]
-                scene.frame_set(int(fall.frame_range[1]))
-                outgoing = [rig.matrix_world @ b.head for b in rig.pose.bones]
-                distance = np.linalg.norm(
-                    np.asarray(incoming) - np.asarray(outgoing), axis=1
-                )
+            joined = game_endpoints(scene, rig, bpy.data.actions)
+            result["gameActionEndpoints"] = joined
+            if "Fall to Recover" in joined:
+                join = joined["Fall to Recover"]
                 result["gameFallToRecover"] = {
-                    "jointsMeasured": len(incoming),
-                    "maximumEndpointGapMm": round(float(distance.max()) * 1000, 3),
+                    "jointsMeasured": join["jointsMeasured"],
+                    "maximumEndpointGapMm": join["maximumJointGapMm"],
                 }
     report = json.dumps(result, indent=2) + "\n"
     if args.report:

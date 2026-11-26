@@ -121,6 +121,24 @@ def prepare_surfaces(folder, model_dir, art):
             [reference, fit, model_dir / "hair.tflite"],
             ["groom-guide.npz"],
         )
+    scan = art.get("wardrobeScan")
+    if scan and (Path(scan).name != scan or not scan.lower().endswith(".glb")):
+        raise ValueError("wardrobeScan must name a local GLB")
+    capture_groom = skin_reference and use_wash_house_groom(resident, art) and bool(scan)
+    if capture_groom:
+        stage(
+            "capture_groom.py",
+            [resident, model_dir, scan],
+            [
+                folder / scan,
+                reference,
+                fit,
+                folder / "groom-guide.npz",
+                face_model,
+                model_dir / "hair.tflite",
+            ],
+            ["captured-hair.npz", "captured-hair.png", "frontal-locks.png", "captured-neck.jpg"],
+        )
     prefixes = surface_prefixes(resident, art, skin_reference)
     if prefixes:
         inputs = [fit, TOOLS / "appearance_recipes.py"]
@@ -147,8 +165,10 @@ def prepare_surfaces(folder, model_dir, art):
                 TOOLS / "fit_photo.py",
                 TOOLS / "face_warp.py",
             ]
+            if (folder / "skin-calibration.png").is_file():
+                inputs.append(folder / "skin-calibration.png")
             outputs += ["skin-opacity.png"]
-            if use_wash_house_groom(resident, art):
+            if use_wash_house_groom(resident, art) and not capture_groom:
                 inputs.append(TOOLS / "hair_shape.py")
                 outputs += ["combed-hair.png", "hair-fibres.png"]
         stage("surface_maps.py", [resident], inputs, outputs)

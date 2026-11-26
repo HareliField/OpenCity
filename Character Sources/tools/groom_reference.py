@@ -19,7 +19,7 @@ def guide(folder, model_dir):
     x0 = max(0, int(center[0] - span * 1.32))
     x1 = min(w, int(center[0] + span * 1.32))
     y0 = max(0, int(center[1] - span * 1.66))
-    y1 = min(h, int(center[1] + span * 0.72))
+    y1 = min(h, int(center[1] + span * 1.58))
     head = img[y0:y1, x0:x1].copy()
     vision = mp.tasks.vision
     opt = vision.ImageSegmenterOptions(

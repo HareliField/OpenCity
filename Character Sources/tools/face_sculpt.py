@@ -194,6 +194,15 @@ def sculpt(rig, folder):
             tex.outputs["Color"], nt.nodes.get("Principled BSDF").inputs["Alpha"]
         )
         obj.visible_shadow = False
+    if prepared:
+        cornea = mesh.materials[1].node_tree
+        cornea_tex = next(node for node in cornea.nodes if node.type == "TEX_IMAGE")
+        cornea_tex.image = bpy.data.images.load(
+            str(folder / "skin-albedo.jpg"), check_existing=True
+        )
+        cornea.nodes.get("Principled BSDF").inputs[
+            "Specular IOR Level"
+        ].default_value = 0.16
     left_eye = {
         33,
         7,
@@ -252,9 +261,14 @@ def sculpt(rig, folder):
     )
     if prepared:
         points = coordinates(body.evaluated_get(bpy.context.evaluated_depsgraph_get()))
-        sh, sw = photo.size[1], photo.size[0]
-        origin = 0.5 * (texcoords[33] + texcoords[263]) * [sw, sh]
-        pixels = (texcoords[263, 0] - texcoords[33, 0]) * sw / span
+        # The primary casting photo preserves Ida's neck creases and pigmentation.
+        # Its pixel scale is the same one used to fit the face surface and hairline.
+        neck_photo = bpy.data.images.load(
+            str(folder / "reference.jpg"), check_existing=True
+        )
+        sw, sh = neck_photo.size
+        origin = 0.5 * (marks[33, :2] + marks[263, :2]) * [sw, sh]
+        pixels = (marks[263, 0] - marks[33, 0]) * sw / span
         neck_uv = np.column_stack(
             (
                 (origin[0] + points[:, 0] * pixels) / sw,
@@ -263,7 +277,8 @@ def sculpt(rig, folder):
         )
         # Keep the coloured collar from the photograph off the skin mesh.
         neck_alpha = (
-            np.clip((0.916 - (1 - neck_uv[:, 1])) / 0.07, 0, 1)
+            np.clip(((1 - neck_uv[:, 1]) - marks[152, 1] + 0.012) / 0.013, 0, 1)
+            * np.clip((marks[152, 1] + 0.061 - (1 - neck_uv[:, 1])) / 0.012, 0, 1)
             * np.clip((eyez - 0.087 - points[:, 2]) / 0.023, 0, 1)
             * np.clip((0.091 - abs(points[:, 0])) / 0.038, 0, 1)
             * np.clip((-0.008 - points[:, 1]) / 0.035, 0, 1)
@@ -287,9 +302,7 @@ def sculpt(rig, folder):
         coord = nt.nodes.new("ShaderNodeUVMap")
         coord.uv_map = "Neck plate"
         tex = nt.nodes.new("ShaderNodeTexImage")
-        tex.image = bpy.data.images.load(
-            str(folder / "skin-albedo.jpg"), check_existing=True
-        )
+        tex.image = neck_photo
         nt.links.new(coord.outputs["UV"], tex.inputs["Vector"])
         factor = nt.nodes.new("ShaderNodeVertexColor")
         factor.layer_name = "Neck coverage"

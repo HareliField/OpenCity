@@ -104,7 +104,7 @@ function buildInterior(room){
  for(const z of [-1.58,back+1.6]){
   for(const x of [u0+width*.27,u1-width*.27]){
    const lamp=lpt(M,x,-z);
-   const washLight=idaShop?{colour:z===-1.58?0xffecd6:0xf0f5ff,intensity:z===-1.58?2.90:2.10,reach:9.5}:null;
+   const washLight=idaShop?{colour:z===-1.58?0xfff0e4:0xf4f5fb,intensity:z===-1.58?1.52:1.38,reach:9.5}:null;
    INTERIORS.emitters.push({x:lamp.x,y:idaShop?2.98:2.77,z:lamp.z,cool,...washLight});
    if(cool){
     textured(m.steel,x-.68,x+.68,3.27,3.36,z-.12,z+.12);
@@ -144,10 +144,10 @@ function buildInterior(room){
   if(idaShop){
    WashHouse.shelfStock(room);
    // A diffused task strip above the customer side fills the face from the front.
-   const x=center-1.12,z=-1.02,lamp=lpt(M,x,-z);
+   const x=center-.38,z=-1.02,lamp=lpt(M,x,-z);
    textured(m.steel,x-.60,x+.60,3.21,3.34,z-.085,z+.085);
    textured(m.neutral,x-.56,x+.56,3.18,3.214,z-.073,z+.073);
-   INTERIORS.emitters.push({x:lamp.x,y:2.80,z:lamp.z,cool:true,colour:0xffe5c9,intensity:2.65,reach:8.5});
+   INTERIORS.emitters.push({x:lamp.x,y:2.80,z:lamp.z,cool:true,colour:0xffeee1,intensity:1.35,reach:8.5});
   }
   for(const y of [1.61,1.91]){
    textured(m.steel,u0+.48,u1-.48,y,y+.027,back+.19,back+.47);

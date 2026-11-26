@@ -105,13 +105,31 @@ def studio(rig, folder, filename="sculpt-review.jpg"):
     )
     scene.world.node_tree.nodes["Background"].inputs[1].default_value = 0.55
     if (folder / "art-direction.json").exists():
-        scene.objects["Softbox"].data.energy = 175
-        scene.objects["Softbox"].data.color = (1.0, 0.927, 0.848)
-        scene.objects["Fill"].data.energy = 49
-        scene.objects["Fill"].data.color = (0.82, 0.92, 1.0)
-        scene.objects["Hair light"].data.energy = 96
-        scene.world.node_tree.nodes["Background"].inputs[1].default_value = 0.30
-        scene.view_settings.look = "AgX - Medium High Contrast"
+        # Reproduce the broad, neutral frontal source used in the casting photo.
+        # Keep diffuse response on the skin while separating the visible backdrop
+        # from the intensity of the lighting environment.
+        scene.objects["Softbox"].data.energy = 105
+        scene.objects["Softbox"].data.shape = "DISK"
+        scene.objects["Softbox"].data.size = 3.4
+        scene.objects["Fill"].data.energy = 60
+        scene.objects["Fill"].data.size = 3.1
+        scene.objects["Hair light"].data.energy = 24
+        world = scene.world.node_tree
+        world.nodes.get("Background").inputs[1].default_value = 0.42
+        backdrop = world.nodes.new("ShaderNodeBackground")
+        backdrop.inputs[0].default_value = (0.40, 0.395, 0.39, 1)
+        mix = world.nodes.new("ShaderNodeMixShader")
+        world.links.new(
+            world.nodes.new("ShaderNodeLightPath").outputs["Is Camera Ray"],
+            mix.inputs[0],
+        )
+        world.links.new(world.nodes.get("Background").outputs[0], mix.inputs[1])
+        world.links.new(backdrop.outputs[0], mix.inputs[2])
+        world.links.new(
+            mix.outputs[0], world.nodes.get("World Output").inputs["Surface"]
+        )
+        scene.view_settings.view_transform = "Standard"
+        scene.view_settings.look = "None"
     scene.render.engine = "CYCLES"
     scene.cycles.samples = 8
     scene.cycles.use_denoising = True
