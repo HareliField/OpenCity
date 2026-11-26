@@ -4,7 +4,7 @@ const fs=require('node:fs');
 const path=require('node:path');
 const {createHash}=require('node:crypto');
 const game=path.resolve(__dirname,'..');
-const library=['City object library.json','Lighthouse Cove.json','District fittings.json','Garden cottages.json','Palm Street interiors.json','Civic and service fittings.json','Vehicle mechanical assemblies.json','Building and paving components.json','Domestic fittings.json','Beach furniture.json'].flatMap(file=>
+const library=['City object library.json','Lighthouse Cove.json','District fittings.json','Garden cottages.json','Palm Street interiors.json','Civic and service fittings.json','Vehicle mechanical assemblies.json','Building and paving components.json','Domestic fittings.json','Beach furniture.json','Intermodal freight.json'].flatMap(file=>
  JSON.parse(fs.readFileSync(path.join(game,'..','Blender Sources',file))));
 const catalog=JSON.parse(fs.readFileSync(path.join(game,'models/scenery/catalog.json')));
 let triangles=0,bytes=0;

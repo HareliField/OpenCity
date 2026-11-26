@@ -3,6 +3,11 @@ function appliancePoint(f,x,z){
  const c=Math.cos(f.yaw),s=Math.sin(f.yaw);
  return {x:f.x+c*x+s*z,z:f.z-s*x+c*z};
 }
+const BATH_DEPTH=2.86;
+function bathroomDirection(breadth,doorV,v0,v1){
+ if(breadth<4.18||Math.max(doorV-v0,v1-doorV)<BATH_DEPTH+1.25)return 0;
+ return doorV-v0>=BATH_DEPTH+1.25?1:-1;
+}
 function addDomesticFittings(c,l,room,yaw,place){
  const {v0,v1,edge,partition,sign,doorV,breadth}=room;
  const fridge=place('flat-refrigerator',edge-sign*.37,v0+2.58,yaw,[.60,1.65,.64],1.65);
@@ -17,9 +22,9 @@ function addDomesticFittings(c,l,room,yaw,place){
   place('breakfast-tray',u,v,yaw,[.50,.244,.319],.244,.74);
   if(breadth>3.62)place('seat',u-sign*.77,v,yaw+Math.PI,[.47,.85,.49],.48);
  }
- const depth=2.86,width=1.90;
- if(breadth<4.18||Math.max(doorV-v0,v1-doorV)<depth+1.25)return;
- const direction=doorV-v0>=depth+1.25?1:-1,end=direction===1?v0:v1;
+ const depth=BATH_DEPTH,width=1.90,direction=bathroomDirection(breadth,doorV,v0,v1);
+ if(!direction)return;
+ const end=direction===1?v0:v1;
  const u=partition+sign*width,doorU=partition+sign*.95,doorAt=suitePoint(c,doorU,end+direction*depth);
  const outward=c.alongX?(direction===1?'E':'W'):(direction===1?'S':'N');
  const M=new THREE.Matrix4().makeRotationY(SIDEANG[outward]);M.setPosition(doorAt.x,0,doorAt.z);

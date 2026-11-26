@@ -5,9 +5,10 @@ const STREETS_PHYS={region:-1,bodies:new Map()};
 function blockOf(x,z){const i=Math.floor(x/CELL),j=Math.floor(z/CELL);if(i<0||j<0||i>=N||j>=N)return null;const B=blocks[i*N+j];return(x>B.x0&&x<B.x1&&z>B.z0&&z<B.z1)?B:null;}
 function groundY(x,z,referenceY=null){
  const sidewalk=blockOf(x,z);
- let y=x>W+13?coastalSandHeight(x,z):cityTerrainReady?builtStreetHeight(x,z):
+ let y=x>W+13&&!inDockYard(x,z)?coastalSandHeight(x,z):cityTerrainReady?builtStreetHeight(x,z):
   sidewalk?sidewalkHeight(sidewalk,x,z):pavementHeight(x,z);
- for(const d of sidewalk?.cargoDecks||[])
+ const cargoDecks=sidewalk?.cargoDecks||(z>=W+HALF&&typeof freightDecksAt==='function'?freightDecksAt(x,z):[]);
+ for(const d of cargoDecks)
   if(d.y<=(referenceY??y)+.38&&withinRect(d,x,z))y=Math.max(y,d.y);
  if(sidewalk?.escapeFloors)y=fireEscapeGroundAt(sidewalk,x,z,referenceY,y);
  for(const r of STREET.steps){
@@ -115,11 +116,11 @@ function collideWorld(p,r,motion=null){
  const resident=globalThis.WashHouse?.push(p,r,y,motion);if(resident)hit=resident;
  const prop=collideProps(p,r,y,motion);
  if(prop)hit=prop;
- const freight=inFreightPort(p.x,p.z,r);
- const minX=freight?FREIGHT.x0:MINX;
+ const freight=inFreightPort(p.x,p.z,r),yard=inDockYard(p.x,p.z,r);
+ const minX=freight?FREIGHT.x0:yard?HARBOR.yard.x0:MINX;
  const coastMax=Math.abs(p.z-W*.42)<3.76&&p.x>W+39?W+149.45:harborWalkingLimit(p.z)??MAXX;
  const maxX=freight?FREIGHT.x1:coastMax;
- const maxZ=freight||freightGateAt(p.x,r)?FREIGHT.z1:MAXZ;
+ const maxZ=freight||freightGateAt(p.x,r)?FREIGHT.z1:yard||dockYardGateAt(p.x,r)?HARBOR.yard.z1:MAXZ;
  if(p.x<minX+r){p.x=minX+r;hit=[1,0];}
  if(p.x>maxX-r){p.x=maxX-r;hit=[-1,0];}
  if(p.z<MINZ+r){p.z=MINZ+r;hit=[0,1];}
@@ -190,9 +191,8 @@ function physWorld(){
  physBox(FREIGHT.x0,FREIGHT.x1,-1,1.85,FREIGHT.z1,FREIGHT.z1+.85);
  physBox(-HALF-1.2,-HALF-.2,0,2,-HALF,W+HALF);
  physBox(W+64,W+66,-2,3,-HALF,W*.42-4);
- physBox(W+64,W+66,-2,3,W*.42+4,HARBOR.quay.z0);
- physBox(W+64,W+66,-2,3,HARBOR.quay.z1,W+HALF);
- const shore=[HARBOR.quay.z0,...HARBOR.docks.flatMap(d=>[d.z0,d.z1]),HARBOR.quay.z1];
+ physBox(W+64,W+66,-2,3,W*.42+4,HARBOR.basin.z0);
+ const shore=[HARBOR.basin.z0,HARBOR.quay.z0,...HARBOR.docks.flatMap(d=>[d.z0,d.z1]),HARBOR.quay.z1,W+HALF];
  for(let i=0;i+1<shore.length;i++){const end=harborWalkingLimit((shore[i]+shore[i+1])/2);physBox(end+.1,end+1,-1,.47,shore[i],shore[i+1]);}
 }
 
@@ -500,15 +500,15 @@ function aiPolice(c,dt){
  const target=see?playerTarget:searchGoal(c.pos.x,c.pos.z,c.body?.id||c.searchIndex||0,1.4);
  const distance=dist2(c.pos,target);
  let gx=target.x,gz=target.z;
- const portTarget=inFreightPort(target.x,target.z);
- if(portTarget&&c.pos.z>W-7||inFreightPort(c.pos.x,c.pos.z)){
+ const portTarget=workingPortAt(target),port=workingPortAt(c.pos);
+ if(portTarget&&c.pos.z>W-7||port){
   const next=patrolWaypoint(c,target);
   gx=next.x;gz=next.z;c.route=null;
  }else if(!see||realDistance>36){
   if(!c.route)c.route={node:nearestNode(c.pos)};
   const node=c.route.node;
   if(Math.hypot(node[0]*CELL-c.pos.x,node[1]*CELL-c.pos.z)<10){
-   const goal=nearestNode(portTarget?freightGateNode(target.x):target);
+   const goal=nearestNode(portTarget?freightGateNode(target.x,portTarget):target);
    if(node[0]===goal[0]&&node[1]===goal[1]){
     if(!see&&distance<38){gx=target.x;gz=target.z;}
     else c.route.node=pick(neighbors(node));
@@ -804,7 +804,7 @@ function spawnParked(x,z,h){
 }
 function spawnPolice(chase){
  const L=wanted,origin=chase?LAW.anchor:player.pos;
- const inPort=chase&&inFreightPort(origin.x,origin.z);
+ const inPort=chase&&workingPortAt(origin);
  const spot=inPort?freightPatrolSpot(origin,29,91):laneSpot(chase?29:55,chase?91:183,origin);
  if(!spot)return null;
  const metro=chase&&L>=4&&!cars.some(c=>c.officer?.division==='Metro SWAT')&&!cops.some(u=>!u.dead&&u.officer?.division==='Metro SWAT');

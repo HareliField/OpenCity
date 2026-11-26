@@ -302,9 +302,13 @@ function fillDistrict(B,R,dist){
  for(const L0 of lots){const L={x0:L0.x0+srange(0,.6),x1:L0.x1-srange(0,.6),z0:L0.z0+srange(0,.6),z1:L0.z1-srange(0,.6)};
   const palmFront=(B.i===9||B.i===10)&&B.j>=6&&B.j<=9;
   if(dist==='oldtown'){const fh=3.3,fl=palmFront?cityInteger(1,3):cityInteger(4,7);const oldTown=building(B,L,4.4+fl*fh,{mat:MAT.fac[spick(FACLIST.oldtown)],style:1,fh,bay:2.6,shops:true,cornice:true,kind:'old'});oldTown.escapeCandidate=srnd()<.6;}
-  else if(dist==='beach'){const fh=3.2,fl=cityInteger(2,5),h=4.4+fl*fh,tint=spick(PASTEL);building(B,L,h,{mat:MAT.fac.stucco,style:4,fh,bay:3.2,shops:true,tint,kind:'deco'});
-   for(let y=4.4+fh;y<h-.5;y+=fh)perimeterBand(MAT.whiteMetal,L,y-.10,y,.13);
-   const sd=streetSides(B,L),sample=sd.length?srnd():1,hs=sample<.85?spick(ATLAS.hotels):null;if(hs&&sample<.15&&h>16){const s=sd[0],y=h*.62;const fx=s==='E'?L.x1+.6:s==='W'?L.x0-.6:(L.x0+L.x1)/2,fz=s==='S'?L.z1+.6:s==='N'?L.z0-.6:(L.z0+L.z1)/2;
+  else if(dist==='beach'){
+   const fh=3.2,fl=cityInteger(2,5),h=4.4+fl*fh,tint=spick(PASTEL),industrial=B.i===14&&B.j>=13;
+   const finish=industrial?(L.x0>cx?MAT.fac.brick_red:MAT.fac.brick_factory):MAT.fac.stucco;
+   building(B,L,h,{mat:finish,style:industrial?1:4,fh,bay:industrial?2.63:3.2,shops:true,tint:industrial?0xd4c8b9:tint,kind:'deco'});
+   if(industrial)perimeterBand(MAT.stone,L,h-.15,h,.10);
+   else for(let y=4.4+fh;y<h-.5;y+=fh)perimeterBand(MAT.whiteMetal,L,y-.10,y,.13);
+   const sd=streetSides(B,L),sample=sd.length?srnd():1,hs=sample<.85?spick(ATLAS.hotels):null;if(!industrial&&hs&&sample<.15&&h>16){const s=sd[0],y=h*.62;const fx=s==='E'?L.x1+.6:s==='W'?L.x0-.6:(L.x0+L.x1)/2,fz=s==='S'?L.z1+.6:s==='N'?L.z0-.6:(L.z0+L.z1)/2;
     const ry=s==='S'||s==='N'?Math.PI/2:0;plainBox(MAT.metal,fx-(ry?.61:.11),fx+(ry?.61:.11),y-2.1,y+2.1,fz-(ry?.11:.61),fz+(ry?.11:.61));
     const L2=4.02;for(const sg of[1,-1]){const g=new THREE.PlaneGeometry(L2,L2/4);const uv=g.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,hs.u0+uv.getX(i)*(hs.u1-hs.u0),hs.v0+uv.getY(i)*(hs.v1-hs.v0));g.rotateZ(Math.PI/2);g.rotateY((s==='S'||s==='N')?(sg>0?0:Math.PI):(sg>0?Math.PI/2:-Math.PI/2));
      g.translate(fx+((s==='E'||s==='W')?sg*.115:0),y,fz+((s==='S'||s==='N')?sg*.115:0));addGeo(ATLAS.mat,g,false);}}}
@@ -406,8 +410,9 @@ function containers(x0,x1,z0,z1){
   }
  }
 }
-function buildCargoContainer(B,x,z,base,tint,face,opening){
- const R={x0:x,x1:x+6.06,z0:z,z1:z+2.44},floor=base+.134,roof=base+2.60;
+function buildCargoContainer(B,x,z,base,tint,face,opening,length=6.06){
+ const R={x0:x,x1:x+length,z0:z,z1:z+2.44},floor=base+.134,roof=base+2.60;
+ freightMarkings(x,z,base,length,tint,true);
  const fix=(mat,l,r,b,t,n,s,color)=>{
   plainBox(mat,l,r,b,t,n,s,{uvm:1.8,tint:color,shadow:true});
   B.bld.push({x0:l,x1:r,y0:b,h:t,z0:n,z1:s});
@@ -415,7 +420,7 @@ function buildCargoContainer(B,x,z,base,tint,face,opening){
  fix(MAT.wood,x+.032,R.x1-.032,base+.035,floor,z+.027,R.z1-.027);
  fix(MAT.container,x,R.x1,roof-.074,roof,z,R.z1,tint);
  (B.cargoDecks||(B.cargoDecks=[])).push({...R,y:floor},{...R,y:roof});
- const box=R.x1-x-.152,folds=24;
+ const box=R.x1-x-.152,folds=Math.round(box/.249);
  for(const side of [-1,1]){
   const outer=side<0?z:R.z1,top=roof-.072;
   const pos=[],uv=[],idx=[],color=[];
@@ -638,7 +643,11 @@ function streetProps(B){const{x0,x1,z0,z1}=B;const dist=B.i===15&&B.j>=13?'docks
  const sideP=(e,t,o)=>e===0?[x0+t,z0+o]:e===1?[x1-o,z0+t]:e===2?[x0+t,z1-o]:[x0+o,z0+t];
  const kinds=dist==='docks'?['barrel','barrel','cone','bin','hydrant']:dist==='suburb'?['bin','hydrant','mailbox']:['hydrant','bin','news','meter','meter','bench','bollard','bin'];
  for(let k=0;k<(dist==='suburb'?3:9);k++){const e=cityInteger(0,3),t=srange(7,41),[px,pz]=sideP(e,t,srange(.5,.9));PROPSPOTS.push({type:spick(kinds),x:px,z:pz,ry:[Math.PI,Math.PI/2,0,-Math.PI/2][e]});}
- if(dist==='beach')for(let t=8;t<44;t+=11){PALMS.push([x1-1.3,z0+t,srange(.85,1.2)]);PALMS.push([x0+1.3,z0+t,srange(.85,1.2)]);}
+ if(dist==='beach')for(let t=8;t<44;t+=11){
+  const sizes=[srange(.85,1.2),srange(.85,1.2)];
+  if(B.i===14&&B.j>=13){if(t===19)TREES.push([x1-1.3,z0+t,sizes[0]]);}
+  else{PALMS.push([x1-1.3,z0+t,sizes[0]]);PALMS.push([x0+1.3,z0+t,sizes[1]]);}
+ }
  else if(dist!=='docks'&&dist!=='suburb')for(const e of[0,1,2,3])for(let t=9;t<44;t+=13)if(srnd()<.61){
   const [px,pz]=sideP(e,t,1.5),size=srange(.83,1.17);
   const avenue=(B.i===9&&e===1||B.i===10&&e===3)&&B.j>=6&&B.j<=10;
@@ -650,7 +659,7 @@ function beach(){const x0=W+HALF;buildCoastalWater();
  const saltTimber=makeWet(pbr('pier-timber',1,{rough:.90,ns:.54,env:.37}),{wet:.46});
  const galvanized=new THREE.MeshStandardMaterial({color:lin(0xa3a59c),metalness:.59,roughness:.51});
  const pile=pierPileMaterial();
- const boardwalk={x0:x0+.5,x1:x0+6,z0:-HALF,z1:W+HALF,y:.25,soffit:.177};
+ const boardwalk={x0:x0+.5,x1:x0+6,z0:-HALF,z1:HARBOR.basin.z0,y:.25,soffit:.177};
  topQuad(saltTimber,boardwalk.x0,boardwalk.x1,boardwalk.y-.009,boardwalk.z0,boardwalk.z1,2.7,null,false);
  registerDeckBoards(boardwalk,true);STREET.steps.push(boardwalk);
  const beachOpenings=[[80,91],[205,222],[365,377],[418,434],[575,587],[832,846]];
@@ -733,14 +742,14 @@ function beach(){const x0=W+HALF;buildCoastalWater();
  lighthouse();
  const UMB=[0xa54539,0x496888,0xbca363,0xdcd5c4,0x718676];for(let k=0;k<26;k++){
   const z=srange(0,W),x=srange(W+20,W+52),umbrella=spick(UMB),towel=spick([0xb68579,0x8499ac,0xc5b386,0x93a89a]);
-  if(z>=HARBOR.approach.z0-2&&z<=HARBOR.approach.z1+2||Math.abs(z-COVE.z)<42||Math.abs(z-pz)<48)continue;
+  if(z>=HARBOR.basin.z0-2||Math.abs(z-COVE.z)<42||Math.abs(z-pz)<48)continue;
   beachUmbrella(x,z,umbrella);
   beachTowel(x+1.35,z+.24,towel);
   if(k%3===0)beachChair(x-.94,z+.65,umbrella,k%2?0:Math.PI);
  }
  beachAreas(pz);
  buildHarbor();
- for(let z=-40;z<W+60;z+=12){
+ for(let z=-40;z<HARBOR.basin.z0-4;z+=12){
   const palm=[W+HALF+8+srange(-.5,.5),z+srange(-3,3),srange(.9,1.25)];
   if(palm[1]<HARBOR.approach.z0-1||palm[1]>HARBOR.approach.z1+1)PALMS.push(palm);
  }
@@ -799,9 +808,8 @@ function skyline(){
  }
  for(const[x,z,sx,sz]of[[W/2,-HALF-.4,S+2,.8],[-HALF-.4,W/2,.8,S+2]])plainBox(MAT.trim,x-sx/2,x+sx/2,0,1.1,z-sz/2,z+sz/2,{uvm:2});
  for(const [a,b] of southWallSpans())plainBox(MAT.trim,a,b,0,1.1,FREIGHT.z0,FREIGHT.z0+.8,{uvm:2});
- for(let k=0;k<16;k++){const a=srange(Math.PI*.6,Math.PI*1.9),r=srange(900,1200);if(Math.cos(a)>0)continue;
-  const g=new THREE.ConeGeometry(srange(165,300),srange(66,130),16);g.translate(W/2+Math.cos(a)*r,11,W/2+Math.sin(a)*r);
-  addGeo(new THREE.MeshStandardMaterial({color:lin(0x5a5048),roughness:1}),g,false);}}
+ outerCoastRidges();
+}
 /* ---- trees, palms, lamps, traffic lights (instanced) ---- */
 function leafTex(palm){const[c,g]=cvs(256,256);g.clearRect(0,0,256,256);
  if(palm){g.translate(128,250);for(let i=0;i<60;i++){const t=i/60,y=-t*240,len=(1-Math.abs(t-.45)*1.6)*95+12;for(const s of[-1,1]){g.save();g.translate(0,y);g.rotate(s*(1.05-t*.4));g.fillStyle=`hsl(${rnd(85,105)},${rnd(35,50)}%,${rnd(22,34)}%)`;g.beginPath();g.ellipse(0,-len/2,4.5,len/2,0,0,7);g.fill();g.restore();}}g.fillStyle='#5a4a2a';g.fillRect(-2,-240,4,240);}

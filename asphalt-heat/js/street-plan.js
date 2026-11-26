@@ -46,7 +46,8 @@ function approachWidth(section,dz){
 function hasApproach(i,j,dx,dz){
  const a=i-dx,b=j-dz;
  return a>=0 && a<=N && b>=0 && b<=N ||
-  j===N && dz===-1 && typeof freightGateAt==='function' && freightGateAt(i*CELL);
+  j===N && dz===-1 && (typeof freightGateAt==='function' && freightGateAt(i*CELL) ||
+   typeof dockYardGateAt==='function' && dockYardGateAt(i*CELL));
 }
 function hasCrossing(i,j,dx,dz){
  return hasApproach(i,j,dx,dz) && (dx ? j>0 && j<N : i>0 && i<N);

@@ -1,0 +1,35 @@
+[
+  {
+    "id": "intermodal-container",
+    "sourceImages": [
+      9,
+      38,
+      59,
+      66,
+      83,
+      109
+    ],
+    "description": "Forty-foot dry cargo box, folded steel shell, plywood deck, corner castings and two cam-locked end doors.",
+    "parts": 121,
+    "movableParts": [
+      "DoorPort",
+      "DoorStarboard"
+    ],
+    "runtimeBytes": 927056
+  },
+  {
+    "id": "receiving-carton",
+    "sourceImages": [
+      9,
+      38,
+      59,
+      83,
+      86,
+      103
+    ],
+    "description": "Folded kraft shipping carton, taped closure, delivery label and a printed handling mark.",
+    "parts": 44,
+    "movableParts": [],
+    "runtimeBytes": 92524
+  }
+]

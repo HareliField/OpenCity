@@ -18,7 +18,7 @@ const STREET={steps:[]},FREIGHT={},SIDEANG={N:Math.PI,S:0,E:Math.PI/2,W:-Math.PI
 const traceCove=()=>1,collideCove=()=>null,collideGradeRails=()=>null,collideProps=()=>null,walkVehicleParts=()=>null;
 const groundY=(x,z,y)=>storeyGroundAt(blocks[0],x,z,y,.15),facadeBox=()=>{};
 const blockOf=(x,z)=>blocks.find(r=>x>=r.x0&&x<=r.x1&&z>=r.z0&&z<=r.z1);
-const plainBox=()=>{},addGeo=(mat,g)=>g.dispose();
+const plainBox=()=>{},addGeo=(mat,g)=>g.dispose(),freightMarkings=()=>{};
 `);
 run(world.slice(world.indexOf('function lrect('),world.indexOf('const PASTEL=')));
 run(read('js/street-plan.js'));run(read('js/city-works.js'));run(read('js/access.js'));run(read('js/building-construction.js'));run(read('js/suite-interiors.js'));run(read('js/domestic-fittings.js'));
@@ -102,6 +102,20 @@ run(`
  for(const room of rooms){
   const d=room.door,dx=Math.sin(d.yaw)*.8,dz=Math.cos(d.yaw)*.8,probe=()=>rayWorld(d.ox+dx,d.oz+dz,d.ox-dx,d.oz-dz,d.base+1.42,d.base+1.42,.33);
   assert(probe()<1);d.phase=1;assert.equal(probe(),1,'furniture leaves the open flat entrance clear');d.phase=0;
+ }
+ // The open entrance leaf must also leave space to turn through an adjoining bathroom door.
+ for(const alongX of [false,true]){
+  const trial={dist:'oldtown',structures:[]},level={rect:{x0:0,x1:15,z0:0,z1:15},y0:4.4,h:7.7};
+  const sample={block:trial,core:{alongX,uc:7.5,u0:6.195,u1:8.805,v0:5.23},levels:[level]};level.owner=sample;
+  trial.structures.push(sample);planUpperRooms(trial);assert.equal(level.rooms.length,2);
+  for(const room of level.rooms){
+   const bath=room.bath.door,entry=room.door,opened=doorwayPose(entry,1),h=entry.base+1.03;
+   const offset=new V3(Math.sin(bath.yaw)*.64,0,Math.cos(bath.yaw)*.64);
+   const inverse=new THREE.Quaternion().setFromAxisAngle(_entryUp,opened.yaw).invert();
+   const start=new V3(bath.ox,h,bath.oz).sub(offset).sub(new V3(opened.x,opened.y,opened.z)).applyQuaternion(inverse);
+   const delta=offset.multiplyScalar(2).applyQuaternion(inverse),half=new V3(entry.w/2,entry.h/2,entry.thickness/2);
+   assert.equal(traceBox(start,delta,half.clone().negate(),half,.33),1,'adjoining leaves open clear of a 66 cm walking passage');
+  }
  }
  const tap=galley.tap,standing={x:tap.reachX,y:tap.y,z:tap.reachZ};
  CITY_SERVICES.lots[0]={pressure:310,sector:{power:true}};CITY_WORKS.m={channel:material};

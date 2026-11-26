@@ -36,7 +36,7 @@ function subtractCityOpenings(rect,holes){
 }
 
 function worksGroundMesh(r,y,meters,originX=r.x0,originZ=r.z1){
- const geos=subtractCityOpenings(r,STREET_OPENINGS).map(p=>{
+ const geos=subtractCityOpenings(r,[...STREET_OPENINGS,HARBOR.basin]).map(p=>{
   const width=p.x1-p.x0,depth=p.z1-p.z0;
   // Keep the near-plane and shadow interpolation local even under a shallow driving camera.
   const g=new THREE.PlaneGeometry(width,depth,Math.ceil(width/12),Math.ceil(depth/12));
@@ -112,11 +112,13 @@ function worksFloorAt(x,z,referenceY,street){
 }
 
 function installWorksPhysics(){
- // Give the street a real underside and leave the three shafts open to rigid bodies.
+ // The shaft mouths and sheltered basin cut through the common street surface.
  PH.w.removeBody(PH.ground);
- for(const r of subtractCityOpenings(worksRect(-4096,4096,-4096,4096),STREET_OPENINGS)){
+ const basin=HARBOR.basin;
+ for(const r of subtractCityOpenings(worksRect(-4096,4096,-4096,4096),[...STREET_OPENINGS,basin])){
   physBox(r.x0,r.x1,-.13,0,r.z0,r.z1,PH.mat.ground);
  }
+ physBox(basin.x0,basin.x1,basin.bed-.19,basin.bed,basin.z0,basin.z1,PH.mat.sand);
  for(const lift of CITY_WORKS.lifts){
   const shaft=lift.shaft,x=(shaft.x1-shaft.x0)*.5,z=(shaft.z1-shaft.z0)*.5;
   const body=new CANNON.Body({mass:0,type:CANNON.Body.KINEMATIC,material:PH.mat.concrete,collisionFilterGroup:PHYS_GROUP.world});

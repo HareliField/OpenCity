@@ -19,11 +19,14 @@ python -B asphalt-heat/tools/blender-vehicle-assemblies.py
 python -B asphalt-heat/tools/blender-building-parts.py
 python -B asphalt-heat/tools/blender-domestic-fittings.py
 python -B asphalt-heat/tools/blender-beach-furniture.py
+python -B asphalt-heat/tools/blender-freight.py
 python -B asphalt-heat/tools/coastal-sky.py
 python -B asphalt-heat/tools/coastal-daylight.py
 ```
 
 The finish scripts extract material surfaces and store prints from the supplied photographs. The Blender scripts assemble metric parts, bake short-range contact shading, pack source textures into the Blender files and export GLBs to the game's scenery directory. Fixed components share a mesh per asset. Washers, refrigerator panels, fans, couplings and barber poles retain separate origins for movement.
+
+**Intermodal freight** supplies the forty-foot boxes on the railway, ship decks, overhead cranes and upper yard stacks. The source includes two door pivots, locking rods, guides, pressed side sheets, plywood floor, roof beads and corner castings. Containers at ground level use the same dimensions with operating doors and accessible interiors. Each receiving carton has a folded shell, taped flaps, delivery label and handling marks. The cartons on the loading pallets have separate rigid bodies.
 
 **Lighthouse Cove** includes the keeper’s house, four turns of stair treads, iron gallery, lens and revolving optic. Its companion layout gives the game the collision coordinates from the same construction. **District fittings** includes the Harbor Supply truck, roof plant, industrial stock, salon furniture and fitted clothing. Car and truck wheel prototypes rotate around X in game coordinates.
 

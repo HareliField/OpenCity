@@ -19,9 +19,13 @@ function planUpperRooms(block){
     const doorV=clamp(c.v0-.83,v0+1.14,v1-1.14),doorAt=suitePoint(c,partition,doorV);
     const face=c.alongX?(sign>0?'N':'S'):(sign>0?'W':'E'),M=new THREE.Matrix4().makeRotationY(SIDEANG[face]);
     M.setPosition(doorAt.x,0,doorAt.z);
-    const door=registerDoor(M,0,0,l.y0,1.145,2.12,'wood');
+    const office=s.block.dist==='downtown'||s.block.dist==='docks';
+    const bathSide=office?0:bathroomDirection(breadth,doorV,v0,v1);
+    const bathDistance=(bathSide>0?v0+BATH_DEPTH:v1-BATH_DEPTH)-doorV;
+    const hingeRight=bathSide!==0&&Math.abs(bathDistance)<2.15&&bathDistance*M.elements[c.alongX?0:2]<0;
+    const door=registerDoor(M,0,0,l.y0,1.145,2.12,'wood',false,hingeRight);
     door.suiteBlock=block;
-    const room={sign,partition,edge,v0,v1,doorV,door,breadth,office:s.block.dist==='downtown'||s.block.dist==='docks'};
+    const room={sign,partition,edge,v0,v1,doorV,door,breadth,office};
     l.rooms.push(room);
     const furnishing=(id,u,v,yaw,dims,solidHeight,offset=0)=>{
      const at=suitePoint(c,u,v),turned=Math.abs(Math.sin(yaw))>.5;

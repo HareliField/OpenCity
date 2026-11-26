@@ -333,5 +333,11 @@
   },
   "canvas-deckchair": {
     "file": "canvas-deckchair.glb"
+  },
+  "intermodal-container": {
+    "file": "intermodal-container.glb"
+  },
+  "receiving-carton": {
+    "file": "receiving-carton.glb"
   }
 }

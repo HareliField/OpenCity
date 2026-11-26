@@ -20,7 +20,7 @@ run(`const CANNON=window.CANNON,V3=THREE.Vector3,CELL=64,N=16,W=N*CELL,HALF=8,OR
 `);
 const world=read('js/world.js');
 run(world.slice(world.indexOf('function districtOf('),world.indexOf('const SPECIAL=')));
-for(const name of ['phys','cargen','fleet','vehicle-components','access','building-construction','suite-interiors','domestic-fittings','roads','street-plan','street-surface','city-works','city-services','city-traffic','lighthouse','garden-cottages','civic-fittings','harbor-supply','coast','game'])run(read('js/'+name+'.js'));
+for(const name of ['phys','cargen','fleet','vehicle-components','access','building-construction','suite-interiors','domestic-fittings','roads','street-plan','street-surface','harbor','city-works','city-services','city-traffic','lighthouse','garden-cottages','civic-fittings','harbor-supply','coast','game'])run(read('js/'+name+'.js'));
 run(`
  player={pos:new V3(800,0,800),car:null};
  setCarLights=()=>{};
@@ -87,6 +87,18 @@ run(`
  approx(groundY(W+46,W*.42,.02),.02,.0001,'feet below a deck stay at beach height');
  approx(groundY(W+46,W*.42,1.45),1.60,.0001,'highest pier step meets the platform');
  STREET.steps.pop();
+ installWorksPhysics();
+ for(const tile of STREET_TERRAIN.get(cellKey(W+32,915)).filter(t=>t.sandTerrain))sandTerrainBody(tile);
+ for(const [x,z] of [[W+32,915.4],[W+34.7,921.32],[W+70,922]]){
+  const ray=new CANNON.RaycastResult();
+  PH.w.raycastClosest(new CV(x,1,z),new CV(x,-3,z),{skipBackfaces:true},ray);
+  assert(ray.hasHit&&ray.hitPointWorld.y<-2.20,'the quay has a submerged floor');
+  approx(ray.hitPointWorld.y,groundY(x,z,0),.0001,'wheel and walking queries share the basin bed');
+ }
+ assert.equal(harborWalkingLimit(910),HARBOR.basin.x0);
+ assert.equal(harborWalkingLimit(971),HARBOR.docks[1].x1);
+ assert.equal(harborWalkingLimit(975),HARBOR.quay.x1);
+ assert.equal(harborWalkingLimit(854),null);
  assert(hasCurbExtension(4,5,0,-1));
  buildCurbExtension(4,5,0,-1);
  const approachZ=5*CELL+STREET_DESIGN.crossing,faceX=4*CELL+HALF-EXTENSION_WIDTH;
@@ -413,4 +425,20 @@ run(`
   for(const type of ['van','harborbox'])for(const physical of [false,true])driveGradeLink([b[0]-dx,b[1]-dz],b,0,type,true,physical);
  }
  console.log('Grade clearances passed.',{straightLanes:strips,signs:signs.length,deckDrives:16,coastalTruckDrives:3});
+`);
+run(read('js/dock-yard.js'));
+run(`
+ const topQuad=()=>{},beforeDock=new Set([...STREET_TERRAIN.values()].flat());
+ dockYardPaving();cityTerrainReady=true;
+ for(const t of new Set([...STREET_TERRAIN.values()].flat()))if(!beforeDock.has(t))terrainBody(t);
+ const yard=HARBOR.yard;
+ for(const z of [yard.z0+.22,yard.cross[0],yard.cross[1],yard.cross[2]]){
+  for(const x of yard.streets)approx(hit(x,z),groundY(x,z,0),.0001,'dock street tyres match walking height');
+ }
+ for(const x of [1024-7.66,1024-8.55,1024-10.2,1036.17,1037.43]){
+  approx(hit(x,1101),groundY(x,1101,.16),.0001,'the quay apron and gutter share their wheel surface');
+ }
+ assert(groundY(1013.8,1101,.16)-groundY(1024,1101,0)>.14,'the warehouse apron rises above the roadway');
+ for(const x of yard.streets)assert(hasApproach(x/CELL,N,0,-1)&&dockYardGateAt(x,1.32));
+ console.log('Two dock entrances, three junctions and five apron samples match the wheel surfaces.');
 `);

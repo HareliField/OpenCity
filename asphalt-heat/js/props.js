@@ -184,13 +184,17 @@ function propInteraction(pos){
  let best=null,d=1.25;
  for(const p of PROPS.active){
   if(p.body.mass>=74)continue;
-  const distance=Math.hypot(p.body.position.x-pos.x,p.body.position.z-pos.z);
-  if(distance<d){d=distance;best=p;}
+  const at=p.body.position,distance=Math.hypot(at.x-pos.x,at.z-pos.z);
+  if(distance>=d||at.y<pos.y-.23||at.y>pos.y+1.72)continue;
+  if(rayWorld(pos.x,pos.z,at.x,at.z,pos.y+.86,at.y,0,true,true)<.999)continue;
+  d=distance;best=p;
  }
  if(!best)return null;
- return {label:'NUDGE',hot:true,fn:()=>{
-  PoliceDepartment.touch(player,best,best.body.position,'Street fixture');
-  const b=best.body,dx=b.position.x-pos.x,dz=b.position.z-pos.z,scale=Math.min(b.mass*.69,24)/(Math.hypot(dx,dz)||1);
-  b.wakeUp();b.applyImpulse(new CV(dx*scale,0,dz*scale),new CV(0,.22,0));
+ const carton=best.t==='receiving-carton';
+ return {label:carton?'MOVE CARTON':'NUDGE',hot:true,fn:()=>{
+  PoliceDepartment.touch(player,best,best.body.position,carton?'Shipping carton':'Street fixture');
+  const b=best.body,dx=b.position.x-pos.x,dz=b.position.z-pos.z;
+  const scale=Math.min(b.mass*(carton?1.70:.69),24)/(Math.hypot(dx,dz)||1);
+  b.wakeUp();b.applyImpulse(new CV(dx*scale,carton?b.mass*1.45:0,dz*scale),new CV(0,carton?.014:.22,0));
  }};
 }

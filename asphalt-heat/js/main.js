@@ -195,7 +195,7 @@ function buildMinimapBase(){const g=MMB.getContext('2d'),k=MAP_SCALE;g.fillStyle
  g.fillStyle='#b99670';g.fillRect((W+37+HALF)*k,(W*.42-4+HALF)*k,113*k,8*k);
  drawGradeRoads(g,k);
  drawFreightMap(g,k);
- drawHarborMap(g,k);
+ drawHarborMap(g,k);drawDockYardMap(g,k);
 }
 const MICON={store:['$','#ffd040'],bank:['B','#ffd040'],gunshop:['G','#ff8a30'],hospital:['H','#ff4060'],police:['P','#4a8aff'],chop:['C','#40ff80'],spray:['R','#40a8ff']};
 function drawMap(){const Wd=300,k=Wd/240,pp=player.car?player.car.pos:player.pos,px=pp.x,pz=pp.z,yaw=camYaw+lookYaw,rot=yaw-Math.PI,cs=Math.cos(rot),sn=Math.sin(rot);
@@ -289,7 +289,7 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
    else if(c.wreckT<15&&Math.random()<dt*10)emit(c.pos.x,c.pos.y+1.4,c.pos.z,rnd(-.3,.3),rnd(1.5,3),rnd(-.3,.3),2.5,1,4,0x3a3634,false);if(c.phys)physCarControl(c,0,0,true,dt);continue;}
   if(c.hp<c.max*.4&&Math.random()<dt*13){const fx=Math.sin(c.h),fz=Math.cos(c.h);emit(c.pos.x+fx*c.spec.L*.36,c.pos.y+c.spec.hb+.1,c.pos.z+fz*c.spec.L*.36,rnd(-.3,.3),rnd(1,2.5),rnd(-.3,.3),1.6,.6,2.5,c.hp<c.max*.2?0x333030:0x9a9a9a,false);}
   if(c===player.car){drive(c,jy,-jx,sprint,dt);}
-  else if(inFreightPort(c.pos.x,c.pos.z)&&(c.driver==='ai'||c.driver==='police'&&(!wanted||!c.dispatched)))driveToFreightExit(c,dt);
+  else if(workingPortAt(c.pos)&&(c.driver==='ai'||c.driver==='police'&&(!wanted||!c.dispatched)))driveToFreightExit(c,dt);
   else if(c.driver==='scene')driveSceneCar(c,dt);
   else if(c.driver==='ai'||c.driver==='scene return')aiTraffic(c,dt);
   else if(c.driver==='police'){if(wanted>0){c.siren=c.dispatched&&wanted>=3&&LAW.seen;aiPolice(c,dt);}else{c.siren=false;c.route=null;c.dispatched=false;aiTraffic(c,dt);}}
@@ -496,7 +496,7 @@ async function buildCityRest(){const coastReady=loadCoveLayout();SEED=4242;initA
    await new Promise(resolve=>setTimeout(resolve,0));
   }
  }
- buildWorksGallery();installCityServices();sampleBeachRelief();buildCityDetail();await coastReady;beach();skyline();buildFreightTerminal();buildGradeRoads();buildStreetNetwork();finishStreetDetails();flushBuckets();for(const m of scene.children)if(m.isMesh&&m.material===ATLAS.neon)m.renderOrder=2;plantTrees();buildTrafficLights();flushBuckets();initializeDoorMeshes();}
+ buildWorksGallery();installCityServices();sampleBeachRelief();buildCityDetail();await coastReady;beach();skyline();buildFreightTerminal();buildDockYard();finishCityDetail();buildGradeRoads();buildStreetNetwork();finishStreetDetails();flushBuckets();for(const m of scene.children)if(m.isMesh&&m.material===ATLAS.neon)m.renderOrder=2;plantTrees();buildTrafficLights();flushBuckets();initializeDoorMeshes();}
 const startTime=$('startTime'),startWeather=$('startWeather');
 if(hasCustomHour){
  startTime.add(new Option(weather.clockText,'custom'));startTime.value='custom';

@@ -20,6 +20,7 @@ run(read('js/building-construction.js'));run(read('js/suite-interiors.js'));run(
 run(read('js/roads.js'));
 run(read('js/street-plan.js'));
 run(read('js/street-surface.js'));
+run(read('js/harbor.js'));
 run(read('js/freight.js'));
 run(read('js/city-works.js'));
 run(read('js/city-services.js'));
@@ -77,6 +78,12 @@ run(`
  assert.equal(searchGoal(384,1220,0).z,1220,'search stays at the freight quay');
  const gate=freightGateNode(384);
  assert(freightWaypoint(gate,LAW.anchor).z>FREIGHT.z0,'a patrol at the gate must advance into the terminal');
+ const yard=HARBOR.yard,quayX=yard.streets[0];
+ LAW.anchor.set(quayX,.17,yard.cross[1]);
+ assert.equal(workingPortAt(LAW.anchor),yard,'the public quay has its own road system');
+ assert.equal(searchGoal(quayX,yard.cross[1],0).z,yard.cross[1]);
+ const dockEntry=freightGateNode(quayX,yard);
+ assert.equal(dockEntry.x,quayX);assert(freightWaypoint(dockEntry,LAW.anchor).z>yard.z0);
 
  const route=new THREE.CatmullRomCurve3(GRADE_PROFILES[0].points.map(p=>new V3(...p)));
  for(const x of [448,832]){
@@ -151,7 +158,6 @@ run(`
 // Run the same on-foot collision resolver through the descending and ascending cabin stairs.
 const worldSource=read('js/world.js');
 run(worldSource.slice(worldSource.indexOf('function lrect('),worldSource.indexOf('const PASTEL=')));
-run(read('js/harbor.js'));
 run(read('js/props.js'));
 run(read('js/city-detail.js'));
 run(`
@@ -243,4 +249,31 @@ run(`
  }
 `);
 
+run(`
+ const packageWorld=new CANNON.World({gravity:new CV(0,-9.81,0)});
+ const floorMaterial=new CANNON.Material(),boxMaterial=new CANNON.Material();
+ packageWorld.addContactMaterial(new CANNON.ContactMaterial(boxMaterial,floorMaterial,{friction:.65,restitution:.11}));
+ const receivingFloor=new CANNON.Body({mass:0,material:floorMaterial,position:new CV(9.1,.125,16.6)});
+ receivingFloor.addShape(new CANNON.Box(new CV(24,.045,31)));packageWorld.addBody(receivingFloor);
+ const carton=new CANNON.Body({mass:4.2,material:boxMaterial,position:new CV(25,.38,22)});
+ carton.addShape(new CANNON.Box(new CV(.2315,.17,.1765)));
+ carton.quaternion.setFromEuler(0,.31,0);
+ carton.angularDamping=.24;carton.linearDamping=.035;packageWorld.addBody(carton);
+ // A box resting under its own weight has four friction contacts before the hand pushes it.
+ for(let i=0;i<150;i++)packageWorld.step(1/90);
+ const PoliceDepartment={touch(){}};
+ PROPS.active.clear();PROPS.active.add({t:'receiving-carton',body:carton});
+ const operator={x:24.38,y:.17,z:22};
+ assert.equal(propInteraction({...operator,y:3.22}),null,'a floor separates the hand from a carton below');
+ const partition={x0:24.62,x1:24.72,z0:21.8,z1:22.2,y0:0,h:2.3};
+ blocks[0].bld.push(partition);
+ assert.equal(propInteraction(operator),null,'a wall blocks reaching the carton');
+ blocks[0].bld.pop();
+ const moving=propInteraction(operator);
+ assert.equal(moving.label,'MOVE CARTON');moving.fn();
+ for(let i=0;i<180;i++)packageWorld.step(1/90);
+ carton.updateAABB();
+ assert(carton.position.x>25.15,'the hand lifts the edge and shifts the carton');
+ assert(Math.abs(carton.aabb.lowerBound.y-.17)<.006,'the displaced carton settles on the receiving floor');
+`);
 console.log('Gameplay regressions passed.');

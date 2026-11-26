@@ -375,7 +375,7 @@ function updateInteriors(dt,x,z,levelY=player.pos.y){
   }else light.intensity=0;
  }
  for(const f of INTERIORS.fixtures){
-  const distance=(f.x-x)**2+(f.z-z)**2;
+  const distance=(f.node.position.x-x)**2+(f.node.position.z-z)**2;
   f.node.visible=distance<152**2;
   if(!f.pending&&distance<83**2){
    const asset=requestScenery(f.id);
@@ -386,7 +386,7 @@ function updateInteriors(dt,x,z,levelY=player.pos.y){
     const model=modelInstance(template,f.dims,f.id);
     f.node.remove(f.fallback);
     f.fallback.traverse(o=>{if(o.isMesh)o.geometry.dispose();});
-    shadeFixture(model,f.x,f.node.position.y,f.z);
+    shadeFixture(model,f.node.position.x,f.node.position.y,f.node.position.z);
     f.node.add(model);
     if(f.device)bindCityMachine(f.device,model);
    });

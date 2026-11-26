@@ -78,11 +78,13 @@ function loadForestSpecies(species){
   }
   const placement=new THREE.Object3D(),shade=new THREE.Color();
   for(const {x,z,items,mature} of groups.values()){
+   const terrainY=items[0][4]??0;
+   const relief=Math.max(...items.map(p=>Math.abs((p[4]??terrainY)-terrainY)));
    const matrices=new THREE.InstancedBufferAttribute(new Float32Array(items.length*16),16);
    const colors=new THREE.InstancedBufferAttribute(new Float32Array(items.length*3),3);
    for(let i=0;i<items.length;i++){
     const [px,pz,scale]=items[i],v=Math.sin(px*7.513+pz*3.19);
-    placement.position.set(px-x,groundY(px,pz),pz-z);
+    placement.position.set(px-x,(items[i][4]??groundY(px,pz))-terrainY,pz-z);
     placement.rotation.y=(px*.157+pz*.371)%6.283;
     const crown=items[i][3]==='golden'?1.24:1;
     placement.scale.set(crown*scale*(1+.08*v),scale*(1-.065*v),crown*scale*(1+.06*v));
@@ -91,10 +93,10 @@ function loadForestSpecies(species){
     shade.toArray(colors.array,i*3);
    }
    const lods=prototypes.slice(mature?2:0,mature?4:2).map(parts=>{
-    const group=new THREE.Group();group.position.set(x,0,z);group.visible=false;
+    const group=new THREE.Group();group.position.set(x,terrainY,z);group.visible=false;
     for(const {geo,mat,depth} of parts){
      // In three r128 the geometry owns the instanced frustum bound. Share the GPU vertex buffers.
-     const bounds=geometryWithBounds(geo,new THREE.Sphere(new V3(0,5,0),52));
+     const bounds=geometryWithBounds(geo,new THREE.Sphere(new V3(0,5,0),52+relief));
      const mesh=new THREE.InstancedMesh(bounds,mat,items.length);
      mesh.instanceMatrix=matrices;mesh.instanceColor=colors;mesh.frustumCulled=true;
      mesh.receiveShadow=true;mesh.castShadow=true;if(depth)mesh.customDepthMaterial=depth;
@@ -102,7 +104,7 @@ function loadForestSpecies(species){
     }
     scene.add(group);return group;
    });
-   CITY_FOREST.sectors.push({x,z,lods,palm});
+   CITY_FOREST.sectors.push({x,z,lods,palm,headland:items[0][4]!==undefined});
   }
   updateForestLOD(0,true);
   for(const old of species.fallback){if(old){scene.remove(old);old.geometry.dispose();}}
@@ -118,7 +120,7 @@ function updateForestLOD(dt,immediate=false){
  const pos=player?.pos||camera.position;
  for(const s of CITY_FOREST.sectors){
   const d=Math.hypot(Math.max(0,Math.abs(s.x-pos.x)-32),Math.max(0,Math.abs(s.z-pos.z)-32));
-  const near=d<(QUALITY.level<2?27:48),visible=d<(QUALITY.level<2?350:555);
+  const near=d<(QUALITY.level<2?27:48),visible=d<(s.headland?1100:QUALITY.level<2?350:555);
   s.lods[0].visible=near&&visible;s.lods[1].visible=!near&&visible;
   for(const mesh of s.lods[1].children)mesh.castShadow=d<83;
  }
