@@ -15,6 +15,11 @@ const run=source=>vm.runInContext(source,context);
 run(read('lib/GLTFLoader.js'));
 run(read('lib/SkeletonUtils.js'));
 run(read('js/chars.js'));
+const fleet=read('js/fleet.js');
+run(fleet.slice(fleet.indexOf('function reachDriverLimb('),fleet.indexOf('function updateDriverSteering(')));
+const policeWorld=read('js/police-world.js');
+run(policeWorld.slice(policeWorld.indexOf('function poseDispatcher('),policeWorld.indexOf('function updateStationPosts(')));
+run(read('js/street-incidents.js'));
 
 // CPU skinning does not need GPU image uploads. Check every texture URI before letting the loader proceed.
 THREE.TextureLoader.prototype.load=function(uri,done){
@@ -29,7 +34,7 @@ function load(name){
 async function verify(){
  context.mocap=await load('anim_x');run("addAnimSource('x',mocap,0,null)");
  const uniforms=['Police_Male_01','Police_Male_03','Police_Male_06','Police_Male_07','Police_Male_02'];
- for(const name of [...uniforms,'Female_Adult_03']){
+ for(const name of [...uniforms,'Female_Adult_03','Male_Adult_04','Male_Adult_08','Business_Female_01','Medical_Female_01','Medical_Male_01']){
   context.name=name;context.gltf=await load(name);
   run("addTemplate(name,gltf,'cop','x',{idle:'idle',walk:'walk',run:'run',talk:'agree'})");
  }
@@ -53,6 +58,39 @@ async function verify(){
    assert(chest.distanceTo(eye)<.46&&chest.y<eye.y-.08,name+' camera stays below the neck');
   }
  }
- console.log('Patrol and investigative uniforms loaded, stayed upright, and retained their fitted portraits and cameras.');
+ for(const name of ['Business_Female_01','Male_Adult_08','Female_Adult_03']){
+  context.name=name;context.actor=run('makeChar(name)');
+  run('updChar(actor,0,.03,true);poseDispatcher(actor,{yaw:0,point:new V3(),keyboard:new V3(0,.829,.48)},1);actor.root.updateMatrixWorld(true)');
+  const ankle=context.actor.bones.RightFoot.getWorldPosition(new THREE.Vector3());
+  const finger=context.actor.consoleBones.Bip01_R_Finger22.getWorldPosition(new THREE.Vector3());
+  assert(ankle.y>=.10&&ankle.y<=.14,'The dispatcher’s ankles must clear the floor');
+  assert(finger.y>=.826&&finger.y<=.85&&Math.abs(finger.z-.48)<.088,'The fingertip must reach the keyboard');
+ }
+ for(const name of ['Medical_Female_01','Medical_Male_01']){
+  context.name=name;context.actor=run('makeChar(name)');
+  const contact=run(`updChar(actor,0,.04,true);
+   poseExaminer(actor,{yaw:0,exhibit:new V3(0,1.213,.60)},3);
+   actor.root.updateMatrixWorld(true);
+   ['LeftKnuckle','RightKnuckle'].map(j=>actor.bones[j].getWorldPosition(new V3()));`);
+  const targets=[new THREE.Vector3(.113,1.053,.537),new THREE.Vector3(-.113,1.171,.537)];
+  assert(contact.every((p,i)=>p.distanceTo(targets[i])<.044),name+' must reach both sides of the exhibit');
+ }
+ const motion=run(`let time=0;
+  const giver={c:makeChar('Male_Adult_04'),bag:new THREE.Group()},receiver={c:makeChar('Business_Female_01'),bag:null};
+  giver.c.root.add(giver.bag);receiver.c.root.position.z=.77;receiver.c.yaw=Math.PI;
+  const transfer=streetIncidents.current={phase:'Dispute',since:0,victim:giver,offender:receiver};
+  function handoverFrame(t){
+   time=t;
+   for(const p of [giver,receiver]){updChar(p.c,0,1/30,true);poseStreetProps(p);}
+   return {gap:giver.c.bones.RightHand.getWorldPosition(new V3()).distanceTo(receiver.c.bones.RightHand.getWorldPosition(new V3())),
+    bag:(giver.bag||receiver.bag).getWorldPosition(new V3())};
+  }
+  const approach=handoverFrame(.5);handoverFrame(1.5);const contact=handoverFrame(2.48);
+  receiver.c.root.attach(giver.bag);receiver.bag=giver.bag;giver.bag=null;transfer.phase='Struggle';transfer.since=2.5;
+  const received=handoverFrame(2.5),released=handoverFrame(4.35);({approach,contact,received,released})`);
+ assert(motion.approach.gap>.6&&motion.contact.gap<.095&&motion.released.gap>.6,'Both hands meet and release the handle');
+ assert(motion.contact.bag.distanceTo(motion.received.bag)<.01,'The physical exhibit stays in place as ownership changes');
+ console.log('Real actor rigs passed uniform, portrait, body camera, seated dispatch, exhibit examination and holdall handover checks.');
+
 }
 verify().catch(error=>{console.error(error);process.exitCode=1;});

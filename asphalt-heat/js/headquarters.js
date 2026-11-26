@@ -2,6 +2,67 @@
 const HQ_FLOORS=['Public services','Investigations','Watch operations','Staff and equipment'];
 const HQ_STOREY=3.65;
 const hqPanels=new Map();
+function drawHeadquartersMap(g,file){
+ const colors={oldtown:'#c2a995',midtown:'#c7bb9e',downtown:'#a1abb8',docks:'#a8aea5',suburb:'#a6bd98',beach:'#e0cca5'};
+ const dx=22,dy=17.5,x0=26,y0=66;
+ g.fillStyle='#e6e4d7';g.fillRect(0,0,768,384);
+ g.fillStyle='#83acb7';g.fillRect(x0+N*dx,y0,48,N*dy);
+ for(let i=0;i<N;i++)for(let j=0;j<N;j++){
+  const x=x0+i*dx,y=y0+j*dy,site=SPECIAL[i+','+j];
+  g.fillStyle=site?.kind==='park'?'#739379':colors[districtOf(i,j)];
+  g.fillRect(x+1.1,y+1.1,dx-2.2,dy-2.2);
+  if(site?.kind==='police'){
+   g.fillStyle='#193d51';g.fillRect(x+4,y+2,14,14);g.fillStyle='#fff';g.font='bold 13px Arial';g.fillText('P',x+7,y+10);
+  }
+ }
+ g.fillStyle='#173642';g.fillRect(0,0,768,46);g.font='bold 23px Arial';g.fillStyle='#f0e9d4';g.fillText('CITY DISTRICTS   /   WATCH MAP',22,25);
+ const labels={oldtown:'Old Town',downtown:'Downtown',midtown:'Midtown',suburb:'Eastside',docks:'Docks',beach:'Coast Ridge'};
+ Object.entries(labels).forEach(([id,label],i)=>{
+  const x=452+i%2*151,y=81+Math.floor(i/2)*34;
+  g.fillStyle=colors[id];g.fillRect(x,y-9,19,18);g.fillStyle='#243c43';g.font='bold 17px Arial';g.fillText(label,x+26,y);
+ });
+ g.fillStyle='#697b79';g.fillRect(451,180,288,2);
+ g.font='bold 16px Arial';g.fillText('INCIDENT LOCATION',452,209);
+ g.font='bold 23px Arial';g.fillStyle='#18333e';
+ if(file){
+  const x=x0+file.at.x/CELL*dx,y=y0+file.at.z/CELL*dy;
+  g.fillText('FILE '+String(file.id).padStart(4,'0'),452,248);
+  g.font='18px Arial';g.fillText(streetAddress(file.at),452,280,284);
+  g.beginPath();g.arc(x,y,10,0,Math.PI*2);g.fillStyle='#b34e35';g.fill();
+  g.lineWidth=3;g.strokeStyle='#fff7df';g.stroke();
+ }else g.fillText('Awaiting a call',452,248);
+ g.font='15px Arial';g.fillStyle='#4c666a';g.fillText('P   Department building',452,337);
+}
+
+function updateHeadquartersDisplays(){
+ const pd=PoliceDepartment,files=pd.cases;
+ const call=files.findLast(f=>f.stage!=='Unreported');
+ const lab=files.findLast(f=>f.custody?.length);
+ const command=files.findLast(f=>f.stage==='Command queue'||f.supervisor);
+ const officer=id=>pd.staff.find(s=>s.personId===id)?.name;
+ const map=hqPanels.get('map');
+ if(map&&map.userData.fileId!==(call?.id??0)){
+  const g=map.map.image.getContext('2d');drawHeadquartersMap(g,call);
+  map.userData.fileId=call?.id??0;map.map.needsUpdate=true;
+ }
+ const consoles=[
+  ['dispatch',call,[call?.caller?.name||'Communications',call&&streetAddress(call.at),officer(call?.patrol)||'Awaiting assignment',call?.stage]],
+  ['lab',lab,[lab?.kind,lab?.custody[0]?.holder,lab&&lab.custody.length+' exhibits logged',officer(lab?.analyst)||'Awaiting comparison']],
+  ['command',command,[officer(command?.detective),command?.stage,officer(command?.supervisor)||'Pending review',command?.subjectName]]
+ ];
+ for(const [kind,file,values] of consoles){
+  const mat=hqPanels.get(kind);if(!mat||!file)continue;
+  const revision=[file.id,...values].join('|');if(mat.userData.revision===revision)continue;
+  const g=mat.map.image.getContext('2d');
+  g.fillStyle='#325765';g.fillRect(484,0,284,61);g.font='bold 24px Arial';g.fillStyle='#f5dfaa';
+  g.fillText('FILE '+String(file.id).padStart(4,'0'),539,34);
+  for(let i=0;i<4;i++){
+   g.fillStyle=i%2?'#314751':'#374d57';g.fillRect(178,111+i*72,570,27);
+   g.fillStyle='#f1d8a8';g.font='18px Arial';g.fillText(values[i]||'Pending',192,127+i*72,538);
+  }
+  mat.userData.revision=revision;mat.map.needsUpdate=true;
+ }
+}
 
 function hqGraphic(kind){
  if(hqPanels.has(kind))return hqPanels.get(kind);
@@ -18,12 +79,7 @@ function hqGraphic(kind){
   text('BUILDING DIRECTORY',35,46,36,gold);
   HQ_FLOORS.forEach((v,i)=>{const y=118+i*64;text(i?'0'+(i+1):'G',37,y,25,gold);text(v,110,y,32);g.fillStyle='#49616a';g.fillRect(35,y+29,685,2);});
  }else if(kind==='map'){
-  g.fillStyle='#d8dacb';g.fillRect(0,0,768,384);
-  g.fillStyle='#90b6bd';g.beginPath();g.moveTo(620,0);g.lineTo(768,0);g.lineTo(768,384);g.lineTo(520,384);g.bezierCurveTo(550,260,660,201,620,0);g.fill();
-  g.save();g.rotate(-.14);for(let i=0;i<17;i++)for(let j=0;j<10;j++){
-   const x=i*40-45,y=j*37+15;if(x>555)continue;
-   g.fillStyle=(i+j*7)%11===0?'#89a691':'#b6c3b5';g.fillRect(x,y,31,28);
-  }g.restore();g.fillStyle=ink;g.fillRect(0,0,768,52);text('CITY DISTRICTS   /   WATCH MAP',24,27,24);
+  drawHeadquartersMap(g,null);
  }else if(['screen','dispatch','lab','command'].includes(kind)){
   const captions={screen:['RECORDS','Case number','Reporting officer','Case history','Supporting exhibits'],
    dispatch:['COMMUNICATIONS','Caller and address','Location details','Assigned units','Call history'],
@@ -197,6 +253,42 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
   }
   addRoomCollider(block,M,x-.26,x+.26,v-.26,v+.26,p.y+.94,p.y);
  }
+ function waitingBench(x,v,f,count){
+  const pitch=.65,width=.545,span=count*pitch,frame=M.clone().setPosition(point(x,v,f));
+  const part=(mat,g)=>addGeo(mat,g.applyMatrix4(frame),false);
+  const rail=(vertices,r)=>new THREE.TubeGeometry(
+   new THREE.CatmullRomCurve3(vertices.map(([u,h,d])=>new V3(u,h,d))),12,r,8,false);
+  const vinyl=roomLightMaterial(waitingVinyl,.72);
+  // Extrude one continuous bent shell per seat. The lip, lumbar bend and rolled top have real profiles.
+  const shell=new THREE.Shape();
+  shell.moveTo(.207,.482);shell.quadraticCurveTo(.26,.503,.257,.454);
+  shell.quadraticCurveTo(.235,.407,.161,.419);shell.lineTo(-.129,.422);
+  shell.quadraticCurveTo(-.219,.413,-.247,.522);shell.lineTo(-.314,.818);
+  shell.quadraticCurveTo(-.339,.900,-.278,.907);shell.quadraticCurveTo(-.247,.908,-.249,.858);
+  shell.lineTo(-.179,.565);shell.quadraticCurveTo(-.164,.489,-.091,.478);
+  shell.quadraticCurveTo(.071,.459,.207,.482);
+  const shellMesh=new THREE.ExtrudeGeometry(shell,{depth:width,bevelEnabled:true,bevelThickness:.014,bevelSize:.012,
+   bevelSegments:3,curveSegments:7,steps:1}).rotateY(-Math.PI/2);
+  part(charcoal,new THREE.BoxGeometry(span-.12,.084,.098).translate(0,.322,-.015));
+  for(const sign of [-1,1]){
+   const s=sign*(span/2-.48);
+   part(m.steel,rail([[s,.359,-.016],[s,.22,-.025],[s,.114,-.02]],.039));
+   part(m.steel,rail([[s,.039,-.27],[s,.114,-.074],[s,.112,.085],[s,.040,.256]],.032));
+   for(const d of [-.268,.258])part(charcoal,new THREE.CylinderGeometry(.05,.061,.025,12).translate(s,.021,d));
+  }
+  for(let i=0;i<count;i++){
+   const s=(i-(count-1)/2)*pitch;
+   part(vinyl,shellMesh.clone().translate(s+width/2,0,0));
+   part(m.steel,new THREE.BoxGeometry(.29,.10,.137).translate(s,.384,-.029));
+  }
+  shellMesh.dispose();
+  for(let i=0;i<=count;i++){
+   const u=-span/2+i*pitch;
+   part(m.steel,rail([[u,.338,-.055],[u,.47,-.16],[u,.651,-.111],[u,.665,.105],[u,.603,.179]],.018));
+   part(charcoal,rail([[u,.660,-.085],[u,.672,-.024],[u,.669,.102]],.026));
+  }
+  addRoomCollider(block,M,x-span/2-.04,x+span/2+.04,v-.31,v+.34,level(f)+.92,level(f));
+ }
  function credenza(x,v,f,w){
   const y=level(f);
   solid(oak,x-w/2,x+w/2,y+.085,y+.90,v,v+.54);
@@ -233,7 +325,8 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
  for(const x of [-4.6,0,4.6])box(m.neutral,x-.36,x+.36,3.35,3.37,2.04,2.25);
  for(const x of [-6.2,6.2]){
   solid(limestone,x-.18,x+.18,.15,3.4,.88,1.24);
-  placeRoomFurniture(block,M,'plant',x+(x<0?-1:1),2.25,.15,[.85,1.05,.85]);
+  const planter=lpt(M,x+(x<0?-1:1),2.25);
+  worksModel('salon-plant',planter.x,.15,planter.z,[.70,1.19,.71],SIDEANG[side]+.33*x);
  }
  sign('OLD TOWN HEADQUARTERS',0,3.80,.48,8.36,.53);
  // Upper storeys use independent floor contacts, so pedestrians below them stay on the ground.
@@ -270,12 +363,13 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
  solid(limestone,-2.96,2.96,.15,1.08,10,10.92);box(m.darkWood,-3.02,3.02,1.08,1.15,9.96,10.96);
  box(brass,-2.93,2.93,.25,.29,9.98,10.0);sign('PUBLIC RECORDS',0,.75,9.97,2.1,.28);
  desk(-4.25,10.5,0,2.36);monitor(-4.6,10.6,0);
- for(const x of [-15,-13.9,-12.8,-11.7,-10.6])seat(x,9.2,0);
- for(const x of [-15,-13.9,-12.8,-11.7,-10.6])seat(x,12,0);
+ const waitingVinyl=new THREE.MeshStandardMaterial({color:lin(0x486571),roughness:.56,metalness:.025,
+  normalMap:T('hq-paint','n',1.7),normalScale:new THREE.Vector2(.16,.16)});
+ for(const v of [9.2,12])waitingBench(-12.8,v,0,5);
  wall(-9.7,-6.4,12.92,13.06,0);bulletin('directory',-8,12.8,1.72,2.65,1.32);
  wall(10.1,16.8,13.91,14.05,0);bulletin('notice',13,13.78,1.95,3.2,1.18);
  credenza(13.4,13.15,0,4.1);documents(12.4,13.30,1.093);phone(14.46,13.38,1.091);
- for(const x of [11.1,15.7])seat(x,11.32,0);
+ for(const x of [11.1,15.7])chair(x,11.32,0,Math.PI);
  post('Patrol','Public records',-1.5,11.8,0,'taking a statement',2.1);
  // Booking, short-stay holding and private interview.
  desk(-12,21,0);monitor(-12.35,21,0,.65,'screen',true);bank(-16,29.3,0,5,'files');sign('BOOKING',-15.25,2.16,15.97,2.24,.37);
@@ -338,9 +432,10 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
  box(m.chrome,5.19,5.44,benchY+.327,benchY+.36,25.62,25.664);
  box(m.chrome,5.414,5.44,benchY+.262,benchY+.36,25.62,25.664);
  box(m.cream,5.11,5.24,benchY+.70,benchY+.97,25.04,25.39);
- station.exhibitBench=point(10.97,23.43,1);station.exhibitBench.y+=.88+.023+.31;
- post('Forensics','Evidence laboratory',10,24.85,1,'examining an exhibit',2.0);
- station.posts[station.posts.length-1].cameraStand=point(8.35,21.60,1);
+ station.exhibitBench=point(10.97,23.71,1);station.exhibitBench.y+=.88+.023+.31;
+ post('Forensics','Evidence laboratory',10.97,24.31,1,'examining an exhibit',1.5);
+ const examiner=station.posts[station.posts.length-1];
+ examiner.exhibit=station.exhibitBench;examiner.cameraStand=point(8.35,21.60,1);
  terminal('EVIDENCE REGISTER','Evidence',11.3,22.45,1);
  bank(-16.8,28.8,1,11,'files');desk(-12,22.5,1);monitor(-12,22.5,1, .65,'lab');sign('EXHIBIT INTAKE',-15.76,level(1)+2.12,15.97,2.69,.39);
  // A central case conference room shares the rear corridor with the lab and property counter.
@@ -360,9 +455,12 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
  bulletin('map',-12.63,25.66,level(2)+1.97,4.05,1.65);
  bulletin('dispatch',-8.40,25.66,level(2)+1.97,3.36,1.65);
  bank(-15.1,30.92,2,6,'files');
- chair(-12,21.52,2,Math.PI);chair(-8.70,21.48,2,Math.PI);
- post('Communications','Dispatch',-12,21.52,2,'monitoring calls',0);
- station.posts[station.posts.length-1].seated=true;station.posts[station.posts.length-1].yaw+=Math.PI;terminal('CALL LOG','Radio',-10.85,21.44,2);
+ chair(-11.75,21.79,2,Math.PI);chair(-8.45,21.79,2,Math.PI);
+ post('Communications','Dispatch',-11.75,21.79,2,'monitoring calls',0);
+ const dispatcher=station.posts[station.posts.length-1];
+ dispatcher.seated=true;dispatcher.yaw+=Math.PI;
+ dispatcher.keyboard=point(-11.75,22.27,2);dispatcher.keyboard.y+=.829;
+ terminal('CALL LOG','Radio',-10.85,21.44,2);
  const watchFloor=level(2);
  wall(5.10,15.72,27.62,27.77,2);wall(17.32,18.77,27.62,27.77,2);
  sign('WATCH OFFICE',16.55,watchFloor+2.65,27.60,1.48,.30);
@@ -391,7 +489,7 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
  }
  post('Command','Watch command',10.4,23.55,2,'reviewing assignments',2.15);
  terminal('WATCH BOARD','Watch',11,21.2,2);
- for(const v of [8.7,11,13.25])for(const x of [-15,-13.5,-12,-10.5,-9])seat(x,v,2);
+ for(const v of [8.7,11,13.25])waitingBench(-12,v,2,5);
  bulletin('map',-12,14.65,level(2)+1.82,4.7,1.9);sign('ROLL CALL',-12,level(2)+2.97,14.58,2.2,.33);
  // Support floor: equipment issue, air-support planning, lockers and a staff mess.
  bank(-17,29,3,12,'lockers');bank(-16.8,14,3,7,'lockers');
