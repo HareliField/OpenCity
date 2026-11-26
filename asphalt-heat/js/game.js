@@ -510,7 +510,7 @@ function updPeds(dt){const pp=player.car?player.car.pos:player.pos;
    else if(d>1.25){p.pos.x+=dx/d*4.5*dt;p.pos.z+=dz/d*4.5*dt;collideWorld(p.pos,.3);}
    else{p.fightCd-=dt;if(p.fightCd<=0){p.fightCd=rnd(.7,1.1);c.punch=0;if(Math.random()<.6){damagePlayer(7);noise(.12,280,.45);}}}
    c.yaw=lerpA(c.yaw,Math.atan2(dx,dz),1-Math.exp(-12*dt));}
-  else if(p.mode==='cower'){c.hands=1;p.cowerT-=dt;if(p.cowerT<=0){c.hands=0;p.mode='flee';p.fleeT=6;const a=Math.atan2(p.pos.x-player.pos.x,p.pos.z-player.pos.z);p.fv.set(Math.sin(a),0,Math.cos(a));}}
+  else if(p.mode==='cower'){c.hands=1;p.cowerT-=dt;if(p.cowerT<=0){c.hands=0;p.mode='flee';p.fleeT=6;const from=p.startledAt||player.pos;p.startledAt=null;const a=Math.atan2(p.pos.x-from.x,p.pos.z-from.z);p.fv.set(Math.sin(a),0,Math.cos(a));}}
   else if(p.mode==='encounter'){/* The encounter owns movement and gaze until this pedestrian leaves. */}
   else if(p.mode==='stand'){p.standT-=dt;if(p.standT<=0){p.mode='walk';c.talk=0;attachPed(p);}}
   else{

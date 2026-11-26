@@ -24,6 +24,7 @@ function givePedestrianBag(p){
  });
 }
 function newStreetIdentity(p){
+ p.startledAt=null;p.scenePass=null;
  if(p.neighborhood){delete p.personId;delete p.residentName;delete p.neighborhood;}
  p.bag?.parent?.remove(p.bag);p.bag=null;
 }
@@ -71,7 +72,7 @@ function startStreetEncounter(){
   for(const other of nearby){
    if(other===victim||other.bag||Math.abs(victim.pos.y-other.pos.y)>.65)continue;
    const gap=dist2(victim.pos,other.pos);
-   if(gap<1.3||gap>10||!los(victim.pos,other.pos))continue;
+   if(gap<1.3||gap>16||!los(victim.pos,other.pos))continue;
    const score=gap+.25*dist2(player.pos,victim.pos);
    if(score<best){best=score;pair={offender:other,victim};}
   }
@@ -134,7 +135,7 @@ function strikeInStreet(a){
  for(const p of streetWitnesses(a)){
   if(seeStreetAttack(p,a))a.eyes.set(p.personId,Boolean(p.neighborhood&&p.neighborhood===offender.neighborhood));
   if(p!==a.onlooker&&freeWalker(p)&&dist2(p.pos,at)<9){
-   faceStreetActor(p,at);p.mode='cower';p.cowerT=1.7+dist2(p.pos,at)*.14;
+   faceStreetActor(p,at);p.startledAt=at;p.mode='cower';p.cowerT=1.7+dist2(p.pos,at)*.14;
   }
  }
  offender.c.aim=.5;
