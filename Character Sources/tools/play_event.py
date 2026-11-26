@@ -105,7 +105,7 @@ def personal_gesture(track, person):
     )
 
 
-def bake(rig, events):
+def bake(rig, events, continue_take=False):
     posture = rig.get("posture", "standing")
     injured = bool(rig.get("injured", False))
     person = json.loads(bpy.data.texts[rig["personaText"]].as_string())
@@ -127,6 +127,24 @@ def bake(rig, events):
     for part in parts:
         for k in channels - part.keys():
             part[k] = np.tile([1, 0, 0, 0], (len(part["location"]), 1))
+    if continue_take:
+        sc = bpy.context.scene
+        sc.frame_set(sc.frame_end)
+        previous = {
+            k: np.tile(
+                rig.location
+                if k == "location"
+                else rig.pose.bones[k].matrix_basis.to_quaternion(),
+                (5, 1),
+            )
+            for k in channels
+        }
+        for prop in sc.objects:
+            if "gripFrame" in prop and prop.animation_data:
+                transform = prop.matrix_world.copy()
+                prop.animation_data_clear()
+                prop.matrix_world = transform
+        parts.insert(0, previous)
     track = sequence(parts, overlap=5)
     action = write_action(rig, rig.name + " | " + ", ".join(events), track)
     for key_data in bpy.data.shape_keys:
@@ -168,14 +186,24 @@ if __name__ == "__main__":
     p.add_argument("resident")
     p.add_argument("events", nargs="+")
     p.add_argument("--output", required=True, type=Path)
+    p.add_argument(
+        "--from-scene",
+        type=Path,
+        help="Continue from the final pose and state of a saved take",
+    )
     args = p.parse_args(sys.argv[sys.argv.index("--") + 1 :])
     folder = ROOT / "Residents" / args.resident
-    source = folder / "character.blend"
-    if args.output.resolve() == source.resolve():
+    source = args.from_scene or folder / "character.blend"
+    if args.output.resolve() in (
+        source.resolve(),
+        (folder / "character.blend").resolve(),
+    ):
         raise ValueError("Use a separate output file for the event take")
     bpy.ops.wm.open_mainfile(filepath=str(source), load_ui=False)
     rig = next(o for o in bpy.context.scene.objects if o.type == "ARMATURE")
-    action = bake(rig, args.events)
+    if rig.get("residentId") != args.resident:
+        raise ValueError("The saved take belongs to a different resident")
+    action = bake(rig, args.events, continue_take=bool(args.from_scene))
     bpy.context.preferences.filepaths.save_version = 0
     bpy.ops.wm.save_as_mainfile(filepath=str(args.output.resolve()), compress=True)
     print(action["events"])

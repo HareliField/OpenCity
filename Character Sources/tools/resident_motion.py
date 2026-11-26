@@ -128,13 +128,56 @@ def sequence(parts, overlap=7):
     return stitched
 
 
+def swing_arc(rig, take):
+    # Keep the hand arc visible in front of the costume on differently fitted rigs.
+    controls = {
+        "upperarm_r": [
+            (-0.75, -0.35, 0.1),
+            (-0.10, -0.86, -0.23),
+            (0.36, -0.72, -0.35),
+        ],
+        "lowerarm_r": [(-0.2, -0.48, 0.8), (0.48, -0.84, 0.18), (0.77, -0.54, 0.12)],
+    }
+    for frame in range(len(take["location"])):
+        world = {}
+        for bone in rig.data.bones:
+            rest = bone.matrix_local.to_quaternion()
+            parent = bone.parent
+            basis = (
+                rest
+                if not parent
+                else world[parent.name]
+                @ parent.matrix_local.to_quaternion().inverted()
+                @ rest
+            )
+            local = (
+                Quaternion(take[bone.name][frame])
+                if bone.name in take
+                else Quaternion()
+            )
+            q = basis @ local
+            if bone.name in controls:
+                native = q @ Vector((0, 1, 0))
+                A, B, C = map(Vector, controls[bone.name])
+                goals = [native, A.normalized(), B.normalized(), C.normalized(), native]
+                times = [0, 8, 13, 18, 31]
+                index = min(3, int(np.searchsorted(times[1:], frame, side="right")))
+                t = (frame - times[index]) / (times[index + 1] - times[index])
+                t = t * t * (3 - 2 * t)
+                goal = goals[index].lerp(goals[index + 1], t).normalized()
+                q = native.rotation_difference(goal) @ q
+                local = basis.inverted() @ q
+                if frame:
+                    local.make_compatible(Quaternion(take[bone.name][frame - 1]))
+                take[bone.name][frame] = np.asarray(local)
+            world[bone.name] = q
+
+
 def stage_action(rig, kind):
     # An authored game gesture and an acted recoil. Both begin and end in idle.
     take = portion(captured(rig, "idle_shift"), 0, 32)
     poses = {
         "attack": {
-            "upperarm_r": (0.6, 0.15, 0.9),
-            "lowerarm_r": (0.35, 0, -0.28),
             "spine_03": (0.05, 0.32, 0.12),
             "clavicle_r": (0.12, 0.08, 0.16),
         },
@@ -157,6 +200,8 @@ def stage_action(rig, kind):
                 for q, t in zip(take[k], strength)
             ]
         )
+    if kind == "attack":
+        swing_arc(rig, take)
     return take
 
 

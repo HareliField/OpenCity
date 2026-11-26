@@ -13,7 +13,7 @@ blender -b --python-exit-code 1 -P 'Character Sources/tools/play_event.py' -- \
   AH-R0001 dodge hurt walk knockdown recover --output /tmp/ida-recovery.blend
 ```
 
-A hurt resident favors a leg on the next walk or run. A resident who has fallen stays down through a walk request. Recovery brings them back to their feet with the injury retained. A later recovery event clears it. The fall is an authored transition made from the floor-recovery poses. Ground contact and injury state operate in the source scene. Live city AI uses its own character controller.
+A hurt resident favors a leg on the next walk or run. A resident who has fallen stays down through a walk request. Recovery brings them back to their feet with the injury retained. A later recovery event clears it. Pass `--from-scene /tmp/ida-recovery.blend` on a later invocation to continue from the saved pose, position and injury state. A conversational beat also layers in the resident’s written listening mannerism. The fall is an authored transition made from the floor-recovery poses. Ground contact and injury state operate in the source scene. Live city AI uses its own character controller.
 
 To reproduce the shared library from the original captures, use Python with NumPy, then rebuild the Blender actions. All files produced by the first command are individual take measurements in this directory.
 
