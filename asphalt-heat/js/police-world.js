@@ -75,7 +75,7 @@ function equipOfficer(c,metro){
 }
 function updateStationPosts(dt){
  for(const station of PoliceDepartment.stations)for(const post of station.posts){
-  const nearby=dist2(player.pos,post.point)<58&&Math.abs(player.pos.y-post.point.y)<3.5;
+  const nearby=dist2(player.pos,post.point)<58&&Math.abs(player.pos.y-post.point.y)<3.5||caseViewNear(post.point,28,2.2);
   if(post.unit?.dead&&nearby&&post.unit.downT<15){
    post.unit.downT+=dt;updChar(post.actor,0,dt,true);continue;
   }
@@ -142,8 +142,9 @@ function updateDepartment(dt){
  if(PoliceDepartment.clock<policeNextTick)return;
  policeNextTick=PoliceDepartment.clock+1;
  for(const entry of PoliceDepartment.cases){
-  if(entry.stage!=='Unreported')continue;
+  if(entry.stage!=='Unreported'||streetIncidents.current?.file===entry)continue;
   const witness=witnessesFor(entry.at.x,entry.at.z,entry.at.y);
+  if(entry.origin==='street'){discoverStreetScene(entry,witness);continue;}
   if(witness.officers||witness.ped){
    PoliceDepartment.receiveCall(entry,witness.officers?'Patrol':'911','Scene discovered. Patrol requested.');
   }
@@ -241,7 +242,7 @@ function dressPlayerHands(){
 
 const fieldInvestigators=new Map();
 PoliceDepartment.atScene=file=>{
- if(dist2(player.pos,file.at)>48)return true;
+ if(dist2(player.pos,file.at)>48&&!caseViewNear(file.at,52,5))return true;
  const unit=fieldInvestigators.get(file.id);
  return !!unit&&!unit.dead&&Math.abs(unit.pos.y-(file.at.y||0))<1.8&&dist2(unit.pos,file.at)<4.8;
 };
@@ -250,7 +251,7 @@ function updateFieldDetectives(dt){
  for(const [fileId,u] of fieldInvestigators){
   const file=u.file;
   if(u.dead){u.downT+=dt;updChar(u.c,0,dt,true);if(u.downT<15)continue;}
-  if(pd.assigned(file)===u.personId&&!u.dead&&dist2(player.pos,file.at)<64){
+  if(pd.assigned(file)===u.personId&&!u.dead&&(dist2(player.pos,file.at)<64||caseViewNear(file.at,64,5))){
    const dx=file.at.x-u.pos.x,dz=file.at.z-u.pos.z,length=Math.hypot(dx,dz),pace=length>1.45?1.35:0;
    if(pace){u.pos.x+=dx/length*pace*dt;u.pos.z+=dz/length*pace*dt;collideWorld(u.pos,.34);}
    u.pos.y=groundY(u.pos.x,u.pos.z,u.pos.y);u.c.root.position.copy(u.pos);
@@ -260,11 +261,12 @@ function updateFieldDetectives(dt){
  }
  for(const file of pd.cases){
   const assignee=pd.assigned(file);
-  if(!assignee||fieldInvestigators.has(file.id)||dist2(player.pos,file.at)>52)continue;
+  if(!assignee||fieldInvestigators.has(file.id)||dist2(player.pos,file.at)>52&&!caseViewNear(file.at,52,5))continue;
   const member=pd.staff.find(s=>s.personId===assignee);
   if(!member||pd.bindings.has(member.personId)||pd.unavailable.has(member.personId))continue;
   const at=new V3(file.at.x,file.at.y||0,file.at.z);
-  for(const [dx,dz] of [[4,0],[-4,0],[0,4],[0,-4]]){
+  const offset=file.origin==='street'?8:4;
+  for(const [dx,dz] of [[offset,0],[-offset,0],[0,offset],[0,-offset]]){
    if(rayWorld(at.x,at.z,at.x+dx,at.z+dz,at.y+1,at.y+1)<1)continue;
    at.x+=dx;at.z+=dz;break;
   }

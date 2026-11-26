@@ -17,3 +17,9 @@
 .staffProfile{width:min(480px,86vw);max-height:76vh;overflow:auto;padding:20px;color:#e5ecf2;background:#17212a;border:1px solid #708694;border-radius:8px;font:15px/1.5 Inter,system-ui,sans-serif}
 .staffProfile h2{margin:0}.staffProfile p{margin:10px 0}.staffProfile button{padding:8px 14px;color:#fff;background:#314951;border:1px solid #61777b;border-radius:4px;cursor:pointer}.staffProfile::backdrop{background:#101a20a8}
 #deskRows button{margin-top:6px}
+
+#followStreetCase{position:fixed;left:16px;bottom:18px;z-index:3;border:1px solid #73878e;border-radius:5px;padding:9px 13px;background:#15252cf2;color:white;font:600 14px system-ui;cursor:pointer}
+#caseCaption{position:fixed;left:16px;bottom:68px;max-width:min(490px,85vw);padding:10px 14px;background:#142126ed;color:white;border-left:3px solid #cab18a;pointer-events:none;font:15px/1.4 system-ui}
+#caseCaption strong,#caseCaption span{display:block}#caseCaption strong{font-size:12px;color:#d5c3a5;margin-bottom:3px}
+body.watchingCase #ui,body.watchingCase #touchViews{visibility:hidden}
+@media(pointer:coarse){#followStreetCase{bottom:auto;top:105px}body.watchingCase #followStreetCase{top:16px}#caseCaption{bottom:12px}}

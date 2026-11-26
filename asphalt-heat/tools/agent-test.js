@@ -13,7 +13,7 @@ const context=vm.createContext({
  MutationObserver:class {observe(){}},navigator:{},$:()=>element,policeDesk:{open:false},
  shopOpen:false,deskStation:null,player:{pos:{x:1,y:0,z:2},yaw:0,own:{},ammo:{},cash:0},
  wanted:0,heat:0,evadeT:0,LAW:{},cameraMode:0,camYaw:0,lookYaw:0,lookPitch:0,
- camera:{position:{x:0,y:2,z:0}},robbing:null,actionCtx:()=>null,
+ caseCamera:{enabled:false},camera:{position:{x:0,y:2,z:0}},robbing:null,actionCtx:()=>null,
  step(dt,input){calls.push({...input});context.time+=dt;},drawMap(){},hud(){},renderFrame(){},clock:{getDelta(){}}
 });
 vm.runInNewContext(source,{qp:new URLSearchParams()}); // Human mode has no controller dependency.

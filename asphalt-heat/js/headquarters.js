@@ -106,7 +106,7 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
  }
  function post(role,room,x,v,f,activity,walk=1){
   station.posts.push({role,room,point:point(x,v,f),yaw:SIDEANG[side],actor:null,member:null,activity,
-   workEnd:point(x+walk,v,f),floor:f});
+   workEnd:point(x+walk,v,f),cameraStand:point(x+2.85,v-2.8,f),floor:f});
  }
  function terminal(label,view,x,v,f){station.terminals.push({label,view,point:point(x,v,f)});}
  function bulletin(kind,x,v,y,w,h){
@@ -173,6 +173,7 @@ function furnishHeadquarters(block,M,side,box,sign,solid,station){
   box(m.steel,x+.35,x+.46,y+.09,y+.43,23.56,23.66);
   box(m.black,x+.20,x+.54,y+.41,y+.51,23.28,23.64);}
  bank(7.3,29.6,1,11,'files');sign('FORENSIC SERVICES',12,level(1)+2.50,23.35,3.7,.42);
+ station.exhibitBench=point(10.65,23.32,1);station.exhibitBench.y+=1.14;
  post('Forensics','Evidence laboratory',10,24.85,1,'examining an exhibit',2.0);
  terminal('EVIDENCE REGISTER','Evidence',11.3,22.45,1);
  bank(-16.8,28.8,1,11,'files');desk(-12,22.5,1);monitor(-12,22.5,1);sign('EXHIBIT INTAKE',-12,level(1)+2.5,22.3,3.1,.42);
