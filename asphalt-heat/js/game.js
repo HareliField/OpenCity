@@ -1,10 +1,14 @@
 /* ================= game systems ================= */
-const MINX=-HALF+.6,MAXX=W+56,MINZ=-HALF+.6,MAXZ=W+HALF-.6;
+const MINX=-HALF+.6,MINZ=-HALF+.6,MAXZ=W+HALF-.6;
 const STREETS_PHYS={region:-1,bodies:new Map()};
 /* ---- world queries ---- */
-function blockOf(x,z){const i=Math.floor(x/CELL),j=Math.floor(z/CELL);if(i<0||j<0||i>=N||j>=N)return null;const B=blocks[i*N+j];return(x>B.x0&&x<B.x1&&z>B.z0&&z<B.z1)?B:null;}
+function blockOf(x,z){
+ const B=blocks[parcelKey(x,z)];
+ return B&&x>B.x0&&x<B.x1&&z>B.z0&&z<B.z1?B:null;
+}
 function groundY(x,z,referenceY=null){
- let y=blockOf(x,z)?.15:x>W+13?.02:0;
+ let y=blockOf(x,z)?.15:isSand(x,z)?.02:0;
+ if(y===0&&CITY_INFILL.some(r=>x>=r.x0&&x<=r.x1&&z>=r.z0&&z<=r.z1))y=.15;
  for(const r of STREET.steps)if(x>=r.x0&&x<=r.x1&&z>=r.z0&&z<=r.z1)y=Math.max(y,r.y);
  if(referenceY!==null){
   const grade=sampleGrade(x,z,referenceY);
@@ -28,17 +32,17 @@ function indexStatic(){
  for(const B of blocks)B.residual=[];
  for(const B of blocks){
   for(const R of B.bld){
-   if(R.x0<B.i*CELL||R.x1>(B.i+1)*CELL||R.z0<B.j*CELL||R.z1>(B.j+1)*CELL)STATIC.push(R);
+   if(R.x0<CITY_X[B.i]||R.x1>CITY_X[B.i+1]||R.z0<CITY_Z[B.j]||R.z1>CITY_Z[B.j+1])STATIC.push(R);
   }
  }
  for(const R of STATIC){
-  const imin=Math.floor(cellKey(R.x0,R.z0)/N),jmin=cellKey(R.x0,R.z0)%N;
-  const imax=Math.floor(cellKey(R.x1,R.z1)/N),jmax=cellKey(R.x1,R.z1)%N;
+  const imin=Math.floor(parcelKey(R.x0,R.z0)/N),jmin=parcelKey(R.x0,R.z0)%N;
+  const imax=Math.floor(parcelKey(R.x1,R.z1)/N),jmax=parcelKey(R.x1,R.z1)%N;
   for(let a=imin;a<=imax;a++)for(let b=jmin;b<=jmax;b++)blocks[a*N+b].residual.push(R);
  }
 }
 function collideWorld(p,r,motion=null){
- const key=cellKey(p.x,p.z),i=Math.floor(key/N),j=key%N;
+ const key=parcelKey(p.x,p.z),i=Math.floor(key/N),j=key%N;
  const y=groundY(p.x,p.z,p.y??null);let hit=null;
  for(let a=Math.max(0,i-1);a<=Math.min(N-1,i+1);a++){
   for(let b=Math.max(0,j-1);b<=Math.min(N-1,j+1);b++){
@@ -57,7 +61,7 @@ function collideWorld(p,r,motion=null){
  if(door)hit=door;
  const prop=collideProps(p,r,y,motion);
  if(prop)hit=prop;
- const maxX=Math.abs(p.z-W*.42)<3.76&&p.x>W+39?W+149.45:MAXX;
+ const maxX=coastLimit(p.z);
  if(p.x<MINX+r){p.x=MINX+r;hit=[1,0];}
  if(p.x>maxX-r){p.x=maxX-r;hit=[-1,0];}
  if(p.z<MINZ+r){p.z=MINZ+r;hit=[0,1];}
@@ -69,7 +73,7 @@ function segRect(ax,az,dx,dz,R){let t0=0,t1=1;
  if(Math.abs(dz)<1e-9){if(az<R.z0||az>R.z1)return-1;}else{let u=(R.z0-az)/dz,v=(R.z1-az)/dz;if(u>v){const s=u;u=v;v=s;}t0=Math.max(t0,u);t1=Math.min(t1,v);if(t0>t1)return-1;}return t0;}
 function rayWorld(ax,az,bx,bz){
  let best=1;
- const dx=bx-ax,dz=bz-az,first=cellKey(Math.min(ax,bx),Math.min(az,bz)),last=cellKey(Math.max(ax,bx),Math.max(az,bz));
+ const dx=bx-ax,dz=bz-az,first=parcelKey(Math.min(ax,bx),Math.min(az,bz)),last=parcelKey(Math.max(ax,bx),Math.max(az,bz));
  const eye=Math.min(groundY(ax,az),groundY(bx,bz))+1.48;
  for(let a=Math.floor(first/N);a<=Math.floor(last/N);a++){
   for(let b=first%N;b<=last%N;b++){
@@ -84,22 +88,29 @@ function rayWorld(ax,az,bx,bz){
  return traceClosedDoors(ax,az,bx,bz,best);
 }
 const los=(a,b)=>rayWorld(a.x,a.z,b.x,b.z)>=1;
-const nearestNode=p=>[clamp(Math.round(p.x/CELL),0,N),clamp(Math.round(p.z/CELL),0,N)];
-function neighbors(n){const r=[];for(const[a,b]of[[1,0],[-1,0],[0,1],[0,-1]]){const i=n[0]+a,j=n[1]+b;if(i>=0&&j>=0&&i<=N&&j<=N)r.push([i,j]);}return r;}
 const dist2=(a,b)=>Math.hypot(a.x-b.x,a.z-b.z);
 function physWorld(){
  for(const r of STREET.steps)if(r.y>.005)physBox(r.x0,r.x1,.005,r.y,r.z0,r.z1);
- physBox(W+13,W+64,-.12,.017,-HALF,W+HALF,PH.mat.sand);
- physBox(-HALF-1,W+60,0,2,-HALF-1.2,-HALF-.2);
- physBox(-HALF-1,W+60,0,2,W+HALF+.2,W+HALF+1.2);
+ for(const end of [PIER_Z-4,QUAY_Z]){
+  const start=end===QUAY_Z?PIER_Z+4:-HALF;
+  for(let z=start;z<end;z+=8){
+   const n=Math.min(end,z+8),x=Math.min(shoreline(z),shoreline(n))-3;
+   physBox(W+14,x+.4,-.12,.017,z,n,PH.mat.sand);
+   physBox(x,x+2,-1,2,z,n+.04);
+  }
+ }
+ physBox(W+14,shoreline(PIER_Z),-.12,.017,PIER_Z-4,PIER_Z+4,PH.mat.sand);
+ physBox(W+80,W+82,-1,2,QUAY_Z,W+HALF);
+ physBox(-HALF-1,W+80,0,2,-HALF-1.2,-HALF-.2);
+ physBox(-HALF-1,W+80,0,2,W+HALF+.2,W+HALF+1.2);
  physBox(-HALF-1.2,-HALF-.2,0,2,-HALF,W+HALF);
- physBox(W+64,W+66,-2,3,-HALF,W*.42-4);
- physBox(W+64,W+66,-2,3,W*.42+4,W+HALF);
+ for(const r of CITY_INFILL)physBox(r.x0,r.x1,0,r.h,r.z0,r.z1);
  for(const B of blocks)B.curb={x0:B.x0,x1:B.x1,z0:B.z0,z1:B.z1,h:.15};
 }
 
 function refreshPhysicalWorld(x,z){
- const key=cellKey(x,z);
+ syncDoorRegion(x,z);
+ const key=parcelKey(x,z);
  if(STREETS_PHYS.region===key)return;
  STREETS_PHYS.region=key;
  const i=Math.floor(key/N),j=key%N,required=new Set();
@@ -136,7 +147,6 @@ function refreshPhysicalWorld(x,z){
   }else body=physBox(r.x0,r.x1,base,top,r.z0,r.z1);
   STREETS_PHYS.bodies.set(r,body);
  }
- syncDoorRegion(x,z);
 }
 /* ---- particles / tracers ---- */
 const parts=[];let pi=0;
@@ -279,15 +289,83 @@ function explodeAt(x,z,r,src){for(let k=0;k<34;k++)emit(x,1,z,rnd(-8,8),rnd(3,12
 /* ---- driving ---- */
 function kinematicDrive(c,thr,steer,dt){const s=c.spec;const tgt=thr*s.max;c.speed+=(clamp(tgt-c.speed,-12*dt,6*dt));c.h+=steer*clamp(c.speed/7,-1,1)*1.6*dt;c.pos.x+=Math.sin(c.h)*c.speed*dt;c.pos.z+=Math.cos(c.h)*c.speed*dt;c.vel.set(Math.sin(c.h)*c.speed,0,Math.cos(c.h)*c.speed);}
 function drive(c,thr,steer,hb,dt){c.hb=hb;if(c.phys)physCarControl(c,thr,steer,hb,dt);else kinematicDrive(c,Math.max(0,thr),steer,dt);if(c.driver)setCarLights(c,c.braking||thr<0&&c.speed>1);}
-function blockedAhead(c){const fx=Math.sin(c.h),fz=Math.cos(c.h);const chk=(x,z,w)=>{const dx=x-c.pos.x,dz=z-c.pos.z,f=dx*fx+dz*fz;if(f<1.5||f>10)return false;return Math.abs(dx*fz-dz*fx)<(w||2.3);};
- for(const o of cars)if(o!==c&&chk(o.pos.x,o.pos.z))return true;if(!player.car&&chk(player.pos.x,player.pos.z,1.8))return true;
- for(const p of peds)if(!p.dead&&(p.mode==='flee'||p.cross)&&chk(p.pos.x,p.pos.z,1.8))return true;return false;}
-function aiTraffic(c,dt){if(!c.ai){const a=nearestNode(c.pos);c.ai={a,b:pick(neighbors(a))};}
- const A=c.ai.a,B=c.ai.b,dx=Math.sign(B[0]-A[0]),dz=Math.sign(B[1]-A[1]),rx=-dz,rz=dx;const tx=B[0]*CELL+rx*LANE,tz=B[1]*CELL+rz*LANE,along=(tx-c.pos.x)*dx+(tz-c.pos.z)*dz;
- if(along<5){const opts=neighbors(B).filter(n=>!(n[0]===A[0]&&n[1]===A[1]));let nb=opts.find(n=>n[0]-B[0]===dx&&n[1]-B[1]===dz);if(!nb||Math.random()<.4)nb=pick(opts);c.ai.a=B;c.ai.b=nb;}
+function blockedAhead(c){
+ const fx=Math.sin(c.h),fz=Math.cos(c.h);
+ const inLane=(p,w)=>{
+  if(Math.abs(p.y-c.pos.y)>2.4)return false;
+  const dx=p.x-c.pos.x,dz=p.z-c.pos.z,f=dx*fx+dz*fz;
+  return f>=1.5&&f<=10&&Math.abs(dx*fz-dz*fx)<w;
+ };
+ return cars.some(o=>o!==c&&inLane(o.pos,2.3))||
+  !player.car&&inLane(player.pos,1.8)||
+  peds.some(p=>!p.dead&&(p.mode==='flee'||p.cross)&&inLane(p.pos,1.8));
+}
+function expressLane(route,i,dir,lane){
+ const {points}=route;
+ const at=points[i],from=points[Math.max(0,i-1)],to=points[Math.min(points.length-1,i+1)];
+ const dx=to.x-from.x,dz=to.z-from.z,offset=dir*lane/Math.hypot(dx,dz);
+ return {x:at.x-dz*offset,z:at.z+dx*offset,y:at.y,h:Math.atan2(dir*dx,dir*dz)};
+}
+function driveExpressway(c,dt){
+ const ai=c.express, {route,dir,lane}=ai,max=route.points.length-1;
+ while(ai.i>0&&ai.i<max){
+  const p=expressLane(route,ai.i,dir,lane);
+  const ahead=(p.x-c.pos.x)*Math.sin(p.h)+(p.z-c.pos.z)*Math.cos(p.h);
+  if(ahead>1.2)break;
+  ai.i+=dir;
+ }
+ const target=expressLane(route,clamp(ai.i+dir*3,0,max),dir,lane);
+ if((ai.i===0||ai.i===max)&&dist2(c.pos,target)<4.8){
+  c.express=null;
+  c.ai=dir>0?{a:[15,11],b:[16,11]}:{a:[2,11],b:[1,11]};
+  return;
+ }
+ const diff=wrapA(Math.atan2(target.x-c.pos.x,target.z-c.pos.z)-c.h);
+ const pace=blockedAhead(c)?0:ai.i<10||ai.i>max-10?11.5:Math.abs(diff)>.3?12:21;
+ drive(c,clamp((pace-c.speed)*.42,-1,1),clamp(diff*2.1,-1,1),pace===0&&c.speed<.85,dt);
+ if(!c.phys){
+  const deck=sampleGrade(c.pos.x,c.pos.z,null,.8);
+  if(deck)c.pos.y=deck.height;
+ }
+}
+function spawnExpressTraffic(){
+ const route=GRADE_ROADS.routes.find(r=>r.expressway),at=player.car?.pos||player.pos;
+ let nearest=0,distance=Infinity;
+ for(const [i,p] of route.points.entries()){
+  const d=dist2(p,at);
+  if(d<distance){nearest=i;distance=d;}
+ }
+ if(distance>125)return;
+ for(let t=0;t<12;t++){
+  const dir=pick([-1,1]),lane=pick([2.06,5.92]);
+  const i=clamp(nearest+pick([-1,1])*rint(14,42),2,route.points.length-3);
+  const pos=expressLane(route,i,dir,lane),d=dist2(at,pos);
+  if(d<46||d>167||cars.some(c=>dist2(c.pos,pos)<18&&Math.abs(c.pos.y-pos.y)<2.4))continue;
+  const c=spawnCar(pick(['sedan','hatch','van','suv']),pos.x,pos.z,pos.h,'ai');
+  c.pos.y=pos.y;
+  c.speed=13;
+  c.express={route,i:i+dir,dir,lane};
+  return;
+ }
+}
+function aiTraffic(c,dt){
+ if(c.express){driveExpressway(c,dt);return;}
+ if(!c.ai){
+  const a=nearestTrafficNode(c.pos);
+  c.ai={a,b:pick(neighbors(a))};
+ }
+ const A=c.ai.a,B=c.ai.b,{dx,dz,half}=streetFrame(A,B),p=lanePosition(A,B,1);
+ const tx=p.x,tz=p.z,along=(tx-c.pos.x)*dx+(tz-c.pos.z)*dz;
+ if(along<4.5){
+  const connected=neighbors(B),opts=connected.filter(n=>n[0]!==A[0]||n[1]!==A[1]);
+  let nb=opts.find(n=>n[0]-B[0]===dx&&n[1]-B[1]===dz);
+  if(!nb||Math.random()<.4)nb=pick(opts.length?opts:connected);
+  c.ai={a:B,b:nb};
+ }
  const look=c.phys?Math.max(7,Math.abs(c.speed)*.9):8;const k=along-Math.min(Math.max(along,0),look),gx=tx-dx*k,gz=tz-dz*k;const diff=wrapA(Math.atan2(gx-c.pos.x,gz-c.pos.z)-c.h);
- let target=Math.abs(diff)>.3?6.5:(c.type==='police'?13:11.5);
- const light=dz?tlPhase.ns:tlPhase.ew;if(light!=='G'&&along>11.5&&along<26&&!c.siren)target=Math.min(target,Math.max(0,(along-12.8)*.85));
+ let target=Math.abs(diff)>.3?6.5:half<6?8.5:(c.type==='police'?13:11.5);
+ const light=dz?tlPhase.ns:tlPhase.ew;const stop=(dx?NORTH_SOUTH[B[0]]:EAST_WEST[B[1]])+4.1;
+ if(streetSignal(...B)&&light!=='G'&&along>stop-1&&along<stop+15&&!c.siren)target=Math.min(target,Math.max(0,(along-stop)*.85));
  if(blockedAhead(c)){c.wait+=dt;if(c.wait<5)target=0;else if(c.wait>6.5)c.wait=0;}else c.wait=0;
  if(c.phys&&c.upY<.4){c.flipT=(c.flipT||0)+dt;if(c.flipT>3&&c.driver==='ai'){c.driver=null;ejectPed(c.pos.x+2,c.pos.z,c.pos.x,c.pos.z);}}
  const thr=clamp((target-c.speed)*.35,-1,1);drive(c,target<.5&&c.speed<.85?0:thr,clamp(diff*2.2,-1,1),target<.5&&c.speed<.85,dt);}
@@ -301,21 +379,15 @@ function aiPolice(c,dt){
  const distance=dist2(c.pos,target);
  let gx=target.x,gz=target.z;
  if(!see||realDistance>36){
-  if(!c.route)c.route={node:nearestNode(c.pos)};
-  const node=c.route.node;
-  if(Math.hypot(node[0]*CELL-c.pos.x,node[1]*CELL-c.pos.z)<10){
-   const goal=nearestNode(target);
-   if(node[0]===goal[0]&&node[1]===goal[1]){
-    if(!see&&distance<38){gx=target.x;gz=target.z;}
-    else c.route.node=pick(neighbors(node));
-   }else{
-    const routes=neighbors(node).sort((a,b)=>Math.abs(a[0]-goal[0])+Math.abs(a[1]-goal[1])-
-     Math.abs(b[0]-goal[0])-Math.abs(b[1]-goal[1]));
-    c.route.node=routes[0];
-   }
+  if(!c.route)c.route={node:c.ai?.b||nearestTrafficNode(c.pos)};
+  const node=c.route.node,at=streetNode(node);
+  if(dist2(at,c.pos)<10){
+   const goal=nearestTrafficNode(target);
+   c.route.node=nextStreetNode(node,goal);
   }
   if(distance>38||rayWorld(c.pos.x,c.pos.z,gx,gz)<.98){
-   gx=c.route.node[0]*CELL;gz=c.route.node[1]*CELL;
+   const waypoint=streetNode(c.route.node);
+   gx=waypoint.x;gz=waypoint.z;
   }
  }else c.route=null;
  const diff=wrapA(Math.atan2(gx-c.pos.x,gz-c.pos.z)-c.h);
@@ -354,7 +426,7 @@ function perimPos(R,t){const w=R.x1-R.x0,h=R.z1-R.z0,L=2*(w+h);t=((t%L)+L)%L;if(
 function perimT(R,x,z){const w=R.x1-R.x0,h=R.z1-R.z0,cx=clamp(x,R.x0,R.x1),cz=clamp(z,R.z0,R.z1);const dT=cz-R.z0,dR=R.x1-cx,dB=R.z1-cz,dL=cx-R.x0,m=Math.min(dT,dR,dB,dL);
  if(m===dT)return cx-R.x0;if(m===dR)return w+(cz-R.z0);if(m===dB)return w+h+(R.x1-cx);return 2*w+h+(R.z1-cz);}
 function nearBlock(min,max){const c=blocks.filter(B=>{const d=Math.hypot((B.x0+B.x1)/2-player.pos.x,(B.z0+B.z1)/2-player.pos.z);return d>min&&d<max;});return c.length?pick(c):pick(blocks);}
-function attachPed(p){const B=blocks[clamp(Math.floor(p.pos.x/CELL),0,N-1)*N+clamp(Math.floor(p.pos.z/CELL),0,N-1)];p.R=perim(B);p.t=perimT(p.R,p.pos.x,p.pos.z);p.mode='walk';}
+function attachPed(p){const B=blocks[parcelKey(p.pos.x,p.pos.z)];p.R=perim(B);p.t=perimT(p.R,p.pos.x,p.pos.z);p.mode='walk';}
 function newPedChar(p,B){if(p.c)removeChar(p.c);let role=pedRoleFor(B);if(role==='mb')role=ROLE.mb?'mb':'m';if(role==='fb')role=ROLE.fb?'fb':'f';const name=pickChar(role);p.c=makeChar(name,{});p.c.root.visible=false;p.tough=CAST[name]==='m'&&Math.random()<.3||CAST[name]==='gang';p.fem=/Female/.test(name);}
 function placePed(p,B,stand){newPedChar(p,B);p.R=perim(B);p.t=rnd(0,200);const q=perimPos(p.R,p.t);p.pos.set(q[0],0,q[1]);p.mode='walk';p.dead=false;p.hp=60;p.dir=Math.random()<.5?1:-1;p.spd=rnd(1.15,1.55)*(p.fem?.95:1);p.cash=rint(5,80);p.fleeT=0;p.downT=0;p.c.talk=0;
  if(stand){p.mode='stand';p.standT=rnd(8,25);p.c.talk=Math.random()<.7?1:0;p.c.yaw=rnd(0,6);}}
@@ -366,7 +438,7 @@ function hitPed(p,dmg,dx,dz,melee){if(p.dead)return;p.hp-=dmg;const l=Math.hypot
  if(melee&&p.tough){p.mode='fight';p.fightCd=.6;}else{p.mode='flee';p.fleeT=rnd(5,8);const a=Math.atan2(p.pos.x-player.pos.x,p.pos.z-player.pos.z);p.fv.set(Math.sin(a),0,Math.cos(a));}p.pos.x+=dx/l*.25;p.pos.z+=dz/l*.25;}
 function ejectPed(x,z,fromX,fromZ){let best=null,bd=-1;for(const p of peds){const d=dist2(p.pos,player.pos)+(p.dead?500:0);if(d>bd){bd=d;best=p;}}if(!best)return;
  if(best.c)removeChar(best.c);best.c=makeChar(pickChar(Math.random()<.5?'m':'f'),{});best.dead=false;best.hp=60;best.pos.set(x,0,z);best.mode='flee';best.fleeT=6;const a=Math.atan2(x-fromX,z-fromZ);best.fv.set(Math.sin(a),0,Math.cos(a));best.cash=rint(10,60);}
-function carHitsBody(pos,r){for(const k of cars){const rv=Math.abs(k.speed);if(rv<4)continue;const dx=pos.x-k.pos.x,dz=pos.z-k.pos.z;const fx=Math.sin(k.h),fz=Math.cos(k.h);const f=dx*fx+dz*fz,l=dx*fz-dz*fx;if(Math.abs(f)<k.spec.L/2+r&&Math.abs(l)<k.spec.W/2+r)return k;}return null;}
+function carHitsBody(pos,r){for(const k of cars){const rv=Math.abs(k.speed);if(rv<4||Math.abs(k.pos.y-pos.y)>2.3)continue;const dx=pos.x-k.pos.x,dz=pos.z-k.pos.z;const fx=Math.sin(k.h),fz=Math.cos(k.h);const f=dx*fx+dz*fz,l=dx*fz-dz*fx;if(Math.abs(f)<k.spec.L/2+r&&Math.abs(l)<k.spec.W/2+r)return k;}return null;}
 function updPeds(dt){const pp=player.car?player.car.pos:player.pos;
  for(const p of peds){const c=p.c;const dP=dist2(p.pos,pp);
   if(p.dead){p.downT+=dt;if(c.body){p.pos.set(c.body.position.x,0,c.body.position.z);}updChar(c,0,dt,dP<95);if(p.downT>30&&dP>50)placePed(p,nearBlock(50,130));continue;}
@@ -521,13 +593,35 @@ function updHelis(dt){const tgt=player.car?player.car.pos:player.pos;
   }else h.spot.visible=false;
   if(L===5&&h.spotted&&state==='play'){h.cd-=dt;if(h.cd<=0){h.cd=rnd(.25,.45);const a=new V3(h.pos.x,h.pos.y-1.5,h.pos.z);const hit=Math.random()<.3;const b=new V3(tgt.x+(hit?0:rnd(-3,3)),hit?1.2:0,tgt.z+(hit?0:rnd(-3,3)));tracer(a,b);noise(.12,2500,distVol(a.x,a.z,.3));if(hit){if(player.car)damageCar(player.car,6);else damagePlayer(9);}}}}}
 /* ---- spawning ---- */
-function laneSpot(minD,maxD,origin=player.pos){const node=nearestNode(origin),lim=Math.max(1,Math.ceil(maxD/CELL));
- for(let t=0;t<65;t++){const a=[rint(Math.max(0,node[0]-lim),Math.min(N,node[0]+lim)),rint(Math.max(0,node[1]-lim),Math.min(N,node[1]+lim))],nb=pick(neighbors(a)),dx=nb[0]-a[0],dz=nb[1]-a[1],f=rnd(.3,.7);const x=(a[0]+dx*f)*CELL-dz*LANE,z=(a[1]+dz*f)*CELL+dx*LANE,d=Math.hypot(x-origin.x,z-origin.z);
- if(d<minD||d>maxD)continue;if(cars.some(c=>Math.hypot(c.pos.x-x,c.pos.z-z)<10))continue;return{x,z,h:Math.atan2(dx,dz),a,b:nb};}return null;}
+function laneSpot(minD,maxD,origin=player.pos){
+ const i0=parcelAxis(CITY_X,origin.x-maxD),i1=parcelAxis(CITY_X,origin.x+maxD)+1;
+ const j0=parcelAxis(CITY_Z,origin.z-maxD),j1=parcelAxis(CITY_Z,origin.z+maxD)+1;
+ for(let t=0;t<80;t++){
+  const a=[rint(i0,i1),rint(j0,j1)],opts=neighbors(a);
+  if(!opts.length)continue;
+  const b=pick(opts),p=lanePosition(a,b,rnd(.28,.72)),d=dist2(p,origin);
+  if(d<minD||d>maxD||cars.some(c=>dist2(c.pos,p)<10))continue;
+  return {...p,a,b};
+ }
+ return null;
+}
 const TRAFFIC=['sedan','sedan','hatch','suv','sport','taxi','sedan','suv','taxi','hatch','van'];
 function spawnTraffic(minD,maxD){const s=laneSpot(minD,maxD);if(!s)return;const c=spawnCar(pick(TRAFFIC),s.x,s.z,s.h,'ai');c.ai={a:s.a,b:s.b};c.speed=9;}
-function spawnParked(x,z,h){if(x==null){for(let t=0;t<30;t++){const a=[rint(0,N),rint(0,N)],nb=pick(neighbors(a)),dx=nb[0]-a[0],dz=nb[1]-a[1],f=rnd(.3,.7);x=(a[0]+dx*f)*CELL-dz*6.6;z=(a[1]+dz*f)*CELL+dx*6.6;h=Math.atan2(dx,dz);if(!cars.some(c=>Math.hypot(c.pos.x-x,c.pos.z-z)<7))break;}}
- if(cars.some(c=>Math.hypot(c.pos.x-x,c.pos.z-z)<6))return null;return spawnCar(pick(['sedan','sport','suv','hatch','sedan','van']),x,z,h,null);}
+function spawnParked(x,z,h){
+ if(x==null){
+  for(let t=0;t<35;t++){
+   const a=[rint(0,N),rint(0,N)],opts=neighbors(a).filter(b=>streetHalf(a,b)>=7.8);
+   if(!opts.length)continue;
+   const b=pick(opts),p=lanePosition(a,b,rnd(.28,.72),streetHalf(a,b)-1.22);
+   if(cars.some(c=>dist2(c.pos,p)<7))continue;
+   ({x,z,h}=p);
+   break;
+  }
+  if(x==null)return null;
+ }
+ if(cars.some(c=>Math.hypot(c.pos.x-x,c.pos.z-z)<6))return null;
+ return spawnCar(pick(['sedan','sport','suv','hatch','sedan','van']),x,z,h,null);
+}
 function spawnPolice(chase){
  const L=wanted,origin=chase?LAW.anchor:player.pos;
  const spot=laneSpot(chase?29:55,chase?91:183,origin);
@@ -545,23 +639,28 @@ function roadblock(){
  const car=player.car;
  if(!car||!LAW.seen||LAW.roadblocks>=2||!lawHasReserve(2)||Math.abs(car.speed)<12)return;
  const dx=Math.sin(car.h),dz=Math.cos(car.h);
- const n=nearestNode({x:LAW.anchor.x+dx*93,z:LAW.anchor.z+dz*93});
- const x=n[0]*CELL,z=n[1]*CELL;
- if(Math.hypot(x-car.pos.x,z-car.pos.z)<54)return;
- const alongX=Math.abs(dx)>Math.abs(dz);
+ const n=nearestTrafficNode({x:LAW.anchor.x+dx*93,z:LAW.anchor.z+dz*93});
+ const opts=neighbors(n);
+ const b=opts.sort((a,b)=>{
+  const first=streetFrame(n,a),second=streetFrame(n,b);
+  return dx*(first.dx-second.dx)+dz*(first.dz-second.dz);
+ })[0];
+ const {dx:rx,dz:rz,half}=streetFrame(n,b),at=streetNode(n);
+ if(dist2(at,car.pos)<54)return;
  LAW.roadblocks++;
  for(const s of [-1,1]){
-  const px=alongX?x-Math.sign(dx)*12:x+s*3.65,pz=alongX?z+s*3.65:z-Math.sign(dz)*12;
-  const block=spawnCar('police',px,pz,alongX?0:Math.PI/2,null);
+  const offset=s*Math.min(3.65,half-1.7),px=at.x+rx*15-rz*offset,pz=at.z+rz*15+rx*offset;
+  const block=spawnCar('police',px,pz,rx?0:Math.PI/2,null);
   block.block=true;block.siren=true;block.blockT=0;
   reserveOfficer();
-  spawnUnit('cop',px+(alongX?-2:2*s),pz+(alongX?2*s:-2),'law',true);
+  spawnUnit('cop',px-rx*2-rz*s*2,pz-rz*2+rx*s*2,'law',true);
  }
  toast('ROADBLOCK AHEAD',1300);
 }
 let spawnT=0;
 function manage(dt){spawnT-=dt;if(spawnT>0)return;spawnT=1;
  const ai=cars.filter(c=>c.driver==='ai');if(ai.length<(QUALITY.level>=2?22:15))spawnTraffic(70,170);
+ if(ai.filter(c=>c.express).length<4)spawnExpressTraffic();
  for(const c of ai)if(dist2(c.pos,player.pos)>215){const s=laneSpot(85,160);if(s){physCarOff(c);c.pos.set(s.x,0,s.z);c.h=s.h;c.ai={a:s.a,b:s.b};c.vel.set(0,0,0);c.speed=9;}}
  serviceDispatch();
  if(!wanted){

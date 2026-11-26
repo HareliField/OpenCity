@@ -1,28 +1,70 @@
 /* The graded roads share one sampled spline between meshes, physics and navigation. */
 const GRADE_ROADS={routes:[],grid:new Map()};
 const GRADE_PROFILES=[
- {name:'Harbor Viaduct',width:8.5,points:[
-  [383,.035,704],[418,.045,704],[454,1.27,702.25],[490,4.05,701.98],
-  [532,7.0,703.4],[594,8.45,705.58],[662,8.75,705.65],[720,8.35,704.0],
-  [762,6.78,702.37],[812,3.85,701.78],[855,1.25,702.94],[891,.07,704],[921,.043,704]
+ {name:'Route 6',description:'Harbor Expressway',width:16.2,expressway:true,points:[
+  [63,.035,701],[79,1.08,701],[108,4.85,701],[136,7.3,697],
+  [203,9.1,678],[284,9.7,657],[388,10.4,650],[489,10.8,659],
+  [592,11.1,672],[694,10.1,670],[798,9.65,650],[874,8.7,658],
+  [931,7.6,683],[955,6.2,697],[980,2.75,701],[1009,.04,701]
  ]},
- {name:'Coast Ridge Road',width:7.7,points:[
-  [832,.039,561],[832,.055,594],[839,.53,615],[850,1.57,641],[873,3.3,667],
-  [880,4.83,696],[874,4.12,727],[886,1.96,750],[896,.09,773],[896,.042,795]
+ {name:'Juniper Parkway',description:'Heights / North Green',width:8.6,points:[
+  [0,.035,65],[0,.06,83],[11,.22,104],[40,.22,113],[73,.22,107],[104,.22,93],
+  [148,.22,87],[193,.22,101],[226,.22,132],[266,.22,155],
+  [312,.22,155],[350,.22,169],[384,.22,190],[421,.04,192]
+ ]},
+ {name:'Market Cut',description:'Market / Glasspoint',width:10.6,points:[
+  [327,.038,384],[345,.06,384],[363,.22,397],[390,.22,421],
+  [422,.22,427],[453,.22,443],[487,.22,474],[521,.22,497],
+  [544,.10,503],[555,.04,503]
+ ]},
+ {name:'Dune Drive',description:'Boardwalk / Strand',width:10.6,points:[
+  [955,.035,21],[955,.085,43],[955,.22,64],[955,.22,93],[961,.22,124],[977,.22,151],
+  [995,.22,181],[998,.22,213],[988,.22,255],[977,.22,286],
+  [979,.22,316],[992,.22,347],[1012,.22,377],[1023,.22,410],
+  [1024,.17,439],[1024,.035,465]
+ ]},
+ {name:'Foundry Way',description:'South Basin Terminal',width:12.6,points:[
+  [758,.035,724],[758,.055,750],[770,.22,778],[798,.22,799],
+  [836,.22,809],[869,.22,819],[911,.22,831],[945,.08,832],[970,.04,832]
  ]}
 ];
 
-function reserveGradeBlock(block){
- if(block.i!==13||block.j<9||block.j>11)return false;
- block.park=true;
- const {x0,x1,z0,z1}=block;
- topQuad(MAT.grass,x0,x1,.16,z0,z1,5.9,null,false);
- for(const z of [z0+4.2,z1-5.1]){
-  TREE_RESERVE.push([x0+3.3,z,.9],[x1-3.3,z,1.06]);
+function prepareGradeRoads(){
+ for(const data of GRADE_PROFILES){
+  const curve=new THREE.CatmullRomCurve3(data.points.map(p=>new V3(...p)));
+  const points=curve.getSpacedPoints(Math.ceil(curve.getLength()/3.1));
+  GRADE_ROADS.routes.push({...data,points,sections:[],curve});
  }
- return true;
 }
-const TREE_RESERVE=[];
+
+function reserveGradeBlock(block){
+ return GRADE_ROADS.routes.find(route=>{
+  // The sample spacing is smaller than the road clearance.
+  const pad=route.width/2+2.2;
+  return route.points.some(p=>p.x>block.x0-pad&&p.x<block.x1+pad&&
+   p.z>block.z0-pad&&p.z<block.z1+pad);
+ });
+}
+
+function plantRoadReserve(block,route){
+ const {x0,x1,z0,z1}=block;
+ if(block.dist==='docks'){
+  topQuad(MAT.plaza,x0,x1,.16,z0,z1,4.9,null,false);
+  for(const z of [z0+3,z1-8])for(let x=x0+3;x<x1-12;x+=13){
+   if(route.points.every(p=>Math.hypot(p.x-x-4,p.z-z-2)>route.width/2+7)){
+    containers(x,x+9,z,z+5.4);
+   }
+  }
+  return;
+ }
+ block.park=true;
+ topQuad(MAT.grass,x0,x1,.16,z0,z1,4.9,null,false);
+ const gap=route.width/2+(route.expressway?4:2.8);
+ for(let i=0;i<(route.expressway?8:17);i++){
+  const x=srange(x0+2,x1-2),z=srange(z0+2,z1-2);
+  if(route.points.every(p=>Math.hypot(p.x-x,p.z-z)>gap))TREES.push([x,z,srange(.77,1.35)]);
+ }
+}
 
 function buildGradeRoads(){
  const asphalt=pbr('asphalt',6.3,{rough:.57,rmap:1,ns:1.02,env:.86,color:0x938f89});
@@ -30,32 +72,29 @@ function buildGradeRoads(){
  const paint=new THREE.MeshStandardMaterial({vertexColors:true,roughness:.57,polygonOffset:true,polygonOffsetFactor:-2});
  const rib=new THREE.MeshStandardMaterial({color:lin(0x706b63),metalness:.48,roughness:.47});
  const reflectors=new THREE.MeshBasicMaterial({color:new THREE.Color(1.15,.54,.12)});
- for(const data of GRADE_PROFILES){
-  const curve=new THREE.CatmullRomCurve3(data.points.map(p=>new V3(...p)));
-  const route={name:data.name,curve,width:data.width,sections:[]};
-  GRADE_ROADS.routes.push(route);
-  const pieces=Math.ceil(curve.getLength()/3.7),points=curve.getSpacedPoints(pieces);
+ for(const route of GRADE_ROADS.routes){
+  const {points,width,expressway}=route,pieces=points.length-1;
   const rows=points.map((p,i)=>{
    const f=points[Math.min(pieces,i+1)].clone().sub(points[Math.max(0,i-1)]).normalize();
    const side=new V3(f.z,0,-f.x).normalize();
    const up=new V3().crossVectors(f,side).normalize();
    return{p,side,up};
   });
-  buildRoadStrips(rows,data.width,asphalt,paint);
-  roadsideSign(data,points);
+  buildRoadStrips(rows,route,asphalt,paint);
+  roadsideSign(route,points);
   for(let i=0;i<pieces;i++){
    const a=points[i],b=points[i+1],step=b.clone().sub(a),length=step.length(),forward=step.clone().divideScalar(length);
    const side=new V3(forward.z,0,-forward.x).normalize(),up=new V3().crossVectors(forward,side).normalize();
    const middle=a.clone().lerp(b,.5);
    const q=new THREE.Quaternion().setFromRotationMatrix(new THREE.Matrix4().makeBasis(side,up,forward));
-   const half=data.width/2;
-   const hasRails=i>4&&i<pieces-4;
+   const half=width/2;
+   const hasRails=expressway&&middle.y>.65;
    const section={a,b,side,up,half,dx:b.x-a.x,dz:b.z-a.z,hasRails};
    route.sections.push(section);
    addGradeSection(section);
    const base=middle.clone().addScaledVector(up,-.23);
    const depth=i===0||i===pieces-1?.43:.46;
-   orientedRoadBox(solidRail,base,q,data.width+.24,depth,length+.057,{road:true,visual:true,omitTop:true});
+   orientedRoadBox(solidRail,base,q,width+.24,depth,length+.057,{road:true,visual:true,omitTop:true});
    if(hasRails){
     for(const sign of [-1,1]){
      const center=middle.clone().addScaledVector(side,sign*(half+.10)).addScaledVector(up,.35);
@@ -66,26 +105,15 @@ function buildGradeRoads(){
      }
     }
    }
-   const clearBelow=data.name==='Harbor Viaduct'?
-    Math.abs(middle.x-Math.round(middle.x/CELL)*CELL)>12:
-    Math.abs(middle.z-704)>14;
-   if(i%10===7&&middle.y>3.28&&clearBelow){
-    const isHarbor=data.name==='Harbor Viaduct';
-    const feet=isHarbor?[new V3(middle.x,0,704)]:
-     [-1,1].map(direction=>middle.clone().addScaledVector(side,direction*(half-.50)));
-    for(const p of feet){
-     const h=middle.y-.45,r=isHarbor?.61:.42;
-     cyl(MAT.column,p.x,.005,p.z,r*.9,r,h,12);
-     STATIC.push({x0:p.x-r,x1:p.x+r,z0:p.z-r,z1:p.z+r,h:h+.01,radius:r});
-    }
-    orientedRoadBox(rib,middle.clone().addScaledVector(up,-.53),q,data.width+.78,.38,1.37,{road:true,visual:true});
+   if(expressway&&i%10===7&&middle.y>4.8&&blockOf(middle.x,middle.z)){
+    const h=middle.y-.45,r=.72;
+    cyl(MAT.column,middle.x,.005,middle.z,r*.9,r,h,12);
+    STATIC.push({x0:middle.x-r,x1:middle.x+r,z0:middle.z-r,z1:middle.z+r,h:h+.01,radius:r});
+    orientedRoadBox(rib,middle.clone().addScaledVector(up,-.53),q,width+.78,.38,1.37,{road:true,visual:true});
    }
   }
  }
  ATLAS.mat.map.needsUpdate=true;
- for(const [x,z,size] of TREE_RESERVE){
-  if(!sampleGrade(x,z,null,2.5))TREES.push([x,z,size]);
- }
  for(const grove of [TREES,PALMS]){
   for(let i=grove.length-1;i>=0;i--)if(sampleGrade(grove[i][0],grove[i][1],null,.28))grove.splice(i,1);
  }
@@ -102,8 +130,8 @@ function roadsideSign(data,points){
   g.fillStyle='#29483f';g.fillRect(0,0,w,h);
   g.strokeStyle='#d0c3a8';g.lineWidth=4;g.strokeRect(10,10,w-20,h-20);
   g.textAlign='center';g.fillStyle='#f0ead7';
-  g.font='600 35px Arial, sans-serif';g.fillText(data.name.toUpperCase(),w/2,60);
-  g.font='600 24px Arial, sans-serif';g.fillText('ON RAMP',w/2,99);
+  g.font='600 36px Arial, sans-serif';g.fillText(data.name.toUpperCase(),w/2,55);
+  g.font='600 25px Arial, sans-serif';g.fillText(data.description.toUpperCase(),w/2,96,w-45);
  });
  for(const end of [0,points.length-1]){
   const n=end===0?end+1:end-1,last=points[end],next=points[n];
@@ -116,7 +144,7 @@ function roadsideSign(data,points){
  }
 }
 
-function buildRoadStrips(rows,width,asphalt,paint){
+function buildRoadStrips(rows,{width,expressway},asphalt,paint){
  const surface=[],surfaceUV=[],surfaceIndex=[],mark=[],markColors=[],markIndex=[];
  function append(vertices,indices,points){
   const k=vertices.length/3;
@@ -141,6 +169,10 @@ function buildRoadStrips(rows,width,asphalt,paint){
    marking(a,b,.08,.19,[.61,.38,.065]);
    marking(a,b,-half+.24,-half+.34,[.67,.67,.63]);
    marking(a,b,half-.34,half-.24,[.67,.67,.63]);
+   if(expressway&&i%3===0){
+    marking(a,b,-half*.5-.07,-half*.5+.07,[.75,.75,.71]);
+    marking(a,b,half*.5-.07,half*.5+.07,[.75,.75,.71]);
+   }
   }
   d=next;
  }
@@ -237,10 +269,11 @@ function collideGradeRails(p,r,y){
 }
 
 function drawGradeRoads(g,k){
- g.lineWidth=Math.max(2,8.9*k);
  g.lineJoin='round';
- g.strokeStyle='#c4a680';
+ g.lineCap='round';
  for(const route of GRADE_ROADS.routes){
+  g.lineWidth=Math.max(2,route.width*k);
+  g.strokeStyle=route.expressway?'#d8ae68':'#9aa18a';
   g.beginPath();
   for(const [i,s] of route.sections.entries()){
    if(i===0)g.moveTo((s.a.x+HALF)*k,(s.a.z+HALF)*k);

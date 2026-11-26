@@ -1,6 +1,6 @@
 # Asphalt Heat
 
-An original browser-based 3D coastal city. The street grid grew from 8 × 8 to 16 × 16 blocks, with a playable footprint of 1,024 × 1,024 metres. Two graded roads add a second level and a curved route across the grid. Explore after a rain shower, pull over to visit the shops, or head east to the boardwalk and lighthouse.
+Asphalt Heat is an original browser-based 3D driving game set in Breakwater Bay. Curving parkways, narrow storefront streets, and a four-lane elevated expressway connect six districts across a roughly one-kilometre city. Start in Market Ward and explore the bay on foot or by car.
 
 ## Play locally
 
@@ -21,24 +21,26 @@ Open [Asphalt Heat](http://127.0.0.1:8765/index.html). The game and its assets l
 | Punch or shoot | Space |
 | Look around | Drag the view |
 | Cycle follow, low, and aerial cameras | V |
+| Open or close the city map | M or tap the minimap |
 | Hide or restore the HUD and world markers | H |
 | Cycle weapons | Z |
 
 Touch devices show an on-screen stick and action controls.
 
-## Places to look
+## Exploring Breakwater Bay
 
-- **Nail studio and shop row.** The game starts by Verve Nail Studio and the maroon coupe. Follow the same sidewalk to Paper & Pine Books, the brick passage, Night Shift Donuts, and the Wash House.
-- **Bank and downtown avenue.** Turn toward the park and follow the avenue past it. The bank has climbable stone steps.
-- **Residential streets.** Head west from downtown for tile-roof houses, picket fences, and parked cars.
-- **Harbor Viaduct and Coast Ridge Road.** Follow the green ramp signs in the southern half of the city. The viaduct runs east–west above the street. Coast Ridge Road bends through the greenway and crosses above the viaduct’s eastern ramp.
-- **Barber and beach.** Head east toward the coast. The barber is on the palm-lined avenue. The boardwalk has openings to the sand. Follow the beach south from the pier to the lighthouse.
+- **Market Ward.** Start by Verve Nail Studio and the maroon coupe. Follow the sidewalk to Paper & Pine Books, a narrow brick passage, Night Shift Donuts, and the Wash House. Market Cut takes you southeast toward Glasspoint.
+- **Glasspoint.** Taller office buildings cluster around the wider downtown avenues. Follow the civic green to the bank steps.
+- **Juniper Heights and Westhaven.** Head northwest for the winding Juniper Parkway, leafy residential streets and a neighborhood park. Westhaven sits farther south between Market Ward and the expressway.
+- **Route 6.** The Harbor Expressway curves across the south of the city, with signed ramps on Westhaven's southern edge and near the coastal boulevard.
+- **Dune Strand.** Follow Dune Drive past the coastal green space. Visit Coastal Barber, Salt & Line Surf Supply and the Ferry Window, then cross to the boardwalk, beach and pier.
+- **South Basin.** Take Foundry Way through freight yards or head south from the boardwalk to the terminal, repair shops, Thimble Marine boat supply, and the lighthouse at the end of the quay.
 
 ## Driving, buildings, and assets
 
 Vehicles use a 90 Hz physics step, individual suspension and wheel contact, separate steering angles for the front wheels, and different traction on wet roads, concrete, and sand. Store entrances, house doors, and warehouse shutters open and close on real collision shapes. Many loose objects, including salon chairs and street bins, move when pushed. Trunks, counters, fences, poles, fountains, and railings are solid. Avatar falls use articulated constraints.
 
-The coupe bench test measured 6.00 seconds to 100 km/h and 37.0 metres to brake from that speed. Release the accelerator to slow down gradually, or press S for firmer braking.
+The coupe bench test measured 6.00 seconds to 100 km/h and 37.0 metres to brake from that speed. Release the accelerator to slow down gradually, or use the down arrow to brake.
 
 Run `node tools/ptest.js` to check acceleration, braking, steering, curbs, wall collisions, surface traction, object toppling, and consistency across update rates.
 

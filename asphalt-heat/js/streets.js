@@ -8,7 +8,10 @@ const RETAIL={
  donuts:{label:'NIGHT SHIFT',kind:'DONUTS',style:2,background:'#773047',letter:'#ffc9d5',brick:0xbe9a8a},
  deli:{label:'FERRIS',kind:'DELI',style:2,background:'#253f30',letter:'#dbedc9',brick:0xaeb0a3},
  tailor:{label:'JUNIPER',kind:'TAILOR',style:1,background:'#242944',letter:'#d5d7f9',brick:0xa59b8e},
- cafe:{label:'MARÉ',kind:'COFFEE',style:2,background:'#1d4143',letter:'#d1eee9',brick:0xbdd2cc}
+ cafe:{label:'MARÉ',kind:'COFFEE',style:2,background:'#1d4143',letter:'#d1eee9',brick:0xbdd2cc},
+ salt:{label:'SALT & LINE',kind:'SURF SUPPLY',style:2,background:'#126170',letter:'#fff2c5',brick:0xb8ded8},
+ ferry:{label:'FERRY WINDOW',kind:'FISH & CHIPS',style:2,background:'#ab452f',letter:'#fff2c5',brick:0xffdbba},
+ chandlery:{label:'THIMBLE MARINE',kind:'BOAT SUPPLY',style:2,background:'#233b52',letter:'#e8e8cc',brick:0xc3c1b1}
 };
 
 function initStreetMaterials(){
@@ -197,10 +200,14 @@ function buildAuthoredBlock(block){
   buildShopRow(block,'W',[['deli',-21.5,-7.5,18.4],['tailor',-7.5,3.1,18.4],['cafe',3.1,21.5,22.2]]);
   return true;
  }
- if(key==='7,4'||key==='15,4'){
-  const M=buildShopRow(block,'W',[['barber',-20.8,-6.9,11.2],['tailor',-6.9,4.1,14.8],['cafe',4.1,21.4,14.8]],true);
-  const back=lrect(M,-20,21,22,39.9);
-  building(block,back,20.6,{mat:MAT.fac.stucco,style:4,fh:3.5,bay:2.7,shops:false,tint:0xcad7d0,kind:'deco'});
+ if(key==='15,5'){
+  buildShopRow(block,'E',[['barber',-21,-6,10.7],['salt',-6,6,11.2],['ferry',6,21,13.8]],true);
+  const back=lrect(sideFrame(block,'E'),-19,19,22,41);
+  building(block,back,18.4,{mat:MAT.fac.stucco,style:4,fh:3.5,bay:2.7,shops:false,tint:0xcad7d0,kind:'deco'});
+  return true;
+ }
+ if(key==='15,13'){
+  buildShopRow(block,'E',[['chandlery',-21,1,8.5],['ferry',1,21,8.2]],true);
   return true;
  }
  return false;
@@ -236,7 +243,8 @@ function streetDetails(block){
   const rot=edge*Math.PI/2;
   const M=new THREE.Matrix4().makeRotationY(-rot);
   M.setPosition(x,0,z);
-  for(const t of [8,27,43]){
+  const length=edge%2?z1-z0:x1-x0;
+  for(const t of [8,27,43].filter(t=>t<length-3)){
    const style=dist==='docks'?1:.55;
    plainBox(m.iron,t-.33,t+.33,.001,.017,-.57,-.17,{M,shadow:false});
    for(let k=0;k<6;k++){
@@ -247,13 +255,13 @@ function streetDetails(block){
   }
   if(dist!=='docks'&&dist!=='beach'){
    for(let i=0;i<12;i++){
-    const t=2+srange(0,44),r=.034+srange(0,.061),zLocal=.26+srange(0,2.85);
+    const t=srange(2,length-2),r=.034+srange(0,.061),zLocal=.26+srange(0,2.85);
     topQuad(spick(m.leaves),t-r,t+r,.158,zLocal-r*.65,zLocal+r*.65,1,M,false);
    }
   }
  }
  if((block.i+block.j)%2===0){
-  const x=x0-5.35,z=z0+10.4;
+  const x=x0-Math.min(5.35,NORTH_SOUTH[block.i]-.8),z=z0+10.4;
   cyl(m.iron,x,.003,z,.34,.34,.018,18,{shadow:false});
   for(let i=0;i<6;i++){
    const delta=-.17+i*.068;
@@ -265,7 +273,6 @@ function streetDetails(block){
 function finishStreetDetails(){
  const m=STREET.materials;
  for(const tree of TREES){
-  if(Math.abs(tree[0]-246.8)<.9&&Math.abs(tree[1]-337)<1.3)tree[1]+=6.15;
   const [x,z,size]=tree;
   const rTree=.17+size*.06;
   STATIC.push({x0:x-rTree,x1:x+rTree,z0:z-rTree,z1:z+rTree,h:2.65*size});

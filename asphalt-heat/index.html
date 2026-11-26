@@ -41,7 +41,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
 #speedo{display:none;position:absolute;left:50%;bottom:max(18px,env(safe-area-inset-bottom));transform:translateX(-50%);font:400 clamp(30px,8vw,46px)/1 Anton,Impact,sans-serif;color:#fff;text-shadow:0 2px 6px #000;text-align:center}#speedo small{display:block;font:700 11px Inter,sans-serif;opacity:.7;letter-spacing:2px}
 #lbar{height:6px;width:min(320px,80vw);margin:10px auto 0;background:rgba(0,0,0,.35);border-radius:4px;overflow:hidden}#lbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffe08a,#ffb23a);transition:width .3s}
 #credits{margin-top:14px;font-size:11px;opacity:.55;max-width:440px;margin-left:auto;margin-right:auto}
-#mm{width:clamp(108px,29vw,150px);height:clamp(108px,29vw,150px);border-radius:50%;border:3px solid rgba(0,0,0,.7);box-shadow:0 0 0 2px rgba(255,255,255,.35),0 6px 16px rgba(0,0,0,.5)}
+#mapOpen{border:0;padding:0;background:none;color:inherit;cursor:pointer}#district{font-size:11px;font-weight:700;color:#ffe9be;text-shadow:0 1px 3px #000}#mm{display:block;width:clamp(108px,29vw,150px);height:clamp(108px,29vw,150px);border-radius:50%;border:3px solid rgba(0,0,0,.7);box-shadow:0 0 0 2px rgba(255,255,255,.35),0 6px 16px rgba(0,0,0,.5)}
 #wep{pointer-events:auto;display:flex;align-items:center;gap:8px;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:5px 10px;font:400 16px/1 Anton,Impact,sans-serif;letter-spacing:1px;min-height:36px;cursor:pointer;color:#fff}
 #wep small{font:700 12px Inter,sans-serif;opacity:.8}
 #toast{position:absolute;left:50%;top:24%;transform:translateX(-50%);font:400 clamp(22px,5.5vw,34px)/1.1 Anton,Impact,sans-serif;text-align:center;color:#fff;text-shadow:0 3px 0 #000,0 0 14px rgba(0,0,0,.7);opacity:0;transition:opacity .25s;white-space:nowrap;max-width:94vw;overflow:hidden;text-overflow:ellipsis}
@@ -73,6 +73,12 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
 #shop button{min-height:44px;min-width:84px;border:0;border-radius:10px;font:400 17px Anton,Impact,sans-serif;letter-spacing:1px;background:#2ecc71;color:#06220f;cursor:pointer}
 #shop button:disabled{background:#555;color:#999}
 #shop .x{width:100%;margin-top:12px;background:#444;color:#fff}
+#cityMap{box-sizing:border-box;border:1px solid #938165;border-radius:12px;width:min(95vw,78vh,760px);max-height:95vh;padding:14px;color:#f9ead5;background:#252724;box-shadow:0 14px 70px #000b}
+#cityMap::backdrop{background:#111b}
+#cityMap header{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:9px}
+#cityMap h2{font:400 clamp(19px,4vw,28px)/1 Anton,Impact,sans-serif;margin:0}
+#mapClose{border:1px solid #86755d;border-radius:6px;background:#3b3d36;color:#fff1d8;padding:5px 10px;cursor:pointer}
+#overview{display:block;width:100%;aspect-ratio:1;background:#1d5866;border-radius:5px}
 #start{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;background:linear-gradient(180deg,rgba(28,24,60,.82),rgba(150,60,30,.7) 60%,rgba(20,10,6,.92));z-index:5;overflow:auto}
 .card{max-width:540px;width:100%;text-align:center}
 .card h1{font:400 clamp(54px,15vw,96px)/.95 Anton,Impact,sans-serif;margin:0;letter-spacing:2px;color:#ffd36e;text-shadow:0 5px 0 #6b1d00,0 10px 30px rgba(0,0,0,.6)}
@@ -91,7 +97,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
 <canvas id="c"></canvas>
 <div id="ui" hidden>
   <div id="tl"><div id="cash">$0</div><div class="bar"><i id="hp"></i></div><div class="bar" id="arbar"><i id="ar"></i></div><div class="bar" id="carbar"><i id="chp"></i></div><div id="obj"></div></div>
-  <div id="tr"><div id="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><div id="heat"><i></i></div><div id="evade"><i></i></div><canvas id="mm" width="300" height="300"></canvas><div id="wep">FISTS <small></small></div></div>
+  <div id="tr"><div id="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><div id="heat"><i></i></div><div id="evade"><i></i></div><button id="mapOpen" type="button" aria-label="Open Breakwater Bay map"><canvas id="mm" width="300" height="300"></canvas></button><span id="district"></span><div id="wep">FISTS <small></small></div></div>
   <div id="toast"></div><div id="banner"></div>
   <div id="prog"><span>ROBBING…</span><div class="bar"><i></i></div></div>
   <div id="speedo">0<small>KM/H</small></div>
@@ -100,13 +106,17 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
   <div id="btns"><button id="bSprint">SPRINT</button><button id="bWep">WEAPON</button><button id="bAct">ENTER</button><button id="bFire">PUNCH</button></div>
 </div>
 <div id="shop"><div class="p"><h2>LOCK &amp; LOAD</h2><div id="items"></div><button class="x" id="shopX">LEAVE</button></div></div>
+<dialog id="cityMap" aria-labelledby="cityName">
+  <header><h2 id="cityName">Breakwater Bay</h2><button id="mapClose" type="button">Close</button></header>
+  <canvas id="overview" width="800" height="800" role="img" aria-label="Map of Breakwater Bay, with six districts, Route 6 and your location"></canvas>
+</dialog>
 <div id="big"></div>
 <div id="start"><div class="card">
   <h1>ASPHALT<b>HEAT</b></h1>
-  <p>A sunset beach city with real physics. Jack cars, brawl, hold up stores and the bank, and survive five levels of police heat — from a lone patrol car to SWAT, helicopters and the army.</p>
+  <p>Explore Breakwater Bay, from the Market Ward storefronts to the Route 6 expressway and South Basin docks. Jack cars, brawl, hold up stores and the bank, and survive five levels of police heat — from a lone patrol car to SWAT, helicopters and the army.</p>
   <div class="keys">
     <div><b>WALK / DRIVE</b>Stick or arrow keys — up goes forward, sideways turns</div>
-    <div><b>CAMERA</b>Drag to look · V changes view · H hides HUD</div>
+    <div><b>CAMERA</b>Drag to look · V changes view · M opens map</div>
     <div><b>PUNCH / SHOOT</b>Space</div>
     <div><b>ACTION</b>Open doors, enter cars, move props · C</div>
     <div><b>WEAPON</b>Switch · Z</div>
@@ -118,5 +128,5 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
   <div id="credits">People: Microsoft Rocketbox avatars (MIT) · Surfaces &amp; sky: Poly Haven (CC0) · Physics: cannon-es · Rendering: three.js</div>
 </div></div>
 <script src="lib/three.min.js"></script><script src="lib/GLTFLoader.js"></script><script src="lib/SkeletonUtils.js"></script><script src="lib/cannon.js"></script>
-<script src="js/core.js"></script><script src="js/phys.js"></script><script src="js/cargen.js"></script><script src="js/chars.js"></script><script src="js/world.js"></script><script src="js/streets.js"></script><script src="js/interiors.js"></script><script src="js/access.js"></script><script src="js/roads.js"></script><script src="js/props.js"></script><script src="js/scenery.js"></script><script src="js/game.js"></script><script src="js/dispatch.js"></script><script src="js/main.js"></script>
+<script src="js/core.js"></script><script src="js/city.js"></script><script src="js/phys.js"></script><script src="js/cargen.js"></script><script src="js/chars.js"></script><script src="js/world.js"></script><script src="js/streets.js"></script><script src="js/interiors.js"></script><script src="js/access.js"></script><script src="js/roads.js"></script><script src="js/props.js"></script><script src="js/scenery.js"></script><script src="js/game.js"></script><script src="js/dispatch.js"></script><script src="js/main.js"></script>
 </body></html>
