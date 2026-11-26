@@ -1,0 +1,21 @@
+import {NodeIO} from '@gltf-transform/core';
+import {ALL_EXTENSIONS} from '@gltf-transform/extensions';
+import {prune,resample} from '@gltf-transform/functions';
+import fs from 'fs';
+const [,, src, out, keep] = process.argv;
+const io=new NodeIO().registerExtensions(ALL_EXTENSIONS);
+const doc=await io.read(src);
+const root=doc.getRoot();
+const keepSet=new Set(keep.split(','));
+for(const a of root.listAnimations()) if(!keepSet.has(a.getName())) a.dispose();
+for(const n of root.listNodes()){ n.setMesh(null); n.setSkin(null); }
+for(const m of root.listMeshes()) m.dispose();
+for(const s of root.listSkins()) s.dispose();
+for(const m of root.listMaterials()) m.dispose();
+for(const t of root.listTextures()) t.dispose();
+await doc.transform(resample(),prune({keepLeaves:true}));
+const j=await io.writeJSON(doc);
+const bins=Object.values(j.resources);
+j.json.buffers[0].uri='data:application/octet-stream;base64,'+Buffer.from(bins[0]).toString('base64');
+fs.writeFileSync(out,JSON.stringify(j.json));
+console.log(out,fs.statSync(out).size,root.listAnimations().map(a=>a.getName()+':'+a.listChannels().length));

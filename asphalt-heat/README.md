@@ -1,0 +1,58 @@
+# Asphalt Heat
+
+An original browser-based 3D coastal city. The street grid grew from 8 × 8 to 16 × 16 blocks, with a playable footprint of 1,024 × 1,024 metres. Two graded roads add a second level and a curved route across the grid. Explore after a rain shower, pull over to visit the shops, or head east to the boardwalk and lighthouse.
+
+## Play locally
+
+From the game directory, run:
+
+```sh
+python3 tools/serve.py
+```
+
+Open [Asphalt Heat](http://127.0.0.1:8765/index.html). The game and its assets load locally. Add `?q=0`, `?q=1`, or `?q=2` to override automatic quality selection.
+
+| Action | Desktop |
+| --- | --- |
+| Walk or drive | W, A, S, D or arrow keys |
+| Open or close a door, enter or exit a car, or nudge a prop | E |
+| Brake while moving | S. Release and press again to reverse |
+| Sprint or use the handbrake | Shift |
+| Look around | Drag the view |
+| Cycle follow, low, and aerial cameras | V |
+| Hide or restore the HUD and world markers | H |
+| Cycle weapons | Q |
+
+Touch devices show an on-screen stick and action controls.
+
+## Places to look
+
+- **Nail studio and shop row.** The game starts by Verve Nail Studio and the maroon coupe. Follow the same sidewalk to Paper & Pine Books, the brick passage, Night Shift Donuts, and the Wash House.
+- **Bank and downtown avenue.** Turn toward the park and follow the avenue past it. The bank has climbable stone steps.
+- **Residential streets.** Head west from downtown for tile-roof houses, picket fences, and parked cars.
+- **Harbor Viaduct and Coast Ridge Road.** Follow the green ramp signs in the southern half of the city. The viaduct runs east–west above the street. Coast Ridge Road bends through the greenway and crosses above the viaduct’s eastern ramp.
+- **Barber and beach.** Head east toward the coast. The barber is on the palm-lined avenue. The boardwalk has openings to the sand. Follow the beach south from the pier to the lighthouse.
+
+## Driving, buildings, and assets
+
+Vehicles use a 90 Hz physics step, individual suspension and wheel contact, separate steering angles for the front wheels, and different traction on wet roads, concrete, and sand. Store entrances, house doors, and warehouse shutters open and close on real collision shapes. Many loose objects, including salon chairs and street bins, move when pushed. Trunks, counters, fences, poles, fountains, and railings are solid. Avatar falls use articulated constraints.
+
+The coupe bench test measured 6.00 seconds to 100 km/h and 37.0 metres to brake from that speed. Release the accelerator to slow down gradually, or press S for firmer braking.
+
+Run `node tools/ptest.js` to check acceleration, braking, steering, curbs, wall collisions, surface traction, object toppling, and consistency across update rates.
+
+Reviewed GLBs load as the player approaches. Their source models were generated with Meshy 7.1 Ultra 4K geometry and 4K PBR textures. The game uses lighter versions of those files. The featured shop rooms, entrances, furniture, streets, and vehicles have 3D geometry. Upper window interiors and distant storefronts use shaders, and vegetation combines 3D branches with foliage textures.
+
+## Police searches
+
+Property damage generates a misdemeanor report when a witness sees it. Civilians take a few seconds to complete the call. Police search the scene and the last confirmed location, and losing sight of the player starts the cooldown. Levels 1 and 2 use investigation behavior. Each incident has a limited ground and air response.
+
+| Wanted level | Time out of sight before losing a star |
+| --- | --- |
+| 1 | 12 seconds |
+| 2 | 24 seconds |
+| 3 | 25 seconds |
+| 4 | 40 seconds |
+| 5 | 60 seconds |
+
+Credits include Microsoft Rocketbox avatars (MIT), Poly Haven textures and sky (CC0), three.js, and cannon-es.

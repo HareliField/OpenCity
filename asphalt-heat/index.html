@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Asphalt Heat</title>
+<style>
+/* VOICE: sun-baked coastal crime sandbox, loud, cinematic
+   IDEA: a living 3D beach city at golden hour you can rob, fight and flee through
+   PICTURE: the live 3D game fills the screen; HUD is the housing
+   COLOUR and TYPE: sunset orange, ocean teal, money green, siren red/blue; Anton + Inter
+   LAYOUT: cash/health top-left, stars/heat/radar top-right, stick bottom-left, actions bottom-right */
+:root{color-scheme:dark;--cash:#7dff9a}
+*{box-sizing:border-box;min-width:0;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;font:16px/1.4 Inter,system-ui,sans-serif;touch-action:none;user-select:none;-webkit-user-select:none;overscroll-behavior:none}
+#c{position:fixed;inset:0;width:100%;height:100%;display:block}
+
+
+#ui{position:fixed;inset:0;pointer-events:none}
+#ui[hidden],#ui.cleanView{display:none}
+@media (pointer:fine){#joy,#btns{display:none}}
+@media (pointer:coarse){#interaction{display:none}}
+#interaction{position:absolute;bottom:8%;left:50%;transform:translateX(-50%);padding:7px 13px;background:#161715cf;border:1px solid #c9b99466;border-radius:6px;line-height:1.05;font-size:13px;letter-spacing:.06em;white-space:nowrap}
+#interaction kbd{color:#eacba1;margin-right:9px;font-size:12px}
+
+#tl{position:absolute;top:max(10px,env(safe-area-inset-top));left:max(14px,env(safe-area-inset-left));width:min(230px,44vw)}
+#cash{font:400 clamp(28px,7vw,40px)/1 Anton,Impact,sans-serif;color:var(--cash);text-shadow:0 2px 0 #0a3a17,0 0 12px rgba(0,0,0,.6)}
+.bar{height:8px;margin-top:6px;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.25);border-radius:5px;overflow:hidden}
+.bar i{display:block;height:100%;width:100%;transition:width .2s}
+#hp{background:linear-gradient(90deg,#ff4d4d,#ff8a5c)}#ar{background:linear-gradient(90deg,#3b8bff,#8fc8ff)}#chp{background:linear-gradient(90deg,#9fb3c8,#e6eef5)}
+#arbar,#carbar{display:none}
+#obj{margin-top:8px;font-size:13px;font-weight:700;color:#ffe9c9;text-shadow:0 1px 3px #000;line-height:1.3}
+#tr{position:absolute;top:max(10px,env(safe-area-inset-top));right:max(14px,env(safe-area-inset-right));display:flex;flex-direction:column;align-items:flex-end;gap:5px}
+#stars{font-size:clamp(20px,5vw,26px);letter-spacing:1px;text-shadow:0 2px 3px #000;line-height:1}
+#stars span{color:rgba(255,255,255,.22)}
+#stars span.on{color:#fff;text-shadow:0 0 8px #fff,0 2px 3px #000}
+#stars.blink span.on{animation:bl .5s steps(2) infinite}
+@keyframes bl{50%{opacity:.25}}
+#heat{width:clamp(110px,30vw,150px);height:5px;background:rgba(0,0,0,.5);border-radius:3px;overflow:hidden}
+#heat i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffb23a,#ff3b3b)}
+#evade{width:clamp(110px,30vw,150px);height:3px;background:rgba(0,0,0,.4);border-radius:3px;overflow:hidden;opacity:0}
+#evade i{display:block;height:100%;width:0;background:#8fc8ff}
+#speedo{display:none;position:absolute;left:50%;bottom:max(18px,env(safe-area-inset-bottom));transform:translateX(-50%);font:400 clamp(30px,8vw,46px)/1 Anton,Impact,sans-serif;color:#fff;text-shadow:0 2px 6px #000;text-align:center}#speedo small{display:block;font:700 11px Inter,sans-serif;opacity:.7;letter-spacing:2px}
+#lbar{height:6px;width:min(320px,80vw);margin:10px auto 0;background:rgba(0,0,0,.35);border-radius:4px;overflow:hidden}#lbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffe08a,#ffb23a);transition:width .3s}
+#credits{margin-top:14px;font-size:11px;opacity:.55;max-width:440px;margin-left:auto;margin-right:auto}
+#mm{width:clamp(108px,29vw,150px);height:clamp(108px,29vw,150px);border-radius:50%;border:3px solid rgba(0,0,0,.7);box-shadow:0 0 0 2px rgba(255,255,255,.35),0 6px 16px rgba(0,0,0,.5)}
+#wep{pointer-events:auto;display:flex;align-items:center;gap:8px;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:5px 10px;font:400 16px/1 Anton,Impact,sans-serif;letter-spacing:1px;min-height:36px;cursor:pointer;color:#fff}
+#wep small{font:700 12px Inter,sans-serif;opacity:.8}
+#toast{position:absolute;left:50%;top:24%;transform:translateX(-50%);font:400 clamp(22px,5.5vw,34px)/1.1 Anton,Impact,sans-serif;text-align:center;color:#fff;text-shadow:0 3px 0 #000,0 0 14px rgba(0,0,0,.7);opacity:0;transition:opacity .25s;white-space:nowrap;max-width:94vw;overflow:hidden;text-overflow:ellipsis}
+#toast.on{opacity:1}
+#banner{position:absolute;left:50%;top:33%;transform:translateX(-50%);text-align:center;opacity:0;transition:opacity .3s;font:700 14px Inter,sans-serif;color:#ffd0d0;text-shadow:0 2px 4px #000;white-space:nowrap}
+#banner b{display:block;font:400 clamp(24px,6vw,36px)/1.1 Anton,Impact,sans-serif;color:#fff;letter-spacing:1px}
+#banner.on{opacity:1}
+#prog{position:absolute;left:50%;bottom:34%;transform:translateX(-50%);width:min(280px,70vw);display:none;text-align:center;font:400 18px Anton,Impact,sans-serif;letter-spacing:1px;text-shadow:0 2px 3px #000}
+#prog .bar{height:12px}#prog i{background:linear-gradient(90deg,#7dff9a,#2ecc71)}
+#joy{position:absolute;left:max(18px,env(safe-area-inset-left));bottom:max(22px,env(safe-area-inset-bottom));width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.08),rgba(255,255,255,.16));border:2px solid rgba(255,255,255,.28);pointer-events:auto;touch-action:none}
+#knob{position:absolute;left:50%;top:50%;width:62px;height:62px;margin:-31px 0 0 -31px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#bbb 60%,#888);box-shadow:0 4px 12px rgba(0,0,0,.5);opacity:.85}
+#btns{position:absolute;right:max(16px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));width:210px;height:180px;pointer-events:none}
+#btns button{position:absolute;pointer-events:auto;touch-action:none;border:0;border-radius:50%;color:#fff;font:400 14px/1 Anton,Impact,sans-serif;letter-spacing:1px;box-shadow:0 5px 0 rgba(0,0,0,.45),inset 0 2px 0 rgba(255,255,255,.3);cursor:pointer;padding:0}
+#btns button.down{transform:translateY(3px);box-shadow:0 2px 0 rgba(0,0,0,.45)}
+#bFire{right:0;bottom:0;width:96px;height:96px;font-size:19px;background:radial-gradient(circle at 40% 30%,#ff6a5a,#b3141c)}
+#bAct{right:106px;bottom:2px;width:74px;height:74px;background:radial-gradient(circle at 40% 30%,#5d6b7c,#262d36)}
+#bAct.hot{background:radial-gradient(circle at 40% 30%,#ffd05a,#c77a00);animation:pulse 1s infinite}
+@keyframes pulse{50%{box-shadow:0 5px 0 rgba(0,0,0,.45),0 0 0 8px rgba(255,200,60,.25)}}
+#bSprint{right:14px;bottom:110px;width:62px;height:62px;font-size:12px;background:radial-gradient(circle at 40% 30%,#5d6b7c,#262d36)}
+#bWep{right:100px;bottom:88px;width:56px;height:56px;font-size:11px;background:radial-gradient(circle at 40% 30%,#5d6b7c,#262d36)}
+#big{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;font:400 clamp(56px,16vw,140px)/1 Anton,Impact,sans-serif;color:#e8202a;text-shadow:0 6px 0 #000;letter-spacing:4px;opacity:0;transition:opacity .4s}
+#big.show{opacity:1;background:rgba(40,0,0,.35)}
+#big.busted{color:#3b8bff}
+#shop{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.55);z-index:4;padding:20px}
+#shop .p{background:#1b1714;border:2px solid #c9a227;border-radius:16px;padding:18px;width:min(380px,100%)}
+#shop h2{margin:0 0 4px;font:400 30px Anton,Impact,sans-serif;color:#ffd36e;letter-spacing:1px}
+#shop .it{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid rgba(255,255,255,.1)}
+#shop .it b{display:block;font-size:15px}#shop .it span{font-size:12px;opacity:.7}
+#shop button{min-height:44px;min-width:84px;border:0;border-radius:10px;font:400 17px Anton,Impact,sans-serif;letter-spacing:1px;background:#2ecc71;color:#06220f;cursor:pointer}
+#shop button:disabled{background:#555;color:#999}
+#shop .x{width:100%;margin-top:12px;background:#444;color:#fff}
+#start{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;background:linear-gradient(180deg,rgba(28,24,60,.82),rgba(150,60,30,.7) 60%,rgba(20,10,6,.92));z-index:5;overflow:auto}
+.card{max-width:540px;width:100%;text-align:center}
+.card h1{font:400 clamp(54px,15vw,96px)/.95 Anton,Impact,sans-serif;margin:0;letter-spacing:2px;color:#ffd36e;text-shadow:0 5px 0 #6b1d00,0 10px 30px rgba(0,0,0,.6)}
+.card h1 b{display:block;color:#fff;font-weight:400}
+.card p{margin:12px auto 0;max-width:440px;color:#ffe6cf;font-size:15px}
+.keys{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 12px;margin:18px auto 0;max-width:440px;text-align:left;font-size:13px;color:#f3e3d3}
+.keys div{background:rgba(0,0,0,.3);border-radius:10px;padding:8px 10px}
+.keys b{color:#fff;display:block;font-size:11px;opacity:.75;font-weight:700}
+#play{margin-top:20px;min-width:200px;min-height:56px;border:0;border-radius:30px;font:400 26px/1 Anton,Impact,sans-serif;letter-spacing:2px;color:#2a0e00;background:linear-gradient(180deg,#ffe08a,#ffb23a);box-shadow:0 6px 0 #8a4a00,0 12px 30px rgba(0,0,0,.4);cursor:pointer}
+#play:disabled{filter:grayscale(1);opacity:.6}
+#load{margin-top:10px;font-size:13px;opacity:.8}
+@media(max-width:520px){#speedo{left:max(26px,env(safe-area-inset-left));transform:none;bottom:max(172px,calc(env(safe-area-inset-bottom) + 160px));font-size:32px}#toast{white-space:normal;width:92vw;font-size:22px}}
+@media(max-width:420px){#joy{width:128px;height:128px}#btns{transform:scale(.9);transform-origin:right bottom}}
+@media(prefers-reduced-motion:reduce){#bAct.hot,#stars.blink span.on{animation:none}}
+</style></head><body>
+<canvas id="c"></canvas>
+<div id="ui" hidden>
+  <div id="tl"><div id="cash">$0</div><div class="bar"><i id="hp"></i></div><div class="bar" id="arbar"><i id="ar"></i></div><div class="bar" id="carbar"><i id="chp"></i></div><div id="obj"></div></div>
+  <div id="tr"><div id="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><div id="heat"><i></i></div><div id="evade"><i></i></div><canvas id="mm" width="300" height="300"></canvas><div id="wep">FISTS <small></small></div></div>
+  <div id="toast"></div><div id="banner"></div>
+  <div id="prog"><span>ROBBING…</span><div class="bar"><i></i></div></div>
+  <div id="speedo">0<small>KM/H</small></div>
+  <div id="joy"><div id="knob"></div></div>
+  <div id="interaction" hidden><kbd>E</kbd><span></span></div>
+  <div id="btns"><button id="bSprint">SPRINT</button><button id="bWep">WEAPON</button><button id="bAct">ENTER</button><button id="bFire">PUNCH</button></div>
+</div>
+<div id="shop"><div class="p"><h2>LOCK &amp; LOAD</h2><div id="items"></div><button class="x" id="shopX">LEAVE</button></div></div>
+<div id="big"></div>
+<div id="start"><div class="card">
+  <h1>ASPHALT<b>HEAT</b></h1>
+  <p>A sunset beach city with real physics. Jack cars, brawl, hold up stores and the bank, and survive five levels of police heat — from a lone patrol car to SWAT, helicopters and the army.</p>
+  <div class="keys">
+    <div><b>WALK / DRIVE</b>Stick or WASD — up goes forward, sideways turns</div>
+    <div><b>CAMERA</b>Drag to look · V changes view · H hides HUD</div>
+    <div><b>PUNCH / SHOOT</b>FIRE · Space</div>
+    <div><b>ACTION</b>Open doors, enter cars, move props · E</div>
+    <div><b>WEAPON</b>Switch · Q</div>
+    <div><b>SPRINT / HANDBRAKE</b>Shift</div>
+  </div>
+  <button id="play" disabled>PLAY</button>
+  <div id="lbar"><i></i></div>
+  <div id="load">Loading…</div>
+  <div id="credits">People: Microsoft Rocketbox avatars (MIT) · Surfaces &amp; sky: Poly Haven (CC0) · Physics: cannon-es · Rendering: three.js</div>
+</div></div>
+<script src="lib/three.min.js"></script><script src="lib/GLTFLoader.js"></script><script src="lib/SkeletonUtils.js"></script><script src="lib/cannon.js"></script>
+<script src="js/core.js"></script><script src="js/phys.js"></script><script src="js/cargen.js"></script><script src="js/chars.js"></script><script src="js/world.js"></script><script src="js/streets.js"></script><script src="js/interiors.js"></script><script src="js/access.js"></script><script src="js/roads.js"></script><script src="js/props.js"></script><script src="js/scenery.js"></script><script src="js/game.js"></script><script src="js/dispatch.js"></script><script src="js/main.js"></script>
+</body></html>

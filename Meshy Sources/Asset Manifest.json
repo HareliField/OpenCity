@@ -1,0 +1,145 @@
+{
+  "generation": {
+    "model_type": "standard",
+    "ai_model": "meshy-7.1",
+    "geometry_resolution": "4k",
+    "texture_model": "meshy-7",
+    "texture_resolution": "4k",
+    "enable_pbr": true,
+    "should_texture": true,
+    "should_remesh": true,
+    "topology": "triangle",
+    "image_enhancement": false,
+    "target_formats": [
+      "glb"
+    ]
+  },
+  "assets": {
+    "washer": {
+      "task": "01a2187d-b05e-749e-828a-00862247291a",
+      "status": "SUCCEEDED",
+      "original_sha256": "94f7e7080d0aa3b68024ea1cc977ab219a43b9ed8aa4743f6f7e590c647440ad",
+      "runtime_file": "washer.glb",
+      "requested_target_triangles": 11500
+    },
+    "manicure-desk": {
+      "task": "01a2187d-b409-72ef-bdd4-0909951c02e4",
+      "status": "SUCCEEDED",
+      "original_sha256": "4e33d496e9d40fa1a1f67bb451b4dd012ff05ca3edfc2a2947ddc91333f3336e",
+      "runtime_file": "manicure-desk.glb",
+      "requested_target_triangles": 11500
+    },
+    "barber-chair": {
+      "task": "01a2187d-b78c-718c-a9f1-2c8dabc459d2",
+      "status": "SUCCEEDED",
+      "original_sha256": "af6a2fa01bec78096459c5c6e8e140d9eb460e89e1121ee047d0e9ca052a6f51",
+      "runtime_file": "barber-chair.glb",
+      "requested_target_triangles": 18000
+    },
+    "bookcase": {
+      "task": "01a2187d-bba5-71a8-9e84-bfd0927ba9fe",
+      "status": "SUCCEEDED",
+      "original_sha256": "e110bbffec8d222c1b922c10b172d5324140940727650f51a9a0b36e112b1c17",
+      "runtime_file": "bookcase.glb",
+      "requested_target_triangles": 20000
+    },
+    "plane-tree": {
+      "task": "01a2187d-bfc9-76ba-b166-75af6de2a7b2",
+      "status": "SUCCEEDED",
+      "original_sha256": "464c49876fd411cd976a7b08e2b880cba3eb78a18aefa3075d076bc0b305bde7",
+      "runtime_file": "plane-tree.glb",
+      "requested_target_triangles": 32000
+    },
+    "coupe": {
+      "task": "01a2187d-c383-74d8-b891-c7574e97eb90",
+      "status": "SUCCEEDED",
+      "original_sha256": "7abf68e29b25b91674efb41674b05b52413962791157644bd3cd15e4b124338e",
+      "runtime_file": "coupe-driveable.glb",
+      "requested_target_triangles": 36000
+    },
+    "street-bin": {
+      "task": "01a21880-2c55-708b-82dc-114290ac92bb",
+      "status": "SUCCEEDED",
+      "original_sha256": "36aa0f704d0d7697f1576ae3a9c70701e4f37be14d9312095d65aecf42203851",
+      "runtime_file": "street-bin.glb",
+      "requested_target_triangles": 8500
+    },
+    "palm-tree": {
+      "task": "01a21880-a4b7-72b3-8b3d-194e8540caf3",
+      "status": "SUCCEEDED",
+      "original_sha256": "60f7eb83b907cc9ec2c81a6bc409d81f48bafbc813b405e475dc6205e3fdbe92",
+      "runtime_file": "palm-tree.glb",
+      "requested_target_triangles": 24000
+    },
+    "street-lamp": {
+      "task": "01a21880-a876-711c-baf0-4f4c2579afe0",
+      "status": "SUCCEEDED",
+      "original_sha256": "0c9876849e013806f7e6a61312e723ec0a56218385755c5d20ef9e7870ad9003",
+      "runtime_file": "street-lamp.glb",
+      "requested_target_triangles": 10500
+    },
+    "beach-parasol": {
+      "task": "01a21881-22dc-73f6-b30a-db935bce3e6f",
+      "status": "SUCCEEDED",
+      "original_sha256": "aa3379bc85437dbbbd66ae397425b68a0cbfcfddf790dcebb107ed1677d6d714",
+      "runtime_file": "beach-parasol.glb",
+      "requested_target_triangles": 11000
+    },
+    "store-door": {
+      "task": "01a21881-260e-703a-8e49-fe8547ba9109",
+      "status": "SUCCEEDED",
+      "original_sha256": "57f44a5ae19bd325a722d49f698a3ff8e20f6f62f640fb1042dfbb60ec79f31d",
+      "runtime_file": "store-door.glb",
+      "requested_target_triangles": 14000
+    },
+    "picket-fence": {
+      "task": "01a21882-65f9-7517-b4bc-6d98cbe6502c",
+      "status": "SUCCEEDED",
+      "original_sha256": "e7fdd58f435955262419a6ef165b1173e7d4940241030450fb585233e07832de",
+      "runtime_file": "picket-fence.glb",
+      "requested_target_triangles": 7200
+    },
+    "display": {
+      "task": "01a21887-b4fd-71b8-acb5-ea7f63d29c17",
+      "status": "SUCCEEDED",
+      "original_sha256": "de61d8cad753d3d17b56ef9cf8a730b43f51579db8bcd6d8e41cef347995699e",
+      "runtime_file": "display.glb",
+      "requested_target_triangles": 19000
+    },
+    "stock": {
+      "task": "01a21887-b9cc-7594-bb20-d39d0730664f",
+      "status": "SUCCEEDED",
+      "original_sha256": "83dbda2bc18206f4da203902218e722fc4b76e9ba22bdf45e0fc6c0ec1b0a530",
+      "runtime_file": "stock.glb",
+      "requested_target_triangles": 15000
+    },
+    "seat": {
+      "task": "01a21887-bdea-72df-88b6-00c1b0a92f00",
+      "status": "SUCCEEDED",
+      "original_sha256": "7452931dd54283f3d7759dff9d233f3b2cf384af7ced7ec45a77a473a12ec1c0",
+      "runtime_file": "seat.glb",
+      "requested_target_triangles": 11000
+    },
+    "plant": {
+      "task": "01a21887-c2be-703b-8607-4de320a48775",
+      "status": "SUCCEEDED",
+      "original_sha256": "54514349ce3704e72738206dca8f16a4a3e615268b1429b6430dcd8e9aca00e7",
+      "runtime_file": "plant.glb",
+      "requested_target_triangles": 16000
+    },
+    "reading-table": {
+      "task": "01a21887-c68c-745b-af71-3ecdab853ad6",
+      "status": "SUCCEEDED",
+      "original_sha256": "017f3bde552b453b3a54259b65850f79f0354df92a15d83f3fd1c0023a0e1a36",
+      "runtime_file": "reading-table.glb",
+      "requested_target_triangles": 13000
+    },
+    "rack": {
+      "task": "01a2188b-1ece-75e1-8273-b8bb7897bf8b",
+      "status": "SUCCEEDED",
+      "original_sha256": "acc606c69a3336aa0bb41e732d795c30d80ab2e48cc6a7308d469c03edc26c7f",
+      "runtime_file": "rack.glb",
+      "requested_target_triangles": 16000
+    }
+  }
+}

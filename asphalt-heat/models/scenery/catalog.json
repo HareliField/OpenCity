@@ -1,0 +1,71 @@
+{
+  "washer": {
+    "file": "washer.glb"
+  },
+  "manicure-desk": {
+    "file": "manicure-desk.glb",
+    "heightScale": 1.38
+  },
+  "barber-chair": {
+    "file": "barber-chair.glb"
+  },
+  "bookcase": {
+    "file": "bookcase.glb"
+  },
+  "plane-tree": {
+    "file": "plane-tree.glb",
+    "anchor": [
+      0.006,
+      0.022
+    ]
+  },
+  "palm-tree": {
+    "file": "palm-tree.glb",
+    "anchor": [
+      -0.454,
+      -0.039
+    ]
+  },
+  "coupe": {
+    "file": "coupe-driveable.glb"
+  },
+  "street-bin": {
+    "file": "street-bin.glb"
+  },
+  "street-lamp": {
+    "file": "street-lamp.glb",
+    "yaw": 1.5707963267948966,
+    "anchor": [
+      0,
+      0.316
+    ]
+  },
+  "beach-parasol": {
+    "file": "beach-parasol.glb"
+  },
+  "store-door": {
+    "file": "store-door.glb"
+  },
+  "picket-fence": {
+    "file": "picket-fence.glb"
+  },
+  "display": {
+    "file": "display.glb"
+  },
+  "stock": {
+    "file": "stock.glb"
+  },
+  "seat": {
+    "file": "seat.glb"
+  },
+  "plant": {
+    "file": "plant.glb"
+  },
+  "reading-table": {
+    "file": "reading-table.glb",
+    "heightScale": 1.18
+  },
+  "rack": {
+    "file": "rack.glb"
+  }
+}
