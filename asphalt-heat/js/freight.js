@@ -83,7 +83,7 @@ function patrolWaypoint(c,target){
 function driveToFreightExit(c,dt){
  const next=patrolWaypoint(c,freightGateNode(c.pos.x));
  const diff=wrapA(Math.atan2(next.x-c.pos.x,next.z-c.pos.z)-c.h);
- const target=blockedAhead(c)?0:Math.abs(diff)>.65?5:10;
+ const target=blockedAhead(c)?0:(Math.abs(diff)>.65?5:10)*weather.trafficPace;
  drive(c,clamp((target-c.speed)*.4,-1,1),clamp(diff*2,-1,1),!target,dt);
  c.ai=null;c.siren=false;c.route=null;c.dispatched=false;
 }

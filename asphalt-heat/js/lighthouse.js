@@ -91,6 +91,15 @@ function coveBody(){
  PH.w.addBody(body);
  return body;
 }
+function stampCoveRoof(map){
+ if(!COVE.solids.length)return;
+ const bounds=new THREE.Box3();
+ for(const solid of COVE.solids)bounds.union(solid.bounds);
+ const top=bounds.max.y+1,down=new V3(0,-top,0),start=new V3();
+ map.stamp({x0:COVE.x+bounds.min.x,x1:COVE.x+bounds.max.x,z0:COVE.z+bounds.min.z,z1:COVE.z+bounds.max.z},(x,z)=>{
+  return top*(1-traceCove(start.set(x,top,z),down,0,true));
+ });
+}
 async function loadCoveLayout(){
  const response=await fetch('models/scenery/cove-layout.json');
  if(!response.ok)throw Error('Lighthouse surface data '+response.status);
@@ -143,6 +152,6 @@ function updateCoveBeacon(dt){
  if(on){COVE.phase=(COVE.phase+dt*.51)%(Math.PI*2);COVE.optic.rotation.y=COVE.phase;}
  for(const m of COVE.lit){
   m.emissive.setHex(0xffdf9a);
-  m.emissiveIntensity=on?(m.name==='Beacon filament'?(DAYLIGHT?.68:4.1):(DAYLIGHT?.035:.28)):0;
+  m.emissiveIntensity=on?(m.name==='Beacon filament'?.68+3.42*weather.lamps:.035+.245*weather.lamps):0;
  }
 }

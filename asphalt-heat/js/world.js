@@ -14,7 +14,7 @@ function loadFacadePhotos(){
   FACADE_PHOTOS[key].value=texture;
  }
 }
-const FACF=`uniform sampler2D bayColor;uniform sampler2D bayMaterial;uniform float baysReady;varying vec4 vFac;varying vec2 vFac2;varying vec2 vFU;varying vec3 vWP2;varying vec3 vWN;`+WETCODE;
+const FACF=`uniform float uLamp;uniform sampler2D bayColor;uniform sampler2D bayMaterial;uniform float baysReady;varying vec4 vFac;varying vec2 vFac2;varying vec2 vFU;varying vec3 vWP2;varying vec3 vWN;`+WETCODE;
 const FACMAIN=`#include <map_fragment>
  float glass=0.,frame=0.,metalG=0.; vec2 bayNormal=vec2(0.);float photoFace=0.;
  vec3 emitW=vec3(0.),frameC=vec3(.045,.041,.038),glassC=vec3(.01,.018,.024);
@@ -61,7 +61,7 @@ const FACMAIN=`#include <map_fragment>
     float ceilingHit=smoothstep(.947,.995,p.y),floorHit=1.-smoothstep(.055,.16,p.y);
     float corner=.46+.54*smoothstep(0.,.46,min(p.x,1.-p.x)+min(p.z,1.-p.z));
     float paint=.62+.31*vnoise(p.xy*vec2(7.,5.)+p.z*5.);
-    float lit=shop?step(.10,h1):step(curtain?.61:.79,h1);
+    float lit=shop?step(.10,h1):smoothstep(-.025,.025,h1-mix(curtain?.62:.82,curtain?.66:.42,uLamp));
     float strip=(1.-smoothstep(.012,.033,abs(fract(p.x*2.15+variant*.28)-.5)))
        *smoothstep(.13,.21,p.z)*(1.-smoothstep(.75,.84,p.z))*ceilingHit;
     vec3 white=mix(vec3(1.,.67,.34),vec3(.68,.82,1.),step(.83,variant));
@@ -119,27 +119,27 @@ const FACMAIN=`#include <map_fragment>
    photo=mix(photo,tint,.80*glass);
   }
   diffuseColor.rgb=photo*mix(vec3(.94),vColor,.16);
-  emitW=mix(emitW*.25,photo*.075,glass)*glass;
+  emitW=(emitW*mix(.25,2.6,uLamp)+photo*.065)*glass;
   photoFace=1.;
  }`;
 function facadeMat(name,meters,o={}){const m=pbr(name,meters,Object.assign({env:.85},o));m.vertexColors=true;
- m.onBeforeCompile=sh=>{Object.assign(sh.uniforms,{bayColor:FACADE_PHOTOS.color,bayMaterial:FACADE_PHOTOS.material,baysReady:FACADE_PHOTOS.ready});sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\n'+FACV).replace('#include <fog_vertex>','#include <fog_vertex>\nvFac=fac;vFac2=fac2;vFU=uv;vWP2=(modelMatrix*vec4(transformed,1.)).xyz;vWN=normalize(mat3(modelMatrix)*objectNormal);');
+ m.onBeforeCompile=sh=>{Object.assign(sh.uniforms,{uLamp:climateUniforms.uLamp,bayColor:FACADE_PHOTOS.color,bayMaterial:FACADE_PHOTOS.material,baysReady:FACADE_PHOTOS.ready});sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\n'+FACV).replace('#include <fog_vertex>','#include <fog_vertex>\nvFac=fac;vFac2=fac2;vFU=uv;vWP2=(modelMatrix*vec4(transformed,1.)).xyz;vWN=normalize(mat3(modelMatrix)*objectNormal);');
   sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\n'+FACF).replace('#include <map_fragment>',FACMAIN)
    .replace('#include <roughnessmap_fragment>','#include <roughnessmap_fragment>\nroughnessFactor=mix(roughnessFactor,.11,glass);roughnessFactor=mix(roughnessFactor,.45,frame);')
    .replace('#include <metalnessmap_fragment>','#include <metalnessmap_fragment>\nmetalnessFactor=mix(metalnessFactor,metalG,glass);metalnessFactor=mix(metalnessFactor,.5,frame);')
    .replace('#include <normal_fragment_maps>','#include <normal_fragment_maps>\nnormal=normalize(mix(normal,normalize(vNormal),max(glass,frame)));if(photoFace>.5){vec3 bayN=mat3(viewMatrix)*(normalize(cross(vec3(0.,1.,0.),vWN))*bayNormal.x+vec3(0.,bayNormal.y,0.));normal=normalize(normal+bayN);}')
-   .replace('#include <emissivemap_fragment>','#include <emissivemap_fragment>\n{vec3 Vv=normalize(cameraPosition-vWP2);float fr=pow(1.-clamp(dot(Vv,vWN),0.,1.),4.);totalEmissiveRadiance+=emitW*(1.-fr*.46)*(1.-metalG*.18);}');};
+   .replace('#include <emissivemap_fragment>','#include <emissivemap_fragment>\n{vec3 Vv=normalize(cameraPosition-vWP2);float fr=pow(1.-clamp(dot(Vv,vWN),0.,1.),4.);totalEmissiveRadiance+=emitW*mix(.72,1.50,uLamp)*(1.-fr*.46)*(1.-metalG*.18);}');};
  m.customProgramCacheKey=()=>'facade';return m;}
 /* ---- materials ---- */
 const MAT={};
 function initMaterials(){
  loadFacadePhotos();
- MAT.asphalt=makeWet(pbr('street-asphalt',1,{rough:1,rmap:1,ns:.86,env:.7}),{tint:1,road:true,wet:DAYLIGHT?.93:1});
- MAT.sidewalk=makeWet(pbr('sidewalk',3.2,{rough:.95,env:.76,rmap:1}),{wet:DAYLIGHT?.48:.83});
+ MAT.asphalt=makeWet(pbr('street-asphalt',1,{rough:1,rmap:1,ns:.86,env:.7}),{tint:1,road:true,wet:1});
+ MAT.sidewalk=makeWet(pbr('sidewalk',3.2,{rough:.95,env:.76,rmap:1}),{wet:.83});
  MAT.plaza=makeWet(pbr('plaza',3,{rough:.8,env:.6}),{wet:.6});
- MAT.curb=pbr('concrete',2,{color:0xb8b3aa,rough:.85});
- MAT.sand=pbr('sand',4,{rough:1,env:.3});MAT.grass=pbr('grass',4,{rough:1,env:.25});
- MAT.planks=pbr('planks',3,{rough:.85});MAT.roof=pbr('roof_gravel',4,{rough:1,env:.3});MAT.roofClay=pbr('roof_clay',2.2,{rough:.85});
+ MAT.curb=makeWet(pbr('concrete',2,{color:0xb8b3aa,rough:.85}),{wet:.65});
+ MAT.sand=pbr('sand',4,{rough:1,env:.3});MAT.grass=makeWet(pbr('grass',4,{rough:1,env:.25}),{wet:.12});
+ MAT.planks=makeWet(pbr('planks',3,{rough:.85}),{wet:.54});MAT.roof=makeWet(pbr('roof_gravel',4,{rough:1,env:.3}),{wet:.18});MAT.roofClay=makeWet(pbr('roof_clay',2.2,{rough:.85}),{wet:.32});
  MAT.trim=pbr('concrete',2.5,{color:0xd6d0c4,rough:.8});MAT.stone=pbr('stone_light',3,{rough:.82,ns:.44,color:0xd8c9b4});MAT.column=pbr('stone_light',3.4,{rough:.84,ns:.22,color:0xc3b6a3});MAT.darkMetal=new THREE.MeshStandardMaterial({color:lin(0x26282b),roughness:.45,metalness:.8});
  MAT.metal=new THREE.MeshStandardMaterial({color:lin(0x9aa0a6),roughness:.35,metalness:.85});MAT.whiteMetal=new THREE.MeshStandardMaterial({color:lin(0xe8e8e6),roughness:.4,metalness:.3});
  MAT.wood=new THREE.MeshStandardMaterial({color:lin(0x6a4a32),roughness:.8});MAT.glassDark=new THREE.MeshStandardMaterial({color:0x080a0c,roughness:.05,metalness:.9});
@@ -150,21 +150,22 @@ function initMaterials(){
  F.stucco=facadeMat('stucco',2.5,{rough:.9});F.plaster=facadeMat('plaster',2.5,{rough:.92});F.concrete=facadeMat('concrete',3.5,{rough:.85});F.panels=facadeMat('panels',4,{rough:.8});
  F.tiles=facadeMat('tiles_dark',3,{rough:.6});F.stone_dark=facadeMat('stone_dark',3.5,{rough:.8});F.stone_light=facadeMat('stone_light',3.5,{rough:.8});F.corrugated=facadeMat('corrugated',2.4,{rough:.5,metal:.5});}
 function makeWater(){const m=new THREE.MeshStandardMaterial({color:lin(0x0d3a46),roughness:.06,metalness:0,envMapIntensity:1.2,normalMap:T('sand','n',1/40),normalScale:new THREE.Vector2(.3,.3)});
- m.onBeforeCompile=sh=>{Object.assign(sh.uniforms,REFL.uniforms);sh.uniforms.uT=WATERT;
-  sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vWP;varying vec4 vRU;uniform mat4 reflMat;uniform float uT;').replace('#include <begin_vertex>','#include <begin_vertex>\nvec4 w0=modelMatrix*vec4(transformed,1.);float wv=sin(w0.x*.12+uT*1.3)*.25+sin(w0.z*.09-uT*.9+w0.x*.05)*.18;transformed.z+=wv;')
+ m.onBeforeCompile=sh=>{Object.assign(sh.uniforms,REFL.uniforms,climateUniforms);sh.uniforms.uT=WATERT;
+  sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vWP;varying vec4 vRU;uniform mat4 reflMat;uniform float uT,uWindSpeed;uniform vec2 uWind;').replace('#include <begin_vertex>','#include <begin_vertex>\nvec4 w0=modelMatrix*vec4(transformed,1.);vec2 lee=normalize(uWind+vec2(.01,0.));float wv=sin(dot(w0.xz,lee)*.12-uT*1.3)*.25+sin(w0.z*.09-uT*.9+w0.x*.05)*.18;transformed.z+=wv*(.52+min(1.6,uWindSpeed*.083));')
    .replace('#include <fog_vertex>','#include <fog_vertex>\nvec4 wp4=modelMatrix*vec4(transformed,1.);vWP=wp4.xyz;vRU=reflMat*wp4;');
-  sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\nvarying vec3 vWP;varying vec4 vRU;uniform sampler2D tRefl;uniform float reflOn;uniform float uT;'+WETCODE)
-   .replace('#include <normal_fragment_maps>',`vec2 wq=vWP.xz;vec2 sp1=vec2(uT*.35,uT*.2),sp2=vec2(uT*.6,uT*.1);float wa=fbm2(wq*.35+sp1),wb=fbm2(wq*.35+vec2(.6,0.)+sp1),wc=fbm2(wq*.35+vec2(0.,.6)+sp1);
+  sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\nvarying vec3 vWP;varying vec4 vRU;uniform sampler2D tRefl;uniform float reflOn;uniform float uT,uWindSpeed;uniform vec3 uSun,uSunlight;uniform vec2 uWind;'+WETCODE)
+   .replace('#include <normal_fragment_maps>',`vec2 wq=vWP.xz;vec2 lee=normalize(uWind+vec2(.01,0.)),sp1=-lee*(uT*.40),sp2=lee*(uT*.58);float wa=fbm2(wq*.35+sp1),wb=fbm2(wq*.35+vec2(.6,0.)+sp1),wc=fbm2(wq*.35+vec2(0.,.6)+sp1);
     float wd=fbm2(wq*1.7-sp2),we=fbm2(wq*1.7+vec2(.15,0.)-sp2),wf=fbm2(wq*1.7+vec2(0.,.15)-sp2);
-    vec3 wn=normalize(vec3((wa-wb)*1.4+(wd-we)*.5,1.,(wa-wc)*1.4+(wd-wf)*.5));normal=normalize((viewMatrix*vec4(wn,0.)).xyz);`)
+    float chop=.65+min(1.4,uWindSpeed*.069);
+    vec3 wn=normalize(vec3(((wa-wb)*1.4+(wd-we)*.5)*chop,1.,((wa-wc)*1.4+(wd-wf)*.5)*chop));normal=normalize((viewMatrix*vec4(wn,0.)).xyz);`)
    .replace('#include <tonemapping_fragment>',`{vec3 V=normalize(cameraPosition-vWP);float fr=.02+.98*pow(1.-max(V.y,0.),5.);vec3 wn2=normalize((vec4(normal,0.)*viewMatrix).xyz);vec4 ru=vRU;ru.xy+=wn2.xz*.06*ru.w;
     if(reflOn>.5)gl_FragColor.rgb=mix(gl_FragColor.rgb,texture2DProj(tRefl,ru).rgb,clamp(fr*1.1,0.,.95));
     float sw=max(0.,vWP.x-${(W+61).toFixed(1)});
     float wave=sin(vWP.x*1.62-uT*2.3+vnoise(vec2(vWP.z*.095,vWP.x*.055))*.95);
     float foam=step(${(W+61).toFixed(1)},vWP.x)*smoothstep(.76,.96,wave)*exp(-sw*.10)*(.27+.73*fbm2(vWP.xz*1.35+uT*.2));
     vec3 reflected=reflect(-V,wn2);
-    float glitter=pow(max(dot(reflected,normalize(vec3(.988,.151,.03))),0.),108.)*(.55+1.3*wd);
-    gl_FragColor.rgb+=vec3(.49,.58,.58)*foam+vec3(1.15,.62,.25)*glitter*(.31+.69*smoothstep(6.,52.,sw));}
+    float glitter=pow(max(dot(reflected,uSun),0.),108.)*(.55+1.3*wd);
+    gl_FragColor.rgb+=vec3(.49,.58,.58)*foam*(.18+max(uSun.y,0.))+uSunlight*glitter*(.31+.69*smoothstep(6.,52.,sw));}
     #include <tonemapping_fragment>`);};
  m.customProgramCacheKey=()=>'water';return m;}
 const WATERT={value:0};
@@ -211,7 +212,7 @@ function initSigns(){atlasInit();
  ATLAS.special={};
  for(const[k,t,bg,fg]of[['bank','BANK OF THE COAST','#1a140c','#e8c66a'],['hospital','ST. MARY HOSPITAL','#ffffff','#c0262a'],['police','POLICE DEPARTMENT','#0e2550','#ffffff'],['quik','QUIK MART 24/7','#c0262a','#ffffff'],['liquor','LIQUOR · BEER · WINE','#3a0a4a','#ff8af0'],['jewel','DIAMOND DISTRICT','#0c0c0c','#e8c66a'],['guns','LOCK & LOAD — GUNS','#2a3014','#ffe066'],['chop','PARTS & SALVAGE','#2a1a0a','#ff9a3a'],['spray','FRESH COAT · RESPRAY','#0a2a4a','#9fe8ff'],['er','EMERGENCY','#c0262a','#ffffff'],['docks','PORT OF ASPHALT','#14202a','#e0e6ea']])
   ATLAS.special[k]=atlasSlot((g,w,h)=>{g.fillStyle=bg;g.fillRect(0,0,w,h);g.font=`${t.length>16?50:64}px Anton, Impact, sans-serif`;g.textAlign='center';g.textBaseline='middle';g.fillStyle=fg;g.fillText(t,w/2,h/2+4);});
- const t=ctex(ATLAS.c);t.anisotropy=8;ATLAS.mat=new THREE.MeshStandardMaterial({map:t,emissiveMap:t,emissive:new THREE.Color(1.2,1.2,1.2),emissiveIntensity:DAYLIGHT?.16:1,roughness:.64,polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2});
+ const t=ctex(ATLAS.c);t.anisotropy=8;ATLAS.mat=new THREE.MeshStandardMaterial({map:t,emissiveMap:t,emissive:new THREE.Color(1.2,1.2,1.2),emissiveIntensity:.16,roughness:.64,polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2});
  ATLAS.neon=new THREE.MeshBasicMaterial({map:t,color:new THREE.Color(2.6,2.6,2.6),transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,polygonOffset:true,polygonOffsetFactor:-3,polygonOffsetUnits:-3});}
 /* ---- city layout ---- */
 const blocks=[],places=[],LAMPS=[],TREES=[],PALMS=[],PROPSPOTS=[],STATIC=[],PARKED=[];
@@ -516,9 +517,11 @@ function beach(){const x0=W+HALF;buildCoastalWater();
  }
  /* lifeguard towers, umbrellas */
  placeScenery('beach-parasol',W+44,.02,222,.44,[3.17,2.44,2.99]);
+ weatherCeilings.push({x0:W+42.5,x1:W+45.5,z0:220.5,z1:223.5,h:2.46,radius:1.5});
  STATIC.push({x0:W+43.94,x1:W+44.06,z0:221.94,z1:222.06,h:2.44,radius:.057});
  const umbrellaZ=W*.42+11.7;
  placeScenery('beach-parasol',W+42.2,.02,umbrellaZ,.18,[3.03,2.35,2.94]);
+ weatherCeilings.push({x0:W+40.7,x1:W+43.7,z0:umbrellaZ-1.5,z1:umbrellaZ+1.5,h:2.37,radius:1.5});
  STATIC.push({x0:W+42.15,x1:W+42.25,z0:umbrellaZ-.06,z1:umbrellaZ+.06,h:2.35,radius:.055});
  lighthouse();
  const UMB=[0xa54539,0x496888,0xbca363,0xdcd5c4,0x718676];for(let k=0;k<26;k++){
@@ -536,6 +539,7 @@ function beach(){const x0=W+HALF;buildCoastalWater();
  const yx=W+380,yz=W*.55;plainBox(MAT.whiteMetal,yx-14,yx+14,0,3,yz-3,yz+3);plainBox(MAT.whiteMetal,yx-8,yx+6,3,5.2,yz-2.4,yz+2.4);plainBox(MAT.glassDark,yx-8.05,yx+6.05,3.8,4.6,yz-2.45,yz+2.45);plainBox(MAT.whiteMetal,yx-5,yx+2,5.2,6.8,yz-1.8,yz+1.8);}
 function beachUmbrella(x,z,color){
  cyl(MAT.whiteMetal,x,0,z,.04,.04,2.4,5);
+ weatherCeilings.push({x0:x-1.5,x1:x+1.5,z0:z-1.5,z1:z+1.5,h:2.7,radius:1.5});
  STATIC.push({x0:x-.055,x1:x+.055,z0:z-.055,z1:z+.055,h:2.4,radius:.052});
  const canopy=new THREE.ConeGeometry(1.5,.5,10,1,true);
  canopy.translate(x,2.45,z);
@@ -568,6 +572,7 @@ function beachAreas(pierZ){
   beachUmbrella(W+dx,pierZ+dz,color);
  }
  for(const z of [825,854])PROPSPOTS.push({type:'bench',x:W+24,z,ry:Math.PI/2});
+ const beachStone=makeWet(MAT.stone.clone(),{wet:.37});
  for(const [dx,z,rise,width] of [[48,809,.76,2],[52,811,.94,2.6],[50,815,.56,1.85],
   [49,861,.55,1.5],[52,865,1.08,2.7],[51,870,.65,2.2]]){
   const x=W+dx,y=.02+rise/2,r=width*.5;
@@ -575,7 +580,7 @@ function beachAreas(pierZ){
   rock.scale(r,rise*.65,r*.78);
   rock.rotateY(z*.4);
   rock.translate(x,y,z);
-  addGeo(MAT.stone,rock,true);
+  addGeo(beachStone,rock,true);
   STATIC.push({x0:x-r,x1:x+r,z0:z-r,z1:z+r,h:y+rise*.65,radius:r*.76});
  }
 }
@@ -625,20 +630,22 @@ function plantTrees(){const o=new THREE.Object3D(),col=new THREE.Color();
  const lm=new THREE.MeshStandardMaterial({map:foliage,alphaTest:.49,side:THREE.DoubleSide,roughness:.85});
  const leaves=inst(mergeGeos(cards),lm,TREES,p=>{o.position.set(p[0],.15,p[1]);o.scale.set(p[2],p[2]*rnd(.85,1.15),p[2]);o.rotation.y=Math.random()*6;});
  lm.onBeforeCompile=sh=>{
-  sh.uniforms.uTreeTime=WATERT;
-  sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nuniform float uTreeTime;')
+  sh.uniforms.uTreeTime=WATERT;sh.uniforms.uWind=climateUniforms.uWind;
+  sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nuniform float uTreeTime;uniform vec2 uWind;')
    .replace('#include <begin_vertex>',`#include <begin_vertex>
        vec3 treeBase=instanceMatrix[3].xyz;
        float breeze=sin(uTreeTime*1.7+treeBase.x*.113+treeBase.z*.091+position.y*.67);
-       transformed.x+=breeze*.083+sin(position.x*2.1+uTreeTime*3.2)*.036;
-       transformed.z+=breeze*.043;`);
+       transformed.xz+=uWind*(.009+.009*breeze)*smoothstep(2.,9.,position.y);`);
+  snowOnLeaves(sh);
  };
  if(leaves)leaves.customDepthMaterial=new THREE.MeshDepthMaterial({depthPacking:THREE.RGBADepthPacking,map:foliage,alphaTest:.49,side:THREE.DoubleSide});
+ if(leaves)leaves.customDepthMaterial.onBeforeCompile=lm.onBeforeCompile;
  if(leaves)TREES.forEach((p,k)=>{col.setHSL(rnd(.07,.13),rnd(.01,.06),rnd(.72,1));leaves.setColorAt(k,col);});
  const pt=new THREE.CylinderGeometry(.14,.24,9,8,10);{const pa=pt.attributes.position;for(let i=0;i<pa.count;i++){const y=pa.getY(i)+4.5;pa.setX(i,pa.getX(i)+Math.pow(y/9,2)*1.1);const ring=Math.abs(Math.sin(y*6))*.02;pa.setX(i,pa.getX(i)*(1+ring));pa.setZ(i,pa.getZ(i)*(1+ring));}pt.translate(0,4.5,0);pt.computeVertexNormals();}
  const palmTrunks=inst(pt,new THREE.MeshStandardMaterial({color:lin(0x8a7458),roughness:.95}),PALMS,p=>{o.position.set(p[0],p[0]>W?0:.15,p[1]);o.rotation.y=rnd(0,6);o.scale.setScalar(p[2]);});
  const fr=[];for(let k=0;k<11;k++){const g=new THREE.PlaneGeometry(1.5,3.6,1,6);const pa=g.attributes.position;for(let i=0;i<pa.count;i++){const y=pa.getY(i)+1.8;pa.setZ(i,-Math.pow(y/3.6,2)*1.6);pa.setX(i,pa.getX(i)*(1-Math.abs(y/3.6-.5)*.6));}g.translate(0,1.8,0);g.rotateX(-Math.PI/2+.5+rnd(-.15,.2));g.rotateY(k/11*Math.PI*2+rnd(-.2,.2));g.translate(1.1,9,0);fr.push(g);}
  const pm=new THREE.MeshStandardMaterial({map:leafTex(true),alphaTest:.4,side:THREE.DoubleSide,roughness:.8});
+ pm.onBeforeCompile=lm.onBeforeCompile;
  const palmLeaves=inst(mergeGeos(fr),pm,PALMS,p=>{o.position.set(p[0],p[0]>W?0:.15,p[1]);o.rotation.y=rnd(0,6);o.scale.setScalar(p[2]);});
  startForestSpecies(TREES,[treeTrunks,leaves],false);
  startForestSpecies(PALMS,[palmTrunks,palmLeaves],true);

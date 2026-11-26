@@ -1,14 +1,31 @@
 /* Every placement keeps its original trunk collision. Both Blender LODs share the same root and bearings. */
 const CITY_FOREST={species:[],sectors:[],next:0};
+function snowOnLeaves(sh){
+ if(!sh.fragmentShader.includes('#include <lights_fragment_end>'))return;
+ sh.uniforms.uSnowCover=climateUniforms.uSnowCover;sh.uniforms.uCover=climateUniforms.uCover;
+ sh.uniforms.uDay=climateUniforms.uDay;
+ sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nvarying vec4 vCanopy;')
+  .replace('#include <project_vertex>','#include <project_vertex>\nvCanopy=vec4((modelMatrix*instanceMatrix*vec4(transformed,1.)).xyz,position.y);');
+ sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\nvarying vec4 vCanopy;uniform float uSnowCover,uDay;'+COVER_SHADER+WETCODE)
+  .replace('#include <normal_fragment_maps>',`#include <normal_fragment_maps>
+   if(uSnowCover>.01 && vCanopy.y>=coverHeight(vCanopy.xz)-.25){
+    float top=smoothstep(3.1,7.2,vCanopy.w),up=abs(inverseTransformDirection(normal,viewMatrix).y);
+    float flecks=fbm2(vCanopy.xz*2.9+vCanopy.y*.78);
+    float caught=smoothstep(.22,.84,uSnowCover*(.33+.52*top+.33*up)+(flecks-.5)*.85);
+    diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.74,.82,.87)*(.82+.21*flecks),caught*.91);
+   }`);
+}
 function forestWind(material,palm){
  material.onBeforeCompile=sh=>{
-  sh.uniforms.treeTime=WATERT;
-  sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nuniform float treeTime;').replace(
+  sh.uniforms.treeTime=WATERT;sh.uniforms.uWind=climateUniforms.uWind;
+  sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nuniform float treeTime;uniform vec2 uWind;').replace(
    '#include <begin_vertex>',`#include <begin_vertex>
     vec3 az=instanceMatrix[3].xyz+modelMatrix[3].xyz;
     float sway=sin(treeTime*1.52+az.x*.071+az.z*.093+position.x*.61);
     float weight=smoothstep(${palm?'6.60,8.70':'2.80,5.85'},position.y);
-    transformed.x+=sway*.062*weight;transformed.z+=sin(treeTime*2.48+az.x*.083+position.z*.95)*.035*weight;`);
+    vec2 localWind=vec2(dot(uWind,normalize(instanceMatrix[0].xz)),dot(uWind,normalize(instanceMatrix[2].xz)));
+    transformed.xz+=localWind*(.012+.015*sway)*weight;`);
+  snowOnLeaves(sh);
  };
  material.customProgramCacheKey=()=>palm?'palm-wind':'sycamore-wind';
 }
@@ -30,7 +47,7 @@ function forestPrototype(root,palm){
    mat.onBeforeCompile=sh=>{
     wind(sh);
     sh.fragmentShader=sh.fragmentShader.replace('#include <lights_fragment_end>',
-     '#include <lights_fragment_end>\nreflectedLight.indirectDiffuse+=diffuseColor.rgb*vec3(.12,.14,.069);');
+     '#include <lights_fragment_end>\nreflectedLight.indirectDiffuse+=diffuseColor.rgb*vec3(.12,.14,.069)*(.05+.95*uDay);');
    };
    depth=new THREE.MeshDepthMaterial({depthPacking:THREE.RGBADepthPacking,map:mat.map,alphaTest:mat.alphaTest,side:THREE.DoubleSide});
    forestWind(depth,palm);

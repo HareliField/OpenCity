@@ -196,7 +196,7 @@ function initAudio(){try{ac=new(window.AudioContext||window.webkitAudioContext)(
  engO=ac.createOscillator();engO.type='sawtooth';engO2=ac.createOscillator();engO2.type='square';engF=ac.createBiquadFilter();engF.type='lowpass';engF.frequency.value=420;engG=ac.createGain();engG.gain.value=0;const g2=ac.createGain();g2.gain.value=.35;engO.connect(engF);engO2.connect(g2).connect(engF);engF.connect(engG).connect(master);engO.start();engO2.start();
  sirO=ac.createOscillator();sirO.type='triangle';sirG=ac.createGain();sirG.gain.value=0;sirO.connect(sirG).connect(master);sirO.start();
  const hs=ac.createBufferSource();hs.buffer=nbuf;hs.loop=true;const bp=ac.createBiquadFilter();bp.type='lowpass';bp.frequency.value=180;const amp=ac.createGain();amp.gain.value=.5;const lfo=ac.createOscillator();lfo.frequency.value=13;const ld=ac.createGain();ld.gain.value=.5;lfo.connect(ld).connect(amp.gain);heliG=ac.createGain();heliG.gain.value=0;hs.connect(bp).connect(amp).connect(heliG).connect(master);hs.start();lfo.start();
- const ss=ac.createBufferSource();ss.buffer=nbuf;ss.loop=true;scrF=ac.createBiquadFilter();scrF.type='bandpass';scrF.frequency.value=1800;scrF.Q.value=6;scrG=ac.createGain();scrG.gain.value=0;ss.connect(scrF).connect(scrG).connect(master);ss.start();}catch(e){ac=null;}}
+ const ss=ac.createBufferSource();ss.buffer=nbuf;ss.loop=true;scrF=ac.createBiquadFilter();scrF.type='bandpass';scrF.frequency.value=1800;scrF.Q.value=6;scrG=ac.createGain();scrG.gain.value=0;ss.connect(scrF).connect(scrG).connect(master);ss.start();initWeatherSound();}catch(e){ac=null;}}
 function noise(dur,freq,vol){if(!ac||vol<.01)return;const s=ac.createBufferSource();s.buffer=nbuf;const f=ac.createBiquadFilter();f.type='lowpass';f.frequency.value=freq;const g=ac.createGain();const t=ac.currentTime;g.gain.setValueAtTime(vol,t);g.gain.exponentialRampToValueAtTime(.001,t+dur);s.connect(f).connect(g).connect(master);s.start(t,Math.random()*.5);s.stop(t+dur);}
 function beep(f,dur,vol,type='square'){if(!ac)return;const o=ac.createOscillator(),g=ac.createGain();o.type=type;o.frequency.value=f;const t=ac.currentTime;g.gain.setValueAtTime(vol,t);g.gain.exponentialRampToValueAtTime(.001,t+dur);o.connect(g).connect(master);o.start(t);o.stop(t+dur);}
 let player;const distVol=(x,z,v)=>v*clamp(1-Math.hypot(x-player.pos.x,z-player.pos.z)/110,0,1);
@@ -225,6 +225,7 @@ function spawnCar(type,x,z,h,driver){const s=CARSPEC[type],lv=liveryOf(type);con
  const M=makeCarMesh(type,color,lv);scene.add(M.grp);const mats=M.mats;
  const c={type,plate:mats[5].userData.plate,spec:s,mesh:M.grp,body3:M.body,beam:M.beam,rearGlow:M.rearGlow,bar:M.bar,mats,pos:new V3(x,0,z),vel:new V3(),h,speed:0,hp:s.hp,max:s.hp,driver,ai:null,route:null,burn:0,dead:false,wreckT:0,stuck:0,rev:0,wait:0,cd:rnd(1,2),siren:false,block:false,unit:null,phys:false,body:null,veh:null,upY:1,spin:0,steerA:0,lightsOn:!!driver};
  c.turnLamps=makeTurnLamps(s);M.grp.add(c.turnLamps.left,c.turnLamps.right);
+ c.snowDepth=M.snowDepth;c.paintMaterial=M.paint;
  if(s.form==='roadster'){
   c.steeringWheel=makeRoadsterWheel(s);c.instruments=roadsterInstruments(s);
   M.grp.add(c.steeringWheel,c.instruments.group);updateRoadsterDials(c);
@@ -234,33 +235,44 @@ function spawnCar(type,x,z,h,driver){const s=CARSPEC[type],lv=liveryOf(type);con
   c.stopLamp=new THREE.Mesh(unitBox,LENS.tailOff);c.stopLamp.scale.set(s.W*.19,.037,.049);
   c.stopLamp.position.set(0,profile.sect(z).pts[0][1]+.028,z);M.grp.add(c.stopLamp);
  }
- c.pos.y=groundY(x,z);M.grp.position.copy(c.pos);M.grp.rotation.y=h;cars.push(c);return c;}
-function paintCar(c,color){c.paintColor=color;if(c.hero)c.hero.shell.traverse(o=>{if(o.isMesh)o.material.color.copy(lin(color));});const m=carPaint(c.type,color,liveryOf(c.type));c.mats[0]=m;c.body3.material=c.mats.slice();}
+ c.pos.y=groundY(x,z);M.grp.position.copy(c.pos);M.grp.rotation.y=h;updateVehicleSnow(c,0,true);cars.push(c);return c;}
+function updateVehicleSnow(c,dt,opening=false){
+ if(!opening && weather.snow===0 && c.snowDepth.value===0)return;
+ const exposed=!weatherCover||c.pos.y+c.spec.r>=weatherCover.heightAt(c.pos.x,c.pos.z)-.25;
+ if(opening)c.snowDepth.value=exposed?weather.snowCover*(c.driver?.28:1):0;
+ else c.snowDepth.value=vehicleSnowDepth(c.snowDepth.value,weather,exposed,c.speed,!!c.driver,dt);
+}
+function paintCar(c,color){c.paintColor=color;if(c.hero)c.hero.shell.traverse(o=>{if(o.isMesh)o.material.color.copy(lin(color));});c.paintMaterial.color.copy(lin(color));c.mats[0]=c.paintMaterial;c.body3.material=c.mats.slice();}
 function repairCar(c,color){
  c.hp=c.max;c.repainted=true;
  if(c.ownGeo){c.body3.geometry.dispose();c.body3.geometry=carGeo(c.type).geo;c.ownGeo=false;}
  if(c.hero?.deformed){c.hero.shell.traverse(o=>{if(o.userData.undented){o.geometry.dispose();o.geometry=o.userData.undented;delete o.userData.undented;}});c.hero.deformed=false;}
  paintCar(c,color);
 }
-function removeCar(c){PoliceDepartment.release(c.officer);c.mats[5].map.dispose();c.mats[5].dispose();c.rearGlow.material.dispose();removeSeatedDriver(c);removeHeroCoupe(c);physCarOff(c);scene.remove(c.mesh);if(c.ownGeo)c.body3.geometry.dispose();const i=cars.indexOf(c);if(i>=0)cars.splice(i,1);}
-function setCarLights(c,brake){const on=!!(c.driver||c===player.car)&&!c.dead;const head=on?LENS.headOn:LENS.headOff,tail=on?(brake?LENS.tailBrake:LENS.tailOn):(brake?LENS.tailBrake:LENS.tailOff);
+function removeCar(c){PoliceDepartment.release(c.officer);c.mats[5].map.dispose();c.mats[5].dispose();c.paintMaterial.dispose();c.rearGlow.material.dispose();removeSeatedDriver(c);removeHeroCoupe(c);physCarOff(c);scene.remove(c.mesh);if(c.ownGeo)c.body3.geometry.dispose();const i=cars.indexOf(c);if(i>=0)cars.splice(i,1);}
+function setCarLights(c,brake){const running=!!(c.driver||c===player.car)&&!c.dead;
+ const on=running&&weather.headlights>.09;
+ const head=on?LENS.headOn:LENS.headOff,tail=on?(brake?LENS.tailBrake:LENS.tailOn):(brake?LENS.tailBrake:LENS.tailOff);
  if(c.stopLamp)c.stopLamp.material=brake&&!c.dead?LENS.tailBrake:LENS.tailOff;
- c.rearGlow.material.opacity=DAYLIGHT?(brake?.08:.025):(brake?.23:.12);
- if(c.mats[3]!==head||c.mats[4]!==tail){c.mats[3]=head;c.mats[4]=tail;c.body3.material=c.mats.slice();}c.beam.visible=on;c.rearGlow.visible=on;updateHeroLights(c);}
+ c.rearGlow.material.opacity=(brake?.08:0)+weather.headlights*(brake?.15:.12);
+ if(c.mats[3]!==head||c.mats[4]!==tail){c.mats[3]=head;c.mats[4]=tail;c.body3.material=c.mats.slice();}c.beam.visible=on;c.rearGlow.visible=running&&(brake||on);updateHeroLights(c);}
 const _cqc=new THREE.Quaternion(),_cv3=new V3(),_cq90=new THREE.Quaternion().setFromAxisAngle(new V3(0,1,0),-Math.PI/2);
 function updateHeadlights(c,dt){
  if(!c.beam.visible||!c.mesh.visible)return;
  c.beamTimer=(c.beamTimer||0)-dt;
  if(c.beamTimer>0)return;
  c.beamTimer=.12;
- const fx=Math.sin(c.h),fz=Math.cos(c.h),nose=c.spec.L/2+.05,length=13;
+ const fx=Math.sin(c.h),fz=Math.cos(c.h),nose=c.spec.L/2+.05;
+ const length=c===player.car?HEADLIGHT_RANGE:HEADLIGHT_SPILL_LENGTH;
  const x=c.pos.x+fx*nose,z=c.pos.z+fz*nose,y=c.pos.y+.45;
- let fraction=1;
- for(const side of [-.65,.65]){
-  const ax=x+fz*side,az=z-fx*side;
-  fraction=Math.min(fraction,rayWorld(ax,az,ax+fx*length,az+fz*length,y,y));
+ let reach=length;
+ for(const sign of [-1,1]){
+  const side=sign*c.spec.W*.33,ax=x+fz*side,az=z-fx*side;
+  reach=Math.min(reach,length*rayWorld(ax,az,ax+fx*length,az+fz*length,y,y));
  }
- c.beam.scale.z=fraction;c.beam.position.z=nose+length*fraction*.5;
+ c.headlightReach=reach;
+ const spill=Math.min(HEADLIGHT_SPILL_LENGTH,reach);
+ c.beam.scale.z=spill/HEADLIGHT_SPILL_LENGTH;c.beam.position.z=nose+spill*.5;
 }
 function syncCarMesh(c){if(c.phys){const b=c.body;_cqc.set(b.quaternion.x,b.quaternion.y,b.quaternion.z,b.quaternion.w).multiply(_cq90);c.mesh.quaternion.copy(_cqc);_cv3.set(0,-c.spec.com,0).applyQuaternion(_cqc);c.mesh.position.set(b.position.x+_cv3.x,b.position.y+_cv3.y,b.position.z+_cv3.z);}
  else{c.mesh.position.set(c.pos.x,c.pos.y,c.pos.z);c.mesh.rotation.set(0,c.h,0);}}
@@ -365,7 +377,7 @@ function followGradeRoad(c,dt){
  const s=sections[lane.index],next=lane.direction>0?s.b:s.a;
  const dx=lane.route===GRADE_ROADS.routes[0]?lane.direction:0,dz=dx?0:lane.direction;
  const remaining=(lane.exit[0]*CELL-c.pos.x)*dx+(lane.exit[1]*CELL-c.pos.z)*dz;
- let target=9;
+ let target=9*weather.trafficPace;
  if(remaining<42){
   if(!lane.handoff){
    lane.handoff={a:[lane.exit[0]-dx,lane.exit[1]-dz],b:lane.exit,incomingOffset:lane.route.width*.225};
@@ -374,7 +386,7 @@ function followGradeRoad(c,dt){
   const m=c.ai.movement=lane.handoff.movement,gap=approachGap(c,m);
   if(!canEnter(c,m,gap,dt)){
    const available=Math.max(0,gap-.57);
-   target=Math.min(target,Math.sqrt(5.6*available),available*1.3);
+   target=Math.min(target,Math.sqrt(5.6*weather.trafficPace*available),available*1.3);
   }
   if(remaining<TURN_EXTENT && m.committed){
    c.ai=lane.handoff;aiTraffic(c,dt);return;

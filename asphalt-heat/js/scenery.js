@@ -72,7 +72,11 @@ function updatePropModels(x,z){
   promise.then(template=>{
    if(!template){p.artStarted=false;return;}
    const node=modelInstance(template,dims,id);
-   node.traverse(o=>{if(o.isMesh)o.castShadow=!p.P.glow;});
+   node.traverse(o=>{
+    if(!o.isMesh)return;
+    o.castShadow=!p.P.glow;
+    if(p.t==='lantern'&&(!p.riverside||o.material.name==='Opal lamp lens'))bindLanternLens(p,o);
+   });
    p.display=node;
    node.visible=true;
    scene.add(node);
@@ -86,14 +90,41 @@ function lampEmitter(p){
  const lantern=p.t==='lantern',arm=p.riverside&&p.display?.visible? .57 : lantern?0:1.85;
  return {x:p.x+Math.sin(p.ry)*arm,y:p.y+(p.riverside&&p.display?.visible?4.21:lantern?4.45:p.display?.visible?5.69:6.9),z:p.z+Math.cos(p.ry)*arm};
 }
+const illuminatedLanternGlass=new WeakMap();
+function bindLanternLens(p,mesh){
+ const off=mesh.material;
+ let on=illuminatedLanternGlass.get(off);
+ if(!on){
+  on=off.clone();
+  // The cast lantern bakes its iron and frosted glass into one atlas.
+  const mask=p.riverside?'1.':
+   'smoothstep(4.15,4.25,vLensY)*(1.-smoothstep(4.49,4.53,vLensY))*smoothstep(.025,.20,max(diffuseColor.r,diffuseColor.g))';
+  on.onBeforeCompile=sh=>{
+   sh.uniforms.uLamp=climateUniforms.uLamp;
+   sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nvarying float vLensY;')
+    .replace('#include <begin_vertex>','#include <begin_vertex>\nvLensY=position.y;');
+   sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\nvarying float vLensY; uniform float uLamp;')
+    .replace('#include <emissivemap_fragment>','#include <emissivemap_fragment>\ntotalEmissiveRadiance+=vec3(2.5,1.65,.81)*uLamp*('+mask+');');
+  };
+  on.customProgramCacheKey=()=>mask;
+  illuminatedLanternGlass.set(off,on);
+ }
+ p.lens={mesh,off,on};
+}
+const lampLensSize=new V3(.32,.048,.50),lanternLensSize=new V3(.245,.24,.245);
 function syncLampGlow(p){
- if(!p.P.glow||p.moved)return;
+ if(!p.P.glow)return;
+ const powered=!p.moved&&cityPowerAt(p.x,p.z);
+ if(p.lens)p.lens.mesh.material=powered?p.lens.on:p.lens.off;
  const {x,y,z}=lampEmitter(p);
- const points=PROPS.glow.geometry.attributes.position;
+ const {position:points,color:colors}=PROPS.glow.geometry.attributes;
  points.setXYZ(p.gi,x,y,z);
  points.needsUpdate=true;
- _streetMatrix.makeRotationY(p.ry);
- _streetMatrix.setPosition(x,cityPowerAt(p.x,p.z)?y-.12:-1000,z);
+ colors.setXYZ(p.gi,powered?1:0,powered?.72:0,powered?.42:0);
+ colors.needsUpdate=true;
+ _streetMatrix.makeRotationY(p.ry).scale(p.t==='lantern'?lanternLensSize:lampLensSize);
+ const showBulb=powered&&!(p.lens&&p.display?.visible);
+ _streetMatrix.setPosition(x,showBulb?y+(p.t==='lantern'?.03:-.12):-1000,z);
  PROPS.heads.setMatrixAt(p.gi,_streetMatrix);
  PROPS.heads.instanceMatrix.needsUpdate=true;
 }
@@ -155,7 +186,11 @@ function loadHeroCar(car){
   if(!template){heroModels.delete(id);car.heroLoading=false;car.retryAfter=performance.now()+10000;return;}
   if(!cars.includes(car)||!car.heroWanted||car.dead)return;
   const shell=template.shell.clone(true),wheels=[];
-  shell.traverse(o=>{if(o.isMesh){o.material=o.material.clone();if(car.repainted)o.material.color.copy(lin(car.paintColor));}});
+  shell.traverse(o=>{
+   if(!o.isMesh)return;
+   o.material=o.material.transparent?o.material.clone():coatVehicle(o.material,car.snowDepth);
+   if(car.repainted)o.material.color.copy(lin(car.paintColor));
+  });
   car.mesh.add(shell);
   car.body3.visible=false;
   for(let i=0;i<4;i++){

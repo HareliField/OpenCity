@@ -135,6 +135,27 @@ function carPaint(type,color,livery){const k=type+color+livery;if(CARMATS[k])ret
  const m=new M({color:new THREE.Color(color).convertSRGBToLinear(),map:carSeamTex(type,livery),roughness:livery==='swat'?.6:.26,metalness:livery==='swat'?.2:.55,envMapIntensity:1.25});
  if(QUALITY.physical){m.clearcoat=livery==='swat'?0:1;m.clearcoatRoughness=.13;}return CARMATS[k]=m;}
 const burntMat=new THREE.MeshStandardMaterial({color:0x100e0d,roughness:1});
+function coatVehicle(material,snowDepth){
+ const m=material.clone();
+ m.onBeforeCompile=sh=>{
+  sh.uniforms.uPanelSnow=snowDepth;
+  sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vPanel;')
+   .replace('#include <begin_vertex>','#include <begin_vertex>\nvPanel=position;');
+  sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\nvarying vec3 vPanel;uniform float uPanelSnow;'+WETCODE)
+   .replace('#include <normal_fragment_maps>',`#include <normal_fragment_maps>
+    float panelSnow=0.;
+    if(uPanelSnow>.005){
+     float up=inverseTransformDirection(normal,viewMatrix).y;
+     float dust=fbm2(vPanel.xz*3.7+vPanel.y*1.8);
+     panelSnow=smoothstep(.075,.78,uPanelSnow*(.51+.64*smoothstep(.38,.90,up))+(dust-.5)*.37)*smoothstep(.24,.83,up);
+     diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.77,.83,.91)*(.86+.13*dust),panelSnow);
+     roughnessFactor=mix(roughnessFactor,.92,panelSnow);metalnessFactor*=1.-panelSnow;
+    }`)
+   .replace('#include <lights_physical_fragment>','#include <lights_physical_fragment>\n#ifdef CLEARCOAT\nmaterial.clearcoat*=1.-panelSnow;\n#endif');
+ };
+ m.customProgramCacheKey=()=>'snow-on-bodywork';
+ return m;
+}
 /* Wheel faces share one atlas and draw call. Diameters are representative street trims. */
 const WHEEL_TRIMS=[
  ['sedan',16,'split',5,5,.205],['civic',17,'split',5,5,.215],['corolla',16,'steel',12,5,.205],
@@ -257,8 +278,27 @@ function wheelEnd(){
  }
  wheelTiles.needsUpdate=true;
 }
+const HEADLIGHT_SPILL_WIDTH=8.4,HEADLIGHT_SPILL_LENGTH=23,HEADLIGHT_RANGE=40;
 let beamTex=null;
-function carBeamTex(){if(beamTex)return beamTex;const c=document.createElement('canvas');c.width=128;c.height=256;const g=c.getContext('2d');g.fillStyle='#000';g.fillRect(0,0,128,256);for(const x of[44,84]){const gr=g.createRadialGradient(x,236,2,x,150,150);gr.addColorStop(0,'rgba(255,240,200,.9)');gr.addColorStop(.35,'rgba(255,230,180,.35)');gr.addColorStop(1,'rgba(255,220,160,0)');g.globalCompositeOperation='lighter';g.fillStyle=gr;g.fillRect(0,0,128,256);}return beamTex=new THREE.CanvasTexture(c);}
+function carBeamTex(){
+ if(beamTex)return beamTex;
+ const [canvas,g]=cvs(128,256),pixels=g.createImageData(canvas.width,canvas.height);
+ for(let row=0;row<canvas.height;row++){
+  const forward=1-row/(canvas.height-1),spread=.26+1.07*forward,center=.61+.19*forward;
+  const reach=weatherRamp(0,.095,forward)*(1-weatherRamp(.50,.98,forward));
+  for(let col=0;col<canvas.width;col++){
+   const lateral=(col/(canvas.width-1)-.5)*HEADLIGHT_SPILL_WIDTH;
+   const left=(lateral-center)/spread,right=(lateral+center)/spread;
+   const falloff=1-weatherRamp(HEADLIGHT_SPILL_WIDTH*.35,HEADLIGHT_SPILL_WIDTH*.49,Math.abs(lateral));
+   const intensity=(Math.exp(-.5*left*left)+Math.exp(-.5*right*right))*reach*falloff;
+   const i=(row*canvas.width+col)*4;
+   pixels.data[i]=255;pixels.data[i+1]=239;pixels.data[i+2]=211;
+   pixels.data[i+3]=Math.round(255*Math.min(1,intensity));
+  }
+ }
+ g.putImageData(pixels,0,0);
+ return beamTex=new THREE.CanvasTexture(canvas);
+}
 let tailSpill=null;
 function tailSpillTexture(){
  if(tailSpill)return tailSpill;
@@ -274,22 +314,23 @@ function tailSpillTexture(){
 }
 let beamMat=null,beamGeo=null;
 function makeCarMesh(type,color,livery){const G=carGeo(type),s=G.s;const grp=new THREE.Group();
- const mats=[carPaint(type,color,livery),s.form==='roadster'?roadsterGlass:glassMat,darkMat,LENS.headOff,LENS.tailOff,carPlateMat()];const body=new THREE.Mesh(G.geo,mats);body.castShadow=true;body.receiveShadow=false;grp.add(body);
- if(!beamMat){beamMat=new THREE.MeshBasicMaterial({map:carBeamTex(),transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,opacity:.09,fog:false});beamGeo=new THREE.PlaneGeometry(7,13);beamGeo.rotateX(-Math.PI/2);beamGeo.rotateY(Math.PI);}
- const beam=new THREE.Mesh(beamGeo,beamMat);beam.position.set(0,.06,s.L/2+6.2);beam.visible=false;beam.renderOrder=3;grp.add(beam);
+ const snowDepth={value:0},paint=coatVehicle(carPaint(type,color,livery),snowDepth);
+ const mats=[paint,s.form==='roadster'?roadsterGlass:glassMat,darkMat,LENS.headOff,LENS.tailOff,carPlateMat()];const body=new THREE.Mesh(G.geo,mats);body.castShadow=true;body.receiveShadow=false;grp.add(body);
+ if(!beamMat){beamMat=new THREE.MeshBasicMaterial({map:carBeamTex(),transparent:true,blending:THREE.AdditiveBlending,depthWrite:false,opacity:.09,fog:false});beamGeo=new THREE.PlaneGeometry(HEADLIGHT_SPILL_WIDTH,HEADLIGHT_SPILL_LENGTH);beamGeo.rotateX(-Math.PI/2);beamGeo.rotateY(Math.PI);}
+ const beam=new THREE.Mesh(beamGeo,beamMat);beam.position.set(0,.06,s.L/2+.05+HEADLIGHT_SPILL_LENGTH/2);beam.visible=false;beam.renderOrder=3;grp.add(beam);
  const rearGlow=new THREE.Mesh(beamGeo,new THREE.MeshBasicMaterial({
   map:tailSpillTexture(),color:new THREE.Color(2,.20,.14),transparent:true,blending:THREE.AdditiveBlending,
   depthWrite:false,opacity:.17,fog:false
  }));
  rearGlow.rotateY(Math.PI);
- rearGlow.scale.set(.59,.28,.29);
+ rearGlow.scale.set(4.13/HEADLIGHT_SPILL_WIDTH,1,3.77/HEADLIGHT_SPILL_LENGTH);
  rearGlow.position.set(0,.037,-s.L/2-1.6);
  rearGlow.visible=false;
  grp.add(rearGlow);
  let bar=null;
  if(livery==='police'||livery==='swat'||livery==='amb'){bar={r:new THREE.Mesh(unitBox,SIREN.offR),b:new THREE.Mesh(unitBox,SIREN.offB)};const y=s.r+.07,z=(G.zg1+G.zg2)/2+(livery==='police'?.1:1.4);for(const[m,sx]of[[bar.r,-1],[bar.b,1]]){m.scale.set(.52,.11,.2);m.position.set(sx*.29,y,z);grp.add(m);}const base=new THREE.Mesh(unitBox,darkMat);base.scale.set(1.2,.04,.26);base.position.set(0,y-.06,z);grp.add(base);}
  if(livery==='taxi'){const t=new THREE.Mesh(unitBox,new THREE.MeshBasicMaterial({color:new THREE.Color(1.6,1.3,.5)}));t.scale.set(.5,.16,.2);t.position.set(0,s.r+.09,(G.zg1+G.zg2)/2);grp.add(t);}
- return{grp,body,beam,rearGlow,bar,mats};}
+ return{grp,body,beam,rearGlow,bar,mats,snowDepth,paint};}
 const SIREN={onR:new THREE.MeshBasicMaterial({color:new THREE.Color(3,.15,.1)}),onB:new THREE.MeshBasicMaterial({color:new THREE.Color(.15,.5,3)}),offR:new THREE.MeshStandardMaterial({color:0x4a0505,roughness:.2}),offB:new THREE.MeshStandardMaterial({color:0x05054a,roughness:.2})};
 /* crumple: push vertices near a local-space impact point toward the car centre */
 function carDent(c,lx,ly,lz,amount){

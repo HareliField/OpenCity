@@ -28,6 +28,7 @@
   look:{op:'step',ticks:1,lookYaw:0.5,lookPitch:0.1},
   act:{op:'act',action:'interact'}, events:{op:'events',after:0}, police:{op:'police'},
   clock:{op:'clock',paused:true}, stats:{op:'stats',cash:1600,armor:100,wanted:0}, spawn:{op:'spawn',model:'sport'},
+  environment:{op:'environment',hour:19,weather:'rain'}, weatherTypes:Object.keys(WEATHER_FRONTS),
   models:{op:'models'}, groups
  };
  function number(value, name, min, max, integer=false) {
@@ -106,8 +107,13 @@
   if(player.car) result.push('exit','signalLeft','signalRight');
   return result;
  }
+ function environment() {
+  const result=weather.snapshot();
+  if(player && weatherCover) result.sheltered=player.pos.y+1.35<weatherCover.heightAt(player.pos.x,player.pos.z);
+  return result;
+ }
  function observe() {
-  const base={state,time,paused,sound:$('sound').textContent,actions:actions(),cursor:sequence};
+  const base={state,time,paused,environment:environment(),sound:$('sound').textContent,actions:actions(),cursor:sequence};
   if(!player) return {...base,loading:$('load').textContent};
   const p=player;
   return {...base,player:{position:point(p.car?.pos||p.pos),yaw:p.car?.h??p.yaw,health:p.hp,armor:p.armor,cash:p.cash,
@@ -201,6 +207,9 @@
     const after=number(c.after??0,'after',0,sequence,true),oldest=history[0]?.sequence??1;
     return {cursor:sequence,missed:Math.max(0,oldest-after-1),events:history.filter(e=>e.sequence>after).map(e=>structuredClone(e))};
    }
+   case 'environment':
+    if(c.hour===undefined&&c.weather===undefined)return environment();
+    playing();setCityEnvironment(c.hour,c.weather);break;
    case 'clock': paused=flag(c.paused,'paused');clock.getDelta();break;
    case 'act': act(c.action);break;
    case 'places': case 'world': case 'police': case 'models':

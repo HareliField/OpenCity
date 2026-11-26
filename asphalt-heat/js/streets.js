@@ -255,7 +255,15 @@ function finishStreetDetails(){
 }
 
 function updateStreetLighting(dt,x,z){
- if(DAYLIGHT||(STREET.sample-=dt)>0)return;
+ const level=weather.lamps;
+ PROPS.glow.visible=PROPS.heads.visible=level>.015;
+ PROPS.glow.material.opacity=.72*level;
+ PROPS.heads.material.color.setRGB(3*level,2.3*level,1.5*level);
+ if(level<=.015){
+  for(const light of STREET.lights)light.intensity=0;
+  STREET.sample=0;return;
+ }
+ if((STREET.sample-=dt)>0)return;
  STREET.sample=.36;
  const active=PROPS.list.filter(p=>p.P.glow&&!p.moved&&cityPowerAt(p.x,p.z)&&Math.abs(p.x-x)<24&&Math.abs(p.z-z)<24);
  active.sort((a,b)=>(a.x-x)**2+(a.z-z)**2-(b.x-x)**2-(b.z-z)**2);
@@ -263,7 +271,7 @@ function updateStreetLighting(dt,x,z){
   const light=STREET.lights[i],p=active[i];
   if(p){
    const at=lampEmitter(p);light.position.set(at.x,at.y-.20,at.z);
-   light.intensity=.76;
+   light.intensity=3.8*level;
   } else light.intensity=0;
  }
 }

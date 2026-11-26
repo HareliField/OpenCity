@@ -25,9 +25,9 @@ function reserveGradeBlock(block){
 const TREE_RESERVE=[];
 
 function buildGradeRoads(){
- const asphalt=pbr('asphalt',6.3,{rough:.57,rmap:1,ns:1.02,env:.86,color:0x938f89});
+ const asphalt=makeWet(pbr('asphalt',6.3,{rough:.78,rmap:1,ns:1.02,env:.86,color:0x938f89}),{wet:.78});
  const solidRail=pbr('concrete',2.7,{color:0xb8a99a,rough:.79,env:.6,ns:.54});
- const paint=new THREE.MeshStandardMaterial({vertexColors:true,roughness:.57,polygonOffset:true,polygonOffsetFactor:-2});
+ const paint=makeWet(new THREE.MeshStandardMaterial({vertexColors:true,roughness:.57,polygonOffset:true,polygonOffsetFactor:-2}),{wet:.72});
  const rib=new THREE.MeshStandardMaterial({color:lin(0x706b63),metalness:.48,roughness:.47});
  const reflectors=new THREE.MeshBasicMaterial({color:new THREE.Color(1.15,.54,.12)});
  for(const data of GRADE_PROFILES){

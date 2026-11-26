@@ -235,8 +235,10 @@ function buildAccessibleShell(block,R,settings={}){
  if(height>ceiling)block.bld.push({...R,y0:ceiling,h:height});
  topQuad(kind==='home'?m.wood:m.tile,R.x0,R.x1,base+.006,R.z0,R.z1,2.4,null,false);
  if(base>.20)STREET.steps.push({...R,y:base});
- for(const r of subtractCityOpenings(R,settings.ceilingOpenings||[]))
+ for(const r of subtractCityOpenings(R,settings.ceilingOpenings||[])){
+  weatherCeilings.push({...r,h:ceiling});
   plainBox(m.ceiling,r.x0,r.x1,ceiling-.10,ceiling,r.z0,r.z1,{uvm:2.6,shadow:false});
+ }
 
  for(const side of ['S','N','E','W']){
   const {matrix:M,width:span}=lotFace(R,side),a=-span/2,b=span/2;

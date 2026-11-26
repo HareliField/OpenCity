@@ -9,7 +9,6 @@ const V3=THREE.Vector3;const unitBox=new THREE.BoxGeometry(1,1,1);
 const ORIGINAL_GRID=8,N=16,CELL=64,HALF=8,W=N*CELL,S=W+16,LANE=4,SW=4;
 const isMobile=matchMedia('(pointer:coarse)').matches||/Android|iPhone|iPad/.test(navigator.userAgent);
 const qp=new URLSearchParams(location.search);
-const DAYLIGHT=qp.get('light')!=='sunset';
 const QUALITY={level:qp.has('q')?+qp.get('q'):(isMobile?1:2)};
 function applyQuality(){const L=QUALITY.level;QUALITY.physical=L>=2;QUALITY.refl=L>=1;QUALITY.bloom=L>=1;QUALITY.msaa=L>=2?4:(L>=1?2:0);QUALITY.pr=Math.min(devicePixelRatio,L>=2?1.75:L>=1?1.2:.9);QUALITY.shadow=L>=2?2048:1024;QUALITY.reflScale=L>=2?.5:.33;QUALITY.peds=L>=2?26:L>=1?18:12;}
 applyQuality();
@@ -29,52 +28,11 @@ renderer.outputEncoding=POST?THREE.LinearEncoding:THREE.sRGBEncoding;renderer.to
 renderer.physicallyCorrectLights=false;
 const scene=new THREE.Scene();
 const camera=new THREE.PerspectiveCamera(60,1,.12,2600);camera.layers.enable(2);
-/* sun (matches the sky panorama: sun azimuth +X, low) */
-const SUNDIR=(DAYLIGHT?new V3(.6394,.743,.1978):new V3(.9107,.0510,-.4100)).normalize();
-const SKYSUN=SUNDIR;
-/* ---- fog: colour follows the sky in the view direction ---- */
-{const sx=SKYSUN.x.toFixed(3),sz=SKYSUN.z.toFixed(3),sy=SKYSUN.y.toFixed(3);
- THREE.ShaderChunk.fog_pars_vertex='#ifdef USE_FOG\nvarying vec3 vFogPos;\n#endif';
- THREE.ShaderChunk.fog_vertex='#ifdef USE_FOG\nvFogPos=mvPosition.xyz;\n#endif';
- THREE.ShaderChunk.fog_pars_fragment='#ifdef USE_FOG\nuniform vec3 fogColor;varying vec3 vFogPos;\n#ifdef FOG_EXP2\nuniform float fogDensity;\n#else\nuniform float fogNear;uniform float fogFar;\n#endif\n#endif';
- THREE.ShaderChunk.fog_fragment=`#ifdef USE_FOG
- float fogD=length(vFogPos);vec3 fw=normalize(vec3(dot(viewMatrix[0].xyz,vFogPos),dot(viewMatrix[1].xyz,vFogPos),dot(viewMatrix[2].xyz,vFogPos)));
- vec2 fxz=normalize(fw.xz+1e-5);float fsd=max(dot(fxz,normalize(vec2(${sx},${sz}))),0.);
- vec3 fcol=${DAYLIGHT?'mix(vec3(.51,.60,.72),vec3(.80,.82,.82),pow(fsd,2.))':'mix(vec3(.37,.42,.49),vec3(.82,.61,.39),pow(fsd,3.))'}+
-  ${DAYLIGHT?'vec3(.32,.29,.24)':'vec3(.65,.37,.19)'}*pow(max(dot(fw,normalize(vec3(${sx},${sy},${sz}))),0.),28.);
- #ifdef FOG_EXP2
- float fogFactor=1.-exp(-fogDensity*fogDensity*fogD*fogD);
- #else
- float fogFactor=smoothstep(fogNear,fogFar,fogD);
- #endif
- fogFactor*=clamp(1.15-fw.y*2.2,.0,1.);
- gl_FragColor.rgb=mix(gl_FragColor.rgb,fcol*fogColor,fogFactor);
- #endif`;}
-scene.fog=new THREE.FogExp2(0xffffff,DAYLIGHT?.00175:.00315);
-/* ---- lights ---- */
-const hemi=new THREE.HemisphereLight(lin(DAYLIGHT?0xd8e2ed:0xc1cee8),lin(DAYLIGHT?0x9b9389:0x8c8273),DAYLIGHT?1.12:1.20);scene.add(hemi);
-const sun=new THREE.DirectionalLight(lin(DAYLIGHT?0xfff1de:0xffd3a3),DAYLIGHT?1.94:1.92);sun.castShadow=true;
-sun.shadow.mapSize.set(QUALITY.shadow,QUALITY.shadow);{const sc=sun.shadow.camera;sc.left=-48;sc.right=48;sc.top=48;sc.bottom=-48;sc.near=1;sc.far=500;}
-sun.shadow.bias=-.00019;sun.shadow.normalBias=.023;scene.add(sun,sun.target);
 const muzzleL=new THREE.PointLight(0xffc070,0,14,2);scene.add(muzzleL);
-// A shared headlamp illuminates the road, nearby walls and traffic for the occupied car.
-const drivingLight=new THREE.SpotLight(0xffedcf,0,22,.43,.55,1);
-scene.add(drivingLight,drivingLight.target);
+// The occupied car's two low beams illuminate nearby solid surfaces.
+const drivingLights=Array.from({length:2},()=>new THREE.SpotLight(0xffedcf,0,40,.36,.82,1));
+for(const lamp of drivingLights)scene.add(lamp,lamp.target);
 const boomL=new THREE.PointLight(0xff8a30,0,60,2);scene.add(boomL);
-/* ---- sky dome ---- */
-const skyMat=new THREE.ShaderMaterial({side:THREE.BackSide,depthWrite:false,fog:false,uniforms:{tSky:{value:null},uExp:{value:1}},
- vertexShader:'varying vec3 vD;void main(){vD=position;vec4 p=projectionMatrix*modelViewMatrix*vec4(position,1.);gl_Position=p.xyww;}',
- fragmentShader:`uniform sampler2D tSky;uniform float uExp;varying vec3 vD;
- void main(){vec3 d=normalize(vD);vec2 uv=vec2(atan(d.z,d.x)*.1591549+.5,asin(clamp(d.y,-1.,1.))*.3183099+.5);vec3 c=pow(texture2D(tSky,uv).rgb,vec3(2.2))*4.*uExp;
- ${POST?'':'c=c/(c+.6);c=pow(c,vec3(1./2.2));'}gl_FragColor=vec4(c,1.);}`});
-const sky=new THREE.Mesh(new THREE.SphereGeometry(2000,48,24),skyMat);sky.frustumCulled=false;sky.renderOrder=-10;scene.add(sky);
-function loadSky(done){const ld=new THREE.TextureLoader();let n=2;const fin=()=>{if(--n===0)done();};
- ld.load(DAYLIGHT?'tex/sky-daylight.jpg':'tex/sky-coastal-evening.jpg',t=>{t.minFilter=THREE.LinearFilter;t.generateMipmaps=false;skyMat.uniforms.tSky.value=t;fin();},undefined,fin);
- const im=new Image();im.onload=()=>{const[c,g]=cvs(im.width,im.height);g.drawImage(im,0,0);const d=g.getImageData(0,0,c.width,c.height).data;const f=new Float32Array(c.width*c.height*4);
-  for(let i=0;i<d.length;i+=4){for(let k=0;k<3;k++)f[i+k]=Math.min(Math.pow(d[i+k]/255,2.2)*(DAYLIGHT?2.65:4),30);f[i+3]=1;}
-  const dt=new THREE.DataTexture(f,c.width,c.height,THREE.RGBAFormat,THREE.FloatType);dt.mapping=THREE.EquirectangularReflectionMapping;dt.flipY=true;dt.needsUpdate=true;dt.magFilter=dt.minFilter=THREE.LinearFilter;
-  try{const pm=new THREE.PMREMGenerator(renderer);scene.environment=pm.fromEquirectangular(dt).texture;pm.dispose();}catch(e){console.warn(e);}fin();};im.onerror=fin;im.src=DAYLIGHT?'tex/env-daylight.jpg':'tex/env-coastal-evening.jpg';}
-
 /* ---- planar reflection for wet ground ---- */
 const REFL={rt:null,cam:new THREE.PerspectiveCamera(),mat:new THREE.Matrix4(),on:false,uniforms:{tRefl:{value:null},reflMat:{value:new THREE.Matrix4()},reflOn:{value:0}}};
 function reflResize(w,h){if(!QUALITY.refl){REFL.on=false;REFL.uniforms.reflOn.value=0;return;}const s=QUALITY.reflScale;
@@ -113,13 +71,14 @@ function renderReflection(){
 REFL.hide=[];
 /* inject wet-ground reflections into a MeshStandardMaterial */
 const WETCODE=`
-float hash21(vec2 p){p=fract(p*vec2(123.34,456.21));p+=dot(p,p+45.32);return fract(p.x*p.y);}
+// Keep sub-texel entropy at city-scale coordinates in 32-bit shader arithmetic.
+float hash21(vec2 p){p=fract(mod(p,vec2(251.,257.))*vec2(.10317,.11369));p+=dot(p,p+45.32);return fract(p.x*p.y);}
 float vnoise(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(hash21(i),hash21(i+vec2(1,0)),f.x),mix(hash21(i+vec2(0,1)),hash21(i+vec2(1,1)),f.x),f.y);}
 float fbm2(vec2 p){return vnoise(p)*.55+vnoise(p*2.1+7.3)*.3+vnoise(p*4.3+3.1)*.15;}`;
 function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
- mat.onBeforeCompile=sh=>{Object.assign(sh.uniforms,REFL.uniforms);sh.uniforms.uWet={value:opt.wet==null?1:opt.wet};
+ mat.onBeforeCompile=sh=>{Object.assign(sh.uniforms,REFL.uniforms,climateUniforms);sh.uniforms.uWet={value:opt.wet==null?1:opt.wet};
   sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vWP;varying vec4 vRU;uniform mat4 reflMat;').replace('#include <fog_vertex>','#include <fog_vertex>\nvec4 wp4=modelMatrix*vec4(transformed,1.);'+(opt.inst?'wp4=modelMatrix*instanceMatrix*vec4(transformed,1.);':'')+'vWP=wp4.xyz;vRU=reflMat*wp4;');
-  sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\nvarying vec3 vWP;varying vec4 vRU;uniform sampler2D tRefl;uniform float reflOn;uniform float uWet;'+WETCODE)
+  sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\nvarying vec3 vWP;varying vec4 vRU;uniform sampler2D tRefl;uniform float reflOn;uniform float uWet,uWetness,uRain,uSnowCover,uSeconds,uLamp;'+COVER_SHADER+WETCODE)
    .replace('#include <roughnessmap_fragment>',`#include <roughnessmap_fragment>
     float big=fbm2(vWP.xz*.06);
     vec2 grid=abs(mod(vWP.xz+32.,64.)-32.);
@@ -127,8 +86,11 @@ function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
     vec2 tangent=grid.x<grid.y?vec2(vWP.z,vWP.x):vWP.xz;
     float pool=fbm2(tangent*vec2(.18,.39)+big*2.1)+big*.19+gutter*.15;
     pool+=.026*vnoise(tangent*vec2(1.6,3.4));
-    float pud=smoothstep(.49,.652,pool)*uWet;
-    float damp=uWet*(.74+.26*big);
+    float exposed=step(coverHeight(vWP.xz)-.25,vWP.y);
+    float facingUp=smoothstep(.30,.87,inverseTransformDirection(normalize(vNormal),viewMatrix).y);
+    float film=uWet*exposed*facingUp*uWetness;
+    float pud=smoothstep(.49,.652,pool)*film;
+    float damp=film*(.74+.26*big);
     ${opt.road?`float midblock=smoothstep(8.,16.,max(grid.x,grid.y));
     float downhill=smoothstep(2.7,7.5,min(grid.x,grid.y));
     float retention=mix(.42,mix(.16,.92,downhill),midblock);
@@ -136,10 +98,28 @@ function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
     float grain=vnoise(vWP.xz*34.);
     roughnessFactor=mix(roughnessFactor,.29+grain*.15,damp*.81);roughnessFactor=mix(roughnessFactor,.055,pud);diffuseColor.rgb*=mix(1.,.60,damp)*mix(1.,.44,pud);
     ${opt.tint?'diffuseColor.rgb*=mix(.78,1.13,big);':''}
+    float snow=0.;
+    if(uSnowCover>.015 && exposed*facingUp>.01){
+     float track=min(abs(min(grid.x,grid.y)-2.),abs(min(grid.x,grid.y)-6.));
+     float wear=${opt.road?'(1.-smoothstep(.16,.53,abs(track-.75)))*smoothstep(9.,14.,max(grid.x,grid.y))':'0.'};
+     float drift=fbm2(vWP.xz*.53+vec2(big,0.));
+     snow=smoothstep(.14,.77,uSnowCover*(.66+.68*big)*(1.-wear*(.54+.17*drift))+.32*(drift-.5))*exposed*facingUp;
+     diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.76,.83,.90)*(.82+.12*drift+.06*grain),snow);
+     roughnessFactor=mix(roughnessFactor,.92,snow);pud*=1.-snow;damp*=1.-snow;
+    }
     ${opt.paint?'if(fbm2(vWP.xz*22.)+vnoise(vWP.xz*69.)*.30<.30)discard;':''}`)
-   .replace('#include <normal_fragment_maps>','#include <normal_fragment_maps>\nnormal=normalize(mix(normal,normalize(vNormal),pud*.9));')
+   .replace('#include <normal_fragment_maps>',`#include <normal_fragment_maps>
+    normal=normalize(mix(normal,normalize(vNormal),max(pud*.90,snow*.67)));
+    if(pud*uRain>.014){
+     vec2 tile=vWP.xz*3.5,cell=floor(tile),local=fract(tile)-.5;
+     local-=.45*(vec2(hash21(cell+23.),hash21(cell+5.))-.5);
+     float phase=fract(uSeconds*(1.65+.65*hash21(cell))+hash21(cell+49.));
+     float radius=length(local),ring=(radius-phase*.50)*51.;
+     vec2 slope=local/max(radius,.001)*cos(ring)*exp(-abs(ring)*.50)*(1.-phase)*uRain*pud;
+     normal=normalize(normal+mat3(viewMatrix)*vec3(slope.x,0.,slope.y)*.11);
+    }`)
    .replace('#include <tonemapping_fragment>',`
-    {vec3 V=normalize(cameraPosition-vWP);float fr=.13+.87*pow(1.-max(V.y,0.),3.1);float kk=(pud*${DAYLIGHT?'.93':'.88'}+damp*${DAYLIGHT?'.22':'.30'}*(1.-pud))*fr*reflOn;
+    {vec3 V=normalize(cameraPosition-vWP);float fr=.13+.87*pow(1.-max(V.y,0.),3.1);float kk=(pud*.93+damp*mix(.22,.30,uLamp)*(1.-pud))*fr*reflOn*(1.-smoothstep(.40,.65,vWP.y));
      if(kk>.002){vec2 dist=normal.xz*mix(.016,.0025,pud)+vec2(grain-.5,big-.5)*.003;vec4 ru=vRU;ru.xy+=dist*ru.w;vec3 rc=texture2DProj(tRefl,ru).rgb;
       if(pud<.6){vec4 r2=ru;r2.x+=.008*ru.w;vec4 r3=ru;r3.y-=.012*ru.w;rc=(rc+texture2DProj(tRefl,r2).rgb+texture2DProj(tRefl,r3).rgb)/3.;}
       vec2 edge=abs(ru.xy/max(.001,ru.w)-.5);
@@ -201,7 +181,7 @@ function postResize(w,h){if(!POST)return;const pr=renderer.getPixelRatio(),W2=Ma
  const mk=s=>new THREE.WebGLRenderTarget(Math.max(8,W2*s|0),Math.max(8,H2*s|0),o);PP.occlusion=QUALITY.level>=2?mk(.50):null;PP.b0=mk(.5);PP.b1a=mk(.25);PP.b1b=mk(.25);PP.b2a=mk(.125);PP.b2b=mk(.125);PP.b3a=mk(.0625);PP.b3b=mk(.0625);}
 function pass(mat,target){PP.quad.material=mat;renderer.setRenderTarget(target);renderer.render(PP.scene,PP.cam);}
 function blurTo(src,a,b){PP.blur.uniforms.t.value=src.texture;PP.blur.uniforms.d.value.set(1/a.width,0);pass(PP.blur,a);PP.blur.uniforms.t.value=a.texture;PP.blur.uniforms.d.value.set(0,1/a.height);pass(PP.blur,b);}
-function renderFrame(t){renderReflection();updateShopReflection(t);
+function renderFrame(t){preparePrecipitation();renderReflection();updateShopReflection(t);
  if(!POST){renderer.setRenderTarget(null);renderer.render(scene,camera);return;}
  renderer.setRenderTarget(PP.main);renderer.clear();renderer.render(scene,camera);
  const F=PP.final.uniforms;F.t.value=PP.main.texture;F.time.value=t%10;F.aoOn.value=PP.occlusion?1:0;

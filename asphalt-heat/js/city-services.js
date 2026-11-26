@@ -84,13 +84,11 @@ function drawServiceNetwork(){
 }
 function setFeederPower(sector,power){
  sector.power=power;
- const colors=PROPS.glow?.geometry.attributes.color;
- if(colors){
+ if(PROPS.glow){
   for(const p of PROPS.list){
    if(!p.P.glow||p.moved||serviceSector(p.x,p.z)!==sector)continue;
-   colors.setXYZ(p.gi,power?1:0,power ? .72 : 0,power ? .42 : 0);syncLampGlow(p);
+   syncLampGlow(p);
   }
-  colors.needsUpdate=true;
  }
  for(const control of CITY_SERVICES.switches)control.handle.rotation.x=control.sector.power?-.24:.70;
  CITY_SERVICES.next=0;updateServiceGraph(0);

@@ -2,10 +2,11 @@
 const GARDENS={blocks:new Map(),houses:[],materials:null};
 function gardenMaterials(){
  if(GARDENS.materials)return GARDENS.materials;
- const grass=pbr('garden-lawn',1,{rough:.98,ns:.42,env:.35});
+ const grass=makeWet(pbr('garden-lawn',1,{rough:.98,ns:.42,env:.35}),{wet:.13});
+ const wetGrass=grass.onBeforeCompile;
  grass.onBeforeCompile=sh=>{
-  sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\n'+WETCODE)
-   .replace('#include <map_fragment>',`#ifdef USE_MAP
+  wetGrass(sh);
+  sh.fragmentShader=sh.fragmentShader.replace('#include <map_fragment>',`#ifdef USE_MAP
     vec2 p=vUv;vec4 first=mapTexelToLinear(texture2D(map,p));
     vec4 second=mapTexelToLinear(texture2D(map,mat2(.83,-.56,.56,.83)*p*.74+vec2(.45,.71)));
     diffuseColor*=mix(first,second,smoothstep(.20,.79,fbm2(p*1.51)));
@@ -15,7 +16,7 @@ function gardenMaterials(){
  return GARDENS.materials={
   walls:[coat(0xf2f0e5),coat(0xe1dccd),coat(0xe6d5be),coat(0xd7d5c1)],
   foundation:coat(0x9a978b),grass,
-  tile:pbr('garden-tile',1,{rough:.92,ns:.60,env:.40}),
+  tile:makeWet(pbr('garden-tile',1,{rough:.92,ns:.60,env:.40}),{wet:.34}),
   timber:pbr('planks',.71,{rough:.85,ns:.32,color:0x9b8274}),
   linen:new THREE.MeshStandardMaterial({color:lin(0xe2ddcf),roughness:.96}),
   blanket:[0x6d8283,0x999480,0x866e64].map(c=>new THREE.MeshStandardMaterial({color:lin(c),roughness:.96})),

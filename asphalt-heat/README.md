@@ -1,6 +1,6 @@
 # Asphalt Heat
 
-An original browser-based 3D coastal city. The 16 × 16 city blocks cover 1,024 × 1,024 metres, and the freight terminal extends south from the warehouse district. Two graded roads add a second level and a curved route across the grid. Explore after a rain shower, pull over to visit the shops, or head east to the boardwalk and lighthouse.
+An original browser-based 3D coastal city. The 16 × 16 city blocks cover 1,024 × 1,024 metres, and the freight terminal extends south from the warehouse district. Two graded roads add a second level and a curved route across the grid. Follow a storm across the waterfront, pull over to visit the shops, or head east to the boardwalk and lighthouse.
 
 ## Play locally
 
@@ -10,7 +10,7 @@ From the game directory, run:
 python3 tools/serve.py
 ```
 
-Open [Asphalt Heat](http://127.0.0.1:8765/index.html). Daylight is the default. Add `?light=sunset` for the original evening sky. The game and its assets load locally. Add `?q=0`, `?q=1`, or `?q=2` to override automatic quality selection.
+Open [Asphalt Heat](http://127.0.0.1:8765/index.html). Morning is the default. Open **Time & weather** before pressing **Play** to pick a starting sky and hour. The game and its assets load locally. Add `?q=0`, `?q=1`, or `?q=2` to override automatic quality selection.
 
 | Action | Desktop |
 | --- | --- |
@@ -27,6 +27,18 @@ Open [Asphalt Heat](http://127.0.0.1:8765/index.html). Daylight is the default. 
 | Exit a car beside a garage service or shutter | E |
 
 Touch devices show an on-screen stick, action controls, camera and HUD buttons. To sell or respray a car, open the garage shutter, stop on the marker inside, and press the action button.
+
+## Time and weather
+
+One real second of play advances the city clock by one minute. A full day takes 24 minutes of simulation. The fictional coast sits at 40° north. The starting season follows the calendar, and sunrise, sunset and shadows move with the day of the year. The moon has its own rising time and phase. The sun travels from east (+x) to west, with south along +z. [NOAA solar position equations](https://gml.noaa.gov/grad/solcalc/solareqns.PDF)
+
+The city normally starts with scattered clouds and damp streets. Fronts move gradually through clear skies, overcast, sea fog, drizzle, rain and thunderstorms. Cold air brings mixed precipitation, snow and blizzards. Rain collects along gutters. Exposed pavement and roofs hold snow, which melts into water as the air warms. Traffic slows in poor visibility and tyres lose grip on wet or snowy surfaces. Streetlights still depend on their district feeder. Headlights also respond to daylight, fog and precipitation.
+
+For a particular scene, choose **Sunset** and **Thunderstorm** on the title screen, or launch with `?light=sunset&weather=storm`. For a winter night use `?hour=23&weather=snow`. Starting conditions evolve during play. Storms illuminate the clouds and thunder arrives later according to strike distance. Weather audio follows **Sound**, which starts off. [National Weather Service on thunder](https://www.weather.gov/safety/lightning-science-thunder)
+
+Snow catches on tree crowns and parked cars. Driving sheds it from the bodywork. On the beach, breaking waves wash snow away at the waterline, and stronger winds build whitecaps farther out. The lighthouse optic brightens as daylight or visibility falls and follows its local power switch.
+
+Shore materials use the same `climateUniforms` as the sky. `uSun` points toward the sun in world space, `uSunlight` gives its cloud-filtered linear RGB, and `uWind` gives eastward and southward wind in metres per second. `uWindSpeed` follows the gusts. Run `node tools/weather-test.js` to check seasonal fronts, storm timing, melt, drying and shelter.
 
 ## Places to look
 
@@ -86,7 +98,7 @@ Buried water mains, electrical ducts and sanitary returns serve all 256 blocks. 
 
 Vehicles use a 90 Hz physics step, individual suspension and wheel contact, separate steering angles for the front wheels, and different traction on wet roads, concrete, and sand. Store entrances, house doors, and warehouse shutters open and close on real collision shapes. Many loose objects, including salon chairs and street bins, move when pushed. Trunks, counters, fences, poles, fountains, and railings are solid. Avatar falls use articulated constraints.
 
-The coupe bench test measured 6.00 seconds to 100 km/h and 37.0 metres to brake from that speed. Release the accelerator to slow down gradually, or hold the down arrow for firmer braking.
+The coupe bench test measured 6.00 seconds to 100 km/h on the default damp road. From 100 km/h the same coupe stopped in 35.4 metres on dry asphalt, 38.2 metres on saturated asphalt and 55.1 metres on snow. Release the accelerator to slow down gradually, or hold the down arrow for firmer braking.
 
 Run `node tools/ptest.js` to check acceleration, braking, steering, curbs, wall collisions, surface traction, object toppling, and consistency across update rates.
 
@@ -129,6 +141,7 @@ Start the local server and open [agent mode](http://127.0.0.1:8765/index.html?ag
 | Task | Example command |
 | --- | --- |
 | Discover commands or read the current player, camera, HUD, menu and available actions | `{"op":"help"}` or `{"op":"observe"}` |
+| Inspect the environment or set the sky and solar hour while preserving ground conditions | `{"op":"environment"}` or `{"op":"environment","hour":17,"weather":"storm"}`. Use `help.weatherTypes` for the available fronts. |
 | Find destinations and jump there on foot or with the current vehicle | `{"op":"places"}`, then `{"op":"jump","to":"harbor"}` |
 | Jump to coordinates facing south | `{"op":"jump","x":256,"z":320,"yaw":0}` |
 | Walk or drive forward for half a second | `{"op":"step","forward":1,"ticks":15}` |
