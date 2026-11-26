@@ -47,6 +47,7 @@ function physStep(dt){
  PH.accumulator=Math.min(PH.accumulator+dt,PHYS_DT*6);
  while(PH.accumulator+1e-9>=PHYS_DT){
   if(typeof animateDoorBodies==='function')animateDoorBodies(PHYS_DT);
+  if(typeof updateFreightCranes==='function')updateFreightCranes(time-PH.accumulator+PHYS_DT,PHYS_DT);
   PH.w.step(PHYS_DT);
   PH.accumulator=Math.max(0,PH.accumulator-PHYS_DT);
  }

@@ -2,11 +2,16 @@
 const SPAWN={hospital:null,police:null};
 function makePlayerChar(){return makeChar(ROLE.player?ROLE.player[0]:pickChar('m'),{gun:1,shadow:true});}
 function nearestCar(r){let best=null,bd=r;for(const c of cars){if(c.dead||Math.abs(c.pos.y-player.pos.y)>1.05)continue;const d=dist2(c.pos,player.pos);if(d<bd&&rayWorld(player.pos.x,player.pos.z,c.pos.x,c.pos.z,player.pos.y+1,c.pos.y+1)>=1){bd=d;best=c;}}return best;}
-function nearPlace(){for(const p of places){if(!p.door||p.road)continue;if(Math.hypot((p.interact||p.door).x-player.pos.x,(p.interact||p.door).z-player.pos.z)<2.4)return p;}return null;}
+function canReachPlace(pos,at,radius){
+ if(dist2(pos,at)>=radius)return false;
+ const y=groundY(at.x,at.z);
+ return Math.abs(pos.y-y)<1.05&&rayWorld(pos.x,pos.z,at.x,at.z,pos.y+1,y+1)>=1;
+}
+function nearPlace(){return places.find(p=>p.door&&!p.road&&canReachPlace(player.pos,p.interact||p.door,2.4));}
 function actionCtx(){if(state!=='play'||shopOpen||player.down>0)return null;if(player.car){
   const car=player.car;
   if(!car.dead&&Math.hypot(car.vel.x,car.vel.z)<.8){
-   const service=places.find(p=>p.road&&dist2(p.road,car.pos)<3);
+   const service=places.find(p=>p.road&&canReachPlace(car.pos,p.road,3));
    if(service&&(service.kind==='chop'&&!wanted||service.kind==='spray'&&wanted>0&&wanted<=3&&player.cash>=250*wanted))
     return {label:service.kind==='chop'?'SELL CAR':'RESPRAY',hot:true,fn:()=>serviceCar(service,car)};
    const shutter=doorInteraction(car.pos,4.1,'shutter');
@@ -97,8 +102,8 @@ function startRob(p){if(player.weapon==='fist'){toast('PULL OUT A GUN FIRST',140
   toast('THE ALARM IS RINGING!',1600);
  }else toast('HANDS UP! EMPTY THE REGISTER!',1600);
 }
-function updRob(dt){if(!robbing)return;const p=robbing.p;const at=p.interact||p.door,d=Math.hypot(at.x-player.pos.x,at.z-player.pos.z);
- if(player.car||player.down>0||player.weapon==='fist'||d>3.4||state!=='play'){robbing=null;toast('ROBBERY ABANDONED',1400);if(clerk)clerk.hands=0;return;}
+function updRob(dt){if(!robbing)return;const p=robbing.p;const at=p.interact||p.door;
+ if(player.car||player.down>0||player.weapon==='fist'||!canReachPlace(player.pos,at,3.4)||state!=='play'){robbing=null;toast('ROBBERY ABANDONED',1400);if(clerk)clerk.hands=0;return;}
  robbing.t+=dt;robbing.beep-=dt;player.c.aim=.3;if(robbing.beep<=0){robbing.beep=.45;beep(robbing.t%.9<.45?1250:950,.25,.12);}
  if(robbing.t>=p.time){const cash=rint(p.cash[0],p.cash[1]);player.cash+=cash;toast(`+$${cash.toLocaleString()} SCORED!`,2200);if(p.heat2)crime(p.heat2,p.door.x,p.door.z,true);p.cd=p.kind==='bank'?300:150;robbing=null;if(clerk)clerk.hands=0;}}
 function openShop(){shopOpen=true;$('shop').style.display='flex';renderShop();}
@@ -207,7 +212,7 @@ function drawMap(){const Wd=300,k=Wd/240,pp=player.car?player.car.pos:player.pos
   mg.font='bold 15px Arial,sans-serif';mg.fillStyle='#193335';mg.fillText('⚓︎',x,y+1);
  }
  const gx=FREIGHT.gates[1].x,gz=FREIGHT.z0+10;
- if(Math.hypot(gx-px,gz-pz)<240){
+ if(Math.hypot(gx-px,gz-pz)*k<=128){
   const [x,y]=Tm(gx,gz,128);
   dot(gx,gz,'#e6c57e',10,128);
   mg.fillStyle='#263133';mg.fillRect(x-5.5,y-3.5,11,7);
@@ -241,7 +246,6 @@ function cameraClearance(ax,ay,az,bx,by,bz){
  const hit=rayWorld(ax,az,bx,bz,ay,by,.18);return hit<1?Math.max(.04,hit-.015):1;
 }
 function step(dt){time+=dt;WATERT.value=time;
- updateFreightCranes(time,player.pos.x,player.pos.z);
  refreshPhysicalWorld(player.pos.x,player.pos.z);
  const kx=(keys.ArrowRight?1:0)-(keys.ArrowLeft?1:0),ky=(keys.ArrowUp?1:0)-(keys.ArrowDown?1:0);const play=state==='play'&&!shopOpen;
  const jx=play?clamp(inp.jx+kx,-1,1):0,jy=play?clamp(inp.jy+ky,-1,1):0,fire=play&&(inp.fire||keys.Space),sprint=play&&(inp.sprint||keys.KeyX);
@@ -276,7 +280,7 @@ function step(dt){time+=dt;WATERT.value=time;
   const yawTarget=Math.abs(jx)>.12?-jx*(Math.abs(jy)>.3?2.28:2.85):0;
   player.turn=lerp(player.turn||0,yawTarget,1-Math.exp(-14*dt));
   player.yaw+=player.turn*dt;
-  const onSand=player.pos.x>W+15;
+  const onSand=player.pos.x>W+15&&groundY(player.pos.x,player.pos.z,player.pos.y)<.05;
   let pace=0;
   if(jy>.12)pace=(sprint?6.9:3.9)*Math.min(1,jy*1.2);
   else if(jy<-.12)pace=-1.85*Math.min(1,-jy);

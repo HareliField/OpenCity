@@ -16,7 +16,9 @@ run(`const CANNON=window.CANNON, CV=CANNON.Vec3, V3=THREE.Vector3, PHYS_GROUP={w
 `);
 run(read('js/access.js'));
 run(read('js/roads.js'));
+run(read('js/freight.js'));
 run(read('js/game.js'));
+run(read('js/dispatch.js'));
 // The input and renderer bootstraps are driven by the browser. Load the gameplay section here.
 run(read('js/main.js').split('function renderShop()')[0]);
 
@@ -52,6 +54,18 @@ run(`
  assert.equal(actionCtx().label,'SELL CAR');car.dead=true;assert.equal(actionCtx().label,'EXIT');
  car.dead=false;car.vel.x=6;assert.equal(actionCtx().label,'EXIT');
  car.vel.x=0;car.pos.z+=5;assert.equal(actionCtx().label,'EXIT');
+
+ player.car=null;player.pos.set(3.5,8,2);store.door=store.interact;places.push(store);
+ assert.equal(nearPlace(),undefined,'shop interaction cannot cross floors');
+ player.pos.y=0;assert.equal(nearPlace(),store,'store is usable on its floor');
+ blocks[0].bld.push(wall);player.pos.x=5.4;
+ assert.equal(nearPlace(),undefined,'shop interaction cannot pass through a wall');
+ blocks[0].bld.length=0;
+
+ LAW.known=LAW.seen=true;LAW.anchor.set(384,.11,1220);
+ assert.equal(searchGoal(384,1220,0).z,1220,'search stays at the freight quay');
+ const gate=freightGateNode(384);
+ assert(freightWaypoint(gate,LAW.anchor).z>FREIGHT.z0,'a patrol at the gate must advance into the terminal');
 
  const route=new THREE.CatmullRomCurve3(GRADE_PROFILES[0].points.map(p=>new V3(...p)));
  for(const x of [448,832]){

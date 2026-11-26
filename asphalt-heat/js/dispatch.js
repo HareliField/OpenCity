@@ -81,7 +81,10 @@ function searchGoal(x,z,offset,scale=1){
  const sector=offset+Math.floor((time-Math.max(LAW.lastSeen,0))/6);
  const dist=LAW.seen?0:(wanted===1?10:wanted===2?23:38)*scale;
  const angle=sector*2.399963;
- return {x:clamp(anchor.x+Math.cos(angle)*dist,MINX+1,MAXX-1),z:clamp(anchor.z+Math.sin(angle)*dist,MINZ+1,MAXZ-1)};
+ const gx=anchor.x+Math.cos(angle)*dist,gz=anchor.z+Math.sin(angle)*dist;
+ if(inFreightPort(anchor.x,anchor.z))return {x:clamp(gx,FREIGHT.x0+2,FREIGHT.x1-2),z:clamp(gz,FREIGHT.z0+1,FREIGHT.z1-2)};
+ const coast=Math.abs(gz-W*.42)<3.76?W+149.45:harborWalkingLimit(gz)??MAXX;
+ return {x:clamp(gx,MINX+1,coast-1),z:clamp(gz,MINZ+1,MAXZ-1)};
 }
 
 function confirmContact(target){

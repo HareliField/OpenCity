@@ -165,6 +165,7 @@ function refreshPhysicalWorld(x,z){
    body.position.set((r.x0+r.x1)/2,(base+top)/2,(r.z0+r.z1)/2);
    PH.w.addBody(body);
   }else body=physBox(r.x0,r.x1,base,top,r.z0,r.z1);
+  if(r.moving){body.type=CANNON.Body.KINEMATIC;body.allowSleep=false;}
   STREETS_PHYS.bodies.set(r,body);
  }
  syncDoorRegion(x,z);
@@ -356,7 +357,15 @@ function followGradeRoad(c,dt){
  const diff=wrapA(Math.atan2(x-c.pos.x,z-c.pos.z)-c.h),stop=blockedAhead(c);
  drive(c,clamp(((stop?0:9)-c.speed)*.42,-1,1),clamp(diff*2,-1,1),stop&&Math.abs(c.speed)<.7,dt);
 }
-function aiTraffic(c,dt){if(!c.ai){const a=nearestNode(c.pos);c.ai={a,b:pick(neighbors(a))};}
+function aiTraffic(c,dt){
+ if(inFreightPort(c.pos.x,c.pos.z)){
+  const next=patrolWaypoint(c,freightGateNode(c.pos.x));
+  const diff=wrapA(Math.atan2(next.x-c.pos.x,next.z-c.pos.z)-c.h);
+  const target=blockedAhead(c)?0:Math.abs(diff)>.65?5:10;
+  drive(c,clamp((target-c.speed)*.4,-1,1),clamp(diff*2,-1,1),!target,dt);
+  c.ai=null;return;
+ }
+ if(!c.ai){const a=nearestNode(c.pos);c.ai={a,b:pick(neighbors(a))};}
  if(c.ai.grade){followGradeRoad(c,dt);return;}
  const A=c.ai.a,B=c.ai.b,dx=Math.sign(B[0]-A[0]),dz=Math.sign(B[1]-A[1]),rx=-dz,rz=dx;const tx=B[0]*CELL+rx*LANE,tz=B[1]*CELL+rz*LANE,along=(tx-c.pos.x)*dx+(tz-c.pos.z)*dz;
  if(along<5){
@@ -372,6 +381,13 @@ function aiTraffic(c,dt){if(!c.ai){const a=nearestNode(c.pos);c.ai={a,b:pick(nei
  if(blockedAhead(c)){c.wait+=dt;target=0;}else c.wait=0;
  if(c.phys&&c.upY<.4){c.flipT=(c.flipT||0)+dt;if(c.flipT>3&&c.driver==='ai'){const at=carDoorSpot(c);if(at){c.driver=null;ejectPed(at.x,at.z,c.pos.x,c.pos.z,at.y);}}}
  const thr=clamp((target-c.speed)*.35,-1,1);drive(c,target<.5&&c.speed<.85?0:thr,clamp(diff*2.2,-1,1),target<.5&&c.speed<.85,dt);}
+function patrolWaypoint(c,target){
+ if(!c.portAim||time>=c.portAimUntil||dist2(c.pos,c.portAim)<4){
+  c.portAim=freightWaypoint(c.pos,target);
+  c.portAimUntil=time+.65;
+ }
+ return c.portAim;
+}
 function aiPolice(c,dt){
  if(!c.dispatched){c.siren=false;aiTraffic(c,dt);return;}
  const playerTarget=player.car?player.car.pos:player.pos,L=wanted;
@@ -381,11 +397,15 @@ function aiPolice(c,dt){
  const target=see?playerTarget:searchGoal(c.pos.x,c.pos.z,c.body?.id||c.searchIndex||0,1.4);
  const distance=dist2(c.pos,target);
  let gx=target.x,gz=target.z;
- if(!see||realDistance>36){
+ const portTarget=inFreightPort(target.x,target.z);
+ if(portTarget&&c.pos.z>W-7||inFreightPort(c.pos.x,c.pos.z)){
+  const next=patrolWaypoint(c,target);
+  gx=next.x;gz=next.z;c.route=null;
+ }else if(!see||realDistance>36){
   if(!c.route)c.route={node:nearestNode(c.pos)};
   const node=c.route.node;
   if(Math.hypot(node[0]*CELL-c.pos.x,node[1]*CELL-c.pos.z)<10){
-   const goal=nearestNode(target);
+   const goal=nearestNode(portTarget?freightGateNode(target.x):target);
    if(node[0]===goal[0]&&node[1]===goal[1]){
     if(!see&&distance<38){gx=target.x;gz=target.z;}
     else c.route.node=pick(neighbors(node));
@@ -434,7 +454,13 @@ function perim(B){return{x0:B.x0+1.7,x1:B.x1-1.7,z0:B.z0+1.7,z1:B.z1-1.7};}
 function perimPos(R,t){const w=R.x1-R.x0,h=R.z1-R.z0,L=2*(w+h);t=((t%L)+L)%L;if(t<w)return[R.x0+t,R.z0];t-=w;if(t<h)return[R.x1,R.z0+t];t-=h;if(t<w)return[R.x1-t,R.z1];t-=w;return[R.x0,R.z1-t];}
 function perimT(R,x,z){const w=R.x1-R.x0,h=R.z1-R.z0,cx=clamp(x,R.x0,R.x1),cz=clamp(z,R.z0,R.z1);const dT=cz-R.z0,dR=R.x1-cx,dB=R.z1-cz,dL=cx-R.x0,m=Math.min(dT,dR,dB,dL);
  if(m===dT)return cx-R.x0;if(m===dR)return w+(cz-R.z0);if(m===dB)return w+h+(R.x1-cx);return 2*w+h+(R.z1-cz);}
-function nearBlock(min,max){const c=blocks.filter(B=>{const d=Math.hypot((B.x0+B.x1)/2-player.pos.x,(B.z0+B.z1)/2-player.pos.z);return d>min&&d<max;});return c.length?pick(c):pick(blocks);}
+function nearBlock(min,max){const c=blocks.filter(B=>{const d=Math.hypot((B.x0+B.x1)/2-player.pos.x,(B.z0+B.z1)/2-player.pos.z);return d>min&&d<max;});return c.length?pick(c):null;}
+function relocatePed(p,stand){
+ if(time<(p.retryPlacementAt||0))return;
+ const block=nearBlock(50,125);
+ if(block){p.retryPlacementAt=0;placePed(p,block,stand);return;}
+ p.retryPlacementAt=time+1;p.c.root.visible=false;
+}
 function attachPed(p){p.cross=null;p.crossAfter=time+4;const B=blocks[clamp(Math.floor(p.pos.x/CELL),0,N-1)*N+clamp(Math.floor(p.pos.z/CELL),0,N-1)];p.R=perim(B);p.t=perimT(p.R,p.pos.x,p.pos.z);p.mode='walk';}
 function newPedChar(p,B){if(p.c)removeChar(p.c);let role=pedRoleFor(B);if(role==='mb')role=ROLE.mb?'mb':'m';if(role==='fb')role=ROLE.fb?'fb':'f';const name=pickChar(role);p.c=makeChar(name,{});p.c.root.visible=false;p.tough=CAST[name]==='m'&&Math.random()<.3||CAST[name]==='gang';p.fem=/Female/.test(name);}
 function placePed(p,B,stand){newPedChar(p,B);p.cross=null;p.crossAfter=time+3;p.R=perim(B);p.t=rnd(0,200);const q=perimPos(p.R,p.t);p.pos.set(q[0],0,q[1]);p.mode='walk';p.dead=false;p.hp=60;p.dir=Math.random()<.5?1:-1;p.spd=rnd(1.15,1.55)*(p.fem?.95:1);p.cash=rint(5,80);p.fleeT=0;p.downT=0;p.c.talk=0;
@@ -463,8 +489,8 @@ function tryCrosswalk(p){
 }
 function updPeds(dt){const pp=player.car?player.car.pos:player.pos;
  for(const p of peds){const c=p.c;const dP=dist2(p.pos,pp);
-  if(p.dead){p.downT+=dt;if(c.body){p.pos.set(c.body.position.x,Math.max(0,c.body.position.y-.55),c.body.position.z);}updChar(c,0,dt,dP<95);if(p.downT>30&&dP>50)placePed(p,nearBlock(50,130));continue;}
-  if(dP>165){placePed(p,nearBlock(50,125),Math.random()<.22);continue;}
+  if(p.dead){p.downT+=dt;if(c.body){p.pos.set(c.body.position.x,Math.max(0,c.body.position.y-.55),c.body.position.z);}updChar(c,0,dt,dP<95);if(p.downT>30&&dP>50)relocatePed(p,false);continue;}
+  if(dP>165){relocatePed(p,Math.random()<.22);continue;}
   const ox=p.pos.x,oz=p.pos.z;
   if(p.mode==='flee'){p.fleeT-=dt;p.pos.addScaledVector(p.fv,(p.fem?4.6:5.4)*dt);c.hands=0;const n=collideWorld(p.pos,.3);if(n){const a=Math.atan2(p.fv.x,p.fv.z)+(Math.random()<.5?1.5:-1.5);p.fv.set(Math.sin(a),0,Math.cos(a));}if(p.fleeT<=0)attachPed(p);}
   else if(p.mode==='fight'){const dx=player.pos.x-p.pos.x,dz=player.pos.z-p.pos.z,d=Math.hypot(dx,dz);c.guard=1;
@@ -639,7 +665,8 @@ function spawnParked(x,z,h){if(x==null){for(let t=0;t<30;t++){const a=[rint(0,N)
  if(cars.some(c=>Math.hypot(c.pos.x-x,c.pos.z-z)<6))return null;return spawnCar(pick(['sedan','sport','suv','hatch','sedan','van']),x,z,h,null);}
 function spawnPolice(chase){
  const L=wanted,origin=chase?LAW.anchor:player.pos;
- const spot=laneSpot(chase?29:55,chase?91:183,origin);
+ const inPort=chase&&inFreightPort(origin.x,origin.z);
+ const spot=inPort?freightPatrolSpot(origin,29,91):laneSpot(chase?29:55,chase?91:183,origin);
  if(!spot)return null;
  const kind=chase&&L>=4&&Math.random()<.30?'swat':'police';
  const c=spawnCar(kind,spot.x,spot.z,spot.h,'police');
@@ -647,7 +674,7 @@ function spawnPolice(chase){
  c.dispatched=chase;
  c.searchIndex=rint(0,14);
  c.speed=chase?8.5:10;
- c.ai={a:spot.a,b:spot.b};
+ c.ai=inPort?null:{a:spot.a,b:spot.b};
  return c;
 }
 function roadblock(){

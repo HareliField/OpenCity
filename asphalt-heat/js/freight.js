@@ -31,20 +31,69 @@ function inFreightPort(x,z,r=0){
  return z>=FREIGHT.z0&&x>=FREIGHT.x0-r&&x<=FREIGHT.x1+r;
 }
 
+// The two gate roads are connected by east-west aisles at the front and back of the yards.
+const FREIGHT_AISLES=[1070,1206];
+function freightPatrolSpot(origin,min,max){
+ for(let i=0;i<48;i++){
+  const across=i%2===0,dir=Math.random()<.5?-1:1;
+  const x=across?clamp(origin.x+rnd(-max,max),179,FREIGHT.x1-12):pick(FREIGHT.gates).x-dir*3;
+  const z=across?pick(FREIGHT_AISLES)+dir*3:clamp(origin.z+rnd(-max,max),FREIGHT.z0+19,FREIGHT.z1-39);
+  const range=Math.hypot(origin.x-x,origin.z-z);
+  if(range<min||range>max||cars.some(c=>Math.hypot(c.pos.x-x,c.pos.z-z)<10))continue;
+  if(rayWorld(x-1,z-2.6,x+1,z+2.6,1,1,.3)<1)continue;
+  return {x,z,h:across?dir*Math.PI/2:dir>0?0:Math.PI};
+ }
+ return null;
+}
+
+function freightGateNode(x){
+ const gate=FREIGHT.gates.reduce((a,b)=>Math.abs(a.x-x)<=Math.abs(b.x-x)?a:b);
+ return {x:gate.x,z:W};
+}
+function freightWaypoint(from,to){
+ const entering=to.z>=FREIGHT.z0;
+ const gate=freightGateNode(entering?to.x:from.x);
+ if(entering&&from.z<FREIGHT.z0+17){
+  if(from.z<W-6||Math.abs(from.x-gate.x)>5)return gate;
+  return {x:gate.x,z:FREIGHT.z0+21};
+ }
+ if(!entering)to=gate;
+ const clear=(a,b)=>rayWorld(a.x,a.z,b.x,b.z,1.15,1.15,.8)>=1;
+ if(clear(from,to))return to;
+ let best=null,cost=Infinity;
+ const corners=FREIGHT.gates.flatMap(g=>FREIGHT_AISLES.map(z=>({x:g.x,z})));
+ for(const a of corners){
+  if(dist2(from,a)<4||!clear(from,a))continue;
+  for(const b of corners){
+   if(a.x!==b.x&&a.z!==b.z||!clear(b,to))continue;
+   const length=dist2(from,a)+dist2(a,b)+dist2(b,to);
+   if(length<cost){best=a;cost=length;}
+  }
+ }
+ return best||to;
+}
+
 function freightSolid(x0,x1,z0,z1,h,y0=0){
  const r={x0,x1,z0,z1,h,y0};
  FREIGHT.solids.push(r);
  STATIC.push(r);
+ return r;
 }
 
 function freightBeam(mat,a,b,w,d=w){
  const start=new V3(...a),end=new V3(...b),slope=end.clone().sub(start);
- const geo=new THREE.BoxGeometry(w,slope.length(),d);
+ const height=slope.length();
+ const geo=new THREE.BoxGeometry(w,height,d);
  const q=new THREE.Quaternion().setFromUnitVectors(new V3(0,1,0),slope.normalize());
  const matrix=new THREE.Matrix4().makeRotationFromQuaternion(q);
  const center=start.lerp(end,.5);
  matrix.setPosition(center.x,center.y,center.z);
  geo.applyMatrix4(matrix);
+ geo.computeBoundingBox();
+ const {min,max}=geo.boundingBox;
+ const solid=freightSolid(min.x,max.x,min.z,max.z,max.y,min.y);
+ solid.obb={p:center,q,w,h:height,d};
+ solid.walkIgnore=true; // The feet below the sloping legs supply pedestrian collision.
  addGeo(mat,geo,true);
 }
 
@@ -84,6 +133,7 @@ function buildFreightTerminal(){
   if((x-x0-6)%18===0){
    cyl(MAT.darkMetal,x,y,z1-1.32,.23,.42,.52,10);
    cyl(yellow,x,y+.44,z1-1.32,.26,.25,.105,10);
+   freightSolid(x-.26,x+.26,z1-1.58,z1-1.06,y+.545,y).radius=.26;
   }
  }
  plainBox(yellow,x0+2,x1-2,y+.004,y+.019,z1-1.03,z1-.84,{shadow:false});
@@ -92,9 +142,10 @@ function buildFreightTerminal(){
   for(const d of [-7.8,7.8])topQuad(whitePaint,x+d-.11,x+d+.11,y+.014,z0+1,z1-38,1);
   for(let z=z0+6;z<z1-42;z+=12)topQuad(lanePaint,x-.085,x+.085,y+.014,z,z+5,1);
  }
- for(const z of [1070,1206]){
-  for(const d of [-7.1,7.1])topQuad(whitePaint,x0+8,x1-9,y+.014,z+d-.09,z+d+.09,1);
-  for(let x=x0+12;x<x1-10;x+=12)topQuad(lanePaint,x,x+5.4,y+.014,z-.09,z+.09,1);
+ for(const z of FREIGHT_AISLES){
+  const startX=z===1070?179:x0+8;
+  for(const d of [-7.1,7.1])topQuad(whitePaint,startX,x1-9,y+.014,z+d-.09,z+d+.09,1);
+  for(let x=startX+4;x<x1-10;x+=12)topQuad(lanePaint,x,x+5.4,y+.014,z-.09,z+.09,1);
  }
  for(const [i,gate] of p.gates.entries())buildFreightGate(gate,i===1,steel,yellow);
 
@@ -134,7 +185,7 @@ function buildFreightTerminal(){
   buildFreightShip(ship,i);
   for(const x of ship.cranes)buildQuayCrane(x,ship,steel,yellow,p.cranes.length);
  }
- updateFreightCranes(0,(x0+x1)/2,z1);
+ updateFreightCranes(0,0);
 }
 
 function buildFreightGate({x,name},primary,steel,yellow){
@@ -155,7 +206,11 @@ function buildFreightGate({x,name},primary,steel,yellow){
   if(primary){g.font='600 25px Inter, Arial, sans-serif';g.fillText('CONTAINER TERMINAL',w/2,96);}
  });
  signQuad(slot,x,5.75,z-2.38,10.7,1.08,Math.PI,false);
- for(const d of [-1,1])cyl(yellow,x+d*6.72,.11,z-3.5,.15,.18,.85,8);
+ for(const d of [-1,1]){
+  const bx=x+d*6.72,bz=z-3.5;
+  cyl(yellow,bx,.11,bz,.15,.18,.85,8);
+  freightSolid(bx-.18,bx+.18,bz-.18,bz+.18,.96,.11).radius=.18;
+ }
 }
 
 function buildFreightYardGantry(x,z,yellow){
@@ -164,7 +219,7 @@ function buildFreightYardGantry(x,z,yellow){
   const px=x+s*w,pz=z+side*d;
   freightBeam(yellow,[px,y+1.1,pz],[x+s*(w-1.16),t,pz],.83,1.05);
   plainBox(MAT.darkMetal,px-.64,px+.64,y,y+1.24,pz-1.37,pz+1.37,{uvm:1.5});
-  freightSolid(px-.73,px+.73,pz-1.4,pz+1.4,t);
+  freightSolid(px-.64,px+.64,pz-1.37,pz+1.37,y+1.24,y);
  }
  for(const side of [-1,1]){
   freightBeam(yellow,[x-w,t,z+side*d],[x+w,t,z+side*d],1.2,1.4);
@@ -381,13 +436,13 @@ function buildQuayCrane(x,ship,steel,yellow,index){
  spreader.position.y=2.72;
  spreader.castShadow=true;
  load.add(cargo,spreader);
- FREIGHT.cranes.push({trolley,load,cables,boom,shipZ:ship.z,landZ:z1-31,offset:index*.226});
+ const solid=freightSolid(x-6.075,x+6.075,ship.z-1.22,ship.z+1.22,2.57);
+ solid.moving=true;
+ FREIGHT.cranes.push({solid,trolley,load,cables,boom,shipZ:ship.z,landZ:z1-31,offset:index*.226});
 }
 
-function updateFreightCranes(time,x,z){
- const {x0,x1,z0,z1,cranes}=FREIGHT;
- if(x<x0-355||x>x1+355||z<z0-410||z>z1+390)return;
- for(const c of cranes){
+function updateFreightCranes(time,dt){
+ for(const c of FREIGHT.cranes){
   const phase=(time/36+c.offset)%1;
   const back=phase>=.5,leg=(phase%.5)*2;
   const startZ=back?c.landZ:c.shipZ,endZ=back?c.shipZ:c.landZ;
@@ -399,6 +454,11 @@ function updateFreightCranes(time,x,z){
   const along=lerp(startZ,endZ,bend((leg-.29)/.43));
   c.trolley.position.z=along;
   c.load.position.set(c.trolley.position.x,lift,along);
+  // The entire trolley path stays in the same southern spatial-index cell.
+  const solid=c.solid;
+  solid.z0=along-1.22;solid.z1=along+1.22;solid.y0=lift;solid.h=lift+2.57;
+  const body=STREETS_PHYS.bodies.get(solid);
+  if(body&&dt>0)body.velocity.set(0,(lift+1.285-body.position.y)/dt,(along-body.position.z)/dt);
   const bottom=lift+2.85,top=c.boom-.45;
   for(const cable of c.cables){
    cable.scale.y=top-bottom;
