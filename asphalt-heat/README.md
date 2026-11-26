@@ -29,10 +29,11 @@ Touch devices show an on-screen stick and action controls.
 ## Places to look
 
 - **Nail studio and shop row.** The game starts by Verve Nail Studio and the maroon coupe. Follow the same sidewalk to Paper & Pine Books, the brick passage, Night Shift Donuts, and the Wash House.
-- **Bank and downtown avenue.** Turn toward the park and follow the avenue past it. The bank has climbable stone steps.
+- **Bank and downtown avenue.** Cross the park on its diagonal paths or loop around the fountain. The bank across the avenue has climbable stone steps.
 - **Residential streets.** Head west from downtown for tile-roof houses, picket fences, and parked cars. Look for the three covered front porches on the quieter side street.
 - **Harbor Viaduct and Coast Ridge Road.** Follow the green ramp signs in the southern half of the city. The viaduct runs east–west above the street. Coast Ridge Road bends through the greenway and crosses above the viaduct’s eastern ramp.
 - **Barber and beaches.** The barber is on the palm-lined avenue east of downtown. Take the boardwalk steps down to the umbrellas at Pier Beach, or follow the shore south to the benches and rocks at Lighthouse Cove.
+- **South Shore Harbor.** Stay on the boardwalk south of Lighthouse Cove to reach three timber docks, four moored boats and a stone breakwater. Look for the anchor on the minimap when you get close.
 
 ## Driving, buildings, and assets
 

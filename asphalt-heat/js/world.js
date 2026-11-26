@@ -385,10 +385,34 @@ function special(B,sp){const side=sp.side||'S',M=sideFrame(B,side);const door=lp
  }
 }
 function park(B){const ix0=B.x0+SW,ix1=B.x1-SW,iz0=B.z0+SW,iz1=B.z1-SW,cx=(ix0+ix1)/2,cz=(iz0+iz1)/2;topQuad(MAT.grass,ix0,ix1,.17,iz0,iz1,4,null,false);
- for(const ax of[0,1]){const g=new THREE.PlaneGeometry(ax?3:ix1-ix0,ax?iz1-iz0:3);const uv=g.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,uv.getX(i)*(ax?3:ix1-ix0)/3,uv.getY(i)*(ax?iz1-iz0:3)/3);g.rotateX(-Math.PI/2);g.translate(cx,.19,cz);addGeo(MAT.plaza,g,false);}
+ const civicSquare=B.i===4&&B.j===4;
+ if(civicSquare)parkCornerPaths(B,cx,cz,ix1-cx);
+ else for(const ax of[0,1]){const g=new THREE.PlaneGeometry(ax?3:ix1-ix0,ax?iz1-iz0:3);const uv=g.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,uv.getX(i)*(ax?3:ix1-ix0)/3,uv.getY(i)*(ax?iz1-iz0:3)/3);g.rotateX(-Math.PI/2);g.translate(cx,.19,cz);addGeo(MAT.plaza,g,false);}
  STATIC.push({x0:cx-4.48,x1:cx+4.48,z0:cz-4.48,z1:cz+4.48,h:.8,radius:4.47});cyl(MAT.stone,cx,.15,cz,4.3,4.6,.65,28);cyl(MAT.water,cx,.15,cz,3.9,3.9,.58,28,{shadow:false});cyl(MAT.stone,cx,.15,cz,.5,.7,2.4,10);cyl(MAT.stone,cx,2.5,cz,1.5,.4,.4,14);
- for(let k=0;k<22;k++){const tx=srange(ix0+2,ix1-2),tz=srange(iz0+2,iz1-2);if(Math.abs(tx-cx)<3.5||Math.abs(tz-cz)<3.5)continue;TREES.push([tx,tz,srange(.9,1.4)]);}
- for(const[a,b,r]of[[cx-7,cz+2.2,0],[cx+7,cz-2.2,Math.PI],[cx+2.2,cz+7,Math.PI/2],[cx-2.2,cz-7,-Math.PI/2]])PROPSPOTS.push({type:'bench',x:a,z:b,ry:r});}
+ for(let k=0;k<22;k++){
+  const tx=srange(ix0+2,ix1-2),tz=srange(iz0+2,iz1-2),dx=Math.abs(tx-cx),dz=Math.abs(tz-cz);
+  if(dx<3.5||dz<3.5)continue;
+  const size=srange(.9,1.4);
+  if(civicSquare&&(Math.abs(dx-dz)<2.2||Math.hypot(dx,dz)<9.5))continue;
+  TREES.push([tx,tz,size]);
+ }
+ const seat=civicSquare?10:7;
+ for(const[a,b,r]of[[cx-seat,cz+2.2,0],[cx+seat,cz-2.2,Math.PI],[cx+2.2,cz+seat,Math.PI/2],[cx-2.2,cz-seat,-Math.PI/2]])PROPSPOTS.push({type:'bench',x:a,z:b,ry:r});}
+
+function parkCornerPaths(block,x,z,half){
+ const length=(half+.7)*Math.SQRT2;
+ block.diagonalPaths={x,z,half:half+.7};
+ for(const angle of [-Math.PI/4,Math.PI/4]){
+  const frame=new THREE.Matrix4().makeRotationY(angle).setPosition(x,0,z);
+  topQuad(MAT.stone,-1.3,1.3,.205,-length,length,2.2,frame,false);
+ }
+ const ring=new THREE.RingGeometry(4.56,8.5,48);
+ ring.rotateX(-Math.PI/2);
+ const uv=ring.attributes.uv,positions=ring.attributes.position;
+ for(let i=0;i<uv.count;i++)uv.setXY(i,positions.getX(i)/3,positions.getZ(i)/3);
+ ring.translate(x,.212,z);
+ addGeo(MAT.stone,ring,false);
+}
 /* ---- street furniture placement ---- */
 function streetProps(B){const{x0,x1,z0,z1}=B;const dist=districtOf(B.i,B.j);
  for(const[sx,sz]of[[-1,-1],[1,-1],[1,1],[-1,1]])LAMPS.push({x:sx<0?x0+.6:x1-.6,z:sz<0?z0+.6:z1-.6,ry:Math.atan2(-sx,-sz)});
@@ -404,7 +428,7 @@ function beach(){const x0=W+HALF;topQuad(STREET.materials.coastSand,x0,W+60,.02,
  topQuad(MAT.planks,x0+.5,x0+6,.25,-HALF,W+HALF,3,null,false);
  STREET.steps.push({x0:x0+.5,x1:x0+6,z0:-HALF,z1:W+HALF,y:.25});
  const beachOpenings=[[80,91],[205,222],[365,377],[418,434],[575,587],[832,846]];
- const railEnds=[-HALF,...beachOpenings.flat(),W+HALF];
+ const railEnds=[-HALF,...beachOpenings.flat(),HARBOR.approach.z0,HARBOR.approach.z1,W+HALF];
  for(let i=0;i<railEnds.length;i+=2){
   const [a,b]=[railEnds[i],railEnds[i+1]];
   STATIC.push({x0:x0+5.99,x1:x0+6.09,z0:a,z1:b,y0:.24,h:1.18});
@@ -440,10 +464,17 @@ function beach(){const x0=W+HALF;topQuad(STREET.materials.coastSand,x0,W+60,.02,
  placeScenery('beach-parasol',W+42.2,.02,umbrellaZ,.18,[3.03,2.35,2.94]);
  STATIC.push({x0:W+42.15,x1:W+42.25,z0:umbrellaZ-.06,z1:umbrellaZ+.06,h:2.35,radius:.055});
  lighthouse();
- const UMB=[0xe8463a,0x2a8ad8,0xf2c200,0xffffff,0x2ab070];for(let k=0;k<26;k++){const z=srange(0,W),x=srange(W+20,W+52);beachUmbrella(x,z,spick(UMB));
-  const tw=new THREE.PlaneGeometry(.9,1.9);tw.rotateX(-Math.PI/2);tw.translate(x+1.3,.04,z+.2);addGeo(new THREE.MeshStandardMaterial({color:lin(spick([0xff7a7a,0x7ab8ff,0xffe07a,0x9affc0])),roughness:1}),tw,false);}
+ const UMB=[0xe8463a,0x2a8ad8,0xf2c200,0xffffff,0x2ab070];for(let k=0;k<26;k++){
+  const z=srange(0,W),x=srange(W+20,W+52),umbrella=spick(UMB),towel=spick([0xff7a7a,0x7ab8ff,0xffe07a,0x9affc0]);
+  if(z>=HARBOR.approach.z0-2&&z<=HARBOR.approach.z1+2)continue;
+  beachUmbrella(x,z,umbrella);
+  const tw=new THREE.PlaneGeometry(.9,1.9);tw.rotateX(-Math.PI/2);tw.translate(x+1.3,.04,z+.2);addGeo(new THREE.MeshStandardMaterial({color:lin(towel),roughness:1}),tw,false);}
  beachAreas(pz);
- for(let z=-40;z<W+60;z+=12)PALMS.push([W+HALF+8+srange(-.5,.5),z+srange(-3,3),srange(.9,1.25)]);
+ buildHarbor();
+ for(let z=-40;z<W+60;z+=12){
+  const palm=[W+HALF+8+srange(-.5,.5),z+srange(-3,3),srange(.9,1.25)];
+  if(palm[1]<HARBOR.approach.z0-1||palm[1]>HARBOR.approach.z1+1)PALMS.push(palm);
+ }
  /* yacht on the horizon */
  const yx=W+380,yz=W*.55;plainBox(MAT.whiteMetal,yx-14,yx+14,0,3,yz-3,yz+3);plainBox(MAT.whiteMetal,yx-8,yx+6,3,5.2,yz-2.4,yz+2.4);plainBox(MAT.glassDark,yx-8.05,yx+6.05,3.8,4.6,yz-2.45,yz+2.45);plainBox(MAT.whiteMetal,yx-5,yx+2,5.2,6.8,yz-1.8,yz+1.8);}
 function beachUmbrella(x,z,color){

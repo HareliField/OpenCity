@@ -57,7 +57,7 @@ function collideWorld(p,r,motion=null){
  if(door)hit=door;
  const prop=collideProps(p,r,y,motion);
  if(prop)hit=prop;
- const maxX=Math.abs(p.z-W*.42)<3.76&&p.x>W+39?W+149.45:MAXX;
+ const maxX=Math.abs(p.z-W*.42)<3.76&&p.x>W+39?W+149.45:harborWalkingLimit(p.z)??MAXX;
  if(p.x<MINX+r){p.x=MINX+r;hit=[1,0];}
  if(p.x>maxX-r){p.x=maxX-r;hit=[-1,0];}
  if(p.z<MINZ+r){p.z=MINZ+r;hit=[0,1];}
