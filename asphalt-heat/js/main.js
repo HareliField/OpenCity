@@ -295,10 +295,12 @@ function step(dt){time+=dt;WATERT.value=time;
   for(const c of cars){if(c===player.car||!bodyInsideCar(c,player.pos,.3))continue;const dx=player.pos.x-c.pos.x,dz=player.pos.z-c.pos.z;const fx=Math.sin(c.h),fz=Math.cos(c.h);const f=dx*fx+dz*fz,l=dx*fz-dz*fx;const hl=c.spec.L/2+.3,hw=c.spec.W/2+.3;if(Math.abs(f)<hl&&Math.abs(l)<hw){const pf=hl-Math.abs(f),pl=hw-Math.abs(l);if(pf<pl){player.pos.x+=fx*Math.sign(f)*pf;player.pos.z+=fz*Math.sign(f)*pf;}else{player.pos.x+=fz*Math.sign(l)*pl;player.pos.z-=fx*Math.sign(l)*pl;}}}
   player.spd=Math.abs(spd);player.guardT-=dt;player.c.guard=player.guardT>0?1:0;const gy=groundY(player.pos.x,player.pos.z,player.pos.y),R=player.c.root;player.pos.y=gy;R.position.set(player.pos.x,R.position.y+(gy-R.position.y)*Math.min(1,dt*12),player.pos.z);player.c.yaw=player.yaw;player.c.back=spd<0;updChar(player.c,spd<0?1.2:spd,dt,true);
   }
- if(state==='play'){if(player.hp<=0)gameOver('WASTED');else if(player.arrestT>4.2&&!player.car&&wanted>=3)gameOver('BUSTED');}
- if(state==='dead'){deadT-=dt;if(player.c.body){const b=player.c.body;player.pos.set(b.position.x,0,b.position.z);}updChar(player.c,0,dt,true);if(deadT<=0)respawn();}
- if(play&&!player.car&&player.weapon!=='fist'&&player.c.aim>0)for(const p of peds){if(p.mode!=='walk'&&p.mode!=='stand')continue;const dx=p.pos.x-player.pos.x,dz=p.pos.z-player.pos.z,d=Math.hypot(dx,dz);if(d<12&&Math.abs(wrapA(Math.atan2(dx,dz)-player.yaw))<.5){p.mode='cower';p.c.talk=0;p.cowerT=rnd(3,6);}}
- player.arrestContact=false;updPeds(dt);updUnits(cops,dt);player.arrestT=player.arrestContact?player.arrestT+dt:0;updUnits(gang,dt);updUnits(guards,dt);updHelis(dt);manage(dt);updParts(dt);updPickups(dt);updRob(dt);updProps(dt,player.pos.x,player.pos.z);updateStreetLighting(dt,player.pos.x,player.pos.z);updateInteriors(dt,player.pos.x,player.pos.z);updateOutdoorModels(dt,player.pos.x,player.pos.z);if(clerk)updChar(clerk,0,dt,true);
+ if(state==='play'&&player.hp<=0)gameOver('WASTED');
+ if(state==='dead'){deadT-=dt;if(player.c.body){const b=player.c.body;player.pos.set(b.position.x,Math.max(0,b.position.y-.55),b.position.z);}updChar(player.c,0,dt,true);if(deadT<=0)respawn();}
+ if(play&&!player.car&&player.weapon!=='fist'&&player.c.aim>0)for(const p of peds){if(p.mode!=='walk'&&p.mode!=='stand')continue;const dx=p.pos.x-player.pos.x,dz=p.pos.z-player.pos.z,d=Math.hypot(dx,dz);if(d<12&&Math.abs(wrapA(Math.atan2(dx,dz)-player.yaw))<.5&&los(player.pos,p.pos)){p.mode='cower';p.c.talk=0;p.cowerT=rnd(3,6);}}
+ player.arrestContact=false;updPeds(dt);updUnits(cops,dt);player.arrestT=player.arrestContact?player.arrestT+dt:0;
+ if(state==='play'&&player.arrestT>4.2)gameOver('BUSTED');
+ updUnits(gang,dt);updUnits(guards,dt);updHelis(dt);manage(dt);updParts(dt);updPickups(dt);updRob(dt);updProps(dt,player.pos.x,player.pos.z);updateStreetLighting(dt,player.pos.x,player.pos.z);updateInteriors(dt,player.pos.x,player.pos.z);updateOutdoorModels(dt,player.pos.x,player.pos.z);if(clerk)updChar(clerk,0,dt,true);
  for(const T of tracers)if(T.l.visible){T.t-=dt;if(T.t<=0)T.l.visible=false;}muzzleL.intensity=Math.max(0,muzzleL.intensity-dt*150);boomL.intensity=Math.max(0,boomL.intensity-dt*25);
  /* wanted */
  if(state==='play')updateLaw(dt);

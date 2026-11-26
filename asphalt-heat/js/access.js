@@ -144,19 +144,24 @@ function syncDoorRegion(x,z){
   body.quaternion.setFromEuler(0,p.yaw,0);
   PH.w.addBody(body);
   d.body=body;
-  if(d.modelId&&!d.modelPending){
-   const request=requestScenery(d.modelId);
-   if(request){
-    d.modelPending=true;
-    request.then(template=>{
-     if(!template){d.modelPending=false;return;}
-     d.model=modelInstance(template,[d.w,d.h,.107],d.modelId);
-     scene.add(d.model);
-     d.dirty=true;
-     syncDoorMesh(d);
-    });
-   }
-  }
+
+ }
+}
+
+function updateDoorModels(){
+ for(const d of ACCESS.active){
+  if(!d.modelId||d.model||d.modelPending)continue;
+  const request=requestScenery(d.modelId);
+  if(!request)continue;
+  d.modelPending=true;
+  request.then(template=>{
+   d.modelPending=false;
+   if(!template)return;
+   d.model=modelInstance(template,[d.w,d.h,.107],d.modelId);
+   scene.add(d.model);
+   d.dirty=true;
+   syncDoorMesh(d);
+  });
  }
 }
 

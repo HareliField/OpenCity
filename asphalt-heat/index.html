@@ -102,6 +102,16 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
  #start{align-items:flex-start}.card{margin:auto}
  #shop{overflow:auto;align-items:flex-start}#shop .p{margin:auto}
 }
+@media (orientation:landscape) and (max-height:540px){
+ #start{padding:10px 16px;touch-action:pan-y}
+ .card{max-width:720px}.card h1{font-size:clamp(32px,9vh,46px);line-height:1}
+ .card h1 b{display:inline;margin-left:.22em}
+ .card p{max-width:610px;margin-top:6px;font-size:13px}
+ .keys{max-width:640px;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;margin-top:8px;font-size:12px}
+ .keys div{padding:4px 7px}.keys b{font-size:10px}
+ #play{margin-top:8px;min-height:44px;font-size:22px}
+ #load,#credits,#lbar{margin-top:5px}
+}
 @media(pointer:coarse) and (orientation:landscape) and (max-height:540px){
  #mm{width:80px;height:80px}#tr{gap:2px}#wep{min-height:26px;font-size:13px}
  #btns{transform:scale(.77);transform-origin:right bottom}#joy{width:106px;height:106px}

@@ -24,8 +24,8 @@ function policeCanSee(source,target,yaw,range,level){
  return alignment>(level===1?.52:.31);
 }
 
-function witnessesFor(x,z){
- const victim={x,z};
+function witnessesFor(x,z,y){
+ const victim={x,y,z};
  const officers=cops.some(u=>!u.dead&&policeCanSee(u.pos,victim,u.c.yaw,28,2))||
   cars.some(c=>c.driver==='police'&&policeCanSee(c.pos,victim,c.h,32,2));
  if(officers)return {officers:true};
@@ -41,11 +41,11 @@ function witnessesFor(x,z){
  return {officers:false,ped:nearest};
 }
 
-function recordOffence(amount,x,z,property=false){
+function recordOffence(amount,x,z,property,y){
  if(property){
   if(heat<TH[3])heat=Math.min(TH[3]-1,Math.max(TH[2],heat+Math.min(8,amount)));
  }else heat=Math.min(WANTED_MAX,Math.max(TH[1],heat+amount));
- LAW.anchor.set(x,0,z);
+ LAW.anchor.set(x,y,z);
  if(!LAW.known||!LAW.dispatchAt)LAW.dispatchAt=time+(property?2.8:1.5);
  LAW.known=true;
  evadeT=0;
@@ -53,9 +53,10 @@ function recordOffence(amount,x,z,property=false){
 
 function fileWitnessReport(amount,x,z,immediate=false,property=false){
  if(state!=='play')return;
- const source=immediate?{officers:true}:witnessesFor(x,z);
+ const y=groundY(x,z,player.pos.y);
+ const source=immediate?{officers:true}:witnessesFor(x,z,y);
  if(source.officers){
-  recordOffence(amount,x,z,property);
+  recordOffence(amount,x,z,property,y);
   return;
  }
  if(!source.ped)return;
@@ -66,10 +67,11 @@ function fileWitnessReport(amount,x,z,immediate=false,property=false){
   already.amount=Math.max(already.amount,amount);
   already.x=x;
   already.z=z;
+  already.y=y;
   return;
  }
  if(already&&already.amount>=amount)return;
- LAW.report={amount,x,z,ped:source.ped,left:property?3.1:2.15,property};
+ LAW.report={amount,x,y,z,ped:source.ped,left:property?3.1:2.15,property};
  if(property&&wanted<2)toast('WITNESS CALLING 911',1800);
 }
 
@@ -95,7 +97,7 @@ function updateLaw(dt){
   report.left-=dt;
   if(report.left<=0){
    LAW.report=null;
-   if(!report.ped.dead)recordOffence(report.amount,report.x,report.z,report.property);
+   if(!report.ped.dead)recordOffence(report.amount,report.x,report.z,report.property,report.y);
   }
  }
  const newLevel=levelOf(heat);

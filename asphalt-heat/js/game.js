@@ -463,7 +463,7 @@ function tryCrosswalk(p){
 }
 function updPeds(dt){const pp=player.car?player.car.pos:player.pos;
  for(const p of peds){const c=p.c;const dP=dist2(p.pos,pp);
-  if(p.dead){p.downT+=dt;if(c.body){p.pos.set(c.body.position.x,0,c.body.position.z);}updChar(c,0,dt,dP<95);if(p.downT>30&&dP>50)placePed(p,nearBlock(50,130));continue;}
+  if(p.dead){p.downT+=dt;if(c.body){p.pos.set(c.body.position.x,Math.max(0,c.body.position.y-.55),c.body.position.z);}updChar(c,0,dt,dP<95);if(p.downT>30&&dP>50)placePed(p,nearBlock(50,130));continue;}
   if(dP>165){placePed(p,nearBlock(50,125),Math.random()<.22);continue;}
   const ox=p.pos.x,oz=p.pos.z;
   if(p.mode==='flee'){p.fleeT-=dt;p.pos.addScaledVector(p.fv,(p.fem?4.6:5.4)*dt);c.hands=0;const n=collideWorld(p.pos,.3);if(n){const a=Math.atan2(p.fv.x,p.fv.z)+(Math.random()<.5?1.5:-1.5);p.fv.set(Math.sin(a),0,Math.cos(a));}if(p.fleeT<=0)attachPed(p);}
@@ -496,7 +496,7 @@ function unitShootFrom(x,y,z,acc,dmg){const tgt=player.car?player.car.pos:player
 function unitShoot(u,acc,dmg){u.c.aim=.5;unitShootFrom(u.pos.x,u.c.root.position.y+1.45,u.pos.z,acc,dmg);}
 function updUnits(arr,dt){const tgt=player.car?player.car.pos:player.pos;
  for(const u of arr.slice()){const c=u.c;
-  if(u.dead){u.downT+=dt;if(c.body)u.pos.set(c.body.position.x,0,c.body.position.z);updChar(c,0,dt,true);if(u.downT>16)removeUnit(u,arr);continue;}
+  if(u.dead){u.downT+=dt;if(c.body)u.pos.set(c.body.position.x,Math.max(0,c.body.position.y-.55),c.body.position.z);updChar(c,0,dt,true);if(u.downT>16)removeUnit(u,arr);continue;}
   const dx=tgt.x-u.pos.x,dz=tgt.z-u.pos.z,d=Math.hypot(dx,dz);const see=d<70&&los(u.pos,tgt);let spd=0,shoot=false,acc=.3,dmg=8;
   if(u.team==='law'){
    if(d>153||(wanted===0&&d>40)){removeUnit(u,arr);continue;}

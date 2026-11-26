@@ -40,6 +40,7 @@ function updateOutdoorModels(dt,x,z){
    scene.add(node);
   });
  }
+ updateDoorModels();
  updatePropModels(x,z);
  const coupe=cars.find(c=>c.heroWanted&&!c.heroLoading&&!c.dead&&!(c.retryAfter>performance.now())&&Math.hypot(x-c.pos.x,z-c.pos.z)<85);
  if(coupe&&INTERIORS.catalog.coupe)loadHeroCoupe(coupe);
