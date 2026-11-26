@@ -92,7 +92,9 @@ function buildInterior(room){
  textured(m.darkWood,u0+.16,u1-.16,.16,.31,back+.12,back+.22);
  const spans=[[u0,door0],[door1,u1]];
  for(const [a,b] of spans){
-  addRoomCollider(block,M,a,b,.05,.12,3.42);
+  addRoomCollider(block,M,a,b,.015,.14,.43);
+  addRoomCollider(block,M,a,b,.035,.063,3.29,.43,true);
+  addRoomCollider(block,M,a,b,.014,.13,3.50,3.29);
  }
  addRoomCollider(block,M,u0,u0+t,-.10,depth,3.63);
  addRoomCollider(block,M,u1-t,u1,-.10,depth,3.63);
@@ -217,8 +219,8 @@ function buildInterior(room){
  }
 }
 
-function addRoomCollider(block,M,u0,u1,v0,v1,h,y0=0){
- block.bld.push({...lrect(M,u0,u1,v0,v1),h,y0});
+function addRoomCollider(block,M,u0,u1,v0,v1,h,y0=0,glass=false){
+ const span={...lrect(M,u0,u1,v0,v1),h,y0};if(glass)span.glass=true;block.bld.push(span);
 }
 
 function makeFixture(kind,[w,h,d]){

@@ -16,6 +16,7 @@ run(`const CANNON=window.CANNON, CV=CANNON.Vec3, V3=THREE.Vector3, PHYS_GROUP={w
 `);
 run(read('js/vehicle-components.js'));
 run(read('js/access.js'));
+run(read('js/building-construction.js'));run(read('js/suite-interiors.js'));
 run(read('js/roads.js'));
 run(read('js/street-plan.js'));
 run(read('js/street-surface.js'));

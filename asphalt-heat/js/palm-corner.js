@@ -29,7 +29,7 @@ function cornerPanel(text,bg,ink,menu=false){
   g.font='600 47px Georgia, serif';
   text.split('|').forEach((line,i)=>g.fillText(line,w/2,119+i*77,w*.84));
  }else{
-  g.font='600 '+(text.length>17?'101':'122')+'px Georgia, serif';
+  g.font=text==='24-Hour Diner'?'500 112px Arial, sans-serif':'600 '+(text.length>17?'101':'122')+'px Georgia, serif';
   g.fillText(text,w/2,h*.515,w*.91);
  }
  const material=new THREE.MeshStandardMaterial({map:ctex(c),roughness:.69,metalness:.055});
@@ -68,7 +68,7 @@ function cornerWall(B,r,side,base,top,floor,spec){
   }
   wall(a,b,base,sill);wall(a,b,lintel,top);
   facadePlane(STREET.materials.glass,M,a+.030,b-.030,sill+.038,lintel-.03,-.196);
-  addRoomCollider(B,M,a,b,.162,.211,lintel,sill);
+  addRoomCollider(B,M,a,b,.162,.211,lintel,sill,true);
   for(const x of [a+.022,b-.022])box(m.sash,x-.030,x+.030,sill,lintel,-.216,-.08);
   for(const h of [sill+.026,lintel-.027])box(m.sash,a,b,h-.031,h+.027,-.216,-.08);
   if(floor){
@@ -104,13 +104,13 @@ function cornerWall(B,r,side,base,top,floor,spec){
  box(strip,-half-.075,half+.075,top-.916,top-.191,-.27,.34);
  box(m.sash,-half-.094,half+.094,top-.201,top-.132,-.26,.374);
  box(m.dark,-half-.075,half+.075,top-.942,top-.892,-.22,.366);
- const c=side===spec.front?(diner?-half+pitch*1.97:half-pitch*1.86):half-pitch*1.82;
- const signW=Math.min(diner?7.0:7.34,width*.35);
+ const c=side===spec.front?(diner?-half+pitch*1.50:half-pitch*1.86):half-pitch*1.82;
+ const signW=Math.min(diner?8.12:7.34,width*.35);
  const sign=cornerPanel(spec.shop,diner?'#813737':arcade?'#54483a':spec.kind==='records'?'#323533':'#385747','#efe6d6');
  box(diner?m.oxblood:m.dark,c-signW/2-.057,c+signW/2+.057,top-.891,top-.212,.338,.397);
  facadePlane(sign,M,c-signW/2,c+signW/2,top-.862,top-.239,.402);
  if(diner&&side===spec.front){
-  const x=-half+pitch*.60,mat=cornerPanel('BREAKFAST|LUNCH|DINNER','#40453e','#e3dac5',true);
+  const x=-half+pitch*2.74,mat=cornerPanel('BREAKFAST|LUNCH|DINNER','#40453e','#e3dac5',true);
   box(m.dark,x-.47,x+.47,.75,2.07,-.157,-.127);
   facadePlane(mat,M,x-.431,x+.431,.797,2.034,-.121);
  }
@@ -276,13 +276,18 @@ function finishPalmCorner(r,spec,top){
  const m=cornerMaterials(),diner=spec.kind==='diner';
  for(const side of ['S','N','E','W']){
   const {matrix:M,width}=lotFace(r,side),span=width/2;
-  plainBox(m.shadow,-span-.042,span+.042,top+.796,top+.895,-.187,.076,{M,uvm:2});
-  plainBox(m.ivory,-span-.075,span+.075,top+.895,top+.943,-.21,.106,{M,uvm:2});
+  const arc=spec.kind==='arcade';
+  const ranges=arc&&(side==='E'||side==='W')?(side==='E'?[[-span,0,.30],[0,span,.90]]:[[-span,0,.90],[0,span,.30]]):
+   [[-span,span,arc&&side==='S'?.30:.90]];
+  for(const [a,b,cap] of ranges){
+   plainBox(m.shadow,a-.042,b+.042,top+cap-.104,top+cap-.005,-.187,.076,{M,uvm:2});
+   plainBox(m.ivory,a-.075,b+.075,top+cap-.005,top+cap+.043,-.21,.106,{M,uvm:2});
+  }
  }
  if(spec.kind==='arcade'){
   // Hipped tile roof over the southern wing. The north stair landing and lift lead to the open terrace.
-  const x0=r.x0-.155,x1=r.x1+.155,z0=r.z0+16.3,z1=r.z1+.18,half=(z1-z0)/2;
-  const ridgeZ=(z0+z1)/2,eave=top+.95,rise=2.56;
+  const x0=r.x0-.48,x1=r.x1+.48,z0=r.z0+17.06,z1=r.z1+.52,half=(z1-z0)/2;
+  const ridgeZ=(z0+z1)/2,eave=top+.354,rise=3.93;
   const points=[[x0,eave,z0],[x1,eave,z0],[x1,eave,z1],[x0,eave,z1],
    [x0+half,eave+rise,ridgeZ],[x1-half,eave+rise,ridgeZ]];
   const faces=[[0,4,5,1],[1,5,2],[2,5,4,3],[3,4,0]];
@@ -293,7 +298,32 @@ function finishPalmCorner(r,spec,top){
    if(g.attributes.normal.getY(0)<0){g.setIndex(ids.length===3?[0,1,2]:[0,1,2,0,2,3]);g.computeVertexNormals();}
    addGeo(gardenMaterials().tile,g,true);
   }
-  const verts=[...points,...points.slice(0,4).map(([x,,z])=>[x,top+.79,z])].map(p=>new V3(...p));
+  // Courses on all four slopes have real overhangs and lap joints. Cut hip ends stay under the ridge flashing.
+  const pitch=.254,row=.314,slope=Math.atan2(rise,half);
+  for(const side of ['N','S','W','E']){
+   const alongX=side==='N'||side==='S',positive=side==='N'||side==='W';
+   const end=alongX?(positive?z0:z1):(positive?x0:x1);
+   const left=alongX?x0:z0,right=alongX?x1:z1;
+   for(let distance=.144;distance<half;distance+=row){
+    const first=left+distance,last=right-distance,per=Math.max(1,Math.round((last-first)/pitch));
+    for(let k=0;k<per;k++){
+     const wide=(last-first)/per,at=first+(k+.5)*wide,v=end+(positive?distance:-distance);
+     const x=alongX?at:v,z=alongX?v:at,y=eave+rise*distance/half+.006;
+     const yaw=alongX?(positive?0:Math.PI):(positive?Math.PI/2:-Math.PI/2);
+     const tint=[0xb9a18e,0xbaa094,0xc8b798,0xc7ada1,0xcdbaa9][(k*17+Math.round(distance*100))%5];
+     registerStreetFitting('mission-pantile',x,y,z,[wide,.095,.391],yaw,{pitch:-slope,tint,reach:58});
+    }
+   }
+  }
+  const lawn=worksRect(r.x0-6.10,r.x0-.42,r.z1-7.02,r.z1+1.30);
+  worksSlab(lawn,.42,m.shadow);
+  topQuad(MAT.grass,lawn.x0+.12,lawn.x1-.12,.427,lawn.z0+.12,lawn.z1-.12,2.8,null,false);
+  TREES.push([lawn.x1-2.62,lawn.z1-2.48,1.59,'mature']);
+  const forecourt=worksRect(r.x0+11.79,r.x0+19.03,r.z1+.51,r.z1+3.15);
+  worksSolid(forecourt,.15,.61,m.plaster);
+  topQuad(MAT.grass,forecourt.x0+.095,forecourt.x1-.095,.617,forecourt.z0+.095,forecourt.z1-.095,2.4,null,false);
+  TREES.push([r.x0+16.10,r.z1+1.86,1.51,'golden']);
+  const verts=[...points,...points.slice(0,4).map(([x,,z])=>[x,top+.265,z])].map(p=>new V3(...p));
   const hull=[...faces,[6,7,8,9],...[0,1,2,3].map(i=>[i,(i+1)%4,(i+1)%4+6,i+6])];
   const center=new V3((x0+x1)/2,eave+.38,ridgeZ);
   const planes=hull.map(indices=>{
@@ -301,7 +331,7 @@ function finishPalmCorner(r,spec,top){
    if(plane.distanceToPoint(center)>0){indices.reverse();plane.negate();}
    return plane;
   });
-  const roof={x0,x1,z0,z1,y0:top+.79,h:eave+rise,walkIgnore:true,convex:{verts,hull,planes,center}};
+  const roof={x0,x1,z0,z1,y0:top+.265,h:eave+rise,walkIgnore:true,convex:{verts,hull,planes,center}};
   STATIC.push(roof);
   CITY_WORKS.pitchedRoofs.push({...roof,eave,rise,run:half});
   // Enclose the raised roof wing below eaves. Reachable terrace ends at this physical wall.

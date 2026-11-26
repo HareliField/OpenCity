@@ -642,7 +642,8 @@ const CITY_WALKUPS={
 };
 function buildCityWalkup(B,spec){
  const w=CITY_WORKS,m=w.m,coastal=spec.kind==='coast',mill=spec.kind==='mill';
- const r=worksRect(B.x0+4.5,B.x1-5.25,B.z0+6,B.z1-6);
+ const coffee=spec.kind==='arcade';
+ const r=worksRect(B.x0+(coffee?10.7:4.5),B.x1-5.25,B.z0+6,B.z1-(coffee?7.9:6));
  const levels=Array.from({length:spec.floors+1},(_,i)=>.17+i*4.08);
  const a=worksRect(r.x0+1.25,r.x0+4.10,r.z0+4.35,r.z0+12.51);
  const b={...a,x0:r.x0+4.67,x1:r.x0+7.52};
@@ -723,7 +724,13 @@ function buildCityWalkup(B,spec){
   }
  }
  for(const side of ['S','N','E','W']){
-  const face=lotFace(r,side);worksSolid(lrect(face.matrix,-face.width/2,face.width/2,0,.18),top,top+.90,m.stone);
+  const face=lotFace(r,side),span=face.width/2;
+  const cap=coffee&&(side==='S')?.30:.90;
+  if(coffee&&(side==='E'||side==='W')){
+   const north=side==='E'?[0,span]:[-span,0],south=side==='E'?[-span,0]:[0,span];
+   worksSolid(lrect(face.matrix,...north,0,.18),top,top+.90,m.stone);
+   worksSolid(lrect(face.matrix,...south,0,.18),top,top+.30,m.stone);
+  }else worksSolid(lrect(face.matrix,-span,span,0,.18),top,top+cap,m.stone);
  }
  buildLift(shaft,levels,levels.map((y,i)=>i===0?'STREET':i===levels.length-1?'ROOF':coastal?'SUITES '+i:'FLOOR '+(i+1)));
  if(spec.front)finishPalmCorner(r,spec,top);

@@ -34,7 +34,8 @@ class WeatherCoverMap {
 function buildWeatherCover() {
  const map=new WeatherCoverMap();
  for (const b of blocks) for (const r of b.bld){
-  if(r.obb && r.normal?.y>.1){
+  if(r.construction){for(const l of r.levels)map.stamp({...l.rect,h:l.h});}
+  else if(r.obb && r.normal?.y>.1){
    const n=r.normal,p=r.obb.p;
    const edge=(Math.abs(n.x)+Math.abs(n.z))*WEATHER_CELL*.5;
    map.stamp(r,(x,z)=>p.y+(r.obb.h*.5-n.x*(x-p.x)-n.z*(z-p.z)-edge)/n.y);

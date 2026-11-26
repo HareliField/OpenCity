@@ -56,6 +56,7 @@ function builtStreetHeight(x,z){
 }
 function initPaving(){
  PAVING.gutter=makeWet(pbr('concrete',1,{rough:.9,color:0x938c80,ns:.48}),{wet:1});
+ PAVING.panel=makeWet(pbr('concrete',1,{rough:.93,color:0xc6c2b9,ns:.46}),{wet:.83});
  PAVING.repair=makeWet(pbr('asphalt',1,{rough:.86,color:0x747678,ns:.67}),{road:true,wet:.87});
  const [pad,g]=cvs(128,128);
  g.fillStyle='#ac7737';g.fillRect(0,0,128,128);
@@ -87,11 +88,11 @@ function utilityCoverMaterial(){
 function newTerrain(concrete){
  return {concrete,faces:[],byMaterial:new Map(),x0:Infinity,x1:-Infinity,z0:Infinity,z1:-Infinity};
 }
-function terrainFace(tile,material,points,solid=true){
+function terrainFace(tile,material,points,solid=true,renderDrop=0){
  const [a,b,c]=points;
  if((b[2]-a[2])*(c[0]-a[0])-(b[0]-a[0])*(c[2]-a[2])<0)points.reverse();
  if(!tile.byMaterial.has(material))tile.byMaterial.set(material,[]);
- tile.byMaterial.get(material).push(points);
+ tile.byMaterial.get(material).push(renderDrop?points.map(([x,y,z])=>[x,y-renderDrop,z]):points);
  if(!solid || !points.some(p=>p[1]>.0001))return;
  tile.faces.push(points);indexGroundFace(points);
  for(const [x,,z] of points){
@@ -148,18 +149,24 @@ function buildSidewalk(B){
  // In the two municipal lots, the stairs and lift extend below street level.
  // Cut the same flat sidewalk faces used for rendering, foot height and wheel collision.
  const holes=STREET_OPENINGS.filter(r=>r.x0<B.x1&&r.x1>B.x0&&r.z0<B.z1&&r.z1>B.z0);
- function pave(material,points,solid=true){
+ function pave(material,points,solid=true,panels=null){
+  const emit=p=>{
+   terrainFace(tile,material,p,solid,panels ? .009 : 0);
+   if(!panels)return;
+   const xs=p.map(v=>v[0]),zs=p.map(v=>v[2]);
+   registerPavementField(B,Math.min(...xs),Math.max(...xs),Math.min(...zs),Math.max(...zs),height,panels);
+  };
   if(holes.length&&material===MAT.sidewalk&&points.length===4&&points.every(p=>p[1]===height)){
    const xs=new Set(points.map(p=>p[0])),zs=new Set(points.map(p=>p[2]));
    if(xs.size===2&&zs.size===2){
     const r=worksRect(Math.min(...xs),Math.max(...xs),Math.min(...zs),Math.max(...zs));
     for(const p of subtractCityOpenings(r,holes)){
-     terrainFace(tile,material,[[p.x0,height,p.z0],[p.x0,height,p.z1],[p.x1,height,p.z1],[p.x1,height,p.z0]],solid);
+     emit([[p.x0,height,p.z0],[p.x0,height,p.z1],[p.x1,height,p.z1],[p.x1,height,p.z0]]);
     }
     return;
    }
   }
-  terrainFace(tile,material,points,solid);
+  emit(points);
  }
  const rect=(x0,x1,z0,z1)=>pave(MAT.sidewalk,[[x0,height,z0],[x0,height,z1],[x1,height,z1],[x1,height,z0]]);
  rect(B.x0+end,B.x1-end,B.z0+end,B.z1-end);
@@ -216,7 +223,10 @@ function buildSidewalk(B){
    else spans.push([a,b]);
   }
   function level(a,b,inner,outer){
-   if(b>a)face([[a,inner],[b,inner],[b,outer],[a,outer]]);
+   if(b<=a)return;
+   const edge=Math.min(outer,3.52);
+   if(inner<edge)pave(MAT.sidewalk,[point(a,inner),point(b,inner),point(b,edge),point(a,edge)],true,axis);
+   if(outer>edge)face([[a,Math.max(inner,edge)],[b,Math.max(inner,edge)],[b,outer],[a,outer]]);
   }
   if(!spans.length){
    level(start,finish,0,end);wall(point(start,0),point(finish,0));continue;
@@ -388,7 +398,10 @@ function intersectionMarkings(i,j){
    const extended=hasCurbExtension(i,j,dx,dz),edge=HALF-(extended?EXTENSION_WIDTH:0);
    if(extended)buildCurbExtension(i,j,dx,dz);
    if(control==='signal' || section.rank){
-    for(let k=-5;k<=5;k++){const u=k*1.524;if(Math.abs(u)+.25<edge)rect(cross-hw,cross+hw,u-.25,u+.25);}
+    const palm=i===10&&j===10,stride=palm?1.19:1.524,half=palm?.315:.25;
+    for(let k=-Math.floor(edge/stride);k<=Math.floor(edge/stride);k++){
+     const u=k*stride;if(Math.abs(u)+half<edge)rect(cross-hw,cross+hw,u-half,u+half);
+    }
    }else{
     rect(cross-hw,cross-hw+.14,-edge,edge);rect(cross+hw-.14,cross+hw,-edge,edge);
    }
@@ -424,6 +437,11 @@ function utilityHardware(axis,line,block){
  }
  if((line+block)%3!==0)return;
  const t=35+(line%3),u=line%2?2.9:-2.9,cover=new THREE.CircleGeometry(.347,32);
+ const [cx,cy,cz]=p(t,u);
+ const rise=(p(t,u+.30)[1]-p(t,u-.30)[1])/.60;
+ const alongRise=(p(t+.30,u)[1]-p(t-.30,u)[1])/.60;
+ registerStreetFitting('municipal-cover',cx,cy-.067,cz,[.814,.074,.814],0,{
+  reach:28,pitch:-Math.atan(axis==='ew'?rise:alongRise),roll:Math.atan(axis==='ew'?alongRise:rise)});
  const position=cover.attributes.position;
  for(let k=0;k<position.count;k++){
   const a=position.getX(k),b=position.getY(k);
@@ -450,6 +468,7 @@ function buildStreetNetwork(){
  for(const objects of [LAMPS,PROPSPOTS,TREES,PALMS])for(let k=objects.length-1;k>=0;k--){
   const o=objects[k];if(obstructsStreet(o.x??o[0],o.z??o[1],o.type))objects.splice(k,1);
  }
+ LAMPS.push({x:10*CELL-11.21,z:10*CELL+12.61,ry:-Math.PI/2});
  for(let line=0;line<=N;line++){
   if(line<N)for(let j=0;j<N;j++)buildSidewalk(blocks[line*N+j]);
   for(let block=0;block<N;block++)for(const axis of ['ns','ew']){

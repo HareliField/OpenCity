@@ -71,7 +71,7 @@ function loadForestSpecies(species){
   const groups=new Map();
   for(const p of points){
    const sx=Math.floor(p[0]/64),sz=Math.floor(p[1]/64);
-   const mature=!palm&&Math.sin(p[0]*.83+p[1]*1.27)>(blockOf(p[0],p[1])?.park?-.74:.27);
+   const mature=!palm&&(p[3]==='mature'||p[3]==='golden'||Math.sin(p[0]*.83+p[1]*1.27)>(blockOf(p[0],p[1])?.park?-.74:.27));
    const key=sx+','+sz+','+Number(mature);
    if(!groups.has(key))groups.set(key,{x:sx*64+32,z:sz*64+32,items:[],mature});
    groups.get(key).items.push(p);
@@ -86,7 +86,8 @@ function loadForestSpecies(species){
     placement.rotation.y=(px*.157+pz*.371)%6.283;
     placement.scale.set(scale*(1+.08*v),scale*(1-.065*v),scale*(1+.06*v));
     placement.updateMatrix();placement.matrix.toArray(matrices.array,i*16);
-    shade.setRGB(.86+v*.055,.89+v*.052,.81+v*.055).toArray(colors.array,i*3);
+    if(items[i][3]==='golden')shade.setRGB(1.13,.94,.65);else shade.setRGB(.86+v*.055,.89+v*.052,.81+v*.055);
+    shade.toArray(colors.array,i*3);
    }
    const lods=prototypes.slice(mature?2:0,mature?4:2).map(parts=>{
     const group=new THREE.Group();group.position.set(x,0,z);group.visible=false;

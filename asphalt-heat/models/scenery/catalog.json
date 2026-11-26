@@ -291,5 +291,26 @@
   },
   "passenger-cabin": {
     "file": "passenger-cabin.glb"
+  },
+  "apartment-bed": {
+    "file": "apartment-bed.glb"
+  },
+  "studio-drafting-desk": {
+    "file": "studio-drafting-desk.glb"
+  },
+  "apartment-galley": {
+    "file": "apartment-galley.glb"
+  },
+  "bond-brick": {
+    "file": "bond-brick.glb"
+  },
+  "mission-pantile": {
+    "file": "mission-pantile.glb"
+  },
+  "municipal-cover": {
+    "file": "municipal-cover.glb"
+  },
+  "pier-board": {
+    "file": "pier-board.glb"
   }
 }

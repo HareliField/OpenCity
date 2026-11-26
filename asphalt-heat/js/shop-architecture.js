@@ -56,7 +56,12 @@ function buildUpperShopFront(B,M,u0,u1,top,coastal){
  const floors=Math.max(1,Math.round((top-4.1)/3.43)),h=(top-4.1)/floors;
  const n=Math.max(2,Math.round(w/(coastal?3.0:2.73))),pitch=w/n;
  const yaw=Math.atan2(M.elements[8],M.elements[10]);
- const strip=(l,r,b,t)=>frontageMasonry(wall,M,l,r,b,t,.022,coastal);
+ const side=Math.abs(Math.sin(yaw))>.5?(Math.sin(yaw)>0?'E':'W'):(Math.cos(yaw)>0?'S':'N');
+ const strip=(l,r,b,t)=>{
+  frontageMasonry(wall,M,l,r,b,t,.022,coastal);
+  addRoomCollider(B,M,l,r,-.022,.288,t,b);
+  if(!coastal)(B.bondWalls||(B.bondWalls=[])).push({...lrect(M,l,r,-.022,.288),y0:b,h:t,side});
+ };
  const box=(mat,l,r,b,t,back,front)=>plainBox(mat,l,r,b,t,back,front,{M,uvm:1});
  for(let j=0;j<floors;j++){
   const base=4.1+j*h,sill=base+.37*h,head=base+.908*h;
@@ -75,7 +80,10 @@ function buildUpperShopFront(B,M,u0,u1,top,coastal){
    const g=new THREE.PlaneGeometry(r-l-.061,head-sill-.04),uv=g.attributes.uv;
    const tile=(B.i+k+(j%3===1?1:0))%4,row=coastal?0:1;
    for(let i=0;i<uv.count;i++)uv.setXY(i,(tile+.013+.974*uv.getX(i))/4,(row+.01+.98*uv.getY(i))/2);
-   g.translate(center,(sill+head)/2,-.240);g.applyMatrix4(M);addGeo(a.panes,g,false);
+   g.translate(center,(sill+head)/2,-.240);g.applyMatrix4(M);collectBuildingProxy(B,a.panes,g);
+   const reveal=M.clone().multiply(new THREE.Matrix4().makeTranslation(0,0,-.112));
+   groundGlazing(B,reveal,l+.077,r-.077,sill+.063,head-.048);
+   for(const x of [l+.038,r-.038])addRoomCollider(B,M,x-.038,x+.038,.124,.218,head,sill+.03);
    if(!coastal&&(k+2*j+B.j)%5===2){
     const at=lpt(M,center,-.146);
     worksModel('window-ac',at.x,sill+.028,at.z,[.68,.34,.47],yaw,false);

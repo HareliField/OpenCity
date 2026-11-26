@@ -46,7 +46,7 @@ function gardenWall(B,R,side,openings,h,wall){
    }
    R.entry={x:point.x,z:point.z};
   }else{
-   solid(l,r,base,o.y);addRoomCollider(B,M,l,r,-.05,.11,o.y+o.h,o.y);
+   solid(l,r,base,o.y);addRoomCollider(B,M,l,r,-.05,.11,o.y+o.h,o.y,true);
    const p=lpt(M,o.x,-.032);
    const proxy=new THREE.Group(),sash=new THREE.Mesh(unitBox,MAT.trim),pane=new THREE.Mesh(unitBox,INTERIORS.materials.glass);
    pane.position.y=o.h*.5;pane.scale.set(o.w-.08,o.h-.086,.016);proxy.add(pane);

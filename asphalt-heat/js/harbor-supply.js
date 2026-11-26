@@ -11,7 +11,7 @@ CARSPEC.harborbox={...CARSPEC.van,type:'harborbox',modelName:'Harbor Supply deli
   [-1.42,1.43,0,.75,1.48,1.74],[-2.02,1.35,0,.50,1.02,1.71],[-2.75,.928,0,1.05,.56,1.72]]};
 function parkReferenceVehicles(){
  const photos=[['sedan','silver-city-sedan',1002.1,14*CELL+6.6,Math.PI/2,0xb5b4ae],
-  ['sedan','graphite-city-saloon',10*CELL-parkingCenter(streetSection('ns',10,9),-1),9*CELL+30.5,Math.PI,0x28323e],
+  ['sedan','graphite-city-saloon',10*CELL+parkingCenter(streetSection('ns',10,9),-1),9*CELL+30.5,Math.PI,0x28323e],
   ['rav4','brick-red-crossover',293,4*CELL+6.6,Math.PI/2,0x763522]];
  const bay=HARBOR_SUPPLY.truck;
  if(bay)photos.push(['harborbox','harbor-box-truck',bay.x,bay.z,bay.h,0xd9d8ce]);
@@ -19,11 +19,23 @@ function parkReferenceVehicles(){
   const car=spawnCar(type,x,z,h,null);
   paintCar(car,colour);car.keep=true;car.heroWanted=true;car.heroAsset=asset;
  }
+ // The curb queue in photograph 001 extends north along Palm. Keep crosswalks and access aprons clear.
+ for(const [j,z,pSide,type,colour] of [
+  [9,21,1,'civic',0xb6b4a9],[9,39,1,'rav4',0x516359],[9,20,-1,'sedan',0x787f83],
+  [8,23,1,'sedan',0xc4bdb0],[8,32,-1,'miata',0x933d36],[8,42,1,'civic',0x58676b],
+  [7,30,1,'mustang',0x426270],[7,23,-1,'sedan',0xa9a9a4],[6,36,1,'rav4',0x756452]]){
+  const section=streetSection('ns',10,j),offset=parkingCenter(section,pSide);
+  if(offset==null)continue;
+  const x=10*CELL-pSide*offset,at=j*CELL+z;
+  if(nearDriveway(x,at,3)||cars.some(c=>Math.hypot(c.pos.x-x,c.pos.z-at)<6.6))continue;
+  const c=spawnCar(type,x,at,pSide>0?0:Math.PI,null);paintCar(c,colour);c.keep=true;
+ }
+
 }
 function supplyWall(block,side,R,openings,site=HARBOR_SUPPLY){
  const {matrix:M,width}=lotFace(R,side),half=width/2,roof=site.roof,bottom=.17;
  const plate=(mat,x0,x1,y0,y1,z0,z1)=>plainBox(mat,x0,x1,y0,y1,z0,z1,{M,uvm:1.45});
- const collider=(l,r,b,t,inner=.22,out=.013)=>addRoomCollider(block,M,l,r,-out,inner,t,b);
+ const collider=(l,r,b,t,inner=.22,out=.013,glass=false)=>addRoomCollider(block,M,l,r,-out,inner,t,b,glass);
  const xs=[...new Set([-half,half,...openings.flatMap(o=>[o.left,o.right])])].sort((a,b)=>a-b);
  const ys=[...new Set([bottom,roof,...openings.flatMap(o=>[o.base,o.top])])].sort((a,b)=>a-b);
  for(let i=1;i<xs.length;i++)for(let j=1;j<ys.length;j++){
@@ -50,7 +62,7 @@ function supplyWall(block,side,R,openings,site=HARBOR_SUPPLY){
   }else{
    facadePlane(STREET.materials.glass,M,l,r,b,t,-.122);
    rememberShopGlass(M,l,r);
-   collider(l,r,b,t,.135,-.09);
+   collider(l,r,b,t,.135,-.09,true);
    plate(MAT.metal,l-.062,r+.062,b-.048,b+.038,-.18,.094);
    const panes=Math.max(2,Math.round((r-l)/.91));
    for(let j=1;j<panes;j++){const x=lerp(l,r,j/panes);plate(MAT.darkMetal,x-.019,x+.019,b,t,-.135,-.066);}

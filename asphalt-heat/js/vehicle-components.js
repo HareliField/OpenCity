@@ -3,6 +3,7 @@ const FLEET_SECTIONS=new Map();
 const OPEN_FREIGHT_BEDS=new Set();
 const autoGlass=new THREE.MeshStandardMaterial({color:0xa1b5b9,roughness:.10,metalness:.19,
  transparent:true,opacity:.35,side:THREE.DoubleSide,depthWrite:false,envMapIntensity:1.12});
+const panelLinerMaterial=new THREE.MeshStandardMaterial({color:0x353a38,roughness:.89,metalness:.16,side:THREE.BackSide});
 const glassCrackMaterial=new THREE.LineBasicMaterial({color:0xc7d4cf,transparent:true,opacity:.70,depthWrite:false});
 const VEHICLE_GLASS=['Windshield','RearGlass','GlassFrontL','GlassFrontR','GlassRearL','GlassRearR'];
 const VEHICLE_DOORS=['DoorFrontL','DoorFrontR','DoorRearL','DoorRearR'];
@@ -105,6 +106,10 @@ function createVehicleAssembly(c,heroRoot=null){
   const joint=new THREE.Group();section.add(joint);joint.position.copy(pivot);joint.updateWorldMatrix(true,true);joint.attach(part);
   const state=panelState(c,name),j={joint,part,pivot,bounds,centre,state,name,rear,angle:0,collision:null};
   part.traverse(o=>{if(o.isMesh)o.userData.servicePanel=true;});
+  if(name==='Bonnet'&&!heroRoot){
+   const liner=new THREE.Mesh(part.geometry,panelLinerMaterial);liner.position.y=-.014;
+   liner.castShadow=liner.receiveShadow=true;part.add(liner);
+  }
   if(name.startsWith('Door')){
    const size=bounds.getSize(new V3()),trim=new THREE.Mesh(unitBox,darkMat),right=name.endsWith('R')?1:-1;
    trim.scale.set(.037,Math.min(.38,size.y*.57),size.z*.74);

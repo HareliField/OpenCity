@@ -84,12 +84,18 @@ function shopFacade(block,row,M,u0,u1,storey,coastal,riverside=false){
  const depth=coastal?16:17.5,roomDepth=6.65;
  const main=lrect(M,u0,u1,0,depth);
  const buildingArgs={style:coastal?4:1,fh:3.45,bay:coastal?3.15:2.82,tint:row.brick,top:storey,gH:4.1,seed:(Math.abs(u0)+.31)/30};
- facadeBox(material,main.x0,main.x1,4.1,storey,main.z0,main.z1,{...buildingArgs,frontYaw:Math.atan2(M.elements[8],M.elements[10])});
+ const yaw=Math.atan2(M.elements[8],M.elements[10]),frontSide=Math.abs(Math.sin(yaw))>.5?(Math.sin(yaw)>0?'E':'W'):(Math.cos(yaw)>0?'S':'N');
+ const backSide={N:'S',S:'N',E:'W',W:'E'}[frontSide];
+ const back=lrect(M,u0,u1,roomDepth+(hasStockRoom(row)?2.36:1.10),depth);
+ const tier={...buildingArgs,mat:material,rect:main,h:storey,authoredSide:frontSide};
+ const shell=createStoreys(block,main,.174,4.10,[tier]);
+ shell.core=planStairCore(back,.174,shell.levels.map(f=>f.h));
+ facadeBox(material,main.x0,main.x1,4.1,storey,main.z0,main.z1,{...buildingArgs,frontYaw:yaw,block});
  buildUpperShopFront(block,M,u0,u1,storey,coastal);
  rememberShopGlass(M,u0,u1);
- const back=lrect(M,u0,u1,roomDepth+(hasStockRoom(row)?2.25:0),depth);
- facadeBox(material,back.x0,back.x1,.15,4.1,back.z0,back.z1,{...buildingArgs,style:3,fh:6});
- roofDressing(main,storey,coastal?'deco':'old');
+ buildAccessibleShell(block,back,{height:4.10,ceiling:4.10,structure:shell,kind:'home',wall:texMat,
+  selected:[backSide],rooms:false,ceilingOpenings:shell.core?[shell.core.opening]:[]});
+ roofDressing(main,storey,coastal?'deco':'old',shell.core?.opening);
  const box=(mat,x0,x1,a,b,z0,z1,opts={})=>plainBox(mat,x0,x1,a,b,z0,z1,{M,uvm:2.1,...opts});
  for(const x of [u0,u1-.32])box(texMat,x,x+.32,.15,4.2,-1.1,.17);
  box(texMat,u0,u1,3.94,4.23,-1.15,.19);
@@ -133,7 +139,7 @@ function shopFacade(block,row,M,u0,u1,storey,coastal,riverside=false){
  }
  buildInterior({block,M,u0,u1,door0,door1,row,depth:roomDepth});
  dressReferenceShop(block,row,M,u0,u1,storey,roomDepth);
- block.bld.push({...back,h:4.1},{...main,y0:3.55,h:storey});
+
  return main;
 }
 

@@ -206,7 +206,7 @@ function loadHeroCar(car){
    if(!o.isMesh)return;
    o.material=o.material.transparent?o.material.clone():coatVehicle(o.material,car.snowDepth);
    const finish=o.material.name||'';
-   o.userData.lacquer=!o.material.transparent&&(id==='harbor-box-truck'?/enamel/i.test(finish):!/reference finishes|alloy|glass|tyre/i.test(finish));
+   o.userData.lacquer=!o.material.transparent&&(id==='harbor-box-truck'?/enamel/i.test(finish):!/reference finishes|alloy|glass|tyre|inner body|acoustic lining|compartment seal/i.test(finish));
    if(car.repainted&&o.userData.lacquer)o.material.color.copy(lin(car.paintColor));
   });
   car.mesh.add(shell);

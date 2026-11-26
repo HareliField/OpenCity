@@ -7,12 +7,15 @@ function groundY(x,z,referenceY=null){
  const sidewalk=blockOf(x,z);
  let y=x>W+13?.02:cityTerrainReady?builtStreetHeight(x,z):
   sidewalk?sidewalkHeight(sidewalk,x,z):pavementHeight(x,z);
+ for(const d of sidewalk?.cargoDecks||[])
+  if(d.y<=(referenceY??y)+.38&&withinRect(d,x,z))y=Math.max(y,d.y);
  for(const r of STREET.steps)if(x>=r.x0&&x<=r.x1&&z>=r.z0&&z<=r.z1&&(!r.elevated||referenceY!==null&&referenceY>r.y-.35))y=Math.max(y,r.y);
  if(referenceY!==null){
   y=gardenRoofHeight(x,z,referenceY,y);
   const grade=sampleGrade(x,z,referenceY);
   if(grade)y=Math.max(y,grade.height);
  }
+ y=storeyGroundAt(sidewalk,x,z,referenceY,y);
  y=truckFloorAt(x,z,referenceY,y);
  return coveFloorAt(x,z,referenceY,worksFloorAt(x,z,referenceY,mosaicFloorAt(x,z,y)));
 }
@@ -55,6 +58,13 @@ function collideWorld(p,r,motion=null){
       if(top<y+.18||top-R.obb.h/R.normal.y>y+1.67)continue;
      }
      if((R.y0||0)>y+1.67||(R.h||12)<y+.15)continue;
+     if(R.x1<p.x-r||R.x0>p.x+r||R.z1<p.z-r||R.z0>p.z+r)continue;
+     if(R.construction||R.glazing){
+      forConstructionParts(R,y+.15,y+1.67,part=>{
+       if(part.role==='floor')return;
+       const n=pushOut(p,r,part);if(n)hit=n;
+      });continue;
+     }
      const n=pushOut(p,r,R);if(n)hit=n;
     }
    }
@@ -105,10 +115,15 @@ function rayWorld(ax,az,bx,bz,ay=groundY(ax,az)+1.48,by=groundY(bx,bz)+1.48,pad=
  for(let i=Math.floor(first/N);i<=Math.floor(last/N);i++)for(let j=first%N;j<=last%N;j++){
   const key=i*N+j,block=blocks[key];
   for(const list of [block.bld,block.residual])for(const r of list){
-   if(r.x1<minX||r.x0>maxX||r.z1<minZ||r.z0>maxZ)continue;
+   if(!glass&&r.glass||r.x1<minX||r.x0>maxX||r.z1<minZ||r.z0>maxZ)continue;
    const t=traceBox(start,delta,{x:r.x0,y:r.y0||0,z:r.z0},{x:r.x1,y:r.h||12,z:r.z1},pad);
    if(t>=best)continue;
-   if(r.convex){
+   if(r.construction||r.glazing){
+    forConstructionParts(r,Math.min(ay,by)-pad,Math.max(ay,by)+pad,p=>{
+     if(!glass&&p.role==='glass')return;
+     best=Math.min(best,traceBox(start,delta,{x:p.x0,y:p.y0,z:p.z0},{x:p.x1,y:p.h,z:p.z1},pad));
+    });
+   }else if(r.convex){
     let near=t,far=best;
     for(const plane of r.convex.planes){
      const space=plane.distanceToPoint(start)-pad,speed=plane.normal.dot(delta);
@@ -132,7 +147,7 @@ const nearestNode=p=>[clamp(Math.round(p.x/CELL),0,N),clamp(Math.round(p.z/CELL)
 function neighbors(n){const r=[];for(const[a,b]of[[1,0],[-1,0],[0,1],[0,-1]]){const i=n[0]+a,j=n[1]+b;if(i>=0&&j>=0&&i<=N&&j<=N)r.push([i,j]);}return r;}
 const dist2=(a,b)=>Math.hypot(a.x-b.x,a.z-b.z);
 function physWorld(){
- for(const r of STREET.steps)if(r.y>.005&&!r.elevated)physBox(r.x0,r.x1,.005,r.y,r.z0,r.z1);
+ for(const r of STREET.steps)if(r.y>.005&&!r.elevated)physBox(r.x0,r.x1,r.soffit??.005,r.y,r.z0,r.z1);
  physBox(W+13,W+64,-.12,.017,-HALF,W+HALF,PH.mat.sand);
  physBox(-HALF-1,W+60,0,2,-HALF-1.2,-HALF-.2);
  for(const [a,b] of southWallSpans())physBox(a,b,0,2,FREIGHT.z0+.2,FREIGHT.z0+1.2);
@@ -147,6 +162,7 @@ function physWorld(){
 
 function refreshPhysicalWorld(x,z){
  const key=cellKey(x,z);
+ constructionMeshes(x,z);streamConstructionPhysics(x,z,player?.pos?.y??0);syncDoorRegion(x,z);
  if(STREETS_PHYS.region===key)return;
  STREETS_PHYS.region=key;
  const i=Math.floor(key/N),j=key%N,required=new Set();
@@ -154,19 +170,21 @@ function refreshPhysicalWorld(x,z){
   for(let b=Math.max(0,j-2);b<=Math.min(N-1,j+2);b++){
    const block=blocks[a*N+b];
    for(const tile of STREET_TERRAIN.get(a*N+b)||[])required.add(tile);
-   for(const r of block.bld)required.add(r);
+   for(const r of block.bld)if(!r.construction)required.add(r);
    for(const r of block.residual)required.add(r);
   }
  }
  for(const [r,body] of STREETS_PHYS.bodies){
   if(required.has(r))continue;
   physRemove(body);
+  if(r.glazing){r.body=null;for(const p of r.parts)p.shapeOffset=null;}
   STREETS_PHYS.bodies.delete(r);
  }
  for(const r of required){
   if(STREETS_PHYS.bodies.has(r))continue;
   if(r.cove){STREETS_PHYS.bodies.set(r,coveBody());continue;}
   if(r.faces){STREETS_PHYS.bodies.set(r,terrainBody(r));continue;}
+  if(r.glazing){STREETS_PHYS.bodies.set(r,physicalParts(r));continue;}
   const top=Math.min(r.h||12,157),base=r.y0||0;
   if(top<=base||r.x1<=r.x0||r.z1<=r.z0)continue;
   let body;
@@ -191,7 +209,6 @@ function refreshPhysicalWorld(x,z){
   if(r.moving){body.type=CANNON.Body.KINEMATIC;body.allowSleep=false;}
   STREETS_PHYS.bodies.set(r,body);
  }
- syncDoorRegion(x,z);
 }
 /* ---- particles / tracers ---- */
 const parts=[];let pi=0;
@@ -677,7 +694,10 @@ function roofHeight(x,z,radius){
  for(let i=Math.floor(a/N);i<=Math.floor(b/N);i++)for(let j=a%N;j<=b%N;j++){
   const block=blocks[i*N+j];
   for(const list of [block.bld,block.residual])for(const r of list){
-   if(x+radius>=r.x0&&x-radius<=r.x1&&z+radius>=r.z0&&z-radius<=r.z1)height=Math.max(height,r.h||0);
+   if(x+radius<r.x0||x-radius>r.x1||z+radius<r.z0||z-radius>r.z1)continue;
+   if(r.construction){
+    for(const l of r.levels)if(rectDistance(l.rect,x,z)<=radius)height=Math.max(height,l.h);
+   }else height=Math.max(height,r.h||0);
   }
  }
  return height;

@@ -27,7 +27,8 @@ function buildHarbor(){
  const {approach,quay,docks,boats}=HARBOR;
  for(const [i,d] of [approach,quay,...docks].entries()){
   STREET.steps.push(d);
-  plainBox(i===0?MAT.stone:MAT.planks,d.x0,d.x1,.03,d.y,d.z0,d.z1,{uvm:1.45,shadow:false});
+  plainBox(i===0?MAT.stone:MAT.planks,d.x0,d.x1,.03,i===0?d.y:d.y-.009,d.z0,d.z1,{uvm:1.45,shadow:false});
+  if(i>0)registerDeckBoards(d,i===1);
  }
  plainBox(MAT.column,quay.x1-.86,quay.x1,-1.25,quay.y-.045,quay.z0,quay.z1,{uvm:1.9});
 
