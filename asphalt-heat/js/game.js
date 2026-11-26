@@ -66,6 +66,7 @@ function collideWorld(p,r,motion=null){
  if(grade)hit=grade;
  const door=collideDoors(p,r);
  if(door)hit=door;
+ const resident=globalThis.WashHouse?.push(p,r,y);if(resident)hit=resident;
  const prop=collideProps(p,r,y,motion);
  if(prop)hit=prop;
  const freight=inFreightPort(p.x,p.z,r);
@@ -91,11 +92,12 @@ function traceBox(start,delta,lo,hi,pad){
  }
  return near;
 }
-function rayWorld(ax,az,bx,bz,ay=groundY(ax,az)+1.48,by=groundY(bx,bz)+1.48,pad=0,glass=true){
+function rayWorld(ax,az,bx,bz,ay=groundY(ax,az)+1.48,by=groundY(bx,bz)+1.48,pad=0,glass=true,ignoreResident=false){
  const minX=Math.min(ax,bx)-pad,maxX=Math.max(ax,bx)+pad,minZ=Math.min(az,bz)-pad,maxZ=Math.max(az,bz)+pad;
  const start=new V3(ax,ay,az),delta=new V3(bx-ax,by-ay,bz-az);
  const first=cellKey(Math.min(ax,bx)-pad,Math.min(az,bz)-pad),last=cellKey(Math.max(ax,bx)+pad,Math.max(az,bz)+pad);
  let best=traceCove(start,delta,pad,glass);
+ if(!ignoreResident&&globalThis.WashHouse)best=Math.min(best,WashHouse.ray(start,delta,pad));
  function oriented(center,rotation,w,h,d){
   const inv=rotation.clone().invert(),half=new V3(w/2,h/2,d/2);
   return traceBox(start.clone().sub(center).applyQuaternion(inv),delta.clone().applyQuaternion(inv),half.clone().negate(),half,pad);

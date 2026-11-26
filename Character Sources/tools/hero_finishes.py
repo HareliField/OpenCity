@@ -134,6 +134,11 @@ def tailor(rig, folder):
     ripple = elbow * np.cos(abs(nx) * 137 + ny * 45 + nz * 21) * 0.0038
     ripple += waist * np.sin(nx * 148 + 12 * nz) * 0.0028
     pts += normals * ripple[:, None]
+    # A light windbreaker collar rolls outward rather than rising as a stiff lapel.
+    # Roll only the free upper neckline. Keep each sewn seam coincident.
+    roll = np.clip((z - 1.575) / 0.075, 0, 1) * np.clip((0.149 - abs(x)) / 0.045, 0, 1)
+    pts[:, 2] -= 0.014 * roll
+    pts[:, 0] += np.sign(x) * 0.008 * roll
     obj.data.vertices.foreach_set("co", pts.astype(np.float32).ravel())
     obj.data.update()
     for poly in obj.data.polygons:
@@ -249,11 +254,17 @@ def tailor(rig, folder):
         rig,
         "pelvis",
     )
+    from windbreaker import remove_patch_pockets, add_trim
+
+    remove_patch_pockets(obj)
+    add_trim(obj, rig)
+    from hero_materials import wardrobe
+
+    wardrobe(folder)
     obj["cut"] = "Gathered windbreaker waist and cuffs with folded hood"
 
 
 def bun_and_fringe(rig, folder):
-    from mathutils.bvhtree import BVHTree
 
     scene = bpy.context.scene
     deps = bpy.context.evaluated_depsgraph_get()
@@ -264,7 +275,7 @@ def bun_and_fringe(rig, folder):
     bake_identity(obj)
     eyes = coordinates(scene.objects["Eyes"].evaluated_get(deps))
     ez = (eyes[:, 2].max() + eyes[:, 2].min()) * 0.5
-    center = np.array([0.012, 0.099, ez + 0.016])
+    center = np.array([0.012, 0.071, ez + 0.022])
     obj.hide_render = True
     obj.hide_set(True)
     rng = random.Random(folder.name)
@@ -284,106 +295,9 @@ def bun_and_fringe(rig, folder):
         bs = m.node_tree.nodes.get("Principled BSDF")
         bs.inputs["Roughness"].default_value = 0.68
         bs.inputs["Specular IOR Level"].default_value = 0.22
-    lines = []
-    from scalp import scalp
+    from hair_cards import groom as card_groom
 
-    scalp(rig, ez, folder, lines, palette)
-    for _ in range(1250):
-        start = rng.uniform(0, math.tau)
-        latitude = rng.uniform(-1.32, 1.32)
-        radius = rng.uniform(0.91, 1.04)
-        points = []
-        for j in range(11):
-            t = j / 10
-            a = start + t * rng.uniform(0.84, 1.04) * 2.15
-            lat = latitude + 0.14 * math.sin(t * math.pi + start)
-            points.append(
-                (
-                    center[0] + 0.043 * math.cos(a) * math.cos(lat) * radius,
-                    center[1] + 0.037 * math.sin(a) * math.cos(lat) * radius,
-                    center[2] + 0.043 * math.sin(lat) * radius,
-                )
-            )
-        lines.append((points, rng.choices(range(5), [35, 32, 22, 9, 2])[0], 0.76))
-    guide_path = folder / "groom-guide.npz"
-    if guide_path.is_file():
-        guide = np.load(guide_path)
-        mask = guide["mask"]
-        angle = guide["angle"]
-        tone = guide["tone"]
-        eye_px, eye_py = guide["eyes"]
-        span_px = float(guide["span"])
-        eye_span = (eyes[:, 0].max() - eyes[:, 0].min()) * 0.97
-        scale = eye_span / span_px
-        ys, xs = np.nonzero(mask)
-        eligible = (
-            (ys > eye_py - 0.88 * span_px)
-            & (ys < eye_py + 0.12 * span_px)
-            & (np.abs(xs - eye_px) < span_px * 0.80)
-        )
-        seeds = np.flatnonzero(eligible)
-        head_parts = [
-            scene.objects[n]
-            for n in ("Body", "Fitted scalp cap", "Measured face")
-            if scene.objects.get(n)
-        ]
-        surfaces = [
-            (
-                BVHTree.FromObject(o, deps),
-                o.matrix_world.copy(),
-                o.matrix_world.inverted(),
-            )
-            for o in head_parts
-        ]
-        for strand in range(4200):
-            idx = rng.choice(seeds)
-            u = float(xs[idx]) + rng.uniform(-0.45, 0.45)
-            v = float(ys[idx]) + rng.uniform(-0.45, 0.45)
-            points = []
-            prev = None
-            step = rng.uniform(1.5, 3.0)
-            shade = float(tone[round(v), round(u)])
-            colour = min(4, max(0, int((shade - 0.14) * 8 + rng.uniform(-0.6, 0.6))))
-            bulge = rng.uniform(0.0008, 0.0026)
-            for j in range(rng.randint(6, 12)):
-                ix, iy = round(u), round(v)
-                if not (
-                    0 <= ix < mask.shape[1] and 0 <= iy < mask.shape[0] and mask[iy, ix]
-                ):
-                    break
-                x = (u - eye_px) * scale
-                z = ez - (v - eye_py) * scale
-                start = Vector((x, -1, z))
-                hits = []
-                for tr, world, inverse in surfaces:
-                    p = tr.ray_cast(
-                        inverse @ start, inverse.to_3x3() @ Vector((0, 1, 0))
-                    )[0]
-                    if p is not None:
-                        hits.append((world @ p).y)
-                if not hits:
-                    break
-                points.append((x, min(hits) - bulge, z))
-                th = float(angle[iy, ix])
-                du, dv = math.cos(th), math.sin(th)
-                if (prev and du * prev[0] + dv * prev[1] < 0) or (not prev and dv < 0):
-                    du, dv = -du, -dv
-                if prev:
-                    du = 0.64 * du + 0.36 * prev[0]
-                    dv = 0.64 * dv + 0.36 * prev[1]
-                prev = (du, dv)
-                u += step * du
-                v += step * dv
-            if len(points) > 3:
-                lines.append((points, colour, 0.91))
-    curves(
-        "Combed scalp, coiled bun and swept fringe",
-        lines,
-        palette,
-        0.00024,
-        rig,
-        "head",
-    )
+    card_groom(rig, folder, ez, (eyes[:, 0].max() - eyes[:, 0].min()) * 0.97, center)
     loose = []
     for side in (-1, 1):
         for strand in range(22):
@@ -419,14 +333,14 @@ def bun_and_fringe(rig, folder):
             pt.handle_right += offset
     silver = finish_material("Worn silver", (0.65, 0.68, 0.69), 0.25, 0.92)
     for side in [-1, 1]:
-        cx = side * 0.079
-        cy = -0.041
-        cz = ez - 0.037
+        cx = side * 0.084
+        cy = -0.057
+        cz = ez - 0.049
         loop = [
             (
-                cx + 0.002 * math.cos(a),
+                cx + side * 0.0052 * math.cos(a),
                 cy + 0.005 * math.cos(a),
-                cz + 0.007 * math.sin(a),
+                cz + 0.0082 * math.sin(a),
             )
             for a in np.linspace(0, math.tau, 14)
         ]

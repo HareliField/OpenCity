@@ -1,0 +1,41 @@
+{
+  "residentId": "AH-R0001",
+  "action": "Ida Mercer | dodge, hurt, walk, knockdown, recover",
+  "fps": 24,
+  "contacts": [
+    {
+      "side": "l",
+      "firstFrame": 187,
+      "lastFrame": 198,
+      "maximumPalmClearanceMm": 2.38,
+      "deepestHandPenetrationMm": 0,
+      "palmHorizontalTravelMm": 0.15
+    },
+    {
+      "side": "r",
+      "firstFrame": 187,
+      "lastFrame": 198,
+      "maximumPalmClearanceMm": 2.38,
+      "deepestHandPenetrationMm": 0,
+      "palmHorizontalTravelMm": 0.12
+    }
+  ],
+  "gameContacts": [
+    {
+      "side": "l",
+      "firstFrame": 21,
+      "lastFrame": 32,
+      "maximumPalmClearanceMm": 2.38,
+      "deepestHandPenetrationMm": 0,
+      "palmHorizontalTravelMm": 0.15
+    },
+    {
+      "side": "r",
+      "firstFrame": 21,
+      "lastFrame": 32,
+      "maximumPalmClearanceMm": 2.38,
+      "deepestHandPenetrationMm": 0,
+      "palmHorizontalTravelMm": 0.12
+    }
+  ]
+}

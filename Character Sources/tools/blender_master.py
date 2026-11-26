@@ -104,6 +104,14 @@ def studio(rig, folder, filename="sculpt-review.jpg"):
         1,
     )
     scene.world.node_tree.nodes["Background"].inputs[1].default_value = 0.55
+    if (folder / "art-direction.json").exists():
+        scene.objects["Softbox"].data.energy = 175
+        scene.objects["Softbox"].data.color = (1.0, 0.927, 0.848)
+        scene.objects["Fill"].data.energy = 49
+        scene.objects["Fill"].data.color = (0.82, 0.92, 1.0)
+        scene.objects["Hair light"].data.energy = 96
+        scene.world.node_tree.nodes["Background"].inputs[1].default_value = 0.30
+        scene.view_settings.look = "AgX - Medium High Contrast"
     scene.render.engine = "CYCLES"
     scene.cycles.samples = 8
     scene.cycles.use_denoising = True

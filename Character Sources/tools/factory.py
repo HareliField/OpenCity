@@ -33,6 +33,122 @@ def run_blender(binary, script, *args):
     )
 
 
+def prepare_surfaces(folder, model_dir, art):
+    """Invalidate only the measurements and textures whose inputs changed."""
+    import hashlib
+
+    folder = Path(folder)
+    model_dir = Path(model_dir)
+    resident = folder.name
+    cache_file = folder / ".factory-fit.json"
+    try:
+        cache = json.loads(cache_file.read_text())
+    except (FileNotFoundError, ValueError):
+        cache = {}
+
+    def stage(script, args, inputs, outputs):
+        digest = hashlib.sha256()
+        for path in [TOOLS / script, *inputs]:
+            digest.update(path.name.encode())
+            digest.update(hashlib.sha256(path.read_bytes()).digest())
+        stamp = digest.hexdigest()
+        if cache.get(script) == stamp and all(
+            (folder / out).is_file() for out in outputs
+        ):
+            print(f"{resident} reuses {script}", flush=True)
+            return
+        subprocess.run(
+            [sys.executable, str(TOOLS / script), *map(str, args)],
+            env={**os.environ, "OPENBLAS_NUM_THREADS": "1"},
+            check=True,
+        )
+        if not all((folder / out).is_file() for out in outputs):
+            raise ValueError(f"Incomplete {script} output for {resident}")
+        cache[script] = stamp
+        with tempfile.NamedTemporaryFile(dir=folder, mode="w", delete=False) as temp:
+            json.dump(cache, temp, indent=2)
+        Path(temp.name).replace(cache_file)
+
+    reference = folder / "reference.jpg"
+    fit = folder / "photo-fit.json"
+    face_model = model_dir / "face_landmarker.task"
+    stage(
+        "fit_photo.py",
+        [model_dir, resident, "--force"],
+        [
+            reference,
+            folder / "persona.json",
+            TOOLS / "design.py",
+            TOOLS / "build_cast.py",
+            face_model,
+            model_dir / "pose_landmarker.task",
+            model_dir / "hair.tflite",
+            TOOLS / "face_warp.py",
+        ],
+        [
+            "photo-fit.json",
+            "character.gltf",
+            "face-sculpt.bin",
+            "face-colour.jpg",
+            "wardrobe-colour.jpg",
+            "wardrobe-mask.png",
+        ],
+    )
+    if (folder / "skin-reference.jpg").is_file():
+        stage(
+            "skin_reference.py",
+            [resident, model_dir],
+            [folder / "skin-reference.jpg", face_model],
+            ["skin-uv.bin"],
+        )
+    if art.get("hair"):
+        stage(
+            "groom_reference.py",
+            [resident, model_dir],
+            [reference, fit, model_dir / "hair.tflite"],
+            ["groom-guide.npz"],
+        )
+        if (folder / "skin-uv.bin").is_file():
+            texture_sources = list((ROOT / "Anatomy" / "Textures").glob("cloth_*"))
+            stage(
+                "surface_maps.py",
+                [resident],
+                [
+                    reference,
+                    fit,
+                    folder / "groom-guide.npz",
+                    folder / "skin-reference.jpg",
+                    folder / "skin-uv.bin",
+                    folder / "face-sculpt.bin",
+                    ROOT / "Anatomy" / "face-topology.obj",
+                    TOOLS / "hair_shape.py",
+                    TOOLS / "fit_photo.py",
+                    TOOLS / "face_warp.py",
+                    *sorted(texture_sources),
+                ],
+                [
+                    name + "-" + suffix
+                    for name in ("windbreaker", "denim", "jersey", "skin")
+                    for suffix in ("albedo.jpg", "normal.png", "roughness.png")
+                ]
+                + ["skin-opacity.png", "combed-hair.png", "hair-fibres.png"],
+            )
+    if art.get("rearPanel"):
+        stage(
+            "rear_reference.py",
+            [resident, model_dir],
+            [
+                folder / "turnaround-reference.jpg",
+                folder / "art-direction.json",
+                fit,
+                model_dir / "pose_landmarker.task",
+                model_dir / "hair.tflite",
+                TOOLS / "fit_photo.py",
+            ],
+            ["rear-colour.jpg", "rear-mask.png"],
+        )
+
+
 def build(resident, model_dir, blender, render_motion):
     if not re.fullmatch(r"AH-R[0-9]{4}", resident):
         raise ValueError("Expected one resident ID, such as AH-R0001")
@@ -48,24 +164,7 @@ def build(resident, model_dir, blender, render_motion):
         run_blender(blender, "linked_masters.py", "--library")
     direction = folder / "art-direction.json"
     art = json.loads(direction.read_text()) if direction.exists() else {}
-    fit_env = {**os.environ, "OPENBLAS_NUM_THREADS": "1"}
-
-    def fit_script(script, *args):
-        subprocess.run(
-            [sys.executable, str(TOOLS / script), *map(str, args)],
-            env=fit_env,
-            check=True,
-        )
-
-    fit_script("fit_photo.py", model_dir, resident)
-    if not (folder / "face-sculpt.bin").is_file():
-        raise ValueError("A visible face is required for the measured facial sculpt")
-    if (folder / "skin-reference.jpg").is_file():
-        fit_script("skin_reference.py", resident, model_dir)
-    if art.get("hair") and (folder / "reference.jpg").is_file():
-        fit_script("groom_reference.py", resident, model_dir)
-    if art.get("rearPanel"):
-        fit_script("rear_reference.py", resident, model_dir)
+    prepare_surfaces(folder, model_dir, art)
     run_blender(blender, "linked_masters.py", "--review", resident)
     if art.get("performance"):
         run_blender(blender, "performance.py", resident)
@@ -83,6 +182,17 @@ def build(resident, model_dir, blender, render_motion):
                 )
     run_blender(blender, "turntable.py", resident)
     run_blender(blender, "face_review.py", resident)
+    if art.get("performance"):
+        run_blender(blender, "face_review.py", resident, "--casting")
+        subprocess.run(
+            [
+                sys.executable,
+                str(TOOLS / "likeness_review.py"),
+                resident,
+                str(model_dir),
+            ],
+            check=True,
+        )
     run_blender(blender, "blender_master.py", resident)
     print(f"{person['name']} · {folder / 'character.blend'}")
 

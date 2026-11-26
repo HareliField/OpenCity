@@ -49,6 +49,7 @@
  function destinations() {
   return [
    {id:'start',name:'Verve Nail Studio',x:CELL*4-HALF-.88,z:CELL*5+HALF+10},
+   ...(globalThis.WashHouse?.destination()?[WashHouse.destination()]:[]),
    ...places.map((p,i)=>({id:'place-'+i,name:p.name,kind:p.kind,...point(p.road||p.interact||p.door)})),
    ...GRADE_ROADS.routes.map((r,i)=>({id:'road-'+i,name:r.name,...point(r.curve.getPointAt(.5))})),
    ...TRAFFIC_PATROL.posts.map((p,i)=>({id:'traffic-'+i,name:p.room,...point(p.point)})),
@@ -64,7 +65,7 @@
     health:c.hp,maxHealth:c.max,dead:c.dead,siren:c.siren,turnSignal:c.indicating||0,route:c.ai && {from:c.ai.a?.slice(),to:c.ai.b?.slice(),lane:c.ai.lane}}));
    case 'people': return [...peds,...cops,...gang,...guards,...departmentPeople].map(p=>({
     id:id(p),personId:p.personId,name:p.officer?.name,position:point(p.pos),team:p.team||'civilian',kind:p.kind,
-    yaw:p.c?.yaw,activity:p.mode||p.officer&&PoliceDepartment.status(p.officer),health:p.hp,dead:p.dead,hostile:p.hostile}));
+    yaw:p.c?.yaw,activity:p.mode||p.officer&&PoliceDepartment.status(p.officer),health:p.hp,dead:p.dead,hostile:p.hostile})).concat(globalThis.WashHouse?.record()||[]);
    case 'helicopters': return helis.map(h=>({id:id(h),position:point(h.pos),health:h.hp,dead:h.dead,spotted:h.spotted,searchlight:point(h.sp)}));
    case 'pickups': return pickups.map(p=>({id:id(p),position:point(p),kind:p.type,amount:p.amount,available:!(p.cool>0)}));
    case 'doors': return ACCESS.doors.map(d=>({id:id(d),position:{x:d.ox,y:d.base,z:d.oz},kind:d.kind,openFraction:d.phase,target:d.target}));
@@ -156,7 +157,7 @@
   if(!target) throw new Error('Unknown destination. Use places to list IDs');
   const x=number(target.x,'x',MINX,W+150),z=number(target.z,'z',MINZ,FREIGHT.z1);
   const y=groundY(x,z,target.y===undefined?null:number(target.y,'y',-100,200));
-  const yaw=number(c.yaw??player.yaw,'yaw',-1e6,1e6);
+  const yaw=number(c.yaw??target.yaw??player.yaw,'yaw',-1e6,1e6);
   const at=new V3(x,y,z),car=player.car;
   collideWorld(at,car?Math.hypot(car.spec.W,car.spec.L)/2:.36);
   if(car && cars.some(other=>other!==car && Math.abs(other.pos.y-y)<2 && dist2(other.pos,at)<(car.spec.L+other.spec.L)/2))

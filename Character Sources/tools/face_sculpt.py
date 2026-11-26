@@ -7,6 +7,7 @@ import bpy
 import numpy as np
 from mathutils.bvhtree import BVHTree
 from portrait_surface import coordinates
+from face_warp import FACE_OVAL
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -43,6 +44,51 @@ def face_material(photo, gloss=False):
         nt.links.new(noise.outputs["Fac"], bump.inputs["Height"])
         nt.links.new(bump.outputs["Normal"], bs.inputs["Normal"])
     return mat
+
+
+def fit_aperture(body, evaluated_xyz, face_xyz):
+    """Cut the dress-form face only inside the projected outline of this particular sculpt."""
+    outline = np.array(face_xyz)[FACE_OVAL][:, [0, 2]]
+    p = evaluated_xyz[:, [0, 2]]
+    inside = np.zeros(len(p), dtype=bool)
+    distance = np.full(len(p), np.inf)
+    for a, b in zip(outline, np.roll(outline, -1, axis=0)):
+        edge = b - a
+        v = np.clip(
+            np.sum((p - a) * edge, axis=1) / max(1e-10, float(edge @ edge)), 0, 1
+        )
+        distance = np.minimum(
+            distance, np.linalg.norm(p - (a + v[:, None] * edge), axis=1)
+        )
+        if abs(edge[1]) > 1e-8:
+            inside ^= ((a[1] > p[:, 1]) != (b[1] > p[:, 1])) & (
+                p[:, 0] < a[0] + (p[:, 1] - a[1]) * edge[0] / edge[1]
+            )
+    mask = (
+        inside
+        * np.clip((distance - 0.003) / 0.012, 0, 1)
+        * (evaluated_xyz[:, 1] < -0.069)
+    )
+    body.data = body.data.copy()
+    # Keep a continuous skin surface behind the photographic insert. A transparent
+    # aperture reveals the interior of the head at glancing angles.
+    key = body.shape_key_add(name="Face insert clearance", from_mix=False)
+    surface = BVHTree.FromPolygons(face_xyz, topology(), all_triangles=True)
+    for i in np.flatnonzero(mask):
+        x, y, z = evaluated_xyz[i]
+        front = surface.ray_cast((x, -0.5, z), (0, 1, 0))[0]
+        if front:
+            key.data[i].co.y += float(mask[i]) * float(
+                np.clip(front.y + 0.0014 - y, -0.012, 0.014)
+            )
+    key.value = 1
+    attr = body.data.color_attributes.new(
+        name="Measured face aperture", type="FLOAT_COLOR", domain="POINT"
+    )
+    attr.data.foreach_set(
+        "color",
+        np.column_stack([mask, mask, mask, np.ones(len(mask))]).astype("f").ravel(),
+    )
 
 
 def sculpt(rig, folder):
@@ -93,9 +139,25 @@ def sculpt(rig, folder):
             if adj[i]:
                 softened[i] = 0.5 * depth[i] + 0.5 * np.mean(depth[list(adj[i])])
         depth = softened
-    vertices = [
-        (float(x[i]), float(depth[i]), float(z[i])) for i in range(len(vertices))
-    ]
+    projected = np.column_stack((x, z))
+    edge = projected[FACE_OVAL]
+    distances = np.full(len(x), np.inf)
+    for a, b in zip(edge, np.roll(edge, -1, axis=0)):
+        axis = b - a
+        t = np.clip(
+            np.sum((projected - a) * axis, axis=1) / max(float(axis @ axis), 1e-10),
+            0,
+            1,
+        )
+        distances = np.minimum(
+            distances, np.linalg.norm(projected - (a + t[:, None] * axis), axis=1)
+        )
+    for i in np.flatnonzero(distances < 0.012):
+        hit = body_tree.ray_cast((x[i], -1, z[i]), (0, 1, 0))[0]
+        if hit:
+            mix = np.clip(distances[i] / 0.012, 0, 1)
+            depth[i] = (hit.y - 0.00075) * (1 - mix) + depth[i] * mix
+    vertices = [(float(x[i]), float(depth[i]), float(z[i])) for i in range(len(x))]
 
     detail = folder / "skin-uv.bin"
     texcoords = (
@@ -115,6 +177,24 @@ def sculpt(rig, folder):
     )
     mesh.materials.append(face_material(photo))
     mesh.materials.append(face_material(photo, True))
+    prepared = detail.is_file() and all(
+        (folder / ("skin-" + suffix)).is_file()
+        for suffix in ("albedo.jpg", "normal.png", "roughness.png", "opacity.png")
+    )
+    if prepared:
+        from hero_materials import material
+
+        material(obj, folder, "skin", "Photograph")
+        nt = obj.material_slots[0].material.node_tree
+        tex = nt.nodes.new("ShaderNodeTexImage")
+        tex.image = bpy.data.images.load(
+            str(folder / "skin-opacity.png"), check_existing=True
+        )
+        tex.image.colorspace_settings.name = "Non-Color"
+        nt.links.new(
+            tex.outputs["Color"], nt.nodes.get("Principled BSDF").inputs["Alpha"]
+        )
+        obj.visible_shadow = False
     left_eye = {
         33,
         7,
@@ -163,14 +243,65 @@ def sculpt(rig, folder):
         base = scene.objects.get(name)
         if base:
             base.hide_render = True
+    body = scene.objects["Body"]
+    if prepared:
+        fit_aperture(body, coordinates(body.evaluated_get(deps)), vertices)
     skin = next(
         slot.material
         for slot in scene.objects["Body"].material_slots
         if slot.material and slot.material.use_nodes
     )
+    if prepared:
+        points = coordinates(body.evaluated_get(bpy.context.evaluated_depsgraph_get()))
+        sh, sw = photo.size[1], photo.size[0]
+        origin = 0.5 * (texcoords[33] + texcoords[263]) * [sw, sh]
+        pixels = (texcoords[263, 0] - texcoords[33, 0]) * sw / span
+        neck_uv = np.column_stack(
+            (
+                (origin[0] + points[:, 0] * pixels) / sw,
+                1 - (origin[1] + (eyez - points[:, 2]) * pixels) / sh,
+            )
+        )
+        # Keep the coloured collar from the photograph off the skin mesh.
+        neck_alpha = (
+            np.clip((0.916 - (1 - neck_uv[:, 1])) / 0.07, 0, 1)
+            * np.clip((eyez - 0.087 - points[:, 2]) / 0.023, 0, 1)
+            * np.clip((0.091 - abs(points[:, 0])) / 0.038, 0, 1)
+            * np.clip((-0.008 - points[:, 1]) / 0.035, 0, 1)
+        )
+        uv = body.data.uv_layers.new(name="Neck plate")
+        ids = np.empty(len(body.data.loops), dtype=np.int32)
+        body.data.loops.foreach_get("vertex_index", ids)
+        uv.data.foreach_set("uv", neck_uv[ids].astype("f").ravel())
+        mask = body.data.color_attributes.new(
+            name="Neck coverage", type="FLOAT_COLOR", domain="POINT"
+        )
+        mask.data.foreach_set(
+            "color",
+            np.column_stack((neck_alpha, neck_alpha, neck_alpha, np.ones(len(points))))
+            .astype("f")
+            .ravel(),
+        )
+        nt = skin.node_tree
+        bs = next(n for n in nt.nodes if n.type == "BSDF_PRINCIPLED")
+        prior = bs.inputs["Base Color"].links[0].from_socket
+        coord = nt.nodes.new("ShaderNodeUVMap")
+        coord.uv_map = "Neck plate"
+        tex = nt.nodes.new("ShaderNodeTexImage")
+        tex.image = bpy.data.images.load(
+            str(folder / "skin-albedo.jpg"), check_existing=True
+        )
+        nt.links.new(coord.outputs["UV"], tex.inputs["Vector"])
+        factor = nt.nodes.new("ShaderNodeVertexColor")
+        factor.layer_name = "Neck coverage"
+        mix = nt.nodes.new("ShaderNodeMixRGB")
+        nt.links.new(factor.outputs["Color"], mix.inputs[0])
+        nt.links.new(prior, mix.inputs[1])
+        nt.links.new(tex.outputs["Color"], mix.inputs[2])
+        nt.links.new(mix.outputs[0], bs.inputs["Base Color"])
     nt = skin.node_tree
     output = next(n for n in nt.nodes if n.type == "OUTPUT_MATERIAL")
-    if output.inputs["Surface"].links:
+    if output.inputs["Surface"].links and not prepared:
         original = output.inputs["Surface"].links[0].from_socket
         coverage = nt.nodes.new("ShaderNodeVertexColor")
         coverage.layer_name = "Face detail coverage"

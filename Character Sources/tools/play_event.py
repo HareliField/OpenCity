@@ -171,6 +171,16 @@ def bake(rig, events, continue_take=False):
                 b["motion"] in ("fall", "stay_down", "get_up") for b in beats
             ),
         )
+    from recovery_contact import fit_recovery, audit
+
+    windows = []
+    for i, beat in enumerate(beats):
+        if beat["motion"] == "get_up":
+            last = beats[i + 1]["frame"] - 1 if i + 1 < len(beats) else scene.frame_end
+            windows.extend(fit_recovery(scene, rig, action, beat["frame"], last))
+    if windows:
+        action["palmContact"] = json.dumps(audit(scene, windows))
+    scene.frame_set(1)
     scene.timeline_markers.clear()
     for beat in beats:
         scene.timeline_markers.new(beat["event"], frame=beat["frame"])

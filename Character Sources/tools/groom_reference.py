@@ -16,10 +16,10 @@ def guide(folder, model_dir):
     eyes = np.array([anchors["33"], anchors["263"]]) * [w, h]
     center = eyes.mean(axis=0)
     span = np.linalg.norm(eyes[1] - eyes[0])
-    x0 = max(0, int(center[0] - span * 1.02))
-    x1 = min(w, int(center[0] + span * 1.02))
-    y0 = max(0, int(center[1] - span * 1.15))
-    y1 = min(h, int(center[1] + span * 0.63))
+    x0 = max(0, int(center[0] - span * 1.32))
+    x1 = min(w, int(center[0] + span * 1.32))
+    y0 = max(0, int(center[1] - span * 1.66))
+    y1 = min(h, int(center[1] + span * 0.72))
     head = img[y0:y1, x0:x1].copy()
     vision = mp.tasks.vision
     opt = vision.ImageSegmenterOptions(

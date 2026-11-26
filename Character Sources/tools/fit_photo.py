@@ -261,6 +261,7 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("model_dir", type=Path)
     p.add_argument("ids", nargs="*")
+    p.add_argument("--force", action="store_true")
     args = p.parse_args()
     vision = mp.tasks.vision
     base = mp.tasks.BaseOptions
@@ -296,7 +297,8 @@ if __name__ == "__main__":
     for path in paths:
         dest = path.with_name("photo-fit.json")
         if (
-            path.with_name("face-sculpt.bin").exists()
+            not args.force
+            and path.with_name("face-sculpt.bin").exists()
             and path.with_name("wardrobe-colour.jpg").exists()
             and dest.exists()
             and json.loads(dest.read_text())["referenceSha256"]
