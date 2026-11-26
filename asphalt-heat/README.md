@@ -67,9 +67,11 @@ Reviewed GLBs load as the player approaches. Their source models were generated 
 
 ## Police department
 
-Both police buildings on the minimap share one department. Enter either building and use **C / CASE DESK** at reception to see cases, fugitives, the watch roster and the radio log. The 48 named staff rotate across three watches. Patrol, Detectives, Metro SWAT, Communications, Forensics, Air Support and Command draw from that roster. Approach an officer on foot and use **TALK** to see their name and assignment.
+Add `?visit=police` to the game URL to start facing Old Town headquarters. Both police buildings on the minimap share one department. Enter either building and use **C / CASE DESK** at reception to see cases, fugitives, the watch roster and the radio log. The 48 named staff rotate across three watches. Patrol, Detectives, Metro SWAT, Communications, Forensics, Air Support and Command draw from that roster. Approach an officer on foot and use **TALK** to see their name and assignment.
 
-Homicides, robberies and vehicle thefts create case files. A detective takes the file and the evidence desk reviews game-world prints, DNA, witness statements and vehicle sightings. The **Gloves** button changes the character’s hand covering. A homicide bulletin can survive a search cooldown and a reload in the same browser tab. A patrol that recognizes the person or a reported plate can reopen the search. Booking updates linked files at both desks.
+At reception, **Watch** lists the current shift. **Cases → Follow a training homicide** starts a fictional witness report that the on-duty patrol, detective and analyst work through. The case timeline keeps their findings in order. Dispatch stays silent during play.
+
+Homicides, robberies, gunfire and vehicle thefts create case files. A civilian can call 911 about gunfire they hear. An identified shooter can trigger a pursuit. A detective takes the file and the evidence desk reviews game-world prints, DNA, witness statements and vehicle sightings. The **Gloves** button changes the character’s hand covering. A homicide bulletin can survive a search cooldown and a reload in the same browser tab. A patrol that recognizes the person or a reported plate can reopen the search. Booking updates linked files at both desks.
 
 ## Police searches
 

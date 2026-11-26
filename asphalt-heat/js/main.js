@@ -91,7 +91,7 @@ function playerAttack(){if(player.fireCd>0||shopOpen||player.down>0)return;const
   else{const a=yaw+rnd(-.06,.06)*(pel>1?3:1),L=W2.range;const ex=o.x+Math.sin(a)*L,ez=o.z+Math.cos(a)*L,f=rayWorld(o.x,o.z,ex,ez,o.y,o.y);end=new V3(o.x+(ex-o.x)*f,o.y+rnd(-.5,.3),o.z+(ez-o.z)*f);if(f<1)for(let q=0;q<3;q++)emit(end.x,end.y,end.z,rnd(-2,2),rnd(1,3),rnd(-2,2),.3,.15,.08,0xffd090,true,9);}
   tracer(o,end);}
  emit(o.x,o.y,o.z,0,0,0,.05,.5,1,0xffd070,true);muzzleL.position.copy(o);muzzleL.intensity=12;noise(w==='shotgun'?.35:.16,w==='shotgun'?1600:2600,.5);scare(player.pos.x,player.pos.z,30);
- for(const c of cops)if(!c.dead&&dist2(c.pos,player.pos)<35&&los(c.pos,player.pos)){crime(6,player.pos.x,player.pos.z,true);break;}if(player.ammo[w]<=0){toast('OUT OF AMMO',900);cycleWeapon();}}
+ reportGunfire(player);if(player.ammo[w]<=0){toast('OUT OF AMMO',900);cycleWeapon();}}
 function startRob(p){if(player.weapon==='fist'){toast('PULL OUT A GUN FIRST',1400);return;}robbing={p,t:0,beep:0};registerIncident('Robbery',p.interact||p.door,{handContact:true,alarm:true});crime(p.heat,p.door.x,p.door.z,true);scare(p.door.x,p.door.z,30);
  const base=p.interact||p.door,yaw=SIDEANG[p.side],fx=Math.sin(yaw),fz=Math.cos(yaw);
  const cp=new V3(base.x-fx*1.16+fz*1.52,0,base.z-fz*1.16-fx*1.52);
@@ -240,7 +240,7 @@ function hud(){const set=(k,v,f)=>{if(hudCache[k]!==v){hudCache[k]=v;f(v);}};
   prompt.hidden=!v||v==='ACTION'||v==='ROB…'||v==='EXIT';
   prompt.lastChild.textContent=v;
  });set('hot',!!(a&&a.hot),v=>$('bAct').classList.toggle('hot',v));set('spr',player.car?'DRIFT':'SPRINT',v=>$('bSprint').textContent=v);
- const obj=LAW.report&&wanted<2?'Witness calling 911':wanted>0&&!LAW.seen?'Searching the last sighting area':robbing?'Hold position until the cash is bagged!':L>=4?'Massive heat! Break line of sight and stay out of the searchlight':L>0?(L>=3?'Lose the cops — the respray only works up to 3 stars':'Lose the cops or hit the blue RESPRAY'):player.car?'Sell this car at the green CHOP SHOP, or explore':'Rob a store ($), the bank (B), or jack a car';
+ const obj=wanted>0&&!LAW.seen?'Searching the last sighting area':robbing?'Hold position until the cash is bagged!':L>=4?'Massive heat! Break line of sight and stay out of the searchlight':L>0?(L>=3?'Lose the cops — the respray only works up to 3 stars':'Lose the cops or hit the blue RESPRAY'):qp.get('visit')==='police'&&!player.car?'Old Town headquarters · C at reception for Watch and Cases':player.car?'Sell this car at the green CHOP SHOP, or explore':'Rob a store ($), the bank (B), or jack a car';
  set('obj',obj,v=>$('obj').textContent=v);
  set('prog',robbing?Math.round(robbing.t/robbing.p.time*100):-1,v=>{$('prog').style.display=v<0?'none':'block';if(v>=0){$('prog').lastChild.firstChild.style.width=v+'%';$('prog').firstChild.textContent=robbing.p.kind==='bank'?'CRACKING THE VAULT…':'EMPTYING THE REGISTER…';}});}
 /* ================= main loop ================= */
@@ -313,7 +313,6 @@ function step(dt){time+=dt;WATERT.value=time;
  for(const T of tracers)if(T.l.visible){T.t-=dt;if(T.t<=0)T.l.visible=false;}muzzleL.intensity=Math.max(0,muzzleL.intensity-dt*150);boomL.intensity=Math.max(0,boomL.intensity-dt*25);
  /* wanted */
  if(state==='play'){updateDepartment(dt);updateLaw(dt);}
- const radio=$('policeRadio');if(!radio.hidden&&time>Number(radio.dataset.until))radio.hidden=true;
  const cleanView=$('ui').classList.contains('cleanView');
  for(const m of markerObjs){
   const at=m.p.road||m.p.interact||m.p.door,d=Math.hypot(at.x-player.pos.x,at.z-player.pos.z);
@@ -392,12 +391,14 @@ function setLoad(t,p){$('load').textContent=t;if(p!=null)$('lbar').firstChild.st
 function initGame(){buildMinimapBase();buildMarkers();initializePoliceLives();
  const hp=places.find(p=>p.kind==='hospital'),pp=places.find(p=>p.kind==='police');
  SPAWN.hospital={x:hp.door.x+Math.sin(SIDEANG[hp.side])*.6,z:hp.door.z+Math.cos(SIDEANG[hp.side])*.6,yaw:SIDEANG[hp.side]};SPAWN.police={x:pp.door.x+Math.sin(SIDEANG[pp.side])*.6,z:pp.door.z+Math.cos(SIDEANG[pp.side])*.6,yaw:SIDEANG[pp.side]};
- const start={x:CELL*4-HALF-.88,z:CELL*5+HALF+10,yaw:0};
+ const streetStart={x:CELL*4-HALF-.88,z:CELL*5+HALF+10,yaw:0};
+ const stationVisit=qp.get('visit')==='police';
+ const start=stationVisit?{x:pp.door.x,z:pp.door.z,yaw:SIDEANG[pp.side]+Math.PI}:streetStart;
  player={pos:new V3(start.x,0,start.z),yaw:start.yaw,hp:100,armor:0,cash:250,car:null,fireCd:0,arrestT:0,spd:0,guardT:0,down:0,weapon:'fist',own:{pistol:true,smg:false,shotgun:false},ammo:{pistol:36,smg:0,shotgun:0},c:null};
  player.personId='ah-player';PoliceDepartment.identify(player);player.gloves=false;
  player.c=makePlayerChar();dressPlayerHands();camYaw=player.yaw;
  for(let k=0;k<QUALITY.peds;k++){const p={c:null,pos:new V3(),mode:'walk',t:0,R:null,dir:1,spd:1.4,fleeT:0,fv:new V3(),downT:0,hp:60,cash:0,dead:false};peds.push(p);placePed(p,nearBlock(0,140),k%5===0);}
- {const s=spawnCar('sport',CELL*4-HALF+1.9,start.z+2.75,0,null);paintCar(s,0x711b29);s.keep=true;s.heroWanted=true;}
+ {const s=spawnCar('sport',CELL*4-HALF+1.9,streetStart.z+2.75,0,null);paintCar(s,0x711b29);s.keep=true;s.heroWanted=true;}
  {const c=spawnCar('hatch',CELL*2+5.9,CELL*4+31,Math.PI,null);paintCar(c,0xa27a27);c.keep=true;}
  {const c=spawnCar('van',CELL*2+5.9,CELL*4+39,Math.PI,null);paintCar(c,0x20334b);c.keep=true;}
  parkServiceVehicles(hp,'amb',1);parkServiceVehicles(pp,'police',2);

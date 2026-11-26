@@ -204,7 +204,7 @@ function pedRoleFor(B){const d=B?B.dist:'midtown';const r=Math.random();if(d==='
 /* ---- game state ---- */
 const peds=[],cops=[],gang=[],guards=[],pickups=[],helis=[],cars=[];let clerk=null;
 let heat=0,wanted=0,evadeT=0,state='loading',deadT=0,deadKind='',shake=0,camYaw=0,lookYaw=0,lookPitch=0,time=0,robbing=null,lastShot=-99,shopOpen=false,roadblockT=20,heliT=0,hurtT=0;
-const TH=[0,10,40,100,200,1050];
+const TH=[0,10,50,155,380,1150];
 const LV={acc:[0,0,.2,.3,.4,.5],dmg:[0,5,6,8,10,13],evade:[0,12,24,25,40,60],sees:[0,17,29,50,60,70],
  desc:['','LOCAL CHECK|A patrol is checking the report','MISDEMEANOR SEARCH|Patrols are canvassing the area','PRIORITY RESPONSE|Patrol supervisor · vehicle search','SWAT + HELICOPTER|Armored vans · searchlight tracking','CITYWIDE ALERT|Metro SWAT · air support']};
 const WEAP={fist:{n:'FISTS',rate:.42},pistol:{n:'PISTOL',rate:.27,dmg:34,acc:.85,range:45},smg:{n:'SMG',rate:.085,dmg:17,acc:.7,range:40},shotgun:{n:'SHOTGUN',rate:.9,dmg:30,acc:.9,range:18,pel:6}};
@@ -509,7 +509,7 @@ function unitShootFrom(x,y,z,acc,dmg){const tgt=player.car?player.car.pos:player
  const ac2=acc*(player.car?(Math.abs(player.car.speed)>15?.55:.85):(player.spd>5?.7:1));const hit=Math.random()<ac2;
  const b=new V3(tgt.x+(hit?0:rnd(-2.5,2.5)),tgt.y+(hit?1.2:rnd(.4,2.4)),tgt.z+(hit?0:rnd(-2.5,2.5)));const clear=rayWorld(a.x,a.z,b.x,b.z,a.y,b.y);if(clear<1)b.lerpVectors(a,b,clear);tracer(a,b);emit(a.x,a.y,a.z,0,0,0,.06,.5,.8,0xffd080,true);noise(.15,2200,distVol(a.x,a.z,.35));
  if(hit&&clear>=1&&state==='play'){if(player.car)damageCar(player.car,dmg*.6);else damagePlayer(dmg);}}
-function unitShoot(u,acc,dmg){u.c.aim=.5;unitShootFrom(u.pos.x,u.c.root.position.y+1.45,u.pos.z,acc,dmg);}
+function unitShoot(u,acc,dmg){if(u.team==='gang')reportGunfire(u);u.c.aim=.5;unitShootFrom(u.pos.x,u.c.root.position.y+1.45,u.pos.z,acc,dmg);}
 function updUnits(arr,dt){const tgt=player.car?player.car.pos:player.pos;
  for(const u of arr.slice()){const c=u.c;
   if(u.dead){u.downT+=dt;if(c.body)u.pos.set(c.body.position.x,Math.max(0,c.body.position.y-.55),c.body.position.z);updChar(c,0,dt,true);if(u.downT>16)removeUnit(u,arr);continue;}

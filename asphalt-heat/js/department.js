@@ -29,13 +29,13 @@ class CityPoliceDepartment {
   try{
    const save=JSON.parse(storage?.getItem(this.key)||'null');
    if(save?.version===1&&Array.isArray(save.cases)){
-    this.cases=save.cases;this.serial=save.serial;this.clock=save.clock;
+    this.cases=save.cases;this.transmissions=save.transmissions||[];this.serial=save.serial;this.clock=save.clock;
     this.unavailable=new Set(save.unavailable);this.personSerial=save.personSerial;this.plateSerial=save.plateSerial;
    }
   }catch{}
  }
  save(){
-  try{this.storage?.setItem(this.key,JSON.stringify({version:1,cases:this.cases,serial:this.serial,clock:this.clock,
+  try{this.storage?.setItem(this.key,JSON.stringify({version:1,cases:this.cases,transmissions:this.transmissions,serial:this.serial,clock:this.clock,
    unavailable:[...this.unavailable],personSerial:this.personSerial,plateSerial:this.plateSerial}));}catch{}
  }
  identity(personId){
@@ -55,14 +55,21 @@ class CityPoliceDepartment {
  duty(member){return member.watch===this.watch&&!this.unavailable.has(member.personId);}
  status(member){
   if(this.unavailable.has(member.personId))return 'Out of service';
+  const assigned=this.cases.find(f=>this.assigned(f)===member.personId);
+  if(assigned)return 'Assigned · file '+assigned.id;
   if(this.bindings.has(member.personId))return this.bindings.get(member.personId);
   if(!this.duty(member))return 'Off duty · '+member.home;
   if(this.cases.some(c=>c.detective===member.personId&&['Filed','Lab review'].includes(c.stage)))return 'Working case';
   return 'On watch';
  }
+ assigned(file){
+  if(file.stage==='Patrol assigned')return file.patrol;
+  if(file.stage==='Lab review')return file.detective;
+  return null;
+ }
  available(division){
   return this.staff.find(s=>s.division===division&&this.duty(s)&&!this.bindings.has(s.personId)&&
-   (division!=='Detectives'||!this.cases.some(c=>c.detective===s.personId&&c.stage==='Lab review')));
+   !this.cases.some(c=>this.assigned(c)===s.personId));
  }
  claim(division,assignment){
   const member=this.available(division);
@@ -77,7 +84,7 @@ class CityPoliceDepartment {
  radio(from,message,clip){
   this.transmissions.unshift({at:this.clock,from,message,clip});
   this.transmissions.length=Math.min(30,this.transmissions.length);
-  this.onRadio?.(this.transmissions[0]);
+
  }
  touch(actor,object,at,label){
   if(actor.gloves)return;
@@ -88,7 +95,15 @@ class CityPoliceDepartment {
   this.contacts.push(trace);
   if(this.contacts.length>96)this.contacts.shift();
  }
- file({kind,at,victim,plate,witness,touch,source,contact,trace,reported=true}){
+ logCase(file,from,message){
+  (file.timeline||=[]).push({at:this.clock,from,message});
+  this.radio(from,message+' · file '+file.id);
+ }
+ receiveCall(file,from,message){
+  file.stage='Filed';file.due=this.clock+3;
+  this.logCase(file,from,message);this.save();
+ }
+ file({kind,at,victim,plate,witness,touch,source,contact,trace,reported=true,title,subjectName,exercise=false,caller}){
   const evidence=[];
   if(victim)evidence.push({type:'DNA',value:this.identity(victim).dnaId,source:'Injured person'});
   if(touch)evidence.push({type:'Print',value:touch,source});
@@ -100,35 +115,51 @@ class CityPoliceDepartment {
   if(witness)evidence.push({type:'Statement',value:witness,source:'Witness'});
   if(plate)evidence.push({type:'Plate',value:plate,source:'Vehicle sighting'});
   const entry={id:++this.serial,kind,at:{x:at.x,y:at.y,z:at.z},opened:this.clock,stage:reported?'Filed':'Unreported',
-   due:this.clock+4,evidence,contact:contact||null,detective:null,suspect:null,plate:plate||null};
+   title,subjectName,exercise,timeline:[],due:this.clock+3,evidence,contact:contact||null,detective:null,suspect:null,plate:plate||null};
   this.cases.push(entry);
-  if(reported)this.radio('Dispatch',kind+' report · file '+entry.id,'report');
+  if(reported)this.receiveCall(entry,caller||'Communications',kind==='Shots reported'?'911 report of gunfire. Patrol requested.':kind+' reported. Patrol requested.');
   this.save();
   return entry;
  }
  process(){
   let changed=false;
   for(const c of this.cases){
-   if(this.clock<c.due||!['Filed','Lab review'].includes(c.stage))continue;
+   if(this.clock<c.due)continue;
    if(c.stage==='Filed'){
-    const detectives=this.staff.filter(s=>s.division==='Detectives'&&this.duty(s)&&!this.cases.some(f=>f.detective===s.personId&&f.stage==='Lab review'));
-    if(!detectives.length)continue;
-    c.detective=detectives[0].personId;c.stage='Lab review';c.due=this.clock+9;
-    this.radio(detectives[0].callSign,'Taking file '+c.id+' to the evidence desk.','assigned');
-   }else{
-    if(this.unavailable.has(c.detective)){
-     c.detective=null;c.stage='Filed';c.due=this.clock+1;changed=true;continue;
+    const patrol=this.available('Patrol');if(!patrol)continue;
+    c.patrol=patrol.personId;c.stage='Patrol assigned';c.due=this.clock+6;
+    this.logCase(c,patrol.name,'Acknowledged the call. Responding to the reported location.');
+   }else if(c.stage==='Patrol assigned'){
+    const officer=this.staff.find(s=>s.personId===c.patrol);
+    if(!officer||this.unavailable.has(c.patrol)){c.stage='Filed';c.patrol=null;changed=true;continue;}
+    if(this.atScene&&!this.atScene(c))continue;
+    if(c.kind==='Shots reported'){
+     c.stage=c.contact?'Identified':'Open leads';c.suspect=c.contact;
+     this.logCase(c,officer.name,c.contact?'Witness identified the shooter.':'Area checked. Shooter identity unconfirmed.');
+    }else{
+     c.stage='Scene review';c.due=this.clock+2;
+     this.logCase(c,officer.name,'Scene checked. Statements and available exhibits sent to Detectives.');
     }
+   }else if(c.stage==='Scene review'){
+    const detective=this.staff.find(s=>s.division==='Detectives'&&this.duty(s)&&!this.cases.some(f=>this.assigned(f)===s.personId));
+    if(!detective)continue;
+    c.detective=detective.personId;c.stage='Lab review';c.due=this.clock+9;
+    this.logCase(c,detective.name,'Accepted the file and requested comparison of the evidence.');
+   }else if(c.stage==='Lab review'){
+    if(this.unavailable.has(c.detective)){c.detective=null;c.stage='Scene review';changed=true;continue;}
     const analyst=this.staff.find(s=>s.division==='Forensics'&&this.duty(s));
-    if(!analyst)continue;
+    if(!analyst||this.atScene&&!this.atScene(c))continue;
     c.analyst=analyst.personId;
-    // Victim specimens identify the victim. Other matches are leads until corroborated.
-    const playerProfile=this.identity('ah-player');
-    const traceMatch=c.evidence.some(e=>e.type==='Print'&&e.value===playerProfile.fingerprintId||e.type==='DNA'&&e.source!=='Injured person'&&e.value===playerProfile.dnaId);
-    c.suspect=c.contact==='ah-player'||traceMatch&&c.evidence.some(e=>e.type==='Plate')?'ah-player':null;
-    c.stage=c.kind==='Homicide'&&c.suspect?'Wanted':c.suspect?'Identified':'Open leads';
-    this.radio('Records','File '+c.id+' · '+c.stage.toLowerCase()+'.','records');
-   }
+    const profile=this.identity(c.contact||'ah-player');
+    const match=c.evidence.some(e=>e.type==='Print'&&e.value===profile.fingerprintId||
+     e.type==='DNA'&&e.source!=='Injured person'&&e.value===profile.dnaId);
+    const statement=c.evidence.some(e=>e.type==='Statement');
+    this.logCase(c,analyst.name,match?'Contact trace matched the comparison record.':'Evidence review complete. No corroborating contact trace.');
+    c.suspect=c.contact&&statement&&(match||c.plate)?c.contact:null;
+    c.stage=c.suspect?(c.kind==='Homicide'?'Wanted':'Identified'):'Open leads';
+    const detective=this.staff.find(s=>s.personId===c.detective);
+    this.logCase(c,detective?.name||'Detectives',c.suspect?'Witness account corroborated. '+(c.subjectName||c.suspect)+' identified.':'Evidence is insufficient to identify the offender. File remains open.');
+   }else continue;
    changed=true;
   }
   if(changed)this.save();
@@ -144,8 +175,8 @@ class CityPoliceDepartment {
  }
  book(personId){
   let count=0;
-  for(const c of this.cases)if(c.stage!=='Booked'&&(c.suspect===personId||c.contact===personId)){
-   c.suspect=personId;c.stage='Booked';count++;
+  for(const c of this.cases)if(c.stage!=='Booked'&&c.suspect===personId){
+   c.suspect=personId;c.stage='Booked';this.logCase(c,'Booking','Suspect booked.');count++;
   }
   if(count){this.radio('Booking',count+' linked file'+(count===1?'':'s')+' updated.','records');this.save();}
  }

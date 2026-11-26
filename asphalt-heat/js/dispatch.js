@@ -1,14 +1,14 @@
 /* Witness calls, finite response staffing and searches around the last confirmed location. */
 const LAW={
  anchor:new V3(),known:false,seen:false,lastSeen:-Infinity,report:null,dispatchAt:0,spent:0,roadblocks:0,airSent:0,
- budgets:[0,1,2,5,8,12],activeLimit:[0,1,2,3,5,7],lastLevel:0
+ nextEscalation:0, gunCalls:[], recentShots:new Map(), budgets:[0,1,2,5,8,12],activeLimit:[0,1,2,3,5,7],lastLevel:0
 };
 const WANTED_MAX=1350;
 
 function resetDispatch(){
  LAW.known=LAW.seen=false;
  LAW.report=null;
- LAW.lastSeen=-Infinity;
+ LAW.lastSeen=-Infinity;LAW.nextEscalation=0;
  LAW.dispatchAt=LAW.spent=LAW.roadblocks=LAW.airSent=LAW.lastLevel=0;
  for(const car of cars){
   car.dispatched=false;
@@ -72,7 +72,37 @@ function fileWitnessReport(amount,x,z,immediate=false,property=false){
  }
  if(already&&already.amount>=amount)return;
  LAW.report={amount,x,y,z,ped:source.ped,witnessId:source.ped.personId,left:property?3.1:2.15,property};
- if(property&&wanted<2)toast('WITNESS CALLING 911',1800);
+
+}
+
+// Hearing a shot reports its location. A personal pursuit needs an observation of the shooter.
+function reportGunfire(shooter){
+ if(state!=='play')return;
+ const at=shooter.car?.pos||shooter.pos,id=shooter.personId;
+ const observation=witnessesFor(at.x,at.z,at.y);
+ const caller=observation.ped||peds.find(p=>p!==shooter&&!p.dead&&p.c.root.visible&&dist2(p.pos,at)<44);
+ if(!observation.officers&&!caller)return;
+ const identified=observation.officers||!!observation.ped;
+ const previous=LAW.recentShots.get(id);
+ if(previous&&time-previous.at<8&&(previous.identified||!identified))return;
+ for(const [key,event] of LAW.recentShots)if(time-event.at>=8)LAW.recentShots.delete(key);
+ LAW.recentShots.set(id,{at:time,identified});
+ const call={at:{x:at.x,y:at.y,z:at.z},subject:identified?id:null,caller,callerId:caller?.personId,
+  from:observation.officers?'Patrol observation':'911',plate:identified?shooter.car?.plate:null};
+ if(observation.officers){receiveGunfire(call);return;}
+ LAW.gunCalls.push({...call,due:time+2.2});
+}
+function receiveGunfire(call){
+ const {at,subject,from,plate}=call;
+ const existing=PoliceDepartment.cases.findLast(c=>c.kind==='Shots reported'&&PoliceDepartment.clock-c.opened<10&&
+  Math.hypot(at.x-c.at.x,at.z-c.at.z)<12&&(!c.contact||c.contact===subject));
+ if(existing){
+  if(subject&&!existing.contact){
+   existing.contact=subject;existing.evidence.push({type:'Statement',source:from,value:call.callerId||from});
+   PoliceDepartment.logCase(existing,from,'Follow-up witness identified the shooter.');PoliceDepartment.save();
+  }
+ }else PoliceDepartment.file({kind:'Shots reported',at,contact:subject,plate,witness:call.callerId||from,caller:from});
+ if(subject===player.personId)recordOffence(TH[2],at.x,at.z,false,at.y);
 }
 
 function searchGoal(x,z,offset,scale=1){
@@ -99,6 +129,10 @@ function confirmContact(target){
 }
 
 function updateLaw(dt){
+ for(const call of LAW.gunCalls.slice())if(time>=call.due){
+  LAW.gunCalls.splice(LAW.gunCalls.indexOf(call),1);
+  if(!call.caller.dead&&call.caller.personId===call.callerId)receiveGunfire(call);
+ }
  const report=LAW.report;
  if(report){
   report.left-=dt;
@@ -107,7 +141,12 @@ function updateLaw(dt){
    if(!report.ped.dead&&report.ped.personId===report.witnessId)recordOffence(report.amount,report.x,report.z,report.property,report.y);
   }
  }
- const newLevel=levelOf(heat);
+ const targetLevel=levelOf(heat);
+ let newLevel=Math.min(wanted,targetLevel);
+ if(targetLevel>wanted&&time>=LAW.nextEscalation){
+  newLevel=wanted+1;
+  LAW.nextEscalation=time+[0,3,6,10,15,20][newLevel];
+ }
  if(newLevel>LAW.lastLevel){
   banner(newLevel);
   beep(500,.20,.09,'sawtooth');

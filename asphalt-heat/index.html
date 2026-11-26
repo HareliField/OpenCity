@@ -127,7 +127,6 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
     <button id="gloves" type="button" aria-pressed="false">Gloves off</button>
   </div>
   <div id="tr"><div id="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><div id="heat"><i></i></div><div id="evade"><i></i></div><canvas id="mm" width="300" height="300"></canvas><div id="wep">FISTS <small></small></div></div>
-  <div id="policeRadio" hidden></div>
   <div id="toast"></div><div id="banner"></div>
   <div id="prog"><span>ROBBING…</span><div class="bar"><i></i></div></div>
   <div id="speedo">0<small>KM/H</small><span id="vehicleName"></span></div>
@@ -139,6 +138,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
 <dialog id="policeDesk" aria-labelledby="deskStation">
  <header><h2 id="deskStation">Police records</h2><button id="deskClose" type="button">Close</button></header>
  <nav aria-label="Station records"><button data-view="Cases">Cases</button><button data-view="Fugitives">Fugitives</button><button data-view="Watch">Watch</button><button data-view="Radio">Radio</button></nav>
+ <div id="deskExercise"><button id="followCase" type="button">Follow a training homicide</button></div>
  <ul id="deskRows"></ul>
 </dialog>
 <div id="shop"><div class="p"><h2>LOCK &amp; LOAD</h2><div id="items"></div><button class="x" id="shopX">LEAVE</button></div></div>

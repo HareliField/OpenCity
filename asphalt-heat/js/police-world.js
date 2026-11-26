@@ -121,8 +121,7 @@ function updateDepartment(dt){
   if(entry.stage!=='Unreported')continue;
   const witness=witnessesFor(entry.at.x,entry.at.z,entry.at.y);
   if(witness.officers||witness.ped){
-   entry.stage='Filed';entry.due=PoliceDepartment.clock+4;
-   PoliceDepartment.radio('Dispatch','Scene reported · file '+entry.id+'.','report');PoliceDepartment.save();
+   PoliceDepartment.receiveCall(entry,witness.officers?'Patrol':'911','Scene discovered. Patrol requested.');
   }
  }
  PoliceDepartment.process();
@@ -216,23 +215,29 @@ function dressPlayerHands(){
  }
 }
 
-const fieldDetectives=new Map();
+const fieldInvestigators=new Map();
+PoliceDepartment.atScene=file=>{
+ if(dist2(player.pos,file.at)>48)return true;
+ const unit=fieldInvestigators.get(file.id);
+ return !!unit&&!unit.dead&&Math.abs(unit.pos.y-(file.at.y||0))<1.8&&dist2(unit.pos,file.at)<4.8;
+};
 function updateFieldDetectives(dt){
  const pd=PoliceDepartment;
- for(const [fileId,u] of fieldDetectives){
+ for(const [fileId,u] of fieldInvestigators){
   const file=u.file;
   if(u.dead){u.downT+=dt;updChar(u.c,0,dt,true);if(u.downT<15)continue;}
-  if(file.stage==='Lab review'&&!u.dead&&dist2(player.pos,file.at)<64){
+  if(pd.assigned(file)===u.personId&&!u.dead&&dist2(player.pos,file.at)<64){
    const dx=file.at.x-u.pos.x,dz=file.at.z-u.pos.z,length=Math.hypot(dx,dz),pace=length>1.45?1.35:0;
    if(pace){u.pos.x+=dx/length*pace*dt;u.pos.z+=dz/length*pace*dt;collideWorld(u.pos,.34);}
    u.pos.y=groundY(u.pos.x,u.pos.z,u.pos.y);u.c.root.position.copy(u.pos);
    u.c.yaw=Math.atan2(dx,dz);u.c.talk=pace?0:1;updChar(u.c,pace,dt,true);continue;
   }
-  removeDepartmentPerson(u);fieldDetectives.delete(fileId);
+  removeDepartmentPerson(u);fieldInvestigators.delete(fileId);
  }
  for(const file of pd.cases){
-  if(file.stage!=='Lab review'||fieldDetectives.has(file.id)||dist2(player.pos,file.at)>50)continue;
-  const member=pd.staff.find(s=>s.personId===file.detective);
+  const assignee=pd.assigned(file);
+  if(!assignee||fieldInvestigators.has(file.id)||dist2(player.pos,file.at)>52)continue;
+  const member=pd.staff.find(s=>s.personId===assignee);
   if(!member||pd.bindings.has(member.personId)||pd.unavailable.has(member.personId))continue;
   const at=new V3(file.at.x,file.at.y||0,file.at.z);
   for(const [dx,dz] of [[4,0],[-4,0],[0,4],[0,-4]]){
@@ -240,8 +245,10 @@ function updateFieldDetectives(dt){
    at.x+=dx;at.z+=dz;break;
   }
   collideWorld(at,.34);
-  const c=makeChar(pickChar(member.badge%2?'mb':'fb'),{}),u=departmentPerson(member,c,at,false);
+  const uniform=member.division==='Patrol';
+  const c=makeChar(pickChar(uniform?'cop':member.badge%2?'mb':'fb'),{gun:uniform}),u=departmentPerson(member,c,at,uniform);
+  if(uniform)equipOfficer(c,false);
   u.pos.copy(at);c.root.position.copy(at);u.file=file;
-  pd.bindings.set(member.personId,'Scene · file '+file.id);fieldDetectives.set(file.id,u);
+  pd.bindings.set(member.personId,'Scene · file '+file.id);fieldInvestigators.set(file.id,u);
  }
 }

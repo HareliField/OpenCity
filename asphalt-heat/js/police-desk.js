@@ -11,19 +11,25 @@ function renderPoliceDesk(){
  if(deskTab==='Cases'){
   for(const c of [...pd.cases].reverse())if(c.stage!=='Unreported'){
    const detective=pd.staff.find(p=>p.personId===c.detective);
-   rows.push(['File '+String(c.id).padStart(4,'0')+' · '+c.kind,c.stage+' · '+(detective?.name||'Awaiting assignment'),
-    c.evidence.map(e=>e.type+' · '+e.source+' · '+e.value).join('\n')||'No evidence filed']);
+   const history=(c.timeline||[]).map(event=>{
+    const seconds=Math.max(0,Math.floor(event.at-c.opened));
+    return '+'+Math.floor(seconds/60)+'m '+String(seconds%60).padStart(2,'0')+'s · '+event.from+' — '+event.message;
+   });
+   rows.push(['File '+String(c.id).padStart(4,'0')+' · '+(c.title||c.kind),(c.suspect&&c.kind==='Homicide'?'Solved · ':'')+c.stage+' · '+(detective?.name||'Awaiting assignment'),
+    history.join('\n'),c.evidence.map(e=>e.type+' · '+e.source+' · '+e.value).join('\n')||'No evidence filed']);
   }
   if(!rows.length)rows.push(['No cases filed','']);
  }else if(deskTab==='Fugitives'){
-  for(const c of pd.cases)if(c.stage==='Wanted')rows.push(['Homicide · file '+c.id,c.suspect+' · '+(c.plate||'No vehicle identified')]);
+  for(const c of pd.cases)if(c.stage==='Wanted')rows.push(['Homicide · file '+c.id,(c.subjectName||c.suspect)+' · '+(c.plate||'No vehicle identified')]);
   if(!rows.length)rows.push(['No outstanding bulletins','']);
  }else if(deskTab==='Watch'){
-  for(const s of pd.staff)rows.push([s.name+' · '+s.badge,s.division+' · Watch '+(s.watch+1),pd.status(s)]);
+  for(const s of pd.staff.filter(s=>pd.duty(s)||pd.cases.some(f=>pd.assigned(f)===s.personId)))rows.push([s.name+' · '+s.badge,s.division+' · Watch '+(s.watch+1),pd.status(s)]);
  }else{
   for(const t of pd.transmissions)rows.push([t.from,t.message]);
   if(!rows.length)rows.push(['Channel clear','']);
  }
+ document.getElementById('deskExercise').hidden=deskTab!=='Cases';
+ document.getElementById('followCase').textContent=pd.cases.some(c=>c.exercise&&c.stage!=='Wanted'&&c.stage!=='Booked')?'Following training homicide':'Follow a training homicide';
  const revision=JSON.stringify([deskTab,rows]);
  if(revision===deskRevision)return;
  deskRevision=revision;
@@ -48,26 +54,14 @@ function toggleGloves(){
 }
 document.getElementById('gloves').onclick=toggleGloves;
 
-const policeAudio=new Map();
-let policeVoice=null,radioSequence=0;
-PoliceDepartment.onRadio=async function(transmission){
- const line=document.getElementById('policeRadio');
- line.textContent=transmission.from+'  ·  '+transmission.message;
- line.hidden=false;line.dataset.until=String(time+5);
- if(!ac||master.gain.value<=0||!transmission.clip)return;
- const sequence=++radioSequence;
- try{
-  const clip=transmission.clip;
-  if(!policeAudio.has(clip)){
-   policeAudio.set(clip,fetch('audio/police/'+clip+'.m4a').then(r=>r.arrayBuffer()).then(b=>ac.decodeAudioData(b)).catch(e=>{policeAudio.delete(clip);throw e;}));
-  }
-  const buffer=await policeAudio.get(clip);
-  if(sequence!==radioSequence||master.gain.value<=0)return;
-  if(policeVoice)policeVoice.stop();
-  const voice=ac.createBufferSource(),band=ac.createBiquadFilter(),gain=ac.createGain();
-  band.type='bandpass';band.frequency.value=1500;band.Q.value=.72;gain.gain.value=.55;
-  voice.buffer=buffer;voice.connect(band).connect(gain).connect(master);policeVoice=voice;
-  voice.onended=()=>{if(policeVoice===voice)policeVoice=null;voice.disconnect();band.disconnect();gain.disconnect();};
-  voice.start();
- }catch{}
+
+document.getElementById('followCase').onclick=()=>{
+ const pd=PoliceDepartment;
+ if(pd.cases.some(c=>c.exercise&&c.stage!=='Wanted'&&c.stage!=='Booked'))return;
+ const site=places.find(p=>p.office===deskStation).door;
+ const subject='training-resident-lee';
+ pd.file({kind:'Homicide',title:'Training homicide · Old Town',exercise:true,at:{x:site.x,y:groundY(site.x,site.z),z:site.z},
+  victim:'training-resident-hall',caller:'911 · shop clerk',witness:'Shop clerk saw Morgan Lee at the scene',
+  subjectName:'Morgan Lee',contact:subject,touch:pd.identity(subject).fingerprintId,source:'Recovered exhibit'});
+ renderPoliceDesk();
 };
