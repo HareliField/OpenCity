@@ -4,6 +4,8 @@ The shared anatomical mesh refers to 24 playable Blender actions. Twenty-two use
 
 The CMU collection was supported by NSF grant 0196217. The factory uses the MotionBuilder BVH conversion by Bruce Hahne. The catalog identifies the original trial, SHA-256, conversion URL, duration and sampling rate of every measured motion. [CMU Graphics Lab motion capture database](https://mocap.cs.cmu.edu/) · [Capture catalog](catalog.json)
 
+Ida’s game walk uses frames 32 through 63 of CMU slow-walk trial 37_01. The compact capture stores the original trial identifier, pinned conversion URL, SHA-256 and sampling rate with its joint measurements. [Game stride capture](slow_stride.npz)
+
 The factory samples at 24 fps, removes the calibration pose, aligns the capture axes and retargets rotations to the resident’s joint centers. A shared action is available in Blender’s Action Editor. The event tool retargets directly to the selected resident’s proportions and bakes overlapping clips into an editable action. Grounded takes measure the deformed shoes against the floor. Floor recovery also measures the body and clothing. A run or jump retains its airborne phases.
 
 From the repository root, make a take for any resident. The output contains the keyed action and named event markers.

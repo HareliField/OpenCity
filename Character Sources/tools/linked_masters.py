@@ -243,6 +243,9 @@ def create(folder, review):
     parts, colours, weights = design(
         person, json.loads(fit.read_text()) if fit.exists() else None
     )
+    from appearance_recipes import fitted_layers
+
+    parts = fitted_layers(folder, parts)
     names = [
         "Resident rig",
         "Body",
@@ -313,12 +316,12 @@ def create(folder, review):
     scene["residentId"] = person["residentId"]
     bpy.context.view_layer.update()
     sculpt(rig, folder)
-    apply_finishes(rig, folder)
+    custom_groom = apply_finishes(rig, folder)
     if fit.exists():
         reference_stance(rig, json.loads(fit.read_text()))
     listening(rig, person)
     bpy.context.view_layer.update()
-    if not (folder / "art-direction.json").is_file():
+    if not custom_groom:
         groom(rig, person, colours)
     if review:
         studio(rig, folder)

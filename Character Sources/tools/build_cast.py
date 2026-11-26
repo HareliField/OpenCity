@@ -183,6 +183,9 @@ def build(folder):
     layers, colours, weights = design(
         person, json.loads(fit.read_text()) if fit.exists() else None
     )
+    from appearance_recipes import fitted_layers
+
+    layers = fitted_layers(folder, layers)
     scene = Scene(person, layers, colours, weights)
     for name in ["base_body"] + layers:
         scene.add(name)

@@ -5,6 +5,7 @@ import hashlib
 import json
 import sys
 from face_warp import FACE_OVAL
+from appearance_recipes import use_wash_house_groom, surface_prefixes
 import cv2
 import numpy as np
 from PIL import Image
@@ -63,6 +64,81 @@ def fabric(folder, garment, name, dye, roughness):
         seams = seams * 0.12
     pigment = np.array(dye)[None, None, :] * tone[:, :, None]
     pigment += (nap * 1.8 + np.maximum(seams, 0) * 13 + fade * 16)[:, :, None]
+    if garment == "tshirt":
+        photo = np.asarray(
+            Image.open(folder / "wardrobe-colour.jpg").convert("RGB"), "f"
+        )
+        ph, pw = photo.shape[:2]
+        yy, xx = np.mgrid[:ph, :pw]
+        chroma = np.ptp(photo, axis=2)
+        gray = cv2.cvtColor(photo, cv2.COLOR_RGB2GRAY)
+        melange = gray - cv2.GaussianBlur(gray, (0, 0), 4.5)
+        delta = np.clip(
+            (
+                gray
+                - np.median(
+                    gray[
+                        int(ph * 0.28) : int(ph * 0.4), int(pw * 0.46) : int(pw * 0.51)
+                    ]
+                )
+            ),
+            -48,
+            48,
+        )
+        cast = (
+            np.array(dye)[None, None, :] + (0.22 * delta + 0.49 * melange)[:, :, None]
+        )
+        alpha = np.clip((29 - chroma) / 17, 0, 1) * np.clip(
+            (0.098 - abs(xx / pw - 0.50)) / 0.03, 0, 1
+        )
+        alpha *= np.clip((yy / ph - 0.17) / 0.03, 0, 1) * np.clip(
+            (0.5 - yy / ph) / 0.028, 0, 1
+        )
+        save(folder / "jersey-photo.png", np.dstack((cast, alpha * 98)))
+    if garment == "jacket":
+        photo = np.asarray(
+            Image.open(folder / "wardrobe-colour.jpg").convert("RGB"), "f"
+        )
+        mask = (
+            np.asarray(Image.open(folder / "wardrobe-mask.png").convert("L"), "f") / 255
+        )
+        color = np.asarray(dye, "f")
+        chroma = photo / np.maximum(16, photo.sum(2, keepdims=True))
+        distance = np.linalg.norm(chroma - color / color.sum(), axis=2)
+        mask *= np.clip((0.192 - distance) / 0.11, 0, 1)
+        ph, pw = mask.shape
+        low = cv2.GaussianBlur(photo * mask[:, :, None], (0, 0), 12)
+        low /= np.maximum(0.03, cv2.GaussianBlur(mask, (0, 0), 12))[:, :, None]
+        detail = photo - low
+        cast = color + (low - color) * 0.47 + detail * 0.85
+        yy, xx = np.mgrid[:ph, :pw]
+        dx = abs(xx / pw - 0.5)
+        # The folded hood and zip are real geometry; use less of their photographed shadow.
+        shoulder = np.exp(-(((yy / ph - 0.235) / 0.050) ** 2)) * np.exp(
+            -(((dx - 0.115) / 0.065) ** 2)
+        )
+        zipper = np.exp(-(((dx - 0.07) / 0.025) ** 2))
+        opacity = mask * (0.84 - 0.60 * shoulder) * (1 - 0.5 * zipper)
+        save(folder / "windbreaker-photo.png", np.dstack((cast, opacity * 255)))
+        # Tile a swatch from the worn shell below the left pocket for the back and sides.
+        swatch = photo[
+            int(0.344 * ph) : int(0.454 * ph), int(0.306 * pw) : int(0.393 * pw)
+        ]
+        swatch = cv2.cvtColor(swatch, cv2.COLOR_RGB2GRAY)
+        wear = swatch - cv2.GaussianBlur(swatch, (0, 0), 9)
+        wear = np.vstack((wear, np.flipud(wear)))
+        wear = np.hstack((wear, np.fliplr(wear)))
+        wear = np.tile(
+            wear,
+            (
+                int(np.ceil(luma.shape[0] / wear.shape[0])),
+                int(np.ceil(luma.shape[1] / wear.shape[1])),
+            ),
+        )[: luma.shape[0], : luma.shape[1]]
+        pigment = color + (wear * 0.44 + nap * 2.4 + fade * 12)[:, :, None]
+        original = None
+        seams = wear / 255
+        roughness = 0.79
     # Cloth albedo includes stitch wear, separate normal and roughness describe the weave.
     height = nap * 0.023 + seams * 0.07
     save(folder / (name + "-albedo.jpg"), pigment)
@@ -292,14 +368,22 @@ def hair(folder):
 
 def build(folder):
     fit = json.loads((folder / "photo-fit.json").read_text())
+    art_file = folder / "art-direction.json"
+    art = json.loads(art_file.read_text()) if art_file.is_file() else {}
+    skin_reference = (folder / "skin-reference.jpg").is_file()
+    prefixes = surface_prefixes(folder.name, art, skin_reference)
     for garment, (name, fallback, roughness) in GARMENTS.items():
+        if name not in prefixes:
+            continue
         dye = fit["colours"].get(
             {"jacket": "Top", "jeans": "Trousers", "tshirt": "Undershirt"}[garment]
         )
         rgb = tuple(bytes.fromhex(dye.lstrip("#"))) if dye else fallback
         fabric(folder, garment, name, rgb, roughness)
-    skin(folder)
-    hair(folder)
+    if skin_reference:
+        skin(folder)
+        if use_wash_house_groom(folder.name, art):
+            hair(folder)
 
 
 if __name__ == "__main__":

@@ -262,6 +262,11 @@ if __name__ == "__main__":
     p.add_argument("model_dir", type=Path)
     p.add_argument("ids", nargs="*")
     p.add_argument("--force", action="store_true")
+    p.add_argument(
+        "--strict",
+        action="store_true",
+        help="Fail if a selected portrait cannot be fitted",
+    )
     args = p.parse_args()
     vision = mp.tasks.vision
     base = mp.tasks.BaseOptions
@@ -308,6 +313,8 @@ if __name__ == "__main__":
         try:
             result = fit(path, face, pose, hair)
         except ValueError as error:
+            if args.strict:
+                raise ValueError(f"Cannot fit {path.parent.name}: {error}") from error
             print(path.parent.name, error, flush=True)
             continue
         face_texture(path, result)

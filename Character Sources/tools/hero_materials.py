@@ -3,7 +3,7 @@
 import bpy
 
 
-def material(obj, folder, prefix, uv_name):
+def material(obj, folder, prefix, uv_name, project_photo=False):
     mat = obj.material_slots[0].material
     nt = mat.node_tree
     bs = next(n for n in nt.nodes if n.type == "BSDF_PRINCIPLED")
@@ -18,6 +18,10 @@ def material(obj, folder, prefix, uv_name):
         tex.image = bpy.data.images.load(
             str(folder / (prefix + "-" + suffix)), check_existing=True
         )
+        if project_photo and target == "Base Color":
+            from windbreaker_texture import project
+
+            tex.image = project(obj, folder, prefix)
         if target != "Base Color":
             tex.image.colorspace_settings.name = "Non-Color"
         nt.links.new(coord.outputs["UV"], tex.inputs["Vector"])
@@ -39,7 +43,13 @@ def wardrobe(folder):
     ]:
         obj = bpy.context.scene.objects.get(name)
         if obj and (folder / (prefix + "-albedo.jpg")).exists():
-            material(obj, folder, prefix, obj.data.uv_layers[0].name)
+            material(
+                obj,
+                folder,
+                prefix,
+                obj.data.uv_layers[0].name,
+                project_photo=(folder / (prefix + "-photo.png")).is_file(),
+            )
             if name == "Cloth_jeans" and obj.data.library:
                 obj.data = obj.data.copy()
                 from blender_master import bake_identity

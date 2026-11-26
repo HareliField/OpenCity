@@ -2,10 +2,14 @@
 
 import bpy
 import numpy as np
-from mathutils import Matrix, Vector
+from mathutils import Matrix, Quaternion, Vector
 
 DIGITS = ("index", "middle", "ring", "pinky", "thumb")
 UP = Vector((0, 0, 1))
+TRIMS = (
+    "Windbreaker zip, snaps and welt pockets",
+    "Elastic cuffs, hem and crew-neck rib",
+)
 
 
 def smooth(value):
@@ -224,7 +228,10 @@ def fit_recovery(scene, rig, action, start, stop):
     ]
     garment_trunks = [
         (o, region(o, {"pelvis", "spine_01", "spine_02", "spine_03", "neck_01"}, 0.60))
-        for o in tops
+        for o in [
+            *tops,
+            *(scene.objects[name] for name in TRIMS if name in scene.objects),
+        ]
     ]
     hands = {
         s: region(
@@ -239,6 +246,15 @@ def fit_recovery(scene, rig, action, start, stop):
     leave = min(stop, start + 60)
     bag = action.layers[0].strips[0].channelbag(action.slots[0])
     z_curve = bag.fcurves.find("location", index=2)
+    ida_fit = (
+        rig.get("residentId") == "AH-R0001"
+        and bottoms
+        and bottoms.name == "Cloth_jeans"
+    )
+    if ida_fit:
+        from recovery_legs import ease_upper_capture, fit_legs
+
+        ease_upper_capture(scene, rig, action, start, stop)
     # The lower body must support the actor while the arms reach, press and release.
     for f in range(enter, leave + 1):
         scene.frame_set(f)
@@ -251,6 +267,8 @@ def fit_recovery(scene, rig, action, start, stop):
         weight = smooth((f - enter) / 5) * smooth((leave - f) / 6)
         z_curve.keyframe_points[f - 1].co.y -= min(surfaces) * weight
     z_curve.update()
+    if ida_fit:
+        fit_legs(scene, rig, action, start, stop, shoes, bottoms)
     # Measure the original wrist placements from the approach and the ensuing press.
     anchors = {}
     for frame, label in [(start + 8, "rest"), (start + 24, "press")]:
@@ -300,9 +318,16 @@ def fit_recovery(scene, rig, action, start, stop):
             desired_floor = 0.001 + arc
             # After the weight transfer, let the hand swing free with a flexed wrist.
             rotation = ups[side]
+            approach = 1 - smooth((dt - 9) / 9) if ida_fit else 0.0
+            if approach:
+                # In the prone rest Ida supports her fingertips with the heel raised.
+                # Let the elastic sleeve touch the floor while her palm rolls flat.
+                rotation = Quaternion(UP.cross(forward), 0.58 * approach) @ rotation
+            pressure = 1 - 0.65 * approach
             carry = 0.0
             if dt > release:
-                carry = smooth((dt - release) / 9)
+                release_frames = 14 if ida_fit else 9
+                carry = smooth((dt - release) / release_frames)
                 low = float(baseline_skin[hands[side], 2].min())
                 released = original_wrist + UP * max(0, 0.055 - low)
                 goal = goal.lerp(released, carry)
@@ -311,10 +336,12 @@ def fit_recovery(scene, rig, action, start, stop):
                     carry,
                 )
                 desired_floor = (1 - carry) * 0.001 + carry * max(low, 0.055)
-                if dt >= release + 9 and low > 0.055:
+                if dt >= release + release_frames and low > 0.055:
                     blend = 0.0
 
-            names = arm_pose(rig, side, goal, rotation, blend, 1 - carry, original)
+            names = arm_pose(
+                rig, side, goal, rotation, blend, pressure * (1 - carry), original
+            )
             for attempt in range(3):
                 bpy.context.view_layer.update()
                 v = positions(body)
@@ -327,7 +354,15 @@ def fit_recovery(scene, rig, action, start, stop):
                     break
                 goal.z += err / max(blend, 0.03)
                 if blend > 0.003:
-                    arm_pose(rig, side, goal, rotation, blend, 1 - carry, original)
+                    arm_pose(
+                        rig,
+                        side,
+                        goal,
+                        rotation,
+                        blend,
+                        pressure * (1 - carry),
+                        original,
+                    )
             for name in names:
                 q = rig.pose.bones[name].rotation_quaternion.copy()
                 values = updates.setdefault(name, {})
@@ -335,6 +370,24 @@ def fit_recovery(scene, rig, action, start, stop):
                 q.make_compatible(previous)
                 values[frame] = q
     write_curves(action, rig, updates)
+    if ida_fit:
+        # As the reversing fall meets the get-up, fingers touch before the torso.
+        # Spread the small last-frame clearance correction across the impact.
+        landing = range(max(1, start - 8), start)
+        raises = []
+        for f in landing:
+            scene.frame_set(f)
+            lowest = min(
+                positions(o)[:, 2].min() for o in (body, shoes, bottoms, *tops)
+            )
+            raises.append(max(0.0, -lowest))
+        for i, f in enumerate(landing):
+            lift = max(
+                raises[j] * (1 - smooth(abs(j - i) / 3))
+                for j in range(max(0, i - 2), min(len(raises), i + 3))
+            )
+            z_curve.keyframe_points[f - 1].co.y += lift
+        z_curve.update()
     support_fabric(scene, tops)
     return [(start + 21, min(stop, start + 32), s) for s in ("l", "r")]
 
@@ -361,20 +414,126 @@ def audit(scene, windows):
             points.append(np.mean(xyz[palm, :2], axis=0))
         if pads:
             results.append(
-                dict(
-                    side=side,
-                    firstFrame=first,
-                    lastFrame=last,
-                    maximumPalmClearanceMm=round(max(pads) * 1000, 2),
-                    deepestHandPenetrationMm=round(max(0, -min(all_skin)) * 1000, 2),
-                    palmHorizontalTravelMm=round(
+                {
+                    "side": side,
+                    "firstFrame": first,
+                    "lastFrame": last,
+                    "maximumPalmClearanceMm": round(max(pads) * 1000, 2),
+                    "deepestHandPenetrationMm": round(max(0, -min(all_skin)) * 1000, 2),
+                    "palmHorizontalTravelMm": round(
                         float(max(np.linalg.norm(p - points[0]) for p in points))
                         * 1000,
                         2,
                     ),
-                )
+                }
             )
     return results
+
+
+def audit_support(scene, rig, start, last):
+    """Measure posed soles and knee denim together with the motion of each joint."""
+    shoes = scene.objects["Cloth_shoes"]
+    jeans = scene.objects["Cloth_jeans"]
+    body = scene.objects["Body"]
+    bands = np.array([0.36 < v.co.z < 0.66 for v in jeans.data.vertices])
+    knees = {s: region(jeans, {"thigh_" + s, "calf_" + s}, 0.8) & bands for s in "lr"}
+    soles = {s: region(shoes, {"foot_" + s, "ball_" + s}, 0.55) for s in "lr"}
+    labels = {"pelvis": "pelvis"}
+    for label, joint in [
+        ("Elbow", "lowerarm"),
+        ("Wrist", "hand"),
+        ("Knee", "calf"),
+        ("Ankle", "foot"),
+    ]:
+        for prefix, side in [("left", "l"), ("right", "r")]:
+            labels[prefix + label] = joint + "_" + side
+    path = {label: [] for label in labels}
+    heights = {s: [] for s in "lr"}
+    denim = {s: [] for s in "lr"}
+    clips = []
+    outer_layers = [
+        scene.objects[name]
+        for name in ("Cloth_jacket", "Cloth_tshirt", *TRIMS)
+        if name in scene.objects
+    ]
+    layer_min = {o.name: float("inf") for o in outer_layers}
+    plants = [
+        ("prone toes", "l", 0, 24),
+        ("prone toes", "r", 0, 24),
+        ("left rear support", "l", 25, 42),
+        ("right sole", "r", 40, 82),
+        ("left sole", "l", 58, 82),
+    ]
+    samples = [None] * len(plants)
+    travel = [[] for _ in plants]
+    count = min(83, last - start + 1)
+    for dt in range(count):
+        scene.frame_set(start + dt)
+        shoe_xyz, jean_xyz, skin_xyz = (
+            positions(shoes),
+            positions(jeans),
+            positions(body),
+        )
+        clips.append(
+            min(shoe_xyz[:, 2].min(), jean_xyz[:, 2].min(), skin_xyz[:, 2].min())
+        )
+        for garment in outer_layers:
+            layer_min[garment.name] = min(
+                layer_min[garment.name], positions(garment)[:, 2].min()
+            )
+        for s in "lr":
+            heights[s].append(float(shoe_xyz[soles[s], 2].min()))
+            denim[s].append(float(jean_xyz[knees[s], 2].min()))
+        for label, joint in labels.items():
+            path[label].append(np.array(rig.matrix_world @ rig.pose.bones[joint].head))
+        for idx, (_, side, first, end) in enumerate(plants):
+            if first <= dt <= end:
+                if samples[idx] is None:
+                    samples[idx] = soles[side] & (
+                        shoe_xyz[:, 2] <= heights[side][-1] + 0.004
+                    )
+                travel[idx].append(shoe_xyz[samples[idx], :2].mean(axis=0))
+
+    def mm(value):
+        return round(float(value) * 1000, 2)
+
+    named_plants = []
+    for index, (label, side, first, end) in enumerate(plants):
+        end = min(end, count - 1)
+        if end >= first:
+            points = np.array(travel[index])
+            named_plants.append(
+                {
+                    "phase": label,
+                    "side": side,
+                    "firstFrame": start + first,
+                    "lastFrame": start + end,
+                    "maximumShoeClearanceMm": mm(max(heights[side][first : end + 1])),
+                    "shoeHorizontalTravelMm": mm(
+                        np.linalg.norm(points - points[0], axis=1).max()
+                    ),
+                }
+            )
+    return {
+        "firstFrame": start,
+        "lastFrame": start + count - 1,
+        "framesMeasured": count,
+        "maximumNearestShoeClearanceMm": mm(
+            np.minimum(heights["l"], heights["r"]).max()
+        ),
+        "maximumNearestKneeDenimClearanceDuringPalmPlantMm": mm(
+            np.minimum(denim["l"], denim["r"])[21:33].max()
+        ),
+        "deepestShoeDenimOrBodyPenetrationMm": mm(max(0, -min(clips))),
+        "minimumOuterLayerHeightMm": {
+            name: mm(height) for name, height in layer_min.items()
+        },
+        "plantedPhases": named_plants,
+        "maximumJointDisplacementPerFrameMm": {
+            name: mm(np.linalg.norm(np.diff(p, axis=0), axis=1).max())
+            for name, p in path.items()
+        },
+    }
 
 
 if __name__ == "__main__":
@@ -408,8 +567,11 @@ if __name__ == "__main__":
         "fps": scene.render.fps,
         "contacts": audit(scene, windows),
     }
+    start = scene.timeline_markers["recover"].frame
+    ida = rig.get("residentId") == "AH-R0001"
+    if ida:
+        result["lowerSupport"] = audit_support(scene, rig, start, scene.frame_end)
     if args.game_model:
-        start = scene.timeline_markers["recover"].frame
         bpy.ops.wm.read_factory_settings(use_empty=True)
         scene = bpy.context.scene
         scene.render.fps = result["fps"]
@@ -424,6 +586,25 @@ if __name__ == "__main__":
         result["gameContacts"] = audit(
             scene, [(f + shift, l + shift, s) for f, l, s in windows]
         )
+        if ida:
+            result["gameLowerSupport"] = audit_support(
+                scene, rig, start + shift, int(action.frame_range[1])
+            )
+            fall = bpy.data.actions.get("Fall")
+            if fall:
+                scene.frame_set(int(action.frame_range[0]))
+                incoming = [rig.matrix_world @ b.head for b in rig.pose.bones]
+                rig.animation_data.action = fall
+                rig.animation_data.action_slot = fall.slots[0]
+                scene.frame_set(int(fall.frame_range[1]))
+                outgoing = [rig.matrix_world @ b.head for b in rig.pose.bones]
+                distance = np.linalg.norm(
+                    np.asarray(incoming) - np.asarray(outgoing), axis=1
+                )
+                result["gameFallToRecover"] = {
+                    "jointsMeasured": len(incoming),
+                    "maximumEndpointGapMm": round(float(distance.max()) * 1000, 3),
+                }
     report = json.dumps(result, indent=2) + "\n"
     if args.report:
         args.report.write_text(report)

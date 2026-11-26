@@ -31,6 +31,9 @@ CLIPS = {
     "step_over": ("143_14", "Step over an obstacle"),
 }
 
+# This full walking cycle supplies game locomotion independently of the Blender action bank.
+GAME_CLIPS = {"slow_stride": ("37_01", "Slow walk")}
+
 
 def parse(data):
     hierarchy, motion = data.decode().replace("\r", "").split("MOTION", 1)
@@ -133,26 +136,27 @@ def main():
     args = parser.parse_args()
     args.cache.mkdir(parents=True, exist_ok=True)
     manifest = {}
-    for name, (ident, title) in CLIPS.items():
+    for name, (ident, title) in (CLIPS | GAME_CLIPS).items():
         url = f"https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/{REV}/data/{int(ident.split('_')[0]):03d}/{ident}.bvh"
         path = args.cache / (ident + ".bvh")
         if not path.exists():
             path.write_bytes(urllib.request.urlopen(url, timeout=45).read())
         data = path.read_bytes()
         names, rest, positions, rotations = parse(data)
+        metadata = {"trial": ident, "source": url, "sha256": hashlib.sha256(data).hexdigest(), "fps": 24}
         np.savez_compressed(
             ROOT / "Motion" / (name + ".npz"),
             names=names,
             rest=rest,
             positions=positions,
             rotations=rotations,
+            **(metadata if name in GAME_CLIPS else {}),
         )
+        if name in GAME_CLIPS:
+            continue
         manifest[name] = {
             "title": title,
-            "trial": ident,
-            "source": url,
-            "sha256": hashlib.sha256(data).hexdigest(),
-            "fps": 24,
+            **metadata,
             "frames": len(positions),
         }
     (ROOT / "Motion" / "catalog.json").write_text(json.dumps(manifest, indent=2) + "\n")

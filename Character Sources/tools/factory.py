@@ -72,14 +72,24 @@ def prepare_surfaces(folder, model_dir, art):
     reference = folder / "reference.jpg"
     fit = folder / "photo-fit.json"
     face_model = model_dir / "face_landmarker.task"
+    art_file = folder / "art-direction.json"
     stage(
         "fit_photo.py",
-        [model_dir, resident, "--force"],
+        [model_dir, resident, "--force", "--strict"],
         [
             reference,
             folder / "persona.json",
             TOOLS / "design.py",
             TOOLS / "build_cast.py",
+            TOOLS / "appearance_recipes.py",
+            *([art_file] if art_file.is_file() else []),
+            # The close-up skin stage refines face-colour.jpg in place.
+            *(
+                [folder / "skin-reference.jpg"]
+                if (folder / "skin-reference.jpg").is_file()
+                else []
+            ),
+            *sorted((ROOT / "Anatomy").glob("*.glb")),
             face_model,
             model_dir / "pose_landmarker.task",
             model_dir / "hair.tflite",
@@ -101,38 +111,47 @@ def prepare_surfaces(folder, model_dir, art):
             [folder / "skin-reference.jpg", face_model],
             ["skin-uv.bin"],
         )
-    if art.get("hair"):
+    from appearance_recipes import use_wash_house_groom, surface_prefixes
+
+    skin_reference = (folder / "skin-reference.jpg").is_file()
+    if skin_reference:
         stage(
             "groom_reference.py",
             [resident, model_dir],
             [reference, fit, model_dir / "hair.tflite"],
             ["groom-guide.npz"],
         )
-        if (folder / "skin-uv.bin").is_file():
-            texture_sources = list((ROOT / "Anatomy" / "Textures").glob("cloth_*"))
-            stage(
-                "surface_maps.py",
-                [resident],
-                [
-                    reference,
-                    fit,
-                    folder / "groom-guide.npz",
-                    folder / "skin-reference.jpg",
-                    folder / "skin-uv.bin",
-                    folder / "face-sculpt.bin",
-                    ROOT / "Anatomy" / "face-topology.obj",
-                    TOOLS / "hair_shape.py",
-                    TOOLS / "fit_photo.py",
-                    TOOLS / "face_warp.py",
-                    *sorted(texture_sources),
-                ],
-                [
-                    name + "-" + suffix
-                    for name in ("windbreaker", "denim", "jersey", "skin")
-                    for suffix in ("albedo.jpg", "normal.png", "roughness.png")
-                ]
-                + ["skin-opacity.png", "combed-hair.png", "hair-fibres.png"],
-            )
+    prefixes = surface_prefixes(resident, art, skin_reference)
+    if prefixes:
+        inputs = [fit, TOOLS / "appearance_recipes.py"]
+        if art_file.is_file():
+            inputs.append(art_file)
+        if "windbreaker" in prefixes:
+            inputs += sorted((ROOT / "Anatomy" / "Textures").glob("cloth_*"))
+            inputs += [folder / "wardrobe-colour.jpg", folder / "wardrobe-mask.png"]
+        outputs = [
+            name + "-" + suffix
+            for name in prefixes
+            for suffix in ("albedo.jpg", "normal.png", "roughness.png")
+        ]
+        if "windbreaker" in prefixes:
+            outputs += ["windbreaker-photo.png", "jersey-photo.png"]
+        if skin_reference:
+            inputs += [
+                reference,
+                folder / "groom-guide.npz",
+                folder / "skin-reference.jpg",
+                folder / "skin-uv.bin",
+                folder / "face-sculpt.bin",
+                ROOT / "Anatomy" / "face-topology.obj",
+                TOOLS / "fit_photo.py",
+                TOOLS / "face_warp.py",
+            ]
+            outputs += ["skin-opacity.png"]
+            if use_wash_house_groom(resident, art):
+                inputs.append(TOOLS / "hair_shape.py")
+                outputs += ["combed-hair.png", "hair-fibres.png"]
+        stage("surface_maps.py", [resident], inputs, outputs)
     if art.get("rearPanel"):
         stage(
             "rear_reference.py",
@@ -149,7 +168,7 @@ def prepare_surfaces(folder, model_dir, art):
         )
 
 
-def build(resident, model_dir, blender, render_motion):
+def build(resident, model_dir, blender, render_motion, game_only=False):
     if not re.fullmatch(r"AH-R[0-9]{4}", resident):
         raise ValueError("Expected one resident ID, such as AH-R0001")
     folder = ROOT / "Residents" / resident
@@ -165,9 +184,13 @@ def build(resident, model_dir, blender, render_motion):
     direction = folder / "art-direction.json"
     art = json.loads(direction.read_text()) if direction.exists() else {}
     prepare_surfaces(folder, model_dir, art)
-    run_blender(blender, "linked_masters.py", "--review", resident)
+    studio_flags = [] if game_only else ["--review"]
+    run_blender(blender, "linked_masters.py", *studio_flags, resident)
     if art.get("performance"):
         run_blender(blender, "performance.py", resident)
+    if game_only:
+        return
+    if art.get("performance"):
         if render_motion:
             import imageio_ffmpeg
 
@@ -240,6 +263,12 @@ if __name__ == "__main__":
         default=shutil.which("blender")
         or "/Applications/Blender.app/Contents/MacOS/Blender",
     )
-    p.add_argument("--render-motion", action="store_true")
+    mode = p.add_mutually_exclusive_group()
+    mode.add_argument("--render-motion", action="store_true")
+    mode.add_argument(
+        "--game-only",
+        action="store_true",
+        help="Build the fitted scene and its actions for gameplay packaging",
+    )
     a = p.parse_args()
-    build(a.resident, a.models, a.blender, a.render_motion)
+    build(a.resident, a.models, a.blender, a.render_motion, a.game_only)

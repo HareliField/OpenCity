@@ -13,6 +13,7 @@ import numpy as np
 from mathutils import Matrix
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from secondary_shapes import add_secondary_shapes
 from resident_motion import (
     ROOT,
     activate,
@@ -23,10 +24,21 @@ from resident_motion import (
 )
 
 
+def rest_joints(rig):
+    return {
+        bone.name: np.append(np.asarray(bone.matrix_local).ravel(), bone.length)
+        for bone in rig.data.bones
+    }
+
+
 def load_take(folder, filename):
     bpy.ops.wm.open_mainfile(filepath=str(folder / filename), load_ui=False)
     scene = bpy.context.scene
     rig = next(o for o in scene.objects if o.type == "ARMATURE")
+    if rig.get("residentId") != folder.name:
+        raise ValueError(
+            f"{folder.name} action take {filename} belongs to {rig.get('residentId')!r}"
+        )
     bones = list(rig.pose.bones)
     track = {b.name: [] for b in bones}
     track["location"] = []
@@ -42,7 +54,8 @@ def load_take(folder, filename):
                 if np.dot(arr[i - 1], arr[i]) < 0:
                     arr[i] *= -1
         track[k] = arr
-    return track, {m.name: m.frame - scene.frame_start for m in scene.timeline_markers}
+    markers = {m.name: m.frame - scene.frame_start for m in scene.timeline_markers}
+    return track, markers, rest_joints(rig)
 
 
 def clips(folder, recipe):
@@ -51,24 +64,44 @@ def clips(folder, recipe):
         by_file[fname] = load_take(folder, fname)
     bpy.ops.wm.open_mainfile(filepath=str(folder / "character.blend"), load_ui=False)
     rig = next(o for o in bpy.context.scene.objects if o.type == "ARMATURE")
+    rest = rest_joints(rig)
+    for filename, (_, _, joints) in by_file.items():
+        if rest.keys() != joints.keys() or any(
+            not np.allclose(joints[name], bone, rtol=0, atol=0.0001)
+            for name, bone in rest.items()
+        ):
+            raise ValueError(
+                f"Refit {filename} to {folder.name}'s current rest skeleton"
+            )
     tracks = {}
     for name, entry in recipe.items():
+        if "baseAction" in entry:
+            continue
         if "take" in entry:
-            take, markers = by_file[entry["take"]]
+            take, markers, _ = by_file[entry["take"]]
             start = markers[entry["marker"]] if "marker" in entry else 0
         else:
             take = captured(rig, entry["capture"])
             start = 0
+            if "marker" in entry or "untilMarker" in entry:
+                raise ValueError(
+                    f"{name} requires an authored take for timeline markers"
+                )
         total = len(take["location"])
-        start, stop = entry.get("frames", [start, total])
+        stop = markers[entry["untilMarker"]] + 1 if "untilMarker" in entry else total
+        start, stop = entry.get("frames", [start, stop])
         if not 0 <= start < stop <= total:
             raise ValueError(
                 f"{name} requests frames {start}..{stop} from a {total}-frame take"
             )
         track = portion(take, start, stop)
+        if entry.get("reverse"):
+            track = {k: a[::-1].copy() for k, a in track.items()}
         if entry.get("returnToStart"):
             track = {k: np.concatenate([a, a[-2::-1]]) for k, a in track.items()}
-        if entry.get("endAtOrigin"):
+        if entry.get("rootOrigin") == "takeEnd":
+            track["location"][:, :2] -= take["location"][-1, :2]
+        elif entry.get("endAtOrigin"):
             track["location"][:, :2] -= track["location"][-1, :2].copy()
         else:
             track["location"][:, :2] = 0
@@ -77,7 +110,7 @@ def clips(folder, recipe):
                 end = a[0]
                 if k != "location" and np.dot(a[-1], end) < 0:
                     end = -end
-                n = min(len(a), 5)
+                n = min(len(a), max(2, entry.get("loopBlendFrames", 5)))
                 for i, t in enumerate(np.linspace(0, 1, n)):
                     a[-n + i] = a[-n + i] * (1 - t) + end * t
                     if k != "location":
@@ -95,6 +128,38 @@ def clips(folder, recipe):
             track["location"][:, 2] = [p.co.y for p in vertical.keyframe_points]
             bpy.data.actions.remove(idle)
         tracks[name] = track
+    for name, entry in recipe.items():
+        if "baseAction" not in entry:
+            continue
+        # A load stays level relative to the chest while the legs take individual
+        # steps. Both hands use the same sample of the performed pickup.
+        gait = tracks[entry["baseAction"]]
+        grip = tracks[entry["holdAction"]]
+        frame = entry.get("holdFrame", -1)
+        arms = (
+            "clavicle_",
+            "upperarm_",
+            "lowerarm_",
+            "hand_",
+            "thumb_",
+            "index_",
+            "middle_",
+            "ring_",
+            "pinky_",
+        )
+        tracks[name] = {
+            k: np.repeat(grip[k][frame][None, :], len(v), axis=0)
+            if k.startswith(arms) or k in ("spine_02", "spine_03")
+            else v.copy()
+            for k, v in gait.items()
+        }
+    from handle_grip import fit_handles
+
+    for name, entry in recipe.items():
+        if "grip" in entry:
+            fit_handles(
+                rig, tracks[name], entry["grip"]["phase"], entry["grip"]["span"]
+            )
     return rig, tracks
 
 
@@ -250,13 +315,7 @@ def prepare(folder, cache, rig):
             and scene.objects.get("Cloth_jeans")
         ):
             remove_covered_skin(o, rig)
-        if o.name in (
-            "Body",
-            "Cloth_jacket",
-            "Cloth_tshirt",
-            "Cloth_jeans",
-            "Cloth_shoes",
-        ):
+        if o.name == "Body" or o.name.startswith("Cloth_"):
             source = o.material_slots[0].material
             shader = next(
                 n for n in source.node_tree.nodes if n.type == "BSDF_PRINCIPLED"
@@ -272,6 +331,7 @@ def prepare(folder, cache, rig):
             for layer in list(o.data.uv_layers):
                 if layer.name in ("Front garment", "Face detail"):
                     o.data.uv_layers.remove(layer)
+        add_secondary_shapes(o, rig)
         selected.append(o)
     rig.data.pose_position = "POSE"
     return selected
@@ -323,6 +383,8 @@ def export(folder, output, cache_root, texture_limit=None):
     inputs = {
         Path(__file__),
         Path(__file__).with_name("game_expression.py"),
+        Path(__file__).with_name("secondary_shapes.py"),
+        Path(__file__).with_name("handle_grip.py"),
         Path(__file__).with_name("resident_motion.py"),
         folder / "character.blend",
         ROOT / "Anatomy/sculpts.blend",
@@ -330,24 +392,24 @@ def export(folder, output, cache_root, texture_limit=None):
     if recipe_file.exists():
         inputs.add(recipe_file)
     for entry in recipe.values():
+        if "baseAction" in entry:
+            continue
         if "take" in entry:
             inputs.add(folder / entry["take"])
         else:
             inputs.add(ROOT / "Motion" / (entry["capture"] + ".npz"))
-    inputs.update(
-        p
-        for suffix in ("*.png", "*.jpg")
-        for p in folder.glob(suffix)
-        if "review" not in p.name
-        and "turntable" not in p.name
-        and "comparison" not in p.name
-    )
-    inputs.update((ROOT / "Anatomy/Textures").glob("*"))
+    # Resolve references using the master and the owning library's path. This
+    # includes custom garment maps while leaving game screenshots out of the key.
+    bpy.ops.wm.open_mainfile(filepath=str(folder / "character.blend"), load_ui=False)
+    for library in bpy.data.libraries:
+        inputs.add(Path(bpy.path.abspath(library.filepath, library=library.parent)))
+    for image in bpy.data.images:
+        if image.source == "FILE" and image.filepath and not image.packed_file:
+            inputs.add(Path(bpy.path.abspath(image.filepath, library=image.library)))
     digest = hashlib.sha256(f"{bpy.app.version_string}/{texture_limit}".encode())
     for path in sorted(inputs):
-        if path.is_file():
-            digest.update(path.name.encode())
-            digest.update(hashlib.sha256(path.read_bytes()).digest())
+        digest.update(path.name.encode())
+        digest.update(hashlib.sha256(path.read_bytes()).digest())
     cache = cache_root / digest.hexdigest()
     cache.mkdir(parents=True, exist_ok=True)
     receipt = cache / "output.sha256"

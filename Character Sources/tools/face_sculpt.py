@@ -160,10 +160,9 @@ def sculpt(rig, folder):
     vertices = [(float(x[i]), float(depth[i]), float(z[i])) for i in range(len(x))]
 
     detail = folder / "skin-uv.bin"
+    has_detail = detail.is_file() and (folder / "skin-reference.jpg").is_file()
     texcoords = (
-        np.fromfile(detail, dtype="<f4").reshape(468, 2)
-        if detail.exists()
-        else marks[:, :2]
+        np.fromfile(detail, dtype="<f4").reshape(468, 2) if has_detail else marks[:, :2]
     )
     uv = [(float(u), float(1 - v)) for u, v in texcoords]
     mesh = bpy.data.meshes.new("Landmark facial sculpt")
@@ -172,12 +171,12 @@ def sculpt(rig, folder):
     obj = bpy.data.objects.new("Measured face", mesh)
     scene.collection.objects.link(obj)
     photo = bpy.data.images.load(
-        str(folder / ("skin-reference.jpg" if detail.exists() else "reference.jpg")),
+        str(folder / ("skin-reference.jpg" if has_detail else "reference.jpg")),
         check_existing=True,
     )
     mesh.materials.append(face_material(photo))
     mesh.materials.append(face_material(photo, True))
-    prepared = detail.is_file() and all(
+    prepared = has_detail and all(
         (folder / ("skin-" + suffix)).is_file()
         for suffix in ("albedo.jpg", "normal.png", "roughness.png", "opacity.png")
     )

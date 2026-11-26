@@ -93,7 +93,7 @@ def rear_colour(obj, folder):
     nt.links.new(blend.outputs[0], bs.inputs["Base Color"])
 
 
-def tailor(rig, folder):
+def tailor(rig, folder, direction):
     scene = bpy.context.scene
     obj = scene.objects.get("Cloth_jacket")
     if not obj:
@@ -134,11 +134,9 @@ def tailor(rig, folder):
     ripple = elbow * np.cos(abs(nx) * 137 + ny * 45 + nz * 21) * 0.0038
     ripple += waist * np.sin(nx * 148 + 12 * nz) * 0.0028
     pts += normals * ripple[:, None]
-    # A light windbreaker collar rolls outward rather than rising as a stiff lapel.
-    # Roll only the free upper neckline. Keep each sewn seam coincident.
-    roll = np.clip((z - 1.575) / 0.075, 0, 1) * np.clip((0.149 - abs(x)) / 0.045, 0, 1)
-    pts[:, 2] -= 0.014 * roll
-    pts[:, 0] += np.sign(x) * 0.008 * roll
+    from windbreaker_cut import shape_shell
+
+    shape_shell(pts, normals, rig)
     obj.data.vertices.foreach_set("co", pts.astype(np.float32).ravel())
     obj.data.update()
     for poly in obj.data.polygons:
@@ -154,7 +152,10 @@ def tailor(rig, folder):
     nt.links.new(noise.outputs[0], bump.inputs["Height"])
     nt.links.new(bump.outputs[0], bs.inputs["Normal"])
     bs.inputs["Roughness"].default_value = 0.65
-    if (folder / "rear-colour.jpg").exists():
+    if direction.get("rearPanel") and all(
+        (folder / name).is_file()
+        for name in ("turnaround-reference.jpg", "rear-colour.jpg", "rear-mask.png")
+    ):
         for garment in ("Cloth_jacket", "Cloth_jeans"):
             rear_colour(scene.objects[garment], folder)
     # The crew-neck rib sits close to the neck at every angle.
@@ -186,52 +187,18 @@ def tailor(rig, folder):
                 blend = min(1, max(0, (original[i, 2] - 1.31) / 0.063))
                 q2 = origin + d * (delta.length * (1 - blend) + desired * blend)
                 points[i, :2] = q2[:2]
+        sx, sy, sz = points.T.copy()
+        gather = np.exp(-(((sz / scale - 0.916) / 0.072) ** 2)) * smoothstep(
+            -0.04, -0.12, sy
+        )
+        points[:, 1] -= (
+            0.0052 * scale * gather * np.sin(106 * sz / scale + 9 * sx / scale)
+        )
         shirt.data.vertices.foreach_set("co", points.astype(np.float32).ravel())
         shirt.data.update()
-    hood_mat = finish_material("Washed red hood", (0.215, 0.055, 0.052), 0.72)
-    vertices = []
-    polys = []
-    N = 42
-    M = 9
-    top = 1.41 * scale
-    for i in range(N + 1):
-        a = (i / N - 0.5) * math.pi
-        c = math.cos(a)
-        s = math.sin(a)
-        for j in range(M + 1):
-            t = j / M
-            vertices.append(
-                (
-                    s * (0.080 + 0.082 * t) * scale,
-                    (
-                        0.010
-                        + c * (0.070 + 0.063 * t)
-                        + 0.012 * math.sin(2 * math.pi * t) * c
-                    )
-                    * scale,
-                    top
-                    + (
-                        0.012
-                        - 0.135 * t * c
-                        + 0.019 * math.sin(2 * math.pi * t + 0.45 * s) * c
-                    )
-                    * scale,
-                )
-            )
-            if i and j:
-                a0 = i * (M + 1) + j
-                polys.append((a0 - M - 2, a0 - M - 1, a0, a0 - 1))
-    mesh = bpy.data.meshes.new("Folded hood pattern")
-    mesh.from_pydata(vertices, [], polys)
-    mesh.update()
-    hood = bpy.data.objects.new("Folded windbreaker hood", mesh)
-    scene.collection.objects.link(hood)
-    mesh.materials.append(hood_mat)
-    for poly in mesh.polygons:
-        poly.use_smooth = True
-    solid = hood.modifiers.new("Fold thickness", "SOLIDIFY")
-    solid.thickness = 0.0015
-    anchored(hood, rig, "spine_03")
+    from windbreaker_cut import folded_hood
+
+    folded_hood(rig, folder)
     # A red loop tied through the bottom buttonhole is Ida's written recognition detail.
     pick = np.argmin(
         (pts[:, 0] - 0.044 * scale) ** 2
@@ -258,6 +225,9 @@ def tailor(rig, folder):
 
     remove_patch_pockets(obj)
     add_trim(obj, rig)
+    from windbreaker_cut import knitted_edges
+
+    knitted_edges(obj, shirt, rig, folder)
     from hero_materials import wardrobe
 
     wardrobe(folder)
@@ -348,11 +318,19 @@ def bun_and_fringe(rig, folder):
 
 
 def apply(rig, folder):
+    from appearance_recipes import use_wash_house_groom, use_wash_house_outfit
+
     source = folder / "art-direction.json"
-    if not source.exists():
-        return
-    direction = json.loads(source.read_text())
-    if direction.get("outerwear") == "red gathered windbreaker with a folded hood":
-        tailor(rig, folder)
-    if direction.get("hair") == "loose bun with side-swept fringe":
+    direction = json.loads(source.read_text()) if source.is_file() else {}
+    if use_wash_house_outfit(folder.name, direction):
+        tailor(rig, folder, direction)
+    if (
+        use_wash_house_groom(folder.name, direction)
+        and (folder / "skin-reference.jpg").is_file()
+        and all(
+            (folder / name).is_file() for name in ("combed-hair.png", "hair-fibres.png")
+        )
+    ):
         bun_and_fringe(rig, folder)
+        return True
+    return False

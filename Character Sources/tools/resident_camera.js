@@ -33,8 +33,9 @@
     camera.position.set(player.pos.x,player.pos.y+1.55,player.pos.z);
     const distance=Math.max(.6,Math.hypot(at.x-player.pos.x,at.z-player.pos.z));
     const close=mode==='detail';
-    camera.fov=THREE.MathUtils.radToDeg(2*Math.atan((close?.43:1.25)/distance));
-    camera.lookAt(at.x,at.y+(close?1.58:1.0),at.z);
+    const halfHeight=close?.43:mode==='talk'?.71:1.25;
+    camera.fov=THREE.MathUtils.radToDeg(2*Math.atan(halfHeight/distance));
+    camera.lookAt(at.x,at.y+(close?1.58:mode==='talk'?1.34:1.0),at.z);
     if(mode==='recovery') {
      const root=scene.getObjectByName('Ida Mercer | Wash House');
      const points=['head','pelvis','hand_l','hand_r','foot_l','foot_r'].map(n=>root.getObjectByName(n).getWorldPosition(new V3()));

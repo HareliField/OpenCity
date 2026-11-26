@@ -14,8 +14,12 @@ def remove_patch_pockets(jacket):
     bm.from_mesh(jacket.data)
     unseen = set(bm.verts)
     discard = []
+    width = max(abs(v.co.x) for v in bm.verts)
+    low, high = min(v.co.z for v in bm.verts), max(v.co.z for v in bm.verts)
+    lapels = 0
     while unseen:
-        seed = unseen.pop()
+        seed = min(unseen, key=lambda v: v.index)
+        unseen.remove(seed)
         piece = [seed]
         todo = [seed]
         while todo:
@@ -28,13 +32,24 @@ def remove_patch_pockets(jacket):
                     todo.append(w)
         if len(piece) < 80 and max(v.co.y for v in piece) < 0:
             discard.extend(piece)
+        elif (
+            len(piece) >= 80
+            and max(abs(v.co.x) for v in piece) < 0.34 * width
+            and min(v.co.z for v in piece) > low + 0.48 * (high - low)
+        ):
+            # The field-jacket pattern has two separate notched collar panels.
+            discard.extend(piece)
+            lapels += 1
+    if lapels != 2:
+        raise ValueError(f"Expected two field-jacket lapels, obtained {lapels}")
     bmesh.ops.delete(bm, geom=discard, context="VERTS")
     # The source panels terminate at each sewn-in pocket. Close those four
     # openings and continue their existing UVs across the shell fabric.
     edges = {e for e in bm.edges if e.is_boundary}
     closed = 0
     while edges:
-        e = edges.pop()
+        e = min(edges, key=lambda edge: edge.index)
+        edges.remove(e)
         ring = {e}
         todo = [e]
         while todo:
@@ -51,7 +66,9 @@ def remove_patch_pockets(jacket):
         border_uv = {
             v: [v.link_loops[0][layer].uv.copy() for layer in layers] for v in verts
         }
-        filled = bmesh.ops.holes_fill(bm, edges=list(ring))["faces"]
+        filled = bmesh.ops.holes_fill(
+            bm, edges=sorted(ring, key=lambda edge: edge.index)
+        )["faces"]
         for f in filled:
             f.smooth = True
             for l in f.loops:
@@ -175,6 +192,22 @@ def add_trim(jacket, rig):
             if len(cord) > 2:
                 strip(cord, 0.0045, 0)
                 strip(cord[-3:], 0.0048, 2)
+        # The shoulder panels are sewn to the hood along a curved raglan seam.
+        seam = []
+        size = rig.data.bones["neck_01"].head_local.z / 1.622
+        for t in np.linspace(0, 1, 34):
+            x = (0.136 + 0.068 * t + 0.005 * np.sin(t * math.pi)) * size
+            z = (1.596 - 0.142 * t - 0.012 * t * t) * size
+            q = surface(side * x, z)
+            if q is not None and q.y < 0:
+                q.y -= 0.0019 * size
+                seam.append(q)
+        if len(seam) > 4:
+            strip(seam, 0.0028 * size, 3)
+            for k in range(1, len(seam) - 1, 2):
+                p, q = seam[k], seam[k + 1]
+                offset = Vector((side * 0.002 * size, -0.0003 * size, 0))
+                strip([p + offset, (p.lerp(q, 0.60)) + offset], 0.00095 * size, 4)
         for a, b in [(1.01, 1.145)]:
             slit = []
             for t in np.linspace(0, 1, 24):
@@ -195,6 +228,8 @@ def add_trim(jacket, rig):
         ("Oxblood zipper tape", (0.10, 0.022, 0.026), 0.64, 0),
         ("Pocket welt shadow", (0.028, 0.010, 0.012), 0.83, 0),
         ("Weathered gunmetal", (0.12, 0.108, 0.085), 0.34, 0.72),
+        ("Raglan seam shadow", (0.145, 0.037, 0.043), 0.88, 0),
+        ("Faded seam thread", (0.249, 0.080, 0.086), 0.89, 0),
     ]:
         mesh.materials.append(finish_material(name, c, rough, metal))
     for p, i in zip(mesh.polygons, slots):

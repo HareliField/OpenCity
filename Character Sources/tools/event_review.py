@@ -4,6 +4,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
+
 import bpy
 from mathutils import Vector
 
@@ -48,6 +49,21 @@ for i, frame in enumerate(range(1, scene.frame_end + 1, a.stride), 1):
     camera.data.ortho_scale = 2.92 - 0.90 * amount
     # Keep the entire orthographic camera plane above the floor in the low shot.
     camera.location = center + 2.8 * Vector((-2.05, -3.85, 0.52 - 0.19 * amount))
+    if a.focus_recovery and rig.get("residentId") == "AH-R0001":
+        marker = scene.timeline_markers.get("recover")
+        if marker:
+            # See both the rear knee and the forward foot throughout the transfer.
+            t = min(1.0, max(0.0, (frame - marker.frame + 12) / 16))
+            side = t * t * (3 - 2 * t)
+            hips = rig.matrix_world @ rig.pose.bones["pelvis"].head
+            low = min(1.0, max(0.0, (0.85 - hips.z) / 0.6))
+            focus = Vector((hips.x, hips.y - 0.07 + 0.1 * low, 0.86 - 0.40 * low))
+            center = center.lerp(focus, side)
+            offset = Vector((-2.05, -3.85, 0.52 - 0.19 * amount)).lerp(
+                Vector((-4.0, -1.16, 0.58)), side
+            )
+            camera.location = center + 2.8 * offset
+            camera.data.ortho_scale = (1 - side) * camera.data.ortho_scale + side * 2.65
     camera.rotation_euler = (
         (center - camera.location).to_track_quat("-Z", "Y").to_euler()
     )
