@@ -178,7 +178,7 @@ function obstacleSpeed(c,target){
   const dx=pos.x-c.pos.x,dz=pos.z-c.pos.z,f=dx*fx+dz*fz;
   if(f<=0 || f>=range || Math.abs(dx*fz-dz*fx)>(c.spec.W+width)*.5+.23)return;
   const gap=f-c.spec.L*.5-front-1.25;
-  target=Math.min(target,Math.max(0,Math.min(Math.sqrt(Math.max(0,leadSpeed**2+6*gap)),leadSpeed+gap/1.35)));
+  target=Math.min(target,Math.max(0,Math.min(Math.sqrt(Math.max(0,leadSpeed**2+6*weather.trafficPace*gap)),leadSpeed+gap*weather.trafficPace/1.35)));
  }
  for(const o of cars){
   if(o===c)continue;
@@ -225,7 +225,7 @@ function aiTraffic(c,dt){
  const rear={x:c.pos.x-c.spec.wb*Math.sin(c.h),z:c.pos.z-c.spec.wb*Math.cos(c.h)};
  const s=pathProgress(m,rear),look=m.turn && s> -12?clamp(2.9+Math.abs(c.speed)*.29,3.4,5.6):
   clamp(3.6+Math.abs(c.speed)*.53,3.8,9.6);
- let target=m.section.speed*(c.driverPace??(c.driverPace=rnd(.89,1.05)));
+ let target=m.section.speed*weather.trafficPace*(c.driverPace??(c.driverPace=rnd(.89,1.05)));
  if(m.turn && s> -14)target=Math.min(target,m.turn>0?4.2:5.0);
  const block=m.dx?Math.min(ai.a[0],ai.b[0]):Math.min(ai.a[1],ai.b[1]);
  const line=m.dx?ai.b[1]:ai.b[0],at=m.dx?c.pos.x:c.pos.z;
@@ -233,7 +233,7 @@ function aiTraffic(c,dt){
  const allowed=canEnter(c,m,gap,dt);
  if(!allowed){
   const available=Math.max(0,gap-.57);
-  target=Math.min(target,Math.sqrt(5.6*available),available*1.3);
+  target=Math.min(target,Math.sqrt(5.6*weather.trafficPace*available),available*1.3);
  }
  if(m.ramp && m.committed && s>TURN_EXTENT-2){
   const next=m.ramp.route.sections.findIndex(section=>m.dx?section.b.x>c.pos.x:section.b.z>c.pos.z);

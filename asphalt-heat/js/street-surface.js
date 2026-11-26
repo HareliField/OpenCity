@@ -55,8 +55,8 @@ function builtStreetHeight(x,z){
  return height;
 }
 function initPaving(){
- PAVING.gutter=pbr('concrete',1,{rough:.9,color:0x938c80,ns:.48});
- PAVING.repair=pbr('asphalt',1,{rough:.86,color:0x747678,ns:.67});
+ PAVING.gutter=makeWet(pbr('concrete',1,{rough:.9,color:0x938c80,ns:.48}),{wet:1});
+ PAVING.repair=makeWet(pbr('asphalt',1,{rough:.86,color:0x747678,ns:.67}),{road:true,wet:.87});
  const [pad,g]=cvs(128,128);
  g.fillStyle='#ac7737';g.fillRect(0,0,128,128);
  for(let y=8;y<128;y+=16)for(let x=8;x<128;x+=16){

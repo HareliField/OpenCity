@@ -48,6 +48,7 @@ function buildInterior(room){
  const {block,M,u0,u1,door0,door1,row,depth}=room;
  const m=INTERIORS.materials;
  const t=.17,back=-depth,ceiling=3.52;
+ weatherCeilings.push({...lrect(M,u0,u1,-.08,depth+(hasStockRoom(row)?2.24:0)),h:ceiling+.15});
  const lighting=shopLightingRoom(M,u0,u1,depth);
  const textured=(mat,x0,x1,y0,y1,z0,z1)=>{
   const geometry=plainBox(roomLightMaterial(mat),x0,x1,y0,y1,z0,z1,{M,uvm:2.1});

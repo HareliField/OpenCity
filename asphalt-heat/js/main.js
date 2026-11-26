@@ -229,6 +229,7 @@ function drawMap(){const Wd=300,k=Wd/240,pp=player.car?player.car.pos:player.pos
 /* ================= HUD ================= */
 let hudCache={};const starEls=[...$('stars').children];
 function hud(){const set=(k,v,f)=>{if(hudCache[k]!==v){hudCache[k]=v;f(v);}};
+ set('conditions',weather.clockText+' · '+weather.description+' · '+Math.round(weather.temperature)+'°C',v=>$('conditions').textContent=v);
  set('cash',player.cash,v=>$('cash').textContent='$'+v.toLocaleString());set('hp',Math.max(0,Math.round(player.hp)),v=>$('hp').style.width=v+'%');
  set('ar',Math.round(player.armor),v=>{$('arbar').style.display=v>0?'block':'none';$('ar').style.width=v+'%';});
  set('car',player.car?Math.round(player.car.hp/player.car.max*100):-1,v=>{$('carbar').style.display=v<0?'none':'block';if(v>=0)$('chp').style.width=v+'%';});
@@ -255,7 +256,20 @@ const clock=new THREE.Clock();const camPos=new V3();let camInit=false,mmT=0,lodT
 function cameraClearance(ax,ay,az,bx,by,bz){
  const hit=rayWorld(ax,az,bx,bz,ay,by,.18);return hit<1?Math.max(.04,hit-.015):1;
 }
+function updateDrivingLight(){
+ const car=player.car;
+ for(let i=0;i<drivingLights.length;i++){
+  const lamp=drivingLights[i];
+  lamp.intensity=car&&!car.dead?8*weather.headlights:0;
+  if(lamp.intensity<=0)continue;
+  const nose=car.spec.L*.5+.06,side=(i===0?-1:1)*car.spec.W*.33;
+  lamp.position.set(side,.62,nose).applyQuaternion(car.mesh.quaternion).add(car.mesh.position);
+  lamp.target.position.set(side*1.4,.14,nose+18).applyQuaternion(car.mesh.quaternion).add(car.mesh.position);
+  lamp.distance=Math.min(HEADLIGHT_RANGE,(car.headlightReach??HEADLIGHT_RANGE)+.85);
+ }
+}
 function step(dt,agentInput=null){time+=dt;WATERT.value=time;
+ weather.advance(dt);applyWeatherLight();
  updateCityWorks(dt,player.pos);updateCityMachines(dt,player.pos);updateCoveBeacon(dt);updateSupplyLights();updateForestLOD(dt);
  refreshPhysicalWorld(player.pos.x,player.pos.z);
  const kx=(keys.ArrowRight?1:0)-(keys.ArrowLeft?1:0),ky=(keys.ArrowUp?1:0)-(keys.ArrowDown?1:0);const play=state==='play'&&!shopOpen&&!caseCamera.enabled;
@@ -272,18 +286,12 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
   else if(c.driver==='ai'||c.driver==='scene return')aiTraffic(c,dt);
   else if(c.driver==='police'){if(wanted>0){c.siren=c.dispatched&&wanted>=3&&LAW.seen;aiPolice(c,dt);}else{c.siren=false;c.route=null;c.dispatched=false;aiTraffic(c,dt);}}
   else if(c.phys)physCarControl(c,0,0,true,dt);
+  updateVehicleSnow(c,dt);
   updateTurnLamps(c,time);
   if(c.bar){const on=c.siren&&(c.sceneFileId&&c.driver!=='player'||(wanted>0||c.block)&&(c.driver==='police'||c.block));const f=(time*7|0)%2;c.bar.r.material=on&&f?SIREN.onR:SIREN.offR;c.bar.b.material=on&&!f?SIREN.onB:SIREN.offB;}}
  physStep(dt);updateDoorMeshes();
  for(const c of cars){if(c.phys)physCarRead(c);syncCarMesh(c);if(c.spec.form==='roadster'){updateSeatedDriver(c);updateRoadsterDials(c);}c.mesh.visible=dist2(c.pos,player.pos)<230;if(dist2(c.pos,player.pos)<70)updateHeadlights(c,dt);}
- const lit=player.car;
- drivingLight.intensity=lit&&!lit.dead?10:0;
- if(drivingLight.intensity){
-  const nose=lit.spec.L*.5+.06;
-  drivingLight.position.set(0,.62,nose).applyQuaternion(lit.mesh.quaternion).add(lit.mesh.position);
-  drivingLight.target.position.set(0,.15,nose+14).applyQuaternion(lit.mesh.quaternion).add(lit.mesh.position);
-  drivingLight.distance=Math.min(22,13*lit.beam.scale.z+.85);
- }
+ updateDrivingLight();
 
  applyCarHits();
  wheelBegin();for(const c of cars)pushWheels(c,dt);wheelEnd();
@@ -373,9 +381,10 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
  updateCaseCamera(dt);
  sky.position.copy(camera.position);
  const viewTarget=caseCamera.focus||tgt;
- sun.position.copy(viewTarget).addScaledVector(SUNDIR,250);
+ sun.position.copy(viewTarget).addScaledVector(keyDirection,250);
  sun.target.position.copy(viewTarget);
  if(POST){PP.final.uniforms.hurt.value=Math.max(0,hurtT>0?hurtT*2.5:0)+(player.hp<30&&state==='play'?(.3+.2*Math.sin(time*5)):0);hurtT-=dt;}
+ updateWeatherSound();
  if(ac){const t=ac.currentTime;const c=player.car;if(c){const sp=Math.abs(c.speed),rpm=enginePitch(sp);engG.gain.setTargetAtTime(.06+Math.min(1,Math.abs(jy))*.04,t,.1);engO.frequency.setTargetAtTime(40+rpm*90*(c.type==='sport'?1.4:1),t,.06);engO2.frequency.setTargetAtTime(20+rpm*45,t,.06);engF.frequency.setTargetAtTime(300+rpm*900,t,.1);
    scrG.gain.setTargetAtTime(c.sliding&&sp>5?.12:0,t,.05);}else{engG.gain.setTargetAtTime(0,t,.2);scrG.gain.setTargetAtTime(0,t,.1);}
   let dn=1e9;if(wanted>0)for(const k of cars)if(k.driver==='police')dn=Math.min(dn,dist2(k.pos,tgt));sirG.gain.setTargetAtTime(wanted>=3&&LAW.seen?clamp(1-dn/120,0,1)*.06:0,t,.2);sirO.frequency.setTargetAtTime(760+260*Math.sin(time*Math.PI*2*.9),t,.03);
@@ -436,7 +445,7 @@ function initGame(){buildMinimapBase();buildMarkers();initializePoliceLives();
  state='title';}
 async function boot(){resize();state='loading';setLoad('Loading city…',0);
  const mgr=THREE.DefaultLoadingManager;let tot=1,done=0;mgr.onStart=(u,l,t)=>{done=l;tot=t;};mgr.onProgress=(u,l,t)=>{done=l;tot=t;if(state==='loading')setLoad('Loading city & people… '+Math.round(l/t*100)+'%',l/t*.85);};
- await new Promise(r=>loadSky(r));
+ await loadSky();
  const cast=await (await fetch('models/cast.json')).json();
  const lowSet=['Male_Adult_07','Police_Male_01','Police_Male_02','Police_Male_03','Police_Male_07','Medical_Female_01','Military_Male_01','Security_Male_01','Male_Adult_10','Male_Adult_03','Medical_Male_01','Male_Adult_01','Male_Adult_04','Male_Adult_08','Business_Male_01','Female_Adult_01','Female_Adult_03','Female_Adult_07','Business_Female_01','Sports_Male_01','Sports_Female_01'];
  const names=Object.keys(cast).filter(n=>QUALITY.level>=2||lowSet.includes(n));
@@ -451,7 +460,7 @@ async function boot(){resize();state='loading';setLoad('Loading city…',0);
  for(const n in CAST){const r=CAST[n];(ROLE[r]=ROLE[r]||[]).push(n);if(/Business_Male/.test(n))(ROLE.mb=ROLE.mb||[]).push(n);if(/Business_Female/.test(n))(ROLE.fb=ROLE.fb||[]).push(n);if(/Construction/.test(n))(ROLE.work=ROLE.work||[]).push(n);}
  if(!ROLE.clerk)ROLE.clerk=ROLE.m;for(const r of['cop','swat','army','guard','gang','medic','beach'])if(!ROLE[r])ROLE[r]=ROLE.m;
  setLoad('Building streets…',.92);await new Promise(r=>setTimeout(r,30));state='building';
- await buildCityRest();physInit();indexStatic();physWorld();installWorksPhysics();initProps();initParts();initTracers();initSkids();initCarLenses();initWheels(320);initGame();
+ await buildCityRest();physInit();indexStatic();physWorld();installWorksPhysics();initProps();initParts();initTracers();initSkids();initCarLenses();initWheels(320);initGame();initWeatherCover();setCityEnvironment();
  refreshPhysicalWorld(player.pos.x,player.pos.z);updProps(.5,player.pos.x,player.pos.z);camera.position.set(302,52,390);camera.lookAt(262,4,312);renderFrame(0);
  $('play').disabled=false;setLoad('Ready',1);}
 async function buildCityRest(){const coastReady=loadCoveLayout();SEED=4242;initAwnings();initSigns();initStreetMaterials();initPaving();initInteriors();initWorksMaterials();initRetailFascias();initShopArchitecture();
@@ -469,6 +478,18 @@ async function buildCityRest(){const coastReady=loadCoveLayout();SEED=4242;initA
   }
  }
  buildWorksGallery();installCityServices();buildCityDetail();await coastReady;beach();skyline();buildFreightTerminal();buildGradeRoads();buildStreetNetwork();finishStreetDetails();flushBuckets();for(const m of scene.children)if(m.isMesh&&m.material===ATLAS.neon)m.renderOrder=2;plantTrees();buildTrafficLights();flushBuckets();initializeDoorMeshes();}
-$('play').addEventListener('click',()=>{$('start').style.display='none';$('ui').hidden=false;$('touchViews').hidden=false;if(state==='title'){clock.getDelta();state='play';}});
+const startTime=$('startTime'),startWeather=$('startWeather');
+if(hasCustomHour){
+ startTime.add(new Option(weather.clockText,'custom'));startTime.value='custom';
+}else if(['sunrise','sunset','night','noon'].includes(qp.get('light')))startTime.value=qp.get('light');
+for(const [key,front] of Object.entries(WEATHER_FRONTS))startWeather.add(new Option(front.label,key));
+if(Object.hasOwn(WEATHER_FRONTS,qp.get('weather')))startWeather.value=launchFront;
+$('play').addEventListener('click',()=>{
+ if(state!=='title')return;
+ const hour=startTime.value==='custom'?launchHour:startingHour(startTime.value,weather.day);
+ setCityEnvironment(hour,startWeather.value||'clouds',true);
+ $('start').style.display='none';$('ui').hidden=false;$('touchViews').hidden=false;
+ clock.getDelta();state='play';
+});
 window.__game={department:PoliceDepartment,cityWorks:CITY_WORKS,services:CITY_SERVICES,step,ff(n){for(let i=0;i<n;i++){step(1/30);}renderFrame(time);},scene,renderer,camera,sun,PH,get player(){return player},cars,peds,cops,gang,helis,places,PROPS,get heat(){return heat},set heat(v){heat=v},get wanted(){return wanted},get state(){return state},keys,inp,toggleCar,startRob,TPL,QUALITY};
 loop();boot().catch(e=>{console.error(e);setLoad('Error: '+e.message);});

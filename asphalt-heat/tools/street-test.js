@@ -8,6 +8,8 @@ const read=name=>fs.readFileSync(path.join(__dirname,'..',name),'utf8');
 const context=vm.createContext({window:{},THREE,assert,console,$:()=>({style:{},classList:{add(){}}})});
 const run=source=>vm.runInContext(source,context);
 run(read('lib/cannon.js'));
+run(read('js/weather.js'));run(read('js/weather-cover.js'));
+run('const weather=new CoastalWeather(70,10),weatherCover=new WeatherCoverMap();');
 run(`const CANNON=window.CANNON,V3=THREE.Vector3,CELL=64,N=16,W=N*CELL,HALF=8,ORIGINAL_GRID=8;
  const clamp=(v,lo,hi)=>Math.min(hi,Math.max(lo,v)),lerp=(a,b,k)=>a+(b-a)*k;
  const wrapA=a=>Math.atan2(Math.sin(a),Math.cos(a)),pick=a=>a[0],rnd=(a,b)=>(a+b)/2;

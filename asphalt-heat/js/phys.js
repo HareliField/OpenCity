@@ -65,7 +65,11 @@ class StreetVehicle extends CANNON.RaycastVehicle{
   for(let i=0;i<wheels.length;i++){
    const wheel=wheels[i];
    const surface=wheel.raycastResult.body?.material;
-   const traction=surface===PH.mat.sand?.58:surface===PH.mat.concrete?.83:.76;
+   const contact=wheel.raycastResult.hitPointWorld;
+   const exposed=contact.y>=weatherCover.heightAt(contact.x,contact.z)-.25;
+   const water=exposed?weather.wetness:0,snow=exposed?weather.snowCover:0;
+   const traction=surface===PH.mat.sand?.58-.16*snow:surface===PH.mat.concrete?
+    .92-.15*water-.45*snow:.88-.20*water-.49*snow;
    const rear=i>=2;
    wheel.frictionSlip=(rear?this.spec.gripR:this.spec.gripF)*traction*(rear&&this.parkingBrake?.43:1);
    wheel.suspensionForce=Math.min(wheel.suspensionForce,wheel.maxSuspensionForce);

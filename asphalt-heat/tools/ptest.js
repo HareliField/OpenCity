@@ -7,6 +7,8 @@ const vm = require('node:vm');
 const read = name => fs.readFileSync(path.join(__dirname, '..', name), 'utf8');
 const context = vm.createContext({ window: {} });
 vm.runInContext(read('lib/cannon.js') + '\nconst CANNON=window.CANNON;', context);
+vm.runInContext(read('js/weather.js')+'\n'+read('js/weather-cover.js'),context);
+vm.runInContext('const weather=new CoastalWeather(70,10),weatherCover=new WeatherCoverMap();',context);
 vm.runInContext(read('js/phys.js'), context);
 vm.runInContext(read('js/cargen.js').split('const CARGEO=')[0], context);
 
@@ -83,6 +85,15 @@ const simulate = vm.runInContext(`(dt,vector)=>{
 
 const regular = simulate(1 / 60, vector);
 const mobile = simulate(1 / 30, vector);
+vm.runInContext('weather.wetness=0;weather.snowCover=0',context);
+const dry=simulate(1 / 60,vector);
+vm.runInContext('weather.wetness=1;weather.snowCover=0',context);
+const saturated=simulate(1 / 60,vector);
+vm.runInContext('weather.wetness=.05;weather.snowCover=.88',context);
+const snowy=simulate(1 / 60,vector);
+assert(regular.brakingDistance>dry.brakingDistance+1);
+assert(saturated.brakingDistance>regular.brakingDistance+1);
+assert(snowy.brakingDistance>saturated.brakingDistance+8);
 assert.equal(regular.grounded, 4);
 assert(regular.acceleration > 5.1 && regular.acceleration < 7.3);
 assert(regular.brakingDistance > 29 && regular.brakingDistance < 40);
@@ -99,6 +110,7 @@ assert(Math.abs(regular.brakingDistance - mobile.brakingDistance) < .25);
 console.log({
  acceleration_0_to_100_seconds: regular.acceleration.toFixed(2),
  stop_from_100_metres: regular.brakingDistance.toFixed(1),
+ stopping_metres_by_weather: {dry:dry.brakingDistance.toFixed(1),rain:saturated.brakingDistance.toFixed(1),snow:snowy.brakingDistance.toFixed(1)},
  wet_road_and_sand_kmh_at_3_2_seconds: [regular.roadSpeed, regular.sandSpeed].map(v=>(v*3.6).toFixed(1)),
  curb_wheels_in_contact: regular.curb.wheels,
  wall_impact_mps: regular.impact.toFixed(1),

@@ -19,7 +19,9 @@ function initProps(){const C=(r0,r1,h,s=10)=>new THREE.CylinderGeometry(r0,r1,h,
  ]),mat:MAT.whiteMetal,shape:()=>new CANNON.Box(new CV(1.18,.49,.055)),off:new CV(0,.49,0),mass:32};
  T.mailbox={geo:propGeo([[C(.04,.04,1,6),0,.5,0],[B(.24,.26,.46),0,1.1,0]]),mat:MAT.darkMetal,shape:()=>new CANNON.Box(new CV(.13,.65,.24)),off:new CV(0,.65,0),mass:12};
  T.lantern={geo:propGeo([[C(.14,.25,.40,12),0,.20,0],[C(.065,.12,3.80,10),0,2.22,0],
-  [C(.23,.09,.28,10),0,4.21,0],[C(.18,.23,.28,10),0,4.48,0],[new THREE.ConeGeometry(.27,.22,10),0,4.73,0]]),
+  [C(.23,.09,.28,10),0,4.21,0],[C(.10,.10,.28,10),0,4.48,0],
+  ...[0,Math.PI*.5,Math.PI,Math.PI*1.5].map(a=>[B(.025,.28,.025),.19*Math.cos(a),4.48,.19*Math.sin(a)]),
+  [new THREE.ConeGeometry(.27,.22,10),0,4.73,0]]),
   mat:MAT.darkMetal,shape:()=>new CANNON.Box(new CV(.14,2.42,.14)),off:new CV(0,2.42,0),mass:155,glow:1};
  T.postbox={geo:propGeo([[B(.58,.82,.53),0,.80,0],[B(.055,.44,.06),-.22,.22,.17],[B(.055,.44,.06),.22,.22,-.17]]),
   mat:blue,shape:()=>new CANNON.Box(new CV(.30,.65,.32)),off:new CV(0,.65,0),mass:60};
@@ -38,8 +40,11 @@ function initProps(){const C=(r0,r1,h,s=10)=>new THREE.CylinderGeometry(r0,r1,h,
  const lamps=PROPS.list.filter(p=>p.P.glow);const gp=new Float32Array(lamps.length*3),gc=new Float32Array(lamps.length*3);
  lamps.forEach((p,k)=>{p.gi=k;const at=lampEmitter(p);gp[k*3]=at.x;gp[k*3+1]=at.y;gp[k*3+2]=at.z;gc[k*3]=1;gc[k*3+1]=.72;gc[k*3+2]=.42;});
  const gg=new THREE.BufferGeometry();gg.setAttribute('position',new THREE.BufferAttribute(gp,3));gg.setAttribute('color',new THREE.BufferAttribute(gc,3));
- PROPS.glow=new THREE.Points(gg,new THREE.PointsMaterial({map:glowTex(),size:1.32,vertexColors:true,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,opacity:.68}));PROPS.glow.visible=!DAYLIGHT;PROPS.glow.frustumCulled=false;scene.add(PROPS.glow);
- const head=new THREE.InstancedMesh(new THREE.PlaneGeometry(.36,.66).rotateX(Math.PI/2),new THREE.MeshBasicMaterial({color:new THREE.Color(3,2.3,1.5)}),lamps.length);lamps.forEach((p,k)=>{o.position.set(gp[k*3],gp[k*3+1]-.08,gp[k*3+2]);o.rotation.set(0,p.ry,0);o.updateMatrix();head.setMatrixAt(k,o.matrix);});head.visible=!DAYLIGHT;PROPS.heads=head;scene.add(head);}
+ PROPS.glow=new THREE.Points(gg,new THREE.PointsMaterial({map:glowTex(),size:1.32,vertexColors:true,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,opacity:.68}));PROPS.glow.visible=false;PROPS.glow.frustumCulled=false;scene.add(PROPS.glow);
+ const head=new THREE.InstancedMesh(unitBox,new THREE.MeshBasicMaterial({color:new THREE.Color(3,2.3,1.5)}),lamps.length);
+ head.visible=false;PROPS.heads=head;scene.add(head);
+ for(const lamp of lamps)syncLampGlow(lamp);
+}
 let _glowT=null;function glowTex(){if(_glowT)return _glowT;const[c,g]=cvs(64,64);const gr=g.createRadialGradient(32,32,0,32,32,32);gr.addColorStop(0,'rgba(255,255,255,1)');gr.addColorStop(.2,'rgba(255,255,255,.55)');gr.addColorStop(1,'rgba(255,255,255,0)');g.fillStyle=gr;g.fillRect(0,0,64,64);return _glowT=new THREE.CanvasTexture(c);}
 function blockY(x,z){return groundY(x,z);}
 const _po=new THREE.Object3D();let propT=0;
@@ -67,12 +72,7 @@ function streamProp(p){
   const first=!p.moved;
   p.moved=true;
   if(p.P.spray&&!p.spray)p.spray=9;
-  if(first&&p.P.glow&&p.gi!=null){
-   const colors=PROPS.glow.geometry.attributes.color;
-   colors.setXYZ(p.gi,0,0,0);colors.needsUpdate=true;
-   _po.position.set(0,-99,0);_po.updateMatrix();
-   PROPS.heads.setMatrixAt(p.gi,_po.matrix);PROPS.heads.instanceMatrix.needsUpdate=true;
-  }
+  if(first&&p.P.glow)syncLampGlow(p);
   onPropHit(p,impact,e.body.car);
  });
 }
@@ -102,7 +102,9 @@ function updProps(dt,px,pz){
    _v.copy(p.P.off).applyQuaternion(_po.quaternion);
    p.renderPosition.set(b.position.x-_v.x,b.position.y-_v.y,b.position.z-_v.z);
    p.renderQuaternion.copy(_po.quaternion);
-   p.moved||=Math.hypot(p.renderPosition.x-p.x,p.renderPosition.z-p.z)>.11;
+   if(!p.moved&&Math.hypot(p.renderPosition.x-p.x,p.renderPosition.z-p.z)>.11){
+    p.moved=true;if(p.P.glow)syncLampGlow(p);
+   }
    syncPropMesh(p);
   }
   p.wasAwake=awake;

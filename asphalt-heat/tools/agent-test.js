@@ -17,9 +17,13 @@ const context=vm.createContext({
  step(dt,input){calls.push({...input});context.time+=dt;},drawMap(){},hud(){},renderFrame(){},clock:{getDelta(){}}
 });
 vm.runInNewContext(source,{qp:new URLSearchParams()}); // Human mode has no controller dependency.
+vm.runInContext(fs.readFileSync(path.join(__dirname,'../js/weather.js'),'utf8'),context);
+vm.runInContext('const weather=new CoastalWeather(30,10),weatherCover=null',context);
 vm.runInContext(source,context);
 const run=context.window.asphaltAgent.run;
 assert.equal(run({op:'observe'}).paused,true);
+assert.equal(run({op:'environment'}).clock,'10:00');
+assert(run({op:'help'}).weatherTypes.includes('storm'));
 assert.throws(()=>run({op:'step',forward:1,ticks:.5}));
 assert.throws(()=>run({op:'step',forward:2}));
 assert.equal(calls.length,0);
