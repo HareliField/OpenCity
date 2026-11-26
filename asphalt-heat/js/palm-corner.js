@@ -143,6 +143,8 @@ function furnishCornerShop(B,r,y,spec){
  const m=cornerMaterials(),cx=(r.x0+r.x1)/2,cz=(r.z0+r.z1)/2,nearNorth=spec.front==='N';
  const at=distance=>nearNorth?r.z0+distance:r.z1-distance;
  const yaw=nearNorth?Math.PI:0;
+ const frontage=lotFace(r,spec.front);
+ shopLightingRoom(frontage.matrix,-frontage.width/2,frontage.width/2,Math.min(16,frontage.depth),y);
  // Shop floor and counter stay clear of the front doors, staircase, lift and the public corridor.
  if(spec.kind==='diner'){
   for(const x of [r.x0+4.25,r.x0+9.56,r.x0+15.12,r.x0+20.43]){
@@ -151,6 +153,8 @@ function furnishCornerShop(B,r,y,spec){
    worksModel('diner-table',x,y,z,[1.125,.914,.768]);
    worksModel('enamel-pendant',x,2.68,z,[.38,.26,.38],0,false);
    INTERIORS.emitters.push({x,y:2.78,z,floorY:y,cool:false});
+   const lens=new THREE.SphereGeometry(.118,14,10);lens.scale(1,.94,1);lens.translate(x,2.661,z);
+   addGeo(INTERIORS.materials.warm,lens,false);
   }
   const barX=r.x1-6.95,z=r.z1-10.35;
   worksSolid(worksRect(barX-3.86,barX+3.86,z-.425,z+.425),y,y+1.01,m.green);

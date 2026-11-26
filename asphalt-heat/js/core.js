@@ -5,6 +5,7 @@ const clamp=(v,a,b)=>v<a?a:v>b?b:v,lerp=(a,b,t)=>a+(b-a)*t;
 const wrapA=a=>{while(a>Math.PI)a-=2*Math.PI;while(a<-Math.PI)a+=2*Math.PI;return a;};
 const lerpA=(a,b,t)=>a+wrapA(b-a)*t;
 let SEED=1337;const srnd=()=>{SEED=(SEED*16807)%2147483647;return(SEED-1)/2147483646;};const srange=(a,b)=>a+srnd()*(b-a),spick=a=>a[Math.floor(srnd()*a.length)];
+const cityInteger=(min,max)=>Math.floor(srange(min,max+1));
 const V3=THREE.Vector3;const unitBox=new THREE.BoxGeometry(1,1,1);
 const ORIGINAL_GRID=8,N=16,CELL=64,HALF=8,W=N*CELL,S=W+16,LANE=4,SW=4;
 const isMobile=matchMedia('(pointer:coarse)').matches||/Android|iPhone|iPad/.test(navigator.userAgent);

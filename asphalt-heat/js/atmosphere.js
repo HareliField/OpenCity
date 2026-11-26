@@ -57,12 +57,12 @@ scene.add(hemi,sun,sun.target);
 
 const skyMat=new THREE.ShaderMaterial({
  side:THREE.BackSide,depthWrite:false,fog:false,
- uniforms:{...climateUniforms,tSky:{value:null},tEvening:{value:null},eveningReady:{value:0}},
+ uniforms:{...climateUniforms,tSky:{value:null},tEvening:{value:null},tCoastalClouds:{value:null},eveningReady:{value:0},coastalCloudsReady:{value:0}},
  vertexShader:`varying vec3 vD;
   void main(){vD=position;vec4 p=projectionMatrix*modelViewMatrix*vec4(position,1.);gl_Position=p.xyww;}`,
  fragmentShader:`
-  uniform sampler2D tSky,tEvening;
-  uniform float eveningReady;
+  uniform sampler2D tSky,tEvening,tCoastalClouds;
+  uniform float eveningReady,coastalCloudsReady;
   uniform vec3 uSun,uMoon,uHorizon,uZenith,uCloudLight,uSunlight;
   uniform vec2 uDrift;
   uniform float uDay,uDusk,uCloud,uMist,uFlash,uStrikeAngle,uStarAngle,uMoonLight;
@@ -126,6 +126,15 @@ const skyMat=new THREE.ShaderMaterial({
    vec3 cloud=uCloudLight*relief+vec3(.65,.25,.085)*uDusk*pow(facing,2.5)*(1.-deck);
    cloud+=uSunlight*.22*pow(sd,9.)*(.4+fine)*(1.-deck);
    col=mix(col,cloud,cover);
+   float coastalBlend=coastalCloudsReady*uDay*smoothstep(.08,.28,uSun.y)*smoothstep(.09,.35,uCloud);
+   coastalBlend*=(1.-smoothstep(.57,.91,uCloud))*smoothstep(-.012,.045,d.y);
+   if(coastalBlend>.003){
+    vec2 fieldUV=vec2(fract(lon+uDrift.x*.000013),clamp(lat*2.+uDrift.y*.000001,0.,1.));
+    vec3 fieldColor=texture2D(tCoastalClouds,fieldUV).rgb;
+    vec3 daylight=pow(fieldColor,vec3(2.2))*1.38;
+    daylight+=uSunlight*(.19*pow(sd,11.)+.38*pow(sd,140.))+vec3(8.2,7.4,5.8)*sunDisc;
+    col=mix(col,daylight,.91*coastalBlend);
+   }
    col=mix(col,uHorizon,uMist*(.75-.5*height));
 
    vec2 boltDir=vec2(cos(uStrikeAngle),sin(uStrikeAngle));
@@ -150,6 +159,7 @@ async function loadSky() {
   uniform.value=t;
  });
  const panorama=loadPanorama('tex/sky-daylight.jpg',skyMat.uniforms.tSky);
+ const clouds=loadPanorama('tex/coastal-clouds.webp',skyMat.uniforms.tCoastalClouds).then(()=>{skyMat.uniforms.coastalCloudsReady.value=1;});
  const evening=loadPanorama('tex/sky-coastal-evening.jpg',skyMat.uniforms.tEvening).then(()=>{skyMat.uniforms.eveningReady.value=1;});
  const probe=imageLoader.loadAsync('tex/env-daylight.jpg').then(im=>{
   const [c,g]=cvs(im.width,im.height); g.drawImage(im,0,0);
@@ -165,7 +175,7 @@ async function loadSky() {
   try {scene.environment=pm.fromEquirectangular(t).texture;}
   finally {pm.dispose();t.dispose();}
  });
- for(const result of await Promise.allSettled([panorama,evening,probe])) if(result.status==='rejected') console.warn(result.reason);
+ for(const result of await Promise.allSettled([panorama,clouds,evening,probe])) if(result.status==='rejected') console.warn(result.reason);
 }
 
 const skyPalette={

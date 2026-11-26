@@ -1,5 +1,5 @@
 /* Storeys, switchback stairs and sliding sashes. Dimensions are in world metres. */
-const CONSTRUCTION={near:new Set(),bodies:new Map(),moving:new Set(),coatings:new Map(),paneMaterial:null,
+const CONSTRUCTION={near:new Set(),bodies:new Map(),moving:new Set(),coatings:new Map(),tintMaterials:new WeakMap(),paneMaterial:null,
  visualCell:'',physicalCell:'',brickCell:'',brickMesh:null,proxyQueue:new Set()};
 const withinRect=(r,x,z)=>x>=r.x0&&x<=r.x1&&z>=r.z0&&z<=r.z1;
 const rectDistance=(r,x,z)=>Math.hypot(x-clamp(x,r.x0,r.x1),z-clamp(z,r.z0,r.z1));
@@ -111,6 +111,8 @@ function storeyGroundAt(block,x,z,ref,street){
   for(const l of s.levels){
    if(l.y0>ref+.43)break;
    if(!withinRect(l.rect,x,z))continue;
+   if(l.fittings&&ref>=l.y0-.1&&ref<l.y0+.52)
+    for(const f of l.fittings)if(f.walkDeck&&withinRect(f,x,z))y=Math.max(y,f.y+f.solidHeight);
    const stairs=hasStair(l),open=stairs&&withinRect(s.core.opening,x,z);
    if(!open&&l.h<=ref+.42)y=Math.max(y,l.h);
    if(!open||l.h<ref-.52)continue;
@@ -256,6 +258,13 @@ function partMatrix(p){
  }else m.makeScale(p.x1-p.x0,p.h-p.y0,p.z1-p.z0);
  return m.setPosition(x,y,z);
 }
+function instancedTintMaterial(source){
+ let tinted=CONSTRUCTION.tintMaterials.get(source);
+ if(!tinted){
+  tinted=source.clone();tinted.onBeforeCompile=source.onBeforeCompile;tinted.customProgramCacheKey=source.customProgramCacheKey;
+  CONSTRUCTION.tintMaterials.set(source,tinted);
+ }return tinted;
+}
 function buildPartBatches(parts){
  const groups=new Map(),result=[];
  for(const p of parts){
@@ -265,15 +274,14 @@ function buildPartBatches(parts){
  }
  for(const group of groups.values()){
   const mat=group[0].mat,geom=group[0].round?(CONSTRUCTION.riserGeometry||=new THREE.CylinderGeometry(.5,.5,1,8)):unitBox;
-  const batch=new THREE.InstancedMesh(geom,mat,group.length);
+  const colored=group.some(p=>p.tint&&p.tint!==0xffffff);
+  const batch=new THREE.InstancedMesh(geom,colored?instancedTintMaterial(mat):mat,group.length);
   batch.castShadow=!mat.transparent;batch.receiveShadow=true;batch.frustumCulled=false;
-  let colored=false;
   for(let i=0;i<group.length;i++){
    const p=group[i];batch.setMatrixAt(i,partMatrix(p));
-   if(p.tint&&p.tint!==0xffffff){batch.setColorAt(i,lin(p.tint));colored=true;}
+   if(colored)batch.setColorAt(i,lin(p.tint||0xffffff));
    if(p.sash)p.draw={batch,i};
   }
-  if(colored)for(let i=0;i<group.length;i++)if(!group[i].tint||group[i].tint===0xffffff)batch.setColorAt(i,new THREE.Color(1,1,1));
   scene.add(batch);result.push(batch);
  }return result;
 }
@@ -320,7 +328,11 @@ function physicalParts(holder){
  for(const p of parts){
   if(p.role==='trim')continue;
   const offset=new CV((p.x1+p.x0)/2-body.position.x,(p.h+p.y0)/2-body.position.y,(p.z1+p.z0)/2-body.position.z);
-  body.addShape(new CANNON.Box(new CV((p.x1-p.x0)/2,(p.h-p.y0)/2,(p.z1-p.z0)/2)),offset);
+  if(p.obb){
+   const {w,h,d,q}=p.obb;
+   body.addShape(new CANNON.Box(new CV(w/2,h/2,d/2)),offset,new CANNON.Quaternion(q.x,q.y,q.z,q.w));
+   p.shapeIndex=body.shapeOffsets.length-1;
+  }else body.addShape(new CANNON.Box(new CV((p.x1-p.x0)/2,(p.h-p.y0)/2,(p.z1-p.z0)/2)),offset);
   if(p.sash)p.shapeOffset=body.shapeOffsets[body.shapeOffsets.length-1];
  }
  PH.w.addBody(body);holder.body=body;return body;
@@ -334,8 +346,8 @@ function streamConstructionPhysics(x,z,y){
    if(rectDistance(s,x,z)>136)continue;
    const local=rectDistance(s,x,z)<40;
    for(const level of s.levels){
-    if(level.y0>Math.max(6.5,local?y+4.4:0))break;
-    if(level.y0<6.5||local&&level.h>y-3.0)next.add(level);
+    if(!level.ground&&(!local||level.y0>y+3.15))break;
+    if(level.ground||level.h>y-3.0)next.add(level);
    }
   }
  });

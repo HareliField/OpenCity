@@ -259,7 +259,7 @@ function initAwnings(){AWN=['#9a2a2a','#2a5a3a','#2a3a6a','#b08a20','#e6e0d4','#
 function roofDressing(R,h,kind,opening=null,occupied=false){const w=R.x1-R.x0,d=R.z1-R.z0;
  plainBox(MAT.trim,R.x0-.15,R.x1+.15,h,h+.75,R.z0-.15,R.z0+.2,{uvm:2});plainBox(MAT.trim,R.x0-.15,R.x1+.15,h,h+.75,R.z1-.2,R.z1+.15,{uvm:2});plainBox(MAT.trim,R.x0-.15,R.x0+.2,h,h+.75,R.z0,R.z1,{uvm:2});plainBox(MAT.trim,R.x1-.2,R.x1+.15,h,h+.75,R.z0,R.z1,{uvm:2});
  for(const p of subtractCityOpenings(R,opening?[opening]:[]))topQuad(MAT.roof,p.x0,p.x1,h+.006,p.z0,p.z1,4,null,false);
- for(let k=0,n=rint(1,4);k<n;k++){const sx=srange(1.2,2.6),sz=srange(1.2,2.6);if(w<sx*2+1||d<sz*2+1)continue;const x=srange(R.x0+sx+.5,R.x1-sx-.5),z=srange(R.z0+sz+.5,R.z1-sz-.5);const unitHeight=srange(.9,1.6);if(occupied||opening&&rectDistance(opening,x,z)<Math.max(sx,sz))continue;if(k===0&&h<55)worksModel('roof-condenser',x,h+.07,z,[sx,unitHeight,sz],0,false);else plainBox(MAT.metal,x-sx/2,x+sx/2,h,h+unitHeight,z-sz/2,z+sz/2);}
+ for(let k=0,n=cityInteger(1,4);k<n;k++){const sx=srange(1.2,2.6),sz=srange(1.2,2.6);if(w<sx*2+1||d<sz*2+1)continue;const x=srange(R.x0+sx+.5,R.x1-sx-.5),z=srange(R.z0+sz+.5,R.z1-sz-.5);const unitHeight=srange(.9,1.6);if(occupied||opening&&rectDistance(opening,x,z)<Math.max(sx,sz))continue;if(k===0&&h<55)worksModel('roof-condenser',x,h+.07,z,[sx,unitHeight,sz],0,false);else plainBox(MAT.metal,x-sx/2,x+sx/2,h,h+unitHeight,z-sz/2,z+sz/2);}
  if(kind==='old'&&srnd()<.4&&w>9&&d>9){const x=srange(R.x0+3,R.x1-3),z=srange(R.z0+3,R.z1-3);if(!occupied&&(!opening||rectDistance(opening,x,z)>2.55))worksRoofTank(x,h+.07,z);}
  if(kind==='tower'&&srnd()<.5){const x=(R.x0+R.x1)/2,z=(R.z0+R.z1)/2;const mast=srange(6,16);if(!occupied)cyl(MAT.metal,R.x1-.84,h,R.z1-.82,.08,.15,mast,6);}
  if(srnd()<.12&&h>12&&h<50){const ad=spick(ATLAS.ads);const ax=srnd()<.5;const bx=(R.x0+R.x1)/2,bz=R.z0+1.06;if(occupied)return;plainBox(MAT.darkMetal,bx-.15,bx+.15,h,h+4.55,bz-.15,bz+.15);signQuad(ad,bx+(ax?0:.2),h+6,bz+(ax?.2:0),12,3,ax?0:Math.PI/2,false);signQuad(ad,bx-(ax?0:.2),h+6,bz-(ax?.2:0),12,3,ax?Math.PI:-Math.PI/2,false);}}
@@ -305,8 +305,8 @@ function fillDistrict(B,R,dist){
  const lots=splitLots(R,dist==='downtown'?14:dist==='beach'?10:9);
  for(const L0 of lots){const L={x0:L0.x0+srange(0,.6),x1:L0.x1-srange(0,.6),z0:L0.z0+srange(0,.6),z1:L0.z1-srange(0,.6)};
   const palmFront=(B.i===9||B.i===10)&&B.j>=6&&B.j<=9;
-  if(dist==='oldtown'){const fh=3.3,fl=palmFront?rint(1,3):rint(4,7);building(B,L,4.4+fl*fh,{mat:MAT.fac[spick(FACLIST.oldtown)],style:1,fh,bay:2.6,shops:true,cornice:true,kind:'old'});if(srnd()<.6)fireEscape(B,L,4.4+fl*fh,fh);}
-  else if(dist==='beach'){const fh=3.2,fl=rint(2,5),h=4.4+fl*fh,tint=spick(PASTEL);building(B,L,h,{mat:MAT.fac.stucco,style:4,fh,bay:3.2,shops:true,tint,kind:'deco'});
+  if(dist==='oldtown'){const fh=3.3,fl=palmFront?cityInteger(1,3):cityInteger(4,7);building(B,L,4.4+fl*fh,{mat:MAT.fac[spick(FACLIST.oldtown)],style:1,fh,bay:2.6,shops:true,cornice:true,kind:'old'});if(srnd()<.6)fireEscape(B,L,4.4+fl*fh,fh);}
+  else if(dist==='beach'){const fh=3.2,fl=cityInteger(2,5),h=4.4+fl*fh,tint=spick(PASTEL);building(B,L,h,{mat:MAT.fac.stucco,style:4,fh,bay:3.2,shops:true,tint,kind:'deco'});
    for(let y=4.4+fh;y<h-.5;y+=fh)perimeterBand(MAT.whiteMetal,L,y-.10,y,.13);
    const sd=streetSides(B,L),sample=sd.length?srnd():1,hs=sample<.85?spick(ATLAS.hotels):null;if(hs&&sample<.15&&h>16){const s=sd[0],y=h*.62;const fx=s==='E'?L.x1+.6:s==='W'?L.x0-.6:(L.x0+L.x1)/2,fz=s==='S'?L.z1+.6:s==='N'?L.z0-.6:(L.z0+L.z1)/2;
     const ry=s==='S'||s==='N'?Math.PI/2:0;plainBox(MAT.metal,fx-(ry?.61:.11),fx+(ry?.61:.11),y-2.1,y+2.1,fz-(ry?.11:.61),fz+(ry?.11:.61));
@@ -330,7 +330,7 @@ function fillDistrict(B,R,dist){
     roofDressing(T3,h3,'tower',podiumShell.core?.opening);
    }}
 
-  else{const fh=3.4,fl=palmFront?rint(1,4):rint(3,12),h=4.4+fl*fh;building(B,L,h,{mat:MAT.fac[spick(FACLIST.midtown)],style:srnd()<.5?0:1,fh,bay:srnd()<.5?3:2.7,shops:true,cornice:srnd()<.4,tint:spick([0xffffff,0xf0e6d8,0xe0e4e8,0xe8d8c8]),kind:'mid'});}}}
+  else{const fh=3.4,fl=palmFront?cityInteger(1,4):cityInteger(3,12),h=4.4+fl*fh;building(B,L,h,{mat:MAT.fac[spick(FACLIST.midtown)],style:srnd()<.5?0:1,fh,bay:srnd()<.5?3:2.7,shops:true,cornice:srnd()<.4,tint:spick([0xffffff,0xf0e6d8,0xe0e4e8,0xe8d8c8]),kind:'mid'});}}}
 const HOUSE_WALLS=new Map();
 function houseWall(tint){
  if(!HOUSE_WALLS.has(tint))HOUSE_WALLS.set(tint,pbr('plaster',2.3,{color:tint,rough:.89,ns:.68}));
@@ -401,7 +401,7 @@ function containers(x0,x1,z0,z1){
  const colors=[0x9c4932,0x385777,0x476f65,0xb89048,0x7a7b77,0xc9c6b9,0x704936,0xab633e];
  const B=blockOf((x0+x1)/2,(z0+z1)/2);
  for(let x=x0;x<x1-6.2;x+=6.5)for(let z=z0;z<z1-2.5;z+=2.7){
-  const layers=srnd()<.15?0:rint(1,3);
+  const layers=srnd()<.15?0:cityInteger(1,3);
   for(let k=0;k<layers;k++){
    const end=x===x0?'W':x+6.5>=x1-6.2?'E':null;
    buildCargoContainer(B,x,z,.15+k*2.6,spick(colors),end,!!end&&k===0);
@@ -639,7 +639,7 @@ function streetProps(B){const{x0,x1,z0,z1}=B;const dist=B.i===15&&B.j>=13?'docks
  for(const e of[0,1,2,3]){const len=48;for(let t=16;t<len-12;t+=16){const p=e===0?[x0+t,z0+.6,Math.PI]:e===1?[x1-.6,z0+t,Math.PI/2]:e===2?[x0+t,z1-.6,0]:[x0+.6,z0+t,-Math.PI/2];if(srnd()<.55)LAMPS.push({x:p[0],z:p[1],ry:p[2]+Math.PI,mid:1});}}
  const sideP=(e,t,o)=>e===0?[x0+t,z0+o]:e===1?[x1-o,z0+t]:e===2?[x0+t,z1-o]:[x0+o,z0+t];
  const kinds=dist==='docks'?['barrel','barrel','cone','bin','hydrant']:dist==='suburb'?['bin','hydrant','mailbox']:['hydrant','bin','news','meter','meter','bench','bollard','bin'];
- for(let k=0;k<(dist==='suburb'?3:9);k++){const e=rint(0,3),t=srange(7,41),[px,pz]=sideP(e,t,srange(.5,.9));PROPSPOTS.push({type:spick(kinds),x:px,z:pz,ry:[Math.PI,Math.PI/2,0,-Math.PI/2][e]});}
+ for(let k=0;k<(dist==='suburb'?3:9);k++){const e=cityInteger(0,3),t=srange(7,41),[px,pz]=sideP(e,t,srange(.5,.9));PROPSPOTS.push({type:spick(kinds),x:px,z:pz,ry:[Math.PI,Math.PI/2,0,-Math.PI/2][e]});}
  if(dist==='beach')for(let t=8;t<44;t+=11){PALMS.push([x1-1.3,z0+t,srange(.85,1.2)]);PALMS.push([x0+1.3,z0+t,srange(.85,1.2)]);}
  else if(dist!=='docks'&&dist!=='suburb')for(const e of[0,1,2,3])for(let t=9;t<44;t+=13)if(srnd()<.61){
   const [px,pz]=sideP(e,t,1.5),size=srange(.83,1.17);
@@ -675,10 +675,25 @@ function beach(){const x0=W+HALF;buildCoastalWater();
  }
  const pierDeck={x0:W+40,x1:W+150,z0:pz-4,z1:pz+4,y:1.6,soffit:1.527};
  registerDeckBoards(pierDeck,false);STREET.steps.push(pierDeck);
- for(const sign of [-1,1])STATIC.push({x0:W+40,x1:W+150,z0:pz+sign*3.91-.06,z1:pz+sign*3.91+.06,y0:1.6,h:2.7});
- STATIC.push({x0:W+149.9,x1:W+150.08,z0:pz-4,z1:pz+4,y0:1.6,h:2.7});
- plainBox(MAT.wood,W+149.9,W+150.08,2.58,2.7,pz-4,pz+4);
- for(let z=pz-31;z<pz-9;z+=2.2)cyl(MAT.wood,W+59+srange(-2,1),-.22,z,.13,.17,srange(.47,1.03),9);
+ const pierRail=(x0,z0,x1,z1)=>{
+  const length=Math.hypot(x1-x0,z1-z0),posts=Math.ceil(length/2.76);
+  for(const [h,radius] of [[2.05,.023],[2.62,.032]]){
+   worksBeam(MAT.metal,[x0,h,z0],[x1,h,z1],radius);
+   STATIC.push({x0:Math.min(x0,x1)-radius,x1:Math.max(x0,x1)+radius,z0:Math.min(z0,z1)-radius,z1:Math.max(z0,z1)+radius,y0:h-radius,h:h+radius});
+  }
+  for(let k=0;k<=posts;k++){
+   const x=lerp(x0,x1,k/posts),z=lerp(z0,z1,k/posts);
+   cyl(MAT.metal,x,1.61,z,.032,.036,1.04,12);plainBox(MAT.darkMetal,x-.071,x+.071,1.599,1.615,z-.068,z+.068);
+   STATIC.push({x0:x-.036,x1:x+.036,z0:z-.036,z1:z+.036,y0:1.60,h:2.65,radius:.036});
+  }
+ };
+ for(const side of [-1,1])pierRail(W+40,pz+side*3.92,W+149.94,pz+side*3.92);
+ pierRail(W+149.94,pz-3.92,W+149.94,pz+3.92);
+ for(let k=0;k<10;k++){
+  const x=W+49+k*1.31,z=310+srange(-.13,.10),top=coastalSandHeight(x,z)+srange(.22,.75);
+  cyl(MAT.wood,x,-.22,z,.13,.17,top+.22,9);
+  STATIC.push({x0:x-.14,x1:x+.14,z0:z-.14,z1:z+.14,y0:-.22,h:top,radius:.14});
+ }
  topQuad(MAT.planks,W+40,W+150,1.591,pz-4,pz+4,3,null,true);
  for(const z of [pz-3.6,pz-1.8,pz,pz+1.8,pz+3.6]){
   plainBox(MAT.wood,W+40,W+150,1.33,1.527,z-.066,z+.066,{uvm:2.5});
@@ -688,28 +703,25 @@ function beach(){const x0=W+HALF;buildCoastalWater();
   plainBox(MAT.wood,x-.094,x+.094,1.12,1.33,pz-4,pz+4,{uvm:2.5});
   STATIC.push({x0:x-.094,x1:x+.094,y0:1.12,h:1.33,z0:pz-4,z1:pz+4});
   for(const s of[-1,1]){
-   const z=pz+s*3.6;cyl(MAT.wood,x,-2,z,.22,.22,3.12,8);
-   STATIC.push({x0:x-.22,x1:x+.22,y0:-2,h:1.12,z0:z-.22,z1:z+.22,radius:.22});
+   const z=pz+s*3.6;cyl(MAT.column,x,-2,z,.256,.284,3.12,12);
+   plainBox(MAT.trim,x-.31,x+.31,.98,1.12,z-.29,z+.29,{uvm:1.1});
+   STATIC.push({x0:x-.284,x1:x+.284,y0:-2,h:1.12,z0:z-.284,z1:z+.284,radius:.284});
   }
  }
- for(const s of[-1,1]){
-  const z=pz+s*3.9;plainBox(MAT.wood,W+40,W+150,2.6,2.7,z-.05,z+.05,{shadow:false});
-  for(let x=W+40;x<=W+150;x+=2.5)plainBox(MAT.wood,x-.055,x+.055,1.6,2.62,z-.055,z+.055);
- }
  /* lifeguard towers, umbrellas */
- placeScenery('beach-parasol',W+44,.02,222,.44,[3.17,2.44,2.99]);
- weatherCeilings.push({x0:W+42.5,x1:W+45.5,z0:220.5,z1:223.5,h:2.46,radius:1.5});
- STATIC.push({x0:W+43.94,x1:W+44.06,z0:221.94,z1:222.06,h:2.44,radius:.057});
- const umbrellaZ=W*.42+11.7;
- placeScenery('beach-parasol',W+42.2,.02,umbrellaZ,.18,[3.03,2.35,2.94]);
- weatherCeilings.push({x0:W+40.7,x1:W+43.7,z0:umbrellaZ-1.5,z1:umbrellaZ+1.5,h:2.37,radius:1.5});
- STATIC.push({x0:W+42.15,x1:W+42.25,z0:umbrellaZ-.06,z1:umbrellaZ+.06,h:2.35,radius:.055});
+ for(const [x,z,yaw,dims] of [[W+44,222,.44,[3.17,2.44,2.99]],[W+42.2,588,.18,[3.03,2.35,2.94]]]){
+  const y=coastalSandHeight(x,z),r=(dims[0]+dims[2])*.25;
+  placeScenery('beach-parasol',x,y,z,yaw,dims);
+  shadeStructure(x,y,z,yaw,r,dims[1]);
+ }
  lighthouse();
  const UMB=[0xa54539,0x496888,0xbca363,0xdcd5c4,0x718676];for(let k=0;k<26;k++){
   const z=srange(0,W),x=srange(W+20,W+52),umbrella=spick(UMB),towel=spick([0xb68579,0x8499ac,0xc5b386,0x93a89a]);
-  if(z>=HARBOR.approach.z0-2&&z<=HARBOR.approach.z1+2||Math.abs(z-COVE.z)<42)continue;
+  if(z>=HARBOR.approach.z0-2&&z<=HARBOR.approach.z1+2||Math.abs(z-COVE.z)<42||Math.abs(z-pz)<48)continue;
   beachUmbrella(x,z,umbrella);
-  const tw=new THREE.PlaneGeometry(.9,1.9);tw.rotateX(-Math.PI/2);tw.translate(x+1.3,.04,z+.2);addGeo(new THREE.MeshStandardMaterial({color:lin(towel),roughness:1}),tw,false);}
+  beachTowel(x+1.35,z+.24,towel);
+  if(k%3===0)beachChair(x-.94,z+.65,umbrella,k%2?0:Math.PI);
+ }
  beachAreas(pz);
  buildHarbor();
  for(let z=-40;z<W+60;z+=12){
@@ -718,15 +730,6 @@ function beach(){const x0=W+HALF;buildCoastalWater();
  }
  offshoreCruiser();
 }
-function beachUmbrella(x,z,color){
- cyl(MAT.whiteMetal,x,0,z,.04,.04,2.4,5);
- weatherCeilings.push({x0:x-1.5,x1:x+1.5,z0:z-1.5,z1:z+1.5,h:2.7,radius:1.5});
- STATIC.push({x0:x-.055,x1:x+.055,z0:z-.055,z1:z+.055,h:2.4,radius:.052});
- const canopy=new THREE.ConeGeometry(1.5,.5,10,1,true);
- canopy.translate(x,2.45,z);
- addGeo(new THREE.MeshStandardMaterial({color:lin(color),roughness:.8,side:THREE.DoubleSide}),canopy,true);
-}
-
 function beachAreas(pierZ){
  const signX=W+HALF+1.75;
  for(const [label,z] of [['PIER BEACH',pierZ-13],['LIGHTHOUSE COVE',829]]){
@@ -749,14 +752,14 @@ function beachAreas(pierZ){
   signQuad(slot,signX,1.98,z+.058,2.65,.66,0,false);
   signQuad(slot,signX,1.98,z-.058,2.65,.66,Math.PI,false);
  }
- for(const [dx,dz,color] of [[30,-8,0x2a8ad8],[40,-14,0xf2c200],[34,8,0xe8463a]]){
-  beachUmbrella(W+dx,pierZ+dz,color);
+ for(const [dx,z,color] of [[30,209,0x788f98],[40,218,0xc1ab7e],[34,579,0xae7970]]){
+  beachUmbrella(W+dx,z,color);beachChair(W+dx+.76,z-.54,color,0);
  }
  for(const z of [825,854])PROPSPOTS.push({type:'bench',x:W+24,z,ry:Math.PI/2});
  const beachStone=makeWet(MAT.stone.clone(),{wet:.37});
  for(const [dx,z,rise,width] of [[48,809,.76,2],[52,811,.94,2.6],[50,815,.56,1.85],
   [49,861,.55,1.5],[52,865,1.08,2.7],[51,870,.65,2.2]]){
-  const x=W+dx,y=.02+rise/2,r=width*.5;
+  const x=W+dx,y=coastalSandHeight(x,z)+rise/2,r=width*.5;
   const rock=new THREE.IcosahedronGeometry(1,1);
   rock.scale(r,rise*.65,r*.78);
   rock.rotateY(z*.4);

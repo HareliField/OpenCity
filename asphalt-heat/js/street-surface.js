@@ -469,6 +469,11 @@ function buildStreetNetwork(){
   const o=objects[k];if(obstructsStreet(o.x??o[0],o.z??o[1],o.type))objects.splice(k,1);
  }
  LAMPS.push({x:10*CELL-11.21,z:10*CELL+12.61,ry:-Math.PI/2});
+ // The two landing forecourts in reference 001 are open to the crossing and its signals.
+ for(const plantings of [TREES,PALMS])for(let k=plantings.length-1;k>=0;k--){
+  const [x,z]=plantings[k];
+  if(z>10*CELL+12&&z<10*CELL+20&&Math.abs(Math.abs(x-10*CELL)-10.7)<2)plantings.splice(k,1);
+ }
  for(let line=0;line<=N;line++){
   if(line<N)for(let j=0;j<N;j++)buildSidewalk(blocks[line*N+j]);
   for(let block=0;block<N;block++)for(const axis of ['ns','ew']){

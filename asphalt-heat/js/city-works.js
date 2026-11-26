@@ -234,7 +234,7 @@ function buildLift(r=CITY_WORKS.shaft,levels=CITY_WORKS.levels,labels=['SERVICE 
   for(const sign of [-1,1]){
    const width=(u1-u0)/2,center=x+sign*width/2;
    const node=new THREE.Mesh(unitBox,MAT.metal);node.scale.set(width,2.41,.072);node.castShadow=true;scene.add(node);
-   const box={x0:center-width/2,x1:center+width/2,z0:r.z1-.04,z1:r.z1+.04,y0:y,h:y+2.41};
+   const box={x0:center-width/2,x1:center+width/2,z0:r.z1-.04,z1:r.z1+.04,y0:y,h:y+2.41,moving:true};
    STATIC.push(box);lift.gates.push({box,node,y,sign,x,width,level});
   }
  }
@@ -602,7 +602,7 @@ function updateCityWorks(dt,pos){
  let discharge=0;
  for(const fixture of w.fixtures){
   fixture.time=Math.max(0,fixture.time-dt);fixture.stream.visible=fixture.time>0&&pressureAtFixture(fixture)>.10;
-  if(fixture.stream.visible)discharge+=.16*pressureAtFixture(fixture);
+  if(fixture.stream.visible)discharge+=(fixture.flow??.16)*pressureAtFixture(fixture);
  }
  updateCivicServices(dt);
  for(const c of CIVIC.cisterns)discharge+=c.discharge;

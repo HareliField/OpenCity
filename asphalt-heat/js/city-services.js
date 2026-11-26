@@ -44,7 +44,7 @@ function updateServiceGraph(dt){
  for(const f of CITY_WORKS.fixtures){
   if(f.time<=0)continue;
   const lot=supplyAt(f.x,f.z);
-  if(lot)lot.discharge+=.16*pressureAtFixture(f);
+  if(lot)lot.discharge+=(f.flow??.16)*pressureAtFixture(f);
  }
  for(const machine of CITY_MACHINES.washers){
   const lot=supplyAt(machine.x,machine.z);

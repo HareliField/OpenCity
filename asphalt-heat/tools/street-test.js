@@ -20,7 +20,7 @@ run(`const CANNON=window.CANNON,V3=THREE.Vector3,CELL=64,N=16,W=N*CELL,HALF=8,OR
 `);
 const world=read('js/world.js');
 run(world.slice(world.indexOf('function districtOf('),world.indexOf('const SPECIAL=')));
-for(const name of ['phys','cargen','fleet','vehicle-components','access','building-construction','suite-interiors','roads','street-plan','street-surface','city-works','city-services','city-traffic','lighthouse','garden-cottages','civic-fittings','harbor-supply','game'])run(read('js/'+name+'.js'));
+for(const name of ['phys','cargen','fleet','vehicle-components','access','building-construction','suite-interiors','domestic-fittings','roads','street-plan','street-surface','city-works','city-services','city-traffic','lighthouse','garden-cottages','civic-fittings','harbor-supply','coast','game'])run(read('js/'+name+'.js'));
 run(`
  player={pos:new V3(800,0,800),car:null};
  setCarLights=()=>{};
@@ -73,6 +73,15 @@ run(`
  // The height query also follows the actual triangular planes in transition zones.
  for(const t of [16.8,18.3,20.4,23.2,32.21,44.8])for(const u of [-7.2,-5.9,1.8,5.1])
   approx(hit(2*CELL+u,4*CELL+t),builtStreetHeight(2*CELL+u,4*CELL+t),.001,'pedestrian and wheel surface');
+ sampleBeachRelief();buildSandTiles(MAT.sidewalk);
+ const shoreTiles=STREET_TERRAIN.get(cellKey(W+36,392)).filter(tile=>tile.sandTerrain);
+ assert(shoreTiles.length>=2);
+ for(const tile of shoreTiles)sandTerrainBody(tile);
+ for(let k=0;k<24;k++){
+  const x=W+20.39+k*1.63,z=386.72+k*.87;
+  approx(hit(x,z),groundY(x,z,.3),.0001,'sand relief matches wheel contact');
+ }
+ approx(coastalSandHeight(W+45,W*.42),.02,.0001,'pier entry stays level');
  assert(hasCurbExtension(4,5,0,-1));
  buildCurbExtension(4,5,0,-1);
  const approachZ=5*CELL+STREET_DESIGN.crossing,faceX=4*CELL+HALF-EXTENSION_WIDTH;
@@ -349,10 +358,16 @@ run(`
    const q=new CANNON.Quaternion();q.setFromEuler(0,Math.atan2(dx,dz),0);
    hull.calculateWorldAABB(center,q,lo,hi);refreshPhysicalWorld(center.x,center.z);
    for(const [r,body] of STREETS_PHYS.bodies){
-    if(r.faces || r.x1<=lo.x || r.x0>=hi.x || r.z1<=lo.z || r.z0>=hi.z || r.h<=lo.y || r.y0>=hi.y)continue;
-    const solid=body.shapes[0].convexPolyhedronRepresentation||body.shapes[0];
-    assert(!hull.findSeparatingAxis(solid,center,q,body.position,body.quaternion,axisHit),
-     'grade structure in '+axis+' '+line+'/'+part+' direction '+dir+' lane '+lane+' at '+body.position);
+    if(r.faces||r.sandTerrain)continue;
+    if(body.aabbNeedsUpdate)body.updateAABB();
+    const lower=body.aabb.lowerBound,upper=body.aabb.upperBound;
+    if(upper.x<=lo.x||lower.x>=hi.x||upper.z<=lo.z||lower.z>=hi.z||upper.y<=lo.y||lower.y>=hi.y)continue;
+    for(const [index,shape] of body.shapes.entries()){
+     const solid=shape.convexPolyhedronRepresentation||shape;
+     const position=body.pointToWorldFrame(body.shapeOffsets[index]),rotation=body.quaternion.mult(body.shapeOrientations[index]);
+     assert(!hull.findSeparatingAxis(solid,center,q,position,rotation,axisHit),
+      'grade structure in '+axis+' '+line+'/'+part+' direction '+dir+' lane '+lane+' at '+position);
+    }
    }
    strips++;
   }

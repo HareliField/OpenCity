@@ -1,0 +1,74 @@
+[
+  {
+    "id": "flat-refrigerator",
+    "sourceImages": [
+      18,
+      25,
+      26,
+      89,
+      111
+    ],
+    "description": "Hollow enamel refrigerator with lined cabinet, shelf rails, clear shelves, stocked bins and a hinged door.",
+    "parts": 58,
+    "movableParts": [
+      "ColdDoor"
+    ],
+    "runtimeBytes": 386324
+  },
+  {
+    "id": "breakfast-tray",
+    "sourceImages": [
+      18,
+      25,
+      89,
+      90,
+      111
+    ],
+    "description": "An electric kettle, ceramic mugs, saucers and a lipped wooden breakfast tray.",
+    "parts": 17,
+    "movableParts": [],
+    "runtimeBytes": 242188
+  },
+  {
+    "id": "bedside-lamp",
+    "sourceImages": [
+      10,
+      17,
+      22,
+      47,
+      89
+    ],
+    "description": "Bedside cabinet with a drawer, turned lamp, pleated shade and two clothbound books.",
+    "parts": 19,
+    "movableParts": [],
+    "runtimeBytes": 306356
+  },
+  {
+    "id": "flat-washstand",
+    "sourceImages": [
+      10,
+      17,
+      25,
+      47,
+      89
+    ],
+    "description": "A china basin, chromed trap, towel rail and silvered mirror for small washrooms.",
+    "parts": 14,
+    "movableParts": [],
+    "runtimeBytes": 216672
+  },
+  {
+    "id": "shower-tray",
+    "sourceImages": [
+      17,
+      22,
+      47,
+      78,
+      89
+    ],
+    "description": "Low shower tray with tiled threshold, mixer, riser, rail, rose and slotted drain.",
+    "parts": 30,
+    "movableParts": [],
+    "runtimeBytes": 79368
+  }
+]

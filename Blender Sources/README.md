@@ -16,7 +16,11 @@ python -B asphalt-heat/tools/blender-city-infrastructure.py
 python -B asphalt-heat/tools/palm-saloon-finish.py
 python -B asphalt-heat/tools/section-vehicle-shells.py
 python -B asphalt-heat/tools/blender-vehicle-assemblies.py
+python -B asphalt-heat/tools/blender-building-parts.py
+python -B asphalt-heat/tools/blender-domestic-fittings.py
+python -B asphalt-heat/tools/blender-beach-furniture.py
 python -B asphalt-heat/tools/coastal-sky.py
+python -B asphalt-heat/tools/coastal-daylight.py
 ```
 
 The finish scripts extract material surfaces and store prints from the supplied photographs. The Blender scripts assemble metric parts, bake short-range contact shading, pack source textures into the Blender files and export GLBs to the game's scenery directory. Fixed components share a mesh per asset. Washers, refrigerator panels, fans, couplings and barber poles retain separate origins for movement.
@@ -28,3 +32,5 @@ The finish scripts extract material surfaces and store prints from the supplied 
 **Palm Street interiors** contains the diner booths, tables and stools, coin newspaper box, LP browsers and photovoltaic panels. **Civic and service fittings** contains the ivory and blue fountain mosaic, glazed bus shelter, six-litre cistern and diner espresso machine. Their companion JSON files identify the source photographs.
 
 **Vehicle mechanical assemblies** includes four inferred engine layouts with separate cooling fans, passenger seating, floor pan, instruments and trim. The body sectioning script preserves the photographed paint and cuts the actual glazing and access panels along measured UV-mapped seams.
+
+**Building and paving components** contains metric masonry, mission tiles, the bolted pier boards, cast utility covers and the residential and office furnishings. **Domestic fittings** contains the stocked refrigerator with its own door pivot, basin, shower, breakfast tray and bedside lights. **Beach furniture** includes fabric gores, metal ribs and a canvas sling on a pinned timber frame. The coastal daylight script uses NumPy, SciPy and Pillow to project unobstructed cloud bands and rectify a patch of sand from the supplied photographs.

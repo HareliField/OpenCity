@@ -9,7 +9,7 @@ run(`const CANNON=window.CANNON,CV=CANNON.Vec3,V3=THREE.Vector3,PHYS_GROUP={worl
 const CELL=64,N=2,W=128,HALF=8,clamp=(v,a,b)=>Math.max(a,Math.min(b,v)),lerp=(a,b,t)=>a+(b-a)*t;
 const lin=c=>new THREE.Color(c).convertSRGBToLinear(),unitBox=new THREE.BoxGeometry(1,1,1),scene=new THREE.Scene();
 const material=new THREE.MeshStandardMaterial(),MAT={fac:{brick_red:material},darkMetal:material,metal:material,trim:material,roof:material,stone:material};
-const INTERIORS={materials:{ceiling:material,darkWood:material,plaster:material,glass:new THREE.MeshPhysicalMaterial({transparent:true})}};
+const INTERIORS={materials:{ceiling:material,tile:material,wood:material,wallTile:material,darkWood:material,plaster:material,glass:new THREE.MeshPhysicalMaterial({transparent:true})}};
 const PH={w:new CANNON.World({gravity:new CV(0,-9.81,0)}),mat:{concrete:new CANNON.Material()}},physRemove=b=>PH.w.removeBody(b);
 const blocks=Array.from({length:N*N},(_,k)=>{const i=Math.floor(k/N),j=k%N;return{i,j,x0:8+CELL*i,x1:56+CELL*i,z0:8+CELL*j,z1:56+CELL*j,bld:[],residual:[]};});
 const STREET={steps:[]},FREIGHT={},SIDEANG={N:Math.PI,S:0,E:Math.PI/2,W:-Math.PI/2},noise=()=>{};
@@ -19,8 +19,9 @@ const blockOf=(x,z)=>blocks.find(r=>x>=r.x0&&x<=r.x1&&z>=r.z0&&z<=r.z1);
 const plainBox=()=>{},addGeo=(mat,g)=>g.dispose();
 `);
 run(world.slice(world.indexOf('function lrect('),world.indexOf('const PASTEL=')));
-run(read('js/street-plan.js'));run(read('js/city-works.js'));run(read('js/access.js'));run(read('js/building-construction.js'));run(read('js/suite-interiors.js'));
+run(read('js/street-plan.js'));run(read('js/city-works.js'));run(read('js/access.js'));run(read('js/building-construction.js'));run(read('js/suite-interiors.js'));run(read('js/domestic-fittings.js'));
 run(read('js/city-services.js'));
+run(read('js/civic-fittings.js'));
 run(world.slice(world.indexOf('function buildCargoContainer'),world.indexOf('/* ---- landmarks')));
 const game=read('js/game.js');run(game.slice(game.indexOf('function traceBox('),game.indexOf('const los=')));
 run(`
@@ -100,9 +101,27 @@ run(`
  }
  const tap=galley.tap,standing={x:tap.reachX,y:tap.y,z:tap.reachZ};
  CITY_SERVICES.lots[0]={pressure:310,sector:{power:true}};CITY_WORKS.m={channel:material};
- const runTap=suiteTapAction(standing);assert.equal(runTap.label,'RUN KITCHEN TAP');runTap.fn();
+ const runTap=suiteFixtureAction(standing);assert.equal(runTap.label,'RUN KITCHEN TAP');runTap.fn();
  assert(CITY_WORKS.fixtures.includes(tap)&&tap.stream&&tap.time>0);
- suiteTapAction(standing).fn();retireSuiteTaps();assert(!tap.stream&&!CITY_WORKS.fixtures.includes(tap));
+ suiteFixtureAction(standing).fn();retireSuiteTaps();assert(!tap.stream&&!CITY_WORKS.fixtures.includes(tap));
+ const fridge=building.levels.flatMap(l=>l.fittings||[]).find(f=>f.leaf);
+ const leaf=fridge.leaf,outside=appliancePoint(fridge,0,.72),inside=appliancePoint(fridge,0,.140),elevation=fridge.y+1.16;
+ const foodRay=()=>rayWorld(outside.x,outside.z,inside.x,inside.z,elevation,elevation);
+ const wheelRay=()=>{const hit=new CANNON.RaycastResult();
+  PH.w.raycastClosest(new CV(outside.x,elevation,outside.z),new CV(inside.x,elevation,inside.z),{},hit);
+  return hit.hasHit;
+ };
+ physicalParts(leaf.owner);assert(foodRay()<1&&wheelRay(),'closed refrigerator has a real door');
+ const op={x:leaf.opX,y:fridge.y-.004,z:leaf.opZ};
+ const openFridge=suiteFixtureAction(op);assert.equal(openFridge.label,'OPEN REFRIGERATOR');openFridge.fn();
+ for(let i=0;i<42;i++)animateRefrigerators(1/60,standing);
+ assert.equal(leaf.phase,1);assert.equal(foodRay(),1);assert.equal(wheelRay(),false);
+ const bathroom=building.levels.flatMap(l=>l.fittings||[]).find(f=>f.cistern);
+ assert(bathroom,'deep flats include a plumbed washroom');
+ const cistern=bathroom.cistern;
+ residentialFixtureAction(bathroom).fn();assert(CIVIC.cisterns.includes(cistern));
+ for(let i=0;i<2400;i++)advanceCistern(cistern,1/60);
+ assert(Math.abs(cistern.total-6)<.00001&&cistern.volume>5.99);retireSuiteTaps();assert(!CIVIC.cisterns.includes(cistern));
  buildCargoContainer(blocks[2],82,33,.15,0x8a5940,'W',true);
  const leaves=ACCESS.doors.filter(d=>d.kind==='cargo');assert.equal(leaves.length,2);
  for(const d of leaves){

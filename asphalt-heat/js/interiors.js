@@ -359,7 +359,7 @@ function updateInteriors(dt,x,z,levelY=player.pos.y){
  if((INTERIORS.clock-=dt)>0)return;
  INTERIORS.clock=.30;
  const near=[];
- for(const lamp of INTERIORS.emitters){
+ for(const lamp of [...INTERIORS.emitters,...BUILDING_FITTINGS.lamps]){
   if(lamp.floorY!==undefined&&Math.abs(lamp.floorY-levelY)>1.5)continue;
   const distance=(lamp.x-x)**2+(lamp.z-z)**2;
   if(distance<31**2&&cityPowerAt(lamp.x,lamp.z)&&(!lamp.municipal||CITY_WORKS.grid))near.push({lamp,distance});

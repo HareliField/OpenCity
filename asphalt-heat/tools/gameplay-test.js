@@ -16,7 +16,7 @@ run(`const CANNON=window.CANNON, CV=CANNON.Vec3, V3=THREE.Vector3, PHYS_GROUP={w
 `);
 run(read('js/vehicle-components.js'));
 run(read('js/access.js'));
-run(read('js/building-construction.js'));run(read('js/suite-interiors.js'));
+run(read('js/building-construction.js'));run(read('js/suite-interiors.js'));run(read('js/domestic-fittings.js'));
 run(read('js/roads.js'));
 run(read('js/street-plan.js'));
 run(read('js/street-surface.js'));
@@ -27,6 +27,7 @@ run(read('js/city-fixtures.js'));
 run(read('js/civic-fittings.js'));
 run(read('js/lighthouse.js'));
 run(read('js/garden-cottages.js'));
+run(read('js/coast.js'));
 run(read('js/game.js'));
 run(read('js/dispatch.js'));
 // The input and renderer bootstraps are driven by the browser. Load the gameplay section here.

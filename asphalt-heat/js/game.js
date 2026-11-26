@@ -5,7 +5,7 @@ const STREETS_PHYS={region:-1,bodies:new Map()};
 function blockOf(x,z){const i=Math.floor(x/CELL),j=Math.floor(z/CELL);if(i<0||j<0||i>=N||j>=N)return null;const B=blocks[i*N+j];return(x>B.x0&&x<B.x1&&z>B.z0&&z<B.z1)?B:null;}
 function groundY(x,z,referenceY=null){
  const sidewalk=blockOf(x,z);
- let y=x>W+13?.02:cityTerrainReady?builtStreetHeight(x,z):
+ let y=x>W+13?coastalSandHeight(x,z):cityTerrainReady?builtStreetHeight(x,z):
   sidewalk?sidewalkHeight(sidewalk,x,z):pavementHeight(x,z);
  for(const d of sidewalk?.cargoDecks||[])
   if(d.y<=(referenceY??y)+.38&&withinRect(d,x,z))y=Math.max(y,d.y);
@@ -43,6 +43,31 @@ function indexStatic(){
   const imax=Math.floor(cellKey(R.x1,R.z1)/N),jmax=cellKey(R.x1,R.z1)%N;
   for(let a=imin;a<=imax;a++)for(let b=jmin;b<=jmax;b++)blocks[a*N+b].residual.push(R);
  }
+ groupStaticParts();
+}
+function groupStaticParts(){
+ const groups=new Map(),seen=new Set();
+ for(const b of blocks)for(const list of [b.bld,b.residual])for(const r of list){
+  if(seen.has(r)||r.construction||r.glazing||r.moving||r.cove||r.obb||r.convex)continue;
+  seen.add(r);
+  const width=r.x1-r.x0,depth=r.z1-r.z0,base=r.y0||0,top=Math.min(r.h??12,157);
+  if(width<=0||depth<=0||top<=base||Math.max(width,depth)>18)continue;
+  const a=Math.floor((r.x0+r.x1)/16),j=Math.floor((r.z0+r.z1)/16),k=Math.floor((base+top)/12);
+  const key=a+','+j+','+k;
+  if(!groups.has(key))groups.set(key,{x:a*8+4,y:k*6+3,z:j*8+4,staticParts:[]});
+  r.compound=groups.get(key);r.compound.staticParts.push(r);
+ }
+}
+function staticPartsBody(group){
+ const body=new CANNON.Body({mass:0,material:PH.mat.concrete,collisionFilterGroup:PHYS_GROUP.world});
+ body.position.set(group.x,group.y,group.z);
+ for(const r of group.staticParts){
+  const base=r.y0||0,top=Math.min(r.h??12,157);
+  const shape=r.radius?new CANNON.Cylinder(r.radius,r.radius,top-base,12):
+   new CANNON.Box(new CV((r.x1-r.x0)/2,(top-base)/2,(r.z1-r.z0)/2));
+  body.addShape(shape,new CV((r.x0+r.x1)/2-group.x,(top+base)/2-group.y,(r.z0+r.z1)/2-group.z));
+ }
+ PH.w.addBody(body);return body;
 }
 function collideWorld(p,r,motion=null){
  const key=cellKey(p.x,p.z),i=Math.floor(key/N),j=key%N;
@@ -62,6 +87,11 @@ function collideWorld(p,r,motion=null){
      if(R.construction||R.glazing){
       forConstructionParts(R,y+.15,y+1.67,part=>{
        if(part.role==='floor')return;
+       if(part.leaf){
+        const overlap=doorOverlap(part.leaf,part.leaf.phase,p,r);
+        if(overlap){p.x=overlap.x;p.z=overlap.z;hit=overlap.normal;}
+        return;
+       }
        const n=pushOut(p,r,part);if(n)hit=n;
       });continue;
      }
@@ -121,6 +151,7 @@ function rayWorld(ax,az,bx,bz,ay=groundY(ax,az)+1.48,by=groundY(bx,bz)+1.48,pad=
    if(r.construction||r.glazing){
     forConstructionParts(r,Math.min(ay,by)-pad,Math.max(ay,by)+pad,p=>{
      if(!glass&&p.role==='glass')return;
+     if(p.obb){const {q,w,h,d}=p.obb;best=Math.min(best,oriented(p.obb.p,q,w,h,d));return;}
      best=Math.min(best,traceBox(start,delta,{x:p.x0,y:p.y0,z:p.z0},{x:p.x1,y:p.h,z:p.z1},pad));
     });
    }else if(r.convex){
@@ -148,7 +179,6 @@ function neighbors(n){const r=[];for(const[a,b]of[[1,0],[-1,0],[0,1],[0,-1]]){co
 const dist2=(a,b)=>Math.hypot(a.x-b.x,a.z-b.z);
 function physWorld(){
  for(const r of STREET.steps)if(r.y>.005&&!r.elevated)physBox(r.x0,r.x1,r.soffit??.005,r.y,r.z0,r.z1);
- physBox(W+13,W+64,-.12,.017,-HALF,W+HALF,PH.mat.sand);
  physBox(-HALF-1,W+60,0,2,-HALF-1.2,-HALF-.2);
  for(const [a,b] of southWallSpans())physBox(a,b,0,2,FREIGHT.z0+.2,FREIGHT.z0+1.2);
  physBox(FREIGHT.x0,FREIGHT.x1,-1,1.85,FREIGHT.z1,FREIGHT.z1+.85);
@@ -170,8 +200,8 @@ function refreshPhysicalWorld(x,z){
   for(let b=Math.max(0,j-2);b<=Math.min(N-1,j+2);b++){
    const block=blocks[a*N+b];
    for(const tile of STREET_TERRAIN.get(a*N+b)||[])required.add(tile);
-   for(const r of block.bld)if(!r.construction)required.add(r);
-   for(const r of block.residual)required.add(r);
+   for(const r of block.bld)if(!r.construction)required.add(r.compound||r);
+   for(const r of block.residual)if(!r.construction)required.add(r.compound||r);
   }
  }
  for(const [r,body] of STREETS_PHYS.bodies){
@@ -182,6 +212,8 @@ function refreshPhysicalWorld(x,z){
  }
  for(const r of required){
   if(STREETS_PHYS.bodies.has(r))continue;
+  if(r.staticParts){STREETS_PHYS.bodies.set(r,staticPartsBody(r));continue;}
+  if(r.sandTerrain){STREETS_PHYS.bodies.set(r,sandTerrainBody(r));continue;}
   if(r.cove){STREETS_PHYS.bodies.set(r,coveBody());continue;}
   if(r.faces){STREETS_PHYS.bodies.set(r,terrainBody(r));continue;}
   if(r.glazing){STREETS_PHYS.bodies.set(r,physicalParts(r));continue;}

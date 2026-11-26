@@ -222,7 +222,7 @@ function buildCityDetail(){
 }
 
 function buildBeachLookout(x,z,yaw){
- const ground=.022,M=new THREE.Matrix4().makeRotationY(yaw);M.setPosition(x,0,z);
+ const ground=coastalSandHeight(x,z)+.002,M=new THREE.Matrix4().makeRotationY(yaw);M.setPosition(x,0,z);
  const center=lpt(M,.26025,0);
  worksModel('rescue-hut',center.x,ground,center.z,[5.0205,4.6944,2.84],yaw,false);
  const box=(x0,x1,z0,z1,base,top,deck=false)=>{

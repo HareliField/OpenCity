@@ -1,5 +1,5 @@
 /* Street-front flats, offices and their fittings share a metre-scale plan with the structural frame. */
-const BUILDING_FITTINGS={templates:new Map(),pending:new Set(),batches:[],key:'',activeTaps:new Set(),outdoor:new Map(),retryAt:0};
+const BUILDING_FITTINGS={templates:new Map(),pending:new Set(),batches:[],key:'',activeTaps:new Set(),drawnLeaves:new Set(),activeCisterns:new Set(),movingLeaves:new Set(),outdoor:new Map(),hiddenProxies:[],lamps:[],retryAt:0};
 function suitePoint(core,u,v){
  return core.alongX?{x:v,z:u}:{x:u,z:v};
 }
@@ -23,16 +23,17 @@ function planUpperRooms(block){
     door.suiteBlock=block;
     const room={sign,partition,edge,v0,v1,doorV,door,breadth,office:s.block.dist==='downtown'||s.block.dist==='docks'};
     l.rooms.push(room);
-    const furnishing=(id,u,v,yaw,dims,solidHeight)=>{
+    const furnishing=(id,u,v,yaw,dims,solidHeight,offset=0)=>{
      const at=suitePoint(c,u,v),turned=Math.abs(Math.sin(yaw))>.5;
-     const w=turned?dims[2]:dims[0],d=turned?dims[0]:dims[2],y=l.y0+.004;
+     const w=turned?dims[2]:dims[0],d=turned?dims[0]:dims[2],y=l.y0+.004+offset;
      const f={...at,y,yaw,id,dims,solidHeight,x0:at.x-w/2,x1:at.x+w/2,z0:at.z-d/2,z1:at.z+d/2};
      l.fittings.push(f);return f;
     };
     const yaw=c.alongX?(sign>0?Math.PI:0):(sign>0?-Math.PI/2:Math.PI/2);
     const centreU=edge-sign*Math.min(breadth*.44,1.38);
     if(room.office){
-     furnishing('studio-drafting-desk',edge-sign*.58,v1-1.30,yaw,[1.34,1.133,.71],.76);
+     const desk=furnishing('studio-drafting-desk',edge-sign*.58,v1-1.30,yaw,[1.34,1.133,.71],.76);
+     desk.light={x:desk.x,y:l.y0+1.05,z:desk.z,floorY:l.y0,colour:0xffe4b9,reach:5.3,intensity:1.03};
      furnishing('seat',edge-sign*1.33,v1-1.32,yaw+Math.PI,[.46,.87,.51],.48);
      if(v1-v0>8.4)furnishing('bookcase',edge-sign*.28,v0+1.73,yaw,[1.30,1.83,.40],1.83);
     }else{
@@ -41,7 +42,7 @@ function planUpperRooms(block){
      const cs=Math.cos(yaw),sn=Math.sin(yaw);
      g.tap={x:g.x-.379*cs+.075*sn,y:l.y0,z:g.z+.379*sn+.075*cs,
        reachX:g.x-.379*cs+.57*sn,reachZ:g.z+.379*sn+.57*cs,riserZone:Math.floor(l.y0/22),time:0};
-     if(v1-v0>9.0&&breadth>3.2)furnishing('reading-table',edge-sign*.97,(v0+v1)/2,yaw,[.94,.74,.86],.74);
+     addDomesticFittings(c,l,room,yaw,furnishing);
     }
    }
   }
@@ -51,6 +52,9 @@ function suiteParts(l,add){
  if(!l.rooms?.length)return;
  const c=l.owner.core,m=INTERIORS.materials;
  for(const room of l.rooms){
+  const finish=constructionFinish(room.office?m.tile:m.wood);
+  const floor=orientedRect(c.alongX,Math.min(room.partition,room.edge),Math.max(room.partition,room.edge),room.v0,room.v1);
+  add(partBox(floor,l.y0-.003,l.y0+.003,'trim',finish));
   const u=room.partition,D=room.doorV,head=l.y0+2.17;
   const W=(a,b,depth=.064)=>orientedRect(c.alongX,u-depth,u+depth,a,b);
   const plaster=l.tier.style===2?m.ceiling:m.plaster;
@@ -70,8 +74,12 @@ function suiteParts(l,add){
     add({...partBox({x0:at.x-diam*.63,x1:at.x+diam*.63,z0:at.z-diam*.63,z1:at.z+diam*.63},y,y+.034,'trim',MAT.metal),round:true});
    }
   }
+  if(room.bath)addBathroomParts(c,l,room,add);
  }
- for(const f of l.fittings)add(partBox(f,f.y,f.y+f.solidHeight,'furniture',null));
+ for(const f of l.fittings){
+  if(f.leaf)addRefrigeratorParts(l,f,add);
+  else if(f.solidHeight>.01)add(partBox(f,f.y,f.y+f.solidHeight,'furniture',null));
+ }
 }
 function registerStreetFitting(id,x,y,z,dims,yaw=0,extra={}){
  const key=Math.floor(x/CELL)+','+Math.floor(z/CELL);
@@ -145,7 +153,12 @@ function fittingTemplate(id){
   a.pending.delete(id);
   if(!root){a.retryAt=performance.now()+10000;return;}
   root.updateWorldMatrix(true,true);const primitives=[];
-  root.traverse(node=>{if(node.isMesh)primitives.push({geo:node.geometry,mat:node.material,local:node.matrixWorld.clone()});});
+  root.traverse(node=>{
+   if(!node.isMesh)return;
+   let p=node;
+   while(p&&p.name!=='ColdDoor')p=p.parent;
+   primitives.push({geo:node.geometry,mat:node.material,local:node.matrixWorld.clone(),hinge:p?.matrixWorld.clone()});
+  });
   a.templates.set(id,{dimensions:root.userData.dimensions,primitives});a.key='';
  });
  return null;
@@ -160,7 +173,9 @@ function streamBuildingFittings(pos){
  const key=[Math.floor(pos.x/5),Math.floor(pos.y/3.1),Math.floor(pos.z/5)].join(',');
  if(a.retryAt&&performance.now()>a.retryAt){a.key='';a.retryAt=0;}
  if(key===a.key)return;a.key=key;
+ a.lamps=[];
  const items=new Map(),select=f=>{
+  if(f.light)a.lamps.push(f.light);
   if(!items.has(f.id))items.set(f.id,[]);items.get(f.id).push(f);
  };
  for(const b of CONSTRUCTION.near)for(const s of b.structures||[]){
@@ -177,49 +192,57 @@ function streamBuildingFittings(pos){
    if(Math.hypot(f.x-pos.x,f.z-pos.z)<(f.reach||45)&&Math.abs(f.y-pos.y)<(f.highReach||24))select(f);
  }
  collectNearBrickwork(pos,select);collectPaving(pos,select);
- disposePartBatches(a.batches);a.batches=[];
+ for(const d of a.drawnLeaves)d.draw=null;
+ for(const proxy of a.hiddenProxies)proxy.visible=true;
+ a.hiddenProxies.length=0;
+ a.drawnLeaves.clear();disposePartBatches(a.batches);a.batches=[];
  for(const [id,rows] of items){
   const template=fittingTemplate(id);if(!template)continue;
+  for(const f of rows)if(f.farModel){f.farModel.visible=false;a.hiddenProxies.push(f.farModel);}
   const matrices=rows.map(f=>fitMatrix(f,template));
   for(const p of template.primitives){
-   const batch=new THREE.InstancedMesh(p.geo,p.mat,rows.length);
+   const hingeInverse=p.hinge?.clone().invert();
+   const hasTint=f=>f.tint&&(!f.tintMaterial||p.mat.name===f.tintMaterial);
+   const colored=rows.some(hasTint);
+   const batch=new THREE.InstancedMesh(p.geo,colored?instancedTintMaterial(p.mat):p.mat,rows.length);
    batch.castShadow=id!=='concrete-panel'&&id!=='municipal-cover'&&id!=='pier-board'&&!p.mat.transparent;
    batch.receiveShadow=true;batch.frustumCulled=false;
    for(let i=0;i<rows.length;i++){
-    batch.setMatrixAt(i,new THREE.Matrix4().multiplyMatrices(matrices[i],p.local));
-    if(rows[i].tint)batch.setColorAt(i,new THREE.Color(rows[i].tint).convertSRGBToLinear());
+    const f=rows[i],base=new THREE.Matrix4().multiplyMatrices(matrices[i],p.local);
+    if(p.hinge&&f.leaf){
+     a.drawnLeaves.add(f.leaf);const parts=f.leaf.draw||(f.leaf.draw=[]);
+     const entry={batch,i,base:matrices[i].clone().multiply(p.hinge),offset:hingeInverse.clone().multiply(p.local)};
+     parts.push(entry);moveRefrigeratorDraw(entry,f.leaf.phase);
+    }else batch.setMatrixAt(i,base);
+    if(colored)batch.setColorAt(i,lin(hasTint(f)?f.tint:0xffffff));
    }
    scene.add(batch);a.batches.push(batch);
   }
  }
 }
-function suiteTapAction(pos){
+function suiteFixtureAction(pos){
  const b=blockOf(pos.x,pos.z);
  if(!b?.structures)return null;
+ let nearest=null,distance=1.08;
  for(const s of b.structures){
   if(!withinRect(s,pos.x,pos.z))continue;
   for(const l of s.levels){
    if(l.y0>pos.y+.44)break;
    if(l.y0<pos.y-.44)continue;
    for(const f of l.fittings||[]){
-    const tap=f.tap;
-    if(!tap||Math.hypot(tap.reachX-pos.x,tap.reachZ-pos.z)>1.08)continue;
-    if(rayWorld(pos.x,pos.z,tap.reachX,tap.reachZ,pos.y+1.32,tap.y+1.32,.04)<.98)continue;
-    return {label:tap.time>0?'TURN TAP OFF':'RUN KITCHEN TAP',hot:true,fn:()=>{
-     if(tap.time>0){tap.time=0;return;}
-     if(pressureAtFixture(tap)<.12){toast('No water pressure',1200);return;}
-     tap.time=3.5;
-     if(!tap.stream){
-      tap.stream=new THREE.Mesh(new THREE.CylinderGeometry(.008,.015,.294,9),CITY_WORKS.m.channel);
-      tap.stream.position.set(tap.x,tap.y+.910,tap.z);scene.add(tap.stream);
-      CITY_WORKS.fixtures.push(tap);BUILDING_FITTINGS.activeTaps.add(tap);
-     }
-    }};
+    const device=f.tap||f.leaf||f.cistern;if(!device)continue;
+    const x=device.reachX??device.opX,z=device.reachZ??device.opZ,d=Math.hypot(x-pos.x,z-pos.z);
+    if(d>=distance||rayWorld(pos.x,pos.z,x,z,pos.y+1.32,l.y0+1.32,.027)<.98)continue;
+    nearest=f;distance=d;
    }
   }
- }return null;
+ }return nearest&&residentialFixtureAction(nearest);
 }
 function retireSuiteTaps(){
+ for(const c of BUILDING_FITTINGS.activeCisterns)if(!c.emptying&&c.volume>=5.999){
+  const i=CIVIC.cisterns.indexOf(c);if(i>=0)CIVIC.cisterns.splice(i,1);
+  BUILDING_FITTINGS.activeCisterns.delete(c);
+ }
  for(const tap of BUILDING_FITTINGS.activeTaps)if(tap.time<=0){
   scene.remove(tap.stream);tap.stream.geometry.dispose();tap.stream=null;
   const i=CITY_WORKS.fixtures.indexOf(tap);if(i>=0)CITY_WORKS.fixtures.splice(i,1);

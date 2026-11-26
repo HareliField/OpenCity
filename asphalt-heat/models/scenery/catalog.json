@@ -312,5 +312,26 @@
   },
   "pier-board": {
     "file": "pier-board.glb"
+  },
+  "flat-refrigerator": {
+    "file": "flat-refrigerator.glb"
+  },
+  "flat-washstand": {
+    "file": "flat-washstand.glb"
+  },
+  "bedside-lamp": {
+    "file": "bedside-lamp.glb"
+  },
+  "breakfast-tray": {
+    "file": "breakfast-tray.glb"
+  },
+  "shower-tray": {
+    "file": "shower-tray.glb"
+  },
+  "canvas-beach-parasol": {
+    "file": "canvas-beach-parasol.glb"
+  },
+  "canvas-deckchair": {
+    "file": "canvas-deckchair.glb"
   }
 }
