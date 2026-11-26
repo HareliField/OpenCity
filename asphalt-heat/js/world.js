@@ -121,7 +121,7 @@ function makeWater(){const m=new THREE.MeshStandardMaterial({color:lin(0x0d3a46)
     if(reflOn>.5)gl_FragColor.rgb=mix(gl_FragColor.rgb,texture2DProj(tRefl,ru).rgb,clamp(fr*1.1,0.,.95));
     float sw=max(0.,vWP.x-${(W+61).toFixed(1)});
     float wave=sin(vWP.x*1.62-uT*2.3+vnoise(vec2(vWP.z*.095,vWP.x*.055))*.95);
-    float foam=smoothstep(.76,.96,wave)*exp(-sw*.10)*(.27+.73*fbm2(vWP.xz*1.35+uT*.2));
+    float foam=step(${(W+61).toFixed(1)},vWP.x)*smoothstep(.76,.96,wave)*exp(-sw*.10)*(.27+.73*fbm2(vWP.xz*1.35+uT*.2));
     vec3 reflected=reflect(-V,wn2);
     float glitter=pow(max(dot(reflected,normalize(vec3(.988,.151,.03))),0.),108.)*(.55+1.3*wd);
     gl_FragColor.rgb+=vec3(.49,.58,.58)*foam+vec3(1.15,.62,.25)*glitter*(.31+.69*smoothstep(6.,52.,sw));}
@@ -547,8 +547,18 @@ function beachAreas(pierZ){
  }
 }
 
-function skyline(){for(let k=0;k<130;k++){const a=srange(Math.PI*.6,Math.PI*1.9),r=srange(S*.62+30,S*.62+260);const x=W/2+Math.cos(a)*r,z=W/2+Math.sin(a)*r;if(x>W+40)continue;const w=srange(16,38),d=srange(16,38),h=Math.round(srange(14,110)/4)*4;if(x+w/2>-HALF-6&&x-w/2<W+150&&z+d/2>-HALF-6&&z-d/2<W+HALF+6)continue;facadeBox(spick([MAT.fac.concrete,MAT.fac.tiles,MAT.fac.panels,MAT.fac.brick_red]),x-w/2,x+w/2,0,h,z-d/2,z+d/2,{style:spick([0,1,2]),fh:3.6,bay:3,top:h});topQuad(MAT.roof,x-w/2,x+w/2,h,z-d/2,z+d/2,4,null,false);}
- for(const[x,z,sx,sz]of[[W/2,-HALF-.4,S+2,.8],[W/2,W+HALF+.4,S+2,.8],[-HALF-.4,W/2,.8,S+2]])plainBox(MAT.trim,x-sx/2,x+sx/2,0,1.1,z-sz/2,z+sz/2,{uvm:2});
+function skyline(){for(let k=0;k<130;k++){
+  const a=srange(Math.PI*.6,Math.PI*1.9),r=srange(S*.62+30,S*.62+260);
+  const x=W/2+Math.cos(a)*r,z=W/2+Math.sin(a)*r;
+  if(x>W+40)continue;
+  const w=srange(16,38),d=srange(16,38),h=Math.round(srange(14,110)/4)*4;
+  const mat=spick([MAT.fac.concrete,MAT.fac.tiles,MAT.fac.panels,MAT.fac.brick_red]),style=spick([0,1,2]);
+  if(z+d/2>FREIGHT.z0||x+w/2>-HALF-6&&x-w/2<W+150&&z+d/2>-HALF-6&&z-d/2<W+HALF+6)continue;
+  facadeBox(mat,x-w/2,x+w/2,0,h,z-d/2,z+d/2,{style,fh:3.6,bay:3,top:h});
+  topQuad(MAT.roof,x-w/2,x+w/2,h,z-d/2,z+d/2,4,null,false);
+ }
+ for(const[x,z,sx,sz]of[[W/2,-HALF-.4,S+2,.8],[-HALF-.4,W/2,.8,S+2]])plainBox(MAT.trim,x-sx/2,x+sx/2,0,1.1,z-sz/2,z+sz/2,{uvm:2});
+ for(const [a,b] of southWallSpans())plainBox(MAT.trim,a,b,0,1.1,FREIGHT.z0,FREIGHT.z0+.8,{uvm:2});
  for(let k=0;k<16;k++){const a=srange(Math.PI*.6,Math.PI*1.9),r=srange(900,1200);if(Math.cos(a)>0)continue;
   const g=new THREE.ConeGeometry(srange(165,300),srange(66,130),16);g.translate(W/2+Math.cos(a)*r,11,W/2+Math.sin(a)*r);
   addGeo(new THREE.MeshStandardMaterial({color:lin(0x5a5048),roughness:1}),g,false);}}

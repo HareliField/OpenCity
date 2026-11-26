@@ -77,7 +77,9 @@ function buildHarbor(){
   g.font='700 38px Inter, Arial, sans-serif';
   g.textAlign='center';
   g.textBaseline='middle';
-  g.fillText(HARBOR.name.toUpperCase(),w/2,h/2,w-38);
+  g.fillText(HARBOR.name.toUpperCase(),w/2,48,w-38);
+  g.font='600 25px Inter, Arial, sans-serif';
+  g.fillText('PRIVATE MOORAGE',w/2,89);
  });
  const sx=approach.x0+1.45,sz=approach.z0+1.75;
  for(const z of [sz-1.04,sz+1.04]){

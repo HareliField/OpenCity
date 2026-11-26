@@ -62,11 +62,15 @@ function collideWorld(p,r,motion=null){
  if(door)hit=door;
  const prop=collideProps(p,r,y,motion);
  if(prop)hit=prop;
- const maxX=Math.abs(p.z-W*.42)<3.76&&p.x>W+39?W+149.45:harborWalkingLimit(p.z)??MAXX;
- if(p.x<MINX+r){p.x=MINX+r;hit=[1,0];}
+ const freight=inFreightPort(p.x,p.z,r);
+ const minX=freight?FREIGHT.x0:MINX;
+ const coastMax=Math.abs(p.z-W*.42)<3.76&&p.x>W+39?W+149.45:harborWalkingLimit(p.z)??MAXX;
+ const maxX=freight?FREIGHT.x1:coastMax;
+ const maxZ=freight||freightGateAt(p.x,r)?FREIGHT.z1:MAXZ;
+ if(p.x<minX+r){p.x=minX+r;hit=[1,0];}
  if(p.x>maxX-r){p.x=maxX-r;hit=[-1,0];}
  if(p.z<MINZ+r){p.z=MINZ+r;hit=[0,1];}
- if(p.z>MAXZ-r){p.z=MAXZ-r;hit=[0,-1];}
+ if(p.z>maxZ-r){p.z=maxZ-r;hit=[0,-1];}
  return hit;
 }
 // Clip the sight line against the same vertical spans and oriented decks as the physics world.
@@ -114,7 +118,8 @@ function physWorld(){
  for(const r of STREET.steps)if(r.y>.005&&!r.elevated)physBox(r.x0,r.x1,.005,r.y,r.z0,r.z1);
  physBox(W+13,W+64,-.12,.017,-HALF,W+HALF,PH.mat.sand);
  physBox(-HALF-1,W+60,0,2,-HALF-1.2,-HALF-.2);
- physBox(-HALF-1,W+60,0,2,W+HALF+.2,W+HALF+1.2);
+ for(const [a,b] of southWallSpans())physBox(a,b,0,2,FREIGHT.z0+.2,FREIGHT.z0+1.2);
+ physBox(FREIGHT.x0,FREIGHT.x1,-1,1.85,FREIGHT.z1,FREIGHT.z1+.85);
  physBox(-HALF-1.2,-HALF-.2,0,2,-HALF,W+HALF);
  physBox(W+64,W+66,-2,3,-HALF,W*.42-4);
  physBox(W+64,W+66,-2,3,W*.42+4,HARBOR.quay.z0);

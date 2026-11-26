@@ -1,6 +1,6 @@
 # Asphalt Heat
 
-An original browser-based 3D coastal city. The street grid grew from 8 × 8 to 16 × 16 blocks, with a playable footprint of 1,024 × 1,024 metres. Two graded roads add a second level and a curved route across the grid. Explore after a rain shower, pull over to visit the shops, or head east to the boardwalk and lighthouse.
+An original browser-based 3D coastal city. The 16 × 16 city blocks cover 1,024 × 1,024 metres, and the freight terminal extends south from the warehouse district. Two graded roads add a second level and a curved route across the grid. Explore after a rain shower, pull over to visit the shops, or head east to the boardwalk and lighthouse.
 
 ## Play locally
 
@@ -34,7 +34,8 @@ Touch devices show an on-screen stick, action controls, camera and HUD buttons. 
 - **Residential streets.** Head west from downtown for tile-roof houses, picket fences, and parked cars. Look for the three covered front porches on the quieter side street.
 - **Harbor Viaduct and Coast Ridge Road.** Follow the green ramp signs in the southern half of the city. The viaduct runs east–west above the street. Coast Ridge Road bends through the greenway and crosses above the viaduct’s eastern ramp.
 - **Barber and beaches.** The barber is on the palm-lined avenue east of downtown. Take the boardwalk steps down to the umbrellas at Pier Beach, or follow the shore south to the benches and rocks at Lighthouse Cove.
-- **South Shore Harbor.** Stay on the boardwalk south of Lighthouse Cove to reach three timber docks, four moored boats and a stone breakwater. Look for the anchor on the minimap when you get close.
+- **South Shore Harbor.** The small private marina sits on the boardwalk south of Lighthouse Cove. It has three timber docks, four moored boats and a stone breakwater. Look for the anchor on the minimap when you get close.
+- **Port of Asphalt.** Take either signed gate south from the warehouse district. Follow the marked truck lanes to the container yards, rail loading sidings and quay, where four cranes move cargo beside two berthed ships. Look for the container symbol on the minimap.
 
 ## Driving, buildings, and assets
 

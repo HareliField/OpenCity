@@ -157,7 +157,7 @@ holdBtn($('bFire'),()=>inp.fire=true,()=>inp.fire=false);holdBtn($('bSprint'),()
 $('wep').addEventListener('click',()=>{if(state==='play')cycleWeapon();});
 /* ================= minimap ================= */
 const mm=$('mm'),mg=mm.getContext('2d'),MMB=document.createElement('canvas'),MAP_SCALE=800/(S+70);
-MMB.width=Math.ceil((W+150+HALF)*MAP_SCALE);MMB.height=800;
+MMB.width=Math.ceil((W+150+HALF)*MAP_SCALE);MMB.height=Math.ceil((FREIGHT.z1+88)*MAP_SCALE);
 function buildMinimapBase(){const g=MMB.getContext('2d'),k=MAP_SCALE;g.fillStyle='#6a707a';g.fillRect(0,0,MMB.width,MMB.height);g.fillStyle='#cdb68a';g.fillRect((W+HALF+HALF)*k,0,56*k,MMB.height);g.fillStyle='#1d5866';g.fillRect((W+62+HALF)*k,0,MMB.width,MMB.height);
  const DC={oldtown:'#3a2f2c',midtown:'#2d3038',downtown:'#262a33',docks:'#30302a',suburb:'#2e3a2c',beach:'#3a3036'};
  for(const B of blocks){
@@ -176,6 +176,7 @@ function buildMinimapBase(){const g=MMB.getContext('2d'),k=MAP_SCALE;g.fillStyle
  }
  g.fillStyle='#b99670';g.fillRect((W+37+HALF)*k,(W*.42-4+HALF)*k,113*k,8*k);
  drawGradeRoads(g,k);
+ drawFreightMap(g,k);
  drawHarborMap(g,k);
 }
 const MICON={store:['$','#ffd040'],bank:['B','#ffd040'],gunshop:['G','#ff8a30'],hospital:['H','#ff4060'],police:['P','#4a8aff'],chop:['C','#40ff80'],spray:['R','#40a8ff']};
@@ -205,6 +206,14 @@ function drawMap(){const Wd=300,k=Wd/240,pp=player.car?player.car.pos:player.pos
   dot(hx,hz,'#abe1df',10,128);
   mg.font='bold 15px Arial,sans-serif';mg.fillStyle='#193335';mg.fillText('⚓︎',x,y+1);
  }
+ const gx=FREIGHT.gates[1].x,gz=FREIGHT.z0+10;
+ if(Math.hypot(gx-px,gz-pz)<240){
+  const [x,y]=Tm(gx,gz,128);
+  dot(gx,gz,'#e6c57e',10,128);
+  mg.fillStyle='#263133';mg.fillRect(x-5.5,y-3.5,11,7);
+  mg.fillStyle='#e6c57e';
+  for(const d of [-2.6,0,2.6])mg.fillRect(x+d-.38,y-2.35,.76,4.7);
+ }
  mg.restore();mg.save();mg.translate(150,150);mg.rotate(yaw-(player.car?player.car.h:player.yaw));mg.fillStyle='#fff';mg.strokeStyle='#000';mg.lineWidth=3;mg.beginPath();mg.moveTo(0,-15);mg.lineTo(10,11);mg.lineTo(0,5);mg.lineTo(-10,11);mg.closePath();mg.stroke();mg.fill();mg.restore();}
 /* ================= HUD ================= */
 let hudCache={};const starEls=[...$('stars').children];
@@ -232,6 +241,7 @@ function cameraClearance(ax,ay,az,bx,by,bz){
  const hit=rayWorld(ax,az,bx,bz,ay,by,.18);return hit<1?Math.max(.04,hit-.015):1;
 }
 function step(dt){time+=dt;WATERT.value=time;
+ updateFreightCranes(time,player.pos.x,player.pos.z);
  refreshPhysicalWorld(player.pos.x,player.pos.z);
  const kx=(keys.ArrowRight?1:0)-(keys.ArrowLeft?1:0),ky=(keys.ArrowUp?1:0)-(keys.ArrowDown?1:0);const play=state==='play'&&!shopOpen;
  const jx=play?clamp(inp.jx+kx,-1,1):0,jy=play?clamp(inp.jy+ky,-1,1):0,fire=play&&(inp.fire||keys.Space),sprint=play&&(inp.sprint||keys.KeyX);
@@ -405,8 +415,8 @@ async function boot(){resize();state='loading';setLoad('Loading city…',0);
  refreshPhysicalWorld(player.pos.x,player.pos.z);updProps(.5,player.pos.x,player.pos.z);camera.position.set(302,52,390);camera.lookAt(262,4,312);renderFrame(0);
  $('play').disabled=false;setLoad('Ready',1);}
 async function buildCityRest(){SEED=4242;initAwnings();initSigns();initStreetMaterials();initInteriors();
- const asph=new THREE.Mesh(new THREE.PlaneGeometry(S+40,S+40),MAT.asphalt);asph.rotation.x=-Math.PI/2;asph.position.set(W/2,0,W/2);asph.receiveShadow=true;scene.add(asph);
- {const uv=asph.geometry.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,uv.getX(i)*(S+40)/7,uv.getY(i)*(S+40)/7);for(const t of[MAT.asphalt.map,MAT.asphalt.normalMap,MAT.asphalt.roughnessMap])t.repeat.set(1,1);}
+ const asph=new THREE.Mesh(new THREE.PlaneGeometry(S+40,S+20),MAT.asphalt);asph.rotation.x=-Math.PI/2;asph.position.set(W/2,0,W/2-10);asph.receiveShadow=true;scene.add(asph);
+ {const uv=asph.geometry.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,uv.getX(i)*(S+40)/7,(uv.getY(i)*(S+20)+20)/7);for(const t of[MAT.asphalt.map,MAT.asphalt.normalMap,MAT.asphalt.roughnessMap])t.repeat.set(1,1);}
  for(let i=0;i<N;i++){
   for(let j=0;j<N;j++){const x0=i*CELL+HALF,x1=(i+1)*CELL-HALF,z0=j*CELL+HALF,z1=(j+1)*CELL-HALF;const B={i,j,x0,x1,z0,z1,bld:[],park:false,dist:districtOf(i,j)};blocks.push(B);
   {const g=new THREE.PlaneGeometry(x1-x0,z1-z0);const uv=g.attributes.uv;for(let k=0;k<uv.count;k++)uv.setXY(k,uv.getX(k)*(x1-x0)/3.2,uv.getY(k)*(z1-z0)/3.2);g.rotateX(-Math.PI/2);g.translate((x0+x1)/2,.15,(z0+z1)/2);addGeo(MAT.sidewalk,g,false);}
@@ -419,7 +429,7 @@ async function buildCityRest(){SEED=4242;initAwnings();initSigns();initStreetMat
    await new Promise(resolve=>setTimeout(resolve,0));
   }
  }
- beach();skyline();roadMarkings();buildGradeRoads();finishStreetDetails();flushBuckets();for(const m of scene.children)if(m.isMesh&&m.material===ATLAS.neon)m.renderOrder=2;plantTrees();buildTrafficLights();initializeDoorMeshes();}
+ beach();skyline();buildFreightTerminal();roadMarkings();buildGradeRoads();finishStreetDetails();flushBuckets();for(const m of scene.children)if(m.isMesh&&m.material===ATLAS.neon)m.renderOrder=2;plantTrees();buildTrafficLights();initializeDoorMeshes();}
 $('play').addEventListener('click',()=>{$('start').style.display='none';$('ui').hidden=false;$('touchViews').hidden=false;if(state==='title'){clock.getDelta();state='play';}});
 window.__game={step,ff(n){for(let i=0;i<n;i++){step(1/30);}renderFrame(time);},scene,renderer,camera,sun,PH,get player(){return player},cars,peds,cops,gang,helis,places,PROPS,get heat(){return heat},set heat(v){heat=v},get wanted(){return wanted},get state(){return state},keys,inp,toggleCar,startRob,TPL,QUALITY};
 loop();boot().catch(e=>{console.error(e);setLoad('Error: '+e.message);});
