@@ -197,7 +197,10 @@ class CityPoliceDepartment {
     const match=profile&&c.evidence.some(e=>(!c.linkedExhibit||e.exhibit===c.linkedExhibit)&&
      (e.type==='Print'&&e.value===profile.fingerprintId||e.type==='DNA'&&e.source!=='Injured person'&&e.value===profile.dnaId));
     const statement=c.evidence.some(e=>e.type==='Statement');
-    this.logCase(c,analyst.name,match?'Contact trace matched the comparison record.':'Evidence review complete. No corroborating contact trace.');
+    let finding='Evidence review complete. No corroborating contact trace.';
+    if(match)finding='Contact trace matched the comparison record.';
+    else if(c.origin==='street'&&!c.contact)finding='Exhibits retained. No witness identified a shooter for comparison.';
+    this.logCase(c,analyst.name,finding);
     c.suspect=c.contact&&statement&&(match||c.plate)?c.contact:null;
     c.stage=c.suspect?(c.kind==='Homicide'?'Command queue':'Identified'):'Open leads';
     c.due=this.clock;

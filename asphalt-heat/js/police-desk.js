@@ -20,7 +20,8 @@ function renderPoliceDesk(){
     return '+'+Math.floor(seconds/60)+'m '+String(seconds%60).padStart(2,'0')+'s · '+event.from+(event.to?' → '+event.to:'')+' — '+event.message;
    });
    if(c===streetIncidents.current?.file)liveRow=rows.length;
-   rows.push(['File '+String(c.id).padStart(4,'0')+' · '+(c.title||c.kind),(c.kind==='Homicide'&&['Wanted','Booked'].includes(c.stage)?'Solved · ':'')+c.stage+' · '+(investigator?.name||'Awaiting assignment'),
+   const title=c.origin==='street'?c.kind+' · '+streetAddress(c.at):c.title||c.kind;
+   rows.push(['File '+String(c.id).padStart(4,'0')+' · '+title,(c.kind==='Homicide'&&['Wanted','Booked'].includes(c.stage)?'Solved · ':'')+c.stage+' · '+(investigator?.name||'Awaiting assignment'),
     c.victimName?'Victim · '+c.victimName:'',history.join('\n'),c.evidence.map(e=>e.type+' · '+e.source+' · '+e.value).join('\n')||'No evidence filed']);
   }
   if(!rows.length)rows.push(['No cases filed','']);

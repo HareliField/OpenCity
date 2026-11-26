@@ -53,7 +53,7 @@ function streetResidentName(p){return p.residentName||'Resident '+p.personId.rep
 function freeWalker(p){return !p.dead&&!p.cross&&(p.mode==='walk'||p.mode==='stand');}
 function streetAddress(pos){
  const b=blockOf(pos.x,pos.z)||blocks[clamp(Math.floor(pos.x/CELL),0,N-1)*N+clamp(Math.floor(pos.z/CELL),0,N-1)];
- const district={oldtown:'Old Town',midtown:'Midtown',beach:'Coast Ridge',suburb:'Eastside',ware:'Warehouse district'}[b?.dist]||'City';
+ const district={oldtown:'Old Town',midtown:'Midtown',downtown:'Downtown',docks:'Docks',beach:'Coast Ridge',suburb:'Eastside'}[b?.dist]||'City';
  return district+' · block '+(b.i+1)+' / '+(b.j+1);
 }
 function streetWitnesses(a){

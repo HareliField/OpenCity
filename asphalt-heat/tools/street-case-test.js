@@ -6,14 +6,14 @@ const path=require('node:path');
 const THREE=require('../lib/three.min.js');
 const source=id=>fs.readFileSync(path.join(__dirname,'../js',id+'.js'),'utf8');
 
-function scenario({recognized=true,gloves=false,interrupt=false,cancelCall=false}={}){
- const ctx=vm.createContext({THREE,V3:THREE.Vector3,unitBox:new THREE.BoxGeometry(),window:{},assert});
+function scenario({recognized=true,gloves=false,interrupt=false,cancelCall=false,district='oldtown'}={}){
+ const ctx=vm.createContext({THREE,V3:THREE.Vector3,unitBox:new THREE.BoxGeometry(),window:{},assert,district});
  const run=s=>vm.runInContext(s,ctx);
  run(source('department'));
  run(`const fieldInvestigators=new Map(),scene=new THREE.Scene(),wanted=0,player={pos:new V3(11,0,10)};
   let time=0;
   const dist2=(a,b)=>Math.hypot(b.x-a.x,b.z-a.z),los=()=>true,collideWorld=()=>{},groundY=()=>0;
-  const blockOf=()=>({i:2,j:2,dist:'oldtown'}),stopCaseCamera=()=>{};
+  const blockOf=()=>({i:2,j:2,dist:district}),stopCaseCamera=()=>{};
   const tracer=()=>{},emit=()=>{},noise=()=>{},distVol=()=>0,makeGun=()=>new THREE.Group();
   const attachPed=p=>{p.mode='walk';},killPed=p=>{p.dead=true;p.mode='down';};
   const people=['carrier','stranger','caller'];
@@ -44,15 +44,19 @@ function scenario({recognized=true,gloves=false,interrupt=false,cancelCall=false
  `);
  return {file:run('PoliceDepartment.cases[0]'),delay:run('reportedAt-dialAt'),scene:run('streetIncidents.current')};
 }
-const solved=scenario();
+const solved=scenario({district:'downtown'});
 assert.equal(solved.file.origin,'street');
 assert.equal(solved.file.exercise,false);
 assert.equal(solved.file.stage,'Wanted');
+assert.equal(solved.file.title,'Homicide · Downtown · block 3 / 3');
 assert.equal(solved.file.suspect,'stranger');
 assert.equal(solved.file.caller.id,'caller');
 assert(solved.delay>=3.59);
 assert(solved.file.custody.every(exhibit=>exhibit.history.length===4));
-assert.equal(scenario({recognized:false}).file.stage,'Open leads');
+const unresolved=scenario({recognized:false,district:'docks'}).file;
+assert.equal(unresolved.stage,'Open leads');
+assert.equal(unresolved.title,'Homicide · Docks · block 3 / 3');
+assert(unresolved.timeline.some(entry=>entry.message.includes('No witness identified a shooter')));
 assert.equal(scenario({gloves:true}).file.stage,'Open leads');
 assert.equal(scenario({cancelCall:true}).file.stage,'Unreported');
 const interrupted=scenario({interrupt:true});
