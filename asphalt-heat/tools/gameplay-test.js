@@ -16,6 +16,7 @@ run(`const CANNON=window.CANNON, CV=CANNON.Vec3, V3=THREE.Vector3, PHYS_GROUP={w
 `);
 run(read('js/access.js'));
 run(read('js/roads.js'));
+if(fs.existsSync(path.join(__dirname,'../js/street-plan.js')))run(read('js/street-plan.js'));
 run(read('js/freight.js'));
 run(read('js/game.js'));
 run(read('js/dispatch.js'));
@@ -71,5 +72,13 @@ run(`
  for(const x of [448,832]){
   const row=route.getSpacedPoints(1500).reduce((best,p)=>Math.abs(p.x-x)<Math.abs(best.x-x)?p:best);
   assert(row.y-.46>4.5,'cross street must have vehicle clearance');
+ }
+ for(const [index,axis,crossings] of [[0,'x',[384,896]],[1,'z',[576,768]]]){
+  const curve=new THREE.CatmullRomCurve3(GRADE_PROFILES[index].points.map(p=>new V3(...p)));
+  const samples=curve.getSpacedPoints(1500);
+  for(const crossing of crossings){
+   const carriageway=samples.filter(p=>Math.abs(p[axis]-crossing)<=7.5);
+   assert(carriageway.every(p=>p.y<.19),'at-grade crossings must clear the sides of the ramp');
+  }
  }`);
 console.log('Gameplay regressions passed.');

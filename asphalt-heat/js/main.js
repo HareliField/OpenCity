@@ -256,6 +256,7 @@ function step(dt){time+=dt;WATERT.value=time;
    else if(c.wreckT<15&&Math.random()<dt*10)emit(c.pos.x,c.pos.y+1.4,c.pos.z,rnd(-.3,.3),rnd(1.5,3),rnd(-.3,.3),2.5,1,4,0x3a3634,false);if(c.phys)physCarControl(c,0,0,true,dt);continue;}
   if(c.hp<c.max*.4&&Math.random()<dt*13){const fx=Math.sin(c.h),fz=Math.cos(c.h);emit(c.pos.x+fx*c.spec.L*.36,c.pos.y+c.spec.hb+.1,c.pos.z+fz*c.spec.L*.36,rnd(-.3,.3),rnd(1,2.5),rnd(-.3,.3),1.6,.6,2.5,c.hp<c.max*.2?0x333030:0x9a9a9a,false);}
   if(c===player.car){drive(c,jy,-jx,sprint,dt);}
+  else if(inFreightPort(c.pos.x,c.pos.z)&&(c.driver==='ai'||c.driver==='police'&&(!wanted||!c.dispatched)))driveToFreightExit(c,dt);
   else if(c.driver==='ai')aiTraffic(c,dt);
   else if(c.driver==='police'){if(wanted>0){c.siren=c.dispatched&&wanted>=3&&LAW.seen;aiPolice(c,dt);}else{c.siren=false;c.route=null;c.dispatched=false;aiTraffic(c,dt);}}
   else if(c.phys)physCarControl(c,0,0,true,dt);

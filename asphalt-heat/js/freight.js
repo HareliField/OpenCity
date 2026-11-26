@@ -73,6 +73,21 @@ function freightWaypoint(from,to){
  return best||to;
 }
 
+function patrolWaypoint(c,target){
+ if(!c.portAim||time>=c.portAimUntil||dist2(c.pos,c.portAim)<4){
+  c.portAim=freightWaypoint(c.pos,target);
+  c.portAimUntil=time+.65;
+ }
+ return c.portAim;
+}
+function driveToFreightExit(c,dt){
+ const next=patrolWaypoint(c,freightGateNode(c.pos.x));
+ const diff=wrapA(Math.atan2(next.x-c.pos.x,next.z-c.pos.z)-c.h);
+ const target=blockedAhead(c)?0:Math.abs(diff)>.65?5:10;
+ drive(c,clamp((target-c.speed)*.4,-1,1),clamp(diff*2,-1,1),!target,dt);
+ c.ai=null;c.siren=false;c.route=null;c.dispatched=false;
+}
+
 function freightSolid(x0,x1,z0,z1,h,y0=0){
  const r={x0,x1,z0,z1,h,y0};
  FREIGHT.solids.push(r);

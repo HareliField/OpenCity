@@ -4,11 +4,11 @@ const GRADE_PROFILES=[
  {name:'Harbor Viaduct',width:8.5,points:[
   [383,.035,704],[401,.10,704],[430,3.55,702.9],[454,5.6,702.25],[490,6.65,701.98],
   [532,7.0,703.4],[594,8.45,705.58],[662,8.75,705.65],[720,8.35,704.0],
-  [762,6.78,702.37],[812,6.2,701.78],[847,4.2,702.94],[874,.8,704],[895,.08,704],[921,.043,704]
+  [762,6.78,702.37],[812,6.2,701.78],[845,3.92,702.94],[862,.62,703.8],[868,.09,704],[875,.04,704],[895,.04,704],[921,.043,704]
  ]},
  {name:'Coast Ridge Road',width:7.7,points:[
   [832,.039,561],[832,.055,594],[839,.53,615],[850,1.57,641],[873,3.3,667],
-  [880,4.83,696],[874,4.12,727],[886,1.96,750],[896,.09,773],[896,.042,795]
+  [880,4.83,696],[874,4.12,727],[886,1.58,744],[893,.22,755],[895,.05,760],[896,.04,773],[896,.042,795]
  ]}
 ];
 
@@ -35,6 +35,7 @@ function buildGradeRoads(){
   const route={name:data.name,curve,width:data.width,sections:[]};
   GRADE_ROADS.routes.push(route);
   const pieces=Math.ceil(curve.getLength()/3.7),points=curve.getSpacedPoints(pieces);
+  for(const p of points)p.y=Math.max(.025,p.y);
   const rows=points.map((p,i)=>{
    const f=points[Math.min(pieces,i+1)].clone().sub(points[Math.max(0,i-1)]).normalize();
    const side=new V3(f.z,0,-f.x).normalize();
@@ -49,7 +50,7 @@ function buildGradeRoads(){
    const middle=a.clone().lerp(b,.5);
    const q=new THREE.Quaternion().setFromRotationMatrix(new THREE.Matrix4().makeBasis(side,up,forward));
    const half=data.width/2;
-   const hasRails=i>4&&i<pieces-4;
+   const hasRails=middle.y>.55;
    const section={a,b,side,up,half,dx:b.x-a.x,dz:b.z-a.z,hasRails};
    route.sections.push(section);
    addGradeSection(section);

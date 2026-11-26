@@ -358,13 +358,6 @@ function followGradeRoad(c,dt){
  drive(c,clamp(((stop?0:9)-c.speed)*.42,-1,1),clamp(diff*2,-1,1),stop&&Math.abs(c.speed)<.7,dt);
 }
 function aiTraffic(c,dt){
- if(inFreightPort(c.pos.x,c.pos.z)){
-  const next=patrolWaypoint(c,freightGateNode(c.pos.x));
-  const diff=wrapA(Math.atan2(next.x-c.pos.x,next.z-c.pos.z)-c.h);
-  const target=blockedAhead(c)?0:Math.abs(diff)>.65?5:10;
-  drive(c,clamp((target-c.speed)*.4,-1,1),clamp(diff*2,-1,1),!target,dt);
-  c.ai=null;return;
- }
  if(!c.ai){const a=nearestNode(c.pos);c.ai={a,b:pick(neighbors(a))};}
  if(c.ai.grade){followGradeRoad(c,dt);return;}
  const A=c.ai.a,B=c.ai.b,dx=Math.sign(B[0]-A[0]),dz=Math.sign(B[1]-A[1]),rx=-dz,rz=dx;const tx=B[0]*CELL+rx*LANE,tz=B[1]*CELL+rz*LANE,along=(tx-c.pos.x)*dx+(tz-c.pos.z)*dz;
@@ -381,13 +374,6 @@ function aiTraffic(c,dt){
  if(blockedAhead(c)){c.wait+=dt;target=0;}else c.wait=0;
  if(c.phys&&c.upY<.4){c.flipT=(c.flipT||0)+dt;if(c.flipT>3&&c.driver==='ai'){const at=carDoorSpot(c);if(at){c.driver=null;ejectPed(at.x,at.z,c.pos.x,c.pos.z,at.y);}}}
  const thr=clamp((target-c.speed)*.35,-1,1);drive(c,target<.5&&c.speed<.85?0:thr,clamp(diff*2.2,-1,1),target<.5&&c.speed<.85,dt);}
-function patrolWaypoint(c,target){
- if(!c.portAim||time>=c.portAimUntil||dist2(c.pos,c.portAim)<4){
-  c.portAim=freightWaypoint(c.pos,target);
-  c.portAimUntil=time+.65;
- }
- return c.portAim;
-}
 function aiPolice(c,dt){
  if(!c.dispatched){c.siren=false;aiTraffic(c,dt);return;}
  const playerTarget=player.car?player.car.pos:player.pos,L=wanted;
