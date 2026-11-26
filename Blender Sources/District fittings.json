@@ -1,0 +1,111 @@
+[
+  {
+    "id": "galvanized-roof-vent",
+    "sourceImages": [
+      24,
+      38,
+      59,
+      83,
+      104
+    ],
+    "description": "Riveted square upstand, pitch pocket and four-sided gravity exhaust hood.",
+    "parts": 29,
+    "movableParts": [],
+    "runtimeBytes": 166608
+  },
+  {
+    "id": "factory-skylight",
+    "sourceImages": [
+      38,
+      59,
+      103
+    ],
+    "description": "Ribbed prism glass, inclined glazing and a double-seamed galvanised roof curb.",
+    "parts": 33,
+    "movableParts": [],
+    "runtimeBytes": 89208
+  },
+  {
+    "id": "cargo-pallet",
+    "sourceImages": [
+      38,
+      59,
+      109
+    ],
+    "description": "Euro-size stringer pallet, bearing blocks, deck boards and inset nail heads.",
+    "parts": 50,
+    "movableParts": [],
+    "runtimeBytes": 341356
+  },
+  {
+    "id": "quay-drum",
+    "sourceImages": [
+      38,
+      109
+    ],
+    "description": "Ribbed closed-head galvanised steel drum with rolled chimes and threaded plugs.",
+    "parts": 8,
+    "movableParts": [],
+    "runtimeBytes": 112528
+  },
+  {
+    "id": "hardware-stock-rack",
+    "sourceImages": [
+      38,
+      66,
+      96,
+      109
+    ],
+    "description": "Warehouse shelf bays with paint pails, cartons, folded-steel brackets and conduit.",
+    "parts": 120,
+    "movableParts": [],
+    "runtimeBytes": 462088
+  },
+  {
+    "id": "linen-salon-chair",
+    "sourceImages": [
+      23,
+      49
+    ],
+    "description": "Curved oatmeal upholstery, rolled seams and four tapered walnut legs.",
+    "parts": 9,
+    "movableParts": [],
+    "runtimeBytes": 238680
+  },
+  {
+    "id": "strelitzia-planter",
+    "sourceImages": [
+      25,
+      29,
+      101
+    ],
+    "description": "Bird of paradise with broad split leaves, two flowering spathes and a glazed planter.",
+    "parts": 53,
+    "movableParts": [],
+    "runtimeBytes": 112420
+  },
+  {
+    "id": "coat-rail",
+    "sourceImages": [
+      89,
+      107
+    ],
+    "description": "Steel sales rail with wooden hangers, lined wool and suede jackets, and folded stock.",
+    "parts": 163,
+    "movableParts": [],
+    "runtimeBytes": 994756
+  },
+  {
+    "id": "harbor-box-truck",
+    "sourceImages": [
+      38,
+      59
+    ],
+    "description": "Riveted dry-freight box, rolled rear door, separately glazed cab and independently spinning commercial wheels.",
+    "parts": 346,
+    "movableParts": [
+      "WheelPrototype"
+    ],
+    "runtimeBytes": 1125072
+  }
+]

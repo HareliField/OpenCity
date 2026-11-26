@@ -23,8 +23,7 @@ function initStreetMaterials(){
  m.shopStone=pbr('stone_light',.95,{color:0xb6aea1,rough:.84,ns:.28});
  m.wornSlab=pbr('concrete',2.1,{rough:.83,color:0x938a7d});
  m.passage=pbr('brick_red',2.4,{color:0x8e6a60,rough:.87,ns:1.35});
- m.coastSand=pbr('sand',2.8,{color:0xbaa480,rough:1,ns:1.4});
- m.sandMarks=makeSandMarks();
+ m.coastSand=beachMaterial();
  m.leaves=[0x54502d,0x9e6336,0x61452e,0xa37c45].map(color=>
   new THREE.MeshStandardMaterial({color:lin(color),roughness:1,side:THREE.DoubleSide}));
  m.shopLight=new THREE.MeshBasicMaterial({
@@ -69,29 +68,7 @@ function makeBarberPole(){
  return new THREE.MeshStandardMaterial({map:texture,emissiveMap:texture,emissive:new THREE.Color(.47,.43,.41),roughness:.4});
 }
 
-function makeSandMarks(){
- const [canvas,ctx]=cvs(256,256);
- for(let i=0;i<42;i++){
-  const xx=(i*67.57)%256,yy=(i*43.21)%256;
-  ctx.fillStyle=i%2?'rgba(61,42,25,.55)':'rgba(106,78,51,.46)';
-  ctx.beginPath();
-  ctx.ellipse(xx,yy,1+i%6,.8+i%4, i,0,Math.PI*2);
-  ctx.fill();
- }
- for(const [x,y,a] of [[130,65,.3],[104,119,.16],[142,179,-.1],[112,229,.28]]){
-  ctx.save();
-  ctx.translate(x,y);
-  ctx.rotate(a);
-  ctx.fillStyle='rgba(64,44,28,.26)';
-  ctx.beginPath();
-  ctx.ellipse(0,0,7,17,.13,0,Math.PI*2);
-  ctx.fill();
-  ctx.fillStyle='rgba(209,176,132,.27)';
-  ctx.fillRect(-4,12,8,2);
-  ctx.restore();
- }
- return new THREE.MeshStandardMaterial({map:ctex(canvas),transparent:true,depthWrite:false,roughness:1,polygonOffset:true,polygonOffsetFactor:-1});
-}
+
 
 function facadePlane(mat,M,x0,x1,y0,y1,z){
  const g=new THREE.PlaneGeometry(x1-x0,y1-y0);
@@ -175,6 +152,8 @@ function buildShopRow(block,side,shops,coastal=false){
 
 function buildAuthoredBlock(block){
  const key=block.i+','+block.j;
+ if(block.i===HARBOR_SUPPLY.i&&block.j===HARBOR_SUPPLY.j){buildHarborSupply(block);return true;}
+ if(block.i===15&&(block.j===13||block.j===15)){buildDockWorkshops(block);return true;}
  if(key==='4,6'){
   const M=sideFrame(block,'N');
   shopFacade(block,RETAIL.laundry,M,-19.80,-6.14,12.42,false);

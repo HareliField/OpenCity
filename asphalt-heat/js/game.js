@@ -12,7 +12,7 @@ function groundY(x,z,referenceY=null){
   const grade=sampleGrade(x,z,referenceY);
   if(grade)y=Math.max(y,grade.height);
  }
- return worksFloorAt(x,z,referenceY,y);
+ return coveFloorAt(x,z,referenceY,worksFloorAt(x,z,referenceY,y));
 }
 function pushOut(p,r,R){
  if(R.radius){
@@ -58,6 +58,7 @@ function collideWorld(p,r,motion=null){
    }
   }
  }
+ const coast=collideCove(p,r,y);if(coast)hit=coast;
  const grade=collideGradeRails(p,r,y);
  if(grade)hit=grade;
  const door=collideDoors(p,r);
@@ -91,7 +92,7 @@ function rayWorld(ax,az,bx,bz,ay=groundY(ax,az)+1.48,by=groundY(bx,bz)+1.48,pad=
  const minX=Math.min(ax,bx)-pad,maxX=Math.max(ax,bx)+pad,minZ=Math.min(az,bz)-pad,maxZ=Math.max(az,bz)+pad;
  const start=new V3(ax,ay,az),delta=new V3(bx-ax,by-ay,bz-az);
  const first=cellKey(Math.min(ax,bx)-pad,Math.min(az,bz)-pad),last=cellKey(Math.max(ax,bx)+pad,Math.max(az,bz)+pad);
- let best=1;
+ let best=traceCove(start,delta,pad,glass);
  function oriented(center,rotation,w,h,d){
   const inv=rotation.clone().invert(),half=new V3(w/2,h/2,d/2);
   return traceBox(start.clone().sub(center).applyQuaternion(inv),delta.clone().applyQuaternion(inv),half.clone().negate(),half,pad);
@@ -150,6 +151,7 @@ function refreshPhysicalWorld(x,z){
  }
  for(const r of required){
   if(STREETS_PHYS.bodies.has(r))continue;
+  if(r.cove){STREETS_PHYS.bodies.set(r,coveBody());continue;}
   if(r.faces){STREETS_PHYS.bodies.set(r,terrainBody(r));continue;}
   const top=Math.min(r.h||12,157),base=r.y0||0;
   if(top<=base||r.x1<=r.x0||r.z1<=r.z0)continue;

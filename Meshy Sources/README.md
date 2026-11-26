@@ -1,14 +1,14 @@
 # Asphalt Heat Meshy assets
 
-This folder preserves the input image, original Meshy output, and four-angle runtime review for each of the 35 assets used in the game. The manifest records the generation settings and the checksum of every original.
+This folder preserves the input image, original Meshy output, and four-angle runtime review for each of the 40 assets used in the game. The manifest records the generation settings and the checksum of every original.
 
 All jobs used image-to-3D with Meshy 7.1, Ultra 4K geometry, Meshy 7 texturing, 4K base color, PBR maps, and triangle remeshing. Generated GLBs keep the original texture sizes. Browser GLBs use base-color maps up to 2048 pixels and normal and material maps up to 1024 pixels.
 
 ## Natural Photos generation
 
-Seventeen single-object cutouts from the new reference set used 595 credits. Each completed job cost 35 credits against the build ceiling of 2,800. The manifest records each source image, the outline in its 800 × 450 inspection view, task ID, receipt, and SHA-256 hashes of the cutout, original and shipped GLB. The new runtime assets use base color up to 1536 pixels and normal and material maps up to 512 pixels. [Meshy pricing](https://docs.meshy.ai/en/api/pricing)
+Twenty-two single-object cutouts from the new reference set used 770 credits. Each completed job cost 35 credits against the build ceiling of 2,800. The manifest records each source image, the outline in its 800 × 450 inspection view, task ID, receipt, and SHA-256 hashes of the cutout, original and shipped GLB. The new runtime assets use base color up to 1536 pixels and normal and material maps up to 512 pixels. [Meshy pricing](https://docs.meshy.ai/en/api/pricing)
 
-The original saloon body now has independent hubcaps, working lights and clearance around each suspension wheel. The tank, lamp, post box, enamel shade, plant, fruit crate and rescue cabin use repaired geometry. The hydrant had detached triangles removed. The unmodified 4K generations are in **Original GLBs**.
+The silver sedan, maroon saloon, red crossover and white Harbor Supply truck have independent hubcaps, working lights and clearance around each suspension wheel. The tank, lamp, post box, enamel shade, plant, fruit crate and rescue cabin use repaired geometry. The hydrant had detached triangles removed. The truck and coat rail were rebuilt in Blender after four-angle inspection found disconnected or fused geometry in their generations. The unmodified 4K generations are in **Original GLBs**.
 
 The new daylight sky and lighting environment use the CC0 Kloofendal 48d Partly Cloudy panorama. Sixteen rectangular window samples from the supplied photos contribute separate color, glazing and frame relief to the facades. Twelve additional photo samples finish framed prints, trade signs, cooler doors, shop joinery, baskets and folded clothing. [Poly Haven panorama](https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky)
 

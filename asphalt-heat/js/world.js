@@ -134,12 +134,11 @@ function facadeMat(name,meters,o={}){const m=pbr(name,meters,Object.assign({env:
 const MAT={};
 function initMaterials(){
  loadFacadePhotos();
- MAT.asphalt=makeWet(pbr('asphalt',7,{rough:1,rmap:1,ns:1.2,env:.7}),{tint:1,road:true,wet:DAYLIGHT?.93:1});
+ MAT.asphalt=makeWet(pbr('street-asphalt',1,{rough:1,rmap:1,ns:.86,env:.7}),{tint:1,road:true,wet:DAYLIGHT?.93:1});
  MAT.sidewalk=makeWet(pbr('sidewalk',3.2,{rough:.95,env:.76,rmap:1}),{wet:DAYLIGHT?.48:.83});
  MAT.plaza=makeWet(pbr('plaza',3,{rough:.8,env:.6}),{wet:.6});
  MAT.curb=pbr('concrete',2,{color:0xb8b3aa,rough:.85});
  MAT.sand=pbr('sand',4,{rough:1,env:.3});MAT.grass=pbr('grass',4,{rough:1,env:.25});
- MAT.wetsand=makeWet(pbr('sand',4,{rough:.7,env:.6,color:0x9a8670}),{wet:.9});
  MAT.planks=pbr('planks',3,{rough:.85});MAT.roof=pbr('roof_gravel',4,{rough:1,env:.3});MAT.roofClay=pbr('roof_clay',2.2,{rough:.85});
  MAT.trim=pbr('concrete',2.5,{color:0xd6d0c4,rough:.8});MAT.stone=pbr('stone_light',3,{rough:.82,ns:.44,color:0xd8c9b4});MAT.column=pbr('stone_light',3.4,{rough:.84,ns:.22,color:0xc3b6a3});MAT.darkMetal=new THREE.MeshStandardMaterial({color:lin(0x26282b),roughness:.45,metalness:.8});
  MAT.metal=new THREE.MeshStandardMaterial({color:lin(0x9aa0a6),roughness:.35,metalness:.85});MAT.whiteMetal=new THREE.MeshStandardMaterial({color:lin(0xe8e8e6),roughness:.4,metalness:.3});
@@ -473,7 +472,7 @@ function parkCornerPaths(block,x,z,half){
  addGeo(MAT.stone,ring,false);
 }
 /* ---- street furniture placement ---- */
-function streetProps(B){const{x0,x1,z0,z1}=B;const dist=districtOf(B.i,B.j);
+function streetProps(B){const{x0,x1,z0,z1}=B;const dist=B.i===15&&B.j>=13?'docks':districtOf(B.i,B.j);
  for(const[sx,sz]of[[-1,-1],[1,-1],[1,1],[-1,1]])LAMPS.push({x:sx<0?x0+10.4:x1-10.4,z:sz<0?z0+.76:z1-.76,ry:Math.atan2(-sx,-sz)});
  for(const e of[0,1,2,3]){const len=48;for(let t=16;t<len-12;t+=16){const p=e===0?[x0+t,z0+.6,Math.PI]:e===1?[x1-.6,z0+t,Math.PI/2]:e===2?[x0+t,z1-.6,0]:[x0+.6,z0+t,-Math.PI/2];if(srnd()<.55)LAMPS.push({x:p[0],z:p[1],ry:p[2]+Math.PI,mid:1});}}
  const sideP=(e,t,o)=>e===0?[x0+t,z0+o]:e===1?[x1-o,z0+t]:e===2?[x0+t,z1-o]:[x0+o,z0+t];
@@ -481,8 +480,7 @@ function streetProps(B){const{x0,x1,z0,z1}=B;const dist=districtOf(B.i,B.j);
  for(let k=0;k<(dist==='suburb'?3:9);k++){const e=rint(0,3),t=srange(7,41),[px,pz]=sideP(e,t,srange(.5,.9));PROPSPOTS.push({type:spick(kinds),x:px,z:pz,ry:[Math.PI,Math.PI/2,0,-Math.PI/2][e]});}
  if(dist==='beach')for(let t=8;t<44;t+=11){PALMS.push([x1-1.3,z0+t,srange(.85,1.2)]);PALMS.push([x0+1.3,z0+t,srange(.85,1.2)]);}
  else if(dist!=='docks'&&dist!=='suburb')for(const e of[0,1,2,3])for(let t=9;t<44;t+=13)if(srnd()<.61){const[px,pz]=sideP(e,t,1.5);TREES.push([px,pz,srange(.83,1.17)]);}}
-function beach(){const x0=W+HALF;topQuad(STREET.materials.coastSand,x0,W+60,.02,-HALF-200,W+HALF+200,3.3,null,false);topQuad(STREET.materials.sandMarks,W+19,W+55,.023,-HALF,W+HALF,6.8,null,false);const wg=new THREE.PlaneGeometry(8,S+400);wg.rotateX(-Math.PI/2);wg.translate(W+60,.03,W/2);addGeo(MAT.wetsand,wg,false);
- const ocean=new THREE.Mesh(new THREE.PlaneGeometry(3000,3000,60,60),MAT.water);ocean.rotation.x=-Math.PI/2;ocean.position.set(W+62+1500,-.35,W/2);ocean.receiveShadow=false;scene.add(ocean);REFL.hide.push(ocean);
+function beach(){const x0=W+HALF;buildCoastalWater();
  /* boardwalk + pier */
  topQuad(MAT.planks,x0+.5,x0+6,.25,-HALF,W+HALF,3,null,false);
  STREET.steps.push({x0:x0+.5,x1:x0+6,z0:-HALF,z1:W+HALF,y:.25});
@@ -517,26 +515,15 @@ function beach(){const x0=W+HALF;topQuad(STREET.materials.coastSand,x0,W+60,.02,
   for(let x=W+40;x<=W+150;x+=2.5)plainBox(MAT.wood,x-.055,x+.055,1.6,2.62,z-.055,z+.055);
  }
  /* lifeguard towers, umbrellas */
- for(const z of[W*.18,W*.38,W*.68,W*.89]){const x=W+44;for(const[a,b]of[[-1,-1],[1,-1],[1,1],[-1,1]])plainBox(MAT.wood,x+a*1.2-.08,x+a*1.2+.08,0,2.2,z+b*1.2-.08,z+b*1.2+.08);plainBox(MAT.planks,x-1.6,x+1.6,2.2,2.35,z-1.6,z+1.6,{uvm:2});
-  facadeBox(MAT.fac.plaster,x-1.3,x+1.3,2.35,4.5,z-1.3,z+1.3,{style:4,fh:2.2,bay:2.6,tint:0xf2c94a,top:4.4});const g=new THREE.ConeGeometry(2.2,1,4);g.rotateY(Math.PI/4);g.translate(x,5,z);addGeo(new THREE.MeshStandardMaterial({color:lin(0xd8362a),roughness:.8}),g,true);
-  for(const a of [-1,1])for(const b of [-1,1])STATIC.push({x0:x+a*1.2-.08,x1:x+a*1.2+.08,z0:z+b*1.2-.08,z1:z+b*1.2+.08,h:2.2});
-  const platform={x0:x-1.6,x1:x+1.6,z0:z-1.6,z1:z+1.6,y:2.35};
-  STREET.steps.push({...platform,elevated:true});STATIC.push({...platform,y0:2.2,h:2.35});
-  STATIC.push({x0:x-1.3,x1:x+1.3,z0:z-1.3,z1:z+1.3,y0:2.35,h:4.5});
-  for(let i=0;i<12;i++){
-   const front=z+1.6+(11-i)*.33,y=.02+(i+1)*(2.33/12);
-   const tread={x0:x-.85,x1:x+.05,z0:front,z1:front+.33,y};
-   plainBox(MAT.planks,tread.x0,tread.x1,y-.09,y,tread.z0,tread.z1);STREET.steps.push(tread);
-  }}
  placeScenery('beach-parasol',W+44,.02,222,.44,[3.17,2.44,2.99]);
  STATIC.push({x0:W+43.94,x1:W+44.06,z0:221.94,z1:222.06,h:2.44,radius:.057});
  const umbrellaZ=W*.42+11.7;
  placeScenery('beach-parasol',W+42.2,.02,umbrellaZ,.18,[3.03,2.35,2.94]);
  STATIC.push({x0:W+42.15,x1:W+42.25,z0:umbrellaZ-.06,z1:umbrellaZ+.06,h:2.35,radius:.055});
  lighthouse();
- const UMB=[0xe8463a,0x2a8ad8,0xf2c200,0xffffff,0x2ab070];for(let k=0;k<26;k++){
-  const z=srange(0,W),x=srange(W+20,W+52),umbrella=spick(UMB),towel=spick([0xff7a7a,0x7ab8ff,0xffe07a,0x9affc0]);
-  if(z>=HARBOR.approach.z0-2&&z<=HARBOR.approach.z1+2)continue;
+ const UMB=[0xa54539,0x496888,0xbca363,0xdcd5c4,0x718676];for(let k=0;k<26;k++){
+  const z=srange(0,W),x=srange(W+20,W+52),umbrella=spick(UMB),towel=spick([0xb68579,0x8499ac,0xc5b386,0x93a89a]);
+  if(z>=HARBOR.approach.z0-2&&z<=HARBOR.approach.z1+2||Math.abs(z-COVE.z)<42)continue;
   beachUmbrella(x,z,umbrella);
   const tw=new THREE.PlaneGeometry(.9,1.9);tw.rotateX(-Math.PI/2);tw.translate(x+1.3,.04,z+.2);addGeo(new THREE.MeshStandardMaterial({color:lin(towel),roughness:1}),tw,false);}
  beachAreas(pz);
@@ -656,24 +643,4 @@ function plantTrees(){const o=new THREE.Object3D(),col=new THREE.Color();
  startForestSpecies(TREES,[treeTrunks,leaves],false);
  startForestSpecies(PALMS,[palmTrunks,palmLeaves],true);
  updateForestLOD(0,true);
-}
-function lighthouse(){
- const x=W+35,z=838.8,base={x0:x-3.45,x1:x+3.45,z0:z-4.25,z1:z+4.25};
- const B=blocks[cellKey(x,z)];
- buildAccessibleShell(B,base,{base:.15,ceiling:3.42,height:3.54,kind:'lobby',selected:['W'],wall:MAT.trim});
- const y=.152;
- topQuad(MAT.planks,x-5.1,x-3.43,y,z-1.6,z+1.6,2.3,null,false);
- for(let i=0;i<4;i++){
-  const top=3.42+i*3.36,r=3.05-i*.31;
-  cyl(i%2?MAT.column:MAT.stone,x,top,z,r-.30,r,3.36,24);
- }
- cyl(MAT.darkMetal,x,16.86,z,2.39,2.39,.21,24);
- cyl(MAT.glassDark,x,17.07,z,1.73,1.73,2.47,24);
- for(let i=0;i<8;i++){
-  const a=i*Math.PI/4;
-  cyl(MAT.darkMetal,x+Math.sin(a)*1.76,17.02,z+Math.cos(a)*1.76,.065,.065,2.53,6);
- }
- cyl(STREET.materials.bulb,x,17.93,z,1.41,1.41,.32,24,{shadow:false});
- const cap=new THREE.ConeGeometry(2.17,1.47,24);cap.translate(x,20.14,z);addGeo(MAT.darkMetal,cap,true);
- STATIC.push({x0:x-3.09,x1:x+3.09,z0:z-3.09,z1:z+3.09,y0:3.42,h:20.9,radius:3.09});
 }

@@ -51,7 +51,7 @@ function updateOutdoorModels(dt,x,z){
 }
 
 function updatePropModels(x,z){
- const types={hydrant:['cast-hydrant',[.51,.83,.43]],bench:['promenade-bench',[2,.91,.57]],postbox:['post-box',[.59,1.30,.64]],lantern:['cast-lantern',[.56,4.84,.55]],bin:['avenue-bin',[.63,.96,.63]],fence:['picket-fence',[2.31,.96,.16]],lamp:['street-lamp',[.81,7.20,2.85]]};
+ const types={meter:['coin-parking-meter',[.225,1.48,.17]],hydrant:['cast-hydrant',[.51,.83,.43]],bench:['promenade-bench',[2,.91,.57]],postbox:['post-box',[.59,1.30,.64]],lantern:['cast-lantern',[.56,4.84,.55]],bin:['avenue-bin',[.63,.96,.63]],fence:['picket-fence',[2.31,.96,.16]],lamp:['street-lamp',[.81,7.20,2.85]]};
  for(const p of PROPS.list){
   const type=p.riverside?['riverside-lamp',[.56,4.93,1.08]]:types[p.t];
   if(!type)continue;
@@ -116,6 +116,13 @@ function syncPropMesh(p){
 }
 
 const heroModels=new Map();
+const REFERENCE_LAMPS={
+ coupe:[[-2.219,.673,.685,.26],[2.224,.658,.427,.19]],
+ 'maroon-saloon':[[-2.29,.60,.76,.33],[2.261,.58,.669,.29]],
+ 'silver-city-sedan':[[-2.283,.58,.834,.34],[2.282,.621,.677,.30]],
+ 'brick-red-crossover':[[-2.23,.621,1.007,.285],[2.232,.658,.816,.283]],
+ 'harbor-box-truck':[[-3.334,.795,.922,.226],[3.353,.647,.998,.255]]
+};
 const COUPE_WHEEL_Y=new THREE.Quaternion().setFromAxisAngle(_streetUp,-Math.PI/2);
 const COUPE_WHEEL_FLIP=new THREE.Quaternion().setFromAxisAngle(_streetUp,Math.PI);
 const COUPE_WHEEL_SPIN=new THREE.Quaternion();
@@ -128,9 +135,9 @@ function loadHeroCar(car){
   const path='models/scenery/'+INTERIORS.catalog[id].file;
   const model=new Promise((resolve,reject)=>new THREE.GLTFLoader().load(path,resolve,undefined,reject))
    .then(gltf=>{
-    const shell=gltf.scene.getObjectByName('VehicleShell')||gltf.scene.getObjectByName('CoupeShell');
+    const shell=gltf.scene.getObjectByName('VehicleShell')||gltf.scene.getObjectByName('CoupeShell')||gltf.scene.getObjectByName('Frame');
     const wheel=gltf.scene.getObjectByName('WheelPrototype');
-    if(!shell||!wheel?.isMesh)return null;
+    if(!shell||!wheel)return null;
     shell.traverse(o=>{
      if(o.isMesh){
       o.castShadow=true;
@@ -151,13 +158,12 @@ function loadHeroCar(car){
   car.body3.visible=false;
   for(let i=0;i<4;i++){
    const wheel=template.wheel.clone();
-   wheel.castShadow=true;
-   wheel.receiveShadow=true;
+   wheel.traverse(part=>{if(part.isMesh){part.castShadow=true;part.receiveShadow=true;}});
    wheels.push(wheel);
    scene.add(wheel);
   }
   const lenses=[];
-  const lamps=id==='maroon-saloon'?[[-2.29,.60,.76,.33],[2.261,.58,.669,.29]]:[[-2.219,.673,.685,.26],[2.224,.658,.427,.19]];
+  const lamps=REFERENCE_LAMPS[id]||REFERENCE_LAMPS.coupe;
   for(const [z,x,y,width] of lamps)for(const side of [-1,1]){
    const lens=new THREE.Mesh(unitBox,z<0?LENS.tailOff:LENS.headOff);
    lens.position.set(side*x,y,z);

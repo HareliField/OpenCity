@@ -1,0 +1,16 @@
+[
+  {
+    "id": "cove-lighthouse",
+    "sourceImages": [
+      32,
+      50,
+      76
+    ],
+    "description": "Tapered coursed stone, vented keeper house, four-turn stair and rotating prismatic lantern.",
+    "parts": 975,
+    "movableParts": [
+      "LampOptic"
+    ],
+    "runtimeBytes": 2723632
+  }
+]

@@ -157,7 +157,7 @@ def bake_contacts(asset):
     for obj in asset.collection.objects:
         mat=obj.data.materials[0]
         alpha=mat.node_tree.nodes.get('Principled BSDF').inputs['Alpha']
-        if alpha.is_linked or alpha.default_value<.99:
+        if alpha.is_linked or alpha.default_value<.99 or mat.name=='Keeper house lime render':
             colors=obj.data.color_attributes.new(name='Local occlusion',type='BYTE_COLOR',domain='POINT')
             obj.data.color_attributes.active_color=colors
             for value in colors.data:
@@ -192,10 +192,10 @@ def bake_contacts(asset):
             colors.data[v.index].color=(q,q,q,1)
 
 
-def publish(assets, runtime):
+def publish(assets, runtime, library="City object library"):
     """Pack named editable source collections. Bake world-space parts into one mesh per working pivot."""
     scene = bpy.context.scene
-    scene.name = 'City object library'
+    scene.name = library
     for i,asset in enumerate(assets):
         if not any(t in asset.name for t in ('palm','sycamore')):
             bake_contacts(asset)
@@ -208,7 +208,7 @@ def publish(assets, runtime):
         if im.filepath and not im.packed_file:
             im.pack()
     bpy.context.preferences.filepaths.save_version = 0
-    bpy.ops.wm.save_as_mainfile(filepath=str(SOURCE/'City object library.blend'),compress=True)
+    bpy.ops.wm.save_as_mainfile(filepath=str(SOURCE/(library+'.blend')),compress=True)
     export = bpy.data.collections.new('Runtime export')
     scene.collection.children.link(export)
     for asset in assets:

@@ -21,9 +21,17 @@ function forestPrototype(root,palm){
   const geo=node.geometry.clone().applyMatrix4(new THREE.Matrix4().multiplyMatrices(inverse,node.matrixWorld));
   const mat=node.material.clone();
   const foliage=mat.alphaTest>0||mat.name.includes('palm leaf')||mat.name.includes('palm skirt');
+  if(palm&&foliage&&mat.alphaTest===0)mat.color.multiplyScalar(.57);
   let depth=null;
   if(foliage){
    forestWind(mat,palm);
+   if(mat.alphaTest>0)mat.alphaTest=.34;
+   const wind=mat.onBeforeCompile;
+   mat.onBeforeCompile=sh=>{
+    wind(sh);
+    sh.fragmentShader=sh.fragmentShader.replace('#include <lights_fragment_end>',
+     '#include <lights_fragment_end>\nreflectedLight.indirectDiffuse+=diffuseColor.rgb*vec3(.12,.14,.069);');
+   };
    depth=new THREE.MeshDepthMaterial({depthPacking:THREE.RGBADepthPacking,map:mat.map,alphaTest:mat.alphaTest,side:THREE.DoubleSide});
    forestWind(depth,palm);
   }
@@ -36,7 +44,7 @@ function startForestSpecies(points,fallback,palm){
 }
 function loadForestSpecies(species){
  const {palm,points}=species;
- const ids=palm?['coastal-date-palm','palm-distant']:['avenue-sycamore','sycamore-distant'];
+ const ids=palm?['coastal-date-palm','palm-distant']:['avenue-sycamore','sycamore-distant','park-sycamore','park-sycamore-distant'];
  const requests=ids.map(requestScenery);
  if(requests.some(p=>!p))return;
  species.loading=true;
@@ -45,12 +53,14 @@ function loadForestSpecies(species){
   const prototypes=models.map(m=>forestPrototype(m,palm));
   const groups=new Map();
   for(const p of points){
-   const sx=Math.floor(p[0]/64),sz=Math.floor(p[1]/64),key=sx+','+sz;
-   if(!groups.has(key))groups.set(key,{x:sx*64+32,z:sz*64+32,items:[]});
+   const sx=Math.floor(p[0]/64),sz=Math.floor(p[1]/64);
+   const mature=!palm&&Math.sin(p[0]*.83+p[1]*1.27)>(blockOf(p[0],p[1])?.park?-.74:.27);
+   const key=sx+','+sz+','+Number(mature);
+   if(!groups.has(key))groups.set(key,{x:sx*64+32,z:sz*64+32,items:[],mature});
    groups.get(key).items.push(p);
   }
   const placement=new THREE.Object3D(),shade=new THREE.Color();
-  for(const {x,z,items} of groups.values()){
+  for(const {x,z,items,mature} of groups.values()){
    const matrices=new THREE.InstancedBufferAttribute(new Float32Array(items.length*16),16);
    const colors=new THREE.InstancedBufferAttribute(new Float32Array(items.length*3),3);
    for(let i=0;i<items.length;i++){
@@ -61,7 +71,7 @@ function loadForestSpecies(species){
     placement.updateMatrix();placement.matrix.toArray(matrices.array,i*16);
     shade.setRGB(.86+v*.055,.89+v*.052,.81+v*.055).toArray(colors.array,i*3);
    }
-   const lods=prototypes.map(parts=>{
+   const lods=prototypes.slice(mature?2:0,mature?4:2).map(parts=>{
     const group=new THREE.Group();group.position.set(x,0,z);group.visible=false;
     for(const {geo,mat,depth} of parts){
      // In three r128 the geometry owns the instanced frustum bound. Share the GPU vertex buffers.

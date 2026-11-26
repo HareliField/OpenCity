@@ -30,8 +30,8 @@ renderer.physicallyCorrectLights=false;
 const scene=new THREE.Scene();
 const camera=new THREE.PerspectiveCamera(60,1,.12,2600);camera.layers.enable(2);
 /* sun (matches the sky panorama: sun azimuth +X, low) */
-const SUNDIR=(DAYLIGHT?new V3(.6394,.743,.1978):new V3(.988,.151,.03)).normalize();
-const SKYSUN=DAYLIGHT?SUNDIR:new V3(.991,.136,0);
+const SUNDIR=(DAYLIGHT?new V3(.6394,.743,.1978):new V3(.9107,.0510,-.4100)).normalize();
+const SKYSUN=SUNDIR;
 /* ---- fog: colour follows the sky in the view direction ---- */
 {const sx=SKYSUN.x.toFixed(3),sz=SKYSUN.z.toFixed(3),sy=SKYSUN.y.toFixed(3);
  THREE.ShaderChunk.fog_pars_vertex='#ifdef USE_FOG\nvarying vec3 vFogPos;\n#endif';
@@ -40,8 +40,8 @@ const SKYSUN=DAYLIGHT?SUNDIR:new V3(.991,.136,0);
  THREE.ShaderChunk.fog_fragment=`#ifdef USE_FOG
  float fogD=length(vFogPos);vec3 fw=normalize(vec3(dot(viewMatrix[0].xyz,vFogPos),dot(viewMatrix[1].xyz,vFogPos),dot(viewMatrix[2].xyz,vFogPos)));
  vec2 fxz=normalize(fw.xz+1e-5);float fsd=max(dot(fxz,normalize(vec2(${sx},${sz}))),0.);
- vec3 fcol=${DAYLIGHT?'mix(vec3(.51,.60,.72),vec3(.80,.82,.82),pow(fsd,2.))':'mix(vec3(.225,.235,.295),vec3(.86,.39,.19),pow(fsd,4.))'}+
-  ${DAYLIGHT?'vec3(.32,.29,.24)':'vec3(2.2,.75,.12)'}*pow(max(dot(fw,normalize(vec3(${sx},${sy},${sz}))),0.),28.);
+ vec3 fcol=${DAYLIGHT?'mix(vec3(.51,.60,.72),vec3(.80,.82,.82),pow(fsd,2.))':'mix(vec3(.37,.42,.49),vec3(.82,.61,.39),pow(fsd,3.))'}+
+  ${DAYLIGHT?'vec3(.32,.29,.24)':'vec3(.65,.37,.19)'}*pow(max(dot(fw,normalize(vec3(${sx},${sy},${sz}))),0.),28.);
  #ifdef FOG_EXP2
  float fogFactor=1.-exp(-fogDensity*fogDensity*fogD*fogD);
  #else
@@ -52,8 +52,8 @@ const SKYSUN=DAYLIGHT?SUNDIR:new V3(.991,.136,0);
  #endif`;}
 scene.fog=new THREE.FogExp2(0xffffff,DAYLIGHT?.00175:.00315);
 /* ---- lights ---- */
-const hemi=new THREE.HemisphereLight(lin(DAYLIGHT?0xd8e2ed:0xc1cee8),lin(DAYLIGHT?0x9b9389:0x66584d),DAYLIGHT?1.12:1.06);scene.add(hemi);
-const sun=new THREE.DirectionalLight(lin(DAYLIGHT?0xfff1de:0xffaa72),DAYLIGHT?1.94:2.35);sun.castShadow=true;
+const hemi=new THREE.HemisphereLight(lin(DAYLIGHT?0xd8e2ed:0xc1cee8),lin(DAYLIGHT?0x9b9389:0x8c8273),DAYLIGHT?1.12:1.20);scene.add(hemi);
+const sun=new THREE.DirectionalLight(lin(DAYLIGHT?0xfff1de:0xffd3a3),DAYLIGHT?1.94:1.92);sun.castShadow=true;
 sun.shadow.mapSize.set(QUALITY.shadow,QUALITY.shadow);{const sc=sun.shadow.camera;sc.left=-48;sc.right=48;sc.top=48;sc.bottom=-48;sc.near=1;sc.far=500;}
 sun.shadow.bias=-.00019;sun.shadow.normalBias=.023;scene.add(sun,sun.target);
 const muzzleL=new THREE.PointLight(0xffc070,0,14,2);scene.add(muzzleL);
@@ -69,11 +69,11 @@ const skyMat=new THREE.ShaderMaterial({side:THREE.BackSide,depthWrite:false,fog:
  ${POST?'':'c=c/(c+.6);c=pow(c,vec3(1./2.2));'}gl_FragColor=vec4(c,1.);}`});
 const sky=new THREE.Mesh(new THREE.SphereGeometry(2000,48,24),skyMat);sky.frustumCulled=false;sky.renderOrder=-10;scene.add(sky);
 function loadSky(done){const ld=new THREE.TextureLoader();let n=2;const fin=()=>{if(--n===0)done();};
- ld.load(DAYLIGHT?'tex/sky-daylight.jpg':'tex/sky.jpg',t=>{t.minFilter=THREE.LinearFilter;t.generateMipmaps=false;skyMat.uniforms.tSky.value=t;fin();},undefined,fin);
+ ld.load(DAYLIGHT?'tex/sky-daylight.jpg':'tex/sky-coastal-evening.jpg',t=>{t.minFilter=THREE.LinearFilter;t.generateMipmaps=false;skyMat.uniforms.tSky.value=t;fin();},undefined,fin);
  const im=new Image();im.onload=()=>{const[c,g]=cvs(im.width,im.height);g.drawImage(im,0,0);const d=g.getImageData(0,0,c.width,c.height).data;const f=new Float32Array(c.width*c.height*4);
   for(let i=0;i<d.length;i+=4){for(let k=0;k<3;k++)f[i+k]=Math.min(Math.pow(d[i+k]/255,2.2)*(DAYLIGHT?2.65:4),30);f[i+3]=1;}
   const dt=new THREE.DataTexture(f,c.width,c.height,THREE.RGBAFormat,THREE.FloatType);dt.mapping=THREE.EquirectangularReflectionMapping;dt.flipY=true;dt.needsUpdate=true;dt.magFilter=dt.minFilter=THREE.LinearFilter;
-  try{const pm=new THREE.PMREMGenerator(renderer);scene.environment=pm.fromEquirectangular(dt).texture;pm.dispose();}catch(e){console.warn(e);}fin();};im.onerror=fin;im.src=DAYLIGHT?'tex/env-daylight.jpg':'tex/env.jpg';}
+  try{const pm=new THREE.PMREMGenerator(renderer);scene.environment=pm.fromEquirectangular(dt).texture;pm.dispose();}catch(e){console.warn(e);}fin();};im.onerror=fin;im.src=DAYLIGHT?'tex/env-daylight.jpg':'tex/env-coastal-evening.jpg';}
 
 /* ---- planar reflection for wet ground ---- */
 const REFL={rt:null,cam:new THREE.PerspectiveCamera(),mat:new THREE.Matrix4(),on:false,uniforms:{tRefl:{value:null},reflMat:{value:new THREE.Matrix4()},reflOn:{value:0}}};

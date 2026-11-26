@@ -421,6 +421,99 @@
       "charged_credits": 35,
       "runtime_sha256": "e5e079dad7148f1e775f3237c69b1483bc1e8e00cd995553a337ba8fa4c24223",
       "runtime_repair": "Aligned the generated shell to the sedan axles, opened and lined all four wheel arches, tinted the glazing and reproduced spinning hubcaps from reference 112."
+    },
+    "silver-city-sedan": {
+      "task": "01a2199c-1367-7367-bdd7-f6d99e60c110",
+      "status": "SUCCEEDED",
+      "original_sha256": "926f9ec8ea9daf9c059b767fa8a32066725864dc90092605798223a53a4c4964",
+      "runtime_file": "silver-city-sedan.glb",
+      "requested_target_triangles": 23500,
+      "reference": "Natural Photos/066-warehouse-district-pursuit.png",
+      "input_sha256": "c25dabfe82ffa07d73268cde944c48f2c97fa44205cab0672970095fb5afe453",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "332,249 333,239 339,232 352,226 375,214 380,211 397,210 411,211 420,215 431,224 444,225 451,230 453,238 450,248 448,254 444,256 442,253 417,263 414,271 410,275 404,275 398,272 397,267 363,270 359,274 350,273 346,270 342,266 335,263",
+      "input_holes": [],
+      "charged_credits": 35,
+      "runtime_sha256": "d27c907fc87545aacc77b661f557a31710a9d9aa81dba4f49e04d4d180fe40a8",
+      "runtime_repair": "Refitted the shell to the sedan axles, opened four wheel arches, added liners and nine-spoke independently rotating wheels."
+    },
+    "brick-red-crossover": {
+      "task": "01a2199c-182f-721f-a868-55e3178ccc7c",
+      "status": "SUCCEEDED",
+      "original_sha256": "3feb3848977cad87d588cf8e33293e30ce73a12fa5cf71d851b04df387be8c05",
+      "runtime_file": "brick-red-crossover.glb",
+      "requested_target_triangles": 24500,
+      "reference": "Natural Photos/007-park-and-plaza-pursuit.png",
+      "input_sha256": "1694bd646fa8d925b12ade48df8231e8019333107a3ac45bf42cc866c1f82778",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "359,219 362,213 365,209 371,209 374,204 379,200 389,198 413,197 420,198 425,197 431,199 436,202 440,208 445,213 447,219 449,230 447,243 443,250 438,256 427,257 423,254 390,254 387,261 378,262 374,259 373,254 367,250 366,245 362,241 359,229",
+      "input_holes": [],
+      "charged_credits": 35,
+      "runtime_sha256": "c0b8f98ea6fc61dc8bbb4987e08db1f6f154daccbf569920e96ce1b5cf263f60",
+      "runtime_repair": "Cleared underside remnants, aligned and lined the wheel arches, added separate five-spoke wheels and driver-controlled lamps."
+    },
+    "coin-parking-meter": {
+      "task": "01a2199c-1cd5-7237-b744-e5ded7e1b64f",
+      "status": "SUCCEEDED",
+      "original_sha256": "d4b1634f529430cf7fb55c6305c20009094bd3632b9829d8f5f069a1a2de68d4",
+      "runtime_file": "coin-parking-meter.glb",
+      "requested_target_triangles": 6800,
+      "reference": "Natural Photos/066-warehouse-district-pursuit.png",
+      "input_sha256": "bda87389fb2e5b401dd88381d4559fc90517f660c13b58210c4b396a7e5dfc97",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "719,250 719,243 722,238 727,234 732,232 737,234 741,239 742,250 739,255 740,272 737,279 734,281 734,384 739,386 739,391 724,391 724,388 728,384 729,282 725,279 722,272 722,255",
+      "input_holes": [],
+      "charged_credits": 35,
+      "runtime_sha256": "50f90ec7a981e7c4d5a62fdf20d69bbd97791a03a63da59ee76c8bc113a6541e",
+      "runtime_repair": "Aligned the base and fitted the head and post to the existing knockable meter."
+    },
+    "coat-rail": {
+      "task": "01a2199c-2104-7670-a1cc-ed2906460b8b",
+      "status": "SUCCEEDED",
+      "original_sha256": "5022a57b9a23c0c777959d85cfe0894677ea45468240d260f78b210bfac98499",
+      "runtime_file": "coat-rail.glb",
+      "requested_target_triangles": 12500,
+      "reference": "Natural Photos/089-cafe-row-interior-interior.png",
+      "input_sha256": "ab903a8818c25175159f16fbd3d766b954631313f6b33fee86157443f7e7155f",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "164,125 229,123 230,109 252,107 260,108 261,112 279,109 289,109 295,112 294,122 303,123 305,128 302,132 303,152 306,167 309,235 307,246 304,247 305,293 312,295 311,304 307,307 305,315 301,315 300,308 179,309 177,311 169,310 168,305 170,302 172,296 174,294 174,229 168,229 166,223 168,168 172,159 173,134 167,131",
+      "input_holes": [
+        "180,253 206,251 224,248 245,248 247,261 262,261 268,256 283,259 294,255 296,251 298,289 180,292",
+        "178,134 297,132 296,142 276,143 266,146 247,141 230,145 215,143 204,146 187,144 180,150"
+      ],
+      "charged_credits": 35,
+      "runtime_sha256": "0493e6eb69b80214efb3ddac5431708af15c76b422ef9f0c534bc861a07abfe5",
+      "runtime_repair": "The generation filled the empty space under the jackets. Rebuilt the steel frame, wooden hangers, individual draped jackets and folded stock in Blender."
+    },
+    "harbor-box-truck": {
+      "task": "01a2199e-0ad0-7072-92ff-d644cfa39440",
+      "status": "SUCCEEDED",
+      "original_sha256": "54a7de01d07edfb3768b746f0161042f3e1b8ea55d5e37376f13d4f36f3ac629",
+      "runtime_file": "harbor-box-truck.glb",
+      "requested_target_triangles": 21500,
+      "reference": "Natural Photos/038-warehouse-district-aerial.png",
+      "input_sha256": "515703adab6f9ba362d481d28a33766c369b305347c558c6bbe2ad766850bcfe",
+      "input_viewport": [
+        800,
+        450
+      ],
+      "input_outline": "645,144 646,135 650,133 669,135 681,140 683,145 683,152 688,154 693,158 694,161 696,164 694,169 692,171 689,174 682,174 680,173 678,176 673,175 670,170 662,166 657,165 655,168 651,167 647,164 646,158",
+      "input_holes": [],
+      "charged_credits": 35,
+      "runtime_sha256": "0e39c5ddd16a03add93339e7e9051cf31752b1c50c5f6fa46d304c87b04ed453",
+      "runtime_repair": "The generation contained disconnected thin fragments. Reconstructed the photographed cab, glazed windows, riveted cargo shell, separate wheels and five-part chassis in Blender."
     }
   }
 }
