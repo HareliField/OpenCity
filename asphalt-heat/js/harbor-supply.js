@@ -9,6 +9,7 @@ CARSPEC.harborbox={...CARSPEC.van,type:'harborbox',modelName:'Harbor Supply deli
   [-1.42,1.43,0,.75,1.48,1.74],[-2.02,1.35,0,.50,1.02,1.71],[-2.75,.928,0,1.05,.56,1.72]]};
 function parkReferenceVehicles(){
  const photos=[['sedan','silver-city-sedan',1002.1,14*CELL+6.6,Math.PI/2,0xb5b4ae],
+  ['sedan','graphite-city-saloon',10*CELL-parkingCenter(streetSection('ns',10,9),-1),9*CELL+30.5,Math.PI,0x28323e],
   ['rav4','brick-red-crossover',293,4*CELL+6.6,Math.PI/2,0x763522]];
  const bay=HARBOR_SUPPLY.truck;
  if(bay)photos.push(['harborbox','harbor-box-truck',bay.x,bay.z,bay.h,0xd9d8ce]);

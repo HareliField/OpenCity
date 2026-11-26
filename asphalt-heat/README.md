@@ -80,6 +80,12 @@ Run `node tools/roadster-test.js` to check the floor clearance and steering-whee
 
 Between Maple Street and Ridge Road, four blocks each contain six furnished cottages around a shared garden. Enter through the side door facing the garden. Each kitchen tap draws from the water main and discharges to the sanitary return. The window grilles, clay tile edges, gutters and overhead service leads follow the houses in reference 017.
 
+## Palm Street, Marina Street and the civic squares
+
+The 24-Hour Diner and Marina Coffee face each other at Palm Street and Marina Street. Use **C** at the diner counter for breakfast or at the café for coffee. The coin box outside sells a newspaper. The graphite saloon is parked on the west curb of Palm Street, between Commerce and Marina. Follow Marina east to Breakwater Way for fruit at Seabreeze Market or an LP at Coastal Vinyl. All four buildings have independent passenger lifts, stairs, upper flats and roof landings.
+
+The 27 upper flats and 24 Ferry Street garden cottages have gravity-fed six-litre cisterns. Flush with **C** in front of a fixture. A filled cistern can discharge with the inlet closed. Restoring pressure refills the tank. The civic squares on King Street, Market Street and Coastal Avenue have tiled basins with limestone spheres. Their jets respond to municipal water pressure and the local electric feeder.
+
 ## Dock Street and Lighthouse Cove
 
 Harbor Supply faces Dock Street, just west of Ocean Drive. The front shop and stock yard have separate entrances. Use **C** at the counter to buy a portable work light, beside the loading shutter to raise it, or beside the white truck to drive it out through the lowered curb. The silver sedan is parked on Dock Street and the brick-red crossover on Park Street.
@@ -94,7 +100,7 @@ Enter Market Flats through the west door. The stairs and lift connect the cellar
 
 The dry ledge in the cellar gallery crosses under Studio Boulevard to Tidewater Pump House. The power switch operates the market registers, lift and service lighting. The water valve controls tap pressure. The drain pump changes the storm sump level. Running a basin in the flats sends water into the separate sanitary line and its sight gauge.
 
-Buried water mains, electrical ducts and sanitary returns serve all 256 blocks. Four labelled district breakers on the pump house’s south wall operate the street lighting, nearby shop lights, and lifts on their feeder. Water pressure falls with distance and floor height. Flow from running taps on the four residential sites returns along the sanitary branches to the plant. At Wash House, use **C** in front of a machine to run a wash. Its intake depends on pressure, its drum needs district power, and its measured discharge joins the sanitary line. The sliding glass cases at Tideline Market open from either side.
+Buried water mains, electrical ducts and sanitary returns serve all 256 blocks. Four labelled district breakers on the pump house’s south wall operate the street lighting, nearby shop lights, and lifts on their feeder. Water pressure falls with distance and floor height. Flow from sinks and cisterns returns along the sanitary branches to the plant. At Wash House, use **C** in front of a machine to run a wash. Its intake depends on pressure, its drum needs district power, and its measured discharge joins the sanitary line. The sliding glass cases at Tideline Market open from either side.
 
 ## Driving, buildings, and assets
 

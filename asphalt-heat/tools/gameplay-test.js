@@ -22,6 +22,7 @@ run(read('js/freight.js'));
 run(read('js/city-works.js'));
 run(read('js/city-services.js'));
 run(read('js/city-fixtures.js'));
+run(read('js/civic-fittings.js'));
 run(read('js/lighthouse.js'));
 run(read('js/garden-cottages.js'));
 run(read('js/game.js'));
@@ -216,6 +217,27 @@ run(`
   plantPeak=Math.max(plantPeak,CITY_SERVICES.root.discharge);
  }
  assert.equal(washer.remaining,0);assert(Math.abs(out-12)<.005);assert(plantPeak>=1.6);
+`);
+
+// Upper-floor and cottage cisterns share the plant. Stored water still drains when the inlet closes.
+run(`
+ w.fixtures.length=0;w.pressure=1;CITY_SERVICES.next=0;updateServiceGraph(0);
+ for(const hz of [30,60,120]){
+  CIVIC.cisterns.length=0;
+  const at=(x,z)=>({x,z,y:.17,volume:6,emptying:true,discharge:0,total:0});
+  const pair=[at(12,9),at(W-12,W-10)];CIVIC.cisterns.push(...pair);
+  w.pressure=0;CITY_SERVICES.next=0;updateServiceGraph(0);
+  let litres=0,peak=0;
+  for(let i=0;i<hz*5;i++){
+   for(const c of pair){advanceCistern(c,1/hz);litres+=c.discharge/hz;}
+   updateServiceGraph(1/hz);peak=Math.max(peak,CITY_SERVICES.root.discharge);
+  }
+  assert(Math.abs(litres-12)<.001);assert(Math.abs(peak-4.8)<.001);
+  for(const c of pair){assert.equal(c.volume,0);assert.equal(c.emptying,false);assert(Math.abs(c.total-6)<.001);}
+  w.pressure=1;CITY_SERVICES.next=0;updateServiceGraph(0);
+  for(let i=0;i<hz*23;i++)for(const c of pair)advanceCistern(c,1/hz);
+  assert(pair.every(c=>c.volume===6&&c.discharge===0));
+ }
 `);
 
 console.log('Gameplay regressions passed.');

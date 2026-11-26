@@ -13,7 +13,7 @@ function groundY(x,z,referenceY=null){
   const grade=sampleGrade(x,z,referenceY);
   if(grade)y=Math.max(y,grade.height);
  }
- return coveFloorAt(x,z,referenceY,worksFloorAt(x,z,referenceY,y));
+ return coveFloorAt(x,z,referenceY,worksFloorAt(x,z,referenceY,mosaicFloorAt(x,z,y)));
 }
 function pushOut(p,r,R){
  if(R.radius){

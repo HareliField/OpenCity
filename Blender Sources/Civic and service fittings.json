@@ -1,0 +1,54 @@
+[
+  {
+    "id": "civic-mosaic-basin",
+    "sourceImages": [
+      6,
+      19,
+      45,
+      65
+    ],
+    "description": "A circular blue-and-ivory tiled basin with a radial coping, a stone sphere, bronze water outlets and a drained service recess.",
+    "parts": 102,
+    "movableParts": [],
+    "runtimeBytes": 1298188
+  },
+  {
+    "id": "glazed-bus-shelter",
+    "sourceImages": [
+      17,
+      45,
+      65,
+      72
+    ],
+    "description": "Three transparent windscreen bays, cantilever roof with glazing clips, timetable cabinet, and a timber passenger bench.",
+    "parts": 57,
+    "movableParts": [],
+    "runtimeBytes": 311380
+  },
+  {
+    "id": "ceramic-cistern",
+    "sourceImages": [
+      17,
+      22,
+      84
+    ],
+    "description": "Compact gravity cistern with a hollow vitreous bowl, seat, push button, shutoff and flexible supply.",
+    "parts": 11,
+    "movableParts": [],
+    "runtimeBytes": 106800
+  },
+  {
+    "id": "diner-espresso",
+    "sourceImages": [
+      25,
+      90,
+      96,
+      99,
+      111
+    ],
+    "description": "Two-group espresso machine with stepped cast side cheeks, portafilters, steam pipe, gauge, drip tray and cups.",
+    "parts": 34,
+    "movableParts": [],
+    "runtimeBytes": 199864
+  }
+]

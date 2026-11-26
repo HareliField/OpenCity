@@ -43,7 +43,11 @@ function buildWeatherCover() {
  for (const r of weatherCeilings) map.stamp(r);
  for (const floor of CITY_WORKS.floors) map.stamp({...floor,h:floor.y});
  for (const deck of STREET.steps) if(deck.y>.35) map.stamp({...deck,h:deck.y});
- for (const r of STATIC) if (!r.obb && r.h>.35) map.stamp(r);
+ for (const r of STATIC) if (!r.obb && !r.convex && r.h>.35) map.stamp(r);
+ for (const r of CITY_WORKS.pitchedRoofs||[]) map.stamp(r,(x,z)=>{
+  const inset=Math.min(x-r.x0,r.x1-x,z-r.z0,r.z1-z,r.run);
+  return r.eave+r.rise*Math.max(0,inset)/r.run;
+ });
  stampCoveRoof(map);
  for (const route of GRADE_ROADS.routes) for (const s of route.sections) {
   const pad=s.half+.2;

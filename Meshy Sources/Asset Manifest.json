@@ -420,7 +420,16 @@
       "input_outline": "165,255 171,244 193,240 209,234 227,225 244,221 269,219 291,219 303,221 320,230 333,237 354,241 364,245 365,254 358,265 352,275 340,278 333,273 268,280 260,287 249,291 238,290 228,284 213,284 178,276 167,271",
       "charged_credits": 35,
       "runtime_sha256": "e5e079dad7148f1e775f3237c69b1483bc1e8e00cd995553a337ba8fa4c24223",
-      "runtime_repair": "Aligned the generated shell to the sedan axles, opened and lined all four wheel arches, tinted the glazing and reproduced spinning hubcaps from reference 112."
+      "runtime_repair": "Aligned the generated shell to the sedan axles, opened and lined all four wheel arches, tinted the glazing and reproduced spinning hubcaps from reference 112.",
+      "variants": [
+        {
+          "file": "graphite-city-saloon.glb",
+          "reference": "Natural Photos/001-palm-avenue-drive.png",
+          "method": "Graphite lacquer and reprojected trunk, number plate and rear lamps on the existing four-wheel sedan rig.",
+          "charged_credits": 0,
+          "runtime_sha256": "67a3de7baa71eda243a9dd7d93aeee3dc46152784fcc890e60dd3494b63e6e41"
+        }
+      ]
     },
     "silver-city-sedan": {
       "task": "01a2199c-1367-7367-bdd7-f6d99e60c110",

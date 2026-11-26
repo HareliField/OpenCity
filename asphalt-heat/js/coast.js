@@ -42,7 +42,8 @@ function beachMaterial(){
  };m.customProgramCacheKey=()=>'graded-shore-sand';return m;
 }
 function buildCoastalWater(){
- topQuad(STREET.materials.coastSand,W+HALF,W+64.1,.02,-HALF-200,W+HALF+200,2.7,null,false);
+ topQuad(STREET.materials.coastSand,W+HALF,W+64.1,.02,-HALF,W+HALF,2.7,null,false);
+ beachEndCaps();
  const foam=TLD.load('tex/cove-foam.webp');foam.wrapS=foam.wrapT=THREE.RepeatWrapping;foam.anisotropy=4;
  const m=new THREE.MeshStandardMaterial({color:lin(0x34535e),roughness:.17,metalness:0,envMapIntensity:.78});
  m.onBeforeCompile=sh=>{

@@ -301,11 +301,15 @@ function fillDistrict(B,R,dist){
     const ry=s==='S'||s==='N'?Math.PI/2:0;plainBox(MAT.metal,fx-(ry?.61:.11),fx+(ry?.61:.11),y-2.1,y+2.1,fz-(ry?.11:.61),fz+(ry?.11:.61));
     const L2=4.02;for(const sg of[1,-1]){const g=new THREE.PlaneGeometry(L2,L2/4);const uv=g.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,hs.u0+uv.getX(i)*(hs.u1-hs.u0),hs.v0+uv.getY(i)*(hs.v1-hs.v0));g.rotateZ(Math.PI/2);g.rotateY((s==='S'||s==='N')?(sg>0?0:Math.PI):(sg>0?Math.PI/2:-Math.PI/2));
      g.translate(fx+((s==='E'||s==='W')?sg*.115:0),y,fz+((s==='S'||s==='N')?sg*.115:0));addGeo(ATLAS.mat,g,false);}}}
-  else if(dist==='downtown'){const tall=dc<170?srange(.6,1):srange(.3,.7);const podium=7.7,fh=3.8,h=Math.round(podium+tall*srange(76,162)/fh)*fh;
+  else if(dist==='downtown'){
+   const tall=dc<170?srange(.6,1):srange(.3,.7),podium=7.7,fh=3.8;
+   const tower=Math.round((podium+tall*srange(76,162))/fh)*fh;
+   const edge=B.i>=8&&B.i<=11&&B.j>=8;
+   const h=edge?podium+fh*(2+Math.abs(Math.floor(L.x0*.43+L.z0*.77))%5):tower;
    building(B,L,podium,{mat:MAT.fac.stone_dark,style:0,fh:4.4,bay:4,shops:true,kind:'tower'});
    const ix=(L.x1-L.x0)*srange(.016,.075),iz=(L.z1-L.z0)*srange(.016,.075),T2={x0:L.x0+ix,x1:L.x1-ix,z0:L.z0+iz,z1:L.z1-iz};const mat=MAT.fac[spick(FACLIST.downtown)];
-   facadeBox(mat,T2.x0,T2.x1,podium,h,T2.z0,T2.z1,{style:srnd()<.86?2:0,fh,bay:srnd()<.56?1.8:3.2,top:h,tint:spick([0xffffff,0xdfe6ee,0xf2e8dc]),seed:srnd()});roofDressing(T2,h,'tower');
-   if(h>70&&srnd()<.6){const k=.18;const T3={x0:T2.x0+(T2.x1-T2.x0)*k,x1:T2.x1-(T2.x1-T2.x0)*k,z0:T2.z0+(T2.z1-T2.z0)*k,z1:T2.z1-(T2.z1-T2.z0)*k},h3=h+srange(10,26);facadeBox(mat,T3.x0,T3.x1,h+.75,h3,T3.z0,T3.z1,{style:2,fh,bay:1.6,top:h3,seed:srnd()});roofDressing(T3,h3,'tower');}
+   facadeBox(mat,T2.x0,T2.x1,podium,h,T2.z0,T2.z1,{style:srnd()<(edge?.24:.68)?2:0,fh,bay:srnd()<.56?(edge?2.68:1.8):3.2,top:h,tint:spick([0xffffff,0xdfe6ee,0xf2e8dc]),seed:srnd()});roofDressing(T2,h,'tower');
+   if(h>70&&srnd()<.6){const k=.18;const T3={x0:T2.x0+(T2.x1-T2.x0)*k,x1:T2.x1-(T2.x1-T2.x0)*k,z0:T2.z0+(T2.z1-T2.z0)*k,z1:T2.z1-(T2.z1-T2.z0)*k},h3=h+srange(10,26);facadeBox(mat,T3.x0,T3.x1,h+.75,h3,T3.z0,T3.z1,{style:2,fh,bay:1.6,top:h3,seed:srnd()});roofDressing(T3,h3,'tower');B.bld.push({...T3,y0:h+.75,h:h3});}
    B.bld.push({...T2,y0:podium,h});}
   else{const fh=3.4,fl=rint(3,12),h=4.4+fl*fh;building(B,L,h,{mat:MAT.fac[spick(FACLIST.midtown)],style:srnd()<.5?0:1,fh,bay:srnd()<.5?3:2.7,shops:true,cornice:srnd()<.4,tint:spick([0xffffff,0xf0e6d8,0xe0e4e8,0xe8d8c8]),kind:'mid'});}}}
 const HOUSE_WALLS=new Map();
@@ -488,7 +492,8 @@ function special(B,sp){const side=sp.side||'S',M=sideFrame(B,side);const door=lp
    plainBox(MAT.darkMetal,r.x0,r.x1,0,r.h,r.z0,r.z1,{shadow:false});STATIC.push(r);
   }
   containers(ix0+1,ix1-1,iz1-8,iz1-1);B.gang={x:cx,z:cz-4};}
- else if(sp.kind==='plaza'){topQuad(MAT.plaza,B.x0+SW,B.x1-SW,.17,B.z0+SW,B.z1-SW,3,null,false);const cx=(B.x0+B.x1)/2,cz=(B.z0+B.z1)/2;STATIC.push({x0:cx-5.22,x1:cx+5.22,z0:cz-5.22,z1:cz+5.22,h:.85,radius:5.22});cyl(MAT.stone,cx,.15,cz,5,5.3,.7,32);cyl(MAT.water,cx,.84,cz,4.6,4.6,.022,32,{shadow:false});cyl(MAT.stone,cx,.15,cz,.6,.8,3,12);
+ else if(sp.kind==='plaza'){topQuad(MAT.plaza,B.x0+SW,B.x1-SW,.17,B.z0+SW,B.z1-SW,3,null,false);const cx=(B.x0+B.x1)/2,cz=(B.z0+B.z1)/2;if(B.i===14&&B.j===9)buildMosaicSquare(B,cx,cz,true);
+  else{STATIC.push({x0:cx-5.22,x1:cx+5.22,z0:cz-5.22,z1:cz+5.22,h:.85,radius:5.22});cyl(MAT.stone,cx,.15,cz,5,5.3,.7,32);cyl(MAT.water,cx,.84,cz,4.6,4.6,.022,32,{shadow:false});cyl(MAT.stone,cx,.15,cz,.6,.8,3,12);}
   for(let k=0;k<10;k++){const a=k/10*Math.PI*2;PALMS.push([cx+Math.cos(a)*14,cz+Math.sin(a)*14,srange(.9,1.2)]);}}
  if(pl){
   pl.door={x:door.x,z:door.z};
@@ -498,10 +503,11 @@ function special(B,sp){const side=sp.side||'S',M=sideFrame(B,side);const door=lp
  }
 }
 function park(B){const ix0=B.x0+SW,ix1=B.x1-SW,iz0=B.z0+SW,iz1=B.z1-SW,cx=(ix0+ix1)/2,cz=(iz0+iz1)/2;topQuad(MAT.grass,ix0,ix1,.17,iz0,iz1,4,null,false);
- const civicSquare=B.i===4&&B.j===4;
+ const civicSquare=B.i===4&&B.j===4,mosaic=B.i===9&&B.j===7||B.i===5&&B.j===10;
  if(civicSquare)parkCornerPaths(B,cx,cz,ix1-cx);
- else for(const ax of[0,1]){const g=new THREE.PlaneGeometry(ax?3:ix1-ix0,ax?iz1-iz0:3);const uv=g.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,uv.getX(i)*(ax?3:ix1-ix0)/3,uv.getY(i)*(ax?iz1-iz0:3)/3);g.rotateX(-Math.PI/2);g.translate(cx,.19,cz);addGeo(MAT.plaza,g,false);}
- STATIC.push({x0:cx-4.48,x1:cx+4.48,z0:cz-4.48,z1:cz+4.48,h:.8,radius:4.47});cyl(MAT.stone,cx,.15,cz,4.3,4.6,.65,28);cyl(MAT.water,cx,.79,cz,3.9,3.9,.022,28,{shadow:false});cyl(MAT.stone,cx,.15,cz,.5,.7,2.4,10);cyl(MAT.stone,cx,2.5,cz,1.5,.4,.4,14);
+ else if(!mosaic)for(const ax of[0,1]){const g=new THREE.PlaneGeometry(ax?3:ix1-ix0,ax?iz1-iz0:3);const uv=g.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,uv.getX(i)*(ax?3:ix1-ix0)/3,uv.getY(i)*(ax?iz1-iz0:3)/3);g.rotateX(-Math.PI/2);g.translate(cx,.19,cz);addGeo(MAT.plaza,g,false);}
+ if(mosaic)buildMosaicSquare(B,cx,cz,false);
+ else{STATIC.push({x0:cx-4.48,x1:cx+4.48,z0:cz-4.48,z1:cz+4.48,h:.8,radius:4.47});cyl(MAT.stone,cx,.15,cz,4.3,4.6,.65,28);cyl(MAT.water,cx,.79,cz,3.9,3.9,.022,28,{shadow:false});cyl(MAT.stone,cx,.15,cz,.5,.7,2.4,10);cyl(MAT.stone,cx,2.5,cz,1.5,.4,.4,14);}
  for(let k=0;k<22;k++){
   const tx=srange(ix0+2,ix1-2),tz=srange(iz0+2,iz1-2),dx=Math.abs(tx-cx),dz=Math.abs(tz-cz);
   if(dx<3.5||dz<3.5)continue;
@@ -534,7 +540,12 @@ function streetProps(B){const{x0,x1,z0,z1}=B;const dist=B.i===15&&B.j>=13?'docks
  const kinds=dist==='docks'?['barrel','barrel','cone','bin','hydrant']:dist==='suburb'?['bin','hydrant','mailbox']:['hydrant','bin','news','meter','meter','bench','bollard','bin'];
  for(let k=0;k<(dist==='suburb'?3:9);k++){const e=rint(0,3),t=srange(7,41),[px,pz]=sideP(e,t,srange(.5,.9));PROPSPOTS.push({type:spick(kinds),x:px,z:pz,ry:[Math.PI,Math.PI/2,0,-Math.PI/2][e]});}
  if(dist==='beach')for(let t=8;t<44;t+=11){PALMS.push([x1-1.3,z0+t,srange(.85,1.2)]);PALMS.push([x0+1.3,z0+t,srange(.85,1.2)]);}
- else if(dist!=='docks'&&dist!=='suburb')for(const e of[0,1,2,3])for(let t=9;t<44;t+=13)if(srnd()<.61){const[px,pz]=sideP(e,t,1.5);TREES.push([px,pz,srange(.83,1.17)]);}}
+ else if(dist!=='docks'&&dist!=='suburb')for(const e of[0,1,2,3])for(let t=9;t<44;t+=13)if(srnd()<.61){
+  const [px,pz]=sideP(e,t,1.5),size=srange(.83,1.17);
+  const avenue=(B.i===9&&e===1||B.i===10&&e===3)&&B.j>=6&&B.j<=10;
+  const dinerFront=B.i===10&&B.j===9&&e===2;
+  if(avenue)PALMS.push([px,pz,size*1.10]);else if(!dinerFront)TREES.push([px,pz,size]);
+ }}
 function beach(){const x0=W+HALF;buildCoastalWater();
  /* boardwalk + pier */
  topQuad(MAT.planks,x0+.5,x0+6,.25,-HALF,W+HALF,3,null,false);
@@ -589,8 +600,8 @@ function beach(){const x0=W+HALF;buildCoastalWater();
   const palm=[W+HALF+8+srange(-.5,.5),z+srange(-3,3),srange(.9,1.25)];
   if(palm[1]<HARBOR.approach.z0-1||palm[1]>HARBOR.approach.z1+1)PALMS.push(palm);
  }
- /* yacht on the horizon */
- const yx=W+380,yz=W*.55;plainBox(MAT.whiteMetal,yx-14,yx+14,0,3,yz-3,yz+3);plainBox(MAT.whiteMetal,yx-8,yx+6,3,5.2,yz-2.4,yz+2.4);plainBox(MAT.glassDark,yx-8.05,yx+6.05,3.8,4.6,yz-2.45,yz+2.45);plainBox(MAT.whiteMetal,yx-5,yx+2,5.2,6.8,yz-1.8,yz+1.8);}
+ offshoreCruiser();
+}
 function beachUmbrella(x,z,color){
  cyl(MAT.whiteMetal,x,0,z,.04,.04,2.4,5);
  weatherCeilings.push({x0:x-1.5,x1:x+1.5,z0:z-1.5,z1:z+1.5,h:2.7,radius:1.5});
@@ -639,7 +650,9 @@ function beachAreas(pierZ){
  }
 }
 
-function skyline(){for(let k=0;k<130;k++){
+function skyline(){
+ harborHeadland();
+ for(let k=0;k<130;k++){
   const a=srange(Math.PI*.6,Math.PI*1.9),r=srange(S*.62+30,S*.62+260);
   const x=W/2+Math.cos(a)*r,z=W/2+Math.sin(a)*r;
   if(x>W+40)continue;

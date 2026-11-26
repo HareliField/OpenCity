@@ -57,6 +57,8 @@ function junctionControl(i,j){
  if((i===0 || i===N) && (j===0 || j===N))return 'bend';
  if(i===0 || i===N)return 'stop-ew';
  if(j===0 || j===N)return 'stop-ns';
+ // The Palm Street diner corner has a protected crossing in the avenue reference.
+ if(i===10&&j===10)return 'signal';
  if(ns.rank && ew.rank && !(j===11 && i>=6 && i<=14))return 'signal';
  if(ns.rank!==ew.rank)return ns.rank>ew.rank?'stop-ew':'stop-ns';
  if((i+j)%3===0)return 'all-stop';

@@ -11,6 +11,9 @@ python -B asphalt-heat/tools/blender-city-assets.py
 python -B asphalt-heat/tools/blender-district-fittings.py
 python -B asphalt-heat/tools/blender-garden.py
 python -B asphalt-heat/tools/blender-lighthouse.py
+python -B asphalt-heat/tools/blender-palm-corner.py
+python -B asphalt-heat/tools/blender-city-infrastructure.py
+python -B asphalt-heat/tools/palm-saloon-finish.py
 python -B asphalt-heat/tools/coastal-sky.py
 ```
 
@@ -19,3 +22,5 @@ The finish scripts extract material surfaces and store prints from the supplied 
 **Lighthouse Cove** includes the keeper’s house, four turns of stair treads, iron gallery, lens and revolving optic. Its companion layout gives the game the collision coordinates from the same construction. **District fittings** includes the Harbor Supply truck, roof plant, industrial stock, salon furniture and fitted clothing. Car and truck wheel prototypes rotate around X in game coordinates.
 
 **Garden cottages** contains the glazed sash and grille, clay ridge and verge tiles, service pole and galvanized street light. Their placement and walkable shells are defined in the garden block builder.
+
+**Palm Street interiors** contains the diner booths, tables and stools, coin newspaper box, LP browsers and photovoltaic panels. **Civic and service fittings** contains the ivory and blue fountain mosaic, glazed bus shelter, six-litre cistern and diner espresso machine. Their companion JSON files identify the source photographs.

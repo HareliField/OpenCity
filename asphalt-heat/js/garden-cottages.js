@@ -116,6 +116,16 @@ function furnishCottage(B,R,variant,side){
  const sinkX=x+inner*1.11,sinkZ=R.z0+.65;
  worksFurniture(B,'counter',sinkX,floor,sinkZ,2.71,.95,.61);
  buildBasin(sinkX-.137,floor,sinkZ);
+ // A walled washroom occupies the back corner opposite the kitchen, with its entrance facing the living room.
+ const wcX=x-inner*2.71,wcZ=R.z0+1.04,wallEnd=x-inner*1.68;
+ const wallLow=Math.min(wallEnd,x-inner*3.32),wallHigh=Math.max(wallEnd,x-inner*3.32);
+ plainBox(m.walls[0],wallLow,wallHigh,floor,R.eave-.11,R.z0+2.26,R.z0+2.35,{uvm:1.31});
+ B.bld.push({x0:wallLow,x1:wallHigh,z0:R.z0+2.26,z1:R.z0+2.35,y0:floor,h:R.eave-.11});
+ for(const [az,bz] of [[R.z0+.16,R.z0+.79],[R.z0+1.85,R.z0+2.35]]){
+  plainBox(m.walls[0],wallEnd-.050,wallEnd+.050,floor,R.eave-.11,az,bz,{uvm:1.26});
+  B.bld.push({x0:wallEnd-.05,x1:wallEnd+.05,z0:az,z1:bz,y0:floor,h:R.eave-.11});
+ }
+ installCistern(B,wcX,floor,wcZ,0);
  worksFurniture(B,'reading-table',x-inner*.82,floor,z-.72,1.15,.76,.72);
  worksFurniture(B,'seat',x-inner*.85,floor,z+.04,.43,.82,.45);
  worksFurniture(B,'bookcase',x+inner*2.5,floor,R.z1-.42,1.15,1.51,.4);
@@ -129,6 +139,7 @@ function furnishCottage(B,R,variant,side){
 function buildGardenCottages(B){
  const garden=[],m=gardenMaterials(),R=worksRect(B.x0+SW+.32,B.x1-SW-.32,B.z0+SW+.38,B.z1-SW-.38);
  GARDENS.blocks.set(B.i*N+B.j,garden);
+ if(B.i===12&&B.j===2)installBusShelter(B,B.x1-12.3,B.z0+SW-.99,Math.PI);
  topQuad(m.grass,R.x0,R.x1,.161,R.z0,R.z1,4.63,null,false);
  const centre=(R.x0+R.x1)/2,zmid=(R.z0+R.z1)/2;
  topQuad(STREET.materials.wornSlab,centre-.57,centre+.57,.17,R.z0,R.z1,2.32,null,false);

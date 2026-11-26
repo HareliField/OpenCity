@@ -4,7 +4,7 @@ function cornerMaterials(){
  if(PALM_CORNER.materials)return PALM_CORNER.materials;
  const finish=(color,roughness,metalness=0)=>new THREE.MeshStandardMaterial({color:lin(color),roughness,metalness});
  const plaster=pbr('plaster',1,{rough:.89,ns:.36,color:0xe4ddd0,env:.47});
- const ivory=pbr('stone_light',2.31,{rough:.82,ns:.25,color:0xdbd7c5,env:.47});
+ const ivory=pbr('plaster',1.63,{rough:.88,ns:.28,color:0xdbd9c6,env:.47});
  const shadow=pbr('concrete',1.21,{rough:.90,ns:.4,color:0x928f81});
  return PALM_CORNER.materials={
   plaster,ivory,shadow,sash:finish(0x747e78,.48,.35),brass:finish(0x998d6d,.38,.6),
@@ -29,7 +29,7 @@ function cornerPanel(text,bg,ink,menu=false){
   g.font='600 47px Georgia, serif';
   text.split('|').forEach((line,i)=>g.fillText(line,w/2,119+i*77,w*.84));
  }else{
-  g.font='600 '+(text.length>17?'78':'98')+'px Georgia, serif';
+  g.font='600 '+(text.length>17?'101':'122')+'px Georgia, serif';
   g.fillText(text,w/2,h*.515,w*.91);
  }
  const material=new THREE.MeshStandardMaterial({map:ctex(c),roughness:.69,metalness:.055});
@@ -105,7 +105,7 @@ function cornerWall(B,r,side,base,top,floor,spec){
  box(m.sash,-half-.094,half+.094,top-.201,top-.132,-.26,.374);
  box(m.dark,-half-.075,half+.075,top-.942,top-.892,-.22,.366);
  const c=side===spec.front?(diner?-half+pitch*1.97:half-pitch*1.86):half-pitch*1.82;
- const signW=Math.min(diner?7.85:8.14,width*.35);
+ const signW=Math.min(diner?7.0:7.34,width*.35);
  const sign=cornerPanel(spec.shop,diner?'#813737':arcade?'#54483a':spec.kind==='records'?'#323533':'#385747','#efe6d6');
  box(diner?m.oxblood:m.dark,c-signW/2-.057,c+signW/2+.057,top-.891,top-.212,.338,.397);
  facadePlane(sign,M,c-signW/2,c+signW/2,top-.862,top-.239,.402);
@@ -120,6 +120,7 @@ function cornerWall(B,r,side,base,top,floor,spec){
   g.setAttribute('position',new THREE.Float32BufferAttribute([l,topY,.05,h,topY,.05,h,topY-.37,1.17,l,topY-.37,1.17],3));
   g.setAttribute('uv',new THREE.Float32BufferAttribute([0,1,1,1,1,0,0,0],2));g.setIndex([0,2,1,0,3,2]);g.computeVertexNormals();g.applyMatrix4(M);addGeo(m.canvas,g,true);
   box(m.canvas,l,h,topY-.512,topY-.367,1.15,1.185);
+  weatherCeilings.push({...lrect(M,l,h,-1.185,-.05),h:topY-.36});
   for(const u of [l+.1,h-.1]){
    const p=lpt(M,u,-1.15),q=lpt(M,u,-.058);
    worksBeam(m.sash,[q.x,topY-.82,q.z],[p.x,topY-.365,p.z],.016);
@@ -157,9 +158,31 @@ function furnishCornerShop(B,r,y,spec){
   plainBox(m.linen,barX-3.9,barX+3.9,y+1.03,y+1.065,z-.469,z+.469);
   for(const off of [-2.92,-1.75,-.57,.61])worksModel('diner-stool',barX+off,y,z+1.09,[.445,.719,.445]);
   worksModel('shop-register',barX+2.71,y+1.066,z,[.44,.38,.32],Math.PI,false);
+  worksModel('diner-espresso',barX-1.57,y+1.066,z,[.68,.382,.426],0,false);
   cornerCounterSale(barX+2.71,y,z+1.11,'BREAKFAST','Eggs, toast and coffee',8,15);
   worksModel('patisserie-case',r.x1-5.36,y,z-2.56,[2.10,1.324,.85]);
   worksModel('grocery-cooler',r.x1-1.27,y,z-3.11,[1.38,2.21,.83],-Math.PI/2);
+  // The public counter faces the booths. A tiled service wall hides the storeroom and apartment lobby.
+  const back=r.z1-15.89;
+  cornerFlatWall(B,r.x0+.29,r.x1-.29,back,y,r.x0+5.16);
+  const face=new THREE.Matrix4().makeTranslation(barX,0,back+.075);
+  plainBox(m.green,-4.89,4.54,y+.15,y+1.21,-.003,.041,{M:face});
+  const menu=cornerPanel('EGGS|COFFEE|PIE','#4c5149','#e4d6b9',true);
+  for(const dx of [-2.04,.18,2.4]){
+   plainBox(m.dark,dx-.655,dx+.655,y+1.47,y+2.69,0,.127,{M:face});
+   facadePlane(menu,face,dx-.606,dx+.606,y+1.518,y+2.643,.132);
+  }
+  // Ceramic wall base, suspended pendant cords and a second booth pair at the corner window.
+  for(const [x0,x1] of [[r.x0+.31,r.x0+4.82],[r.x0+6.0,r.x1-.31]]){
+   plainBox(m.green,x0,x1,y+.06,y+.98,back+.073,back+.115);
+   plainBox(m.brass,x0,x1,y+.974,y+.996,back+.106,back+.126);
+  }
+  for(const x of [r.x0+4.25,r.x0+9.56,r.x0+15.12,r.x0+20.43])
+   worksBeam(m.dark,[x,2.92,r.z1-5.84],[x,4.08,r.z1-5.84],.009);
+  const ex=r.x0+3.49,ez=r.z1-11.44;
+  for(const side of [-1,1])worksModel('diner-booth',ex+side*.897,y,ez,[1.565,1.037,.627],side>0?-Math.PI/2:Math.PI/2);
+  worksModel('diner-table',ex,y,ez,[1.125,.914,.768],Math.PI/2);
+  // Leave the west entrance into the dining room and the tenant entrance into the stair lobby unobstructed.
   worksFurniture(B,'counter',barX-2.13,y,z-3.34,3.30,.95,.67);
   buildBasin(barX-2.19,y,z-3.34);worksModel('bakery-counter',barX,y,z-4.59,[1.68,1.07,.74],Math.PI,true);
  }else{
@@ -235,6 +258,14 @@ function furnishCornerFlats(B,r,y,floor){
   worksFurniture(B,'reading-table',unit.x0+4.89,y,bedZ,1.26,.76,.81);
   worksFurniture(B,'seat',unit.x0+4.89,y,bedZ+.95,.49,.89,.53);
   worksFurniture(B,'bookcase',unit.x0+1.2,y,south?unit.z1-.56:unit.z0+.53,1.46,1.72,.41,south?Math.PI:0);
+  // A separate bathroom opens off the unit vestibule. The return wall keeps the WC clear of the kitchen and entry.
+  const bathX=unit.x1-3.58,bathZ=south?face+4.72:face-4.72,doorZ=bathZ+(south?.84:-.84);
+  worksSolid(worksRect(bathX,unit.x1,bathZ-.06,bathZ+.06),y,y+3.91,m.plaster);
+  const end=bathZ+(south?2.50:-2.50);
+  for(const [a,b] of [[Math.min(bathZ,end),doorZ-.57],[doorZ+.57,Math.max(bathZ,end)]]){
+   if(b>a)worksSolid(worksRect(bathX-.06,bathX+.06,a,b),y,y+3.91,m.plaster);
+  }
+  installCistern(B,unit.x1-.85,y,bathZ+(south?.67:-.67),south?0:Math.PI);
   const x=unit.x0+5.92,z=(unit.z0+unit.z1)/2;
   worksModel('enamel-pendant',x,y+3.22,z,[.32,.21,.32],0,false);
   INTERIORS.emitters.push({x,y:y+3.29,z,floorY:y,cool:false});
@@ -256,7 +287,7 @@ function finishPalmCorner(r,spec,top){
    [x0+half,eave+rise,ridgeZ],[x1-half,eave+rise,ridgeZ]];
   const faces=[[0,4,5,1],[1,5,2],[2,5,4,3],[3,4,0]];
   for(const ids of faces){
-   const g=new THREE.BufferGeometry(),p=ids.map(i=>points[i]),uv=p.flatMap(([x,h,z])=>[x/(r.x1-r.x0),z/(z1-z0)+h*.015]);
+   const g=new THREE.BufferGeometry(),p=ids.map(i=>points[i]),uv=p.flatMap(([x,h,z])=>[x/9.0,z/8.8+h*.018]);
    g.setAttribute('position',new THREE.Float32BufferAttribute(p.flat(),3));g.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));
    g.setIndex(ids.length===3?[0,2,1]:[0,2,1,0,3,2]);g.computeVertexNormals();
    if(g.attributes.normal.getY(0)<0){g.setIndex(ids.length===3?[0,1,2]:[0,1,2,0,2,3]);g.computeVertexNormals();}

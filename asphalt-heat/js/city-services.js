@@ -48,6 +48,9 @@ function updateServiceGraph(dt){
   const lot=supplyAt(machine.x,machine.z);
   if(lot)lot.discharge+=machine.discharge;
  }
+ for(const c of CIVIC.cisterns){
+  const lot=supplyAt(c.x,c.z);if(lot)lot.discharge+=c.discharge;
+ }
  for(const lot of s.downstream)if(lot.parent)lot.parent.discharge+=lot.discharge;
 }
 function drawServiceNetwork(){

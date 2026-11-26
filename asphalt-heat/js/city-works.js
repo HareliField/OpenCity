@@ -37,7 +37,9 @@ function subtractCityOpenings(rect,holes){
 
 function worksGroundMesh(r,y,meters,originX=r.x0,originZ=r.z1){
  const geos=subtractCityOpenings(r,STREET_OPENINGS).map(p=>{
-  const g=new THREE.PlaneGeometry(p.x1-p.x0,p.z1-p.z0);
+  const width=p.x1-p.x0,depth=p.z1-p.z0;
+  // Keep the near-plane and shadow interpolation local even under a shallow driving camera.
+  const g=new THREE.PlaneGeometry(width,depth,Math.ceil(width/12),Math.ceil(depth/12));
   g.rotateX(-Math.PI/2);g.translate((p.x0+p.x1)/2,y,(p.z0+p.z1)/2);
   const uv=g.attributes.uv,pos=g.attributes.position;
   for(let i=0;i<uv.count;i++)uv.setXY(i,(pos.getX(i)-originX)/meters,(originZ-pos.getZ(i))/meters);
@@ -602,6 +604,8 @@ function updateCityWorks(dt,pos){
   fixture.time=Math.max(0,fixture.time-dt);fixture.stream.visible=fixture.time>0&&pressureAtFixture(fixture)>.10;
   if(fixture.stream.visible)discharge+=.16*pressureAtFixture(fixture);
  }
+ updateCivicServices(dt);
+ for(const c of CIVIC.cisterns)discharge+=c.discharge;
  w.wastewater=clamp(w.wastewater+dt*(discharge-.040),0,1);
  w.sewerSight.scale.y=.09+w.wastewater*.46;
  w.sewerSight.position.y=w.levels[0]+.15+w.sewerSight.scale.y/2;
@@ -652,6 +656,14 @@ function buildCityWalkup(B,spec){
   const holes=i===0?[]:[shaft,i%2===1?a:b,...(roof?[]:[i%2===1?b:a])];
   const finish=spec.front?cornerMaterials():null;
   worksSlab(r,y,roof?(finish?.roof||MAT.roof):i?m.floor:finish?.storeFloor||m.stone,holes);
+  if(finish&&i){
+   // A plaster soffit underneath the occupied floors follows the same stair and lift apertures.
+   for(const p of subtractCityOpenings(r,holes)){
+    const g=new THREE.PlaneGeometry(p.x1-p.x0,p.z1-p.z0);
+    g.rotateX(Math.PI/2);g.translate((p.x1+p.x0)/2,y-.163,(p.z1+p.z0)/2);
+    addGeo(finish.ceiling,g,false);
+   }
+  }
   if(roof)break;
   const next=levels[i+1];
   worksFlight(i%2===0?a:b,y,next,i%2===1);

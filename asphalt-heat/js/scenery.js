@@ -55,7 +55,8 @@ function updatePropModels(x,z){
  for(const p of PROPS.list){
   const dockLamp=p.t==='lamp'&&p.x>=15*CELL&&p.x<W+HALF&&p.z>=13*CELL;
   const gardenLamp=p.t==='lamp'&&p.x>=11*CELL&&p.x<=13*CELL&&p.z>=2*CELL&&p.z<=4*CELL;
-  const type=dockLamp||gardenLamp?['dock-street-lamp',[.38,7.20,2.49]]:p.riverside?['riverside-lamp',[.56,4.93,1.08]]:types[p.t];
+  const palmLamp=p.t==='lamp'&&p.x>=9*CELL&&p.x<=11*CELL&&p.z>=7*CELL&&p.z<=11*CELL;
+  const type=dockLamp||gardenLamp||palmLamp?['dock-street-lamp',[.38,7.20,2.49]]:p.riverside?['riverside-lamp',[.56,4.93,1.08]]:types[p.t];
   if(!type)continue;
   const [id,dims]=type;
   const pos=p.renderPosition;
@@ -77,6 +78,7 @@ function updatePropModels(x,z){
     o.castShadow=!p.P.glow;
     if(p.t==='lantern'&&(!p.riverside||o.material.name==='Opal lamp lens'))bindLanternLens(p,o);
    });
+   node.userData.roadwayLens=id==='dock-street-lamp';
    p.display=node;
    node.visible=true;
    scene.add(node);
@@ -87,8 +89,11 @@ function updatePropModels(x,z){
 }
 
 function lampEmitter(p){
- const lantern=p.t==='lantern',arm=p.riverside&&p.display?.visible? .57 : lantern?0:1.85;
- return {x:p.x+Math.sin(p.ry)*arm,y:p.y+(p.riverside&&p.display?.visible?4.21:lantern?4.45:p.display?.visible?5.69:6.9),z:p.z+Math.cos(p.ry)*arm};
+ const lantern=p.t==='lantern',loaded=p.display?.visible;
+ const roadway=loaded&&p.display.userData.roadwayLens;
+ const arm=roadway?2.11:p.riverside&&loaded?.57:lantern?0:1.85;
+ const height=roadway?7.005:p.riverside&&loaded?4.21:lantern?4.45:loaded?5.69:6.9;
+ return {x:p.x+Math.sin(p.ry)*arm,y:p.y+height,z:p.z+Math.cos(p.ry)*arm};
 }
 const illuminatedLanternGlass=new WeakMap();
 function bindLanternLens(p,mesh){
@@ -152,6 +157,7 @@ const heroModels=new Map();
 const REFERENCE_LAMPS={
  coupe:[[-2.219,.673,.685,.26],[2.224,.658,.427,.19]],
  'maroon-saloon':[[-2.29,.60,.76,.33],[2.261,.58,.669,.29]],
+ 'graphite-city-saloon':[[-2.29,.60,.76,.33],[2.261,.58,.669,.29]],
  'silver-city-sedan':[[-2.283,.58,.834,.34],[2.282,.621,.677,.30]],
  'brick-red-crossover':[[-2.23,.621,1.007,.285],[2.232,.658,.816,.283]],
  'harbor-box-truck':[[-3.334,.795,.922,.226],[3.353,.647,.998,.255]]

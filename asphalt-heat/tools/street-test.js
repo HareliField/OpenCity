@@ -20,7 +20,7 @@ run(`const CANNON=window.CANNON,V3=THREE.Vector3,CELL=64,N=16,W=N*CELL,HALF=8,OR
 `);
 const world=read('js/world.js');
 run(world.slice(world.indexOf('function districtOf('),world.indexOf('const SPECIAL=')));
-for(const name of ['phys','cargen','fleet','access','roads','street-plan','street-surface','city-works','city-services','city-traffic','lighthouse','garden-cottages','harbor-supply','game'])run(read('js/'+name+'.js'));
+for(const name of ['phys','cargen','fleet','access','roads','street-plan','street-surface','city-works','city-services','city-traffic','lighthouse','garden-cottages','civic-fittings','harbor-supply','game'])run(read('js/'+name+'.js'));
 run(`
  player={pos:new V3(800,0,800),car:null};
  setCarLights=()=>{};
@@ -33,6 +33,7 @@ run(`
  assert(controls.signal>20 && controls.signal<120);
  assert(controls['all-stop']>0 && controls['stop-ns']>0 && controls['stop-ew']>0);
  assert.equal(junctionControl(4,5),'signal');
+ assert.equal(junctionControl(10,10),'signal');
  for(let g=0;g<SIGNAL_GROUPS;g++)for(let t=0;t<60;t+=.25){
   const {ns,ew}=phaseForGroup(g,t);
   assert(!(ns.vehicle!=='R'&&ew.vehicle!=='R'));

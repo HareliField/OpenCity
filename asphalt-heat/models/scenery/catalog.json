@@ -261,5 +261,20 @@
   },
   "coastal-solar-array": {
     "file": "coastal-solar-array.glb"
+  },
+  "civic-mosaic-basin": {
+    "file": "civic-mosaic-basin.glb"
+  },
+  "glazed-bus-shelter": {
+    "file": "glazed-bus-shelter.glb"
+  },
+  "ceramic-cistern": {
+    "file": "ceramic-cistern.glb"
+  },
+  "diner-espresso": {
+    "file": "diner-espresso.glb"
+  },
+  "graphite-city-saloon": {
+    "file": "graphite-city-saloon.glb"
   }
 }
