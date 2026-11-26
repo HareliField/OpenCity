@@ -79,7 +79,9 @@ Reviewed GLBs load as the player approaches. Their source models were generated 
 
 Add `?visit=police` to the game URL to start facing Old Town headquarters. Both police buildings on the minimap share one department. Enter either building and use **C / CASE DESK** at reception to see cases, fugitives, the watch roster and the radio log. The 48 named staff rotate across three watches. Patrol, Detectives, Metro SWAT, Communications, Forensics, Air Support and Command draw from that roster. Approach an officer on foot and use **TALK** to see their name and assignment.
 
-At reception, **Watch** lists the current shift. **Cases → Follow a training homicide** starts a fictional witness report that the on-duty patrol, detective and analyst work through. The case timeline keeps their findings in order. Dispatch stays silent during play.
+At reception, **Watch** lists the current shift. Use the lobby lift for Investigations & Evidence, Watch Operations, or Staff & Equipment. The evidence terminal tracks each exhibit from collection to storage. Booking and equipment desks show linked bookings and the kits issued to the current watch.
+
+The **Cases** desk offers three playable training reports. Follow a homicide from the first call to a supervisor’s bulletin, follow a gunfire report with an unidentified shooter, or open two homicides together and see how the detectives share one analyst. The files advance on the game clock while you explore. Their timelines record the sender, recipient and finding. Dispatch stays silent during play.
 
 Homicides, robberies, gunfire and vehicle thefts create case files. A civilian can call 911 about gunfire they hear. An identified shooter can trigger a pursuit. A detective takes the file and the evidence desk reviews game-world prints, DNA, witness statements and vehicle sightings. The **Gloves** button changes the character’s hand covering. A homicide bulletin can survive a search cooldown and a reload in the same browser tab. A patrol that recognizes the person or a reported plate can reopen the search. Booking updates linked files at both desks.
 

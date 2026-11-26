@@ -341,6 +341,7 @@ function updateInteriors(dt,x,z){
  INTERIORS.clock=.30;
  const near=[];
  for(const lamp of INTERIORS.emitters){
+  if(lamp.floorY!==undefined&&Math.abs(lamp.floorY-player.pos.y)>1.5)continue;
   const distance=(lamp.x-x)**2+(lamp.z-z)**2;
   if(distance<31**2&&cityPowerAt(lamp.x,lamp.z))near.push({lamp,distance});
  }
@@ -349,7 +350,7 @@ function updateInteriors(dt,x,z){
   const light=INTERIORS.lights[i],lamp=near[i]?.lamp;
   if(lamp){
    light.position.set(lamp.x,lamp.y,lamp.z);
-   light.color.setHex(lamp.cool?0xffe6cb:0xffbf87);
+   light.color.setHex(lamp.floorY!==undefined?0xffefd9:lamp.cool?0xffe6cb:0xffbf87);
    light.intensity=lamp.cool?1.15:1.27;
   }else light.intensity=0;
  }

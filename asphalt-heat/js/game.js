@@ -502,8 +502,8 @@ function spawnUnit(kind,x,z,team,transfer=false,y=0,member=null){
   PoliceDepartment.bindings.set(member.personId,'Foot patrol');
   if(!transfer&&wanted>0)reserveOfficer();
  }
- const c=makeChar(pickChar(role),{gun:1,shadow:false});
- if(member)equipOfficer(c,kind==='swat');
+ const c=makeChar(member?officerModel(member):pickChar(role),{gun:1,shadow:false});
+ if(member){equipOfficer(c,kind==='swat');personalizeOfficer(c,member);fitIssuedEquipment(c,member);}
  const hp={swat:180,army:220,gang:90,guard:120,cop:100}[role];
  const u={c,officer:member,personId:member?.personId,kind:role,pos:new V3(x,y,z),hp,cd:rnd(.6,1.4),team:team||'law',hostile:team!=='gang',dead:false,downT:0};PoliceDepartment.identify(u);collideWorld(u.pos,.35);c.root.position.copy(u.pos);(team==='gang'?gang:team==='guard'?guards:cops).push(u);return u;}
 function removeUnit(u,arr){PoliceDepartment.release(u.officer);removeChar(u.c);const i=arr.indexOf(u);if(i>=0)arr.splice(i,1);}
@@ -754,7 +754,7 @@ const markerObjs=[];
 function labelSprite(text,color){const[c,g]=cvs(512,128);g.font='84px Anton, Impact, sans-serif';g.textAlign='center';g.textBaseline='middle';g.lineWidth=12;g.strokeStyle='rgba(0,0,0,.8)';g.strokeText(text,256,66);g.fillStyle=color;g.fillText(text,256,66);
  const s=new THREE.Sprite(new THREE.SpriteMaterial({map:new THREE.CanvasTexture(c),depthTest:true,transparent:true,fog:false}));s.scale.set(8,2,1);s.renderOrder=9;return s;}
 const MCOL={store:0xffd040,bank:0xffd040,gunshop:0xff8a30,hospital:0xff4060,police:0x4a8aff,chop:0x40ff80,spray:0x40a8ff};
-function buildMarkers(){for(const p of places){const col=new THREE.Color(MCOL[p.kind]);const at=p.road||p.interact||p.door;const r=p.road?4:1.3;const y=groundY(at.x,at.z);
+function buildMarkers(){for(const p of places){if(p.kind==='police')continue;const col=new THREE.Color(MCOL[p.kind]);const at=p.road||p.interact||p.door;const r=p.road?4:1.3;const y=groundY(at.x,at.z);
  const ring=new THREE.Mesh(new THREE.RingGeometry(r*.78,r,40),new THREE.MeshBasicMaterial({color:col.clone().multiplyScalar(2),transparent:true,opacity:.75,depthWrite:false,side:THREE.DoubleSide,fog:false}));ring.rotation.x=-Math.PI/2;ring.position.set(at.x,y+.04,at.z);scene.add(ring);
  const beam=new THREE.Mesh(new THREE.CylinderGeometry(r,r,p.road?8:3,32,1,true),new THREE.MeshBasicMaterial({color:col.clone().multiplyScalar(1.5),transparent:true,opacity:.12,blending:THREE.AdditiveBlending,depthWrite:false,side:THREE.DoubleSide,fog:false}));beam.position.set(at.x,(p.road?4:1.5)+y,at.z);scene.add(beam);REFL.hide.push(beam);
  const lab={store:'ROB $',bank:'ROB BANK',gunshop:'GUNS',hospital:'HEAL',police:'POLICE',chop:'SELL CAR',spray:'RESPRAY'}[p.kind];

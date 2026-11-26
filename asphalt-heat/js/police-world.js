@@ -26,6 +26,10 @@ function buildPoliceOffice(block,M,side,box){
   box(mat.steel,x-.05,x+.05,1.12,1.23,v+.33,v+.38);
   box(mat.black,x+.55,x+.72,1.12,1.40,v+.24,v+.40);
  }
+ if(headquarters){
+  furnishHeadquarters(block,M,side,box,sign,solid,station);
+  PoliceDepartment.stations.push(station);return station;
+ }
  counter(0,10,6,'PUBLIC RECORDS');
  sign(headquarters?'OLD TOWN HEADQUARTERS':'SOUTH DISTRICT OFFICE',0,5.5,3.73,12,1.05);
  counter(-10,18,5,headquarters?'COMMUNICATIONS':'PATROL');
@@ -71,28 +75,48 @@ function equipOfficer(c,metro){
 }
 function updateStationPosts(dt){
  for(const station of PoliceDepartment.stations)for(const post of station.posts){
-  const nearby=dist2(player.pos,post.point)<58;
+  const nearby=dist2(player.pos,post.point)<58&&Math.abs(player.pos.y-post.point.y)<3.5;
   if(post.unit?.dead&&nearby&&post.unit.downT<15){
    post.unit.downT+=dt;updChar(post.actor,0,dt,true);continue;
   }
-  const calledOut=post.member?.division==='Detectives'&&PoliceDepartment.cases.some(c=>c.detective===post.member.personId&&c.stage==='Lab review');
+  const calledOut=post.member&&(PoliceDepartment.bindings.has(post.member.personId)||PoliceDepartment.cases.some(c=>PoliceDepartment.assigned(c)===post.member.personId));
   if(post.actor&&(!nearby||calledOut||!PoliceDepartment.duty(post.member))){
-   removeDepartmentPerson(post.unit);post.member=post.actor=post.unit=null;
+   PoliceDepartment.workstations.delete(post.member.personId);removeDepartmentPerson(post.unit,false);post.member=post.actor=post.unit=null;
   }
   if(!nearby)continue;
   if(!post.actor){
-   const member=PoliceDepartment.claim(post.role,station.name);
+   const member=PoliceDepartment.staff.find(s=>s.division===post.role&&PoliceDepartment.duty(s)&&!PoliceDepartment.bindings.has(s.personId)&&
+    !PoliceDepartment.workstations.has(s.personId)&&!PoliceDepartment.cases.some(c=>PoliceDepartment.assigned(c)===s.personId));
    if(!member)continue;
-   post.member=member;
-   const uniform=['Patrol','Command'].includes(post.role);
-   const role=uniform?'cop':post.role==='Forensics'?'medic':member.badge%2===0?'mb':'fb';
-   post.actor=makeChar(pickChar(role),{gun:uniform});
+   post.member=member;PoliceDepartment.workstations.set(member.personId,post.room||station.name);
+   const uniform=['Patrol','Command','Metro SWAT'].includes(member.division);
+   post.actor=makeChar(officerModel(member),{gun:member.kit.some(k=>k.includes('sidearm'))});
    post.actor.personId=member.personId;
    post.unit=departmentPerson(member,post.actor,post.point,uniform);
-   if(uniform)equipOfficer(post.actor,false);
-   post.actor.root.position.copy(post.point);post.actor.root.position.y=.16;post.actor.yaw=post.yaw;post.actor.talk=1;
+   if(uniform)equipOfficer(post.actor,member.division==='Metro SWAT');
+   personalizeOfficer(post.actor,member);fitIssuedEquipment(post.actor,member);
+   post.actor.root.position.copy(post.point);post.actor.root.position.y=post.point.y||.16;post.actor.yaw=post.yaw;post.actor.talk=1;
   }
-  updChar(post.actor,0,dt,true);
+  const c=post.actor,u=post.unit;
+  const phase=(PoliceDepartment.clock+post.member.badge*2.37)%24;
+  const destination=post.workEnd&&phase>9&&phase<18?post.workEnd:post.point;
+  const dx=destination.x-u.pos.x,dz=destination.z-u.pos.z,dist=Math.hypot(dx,dz),stride=Math.min(dt*.85,dist);
+  if(dist>.04){
+   u.pos.x+=dx*stride/dist;u.pos.z+=dz*stride/dist;collideWorld(u.pos,.30);
+   c.yaw=lerpA(c.yaw,Math.atan2(dx,dz),Math.min(1,dt*6));
+  }else c.yaw=lerpA(c.yaw,post.yaw+.12*Math.sin(phase*.48),Math.min(1,dt*2));
+  c.talk=dist<.05&&(phase<2||phase>17&&phase<20)?1:0;
+  c.root.position.copy(u.pos);
+  if(post.seated)c.root.position.y-=.46;
+  updChar(c,dist>.04?.85:0,dt,true);
+  if(post.seated){
+   const forward=new V3(Math.sin(c.yaw),0,Math.cos(c.yaw)),B=c.bones;
+   for(const limb of ['Left','Right']){
+    pointBone(B[limb+'Thigh'],B[limb+'Calf'],forward,.97);pointBone(B[limb+'Calf'],B[limb+'Foot'],new V3(0,-1,0),.98);
+    pointBone(B[limb+'Arm'],B[limb+'ForeArm'],new V3(forward.x*.32,-.9,forward.z*.32).normalize(),.92);
+    pointBone(B[limb+'ForeArm'],B[limb+'Hand'],new V3(forward.x,.1*Math.sin(phase*3),forward.z).normalize(),.92);
+   }
+  }
  }
 }
 
@@ -144,18 +168,18 @@ function assignCivilianIdentity(actor){
 }
 const departmentPeople=[];
 function departmentPerson(member,c,point,uniform){
- const unit={personId:member.personId,officer:member,c,pos:new V3(point.x,.16,point.z),
+ const unit={personId:member.personId,officer:member,c,pos:new V3(point.x,point.y||.16,point.z),
   kind:uniform?'cop':'civilian',team:uniform?'law':'staff',hp:uniform?100:65,dead:false,downT:0};
  PoliceDepartment.identify(unit);
  departmentPeople.push(unit);return unit;
 }
-function removeDepartmentPerson(unit){
+function removeDepartmentPerson(unit,release=true){
  const i=departmentPeople.indexOf(unit);
  if(i>=0)departmentPeople.splice(i,1);
- removeChar(unit.c);PoliceDepartment.release(unit.officer);
+ removeChar(unit.c);if(release)PoliceDepartment.release(unit.officer);
 }
 function meetDepartmentPerson(){
- const person=[...departmentPeople,...cops].find(u=>u.officer&&!u.dead&&canReachPlace(player.pos,u.pos,1.8));
+ const person=[...departmentPeople,...cops].find(u=>u.officer&&!u.dead&&stationReach(player.pos,u.pos,1.8));
  if(!person)return null;
  return {label:'TALK',fn:()=>toast(person.officer.name+' · '+person.officer.division+' · '+PoliceDepartment.status(person.officer),2800)};
 }
@@ -190,7 +214,7 @@ function updatePoliceLives(dt){
   if(!home.unit){
    if(pd.bindings.has(member.personId))continue;
    pd.bindings.set(member.personId,'Off duty · '+member.home);
-   const c=makeChar(pickChar(member.badge%2?'m':'f'),{});
+   const c=makeChar(officerModel(member,false),{});personalizeOfficer(c,member);
    home.unit=departmentPerson(member,c,{x,z},false);
   }
   const u=home.unit,[aheadX,aheadZ]=perimPos(home.route,home.start+pd.clock*.98+.3);
@@ -246,7 +270,8 @@ function updateFieldDetectives(dt){
   }
   collideWorld(at,.34);
   const uniform=member.division==='Patrol';
-  const c=makeChar(pickChar(uniform?'cop':member.badge%2?'mb':'fb'),{gun:uniform}),u=departmentPerson(member,c,at,uniform);
+  const c=makeChar(officerModel(member),{gun:true}),u=departmentPerson(member,c,at,uniform);
+  personalizeOfficer(c,member);fitIssuedEquipment(c,member);
   if(uniform)equipOfficer(c,false);
   u.pos.copy(at);c.root.position.copy(at);u.file=file;
   pd.bindings.set(member.personId,'Scene · file '+file.id);fieldInvestigators.set(file.id,u);

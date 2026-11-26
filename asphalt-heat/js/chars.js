@@ -56,7 +56,7 @@ const gunMat=new THREE.MeshStandardMaterial({color:0x161616,roughness:.35,metaln
 
 function makeGun(){const g=new THREE.Group();const a=new THREE.Mesh(unitBox,gunMat);a.scale.set(.045,.07,.26);a.position.z=.1;const b=new THREE.Mesh(unitBox,gunMat);b.scale.set(.04,.13,.055);b.position.set(0,-.07,0);g.add(a,b);g.visible=false;scene.add(g);return g;}
 const blobG=new THREE.CircleGeometry(.5,14),blobM=new THREE.MeshBasicMaterial({color:0,transparent:true,opacity:.42,depthWrite:false});
-const CB={RightArm:'Bip01_R_UpperArm',RightForeArm:'Bip01_R_Forearm',RightHand:'Bip01_R_Hand',LeftArm:'Bip01_L_UpperArm',LeftForeArm:'Bip01_L_Forearm',LeftHand:'Bip01_L_Hand',Head:'Bip01_Head',Spine2:'Bip01_Spine2',Root:'Bip01'};
+const CB={LeftThigh:'Bip01_L_Thigh',LeftCalf:'Bip01_L_Calf',LeftFoot:'Bip01_L_Foot',RightThigh:'Bip01_R_Thigh',RightCalf:'Bip01_R_Calf',RightFoot:'Bip01_R_Foot',RightArm:'Bip01_R_UpperArm',RightForeArm:'Bip01_R_Forearm',RightHand:'Bip01_R_Hand',LeftArm:'Bip01_L_UpperArm',LeftForeArm:'Bip01_L_Forearm',LeftHand:'Bip01_L_Hand',Head:'Bip01_Head',Spine2:'Bip01_Spine2',Root:'Bip01'};
 function makeChar(name,look={}){const T=TPL[name];const model=THREE.SkeletonUtils.clone(T.scene);const root=new THREE.Group();root.rotation.order='YXZ';root.add(model);
  const bones={};const inv={};for(const k in CB)inv[CB[k]]=k;
  model.traverse(o=>{if(inv[o.name])bones[inv[o.name]]=o;if(o.isMesh){o.castShadow=!!look.shadow||!LOWSHADOW;o.receiveShadow=false;o.frustumCulled=false;if(LOWSHADOW&&!look.shadow)o.layers.set(2);}});
@@ -85,10 +85,12 @@ function updChar(c,spd,dt,vis){const R=c.root;
  else if(c.punch>=0||c.guard>0){const e=c.punch>=0?Math.sin(c.punch*Math.PI):0;
   dirOf(_d1,_fw,_rt,.55+.45*e,-.55+.6*e,.28-.3*e);pointBone(B.RightArm,B.RightForeArm,_d1);dirOf(_d2,_fw,_rt,.6+.4*e,.8-.75*e,-.1);pointBone(B.RightForeArm,B.RightHand,_d2);
   dirOf(_d1,_fw,_rt,.55,-.55,-.3);pointBone(B.LeftArm,B.LeftForeArm,_d1);dirOf(_d2,_fw,_rt,.6,.8,.1);pointBone(B.LeftForeArm,B.LeftHand,_d2);}
+ if(c.slung)c.slung.visible=c.aim<=0;
  if(c.gun){c.gun.visible=c.aim>0;if(c.gun.visible&&B.RightHand){B.RightHand.getWorldPosition(_hp);c.gun.position.copy(_hp).addScaledVector(_fw,.08);c.gun.rotation.set(0,yaw,0);}}}
 function removeChar(c){
  scene.remove(c.root);
  if(c.gun)scene.remove(c.gun);
+ if(c.portraitSkeleton?.boneTexture)c.portraitSkeleton.boneTexture.dispose();
  if(c.mixer)c.mixer.stopAllAction();
  releaseRagdoll(c);
 }

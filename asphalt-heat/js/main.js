@@ -23,7 +23,7 @@ function actionCtx(){if(state!=='play'||shopOpen||player.down>0)return null;if(p
  const doorway=doorInteraction(player.pos,1.83);if(doorway)return doorway;
  const p=nearPlace();if(p){if(p.kind==='police')return {label:'CASE DESK',hot:1,fn:()=>openPoliceDesk(p.office)};if(p.kind==='store'||p.kind==='bank')return p.cd>0?{label:'CLOSED',fn:()=>toast('ALREADY HIT — COME BACK LATER',1500)}:{label:'ROB',fn:()=>startRob(p),hot:1};
   if(p.kind==='gunshop')return{label:'SHOP',fn:openShop,hot:1};if(p.kind==='hospital')return{label:'HEAL',fn:()=>{if(player.hp>=100)toast('YOU ARE FINE',1000);else if(player.cash<100)toast('NEED $100',1000);else{player.cash-=100;player.hp=100;toast('PATCHED UP −$100',1400);}},hot:1};}
- const c=nearestCar(3.6);if(c)return{label:c.driver?'JACK':'ENTER',fn:toggleCar,hot:1};return meetDepartmentPerson()||propInteraction(player.pos)||{label:'ACTION',fn:()=>{}};}
+ const c=nearestCar(3.6);if(c)return{label:c.driver?'JACK':'ENTER',fn:toggleCar,hot:1};return hqInteraction(player.pos)||meetDepartmentPerson()||propInteraction(player.pos)||{label:'ACTION',fn:()=>{}};}
 function carDoorSpot(c){
  const base=c.pos.y;
  for(const side of [1,-1]){
