@@ -1,0 +1,76 @@
+[
+  {
+    "id": "diner-booth",
+    "sourceImages": [
+      1,
+      25,
+      96,
+      111
+    ],
+    "description": "A single banquette with sprung seat, eight stitched ribs, wrapped end caps and a recessed foot plinth.",
+    "parts": 26,
+    "movableParts": [],
+    "runtimeBytes": 151156
+  },
+  {
+    "id": "diner-table",
+    "sourceImages": [
+      1,
+      25,
+      90,
+      96
+    ],
+    "description": "Rounded laminate and chromed edge, porcelain cups, plates and a wire condiment caddy.",
+    "parts": 26,
+    "movableParts": [],
+    "runtimeBytes": 137328
+  },
+  {
+    "id": "diner-stool",
+    "sourceImages": [
+      1,
+      25,
+      90
+    ],
+    "description": "Pedestal stool with a round vinyl seat, tubular foot ring, bearings and a chromed skirt.",
+    "parts": 9,
+    "movableParts": [],
+    "runtimeBytes": 64556
+  },
+  {
+    "id": "corner-news-vendor",
+    "sourceImages": [
+      1,
+      30,
+      43
+    ],
+    "description": "Folded steel coin newspaper box with a sloping cap, paper window, lever, latch and welded feet.",
+    "parts": 32,
+    "movableParts": [],
+    "runtimeBytes": 149436
+  },
+  {
+    "id": "record-browser",
+    "sourceImages": [
+      30,
+      89,
+      99
+    ],
+    "description": "Two timber LP bins containing individual printed sleeves, divider tabs, etched vinyl discs and a sloped browsing lip.",
+    "parts": 43,
+    "movableParts": [],
+    "runtimeBytes": 367336
+  },
+  {
+    "id": "coastal-solar-array",
+    "sourceImages": [
+      12,
+      35,
+      66
+    ],
+    "description": "Two tilted coastal photovoltaic modules with visible cell lattice, raised south legs, cable and inverter.",
+    "parts": 48,
+    "movableParts": [],
+    "runtimeBytes": 76760
+  }
+]

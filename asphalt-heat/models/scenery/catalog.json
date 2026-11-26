@@ -243,5 +243,23 @@
       0,
       0.424
     ]
+  },
+  "diner-booth": {
+    "file": "diner-booth.glb"
+  },
+  "diner-table": {
+    "file": "diner-table.glb"
+  },
+  "diner-stool": {
+    "file": "diner-stool.glb"
+  },
+  "corner-news-vendor": {
+    "file": "corner-news-vendor.glb"
+  },
+  "record-browser": {
+    "file": "record-browser.glb"
+  },
+  "coastal-solar-array": {
+    "file": "coastal-solar-array.glb"
   }
 }

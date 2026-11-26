@@ -104,7 +104,16 @@ function rayWorld(ax,az,bx,bz,ay=groundY(ax,az)+1.48,by=groundY(bx,bz)+1.48,pad=
    if(r.x1<minX||r.x0>maxX||r.z1<minZ||r.z0>maxZ)continue;
    const t=traceBox(start,delta,{x:r.x0,y:r.y0||0,z:r.z0},{x:r.x1,y:r.h||12,z:r.z1},pad);
    if(t>=best)continue;
-   if(r.obb){const {p,q,w,h,d}=r.obb;best=Math.min(best,oriented(p,q,w,h,d));}else best=t;
+   if(r.convex){
+    let near=t,far=best;
+    for(const plane of r.convex.planes){
+     const space=plane.distanceToPoint(start)-pad,speed=plane.normal.dot(delta);
+     if(Math.abs(speed)<1e-9){if(space>0){near=1;break;}continue;}
+     if(speed<0)near=Math.max(near,-space/speed);else far=Math.min(far,-space/speed);
+     if(near>far)break;
+    }
+    if(near<=far)best=Math.min(best,near);
+   }else if(r.obb){const {p,q,w,h,d}=r.obb;best=Math.min(best,oriented(p,q,w,h,d));}else best=t;
   }
   for(const door of ACCESS.grid.get(key)||[]){
    if(!glass&&door.kind==='glass'||door.ox<Math.min(ax,bx)-door.w-pad||door.ox>Math.max(ax,bx)+door.w+pad||door.oz<Math.min(az,bz)-door.w-pad||door.oz>Math.max(az,bz)+door.w+pad)continue;
@@ -157,7 +166,12 @@ function refreshPhysicalWorld(x,z){
   const top=Math.min(r.h||12,157),base=r.y0||0;
   if(top<=base||r.x1<=r.x0||r.z1<=r.z0)continue;
   let body;
-  if(r.obb){
+  if(r.convex){
+   const {verts,hull,center}=r.convex;
+   body=new CANNON.Body({mass:0,material:PH.mat.concrete,collisionFilterGroup:PHYS_GROUP.world});
+   body.addShape(new CANNON.ConvexPolyhedron({vertices:verts.map(p=>new CV(p.x-center.x,p.y-center.y,p.z-center.z)),faces:hull}));
+   body.position.set(center.x,center.y,center.z);PH.w.addBody(body);
+  }else if(r.obb){
    const {p,q,w,h,d}=r.obb;
    body=new CANNON.Body({mass:0,material:PH.mat.concrete,collisionFilterGroup:PHYS_GROUP.world});
    body.addShape(new CANNON.Box(new CV(w/2,h/2,d/2)));
