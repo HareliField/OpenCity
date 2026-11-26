@@ -87,7 +87,65 @@ function finishCityDetail(){
   mesh.receiveShadow=true;mesh.castShadow=true;mesh.frustumCulled=true;batch.mesh=mesh;scene.add(mesh);
  }
 }
-function dressReferenceShop(block,row,M,u0,u1,height){
+function retailPhoto(index,M,x,y,z,w,h){
+ const geo=new THREE.PlaneGeometry(w,h),uv=geo.attributes.uv;
+ const u=index%4,v=3-Math.floor(index/4);
+ for(let i=0;i<uv.count;i++)uv.setXY(i,(u+.008+uv.getX(i)*.984)/4,(v+.008+uv.getY(i)*.984)/4);
+ geo.translate(x,y,z);if(M)geo.applyMatrix4(M);addGeo(CITY_DETAIL.shopFinish,geo,false);
+}
+function framedShopPrint(index,M,x,y,z,w,h){
+ plainBox(INTERIORS.materials.darkWood,x-w/2-.030,x+w/2+.030,y-h/2-.030,y+h/2+.030,z-.055,z,{M});
+ retailPhoto(index,M,x,y,z+.003,w,h);
+}
+function stockCooler(x,y,z){
+ const m=INTERIORS.materials,width=1.80,h=2.13,depth=.86;
+ worksSolid(worksRect(x-width/2,x+width/2,z-depth/2,z+depth/2),y,y+h,m.steel);
+ plainBox(m.rubber,x-.87,x+.87,y+.14,y+1.99,z+.430,z+.456);
+ for(const side of [-1,1]){
+  const cx=x+side*.425;
+  retailPhoto(5,null,cx,y+1.13,z+.46,.755,1.55);
+  for(let k=0;k<5;k++)plainBox(m.steel,cx-.377,cx+.377,y+.42+k*.31,y+.432+k*.31,z+.462,z+.47);
+  plainBox(m.chrome,cx-side*.34-.012,cx-side*.34+.012,y+.75,y+1.43,z+.477,z+.522);
+ }
+ for(let k=0;k<6;k++)plainBox(m.rubber,x-.79,x+.79,y+.052+k*.022,y+.06+k*.022,z+.433,z+.444);
+}
+function basketOnShelf(x,y,z){
+ const m=INTERIORS.materials,geo=new THREE.CylinderGeometry(.235,.18,.18,24,1,true);
+ const uv=geo.attributes.uv;
+ for(let i=0;i<uv.count;i++)uv.setXY(i,(3.015+uv.getX(i)*.97)/4,(2.015+uv.getY(i)*.97)/4);
+ geo.scale(1,1,.77);geo.translate(x,y+.09,z);addGeo(CITY_DETAIL.shopFinish,geo,true);
+ cyl(m.darkWood,x,y+.01,z,.17,.17,.016,18);
+ const handle=new THREE.TorusGeometry(.19,.014,6,20,Math.PI);
+ handle.scale(1,1.23,1);handle.translate(x,y+.18,z);addGeo(m.darkWood,handle,true);
+}
+function dressMarketWindows(){
+ const w=CITY_WORKS,m=w.m,store=INTERIORS.materials,y=w.levels[1],frontZ=w.market.z1;
+ // Window islands and bread tables line the display glass while both entrances retain straight approaches.
+ for(const [x,produce] of [[334.1,true],[346.6,true],[352.0,false],[367.5,false]]){
+  const z=frontZ-2.38;
+  worksSolid(worksRect(x-1.43,x+1.43,z-.53,z+.53),y,y+.73,store.darkWood);
+  retailPhoto(8,null,x,y+.40,z+.533,2.77,.56);
+  plainBox(store.cream,x-1.48,x+1.48,y+.73,y+.79,z-.56,z+.56);
+  if(produce)for(const dx of [-.77,.27])worksModel('produce-crate',x+dx,y+.79,z,[.86,.46,.62],0,false);
+  else worksModel('bakery-counter',x,y+.79,z,[2.34,.87,.67],0,false);
+ }
+ for(const x of [338.7,340.6,342.5])stockCooler(x,y,350.96);
+ for(const x of [347.2,357.0]){
+  // Keep a basket high enough to remain supported by the actual shelf.
+  worksModel('pantry-shelf',x,y,366.1,[1.80,1.56,.48],Math.PI/2);
+  basketOnShelf(x,y+1.56,366.1);
+ }
+ for(const x of [336.3,361.4])framedShopPrint(1,null,x,2.69,353.74,.83,.96);
+ // Three fittings on the inside face of the south glazing, visible from the pavement.
+ retailPhoto(3,null,340.93,1.85,frontZ-.13,.40,.24);
+ retailPhoto(3,null,360.87,1.85,frontZ-.13,.40,.24);
+ for(const x of [333.3,345.7,354.8,366.5]){
+  plainBox(store.darkWood,x-.40,x+.40,2.02,2.046,frontZ-.52,frontZ-.21);
+  for(const dx of [-.29,.29])worksBeam(m.iron,[x+dx,2.046,frontZ-.38],[x+dx,2.42,frontZ-.38],.010);
+  retailPhoto(4,null,x,2.22,frontZ-.375,.62,.31);
+ }
+}
+function dressReferenceShop(block,row,M,u0,u1,height,roomDepth){
  const w=u1-u0,center=(u0+u1)/2,angle=Math.atan2(M.elements[8],M.elements[10]),m=CITY_WORKS.m;
  const model=(id,u,y,v,dims,turn=0,solid=false)=>{
   const p=lpt(M,u,v);worksModel(id,p.x,y,p.z,dims,angle+turn,solid);
@@ -109,6 +167,18 @@ function dressReferenceShop(block,row,M,u0,u1,height){
  for(const x of [u0+.43,u1-.43]){
   line(MAT.metal,x-.030,x+.030,.28,height-.55,.025,.091);
   for(const y of [2.1,5.8,9.3])if(y<height)line(m.iron,x-.065,x+.065,y,y+.055,.015,.113);
+ }
+ const back=-roomDepth;
+ if(row===RETAIL.cafe||row===RETAIL.donuts)framedShopPrint(1,M,center,2.76,back+.27,.72,.91);
+ if(row===RETAIL.barber)framedShopPrint(2,M,center,2.91,back+.27,1.77,.58);
+ if(row===RETAIL.studio||row===RETAIL.books)framedShopPrint(0,M,u1-.87,2.37,back+.32,.58,.75);
+ retailPhoto(3,M,center+1.35,1.87,-.069,.36,.21);
+ if(row===RETAIL.tailor){
+  for(const x of [u0+1.02,u0+2.94]){
+   line(MAT.wood,x-.68,x+.68,2.29,2.35,back+.11,back+.79);
+   line(m.fabric,x-.53,x+.53,2.35,2.57,back+.18,back+.69);
+   retailPhoto(6,M,x,2.46,back+.692,1.04,.21);
+  }
  }
  if(row===RETAIL.books||row===RETAIL.cafe)model('pavement-menu',u0+.94,.17,-.68,[.58,1.04,.42],.10,true);
  if(row===RETAIL.deli)for(const x of [u0+1.0,u0+2.1])model('produce-crate',x,.17,-.58,[.87,.59,.65],0,true);
@@ -174,6 +244,8 @@ function buildBeachLookout(x,z,yaw){
 }
 
 function initRetailFascias(){
+ const shopTexture=TLD.load('tex/reference-shop-fittings.jpg');shopTexture.encoding=THREE.sRGBEncoding;shopTexture.anisotropy=8;
+ CITY_DETAIL.shopFinish=new THREE.MeshStandardMaterial({map:shopTexture,roughness:.62,metalness:.06});
  const canvas=document.createElement('canvas');canvas.width=1024;canvas.height=1024;
  const ctx=canvas.getContext('2d');
  const shops=[

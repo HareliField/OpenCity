@@ -58,5 +58,33 @@ def build():
     atlas.save(GAME/'tex/reference-bays.jpg',quality=93,subsampling=0)
     relief.save(GAME/'tex/reference-bays-material.png',optimize=True)
 
+# Flat faces of small furnishings. Extract their visible faces directly and give
+# them thickness, frames, handles and supports in the corresponding room model.
+SHOP_DETAILS = [
+    (106, [(66,162),(102,173),(102,222),(66,224)]),   # framed landscape
+    (106, [(408,143),(466,141),(466,195),(408,195)]), # blackboard menu
+    (73, [(316,53),(491,57),(491,114),(315,111)]),    # barber trade sign
+    (73, [(121,183),(151,181),(151,201),(121,201)]),  # door notice
+    (96, [(402,146),(459,145),(459,195),(402,195)]),  # two shelves of preserves
+    (96, [(723,150),(755,151),(755,203),(723,203)]),  # chilled cabinet stock
+    (89, [(370,102),(399,101),(399,120),(370,120)]),  # folded garments
+    (93, [(152,112),(198,112),(198,126),(152,126)]),  # basket weave
+    (58, [(495,263),(574,263),(574,373),(495,393)]),  # oiled joinery
+    (73, [(12,275),(77,275),(76,349),(14,353)]),      # stitched upholstery
+    (31, [(261,329),(283,329),(283,335),(261,335)]),  # timber shelf edge
+    (106, [(64,390),(196,389),(196,409),(64,412)]),   # patched limestone
+]
+def build_shop_details():
+    size = 256
+    atlas = Image.new('RGB', (size*4,size*4))
+    for i,(number,corners) in enumerate(SHOP_DETAILS):
+        with Image.open(next(PHOTOS.glob(f'{number:03}-*.png'))) as src:
+            factors = (src.width/800, src.height/450)
+            quad = [v*factors[k] for j in (0,3,2,1) for k,v in enumerate(corners[j])]
+            tile = src.convert('RGB').transform((size,size), Image.Transform.QUAD, quad, Image.Resampling.BICUBIC)
+        atlas.paste(tile, (i%4*size,i//4*size))
+    atlas.save(GAME/'tex/reference-shop-fittings.jpg', quality=92, subsampling=0)
+
 if __name__=='__main__':
     build()
+    build_shop_details()

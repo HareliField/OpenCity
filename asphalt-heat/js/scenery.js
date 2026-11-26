@@ -60,7 +60,8 @@ function installTreeModels(instances,trunks,leaves,kind,selected){
    visible=show;
    _streetMatrix.makeTranslation(0,-1000,0);
    trunks.setMatrixAt(i,show?originalTrunk:_streetMatrix);
-   leaves.setMatrixAt(i,show?originalLeaves:_streetMatrix);
+   // The close plane-tree supplies the bark and branches. Keep the photographed leaf canopy in both views.
+   if(kind==='palm-tree')leaves.setMatrixAt(i,show?originalLeaves:_streetMatrix);
    trunks.instanceMatrix.needsUpdate=true;
    leaves.instanceMatrix.needsUpdate=true;
   };
@@ -110,7 +111,7 @@ function syncLampGlow(p){
  points.setXYZ(p.gi,x,y,z);
  points.needsUpdate=true;
  _streetMatrix.makeRotationY(p.ry);
- _streetMatrix.setPosition(x,y-.12,z);
+ _streetMatrix.setPosition(x,cityPowerAt(p.x,p.z)?y-.12:-1000,z);
  PROPS.heads.setMatrixAt(p.gi,_streetMatrix);
  PROPS.heads.instanceMatrix.needsUpdate=true;
 }

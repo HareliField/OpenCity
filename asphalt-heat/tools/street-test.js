@@ -18,7 +18,7 @@ run(`const CANNON=window.CANNON,V3=THREE.Vector3,CELL=64,N=16,W=N*CELL,HALF=8,OR
 `);
 const world=read('js/world.js');
 run(world.slice(world.indexOf('function districtOf('),world.indexOf('const SPECIAL=')));
-for(const name of ['phys','cargen','fleet','access','roads','street-plan','street-surface','city-works','city-traffic','game'])run(read('js/'+name+'.js'));
+for(const name of ['phys','cargen','fleet','access','roads','street-plan','street-surface','city-works','city-services','city-traffic','game'])run(read('js/'+name+'.js'));
 run(`
  player={pos:new V3(800,0,800),car:null};
  setCarLights=()=>{};

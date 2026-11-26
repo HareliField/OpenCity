@@ -342,7 +342,7 @@ function updateInteriors(dt,x,z){
  const near=[];
  for(const lamp of INTERIORS.emitters){
   const distance=(lamp.x-x)**2+(lamp.z-z)**2;
-  if(distance<31**2)near.push({lamp,distance});
+  if(distance<31**2&&cityPowerAt(lamp.x,lamp.z))near.push({lamp,distance});
  }
  near.sort((a,b)=>a.distance-b.distance);
  for(let i=0;i<INTERIORS.lights.length;i++){

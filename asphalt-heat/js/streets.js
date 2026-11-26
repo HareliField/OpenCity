@@ -161,7 +161,7 @@ function shopFacade(block,row,M,u0,u1,storey,coastal){
   }
  }
  buildInterior({block,M,u0,u1,door0,door1,row,depth:roomDepth});
- dressReferenceShop(block,row,M,u0,u1,storey);
+ dressReferenceShop(block,row,M,u0,u1,storey,roomDepth);
  block.bld.push({...back,h:4.1},{...main,y0:3.55,h:storey});
  return main;
 }
@@ -273,7 +273,7 @@ function finishStreetDetails(){
 function updateStreetLighting(dt,x,z){
  if(DAYLIGHT||(STREET.sample-=dt)>0)return;
  STREET.sample=.36;
- const active=PROPS.list.filter(p=>p.P.glow&&!p.moved&&Math.abs(p.x-x)<24&&Math.abs(p.z-z)<24);
+ const active=PROPS.list.filter(p=>p.P.glow&&!p.moved&&cityPowerAt(p.x,p.z)&&Math.abs(p.x-x)<24&&Math.abs(p.z-z)<24);
  active.sort((a,b)=>(a.x-x)**2+(a.z-z)**2-(b.x-x)**2-(b.z-z)**2);
  for(let i=0;i<STREET.lights.length;i++){
   const light=STREET.lights[i],p=active[i];

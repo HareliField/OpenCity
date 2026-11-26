@@ -20,6 +20,7 @@ run(read('js/street-plan.js'));
 run(read('js/street-surface.js'));
 run(read('js/freight.js'));
 run(read('js/city-works.js'));
+run(read('js/city-services.js'));
 run(read('js/game.js'));
 run(read('js/dispatch.js'));
 // The input and renderer bootstraps are driven by the browser. Load the gameplay section here.
@@ -122,5 +123,22 @@ run(`
  w.pump=true;w.valve=false;
  for(let i=0;i<330;i++)updateCityWorks(1/60,rider);
  assert(w.water<.35&&!w.tap.visible&&!tap.stream.visible,'water valve shuts the taps and the drain pump lowers the sump');
+`);
+run(`
+ for(let k=0;k<blocks.length;k++)Object.assign(blocks[k],{i:Math.floor(k/N),j:k%N});
+ buildServiceGraph();
+ assert.equal(CITY_SERVICES.lots.length,N*N);
+ for(const lot of CITY_SERVICES.lots){
+  const seen=new Set();let n=lot;
+  while(n.parent){assert(!seen.has(n),'city mains must drain toward the plant');seen.add(n);n=n.parent;}
+  assert.equal(n,CITY_SERVICES.root);
+ }
+ w.pressure=1;w.fixtures.length=0;w.fixtures.push({x:12,z:9,y:4,time:2,stream:frame()});
+ updateServiceGraph(1);assert(CITY_SERVICES.root.discharge>0);
+ const isolated=serviceSector(12,9);isolated.power=false;
+ assert(!cityPowerAt(12,9));assert(cityPowerAt(W-.5,W-.5));
+ updateServiceGraph(1);assert.equal(supplyAt(12,9).volts,0);
+ assert(supplyAt(W-.5,W-.5).volts>220);isolated.power=true;
+ w.pressure=.04;updateServiceGraph(1);assert.equal(pressureAtFixture(w.fixtures[0]),0);
 `);
 console.log('Gameplay regressions passed.');

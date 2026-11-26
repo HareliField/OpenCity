@@ -446,7 +446,7 @@ async function buildCityRest(){SEED=4242;initAwnings();initSigns();initStreetMat
    await new Promise(resolve=>setTimeout(resolve,0));
   }
  }
- buildWorksGallery();buildCityDetail();beach();skyline();buildFreightTerminal();buildGradeRoads();buildStreetNetwork();finishStreetDetails();flushBuckets();for(const m of scene.children)if(m.isMesh&&m.material===ATLAS.neon)m.renderOrder=2;plantTrees();buildTrafficLights();flushBuckets();initializeDoorMeshes();}
+ buildWorksGallery();installCityServices();buildCityDetail();beach();skyline();buildFreightTerminal();buildGradeRoads();buildStreetNetwork();finishStreetDetails();flushBuckets();for(const m of scene.children)if(m.isMesh&&m.material===ATLAS.neon)m.renderOrder=2;plantTrees();buildTrafficLights();flushBuckets();initializeDoorMeshes();}
 $('play').addEventListener('click',()=>{$('start').style.display='none';$('ui').hidden=false;$('touchViews').hidden=false;if(state==='title'){clock.getDelta();state='play';}});
-window.__game={department:PoliceDepartment,cityWorks:CITY_WORKS,step,ff(n){for(let i=0;i<n;i++){step(1/30);}renderFrame(time);},scene,renderer,camera,sun,PH,get player(){return player},cars,peds,cops,gang,helis,places,PROPS,get heat(){return heat},set heat(v){heat=v},get wanted(){return wanted},get state(){return state},keys,inp,toggleCar,startRob,TPL,QUALITY};
+window.__game={department:PoliceDepartment,cityWorks:CITY_WORKS,services:CITY_SERVICES,step,ff(n){for(let i=0;i<n;i++){step(1/30);}renderFrame(time);},scene,renderer,camera,sun,PH,get player(){return player},cars,peds,cops,gang,helis,places,PROPS,get heat(){return heat},set heat(v){heat=v},get wanted(){return wanted},get state(){return state},keys,inp,toggleCar,startRob,TPL,QUALITY};
 loop();boot().catch(e=>{console.error(e);setLoad('Error: '+e.message);});

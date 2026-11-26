@@ -6,7 +6,7 @@ const CITY_WORKS = {
  shaft: {x0:340.2,x1:343.4,z0:340.3,z1:343.6},
  levels: [-3.91,.17,4.25,8.33],
  floors:[], flights:[], panels:[], lifts:[], walkups:[], lamps:[],
- grid:true, pump:true, valve:true, water:.44, pressure:.9, wastewater:0, fixtures:[],
+ grid:true, pump:true, valve:true, workLight:false, water:.44, pressure:.9, wastewater:0, fixtures:[],
  lift:{y:.17, target:1, doors:1, cab:null, body:null}
 };
 const MARKET_PARKING={x:369.6,z:331.2};
@@ -144,6 +144,9 @@ function initWorksMaterials(){
  CITY_WORKS.m={
   brick:pbr('brick_red',1.2,{rough:.87,ns:.45,color:0xd3c9c2}),
   stone:pbr('stone_light',1.0,{rough:.75,ns:.33,color:0xd4cfc4}),
+  chamber:pbr('concrete',1.62,{rough:.91,ns:.74,color:0x898b83,env:.24}),
+  damp:pbr('concrete',1.34,{rough:.60,ns:.63,color:0x5a655b,env:.31}),
+  canvas:[surface(0x355349,.89),surface(0x694642,.89)],
   service:pbr('concrete',1.3,{rough:.9,ns:.41,color:0xb1aea5}),
   floor:pbr('planks',.84,{rough:.72,color:0xc4aea0}),
   pipe:surface(0x588694,.44,.55), iron:surface(0x3d524d,.59,.53), ochre:surface(0xb28345,.6,.46),
@@ -207,7 +210,7 @@ function buildLift(r=CITY_WORKS.shaft,levels=CITY_WORKS.levels,labels=['SERVICE 
   plainBox(m.ochre,u1+.15,u1+.32,y+.97,y+1.30,r.z1+.092,r.z1+.14);
   const level=levels.indexOf(y);
   worksPanel(u1+.15,y,r.z1+.47,()=>lift.target===level&&Math.abs(lift.y-y)<.06?'LIFT AT THIS FLOOR':'CALL LIFT',()=>{
-   if(lift.municipal&&!w.grid){toast('Lift power is off · stairs are open',1700);return;}
+   if(!liftPowered(lift)){toast('Lift power is off · stairs are open',1700);return;}
    if(Math.abs(lift.y-lift.levels[lift.target])>.06)return toast('Lift in transit',1300);
    lift.target=level;
   },1.18);
@@ -227,7 +230,9 @@ function buildLift(r=CITY_WORKS.shaft,levels=CITY_WORKS.levels,labels=['SERVICE 
   [0,.98,-1.40,2.52,.045,.045,MAT.metal],
   [-1.49,1.25,0,.07,2.50,3.10,m.panel],[1.49,1.25,0,.07,2.50,3.10,m.panel]
  ]){
-  const part=new THREE.Mesh(unitBox,mat);part.scale.set(width,height,depth);part.position.set(xoff,yoff,zoff);part.receiveShadow=true;cab.add(part);
+  const part=new THREE.Mesh(unitBox,mat===m.lamp?mat.clone():mat);
+  if(mat===m.lamp)lift.light=part.material;
+  part.scale.set(width,height,depth);part.position.set(xoff,yoff,zoff);part.receiveShadow=true;cab.add(part);
  }
  cab.position.set(x,lift.y,z);scene.add(cab);lift.cab=cab;
  syncWorksGates(lift);
@@ -269,7 +274,13 @@ function buildMarket(block){
  for(const [u,slot] of [[-12,w.signs.market],[8,w.signs.baker]]){
   const at=lpt(front,u,-.11);worksPlacard(slot,at.x,3.20,at.z,8,.77);
   const canopy=new THREE.BoxGeometry(8.1,.08,1.33);
-  canopy.rotateX(.16);canopy.translate(u,2.91,.63);canopy.applyMatrix4(front);addGeo(AWN[u<0?1:0],canopy,true);
+  const cloth=m.canvas[u<0?0:1];
+  canopy.rotateX(.16);canopy.translate(u,2.91,.63);canopy.applyMatrix4(front);addGeo(cloth,canopy,true);
+  plainBox(cloth,u-4.05,u+4.05,2.66,2.84,1.233,1.275,{M:front});
+  for(const a of [u-3.8,u+3.8]){
+   const near=lpt(front,a,-.12),far=lpt(front,a,-1.22);
+   worksBeam(m.iron,[near.x,2.19,near.z],[far.x,2.79,far.z],.019);
+  }
  }
  worksPlacard(w.signs.apartments,r.x0-.07,3.16,360.5,5.25,.62,-Math.PI/2);
  // Pantry and bakery open onto the same trading floor, with unobstructed counter approaches.
@@ -291,6 +302,7 @@ function buildMarket(block){
   worksModel('enamel-pendant',x,3.05,z,[.51,.32,.51],0,false);
   cyl(m.lamp,x,3.052,z,.20,.20,.012,12,{shadow:false});
  }
+ dressMarketWindows();
  buildFlats(block,flats);
  buildLift();
  const cellar=worksRect(r.x0,r.x1,r.z0,351.5);
@@ -326,20 +338,24 @@ function buildFlats(block,y){
   worksSolid(worksRect(349.3,352.4,z-1.98,z-1.33),y,y+.88,m.panel);
   plainBox(m.stone,349.26,352.46,y+.88,y+.95,z-2.01,z-1.30,{uvm:1});
   worksModel('salon-plant',352.8,y,z+1.32,[.54,1.08,.54],0);
-  const cx=350.29,cz=z-1.65;
-  plainBox(m.iron,cx-.30,cx+.30,y+.953,y+.969,cz-.17,cz+.16);
+  buildBasin(350.29,y,z-1.65);
+ }
+}
+
+function buildBasin(cx,y,cz){
+ const m=CITY_WORKS.m;
+ plainBox(m.iron,cx-.30,cx+.30,y+.953,y+.969,cz-.17,cz+.16);
   plainBox(m.enamel,cx-.26,cx+.26,y+.969,y+.971,cz-.13,cz+.12);
   cyl(MAT.metal,cx,y+.971,cz+.04,.030,.030,.010,12);
   worksBeam(MAT.metal,[cx,y+.96,cz-.23],[cx,y+1.20,cz-.23],.023);
   worksBeam(MAT.metal,[cx,y+1.20,cz-.23],[cx,y+1.20,cz],.023);
   const stream=new THREE.Mesh(new THREE.CylinderGeometry(.012,.018,.225,8),m.channel);
   stream.position.set(cx,y+1.083,cz);stream.visible=false;scene.add(stream);
-  const fixture={time:0,stream};CITY_WORKS.fixtures.push(fixture);
+  const fixture={x:cx,y,z:cz,time:0,stream};CITY_WORKS.fixtures.push(fixture);
   worksPanel(cx,y,cz+.68,()=>'RUN BASIN TAP',()=>{
-   if(CITY_WORKS.pressure<.12)return toast('No water pressure',1200);
+   if(pressureAtFixture(fixture)<.12)return toast('No water pressure',1200);
    fixture.time=3.5;toast('Basin tap open',1100);
   });
- }
 }
 
 function worksRoofTank(x,y,z){
@@ -354,13 +370,14 @@ function worksRoofTank(x,y,z){
  worksBeam(m.pipe,[x+.92,y,z+.92],[x+.92,y+2.16,z+.92],.10);
 }
 function buyMarketItem(cost,health,name){
- if(!CITY_WORKS.grid)return toast('Register offline · restore market power',1800);
+ if(!CITY_WORKS.grid||!cityPowerAt(CITY_WORKS.market.x0,CITY_WORKS.market.z0))return toast('Register offline · restore market power',1800);
  if(player.cash<cost)return toast('Insufficient cash',1400);
  player.cash-=cost;player.hp=Math.min(100,player.hp+health);toast(name+' · $'+cost,1500);
 }
 
 function buildStation(block){
  const w=CITY_WORKS,r=w.station,m=w.m,[base,ground]=w.levels;
+ buildDistrictPanel();
  worksSlab(r,base,m.service);
  worksSlab(r,ground,m.service,[STATION_STAIR]);
  worksSlab(r,4.42,MAT.roof);
@@ -432,9 +449,13 @@ function buildStation(block){
 }
 function buildWorksGallery(){
  const w=CITY_WORKS,r=w.gallery,m=w.m,base=w.levels[0];
- worksSlab(r,base,m.service);
- worksSolid(r,-.49,-.26,m.service,true);
- for(const x of [r.x0-.17,r.x1])worksSolid(worksRect(x,x+.17,r.z0,r.z1),base,-.35,m.service);
+ worksSlab(r,base,m.chamber);
+ worksSolid(r,-.49,-.26,m.chamber,true);
+ for(const x of [r.x0-.17,r.x1])worksSolid(worksRect(x,x+.17,r.z0,r.z1),base,-.35,m.chamber);
+ for(const x of [r.x0+.014,r.x1-.014]){
+  plainBox(m.damp,x-.02,x+.02,base,base+.61,r.z0,r.z1,{uvm:1.66});
+  for(let z=r.z0+4.4;z<r.z1;z+=5.7)plainBox(m.iron,x-.023,x+.023,base+.59,-.5,z-.013,z+.013);
+ }
  // A separate storm channel runs beside the dry walking ledge from the market to the station.
  for(const x of [347.72,349.72])worksSolid(worksRect(x,x+.16,r.z0+.23,r.z1-.20),base,base+.53,m.service);
  w.drain=new THREE.Mesh(new THREE.PlaneGeometry(1.84,r.z1-r.z0-.45),m.channel);
@@ -447,6 +468,11 @@ function buildWorksGallery(){
   }
  }
  for(let z=r.z0+2;z<r.z1;z+=5.7){
+  // Removable galvanized grates bridge the drain for inspection.
+  for(let i=0;i<13;i++)plainBox(m.iron,347.77,349.86,base+.53,base+.568,z-.31+i*.05,z-.292+i*.05);
+  const grate=worksRect(347.77,349.86,z-.31,z+.31);
+  STATIC.push({...grate,y0:base+.53,h:base+.568,walkIgnore:true});
+  w.floors.push({...grate,y:base+.568});
   plainBox(m.panel,343.67,344.21,-1.1,-.96,z-.39,z+.39);
   plainBox(m.lamp,343.7,344.18,-1.17,-1.085,z-.29,z+.29);
  }
@@ -481,7 +507,7 @@ function worksAction(pos){
   if(at<0||lift.doors<.93)return {label:'LIFT IN TRANSIT',fn:()=>{}};
   const next=(at+1)%lift.levels.length,labels=lift.labels;
   return {label:'LIFT · '+labels[next],hot:true,fn:()=>{
-   if(!lift.municipal||w.grid)lift.target=next;else toast('Power off · use the stairs',1500);
+   if(liftPowered(lift))lift.target=next;else toast('Power off · use the stairs',1500);
   }};
  }
  for(const p of w.panels){
@@ -494,7 +520,9 @@ function worksAction(pos){
 function updateWorksLift(lift,dt,pos){
  const w=CITY_WORKS,r=lift.shaft;
  const old=lift.y,target=lift.levels[lift.target];
- if(!lift.municipal||w.grid){
+ const powered=liftPowered(lift);
+ if(lift.light)lift.light.emissiveIntensity=powered?1.10:.10;
+ if(powered){
   if(Math.abs(target-old)>.001){
    const doorOccupied=Math.abs(pos.z-r.z1)<.42&&pos.x>r.x0+.25&&pos.x<r.x1-.25&&Math.abs(pos.y-old)<.36;
    lift.doors=doorOccupied?Math.min(1,lift.doors+dt*1.65):Math.max(0,lift.doors-dt*1.65);
@@ -511,25 +539,28 @@ function updateWorksLift(lift,dt,pos){
 function updateCityWorks(dt,pos){
  const w=CITY_WORKS;
  for(const lift of w.lifts)updateWorksLift(lift,dt,pos);
- const draining=w.grid&&w.pump;
+ const stationPower=w.grid&&cityPowerAt(w.station.x0,w.station.z0);
+ const draining=stationPower&&w.pump;
+ updateServiceGraph(dt);
  w.water=clamp(w.water+dt*(draining ? -.012 : .009),.12,.94);
  let discharge=0;
  for(const fixture of w.fixtures){
-  fixture.time=Math.max(0,fixture.time-dt);fixture.stream.visible=fixture.time>0&&w.pressure>.10;
-  if(fixture.stream.visible)discharge+=.16*w.pressure;
+  fixture.time=Math.max(0,fixture.time-dt);fixture.stream.visible=fixture.time>0&&pressureAtFixture(fixture)>.10;
+  if(fixture.stream.visible)discharge+=.16*pressureAtFixture(fixture);
  }
  w.wastewater=clamp(w.wastewater+dt*(discharge-.040),0,1);
  w.sewerSight.scale.y=.09+w.wastewater*.46;
  w.sewerSight.position.y=w.levels[0]+.15+w.sewerSight.scale.y/2;
- w.pressure=lerp(w.pressure,w.valve&&w.grid?1:0,1-Math.exp(-dt*.60));
+ w.pressure=lerp(w.pressure,w.valve&&stationPower?1:0,1-Math.exp(-dt*.60));
  w.drain.position.y=w.levels[0]+.06+w.water*.41;w.tap.visible=w.pressure>.10;w.tap.scale.x=w.tap.scale.z=w.pressure;
  w.gauge.scale.y=.48*w.water;w.gauge.position.y=.63+w.gauge.scale.y/2;
  w.handwheel.rotation.z=lerp(w.handwheel.rotation.z,w.valve?0:Math.PI*.85,Math.min(1,dt*4));
  w.breaker.rotation.x=w.grid?-.26:.72;
- w.m.lamp.emissiveIntensity=w.grid?1.10:.12;
+ w.m.lamp.emissiveIntensity=stationPower?1.10:.12;
+ for(const mesh of CITY_SERVICES.pipes)mesh.visible=pos.y<-1.40;
  const inTunnel=pos.y<-1.05&&(worksInside(w.gallery,pos.x,pos.z)||worksInside(w.market,pos.x,pos.z)||worksInside(w.station,pos.x,pos.z));
  w.lamps.forEach((l,i)=>{
-  l.intensity=inTunnel?(w.grid?1.68:.45):0;
+  l.intensity=inTunnel?(stationPower?1.68:w.workLight&&i===0?1.30:.45):0;
   l.position.set(pos.x+(i?1:-1),Math.min(-.65,pos.y+2.4),pos.z+(i?3.4:-2.2));
  });
 }
@@ -578,15 +609,28 @@ function buildCityWalkup(B,spec){
    }
    worksFurniture(B,'counter',r.x1-3.22,y,r.z1-9.5,2.5,.96,.78);
    worksModel('shop-register',r.x1-3.22,y+.98,r.z1-9.5,[.44,.37,.30],Math.PI,false);
-   if(coastal||spec.kind==='brick'){
-    const x=r.x1-3.22,z=r.z1-8.68;
-    worksPanel(x,y,z,()=>coastal?'BUY COFFEE · $4':'BUY BOOK · $8',()=>{
-     const cost=coastal?4:8;if(player.cash<cost)return toast('Insufficient cash',1300);
-     player.cash-=cost;if(coastal)player.hp=Math.min(100,player.hp+5);
-     toast(coastal?'House coffee · $4':'Used paperback · $8',1400);
-    });
+   const counterX=r.x1-3.22,counterZ=r.z1-8.68;
+   const item=mill?'WORK LIGHT':coastal?'COFFEE':'BOOK',price=mill?18:coastal?4:8;
+   if(mill){
+    const lx=counterX+.71,lz=counterZ-.83;
+    cyl(m.ochre,lx,y+.96,lz,.085,.11,.22,12);
+    cyl(m.enamel,lx,y+1.18,lz,.078,.078,.115,12);
+    const handle=new THREE.TorusGeometry(.075,.012,6,16,Math.PI);handle.translate(lx,y+1.29,lz);addGeo(MAT.darkMetal,handle,true);
    }
+   worksPanel(counterX,y,counterZ,()=>mill&&w.workLight?'WORK LIGHT PURCHASED':'BUY '+item+' · $'+price,()=>{
+    if(mill&&w.workLight)return;
+    if(!cityPowerAt(counterX,counterZ))return toast('Register offline',1200);
+    if(player.cash<price)return toast('Insufficient cash',1300);
+    player.cash-=price;
+    if(mill)w.workLight=true;
+    if(coastal)player.hp=Math.min(100,player.hp+5);
+    toast((mill?'Portable work light':coastal?'House coffee':'Used paperback')+' · $'+price,1400);
+   });
   }else{
+   const cx=r.x0+18.7,cz=r.z0+12.82;
+   worksSolid(worksRect(cx-.73,cx+.73,cz-.35,cz+.34),y,y+.94,m.panel);
+   plainBox(m.stone,cx-.74,cx+.74,y+.94,y+.953,cz-.36,cz+.35);
+   buildBasin(cx,y,cz);
    for(const [x,z] of [[r.x0+18.7,r.z0+8.6],[r.x1-6.1,r.z1-8.0]]){
     worksFurniture(B,'reading-table',x,y,z,1.55,.74,.94);
     worksFurniture(B,'seat',x,y,z+1.1,.55,.89,.54);

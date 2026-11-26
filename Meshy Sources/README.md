@@ -10,7 +10,7 @@ Seventeen single-object cutouts from the new reference set used 595 credits. Eac
 
 The original saloon body now has independent hubcaps, working lights and clearance around each suspension wheel. The tank, lamp, post box, enamel shade, plant, fruit crate and rescue cabin use repaired geometry. The hydrant had detached triangles removed. The unmodified 4K generations are in **Original GLBs**.
 
-The new daylight sky and lighting environment use the CC0 Kloofendal 48d Partly Cloudy panorama. Sixteen rectangular window samples from the supplied photos contribute separate color, glazing and frame relief to the facades. [Poly Haven panorama](https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky)
+The new daylight sky and lighting environment use the CC0 Kloofendal 48d Partly Cloudy panorama. Sixteen rectangular window samples from the supplied photos contribute separate color, glazing and frame relief to the facades. Twelve additional photo samples finish framed prints, trade signs, cooler doors, shop joinery, baskets and folded clothing. [Poly Haven panorama](https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky)
 
 [Reference review by district](City%20reference%20index.md)
 
