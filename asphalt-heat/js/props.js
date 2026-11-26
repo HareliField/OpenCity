@@ -152,6 +152,7 @@ function propInteraction(pos){
  }
  if(!best)return null;
  return {label:'NUDGE',hot:true,fn:()=>{
+  PoliceDepartment.touch(player,best,best.body.position,'Street fixture');
   const b=best.body,dx=b.position.x-pos.x,dz=b.position.z-pos.z,scale=Math.min(b.mass*.69,24)/(Math.hypot(dx,dz)||1);
   b.wakeUp();b.applyImpulse(new CV(dx*scale,0,dz*scale),new CV(0,.22,0));
  }};

@@ -2,6 +2,7 @@
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <title>Asphalt Heat</title>
+<link rel="stylesheet" href="police.css">
 <style>
 /* VOICE: sun-baked coastal crime sandbox, loud, cinematic
    IDEA: a living 3D beach city at golden hour you can rob, fight and flee through
@@ -122,8 +123,10 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
 <div id="ui" hidden>
   <div id="tl"><div id="cash">$0</div><div class="bar"><i id="hp"></i></div><div class="bar" id="arbar"><i id="ar"></i></div><div class="bar" id="carbar"><i id="chp"></i></div><div id="obj"></div>
     <button id="sound" type="button" aria-label="Sound" aria-pressed="false">Sound off</button>
+    <button id="gloves" type="button" aria-pressed="false">Gloves off</button>
   </div>
   <div id="tr"><div id="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><div id="heat"><i></i></div><div id="evade"><i></i></div><canvas id="mm" width="300" height="300"></canvas><div id="wep">FISTS <small></small></div></div>
+  <div id="policeRadio" hidden></div>
   <div id="toast"></div><div id="banner"></div>
   <div id="prog"><span>ROBBING…</span><div class="bar"><i></i></div></div>
   <div id="speedo">0<small>KM/H</small></div>
@@ -132,11 +135,16 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
   <div id="btns"><button id="bSprint">SPRINT</button><button id="bWep">WEAPON</button><button id="bAct">ENTER</button><button id="bFire">PUNCH</button></div>
 </div>
 <div id="touchViews" hidden><button id="viewMode">Camera</button><button id="hudMode">Hide HUD</button><button id="leaveCar" hidden>Exit car</button></div>
+<dialog id="policeDesk" aria-labelledby="deskStation">
+ <header><h2 id="deskStation">Police records</h2><button id="deskClose" type="button">Close</button></header>
+ <nav aria-label="Station records"><button data-view="Cases">Cases</button><button data-view="Fugitives">Fugitives</button><button data-view="Watch">Watch</button><button data-view="Radio">Radio</button></nav>
+ <ul id="deskRows"></ul>
+</dialog>
 <div id="shop"><div class="p"><h2>LOCK &amp; LOAD</h2><div id="items"></div><button class="x" id="shopX">LEAVE</button></div></div>
 <div id="big"></div>
 <div id="start"><div class="card">
   <h1>ASPHALT<b>HEAT</b></h1>
-  <p>A sunset beach city with real physics. Jack cars, brawl, hold up stores and the bank, and survive five levels of police heat — from a lone patrol car to SWAT, helicopters and the army.</p>
+  <p>A sunset beach city with real physics. Jack cars, brawl, hold up stores and the bank, and survive five levels of police heat — from a local patrol to Metro SWAT and air support.</p>
   <div class="keys">
     <div><b>WALK / DRIVE</b>Stick or arrow keys — up goes forward, sideways turns</div>
     <div><b>CAMERA</b>Drag to look · V changes view · H hides HUD</div>
@@ -151,5 +159,5 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
   <div id="credits">People: Microsoft Rocketbox avatars (MIT) · Surfaces &amp; sky: Poly Haven (CC0) · Physics: cannon-es · Rendering: three.js</div>
 </div></div>
 <script src="lib/three.min.js"></script><script src="lib/GLTFLoader.js"></script><script src="lib/SkeletonUtils.js"></script><script src="lib/cannon.js"></script>
-<script src="js/core.js"></script><script src="js/phys.js"></script><script src="js/cargen.js"></script><script src="js/chars.js"></script><script src="js/world.js"></script><script src="js/harbor.js"></script><script src="js/freight.js"></script><script src="js/streets.js"></script><script src="js/interiors.js"></script><script src="js/access.js"></script><script src="js/roads.js"></script><script src="js/props.js"></script><script src="js/scenery.js"></script><script src="js/game.js"></script><script src="js/dispatch.js"></script><script src="js/main.js"></script>
+<script src="js/core.js"></script><script src="js/phys.js"></script><script src="js/cargen.js"></script><script src="js/chars.js"></script><script src="js/world.js"></script><script src="js/harbor.js"></script><script src="js/freight.js"></script><script src="js/streets.js"></script><script src="js/interiors.js"></script><script src="js/access.js"></script><script src="js/roads.js"></script><script src="js/props.js"></script><script src="js/scenery.js"></script><script src="js/game.js"></script><script src="js/department.js"></script><script src="js/police-world.js"></script><script src="js/police-desk.js"></script><script src="js/dispatch.js"></script><script src="js/main.js"></script>
 </body></html>

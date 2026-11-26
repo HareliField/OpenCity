@@ -112,6 +112,7 @@ function doorInteraction(pos,radius,kinds=null){
  });
  if(!candidate)return null;
  return {label:candidate.target?'CLOSE DOOR':'OPEN DOOR',hot:true,fn:()=>{
+  if(!player.car)PoliceDepartment.touch(player,candidate,{x:candidate.ox,y:candidate.base,z:candidate.oz},'Door handle');
   candidate.target=candidate.target?0:1;
   noise(.18,candidate.kind==='shutter'?420:730,.11);
  }};

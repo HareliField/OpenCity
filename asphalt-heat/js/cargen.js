@@ -126,8 +126,8 @@ function initCarLenses(){
   for(const name of names)LENS[name].map=map;
  }
 }
-let nextPlate=2817;
-function carPlateMat(){const c=document.createElement('canvas');c.width=256;c.height=64;const g=c.getContext('2d');g.fillStyle='#f3f1e4';g.fillRect(0,0,256,64);g.strokeStyle='#223';g.lineWidth=4;g.strokeRect(3,3,250,58);g.fillStyle='#1a2a55';g.font='bold 44px Anton, Impact, monospace';g.textAlign='center';g.textBaseline='middle';g.fillText('AH '+nextPlate++,128,37);const t=new THREE.CanvasTexture(c);t.encoding=THREE.sRGBEncoding;return new THREE.MeshStandardMaterial({map:t,roughness:.5,polygonOffset:true,polygonOffsetFactor:-3,polygonOffsetUnits:-3});}
+
+function carPlateMat(){const c=document.createElement('canvas');c.width=256;c.height=64;const g=c.getContext('2d');g.fillStyle='#f3f1e4';g.fillRect(0,0,256,64);g.strokeStyle='#223';g.lineWidth=4;g.strokeRect(3,3,250,58);g.fillStyle='#1a2a55';g.font='bold 44px Anton, Impact, monospace';g.textAlign='center';g.textBaseline='middle';const plate='AH '+PoliceDepartment.plateSerial++;g.fillText(plate,128,37);const t=new THREE.CanvasTexture(c);t.encoding=THREE.sRGBEncoding;const m=new THREE.MeshStandardMaterial({map:t,roughness:.5,polygonOffset:true,polygonOffsetFactor:-3,polygonOffsetUnits:-3});m.userData.plate=plate;return m;}
 function carPaint(type,color,livery){const k=type+color+livery;if(CARMATS[k])return CARMATS[k];const M=QUALITY.physical?THREE.MeshPhysicalMaterial:THREE.MeshStandardMaterial;
  const m=new M({color:new THREE.Color(color).convertSRGBToLinear(),map:carSeamTex(type,livery),roughness:livery==='swat'?.6:.26,metalness:livery==='swat'?.2:.55,envMapIntensity:1.25});
  if(QUALITY.physical){m.clearcoat=livery==='swat'?0:1;m.clearcoatRoughness=.13;}return CARMATS[k]=m;}

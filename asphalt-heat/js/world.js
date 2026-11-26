@@ -369,7 +369,7 @@ function special(B,sp){const side=sp.side||'S',M=sideFrame(B,side);const door=lp
   buildAccessibleShell(B,R,{ceiling:4.04,height:22,kind:'lobby',selected:[side],wall:MAT.trim});fillDistrict(B,lrect(M,-23.8,23.8,41,48),'midtown');pl={kind:'hospital',name:'HOSPITAL'};}
  else if(sp.kind==='police'){const R=fb(MAT.fac.brick_dark,-19,19,3.52,15,4,32,{style:0,fh:3.6,bay:3.4,gH:0});roofDressing(R,15,'mid');pb(new THREE.MeshStandardMaterial({color:lin(0x1c3f94),roughness:.6}),-19.2,19.2,4,4.6,3.8,32.2);
   sign(ATLAS.special.police,0,7,3.75,16,2);const fp=lpt(M,14,1);cyl(MAT.metal,fp.x,0,fp.z,.08,.1,13,8);
-  buildAccessibleShell(B,R,{ceiling:3.56,height:15,kind:'lobby',selected:[side],wall:MAT.stone});fillDistrict(B,lrect(M,-23.8,23.8,33,48),'oldtown');pl={kind:'police',name:'POLICE'};}
+  buildAccessibleShell(B,R,{ceiling:3.56,height:15,kind:'lobby',selected:[side],rooms:false,wall:MAT.stone});fillDistrict(B,lrect(M,-23.8,23.8,33,48),'oldtown');const office=buildPoliceOffice(B,M,side,pb);pl={kind:'police',name:office.name,office};}
  else if(sp.kind==='store'||sp.kind==='jewelry'||sp.kind==='gunshop'){const key=sp.kind==='jewelry'?'jewel':sp.kind==='gunshop'?'guns':sp.sign;
   const R=fb(sp.kind==='jewelry'?MAT.fac.stone_dark:MAT.fac.brick_tan,-9,9,4.08,5.4,0,14,{style:0,fh:5,bay:4,gH:4.4});roofDressing(R,5.4,'mid');sign(ATLAS.special[key],0,4.9,-.06,14,1.4);
   buildAccessibleShell(B,R,{ceiling:4.11,height:5.4,selected:[side],wall:MAT.trim});fillRest(-9,9,15);
@@ -393,7 +393,7 @@ function special(B,sp){const side=sp.side||'S',M=sideFrame(B,side);const door=lp
  if(pl){
   pl.door={x:door.x,z:door.z};
   const accessAt=sp.kind==='bank'?9.15:sp.kind==='hospital'?7.7:sp.kind==='police'?6.4:3.0;
-  pl.interact=lpt(M,0,accessAt);
+  pl.interact=pl.office?.desk||lpt(M,0,accessAt);
   pl.cd=0;pl.side=side;places.push(pl);
  }
 }
