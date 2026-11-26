@@ -15,13 +15,14 @@ nav{display:grid;grid-template-columns:repeat(6,1fr);gap:0;margin:10px 0 22px;bo
 button{border:0;border-left:1px solid #354245;background:transparent;color:#e6e9e7;text-align:left;font:600 .91rem/1.25 Inter,system-ui,sans-serif;padding:10px;cursor:pointer}
 button:first-child{border-left:0}button time{display:block;color:#a9bbbd;font:12px/1.4 Menlo,monospace;margin-bottom:2px}
 button:hover,button:focus-visible{background:#34464a}button[aria-current="true"]{color:#f7dcad;box-shadow:inset 0 -2px #d5b988}
+button:disabled{color:#9ca9a9;cursor:wait}
 h2{font-size:1.12rem;margin:0 0 6px}section p{max-width:78ch;margin:0;color:#d7dfdd}footer{margin-top:17px;color:#adb8b8;font-size:.85rem}a{color:#e4c99b}
 @media(max-width:620px){nav{grid-template-columns:repeat(3,1fr)}button:nth-child(4){border-left:0}button:nth-child(n+4){border-top:1px solid #354245}main{padding-top:18px}}
 </style>
 </head>
 <body><main>
 <header><p>ASPHALT HEAT &nbsp; / &nbsp; FILE 0001</p><h1>Old Town homicide</h1></header>
-<video id="film" controls muted playsinline preload="auto" poster="old-town-homicide.jpg" aria-label="A silent gameplay film following the shooting of Hollis Fry and the investigation"> <source src="old-town-homicide.mp4" type="video/mp4"> <a href="old-town-homicide.mp4">Open the MP4 film</a></video>
+<video id="film" controls muted playsinline preload="none" poster="old-town-homicide.jpg" aria-label="A silent gameplay film following the shooting of Hollis Fry and the investigation"> <source src="old-town-homicide.mp4" type="video/mp4"> <a href="old-town-homicide.mp4">Open the MP4 film</a></video>
 <nav aria-label="Jump to a moment in the film">
  <button data-at="6"><time>00:06</time>Street encounter</button>
  <button data-at="15.46"><time>00:15</time>911 call</button>
@@ -37,9 +38,38 @@ h2{font-size:1.12rem;margin:0 0 6px}section p{max-width:78ch;margin:0;color:#d7d
 <script>
 const film=document.querySelector('video');
 const chapters=[...document.querySelectorAll('[data-at]')];
-for(const chapter of chapters)chapter.addEventListener('click',()=>{
- film.currentTime=Number(chapter.dataset.at);film.play().catch(()=>{});
-});
+for(const chapter of chapters){
+ chapter.disabled=true;
+ chapter.addEventListener('click',()=>{
+  film.currentTime=Number(chapter.dataset.at);
+  film.play().catch(()=>{});
+ });
+}
+async function prepareFilm(){
+ const source=film.querySelector('source').src;
+ let localFilm;
+ if(/^https?:/.test(source)){
+  try{
+   // Simple static servers send the whole MP4 for a range request. A blob lets the native player seek within it.
+   const response=await fetch(source,{headers:{Range:'bytes=0-0'}});
+   if(response.status===200)localFilm=URL.createObjectURL(await response.blob());
+  }catch{
+   // The video element can still use its original source when the probe fails.
+  }
+ }
+ const position=film.currentTime,playing=!film.paused&&!film.ended;
+ function ready(){
+  for(const chapter of chapters)chapter.disabled=false;
+  if(localFilm&&position>0)film.currentTime=position;
+  if(localFilm&&playing)film.play().catch(()=>{});
+ }
+ if(!localFilm&&film.readyState>=1)ready();
+ else film.addEventListener('loadedmetadata',ready,{once:true});
+ film.preload='auto';
+ if(localFilm)film.src=localFilm;
+ else if(film.readyState===0&&film.paused)film.load();
+}
+prepareFilm();
 film.addEventListener('timeupdate',()=>{
  const current=chapters.findLast(button=>film.currentTime>=Number(button.dataset.at));
  for(const button of chapters)button.setAttribute('aria-current',String(button===current));
