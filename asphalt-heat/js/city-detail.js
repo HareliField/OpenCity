@@ -224,7 +224,7 @@ function buildCityDetail(){
 function buildBeachLookout(x,z,yaw){
  const ground=.022,M=new THREE.Matrix4().makeRotationY(yaw);M.setPosition(x,0,z);
  const center=lpt(M,.26025,0);
- worksModel('rescue-hut',center.x,ground,center.z,[5.0205,4.3,2.84],yaw,false);
+ worksModel('rescue-hut',center.x,ground,center.z,[5.0205,4.6944,2.84],yaw,false);
  const box=(x0,x1,z0,z1,base,top,deck=false)=>{
   const r=lrect(M,x0,x1,-z1,-z0);
   STATIC.push({...r,y0:ground+base,h:ground+top,walkIgnore:deck});
@@ -237,10 +237,10 @@ function buildBeachLookout(x,z,yaw){
   for(const rz of [-.37,.63])box(cx-.116,cx+.116,rz-.026,rz+.026,top,top+.91);
  }
  for(const u of [-1.83,.25])for(const v of [-1.02,1.02])box(u-.08,u+.08,v-.08,v+.08,0,1.98);
- for(const v of [-.91,.91])box(-1.86,.28,v-.055,v+.055,1.98,3.63);
- box(-1.88,-1.77,-.92,.92,1.98,3.63);
- for(const v of [-.715,.715])box(.18,.295,v-.21,v+.21,1.98,3.63);
- box(-2.25,.67,-1.42,1.42,3.61,3.70);
+ for(const v of [-.91,.91])box(-1.86,.28,v-.055,v+.055,1.98,3.90);
+ box(-1.88,-1.77,-.92,.92,1.98,3.90);
+ for(const v of [-.715,.715])box(.18,.295,v-.21,v+.21,1.98,3.90);
+ box(-2.25,.67,-1.42,1.42,3.887,3.984);
 }
 
 function initRetailFascias(){

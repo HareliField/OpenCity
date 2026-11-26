@@ -255,8 +255,8 @@
       ],
       "input_outline": "708,182 730,172 755,182 748,185 747,204 748,206 749,209 752,210 773,224 781,225 781,228 773,228 747,214 746,229 742,229 741,213 736,217 724,226 722,226 738,212 721,209 721,226 717,227 716,224 718,207 715,206 715,203 717,202 718,184",
       "charged_credits": 35,
-      "runtime_sha256": "49c000eeb8313ee4884c1d88fa71fb293f1a8805a72c7da0380eaadec6561d49",
-      "runtime_repair": "Rebuilt one raised cabin and stair flight to match the photographed tower and the physical deck."
+      "runtime_sha256": "9620f5ff2429605720a7dd37763326db0f4825acf36a0497f20156bf1349df46",
+      "runtime_repair": "Rebuilt the raised rescue cabin and stairs to match the photographed tower, with 1.90 m of clearance at the eaves."
     },
     "enamel-pendant": {
       "task": "01a21977-f90a-771d-aef2-7f245d3dbd24",

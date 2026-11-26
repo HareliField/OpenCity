@@ -141,4 +141,31 @@ run(`
  assert(supplyAt(W-.5,W-.5).volts>220);isolated.power=true;
  w.pressure=.04;updateServiceGraph(1);assert.equal(pressureAtFixture(w.fixtures[0]),0);
 `);
+// Run the same on-foot collision resolver through the descending and ascending cabin stairs.
+const worldSource=read('js/world.js');
+run(worldSource.slice(worldSource.indexOf('function lrect('),worldSource.indexOf('const PASTEL=')));
+run(read('js/harbor.js'));
+run(read('js/props.js'));
+run(read('js/city-detail.js'));
+run(`
+ const STATIC=[];
+ function placeScenery(){}
+ detailFallback=()=>null;
+ for(const [z,angle] of [[30,0],[83,Math.PI]])buildBeachLookout(W+33,z,angle);
+ indexStatic();
+ for(const [z,angle] of [[30,0],[83,Math.PI]]){
+  const matrix=new THREE.Matrix4().makeRotationY(angle);matrix.setPosition(W+33,0,z);
+  const point=u=>new V3(u,0,.11).applyMatrix4(matrix);
+  let height=.02;
+  for(const desc of [false,true])for(let k=0;k<=78;k++){
+   const f=(desc?78-k:k)/78,p=point(lerp(2.84,-.78,f));
+   p.y=groundY(p.x,p.z,height);
+   assert(Math.abs(p.y-height)<.21,'coastal cabin tread at '+p.x+','+p.z+' changes height '+height+' to '+p.y);
+   assert.equal(collideWorld(p,.36),null,'coastal cabin rails, door and eaves must clear the player');
+   height=p.y;
+   if(!desc&&k===78)assert(Math.abs(height-2.002)<.001,'the stair lands inside the cabin');
+  }
+  assert(Math.abs(height-.02)<.002,'the return trip reaches the beach');
+ }
+`);
 console.log('Gameplay regressions passed.');
