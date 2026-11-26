@@ -101,7 +101,7 @@
   if (shopOpen && !deskStation) return ['shopX',...[...$('items').querySelectorAll('button:enabled')].map(b=>'buy:'+b.dataset.item)];
   const result=['camera','hud','gloves','weapon','sound'];
   if(actionCtx()) result.push('interact');
-  if(player.car) result.push('exit');
+  if(player.car) result.push('exit','signalLeft','signalRight');
   return result;
  }
  function observe() {
@@ -110,7 +110,7 @@
   const p=player;
   return {...base,player:{position:point(p.car?.pos||p.pos),yaw:p.car?.h??p.yaw,health:p.hp,armor:p.armor,cash:p.cash,
    weapon:p.weapon,owned:{...p.own},ammo:{...p.ammo},gloves:p.gloves,down:p.down,vehicle:p.car?id(p.car):null,speed:p.car?.speed??p.pace??0},
-   camera:{mode:['follow','low','aerial'][cameraMode],position:point(camera.position),yaw:camYaw+lookYaw,pitch:lookPitch},
+   camera:{mode:['follow','low','aerial','cockpit'][cameraMode],position:point(camera.position),yaw:camYaw+lookYaw,pitch:lookPitch},
    hudVisible:!$('ui').classList.contains('cleanView'),objective:$('obj').textContent,interaction:actionCtx()?.label??null,
    law:{wanted,heat,seen:LAW.seen,evadeSeconds:evadeT,lastKnown:LAW.known?point(LAW.anchor):null},
    robbery:robbing?{place:robbing.p.name,seconds:robbing.t,total:robbing.p.time}:null,

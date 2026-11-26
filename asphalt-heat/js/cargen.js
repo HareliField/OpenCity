@@ -104,7 +104,7 @@ function carSeamTex(type,livery){const key=type+livery;if(CARTEX[key])return CAR
 function pr(G,z){return G.pr.top(z);}
 const CARMATS={},carColors=[0x8f1420,0x16306b,0xdfe3e6,0x15171a,0x5c6268,0x0d4a30,0xb78b1f,0x41185a,0xb5480c,0x6f8191,0x6e1730,0xf4f4f2,0x0b0b0c,0x1f5a78,0x9aa3ab,0x7a2f17];
 const glassMat=new THREE.MeshStandardMaterial({color:0x05080b,roughness:.04,metalness:.95,envMapIntensity:1.5});
-const roadsterGlass=new THREE.MeshStandardMaterial({color:0x9bb5bb,roughness:.14,metalness:.15,transparent:true,opacity:.28,depthWrite:false});
+const roadsterGlass=new THREE.MeshStandardMaterial({color:0xb6c9ce,roughness:.12,metalness:.07,transparent:true,opacity:.13,depthWrite:false});
 const darkMat=new THREE.MeshStandardMaterial({color:0x0c0c0d,roughness:.55,metalness:.3,polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2});
 const LENS={headOn:new THREE.MeshBasicMaterial({color:new THREE.Color(2.2,2.05,1.7),polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2}),headOff:new THREE.MeshStandardMaterial({color:0xcfd6dc,roughness:.1,metalness:.9,polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2}),
  tailOn:new THREE.MeshBasicMaterial({color:new THREE.Color(.75,.03,.02),polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2}),tailBrake:new THREE.MeshBasicMaterial({color:new THREE.Color(2.6,.12,.06),polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2}),tailOff:new THREE.MeshStandardMaterial({color:0x3a0606,roughness:.15,metalness:.6,polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2})};
@@ -135,25 +135,128 @@ function carPaint(type,color,livery){const k=type+color+livery;if(CARMATS[k])ret
  const m=new M({color:new THREE.Color(color).convertSRGBToLinear(),map:carSeamTex(type,livery),roughness:livery==='swat'?.6:.26,metalness:livery==='swat'?.2:.55,envMapIntensity:1.25});
  if(QUALITY.physical){m.clearcoat=livery==='swat'?0:1;m.clearcoatRoughness=.13;}return CARMATS[k]=m;}
 const burntMat=new THREE.MeshStandardMaterial({color:0x100e0d,roughness:1});
-/* wheels: two shared instanced meshes for every car in the world */
-let wheelTire=null,wheelRim=null;const _wm=new THREE.Matrix4(),_wq=new THREE.Quaternion(),_wq2=new THREE.Quaternion(),_wp=new THREE.Vector3(),_ws=new THREE.Vector3(),_we=new THREE.Euler();
-function initWheels(max){const pts=[[.225,-.118],[.31,-.118],[.332,-.095],[.335,0],[.332,.095],[.31,.118],[.225,.118]].map(p=>new THREE.Vector2(p[0],p[1]));
- const tg=new THREE.LatheGeometry(pts,22);tg.rotateZ(Math.PI/2);tg.computeVertexNormals();
- const c=document.createElement('canvas');c.width=c.height=256;const g=c.getContext('2d');g.fillStyle='#08080a';g.fillRect(0,0,256,256);
- const gr=g.createRadialGradient(128,128,10,128,128,124);gr.addColorStop(0,'#f2f3f4');gr.addColorStop(.75,'#9ea3a8');gr.addColorStop(1,'#70757a');g.fillStyle='#17181a';g.beginPath();g.arc(128,128,124,0,7);g.fill();
- g.strokeStyle=gr;g.lineCap='round';for(let k=0;k<5;k++){const a=k/5*Math.PI*2;for(const o of[-.16,.16]){g.lineWidth=17;g.beginPath();g.moveTo(128+Math.cos(a)*22,128+Math.sin(a)*22);g.lineTo(128+Math.cos(a+o)*112,128+Math.sin(a+o)*112);g.stroke();}}
- g.lineWidth=12;g.beginPath();g.arc(128,128,117,0,7);g.stroke();g.fillStyle=gr;g.beginPath();g.arc(128,128,30,0,7);g.fill();g.fillStyle='#2a2c2f';g.beginPath();g.arc(128,128,10,0,7);g.fill();
- const rt=new THREE.CanvasTexture(c);rt.encoding=THREE.sRGBEncoding;rt.anisotropy=4;
- const d1=new THREE.CircleGeometry(.228,24);d1.rotateY(Math.PI/2);d1.translate(.092,0,0);const d2=new THREE.CircleGeometry(.228,24);d2.rotateY(-Math.PI/2);d2.translate(-.092,0,0);
- const rg=mergeGeos([d1,d2]);
- wheelTire=new THREE.InstancedMesh(tg,new THREE.MeshStandardMaterial({color:0x0b0b0c,roughness:.82}),max);wheelRim=new THREE.InstancedMesh(rg,new THREE.MeshStandardMaterial({map:rt,roughness:.3,metalness:.75,envMapIntensity:1.1}),max);
- for(const m of[wheelTire,wheelRim]){m.frustumCulled=false;m.count=0;m.castShadow=m===wheelTire;scene.add(m);}}
-let wheelN=0;
-function wheelBegin(){wheelN=0;}
-function wheelPush(px,py,pz,q,steer,spin,scale){_we.set(spin,steer,0,'YXZ');_wq2.setFromEuler(_we);_wq.copy(q).multiply(_wq2);_wp.set(px,py,pz);_ws.set(scale,scale,scale);_wm.compose(_wp,_wq,_ws);wheelTire.setMatrixAt(wheelN,_wm);wheelRim.setMatrixAt(wheelN,_wm);wheelN++;}
+/* Wheel faces share one atlas and draw call. Diameters are representative street trims. */
+const WHEEL_TRIMS=[
+ ['sedan',16,'split',5,5,.205],['civic',17,'split',5,5,.215],['corolla',16,'steel',12,5,.205],
+ ['prius',17,'aero',5,5,.205],['golf',18,'blade',5,5,.225],['mini',16,'spoke',8,4,.195],
+ ['mustang',19,'split',5,5,.255],['miata',17,'spoke',8,4,.205],['nineeleven',20,'split',10,5,.255],
+ ['volvo240',15,'steel',15,5,.195],['rav4',17,'blade',5,5,.225],['wrangler',17,'spoke',5,5,.265],
+ ['f150',18,'split',6,6,.265],['police',17,'steel',10,5,.225]
+];
+function wheelAtlas(){
+ const tile=192,[canvas,g]=cvs(tile*4,tile*4);
+ for(const [index,[model,inches,pattern,count,lugs,width]] of WHEEL_TRIMS.entries()){
+  const s=CARSPEC[model];s.wheelTile=index;s.tyreWidth=width;
+  const r=clamp((inches*.0254/2)/(s.wr*.307/.335)*96,42,85);
+  g.save();g.translate(index%4*tile+96,Math.floor(index/4)*tile+96);
+  const circle=(radius,fill)=>{g.beginPath();g.arc(0,0,radius,0,2*Math.PI);g.fillStyle=fill;g.fill();};
+  g.fillStyle='#292929';g.fillRect(-96,-96,tile,tile);circle(94,'#242424');
+  for(let k=0;k<72;k++){
+   g.rotate(Math.PI/36);g.fillStyle=k%3?'#303030':'#393939';g.fillRect(-.8,84,1.6,8);
+  }
+  circle(r+2,'#171818');circle(r,pattern==='steel'?'#646565':'#bec0bc');circle(r-3,'#343538');
+  circle(r*.82,'#656663');circle(r*.62,'#515350');circle(r*.45,'#333439');
+  const finish=g.createLinearGradient(-r,-r,r,r);
+  finish.addColorStop(0,pattern==='steel'?'#a09e94':'#d9d9d3');
+  finish.addColorStop(.45,pattern==='steel'?'#77786f':'#91938f');finish.addColorStop(1,'#525454');
+  if(pattern==='steel'){
+   circle(r-4,finish);
+   for(let k=0;k<count;k++){
+    g.save();g.rotate(k*2*Math.PI/count);
+    g.beginPath();g.ellipse(0,-r*.71,r*.10,r*.18,0,0,2*Math.PI);g.fillStyle='#272a2a';g.fill();g.restore();
+   }
+  }else{
+   for(let k=0;k<count;k++){
+    g.save();g.rotate(k*2*Math.PI/count);
+    for(const side of pattern==='split'?[-1,1]:[1]){
+     const spread=pattern==='split'?r*.15:pattern==='blade'?r*.18:0;
+     const broad=pattern==='aero'?.27:pattern==='blade'?.16:pattern==='spoke'?.082:.054;
+     g.beginPath();g.moveTo(-r*.095,-r*.15);g.lineTo(side*spread-r*broad,-r*.93);
+     g.lineTo(side*spread+r*broad,-r*.93);g.lineTo(r*.095,-r*.15);g.closePath();
+     g.fillStyle=finish;g.fill();g.strokeStyle='#454848';g.lineWidth=1.1;g.stroke();
+    }
+    g.restore();
+   }
+  }
+  circle(r*.30,finish);circle(r*.12,'#464948');
+  for(let k=0;k<lugs;k++){
+   const a=2*Math.PI*k/lugs,x=r*.205*Math.cos(a),y=r*.205*Math.sin(a);
+   g.fillStyle='#282a28';g.beginPath();g.arc(x,y,r*.047,0,2*Math.PI);g.fill();
+   g.fillStyle='#b2b2aa';g.fillRect(x-1.2,y-1.3,2.4,2.6);
+  }
+  g.restore();
+ }
+ for(const type of ['van','swat','amb','taxi'])CARSPEC[type].wheelTile=CARSPEC.police.wheelTile;
+ return ctex(canvas);
+}
+function dishedWheelFace(){
+ const positions=[],uv=[],index=[],rings=[[.001,.090],[.14,.090],[.21,.105],[.254,.119],[.295,.122],[.307,.119]];
+ for(const side of [-1,1]){
+  const start=positions.length/3;
+  for(const [radius,depth] of rings)for(let n=0;n<=32;n++){
+   const a=2*Math.PI*n/32,y=radius*Math.cos(a),z=radius*Math.sin(a);
+   positions.push(side*depth,y,z);uv.push(.5+side*z/.614,.5+y/.614);
+  }
+  for(let k=0;k<rings.length-1;k++)for(let n=0;n<32;n++){
+   const i=start+k*33+n,j=i+33;
+   if(side>0)index.push(i,j,j+1,i,j+1,i+1);else index.push(i,j+1,j,i,i+1,j+1);
+  }
+ }
+ const geo=new THREE.BufferGeometry();geo.setIndex(index);
+ geo.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));geo.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));
+ geo.computeVertexNormals();return geo;
+}
+let wheelTire,wheelRim,wheelTiles,contactShadows,wheelN=0,contactN=0;
+const _wm=new THREE.Matrix4(),_wq=new THREE.Quaternion(),_wq2=new THREE.Quaternion(),_wp=new THREE.Vector3(),_ws=new THREE.Vector3(),_we=new THREE.Euler();
 const _wqc=new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0,1,0),-Math.PI/2);
-function wheelPushQ(p,q,scale){_wq.set(q.x,q.y,q.z,q.w).multiply(_wqc);_wp.set(p.x,p.y,p.z);_ws.set(scale,scale,scale);_wm.compose(_wp,_wq,_ws);wheelTire.setMatrixAt(wheelN,_wm);wheelRim.setMatrixAt(wheelN,_wm);wheelN++;}
-function wheelEnd(){wheelTire.count=wheelRim.count=wheelN;wheelTire.instanceMatrix.needsUpdate=true;wheelRim.instanceMatrix.needsUpdate=true;}
+function initWheels(max){
+ const shoulder=[[.302,-.118],[.315,-.115],[.332,-.091],[.335,-.06],[.335,.06],[.332,.091],[.315,.115],[.302,.118]];
+ const tyre=new THREE.LatheGeometry(shoulder.map(p=>new THREE.Vector2(...p)),32);tyre.rotateZ(Math.PI/2);
+ const disk=dishedWheelFace();
+ wheelTiles=new THREE.InstancedBufferAttribute(new Float32Array(max),1).setUsage(THREE.DynamicDrawUsage);
+ disk.setAttribute('wheelTile',wheelTiles);
+ const rimMaterial=new THREE.MeshStandardMaterial({map:wheelAtlas(),roughness:.39,metalness:.53,envMapIntensity:1.05});
+ rimMaterial.onBeforeCompile=shader=>{
+  shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nattribute float wheelTile;')
+   .replace('#include <uv_vertex>','#include <uv_vertex>\nvUv=(vUv*.99+.005+vec2(mod(wheelTile,4.),3.-floor(wheelTile/4.)))/4.;');
+ };
+ wheelTire=new THREE.InstancedMesh(tyre,new THREE.MeshStandardMaterial({color:0x17181a,roughness:.89}),max);
+ wheelRim=new THREE.InstancedMesh(disk,rimMaterial,max);
+ const [canvas,g]=cvs(64,64),fade=g.createRadialGradient(32,32,4,32,32,32);
+ fade.addColorStop(0,'rgba(17,16,15,.63)');fade.addColorStop(.42,'rgba(23,22,19,.46)');fade.addColorStop(1,'rgba(25,23,22,0)');
+ g.fillStyle=fade;g.fillRect(0,0,64,64);
+ const patch=new THREE.PlaneGeometry(1,1);patch.rotateX(-Math.PI/2);
+ contactShadows=new THREE.InstancedMesh(patch,new THREE.MeshBasicMaterial({map:ctex(canvas),transparent:true,depthWrite:false}),max);
+ for(const mesh of [wheelTire,wheelRim,contactShadows]){
+  mesh.frustumCulled=false;mesh.count=0;mesh.castShadow=mesh===wheelTire;
+  mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);scene.add(mesh);
+ }
+}
+function wheelBegin(){wheelN=0;contactN=0;}
+function writeWheel(scale,s){
+ _ws.set(s.tyreWidth?s.tyreWidth/.236:scale,scale,scale);_wm.compose(_wp,_wq,_ws);
+ wheelTiles.setX(wheelN,s.wheelTile||0);wheelTire.setMatrixAt(wheelN,_wm);wheelRim.setMatrixAt(wheelN++,_wm);
+}
+function wheelPush(px,py,pz,q,steer,spin,scale,s){
+ _we.set(spin,steer,0,'YXZ');_wq2.setFromEuler(_we);_wq.copy(q).multiply(_wq2);_wp.set(px,py,pz);writeWheel(scale,s);
+}
+function wheelPushQ(p,q,scale,s){
+ _wq.set(q.x,q.y,q.z,q.w).multiply(_wqc);_wp.set(p.x,p.y,p.z);writeWheel(scale,s);
+}
+const _contactUp=new THREE.Vector3(),_contactRight=new THREE.Vector3(),_contactForward=new THREE.Vector3();
+function wheelContact(hit,heading,s){
+ const n=hit.hitNormalWorld,p=hit.hitPointWorld;if(!hit.body || n.y<.4)return;
+ _contactUp.set(n.x,n.y,n.z);_contactForward.set(Math.sin(heading),0,Math.cos(heading));
+ _contactRight.crossVectors(_contactUp,_contactForward).normalize();_contactForward.crossVectors(_contactRight,_contactUp);
+ _wm.makeBasis(_contactRight,_contactUp,_contactForward).scale(_ws.set((s.tyreWidth||.215)*2.8,1,s.wr*1.8));
+ _wm.setPosition(p.x+n.x*.007,p.y+n.y*.007,p.z+n.z*.007);contactShadows.setMatrixAt(contactN++,_wm);
+}
+function wheelEnd(){
+ for(const mesh of [wheelTire,wheelRim,contactShadows]){
+  mesh.count=mesh===contactShadows?contactN:wheelN;mesh.instanceMatrix.needsUpdate=true;
+ }
+ wheelTiles.needsUpdate=true;
+}
 let beamTex=null;
 function carBeamTex(){if(beamTex)return beamTex;const c=document.createElement('canvas');c.width=128;c.height=256;const g=c.getContext('2d');g.fillStyle='#000';g.fillRect(0,0,128,256);for(const x of[44,84]){const gr=g.createRadialGradient(x,236,2,x,150,150);gr.addColorStop(0,'rgba(255,240,200,.9)');gr.addColorStop(.35,'rgba(255,230,180,.35)');gr.addColorStop(1,'rgba(255,220,160,0)');g.globalCompositeOperation='lighter';g.fillStyle=gr;g.fillRect(0,0,128,256);}return beamTex=new THREE.CanvasTexture(c);}
 let tailSpill=null;

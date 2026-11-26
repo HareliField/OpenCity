@@ -222,6 +222,15 @@ function spawnCar(type,x,z,h,driver){const s=CARSPEC[type],lv=liveryOf(type);con
  const M=makeCarMesh(type,color,lv);scene.add(M.grp);const mats=M.mats;
  const c={type,plate:mats[5].userData.plate,spec:s,mesh:M.grp,body3:M.body,beam:M.beam,rearGlow:M.rearGlow,bar:M.bar,mats,pos:new V3(x,0,z),vel:new V3(),h,speed:0,hp:s.hp,max:s.hp,driver,ai:null,route:null,burn:0,dead:false,wreckT:0,stuck:0,rev:0,wait:0,cd:rnd(1,2),siren:false,block:false,unit:null,phys:false,body:null,veh:null,upY:1,spin:0,steerA:0,lightsOn:!!driver};
  c.turnLamps=makeTurnLamps(s);M.grp.add(c.turnLamps.left,c.turnLamps.right);
+ if(s.form==='roadster'){
+  c.steeringWheel=makeRoadsterWheel(s);c.instruments=roadsterInstruments(s);
+  M.grp.add(c.steeringWheel,c.instruments.group);updateRoadsterDials(c);
+ }
+ if(s.form){
+  const profile=carGeo(type).pr,z=-s.L/2+s.tr+(s.form==='roadster'?-.14:.55*s.rg);
+  c.stopLamp=new THREE.Mesh(unitBox,LENS.tailOff);c.stopLamp.scale.set(s.W*.19,.037,.049);
+  c.stopLamp.position.set(0,profile.sect(z).pts[0][1]+.028,z);M.grp.add(c.stopLamp);
+ }
  c.pos.y=groundY(x,z);M.grp.position.copy(c.pos);M.grp.rotation.y=h;cars.push(c);return c;}
 function paintCar(c,color){c.paintColor=color;if(c.hero)c.hero.shell.traverse(o=>{if(o.isMesh)o.material.color.copy(lin(color));});const m=carPaint(c.type,color,liveryOf(c.type));c.mats[0]=m;c.body3.material=c.mats.slice();}
 function repairCar(c,color){
@@ -232,6 +241,8 @@ function repairCar(c,color){
 }
 function removeCar(c){PoliceDepartment.release(c.officer);c.mats[5].map.dispose();c.mats[5].dispose();c.rearGlow.material.dispose();removeSeatedDriver(c);removeHeroCoupe(c);physCarOff(c);scene.remove(c.mesh);if(c.ownGeo)c.body3.geometry.dispose();const i=cars.indexOf(c);if(i>=0)cars.splice(i,1);}
 function setCarLights(c,brake){const on=!!(c.driver||c===player.car)&&!c.dead;const head=on?LENS.headOn:LENS.headOff,tail=on?(brake?LENS.tailBrake:LENS.tailOn):(brake?LENS.tailBrake:LENS.tailOff);
+ if(c.stopLamp)c.stopLamp.material=brake&&!c.dead?LENS.tailBrake:LENS.tailOff;
+ c.rearGlow.material.opacity=DAYLIGHT?(brake?.08:.025):(brake?.23:.12);
  if(c.mats[3]!==head||c.mats[4]!==tail){c.mats[3]=head;c.mats[4]=tail;c.body3.material=c.mats.slice();}c.beam.visible=on;c.rearGlow.visible=on;updateHeroLights(c);}
 const _cqc=new THREE.Quaternion(),_cv3=new V3(),_cq90=new THREE.Quaternion().setFromAxisAngle(new V3(0,1,0),-Math.PI/2);
 function updateHeadlights(c,dt){
@@ -260,10 +271,11 @@ function pushWheels(c,dt){
   const speed=Math.hypot(c.vel.x,c.vel.z),moving=c.body.sleepState!==CANNON.Body.SLEEPING;
   for(let i=0;i<4;i++){
    const w=c.veh.wheelInfos[i],road=w.raycastResult.body,contact=w.raycastResult.hitPointWorld;
+   if(road)wheelContact(w.raycastResult,c.h+(w.isFrontWheel?w.steering:0),s);
    c.veh.updateWheelTransform(i);
    const t=w.worldTransform;
    if(c.hero)heroWheel(c,i,t.position,t.quaternion,true);
-   else wheelPushQ(t.position,t.quaternion,s.wr/.335);
+   else wheelPushQ(t.position,t.quaternion,s.wr/.335,s);
    if(c!==player.car)continue;
    if(moving&&road&&speed>4&&(w.skidInfo<.91||(i>=2&&c.hb))){
     skid(c,i,contact);
@@ -281,7 +293,7 @@ function pushWheels(c,dt){
   for(const [sx,sz] of [[1,1],[-1,1],[1,-1],[-1,-1]]){
    _cv3.set(sx*(s.W/2-.14),s.wr,sz*s.wb).applyQuaternion(c.mesh.quaternion).add(c.mesh.position);
    if(c.hero)heroWheel(c,i,_cv3,c.mesh.quaternion,false);
-   else wheelPush(_cv3.x,_cv3.y,_cv3.z,c.mesh.quaternion,0,c.spin,s.wr/.335);
+   else wheelPush(_cv3.x,_cv3.y,_cv3.z,c.mesh.quaternion,0,c.spin,s.wr/.335,s);
    i++;
   }
  }
@@ -484,9 +496,17 @@ function updPeds(dt){const pp=player.car?player.car.pos:player.pos;
    c.yaw=lerpA(c.yaw,Math.atan2(dx,dz),1-Math.exp(-12*dt));}
   else if(p.mode==='cower'){c.hands=1;p.cowerT-=dt;if(p.cowerT<=0){c.hands=0;p.mode='flee';p.fleeT=6;const a=Math.atan2(p.pos.x-player.pos.x,p.pos.z-player.pos.z);p.fv.set(Math.sin(a),0,Math.cos(a));}}
   else if(p.mode==='stand'){p.standT-=dt;if(p.standT<=0){p.mode='walk';c.talk=0;attachPed(p);}}
-  else{tryCrosswalk(p);if(!p.cross)p.t+=p.dir*p.spd*dt;
-   const q=p.cross?(p.cross.waiting?[p.pos.x,p.pos.z]:[p.cross.x,p.cross.z]):perimPos(p.R,p.t);const dx=q[0]-p.pos.x,dz=q[1]-p.pos.z,d=Math.hypot(dx,dz);if(d>.01){const st=Math.min(d,p.spd*1.8*dt);p.pos.x+=dx/d*st;p.pos.z+=dz/d*st;}if(p.cross&&!p.cross.waiting&&d<.25)attachPed(p);else if(!p.cross&&d>3)p.t-=p.dir*p.spd*dt;
-   if(collideWorld(p.pos,.29)&&!p.cross){p.dir*=-1;p.t=perimT(p.R,p.pos.x,p.pos.z);}}
+  else{
+   tryCrosswalk(p);
+   if(p.cross)advanceCrossing(p,dt);
+   else{
+    const stride=p.dir*p.spd*dt;p.t+=stride;
+    const q=perimPos(p.R,p.t),dx=q[0]-p.pos.x,dz=q[1]-p.pos.z,d=Math.hypot(dx,dz);
+    if(d>.01){const step=Math.min(d,p.spd*1.8*dt);p.pos.x+=dx/d*step;p.pos.z+=dz/d*step;}
+    if(d>3)p.t-=stride;
+    if(collideWorld(p.pos,.29)){p.dir*=-1;p.t=perimT(p.R,p.pos.x,p.pos.z);}
+   }
+  }
   const mx=p.pos.x-ox,mz=p.pos.z-oz,spd=Math.hypot(mx,mz)/Math.max(dt,1e-4);if(spd>.2&&p.mode!=='fight')c.yaw=lerpA(c.yaw,Math.atan2(mx,mz),1-Math.exp(-9*dt));
   const hit=carHitsBody(p.pos,.3);if(hit&&time>=(p.impactUntil||0)){const s=Math.hypot(hit.vel.x,hit.vel.z);p.impactUntil=time+.8;p.hp-=Math.max(4,(s-2)*5);if(p.hp<=0)killPed(p,hit.vel.x*1.1,2+s*.25,hit.vel.z*1.1,false);else{scare(p.pos.x,p.pos.z,3);p.pos.x+=hit.vel.x/s*.65;p.pos.z+=hit.vel.z/s*.65;collideWorld(p.pos,.3);}if(hit===player.car){if(p.dead)registerIncident('Homicide',p.pos,{victim:p,vehicle:hit});scare(p.pos.x,p.pos.z,18);crime(10,p.pos.x,p.pos.z);shake=Math.max(shake,.3);}noise(.2,400,distVol(p.pos.x,p.pos.z,.6));continue;}
   if(!player.car&&dP<.7){const dx=p.pos.x-player.pos.x,dz=p.pos.z-player.pos.z,d=dP||1;p.pos.x=player.pos.x+dx/d*.7;p.pos.z=player.pos.z+dz/d*.7;}

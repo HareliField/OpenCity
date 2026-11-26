@@ -44,6 +44,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
 #evade i{display:block;height:100%;width:0;background:#8fc8ff}
 #speedo{display:none;position:absolute;left:50%;bottom:max(18px,env(safe-area-inset-bottom));transform:translateX(-50%);font:400 clamp(30px,8vw,46px)/1 Anton,Impact,sans-serif;color:#fff;text-shadow:0 2px 6px #000;text-align:center}#speedo small{display:block;font:700 11px Inter,sans-serif;opacity:.7;letter-spacing:2px}
 #vehicleName{display:block;font:600 12px Inter,system-ui,sans-serif;letter-spacing:.03em;line-height:1.5;white-space:nowrap}
+#driveIdentity{display:flex;align-items:center;justify-content:center;gap:6px}#driveIdentity button{pointer-events:auto;cursor:pointer;color:#e9eee9;background:#172524aa;border:1px solid #ffffff55;border-radius:6px;min-width:32px;min-height:29px;font:700 14px Inter,system-ui,sans-serif}#driveIdentity button[aria-pressed="true"]{color:#1f2019;background:#f0ae47;border-color:#f6ce84}@media(pointer:coarse){#driveIdentity button{width:44px;height:44px}}
 #lbar{height:6px;width:min(320px,80vw);margin:10px auto 0;background:rgba(0,0,0,.35);border-radius:4px;overflow:hidden}#lbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffe08a,#ffb23a);transition:width .3s}
 #credits{margin-top:14px;font-size:11px;opacity:.55;max-width:440px;margin-left:auto;margin-right:auto}
 #mm{width:clamp(108px,29vw,150px);height:clamp(108px,29vw,150px);border-radius:50%;border:3px solid rgba(0,0,0,.7);box-shadow:0 0 0 2px rgba(255,255,255,.35),0 6px 16px rgba(0,0,0,.5)}
@@ -129,7 +130,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
   <div id="tr"><div id="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><div id="heat"><i></i></div><div id="evade"><i></i></div><canvas id="mm" width="300" height="300"></canvas><div id="wep">FISTS <small></small></div></div>
   <div id="toast"></div><div id="banner"></div>
   <div id="prog"><span>ROBBING…</span><div class="bar"><i></i></div></div>
-  <div id="speedo">0<small>KM/H</small><span id="vehicleName"></span></div>
+  <div id="speedo">0<small>KM/H</small><div id="driveIdentity"><button id="signalLeft" type="button" aria-label="Left turn signal" aria-pressed="false" title="Left turn signal ([)">◀</button><span id="vehicleName"></span><button id="signalRight" type="button" aria-label="Right turn signal" aria-pressed="false" title="Right turn signal (])">▶</button></div></div>
   <div id="joy"><div id="knob"></div></div>
   <div id="interaction" hidden><kbd>C</kbd><span></span></div>
   <div id="btns"><button id="bSprint">SPRINT</button><button id="bWep">WEAPON</button><button id="bAct">ENTER</button><button id="bFire">PUNCH</button></div>

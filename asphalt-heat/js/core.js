@@ -108,6 +108,10 @@ function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
     float pool=fbm2(vWP.xz*vec2(.23,.33)+big*2.1)+big*.17+gutter*.135;
     float pud=smoothstep(.51,.675,pool)*uWet;
     float damp=uWet*(.74+.26*big);
+    ${opt.road?`float midblock=smoothstep(8.,16.,max(grid.x,grid.y));
+    float downhill=smoothstep(2.7,7.5,min(grid.x,grid.y));
+    float retention=mix(.42,mix(.16,.92,downhill),midblock);
+    pud*=retention;damp*=mix(.65,1.,retention);`:''}
     float grain=vnoise(vWP.xz*34.);
     roughnessFactor=mix(roughnessFactor,.29+grain*.15,damp*.81);roughnessFactor=mix(roughnessFactor,.055,pud);diffuseColor.rgb*=mix(1.,.64,damp)*mix(1.,.51,pud);
     ${opt.tint?'diffuseColor.rgb*=mix(.78,1.13,big);':''}
@@ -121,7 +125,7 @@ function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
       float valid=1.-smoothstep(.46,.50,max(edge.x,edge.y));
       gl_FragColor.rgb=mix(gl_FragColor.rgb,rc,clamp(kk*valid,0.,1.));}}
     #include <tonemapping_fragment>`);};
- mat.customProgramCacheKey=()=>'wet'+(opt.tint?1:0)+(opt.inst?1:0)+(opt.paint?1:0);return mat;}
+ mat.customProgramCacheKey=()=>'wet'+(opt.tint?1:0)+(opt.inst?1:0)+(opt.paint?1:0)+(opt.road?1:0);return mat;}
 
 /* ---- post: HDR target, bloom, filmic tonemap ---- */
 const PP={};

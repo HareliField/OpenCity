@@ -65,16 +65,70 @@ function conflictingPaths(a,b){
 function approachGap(c,m){
  return (m.x-c.pos.x)*m.dx+(m.z-c.pos.z)*m.dz-m.stop-c.spec.L*.5;
 }
+function crossingEdge(crossing){
+ const {i,j,legX,legZ}=crossing;
+ return HALF-(hasCurbExtension(i,j,-legX,-legZ)?EXTENSION_WIDTH:0);
+}
 function crossingOccupied(m){
  for(const p of peds){
   if(p.dead || p.mode!=='walk' || !p.cross || p.cross.waiting || p.pos.y>1)continue;
   const crossing=p.cross;
   if(crossing.i!==m.x/CELL || crossing.j!==m.z/CELL)continue;
+  const across=crossing.axis==='ew'?p.pos.x-m.x:p.pos.z-m.z;
+  if(Math.abs(across)>crossingEdge(crossing)+.30)continue;
   // A pedestrian may occupy the approach crosswalk or the crosswalk the car turns into.
   if(crossing.legX===-m.dx && crossing.legZ===-m.dz ||
      crossing.legX===m.ex && crossing.legZ===m.ez)return true;
  }
  return false;
+}
+// Build the order once for the arrivals at this stop. A four-way tie can otherwise
+// leave every driver waiting for the one on their right indefinitely.
+function hasStopPriority(c,m){
+ const waiting=cars.filter(o=>{
+  const n=o.ai?.movement;
+  return o.driver && !o.dead && n && n.x===m.x && n.z===m.z && n.arrived!=null &&
+   !n.committed && Math.abs(o.pos.y-c.pos.y)<1.6 && mustStop(n.rule,n.axis);
+ }).sort((a,b)=>a.ai.movement.arrived-b.ai.movement.arrived);
+ while(waiting.length>1){
+  const firstTime=waiting[0].ai.movement.arrived;
+  const tied=waiting.filter(o=>o.ai.movement.arrived-firstTime<=.18);
+  const next=tied.find(a=>!tied.some(b=>{
+   if(b===a)return false;
+   const p=a.ai.movement,q=b.ai.movement;
+   if(!conflictingPaths(p,q))return false;
+   const fromRight=q.dx*p.dz-q.dz*p.dx>0;
+   return fromRight || p.dx===-q.dx && p.dz===-q.dz && p.turn<0 && q.turn>=0;
+  })) || tied[0];
+  if(c===next)return true;
+  if(conflictingPaths(m,next.ai.movement))return false;
+  waiting.splice(waiting.indexOf(next),1);
+ }
+ return true;
+}
+function exitIsBlocked(c,m,o){
+ if(Math.abs(o.speed)>=1)return false;
+ const end=m.points[m.points.length-1],dx=o.pos.x-end.x,dz=o.pos.z-end.z;
+ const forward=dx*m.ex+dz*m.ez,side=dx*m.ez-dz*m.ex;
+ const aligned=Math.abs(Math.sin(o.h)*m.ex+Math.cos(o.h)*m.ez);
+ const across=Math.abs(Math.sin(o.h)*m.ez-Math.cos(o.h)*m.ex);
+ const halfLength=(aligned*o.spec.L+across*o.spec.W)*.5,halfWidth=(aligned*o.spec.W+across*o.spec.L)*.5;
+ return forward+halfLength>0 && forward-halfLength<STREET_DESIGN.crossWidth/2+c.spec.L+1.3 &&
+  Math.abs(side)<halfWidth+c.spec.W*.5+.12;
+}
+function approachingPriorityCar(c,m,o){
+ if(!o.driver || o.dead || o.speed<=1)return false;
+ const dx=Math.sin(o.h),dz=Math.cos(o.h),heading=dx*m.dx+dz*m.dz;
+ const crossing=Math.abs(heading)<.42,opposing=heading<-.85;
+ const onMainRoad=crossing && mustStop(m.rule,m.axis) && !mustStop(m.rule,m.dx?'ns':'ew');
+ if(!(onMainRoad || opposing && m.turn<0 || o.siren))return false;
+ if((m.x-o.pos.x)*dx+(m.z-o.pos.z)*dz<=0)return false;
+ const halfLength=o.spec.L*.5,reach=o.speed*(m.turn<0?3.4:3)+halfLength;
+ const sideClearance=(c.spec.W+o.spec.W)*.5+.15;
+ return m.points.some(p=>{
+  const x=p.x-o.pos.x,z=p.z-o.pos.z,along=x*dx+z*dz;
+  return along>=-halfLength && along<reach && Math.abs(x*dz-z*dx)<sideClearance;
+ });
 }
 function canEnter(c,m,gap,dt){
  if(m.committed)return true;
@@ -83,8 +137,9 @@ function canEnter(c,m,gap,dt){
   if(gap<1.25 && Math.abs(c.speed)<.26){
    if(m.arrived===null)m.arrived=time;
    m.dwell+=dt;
-  }
+  }else if(m.dwell<.85){m.arrived=null;m.dwell=0;}
   if(m.dwell<.85)return false;
+  if(!hasStopPriority(c,m))return false;
  }
  if(m.rule==='signal'){
   const light=phaseForGroup(signalGroup(...m.node),time)[m.axis].vehicle;
@@ -95,14 +150,11 @@ function canEnter(c,m,gap,dt){
  if(gap>14)return true;
  if(crossingOccupied(m))return false;
  for(const o of cars){
-  if(o===c || o.dead || !o.driver || Math.abs(o.pos.y-c.pos.y)>1.6 ||
+  if(o===c || Math.abs(o.pos.y-c.pos.y)>1.6 ||
     Math.abs(o.pos.x-m.x)>48 || Math.abs(o.pos.z-m.z)>48)continue;
-  // The tail of a car ahead must have storage beyond the exit crosswalk.
-  const end=m.points[m.points.length-1],ax=o.pos.x-end.x,az=o.pos.z-end.z;
-  const forward=ax*m.ex+az*m.ez,lateral=ax*m.ez-az*m.ex;
-  if(o.speed<1 && forward>0 && forward<c.spec.L+o.spec.L*.5+2.2 && Math.abs(lateral)<1.55)return false;
-  if(o.driver==='player' || o.siren){
-   if(m.points.some(p=>bodyInsideCar(o,{x:p.x,z:p.z,y:c.pos.y},c.spec.W*.54)))return false;
+  if(exitIsBlocked(c,m,o))return false;
+  if(!o.driver || o.dead || o.driver==='player' || o.siren){
+   if(approachingPriorityCar(c,m,o) || m.points.some(p=>bodyInsideCar(o,{x:p.x,z:p.z,y:c.pos.y},c.spec.W*.54)))return false;
    continue;
   }
   if(o.clearing && o.clearing.x===m.x && o.clearing.z===m.z && conflictingPaths(m,o.clearing))return false;
@@ -110,11 +162,11 @@ function canEnter(c,m,gap,dt){
   if(!other || other.x!==m.x || other.z!==m.z || !conflictingPaths(m,other))continue;
   if(other.committed)return false;
   const otherStop=mustStop(other.rule,other.axis);
-  if(stop && otherStop && other.arrived!==null && (other.arrived<m.arrived ||
-    other.arrived===m.arrived && cars.indexOf(o)<cars.indexOf(c)))return false;
   const opposing=m.dx===-other.dx && m.dz===-other.dz;
-  const yieldToThrough=stop && !otherStop || m.turn<0 && opposing && other.turn>=0;
-  if(yieldToThrough && o.speed>1 && approachGap(o,other)<o.speed*(m.turn<0?3.4:3.0))return false;
+  const permissiveLeft=m.turn<0 && opposing && other.turn>=0 && !otherStop;
+  const otherGap=approachGap(o,other);
+  if((stop && !otherStop || permissiveLeft) && o.speed>1 && otherGap<o.speed*(m.turn<0?3.4:3.0))return false;
+  if(permissiveLeft && Math.abs(o.speed)<=1 && otherGap<2.1 && !crossingOccupied(other))return false;
  }
  if(gap<.48)m.committed=true;
  return true;
@@ -138,10 +190,9 @@ function obstacleSpeed(c,target){
  for(const p of peds)if(!p.dead)limit(p.pos,.50,.25,0);
  return target;
 }
-function trafficDrive(c,target,aim,dt){
- const diff=wrapA(Math.atan2(aim.x-c.pos.x,aim.z-c.pos.z)-c.h);
- // Pure pursuit uses the actual look-ahead distance and wheelbase of this car.
- const dist=Math.max(1,dist2(aim,c.pos)),angle=Math.atan2(4*c.spec.wb*Math.sin(diff),dist);
+function trafficDrive(c,target,aim,dt,origin=c.pos){
+ const diff=wrapA(Math.atan2(aim.x-origin.x,aim.z-origin.z)-c.h);
+ const dist=Math.max(1,dist2(aim,origin)),angle=Math.atan2(4*c.spec.wb*Math.sin(diff),dist);
  const limit=Math.min(.61,Math.atan(2*c.spec.wb*8.2/(c.speed*c.speed+7))+.024);
  const steer=clamp(angle/limit,-1,1),stopped=target<.55 && Math.abs(c.speed)<.82;
  c.hb=stopped;
@@ -169,8 +220,11 @@ function aiTraffic(c,dt){
   c.clearing=m;c.ai={a:ai.b,b:m.exit,lane:m.exitLane};
   return aiTraffic(c,dt);
  }
- const gap=approachGap(c,m),s=pathProgress(m,c.pos);
- const look=clamp(3.6+Math.abs(c.speed)*.53,3.8,9.6);
+ const gap=approachGap(c,m);
+ // Guide the rear axle along the curve so the inside rear tyre of a long vehicle clears the curb.
+ const rear={x:c.pos.x-c.spec.wb*Math.sin(c.h),z:c.pos.z-c.spec.wb*Math.cos(c.h)};
+ const s=pathProgress(m,rear),look=m.turn && s> -12?clamp(2.9+Math.abs(c.speed)*.29,3.4,5.6):
+  clamp(3.6+Math.abs(c.speed)*.53,3.8,9.6);
  let target=m.section.speed*(c.driverPace??(c.driverPace=rnd(.89,1.05)));
  if(m.turn && s> -14)target=Math.min(target,m.turn>0?4.2:5.0);
  const block=m.dx?Math.min(ai.a[0],ai.b[0]):Math.min(ai.a[1],ai.b[1]);
@@ -187,7 +241,7 @@ function aiTraffic(c,dt){
   ai.movement=null;followGradeRoad(c,dt);return;
  }
  c.indicating=gap<18 || m.committed?m.turn:0;
- trafficDrive(c,obstacleSpeed(c,target),pathTarget(m,s+look),dt);
+ trafficDrive(c,obstacleSpeed(c,target),pathTarget(m,s+look),dt,rear);
  if(c.phys && c.upY<.4 && c.driver==='ai'){
   c.flipT=(c.flipT||0)+dt;
   if(c.flipT>3){const exit=carDoorSpot(c);if(exit){c.driver=null;ejectPed(exit.x,exit.z,c.pos.x,c.pos.z,exit.y);}}
@@ -212,11 +266,34 @@ function pedestrianCanStart(p,crossing){
  }
  return true;
 }
-function tryCrosswalk(p){
- if(p.cross){
-  if(p.cross.waiting && pedestrianCanStart(p,p.cross))p.cross.waiting=false;
-  return;
+function crossingRoute(i,j,legX,legZ,dx,dz,far){
+ const route={i,j,legX,legZ,dx,dz,axis:dx?'ew':'ns',waiting:true};
+ // Opposing walkers keep right, within the two-metre clear width of each ramp.
+ const x=i*CELL+legX*STREET_DESIGN.crossing-dz*.47,z=j*CELL+legZ*STREET_DESIGN.crossing+dx*.47;
+ const landing=crossingEdge(route)+.47;
+ route.waitX=x-dx*landing;route.waitZ=z-dz*landing;
+ route.x=dx?(dx>0?far.x0:far.x1):x;route.z=dz?(dz>0?far.z0:far.z1):z;
+ return route;
+}
+function advanceCrossing(p,dt){
+ const route=p.cross;
+ const waitX=route.waitX??p.pos.x,waitZ=route.waitZ??p.pos.z;
+ if(route.waiting && Math.hypot(waitX-p.pos.x,waitZ-p.pos.z)<.085 && pedestrianCanStart(p,route))route.waiting=false;
+ const x=(route.waiting?waitX:route.x)-p.pos.x,z=(route.waiting?waitZ:route.z)-p.pos.z,d=Math.hypot(x,z);
+ if(d<.02){if(!route.waiting)attachPed(p);return;}
+ let stride=Math.min(d,p.spd*dt);
+ for(const peer of peds){
+  const other=peer.cross;
+  if(peer===p || peer.dead || !other || other.dx!==route.dx || other.dz!==route.dz ||
+   other.i!==route.i || other.j!==route.j || other.legX!==route.legX || other.legZ!==route.legZ)continue;
+  const px=peer.pos.x-p.pos.x,pz=peer.pos.z-p.pos.z;
+  const gap=(px*x+pz*z)/d;
+  if(gap>0 && Math.abs(px*z-pz*x)/d<.63)stride=Math.min(stride,Math.max(0,gap-.75));
  }
+ p.pos.x+=x/d*stride;p.pos.z+=z/d*stride;
+}
+function tryCrosswalk(p){
+ if(p.cross)return;
  if(time<p.crossAfter)return;
  const {x,z}=p.pos,R=p.R,i=Math.floor(x/CELL),j=Math.floor(z/CELL);
  const sx=x<(R.x0+R.x1)/2?-1:1,sz=z<(R.z0+R.z1)/2?-1:1;
@@ -227,11 +304,8 @@ function tryCrosswalk(p){
  p.crossAfter=time+6;
  const a=i+(acrossX?sx:0),b=j+(acrossX?0:sz);
  if(a<0 || b<0 || a>=N || b>=N || Math.random()>.46)return;
- const far=perim(blocks[a*N+b]),legX=acrossX?0:-sx,legZ=acrossX?-sz:0;
- const crossing={i:ni,j:nj,legX,legZ,axis:acrossX?'ew':'ns',
-  x:acrossX?(sx>0?far.x0:far.x1):ni*CELL+legX*STREET_DESIGN.crossing,
-  z:acrossX?nj*CELL+legZ*STREET_DESIGN.crossing:(sz>0?far.z0:far.z1)};
- crossing.waiting=!pedestrianCanStart(p,crossing);p.cross=crossing;
+ const far=perim(blocks[a*N+b]);
+ p.cross=crossingRoute(ni,nj,acrossX?0:-sx,acrossX?-sz:0,acrossX?sx:0,acrossX?0:sz,far);
 }
 function trafficEntrySpeed(c){
  const m=c.ai.movement=planMovement(c.ai),speed=m.section.speed*.8;

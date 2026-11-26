@@ -20,7 +20,8 @@ Open [Asphalt Heat](http://127.0.0.1:8765/index.html). Daylight is the default. 
 | Sprint or use the handbrake | X |
 | Punch or shoot | Space |
 | Look around | Drag the view |
-| Cycle follow, low, and aerial cameras | V |
+| Cycle follow, low, aerial, and the MX-5 cockpit camera | V |
+| Signal left or right | [ or ]. Press the same key again to cancel |
 | Hide or restore the HUD and world markers | H |
 | Cycle weapons | Z |
 | Exit a car beside a garage service or shutter | E |
@@ -43,6 +44,8 @@ The Verve Street intersection at Studio Boulevard has mast-arm signals, pedestri
 
 The city uses right-hand traffic. Four-lane avenues carry through traffic, collectors have marked parking bays, and neighborhood streets use two-way or all-way stops. Drivers choose an appropriate lane before turning, signal, queue by bumper distance, yield on permissive left turns and wait for people using the crossing. Signals run an offset 60-second cycle with a pedestrian head start, amber and all-red clearance. On the waterfront, parked cars and a raised buffer sit between the traffic lanes and the cycle track.
 
+At all-way stops, drivers release in arrival order. Tied arrivals yield to traffic on their right, and a left-turning driver waits for conflicting through traffic. A blocked receiving lane holds the next car behind the bar. Walkers wait just behind the ramp lip, keep right when passing and clear the crossing at their walking pace. [California Driver’s Handbook](https://qr.dmv.ca.gov/portal/handbook/california-driver-handbook/laws-and-rules-of-the-road/) · [FHWA pedestrian signal intervals, §4I.06](https://mutcd.fhwa.dot.gov/pdfs/11th_Edition/mutcd11theditionhl.pdf)
+
 Street geometry uses metres. The midblock pavement drains from a 2% crown toward curbside catch basins. A neighborhood hump rises 76 mm over 3.66 m. The wheel collision surface follows the visible profile through the hump, utility repairs, driveway aprons and curb ramps. Selected retail and residential corners extend into the parking strip to shorten the crossing.
 
 **Municipal drawings used for the game**
@@ -51,9 +54,11 @@ Street geometry uses metres. The midblock pavement drains from a 2% crown toward
 - Seattle's Alaskan Way sheet RS1 informed the order of the cycle track, buffer, parked cars and motor lanes on Breakwater Way. The game fits that arrangement into its 16 m roadway. [Alaskan Way typical sections](https://www.seattle.gov/documents/departments/sdot/bikeprogram/alaskan%20way%20pbl/alaskan%20way%20safety_100percent.pdf#page=7)
 - New York's pole elevations and curb-extension details informed signal hardware and the extended corners. San Francisco's intersection plans informed parking setbacks, crossing visibility and ramp placement. [NYC pole drawings](https://www.nyc.gov/html/dot/downloads/pdf/nycdot-street-lighting-standard-drawings.pdf) · [NYC curb extensions](https://www.nycstreetdesign.info/geometry/curb-extension) · [San Francisco intersection design](https://sfbetterstreets.org/design-guidelines/intersection-design/index.html)
 
-The civilian fleet includes original procedural models inspired by the Honda Civic, Toyota Corolla, Prius and RAV4, Volkswagen Golf GTI, MINI Cooper, Ford Mustang GT and F-150, Mazda MX-5, Porsche 911 Carrera, Volvo 240 Estate and Jeep Wrangler. Each has its own body proportions, wheelbase and lamp pattern. The name appears beneath the speedometer while driving.
+The civilian fleet includes original procedural models inspired by the Honda Civic, Toyota Corolla, Prius and RAV4, Volkswagen Golf GTI, MINI Cooper, Ford Mustang GT and F-150, Mazda MX-5, Porsche 911 Carrera, Volvo 240 Estate and Jeep Wrangler. They have individual body proportions, wheelbases, wheel finishes, tyre widths and lamp patterns. The arrows beside the model name operate the turn signals. The signal cancels after the driver turns and straightens the wheel.
 
-Run `node tools/street-test.js` to check intersection priority, pedestrian phases, vehicle queues, parking lanes, road surface contact and fleet geometry.
+The green MX-5 is parked beside the starting shop row. Its cockpit view follows the seat and suspension. The steering wheel moves with the driver’s hands, the speedometer reads the car’s measured speed and the tachometer follows the simulated engine pitch. [Mazda MX-5 reference gallery](https://www.mazdausa.com/vehicles/2025-mx-5-miata/gallery)
+
+Run `node tools/street-test.js` to check all 16 speed humps, opposing pedestrian paths, stop priority, blocked exits and tyre clearance through 1,440 intersection movements. Each of the 12 cars drives straight, left and right from all four approaches at five junction layouts with both near and distant traffic simulation. A shared intersection checks vehicle and pedestrian clearance at 30, 60 and 120 updates per second.
 
 ## Market Street and the service gallery
 

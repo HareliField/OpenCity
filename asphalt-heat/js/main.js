@@ -125,6 +125,7 @@ function respawn(){state='play';$('big').className='';const busted=deadKind==='B
  toast(busted?`BUSTED · BAIL −$${lost} · WEAPONS TAKEN`:`HOSPITAL BILL −$${lost}`,2600);}
 /* ================= input ================= */
 let cameraMode=0;
+function cycleCamera(){cameraMode=(cameraMode+1)%(player.car?.steeringWheel?4:3);camInit=false;}
 const keys={};const inp={jx:0,jy:0,fire:false,sprint:false};let joyId=null,joyC=[0,0],dragId=null,dragX=0,dragY=0;
 const soundButton=$('sound');
 soundButton.addEventListener('click',async e=>{
@@ -143,13 +144,15 @@ soundButton.addEventListener('click',async e=>{
  soundButton.textContent=enabled?'Sound on':'Sound off';
 });
 addEventListener('keydown',e=>{if(e.code==='Space'&&e.target===soundButton)return;if(e.code==='Space'||e.code.startsWith('Arrow'))e.preventDefault();if(e.repeat)return;keys[e.code]=true;if(state==='play'){if(e.code==='KeyC'){const a=actionCtx();a&&a.fn();}if(e.code==='KeyE'&&player.car&&!shopOpen)toggleCar();if(e.code==='KeyZ'&&!shopOpen)cycleWeapon();
- if(e.code==='KeyV'){cameraMode=(cameraMode+1)%3;}
+ if(e.code==='KeyV')cycleCamera();
+ if(!shopOpen && (e.code==='BracketLeft'||e.code==='BracketRight'))togglePlayerSignal(player.car,e.code==='BracketLeft'?-1:1);
  if(e.code==='KeyH')toggleHUD();}});
 function toggleHUD(){
  const clean=$('ui').classList.toggle('cleanView');
  $('hudMode').textContent=clean?'Show HUD':'Hide HUD';
 }
-$('viewMode').addEventListener('click',()=>{cameraMode=(cameraMode+1)%3;});
+$('viewMode').addEventListener('click',cycleCamera);
+for(const [id,direction] of [['signalLeft',-1],['signalRight',1]])$(id).addEventListener('click',()=>togglePlayerSignal(player.car,direction));
 $('hudMode').addEventListener('click',toggleHUD);
 $('leaveCar').addEventListener('click',()=>{if(state==='play'&&player.car)toggleCar();});
 addEventListener('keyup',e=>{keys[e.code]=false;});addEventListener('blur',()=>{for(const k in keys)keys[k]=false;inp.fire=inp.sprint=false;inp.jx=inp.jy=0;joyId=dragId=null;knob.style.transform='';document.querySelectorAll('#btns .down').forEach(b=>b.classList.remove('down'));});
@@ -230,6 +233,9 @@ function hud(){const set=(k,v,f)=>{if(hudCache[k]!==v){hudCache[k]=v;f(v);}};
  set('ar',Math.round(player.armor),v=>{$('arbar').style.display=v>0?'block':'none';$('ar').style.width=v+'%';});
  set('car',player.car?Math.round(player.car.hp/player.car.max*100):-1,v=>{$('carbar').style.display=v<0?'none':'block';if(v>=0)$('chp').style.width=v+'%';});
  set('model',player.car?.spec.modelName||'',v=>{$('vehicleName').textContent=v;});
+ set('indicator',player.car?.playerSignal?.direction||0,v=>{
+  $('signalLeft').setAttribute('aria-pressed',String(v<0));$('signalRight').setAttribute('aria-pressed',String(v>0));
+ });
  set('spd',player.car?Math.round(Math.abs(player.car.speed)*3.6):-1,v=>{$('speedo').style.display=v<0?'none':'block';if(v>=0)$('speedo').firstChild.textContent=v;});
  set('w',wanted,v=>starEls.forEach((s,i)=>s.classList.toggle('on',i<v)));const L=wanted,nxt=L<5?TH[L+1]:WANTED_MAX;
  set('heat',Math.round(L<5?(heat-TH[L])/(nxt-TH[L])*100:100),v=>$('heat').firstChild.style.width=clamp(v,0,100)+'%');
@@ -268,7 +274,7 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
   updateTurnLamps(c,time);
   if(c.bar){const on=c.siren&&(wanted>0||c.block)&&(c.driver==='police'||c.block);const f=(time*7|0)%2;c.bar.r.material=on&&f?SIREN.onR:SIREN.offR;c.bar.b.material=on&&!f?SIREN.onB:SIREN.offB;}}
  physStep(dt);updateDoorMeshes();
- for(const c of cars){if(c.phys)physCarRead(c);syncCarMesh(c);if(c.spec.form==='roadster')updateSeatedDriver(c);c.mesh.visible=dist2(c.pos,player.pos)<230;if(dist2(c.pos,player.pos)<70)updateHeadlights(c,dt);}
+ for(const c of cars){if(c.phys)physCarRead(c);syncCarMesh(c);if(c.spec.form==='roadster'){updateSeatedDriver(c);updateRoadsterDials(c);}c.mesh.visible=dist2(c.pos,player.pos)<230;if(dist2(c.pos,player.pos)<70)updateHeadlights(c,dt);}
  const lit=player.car;
  drivingLight.intensity=lit&&!lit.dead?10:0;
  if(drivingLight.intensity){
@@ -328,6 +334,7 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
  /* camera */
  if(dragId===null&&!agentInput?.looking){lookYaw*=Math.exp(-4*dt);lookPitch*=Math.exp(-4*dt);}
  const tgt=player.car?player.car.pos:player.pos;if(player.car){const c=player.car;const vh=Math.hypot(c.vel.x,c.vel.z)>4&&c.speed>0?Math.atan2(c.vel.x,c.vel.z):c.h;camYaw=lerpA(camYaw,lerpA(c.h,vh,.5),1-Math.exp(-4.5*dt));}else camYaw=lerpA(camYaw,player.yaw,1-Math.exp(-9*dt));
+ if(cameraMode===3 && !player.car?.steeringWheel)cameraMode=0;
  const aerial=cameraMode===2, low=cameraMode===1,car=player.car,yawC=camYaw+lookYaw;
  const speed=car?Math.hypot(car.vel.x,car.vel.z):0;
  const dist=aerial?25:car?((low?4.7:6.25)+car.spec.L*.39+Math.min(speed,45)*.047):low?3:4.55;
@@ -345,8 +352,18 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
   shake=Math.max(0,shake-dt*1.8);
  }
  const ahead=aerial?29:low?5:3.0;
+ camera.up.set(0,1,0);
  camera.lookAt(tgt.x+Math.sin(yawC)*ahead,(aerial?3:car?1.06:1.43)+gy-lookPitch*1.3,tgt.z+Math.cos(yawC)*ahead);
- const baseFov=innerWidth<innerHeight?68:low?53:56;
+ if(cameraMode===3 && car.seatedDriver){
+  const rotation=car.mesh.quaternion,head=car.seatedDriver.bones[BMAP.Head];
+  car.mesh.worldToLocal(head.getWorldPosition(camera.position));
+  camera.position.y=clamp(camera.position.y+.085,car.spec.r-.245,car.spec.r-.185);
+  camera.position.z+=.15;car.mesh.localToWorld(camera.position);
+  const yaw=clamp(lookYaw,-1.35,1.35),pitch=clamp(-.10-lookPitch,-.65,.30);
+  want.set(Math.sin(yaw)*Math.cos(pitch),Math.sin(pitch),Math.cos(yaw)*Math.cos(pitch)).applyQuaternion(rotation);
+  camera.up.applyQuaternion(rotation);camera.lookAt(want.add(camera.position));
+ }
+ const baseFov=cameraMode===3?72:innerWidth<innerHeight?68:low?53:56;
  const fov=baseFov+(aerial?4:car?Math.min(speed,46)*.17:0);
  if(Math.abs(fov-camera.fov)>.01){
   camera.fov=lerp(camera.fov,fov,1-Math.exp(-3.4*dt));
@@ -356,7 +373,7 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
  sun.position.copy(tgt).addScaledVector(SUNDIR,250);
  sun.target.position.copy(tgt);
  if(POST){PP.final.uniforms.hurt.value=Math.max(0,hurtT>0?hurtT*2.5:0)+(player.hp<30&&state==='play'?(.3+.2*Math.sin(time*5)):0);hurtT-=dt;}
- if(ac){const t=ac.currentTime;const c=player.car;if(c){const sp=Math.abs(c.speed),gear=Math.min(5,Math.floor(sp/9)),rpm=.25+(sp-gear*9)/9*.75+(gear===0?0:.15);engG.gain.setTargetAtTime(.06+Math.min(1,Math.abs(jy))*.04,t,.1);engO.frequency.setTargetAtTime(40+rpm*90*(c.type==='sport'?1.4:1),t,.06);engO2.frequency.setTargetAtTime(20+rpm*45,t,.06);engF.frequency.setTargetAtTime(300+rpm*900,t,.1);
+ if(ac){const t=ac.currentTime;const c=player.car;if(c){const sp=Math.abs(c.speed),rpm=enginePitch(sp);engG.gain.setTargetAtTime(.06+Math.min(1,Math.abs(jy))*.04,t,.1);engO.frequency.setTargetAtTime(40+rpm*90*(c.type==='sport'?1.4:1),t,.06);engO2.frequency.setTargetAtTime(20+rpm*45,t,.06);engF.frequency.setTargetAtTime(300+rpm*900,t,.1);
    scrG.gain.setTargetAtTime(c.sliding&&sp>5?.12:0,t,.05);}else{engG.gain.setTargetAtTime(0,t,.2);scrG.gain.setTargetAtTime(0,t,.1);}
   let dn=1e9;if(wanted>0)for(const k of cars)if(k.driver==='police')dn=Math.min(dn,dist2(k.pos,tgt));sirG.gain.setTargetAtTime(wanted>=3&&LAW.seen?clamp(1-dn/120,0,1)*.06:0,t,.2);sirO.frequency.setTargetAtTime(760+260*Math.sin(time*Math.PI*2*.9),t,.03);
   let hn=1e9;for(const h of helis)hn=Math.min(hn,h.pos.distanceTo(camera.position));heliG.gain.setTargetAtTime(clamp(1-hn/160,0,1)*.35,t,.2);}

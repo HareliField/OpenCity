@@ -65,8 +65,24 @@ function initPaving(){
   g.fillStyle='#e0ae65';g.fillRect(x-2.2,y-2.5,2.6,1.2);
  }
  PAVING.warning=new THREE.MeshStandardMaterial({map:ctex(pad,1),roughness:.81});
+ PAVING.cover=utilityCoverMaterial();
  PAVING.paint=makeWet(new THREE.MeshStandardMaterial({vertexColors:true,roughness:.66,
-  polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2}),{paint:true,wet:.8});
+  polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2}),{paint:true,road:true,wet:.8});
+}
+function utilityCoverMaterial(){
+ const [canvas,g]=cvs(256,256);
+ function disc(radius,fill){g.beginPath();g.arc(128,128,radius,0,Math.PI*2);g.fillStyle=fill;g.fill();}
+ disc(128,'#77716a');disc(122,'#383a38');disc(114,'#797972');
+ g.save();g.beginPath();g.arc(128,128,108,0,Math.PI*2);g.clip();
+ for(let y=6;y<250;y+=12)for(let x=6;x<250;x+=18){
+  const px=x+(y%24===6?0:9);
+  g.strokeStyle='#53554e';g.lineWidth=3;g.beginPath();g.moveTo(px-5,y+2);g.lineTo(px,y-2);g.lineTo(px+5,y+2);g.stroke();
+  g.strokeStyle='#98998c';g.lineWidth=1.2;g.stroke();
+ }
+ g.restore();g.fillStyle='#72726a';g.fillRect(72,113,112,29);
+ g.fillStyle='#383b37';g.font='bold 17px Arial';g.textAlign='center';g.fillText('CITY SEWER',128,133);
+ for(const x of [44,212]){g.fillStyle='#343733';g.fillRect(x-4,119,8,18);}
+ return new THREE.MeshStandardMaterial({map:ctex(canvas),roughness:.76,metalness:.38});
 }
 function newTerrain(concrete){
  return {concrete,faces:[],byMaterial:new Map(),x0:Infinity,x1:-Infinity,z0:Infinity,z1:-Infinity};
@@ -325,13 +341,7 @@ function stripeSegment(axis,line,block){
   }
  }
  if(hump){
-  for(const sign of [-1,1]){
-   const center=sign*section.inner,mid=CELL/2;
-   for(const s of [-1,1]){
-    const a=pt(mid-sign*1.25,center+s*.72,.012),b=pt(mid,center,.012);
-    sheet.face([a,pt(mid-sign*1.25,center+s*.48,.012),pt(mid-sign*.24,center,.012),b],LINE_WHITE);
-   }
-  }
+  for(const points of humpChevrons(axis,section.inner))sheet.face(points.map(([t,u])=>pt(t,u,.005)),LINE_WHITE);
  }
  if((line+3*block)%4===1 && !hump){
   // Tar-sealed working crack. It meanders across one wheel track, clear of the gutter.
@@ -343,6 +353,25 @@ function stripeSegment(axis,line,block){
   }
  }
  sheet.finish();
+}
+function humpChevrons(axis,lane){
+ const polygons=[];
+ for(const side of [-1,1]){
+  const direction=axis==='ns'?-side:side;
+  for(const arm of [-1,1]){
+   // Split at the same longitudinal stations as the road. The paint follows the convex crest.
+   const along=(distance)=>CELL/2-direction*distance;
+   const edge=(distance,inner)=>side*lane+arm*Math.max(0,.72*distance/1.25-(inner?.19:0));
+   const offsets=[1.25,STREET_DESIGN.humpLength/4,STREET_DESIGN.humpLength/8,.33,0];
+   for(let n=1;n<offsets.length;n++){
+    const a=offsets[n-1],b=offsets[n];
+    const strip=[[along(a),edge(a,false)],[along(b),edge(b,false)]];
+    if(b>0)strip.push([along(b),edge(b,true)]);
+    strip.push([along(a),edge(a,true)]);polygons.push(strip);
+   }
+  }
+ }
+ return polygons;
 }
 function intersectionMarkings(i,j){
  const sheet=paintSheet(),control=junctionControl(i,j),cross=STREET_DESIGN.crossing,hw=STREET_DESIGN.crossWidth/2;
@@ -387,16 +416,21 @@ function utilityHardware(axis,line,block){
   const drain=extended?20.6:16.4;
   const [x,y,z]=p(sign>0?drain:CELL-drain,sign*7.72);
   const M=new THREE.Matrix4().makeRotationY(horizontal?0:Math.PI/2).setPosition(x,y,z);
-  plainBox(STREET.materials.iron,-.44,.44,.001,.014,-.215,.215,{M,shadow:false});
-  for(let k=0;k<8;k++)plainBox(STREET.materials.rubber,-.36+k*.097,-.321+k*.097,.014,.017,-.152,.152,{M,shadow:false});
+  const iron=STREET.materials.iron;
+  plainBox(STREET.materials.rubber,-.44,.44,-.006,.001,-.215,.215,{M,shadow:false});
+  for(const edge of [-1,1])plainBox(iron,-.44,.44,.001,.004,edge*.195-.02,edge*.195+.02,{M,shadow:false});
+  for(let k=0;k<10;k++)plainBox(iron,-.44+k*.093,-.405+k*.093,.001,.004,-.176,.176,{M,shadow:false});
+  plainBox(iron,-.44,.44,.001,.0035,-.014,.014,{M,shadow:false});
  }
  if((line+block)%3!==0)return;
- const [x,y,z]=p(35+(line%3),line%2?2.9:-2.9),m=STREET.materials;
- cyl(m.iron,x,y-.013,z,.345,.365,.032,20,{shadow:false});
- for(let k=-3;k<=3;k++){
-  const d=k*.069,w=Math.sqrt(.275**2-d*d);
-  plainBox(m.rubber,x-w,x+w,y+.019,y+.022,z+d-.009,z+d+.009,{shadow:false});
+ const t=35+(line%3),u=line%2?2.9:-2.9,cover=new THREE.CircleGeometry(.347,32);
+ const position=cover.attributes.position;
+ for(let k=0;k<position.count;k++){
+  const a=position.getX(k),b=position.getY(k);
+  const [x,y,z]=axis==='ew'?p(t+a,u-b):p(t-b,u+a);
+  position.setXYZ(k,x,y+.002,z);
  }
+ cover.computeVertexNormals();addGeo(PAVING.cover,cover,false);
 }
 function obstructsStreet(x,z,type){
  if(x< -HALF || x>W+HALF || z< -HALF || z>W+HALF)return false;

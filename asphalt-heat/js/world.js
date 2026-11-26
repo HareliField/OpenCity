@@ -122,7 +122,7 @@ function facadeMat(name,meters,o={}){const m=pbr(name,meters,Object.assign({env:
 const MAT={};
 function initMaterials(){
  loadFacadePhotos();
- MAT.asphalt=makeWet(pbr('asphalt',7,{rough:1,rmap:1,ns:1.2,env:.7}),{tint:1,wet:DAYLIGHT?.73:1});
+ MAT.asphalt=makeWet(pbr('asphalt',7,{rough:1,rmap:1,ns:1.2,env:.7}),{tint:1,road:true,wet:DAYLIGHT?.73:1});
  MAT.sidewalk=makeWet(pbr('sidewalk',3.2,{rough:.95,env:.76,rmap:1}),{wet:DAYLIGHT?.48:.83});
  MAT.plaza=makeWet(pbr('plaza',3,{rough:.8,env:.6}),{wet:.6});
  MAT.curb=pbr('concrete',2,{color:0xb8b3aa,rough:.85});
