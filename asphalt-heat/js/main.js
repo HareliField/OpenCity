@@ -80,9 +80,9 @@ function respawn(){state='play';$('big').className='';const busted=deadKind==='B
 /* ================= input ================= */
 let cameraMode=0;
 const keys={};const inp={jx:0,jy:0,fire:false,sprint:false};let joyId=null,joyC=[0,0],dragId=null,dragX=0,dragY=0;
-addEventListener('keydown',e=>{if(e.repeat)return;keys[e.code]=true;if(state==='play'){if(e.code==='KeyE'||e.code==='KeyF'||e.code==='Enter'){const a=actionCtx();a&&a.fn();}if(e.code==='KeyQ'||e.code==='Tab'){cycleWeapon();e.preventDefault();}
+addEventListener('keydown',e=>{if(e.code==='Space'||e.code.startsWith('Arrow'))e.preventDefault();if(e.repeat)return;keys[e.code]=true;if(state==='play'){if(e.code==='KeyC'){const a=actionCtx();a&&a.fn();}if(e.code==='KeyZ')cycleWeapon();
  if(e.code==='KeyV'){cameraMode=(cameraMode+1)%3;}
- if(e.code==='KeyH')$('ui').classList.toggle('cleanView');}if(e.code==='Space'||e.code.startsWith('Arrow'))e.preventDefault();});
+ if(e.code==='KeyH')$('ui').classList.toggle('cleanView');}});
 addEventListener('keyup',e=>{keys[e.code]=false;});addEventListener('blur',()=>{for(const k in keys)keys[k]=false;inp.fire=false;});
 const joy=$('joy'),knob=$('knob');
 function moveJoy(e){let dx=e.clientX-joyC[0],dy=e.clientY-joyC[1];const R=joy.clientWidth*.38,l=Math.hypot(dx,dy);if(l>R){dx*=R/l;dy*=R/l;}inp.jx=dx/R;inp.jy=-dy/R;knob.style.transform=`translate(${dx}px,${dy}px)`;}
@@ -144,8 +144,8 @@ function cameraClearance(ax,ay,az,bx,by,bz){
 }
 function step(dt){time+=dt;WATERT.value=time;
  refreshPhysicalWorld(player.pos.x,player.pos.z);
- const kx=(keys.KeyD||keys.ArrowRight?1:0)-(keys.KeyA||keys.ArrowLeft?1:0),ky=(keys.KeyW||keys.ArrowUp?1:0)-(keys.KeyS||keys.ArrowDown?1:0);const play=state==='play'&&!shopOpen;
- const jx=play?clamp(inp.jx+kx,-1,1):0,jy=play?clamp(inp.jy+ky,-1,1):0,fire=play&&(inp.fire||keys.Space||keys.KeyJ),sprint=play&&(inp.sprint||keys.ShiftLeft||keys.ShiftRight);
+ const kx=(keys.ArrowRight?1:0)-(keys.ArrowLeft?1:0),ky=(keys.ArrowUp?1:0)-(keys.ArrowDown?1:0);const play=state==='play'&&!shopOpen;
+ const jx=play?clamp(inp.jx+kx,-1,1):0,jy=play?clamp(inp.jy+ky,-1,1):0,fire=play&&(inp.fire||keys.Space),sprint=play&&(inp.sprint||keys.KeyX);
  player.fireCd-=dt;if(fire)playerAttack();updLights(time);
  lodT-=dt;if(lodT<=0){lodT=.5;physLOD();}
  /* controls before physics */

@@ -14,14 +14,15 @@ Open [Asphalt Heat](http://127.0.0.1:8765/index.html). The game and its assets l
 
 | Action | Desktop |
 | --- | --- |
-| Walk or drive | W, A, S, D or arrow keys |
-| Open or close a door, enter or exit a car, or nudge a prop | E |
-| Brake while moving | S. Release and press again to reverse |
-| Sprint or use the handbrake | Shift |
+| Walk or drive | Arrow keys |
+| Open or close a door, enter or exit a car, or nudge a prop | C |
+| Brake while moving | Down arrow. Release and press again to reverse |
+| Sprint or use the handbrake | X |
+| Punch or shoot | Space |
 | Look around | Drag the view |
 | Cycle follow, low, and aerial cameras | V |
 | Hide or restore the HUD and world markers | H |
-| Cycle weapons | Q |
+| Cycle weapons | Z |
 
 Touch devices show an on-screen stick and action controls.
 
