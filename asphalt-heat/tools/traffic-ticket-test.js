@@ -12,7 +12,7 @@ run(`const V3=THREE.Vector3,CANNON=window.CANNON,CELL=64,N=16,HALF=8,W=N*CELL;
  const base={bld:[],residual:[],x0:1e6,x1:1e6,z0:1e6,z1:1e6};
  const blocks=Array.from({length:N*N},()=>({...base,bld:[],residual:[]}));
  const MAT={},STREET={steps:[]},departmentPeople=[],districtOf=()=>'suburb',worksFloorAt=(x,z,ref,y)=>y;`);
-for(const file of ['phys','cargen','fleet','access','roads','street-plan','street-surface','city-traffic','lighthouse','garden-cottages','game','department','dispatch','traffic-police'])run(read('js/'+file+'.js'));
+for(const file of ['phys','cargen','fleet','access','roads','street-plan','street-surface','city-traffic','lighthouse','garden-cottages','civic-fittings','game','department','dispatch','traffic-police'])run(read('js/'+file+'.js'));
 run(`
  state='play';
  const car={type:'miata',spec:CARSPEC.miata,pos:new V3(),vel:new V3(),plate:'AH TEST',driver:'player',speed:0,h:0};
