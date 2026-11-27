@@ -73,6 +73,10 @@ SHOP_DETAILS = [
     (73, [(12,275),(77,275),(76,349),(14,353)]),      # stitched upholstery
     (31, [(261,329),(283,329),(283,335),(261,335)]),  # timber shelf edge
     (106, [(64,390),(196,389),(196,409),(64,412)]),   # patched limestone
+    (23, [(174,145),(255,148),(255,201),(173,199)]),  # Coastal Nails enamel plate
+    (23, [(436,153),(468,154),(467,200),(437,198)]),  # manicure service card
+    (54, [(115,213),(132,214),(130,232),(113,232)]),  # illustrated paperback
+    (54, [(467,250),(478,250),(478,268),(465,268)]),  # face-out hardback
 ]
 def build_shop_details():
     size = 256

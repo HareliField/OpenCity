@@ -121,10 +121,11 @@ function shopFacade(block,row,M,u0,u1,storey,coastal,riverside=false){
  registerDoor(M,center,.027,.175,door1-door0-.071,2.60,'glass');
  if(riverside)riversideFascia(row,M,u0,u1);
  else referenceFascia(row,M,u0,u1,3.65);
- topQuad(m.shopLight,u0-.15,u1+.15,.172,.15,4.35,4.2,M,false);
+ const lighting=buildInterior({block,M,u0,u1,door0,door1,row,depth:roomDepth});
+ topQuad(roomLightMaterial(m.shopLight,lighting),u0-.15,u1+.15,.172,.15,4.35,4.2,M,false);
  for(const k of [-.29,.29]){
   const x=center+width*k;
-  box(m.bulb,x-.58,x+.58,3.2,3.24,-.55,-.29,{shadow:false});
+  box(roomLightMaterial(m.bulb,lighting),x-.58,x+.58,3.2,3.24,-.55,-.29,{shadow:false});
  }
  if(coastal){
   const stripe=row===RETAIL.barber?m.rose:m.cyan;
@@ -137,7 +138,6 @@ function shopFacade(block,row,M,u0,u1,storey,coastal,riverside=false){
    worksModel('barber-pole',p.x,1.58,p.z,[.258,.91,.306],yaw,false);
   }
  }
- buildInterior({block,M,u0,u1,door0,door1,row,depth:roomDepth});
  dressReferenceShop(block,row,M,u0,u1,storey,roomDepth);
 
  return main;

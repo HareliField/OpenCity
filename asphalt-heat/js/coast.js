@@ -123,6 +123,10 @@ uniform float uWindSpeed;
 uniform vec2 uWind;
 float seaState(){return clamp(.43+.084*uWindSpeed,.43,2.20);}
 float dockBasin(float z){return step(${(HARBOR.basin.z0-.001).toFixed(3)},z);}
+float harborShelter(vec2 p){
+ float entrance=smoothstep(${HARBOR.basin.z0-13}.,${HARBOR.basin.z0+17}.,p.y);
+ return entrance*(1.-smoothstep(${W+72}.,${W+143}.,p.x));
+}
 float intertidalEdge(float z){
  float offset=(z-${(W*.42).toFixed(2)})/43.;
  return ${COAST_EDGE}-3.8*exp(-offset*offset);
@@ -132,12 +136,15 @@ float shoreLine(float z,float t){
  return intertidalEdge(z)+sin(z*.044)*.96+sin(z*.092+.4)*.48+seaState()*(sin(t*.61+z*.023)*1.05+sin(t*.91-z*.051)*.29);
 }
 float breaker(vec2 p,float d,float t){
- float phase=d*.68+t*1.23+.86*sin(p.y*.116+t*.13)+.38*cos(p.y*.273-t*.19);
- return pow(max(0.,.5+.5*cos(phase)),10.)*smoothstep(.65,3.1,d)*(1.-smoothstep(12.,33.,d));
+ float bend=1.14*sin(p.y*.093+t*.16)+.62*cos(p.y*.197-t*.12);
+ float phase=d*.64+t*1.23+bend+.31*sin(d*.30+p.y*.19-t*.29);
+ float set=.55+.26*cos(p.y*.081+d*.22+t*.32)+.19*sin(p.y*.197-d*.31+t*.18);
+ return pow(max(0.,.5+.5*cos(phase)),7.)*smoothstep(.11,.81,set)
+       *smoothstep(.38,2.4,d)*(1.-smoothstep(8.,23.+7.*set,d));
 }
 float swell(vec2 p,float t){
  float windWave=sin(dot(p,normalize(uWind+vec2(.001)))*.34-t*1.03);
- return seaState()*(sin(p.x*.76+t*1.63+sin(p.y*.082)*.59)*.13+
+ return seaState()*(sin(p.x*.76+t*1.63+sin(p.y*.082+p.x*.033)*.86)*.13+
         sin(p.x*.38+p.y*.14+t*1.14)*.094+sin(p.x*.24-p.y*.17+t*.83)*.063+windWave*.046);
 }`;
 function beachMaterial(){
@@ -201,7 +208,7 @@ function buildCoastalWater(){
     float offshore=smoothstep(7.,18.,vCrossShore),rise=swell(transformed.xz,uTime);
     transformed.y=.057+min(.095,max(0.,rise))*(1.-offshore)+offshore*(-.30+rise)
       +(.16+.12*seaState())*breaker(transformed.xz,vCrossShore,uTime);
-    transformed.y=mix(transformed.y,-.34+.30*rise,dock);
+    transformed.y=mix(transformed.y,-.34+.30*rise,harborShelter(transformed.xz));
     vSea=transformed;vMirror=reflMat*vec4(vSea,1.);`);
   sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\n'+varying+'uniform float uTime,uDay,uFlash,uMist,reflOn;uniform sampler2D foamMap,tRefl;uniform vec3 uSun,uSunlight;uniform vec2 uDrift;'+shoreGLSL+WETCODE)
    .replace('#include <roughnessmap_fragment>',`#include <roughnessmap_fragment>
@@ -211,13 +218,17 @@ function buildCoastalWater(){
     float swash=exp(-d*.50)*(.51+.49*smoothstep(.13,.61,broken));
     float breaking=breaker(p,d,uTime);
     float surge=smoothstep(.16,.82,breaking)*(.32+.68*smoothstep(.09,.73,broken));
-    float wash=breaker(p,d+.95,uTime)*smoothstep(.20,.63,broken)*.53;
+    float wash=breaker(p,d+1.35,uTime)*smoothstep(.18,.71,broken)*.47;
     vec2 fuv=vec2(p.y*.15+sin(p.x*.63+uTime*.58)*.069,d*.34+uTime*.09);
     float lace=texture2D(foamMap,fuv).r;
     float whitecaps=smoothstep(8.,16.,uWindSpeed)*smoothstep(4.,11.,d)*smoothstep(.16,.31,swell(p,uTime)/seaState())*smoothstep(.3,.76,broken);
-    float dock=dockBasin(p.y);
-    float bubbles=(1.-dock)*clamp(max(whitecaps,max(swash,max(surge,wash)*(.74+.33*seaState())))*(.43+.57*smoothstep(.05,.60,lace*.86+broken*.36)),0.,1.);
-    diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.063,.095,.135),dock);
+    float dock=harborShelter(p);
+    float laceDensity=smoothstep(.19,.81,lace*.71+broken*.42);
+    float bubbles=(1.-dock)*clamp(max(whitecaps,max(swash,max(surge,wash)*(.74+.33*seaState())))*(.16+.84*laceDensity),0.,1.);
+    float shallows=(1.-smoothstep(3.,34.,d))*(1.-dock);
+    float sandBed=.72+.28*fbm2(p*vec2(.22,.12));
+    diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.083,.148,.128)*sandBed,shallows);
+    diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.049,.082,.096),dock*.85);
     diffuseColor.rgb=mix(diffuseColor.rgb,mix(vec3(.33,.34,.30),vec3(.75,.81,.8),lace),bubbles*.88);
     roughnessFactor=mix(.235,.61,bubbles);`)
    .replace('#include <normal_fragment_maps>',`
@@ -242,7 +253,7 @@ function buildCoastalWater(){
     float finger=.32+fbm2(p*vec2(1.8,.93))*.85+sin(p.y*2.9+uTime*.41)*.09;
     float shallow=smoothstep(finger*.44,3.45+finger,d);
     float waterFilm=mix(.07,.93,shallow)+.20*lace*smoothstep(.13,.72,d)*(1.-shallow);
-    gl_FragColor.a=mix(min(1.,waterFilm+.15*bubbles*shallow),1.,max(dock,max(smoothstep(3.8,6.4,d),smoothstep(${(W+62.7).toFixed(2)},${(W+63.75).toFixed(2)},p.x))));
+    gl_FragColor.a=mix(min(1.,waterFilm+.15*bubbles*shallow),1.,max(dockBasin(p.y),max(smoothstep(3.8,6.4,d),smoothstep(${(W+62.7).toFixed(2)},${(W+63.75).toFixed(2)},p.x))));
    }
    #include <tonemapping_fragment>`)
    .replace('#include <fog_fragment>',THREE.ShaderChunk.fog_fragment.replace('fogColor, fogFactor','fogColor, fogFactor*mix(.76,1.,uMist)'));

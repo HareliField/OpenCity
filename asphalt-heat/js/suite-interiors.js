@@ -109,7 +109,10 @@ function pavementTemplate(){
  geo.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));
  geo.setAttribute('color',new THREE.Float32BufferAttribute(colors,3));
  geo.setAttribute('uv',new THREE.Float32BufferAttribute(uv,2));geo.setIndex(indices);geo.computeVertexNormals();
- const mat=constructionFinish(PAVING.panel);mat.vertexColors=true;
+ const metric=constructionFinish(PAVING.panel),mat=makeWet(PAVING.panel.clone(),{wet:.83,inst:true,paving:true});
+ const wet=mat.onBeforeCompile;mat.vertexColors=true;
+ mat.onBeforeCompile=sh=>{wet(sh);metric.onBeforeCompile(sh);};
+ mat.customProgramCacheKey=()=>'assembled-wet-sidewalk';
  return {dimensions:[1,1,1],primitives:[{geo,mat,local:new THREE.Matrix4()}]};
 }
 function collectPaving(pos,select){

@@ -114,6 +114,8 @@ function buildHarborSupply(block){
  const R=worksRect(block.x1-SW-27.8,block.x1-SW-.38,block.z0+SW+1.46,block.z0+SW+21.60);
  site.R=R;site.cladding=pbr('corrugated',1.36,{rough:.75,metal:.36,color:0xd5d1bf,ns:.51,env:.37});
  const mid=(R.x0+R.x1)/2,cz=(R.z0+R.z1)/2;
+ const root=lotFace(R,'N').matrix;
+ const lighting=shopLightingRoom(root,-(R.x1-R.x0)/2,(R.x1-R.x0)/2,R.z1-R.z0,base,site.roof-base);
  const hole=(left,right,base,top,kind='window')=>({left,right,base,top,kind});
  site.face=pbr('harbor-sheet',1,{rough:.78,metal:.14,ns:.46,env:.40});
  supplyWall(block,'N',R,[
@@ -124,7 +126,7 @@ function buildHarborSupply(block){
  supplyWall(block,'E',R,[hole(-5.26,-3.33,4.51,5.86),hole(2.65,5.05,4.51,5.86)]);
  supplyWall(block,'S',R,[hole(4.33,5.77,base,2.32,'wood'),hole(-7.0,-4.6,4.57,5.86)]);
  supplyWall(block,'W',R,[hole(-4.52,.44,base,3.93,'shutter'),hole(3.44,5.62,4.47,5.79)]);
- topQuad(STREET.materials.wornSlab,R.x0,R.x1,base,R.z0,R.z1,1.7,null,false);
+ topQuad(roomLightMaterial(STREET.materials.wornSlab,lighting),R.x0,R.x1,base,R.z0,R.z1,1.7,null,false);
  STREET.steps.push({...R,y:base});
  const hatch=supplyRoofStair(block,R,base,site.roof);site.hatch=hatch;
  warehouseRoof(block,R,site.roof,.18,pbr('quay-roof',1.45,{rough:.93,ns:.54,env:.28}),[hatch]);
@@ -133,7 +135,7 @@ function buildHarborSupply(block){
   plainBox(MAT.trim,-span/2-.055,span/2+.055,site.roof+.14,site.roof+.31,-.135,.058,{M,uvm:1.4});
   plainBox(MAT.metal,-span/2-.073,span/2+.073,site.roof+.30,site.roof+.34,-.146,.072,{M});
  }
- const root=lotFace(R,'N').matrix,front=(mat,u0,u1,b,t,z0,z1)=>plainBox(mat,u0,u1,b,t,z0,z1,{M:root,uvm:1});
+ const front=(mat,u0,u1,b,t,z0,z1)=>plainBox(mat,u0,u1,b,t,z0,z1,{M:root,uvm:1});
  const sign=new THREE.MeshStandardMaterial({map:TLD.load('tex/harbor-fascia.webp'),roughness:.60,metalness:.13});
  sign.map.encoding=THREE.sRGBEncoding;sign.map.anisotropy=8;
  front(m.iron,-6.78,.86,4.15,6.15,.017,.103);facadePlane(sign,root,-6.71,.79,4.20,6.10,.112);
