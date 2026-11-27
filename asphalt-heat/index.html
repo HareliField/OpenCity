@@ -31,6 +31,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
 #conditions{margin-top:6px;font:700 13px/1.3 Inter,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:#fff;text-shadow:0 1px 4px #000,0 0 2px #000}
 #obj{margin-top:8px;font-size:13px;font-weight:700;color:#ffe9c9;text-shadow:0 1px 3px #000;line-height:1.3}
 #sound{display:block;pointer-events:auto;margin-top:8px;min-height:44px;min-width:92px;padding:0 10px;background:rgba(0,0,0,.68);border:1px solid rgba(255,255,255,.35);border-radius:10px;color:#fff;font:700 13px Inter,system-ui,sans-serif;cursor:pointer}
+#graphicsHud{display:block;pointer-events:auto;margin-top:8px;max-width:126px;min-height:36px;padding:4px 6px;border:1px solid #ffffff59;border-radius:8px;background:#171717;color:#fff;font:700 13px Inter,system-ui,sans-serif}
 #sound[aria-pressed="true"]{border-color:#ffe08a;color:#ffe08a}
 #sound:focus-visible{outline:2px solid #ffe08a;outline-offset:2px}
 #tr{position:absolute;top:max(10px,env(safe-area-inset-top));right:max(14px,env(safe-area-inset-right));display:flex;flex-direction:column;align-items:flex-end;gap:5px}
@@ -130,6 +131,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
 <canvas id="c"></canvas>
 <div id="ui" hidden>
   <div id="tl"><div id="cash">$0</div><div class="bar"><i id="hp"></i></div><div class="bar" id="arbar"><i id="ar"></i></div><div class="bar" id="carbar"><i id="chp"></i></div><div id="conditions"></div><div id="obj"></div>
+    <select id="graphicsHud" aria-label="Graphics quality"></select>
     <button id="sound" type="button" aria-label="Sound" aria-pressed="false">Sound off</button>
     <button id="gloves" type="button" aria-pressed="false">Gloves off</button>
   </div>
@@ -173,6 +175,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
     <label>Starting weather<select id="startWeather"><option value="">City forecast</option></select></label>
    </div>
   </details>
+  <div class="startClimate"><label>Graphics quality<select id="graphicsStart"></select></label></div>
   <button id="play" disabled>PLAY</button>
   <div id="lbar"><i></i></div>
   <div id="load">Loading…</div>

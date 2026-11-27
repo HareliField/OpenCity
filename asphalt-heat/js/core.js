@@ -10,8 +10,17 @@ const V3=THREE.Vector3;const unitBox=new THREE.BoxGeometry(1,1,1);
 const ORIGINAL_GRID=8,N=16,CELL=64,HALF=8,W=N*CELL,S=W+16,LANE=4,SW=4;
 const isMobile=matchMedia('(pointer:coarse)').matches||/Android|iPhone|iPad/.test(navigator.userAgent);
 const qp=new URLSearchParams(location.search);
-const QUALITY={level:qp.has('q')?+qp.get('q'):(isMobile?1:2)};
-function applyQuality(){const L=QUALITY.level;QUALITY.physical=L>=2;QUALITY.refl=L>=1;QUALITY.bloom=L>=1;QUALITY.msaa=L>=2?4:(L>=1?2:0);QUALITY.pr=Math.min(devicePixelRatio,L>=2?1.75:L>=1?1.2:.9);QUALITY.shadow=L>=2?2048:1024;QUALITY.reflScale=L>=2?.5:.33;QUALITY.peds=L>=2?26:L>=1?18:12;}
+const GRAPHICS_LEVELS=['Low','Medium','High'];
+const GRAPHICS_KEY='asphalt-heat.graphics';
+const graphicsOverride=qp.get('q');
+let graphicsMode='auto';
+try {
+ const saved=localStorage.getItem(GRAPHICS_KEY);
+ if (['0','1','2'].includes(saved)) graphicsMode=saved;
+} catch {}
+if (['0','1','2'].includes(graphicsOverride)) graphicsMode=graphicsOverride;
+const QUALITY={level:graphicsMode==='auto'?1:Number(graphicsMode),scale:1};
+function applyQuality(){const L=QUALITY.level;QUALITY.physical=L>=2;QUALITY.refl=L>=1;QUALITY.bloom=L>=1;QUALITY.msaa=L>=2?4:(L>=1?2:0);QUALITY.pr=Math.min(devicePixelRatio,L>=2?1.75:L>=1?1.2:.9)*QUALITY.scale;QUALITY.shadow=L>=2?2048:1024;QUALITY.reflScale=L>=2?.5:.33;QUALITY.peds=L>=2?26:L>=1?18:12;}
 applyQuality();
 const LOWSHADOW=QUALITY.level<2;
 function cvs(w,h){const c=document.createElement('canvas');c.width=w;c.height=h;return[c,c.getContext('2d')];}
@@ -36,8 +45,13 @@ for(const lamp of drivingLights)scene.add(lamp,lamp.target);
 const boomL=new THREE.PointLight(0xff8a30,0,60,2);scene.add(boomL);
 /* ---- planar reflection for wet ground ---- */
 const REFL={rt:null,cam:new THREE.PerspectiveCamera(),mat:new THREE.Matrix4(),on:false,uniforms:{tRefl:{value:null},reflMat:{value:new THREE.Matrix4()},reflOn:{value:0}}};
-function reflResize(w,h){if(!QUALITY.refl){REFL.on=false;REFL.uniforms.reflOn.value=0;return;}const s=QUALITY.reflScale;
- if(REFL.rt)REFL.rt.dispose();REFL.rt=new THREE.WebGLRenderTarget(Math.max(64,w*s|0),Math.max(64,h*s|0),{type:POST?THREE.HalfFloatType:THREE.UnsignedByteType,minFilter:THREE.LinearFilter,magFilter:THREE.LinearFilter});
+function reflResize(w,h){
+ REFL.rt?.dispose();
+ if(!QUALITY.refl){
+  REFL.rt=null;REFL.on=false;REFL.uniforms.tRefl.value=null;REFL.uniforms.reflOn.value=0;return;
+ }
+ const s=QUALITY.reflScale;
+ REFL.rt=new THREE.WebGLRenderTarget(Math.max(64,w*s|0),Math.max(64,h*s|0),{type:POST?THREE.HalfFloatType:THREE.UnsignedByteType,minFilter:THREE.LinearFilter,magFilter:THREE.LinearFilter});
  REFL.uniforms.tRefl.value=REFL.rt.texture;REFL.on=true;REFL.uniforms.reflOn.value=1;}
 const _rtv=new V3(),_rn=new V3(0,1,0),_rl=new V3(),_rq=new THREE.Vector4(),_rp=new THREE.Plane(),_rc=new THREE.Vector4();
 const ROAD_MIRROR_POINT=new V3(0,.016,0);
@@ -187,11 +201,13 @@ function postInit(){if(!POST)return;PP.scene=new THREE.Scene();PP.cam=new THREE.
    c=mix(c,c*vec3(.97,1.,1.025)+vec3(.003,.004,.008),1.-smoothstep(.0,.45,l));
    vec2 q=vUv-.5;c*=1.-dot(q,q)*.34;c=mix(c,vec3(.5,0.,0.),hurt*(dot(q,q)*1.6));
    c+=(fract(sin(dot(vUv*vec2(12.9898,78.233)+time,vec2(1.,1.)))*43758.5453)-.5)*.007;gl_FragColor=vec4(c,1.);}`,{t:{value:null},b1:{value:null},b2:{value:null},b3:{value:null},bs:{value:.42},aoOn:{value:0},aoMap:{value:null},depthMap:{value:null},aoTexel:{value:new THREE.Vector2()},nearFar:{value:new THREE.Vector2()},ex:{value:1.02},time:{value:0},hurt:{value:0}});}
-function postResize(w,h){if(!POST)return;const pr=renderer.getPixelRatio(),W2=Math.floor(w*pr),H2=Math.floor(h*pr);for(const k of['main','occlusion','b0','b1a','b1b','b2a','b2b','b3a','b3b'])if(PP[k])PP[k].dispose();
+function postResize(w,h){if(!POST)return;const pr=renderer.getPixelRatio(),W2=Math.floor(w*pr),H2=Math.floor(h*pr);for(const k of['main','occlusion','b0','b1a','b1b','b2a','b2b','b3a','b3b']){PP[k]?.dispose();PP[k]=null;}
  const o={type:THREE.HalfFloatType,minFilter:THREE.LinearFilter,magFilter:THREE.LinearFilter,depthBuffer:false};
  if(QUALITY.msaa&&THREE.WebGLMultisampleRenderTarget){PP.main=new THREE.WebGLMultisampleRenderTarget(W2,H2,{type:THREE.HalfFloatType});PP.main.samples=QUALITY.msaa;}else PP.main=new THREE.WebGLRenderTarget(W2,H2,{type:THREE.HalfFloatType,minFilter:THREE.LinearFilter,magFilter:THREE.LinearFilter});
  if(QUALITY.level>=2)PP.main.depthTexture=new THREE.DepthTexture(W2,H2,THREE.UnsignedIntType);
- const mk=s=>new THREE.WebGLRenderTarget(Math.max(8,W2*s|0),Math.max(8,H2*s|0),o);PP.occlusion=QUALITY.level>=2?mk(.50):null;PP.b0=mk(.5);PP.b1a=mk(.25);PP.b1b=mk(.25);PP.b2a=mk(.125);PP.b2b=mk(.125);PP.b3a=mk(.0625);PP.b3b=mk(.0625);}
+ const mk=s=>new THREE.WebGLRenderTarget(Math.max(8,W2*s|0),Math.max(8,H2*s|0),o);PP.occlusion=QUALITY.level>=2?mk(.50):null;
+ if(QUALITY.bloom){PP.b0=mk(.5);PP.b1a=mk(.25);PP.b1b=mk(.25);PP.b2a=mk(.125);PP.b2b=mk(.125);PP.b3a=mk(.0625);PP.b3b=mk(.0625);}
+}
 function pass(mat,target){PP.quad.material=mat;renderer.setRenderTarget(target);renderer.render(PP.scene,PP.cam);}
 function blurTo(src,a,b){PP.blur.uniforms.t.value=src.texture;PP.blur.uniforms.d.value.set(1/a.width,0);pass(PP.blur,a);PP.blur.uniforms.t.value=a.texture;PP.blur.uniforms.d.value.set(0,1/a.height);pass(PP.blur,b);}
 function renderFrame(t){preparePrecipitation();renderReflection();updateShopReflection(t);

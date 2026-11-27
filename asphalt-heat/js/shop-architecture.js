@@ -152,7 +152,11 @@ function shopGlazing(){
 }
 function updateShopReflection(t){
  const r=SHOP_REFLECTION,u=r.uniforms;
- if(QUALITY.level<2||camera.position.y<-.2||camera.position.y>22){u.shopMirrorOn.value=0;return;}
+ if(QUALITY.level<2){
+  r.rt?.dispose();r.rt=null;r.front=null;
+  u.shopMirror.value=null;u.shopMirrorOn.value=0;return;
+ }
+ if(camera.position.y<-.2||camera.position.y>22){u.shopMirrorOn.value=0;return;}
  camera.getWorldDirection(r.direction);
  let best=null,bestDistance=44;
  for(const f of SHOP_ELEVATIONS.frontages){

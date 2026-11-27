@@ -150,7 +150,7 @@ soundButton.addEventListener('click',async e=>{
  soundButton.setAttribute('aria-pressed',String(enabled));
  soundButton.textContent=enabled?'Sound on':'Sound off';
 });
-addEventListener('keydown',e=>{if(e.code==='Space'&&e.target===soundButton)return;if(e.code==='Space'||e.code.startsWith('Arrow'))e.preventDefault();if(e.repeat)return;keys[e.code]=true;if(state==='play'&&!caseCamera.enabled){if(e.code==='KeyC'){const a=actionCtx();a&&a.fn();}if(e.code==='KeyE'&&player.car&&!shopOpen)toggleCar();if(e.code==='KeyZ'&&!shopOpen)cycleWeapon();
+addEventListener('keydown',e=>{if(e.target instanceof HTMLSelectElement||e.code==='Space'&&e.target===soundButton)return;if(e.code==='Space'||e.code.startsWith('Arrow'))e.preventDefault();if(e.repeat)return;keys[e.code]=true;if(state==='play'&&!caseCamera.enabled){if(e.code==='KeyC'){const a=actionCtx();a&&a.fn();}if(e.code==='KeyE'&&player.car&&!shopOpen)toggleCar();if(e.code==='KeyZ'&&!shopOpen)cycleWeapon();
  if(e.code==='KeyV')cycleCamera();
  if(!shopOpen && (e.code==='BracketLeft'||e.code==='BracketRight'))togglePlayerSignal(player.car,e.code==='BracketLeft'?-1:1);
  if(e.code==='KeyH')toggleHUD();}});
@@ -260,7 +260,7 @@ function hud(){const set=(k,v,f)=>{if(hudCache[k]!==v){hudCache[k]=v;f(v);}};
  set('obj',obj,v=>$('obj').textContent=v);
  set('prog',robbing?Math.round(robbing.t/robbing.p.time*100):-1,v=>{$('prog').style.display=v<0?'none':'block';if(v>=0){$('prog').lastChild.firstChild.style.width=v+'%';$('prog').firstChild.textContent=robbing.p.kind==='bank'?'CRACKING THE VAULT…':'EMPTYING THE REGISTER…';}});}
 /* ================= main loop ================= */
-const clock=new THREE.Clock();const camPos=new V3();let camInit=false,mmT=0,lodT=0,fpsAcc=0,fpsN=0,fpsCheck=0;
+const clock=new THREE.Clock();const camPos=new V3();let camInit=false,mmT=0,lodT=0;
 function cameraClearance(ax,ay,az,bx,by,bz){
  const hit=rayWorld(ax,az,bx,bz,ay,by,.18);return hit<1?Math.max(.04,hit-.015):1;
 }
@@ -406,6 +406,59 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
   let hn=1e9;for(const h of helis)hn=Math.min(hn,h.pos.distanceTo(camera.position));heliG.gain.setTargetAtTime(clamp(1-hn/160,0,1)*.35,t,.2);}
  if(player.car)player.car.sliding=false;
  if(toastT>0){toastT-=dt;if(toastT<=0)toastEl.classList.remove('on');}if(bannerT>0){bannerT-=dt;if(bannerT<=0)$('banner').classList.remove('on');}}
+const graphicsControls=[$('graphicsStart'),$('graphicsHud')];
+let graphicsElapsed=0,graphicsFrames=0,graphicsSlowFrames=0,graphicsGrace=2;
+function syncGraphicsControls(){
+ const autoLabel=QUALITY.scale<1?'Auto · 80%':`Auto · ${GRAPHICS_LEVELS[QUALITY.level]}`;
+ for(const control of graphicsControls){
+  control.options[0].textContent=graphicsMode==='auto'?autoLabel:'Auto';
+  control.value=graphicsMode;
+ }
+}
+function resetGraphicsSample(){
+ graphicsElapsed=graphicsFrames=graphicsSlowFrames=0;
+ graphicsGrace=2;
+}
+function setGraphics(level,scale=1){
+ if(level!==QUALITY.level||scale!==QUALITY.scale){
+  QUALITY.level=level;
+  QUALITY.scale=scale;
+  applyQuality();
+  if(sun.shadow.mapSize.x!==QUALITY.shadow){
+   sun.shadow.map?.dispose();
+   sun.shadow.map=null;
+   sun.shadow.mapSize.setScalar(QUALITY.shadow);
+  }
+  resize();
+ }
+ syncGraphicsControls();
+}
+for(const control of graphicsControls){
+ control.add(new Option('Auto','auto'));
+ GRAPHICS_LEVELS.forEach((label,level)=>control.add(new Option(label,String(level))));
+ control.addEventListener('change',()=>{
+  graphicsMode=control.value;
+  try{localStorage.setItem(GRAPHICS_KEY,graphicsMode);}catch{}
+  resetGraphicsSample();
+  setGraphics(graphicsMode==='auto'?1:Number(graphicsMode));
+ });
+}
+syncGraphicsControls();
+document.addEventListener('visibilitychange',resetGraphicsSample);
+function sampleGraphics(elapsed){
+ if(graphicsMode!=='auto'||QUALITY.level===0)return;
+ if(graphicsGrace>0){graphicsGrace-=elapsed;return;}
+ graphicsElapsed+=elapsed;
+ graphicsFrames++;
+ if(elapsed>.05)graphicsSlowFrames++;
+ if(graphicsElapsed<1.5||graphicsFrames<3)return;
+ const overloaded=graphicsSlowFrames>=3||graphicsElapsed/graphicsFrames>1/30;
+ graphicsElapsed=graphicsFrames=graphicsSlowFrames=0;
+ if(!overloaded)return;
+ resetGraphicsSample();
+ if(QUALITY.scale===1)setGraphics(1,.8);
+ else setGraphics(0);
+}
 function loop(){
  requestAnimationFrame(loop);
  const elapsed=clock.getDelta(),dt=document.hidden?0:Math.min(elapsed,.25);
@@ -413,23 +466,7 @@ function loop(){
  if((state==='play'||state==='dead')&&dt>0){
   const steps=Math.ceil(dt/.05);for(let i=0;i<steps;i++)step(dt/steps);hud();mmT-=dt;
   if(mmT<=0){mmT=1/12;drawMap();}
-  if(state==='play'&&!qp.has('q')){
-   fpsAcc+=elapsed;fpsN++;fpsCheck+=elapsed;
-   if(fpsCheck>4&&fpsN>0){
-    const fps=fpsN/fpsAcc;
-    fpsAcc=fpsN=fpsCheck=0;
-    if(fps<26&&QUALITY.level>0){
-     QUALITY.level--;
-     applyQuality();
-     if(sun.shadow.mapSize.x!==QUALITY.shadow){
-      sun.shadow.map?.dispose();
-      sun.shadow.map=null;
-      sun.shadow.mapSize.setScalar(QUALITY.shadow);
-     }
-     resize();
-    }
-   }
-  }
+  if(state==='play')sampleGraphics(elapsed);
  }
  if(state==='play'||state==='dead')renderFrame(time);
 }
@@ -508,7 +545,7 @@ $('play').addEventListener('click',()=>{
  const hour=startTime.value==='custom'?launchHour:startingHour(startTime.value,weather.day);
  setCityEnvironment(hour,startWeather.value||'clouds',true);
  $('start').style.display='none';$('ui').hidden=false;$('touchViews').hidden=false;
- clock.getDelta();state='play';
+ resetGraphicsSample();clock.getDelta();state='play';
 });
 window.__game={department:PoliceDepartment,cityWorks:CITY_WORKS,services:CITY_SERVICES,step,ff(n){for(let i=0;i<n;i++){step(1/30);}renderFrame(time);},scene,renderer,camera,sun,PH,get player(){return player},cars,peds,cops,gang,helis,places,PROPS,get heat(){return heat},set heat(v){heat=v},get wanted(){return wanted},get state(){return state},keys,inp,toggleCar,startRob,TPL,QUALITY};
 loop();boot().catch(e=>{console.error(e);setLoad('Error: '+e.message);});
