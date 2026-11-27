@@ -3,110 +3,52 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Play Asphalt Heat and try contributing to its collaborative city.">
-  <title>Asphalt Heat — Build the City</title>
+  <meta name="description" content="Play Asphalt Heat and contribute to the city with your coding agent.">
+  <title>Asphalt Heat</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="city.css">
 </head>
 <body>
   <header class="topbar" id="city">
     <div class="shell navigation">
-      <a class="wordmark" href="#city"><span class="roadmark" aria-hidden="true"></span> Asphalt Heat</a>
-      <nav aria-label="City website">
-        <a href="#city">City</a>
-        <a href="#build">Build</a>
-        <a href="#rules">Rules</a>
-        <a href="#releases">Releases</a>
-      </nav>
-      <a class="button outline play" href="../index.html" target="_blank" rel="noopener">Play game <span aria-hidden="true">↗</span></a>
+      <h1 class="wordmark"><span class="roadmark" aria-hidden="true"></span> Asphalt Heat</h1>
+      <a class="button outline" href="../index.html" target="_blank" rel="noopener">Play game <span aria-hidden="true">↗</span></a>
     </div>
   </header>
 
   <main>
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="shell hero-content">
-        <h1 id="hero-title">The city<br>is yours to build.</h1>
-        <p>Tell your coding agent what to change. Try it in your local game, then decide whether to submit it to the shared city.</p>
-        <div class="actions">
-          <button class="button primary" type="button" id="copy-starter">Copy agent prompt <span aria-hidden="true">↗</span></button>
-          <a class="button outline" href="#build">Try the demo</a>
-          <a class="button quiet" id="prompt-link" href="contribute.txt" target="_blank" rel="noopener">View prompt</a>
-        </div>
-        <div class="notice prompt-notice" id="prompt-status" role="status" hidden></div>
-        <span class="hero-location">South A</span>
-      </div>
-    </section>
+    <img class="hero" src="old-town.jpg" width="1672" height="941" alt="Old Town in Asphalt Heat on a clear day, with brick storefronts and a fire escape above Tacos El Rey.">
 
-    <section class="shell workspace" id="build" aria-labelledby="build-title">
-      <div class="section-heading">
+    <section class="shell build" id="build" aria-labelledby="build-title">
+      <div>
         <h2 id="build-title">Build with your agent</h2>
-        <div class="demo-tools">
-          <span>Interactive demo</span>
-          <button type="button" class="button outline" id="replay" aria-pressed="false"><span aria-hidden="true">↻</span> Loop demo</button>
-        </div>
+        <p>Copy the prompt, paste it into your coding agent, and describe your change. Try it locally. Say yes when your agent asks to open a pull request.</p>
+        <p class="example">Try “Build a short police chase through Old Town using the existing wanted system.”</p>
       </div>
-      <ol id="steps" class="steps" aria-label="Contribution progress">
-        <li><button data-step="0" aria-current="step"><span>01</span> Propose</button></li>
-        <li><button data-step="1" disabled><span>02</span> Preview</button></li>
-        <li><button data-step="2" disabled><span>03</span> Review</button></li>
-        <li><button data-step="3" disabled><span>04</span> Release</button></li>
-      </ol>
-      <div class="workbench">
-        <div class="editor">
-          <form id="proposal">
-            <label class="panel-heading" for="idea">What should change?</label>
-            <textarea id="idea" rows="3" maxlength="1400" required></textarea>
-            <p class="field-label">Try an example</p>
-            <div class="examples">
-              <button type="button" class="button" data-example="shop">Noodle shop</button>
-              <button type="button" class="button" data-example="tunnel">Tunnel &amp; water</button>
-              <button type="button" class="button" data-example="powers">Superpowers</button>
-              <select id="example" aria-label="More contribution examples"><option value="" disabled selected>More ideas</option></select>
-            </div>
-            <div class="actions draft-actions">
-              <button type="submit" class="button primary">Build preview <span aria-hidden="true">→</span></button>
-              <button type="button" class="button quiet" id="copy">Copy for my agent</button>
-            </div>
-          </form>
-          <div id="details" hidden></div>
-        </div>
-        <figure class="scene" data-image="shop">
-          <figcaption><span class="pin" aria-hidden="true"></span><span id="location">South A / Market Row</span><span id="scene-state">Concept art</span></figcaption>
-        </figure>
-      </div>
-      <p class="notice" id="notice" role="status" hidden></p>
-    </section>
-
-    <section class="shell lower" id="rules" aria-labelledby="rules-title">
-      <h2 id="rules-title">City rules</h2>
-      <div class="rule-list">
-        <article>
-          <h3>Eligible for agent approval</h3>
-          <p>Props, stores, eating, NPC schedules and small street details using existing systems. Check asset rights, geometry, access and performance on the exact change.</p>
-        </article>
-        <article>
-          <h3>Maintainer review</h3>
-          <p>Shared weather, tunnels and water, new gameplay behavior, and release pipeline edits. Review the affected systems and test a preview build before publication.</p>
-        </article>
-        <article>
-          <h3>Outside the shared-city rules</h3>
-          <p>Major road redesigns and superpowers. Keep the street grid intact and new abilities grounded in the city’s setting.</p>
-        </article>
+      <div class="copy-action">
+        <a class="button primary" id="prompt-link" href="contribute.txt" target="_blank" rel="noopener">Copy agent prompt <span aria-hidden="true">↗</span></a>
+        <p id="prompt-status" role="status"></p>
       </div>
     </section>
 
-    <section class="shell lower release-section" id="releases" aria-labelledby="release-title">
-      <h2 id="release-title">City releases</h2>
-      <p id="release-log" aria-live="polite">Run the demo release to see the sample change log.</p>
-    </section>
+    <div class="shell city-info">
+      <section id="rules" aria-labelledby="rules-title">
+        <h2 id="rules-title">City rules</h2>
+        <ul>
+          <li>Props, shops, and small street edits are welcome. Use assets you can share and keep paths clear.</li>
+          <li>Weather, tunnels, water, gameplay rules, and release changes need maintainer review.</li>
+          <li>Keep the street grid intact and abilities grounded.</li>
+        </ul>
+      </section>
+
+      <section id="releases" aria-labelledby="release-title">
+        <h2 id="release-title">City releases</h2>
+        <a class="release-link" href="https://github.com/HareliField/asphalt-heat/releases" target="_blank" rel="noopener">View releases on GitHub <span aria-hidden="true">↗</span></a>
+      </section>
+    </div>
   </main>
-
-  <footer class="shell footer">
-    <span>Asphalt Heat</span>
-    <a href="https://github.com/HareliField/asphalt-heat" target="_blank" rel="noopener">Game repository <span aria-hidden="true">↗</span></a>
-  </footer>
   <script type="module" src="city.js"></script>
 </body>
 </html>
