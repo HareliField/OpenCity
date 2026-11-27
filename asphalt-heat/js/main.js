@@ -1,5 +1,6 @@
 /* ================= player, input, HUD, loop, boot ================= */
 const SPAWN={hospital:null,police:null};
+const STREET_START={x:CELL*4-HALF-.43,z:CELL*5+HALF+10,yaw:0};
 function makePlayerChar(){return makeChar(ROLE.player?ROLE.player[0]:pickChar('m'),{gun:1,shadow:true});}
 function nearestCar(r){let best=null,bd=r;for(const c of cars){if(c.dead||Math.abs(c.pos.y-player.pos.y)>1.05)continue;const d=dist2(c.pos,player.pos);if(d<bd&&rayWorld(player.pos.x,player.pos.z,c.pos.x,c.pos.z,player.pos.y+1,c.pos.y+1)>=1){bd=d;best=c;}}return best;}
 function canReachPlace(pos,at,radius){
@@ -511,16 +512,15 @@ function setLoad(t,p){$('load').textContent=t;if(p!=null)$('lbar').firstChild.st
 function initGame(){buildMinimapBase();buildMarkers();initializePoliceLives();installTrafficPosts();
  const hp=places.find(p=>p.kind==='hospital'),pp=places.find(p=>p.kind==='police');
  SPAWN.hospital={x:hp.door.x+Math.sin(SIDEANG[hp.side])*.6,z:hp.door.z+Math.cos(SIDEANG[hp.side])*.6,yaw:SIDEANG[hp.side]};SPAWN.police={x:pp.door.x+Math.sin(SIDEANG[pp.side])*.6,z:pp.door.z+Math.cos(SIDEANG[pp.side])*.6,yaw:SIDEANG[pp.side]};
- const streetStart={x:CELL*4-HALF-.88,z:CELL*5+HALF+10,yaw:0};
  const stationVisit=qp.get('visit')==='police';
  const shopVisit=qp.get('visit')==='wash-house'&&globalThis.WashHouse?.destination();
- const start=shopVisit|| (stationVisit?{x:pp.door.x,z:pp.door.z,yaw:SIDEANG[pp.side]+Math.PI}:streetStart);
+ const start=shopVisit|| (stationVisit?{x:pp.door.x,z:pp.door.z,yaw:SIDEANG[pp.side]+Math.PI}:STREET_START);
  player={pos:new V3(start.x,0,start.z),yaw:start.yaw,hp:100,armor:0,cash:250,car:null,fireCd:0,arrestT:0,spd:0,guardT:0,down:0,weapon:'fist',own:{pistol:true,smg:false,shotgun:false},ammo:{pistol:36,smg:0,shotgun:0},c:null};
  player.personId='ah-player';PoliceDepartment.identify(player);player.gloves=false;
  player.c=makePlayerChar();dressPlayerHands();camYaw=player.yaw;
  for(let k=0;k<QUALITY.peds;k++){const p={c:null,pos:new V3(),mode:'walk',t:0,R:null,dir:1,spd:1.4,fleeT:0,fv:new V3(),downT:0,hp:60,cash:0,dead:false};peds.push(p);placePed(p,nearBlock(0,140),k%5===0,{visible:true});}
  seedNeighborhoodWalkers();staffRobbablePlaces();
- {const s=spawnCar('sport',CELL*4-HALF+1.9,streetStart.z+2.75,0,null);paintCar(s,0x711b29);s.keep=true;s.heroWanted=true;}
+ {const s=spawnCar('sport',CELL*4-HALF+1.9,STREET_START.z+2.75,0,null);paintCar(s,0x711b29);s.keep=true;s.heroWanted=true;}
  {const c=spawnCar('hatch',CELL*2+5.9,CELL*4+31,Math.PI,null);paintCar(c,0xa27a27);c.keep=true;}
  {const c=spawnCar('van',CELL*2+5.9,CELL*4+39,Math.PI,null);paintCar(c,0x20334b);c.keep=true;}
  parkServiceVehicles(hp,'amb',1);parkServiceVehicles(pp,'police',2);

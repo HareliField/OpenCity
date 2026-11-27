@@ -48,7 +48,7 @@
  }
  function destinations() {
   return [
-   {id:'start',name:'Verve Nail Studio',x:CELL*4-HALF-.88,z:CELL*5+HALF+10},
+   {id:'start',name:'Verve Nail Studio',...STREET_START},
    ...(globalThis.WashHouse?.destination()?[WashHouse.destination()]:[]),
    ...places.map((p,i)=>({id:'place-'+i,name:p.name,kind:p.kind,...point(p.road||p.interact||p.door)})),
    ...GRADE_ROADS.routes.map((r,i)=>({id:'road-'+i,name:r.name,...point(r.curve.getPointAt(.5))})),
