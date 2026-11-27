@@ -23,4 +23,4 @@ After I say yes, commit the previewed change, push a contribution branch to my G
 
 ## My change
 
-[Describe what you want to add or change and where it should happen.]
+[Describe what you want to add or improve, where it should happen, and how it should look or behave in the game. If you're improving something that already exists, say what happens now and what should happen instead.]
