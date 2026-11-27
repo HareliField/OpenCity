@@ -92,6 +92,8 @@
   const at=player.car?.pos||player.pos;
   mapPosition(loc,at.x,at.z);
   syncClimate();
+  // The dialog restores the previously focused element when it closes.
+  canvas.focus({preventScroll:true});
   cityMap.showModal();
   cityMap.scrollTop=0;
  }
@@ -119,7 +121,7 @@
  $('mapClose').addEventListener('click',()=>cityMap.close());
  cityMap.addEventListener('close',()=>{
   clearSelection();clock.getDelta();resetGraphicsSample();
-  if(state==='play')opener.focus({preventScroll:true});
+  if(state==='play')canvas.focus({preventScroll:true});
  });
  map.addEventListener('click',event=>{
   const rect=map.getBoundingClientRect();

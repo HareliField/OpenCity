@@ -201,7 +201,7 @@ During ordinary play, two pedestrians can get into a dispute over a carried hold
 
 Dispatch assigns up to five available on-duty patrol officers to a street homicide. The scene lead handles the handover. The others take the witness account, keep incident notes, manage access and help bystanders. Officers arrive by patrol car where they have a usable curb approach, or on foot. An available detective takes the file. A witness identification corroborated by an exhibit can support a bulletin. Inconclusive files stay open.
 
-When an encounter is underway, select **Follow street incident** or press **Y** to watch the people involved, the call desk, the scene investigator and the lab. Select **Return to player** to leave the camera. At reception, **Cases** shows the victim, caller’s statement, exhibit history and decision. **Follow live case** in an active file opens the same camera.
+When an encounter is underway, press **Y** to watch the people involved, the call desk, the scene investigator and the lab. Select **Return to player** to leave the camera. At reception, **Cases** shows the victim, caller’s statement, exhibit history and decision. **Follow live case** in an active file opens the same camera.
 
 The [Downtown homicide film](films/old-town-homicide.html) follows Toby Lin’s 911 call outside Verve Nail Studio, a five-officer patrol response and Detective Kai Chen’s finding at Old Town headquarters. Eight chapters jump to the recorded events. The same page includes a second, unresolved Old Town case and four in-game photographs of headquarters.
 

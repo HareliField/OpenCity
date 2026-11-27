@@ -13,7 +13,7 @@ const context=vm.createContext({
  MutationObserver:class {observe(){}},navigator:{},$:()=>element,policeDesk:{open:false},cityMap:{open:false},
  shopOpen:false,deskStation:null,player:{pos:{x:1,y:0,z:2},yaw:0,own:{},ammo:{},cash:0},
  wanted:0,heat:0,evadeT:0,LAW:{},TRAFFIC_PATROL:{limit:null,posts:[]},PoliceDepartment:{tickets:[]},cameraMode:0,camYaw:0,lookYaw:0,lookPitch:0,
- caseCamera:{enabled:false},camera:{position:{x:0,y:2,z:0}},robbing:null,actionCtx:()=>null,
+ caseCamera:{enabled:false},canFollowStreetCase:()=>false,camera:{position:{x:0,y:2,z:0}},robbing:null,actionCtx:()=>null,
  step(dt,input){calls.push({...input});context.time+=dt;},drawMap(){},hud(){},renderFrame(){},clock:{getDelta(){}}
 });
 vm.runInNewContext(source,{qp:new URLSearchParams()}); // Human mode has no controller dependency.
@@ -45,4 +45,10 @@ assert.equal(journal.events.length,512);
 journal.events[0].text='modified';
 assert.equal(run({op:'events',after:start}).events[0].text,'event 1');
 assert.equal(run({op:'events',after:journal.cursor}).events.length,0);
-console.log('Agent mode isolation, bounded input, stat validation and event cursors passed.');
+const followCase={op:'act',action:'followStreetCase'};
+assert.throws(()=>run(followCase),/Action unavailable/);
+context.canFollowStreetCase=()=>true;
+context.toggleCaseCamera=()=>{context.caseCamera.enabled=!context.caseCamera.enabled;};
+assert.equal(run(followCase).camera.mode,'case');
+assert.equal(run(followCase).camera.mode,'follow');
+console.log('Agent mode isolation, bounded input, stat validation, event cursors and case camera passed.');

@@ -156,7 +156,8 @@ soundButton.addEventListener('click',async e=>{
  }
  master.gain.value=enabled ? .55 : 0;
  soundButton.setAttribute('aria-pressed',String(enabled));
- soundButton.textContent=enabled?'Sound on':'Sound off';
+ soundButton.title=enabled?'Sound on':'Sound off';
+ $('soundState').textContent=soundButton.title;
 });
 addEventListener('keydown',e=>{if(cityMap.open||e.target instanceof HTMLSelectElement||e.code==='Space'&&e.target instanceof HTMLButtonElement)return;if(e.code==='Space'||e.code.startsWith('Arrow'))e.preventDefault();if(e.repeat)return;keys[e.code]=true;if(state==='play'&&!caseCamera.enabled){if(e.code==='KeyC'){const a=actionCtx();a&&a.fn();}if(e.code==='KeyE'&&player.car&&!shopOpen)toggleCar();if(e.code==='KeyZ'&&!shopOpen)cycleWeapon();
  if(e.code==='KeyV')cycleCamera();

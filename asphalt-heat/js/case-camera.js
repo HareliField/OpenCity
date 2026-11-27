@@ -1,17 +1,20 @@
 /* An optional observer of the current street case. All state transitions belong to the simulation. */
 const caseCamera={enabled:false,focus:null,shot:null,position:new V3(),aim:new V3(),cutAt:0};
-const caseControl=$('followStreetCase'),caseCaption=$('caseCaption');
+const caseReturn=$('caseReturn'),caseCaption=$('caseCaption');
 function stopCaseCamera(){
  if(!caseCamera.enabled)return;
  caseCamera.enabled=false;caseCamera.focus=null;caseCamera.shot=null;
- caseControl.textContent='Follow street incident';caseCaption.hidden=true;document.body.classList.remove('watchingCase');camInit=false;
+ caseReturn.hidden=true;caseCaption.hidden=true;document.body.classList.remove('watchingCase');camInit=false;
+}
+function canFollowStreetCase(){
+ return !!streetIncidents.current&&state==='play'&&!player.car&&player.down<=0&&!shopOpen;
 }
 function toggleCaseCamera(){
  if(caseCamera.enabled){stopCaseCamera();return;}
- if(!streetIncidents.current||state!=='play'||player.car||player.down>0||shopOpen)return;
- caseCamera.enabled=true;caseControl.textContent='Return to player';document.body.classList.add('watchingCase');
+ if(!canFollowStreetCase())return;
+ caseCamera.enabled=true;caseReturn.hidden=false;document.body.classList.add('watchingCase');
 }
-caseControl.onclick=toggleCaseCamera;
+caseReturn.addEventListener('click',stopCaseCamera);
 window.addEventListener('keydown',e=>{
  if(e.repeat||e.target.closest?.('input,textarea,dialog'))return;
  if(e.code==='KeyY'&&state==='play')toggleCaseCamera();
@@ -96,7 +99,6 @@ function caseShot(a){
 }
 function updateCaseCamera(dt){
  const a=streetIncidents.current;
- caseControl.hidden=!a||state!=='play'||!!player.car||shopOpen;
  if(!a||!caseCamera.enabled)return;
  if(state!=='play'||player.down>0||player.car){stopCaseCamera();return;}
  const shot=caseShot(a),p=shot.pos,cut=caseCamera.shot?.key!==shot.key;

@@ -106,7 +106,7 @@
   if (shopOpen && !deskStation) return ['shopX',...[...$('items').querySelectorAll('button:enabled')].map(b=>'buy:'+b.dataset.item)];
   if(caseCamera.enabled)return ['followStreetCase'];
   const result=['camera','hud','gloves','weapon','sound','residents'];
-  if(!$('followStreetCase').hidden)result.push('followStreetCase');
+  if(canFollowStreetCase())result.push('followStreetCase');
   if(actionCtx()) result.push('interact');
   if(player.car) result.push('exit','signalLeft','signalRight');
   return result;
@@ -136,6 +136,7 @@
   if(name==='interact') actionCtx().fn();
   else if(name==='weapon') cycleWeapon();
   else if(name==='gloves') toggleGloves();
+  else if(name==='followStreetCase') toggleCaseCamera();
   else if(name.startsWith('answer:'))ResidentCast.answer(Number(name.slice(7)));
   else if(name==='residents')ResidentDirectory.open();
   else if(name==='closeResidents')ResidentDirectory.close();
