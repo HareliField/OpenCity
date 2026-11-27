@@ -2,6 +2,8 @@
 
 Commonstreet is an original browser-based 3D game and a shared city anyone can help build. Walk from a neighborhood laundromat to the waterfront, drive across the viaduct in changing weather, or follow a resident's story across town. Contributors grow the same city by adding places, people, objects, and playable adventures or improving the ones already there.
 
+[Watch the project launch film](commonstreet/films/commonstreet-launch-trailer.mp4) · [Film credits](commonstreet/films/commonstreet-launch-credits.md)
+
 ## Play locally
 
 From a checkout of the repository, run:
