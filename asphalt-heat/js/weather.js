@@ -57,7 +57,7 @@ class CoastalWeather {
   this.settleGround();
  }
  settleGround() {
-  this.wetness=this.kind==='clouds'?.60:Math.min(.98,.06+this.rain*1.3);
+  this.wetness=Math.min(.98,this.rain*1.3);
   this.snowCover=this.snow*.85;
  }
  get seasonalTemperature() {
@@ -145,7 +145,9 @@ class CoastalWeather {
   this.travelX+=this.windX*dt; this.travelZ+=this.windZ*dt;
   const melt=Math.min(this.snowCover,dt*(Math.max(0,this.temperature)*.00034+this.rain*.004));
   this.snowCover=Math.min(1,Math.max(0,this.snowCover+dt*this.snow*.013*(1-this.snowCover)-melt));
-  const evaporation=.00065+.0027*this.daylight*(1-this.cloud)+.00008*this.gust;
+  const sunHeat=this.direct*weatherRamp(.02,.60,this.sun.y);
+  const warmth=weatherRamp(0,26,this.temperature);
+  const evaporation=.003+.00024*Math.max(0,this.gust)+.044*sunHeat*(.66+.34*warmth);
   this.wetness=Math.max(0,Math.min(1,this.wetness+dt*(this.rain*.062*(1-this.wetness)-evaporation*this.wetness)+melt*.8));
  }
  get description() {

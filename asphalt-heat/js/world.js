@@ -186,6 +186,7 @@ function initMaterials(){
  F.stucco=facadeMat('stucco',2.5,{rough:.9});F.plaster=facadeMat('plaster',2.5,{rough:.92});F.concrete=facadeMat('concrete',3.5,{rough:.85});F.panels=facadeMat('panels',4,{rough:.8});
  F.tiles=facadeMat('tiles_dark',3,{rough:.6});F.stone_dark=facadeMat('stone_dark',3.5,{rough:.8});F.stone_light=facadeMat('stone_light',3.5,{rough:.8});F.corrugated=facadeMat('corrugated',2.4,{rough:.5,metal:.5});}
 function makeWater(){const m=new THREE.MeshStandardMaterial({color:lin(0x0d3a46),roughness:.06,metalness:0,envMapIntensity:1.2,normalMap:T('sand','n',1/40),normalScale:new THREE.Vector2(.3,.3)});
+ m.userData.planarWater=true;
  m.onBeforeCompile=sh=>{Object.assign(sh.uniforms,REFL.uniforms,climateUniforms);sh.uniforms.uT=WATERT;
   sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vWP;varying vec4 vRU;uniform mat4 reflMat;uniform float uT,uWindSpeed;uniform vec2 uWind;').replace('#include <begin_vertex>','#include <begin_vertex>\nvec4 w0=modelMatrix*vec4(transformed,1.);vec2 lee=normalize(uWind+vec2(.01,0.));float wv=sin(dot(w0.xz,lee)*.12-uT*1.3)*.25+sin(w0.z*.09-uT*.9+w0.x*.05)*.18;transformed.z+=wv*(.52+min(1.6,uWindSpeed*.083));')
    .replace('#include <fog_vertex>','#include <fog_vertex>\nvec4 wp4=modelMatrix*vec4(transformed,1.);vWP=wp4.xyz;vRU=reflMat*wp4;');

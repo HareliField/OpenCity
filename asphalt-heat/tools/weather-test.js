@@ -20,6 +20,8 @@ const dusk=new CoastalWeather(summer,startingHour('sunset',summer),'clear');
 assert(dawn.sun.x>.7 && dusk.sun.x<-.7 && dawn.twilight>.8 && dusk.twilight>.8);
 const noon=new CoastalWeather(summer,12,'clear'),night=new CoastalWeather(summer,0,'clear');
 assert(noon.sun.y>.9 && noon.lamps===0 && night.direct===0 && night.lamps===1);
+assert.equal(noon.wetness,0);
+assert.equal(new CoastalWeather(summer,10,'clouds').wetness,0);
 const midnight=new CoastalWeather(winter,23.95,'clear');advance(midnight,6);
 assert.equal(midnight.clockText,'00:03');assert.equal(midnight.day,winter+1);
 
@@ -29,7 +31,14 @@ assert(front.cloud>before && front.cloud<.25 && front.rain<.12);
 advance(front,70);assert(front.rain>.6 && front.wetness>.75);
 front.setFront('clear',true);
 const wet=front.wetness;advance(front,8);
-assert(front.wetness>.6 && front.wetness<wet && front.rain===0);
+assert(front.wetness>wet*.65 && front.wetness<wet && front.rain===0);
+
+const drying=new CoastalWeather(summer,12,'rain',seeded());
+const afterDark=new CoastalWeather(summer,0,'rain',seeded());
+drying.setFront('clear',true);afterDark.setFront('clear',true);
+assert.equal(drying.wetness,afterDark.wetness);
+advance(drying,60);advance(afterDark,60);
+assert(drying.wetness<.08 && afterDark.wetness>.6);
 
 const pack=new CoastalWeather(winter,7,'snow',seeded());
 const dusting=pack.snowCover;advance(pack,50);

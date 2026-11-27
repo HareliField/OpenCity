@@ -6,10 +6,39 @@ const PHYS_GROUP={world:1,car:2,prop:4,ragdoll:8};
 const _forward=new CV(),_up=new CV(),_velocity=new CV();
 const LOCAL_FORWARD=new CV(-1,0,0),LOCAL_UP=new CV(0,1,0);
 
+class StreetBroadphase extends CANNON.SAPBroadphase {
+ nextDynamic=[];
+
+ collisionPairs(world,pairsA,pairsB){
+  // Poses and streamed bodies can change since the last wheel raycast.
+  this.sortList();this.dirty=false;
+  const bodies=this.axisList,nextDynamic=this.nextDynamic;
+  const axis=['x','y','z'][this.axisIndex];
+  // Doors, lifts and other scenery are positioned by the city. Only a dynamic body can respond to their contacts.
+  nextDynamic[bodies.length]=bodies.length;
+  for(let i=bodies.length-1;i>=0;i--){
+   nextDynamic[i]=bodies[i].type===CANNON.Body.DYNAMIC?i:nextDynamic[i+1];
+  }
+  for(let i=0;i<bodies.length;i++){
+   const a=bodies[i],end=a.aabb.upperBound[axis];
+   const dynamic=a.type===CANNON.Body.DYNAMIC;
+   for(let j=dynamic?i+1:nextDynamic[i+1];j<bodies.length;j=dynamic?j+1:nextDynamic[j+1]){
+    const b=bodies[j];
+    // The list is sorted by AABB start. Flat, long terrain tiles have large bounding spheres.
+    if(b.aabb.lowerBound[axis]>end)break;
+    if(!this.needBroadphaseCollision(a,b)||!a.aabb.overlaps(b.aabb))continue;
+    pairsA.push(a);pairsB.push(b);
+   }
+  }
+ }
+}
+
 function physInit(){
- const w=PH.w=new CANNON.World();
+ const w=PH.w=new CANNON.World({broadphase:new StreetBroadphase()});
  w.gravity.set(0,-9.81,0);
- w.broadphase=new CANNON.SAPBroadphase(w);
+ // Track actual contacts so streamed city geometry doesn't require clearing two dense matrices.
+ w.collisionMatrix=new CANNON.ObjectCollisionMatrix();
+ w.collisionMatrixPrevious=new CANNON.ObjectCollisionMatrix();
  w.allowSleep=true;
  w.solver.iterations=10;
  w.defaultContactMaterial.friction=.5;

@@ -273,5 +273,6 @@ function buildCoastalWater(){
  }
  const geo=new THREE.BufferGeometry();geo.setAttribute('position',new THREE.Float32BufferAttribute(pos,3));geo.setIndex(ind);geo.computeVertexNormals();
  const ocean=new THREE.Mesh(geo,m);ocean.receiveShadow=true;scene.add(ocean);REFL.hide.push(ocean);
+ REFL.waterBounds.push(new THREE.Box3().setFromObject(ocean).expandByScalar(8));
  return ocean;
 }

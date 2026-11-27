@@ -218,6 +218,7 @@ function buildFreightTerminal(){
  sea.position.set(HARBOR.basin.x0-seaWidth/2,-.35,z0+seaDepth/2);
  scene.add(sea);
  REFL.hide.push(sea);
+ REFL.waterBounds.push(new THREE.Box3().setFromObject(sea).expandByScalar(2));
 
  const apron=pbr('asphalt',6.7,{color:0x9b9d9e,rough:.87,ns:.55});
  const hardstand=pbr('concrete',4.8,{color:0xa0a19a,rough:.89,ns:.55});

@@ -494,8 +494,10 @@ function sampleGraphics(elapsed){
 }
 function loop(){
  requestAnimationFrame(loop);
- const elapsed=clock.getDelta(),dt=document.hidden?0:Math.min(elapsed,.25);
- if(cityMap.open||window.asphaltAgent?.paused)return;
+ const elapsed=clock.getDelta();
+ if(document.hidden||cityMap.open||window.asphaltAgent?.paused)return;
+ // Give the next render a chance after a stall instead of running a long backlog of city updates.
+ const dt=Math.min(elapsed,.10);
  if((state==='play'||state==='dead')&&dt>0){
   const steps=Math.ceil(dt/.05);for(let i=0;i<steps;i++)step(dt/steps);hud();mmT-=dt;
   if(mmT<=0){mmT=1/12;drawMap();}

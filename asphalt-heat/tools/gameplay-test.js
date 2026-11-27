@@ -9,11 +9,12 @@ const element = {classList:{add(){}}, style:{}};
 const context = vm.createContext({window:{}, THREE, assert, $:()=>element});
 const run = code => vm.runInContext(code, context);
 run(read('lib/cannon.js'));
-run(`const CANNON=window.CANNON, CV=CANNON.Vec3, V3=THREE.Vector3, PHYS_GROUP={world:1};
+run(`const CANNON=window.CANNON, V3=THREE.Vector3;
  const CELL=64,N=2,W=N*CELL,HALF=8,LANE=4,STREET={steps:[]},places=[];
  const blocks=Array.from({length:N*N},()=>({bld:[],residual:[]}));
  const clamp=(v,lo,hi)=>Math.min(hi,Math.max(lo,v)),lerp=(a,b,k)=>a+(b-a)*k;
 `);
+run(read('js/phys.js'));
 run(read('js/vehicle-components.js'));
 run(read('js/access.js'));
 run(read('js/building-construction.js'));run(read('js/suite-interiors.js'));run(read('js/domestic-fittings.js'));
@@ -182,11 +183,9 @@ run(`
  }
 `);
 // Put a dynamic load in the municipal car and drive it with the shipped 90 Hz physics loop.
-const physicsSource=read('js/phys.js');
-run(physicsSource.slice(physicsSource.indexOf('function physBox('),physicsSource.indexOf('class StreetVehicle')));
 run(`
- const PHYS_DT=1/90,PH={w:new CANNON.World(),accumulator:0,mat:{ground:new CANNON.Material('ground'),concrete:new CANNON.Material('concrete')}};
- PH.w.gravity.set(0,-9.81,0);PH.ground=new CANNON.Body({mass:0});PH.w.addBody(PH.ground);
+ physInit();
+ PH.w.allowSleep=false;
  const carLift=w.lift,shaft=carLift.shaft,cx=(shaft.x0+shaft.x1)/2,cz=(shaft.z0+shaft.z1)/2;
  carLift.y=.17;carLift.target=1;carLift.doors=1;
  carLift.cabDoors=[-1,1].map(sign=>({sign,width:1.12,node:frame(),shape:null}));

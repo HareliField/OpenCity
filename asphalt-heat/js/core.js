@@ -44,9 +44,11 @@ const drivingLights=Array.from({length:2},()=>new THREE.SpotLight(0xffedcf,0,40,
 for(const lamp of drivingLights)scene.add(lamp,lamp.target);
 const boomL=new THREE.PointLight(0xff8a30,0,60,2);scene.add(boomL);
 /* ---- planar reflection for wet ground ---- */
-const REFL={rt:null,cam:new THREE.PerspectiveCamera(),mat:new THREE.Matrix4(),on:false,uniforms:{tRefl:{value:null},reflMat:{value:new THREE.Matrix4()},reflOn:{value:0}}};
+const REFL={rt:null,cam:new THREE.PerspectiveCamera(),frustum:new THREE.Frustum(),viewProjection:new THREE.Matrix4(),
+ waterBounds:[],last:-Infinity,on:false,uniforms:{tRefl:{value:null},reflMat:{value:new THREE.Matrix4()},reflOn:{value:0}}};
 function reflResize(w,h){
  REFL.rt?.dispose();
+ REFL.last=-Infinity;
  if(!QUALITY.refl){
   REFL.rt=null;REFL.on=false;REFL.uniforms.tRefl.value=null;REFL.uniforms.reflOn.value=0;return;
  }
@@ -76,14 +78,27 @@ function capturePlanar(rc,target,matrix,normal,point){
  try{renderer.setRenderTarget(target);renderer.clear();renderer.render(scene,rc);}
  finally{renderer.setRenderTarget(prev);for(const o of hidden)o.visible=true;renderer.shadowMap.autoUpdate=shadow;}
 }
-function renderReflection(){
+function renderReflection(t){
  if(!REFL.on)return;
  const u=REFL.uniforms,tex=u.tRefl.value;
+ if(climateUniforms.uWetness.value<.008){
+  camera.updateMatrixWorld();
+  REFL.frustum.setFromProjectionMatrix(REFL.viewProjection.multiplyMatrices(camera.projectionMatrix,camera.matrixWorldInverse));
+  if(!REFL.waterBounds.some(bounds=>REFL.frustum.intersectsBox(bounds))){
+   u.reflOn.value=0;REFL.last=-Infinity;return;
+  }
+ }
+ // Reproject the last capture between refreshes at Medium quality. Keep fast camera changes responsive.
+ if(QUALITY.level===1&&t>REFL.last&&t-REFL.last<.075&&
+    camera.position.distanceToSquared(REFL.eye)<4&&Math.abs(camera.quaternion.dot(REFL.orientation))>.996)return;
  u.tRefl.value=null;u.reflOn.value=0;
- try{capturePlanar(REFL.cam,REFL.rt,u.reflMat.value,_rn,ROAD_MIRROR_POINT);}
+ try{
+  capturePlanar(REFL.cam,REFL.rt,u.reflMat.value,_rn,ROAD_MIRROR_POINT);
+  REFL.last=t;REFL.eye.copy(camera.position);REFL.orientation.copy(camera.quaternion);
+ }
  finally{u.tRefl.value=tex;u.reflOn.value=1;}
 }
-REFL.hide=[];
+REFL.hide=[];REFL.eye=new V3();REFL.orientation=new THREE.Quaternion();
 /* inject wet-ground reflections into a MeshStandardMaterial */
 const WETCODE=`
 // Keep sub-texel entropy at city-scale coordinates in 32-bit shader arithmetic.
@@ -215,7 +230,7 @@ function postResize(w,h){if(!POST)return;const pr=renderer.getPixelRatio(),W2=Ma
 }
 function pass(mat,target){PP.quad.material=mat;renderer.setRenderTarget(target);renderer.render(PP.scene,PP.cam);}
 function blurTo(src,a,b){PP.blur.uniforms.t.value=src.texture;PP.blur.uniforms.d.value.set(1/a.width,0);pass(PP.blur,a);PP.blur.uniforms.t.value=a.texture;PP.blur.uniforms.d.value.set(0,1/a.height);pass(PP.blur,b);}
-function renderFrame(t){preparePrecipitation();renderReflection();updateShopReflection(t);
+function renderFrame(t){preparePrecipitation();renderReflection(t);updateShopReflection(t);
  if(!POST){renderer.setRenderTarget(null);renderer.render(scene,camera);return;}
  renderer.setRenderTarget(PP.main);renderer.clear();renderer.render(scene,camera);
  const F=PP.final.uniforms;F.t.value=PP.main.texture;F.time.value=t%10;F.aoOn.value=PP.occlusion?1:0;
@@ -240,6 +255,7 @@ function geometryWithBounds(source,sphere){
  bounded.setIndex(source.index);bounded.boundingSphere=sphere;return bounded;
 }
 function addGeo(mat,geo,shadow=true,layer){geo.computeBoundingBox();const a=geo.boundingBox;
+ if(mat.userData.planarWater)REFL.waterBounds.push(a.clone().expandByScalar(1));
  const wide=a.max.x-a.min.x>150||a.max.z-a.min.z>150;
  const sector=wide?'wide':Math.floor((a.min.x+a.max.x)/256)+':'+Math.floor((a.min.z+a.max.z)/256);
  const k=mat.uuid+(shadow?'s':'n')+(layer||0)+sector;let b=buckets.get(k);if(!b){b={mat,geos:[],shadow,layer};buckets.set(k,b);}b.geos.push(geo);}
