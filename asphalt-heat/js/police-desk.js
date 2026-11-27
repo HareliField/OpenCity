@@ -95,10 +95,7 @@ policeDesk.addEventListener('close',()=>{shopOpen=false;deskStation=null;});
 function toggleGloves(){
  if(state!=='play'||shopOpen)return;
  player.gloves=!player.gloves;dressPlayerHands();
- document.getElementById('gloves').textContent=player.gloves?'Gloves on':'Gloves off';
- document.getElementById('gloves').setAttribute('aria-pressed',String(player.gloves));
 }
-document.getElementById('gloves').onclick=toggleGloves;
 
 
 function trainingInProgress(scenario){

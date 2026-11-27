@@ -41,7 +41,7 @@
   return value;
  }
  function playing() {
-  if (state !== 'play' || shopOpen) throw new Error('Close any open menu and enter play first');
+  if (state !== 'play' || shopOpen || cityMap.open) throw new Error('Close any open menu and enter play first');
  }
  function draw() {
   if (state === 'play' || state === 'dead') { hud(); drawMap(); renderFrame(time); }
@@ -95,7 +95,7 @@
 
  function actions() {
   if (state==='title') return $('play').disabled?[]:['play'];
-  if (state!=='play') return [];
+  if (state!=='play' || cityMap.open) return [];
   if (deskStation&&!policeDesk.open) return [];
   if (policeDesk.open) {
    const buttons=[...policeDesk.querySelectorAll('button')].filter(b=>(b.id||b.dataset.view)&&!b.disabled&&!b.closest('[hidden]'));
@@ -133,6 +133,7 @@
   if(!actions().includes(name)) throw new Error('Action unavailable. Read observe.actions');
   if(name==='interact') actionCtx().fn();
   else if(name==='weapon') cycleWeapon();
+  else if(name==='gloves') toggleGloves();
   else {
    const buttons={camera:'viewMode',hud:'hudMode',exit:'leaveCar'};
    const el=name.startsWith('desk:')?[...policeDesk.querySelectorAll('[data-view]')].find(b=>b.dataset.view===name.slice(5)):
@@ -143,7 +144,7 @@
  }
 
  function advance(c) {
-  if(!paused || !['play','dead'].includes(state)) throw new Error('Step requires a paused game after Play');
+  if(!paused || cityMap.open || !['play','dead'].includes(state)) throw new Error('Step requires a paused game after Play');
   const ticks=number(c.ticks??1,'ticks',1,120,true);
   const input={forward:number(c.forward??0,'forward',-1,1),turn:number(c.turn??0,'turn',-1,1),
    fire:flag(c.fire??false,'fire'),sprint:flag(c.sprint??false,'sprint'),looking:c.lookYaw!==undefined||c.lookPitch!==undefined};
@@ -163,18 +164,7 @@
   if(car && cars.some(other=>other!==car && Math.abs(other.pos.y-y)<2 && dist2(other.pos,at)<(car.spec.L+other.spec.L)/2))
    throw new Error('Another vehicle occupies the landing area');
   at.y=groundY(at.x,at.z,y);
-  refreshPhysicalWorld(at.x,at.z);
-  if(car) {
-   positionChassis(car,at.x,at.z,yaw,0,at.y);car.body.wakeUp();physCarRead(car);syncCarMesh(car);
-  } else {
-   if(player.c.body) releaseRagdoll(player.c);
-   player.c.root.position.copy(at);player.c.root.rotation.y=yaw;player.c.yaw=yaw;
-  }
-  player.pos.copy(car?car.pos:at);player.yaw=yaw;player.down=player.pace=player.turn=player.spd=0;player.pendingPunch=null;
-  TRAFFIC_PATROL.drive=null;
-  camInit=false;camYaw=yaw;lookYaw=lookPitch=0;
-  // Advance one ordinary tick so the streamed scenery, camera and interactions match the new location.
-  step(1/30,{forward:0,turn:0,fire:false,sprint:false});
+  relocatePlayer(at,yaw);
   record('jump',{to:c.to,position:point(player.pos)});
  }
  function stats(c) {

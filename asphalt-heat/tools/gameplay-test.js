@@ -276,4 +276,23 @@ run(`
  assert(carton.position.x>25.15,'the hand lifts the edge and shifts the carton');
  assert(Math.abs(carton.aabb.lowerBound.y-.17)<.006,'the displaced carton settles on the receiving floor');
 `);
+run(`
+ const camera=new THREE.PerspectiveCamera(60,1,.12,300);
+ camera.position.set(8,1.6,8);
+ camera.lookAt(8,1.6,24);
+ camera.updateMatrixWorld(true);
+ const inSight=new V3(8,0,24),behindCamera=new V3(8,0,2);
+ assert(personInView(inSight.x,inSight.y,inSight.z),'unobstructed pedestrian is in view');
+ assert(!personInView(behindCamera.x,behindCamera.y,behindCamera.z),'pedestrian behind the camera is out of view');
+ const hiddenRoot={visible:false},visibleRoot={visible:true};
+ assert.equal(updatePersonVisibility(hiddenRoot,inSight,18,125),false,'pedestrians never appear in direct view');
+ assert.equal(updatePersonVisibility(visibleRoot,inSight,155,125),true,'pedestrians never disappear in direct view');
+ assert.equal(relocatePed({c:{root:visibleRoot},pos:inSight},false),false,'a visible pedestrian is not recycled');
+ assert.equal(updatePersonVisibility(hiddenRoot,behindCamera,18,125),true,'offscreen pedestrian can load');
+ assert.equal(updatePersonVisibility(visibleRoot,behindCamera,155,125),false,'offscreen pedestrian can unload');
+ const screen={x0:7,x1:9,z0:13,z1:14,y0:0,h:3};
+ blocks[0].bld.push(screen);
+ assert.equal(updatePersonVisibility({visible:false},inSight,18,125),true,'a building can conceal loading a pedestrian');
+ blocks[0].bld.pop();
+`);
 console.log('Gameplay regressions passed.');

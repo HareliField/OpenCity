@@ -18,6 +18,8 @@ python3 tools/serve.py
 
 Open [Asphalt Heat](http://127.0.0.1:8765/index.html). Morning is the default. Open **Time & weather** before pressing **Play** to pick a starting sky and hour. The game and its assets load locally. Graphics quality is available before and during play. Auto starts at Medium and lowers rendering resolution or switches to Low when frames repeatedly run slow. Your selection is saved in this browser. The launch parameters `?q=0`, `?q=1`, and `?q=2` override the saved setting for that URL.
 
+Click the round radar to open the city map. Choose a landmark or a point on the map, then confirm to travel. The time slider and weather buttons update the scene as you use them. Close the map with **×** or **Escape** to return to the radar.
+
 | Action | Desktop |
 | --- | --- |
 | Walk or drive | Arrow keys |
