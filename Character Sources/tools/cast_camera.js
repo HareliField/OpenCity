@@ -17,7 +17,7 @@
     try {
       if (
         state !== 'play' ||
-        !asphaltAgent.paused ||
+        !commonstreetAgent.paused ||
         $('sound').textContent.trim() !== 'Sound off' ||
         !actor
       )

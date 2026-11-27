@@ -52,7 +52,7 @@ class Scene:
         self.g.update(
             asset={
                 "version": "2.0",
-                "generator": "Open City resident sculpt library",
+                "generator": "Commonstreet resident sculpt library",
             },
             scene=0,
             scenes=[{"name": person["name"], "nodes": [0]}],

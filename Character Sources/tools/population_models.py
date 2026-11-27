@@ -173,7 +173,7 @@ def publish_model(folder, output, hand_model=None):
     doc = {
         "asset": {
             "version": "2.0",
-            "generator": "Open City photograph-fitted character factory",
+            "generator": "Commonstreet photograph-fitted character factory",
             "extras": {"factory": FACTORY, "reference": fit["referenceSha256"]},
         },
         "scene": 0,
@@ -195,7 +195,7 @@ def publish_model(folder, output, hand_model=None):
     atomic(model, encode(doc))
     # A second standard glTF manifest lets artists import from the individual source
     # folder without keeping a second copy of the geometry, maps or bind data.
-    link = "../" * 3 + "asphalt-heat/assets/residents/cast/"
+    link = "../" * 3 + "commonstreet/assets/residents/cast/"
     for item in doc["buffers"] + doc["images"]:
         item["uri"] = link + item["uri"]
     atomic(folder / "character.gltf", encode(doc))

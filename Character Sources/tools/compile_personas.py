@@ -5,7 +5,7 @@ import re
 from pathlib import Path
 
 SOURCE = Path(__file__).resolve().parents[1]
-GAME = SOURCE.parent / "asphalt-heat"
+GAME = SOURCE.parent / "commonstreet"
 BIOGRAPHIES = GAME / "stories" / "residents"
 
 ANCHOR = re.compile(r'<a id="(ah-r\d{4})"></a>\s*\n## ([^\n]+)\n\n')

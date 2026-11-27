@@ -16,6 +16,6 @@ List new or revised assets, their sources and redistribution terms. Write “Non
 
 ## Review scope
 
-Choose standard or maintainer review using the [city rulebook](https://github.com/HareliField/OpenCity/blob/main/asphalt-heat/README.md#city-rulebook). Call out any shared systems, street geometry, or release changes and how to undo them.
+Choose standard or maintainer review using the [city rulebook](https://github.com/HareliField/OpenCity/blob/main/commonstreet/README.md#city-rulebook). Call out any shared systems, street geometry, or release changes and how to undo them.
 
 - [ ] I tried the local preview or reviewed its evidence and approved submitting this change.

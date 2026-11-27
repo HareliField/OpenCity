@@ -54,7 +54,7 @@ Run this command from the repository root with the Blender executable on your pa
 ```sh
 blender -b --factory-startup --python-exit-code 1 \
   -P 'Character Sources/tools/game_character.py' -- \
-  AH-R0001 asphalt-heat/assets/residents/ida-mercer.glb
+  AH-R0001 commonstreet/assets/residents/ida-mercer.glb
 ```
 
 Each resident can supply a `game-actions.json` beside the Blender master. It selects clips from shared captures or that resident’s own performances. Ida’s package includes her laundry-basket lift, a conversational eyebrow raise and her corrected recovery. The exporter writes the joints, skin weights, garment materials and performances into one GLB. Running it again checks the saved file against its content hash. Add `--texture-size 512` after the output path to make a smaller copy for a character viewed at a distance.
@@ -79,9 +79,9 @@ The production command builds one resident at a time in private scratch space. I
 
 ## Review Ida in the Wash House
 
-Open the game with `?visit=wash-house`. Press Play with sound off. Approach Ida and press **C** to talk. If she is down, **C** offers to help her up. Her contact volumes follow the moving joints, including the head, feet and fingers. The standing probe checks 56 rays through visible body parts and the swept player capsule at sprint speed from all four directions. The recovery measurement follows the actual palm, knee, shoe and cloth surfaces. [Recovery measurements](Residents/AH-R0001/recovery-contact.json) · [Recorded gameplay](../asphalt-heat/films/ida-at-the-wash-house.mp4)
+Open the game with `?visit=wash-house`. Press Play with sound off. Approach Ida and press **C** to talk. If she is down, **C** offers to help her up. Her contact volumes follow the moving joints, including the head, feet and fingers. The standing probe checks 56 rays through visible body parts and the swept player capsule at sprint speed from all four directions. The recovery measurement follows the actual palm, knee, shoe and cloth surfaces. [Recovery measurements](Residents/AH-R0001/recovery-contact.json) · [Recorded gameplay](../commonstreet/films/ida-at-the-wash-house.mp4)
 
-Run `node asphalt-heat/tools/resident-test.js` to exercise gait, grip, dialogue, collisions and recovery. Run `node asphalt-heat/tools/resident-secondary-test.js` to check garment settling and elbow folds. To capture new footage, run the following command, then open `http://127.0.0.1:8797/index.html?agent=1&visit=wash-house` in a separate Codex in-app browser tab. Press Play and verify **Sound off**. The camera buttons save numbered frames from the active game to the selected directory.
+Run `node commonstreet/tools/resident-test.js` to exercise gait, grip, dialogue, collisions and recovery. Run `node commonstreet/tools/resident-secondary-test.js` to check garment settling and elbow folds. To capture new footage, run the following command, then open `http://127.0.0.1:8797/index.html?agent=1&visit=wash-house` in a separate Codex in-app browser tab. Press Play and verify **Sound off**. The camera buttons save numbered frames from the active game to the selected directory.
 
 ```sh
 python3 'Character Sources/tools/resident_review_server.py' \

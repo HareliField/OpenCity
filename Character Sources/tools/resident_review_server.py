@@ -9,7 +9,7 @@ import sys
 from urllib.parse import urlsplit
 
 ROOT = Path(__file__).resolve().parents[2]
-sys.path.insert(0, str(ROOT / "asphalt-heat" / "tools"))
+sys.path.insert(0, str(ROOT / "commonstreet" / "tools"))
 from serve import GameHandler
 
 
@@ -69,7 +69,7 @@ if __name__ == "__main__":
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--port", type=int, default=8797)
     p.add_argument("--frames", type=Path, required=True)
-    p.add_argument("--game-dir", type=Path, default=ROOT / "asphalt-heat")
+    p.add_argument("--game-dir", type=Path, default=ROOT / "commonstreet")
     args = p.parse_args()
     with ThreadingHTTPServer(
         ("127.0.0.1", args.port),

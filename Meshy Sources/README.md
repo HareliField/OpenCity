@@ -1,4 +1,4 @@
-# Open City Meshy assets
+# Commonstreet Meshy assets
 
 This folder preserves the input image, original Meshy output, and four-angle runtime review for each of the 40 assets used in the game. The manifest records the generation settings and the checksum of every original.
 
@@ -25,4 +25,4 @@ The new daylight sky and lighting environment use the CC0 Kloofendal 48d Partly 
 
 ## Contribution gallery
 
-[Teal station wagon](gallery-station-wagon.glb) is the source model shown in the Open City gallery's car clip. It was generated from text with Meshy 7.1 and textured with Meshy 7. The model has a separate windshield and door and rear glass, with a modeled passenger cabin visible through the panes. The footage places it at a curb in Old Town.
+[Teal station wagon](gallery-station-wagon.glb) is the source model shown in the Commonstreet gallery's car clip. It was generated from text with Meshy 7.1 and textured with Meshy 7. The model has a separate windshield and door and rear glass, with a modeled passenger cabin visible through the panes. The footage places it at a curb in Old Town.

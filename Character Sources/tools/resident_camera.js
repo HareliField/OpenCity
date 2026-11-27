@@ -7,7 +7,7 @@
  let busy = false;
  async function film(mode) {
   if (busy) return;
-  const agent = window.asphaltAgent;
+  const agent = window.commonstreetAgent;
   if (state!=='play' || !agent?.paused || $('sound').textContent.trim()!=='Sound off') throw Error('Use paused agent gameplay with Sound off');
   const resident = () => agent.run({op:'world',group:'people',radius:16,limit:150}).rows.find(r=>r.personId==='AH-R0001');
   if (!resident()) throw Error('Stand near Ida in the Wash House first');
@@ -100,7 +100,7 @@
  const contact=document.createElement('button');contact.type='button';contact.textContent='Test standing contact';
  contact.onclick=()=>{
   try{
-   if(state!=='play'||!window.asphaltAgent?.paused||$('sound').textContent.trim()!=='Sound off')throw Error('Use paused agent gameplay with Sound off');
+   if(state!=='play'||!window.commonstreetAgent?.paused||$('sound').textContent.trim()!=='Sound off')throw Error('Use paused agent gameplay with Sound off');
    const root=scene.getObjectByName('Ida Mercer | Wash House'),row=WashHouse.record()[0];
    if(!root||row.activity!=='Idle')throw Error('Check the loaded, standing resident.');
    const forward=new V3(Math.sin(row.yaw),0,Math.cos(row.yaw)),side=new V3(forward.z,0,-forward.x);

@@ -1,8 +1,8 @@
-# Contributing to Open City
+# Contributing to Commonstreet
 
 Build a believable coastal city whose people have lives of their own. A shop, parked car, back door, or game in the park should make sense on an ordinary day, even when the player never uses it.
 
-Use the [copy-ready agent prompt](asphalt-heat/city/contribute.txt) to start. The [contribution workflow](asphalt-heat/README.md#how-contributions-work) covers preview and submission. The [city rulebook](asphalt-heat/README.md#city-rulebook) sets review scope and limits, including for new mechanics, shared systems, and landmark changes.
+Use the [copy-ready agent prompt](commonstreet/city/contribute.txt) to start. The [contribution workflow](commonstreet/README.md#how-contributions-work) covers preview and submission. The [city rulebook](commonstreet/README.md#city-rulebook) sets review scope and limits, including for new mechanics, shared systems, and landmark changes.
 
 ## Place the change in the existing city
 
@@ -42,7 +42,7 @@ Use the [copy-ready agent prompt](asphalt-heat/city/contribute.txt) to start. Th
 
 ## Find the existing system
 
-Paths in this table are relative to [`asphalt-heat/`](asphalt-heat/).
+Paths in this table are relative to [`commonstreet/`](commonstreet/).
 
 | Area | Inspect first | Relevant checks |
 | --- | --- | --- |
@@ -56,4 +56,4 @@ Paths in this table are relative to [`asphalt-heat/`](asphalt-heat/).
 
 ## Show how it fits
 
-Preview the change using the [agent controller](asphalt-heat/README.md#agent-controller) in your own Codex in-app browser tab. Press **Play**, verify **Sound off**, and leave it off. Give the contributor a landmark or coordinates, the in-game day and time if relevant, and steps to see the normal behavior and a plausible variation. Include the affected residents or systems, what you verified, any known gaps, and the source and redistribution rights for added assets. For example, show a resident arriving to sell at a Saturday pop-up, then visit outside its hours and check the posted hours and the clear sidewalk.
+Preview the change using the [agent controller](commonstreet/README.md#agent-controller) in your own Codex in-app browser tab. Press **Play**, verify **Sound off**, and leave it off. Give the contributor a landmark or coordinates, the in-game day and time if relevant, and steps to see the normal behavior and a plausible variation. Include the affected residents or systems, what you verified, any known gaps, and the source and redistribution rights for added assets. For example, show a resident arriving to sell at a Saturday pop-up, then visit outside its hours and check the posted hours and the clear sidewalk.

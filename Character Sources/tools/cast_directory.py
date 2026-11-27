@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def directory():
     rows = [
-        "# Open City resident models",
+        "# Commonstreet resident models",
         "",
         "Select a name to read the story. Compare each person's casting photograph with a standing render from their Blender scene. In the game, open **Residents** to follow family connections and meet the person in the city.",
         "",
@@ -33,9 +33,9 @@ def directory():
             name = p["name"] + (
                 " · " + p["personId"] if p["personId"] != p["residentId"] else ""
             )
-            story = "../asphalt-heat/" + quote(p["biography"], safe="/#")
+            story = "../commonstreet/" + quote(p["biography"], safe="/#")
             standing = (
-                f"../asphalt-heat/assets/residents/standing/{p['residentId']}.webp"
+                f"../commonstreet/assets/residents/standing/{p['residentId']}.webp"
             )
             rows.append(
                 f"| [{name}]({story}) | {p['age']} | {p['occupation']} "

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Commonstreet</title>
+<link rel="stylesheet" href="police.css">
+<link rel="stylesheet" href="city-map.css">
+<style>
+/* VOICE: sun-baked coastal crime sandbox, loud, cinematic
+   IDEA: a living 3D beach city at golden hour you can rob, fight and flee through
+   PICTURE: the live 3D game fills the screen; HUD is the housing
+   COLOUR and TYPE: sunset orange, ocean teal, money green, siren red/blue; Anton + Inter
+   LAYOUT: cash/health top-left, stars/heat/radar top-right, stick bottom-left, actions bottom-right */
+:root{color-scheme:dark;--cash:#7dff9a}
+*{box-sizing:border-box;min-width:0;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;font:16px/1.4 Inter,system-ui,sans-serif;touch-action:none;user-select:none;-webkit-user-select:none;overscroll-behavior:none}
+#c{position:fixed;inset:0;width:100%;height:100%;display:block}
+
+
+#ui{position:fixed;inset:0;pointer-events:none}
+#ui[hidden],#ui.cleanView{display:none}
+@media (pointer:fine){#joy,#btns{display:none}}
+@media (pointer:coarse){#interaction{display:none}}
+#interaction{position:absolute;bottom:8%;left:50%;transform:translateX(-50%);padding:7px 13px;background:#161715cf;border:1px solid #c9b99466;border-radius:6px;line-height:1.05;font-size:13px;letter-spacing:.06em;white-space:nowrap}
+#interaction kbd{color:#eacba1;margin-right:9px;font-size:12px}
+
+#tl{position:absolute;top:max(10px,env(safe-area-inset-top));left:max(14px,env(safe-area-inset-left));width:min(230px,44vw)}
+#cash{font:400 clamp(28px,7vw,40px)/1 Anton,Impact,sans-serif;color:var(--cash);text-shadow:0 2px 0 #0a3a17,0 0 12px rgba(0,0,0,.6)}
+.bar{height:8px;margin-top:6px;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.25);border-radius:5px;overflow:hidden}
+.bar i{display:block;height:100%;width:100%;transition:width .2s}
+#hp{background:linear-gradient(90deg,#ff4d4d,#ff8a5c)}#ar{background:linear-gradient(90deg,#3b8bff,#8fc8ff)}#chp{background:linear-gradient(90deg,#9fb3c8,#e6eef5)}
+#arbar,#carbar{display:none}
+#conditions{margin-top:6px;font:700 13px/1.3 Inter,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:#fff;text-shadow:0 1px 4px #000,0 0 2px #000}
+#obj{margin-top:8px;font-size:13px;font-weight:700;color:#ffe9c9;text-shadow:0 1px 3px #000;line-height:1.3}
+#sound{display:grid;place-items:center;pointer-events:auto;margin-top:8px;width:44px;height:44px;padding:0;background:#ad262d;border:1px solid #ff8c91;border-radius:10px;color:#fff;cursor:pointer}
+#graphicsHud{display:block;pointer-events:auto;margin-top:8px;max-width:126px;min-height:36px;padding:4px 6px;border:1px solid #ffffff59;border-radius:8px;background:#171717;color:#fff;font:700 13px Inter,system-ui,sans-serif}
+#sound[aria-pressed="true"]{background:#d13740;border-color:#ffd0d2}
+#sound[aria-pressed="false"] .sound-waves,#sound[aria-pressed="true"] .sound-mute{display:none}
+#sound:focus-visible{outline:2px solid #ffe08a;outline-offset:2px}
+#tr{position:absolute;top:max(10px,env(safe-area-inset-top));right:max(14px,env(safe-area-inset-right));display:flex;flex-direction:column;align-items:flex-end;gap:5px}
+#stars{font-size:clamp(20px,5vw,26px);letter-spacing:1px;text-shadow:0 2px 3px #000;line-height:1}
+#stars span{color:rgba(255,255,255,.22)}
+#stars span.on{color:#fff;text-shadow:0 0 8px #fff,0 2px 3px #000}
+#stars.blink span.on{animation:bl .5s steps(2) infinite}
+@keyframes bl{50%{opacity:.25}}
+#heat{width:clamp(110px,30vw,150px);height:5px;background:rgba(0,0,0,.5);border-radius:3px;overflow:hidden}
+#heat i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffb23a,#ff3b3b)}
+#evade{width:clamp(110px,30vw,150px);height:3px;background:rgba(0,0,0,.4);border-radius:3px;overflow:hidden;opacity:0}
+#evade i{display:block;height:100%;width:0;background:#8fc8ff}
+#speedo{display:none;position:absolute;left:50%;bottom:max(18px,env(safe-area-inset-bottom));transform:translateX(-50%);font:400 clamp(30px,8vw,46px)/1 Anton,Impact,sans-serif;color:#fff;text-shadow:0 2px 6px #000;text-align:center}#speedo small{display:block;font:700 11px Inter,sans-serif;opacity:.7;letter-spacing:2px}
+#vehicleName{display:block;font:600 12px Inter,system-ui,sans-serif;letter-spacing:.03em;line-height:1.5;white-space:nowrap}
+#driveIdentity{display:flex;align-items:center;justify-content:center;gap:6px}#driveIdentity button{pointer-events:auto;cursor:pointer;color:#e9eee9;background:#172524aa;border:1px solid #ffffff55;border-radius:6px;min-width:32px;min-height:29px;font:700 14px Inter,system-ui,sans-serif}#driveIdentity button[aria-pressed="true"]{color:#1f2019;background:#f0ae47;border-color:#f6ce84}@media(pointer:coarse){#driveIdentity button{width:44px;height:44px}}
+#lbar{height:6px;width:min(320px,80vw);margin:10px auto 0;background:rgba(0,0,0,.35);border-radius:4px;overflow:hidden}#lbar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#ffe08a,#ffb23a);transition:width .3s}
+#credits{margin-top:14px;font-size:11px;opacity:.55;max-width:440px;margin-left:auto;margin-right:auto}
+#mm{width:clamp(108px,29vw,150px);height:clamp(108px,29vw,150px);border-radius:50%;border:3px solid rgba(0,0,0,.7);box-shadow:0 0 0 2px rgba(255,255,255,.35),0 6px 16px rgba(0,0,0,.5)}
+#wep{pointer-events:auto;display:flex;align-items:center;gap:8px;background:rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.25);border-radius:10px;padding:5px 10px;font:400 16px/1 Anton,Impact,sans-serif;letter-spacing:1px;min-height:36px;cursor:pointer;color:#fff}
+#wep small{font:700 12px Inter,sans-serif;opacity:.8}
+#toast{position:absolute;left:50%;top:24%;transform:translateX(-50%);font:400 clamp(22px,5.5vw,34px)/1.1 Anton,Impact,sans-serif;text-align:center;color:#fff;text-shadow:0 3px 0 #000,0 0 14px rgba(0,0,0,.7);opacity:0;transition:opacity .25s;white-space:nowrap;max-width:94vw;overflow:hidden;text-overflow:ellipsis}
+#toast.on{opacity:1}
+#banner{position:absolute;left:50%;top:33%;transform:translateX(-50%);text-align:center;opacity:0;transition:opacity .3s;font:700 14px Inter,sans-serif;color:#ffd0d0;text-shadow:0 2px 4px #000;white-space:nowrap}
+#banner b{display:block;font:400 clamp(24px,6vw,36px)/1.1 Anton,Impact,sans-serif;color:#fff;letter-spacing:1px}
+#banner.on{opacity:1}
+#prog{position:absolute;left:50%;bottom:34%;transform:translateX(-50%);width:min(280px,70vw);display:none;text-align:center;font:400 18px Anton,Impact,sans-serif;letter-spacing:1px;text-shadow:0 2px 3px #000}
+#prog .bar{height:12px}#prog i{background:linear-gradient(90deg,#7dff9a,#2ecc71)}
+#joy{position:absolute;left:max(18px,env(safe-area-inset-left));bottom:max(22px,env(safe-area-inset-bottom));width:150px;height:150px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.08),rgba(255,255,255,.16));border:2px solid rgba(255,255,255,.28);pointer-events:auto;touch-action:none}
+#knob{position:absolute;left:50%;top:50%;width:62px;height:62px;margin:-31px 0 0 -31px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,#bbb 60%,#888);box-shadow:0 4px 12px rgba(0,0,0,.5);opacity:.85}
+#btns{position:absolute;right:max(16px,env(safe-area-inset-right));bottom:max(20px,env(safe-area-inset-bottom));width:210px;height:180px;pointer-events:none}
+#btns button{position:absolute;pointer-events:auto;touch-action:none;border:0;border-radius:50%;color:#fff;font:400 14px/1 Anton,Impact,sans-serif;letter-spacing:1px;box-shadow:0 5px 0 rgba(0,0,0,.45),inset 0 2px 0 rgba(255,255,255,.3);cursor:pointer;padding:0}
+#btns button.down{transform:translateY(3px);box-shadow:0 2px 0 rgba(0,0,0,.45)}
+#bFire{right:0;bottom:0;width:96px;height:96px;font-size:19px;background:radial-gradient(circle at 40% 30%,#ff6a5a,#b3141c)}
+#bAct{right:106px;bottom:2px;width:74px;height:74px;background:radial-gradient(circle at 40% 30%,#5d6b7c,#262d36)}
+#bAct.hot{background:radial-gradient(circle at 40% 30%,#ffd05a,#c77a00);animation:pulse 1s infinite}
+@keyframes pulse{50%{box-shadow:0 5px 0 rgba(0,0,0,.45),0 0 0 8px rgba(255,200,60,.25)}}
+#bSprint{right:14px;bottom:110px;width:62px;height:62px;font-size:12px;background:radial-gradient(circle at 40% 30%,#5d6b7c,#262d36)}
+#bWep{right:100px;bottom:88px;width:56px;height:56px;font-size:11px;background:radial-gradient(circle at 40% 30%,#5d6b7c,#262d36)}
+#big{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;font:400 clamp(56px,16vw,140px)/1 Anton,Impact,sans-serif;color:#e8202a;text-shadow:0 6px 0 #000;letter-spacing:4px;opacity:0;transition:opacity .4s}
+#big.show{opacity:1;background:rgba(40,0,0,.35)}
+#big.busted{color:#3b8bff}
+#shop{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.55);z-index:4;padding:20px}
+#shop .p{background:#1b1714;border:2px solid #c9a227;border-radius:16px;padding:18px;width:min(380px,100%)}
+#shop h2{margin:0 0 4px;font:400 30px Anton,Impact,sans-serif;color:#ffd36e;letter-spacing:1px}
+#shop .it{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 0;border-top:1px solid rgba(255,255,255,.1)}
+#shop .it b{display:block;font-size:15px}#shop .it span{font-size:12px;opacity:.7}
+#shop button{min-height:44px;min-width:84px;border:0;border-radius:10px;font:400 17px Anton,Impact,sans-serif;letter-spacing:1px;background:#2ecc71;color:#06220f;cursor:pointer}
+#shop button:disabled{background:#555;color:#999}
+#shop .x{width:100%;margin-top:12px;background:#444;color:#fff}
+#start{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:24px;background:linear-gradient(180deg,rgba(28,24,60,.82),rgba(150,60,30,.7) 60%,rgba(20,10,6,.92));z-index:5;overflow:auto}
+.card{max-width:540px;width:100%;text-align:center}
+.card h1{font:400 clamp(30px,9.5vw,72px)/.95 Anton,Impact,sans-serif;margin:0;letter-spacing:.015em;color:#ffd36e;text-shadow:0 5px 0 #6b1d00,0 10px 30px rgba(0,0,0,.6)}
+.card p{margin:12px auto 0;max-width:440px;color:#ffe6cf;font-size:15px}
+.card p a{color:#ffe08a;text-underline-offset:.18em}
+.keys{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 12px;margin:18px auto 0;max-width:440px;text-align:left;font-size:13px;color:#f3e3d3}
+.keys div{background:rgba(0,0,0,.3);border-radius:10px;padding:8px 10px}
+.keys b{color:#fff;display:block;font-size:11px;opacity:.75;font-weight:700}
+.startClimate{max-width:440px;margin:10px auto 0;text-align:left;font:600 13px Inter,system-ui,sans-serif;color:#ffe6cf}
+.startClimate summary{cursor:pointer;width:fit-content;padding:6px 0}
+.startClimate .choices{display:flex;gap:12px;margin-top:4px}
+.startClimate label{flex:1;min-width:0}
+.startClimate select{display:block;width:100%;min-height:36px;margin-top:4px;padding:4px 6px;border:1px solid #ffffff48;border-radius:6px;background:#302827;color:#fff;font:inherit}
+#play{margin-top:20px;min-width:200px;min-height:56px;border:0;border-radius:30px;font:400 26px/1 Anton,Impact,sans-serif;letter-spacing:2px;color:#2a0e00;background:linear-gradient(180deg,#ffe08a,#ffb23a);box-shadow:0 6px 0 #8a4a00,0 12px 30px rgba(0,0,0,.4);cursor:pointer}
+#play:disabled{filter:grayscale(1);opacity:.6}
+#load{margin-top:10px;font-size:13px;opacity:.8}
+@media(max-width:520px){#speedo{left:max(26px,env(safe-area-inset-left));transform:none;bottom:max(172px,calc(env(safe-area-inset-bottom) + 160px));font-size:32px}#toast{white-space:normal;width:92vw;font-size:22px}}
+@media(max-width:420px){#joy{width:128px;height:128px}#btns{transform:scale(.9);transform-origin:right bottom}}
+@media(prefers-reduced-motion:reduce){#bAct.hot,#stars.blink span.on{animation:none}}
+#touchViews{display:none}
+@media(pointer:coarse){
+ #ui.cleanView{display:block}#ui.cleanView>:not(#joy):not(#btns){display:none}
+ #touchViews{position:fixed;left:max(14px,env(safe-area-inset-left));bottom:max(182px,calc(env(safe-area-inset-bottom) + 170px));display:flex;gap:6px;z-index:2}
+ #touchViews[hidden],body:has(#shop[style*="flex"]) #touchViews{display:none}
+ #touchViews button{min-height:40px;border:1px solid #ffffff55;border-radius:8px;background:#191919d9;color:white;font-weight:700}
+ #speedo{bottom:230px}
+}
+@media(max-height:580px){
+ #start{align-items:flex-start}.card{margin:auto}
+ #shop{overflow:auto;align-items:flex-start}#shop .p{margin:auto}
+}
+@media (orientation:landscape) and (max-height:540px){
+ #start{padding:10px 16px;touch-action:pan-y}
+ .card{max-width:720px}.card h1{font-size:clamp(32px,9vh,46px);line-height:1}
+ .card p{max-width:610px;margin-top:6px;font-size:13px}
+ .keys{max-width:640px;grid-template-columns:repeat(3,minmax(0,1fr));gap:4px;margin-top:8px;font-size:12px}
+ .keys div{padding:4px 7px}.keys b{font-size:10px}
+ #play{margin-top:8px;min-height:44px;font-size:22px}
+ #load,#credits,#lbar{margin-top:5px}
+}
+@media(pointer:coarse) and (orientation:landscape) and (max-height:540px){
+ #mm{width:80px;height:80px}#tr{gap:2px}#wep{min-height:26px;font-size:13px}
+ #btns{transform:scale(.77);transform-origin:right bottom}#joy{width:106px;height:106px}
+ #touchViews{left:140px;bottom:14px}#speedo{left:50%;bottom:10px;transform:translateX(-50%)}
+}
+</style><link rel="stylesheet" href="residents.css"></head><body>
+<canvas id="c" tabindex="-1"></canvas>
+<div id="ui" hidden>
+  <div id="tl"><div id="cash">$0</div><div class="bar"><i id="hp"></i></div><div class="bar" id="arbar"><i id="ar"></i></div><div class="bar" id="carbar"><i id="chp"></i></div><div id="conditions"></div><div id="obj"></div>
+    <select id="graphicsHud" aria-label="Graphics quality"></select>
+    <button id="residentsButton" type="button">Residents</button>
+    <button id="sound" type="button" aria-label="Sound" aria-pressed="false" title="Sound off"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M11 5 6 9H3v6h3l5 4z"/><path class="sound-mute" d="m16 10 4 4m0-4-4 4"/><path class="sound-waves" d="M15 9a4 4 0 0 1 0 6m3-9a8 8 0 0 1 0 12"/></svg><span id="soundState" hidden>Sound off</span></button>
+  </div>
+  <div id="tr"><div id="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><div id="heat"><i></i></div><div id="evade"><i></i></div><button id="mapOpen" type="button" aria-label="Open city map" aria-haspopup="dialog" aria-controls="cityMap" title="Open city map"><canvas id="mm" width="300" height="300" aria-hidden="true"></canvas></button><div id="wep">FISTS <small></small></div></div>
+  <div id="toast"></div><div id="banner"></div>
+  <div id="prog"><span>ROBBING…</span><div class="bar"><i></i></div></div>
+  <div id="speedo">0<small>KM/H<span id="roadLimit"></span></small><div id="driveIdentity"><button id="signalLeft" type="button" aria-label="Left turn signal" aria-pressed="false" title="Left turn signal ([)">◀</button><span id="vehicleName"></span><button id="signalRight" type="button" aria-label="Right turn signal" aria-pressed="false" title="Right turn signal (])">▶</button></div></div>
+  <div id="joy"><div id="knob"></div></div>
+  <div id="interaction" hidden><kbd>C</kbd><span></span></div>
+  <div id="btns"><button id="bSprint">SPRINT</button><button id="bWep">WEAPON</button><button id="bAct">ENTER</button><button id="bFire">PUNCH</button></div>
+</div>
+<button id="caseReturn" hidden type="button">Return to player</button>
+<div id="caseCaption" hidden><strong></strong><span></span></div>
+<div id="touchViews" hidden><button id="viewMode">Camera</button><button id="hudMode">Hide HUD</button><button id="leaveCar" hidden>Exit car</button></div>
+<dialog id="cityMap" aria-labelledby="cityMapTitle">
+ <header class="city-map-header">
+  <h2 id="cityMapTitle">City map</h2>
+  <button id="mapClose" type="button" aria-label="Close city map" autofocus>×</button>
+ </header>
+ <div class="city-map-body">
+  <div class="city-map-area">
+   <div id="mapFrame">
+    <canvas id="travelMap" aria-label="City street map. Click a location to choose it."></canvas>
+    <div id="mapMarkers" aria-label="Landmarks"></div>
+    <span id="mapPlayer" role="img" aria-label="Your location"></span>
+    <span id="mapPin" hidden></span>
+   </div>
+   <div id="mapLegend" aria-label="Map legend"></div>
+  </div>
+  <div class="city-map-controls">
+   <h3>Time &amp; weather</h3>
+   <label class="map-time-label" for="mapTime">Time of day <output id="mapClock" for="mapTime"></output></label>
+   <input id="mapTime" type="range" min="0" max="1439" step="1">
+   <div class="map-sky" aria-hidden="true"><span>☾</span><span>☀</span><span>☾</span></div>
+   <div id="mapWeather" role="group" aria-label="Weather"></div>
+   <p id="mapWeatherName"></p>
+   <div id="mapConfirm" hidden>
+    <p id="mapQuestion" aria-live="polite"></p>
+    <div class="map-confirm-actions">
+     <button id="mapCancel" type="button">Cancel</button>
+     <button id="mapGo" type="button">Yes, travel</button>
+    </div>
+   </div>
+   <p id="mapStatus" role="status"></p>
+  </div>
+ </div>
+</dialog>
+<dialog id="policeDesk" aria-labelledby="deskStation">
+ <header><h2 id="deskStation">Police records</h2><button id="deskClose" type="button">Close</button></header>
+ <nav aria-label="Station records"><button data-view="Cases">Cases</button><button data-view="Tickets">Tickets</button><button data-view="Fugitives">Fugitives</button><button data-view="Watch">Watch</button><button data-view="Radio">Radio</button></nav>
+ <div id="deskExercise">
+  <button id="followCase" type="button">Follow a training homicide</button>
+  <button id="followCall" type="button">Follow a gunfire report</button>
+  <button id="followPair" type="button">Follow two homicide files</button>
+ </div>
+ <ul id="deskRows"></ul>
+</dialog>
+<div id="shop"><div class="p"><h2>LOCK &amp; LOAD</h2><div id="items"></div><button class="x" id="shopX">LEAVE</button></div></div>
+<div id="big"></div>
+<div id="start"><div class="card">
+  <h1>Commonstreet</h1>
+  <p>Commonstreet is a collaborative game <a href="city/">anyone can help build</a>, from its residents and streets to its shops and stories.</p>
+  <p>A coastal city with changing skies, working shops and real physics. Jack cars, brawl, hold up stores and the bank, and survive five levels of police heat — from a local patrol to Metro SWAT and air support.</p>
+  <div class="keys">
+    <div><b>WALK / DRIVE</b>Stick or arrow keys — up goes forward, sideways turns</div>
+    <div><b>CAMERA</b>Drag to look · V changes view · H hides HUD</div>
+    <div><b>PUNCH / SHOOT</b>Space</div>
+    <div><b>ACTION</b>Open doors, enter cars, move props · C</div>
+    <div><b>WEAPON</b>Switch · Z</div>
+    <div><b>SPRINT / HANDBRAKE</b>X</div>
+  </div>
+  <details class="startClimate"><summary>Time &amp; weather</summary>
+   <div class="choices">
+    <label>Starting time<select id="startTime"><option value="morning">Morning</option><option value="sunrise">Sunrise</option><option value="noon">Midday</option><option value="sunset">Sunset</option><option value="night">Night</option></select></label>
+    <label>Starting weather<select id="startWeather"><option value="">City forecast</option></select></label>
+   </div>
+  </details>
+  <div class="startClimate"><label>Graphics quality<select id="graphicsStart"></select></label></div>
+  <button id="play" disabled>PLAY</button>
+  <div id="lbar"><i></i></div>
+  <div id="load">Loading…</div>
+  <div id="credits">People: Microsoft Rocketbox avatars (MIT) · Surfaces &amp; sky: Poly Haven (CC0) · Physics: cannon-es · Rendering: three.js</div>
+</div></div>
+<script src="lib/three.min.js"></script><script src="lib/GLTFLoader.js"></script><script src="lib/SkeletonUtils.js"></script><script src="lib/cannon.js"></script>
+<script src="js/resident-secondary.js"></script>
+<script src="js/resident-assets.js"></script><script src="js/resident-motion.js"></script><script src="js/resident-rig.js"></script><script src="js/resident-cast.js"></script><script src="js/resident-contact.js"></script><script src="js/resident-directory.js"></script>
+<script src="js/wash-house.js"></script>
+<script src="js/weather.js"></script><script src="js/weather-cover.js"></script><script src="js/core.js"></script><script src="js/atmosphere.js"></script><script src="js/precipitation.js"></script>
+<script src="js/phys.js"></script><script src="js/cargen.js"></script><script src="js/fleet.js"></script><script src="js/vehicle-components.js"></script><script src="js/chars.js"></script><script src="js/world.js"></script><script src="js/harbor.js"></script><script src="js/freight.js"></script><script src="js/streets.js"></script><script src="js/interiors.js"></script><script src="js/access.js"></script><script src="js/building-construction.js"></script><script src="js/suite-interiors.js"></script><script src="js/domestic-fittings.js"></script><script src="js/fire-escapes.js"></script><script src="js/roads.js"></script><script src="js/street-plan.js"></script><script src="js/street-surface.js"></script><script src="js/street-signals.js"></script><script src="js/city-traffic.js"></script><script src="js/props.js"></script><script src="js/scenery.js"></script><script src="js/city-works.js"></script><script src="js/palm-corner.js"></script><script src="js/city-services.js"></script><script src="js/city-detail.js"></script><script src="js/shop-architecture.js"></script><script src="js/city-fixtures.js"></script><script src="js/civic-fittings.js"></script><script src="js/city-vegetation.js"></script><script src="js/garden-cottages.js"></script><script src="js/harbor-supply.js"></script><script src="js/coast.js"></script><script src="js/coastal-scenery.js"></script><script src="js/dock-yard.js"></script><script src="js/lighthouse.js"></script><script src="js/game.js"></script><script src="js/department.js"></script><script src="js/headquarters.js"></script><script src="js/police-world.js"></script><script src="js/police-desk.js"></script><script src="js/dispatch.js"></script><script src="js/traffic-police.js"></script><script src="js/street-incidents.js"></script><script src="js/case-camera.js"></script><script src="js/main.js"></script>
+<script src="js/city-map.js"></script>
+<script src="js/agent-controller.js"></script>
+</body></html>

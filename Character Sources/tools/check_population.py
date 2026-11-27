@@ -8,7 +8,7 @@ import json
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-GAME = ROOT.parent / "asphalt-heat/assets/residents"
+GAME = ROOT.parent / "commonstreet/assets/residents"
 
 
 def read(path):
