@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="city.css">
+  <link rel="stylesheet" href="city.css?v=gallery-preview">
 </head>
 <body>
   <header class="topbar" id="city">
@@ -33,6 +33,7 @@
           <button class="button primary" type="button" id="copy-starter">Copy agent prompt <span aria-hidden="true">↗</span></button>
           <a class="button quiet" id="prompt-link" href="contribute.txt" target="_blank" rel="noopener">View prompt</a>
         </div>
+        <p class="hero-instructions">Anyone can improve the city by copying the prompt, telling their coding agent what to change, and reviewing the preview.</p>
         <div class="notice prompt-notice" id="prompt-status" role="status" hidden></div>
         <span class="hero-location">Old Town</span>
       </div>
@@ -42,32 +43,44 @@
       <div class="section-heading"><h2 id="build-title">Build with your agent</h2></div>
       <div class="contribution-gallery">
         <figure class="contribution-clip">
-          <video controls loop muted playsinline preload="none" poster="clips/cottage.jpg" aria-label="Add a building or change a street">
-            <source src="clips/cottage.mp4" type="video/mp4">
-            <a href="clips/cottage.mp4">Open video</a>
-          </video>
+          <div class="contribution-player">
+            <img src="clips/resident.jpg?v=34576cbc" alt="">
+            <video controls loop muted playsinline preload="none" poster="clips/resident.jpg?v=34576cbc" aria-label="Create a resident">
+              <source src="clips/resident.mp4?v=34576cbc" type="video/mp4">
+              <a href="clips/resident.mp4?v=34576cbc">Open video</a>
+            </video>
+          </div>
+          <figcaption><h3>Create a resident</h3><p>Give a character a look, a personality, and a life in the city.</p></figcaption>
+        </figure>
+        <figure class="contribution-clip">
+          <div class="contribution-player">
+            <img src="clips/cottage.jpg" alt="">
+            <video controls loop muted playsinline preload="none" poster="clips/cottage.jpg" aria-label="Add a building or change a street">
+              <source src="clips/cottage.mp4" type="video/mp4">
+              <a href="clips/cottage.mp4">Open video</a>
+            </video>
+          </div>
           <figcaption><h3>Add a building or change a street</h3><p>Place a cottage on the map and see it go up from the street.</p></figcaption>
         </figure>
         <figure class="contribution-clip">
-          <video controls loop muted playsinline preload="none" poster="clips/car.jpg" aria-label="Create a car or add a street detail">
-            <source src="clips/car.mp4" type="video/mp4">
-            <a href="clips/car.mp4">Open video</a>
-          </video>
+          <div class="contribution-player">
+            <img src="clips/car.jpg" alt="">
+            <video controls loop muted playsinline preload="none" poster="clips/car.jpg" aria-label="Create a car or add a street detail">
+              <source src="clips/car.mp4" type="video/mp4">
+              <a href="clips/car.mp4">Open video</a>
+            </video>
+          </div>
           <figcaption><h3>Create a car or add a street detail</h3><p>Turn a car design into a 3D model and place it on a city street.</p></figcaption>
         </figure>
         <figure class="contribution-clip">
-          <video controls loop muted playsinline preload="none" poster="clips/shop.jpg" aria-label="Add a shop or fill a room">
-            <source src="clips/shop.mp4" type="video/mp4">
-            <a href="clips/shop.mp4">Open video</a>
-          </video>
+          <div class="contribution-player">
+            <img src="clips/shop.jpg" alt="">
+            <video controls loop muted playsinline preload="none" poster="clips/shop.jpg" aria-label="Add a shop or fill a room">
+              <source src="clips/shop.mp4" type="video/mp4">
+              <a href="clips/shop.mp4">Open video</a>
+            </video>
+          </div>
           <figcaption><h3>Add a shop or fill a room</h3><p>Turn an empty storefront into a working laundromat.</p></figcaption>
-        </figure>
-        <figure class="contribution-clip">
-          <video controls loop muted playsinline preload="none" poster="clips/resident.jpg" aria-label="Create a resident">
-            <source src="clips/resident.mp4" type="video/mp4">
-            <a href="clips/resident.mp4">Open video</a>
-          </video>
-          <figcaption><h3>Create a resident</h3><p>Give a character a look, a personality, and a life in the city.</p></figcaption>
         </figure>
       </div>
     </section>
@@ -101,6 +114,6 @@
     <span>Open City</span>
     <a href="https://github.com/HareliField/OpenCity" target="_blank" rel="noopener">Game repository <span aria-hidden="true">↗</span></a>
   </footer>
-  <script type="module" src="city.js"></script>
+  <script type="module" src="city.js?v=gallery-preview"></script>
 </body>
 </html>

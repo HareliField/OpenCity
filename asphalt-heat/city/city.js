@@ -41,17 +41,48 @@ document.getElementById('copy-starter').addEventListener('click', async () => {
   field.select();
 });
 
-if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
-  const previewObserver = new IntersectionObserver(entries => {
-    for (const entry of entries) {
-      if (!entry.isIntersecting) continue;
-      const preview = entry.target;
-      previewObserver.unobserve(preview);
-      preview.play().catch(() => {});
+const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+if (!motion.matches && 'IntersectionObserver' in window) {
+  const previews = new Map();
+  const startPreview = (video, restart = false) => {
+    if (motion.matches || document.hidden || previews.get(video).pausedByUser) return;
+    if (restart) video.load();
+    video.play().catch(() => {});
+  };
+
+  const observer = new IntersectionObserver(entries => {
+    for (const { target: video, intersectionRatio } of entries) {
+      const state = previews.get(video);
+      state.inView = intersectionRatio >= 0.4;
+      if (state.inView && video.paused) startPreview(video);
     }
   }, { threshold: 0.4 });
 
-  document.querySelectorAll('.contribution-clip video').forEach(preview => {
-    previewObserver.observe(preview);
+  for (const video of document.querySelectorAll('.contribution-player video')) {
+    const state = { inView: false, pausedByUser: false, lastInput: -Infinity };
+    previews.set(video, state);
+    const recordInput = () => { state.lastInput = performance.now(); };
+    video.addEventListener('pointerdown', recordInput);
+    video.addEventListener('keydown', recordInput);
+    video.addEventListener('pause', () => {
+      if (!document.hidden && performance.now() - state.lastInput < 500) state.pausedByUser = true;
+    });
+    video.addEventListener('play', () => { state.pausedByUser = false; });
+    observer.observe(video);
+  }
+
+  const restoreVisiblePreviews = (restartAll = true) => {
+    for (const [video, { inView }] of previews) {
+      const needsRestart = restartAll || video.paused || video.currentTime >= video.duration;
+      if (inView && needsRestart) startPreview(video, true);
+    }
+  };
+
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) restoreVisiblePreviews();
+  });
+  window.addEventListener('focus', () => restoreVisiblePreviews(false));
+  window.addEventListener('pageshow', event => {
+    if (event.persisted) restoreVisiblePreviews();
   });
 }
