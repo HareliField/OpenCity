@@ -6,6 +6,8 @@ An original browser-based 3D coastal city. The 16 × 16 city blocks cover 1,024 
 
 With the game server running, open the [city website](http://127.0.0.1:8765/city/). Choose **Copy agent prompt** or open the [copy-ready prompt](city/contribute.txt) directly. Paste it into a coding agent and fill in your idea. The agent builds the change locally, shows you where to try it, then asks whether to open a GitHub pull request.
 
+The website also includes an interactive demo with sample previews, review decisions, and releases. **Copy for my agent** fills the real contribution prompt with the idea from the demo or your own draft.
+
 ## Play locally
 
 From the game directory, run:
