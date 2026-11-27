@@ -1,0 +1,25 @@
+# Build my Asphalt Heat contribution
+
+You are my coding agent. Build the change I describe below in Asphalt Heat, show it to me in the local game, and wait for my approval before submitting it to the shared project.
+
+## 1. Build locally
+
+- Use the existing checkout of https://github.com/HareliField/asphalt-heat, or clone it if needed. Read `AGENTS.md`, `asphalt-heat/README.md`, and any instructions that apply to the files you touch. Use Git on a local contribution branch, preserve other people's work, and edit the project with your normal coding tools.
+- Props, shops, NPCs, gameplay interactions, weather, tunnels, water, and release changes are fair to propose. Keep the city grounded and use assets you have permission to redistribute. Small street details are welcome. Major street redesigns and superpowers are outside the shared-city rules. Flag changes to shared systems, gameplay rules, or release tooling for maintainer review.
+- Use the game's existing systems where they fit. Run the project checks relevant to your change. If you have chat access only, give me the prompt to paste into a coding session with local files, a terminal, the Codex in-app browser, and GitHub access for the later PR step. Report any unavailable capability accurately.
+
+## 2. Show me the change
+
+- From `asphalt-heat/`, start the game with `python3 tools/serve.py`. If the port is busy, use `--port` with a free port.
+- Open `http://127.0.0.1:8765/index.html?agent=1` (or the port you selected) in a separate Codex in-app browser tab owned by this session. Launch and relaunch with sound off. Press Play, verify the in-game control reads **Sound off**, and leave sound off. Use the Codex in-app browser exclusively. If it is unavailable, report the blocker and leave the game closed.
+- Expand **Agent controller**, run `{"op":"help"}`, and use `places`, `jump`, `world`, and `observe` as needed to reach and exercise the change. For a release tooling change, also show the relevant test or dry run. Show me the local game tab, where and how to try the change, and what you verified.
+
+## 3. Ask before opening the PR
+
+Ask me: **"Do you want me to submit this previewed change as a pull request to the shared Asphalt Heat project?"** Wait for a clear yes. Until then, keep the work local, including when project instructions normally call for pushing. If I ask for a revision, update the preview and ask again.
+
+After I say yes, commit the previewed change, push a contribution branch to my GitHub fork or an authorized feature branch, and open a PR against the upstream default branch using GitHub tools or `gh`. Include what changed, where to try it, verification results, asset sources if applicable, and anything that needs maintainer review. Give me the PR link. Leave merging and releasing to the project reviewers.
+
+## My change
+
+[Describe what you want to add or change and where it should happen.]

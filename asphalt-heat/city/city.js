@@ -10,6 +10,14 @@ const scene = document.querySelector('.scene');
 const stepButtons = [...document.querySelectorAll('#steps button')];
 const exampleButtons = [...document.querySelectorAll('[data-example]')];
 const replay = byId('replay');
+const promptLink = byId('prompt-link');
+const requestPlaceholder = '[Describe what you want to add or change and where it should happen.]';
+let promptTemplate;
+const promptReady = fetch(promptLink.href)
+  .then(async response => {
+    if (response.ok) promptTemplate = await response.text();
+  })
+  .catch(() => {});
 
 const outcomes = {
   standard: ['Approved in demo', 'The sample clears the city rules and is eligible for the next release.'],
@@ -34,9 +42,9 @@ function node(tag, value, className) {
   return result;
 }
 
-function announce(message = '') {
-  notice.hidden = !message;
-  notice.textContent = message;
+function announce(message = '', status = notice) {
+  status.hidden = !message;
+  status.textContent = message;
 }
 
 function chooseExample(nextKey) {
@@ -143,37 +151,51 @@ function publish(focus = false) {
   showStep(3, focus);
 }
 
-function handoffText() {
-  const current = makeDraft(key, idea.value.trim());
-  return [
-    'Asphalt Heat city contribution draft',
-    'Repository: https://github.com/HareliField/asphalt-heat',
-    'Example location (confirm against the game): ' + current.location,
-    'Request: ' + current.prompt,
-    'Prepare a scoped patch, playable preview, test evidence and asset sources. Keep the street grid and setting intact. Route shared system and release changes to a maintainer. Leave publication to the project reviewer.'
-  ].join('\n');
+async function copyAgentPrompt(status, request = '') {
+  const canCopyImmediately = Boolean(promptTemplate);
+  if (!canCopyImmediately) await promptReady;
+  if (!promptTemplate) {
+    announce('Open the prompt to copy it manually.', status);
+    const link = node('a', ' View prompt');
+    link.href = promptLink.href;
+    link.target = '_blank';
+    link.rel = 'noopener';
+    status.append(link);
+    return;
+  }
+
+  const handoff = request ? promptTemplate.replace(requestPlaceholder, () => request) : promptTemplate;
+  if (canCopyImmediately && navigator.clipboard) {
+    try {
+      await navigator.clipboard.writeText(handoff);
+      announce('Prompt copied. Paste it into your coding agent.', status);
+      return;
+    } catch {
+      // Offer a selected field if clipboard access is blocked.
+    }
+  }
+
+  const field = node('textarea', handoff);
+  field.readOnly = true;
+  field.setAttribute('aria-label', 'Agent prompt to copy');
+  field.rows = 5;
+  announce('Select and copy the prompt for your coding agent.', status);
+  status.append(field);
+  field.focus();
+  field.select();
 }
 
-async function copyDraft() {
-  if (!idea.value.trim()) {
-    announce('Enter a city idea before copying a draft.');
+function copyDraft() {
+  const request = idea.value.trim();
+  if (!request) {
+    announce('Enter a city idea before copying a prompt.');
     idea.focus();
     return;
   }
-  const handoff = handoffText();
-  try {
-    await navigator.clipboard.writeText(handoff);
-    announce('Draft copied. Paste it into your own agent.');
-  } catch {
-    const field = node('textarea', handoff);
-    field.readOnly = true;
-    field.setAttribute('aria-label', 'Draft to copy');
-    field.rows = 5;
-    announce('Select and copy the draft for your agent.');
-    notice.append(field);
-    field.focus();
-    field.select();
-  }
+
+  const draftLocation = examples[key].location;
+  const context = 'Example location, if relevant (confirm in the game): ' + draftLocation;
+  return copyAgentPrompt(notice, request + '\n\n' + context);
 }
 
 function updateReleaseLog() {
@@ -249,6 +271,7 @@ form.addEventListener('submit', event => {
   draft = makeDraft(key, prompt);
   showStep(1, true);
 });
+byId('copy-starter').addEventListener('click', () => copyAgentPrompt(byId('prompt-status')));
 byId('copy').addEventListener('click', () => {
   stopLoop();
   copyDraft();

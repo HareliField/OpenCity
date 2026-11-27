@@ -87,6 +87,7 @@ select { min-height: 40px; padding: 7px 9px; font: 700 16px var(--heading); }
 .check-list li + li { margin-top: 5px; }
 .result-label { color: var(--amber); font: 700 18px var(--heading); margin-bottom: 3px; }
 .notice { padding: 10px 12px; border-left: 3px solid var(--amber); margin-top: 12px; background: var(--surface); }
+.prompt-notice { max-width: 560px; }
 .lower { margin-top: 56px; padding-top: 23px; border-top: 1px solid var(--line); }
 .rule-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px 36px; margin-top: 18px; }
 .rule-list h3 { font-size: 26px; line-height: 1.1; margin-bottom: 6px; }

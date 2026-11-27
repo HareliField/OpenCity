@@ -28,11 +28,13 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="shell hero-content">
         <h1 id="hero-title">The city<br>is yours to build.</h1>
-        <p>Play Asphalt Heat. Then bring an idea to South A and use your agent to make it part of the city.</p>
+        <p>Tell your coding agent what to change. Try it in your local game, then decide whether to submit it to the shared city.</p>
         <div class="actions">
-          <a class="button primary" href="#build">Try a contribution <span aria-hidden="true">→</span></a>
-          <a class="button outline" href="#rules">Read the city rules</a>
+          <button class="button primary" type="button" id="copy-starter">Copy agent prompt <span aria-hidden="true">↗</span></button>
+          <a class="button outline" href="#build">Try the demo</a>
+          <a class="button quiet" id="prompt-link" href="contribute.txt" target="_blank" rel="noopener">View prompt</a>
         </div>
+        <div class="notice prompt-notice" id="prompt-status" role="status" hidden></div>
         <span class="hero-location">South A</span>
       </div>
     </section>
