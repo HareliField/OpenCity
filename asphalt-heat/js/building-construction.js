@@ -1,5 +1,5 @@
 /* Storeys, switchback stairs and sliding sashes. Dimensions are in world metres. */
-const CONSTRUCTION={near:new Set(),bodies:new Map(),moving:new Set(),coatings:new Map(),tintMaterials:new WeakMap(),paneMaterial:null,
+const CONSTRUCTION={near:new Set(),bodies:new Map(),moving:new Set(),coatings:new Map(),tintMaterials:new WeakMap(),paneMaterial:null,curtainMaterials:new Map(),
  visualCell:'',physicalCell:'',brickCell:'',brickMesh:null,proxyQueue:new Set(),proxySectors:new Map()};
 const withinRect=(r,x,z)=>x>=r.x0&&x<=r.x1&&z>=r.z0&&z<=r.z1;
 const rectDistance=(r,x,z)=>Math.hypot(x-clamp(x,r.x0,r.x1),z-clamp(z,r.z0,r.z1));
@@ -7,6 +7,7 @@ const partBox=(r,y0,h,role,mat)=>({...r,y0,h,role,mat});
 function constructionFinish(material){
  if(!CONSTRUCTION.coatings.has(material)){
   const finish=material.clone();
+  const exterior=Object.values(MAT.fac||{}).includes(material);
   finish.vertexColors=false;
   // The repeated boxes have different dimensions. Sample the finish in metres across their joints.
   finish.onBeforeCompile=shader=>{
@@ -15,8 +16,22 @@ function constructionFinish(material){
     'vec3 wallPoint=(modelMatrix*instanceMatrix*vec4(position,1.)).xyz;',
     'vec2 wallUV=abs(normal.y)>.5?wallPoint.xz:abs(normal.x)>.5?wallPoint.zy:wallPoint.xy;',
     'vUv=(uvTransform*vec3(wallUV,1.)).xy;','#endif'].join('\n'));
+   if(exterior){
+    shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vWallFinish;')
+     .replace('#include <project_vertex>',`#include <project_vertex>
+      vec4 wallPiece=vec4(transformed,1.);
+      #ifdef USE_INSTANCING
+       wallPiece=instanceMatrix*wallPiece;
+      #endif
+      vWallFinish=(modelMatrix*wallPiece).xyz;`);
+    shader.fragmentShader=shader.fragmentShader.replace('#include <common>','#include <common>\nvarying vec3 vWallFinish;'+WETCODE)
+     .replace('#include <map_fragment>',`#include <map_fragment>
+      vec2 face=vec2(vWallFinish.x+vWallFinish.z,vWallFinish.y);
+      float patina=fbm2(face*vec2(.27,.098))+.19*(fbm2(face*vec2(1.63,.21))-.5);
+      diffuseColor.rgb*=mix(vec3(.70,.69,.63),vec3(1.02,1.01,.98),smoothstep(.23,.72,patina));`);
+   }
   };
-  finish.customProgramCacheKey=()=>'assembled-metric-finish';
+  finish.customProgramCacheKey=()=>exterior?'exposed-wall-finish':'assembled-metric-finish';
   CONSTRUCTION.coatings.set(material,finish);
  }return CONSTRUCTION.coatings.get(material);
 }
@@ -26,6 +41,24 @@ function architecturalGlass(){
   mat.color.copy(lin(0xabc1c1));mat.opacity=.29;mat.roughness=.115;mat.metalness=.42;
   mat.envMapIntensity=1.25;CONSTRUCTION.paneMaterial=mat;
  }return CONSTRUCTION.paneMaterial;
+}
+function curtainMaterials(seed){
+ const bronze=Math.floor((seed??0)*117)%3===0;
+ if(!CONSTRUCTION.curtainMaterials.has(bronze)){
+  const panel=new THREE.MeshStandardMaterial({color:lin(bronze?0x5f5145:0x4a595a),roughness:.29,metalness:.49,envMapIntensity:.78});
+  const cap=new THREE.MeshStandardMaterial({color:lin(bronze?0x83725d:0x757a78),roughness:.39,metalness:.72});
+  CONSTRUCTION.curtainMaterials.set(bronze,{panel,cap,glass:shopGlazing(false,bronze?0x716257:0x56686b)});
+ }
+ return CONSTRUCTION.curtainMaterials.get(bronze);
+}
+function registerCurtainFaces(block,tier,base){
+ if(tier.style!==2||tier.h<=base)return;
+ const r=tier.rect,x=(r.x0+r.x1)/2,z=(r.z0+r.z1)/2,y=(base+tier.h)/2;
+ const faces=block.curtainFaces||(block.curtainFaces=[]);
+ for(const [cx,cz,nx,nz,span] of [[x,r.z0+.077,0,-1,r.x1-r.x0],[x,r.z1-.077,0,1,r.x1-r.x0],
+   [r.x0+.077,z,-1,0,r.z1-r.z0],[r.x1-.077,z,1,0,r.z1-r.z0]]){
+  faces.push({center:new V3(cx,y,cz),normal:new V3(nx,0,nz),half:span/2,y0:base,h:tier.h});
+ }
 }
 function collectBuildingProxy(block,mat,geometry){
  if(!block.proxyGeometries)block.proxyGeometries=new Map();
@@ -101,15 +134,18 @@ function createStoreys(block,footprint,base,first,tiers,options={}){
   pitched:!!options.pitched,warehouse:!!options.warehouse,joined:options.joined||null};
  for(const l of levels)l.owner=s;
  (block.structures||(block.structures=[])).push(s);block.bld.push(s);
+ let tierBase=first;
  for(const tier of tiers){
   tier.finish=constructionFinish(tier.mat);
   tier.brick=Object.keys(MAT.fac).some(k=>k.startsWith('brick')&&MAT.fac[k]===tier.mat);
+  registerCurtainFaces(block,tier,tierBase);tierBase=tier.h;
  }
  return s;
 }
 function extendStoreys(s,rect,base,top,mat,style){
  const tier={...style,rect,h:top,mat,finish:constructionFinish(mat),
   brick:Object.keys(MAT.fac).some(k=>k.startsWith('brick')&&MAT.fac[k]===mat)};
+ registerCurtainFaces(s.block,tier,base);
  const n=Math.max(1,Math.round((top-base)/(style.fh||3.4)));
  for(let i=0;i<n;i++){
   s.levels.push({index:s.levels.length,owner:s,rect,tier,y0:base+(top-base)*i/n,h:base+(top-base)*(i+1)/n});
@@ -188,9 +224,9 @@ function wallRect(rect,side,l,r,inner,outer){
  if(side==='W')return {x0:rect.x0+inner,x1:rect.x0+outer,z0:l,z1:r};
  return {x0:rect.x1-outer,x1:rect.x1-inner,z0:l,z1:r};
 }
-function addGlazing(holder,rect,side,l,r,base,top,key,operable,add){
+function addGlazing(holder,rect,side,l,r,base,top,key,operable,add,curtain=null){
  const along=side==='N'||side==='S'?'x':'z',w=(r-l)/2,mid=(r+l)/2;
- const W=(a,b,i,o)=>wallRect(rect,side,a,b,i,o),frame=MAT.darkMetal;
+ const W=(a,b,i,o)=>wallRect(rect,side,a,b,i,o),frame=curtain?.cap??MAT.darkMetal,pane=curtain?.glass??architecturalGlass();
  const sash=operable?{owner:holder,key,axis:along,travel:w-.07,parts:[],phase:holder.modified.get(key)||0,target:holder.modified.get(key)||0,
   y0:base,h:top,area:W(l,mid,.035,.11)}:null;
  if(sash)holder.sashes.push(sash);
@@ -204,7 +240,7 @@ function addGlazing(holder,rect,side,l,r,base,top,key,operable,add){
  item(l-.026,r+.026,base-.038,base+.015,-.025,.145,'frame',frame);
  item(l-.026,r+.026,top-.017,top+.038,-.025,.145,'frame',frame);
  for(const [a,b,inset,mobile] of [[l,mid,.052,true],[mid,r,.104,false]]){
-  item(a+.028,b-.028,base+.031,top-.033,inset,inset+.012,'glass',architecturalGlass(),mobile);
+  item(a+.028,b-.028,base+.031,top-.033,inset,inset+.012,'glass',pane,mobile);
   for(const x of [a+.017,b-.017])item(x-.017,x+.017,base,top,inset-.014,inset+.027,'frame',frame,mobile);
   item(a+.028,b-.028,base,base+.037,inset-.017,inset+.03,'frame',frame,mobile);
   item(a+.028,b-.028,top-.039,top,inset-.017,inset+.03,'frame',frame,mobile);
@@ -222,17 +258,17 @@ function storeyParts(l){
  if(l.ground&&!s.warehouse){l.parts=parts;return parts;}
  const bottom=l.ground?l.tier.wallBase:l.y0,top=l.h-.14;
  if(top-bottom<.14){l.parts=parts;return parts;}
- const lowRoom=top-bottom<2.0;
+ const lowRoom=top-bottom<2.0,curtain=t.style===2?curtainMaterials(t.seed):null;
  for(const side of ['N','S','E','W']){
   if(side===t.authoredSide)continue;
   const horizontal=side==='N'||side==='S',a=horizontal?r.x0:r.z0,b=horizontal?r.x1:r.z1,length=b-a;
   const count=Math.max(1,Math.round(length/(t.bay||3))),bay=length/count;
   const sill=bottom+(top-bottom)*(t.style===2?.13:t.style===3?.62:.28);
-  const head=bottom+(top-bottom)*(t.style===3?.86:.85);
-  const wall=(a,b,y0,h,inner=0,outer=.2,role='wall',material=t.finish)=>{
+  const head=bottom+(top-bottom)*(curtain?.935:t.style===3?.86:.85);
+  const wall=(a,b,y0,h,inner=0,outer=.2,role='wall',material=curtain?.panel??t.finish)=>{
    if(b<=a||h<=y0)return;
    const p=partBox(wallRect(r,side,a,b,inner,outer),y0,h,role,material);
-   p.side=side;p.tint=t.tint||0xffffff;p.brick=t.brick&&role==='wall';add(p);
+   p.side=side;p.tint=curtain?0xffffff:t.tint||0xffffff;p.brick=!curtain&&t.brick&&role==='wall';add(p);
    if(role==='wall'&&l.rooms?.length){
     // A plasterboard liner meets the inside of each pier or spandrel. The backing wall supports both layers.
     const finish=constructionFinish(INTERIORS.materials.plaster);
@@ -247,7 +283,9 @@ function storeyParts(l){
   if(exit){wall(a,exit.center-.60,bottom,sill);wall(exit.center+.60,b,bottom,sill);}
   else wall(a,b,bottom,sill);
   wall(a,b,head,top);
-  const margin=Math.min(bay*.31,t.style===2?.13:t.style===1?.46:.34);
+  // The back-painted panel covers the face of the floor slab. Its cap meets the next unit above.
+  if(curtain)wall(a,b,top,l.h,-.026,.002,'trim',curtain.panel);
+  const margin=Math.min(bay*.31,curtain?.045:t.style===1?.46:.34);
   for(let i=0;i<count;i++){
    const start=a+i*bay,end=start+bay,from=start+margin,to=end-margin;
    wall(i===0?a:start-margin,from,sill,head);
@@ -260,7 +298,13 @@ function storeyParts(l){
    }
    const id=l.index+side+i;
    if(t.style===3&&i%2===1){wall(from,to,sill,head);continue;}
-   addGlazing(l,r,side,from,to,sill,head,id,i===Math.floor(count/2)&&t.style!==2,add);
+   addGlazing(l,r,side,from,to,sill,head,id,i===Math.floor(count/2)&&!curtain,add,curtain);
+   const dressing=(Math.round(t.seed*139)+l.index*31+i*17+side.charCodeAt(0))%13;
+   if(t.style!==3&&dressing<5&&i!==Math.floor(count/2)&&typeof PALM_CORNER!=='undefined'){
+    const blind=cornerMaterials().blinds[dressing%3],drop=(head-sill)*(.19+.13*dressing);
+    wall(from+.05,to-.05,head-drop,head-.045,.245,.265,'trim',blind);
+    wall(from+.046,to-.046,head-drop-.031,head-drop+.006,.239,.279,'trim',MAT.metal);
+   }
    if(t.style!==2){
     wall(from-.085,to+.085,sill-.076,sill,-.085,.135,'trim',MAT.trim);
     if(t.style===1)wall(from-.075,to+.075,head,head+.10,-.060,.14,'trim',MAT.trim);

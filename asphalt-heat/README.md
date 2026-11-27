@@ -164,6 +164,12 @@ Property damage generates a misdemeanor report when a witness sees it. Civilians
 
 Credits include Microsoft Rocketbox avatars (MIT), Poly Haven textures and sky (CC0), three.js, and cannon-es.
 
+## City residents
+
+Open **Residents** during play. Search 1,500 people by name, occupation, neighborhood or ID. Each profile includes its casting photograph, a render of the standing Blender model, family links, work, agenda and three decisions under pressure. **Meet in the city** finds a resident on foot or in their assigned vehicle. **Watch movement** plays a selected motion on that resident in the game. Ida works at the Wash House.
+
+The city streams fitted appearances around the player. Officers retain their department IDs, issued gear and active assignments. Civilian drivers keep their identity when they leave a vehicle. At conversational distance, face a resident and use **Action**. The shared movement library includes greeting, carrying, cleaning, evasion and injury recovery. [Browse the written stories](stories/residents/directory.md) · [Open the native character directory](../Character%20Sources/Directory.md) · [Watch Lev at the port](films/lev-bellamy-at-the-port.mp4)
+
 ## Agent controller
 
 Start the local server and open [agent mode](http://127.0.0.1:8765/index.html?agent=1) in your own Codex in-app browser tab. Press **Play**, verify **Sound off**, and expand **Agent controller**. Enter a JSON object and select **Run command**. Each tab has its own player, simulation clock and command history.

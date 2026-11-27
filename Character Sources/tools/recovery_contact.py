@@ -197,12 +197,12 @@ def support_fabric(scene, garments):
 def fit_recovery(scene, rig, action, start, stop):
     """The frame offsets follow the retimed get_up cut in play_event.CUTS."""
     body = scene.objects["Body"]
-    shoes = next(o for o in scene.objects if o.name in ("Cloth_shoes", "Cloth_boots"))
+    shoes = next(o for o in scene.objects if o.name in ("Cloth_shoes","Cloth_boots","Shoe l","Shoe r"))
     bottoms = next(
         (
             o
             for o in scene.objects
-            if o.name in ("Cloth_jeans", "Cloth_skirt", "Cloth_shorts")
+            if o.name in ("Cloth_jeans","Cloth_skirt","Cloth_shorts","Trouser leg l","Trouser leg r")
         ),
         None,
     )
@@ -225,7 +225,7 @@ def fit_recovery(scene, rig, action, start, stop):
     tops = [
         o
         for o in scene.objects
-        if o.name in ("Cloth_jacket", "Cloth_tshirt", "Cloth_hoodie", "Cloth_dress")
+        if o.name in ("Cloth_jacket","Cloth_tshirt","Cloth_hoodie","Cloth_dress") or o.name.startswith("Coat")
     ]
     garment_trunks = [
         (o, region(o, {"pelvis", "spine_01", "spine_02", "spine_03", "neck_01"}, 0.60))

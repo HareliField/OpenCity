@@ -22,7 +22,7 @@
 
  const groups = ['vehicles','people','helicopters','pickups','doors','props','junctions','blocks'];
  const help = {
-  observe:{op:'observe'}, places:{op:'places'}, jump:{op:'jump',to:'start'},
+  residents:{op:'residents',query:'tailor',limit:10},meet:{op:'meet',personId:'AH-R0002'},observe:{op:'observe'}, places:{op:'places'}, jump:{op:'jump',to:'start'},
   coordinates:{op:'jump',x:256,z:320,yaw:0}, world:{op:'world',group:'vehicles',radius:60,offset:0,limit:20},
   step:{op:'step',ticks:15,forward:1,turn:0,sprint:false,fire:false},
   look:{op:'step',ticks:1,lookYaw:0.5,lookPitch:0.1},
@@ -64,7 +64,7 @@
     plate:c.plate,driver:c.driver,officer:c.officer?.name,yaw:c.h,speed:c.speed,velocity:point(c.vel),
     health:c.hp,maxHealth:c.max,dead:c.dead,siren:c.siren,turnSignal:c.indicating||0,route:c.ai && {from:c.ai.a?.slice(),to:c.ai.b?.slice(),lane:c.ai.lane}}));
    case 'people': return [...peds,...cops,...gang,...guards,...departmentPeople].map(p=>({
-    id:id(p),personId:p.personId,name:p.officer?.name,position:point(p.pos),team:p.team||'civilian',kind:p.kind,
+    id:id(p),personId:p.personId,name:p.officer?.name||p.c?.resident?.name||p.residentName,appearance:ResidentCast.status(p.c),position:point(p.pos),team:p.team||'civilian',kind:p.kind,
     yaw:p.c?.yaw,activity:p.mode||p.officer&&PoliceDepartment.status(p.officer),health:p.hp,dead:p.dead,hostile:p.hostile})).concat(globalThis.WashHouse?.record()||[]);
    case 'helicopters': return helis.map(h=>({id:id(h),position:point(h.pos),health:h.hp,dead:h.dead,spotted:h.spotted,searchlight:point(h.sp)}));
    case 'pickups': return pickups.map(p=>({id:id(p),position:point(p),kind:p.type,amount:p.amount,available:!(p.cool>0)}));
@@ -101,9 +101,11 @@
    const buttons=[...policeDesk.querySelectorAll('button')].filter(b=>(b.id||b.dataset.view)&&!b.disabled&&!b.closest('[hidden]'));
    return buttons.map(b=>b.dataset.view?'desk:'+b.dataset.view:b.id);
   }
+  const residentMenu=globalThis.ResidentCast?.conversation();if(residentMenu)return residentMenu.choices.map((_,i)=>'answer:'+i);
+  if(globalThis.ResidentDirectory?.isOpen())return ['closeResidents'];
   if (shopOpen && !deskStation) return ['shopX',...[...$('items').querySelectorAll('button:enabled')].map(b=>'buy:'+b.dataset.item)];
   if(caseCamera.enabled)return ['followStreetCase'];
-  const result=['camera','hud','gloves','weapon','sound'];
+  const result=['camera','hud','gloves','weapon','sound','residents'];
   if(!$('followStreetCase').hidden)result.push('followStreetCase');
   if(actionCtx()) result.push('interact');
   if(player.car) result.push('exit','signalLeft','signalRight');
@@ -127,13 +129,16 @@
    robbery:robbing?{place:robbing.p.name,seconds:robbing.t,total:robbing.p.time}:null,
    outcome:state==='dead'?{kind:deadKind,respawnIn:deadT}:null,
    menu:policeDesk.open?{name:'police',tab:deskTab,station:deskStation?.name,rows:[...$('deskRows').children].map(r=>r.innerText)}:
-    shopOpen&&!deskStation?{name:'shop',items:[...$('items').children].map(r=>({item:r.querySelector('button').dataset.item,text:r.innerText,enabled:!r.querySelector('button').disabled}))}:null};
+    globalThis.ResidentCast?.conversation()|| (globalThis.ResidentDirectory?.isOpen()?{name:'residents'}:null)|| (shopOpen&&!deskStation?{name:'shop',items:[...$('items').children].map(r=>({item:r.querySelector('button').dataset.item,text:r.innerText,enabled:!r.querySelector('button').disabled}))}:null)};
  }
  function act(name) {
   if(!actions().includes(name)) throw new Error('Action unavailable. Read observe.actions');
   if(name==='interact') actionCtx().fn();
   else if(name==='weapon') cycleWeapon();
   else if(name==='gloves') toggleGloves();
+  else if(name.startsWith('answer:'))ResidentCast.answer(Number(name.slice(7)));
+  else if(name==='residents')ResidentDirectory.open();
+  else if(name==='closeResidents')ResidentDirectory.close();
   else {
    const buttons={camera:'viewMode',hud:'hudMode',exit:'leaveCar'};
    const el=name.startsWith('desk:')?[...policeDesk.querySelectorAll('[data-view]')].find(b=>b.dataset.view===name.slice(5)):
@@ -197,6 +202,8 @@
   switch(c.op) {
    case 'help': return structuredClone(help);
    case 'observe': return observe();
+   case 'residents':{const all=ResidentCast.search(c.query||'');return {total:all.length,rows:all.slice(0,number(c.limit??12,'limit',1,100,true)).map(r=>({personId:r.personId,residentId:r.residentId,name:r.name,age:r.age,occupation:r.occupation,home:r.home}))};}
+   case 'meet':playing();ResidentDirectory.meet(c.personId);break;
    case 'events': {
     const after=number(c.after??0,'after',0,sequence,true),oldest=history[0]?.sequence??1;
     return {cursor:sequence,missed:Math.max(0,oldest-after-1),events:history.filter(e=>e.sequence>after).map(e=>structuredClone(e))};

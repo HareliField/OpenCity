@@ -11,7 +11,7 @@ def directory():
     rows = [
         "# Asphalt Heat resident models",
         "",
-        "Search by name, occupation or department ID. Each character folder holds the native Blender scene and the written persona. Photographic references and review renders appear in the same folder as fitting finishes.",
+        "Select a name to read the story. Compare each person's casting photograph with a standing render from their Blender scene. In the game, open **Residents** to follow family connections and meet the person in the city.",
         "",
     ]
     people = [
@@ -24,8 +24,8 @@ def directory():
             [
                 f"## {batch[0]['residentId']}–{batch[-1]['residentId']}",
                 "",
-                "| Resident | Age | Work | Character sources |",
-                "| --- | ---: | --- | --- |",
+                "| Resident | Age | Work | Compare | Character sources |",
+                "| --- | ---: | --- | --- | --- |",
             ]
         )
         for p in batch:
@@ -34,8 +34,13 @@ def directory():
                 " · " + p["personId"] if p["personId"] != p["residentId"] else ""
             )
             story = "../asphalt-heat/" + quote(p["biography"], safe="/#")
+            standing = (
+                f"../asphalt-heat/assets/residents/standing/{p['residentId']}.webp"
+            )
             rows.append(
-                f"| [{name}]({story}) | {p['age']} | {p['occupation']} | [Folder]({folder}) · [Blender]({folder}/character.blend) · [Persona]({folder}/persona.json) |"
+                f"| [{name}]({story}) | {p['age']} | {p['occupation']} "
+                f"| [Photo]({folder}/reference.jpg) · [Standing model]({standing}) "
+                f"| [Folder]({folder}) · [Blender]({folder}/character.blend) · [Persona]({folder}/persona.json) |"
             )
         rows.append("")
     (ROOT / "Directory.md").write_text("\n".join(rows).rstrip() + "\n")

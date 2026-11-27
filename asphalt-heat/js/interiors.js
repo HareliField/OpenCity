@@ -6,12 +6,22 @@ const _assetCenter=new V3();
 function initInteriors(){
  const m=INTERIORS.materials;
  const surface=(color,roughness=.76,metalness=0)=>new THREE.MeshStandardMaterial({color:lin(color),roughness,metalness});
- m.plaster=pbr('plaster',2.3,{color:0xe0c0a2,rough:.96,env:.22,ns:.66});
- m.brick=pbr('brick_tan',2.7,{color:0x9c7964,rough:.91,env:.22,ns:.88});
- m.tile=pbr('tiles_dark',2,{color:0xbbb6a8,rough:.48,env:.61,ns:.61});
- m.wood=pbr('planks',1.8,{color:0x9a7761,rough:.64,env:.46});
- m.wallTile=pbr('tiles_dark',2.1,{color:0x849f94,rough:.58,env:.39});
- m.ceiling=surface(0xa99b8b);
+ m.plaster=pbr('shop-plaster',1.28,{rough:.91,env:.31,ns:.54});
+ m.brick=pbr('riverside-brick',1.48,{color:0xd5beaa,rough:.88,env:.28,ns:.45});
+ m.tile=pbr('market-floor',1.16,{color:0xe1dbcf,rough:.46,env:.55,ns:.38});
+ m.wood=pbr('planks',1.07,{color:0xba9b7b,rough:.59,env:.49,ns:.50});
+ m.wallTile=surface(0x53695b,.29,.057);
+ m.wallTile.onBeforeCompile=sh=>{
+  sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 tileAt;')
+   .replace('#include <fog_vertex>','#include <fog_vertex>\ntileAt=(modelMatrix*vec4(transformed,1.)).xyz;');
+  sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\nvarying vec3 tileAt;')
+   .replace('#include <color_fragment>',`#include <color_fragment>
+    vec2 ceramic=vec2((tileAt.x+tileAt.z)/.102,tileAt.y/.204),rim=min(fract(ceramic),1.-fract(ceramic));
+    float body=smoothstep(.004,.019,min(rim.x,rim.y)),kiln=fract(sin(dot(floor(ceramic),vec2(12.47,19.69)))*1247.);
+    diffuseColor.rgb=mix(vec3(.11,.117,.102),diffuseColor.rgb*(.79+.32*kiln),body);`);
+ };
+ m.wallMirror=shopGlazing(true);
+ m.ceiling=surface(0xd4cbc1);
  m.rubber=surface(0x242421);
  m.steel=surface(0xa1a098,.37,.80);
  m.chrome=surface(0xd1d1c9,.22,.91);
@@ -42,39 +52,38 @@ function initInteriors(){
  }).catch(()=>{});
 }
 
-function hasStockRoom(row){return row===RETAIL.books||row===RETAIL.deli||row===RETAIL.barber;}
+function hasStockRoom(row){return row===RETAIL.books||row===RETAIL.deli||row===RETAIL.barber||row===RETAIL.studio;}
 
 function buildInterior(room){
  const {block,M,u0,u1,door0,door1,row,depth}=room;
  const m=INTERIORS.materials;
  const t=.17,back=-depth,ceiling=3.52;
  weatherCeilings.push({...lrect(M,u0,u1,-.08,depth+(hasStockRoom(row)?2.24:0)),h:ceiling+.15});
- const lighting=shopLightingRoom(M,u0,u1,depth);
+ const lighting=shopLightingRoom(M,u0,u1,depth+(hasStockRoom(row)?2.24:0));
  const textured=(mat,x0,x1,y0,y1,z0,z1)=>{
-  const geometry=plainBox(roomLightMaterial(mat),x0,x1,y0,y1,z0,z1,{M,uvm:2.1});
-  shadeRoomGeometry(lighting,geometry);
+  plainBox(roomLightMaterial(mat,lighting),x0,x1,y0,y1,z0,z1,{M,uvm:1});
  };
  const tile=row===RETAIL.laundry||row===RETAIL.barber||row===RETAIL.donuts;
+ const passageWindow=row===RETAIL.books&&block.i===3&&block.j===5;
  textured(tile?m.tile:m.wood,u0,u1,.148,.174,back,.19);
  textured(m.ceiling,u0,u1,ceiling,ceiling+.15,back,.08);
  for(const x of [u0,u1-t]){
-  if(row!==RETAIL.books||x!==u0){
-   textured(row===RETAIL.books?m.brick:m.plaster,x,x+t,.15,ceiling,back,.14);
-   continue;
-  }
-  for(const a of [[back,-6.20],[-3.34,-2.96],[-.10,.14]])textured(m.brick,x,x+t,.15,ceiling,a[0],a[1]);
-  textured(m.brick,x,x+t,.15,.48,-6.20,-.10);
-  textured(m.brick,x,x+t,3.16,ceiling,-6.20,-.10);
+  if(passageWindow&&x===u0){
+   for(const [a,b] of [[back,-6.20],[-3.34,-2.96],[-.10,.14]])textured(m.brick,x,x+t,.15,ceiling,a,b);
+   textured(m.brick,x,x+t,.15,.48,-6.20,-.10);
+   textured(m.brick,x,x+t,3.16,ceiling,-6.20,-.10);
+  }else textured(row===RETAIL.books?m.brick:m.plaster,x,x+t,.15,ceiling,back,.14);
  }
  const backMat=row===RETAIL.books?m.brick:row===RETAIL.cafe?m.wallTile:m.plaster;
  if(hasStockRoom(row)){
-  const center=row===RETAIL.barber?u0+1.09:u1-1.11,half=.575;
+  const center=row===RETAIL.barber?u0+1.09:row===RETAIL.studio?(u0+u1)/2-.24:u1-1.11,half=.575;
   for(const [a,b] of [[u0,center-half],[center+half,u1]]){
    textured(backMat,a,b,.15,ceiling,back,back+t);
    addRoomCollider(block,M,a,b,depth-t,depth,ceiling);
+   textured(m.darkWood,Math.max(a,u0+.16),Math.min(b,u1-.16),.174,.31,back+.168,back+.21);
   }
   textured(backMat,center-half,center+half,2.37,ceiling,back,back+t);
-  const stock=registerDoor(M,center,depth-.08,.172,1.10,2.19,'wood');
+  const stock=registerDoor(M,center,depth-.08,.172,1.10,2.19,row===RETAIL.studio?'glass':'wood');
   stock.modelId='store-door';
   const a=depth+2.24;
   textured(backMat,u0,u1,.15,ceiling,-a,-a+t);
@@ -88,8 +97,8 @@ function buildInterior(room){
  }else{
   textured(backMat,u0,u1,.15,ceiling,back,back+t);
   addRoomCollider(block,M,u0,u1,depth-t,depth+1.0,4.14);
+  textured(m.darkWood,u0+.16,u1-.16,.174,.31,back+.168,back+.21);
  }
- textured(m.darkWood,u0+.16,u1-.16,.16,.31,back+.12,back+.22);
  const spans=[[u0,door0],[door1,u1]];
  for(const [a,b] of spans){
   addRoomCollider(block,M,a,b,.015,.14,.43);
@@ -112,7 +121,7 @@ function buildInterior(room){
    }else{
     cyl(m.black,x,3.03,z,.019,.019,.49,7,{M});
     worksModel('enamel-pendant',lamp.x,2.865,lamp.z,[.46,.216,.46],0,false);
-    cyl(m.warm,x,2.87,z,.183,.183,.031,14,{M,shadow:false});
+    cyl(roomLightMaterial(m.warm,lighting),x,2.87,z,.183,.183,.031,14,{M,shadow:false});
    }
   }
  }
@@ -124,9 +133,10 @@ function buildInterior(room){
   node.position.set(p.x,.172,p.z);
   node.rotation.y=angle;
   const fallback=makeFixture(id,dims);
+  shadeFixture(fallback,p.x,.172,p.z);
   node.add(fallback);
   scene.add(node);
-  const modelId=id==='rack'?'coat-rail':id==='seat'&&row===RETAIL.studio?'linen-salon-chair':id==='plant'&&row===RETAIL.cafe?'strelitzia-planter':id==='washer'?'laundry-machine':id==='manicure-desk'?'nail-workstation':id==='display'?'patisserie-case':id==='plant'?'salon-plant':id==='stock'&&row===RETAIL.deli?'pantry-shelf':id;
+  const modelId=id==='rack'?'coat-rail':id==='seat'&&row===RETAIL.studio?'linen-salon-chair':id==='plant'&&row===RETAIL.cafe?'strelitzia-planter':id==='washer'?'laundry-machine':id==='manicure-desk'?'nail-workstation':id==='display'?'patisserie-case':id==='plant'?'salon-plant':id==='stock'?'pantry-shelf':id;
   const device=placeCityMachine(modelId,p.x,.172,p.z,angle,dims);
   INTERIORS.fixtures.push({id:modelId,node,fallback,dims,x:p.x,z:p.z,device});
   if(id==='seat'||id==='plant'||id==='reading-table'){
@@ -165,10 +175,18 @@ function buildInterior(room){
    fixture('seat',x,-2.22,[.56,.86,.54],Math.PI);
    fixture('seat',x,-4.03,[.56,.86,.54]);
   }
-  for(const x of [u0+1.64,center,u1-1.66]){
+  for(const x of [u0+1.64,u1-1.66]){
    textured(m.steel,x-.55,x+.55,1.07,2.47,back+.18,back+.207);
+   facadePlane(m.wallMirror,M,x-.507,x+.507,1.115,2.427,back+.209);
    textured(m.darkWood,x-.59,x+.59,1.026,1.086,back+.17,back+.255);
   }
+  rememberShopGlass(M,u0+1.09,u1-1.11,depth-.209,lighting);
+  const plaque=center-1.34,card=center+1.05;
+  textured(m.cream,plaque-.35,plaque+.35,1.48,1.96,back+.17,back+.196);
+  if(block.i===4&&block.j===6)retailPhoto(12,M,plaque,1.72,back+.198,.68,.46,lighting);
+  else shopNotice(0,M,plaque,1.72,back+.198,.68,.46,lighting);
+  textured(m.cream,card-.16,card+.16,1.46,1.91,back+.17,back+.196);
+  retailPhoto(13,M,card,1.685,back+.198,.30,.43,lighting);
   for(const x of [u0+.69,u1-.69]){
    textured(m.desk,x-.45,x+.45,.174,1.01,back+.20,back+.58);
    addRoomCollider(block,M,x-.45,x+.45,depth-.58,depth-.20,1.01,.174);
@@ -183,19 +201,52 @@ function buildInterior(room){
   }
   fixture('plant',u1-.77,-1.1,[.56,1.32,.56]);
  }else if(row===RETAIL.barber){
-  for(let x=u0+1.7;x<u1-.8;x+=2.22){
+  for(let x=u0+2.32;x<u1-.8;x+=2.22){
    fixture('barber-chair',x,-3.38,[.73,1.18,.85]);
    textured(m.chrome,x-.53,x+.53,1.08,2.49,back+.18,back+.22);
+   facadePlane(m.wallMirror,M,x-.493,x+.493,1.123,2.446,back+.225);
    textured(m.steel,x-.57,x+.57,1.03,1.09,back+.175,back+.25);
   }
+  rememberShopGlass(M,u0+1.17,u1-.8,depth-.225,lighting);
   fixture('counter',center+.82,back+.63,[width-2.67,.91,.81]);
   fixture('seat',u1-.81,-1.22,[.63,.90,.63],-Math.PI/2);
- }else if(row===RETAIL.books){
+ }else if(passageWindow){
   for(let x=u0+.91;x<u1-2.1;x+=1.59)fixture('bookcase',x,back+.54,[1.45,2.35,.44]);
   for(const x of [u0+1.53,u1-1.53]){
    fixture('reading-table',x,-2.65,[.95,.78,.95]);
    fixture('seat',x,-3.62,[.49,.81,.50]);
   }
+  fixture('plant',u1-.57,-1.06,[.46,1.28,.46]);
+ }else if(row===RETAIL.books){
+  // Shelving follows the party wall. From the reading area the front glazing is on the left.
+  const sx=u0+.48;
+  for(let v=1.75,bay=0;v<depth-.63;v+=1.41,bay++){
+   fixture('bookcase',sx,-v,[1.39,2.39,.43],Math.PI/2);
+   textured(m.darkWood,sx+.154,sx+.25,2.59,2.66,-v-.62,-v+.62);
+   textured(m.warm,sx+.163,sx+.21,2.585,2.595,-v-.55,-v+.55);
+   const lamp=lpt(M,sx+.252,v);
+   INTERIORS.emitters.push({x:lamp.x,y:2.54,z:lamp.z,colour:0xffe0b9,intensity:.50,reach:2.65,display:true});
+   const face=M.clone().multiply(new THREE.Matrix4().makeTranslation(sx+.225,0,-v))
+    .multiply(new THREE.Matrix4().makeRotationY(Math.PI/2));
+   plainBox(roomLightMaterial(m.darkWood,lighting),-.63,.63,.79,.824,-.012,.091,{M:face});
+   for(let j=0;j<5;j++){
+    const x=(j-2)*.204,w=.128+(j%3)*.017,h=.20+((bay+j)%3)*.024;
+    const tilt=face.clone().multiply(new THREE.Matrix4().makeTranslation(x,.824,.079))
+     .multiply(new THREE.Matrix4().makeRotationX(-.17));
+    plainBox(roomLightMaterial(m.cream,lighting),-w/2,w/2,0,h,-.020,0,{M:tilt});
+    const cover=(j+bay*3)%5;
+    if(cover<3)shopNotice(cover+3,tilt,0,h/2,.002,w,h,lighting);
+    else retailPhoto(cover+11,tilt,0,h/2,.002,w,h,lighting);
+   }
+  }
+  for(const z of [-2.28,back+2.35]){
+   fixture('reading-table',u1-1.32,z,[.89,.78,.89]);
+   fixture('seat',u1-2.03,z-.46,[.49,.81,.50],.88);
+  }
+  const frame=center-.69;
+  textured(m.darkWood,frame-.26,frame+.26,1.38,2.07,back+.175,back+.221);
+  textured(m.cream,frame-.215,frame+.215,1.425,2.025,back+.220,back+.224);
+  shopNotice(5,M,frame,1.73,back+.226,.326,.478);
   fixture('plant',u1-.57,-1.06,[.46,1.28,.46]);
  }else if(row===RETAIL.tailor){
   for(let x=u0+.99;x<u1-.8;x+=1.92)fixture('rack',x,back+.55,[1.65,2.19,.48]);
@@ -210,13 +261,19 @@ function buildInterior(room){
   if(row===RETAIL.cafe)fixture('counter',center+width*.13,-3.72,[counterWidth,1.17,.85]);
   else{
    const segment=Math.min(2.15,counterWidth*.49);
-   for(const x of [center+.17,center+.30+segment])fixture('display',x,-3.72,[segment,1.39,.85]);
+   for(const x of [center+.17,center+.30+segment]){
+    fixture('display',x,-3.72,[segment,1.39,.85]);
+    textured(m.warm,x-segment*.43,x+segment*.43,1.38,1.396,-3.47,-3.441);
+    const p=lpt(M,x,3.456);
+    INTERIORS.emitters.push({x:p.x,y:1.35,z:p.z,colour:0xffd797,intensity:.63,reach:1.94,display:true});
+   }
   }
   for(const x of [u0+1.32,u1-1.55]){
    fixture('reading-table',x,-1.5,[.76,.77,.76]);
    fixture('seat',x,-2.35,[.48,.83,.48]);
   }
  }
+ return lighting;
 }
 
 function addRoomCollider(block,M,u0,u1,v0,v1,h,y0=0,glass=false){
@@ -341,6 +398,7 @@ function requestScenery(id){
     model.traverse(mesh=>{
      if(mesh.isMesh){
       mesh.receiveShadow=true;
+      mesh.castShadow=!mesh.material.transparent;
       mesh.material.envMapIntensity=.76;
      }
     });
@@ -358,8 +416,13 @@ function requestScenery(id){
 function updateInteriors(dt,x,z,levelY=player.pos.y){
  if((INTERIORS.clock-=dt)>0)return;
  INTERIORS.clock=.30;
+ GROUND_LIGHTS.uniforms.districtFeed.value.fromArray(CITY_SERVICES.sectors.map(s=>Number(s.power)));
+ for(const room of SHOP_ROOMS){
+  room.uniforms.shopPower.value=Number(cityPowerAt(room.x,room.z)&&(!room.municipal||CITY_WORKS.grid));
+ }
  const near=[];
  for(const lamp of [...INTERIORS.emitters,...BUILDING_FITTINGS.lamps]){
+  if(lamp.display)continue;
   if(lamp.floorY!==undefined&&Math.abs(lamp.floorY-levelY)>1.5)continue;
   const distance=(lamp.x-x)**2+(lamp.z-z)**2;
   if(distance<31**2&&cityPowerAt(lamp.x,lamp.z)&&(!lamp.municipal||CITY_WORKS.grid))near.push({lamp,distance});

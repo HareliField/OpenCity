@@ -21,13 +21,13 @@ class ReviewHandler(GameHandler):
                 (self.server.game_dir / "index.html")
                 .read_bytes()
                 .replace(
-                    b"</body>", b'<script src="/__resident-camera.js"></script></body>'
+                    b"</body>", b'<script src="/__resident-camera.js"></script><script src="/__cast-camera.js"></script></body>'
                 )
             )
             self.reply(doc, "text/html; charset=utf-8")
-        elif path == "/__resident-camera.js":
+        elif path in ("/__resident-camera.js","/__cast-camera.js"):
             self.reply(
-                Path(__file__).with_name("resident_camera.js").read_bytes(),
+                Path(__file__).with_name("resident_camera.js" if path=="/__resident-camera.js" else "cast_camera.js").read_bytes(),
                 "text/javascript",
             )
         else:
@@ -42,7 +42,7 @@ class ReviewHandler(GameHandler):
         self.wfile.write(data)
 
     def do_POST(self):
-        match = re.fullmatch(r"/__frames/(work|talk|detail|recovery|standing)/(\d{4})", self.path)
+        match = re.fullmatch(r"/__frames/(work|talk|detail|recovery|standing|cast)/(\d{4})", self.path)
         expected = "http://127.0.0.1:" + str(self.server.server_port)
         if (
             not match

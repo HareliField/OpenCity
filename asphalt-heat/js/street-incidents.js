@@ -43,6 +43,7 @@ function givePedestrianBag(p){
  });
 }
 function newStreetIdentity(p){
+ if(p.castAssigned){delete p.castAssigned;delete p.personId;delete p.residentName;}
  p.startledAt=null;p.scenePass=null;
  if(p.neighborhood){delete p.personId;delete p.residentName;delete p.neighborhood;}
  p.bag?.parent?.remove(p.bag);p.bag=null;
@@ -62,7 +63,7 @@ function seedNeighborhoodWalkers(){
   const p=peds[i];if(!p)break;
   p.bag?.parent?.remove(p.bag);
   if(TPL[model]){removeChar(p.c);p.c=makeChar(model,{});}
-  p.personId=id;p.residentName=name;p.neighborhood='Old Town counter';PoliceDepartment.identify(p);
+  globalThis.ResidentCast?.assign(p,'oldtown',id);p.personId=id;p.residentName=name;p.neighborhood='Old Town counter';PoliceDepartment.identify(p);
   p.R=home.r;p.t=home.t-14+i*5.6+rnd(-.65,.65);p.dir=i%2?-1:1;p.mode='walk';
   const [x,z]=perimPos(p.R,p.t);p.pos.set(x,groundY(x,z),z);
   collideWorld(p.pos,.31);p.c.root.position.copy(p.pos);p.c.root.visible=true;

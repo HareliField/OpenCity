@@ -270,13 +270,13 @@ def library_action(rig, key):
 
 def ground_action(scene, rig, action, include_body=False):
     # The fitted leg lengths and shoe outsole differ from the capture performer.
-    shoes = next(o for o in scene.objects if o.name in ("Cloth_shoes", "Cloth_boots"))
-    objects = [shoes]
+    objects = [o for o in scene.objects if o.name in ("Cloth_shoes","Cloth_boots","Shoe l","Shoe r")]
+    if not objects:raise ValueError("This character has no fitted shoes")
     if include_body:
         objects += [
             o
             for o in scene.objects
-            if o.name in ("Body", "Cloth_jacket", "Cloth_jeans")
+            if o.name in ("Body","Cloth_jacket","Cloth_jeans") or o.name.startswith(("Coat","Sleeve","Trouser leg"))
         ]
     correction = []
     for frame in range(1, scene.frame_end + 1):

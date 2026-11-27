@@ -108,7 +108,7 @@ def personal_gesture(track, person):
 def bake(rig, events, continue_take=False):
     posture = rig.get("posture", "standing")
     injured = bool(rig.get("injured", False))
-    person = json.loads(bpy.data.texts[rig["personaText"]].as_string())
+    person = json.loads(bpy.data.texts[rig.get("personaText","Persona")].as_string())
     parts, beats = [], []
     end = 0
     for event in events:
@@ -211,7 +211,8 @@ if __name__ == "__main__":
         raise ValueError("Use a separate output file for the event take")
     bpy.ops.wm.open_mainfile(filepath=str(source), load_ui=False)
     rig = next(o for o in bpy.context.scene.objects if o.type == "ARMATURE")
-    if rig.get("residentId") != args.resident:
+    native_id=rig.get("residentId") or json.loads(bpy.data.texts[rig.get("personaText","Persona")].as_string())["residentId"]
+    if native_id != args.resident:
         raise ValueError("The saved take belongs to a different resident")
     action = bake(rig, args.events, continue_take=bool(args.from_scene))
     bpy.context.preferences.filepaths.save_version = 0

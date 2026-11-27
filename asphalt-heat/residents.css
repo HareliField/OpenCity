@@ -1,0 +1,190 @@
+.residentDirectory {
+  box-sizing: border-box;
+  width: min(820px, 94vw);
+  max-height: 86dvh;
+  overflow: hidden;
+  border: 1px solid #777064;
+  border-radius: 8px;
+  background: #252827;
+  color: #f2f0e9;
+  padding: 20px;
+  font:
+    15px/1.45 system-ui,
+    sans-serif;
+}
+.residentDirectory::backdrop {
+  background: #0b1010b9;
+}
+.residentDirectory header,
+.residentDirectory footer,
+.profileHead,
+.relatedResidents {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.residentDirectory header {
+  justify-content: space-between;
+}
+.residentDirectory h2,
+.residentDirectory h3,
+.residentDirectory p {
+  margin: 0 0 6px;
+}
+.residentDirectory button,
+.residentDirectory input {
+  font: inherit;
+  color: inherit;
+  border: 1px solid #68695f;
+  border-radius: 4px;
+  background: #303532;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.residentDirectory button:focus-visible,
+.residentDirectory input:focus {
+  outline: 2px solid #d9b681;
+  outline-offset: 1px;
+}
+.residentDirectory input {
+  width: 100%;
+  margin: 12px 0;
+  cursor: text;
+}
+.directoryBody {
+  display: grid;
+  grid-template-columns: minmax(180px, 30%) 1fr;
+  gap: 20px;
+  height: min(60vh, 580px);
+}
+.directoryBody section {
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+.directoryBody nav,
+.directoryBody article {
+  overflow: auto;
+}
+.directoryBody nav button {
+  display: block;
+  text-align: start;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #484b45;
+  background: transparent;
+  border-radius: 0;
+}
+.directoryBody nav button:hover {
+  background: #3a3d37;
+}
+.directoryBody small {
+  display: block;
+  font-size: 12px;
+  color: #bdbdb3;
+}
+.directoryBody footer {
+  flex-wrap: wrap;
+  margin-top: 8px;
+  gap: 5px;
+  font-size: 12px;
+}
+.directoryBody footer span {
+  flex-basis: 100%;
+}
+.profileHead {
+  align-items: flex-start;
+}
+.profileHead img {
+  width: 110px;
+  height: 165px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.profileHead h3 {
+  font-size: 23px;
+}
+.directoryBody h4 {
+  font-size: 14px;
+  color: #dfbd8a;
+  margin: 16px 0 3px;
+}
+.relatedResidents {
+  flex-wrap: wrap;
+  margin: 7px 0;
+}
+@media (max-width: 560px) {
+  .residentDirectory {
+    padding: 12px;
+    font-size: 13px;
+  }
+  .directoryBody {
+    grid-template-columns: minmax(100px, 32%) 1fr;
+    gap: 8px;
+  }
+  .profileHead {
+    display: block;
+  }
+  .profileHead img {
+    width: 70px;
+    height: 100px;
+    float: right;
+  }
+  .profileHead h3 {
+    font-size: 17px;
+  }
+}
+#residentsButton {
+  pointer-events: auto;
+  min-height: 36px;
+  padding: 0 11px;
+  margin-top: 8px;
+  background: rgba(0, 0, 0, 0.68);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 9px;
+  color: #fff;
+  font:
+    700 13px system-ui,
+    sans-serif;
+  cursor: pointer;
+}
+#residentsButton:focus-visible {
+  outline: 2px solid #ffe08a;
+  outline-offset: 2px;
+}
+.profileHead select {
+  font: inherit;
+  background: #303532;
+  border: 1px solid #68695f;
+  color: inherit;
+  border-radius: 4px;
+  padding: 5px;
+  display: block;
+  margin: 9px 0 4px;
+  max-width: 100%;
+}
+
+.residentComparison {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0 4px;
+}
+.residentComparison figure {
+  margin: 0;
+  flex: 1;
+  max-width: 155px;
+}
+.residentComparison img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 2/3;
+  object-fit: contain;
+  background: #c7c5c0;
+  border-radius: 3px;
+}
+.residentComparison figcaption {
+  margin: 3px 0;
+  font-size: 12px;
+  color: #c7c6bc;
+}

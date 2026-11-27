@@ -235,7 +235,7 @@ function departmentPerson(member,c,point,uniform){
  const unit={personId:member.personId,officer:member,c,pos:new V3(point.x,point.y||.16,point.z),
   kind:uniform?'cop':'civilian',team:uniform?'law':'staff',hp:uniform?100:65,dead:false,downT:0};
  PoliceDepartment.identify(unit);
- departmentPeople.push(unit);return unit;
+ globalThis.ResidentCast?.bind(c,member.personId,uniform);departmentPeople.push(unit);return unit;
 }
 function removeDepartmentPerson(unit,release=true){
  const i=departmentPeople.indexOf(unit);

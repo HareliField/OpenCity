@@ -2,21 +2,33 @@
 
 [One-resident factory and Ida’s movement study](Factory.md)
 
-Each resident has an individual native Blender scene under `Residents/AH-R####/character.blend`. Open it alongside the `Anatomy` folder. The body, hands, eyes, lashes, teeth, tongue, clothes and hair are separate parts. Each rig has 53 joints and its own listening gesture. The scene stores the resident’s sculpt controls, proportions, face, wardrobe palette and strand groom. Shared topology and textures keep the cast small enough to edit locally.
+All 1,500 residents have an individual casting photograph, story, fitted game character and editable headless Blender master. Open the directory to find a person, then open their native scene beside the game assets. Use **Residents** in the game to compare the photograph with the actual standing mesh, meet the character, or preview a motion. [Character directory](Directory.md) · [City stories](../asphalt-heat/stories/residents/directory.md) · [Lev at the port](../asphalt-heat/films/lev-bellamy-at-the-port.mp4)
 
-The armature carries the stable resident and police identifiers. The **Persona.json** text in the scene contains the resident’s biography, voice, agenda, family, social relationships and three authored reactions. The same data is available as plain JSON beside the scene. The native scenes link to 24 shared full-body actions. Ida’s fitted scene adds her timed response to Rafael. [Motion library and event playback](Motion/README.md) The three written reactions are available to a game system as data.
-
-[Find a character by name](Directory.md) · [Browse the written cast](../asphalt-heat/stories/residents/directory.md) · [Open Ida’s character folder](Residents/AH-R0001) · [Open the first 150 biographies](../asphalt-heat/stories/residents/01)
+The 1,499 manufactured residents share 53-joint anatomical topology, including three joints per digit. Each person's fitted skeleton, face, scalp, clothing sections, surfaces and performance are stored individually. The native **Persona** text contains their family, relationships, voice, work, agenda and three reactions. The **Walk** and **Speak** actions are editable in Blender. The event tool fits additional capture takes to the same person. [Event playback and capture sources](Motion/README.md)
 
 ## Photography and sculpting
 
-A resident with a `reference.jpg` has a full-length casting photograph. `photo-fit.json` records the reference checksum, measured facial proportions, body landmarks and sampled colors. Face and garment maps register visible detail to the neutral 3D surface. Sides, backs, mouth interiors and hidden clothing folds come from the anatomy and wardrobe library. A resident without photographic measurements has a story-based casting sculpt.
+There are 143 independently generated studio references. The other 1,357 are individually composed photographic portraits. Their casting receipts identify the source wardrobe, hair, face and feature references. The factory registers the complete standing silhouette, 468 facial landmarks and visible hand landmarks. Front garments use the photographed folds and closures. The factory reconstructs garment depth, concealed layers and the rear groom. [Lev’s photo and two sculpt views](Reviews/lev-bellamy.jpg)
 
-The native scene supports posing and adjustment of the sculpt controls. To edit vertices directly, materialize a full local mesh with the command below. The individual glTF stores skinning, identity morphs, materials and persona data. It points to the buffer library under `Anatomy`. The Blender scene also includes the fitted photographic materials and groom when available.
+The editable meshes and skin weights live in each native master. Its textures and the individual source glTF resolve to the same files that ship under `asphalt-heat/assets/residents`. Keep the repository directory layout when moving a master. Each manufactured resident's `manufacture.json` identifies the reference photograph, geometry and Blender scene by checksum.
 
 Ida’s folder contains two independent reconstructions. `character.blend` is the open-source sculpt. `scan-pilot.blend` contains the rigged Meshy comparison model generated from the same photograph. `scan-receipt.json` records the 35-credit scan and 5-credit rig. The other residents use the open-source workflow.
 
 ## Rebuild from source
+
+From the repository root, use a Python environment with NumPy, SciPy, Pillow, OpenCV and MediaPipe, a Blender command-line executable, and libzstd. The MediaPipe model directory contains `face_landmarker.task`, `pose_landmarker.task`, `hair.tflite` and `hand_landmarker.task`. [Face](https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker) · [Pose](https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker) · [Multiclass selfie segmentation](https://ai.google.dev/edge/mediapipe/solutions/vision/image_segmenter) · [Hands](https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker)
+
+```sh
+python 'Character Sources/tools/population_photos.py' "$CAST_MODEL_DIR"
+python 'Character Sources/tools/manufacture_residents.py' asphalt-heat/assets/residents "$BLENDER" --hand-model "$CAST_MODEL_DIR/hand_landmarker.task"
+python 'Character Sources/tools/cast_motions.py' asphalt-heat/assets/residents
+"$BLENDER" -b --threads 3 --python-exit-code 1 --python 'Character Sources/tools/cast_previews.py' -- asphalt-heat/assets/residents/standing
+python 'Character Sources/tools/check_population.py'
+```
+
+The manufacturer checkpoints each native model and game package. Starting it again processes outstanding residents. Blender opens each completed master to verify the rig, textures and persona and render its standing portrait. The validation tool checks the complete roster, skin weights, file references, checksums, family links and the five-billion-byte budget.
+
+## Ida’s sculpt and source provenance
 
 Run from the repository root. All Blender commands below use background mode. Building an expanded sculpt creates a larger per-resident file.
 
