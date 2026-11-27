@@ -4,9 +4,9 @@ You are my coding agent. Build the change I describe below in Asphalt Heat, show
 
 ## 1. Build locally
 
-- Use the existing checkout of https://github.com/HareliField/asphalt-heat, or clone it if needed. Read `AGENTS.md`, `asphalt-heat/README.md`, and any instructions that apply to the files you touch. Use Git on a local contribution branch, preserve other people's work, and edit the project with your normal coding tools.
-- Props, shops, NPCs, gameplay interactions, weather, tunnels, water, and release changes are fair to propose. Keep the city grounded and use assets you have permission to redistribute. Small street details are welcome. Major street redesigns and superpowers are outside the shared-city rules. Flag changes to shared systems, gameplay rules, or release tooling for maintainer review.
-- Use the game's existing systems where they fit. Run the project checks relevant to your change. If you have chat access only, give me the prompt to paste into a coding session with local files, a terminal, the Codex in-app browser, and GitHub access for the later PR step. Report any unavailable capability accurately.
+- Use the existing checkout of https://github.com/HareliField/asphalt-heat, or clone it if needed. Read the repository instructions and the City rulebook and How contributions work sections in asphalt-heat/README.md before editing. Follow any instructions that apply to your checkout. Preserve other people's work.
+- Classify the idea under the rulebook. Build a scoped change that fits the existing city. Flag shared-system or release changes for maintainer review. If the idea is outside the rules, explain the rule and suggest a grounded alternative before editing.
+- Reuse the game's existing systems where they fit. Run the relevant checks and record what you verified. If you have chat access only, hand off the prompt and idea to a coding session with local files, a terminal, the Codex in-app browser, and GitHub access for the later PR step. Report unavailable capabilities accurately.
 
 ## 2. Show me the change
 
@@ -18,7 +18,7 @@ You are my coding agent. Build the change I describe below in Asphalt Heat, show
 
 Ask me: **"Do you want me to submit this previewed change as a pull request to the shared Asphalt Heat project?"** Wait for a clear yes. Until then, keep the work local, including when project instructions normally call for pushing. If I ask for a revision, update the preview and ask again.
 
-After I say yes, commit the previewed change, push a contribution branch to my GitHub fork or an authorized feature branch, and open a PR against the upstream default branch using GitHub tools or `gh`. Include what changed, where to try it, verification results, asset sources if applicable, and anything that needs maintainer review. Give me the PR link. Leave merging and releasing to the project reviewers.
+After I say yes, commit the previewed change, push a contribution branch to my GitHub fork or an authorized feature branch, and open a PR against the upstream default branch using GitHub tools or `gh`. Include what changed, where to try it, verification results, asset sources if applicable, and anything that needs maintainer review. Give me the PR link so I can share it with the city reviewer. Leave the rules decision, merging and releasing to the project reviewers.
 
 ## My change
 
