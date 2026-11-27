@@ -2,6 +2,12 @@
 
 An original browser-based 3D coastal city. The 16 × 16 city blocks cover 1,024 × 1,024 metres, and the freight terminal extends south from the warehouse district. Two graded roads add a second level and a curved route across the grid. Follow a storm across the waterfront, pull over to visit the shops, or head east to the boardwalk and lighthouse.
 
+## Collaborative city website
+
+With the game server running, open the [city website](http://127.0.0.1:8765/city/). Play launches the game. The contribution demo lets you write an idea, build an illustrative preview, see a sample review and run a sample release. **Copy for my agent** packages your idea, site context and review expectations for your own agent.
+
+The demo runs locally in the browser. It uses example plans and outcomes and does not create playable contributions, GitHub pull requests or production releases. Custom prompts stay pending for an agent handoff.
+
 ## Play locally
 
 From the game directory, run:
