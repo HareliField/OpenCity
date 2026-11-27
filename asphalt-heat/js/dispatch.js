@@ -356,16 +356,23 @@ function lawHasReserve(){
  return wanted>0&&LAW.spent<LAW.budgets[wanted];
 }
 
+function approachCost(car){
+ const dx=LAW.anchor.x-car.pos.x,dz=LAW.anchor.z-car.pos.z;
+ const distance=Math.hypot(dx,dz);
+ const backwards=dx*Math.sin(car.h)+dz*Math.cos(car.h)<-distance*.28;
+ return distance+(backwards?45:0);
+}
+
 function serviceDispatch(){
  if(state!=='play'||!wanted||!LAW.known||time<LAW.dispatchAt)return;
  const active=cars.filter(c=>c.driver==='police'&&c.dispatched&&!c.dead).length+cops.filter(u=>!u.dead).length;
  if(active>=LAW.activeLimit[wanted]||!lawHasReserve())return;
  const needMetro=wanted>=4&&PoliceDepartment.available('Metro SWAT')&&!cars.some(c=>c.driver==='police'&&!c.dead&&c.unit==='swat')&&!cops.some(u=>!u.dead&&u.kind==='swat');
  const patrol=!needMetro&&cars.filter(c=>c.driver==='police'&&!c.dispatched&&!c.dead&&PoliceDepartment.duty(c.officer))
-  .sort((a,b)=>dist2(a.pos,LAW.anchor)-dist2(b.pos,LAW.anchor))[0];
+  .sort((a,b)=>approachCost(a)-approachCost(b))[0];
  const parked=PoliceDepartment.available('Patrol')&&cars.filter(c=>c.stationFleet&&c.type==='police'&&!c.driver&&!c.dead&&!c.returningOfficer)
-  .sort((a,b)=>dist2(a.pos,LAW.anchor)-dist2(b.pos,LAW.anchor))[0];
- const closerStation=parked&&(!patrol||dist2(parked.pos,LAW.anchor)+28<dist2(patrol.pos,LAW.anchor));
+  .sort((a,b)=>approachCost(a)-approachCost(b))[0];
+ const closerStation=parked&&(!patrol||approachCost(parked)+22<approachCost(patrol));
  const responder=needMetro?stationResponder('swat')||patrol||stationResponder('police'):
   closerStation?stationResponder('police',parked)||patrol:patrol||stationResponder('police');
  LAW.dispatchAt=time+(wanted===1?4:2.5);

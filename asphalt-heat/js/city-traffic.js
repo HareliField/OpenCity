@@ -367,10 +367,13 @@ function parkServiceVehicles(place,type,count){
   }
  }
  choices.sort((a,b)=>dist2(a,place.door)-dist2(b,place.door));
- for(const p of choices){
+ const headings=new Set();
+ while(count>0&&choices.length){
+  const preferred=type==='police'?choices.findIndex(p=>!headings.has(p.h)):-1;
+  const [p]=choices.splice(Math.max(0,preferred),1);
   if(cars.some(c=>dist2(c.pos,p)<6.4))continue;
   const car=spawnCar(type,p.x,p.z,p.h,null);car.keep=true;
-  if(type==='police')car.stationFleet=place;
-  if(--count===0)break;
+  if(type==='police'){car.stationFleet=place;headings.add(p.h);}
+  count--;
  }
 }

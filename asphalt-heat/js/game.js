@@ -506,7 +506,10 @@ function aiPolice(c,dt){
  c.siren=see||LAW.seen||distance>46;
  if(c.phys&&c.upY<.4){disembarkPolice(c);return;}
  const nearAccess=access&&!street&&dist2(c.pos,access.goal)<8;
- if(pedestrian&&Math.abs(c.pos.y-target.y)<3&&(!tracking&&distance<19||clear&&distance<15||nearAccess)){
+ const queued=Math.abs(c.speed)<.8&&blockedAhead(c)&&distance<135;
+ c.policeWait=queued?(c.policeWait||0)+dt:0;
+ const walkFromQueue=!tracking&&c.policeWait>4.5;
+ if(pedestrian&&Math.abs(c.pos.y-target.y)<3&&(!tracking&&distance<19||clear&&distance<15||nearAccess||walkFromQueue)){
   const door=carDoorSpot(c);
   if(door){
    drive(c,Math.abs(c.speed)>1.35?-1:0,0,Math.abs(c.speed)<1.35,dt);
@@ -556,7 +559,7 @@ function disembarkPolice(c,at=carDoorSpot(c)){
  if(!at)return;
  const unit=leavePoliceVehicle(c,at);
  if(!unit)return;
- unit.car=c;c.returningOfficer=unit;
+ unit.car=c;c.returningOfficer=unit;c.policeWait=0;
  c.siren=false;c.block=false;c.closure=null;
  PoliceDepartment.bindings.set(unit.officer.personId,'Area search');
 }
