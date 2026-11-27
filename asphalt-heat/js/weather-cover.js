@@ -34,7 +34,8 @@ class WeatherCoverMap {
 function buildWeatherCover() {
  const map=new WeatherCoverMap();
  for (const b of blocks) for (const r of b.bld){
-  if(r.obb && r.normal?.y>.1){
+  if(r.construction){for(const l of r.levels)map.stamp({...l.rect,h:l.h});}
+  else if(r.obb && r.normal?.y>.1){
    const n=r.normal,p=r.obb.p;
    const edge=(Math.abs(n.x)+Math.abs(n.z))*WEATHER_CELL*.5;
    map.stamp(r,(x,z)=>p.y+(r.obb.h*.5-n.x*(x-p.x)-n.z*(z-p.z)-edge)/n.y);
@@ -43,7 +44,11 @@ function buildWeatherCover() {
  for (const r of weatherCeilings) map.stamp(r);
  for (const floor of CITY_WORKS.floors) map.stamp({...floor,h:floor.y});
  for (const deck of STREET.steps) if(deck.y>.35) map.stamp({...deck,h:deck.y});
- for (const r of STATIC) if (!r.obb && r.h>.35) map.stamp(r);
+ for (const r of STATIC) if (!r.obb && !r.convex && r.h>.35) map.stamp(r);
+ for (const r of CITY_WORKS.pitchedRoofs||[]) map.stamp(r,(x,z)=>{
+  const inset=Math.min(x-r.x0,r.x1-x,z-r.z0,r.z1-z,r.run);
+  return r.eave+r.rise*Math.max(0,inset)/r.run;
+ });
  stampCoveRoof(map);
  for (const route of GRADE_ROADS.routes) for (const s of route.sections) {
   const pad=s.half+.2;

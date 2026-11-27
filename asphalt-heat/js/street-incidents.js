@@ -7,8 +7,27 @@ const neighborhoodResidents=[
  ['AH-R0037','Art Robles','Business_Male_01'],['AH-R0038','Toby Lin','Male_Adult_03']
 ];
 const bagLeather=new THREE.MeshStandardMaterial({color:0x774a30,roughness:.78});
-const handsetMaterial=new THREE.MeshStandardMaterial({color:0x1c292f,roughness:.38});
 const bagHandle=new THREE.TorusGeometry(.096,.012,8,16,Math.PI);
+let callHandsetModel;
+function callHandset(){
+ if(!callHandsetModel){
+  const phone=new THREE.Group(),outline=new THREE.Shape(),w=.034,h=.071,r=.006;
+  outline.moveTo(-w+r,-h);outline.lineTo(w-r,-h);outline.quadraticCurveTo(w,-h,w,-h+r);
+  outline.lineTo(w,h-r);outline.quadraticCurveTo(w,h,w-r,h);
+  outline.lineTo(-w+r,h);outline.quadraticCurveTo(-w,h,-w,h-r);
+  outline.lineTo(-w,-h+r);outline.quadraticCurveTo(-w,-h,-w+r,-h);
+  const shell=new THREE.Mesh(new THREE.ExtrudeGeometry(outline,{depth:.007,bevelEnabled:true,bevelThickness:.001,
+   bevelSize:.001,bevelSegments:2,curveSegments:4}),new THREE.MeshStandardMaterial({color:0x101416,roughness:.47,metalness:.43}));
+  shell.position.z=-.004;phone.add(shell);
+  const lensMaterial=new THREE.MeshStandardMaterial({color:0x09111b,roughness:.14,metalness:.62});
+  for(const y of [.056,.045]){
+   const lens=new THREE.Mesh(new THREE.CylinderGeometry(.0043,.0043,.003,12),lensMaterial);
+   lens.rotation.x=Math.PI/2;lens.position.set(-.022,y,.005);phone.add(lens);
+  }
+  callHandsetModel=phone;
+ }
+ return callHandsetModel.clone();
+}
 
 function givePedestrianBag(p){
  const bag=new THREE.Group(),body=new THREE.Mesh(unitBox,bagLeather);
@@ -36,7 +55,7 @@ function seedNeighborhoodWalkers(){
   return !best||d<best.d?{r,t,d}:best;
  },null);
  // The six people who know each other from the Old Town bicycle story walk ordinary sidewalk routes.
- const residents=neighborhoodResidents.filter(([id])=>!PoliceDepartment.cases.some(f=>f.victimId===id||f.suspect===id));
+ const residents=neighborhoodResidents.filter(([id])=>!PoliceDepartment.cases.some(f=>f.victimId===id||f.pendingScene?.victimId===id||f.suspect===id));
  for(let i=residents.length-1;i>0;i--){
   const j=rint(0,i);[residents[i],residents[j]]=[residents[j],residents[i]];
  }
@@ -133,6 +152,14 @@ function seeStreetAttack(p,a){
 }
 function strikeInStreet(a){
  const {victim,offender}=a,pd=PoliceDepartment,at=victim.pos.clone();
+ // Snapshot hearing at the instant of the shot. Someone arriving later can only report what they find.
+ a.heard=new Map();
+ for(const p of peds){
+  if(p===victim||p===offender||p.dead)continue;
+  const distance=p.pos.distanceTo(offender.pos);
+  if(distance>44||distance>30&&!los(p.pos,offender.pos))continue;
+  a.heard.set(p.personId,{ped:p,at:p.pos.clone(),distance});
+ }
  for(const p of streetWitnesses(a)){
   if(seeStreetAttack(p,a))a.eyes.set(p.personId,Boolean(p.neighborhood&&p.neighborhood===offender.neighborhood));
   if(p!==a.onlooker&&freeWalker(p)&&dist2(p.pos,at)<9){
@@ -157,25 +184,50 @@ function strikeInStreet(a){
  globalThis.asphaltAgentEvent?.('street-death',{file:a.file.id,victim:victim.personId});
 }
 function beginStreetCall(a){
- const ped=streetWitnesses(a).find(p=>freeWalker(p)||p===a.onlooker&&p.mode==='encounter');
+ const eligible=p=>freeWalker(p)||p===a.onlooker&&p.mode==='encounter'&&!p.dead;
+ const nearby=streetWitnesses(a).filter(eligible);
+ const listeners=[...a.heard.entries()].filter(([id,h])=>h.ped.personId===id&&eligible(h.ped))
+  .sort(([,left],[,right])=>left.distance-right.distance);
+ // An eyewitness can call after fleeing, even after losing sight of the scene.
+ let ped=nearby.find(p=>a.eyes.has(p.personId))||listeners.find(([id,h])=>a.eyes.has(id)&&dist2(h.ped.pos,a.offender.pos)>8)?.[1].ped;
+ let observation='eyewitness';
+ if(!ped){
+  ped=nearby.find(p=>{
+   const dx=a.at.x-p.pos.x,dz=a.at.z-p.pos.z,d=Math.hypot(dx,dz);
+   return d<2.6||d<12&&dx*Math.sin(p.c.yaw)+dz*Math.cos(p.c.yaw)>d*.16;
+  });
+  observation='discovery';
+ }
+ if(!ped&&time-a.since>=1.65){
+  ped=listeners.find(([,h])=>dist2(h.ped.pos,a.offender.pos)>8)?.[1].ped;
+  observation='heard';
+ }
  if(!ped)return;
  ped.mode='encounter';faceStreetActor(ped,a.at);
- a.call={ped,id:ped.personId,due:time+3.6};a.phase='Calling 911';
- globalThis.asphaltAgentEvent?.('911-dial',{file:a.file.id,caller:ped.personId});
+ a.call={ped,id:ped.personId,observation,due:time+3.6};a.phase='Calling 911';
+ globalThis.asphaltAgentEvent?.('911-dial',{file:a.file.id,caller:ped.personId,observation});
 }
 function receiveStreetCall(a){
- const {ped,id}=a.call;
+ const {ped,id,observation}=a.call;
  if(ped.dead||ped.personId!==id||ped.mode!=='encounter'){
   a.call=null;a.phase='Aftermath';return;
  }
  if(time<a.call.due)return;
- const f=a.file,seen=a.eyes.has(id),recognized=seen&&a.eyes.get(id);
- const name=streetResidentName(ped);
- const statement=recognized?'I saw '+a.attacker.name+' fire. I know them from the Old Town counter.':
-  seen?'I saw someone fire, but I could not identify them.':'I found someone down on the pavement. I did not see who did it.';
- f.caller={id,name};f.evidence.push({type:'Statement',source:name,value:statement});
+ const f=a.file,name=streetResidentName(ped);
+ const recognized=observation==='eyewitness'&&a.eyes.get(id);
+ let statement='I found someone down on the pavement. I did not see who did it.';
+ if(observation==='heard'){
+  const reportArea=streetAddress(a.heard.get(id).at);
+  statement='I heard a shot while I was near '+reportArea+'. I could not see who fired.';
+  f.pendingScene={title:f.title,victimId:f.victimId,victimName:f.victimName,evidence:f.evidence.slice()};
+  f.kind='Gunfire report';f.title='Gunfire report near '+reportArea;
+  f.victimId=null;f.victimName=null;f.evidence=[];f.reportArea=reportArea;
+ }else if(observation==='eyewitness'){
+  statement=recognized?'I saw '+a.attacker.name+' fire. I know them from the Old Town counter.':'I saw someone fire, but I could not identify them.';
+ }
+ f.caller={id,name,observation};f.evidence.push({type:'Statement',source:name,value:statement});
  if(recognized){f.contact=a.attacker.id;f.subjectName=a.attacker.name;}
- PoliceDepartment.receiveCall(f,'911 · '+name,statement+' Location received. Patrol requested.');
+ PoliceDepartment.receiveCall(f,'911 · '+name,statement+(observation==='heard'?' Approximate area received.':' Location received.')+' Patrol requested.');
  a.phase='Reported';a.since=time;
 }
 function interviewAtScene(a){
@@ -196,11 +248,36 @@ function streetPedReserved(p){
  if(!a.file)return p===a.offender||p===a.victim||p===a.onlooker;
  return (p===a.victim||p===a.call?.ped)&&['Unreported','Filed','Patrol assigned','Scene review','Lab review'].includes(a.file.stage);
 }
-function poseStreetProps(p){
- if(p.bag&&p.c.bones.RightHand){
-  const world=p.c.bones.RightHand.getWorldPosition(new V3());p.c.root.worldToLocal(world);p.bag.position.copy(world);
+function handoverGrip(p,a){
+ if(!a||p!==a.victim&&p!==a.offender||a.phase!=='Dispute'&&a.phase!=='Struggle')return null;
+ const other=p===a.victim?a.offender:a.victim;
+ const b=p.c.bones;
+ if(!b.RightArm||!b.RightForeArm||!b.RightHand||!other.c.bones.RightArm)return null;
+ const age=time-a.since,victim=p===a.victim;
+ const smooth=THREE.MathUtils.smoothstep;
+ const weight=a.phase==='Dispute'?smooth(age,victim?.7:1.15,victim?1.85:2.18):
+  1-smooth(age,victim?.08:.56,victim?.76:1.72);
+ if(weight===0)return null;
+ if(!a.gripCenter){
+  const carrying=a.victim.c.bones.RightArm.getWorldPosition(new V3());
+  const receiving=a.offender.c.bones.RightArm.getWorldPosition(new V3());
+  a.gripCenter=carrying.clone().lerp(receiving,.5);a.gripCenter.y=Math.min(carrying.y,receiving.y)-.225;
+  a.gripSide=new V3(Math.cos(a.victim.c.yaw),0,-Math.sin(a.victim.c.yaw));
  }
- const a=streetIncidents.current;
+ const offset=a.gripSide.clone().multiplyScalar(victim?.031:-.031);
+ const contact=a.gripCenter.clone().add(offset);
+ const hand=b.RightHand.getWorldPosition(new V3()).lerp(contact,weight);
+ const pole=new V3(-.45*Math.cos(p.c.yaw),-1,.45*Math.sin(p.c.yaw));
+ reachDriverLimb(b.RightArm,b.RightForeArm,b.RightHand,hand,pole);
+ return weight;
+}
+function poseStreetProps(p){
+ const a=streetIncidents.current,gripWeight=handoverGrip(p,a);
+ if(p.bag&&p.c.bones.RightHand){
+  const world=p.c.bones.RightHand.getWorldPosition(new V3());
+  if(gripWeight)world.lerp(a.gripCenter,gripWeight);
+  p.c.root.worldToLocal(world);p.bag.position.copy(world);
+ }
  if(a?.phase!=='Calling 911'||p!==a.call?.ped||p.dead)return;
  const b=p.c.bones,forward=new V3(Math.sin(p.c.yaw),0,Math.cos(p.c.yaw));
  pointBone(b.RightArm,b.RightForeArm,new V3(forward.x*.52,-.80,forward.z*.52).normalize());
@@ -210,7 +287,7 @@ function poseStreetProps(p){
  const ear=head.addScaledVector(side,.106);ear.y+=.065;
  pointBone(b.RightForeArm,b.RightHand,ear.clone().sub(b.RightForeArm.getWorldPosition(new V3())).normalize());
  if(!a.phone){
-  a.phone=new THREE.Mesh(unitBox,handsetMaterial);a.phone.scale.set(.078,.146,.016);scene.add(a.phone);
+  a.phone=callHandset();scene.add(a.phone);
  }
  a.phone.position.copy(ear);a.phone.rotation.set(.07,Math.atan2(side.x,side.z),-.11);
 }
@@ -227,8 +304,8 @@ function updateStreetEncounter(dt){
   faceStreetActor(offender,victim.pos);faceStreetActor(victim,offender.pos);
   if(a.phase==='Approach'){
    const dx=victim.pos.x-offender.pos.x,dz=victim.pos.z-offender.pos.z,d=Math.hypot(dx,dz);
-   if(d>.96){
-    const stride=Math.min(d-.90,1.6*dt);offender.pos.x+=dx/d*stride;offender.pos.z+=dz/d*stride;collideWorld(offender.pos,.29);
+   if(d>.78){
+    const stride=Math.min(d-.74,1.6*dt);offender.pos.x+=dx/d*stride;offender.pos.z+=dz/d*stride;collideWorld(offender.pos,.29);
     return;
    }
    a.phase='Dispute';a.since=time;victim.c.talk=offender.c.talk=1;
@@ -245,11 +322,16 @@ function updateStreetEncounter(dt){
    a.phase='Struggle';a.since=time;
   }else if(a.phase==='Struggle'&&time-a.since>=2){
    scene.attach(a.bag);offender.bag=null;
-   a.bag.position.y=groundY(a.bag.position.x,a.bag.position.z,victim.pos.y)+.32;
+   a.dropHeight=a.bag.position.y;
+   a.pavement=groundY(a.bag.position.x,a.bag.position.z,victim.pos.y)+.32;
    if(!offender.c.gun)offender.c.gun=makeGun();
    offender.c.aim=.58;a.phase='Draw';a.since=time;
-  }else if(a.phase==='Draw'&&time-a.since>=.25){
-   if(dist2(offender.pos,victim.pos)<=1.7)strikeInStreet(a);else finishStreetEncounter(a);
+  }else if(a.phase==='Draw'){
+   const fall=time-a.since;
+   a.bag.position.y=Math.max(a.pavement,a.dropHeight-4.905*fall*fall);
+   if(fall>=.38){
+    if(dist2(offender.pos,victim.pos)<=1.7)strikeInStreet(a);else finishStreetEncounter(a);
+   }
   }
   return;
  }

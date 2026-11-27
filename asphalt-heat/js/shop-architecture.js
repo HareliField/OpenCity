@@ -2,8 +2,8 @@
 const SHOP_ELEVATIONS={brick:null,stucco:null,sash:null,sill:null,panes:null,caps:null,fascias:null,awning:null,frontages:[]};
 const RIVERSIDE_SHOPS={
  donuts:{name:'Riverside Donuts',line:'BAKED DAILY',color:'#4e3136'},
- books:{name:'Harbor Books & Café',line:'246',color:'#282b29'},
- studio:{name:'Coastal Nails',line:'NAILS · PEDICURE · WAXING',color:'#633b43'}
+ books:{name:'Harbor Books & Café',address:'248',color:'#282b29'},
+ studio:{name:'Coastal Nails',address:'252',line:'NAILS · PEDICURE · WAXING',color:'#633b43'}
 };
 
 function initShopArchitecture(){
@@ -56,7 +56,12 @@ function buildUpperShopFront(B,M,u0,u1,top,coastal){
  const floors=Math.max(1,Math.round((top-4.1)/3.43)),h=(top-4.1)/floors;
  const n=Math.max(2,Math.round(w/(coastal?3.0:2.73))),pitch=w/n;
  const yaw=Math.atan2(M.elements[8],M.elements[10]);
- const strip=(l,r,b,t)=>frontageMasonry(wall,M,l,r,b,t,.022,coastal);
+ const side=Math.abs(Math.sin(yaw))>.5?(Math.sin(yaw)>0?'E':'W'):(Math.cos(yaw)>0?'S':'N');
+ const strip=(l,r,b,t)=>{
+  frontageMasonry(wall,M,l,r,b,t,.022,coastal);
+  addRoomCollider(B,M,l,r,-.022,.288,t,b);
+  if(!coastal)(B.bondWalls||(B.bondWalls=[])).push({...lrect(M,l,r,-.022,.288),y0:b,h:t,side});
+ };
  const box=(mat,l,r,b,t,back,front)=>plainBox(mat,l,r,b,t,back,front,{M,uvm:1});
  for(let j=0;j<floors;j++){
   const base=4.1+j*h,sill=base+.37*h,head=base+.908*h;
@@ -75,7 +80,10 @@ function buildUpperShopFront(B,M,u0,u1,top,coastal){
    const g=new THREE.PlaneGeometry(r-l-.061,head-sill-.04),uv=g.attributes.uv;
    const tile=(B.i+k+(j%3===1?1:0))%4,row=coastal?0:1;
    for(let i=0;i<uv.count;i++)uv.setXY(i,(tile+.013+.974*uv.getX(i))/4,(row+.01+.98*uv.getY(i))/2);
-   g.translate(center,(sill+head)/2,-.240);g.applyMatrix4(M);addGeo(a.panes,g,false);
+   g.translate(center,(sill+head)/2,-.240);g.applyMatrix4(M);collectBuildingProxy(B,a.panes,g);
+   const reveal=M.clone().multiply(new THREE.Matrix4().makeTranslation(0,0,-.112));
+   groundGlazing(B,reveal,l+.077,r-.077,sill+.063,head-.048);
+   for(const x of [l+.038,r-.038])addRoomCollider(B,M,x-.038,x+.038,.124,.218,head,sill+.03);
    if(!coastal&&(k+2*j+B.j)%5===2){
     const at=lpt(M,center,-.146);
     worksModel('window-ac',at.x,sill+.028,at.z,[.68,.34,.47],yaw,false);
@@ -98,9 +106,10 @@ function riversideFascia(row,M,u0,u1){
   const wall=lpt(M,x,.02),out=lpt(M,x,-.879);
   worksBeam(MAT.darkMetal,[wall.x,3.28,wall.z],[out.x,3.716,out.z],.021);
  }
- if(index===1){
-  const placard=worksSign('246','#232522','#e6ddc8'),p=lpt(M,center,-.058);
-  worksPlacard(placard,p.x,3.03,p.z,.54,.20,Math.atan2(M.elements[8],M.elements[10]));
+ const address=Object.values(RIVERSIDE_SHOPS)[index].address;
+ if(address){
+  const placard=worksSign(address,'#232522','#e6ddc8'),p=lpt(M,center,-.058);
+  worksPlacard(placard,p.x,3.07,p.z,1.27,.34,Math.atan2(M.elements[8],M.elements[10]));
  }
 }
 
@@ -143,7 +152,11 @@ function shopGlazing(){
 }
 function updateShopReflection(t){
  const r=SHOP_REFLECTION,u=r.uniforms;
- if(QUALITY.level<2||camera.position.y<-.2||camera.position.y>22){u.shopMirrorOn.value=0;return;}
+ if(QUALITY.level<2){
+  r.rt?.dispose();r.rt=null;r.front=null;
+  u.shopMirror.value=null;u.shopMirrorOn.value=0;return;
+ }
+ if(camera.position.y<-.2||camera.position.y>22){u.shopMirrorOn.value=0;return;}
  camera.getWorldDirection(r.direction);
  let best=null,bestDistance=44;
  for(const f of SHOP_ELEVATIONS.frontages){

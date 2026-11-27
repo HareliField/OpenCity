@@ -19,6 +19,7 @@ class CityPoliceDepartment {
   this.transmissions=[];
   this.contacts=[];
   this.cases=[];
+  this.tickets=[];
   this.serial=0;
   this.clock=0;
   this.unavailable=new Set();
@@ -39,14 +40,26 @@ class CityPoliceDepartment {
   try{
    const save=JSON.parse(storage?.getItem(this.key)||'null');
    if(save?.version===1&&Array.isArray(save.cases)){
-    this.cases=save.cases;this.transmissions=save.transmissions||[];this.serial=save.serial;this.clock=save.clock;
+    this.cases=save.cases;this.tickets=Array.isArray(save.tickets)?save.tickets:[];this.transmissions=save.transmissions||[];this.serial=save.serial;this.clock=save.clock;
     this.unavailable=new Set(save.unavailable);this.personSerial=save.personSerial;this.plateSerial=save.plateSerial;
    }
   }catch{}
  }
  save(){
-  try{this.storage?.setItem(this.key,JSON.stringify({version:1,cases:this.cases,transmissions:this.transmissions,serial:this.serial,clock:this.clock,
+  try{this.storage?.setItem(this.key,JSON.stringify({version:1,cases:this.cases,tickets:this.tickets,transmissions:this.transmissions,serial:this.serial,clock:this.clock,
    unavailable:[...this.unavailable],personSerial:this.personSerial,plateSerial:this.plateSerial}));}catch{}
+ }
+ issueTicket(record){
+  const ticket={...record,id:(this.tickets.at(-1)?.id||0)+1,issued:this.clock,paid:null};
+  this.tickets.push(ticket);
+  this.radio(record.issuer,'Ticket '+ticket.id+' · '+record.offense+' · '+record.street);
+  this.save();globalThis.asphaltAgentEvent?.('ticket',{ticket:{...ticket}});return ticket;
+ }
+ payTicket(id,payer){
+  const ticket=this.tickets.find(t=>t.id===id);
+  if(!ticket || ticket.driver!==payer.personId || ticket.paid!==null || payer.cash<ticket.fine)return false;
+  payer.cash-=ticket.fine;ticket.paid=this.clock;this.save();
+  globalThis.asphaltAgentEvent?.('ticketPaid',{id,amount:ticket.fine});return true;
  }
  identity(personId){
   // Opaque in-game specimen labels. The registry key keeps different residents distinct.
@@ -85,7 +98,7 @@ class CityPoliceDepartment {
   return null;
  }
  streetResponseActive(file){
-  return file.origin==='street'&&file.kind==='Homicide'&&['Patrol assigned','Scene review','Lab review'].includes(file.stage);
+  return file.origin==='street'&&(file.kind==='Homicide'||file.kind==='Gunfire report')&&['Patrol assigned','Scene review','Lab review'].includes(file.stage);
  }
  fieldAssignment(file,personId){
   return this.assigned(file)===personId||this.streetResponseActive(file)&&file.response?.some(r=>r.personId===personId);
@@ -178,6 +191,12 @@ class CityPoliceDepartment {
     const officer=this.staff.find(s=>s.personId===c.patrol);
     if(!officer||this.unavailable.has(c.patrol)){c.stage='Filed';c.patrol=null;changed=true;continue;}
     if(this.atScene&&!this.atScene(c))continue;
+    if(c.pendingScene){
+     const scene=c.pendingScene;
+     c.kind='Homicide';c.title=scene.title;c.victimId=scene.victimId;c.pendingVictimName=scene.victimName;
+     c.evidence.unshift(...scene.evidence);delete c.pendingScene;
+     this.logCase(c,officer.name,'Located a fallen resident while checking the reported area. Opened a homicide investigation.','Communications');
+    }
     if(c.kind==='Shots reported'){
      c.stage=c.contact?'Identified':'Open leads';c.suspect=c.contact;
      this.logCase(c,officer.name,c.contact?'Witness identified the shooter.':'Area checked. Shooter identity unconfirmed.');
@@ -215,6 +234,10 @@ class CityPoliceDepartment {
      if(!relief)continue;
      this.logCase(c,detective?.name||'Detectives','File transferred to the incoming watch for review.',relief.name);
      c.detective=relief.personId;detective=relief;
+    }
+    if(c.pendingVictimName&&c.evidence.some(e=>e.type==='DNA'&&e.source==='Injured person'&&e.value===this.identity(c.victimId).dnaId)){
+     c.victimName=c.pendingVictimName;delete c.pendingVictimName;
+     this.logCase(c,analyst.name,'The victim specimen matches the resident record for '+c.victimName+'.',detective.name);
     }
     const profile=c.contact?this.identity(c.contact):null;
     const match=profile&&c.evidence.some(e=>(!c.linkedExhibit||e.exhibit===c.linkedExhibit)&&

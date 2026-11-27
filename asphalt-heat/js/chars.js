@@ -58,7 +58,7 @@ const gunMat=new THREE.MeshStandardMaterial({color:0x161616,roughness:.35,metaln
 
 function makeGun(){const g=new THREE.Group();const a=new THREE.Mesh(unitBox,gunMat);a.scale.set(.045,.07,.26);a.position.z=.1;const b=new THREE.Mesh(unitBox,gunMat);b.scale.set(.04,.13,.055);b.position.set(0,-.07,0);g.add(a,b);g.visible=false;scene.add(g);return g;}
 const blobG=new THREE.CircleGeometry(.5,14),blobM=new THREE.MeshBasicMaterial({color:0,transparent:true,opacity:.42,depthWrite:false});
-const CB={LeftThigh:'Bip01_L_Thigh',LeftCalf:'Bip01_L_Calf',LeftFoot:'Bip01_L_Foot',RightThigh:'Bip01_R_Thigh',RightCalf:'Bip01_R_Calf',RightFoot:'Bip01_R_Foot',RightArm:'Bip01_R_UpperArm',RightForeArm:'Bip01_R_Forearm',RightHand:'Bip01_R_Hand',LeftArm:'Bip01_L_UpperArm',LeftForeArm:'Bip01_L_Forearm',LeftHand:'Bip01_L_Hand',Head:'Bip01_Head',Spine2:'Bip01_Spine2',Root:'Bip01'};
+const CB={LeftToe:'Bip01_L_Toe0',RightToe:'Bip01_R_Toe0',LeftKnuckle:'Bip01_L_Finger2',RightKnuckle:'Bip01_R_Finger2',LeftThigh:'Bip01_L_Thigh',LeftCalf:'Bip01_L_Calf',LeftFoot:'Bip01_L_Foot',RightThigh:'Bip01_R_Thigh',RightCalf:'Bip01_R_Calf',RightFoot:'Bip01_R_Foot',RightArm:'Bip01_R_UpperArm',RightForeArm:'Bip01_R_Forearm',RightHand:'Bip01_R_Hand',LeftArm:'Bip01_L_UpperArm',LeftForeArm:'Bip01_L_Forearm',LeftHand:'Bip01_L_Hand',Head:'Bip01_Head',Spine2:'Bip01_Spine2',Root:'Bip01'};
 function makeChar(name,look={}){const T=TPL[name];const model=THREE.SkeletonUtils.clone(T.scene);const root=new THREE.Group();root.rotation.order='YXZ';root.add(model);
  const bones={};const inv={};for(const k in CB)inv[CB[k]]=k;
  model.traverse(o=>{if(inv[o.name])bones[inv[o.name]]=o;if(o.isMesh){o.castShadow=!!look.shadow||!LOWSHADOW;o.receiveShadow=false;o.frustumCulled=false;if(LOWSHADOW&&!look.shadow)o.layers.set(2);}});
@@ -145,14 +145,14 @@ function fitDepartmentPortrait(c,portraitName){
 
 /* Measure the front of the actual shirt, coat or waistcoat at the clip location.
    Quantized attributes must be normalized before doing CPU skinning in three r128. */
-function uniformMount(name,lateral,belowCollar){
- const key=name+'/'+lateral+'/'+belowCollar;
+function uniformMount(name,lateral,belowCollar,face=1){
+ const key=name+'/'+lateral+'/'+belowCollar+'/'+face;
  if(departmentMounts.has(key))return departmentMounts.get(key);
  const model=TPL[name].scene,bones=nodeMap(model);
  model.updateMatrixWorld(true);
  const neck=bones.Bip01_Neck.getWorldPosition(new V3());
- const ray=new THREE.Ray(new V3(neck.x+lateral,neck.y-belowCollar,neck.z+.8),new V3(0,0,-1));
- const hit=new V3(),surface=new V3(),normal=new V3(0,0,1);let found=false;
+ const ray=new THREE.Ray(new V3(neck.x+lateral,neck.y-belowCollar,neck.z+face*.8),new V3(0,0,-face));
+ const hit=new V3(),surface=new V3(),normal=new V3(0,0,face);let found=false;
  model.traverse(mesh=>{
   if(!mesh.isSkinnedMesh||!/_body$/i.test(mesh.material.name))return;
   const geometry=mesh.geometry,{position,skinIndex,skinWeight}=geometry.attributes;
@@ -173,14 +173,14 @@ function uniformMount(name,lateral,belowCollar){
   const index=geometry.index;
   for(let i=0;i<(index?index.count:verts.length);i+=3){
    const a=verts[index?index.getX(i):i],b=verts[index?index.getX(i+1):i+1],d=verts[index?index.getX(i+2):i+2];
-   if(ray.intersectTriangle(a,b,d,false,hit)&&(!found||hit.z>surface.z)){
-    surface.copy(hit);THREE.Triangle.getNormal(a,b,d,normal);if(normal.z<0)normal.negate();found=true;
+   if(ray.intersectTriangle(a,b,d,false,hit)&&(!found||face*(hit.z-surface.z)>0)){
+    surface.copy(hit);THREE.Triangle.getNormal(a,b,d,normal);if(face*normal.z<0)normal.negate();found=true;
    }
   }
  });
- if(!found)surface.set(ray.origin.x,ray.origin.y,neck.z+.14);
+ if(!found)surface.set(ray.origin.x,ray.origin.y,neck.z+face*.14);
  // Keep the clip upright on the shirt even when the sampled seam is steep.
- normal.z=Math.max(normal.z,.7);normal.normalize();
+ normal.z=face*Math.max(face*normal.z,.7);normal.normalize();
  const rotation=new THREE.Quaternion().setFromUnitVectors(new V3(0,0,1),normal);
  const mount=bones.Bip01_Spine2.matrixWorld.clone().invert().multiply(new THREE.Matrix4().compose(surface,rotation,new V3(1,1,1)));
  departmentMounts.set(key,mount);return mount;

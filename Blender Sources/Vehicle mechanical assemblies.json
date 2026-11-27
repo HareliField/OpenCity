@@ -1,0 +1,90 @@
+[
+  {
+    "id": "engine-transverse",
+    "sourceImages": [
+      1,
+      18,
+      30,
+      38,
+      66,
+      72,
+      112
+    ],
+    "description": "Service bay with inline four layout, rocker covers, manifolds, oil pan, battery, radiator and cooling fan.",
+    "parts": 110,
+    "movableParts": [
+      "CoolingFan"
+    ],
+    "runtimeBytes": 427404
+  },
+  {
+    "id": "engine-v-bank",
+    "sourceImages": [
+      1,
+      18,
+      30,
+      38,
+      66,
+      72,
+      112
+    ],
+    "description": "Service bay with twin-bank eight layout, rocker covers, manifolds, oil pan, battery, radiator and cooling fan.",
+    "parts": 136,
+    "movableParts": [
+      "CoolingFan"
+    ],
+    "runtimeBytes": 530420
+  },
+  {
+    "id": "engine-boxer",
+    "sourceImages": [
+      1,
+      18,
+      30,
+      38,
+      66,
+      72,
+      112
+    ],
+    "description": "Service bay with opposed six layout, rocker covers, manifolds, oil pan, battery, radiator and cooling fan.",
+    "parts": 126,
+    "movableParts": [
+      "CoolingFan"
+    ],
+    "runtimeBytes": 504784
+  },
+  {
+    "id": "engine-diesel",
+    "sourceImages": [
+      1,
+      18,
+      30,
+      38,
+      66,
+      72,
+      112
+    ],
+    "description": "Service bay with commercial inline six layout, rocker covers, manifolds, oil pan, battery, radiator and cooling fan.",
+    "parts": 120,
+    "movableParts": [
+      "CoolingFan"
+    ],
+    "runtimeBytes": 455456
+  },
+  {
+    "id": "passenger-cabin",
+    "sourceImages": [
+      1,
+      18,
+      30,
+      38,
+      66,
+      72,
+      112
+    ],
+    "description": "Seats with rails and headrests, passenger footwells, working-depth steering wheel, instruments, handbrake and door lining.",
+    "parts": 115,
+    "movableParts": [],
+    "runtimeBytes": 628004
+  }
+]

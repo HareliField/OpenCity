@@ -12,18 +12,83 @@ const FREIGHT={
   {x:492,z:1270,length:146,beam:25,name:'KITE BAY',color:0x495645,cranes:[463,534]}
  ],
  cranes:[],
- solids:[]
+ solids:[],cargoDecks:new Map(),containerPaint:new Map()
 };
 
 const FREIGHT_PALETTE=[0x9b4338,0x355e70,0x376864,0xb89147,0xa3947a,0x6e4851,0x9b6b40];
+const FREIGHT_MARKS={ink:null,serial:17238};
+
+function freightStencilInk(){
+ if(FREIGHT_MARKS.ink)return FREIGHT_MARKS.ink;
+ const [canvas,g]=cvs(1024,1024);
+ const names=[['NORTHWIND','NWLU'],['TIDELINE','TLCU'],['KITE BAY','KBCU'],['FOUNDRY','FDRU'],
+  ['SEABRIGHT','SBTU'],['CAPE LINE','CPLU'],['FERRY FREIGHT','FRYU'],['COASTAL','CSLU']];
+ g.fillStyle='#e5e1d4';g.textBaseline='middle';
+ for(const [i,[name,code]] of names.entries()){
+  const x=(i%2)*512,y=Math.floor(i/2)*128;
+  g.font='bold 63px Arial, sans-serif';g.fillText(name,x+8,y+48,490);
+  g.font='bold 30px Arial, sans-serif';g.fillText('INTERMODAL',x+11,y+98);
+  g.font='bold 68px Courier New, monospace';g.fillText(code,x+10,512+Math.floor(i/2)*68+33,209);
+ }
+ g.textAlign='center';g.font='bold 66px Courier New, monospace';
+ for(let n=0;n<10;n++)g.fillText(String(n),n*64+32,844);
+ // Small losses of paint reveal the ribbed steel through every marking.
+ g.globalCompositeOperation='destination-out';
+ for(let k=0;k<4600;k++)g.fillRect((k*223+Math.floor(k/7)*37)%1024,(k*149+Math.floor(k/19)*79)%876,1+k%4,1+(k%13===0?2:0));
+ const map=ctex(canvas);FREIGHT_MARKS.ink=new THREE.MeshStandardMaterial({map,alphaTest:.27,roughness:.90,vertexColors:true,
+  polygonOffset:true,polygonOffsetFactor:-1,polygonOffsetUnits:-1});
+ return FREIGHT_MARKS.ink;
+}
+
+function freightMarkings(x,z,y,length,tint,pressed=false){
+ const ink=freightStencilInk(),serial=String(FREIGHT_MARKS.serial++).padStart(6,'0');
+ const brand=(Math.round(x*3+z*7+y*19)>>>0)%8,col=lin(tint);
+ const shade=col.g>.49?lin(0x584f43):lin(0xf2eee3),ribWidth=(length-.152)/Math.round((length-.152)/.249);
+ for(const side of [-1,1]){
+  const outer=side<0?z:z+2.44,pos=[],norm=[],uv=[],colors=[],tri=[];
+  function panel(mid,height,width,tall,px,py,pw,ph){
+   const lo=mid-width/2,hi=mid+width/2,stations=[lo];
+   if(pressed){
+    const first=Math.floor((lo-x-.076)/ribWidth),last=Math.floor((hi-x-.076)/ribWidth);
+    for(let k=first;k<=last;k++)for(const u of [0,.17,.32,.65,.80]){
+     const at=x+.076+(k+u)*ribWidth;if(at>lo&&at<hi)stations.push(at);
+    }
+   }
+   stations.push(hi);
+   for(let i=0;i<stations.length;i++){
+    const at=stations[i],ratio=(at-lo)/width,u=(px+(side>0?ratio:1-ratio)*pw)/1024;
+    const f=((at-x-.076)/ribWidth)%1;
+    const relief=pressed?(f<.17?.065:f<.32?lerp(.065,.018,(f-.17)/.15):f<.65?.018:f<.8?lerp(.018,.065,(f-.65)/.15):.065):0;
+    const face=outer+side*(.004-relief),k=pos.length/3;
+    pos.push(at,height-tall/2,face,at,height+tall/2,face);
+    norm.push(0,0,side,0,0,side);uv.push(u,1-(py+ph)/1024,u,1-py/1024);
+    colors.push(shade.r,shade.g,shade.b,shade.r,shade.g,shade.b);
+    if(i){if(side>0)tri.push(k-2,k,k-1,k,k+1,k-1);else tri.push(k-2,k-1,k,k,k-1,k+1);}
+   }
+  }
+  const brandX=(brand%2)*512,brandY=Math.floor(brand/2)*128;
+  if(Number(serial)%9<6){
+   const off=.42+(Number(serial)%5)*.038,width=Math.min(length*.47,3.2+brand*.185);
+   panel(x+length*off,y+1.55+brand*.042,width,width*.197,brandX+1,brandY+1,509,125);
+  }
+  const end=x+(side>0?length-.91:.91);
+  panel(end,y+2.13,.52,.16,brandX+1,512+Math.floor(brand/2)*68+1,220,66);
+  for(let i=0;i<serial.length;i++)panel(end+side*(i-2.5)*.095,y+1.94,.094,.16,Number(serial[i])*64+1,810,62,68);
+  const geo=new THREE.BufferGeometry();
+  for(const [key,data,n] of [['position',pos,3],['normal',norm,3],['uv',uv,2],['color',colors,3]])
+   geo.setAttribute(key,new THREE.Float32BufferAttribute(data,n));
+  geo.setIndex(tri);addGeo(ink,geo,false);
+ }
+}
 
 function freightGateAt(x,r=0){
  return FREIGHT.gates.some(g=>Math.abs(x-g.x)<FREIGHT.gateHalf-r);
 }
 
 function southWallSpans(){
- const gaps=FREIGHT.gates.flatMap(g=>[g.x-FREIGHT.gateHalf,g.x+FREIGHT.gateHalf]);
- const ends=[-HALF-1,...gaps,W+60];
+ const gaps=FREIGHT.gates.map(g=>[g.x-FREIGHT.gateHalf,g.x+FREIGHT.gateHalf])
+  .concat(HARBOR.yard.streets.map(x=>[x-10.52,x+10.52])).sort((a,b)=>a[0]-b[0]);
+ const ends=[-HALF-1,...gaps.flat(),HARBOR.basin.x0];
  return ends.filter((_,i)=>i%2===0).map((a,i)=>[a,ends[i*2+1]]);
 }
 
@@ -33,11 +98,16 @@ function inFreightPort(x,z,r=0){
 
 // The two gate roads are connected by east-west aisles at the front and back of the yards.
 const FREIGHT_AISLES=[1070,1206];
+function workingPortAt(p){
+ if(inDockYard(p.x,p.z))return HARBOR.yard;
+ return inFreightPort(p.x,p.z)?FREIGHT:null;
+}
 function freightPatrolSpot(origin,min,max){
+ const area=workingPortAt(origin)||FREIGHT,gates=area.streets||area.gates.map(g=>g.x),aisles=area.cross||FREIGHT_AISLES;
  for(let i=0;i<48;i++){
   const across=i%2===0,dir=Math.random()<.5?-1:1;
-  const x=across?clamp(origin.x+rnd(-max,max),179,FREIGHT.x1-12):pick(FREIGHT.gates).x-dir*3;
-  const z=across?pick(FREIGHT_AISLES)+dir*3:clamp(origin.z+rnd(-max,max),FREIGHT.z0+19,FREIGHT.z1-39);
+  const x=across?clamp(origin.x+rnd(-max,max),area===FREIGHT?179:area.x0+5,area.x1-12):pick(gates)-dir*3;
+  const z=across?pick(aisles)+dir*3:clamp(origin.z+rnd(-max,max),area.z0+19,area.z1-(area===FREIGHT?39:10));
   const range=Math.hypot(origin.x-x,origin.z-z);
   if(range<min||range>max||cars.some(c=>Math.hypot(c.pos.x-x,c.pos.z-z)<10))continue;
   if(rayWorld(x-1,z-2.6,x+1,z+2.6,1,1,.3)<1)continue;
@@ -46,22 +116,23 @@ function freightPatrolSpot(origin,min,max){
  return null;
 }
 
-function freightGateNode(x){
- const gate=FREIGHT.gates.reduce((a,b)=>Math.abs(a.x-x)<=Math.abs(b.x-x)?a:b);
- return {x:gate.x,z:W};
+function freightGateNode(x,area=FREIGHT){
+ const gates=area.streets||area.gates.map(g=>g.x);
+ return {x:gates.reduce((a,b)=>Math.abs(a-x)<=Math.abs(b-x)?a:b),z:W};
 }
 function freightWaypoint(from,to){
- const entering=to.z>=FREIGHT.z0;
- const gate=freightGateNode(entering?to.x:from.x);
- if(entering&&from.z<FREIGHT.z0+17){
+ const area=workingPortAt(from)||workingPortAt(to)||FREIGHT,entering=workingPortAt(to)===area;
+ const gate=freightGateNode(entering?to.x:from.x,area);
+ if(entering&&from.z<area.z0+17){
   if(from.z<W-6||Math.abs(from.x-gate.x)>5)return gate;
-  return {x:gate.x,z:FREIGHT.z0+21};
+  return {x:gate.x,z:area.z0+21};
  }
  if(!entering)to=gate;
  const clear=(a,b)=>rayWorld(a.x,a.z,b.x,b.z,1.15,1.15,.8)>=1;
  if(clear(from,to))return to;
  let best=null,cost=Infinity;
- const corners=FREIGHT.gates.flatMap(g=>FREIGHT_AISLES.map(z=>({x:g.x,z})));
+ const gates=area.streets||area.gates.map(g=>g.x),aisles=area.cross||FREIGHT_AISLES;
+ const corners=gates.flatMap(x=>aisles.map(z=>({x,z})));
  for(const a of corners){
   if(dist2(from,a)<4||!clear(from,a))continue;
   for(const b of corners){
@@ -81,7 +152,7 @@ function patrolWaypoint(c,target){
  return c.portAim;
 }
 function driveToFreightExit(c,dt){
- const next=patrolWaypoint(c,freightGateNode(c.pos.x));
+ const next=patrolWaypoint(c,freightGateNode(c.pos.x,workingPortAt(c.pos)||FREIGHT));
  const diff=wrapA(Math.atan2(next.x-c.pos.x,next.z-c.pos.z)-c.h);
  const target=blockedAhead(c)?0:(Math.abs(diff)>.65?5:10)*weather.trafficPace;
  drive(c,clamp((target-c.speed)*.4,-1,1),clamp(diff*2,-1,1),!target,dt);
@@ -112,16 +183,39 @@ function freightBeam(mat,a,b,w,d=w){
  addGeo(mat,geo,true);
 }
 
-function freightContainer(x,z,y,length,color){
- plainBox(MAT.container,x,x+length,y,y+2.57,z,z+2.44,{uvm:2.5,tint:color});
+function freightDecksAt(x,z){return FREIGHT.cargoDecks.get(Math.floor(x/CELL)+','+Math.floor(z/CELL))||[];}
+function registerFreightDeck(r){
+ for(let i=Math.floor(r.x0/CELL);i<=Math.floor(r.x1/CELL);i++)for(let j=Math.floor(r.z0/CELL);j<=Math.floor(r.z1/CELL);j++){
+  const key=i+','+j;
+  if(!FREIGHT.cargoDecks.has(key))FREIGHT.cargoDecks.set(key,[]);
+  FREIGHT.cargoDecks.get(key).push(r);
+ }
+}
+function freightEnamel(color){
+ let paint=FREIGHT.containerPaint.get(color);
+ if(!paint){paint=new THREE.MeshStandardMaterial({color:lin(color),vertexColors:true,roughness:.72,metalness:.26});FREIGHT.containerPaint.set(color,paint);}
+ return paint;
+}
+function freightContainer(x,z,y,length,color,collision=false){
+ const dims=[length,2.60,2.44],cx=x+length/2,cz=z+1.22,id='intermodal-container';
+ freightMarkings(x,z,y,length,color);
+ const display=detailFallback(id,cx,y,cz,dims,0,freightEnamel(color));
+ registerStreetFitting(id,cx,y,cz,dims,0,{reach:55,tint:color,tintMaterial:'Container enamel',farModel:{set visible(shown){display(shown);}}});
+ if(!collision)return;
+ const end=x+length,back=z+2.44,top=y+2.60;
+ freightSolid(x,end,z,back,y+.134,y+.035);
+ freightSolid(x,end,z,back,top,top-.075);
+ for(const xx of [x,end-.075])freightSolid(xx,xx+.075,z,back,top-.075,y+.134);
+ for(const zz of [z,back-.07])freightSolid(x+.075,end-.075,zz,zz+.07,top-.075,y+.134);
+ for(const h of [y+.134,top])registerFreightDeck({x0:x,x1:end,z0:z,z1:back,y:h});
 }
 
 function buildFreightTerminal(){
  const p=FREIGHT,{x0,x1,z0,z1,y}=p;
- const seaWidth=2500+W+62,seaDepth=1750;
+ const seaWidth=2500+HARBOR.basin.x0,seaDepth=1750;
  const sea=new THREE.Mesh(new THREE.PlaneGeometry(seaWidth,seaDepth,108,59),MAT.water);
  sea.rotation.x=-Math.PI/2;
- sea.position.set(W+62-seaWidth/2,-.35,z0+seaDepth/2);
+ sea.position.set(HARBOR.basin.x0-seaWidth/2,-.35,z0+seaDepth/2);
  scene.add(sea);
  REFL.hide.push(sea);
 
@@ -172,20 +266,19 @@ function buildFreightTerminal(){
     const seed=i*13+row*7+n*11;
     if(seed%13===0)continue;
     const levels=1+(seed%3);
-    for(let level=0;level<levels;level++){
-     freightContainer(x,z,y+2.6*level,12.16,FREIGHT_PALETTE[(seed+level*2)%FREIGHT_PALETTE.length]);
-    }
-    freightSolid(x,x+12.16,z,z+2.44,y+2.6*levels);
+    const shell={bld:[],cargoDecks:[]};
+    buildCargoContainer(shell,x,z,y,FREIGHT_PALETTE[seed%FREIGHT_PALETTE.length],'E',true,12.16);
+    STATIC.push(...shell.bld);
+    for(const floor of shell.cargoDecks)registerFreightDeck(floor);
+    for(let level=1;level<levels;level++)
+     freightContainer(x,z,y+2.6*level,12.16,FREIGHT_PALETTE[(seed+level*2)%FREIGHT_PALETTE.length],true);
    }
   }
  }
  buildFreightYardGantry(252,1128,yellow);
  buildFreightYardGantry(501,1155,yellow);
- buildFreightShed();
+ buildFreightShed(yellow);
  buildFreightRail(navy);
- buildFreightTruck(158,1170,0,0xb78a52);
- buildFreightTruck(564,1171,Math.PI,0x547c8c);
- buildFreightTruck(621,1056,Math.PI/2,0x8b4f41);
  for(const x of [137,199,350,413,557,631])for(const z of [1083,1201]){
   cyl(MAT.darkMetal,x,y,z,.075,.28,14.3,9);
   plainBox(MAT.darkMetal,x-1.55,x+1.55,14.25,14.4,z-.09,z+.09);
@@ -246,18 +339,84 @@ function buildFreightYardGantry(x,z,yellow){
  plainBox(yellow,x-3.1,x+3.1,t-5.42,t-5.1,z-.74,z+.74);
 }
 
-function buildFreightShed(){
- const x0=129,x1=177,z0=1063,z1=1125,y=FREIGHT.y;
- plainBox(MAT.corrugated,x0,x1,y,8.5,z0,z1,{uvm:3.2});
- freightSolid(x0,x1,z0,z1,8.5);
- plainBox(MAT.roof,x0-.34,x1+.34,8.5,8.9,z0-.42,z1+.42,{uvm:3.2});
- for(let z=z0+5;z+9<z1;z+=12){
-  plainBox(MAT.darkMetal,x1,x1+.09,y,4.8,z,z+7.1);
-  plainBox(MAT.shutter,x1+.091,x1+.15,y+.14,4.53,z+.19,z+6.91,{uvm:2.6});
-  plainBox(MAT.trim,x1,x1+2.1,4.73,5.02,z-.4,z+7.5,{uvm:2.5});
-  plainBox(MAT.column,x1,x1+.84,y,y+.98,z-.14,z+7.29,{uvm:1.7});
-  freightSolid(x1,x1+.84,z-.14,z+7.29,1.0);
+function dockCarton(x,y,z,dims,yaw,mass){
+ const id='receiving-carton',node=new THREE.Group();
+ FREIGHT.kraft??=new THREE.MeshStandardMaterial({color:lin(0xb68c5c),roughness:.94});
+ const fallback=new THREE.Mesh(new THREE.BoxGeometry(...dims),FREIGHT.kraft);
+ fallback.geometry.translate(0,dims[1]/2,0);fallback.castShadow=true;fallback.receiveShadow=true;
+ node.position.set(x,y,z);node.rotation.y=yaw;node.add(fallback);scene.add(node);
+ INTERIORS.fixtures.push({id,node,fallback,dims,x,z});
+ registerLooseFixture(node,id,x,y,z,yaw,dims,mass);
+}
+function dockPalletLoad(x,base,z,layers,variant){
+ worksModel('cargo-pallet',x,base,z,[1.2,.146,.80],0,true);
+ const height=.288+.024*(variant%4),dims=[.466,height,.337];
+ for(let level=0;level<layers;level++)for(let i=0;i<4;i++){
+  if(level&&i===variant%4)continue;
+  const u=x+((i%2)-.5)*.508,v=z+(Math.floor(i/2)-.5)*.365;
+  const y=base+.146+level*height,yaw=(i+variant)%3===0?Math.PI:0;
+  dockCarton(u,y,v,dims,yaw,3.2+(i+variant)%6);
  }
+}
+
+function buildFreightShed(yellow){
+ const r={x0:129,x1:177,z0:1063,z1:1125},floor=.17,roof=8.50,shell={bld:[]};
+ const site={roof,cladding:pbr('corrugated',1.45,{rough:.83,metal:.27,ns:.58,color:0xbabeb5})};
+ const bayCenters=[-24,-12,0,12,24];
+ for(const side of ['N','S','W','E']){
+  const {width}=lotFace(r,side);
+  const open=(left,right,base,top,kind='window')=>({left,right,base,top,kind});
+  const openings=side==='E'?bayCenters.map(u=>open(u-3.38,u+3.38,floor,4.68,'shutter')):[];
+  if(side==='N'||side==='S')openings.push(open(-width/2+3.68,-width/2+4.92,floor,2.30,'egress'));
+  for(let u=-width/2+5.8;u<width/2-2;u+=10.5)openings.push(open(u-1.92,u+1.92,5.65,7.18));
+  supplyWall(shell,side,r,openings,site);
+ }
+ // Fork trucks can reach each receiving aisle at grade. Keep the tracks and bollards outside the clear opening.
+ plainBox(STREET.materials.wornSlab,r.x0,r.x1,FREIGHT.y-.03,floor,r.z0,r.z1,{uvm:2.84});
+ freightSolid(r.x0,r.x1,r.z0,r.z1,floor,FREIGHT.y-.03).walkIgnore=true;
+ STREET.steps.push({...r,y:floor,soffit:FREIGHT.y-.03});
+ for(const offset of bayCenters){
+  const z=(r.z0+r.z1)/2+offset;
+  for(const dz of [-3.75,3.75]){
+   cyl(MAT.darkMetal,r.x1+.52,FREIGHT.y,z+dz,.093,.112,1.14,10);
+   cyl(yellow,r.x1+.52,.85,z+dz,.096,.097,.22,10);
+   freightSolid(r.x1+.41,r.x1+.63,z+dz-.11,z+dz+.11,1.25,FREIGHT.y).radius=.11;
+  }
+  const lintel=freightSolid(r.x1-.04,r.x1+1.39,z-3.81,z+3.81,5.01,4.79);
+  plainBox(MAT.trim,lintel.x0,lintel.x1,lintel.y0,lintel.h,lintel.z0,lintel.z1,{uvm:1.52});
+ }
+ plainBox(MAT.roof,r.x0-.32,r.x1+.32,roof,roof+.16,r.z0-.36,r.z1+.36,{uvm:3.22});
+ const cap=freightSolid(r.x0-.32,r.x1+.32,r.z0-.36,r.z1+.36,roof+.16,roof);
+ cap.walkIgnore=true;registerFreightDeck({...cap,y:cap.h});
+ for(let z=r.z0+.43;z<r.z1;z+=6){
+  for(const x of [r.x0+.34,r.x1-.34]){
+   if(x>r.x1-1&&bayCenters.some(u=>Math.abs(z-(r.z0+r.z1)/2-u)<3.62))continue;
+   plainBox(MAT.darkMetal,x-.085,x+.085,floor,roof,z-.105,z+.105);
+   freightSolid(x-.085,x+.085,z-.105,z+.105,roof,floor);
+  }
+  for(const y of [roof-.73,roof-.10])freightBeam(MAT.darkMetal,[r.x0+.27,y,z],[r.x1-.27,y,z],.083,.142);
+  for(let x=r.x0+.34,k=0;x<r.x1-.4;x+=3.42,k++){
+   const a=k%2?roof-.73:roof-.10,b=k%2?roof-.10:roof-.73;
+   freightBeam(MAT.metal,[x,a,z],[Math.min(x+3.42,r.x1-.34),b,z],.042,.068);
+  }
+ }
+ for(const x of [137.2,146.4,155.6])for(const offset of [-18,-6,6,18]){
+  const z=(r.z0+r.z1)/2+offset;
+  worksModel('hardware-stock-rack',x,floor,z,[4.56,3.13,1.18]);
+  if(offset===-18||offset===6)dockPalletLoad(x+2.87,floor,z,2,Math.round(x+offset)%7);
+  else worksModel('cargo-pallet',x+2.87,floor,z,[1.2,.146,.80]);
+ }
+ for(const x of [139.8,153.6,167.4])for(const z of [1074,1094,1114]){
+  worksBeam(MAT.metal,[x,roof-.14,z],[x,5.28,z],.014);
+  plainBox(MAT.darkMetal,x-.86,x+.86,5.18,5.30,z-.109,z+.109);
+  plainBox(INTERIORS.materials.neutral,x-.79,x+.79,5.15,5.18,z-.090,z+.090);
+  INTERIORS.emitters.push({x,y:5.13,z,floorY:floor,cool:true,reach:11,intensity:2.1});
+ }
+ for(const [x,z,layers] of [[165.2,1075.6,2],[166.6,1075.6,2],[166,1076.65,1],[165.4,1100.1,2]])
+  dockPalletLoad(x,floor,z,layers,Math.round(x+z)%7);
+ dockCarton(168.9,floor,1099.4,[.463,.34,.353],.31,4.2);
+ dockCarton(170.3,floor,1099.6,[.487,.31,.361],-.14,5.4);
+ STATIC.push(...shell.bld);
 }
 
 function buildFreightRail(navy){
@@ -269,39 +428,20 @@ function buildFreightRail(navy){
   plainBox(MAT.darkMetal,414,630,y+.018,y+.073,z+s*.72-.055,z+s*.72+.055,{shadow:false});
  }
  for(const [i,x] of [435,461,489,517,545,575,598].entries()){
-  plainBox(navy,x,x+22,y+.37,y+1.04,z-1.48,z+1.48,{uvm:2.2});
+  plainBox(navy,x,x+22,y+.68,y+1.04,z-1.48,z+1.48,{uvm:2.2});
+  freightSolid(x,x+22,z-1.48,z+1.48,y+1.04,y+.68);
+  registerFreightDeck({x0:x,x1:x+22,z0:z-1.48,z1:z+1.48,y:y+1.04});
   for(const e of [1.68,19.8]){
-   plainBox(MAT.darkMetal,x+e-.81,x+e+.81,y+.11,y+.64,z-1.38,z+1.38);
+   plainBox(MAT.darkMetal,x+e-.87,x+e+.87,y+.40,y+.71,z-.59,z+.59);
+   freightSolid(x+e-.87,x+e+.87,z-.59,z+.59,y+.71,y+.40);
+   for(const axle of [-.53,.53])for(const rail of [-.72,.72]){
+    const wheel=new THREE.CylinderGeometry(.29,.29,.13,16);
+    wheel.rotateX(Math.PI/2);wheel.translate(x+e+axle,y+.363,z+rail);addGeo(MAT.darkMetal,wheel,true);
+    freightSolid(x+e+axle-.265,x+e+axle+.265,z+rail-.065,z+rail+.065,y+.65,y+.073);
+   }
   }
-  freightContainer(x+3,z-1.21,y+1.04,12.2,FREIGHT_PALETTE[i]);
-  freightSolid(x,x+22,z-1.48,z+1.48,y+3.65);
+  freightContainer(x+3,z-1.21,y+1.04,12.2,FREIGHT_PALETTE[i],true);
  }
-}
-
-function buildFreightTruck(x,z,yaw,color){
- const frame=new THREE.Matrix4().makeRotationY(yaw).setPosition(x,FREIGHT.y,z);
- const paint=new THREE.MeshStandardMaterial({color:lin(color),roughness:.59});
- const box=(mat,x0,x1,y0,y1,z0,z1)=>plainBox(mat,x0,x1,y0,y1,z0,z1,{M:frame,uvm:2.3});
- box(MAT.darkMetal,-1.2,1.2,.44,.94,-8.6,2.55);
- box(paint,-1.17,1.17,.81,2.87,1,4.28);
- box(paint,-1.15,1.15,2.87,3.01,1.02,3.85);
- box(MAT.glassDark,-1.02,1.02,1.82,2.57,4.278,4.31);
- for(const sign of [-1,1]){
-  const px=sign*1.175;
-  box(MAT.glassDark,px-.018,px+.018,1.83,2.57,2.82,4.06);
-  box(MAT.trim,sign*1.46-.08,sign*1.46+.08,1.92,2.39,3.61,3.82);
-  for(const v of [3.52,1.61,-6.48,-7.55]){
-   const geo=new THREE.CylinderGeometry(.55,.55,.34,12);
-   geo.rotateZ(Math.PI/2);
-   geo.translate(sign*1.01,.55,v);
-   geo.applyMatrix4(frame);
-   addGeo(MAT.darkMetal,geo,true);
-  }
- }
- box(MAT.whiteMetal,-1.14,1.14,.67,.82,4.29,4.44);
- box(MAT.corrugated,-1.21,1.21,.94,3.53,-8.38,.45);
- const a=new V3(-1.5,0,-8.7).applyMatrix4(frame),b=new V3(1.5,0,4.45).applyMatrix4(frame);
- freightSolid(Math.min(a.x,b.x),Math.max(a.x,b.x),Math.min(a.z,b.z),Math.max(a.z,b.z),3.7);
 }
 
 const FREIGHT_SHIP_DECK=6.15;
@@ -440,13 +580,20 @@ function buildQuayCrane(x,ship,steel,yellow,index){
   trolley.add(cable);
   cables.push(cable);
  }
- const cargoGeo=new THREE.BoxGeometry(12.15,2.57,2.44);
- const uv=cargoGeo.attributes.uv;
- for(let k=0;k<uv.count;k++)uv.setXY(k,uv.getX(k)*4,uv.getY(k));
- setColor(cargoGeo,FREIGHT_PALETTE[(index+1)%FREIGHT_PALETTE.length]);
- const cargo=new THREE.Mesh(cargoGeo,MAT.container);
- cargo.position.y=1.285;
+ const color=FREIGHT_PALETTE[(index+1)%FREIGHT_PALETTE.length],dims=new V3(12.15,2.57,2.44);
+ const cargo=new THREE.Mesh(detailPrototype('intermodal-container'),freightEnamel(color));
+ cargo.scale.copy(dims);
  cargo.castShadow=true;cargo.receiveShadow=true;
+ requestScenery('intermodal-container')?.then(template=>{
+  if(!template)return;
+  const box=template.clone(true);box.scale.copy(dims).divide(new V3(...template.userData.dimensions));
+  box.traverse(p=>{
+   if(!p.isMesh)return;
+   p.castShadow=true;
+   if(p.material.name==='Container enamel'){p.material=p.material.clone();p.material.color.copy(lin(color));}
+  });
+  load.remove(cargo);load.add(box);
+ });
  const spreader=new THREE.Mesh(new THREE.BoxGeometry(11.6,.29,1.73),yellow);
  spreader.position.y=2.72;
  spreader.castShadow=true;

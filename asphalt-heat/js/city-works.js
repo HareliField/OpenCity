@@ -5,7 +5,7 @@ const CITY_WORKS = {
  gallery: {x0:343.5,x1:350.3,z0:299.8,z1:334.2},
  shaft: {x0:340.2,x1:343.4,z0:340.3,z1:343.6},
  levels: [-3.91,.17,4.25,8.33],
- floors:[], flights:[], panels:[], lifts:[], walkups:[], lamps:[],
+ floors:[], flights:[], pitchedRoofs:[], panels:[], lifts:[], walkups:[], lamps:[],
  grid:true, pump:true, valve:true, workLight:false, water:.44, pressure:.9, wastewater:0, fixtures:[],
  lift:{y:.17, target:1, doors:1, cab:null, body:null}
 };
@@ -36,8 +36,10 @@ function subtractCityOpenings(rect,holes){
 }
 
 function worksGroundMesh(r,y,meters,originX=r.x0,originZ=r.z1){
- const geos=subtractCityOpenings(r,STREET_OPENINGS).map(p=>{
-  const g=new THREE.PlaneGeometry(p.x1-p.x0,p.z1-p.z0);
+ const geos=subtractCityOpenings(r,[...STREET_OPENINGS,HARBOR.basin]).map(p=>{
+  const width=p.x1-p.x0,depth=p.z1-p.z0;
+  // Keep the near-plane and shadow interpolation local even under a shallow driving camera.
+  const g=new THREE.PlaneGeometry(width,depth,Math.ceil(width/12),Math.ceil(depth/12));
   g.rotateX(-Math.PI/2);g.translate((p.x0+p.x1)/2,y,(p.z0+p.z1)/2);
   const uv=g.attributes.uv,pos=g.attributes.position;
   for(let i=0;i<uv.count;i++)uv.setXY(i,(pos.getX(i)-originX)/meters,(originZ-pos.getZ(i))/meters);
@@ -101,15 +103,22 @@ function worksFloorAt(x,z,referenceY,street){
   if(y<=ref+.40&&y>=ref-.55)best=Math.max(best,y);
  }
  for(const lift of w.lifts)if(worksInside(lift.shaft,x,z)&&Math.abs(lift.y-ref)<.55)best=Math.max(best,lift.y);
+ for(const roof of w.pitchedRoofs){
+  if(!worksInside(roof,x,z)||ref<roof.eave-.39)continue;
+  const inset=Math.min(x-roof.x0,roof.x1-x,z-roof.z0,roof.z1-z,roof.run);
+  const y=roof.eave+roof.rise*inset/roof.run;if(y<=ref+.39)best=Math.max(best,y);
+ }
  return Number.isFinite(best)?best:street;
 }
 
 function installWorksPhysics(){
- // Give the street a real underside and leave the three shafts open to rigid bodies.
+ // The shaft mouths and sheltered basin cut through the common street surface.
  PH.w.removeBody(PH.ground);
- for(const r of subtractCityOpenings(worksRect(-4096,4096,-4096,4096),STREET_OPENINGS)){
+ const basin=HARBOR.basin;
+ for(const r of subtractCityOpenings(worksRect(-4096,4096,-4096,4096),[...STREET_OPENINGS,basin])){
   physBox(r.x0,r.x1,-.13,0,r.z0,r.z1,PH.mat.ground);
  }
+ physBox(basin.x0,basin.x1,basin.bed-.19,basin.bed,basin.z0,basin.z1,PH.mat.sand);
  for(const lift of CITY_WORKS.lifts){
   const shaft=lift.shaft,x=(shaft.x1-shaft.x0)*.5,z=(shaft.z1-shaft.z0)*.5;
   const body=new CANNON.Body({mass:0,type:CANNON.Body.KINEMATIC,material:PH.mat.concrete,collisionFilterGroup:PHYS_GROUP.world});
@@ -227,7 +236,7 @@ function buildLift(r=CITY_WORKS.shaft,levels=CITY_WORKS.levels,labels=['SERVICE 
   for(const sign of [-1,1]){
    const width=(u1-u0)/2,center=x+sign*width/2;
    const node=new THREE.Mesh(unitBox,MAT.metal);node.scale.set(width,2.41,.072);node.castShadow=true;scene.add(node);
-   const box={x0:center-width/2,x1:center+width/2,z0:r.z1-.04,z1:r.z1+.04,y0:y,h:y+2.41};
+   const box={x0:center-width/2,x1:center+width/2,z0:r.z1-.04,z1:r.z1+.04,y0:y,h:y+2.41,moving:true};
    STATIC.push(box);lift.gates.push({box,node,y,sign,x,width,level});
   }
  }
@@ -595,8 +604,10 @@ function updateCityWorks(dt,pos){
  let discharge=0;
  for(const fixture of w.fixtures){
   fixture.time=Math.max(0,fixture.time-dt);fixture.stream.visible=fixture.time>0&&pressureAtFixture(fixture)>.10;
-  if(fixture.stream.visible)discharge+=.16*pressureAtFixture(fixture);
+  if(fixture.stream.visible)discharge+=(fixture.flow??.16)*pressureAtFixture(fixture);
  }
+ updateCivicServices(dt);
+ for(const c of CIVIC.cisterns)discharge+=c.discharge;
  w.wastewater=clamp(w.wastewater+dt*(discharge-.040),0,1);
  w.sewerSight.scale.y=.09+w.wastewater*.46;
  w.sewerSight.position.y=w.levels[0]+.15+w.sewerSight.scale.y/2;
@@ -625,11 +636,16 @@ function buildWorksBlock(B){
 const CITY_WALKUPS={
  '1,2':{name:'FERRY STREET ROOMS',kind:'brick',floors:3,shop:'SECONDHAND BOOKS'},
  '14,5':{name:'SEABRIGHT COURT',kind:'coast',floors:4,shop:'MARINA COFFEE'},
- '2,13':{name:'FOUNDRY LOFTS',kind:'mill',floors:2,shop:'HARBOUR SUPPLY'}
+ '2,13':{name:'FOUNDRY LOFTS',kind:'mill',floors:2,shop:'HARBOUR SUPPLY'},
+ '10,9':{name:'Palm Street Rooms',shop:'24-Hour Diner',kind:'diner',front:'S',flank:'W',floors:5},
+ '9,9':{name:'Marina Arcade',shop:'Marina Coffee',kind:'arcade',front:'S',flank:'E',floors:2},
+ '15,9':{name:'Seabreeze Flats',shop:'Seabreeze Market',kind:'grocer',front:'S',flank:'W',floors:3},
+ '15,10':{name:'Vinyl House',shop:'Coastal Vinyl',kind:'records',front:'N',flank:'W',floors:3}
 };
 function buildCityWalkup(B,spec){
  const w=CITY_WORKS,m=w.m,coastal=spec.kind==='coast',mill=spec.kind==='mill';
- const r=worksRect(B.x0+4.5,B.x1-5.25,B.z0+6,B.z1-6);
+ const coffee=spec.kind==='arcade';
+ const r=worksRect(B.x0+(coffee?10.7:4.5),B.x1-5.25,B.z0+6,B.z1-(coffee?7.9:6));
  const levels=Array.from({length:spec.floors+1},(_,i)=>.17+i*4.08);
  const a=worksRect(r.x0+1.25,r.x0+4.10,r.z0+4.35,r.z0+12.51);
  const b={...a,x0:r.x0+4.67,x1:r.x0+7.52};
@@ -637,17 +653,31 @@ function buildCityWalkup(B,spec){
  w.walkups.push(r);
  const front=lotFace(r,'S').matrix,top=levels[levels.length-1];
  const colors=coastal?['#3c5b58','#efe6cf']:mill?['#324653','#dee1da']:['#503f36','#ece1c8'];
- const signs=[spec.name,spec.shop].map(text=>worksSign(text,...colors));
+ const signs=spec.front?null:[spec.name,spec.shop].map(text=>worksSign(text,...colors));
  for(let i=0;i<levels.length;i++){
   const y=levels[i],roof=i===levels.length-1;
   const holes=i===0?[]:[shaft,i%2===1?a:b,...(roof?[]:[i%2===1?b:a])];
-  worksSlab(r,y,roof?MAT.roof:i?m.floor:m.stone,holes);
+  const finish=spec.front?cornerMaterials():null;
+  worksSlab(r,y,roof?(finish?.roof||MAT.roof):i?m.floor:finish?.storeFloor||m.stone,holes);
+  if(finish&&i){
+   // A plaster soffit underneath the occupied floors follows the same stair and lift apertures.
+   for(const p of subtractCityOpenings(r,holes)){
+    const g=new THREE.PlaneGeometry(p.x1-p.x0,p.z1-p.z0);
+    g.rotateX(Math.PI/2);g.translate((p.x1+p.x0)/2,y-.163,(p.z1+p.z0)/2);
+    addGeo(finish.ceiling,g,false);
+   }
+  }
   if(roof)break;
   const next=levels[i+1];
   worksFlight(i%2===0?a:b,y,next,i%2===1);
   for(const side of ['S','N','E','W']){
+   if(spec.front){cornerWall(B,r,side,y,next-.16,i,spec);continue;}
    const mat=coastal?m.enamel:mill?(side==='S'?m.brick:MAT.corrugated):m.brick;
    worksWall(B,r,side,y,next-.16,mat,!i&&side==='S'?[-9,8]:[],!(mill&&side==='W'));
+  }
+  if(spec.front){
+   if(i)furnishCornerFlats(B,r,y,i);else furnishCornerShop(B,r,y,spec);
+   continue;
   }
   if(i===0){
    const stock=mill?'pantry-shelf':coastal?'bakery-counter':'bookcase';
@@ -696,11 +726,20 @@ function buildCityWalkup(B,spec){
   }
  }
  for(const side of ['S','N','E','W']){
-  const face=lotFace(r,side);worksSolid(lrect(face.matrix,-face.width/2,face.width/2,0,.18),top,top+.90,m.stone);
+  const face=lotFace(r,side),span=face.width/2;
+  const cap=coffee&&(side==='S')?.30:.90;
+  if(coffee&&(side==='E'||side==='W')){
+   const north=side==='E'?[0,span]:[-span,0],south=side==='E'?[-span,0]:[0,span];
+   worksSolid(lrect(face.matrix,...north,0,.18),top,top+.90,m.stone);
+   worksSolid(lrect(face.matrix,...south,0,.18),top,top+.30,m.stone);
+  }else worksSolid(lrect(face.matrix,-span,span,0,.18),top,top+cap,m.stone);
  }
  buildLift(shaft,levels,levels.map((y,i)=>i===0?'STREET':i===levels.length-1?'ROOF':coastal?'SUITES '+i:'FLOOR '+(i+1)));
- const at=lpt(front,-9,-.13);worksPlacard(signs[1],at.x,3.25,at.z,8.1,.73);
- const door=lpt(front,8,-.13);worksPlacard(signs[0],door.x,3.22,door.z,8.5,.72);
+ if(spec.front)finishPalmCorner(r,spec,top);
+ else{
+  const at=lpt(front,-9,-.13);worksPlacard(signs[1],at.x,3.25,at.z,8.1,.73);
+  const door=lpt(front,8,-.13);worksPlacard(signs[0],door.x,3.22,door.z,8.5,.72);
+ }
  worksModel('condenser-bank',r.x1-4.8,top,r.z0+7.2,[2.25,1.15,1.37]);
  if(mill||spec.kind==='brick')worksRoofTank(r.x1-6.6,top,r.z1-8.2);
  if(coastal){

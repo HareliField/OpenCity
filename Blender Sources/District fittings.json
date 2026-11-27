@@ -102,10 +102,25 @@
       59
     ],
     "description": "Riveted dry-freight box, rolled rear door, separately glazed cab and independently spinning commercial wheels.",
-    "parts": 346,
+    "parts": 418,
     "movableParts": [
+      "Bonnet",
+      "Windshield",
+      "CargoSlat00",
+      "CargoSlat01",
+      "CargoSlat02",
+      "CargoSlat03",
+      "CargoSlat04",
+      "CargoSlat05",
+      "CargoSlat06",
+      "CargoSlat07",
+      "CargoSlat08",
+      "CargoSlat09",
+      "CargoSlat10",
+      "GlassFrontL",
+      "GlassFrontR",
       "WheelPrototype"
     ],
-    "runtimeBytes": 1125072
+    "runtimeBytes": 1735736
   }
 ]

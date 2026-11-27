@@ -5,11 +5,11 @@ const STREET_DESIGN = {
  crown: .02, gutter: .45, humpLength: 3.66, humpHeight: .076
 };
 const ROAD_SECTIONS = {
- local: {rank:0, inner:2.65, parking:6.6, speed:8.4, motorEdge:5.35},
- collector: {rank:1, inner:2.5, parking:6.6, speed:10.5, motorEdge:5.35},
- avenue: {rank:2, inner:1.85, outer:5.42, speed:12.2, motorEdge:7.25},
- waterfront: {rank:1, median:-2.05, speed:9.8},
- viaduct: {rank:1, inner:5.98, speed:9.8, motorEdge:7.55}
+ local: {rank:0, inner:2.65, parking:6.6, speed:8.4, limitMph:20, motorEdge:5.35},
+ collector: {rank:1, inner:2.5, parking:6.6, speed:10.5, limitMph:25, motorEdge:5.35},
+ avenue: {rank:2, inner:1.85, outer:5.42, speed:12.2, limitMph:30, motorEdge:7.25},
+ waterfront: {rank:1, median:-2.05, speed:9.8, limitMph:25},
+ viaduct: {rank:1, inner:5.98, speed:9.8, limitMph:25, motorEdge:7.55}
 };
 const STREET_NAMES = {
  ns:['Boundary Rd','Alder St','Juniper St','Union Ave','Verve St','Market St','Port Ave','Cypress St','Central Ave','King St','Palm St','Maple St','Grand Ave','Ridge Rd','Coastal Ave','Breakwater Way','Ocean Dr'],
@@ -46,7 +46,8 @@ function approachWidth(section,dz){
 function hasApproach(i,j,dx,dz){
  const a=i-dx,b=j-dz;
  return a>=0 && a<=N && b>=0 && b<=N ||
-  j===N && dz===-1 && typeof freightGateAt==='function' && freightGateAt(i*CELL);
+  j===N && dz===-1 && (typeof freightGateAt==='function' && freightGateAt(i*CELL) ||
+   typeof dockYardGateAt==='function' && dockYardGateAt(i*CELL));
 }
 function hasCrossing(i,j,dx,dz){
  return hasApproach(i,j,dx,dz) && (dx ? j>0 && j<N : i>0 && i<N);
@@ -57,6 +58,8 @@ function junctionControl(i,j){
  if((i===0 || i===N) && (j===0 || j===N))return 'bend';
  if(i===0 || i===N)return 'stop-ew';
  if(j===0 || j===N)return 'stop-ns';
+ // The Palm Street diner corner has a protected crossing in the avenue reference.
+ if(i===10&&j===10)return 'signal';
  if(ns.rank && ew.rank && !(j===11 && i>=6 && i<=14))return 'signal';
  if(ns.rank!==ew.rank)return ns.rank>ew.rank?'stop-ew':'stop-ns';
  if((i+j)%3===0)return 'all-stop';

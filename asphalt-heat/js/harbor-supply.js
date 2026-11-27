@@ -5,22 +5,41 @@ CARSPEC.harborbox={...CARSPEC.van,type:'harborbox',modelName:'Harbor Supply deli
  L:6.70,W:2.16,r:3.073,wb:1.92,wr:.397,hb:1.26,b:1.26,hood:1.06,tr:.05,ws:.61,rg:.09,
  com:.91,mass:3450,brake:138,F:14400,max:28,hp:185,wheelTile:CARSPEC.van.wheelTile,
  // Dimensions are longitudinal, vertical and lateral in the physics chassis frame. The nose is negative X.
- chassisBoxes:[[-.01,.66,0,6.42,.41,1.78],[1.03,1.982,0,4.40,2.174,2.13],
+ chassisBoxes:[[-.01,.66,0,6.42,.41,1.78],[1.03,.963,0,4.40,.179,2.13],
+  [1.03,2.019,-1.05,4.40,2.06,.035],[1.03,2.019,1.05,4.40,2.06,.035],
+  [-1.161,2.019,0,.05,2.06,2.13],[1.03,3.042,0,4.44,.075,2.16],
   [-1.42,1.43,0,.75,1.48,1.74],[-2.02,1.35,0,.50,1.02,1.71],[-2.75,.928,0,1.05,.56,1.72]]};
 function parkReferenceVehicles(){
  const photos=[['sedan','silver-city-sedan',1002.1,14*CELL+6.6,Math.PI/2,0xb5b4ae],
-  ['rav4','brick-red-crossover',293,4*CELL+6.6,Math.PI/2,0x763522]];
+  ['sedan','graphite-city-saloon',10*CELL+parkingCenter(streetSection('ns',10,9),-1),9*CELL+30.5,Math.PI,0x28323e],
+  ['rav4','brick-red-crossover',293,4*CELL+6.6,Math.PI/2,0x763522],
+  ['harborbox','harbor-box-truck',158,1170,0,0xd8d5c8],
+  ['harborbox','harbor-box-truck',564,1171,Math.PI,0xbec8c5],
+  ['harborbox','harbor-box-truck',621,1056,Math.PI/2,0xb2aaa0],
+  ['harborbox','harbor-box-truck',995.9,1135.8,Math.PI/2,0xdad5c8]];
  const bay=HARBOR_SUPPLY.truck;
  if(bay)photos.push(['harborbox','harbor-box-truck',bay.x,bay.z,bay.h,0xd9d8ce]);
  for(const [type,asset,x,z,h,colour] of photos){
   const car=spawnCar(type,x,z,h,null);
   paintCar(car,colour);car.keep=true;car.heroWanted=true;car.heroAsset=asset;
  }
+ // The curb queue in photograph 001 extends north along Palm. Keep crosswalks and access aprons clear.
+ for(const [j,z,pSide,type,colour] of [
+  [9,21,1,'civic',0xb6b4a9],[9,39,1,'rav4',0x516359],[9,20,-1,'sedan',0x787f83],
+  [8,23,1,'sedan',0xc4bdb0],[8,32,-1,'miata',0x933d36],[8,42,1,'civic',0x58676b],
+  [7,30,1,'mustang',0x426270],[7,23,-1,'sedan',0xa9a9a4],[6,36,1,'rav4',0x756452]]){
+  const section=streetSection('ns',10,j),offset=parkingCenter(section,pSide);
+  if(offset==null)continue;
+  const x=10*CELL-pSide*offset,at=j*CELL+z;
+  if(nearDriveway(x,at,3)||cars.some(c=>Math.hypot(c.pos.x-x,c.pos.z-at)<6.6))continue;
+  const c=spawnCar(type,x,at,pSide>0?0:Math.PI,null);paintCar(c,colour);c.keep=true;
+ }
+
 }
 function supplyWall(block,side,R,openings,site=HARBOR_SUPPLY){
  const {matrix:M,width}=lotFace(R,side),half=width/2,roof=site.roof,bottom=.17;
  const plate=(mat,x0,x1,y0,y1,z0,z1)=>plainBox(mat,x0,x1,y0,y1,z0,z1,{M,uvm:1.45});
- const collider=(l,r,b,t,inner=.22,out=.013)=>addRoomCollider(block,M,l,r,-out,inner,t,b);
+ const collider=(l,r,b,t,inner=.22,out=.013,glass=false)=>addRoomCollider(block,M,l,r,-out,inner,t,b,glass);
  const xs=[...new Set([-half,half,...openings.flatMap(o=>[o.left,o.right])])].sort((a,b)=>a-b);
  const ys=[...new Set([bottom,roof,...openings.flatMap(o=>[o.base,o.top])])].sort((a,b)=>a-b);
  for(let i=1;i<xs.length;i++)for(let j=1;j<ys.length;j++){
@@ -47,12 +66,47 @@ function supplyWall(block,side,R,openings,site=HARBOR_SUPPLY){
   }else{
    facadePlane(STREET.materials.glass,M,l,r,b,t,-.122);
    rememberShopGlass(M,l,r);
-   collider(l,r,b,t,.135,-.09);
+   collider(l,r,b,t,.135,-.09,true);
    plate(MAT.metal,l-.062,r+.062,b-.048,b+.038,-.18,.094);
    const panes=Math.max(2,Math.round((r-l)/.91));
    for(let j=1;j<panes;j++){const x=lerp(l,r,j/panes);plate(MAT.darkMetal,x-.019,x+.019,b,t,-.135,-.066);}
    for(const y of [lerp(b,t,.52),lerp(b,t,.84)])plate(MAT.darkMetal,l,r,y-.019,y+.019,-.139,-.064);
   }
+ }
+}
+function supplyRoofStair(block,r,base,roof){
+ const left=r.x1-1.98,right=r.x1-.42,start=r.z0+6.80,top=roof+.18;
+ const steps=Math.ceil((top-base)/.18),rise=(top-base)/steps,going=.26,end=start+steps*going;
+ const hatch={x0:left-.086,x1:right+.086,z0:start+Math.floor((roof-base-2.16)/rise)*going-.064,z1:end+.075};
+ for(let i=0;i<steps;i++){
+  const a=start+i*going,b=a+going,y=base+(i+1)*rise;
+  plainBox(MAT.darkMetal,left,right,y-.047,y,a,b,{uvm:1.37});
+  plainBox(MAT.metal,left,right,y-.044,y+.001,a-.022,a+.033,{uvm:1.1});
+  const tread={x0:left,x1:right,z0:a-.022,z1:b,y,soffit:y-.047};
+  STREET.steps.push(tread);block.bld.push({...tread,y0:tread.soffit,h:y,walkIgnore:true});
+  for(const x of [left+.026,right-.026]){
+   block.bld.push({x0:x-.027,x1:x+.027,z0:a,z1:b,y0:y-.095,h:y+.97});
+   if(i%4===0||i===steps-1)cyl(MAT.metal,x,y-.10,a+.09,.022,.022,1.07,8);
+  }
+ }
+ for(const x of [left+.026,right-.026]){
+  for(const h of [-.083,.55,.955])worksBeam(MAT.metal,[x,base+rise+h,start],[x,top+h,end],h<0?.058:.025);
+  worksBeam(MAT.metal,[x,top+.99,hatch.z0],[x,top+.99,end],.029);
+  block.bld.push({x0:x-.035,x1:x+.035,z0:hatch.z0,z1:end,y0:top,h:top+1.01});
+  for(let z=hatch.z0;z<end;z+=1.37)cyl(MAT.metal,x,top,z,.028,.032,1,10);
+ }
+ worksBeam(MAT.metal,[left,top+.99,hatch.z0],[right,top+.99,hatch.z0],.029);
+ block.bld.push({x0:left,x1:right,z0:hatch.z0-.031,z1:hatch.z0+.031,y0:top,h:top+1.02});
+ const landing={x0:left,x1:right,z0:end,z1:hatch.z1,y:top,soffit:top-.048};
+ plainBox(MAT.darkMetal,left,right,landing.soffit,top,landing.z0,landing.z1,{uvm:1.37});
+ block.bld.push({...landing,y0:landing.soffit,h:top,walkIgnore:true});STREET.steps.push(landing);
+ return hatch;
+}
+function warehouseRoof(block,r,base,thickness,material,holes=[]){
+ for(const p of subtractCityOpenings(r,holes)){
+  plainBox(material,p.x0,p.x1,base,base+thickness,p.z0,p.z1,{uvm:3.12});
+  block.bld.push({...p,y0:base,h:base+thickness,walkIgnore:true});
+  STREET.steps.push({...p,y:base+thickness,soffit:base});
  }
 }
 function buildHarborSupply(block){
@@ -72,8 +126,8 @@ function buildHarborSupply(block){
  supplyWall(block,'W',R,[hole(-4.52,.44,base,3.93,'shutter'),hole(3.44,5.62,4.47,5.79)]);
  topQuad(STREET.materials.wornSlab,R.x0,R.x1,base,R.z0,R.z1,1.7,null,false);
  STREET.steps.push({...R,y:base});
- plainBox(pbr('quay-roof',1.45,{rough:.93,ns:.54,env:.28}),R.x0,R.x1,site.roof,site.roof+.18,R.z0,R.z1,{uvm:2.81});
- block.bld.push({...R,y0:site.roof,h:site.roof+.18});
+ const hatch=supplyRoofStair(block,R,base,site.roof);site.hatch=hatch;
+ warehouseRoof(block,R,site.roof,.18,pbr('quay-roof',1.45,{rough:.93,ns:.54,env:.28}),[hatch]);
  for(const [side,span] of [['N',R.x1-R.x0],['S',R.x1-R.x0],['E',R.z1-R.z0],['W',R.z1-R.z0]]){
   const M=lotFace(R,side).matrix;
   plainBox(MAT.trim,-span/2-.055,span/2+.055,site.roof+.14,site.roof+.31,-.135,.058,{M,uvm:1.4});
@@ -102,14 +156,15 @@ function buildHarborSupply(block){
  }
  // Rolled steel roof joists slope beside glazed roof lights. Pipes and rain leaders follow the outer walls.
  for(let z=R.z0+2.25;z<R.z1-.75;z+=3.12){
-  plainBox(MAT.darkMetal,R.x0+.22,R.x1-.22,6.68,6.75,z-.094,z+.094);
-  plainBox(MAT.metal,R.x0+.22,R.x1-.22,6.73,7.01,z-.025,z+.025);
+  const end=z>hatch.z0-.85&&z<hatch.z1+.2?hatch.x0-.065:R.x1-.22;
+  plainBox(MAT.darkMetal,R.x0+.22,end,6.68,6.75,z-.094,z+.094);
+  plainBox(MAT.metal,R.x0+.22,end,6.73,7.01,z-.025,z+.025);
  }
  for(const [x,z] of [[mid-7.2,cz-3.5],[mid+5.25,cz+5.6],[mid-5.30,cz+4.1]]){
-  worksModel('factory-skylight',x,site.roof+.184,z,[1.64,.35,1.15],0,false);
+  worksModel('factory-skylight',x,site.roof+.184,z,[1.64,.35,1.15]);
  }
- worksModel('condenser-bank',mid+6.80,site.roof+.184,cz-4.20,[2.52,1.21,1.40],0,false);
- for(const [x,z] of [[mid-4.18,cz-4.15],[mid+3.36,cz+3.38]])worksModel('galvanized-roof-vent',x,site.roof+.184,z,[.90,.67,.84],0,false);
+ worksModel('condenser-bank',mid+6.80,site.roof+.184,cz-4.20,[2.52,1.21,1.40]);
+ for(const [x,z] of [[mid-4.18,cz-4.15],[mid+3.36,cz+3.38]])worksModel('galvanized-roof-vent',x,site.roof+.184,z,[.90,.67,.84]);
  const lampMat=new THREE.MeshStandardMaterial({color:lin(0xe5e3cf),emissive:0xffe7bc,emissiveIntensity:1.3,roughness:.48});
  site.light=lampMat;
  for(const x of [mid-7,mid+1.1,mid+8.4])for(const row of [R.z0+5.3,R.z1-5.0]){
@@ -138,8 +193,8 @@ function buildHarborSupply(block){
  topQuad(STREET.materials.wornSlab,yard.x0,yard.x1,.161,yard.z0,yard.z1,3.3,null,false);
  for(const [x,z,n,paint] of [[yard.x0+1.3,yard.z0+2,2,0x944c39],[yard.x0+1.3,yard.z0+5,2,0x3d6060],
   [yard.x0+8,yard.z0+2,1,0x526978],[yard.x0+8,yard.z0+5,2,0xa28344]]){
-  for(let k=0;k<n;k++)plainBox(MAT.container,x,x+6.06,.161+k*2.59,.161+(k+1)*2.59,z,z+2.44,{tint:paint,uvm:1.1});
-  block.bld.push({x0:x,x1:x+6.06,z0:z,z1:z+2.44,y0:.15,h:.161+n*2.59});
+  const end=x<yard.x0+3?'W':'E';
+  for(let k=0;k<n;k++)buildCargoContainer(block,x,z,.161+k*2.6,paint,end,k===0);
  }
  for(let i=0;i<4;i++){
   worksModel('quay-drum',mid-3.92-i*.67,base,R.z0-.78,[.59,.89,.59],0,true);
@@ -194,12 +249,20 @@ function buildDockWorkshops(block){
   }
   topQuad(STREET.materials.wornSlab,R.x0,R.x1,.17,R.z0,R.z1,2.64,null,false);
   STREET.steps.push({...R,y:.17});
-  plainBox(roofing,R.x0,R.x1,h,h+.115,R.z0,R.z1,{uvm:3.25});block.bld.push({...R,y0:h,h:h+.115});
+  warehouseRoof(block,R,h,.115,roofing);
   for(const frac of [.23,.51,.77]){
    const x=lerp(R.x0,R.x1,frac);
    worksModel(frac===.51?'factory-skylight':'galvanized-roof-vent',x,h+.119,mz+(frac-.5)*(R.z1-R.z0),
-    frac===.51?[1.68,.38,1.18]:[.89,.67,.84],0,false);
-   if(R.z1-R.z0>12)worksModel('condenser-bank',x+.96,h+.119,R.z1-4.32,[2.33,1.12,1.28],Math.PI*.5,false);
+    frac===.51?[1.68,.38,1.18]:[.89,.67,.84]);
+   if(R.z1-R.z0>12){
+    const line=R.z1-4.32,dest=R.z1-.26;
+    worksModel('condenser-bank',x+.96,h+.119,line,[2.33,1.12,1.28],Math.PI*.5);
+    for(const dx of [.60,.73]){
+     worksBeam(MAT.darkMetal,[x+dx,h+.24,line+.89],[x+dx,h+.24,dest-.32],.028);
+     worksBeam(MAT.metal,[x+dx,h+.24,dest-.32],[x+dx+.30,h+.24,dest],.026);
+    }
+    for(let z=line+1.56;z<dest;z+=1.62)plainBox(MAT.stone,x+.49,x+.85,h+.116,h+.214,z-.073,z+.073,{uvm:1.6});
+   }
   }
   for(const x of [R.x0+3.41,R.x1-3.48]){
    worksModel('hardware-stock-rack',x,.17,mz,[2.42,2.02,.67],0,true);

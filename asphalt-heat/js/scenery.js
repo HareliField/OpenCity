@@ -19,11 +19,16 @@ function placeScenery(id,x,y,z,heading,dims,fallback){
  OUTDOOR_MODELS.push({id,x,y,z,heading,dims,fallback,device,display:null,started:false});
 }
 
+function outdoorModelInView(p){
+ const view=caseCamera.focus||player.pos;
+ return (p.x-view.x)**2+(p.z-view.z)**2+(p.y-view.y)**2<(QUALITY.level===0?43:68)**2;
+}
+
 function updateOutdoorModels(dt,x,z){
  if((sceneryClock-=dt)>0)return;
  sceneryClock=.65;
  for(const p of OUTDOOR_MODELS){
-  const near=(p.x-x)**2+(p.z-z)**2+(p.y-player.pos.y)**2<(QUALITY.level===0?43:68)**2;
+  const near=outdoorModelInView(p);
   if(p.display)p.display.visible=near;
   if(p.fallback)p.fallback(!p.display||!near);
   if(p.started||!near)continue;
@@ -39,13 +44,14 @@ function updateOutdoorModels(dt,x,z){
    shadeFixture(node,p.x,p.y,p.z);
    p.display=node;
    if(p.device)bindCityMachine(p.device,node);
-   node.visible=(p.x-player.pos.x)**2+(p.z-player.pos.z)**2+(p.y-player.pos.y)**2<(QUALITY.level===0?43:68)**2;
+   node.visible=outdoorModelInView(p);
    p.fallback?.(!node.visible);
    scene.add(node);
   });
  }
  updateDoorModels();
  updatePropModels(x,z);
+ for(const c of cars)streamVehicleComponents(c,Math.hypot(x-c.pos.x,z-c.pos.z)<48);
  const featured=cars.find(c=>c.heroWanted&&!c.heroLoading&&!c.dead&&!(c.retryAfter>performance.now())&&Math.hypot(x-c.pos.x,z-c.pos.z)<85);
  if(featured&&INTERIORS.catalog[featured.heroAsset||'coupe'])loadHeroCar(featured);
 }
@@ -55,7 +61,8 @@ function updatePropModels(x,z){
  for(const p of PROPS.list){
   const dockLamp=p.t==='lamp'&&p.x>=15*CELL&&p.x<W+HALF&&p.z>=13*CELL;
   const gardenLamp=p.t==='lamp'&&p.x>=11*CELL&&p.x<=13*CELL&&p.z>=2*CELL&&p.z<=4*CELL;
-  const type=dockLamp||gardenLamp?['dock-street-lamp',[.38,7.20,2.49]]:p.riverside?['riverside-lamp',[.56,4.93,1.08]]:types[p.t];
+  const palmLamp=p.t==='lamp'&&p.x>=9*CELL&&p.x<=11*CELL&&p.z>=7*CELL&&p.z<=11*CELL;
+  const type=dockLamp||gardenLamp||palmLamp?['dock-street-lamp',[.38,7.20,2.49]]:p.riverside?['riverside-lamp',[.56,4.93,1.08]]:types[p.t];
   if(!type)continue;
   const [id,dims]=type;
   const pos=p.renderPosition;
@@ -77,6 +84,7 @@ function updatePropModels(x,z){
     o.castShadow=!p.P.glow;
     if(p.t==='lantern'&&(!p.riverside||o.material.name==='Opal lamp lens'))bindLanternLens(p,o);
    });
+   node.userData.roadwayLens=id==='dock-street-lamp';
    p.display=node;
    node.visible=true;
    scene.add(node);
@@ -87,8 +95,11 @@ function updatePropModels(x,z){
 }
 
 function lampEmitter(p){
- const lantern=p.t==='lantern',arm=p.riverside&&p.display?.visible? .57 : lantern?0:1.85;
- return {x:p.x+Math.sin(p.ry)*arm,y:p.y+(p.riverside&&p.display?.visible?4.21:lantern?4.45:p.display?.visible?5.69:6.9),z:p.z+Math.cos(p.ry)*arm};
+ const lantern=p.t==='lantern',loaded=p.display?.visible;
+ const roadway=loaded&&p.display.userData.roadwayLens;
+ const arm=roadway?2.11:p.riverside&&loaded?.57:lantern?0:1.85;
+ const height=roadway?7.005:p.riverside&&loaded?4.21:lantern?4.45:loaded?5.69:6.9;
+ return {x:p.x+Math.sin(p.ry)*arm,y:p.y+height,z:p.z+Math.cos(p.ry)*arm};
 }
 const illuminatedLanternGlass=new WeakMap();
 function bindLanternLens(p,mesh){
@@ -144,14 +155,19 @@ function syncPropMesh(p){
  }else{
   _streetMatrix.compose(p.renderPosition,p.renderQuaternion,_streetScale);
  }
- p.P.mesh.setMatrixAt(p.idx,_streetMatrix);
- p.P.mesh.instanceMatrix.needsUpdate=true;
+ if(p.moved){
+  const bound=p.mesh.geometry.boundingSphere,shape=p.P.geo.boundingSphere;
+  bound.radius=Math.max(bound.radius,bound.center.distanceTo(p.renderPosition)+shape.center.length()+shape.radius);
+ }
+ p.mesh.setMatrixAt(p.idx,_streetMatrix);
+ p.mesh.instanceMatrix.needsUpdate=true;
 }
 
 const heroModels=new Map();
 const REFERENCE_LAMPS={
  coupe:[[-2.219,.673,.685,.26],[2.224,.658,.427,.19]],
  'maroon-saloon':[[-2.29,.60,.76,.33],[2.261,.58,.669,.29]],
+ 'graphite-city-saloon':[[-2.29,.60,.76,.33],[2.261,.58,.669,.29]],
  'silver-city-sedan':[[-2.283,.58,.834,.34],[2.282,.621,.677,.30]],
  'brick-red-crossover':[[-2.23,.621,1.007,.285],[2.232,.658,.816,.283]],
  'harbor-box-truck':[[-3.334,.795,.922,.226],[3.353,.647,.998,.255]]
@@ -168,7 +184,11 @@ function loadHeroCar(car){
   const path='models/scenery/'+INTERIORS.catalog[id].file;
   const model=new Promise((resolve,reject)=>new THREE.GLTFLoader().load(path,resolve,undefined,reject))
    .then(gltf=>{
-    const shell=gltf.scene.getObjectByName('VehicleShell')||gltf.scene.getObjectByName('CoupeShell')||gltf.scene.getObjectByName('Frame');
+    let shell=gltf.scene.getObjectByName('VehicleShell')||gltf.scene.getObjectByName('CoupeShell');
+    if(!shell&&gltf.scene.getObjectByName('Frame')){
+     shell=new THREE.Group();shell.name='VehicleShell';
+     for(const part of [...gltf.scene.children])if(part.name!=='WheelPrototype')shell.add(part);
+    }
     const wheel=gltf.scene.getObjectByName('WheelPrototype');
     if(!shell||!wheel)return null;
     shell.traverse(o=>{
@@ -189,7 +209,12 @@ function loadHeroCar(car){
   shell.traverse(o=>{
    if(!o.isMesh)return;
    o.material=o.material.transparent?o.material.clone():coatVehicle(o.material,car.snowDepth);
-   if(car.repainted)o.material.color.copy(lin(car.paintColor));
+   const finish=o.material.name||'';
+   if(finish==='Laminated and tempered automotive glass'){
+    o.material.color.copy(lin(0x3f5259));o.material.opacity=.47;o.material.metalness=.34;o.material.envMapIntensity=.76;
+   }
+   o.userData.lacquer=!o.material.transparent&&(id==='harbor-box-truck'?/enamel/i.test(finish):!/reference finishes|alloy|glass|tyre|inner body|acoustic lining|compartment seal/i.test(finish));
+   if(car.repainted&&o.userData.lacquer)o.material.color.copy(lin(car.paintColor));
   });
   car.mesh.add(shell);
   car.body3.visible=false;
@@ -211,6 +236,7 @@ function loadHeroCar(car){
   }
   car.hero={shell,wheels,lenses,deformed:false};
   syncCarMesh(car);
+  createVehicleAssembly(car,shell);streamVehicleComponents(car,true);
   updateHeroLights(car);
  });
 }
@@ -240,7 +266,7 @@ function removeHeroCoupe(car){
  const {shell,wheels,lenses,deformed}=car.hero;
  car.mesh.remove(shell,...lenses);
  scene.remove(...wheels);
- shell.traverse(o=>{if(o.isMesh){if(deformed)o.geometry.dispose();if(o.material!==burntMat)o.material.dispose();}});
+ shell.traverse(o=>{if(o.isMesh){if(o.userData.undented)o.geometry.dispose();if(o.material!==burntMat)o.material.dispose();}});
  car.hero=null;
  car.body3.visible=true;
 }

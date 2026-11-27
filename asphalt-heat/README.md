@@ -2,6 +2,12 @@
 
 An original browser-based 3D coastal city. The 16 × 16 city blocks cover 1,024 × 1,024 metres, and the freight terminal extends south from the warehouse district. Two graded roads add a second level and a curved route across the grid. Follow a storm across the waterfront, pull over to visit the shops, or head east to the boardwalk and lighthouse.
 
+## Collaborative city website
+
+With the game server running, open the [city website](http://127.0.0.1:8765/city/). Choose **Copy agent prompt** or open the [copy-ready prompt](city/contribute.txt) directly. Paste it into a coding agent and fill in your idea. The agent builds the change locally, shows you where to try it, then asks whether to open a GitHub pull request.
+
+The website also includes an interactive demo with sample previews, review decisions, and releases. **Copy for my agent** fills the real contribution prompt with the idea from the demo or your own draft.
+
 ## Play locally
 
 From the game directory, run:
@@ -10,7 +16,9 @@ From the game directory, run:
 python3 tools/serve.py
 ```
 
-Open [Asphalt Heat](http://127.0.0.1:8765/index.html). Morning is the default. Open **Time & weather** before pressing **Play** to pick a starting sky and hour. The game and its assets load locally. Add `?q=0`, `?q=1`, or `?q=2` to override automatic quality selection.
+Open [Asphalt Heat](http://127.0.0.1:8765/index.html). Morning is the default. Open **Time & weather** before pressing **Play** to pick a starting sky and hour. The game and its assets load locally. Graphics quality is available before and during play. Auto starts at Medium and lowers rendering resolution or switches to Low when frames repeatedly run slow. Your selection is saved in this browser. The launch parameters `?q=0`, `?q=1`, and `?q=2` override the saved setting for that URL.
+
+Click the round radar to open the city map. Choose a landmark or a point on the map, then confirm to travel. The time slider and weather buttons update the scene as you use them. Close the map with **×** or **Escape** to return to the radar.
 
 | Action | Desktop |
 | --- | --- |
@@ -72,11 +80,25 @@ The green MX-5 is parked beside the starting shop row. Its cockpit view follows 
 
 Run `node tools/street-test.js` to check all 16 speed humps, opposing pedestrian paths, stop priority, blocked exits and tyre clearance through 1,440 intersection movements. Each of the 12 cars drives straight, left and right from all four approaches at five junction layouts with both near and distant traffic simulation. A shared intersection checks vehicle and pedestrian clearance at 30, 60 and 120 updates per second.
 
+The same test sweeps all 1,376 straight ground lanes against the actual bridge decks, rails, supports and signposts. It drives the F-150, panel van and Harbor Supply delivery truck south on Coastal Avenue. Both commercial vehicles also drive over Harbor Viaduct and Coast Ridge Road in both directions.
+
 Run `node tools/roadster-test.js` to check the floor clearance and steering-wheel reach of all 32 character meshes in the MX-5.
 
 ## Ferry Street cottages
 
 Between Maple Street and Ridge Road, four blocks each contain six furnished cottages around a shared garden. Enter through the side door facing the garden. Each kitchen tap draws from the water main and discharges to the sanitary return. The window grilles, clay tile edges, gutters and overhead service leads follow the houses in reference 017.
+
+## Vehicle service panels
+
+Stand at the nose of a parked car and use **C** to open the bonnet. On the rear-engined coupe, the engine lid opens at the tail. Inside are the radiator, fan, coolant bottle, battery, rocker covers, manifolds, accessory pulleys and wiring. These mechanical layouts are inferred from vehicle type. On the reference saloons, each window is cut from the fitted shell, with seats and a dashboard behind it. A severe impact can crack the laminated windscreen or shatter an individual side or rear pane. Respray service repairs the glazing. Use **C** at a passenger door’s trailing edge to swing it open.
+
+At the back of the Harbor Supply truck, **C** rolls the cargo shutter along its overhead tracks. Five boarding treads deploy when the door reaches the roof. The treads, cargo floor, body sides, front bulkhead and moving shutter support independent rigid bodies.
+
+## Palm Street, Marina Street and the civic squares
+
+The 24-Hour Diner and Marina Coffee face each other at Palm Street and Marina Street. Use **C** at the diner counter for breakfast or at the café for coffee. The coin box outside sells a newspaper. The graphite saloon is parked on the west curb of Palm Street, between Commerce and Marina. Follow Marina east to Breakwater Way for fruit at Seabreeze Market or an LP at Coastal Vinyl. All four buildings have independent passenger lifts, stairs, upper flats and roof landings.
+
+The 27 upper flats and 24 Ferry Street garden cottages have gravity-fed six-litre cisterns. Flush with **C** in front of a fixture. A filled cistern can discharge with the inlet closed. Restoring pressure refills the tank. The civic squares on King Street, Market Street and Coastal Avenue have tiled basins with limestone spheres. Their jets respond to municipal water pressure and the local electric feeder.
 
 ## Dock Street and Lighthouse Cove
 
@@ -92,7 +114,7 @@ Enter Market Flats through the west door. The stairs and lift connect the cellar
 
 The dry ledge in the cellar gallery crosses under Studio Boulevard to Tidewater Pump House. The power switch operates the market registers, lift and service lighting. The water valve controls tap pressure. The drain pump changes the storm sump level. Running a basin in the flats sends water into the separate sanitary line and its sight gauge.
 
-Buried water mains, electrical ducts and sanitary returns serve all 256 blocks. Four labelled district breakers on the pump house’s south wall operate the street lighting, nearby shop lights, and lifts on their feeder. Water pressure falls with distance and floor height. Flow from running taps on the four residential sites returns along the sanitary branches to the plant. At Wash House, use **C** in front of a machine to run a wash. Its intake depends on pressure, its drum needs district power, and its measured discharge joins the sanitary line. The sliding glass cases at Tideline Market open from either side.
+Buried water mains, electrical ducts and sanitary returns serve all 256 blocks. Four labelled district breakers on the pump house’s south wall operate the street lighting, nearby shop lights, and lifts on their feeder. Water pressure falls with distance and floor height. Flow from sinks and cisterns returns along the sanitary branches to the plant. At Wash House, use **C** in front of a machine to run a wash. Its intake depends on pressure, its drum needs district power, and its measured discharge joins the sanitary line. The sliding glass cases at Tideline Market open from either side.
 
 ## Driving, buildings, and assets
 
@@ -108,19 +130,27 @@ Reviewed GLBs load as the player approaches. The city uses Meshy 7.1 source mode
 
 Add `?visit=police` to the game URL to start facing Old Town headquarters. Both police buildings on the minimap share one department. Enter either building and use **C / CASE DESK** at reception to see cases, fugitives, the watch roster and the radio log. The 48 named staff rotate across three watches. Patrol, Detectives, Metro SWAT, Communications, Forensics, Air Support and Command draw from that roster. Approach an officer on foot and use **TALK** to read their assignment and the biography written for their city resident ID. The same staff profiles are available from **Watch**.
 
-At reception, **Watch** lists the current shift. Use the lobby stairs or ride the lift to Investigations & Evidence, Watch Operations, or Staff & Equipment. The evidence terminal tracks each exhibit from collection to storage. Booking and equipment desks show linked bookings and the kits issued to the current watch.
+At reception, **Watch** lists the current shift. Use the stairs or lift to visit the detective bureau and evidence lab, the dispatch consoles and watch command, or the staff break room and equipment desk. The evidence terminal tracks each exhibit from collection to storage. Booking and equipment desks show linked bookings and the kits issued to the current watch.
 
-During ordinary play, two pedestrians can get into a dispute over a carried holdall. If somebody is killed, a bystander can call 911. The caller has to finish the call. Someone who finds the victim later can report the scene without naming the offender. Patrol and detectives use the same staffing queues and evidence records as other city cases. A witness who recognizes the offender and a corroborating exhibit can support a bulletin. Inconclusive files stay open.
+During ordinary play, two pedestrians can get into a dispute over a carried holdall. A bystander can call 911 about a shooting. The caller has to finish the call. Someone who finds the victim later can report the scene without naming the offender.
+
+Dispatch assigns up to five available on-duty patrol officers to a street homicide. The scene lead handles the handover. The others take the witness account, keep incident notes, manage access and help bystanders. Officers arrive by patrol car where they have a usable curb approach, or on foot. An available detective takes the file. A witness identification corroborated by an exhibit can support a bulletin. Inconclusive files stay open.
 
 When an encounter is underway, select **Follow street incident** or press **Y** to watch the people involved, the call desk, the scene investigator and the lab. Select **Return to player** to leave the camera. At reception, **Cases** shows the victim, caller’s statement, exhibit history and decision. **Follow live case** in an active file opens the same camera.
 
-The [Old Town homicide film](films/old-town-homicide.html) follows one autonomous case from the street encounter to the bulletin. Its six chapter controls jump to footage from that same playthrough.
+The [Downtown homicide film](films/old-town-homicide.html) follows Toby Lin’s 911 call outside Verve Nail Studio, a five-officer patrol response and Detective Kai Chen’s finding at Old Town headquarters. Eight chapters jump to the recorded events. The same page includes a second, unresolved Old Town case and four in-game photographs of headquarters.
 
 The **Cases** desk also offers three playable training reports. Follow a homicide from the first call to a supervisor’s bulletin, follow a gunfire report with an unidentified shooter, or open two homicides together and see how the detectives share one analyst. The files advance on the game clock while you explore. Their timelines record the sender, recipient and finding. Dispatch stays silent during play.
 
 Homicides, robberies, gunfire and vehicle thefts create case files. A civilian can call 911 about gunfire they hear. An identified shooter can trigger a pursuit. A detective takes the file and the evidence desk reviews game-world prints, DNA, witness statements and vehicle sightings. The **Gloves** button changes the character’s hand covering. A homicide bulletin can survive a search cooldown and a reload in the same browser tab. A patrol that recognizes the person or a reported plate can reopen the search. Booking updates linked files at both desks.
 
 ## Police searches
+
+Traffic officers in reflective vests work Verve Street at Studio Boulevard, Juniper Street at Park Street and Coastal Avenue at Elm Street. Marked motor patrols also issue tickets. The roadside speed signs read in mph. The speedometer displays the equivalent limit in km/h.
+
+Officers can cite speeding, running a red light or stop sign, wrong-way driving, driving on the sidewalk or cycle track, entering an occupied crosswalk, hitting someone, and damaging or destroying property. A civilian who sees property damage can complete a 911 call. Each ticket records the offense, location, fine, officer, witness source and observed plate. Approach a traffic officer on foot and press **C** to open **Traffic tickets**, or choose **Tickets** at either police desk. Pay from the player's cash balance. Paid and outstanding records survive a reload in the same tab.
+
+Run `node tools/traffic-ticket-test.js` to check lawful and unlawful crossings, witness calls, crash attribution, duplicate tickets, payment and reload.
 
 Property damage generates a misdemeanor report when a witness sees it. Civilians take a few seconds to complete the call. Police search the scene and the last confirmed location, and losing sight of the player starts the cooldown. Levels 1 and 2 use investigation behavior. Each incident has a limited ground and air response.
 

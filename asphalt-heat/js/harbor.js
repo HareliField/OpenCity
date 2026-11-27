@@ -1,6 +1,8 @@
 /* A small boat harbor at the southern end of the boardwalk. */
 const HARBOR={
  name:'South Shore Harbor',
+ basin:{x0:W+HALF+6,x1:4096,z0:880,z1:4096,bed:-2.42},
+ yard:{x0:W-122,x1:W+HALF+6,z0:W+HALF,z1:W+HALF+182,streets:[W-CELL,W],cross:[W+CELL,W+2*CELL,W+HALF+170],buildings:[]},
  approach:{x0:W+HALF+6,x1:W+53,z0:965,z1:977,y:.25},
  quay:{x0:W+53,x1:W+63,z0:945,z1:998,y:.25},
  docks:[
@@ -17,17 +19,87 @@ const HARBOR={
  ]
 };
 
+function inDockYard(x,z,r=0){
+ const h=HARBOR.yard;return z>=h.z0&&x>=h.x0-r&&x<=h.x1+r;
+}
+function dockYardGateAt(x,r=0){return HARBOR.yard.streets.some(g=>Math.abs(x-g)<10.52-r);}
+
 function harborWalkingLimit(z){
- const {quay,docks}=HARBOR;
- if(z<quay.z0||z>quay.z1)return null;
+ const {basin,quay,docks}=HARBOR;
+ if(z<basin.z0)return null;
+ if(z<quay.z0||z>quay.z1)return basin.x0;
  return docks.find(d=>z>=d.z0&&z<=d.z1)?.x1??quay.x1;
+}
+
+function buildDockSeawall(){
+ const {basin,approach}=HARBOR,x=basin.x0,z0=basin.z0,z1=W+HALF;
+ const paving=STREET.materials.wornSlab,stone=pierPileMaterial();
+ const promenade={x0:W+HALF+.5,x1:x,z0,z1,y:.25};
+ STREET.steps.push(promenade);
+ for(let z=z0;z<z1;z+=3.9){
+  const end=Math.min(z+3.9,z1);
+  plainBox(paving,promenade.x0,x-.32,.013,.25,z+.007,end-.007,{uvm:2.12});
+  plainBox(stone,x-.32,x+.025,basin.bed,.249,z+.004,end-.004,{uvm:2.31});
+ }
+ STATIC.push({x0:x-.32,x1:x+.025,z0,z1,y0:basin.bed,h:.25,walkIgnore:true});
+ plainBox(stone,x,W+64,basin.bed,.17,z0-.36,z0,{uvm:2.31});
+ STATIC.push({x0:x,x1:W+64,z0:z0-.36,z1:z0,y0:basin.bed,h:.17,walkIgnore:true});
+ STREET.steps.push({x0:x,x1:W+64,z0:z0-.36,z1:z0,y:.17});
+ const guard=(x0,z0,x1,z1,y)=>{
+  const count=Math.ceil(Math.hypot(x1-x0,z1-z0)/2.66);
+  for(const height of [.47,.98]){
+   worksBeam(MAT.metal,[x0,y+height,z0],[x1,y+height,z1],.022);
+   STATIC.push({x0:Math.min(x0,x1)-.022,x1:Math.max(x0,x1)+.022,z0:Math.min(z0,z1)-.022,z1:Math.max(z0,z1)+.022,y0:y+height-.022,h:y+height+.022});
+  }
+  for(let i=0;i<=count;i++){
+   const px=lerp(x0,x1,i/count),pz=lerp(z0,z1,i/count);
+   cyl(MAT.metal,px,y,pz,.032,.035,1.02,10);
+   plainBox(MAT.darkMetal,px-.068,px+.068,y,y+.018,pz-.068,pz+.068);
+   STATIC.push({x0:px-.035,x1:px+.035,z0:pz-.035,z1:pz+.035,y0:y,h:y+1.02,radius:.035});
+  }
+ };
+ guard(x+.06,z0-.18,W+63.9,z0-.18,.17);
+ for(const z of [approach.z0+.068,approach.z1-.068])guard(x+.09,z,approach.x1-.068,z,.25);
+ for(const [a,b] of [[HARBOR.quay.z0,approach.z0],[approach.z1,HARBOR.quay.z1]])
+  guard(HARBOR.quay.x0+.068,a,HARBOR.quay.x0+.068,b,HARBOR.quay.y);
+ // Toe protection projects from the base of the wall into the basin.
+ for(let z=z0+.5;z<z1;z+=1.26){
+  if(z>approach.z0-.7&&z<approach.z1+.7)continue;
+  for(const line of [0,1,2]){
+   const phase=z*2.49+line*1.81,w=.58+.14*Math.cos(phase),rise=.46+.14*Math.sin(phase*.67);
+   const px=x+.32+line*.55,pz=z+.37*Math.sin(phase+line),py=-.27-.30*line+.09*Math.cos(phase);
+   const rock=new THREE.IcosahedronGeometry(1,0);
+   rock.scale(w,rise,.86+.16*Math.sin(phase));rock.rotateY(phase);rock.translate(px,py,pz);
+   registerQuayRock(rock);addGeo(stone,rock,true);
+  }
+ }
+}
+
+function registerQuayRock(geometry){
+ const p=geometry.attributes.position,verts=[],keys=new Map(),hull=[],planes=[];
+ geometry.computeBoundingBox();
+ const {min,max}=geometry.boundingBox,center=geometry.boundingBox.getCenter(new V3());
+ for(let i=0;i<p.count;i+=3){
+  const face=[];
+  for(let j=i;j<i+3;j++){
+   const v=new V3().fromBufferAttribute(p,j),key=v.toArray().join(',');
+   if(!keys.has(key)){keys.set(key,verts.length);verts.push(v);}
+   face.push(keys.get(key));
+  }
+  const plane=new THREE.Plane().setFromCoplanarPoints(...face.map(k=>verts[k]));
+  if(plane.distanceToPoint(center)>0){face.reverse();plane.negate();}
+  hull.push(face);planes.push(plane);
+ }
+ STATIC.push({x0:min.x,x1:max.x,z0:min.z,z1:max.z,y0:min.y,h:max.y,walkIgnore:true,convex:{verts,hull,planes,center}});
 }
 
 function buildHarbor(){
  const {approach,quay,docks,boats}=HARBOR;
+ buildDockSeawall();
  for(const [i,d] of [approach,quay,...docks].entries()){
   STREET.steps.push(d);
-  plainBox(i===0?MAT.stone:MAT.planks,d.x0,d.x1,.03,d.y,d.z0,d.z1,{uvm:1.45,shadow:false});
+  plainBox(i===0?MAT.stone:MAT.planks,d.x0,d.x1,.03,i===0?d.y:d.y-.009,d.z0,d.z1,{uvm:1.45,shadow:false});
+  if(i>0)registerDeckBoards(d,i===1);
  }
  plainBox(MAT.column,quay.x1-.86,quay.x1,-1.25,quay.y-.045,quay.z0,quay.z1,{uvm:1.9});
 
@@ -188,6 +260,9 @@ function buildMooredBoat(boat,dock){
 
 function drawHarborMap(g,k){
  const mapX=x=>(x+HALF)*k;
+ const {basin}=HARBOR;
+ g.fillStyle='#1d5866';g.fillRect(mapX(basin.x0),mapX(basin.z0),g.canvas.width-mapX(basin.x0),g.canvas.height-mapX(basin.z0));
+ g.fillStyle='#b2a998';g.fillRect(mapX(W+HALF+.5),mapX(basin.z0),(basin.x0-W-HALF-.5)*k,(W+HALF-basin.z0)*k);
  for(const [i,r] of [HARBOR.approach,HARBOR.quay,...HARBOR.docks].entries()){
   g.fillStyle=i===0?'#8a8c82':'#c2a27f';
   g.fillRect(mapX(r.x0),mapX(r.z0),(r.x1-r.x0)*k,(r.z1-r.z0)*k);

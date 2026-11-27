@@ -54,9 +54,92 @@ function buildPoliceOffice(block,M,side,box){
 }
 
 const policeGearMaterial=new THREE.MeshStandardMaterial({color:0x24303a,roughness:.74});
-function equipOfficer(c,metro){
- // The skinned uniform already includes its belt, pouches and protective clothing.
+const trafficVestMaterial=new THREE.MeshStandardMaterial({vertexColors:true,side:THREE.DoubleSide,roughness:.66});
+const trafficVestFits=new Map();
+function fitTrafficVest(c){
+ if(!c.bones.Spine2)return;
+ let geometry=trafficVestFits.get(c.name);
+ if(!geometry){
+  const positions=[],colors=[],lime=new THREE.Color(0xbad43b),tape=new THREE.Color(0xe1e6db);
+  // Follow the front and back of this uniform from the shoulder to the top of its duty belt.
+  for(const face of [-1,1])for(const side of [-1,1]){
+   const panel=[.09,.22,.40].map((drop,i)=>{
+    const at=x=>new V3(0,0,.009).applyMatrix4(uniformMount(c.name,side*x,drop,face));
+    return [at(i===0?.065:.012),at(i===0?.141:.149)];
+   });
+   function stripe(a,b,t0,t1,u0,u1,color){
+    const point=(t,u)=>a[0].clone().lerp(b[0],t).lerp(a[1].clone().lerp(b[1],t),u);
+    const corners=[point(t0,u0),point(t0,u1),point(t1,u1),point(t1,u0)];
+    for(const k of [0,1,2,0,2,3]){positions.push(...corners[k].toArray());colors.push(color.r,color.g,color.b);}
+   }
+   for(const [l,r,col] of [[0,.38,lime],[.38,.68,tape],[.68,1,lime]])stripe(panel[0],panel[1],0,1,l,r,col);
+   for(const [a,b,col] of [[0,.16,lime],[.16,.36,tape],[.36,1,lime]])stripe(panel[1],panel[2],a,b,0,1,col);
+  }
+  geometry=new THREE.BufferGeometry();
+  geometry.setAttribute('position',new THREE.Float32BufferAttribute(positions,3));
+  geometry.setAttribute('color',new THREE.Float32BufferAttribute(colors,3));geometry.computeVertexNormals();
+  trafficVestFits.set(c.name,geometry);
+ }
+ const vest=new THREE.Mesh(geometry,trafficVestMaterial);vest.name='Traffic patrol vest';
+ c.model.traverse(m=>{if(m.isSkinnedMesh)vest.layers.mask=m.layers.mask;});
+ c.bones.Spine2.add(vest);
+}
+function equipOfficer(c,metro,traffic=false){
+ if(traffic)fitTrafficVest(c);
  if(!metro)clipDepartmentCamera(c);
+}
+function poseDispatcher(c,post,phase){
+ const b=c.bones,fingers=c.consoleBones||=nodeMap(c.model),forward=new V3(Math.sin(post.yaw),0,Math.cos(post.yaw)),side=new V3(forward.z,0,-forward.x);
+ const hipHeight=(b.LeftThigh.getWorldPosition(new V3()).y+b.RightThigh.getWorldPosition(new V3()).y)/2;
+ // Seat cushion top is 0.539 m above this floor. The hip joint sits within the body above it.
+ c.root.position.y+=post.point.y+.607-hipHeight;c.root.updateWorldMatrix(true,true);
+ for(const [limb,sign] of [['Left',1],['Right',-1]]){
+  const ankle=new V3().copy(post.point).addScaledVector(forward,.42).addScaledVector(side,sign*.128);
+  const shoeDepth={Business_Female_01:.101,Male_Adult_08:.126,Female_Adult_03:.107}[c.name]||.11;
+  ankle.y=post.point.y+shoeDepth*c.root.scale.y+.002;
+  reachDriverLimb(b[limb+'Thigh'],b[limb+'Calf'],b[limb+'Foot'],ankle,forward.clone().setY(.64));
+  pointBone(b[limb+'Foot'],b[limb+'Toe'],forward.clone().setY(-.09));
+  const key=post.keyboard.clone().addScaledVector(side,sign*(.084+.012*Math.sin(phase*2.2+sign)));
+  key.y+=.034+.004*Math.sin(phase*(sign>0?3.8:4.3));
+  const hand=b[limb+'Hand'],knuckle=b[limb+'Knuckle'],palm=forward.clone().setY(-.16).normalize();
+  const wrist=key.addScaledVector(palm,-(knuckle?hand.getWorldPosition(new V3()).distanceTo(knuckle.getWorldPosition(new V3())):.084));
+  reachDriverLimb(b[limb+'Arm'],b[limb+'ForeArm'],hand,wrist,side.clone().multiplyScalar(sign*.65).setY(-1));
+  if(!knuckle)continue;
+  pointBone(hand,knuckle,palm);
+  const prefix='Bip01_'+limb[0]+'_Finger';
+  const index=fingers[prefix+'1'],little=fingers[prefix+'4'];
+  if(!index||!little)continue;
+  const span=index.getWorldPosition(new V3()).sub(little.getWorldPosition(new V3()));
+  span.addScaledVector(palm,-span.dot(palm)).normalize();
+  const across=side.clone().multiplyScalar(-sign);
+  const angle=Math.atan2(palm.dot(span.clone().cross(across)),span.dot(across));
+  const orientation=hand.getWorldQuaternion(new THREE.Quaternion()).premultiply(new THREE.Quaternion().setFromAxisAngle(palm,angle));
+  hand.quaternion.copy(hand.parent.getWorldQuaternion(new THREE.Quaternion()).invert().multiply(orientation));
+  hand.updateWorldMatrix(false,true);
+  for(let i=1;i<=4;i++){
+   const finger=prefix+i;
+   pointBone(fingers[finger],fingers[finger+'1'],forward.clone().setY(-.12));
+   pointBone(fingers[finger+'1'],fingers[finger+'2'],forward.clone().setY(-.54-.12*Math.sin(phase*4+i)));
+  }
+ }
+}
+function poseExaminer(c,post,phase){
+ const b=c.bones,forward=new V3(Math.sin(post.yaw),0,Math.cos(post.yaw)),side=new V3(forward.z,0,-forward.x);
+ // Tip the upper body over the mat. Apply the additional head pitch in world space because these rigs have different bind axes.
+ for(const [bone,angle] of [[b.Spine2,.29],[b.Head,.50+.024*Math.sin(phase)]]){
+  const orientation=bone.getWorldQuaternion(new THREE.Quaternion()).premultiply(new THREE.Quaternion().setFromAxisAngle(side,angle));
+  bone.quaternion.copy(bone.parent.getWorldQuaternion(new THREE.Quaternion()).invert().multiply(orientation));
+  bone.updateWorldMatrix(false,true);
+ }
+ for(const [limb,sign] of [['Left',1],['Right',-1]]){
+  const grip=post.exhibit.clone().addScaledVector(side,sign*(.113+.014*Math.sin(phase*1.21+sign)));
+  grip.addScaledVector(forward,-.063);grip.y+=sign>0?-.16:-.042+.012*Math.sin(phase*1.85);
+  const hand=b[limb+'Hand'],knuckle=b[limb+'Knuckle'];
+  const palm=forward.clone().setY(sign>0?-.77:-.56).addScaledVector(side,-sign*.35).normalize();
+  const wrist=grip.addScaledVector(palm,-hand.getWorldPosition(new V3()).distanceTo(knuckle.getWorldPosition(new V3())));
+  reachDriverLimb(b[limb+'Arm'],b[limb+'ForeArm'],hand,wrist,side.clone().multiplyScalar(sign*.65).setY(-1));
+  pointBone(hand,knuckle,palm);
+ }
 }
 function updateStationPosts(dt){
  for(const station of PoliceDepartment.stations)for(const post of station.posts){
@@ -78,30 +161,24 @@ function updateStationPosts(dt){
    post.actor=makeChar(officerModel(member),{gun:member.kit.some(k=>k.includes('sidearm'))});
    post.actor.personId=member.personId;
    post.unit=departmentPerson(member,post.actor,post.point,uniform);
-   if(uniform)equipOfficer(post.actor,member.division==='Metro SWAT');
+   if(uniform)equipOfficer(post.actor,member.division==='Metro SWAT',post.traffic);
    personalizeOfficer(post.actor,member);fitIssuedEquipment(post.actor,member);
    post.actor.root.position.copy(post.point);post.actor.root.position.y=post.point.y||.16;post.actor.yaw=post.yaw;post.actor.talk=1;
   }
   const c=post.actor,u=post.unit;
   const phase=(PoliceDepartment.clock+post.member.badge*2.37)%24;
-  const destination=post.workEnd&&phase>9&&phase<18?post.workEnd:post.point;
+  const examining=post.exhibit&&PoliceDepartment.cases.some(f=>f.stage==='Evidence examination'&&f.analyst===post.member.personId);
+  const destination=!examining&&post.workEnd&&phase>9&&phase<18?post.workEnd:post.point;
   const dx=destination.x-u.pos.x,dz=destination.z-u.pos.z,dist=Math.hypot(dx,dz),stride=Math.min(dt*.85,dist);
   if(dist>.04){
    u.pos.x+=dx*stride/dist;u.pos.z+=dz*stride/dist;collideWorld(u.pos,.30);
    c.yaw=lerpA(c.yaw,Math.atan2(dx,dz),Math.min(1,dt*6));
-  }else c.yaw=lerpA(c.yaw,post.yaw+.12*Math.sin(phase*.48),Math.min(1,dt*2));
-  c.talk=dist<.05&&(phase<2||phase>17&&phase<20)?1:0;
+  }else c.yaw=lerpA(c.yaw,post.yaw+(examining?0:.12*Math.sin(phase*.48)),Math.min(1,dt*2));
+  c.talk=!examining&&dist<.05&&(phase<2||phase>17&&phase<20)?1:0;
   c.root.position.copy(u.pos);
-  if(post.seated)c.root.position.y-=.46;
   updChar(c,dist>.04?.85:0,dt,true);
-  if(post.seated){
-   const forward=new V3(Math.sin(c.yaw),0,Math.cos(c.yaw)),B=c.bones;
-   for(const limb of ['Left','Right']){
-    pointBone(B[limb+'Thigh'],B[limb+'Calf'],forward,.97);pointBone(B[limb+'Calf'],B[limb+'Foot'],new V3(0,-1,0),.98);
-    pointBone(B[limb+'Arm'],B[limb+'ForeArm'],new V3(forward.x*.32,-.9,forward.z*.32).normalize(),.92);
-    pointBone(B[limb+'ForeArm'],B[limb+'Hand'],new V3(forward.x,.1*Math.sin(phase*3),forward.z).normalize(),.92);
-   }
-  }
+  if(post.seated&&post.keyboard)poseDispatcher(c,post,phase);
+  if(examining&&dist<.10)poseExaminer(c,post,phase);
  }
 }
 
@@ -135,6 +212,7 @@ function updateDepartment(dt){
   }
  }
  PoliceDepartment.process();
+ updateHeadquartersDisplays();
  if(!wanted&&!heat){
   const at=player.car?.pos||player.pos;
   const bulletin=PoliceDepartment.cases.find(c=>c.stage==='Wanted'&&
@@ -279,38 +357,78 @@ function sceneStreetFrame(at){
  const x=northSouth?lineX:at.x,z=northSouth?at.z:lineZ;
  return {tx,tz,nx,nz,x,z,northSouth};
 }
+function sceneCarVisibleAt(p){
+ const center=p.clone();center.y+=.9;
+ const matrix=new THREE.Matrix4().multiplyMatrices(camera.projectionMatrix,camera.matrixWorldInverse);
+ const frustum=new THREE.Frustum().setFromProjectionMatrix(matrix);
+ return frustum.intersectsSphere(new THREE.Sphere(center,2.8))&&rayWorld(camera.position.x,camera.position.z,center.x,center.z,camera.position.y,center.y)>=1;
+}
+function clearSceneCarPath(start,end,fileId){
+ if(rayWorld(start.x,start.z,end.x,end.z,start.y+.85,end.y+.85,.90)<1)return false;
+ const steps=Math.max(1,Math.ceil(dist2(start,end)/1.6)),point=new V3();
+ for(let i=0;i<=steps;i++){
+  point.lerpVectors(start,end,i/steps);
+  if(cars.some(c=>c.sceneFileId!==fileId&&(!c.driver||Math.abs(c.speed)<.7)&&bodyInsideCar(c,point,.91)))return false;
+ }
+ return true;
+}
 function sceneCarSpot(team,index){
  const f=team.frame,along=f.northSouth?f.z:f.x,base=Math.floor(along/CELL)*CELL;
- const coords=(along,offset)=>new V3(f.northSouth?f.x+f.nx*offset:along,0,f.northSouth?along:f.z+f.nz*offset);
- const dir=f.tx||f.tz;
- for(const offset of [0,7.5,-7.5,15,-15]){
-  const parallel=clamp(along+(index?5:-3)*dir+offset,base+17,base+CELL-17);
-  const stop=coords(parallel,HALF-1.55),start=coords(parallel-dir*10,HALF-1.7);
-  if(cars.some(c=>dist2(c.pos,stop)<5.7||dist2(c.pos,start)<5.1))continue;
+ const coords=(u,offset)=>{
+  const x=f.northSouth?f.x+f.nx*offset:u,z=f.northSouth?u:f.z+f.nz*offset;
+  return new V3(x,groundY(x,z),z);
+ };
+ const section=streetSection(f.northSouth?'ns':'ew',Math.round((f.northSouth?f.x:f.z)/CELL),base/CELL);
+ const travelLane=laneCenter(section,f.tx,f.tz,1),dir=f.tx||f.tz;
+ const preferred=along+(index?-1.5:7.5)*dir;
+ let best=null;
+ for(const shift of [0,8,-8,15,-15]){
+  const parallel=clamp(preferred+shift,base+17,base+CELL-17),stop=coords(parallel,HALF-1.55);
+  if(nearDriveway(stop.x,stop.z,2.5)||cars.some(c=>dist2(c.pos,stop)<5.7))continue;
   if(team.rides.some(r=>r&&dist2(r.stop,stop)<6))continue;
-  if(rayWorld(start.x,start.z,stop.x,stop.z,.8,.8,.85)<1)continue;
-  if(nearDriveway(stop.x,stop.z,2.5))continue;
-  start.y=groundY(start.x,start.z);stop.y=groundY(stop.x,stop.z);
-  return {start,stop};
+  const merge=coords(parallel-dir*9,travelLane);
+  if(!clearSceneCarPath(merge,stop,team.file.id))continue;
+  // Start inside this block's moving lane, clear of its crosswalk. The lead car parks
+  // farther down the curb, leaving the next space accessible to the second unit.
+  for(const distance of [38,31,24,18]){
+   const origin=clamp(parallel-dir*distance,base+16.6,base+CELL-16.6);
+   const start=coords(origin,travelLane),run=(parallel-origin)*dir;
+   if(run<16||cars.some(c=>dist2(c.pos,start)<6.2)||!clearSceneCarPath(start,merge,team.file.id))continue;
+   const occupied=p=>{
+    const dx=p.x-start.x,dz=p.z-start.z;
+    return Math.abs(p.y-start.y)<1.8&&Math.abs(dx*f.tx+dz*f.tz)<3&&Math.abs(dx*f.nx+dz*f.nz)<1.45;
+   };
+   if(!player.car&&occupied(player.pos)||peds.some(p=>occupied(p.pos))||departmentPeople.some(u=>occupied(u.pos)))continue;
+   const visible=sceneCarVisibleAt(start);
+   const score=(visible?0:60)+run*.75-Math.abs(parallel-preferred);
+   if(!best||score>best.score)best={start,merge,stop,score,run,visible};
+  }
  }
- return null;
+ return best;
 }
 function startSceneRide(team,index){
  const route=sceneCarSpot(team,index);
  if(!route)return null;
  const f=team.frame,car=spawnCar('police',route.start.x,route.start.z,Math.atan2(f.tx,f.tz),'scene');
- car.sceneFileId=team.file.id;car.sceneStop=route.stop;car.sceneDrivingSince=PoliceDepartment.clock;car.siren=true;
- return {car,stop:route.stop};
+ car.sceneFileId=team.file.id;car.sceneStop=route.stop;car.sceneMerge=route.merge;
+ car.sceneDriveAt=PoliceDepartment.clock+index*2.2;car.sceneDeadline=car.sceneDriveAt+route.run/4+7;
+ car.sceneStalled=0;car.siren=true;return {car,stop:route.stop};
 }
 function driveSceneCar(car,dt){
- const stop=car.sceneStop,dx=stop.x-car.pos.x,dz=stop.z-car.pos.z,d=Math.hypot(dx,dz);
- const forward=dx*Math.sin(car.h)+dz*Math.cos(car.h);
- const pullingIn=d>1.2&&forward>.35&&PoliceDepartment.clock-car.sceneDrivingSince<7;
- const speed=pullingIn?Math.min(5.8,Math.max(1.1,d*.9)):0;
- const target=blockedAhead(car)?0:speed;
- const angle=pullingIn?wrapA(Math.atan2(dx,dz)-car.h):0;
+ const clock=PoliceDepartment.clock;
+ if(clock<car.sceneDriveAt){drive(car,0,0,true,dt);return;}
+ const fx=Math.sin(car.h),fz=Math.cos(car.h),merge=car.sceneMerge;
+ if(merge&&((merge.x-car.pos.x)*fx+(merge.z-car.pos.z)*fz<1.4))car.sceneMerge=null;
+ const aim=car.sceneMerge||car.sceneStop,dx=aim.x-car.pos.x,dz=aim.z-car.pos.z;
+ const distance=dist2(car.sceneStop,car.pos),forward=dx*fx+dz*fz;
+ const obstructed=blockedAhead(car);
+ car.sceneStalled=obstructed&&Math.abs(car.speed)<.8?car.sceneStalled+dt:0;
+ if(car.sceneStalled>3.2||clock>car.sceneDeadline||!car.sceneMerge&&(distance<1.4||forward<.35))car.sceneStopping=true;
+ const speed=car.sceneMerge?7.4:Math.min(5.2,Math.max(1.1,distance*.84));
+ const target=obstructed||car.sceneStopping?0:speed;
+ const angle=car.sceneStopping?0:wrapA(Math.atan2(dx,dz)-car.h);
  drive(car,clamp((target-car.speed)*.52,-1,1),clamp(angle*1.8,-1,1),!target&&Math.abs(car.speed)<.8,dt);
- if(!pullingIn&&Math.abs(car.speed)<.85){
+ if(car.sceneStopping&&Math.abs(car.speed)<.85){
   car.driver=null;car.sceneParked=true;setCarLights(car,false);
  }
 }
@@ -468,7 +586,10 @@ function updateStreetTeams(dt){
  for(const file of pd.cases){
   if(!file.response||!pd.streetResponseActive(file)||streetTeams.has(file.id))continue;
   if(dist2(player.pos,file.at)>58&&!caseViewNear(file.at,58,5))continue;
-  streetTeams.set(file.id,{file,frame:sceneStreetFrame(file.at),units:new Map(),rides:[]});
+  const team={file,frame:sceneStreetFrame(file.at),units:new Map(),rides:[]};
+  streetTeams.set(file.id,team);
+  // The two cruisers are already on the street at dispatch. Their stagger is driving time.
+  for(let index=0;index<2&&index*2<file.response.length;index++)team.rides[index]=startSceneRide(team,index);
  }
  for(const [id,team] of streetTeams){
   const file=team.file,active=pd.streetResponseActive(file);
@@ -480,8 +601,6 @@ function updateStreetTeams(dt){
   if(active){
    for(const entry of file.response){
     if(team.units.has(entry.personId)||pd.clock<entry.assignedAt+entry.slot*1.12)continue;
-    const index=Math.floor(entry.slot/2);
-    if(entry.slot<4&&team.rides[index]===undefined)team.rides[index]=startSceneRide(team,index);
     spawnSceneResponder(team,entry);
    }
    if(file.stage==='Lab review'&&!team.units.has(file.detective)){

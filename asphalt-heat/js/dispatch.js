@@ -115,6 +115,7 @@ function searchGoal(x,z,offset,scale=1){
  const angle=sector*2.399963;
  const gx=anchor.x+Math.cos(angle)*dist,gz=anchor.z+Math.sin(angle)*dist;
  if(inFreightPort(anchor.x,anchor.z))return {x:clamp(gx,FREIGHT.x0+2,FREIGHT.x1-2),z:clamp(gz,FREIGHT.z0+1,FREIGHT.z1-2)};
+ if(inDockYard(anchor.x,anchor.z))return {x:clamp(gx,HARBOR.yard.x0+2,HARBOR.yard.x1-2),z:clamp(gz,HARBOR.yard.z0+1,HARBOR.yard.z1-2)};
  const coast=Math.abs(gz-W*.42)<3.76?W+149.45:harborWalkingLimit(gz)??MAXX;
  return {x:clamp(gx,MINX+1,coast-1),z:clamp(gz,MINZ+1,MAXZ-1)};
 }

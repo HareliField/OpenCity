@@ -132,6 +132,7 @@ function physCarAdd(c){
  }
  v.world=PH.w;
  c.body=b;
+ if(c.type==='harborbox')updateCargoGate(c,c.serviceState?.CargoShutter?.phase||0);
  c.veh=v;
  c.controls={throttle:0,steer:0,handbrake:false,drivePedal:0,brakePedal:0,gear:1,interlock:false};
  b.addEventListener('collide',e=>{
@@ -140,7 +141,8 @@ function physCarAdd(c){
   if(iv<1.9)return;
   const self=contact.bi===b,r=self?contact.ri:contact.rj;
   PH.hits.push({
-   car:c,other:e.body,iv,px:b.position.x+r.x,py:b.position.y+r.y,pz:b.position.z+r.z,
+   car:c,other:e.body,iv,approachSpeed:b.velocity.dot(contact.ni)*(self?1:-1),
+   otherApproach:-e.body.velocity.dot(contact.ni)*(self?1:-1),px:b.position.x+r.x,py:b.position.y+r.y,pz:b.position.z+r.z,
    nx:contact.ni.x*(self?1:-1),ny:contact.ni.y*(self?1:-1),nz:contact.ni.z*(self?1:-1)
   });
  });

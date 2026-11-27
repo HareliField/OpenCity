@@ -1,14 +1,17 @@
 /* The graded roads share one sampled spline between meshes, physics and navigation. */
 const GRADE_ROADS={routes:[],grid:new Map()};
 const GRADE_PROFILES=[
- {name:'Harbor Viaduct',width:8.5,points:[
-  [383,.035,704],[401,.10,704],[430,3.55,702.9],[454,5.6,702.25],[490,6.65,701.98],
+ {name:'Harbor Viaduct',width:8.5,axis:'ew',ends:[[6,11],[14,11]],points:[
+  [383,.035,704],[393,.05,704],[402,.56,704],[425,3.34,704],[443,5.40,703.84],[459,5.95,702.95],[490,6.65,701.98],
   [532,7.0,703.4],[594,8.45,705.58],[662,8.75,705.65],[720,8.35,704.0],
-  [762,6.78,702.37],[812,6.2,701.78],[845,3.92,702.94],[862,.62,703.8],[868,.09,704],[875,.04,704],[895,.04,704],[921,.043,704]
+  [762,6.78,702.37],[812,6.45,701.78],[828,5.90,702.8],[840,5.12,703.65],[851,3.78,704],
+  [865,1.96,704],[876,.61,704],[885,.09,704],[894,.04,704],[921,.043,704]
  ]},
- {name:'Coast Ridge Road',width:7.7,points:[
-  [832,.039,561],[832,.055,594],[839,.53,615],[850,1.57,641],[873,3.3,667],
-  [880,4.83,696],[874,4.12,727],[886,1.58,744],[893,.22,755],[895,.05,760],[896,.04,773],[896,.042,795]
+ {name:'Coast Ridge Road',width:7.7,axis:'ns',ends:[[13,9],[14,12]],points:[
+  [832,.039,561],[832,.04,578],[835,.06,586],[841,.18,595],[849,.78,603],
+  [858,2.30,613],[866,4.04,624],[870.3,5.26,632],[873,5.73,643],[875,6.08,663],
+  [879.4,6.15,692],[877.4,5.7,708],[875.8,4.23,718],[876.2,2.77,729],[879.8,1.36,739],
+  [882.4,.49,745],[888.4,.13,752],[894.7,.04,762],[896,.04,769],[896,.042,795]
  ]}
 ];
 
@@ -16,7 +19,7 @@ function reserveGradeBlock(block){
  if(block.i!==13||block.j<9||block.j>11)return false;
  block.park=true;
  const {x0,x1,z0,z1}=block;
- topQuad(MAT.grass,x0,x1,.16,z0,z1,5.9,null,false);
+ topQuad(MAT.grass,x0+SW,x1-SW,.16,z0+SW,z1-SW,5.9,null,false);
  for(const z of [z0+4.2,z1-5.1]){
   TREE_RESERVE.push([x0+3.3,z,.9],[x1-3.3,z,1.06]);
  }
@@ -32,7 +35,7 @@ function buildGradeRoads(){
  const reflectors=new THREE.MeshBasicMaterial({color:new THREE.Color(1.15,.54,.12)});
  for(const data of GRADE_PROFILES){
   const curve=new THREE.CatmullRomCurve3(data.points.map(p=>new V3(...p)));
-  const route={name:data.name,curve,width:data.width,sections:[]};
+  const route={name:data.name,curve,width:data.width,axis:data.axis,ends:data.ends,sections:[]};
   GRADE_ROADS.routes.push(route);
   const pieces=Math.ceil(curve.getLength()/3.7),points=curve.getSpacedPoints(pieces);
   for(const p of points)p.y=Math.max(.025,p.y);
@@ -43,7 +46,6 @@ function buildGradeRoads(){
    return{p,side,up};
   });
   buildRoadStrips(rows,data.width,asphalt,paint);
-  roadsideSign(data,points);
   for(let i=0;i<pieces;i++){
    const a=points[i],b=points[i+1],step=b.clone().sub(a),length=step.length(),forward=step.clone().divideScalar(length);
    const side=new V3(forward.z,0,-forward.x).normalize(),up=new V3().crossVectors(forward,side).normalize();
@@ -51,7 +53,7 @@ function buildGradeRoads(){
    const q=new THREE.Quaternion().setFromRotationMatrix(new THREE.Matrix4().makeBasis(side,up,forward));
    const half=data.width/2;
    const hasRails=middle.y>.55;
-   const section={a,b,side,up,half,dx:b.x-a.x,dz:b.z-a.z,hasRails};
+   const section={a,b,side,up,half,dx:b.x-a.x,dz:b.z-a.z,hasRails,name:data.name};
    route.sections.push(section);
    addGradeSection(section);
    const base=middle.clone().addScaledVector(up,-.23);
@@ -67,11 +69,11 @@ function buildGradeRoads(){
      }
     }
    }
-   const clearBelow=data.name==='Harbor Viaduct'?
-    Math.abs(middle.x-Math.round(middle.x/CELL)*CELL)>12:
-    Math.abs(middle.z-704)>14;
+   // Keep the entire pier pair and crossbeam clear of transverse streets and sidewalks.
+   const station=data.axis==='ew'?middle.x:middle.z;
+   const clearBelow=Math.abs(station-Math.round(station/CELL)*CELL)>14;
    if(i%10===7&&middle.y>3.28&&clearBelow){
-    const isHarbor=data.name==='Harbor Viaduct';
+    const isHarbor=data.axis==='ew';
     const feet=isHarbor?[new V3(middle.x,0,704)]:
      [-1,1].map(direction=>middle.clone().addScaledVector(side,direction*(half-.50)));
     for(const p of feet){
@@ -83,7 +85,6 @@ function buildGradeRoads(){
    }
   }
  }
- ATLAS.mat.map.needsUpdate=true;
  for(const [x,z,size] of TREE_RESERVE){
   if(!sampleGrade(x,z,null,2.5))TREES.push([x,z,size]);
  }
@@ -98,7 +99,7 @@ function buildGradeRoads(){
  }
 }
 
-function roadsideSign(data,points){
+function roadsideSign(data){
  const slot=atlasSlot((g,w,h)=>{
   g.fillStyle='#29483f';g.fillRect(0,0,w,h);
   g.strokeStyle='#d0c3a8';g.lineWidth=4;g.strokeRect(10,10,w-20,h-20);
@@ -106,14 +107,21 @@ function roadsideSign(data,points){
   g.font='600 35px Arial, sans-serif';g.fillText(data.name.toUpperCase(),w/2,60);
   g.font='600 24px Arial, sans-serif';g.fillText('ON RAMP',w/2,99);
  });
- for(const end of [0,points.length-1]){
-  const n=end===0?end+1:end-1,last=points[end],next=points[n];
-  const direction=next.clone().sub(last).normalize();
-  const x=last.x+direction.z*(data.width/2+.93),z=last.z-direction.x*(data.width/2+.93);
-  const yaw=Math.atan2(-direction.x,-direction.z);
-  cyl(MAT.darkMetal,x,.03,z,.063,.075,2.69,8);
-  STATIC.push({x0:x-.077,x1:x+.077,z0:z-.077,z1:z+.077,h:2.69,radius:.077});
-  signQuad(slot,x-Math.sin(yaw)*.035,2.50,z-Math.cos(yaw)*.035,2.87,.72,yaw,false);
+ for(const [index,[i,j]] of data.ends.entries()){
+  const direction=index===0?1:-1,dx=data.axis==='ew'?direction:0,dz=data.axis==='ns'?direction:0;
+  // Face approaching drivers from the right sidewalk of the feeder street.
+  const setback=HALF+1.65;
+  const station=[26,22,34,38,19,42].find(distance=>{
+   const x=i*CELL-dx*distance-dz*setback,z=j*CELL-dz*distance+dx*setback;
+   return !nearDriveway(x,z,1.5) && ![LAMPS,PROPSPOTS,TREES,PALMS].some(group=>
+    group.some(p=>Math.hypot(x-(p.x??p[0]),z-(p.z??p[1]))<1.25));
+  });
+  if(station===undefined)continue;
+  const x=i*CELL-dx*station-dz*setback,z=j*CELL-dz*station+dx*setback;
+  const yaw=Math.atan2(-dx,-dz),base=STREET_DESIGN.curb;
+  cyl(MAT.darkMetal,x,base,z,.063,.075,2.8,8);
+  STATIC.push({x0:x-.077,x1:x+.077,z0:z-.077,z1:z+.077,y0:base,h:base+2.8,radius:.077});
+  signQuad(slot,x+Math.sin(yaw)*.08,base+2.6,z+Math.cos(yaw)*.08,2.87,.72,yaw,false);
  }
 }
 
@@ -211,6 +219,7 @@ function sampleGrade(x,z,referenceY,margin=0){
   if(referenceY!==null&&(q.height-referenceY>.34||q.height-referenceY<-.62))continue;
   const cost=q.range+(referenceY===null?0:.65*Math.abs(q.height-referenceY));
   if(cost>=score)continue;
+  q.section=s;
   closest=q;
   score=cost;
  }

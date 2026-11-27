@@ -92,7 +92,9 @@ function buildInterior(room){
  textured(m.darkWood,u0+.16,u1-.16,.16,.31,back+.12,back+.22);
  const spans=[[u0,door0],[door1,u1]];
  for(const [a,b] of spans){
-  addRoomCollider(block,M,a,b,.05,.12,3.42);
+  addRoomCollider(block,M,a,b,.015,.14,.43);
+  addRoomCollider(block,M,a,b,.035,.063,3.29,.43,true);
+  addRoomCollider(block,M,a,b,.014,.13,3.50,3.29);
  }
  addRoomCollider(block,M,u0,u0+t,-.10,depth,3.63);
  addRoomCollider(block,M,u1-t,u1,-.10,depth,3.63);
@@ -217,8 +219,8 @@ function buildInterior(room){
  }
 }
 
-function addRoomCollider(block,M,u0,u1,v0,v1,h,y0=0){
- block.bld.push({...lrect(M,u0,u1,v0,v1),h,y0});
+function addRoomCollider(block,M,u0,u1,v0,v1,h,y0=0,glass=false){
+ const span={...lrect(M,u0,u1,v0,v1),h,y0};if(glass)span.glass=true;block.bld.push(span);
 }
 
 function makeFixture(kind,[w,h,d]){
@@ -357,7 +359,7 @@ function updateInteriors(dt,x,z,levelY=player.pos.y){
  if((INTERIORS.clock-=dt)>0)return;
  INTERIORS.clock=.30;
  const near=[];
- for(const lamp of INTERIORS.emitters){
+ for(const lamp of [...INTERIORS.emitters,...BUILDING_FITTINGS.lamps]){
   if(lamp.floorY!==undefined&&Math.abs(lamp.floorY-levelY)>1.5)continue;
   const distance=(lamp.x-x)**2+(lamp.z-z)**2;
   if(distance<31**2&&cityPowerAt(lamp.x,lamp.z)&&(!lamp.municipal||CITY_WORKS.grid))near.push({lamp,distance});
@@ -373,7 +375,7 @@ function updateInteriors(dt,x,z,levelY=player.pos.y){
   }else light.intensity=0;
  }
  for(const f of INTERIORS.fixtures){
-  const distance=(f.x-x)**2+(f.z-z)**2;
+  const distance=(f.node.position.x-x)**2+(f.node.position.z-z)**2;
   f.node.visible=distance<152**2;
   if(!f.pending&&distance<83**2){
    const asset=requestScenery(f.id);
@@ -384,7 +386,7 @@ function updateInteriors(dt,x,z,levelY=player.pos.y){
     const model=modelInstance(template,f.dims,f.id);
     f.node.remove(f.fallback);
     f.fallback.traverse(o=>{if(o.isMesh)o.geometry.dispose();});
-    shadeFixture(model,f.x,f.node.position.y,f.z);
+    shadeFixture(model,f.node.position.x,f.node.position.y,f.node.position.z);
     f.node.add(model);
     if(f.device)bindCityMachine(f.device,model);
    });

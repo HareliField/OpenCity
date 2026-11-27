@@ -28,7 +28,9 @@ function supplyAt(x,z){
 function pressureAtFixture(f){
  const lot=supplyAt(f.x,f.z);
  // The gallery inlet also drives the market faucet. Each upper-storey fixture loses static head.
- return lot?clamp((lot.pressure-9.81*Math.max(0,f.y||0))/260,0,1):CITY_WORKS.pressure;
+ if(!lot)return CITY_WORKS.pressure;
+ const boosted=f.riserZone&&lot.sector.power&&lot.pressure>35?22*f.riserZone:0;
+ return clamp((lot.pressure-9.81*Math.max(0,(f.y||0)-boosted))/260,0,1);
 }
 function updateServiceGraph(dt){
  const s=CITY_SERVICES;
@@ -42,11 +44,14 @@ function updateServiceGraph(dt){
  for(const f of CITY_WORKS.fixtures){
   if(f.time<=0)continue;
   const lot=supplyAt(f.x,f.z);
-  if(lot)lot.discharge+=.16*pressureAtFixture(f);
+  if(lot)lot.discharge+=(f.flow??.16)*pressureAtFixture(f);
  }
  for(const machine of CITY_MACHINES.washers){
   const lot=supplyAt(machine.x,machine.z);
   if(lot)lot.discharge+=machine.discharge;
+ }
+ for(const c of CIVIC.cisterns){
+  const lot=supplyAt(c.x,c.z);if(lot)lot.discharge+=c.discharge;
  }
  for(const lot of s.downstream)if(lot.parent)lot.parent.discharge+=lot.discharge;
 }

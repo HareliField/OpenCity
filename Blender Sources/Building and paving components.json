@@ -1,0 +1,104 @@
+[
+  {
+    "id": "apartment-bed",
+    "sourceImages": [
+      10,
+      17,
+      18,
+      89
+    ],
+    "description": "Laminated timber bedstead, sprung mattress, quilted linen, welted pillows and turned feet.",
+    "parts": 28,
+    "movableParts": [],
+    "runtimeBytes": 355060
+  },
+  {
+    "id": "studio-drafting-desk",
+    "sourceImages": [
+      16,
+      21,
+      30,
+      57,
+      70
+    ],
+    "description": "A municipal drawing desk with trestles, plan rolls, lamp, set square and pencil tray.",
+    "parts": 35,
+    "movableParts": [],
+    "runtimeBytes": 210400
+  },
+  {
+    "id": "apartment-galley",
+    "sourceImages": [
+      18,
+      25,
+      41,
+      89,
+      111
+    ],
+    "description": "Two kitchen cabinets, rolled-rim sink, bridge tap, drain, electric hob and tiled splashback.",
+    "parts": 60,
+    "movableParts": [],
+    "runtimeBytes": 591052
+  },
+  {
+    "id": "bond-brick",
+    "sourceImages": [
+      14,
+      18,
+      34,
+      41,
+      67,
+      80,
+      95,
+      104,
+      112
+    ],
+    "description": "Weathered facing stretcher with irregular arrises and a recessed mortar bed.",
+    "parts": 1,
+    "movableParts": [],
+    "runtimeBytes": 9640
+  },
+  {
+    "id": "mission-pantile",
+    "sourceImages": [
+      1,
+      10,
+      17,
+      46,
+      84
+    ],
+    "description": "Overlapping clay pan and cap in the hipped eaves of Marina Coffee.",
+    "parts": 4,
+    "movableParts": [],
+    "runtimeBytes": 12676
+  },
+  {
+    "id": "municipal-cover",
+    "sourceImages": [
+      1,
+      9,
+      14,
+      38,
+      59
+    ],
+    "description": "Cast-iron frame and cover, cast diamonds, lifting sockets and anchor lugs.",
+    "parts": 111,
+    "movableParts": [],
+    "runtimeBytes": 209996
+  },
+  {
+    "id": "pier-board",
+    "sourceImages": [
+      5,
+      61,
+      63,
+      64,
+      75,
+      82
+    ],
+    "description": "Individual eased pier plank with four countersunk carriage screws at the joists.",
+    "parts": 9,
+    "movableParts": [],
+    "runtimeBytes": 110212
+  }
+]

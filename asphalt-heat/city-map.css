@@ -1,0 +1,47 @@
+#mapOpen{display:block;padding:0;border:0;border-radius:50%;background:none;pointer-events:auto;cursor:pointer}
+#mapOpen:focus-visible{outline:3px solid #ffcb73;outline-offset:4px}
+#mm{display:block}
+#cityMap{width:min(980px,calc(100% - 20px));max-width:none;max-height:calc(100dvh - 20px);padding:0;border:1px solid #59646e;border-radius:16px;background:#141b22;color:#f4f6f7;box-shadow:0 22px 65px #000a;overflow:auto;touch-action:pan-y;overscroll-behavior:contain}
+#cityMap::backdrop{background:#080e16a6}
+#cityMap button{font:inherit;cursor:pointer}
+#cityMap button:focus-visible,#cityMap input:focus-visible{outline:2px solid #ffd379;outline-offset:2px}
+.city-map-header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 18px;border-bottom:1px solid #35414c}
+.city-map-header h2{margin:0;font-size:21px}
+#mapClose{width:44px;height:44px;border-radius:50%;border:1px solid #657383;background:#25313c;color:#fff;font-size:26px;line-height:1}
+.city-map-body{display:grid;grid-template-columns:minmax(0,1fr) minmax(225px,29%);gap:16px;padding:14px 18px 18px}
+.city-map-area{min-width:0}
+#mapFrame{position:relative;max-width:min(100%,calc(62dvh * var(--map-ratio,1)));margin-inline:auto;overflow:hidden;border:1px solid #657383;border-radius:10px}
+#travelMap{display:block;width:100%;height:auto;cursor:crosshair}
+#mapMarkers{position:absolute;inset:0;pointer-events:none}
+#cityMap .map-marker{position:absolute;transform:translate(-50%,-50%);display:grid;place-items:center;min-width:25px;height:25px;padding:0 4px;border:1px solid #10171f;border-radius:6px;background:var(--marker-color);color:#10171f;font-size:13px;font-weight:800;pointer-events:auto;box-shadow:0 1px 4px #0009}
+#cityMap .map-marker:hover,#cityMap .map-marker:focus-visible{z-index:2}
+#mapPlayer,#mapPin{position:absolute;transform:translate(-50%,-50%);pointer-events:none;border-radius:50%}
+#mapPlayer{width:13px;height:13px;background:#fff;border:3px solid #217dfa;box-shadow:0 0 0 2px #172b43}
+#mapPin{width:24px;height:24px;border:2px solid #fff7cf;background:#ffc26448;box-shadow:0 0 0 2px #0d1721}
+#mapPin[hidden],#mapConfirm[hidden]{display:none}
+#mapLegend{display:flex;justify-content:center;flex-wrap:wrap;gap:5px 10px;margin:9px 0 0;font-size:12px;color:#ccd6df}
+#mapLegend span{display:inline-flex;align-items:center;gap:4px}
+#mapLegend b{display:inline-grid;place-items:center;min-width:16px;height:16px;padding:0 2px;border-radius:3px;background:var(--marker-color);color:#10171f;font-size:11px}
+.city-map-controls{padding:12px;border:1px solid #35414c;border-radius:10px;background:#1a242e;align-self:start}
+.city-map-controls h3{margin:0 0 12px;font-size:16px}
+.map-time-label{display:flex;align-items:center;justify-content:space-between;font-size:13px;font-weight:650}
+#mapClock{font-size:19px;font-variant-numeric:tabular-nums;color:#ffd379}
+#mapTime{display:block;width:100%;margin:6px 0 0;min-height:32px;accent-color:#ffc264;cursor:pointer}
+.map-sky{display:flex;justify-content:space-between;color:#f1cc89;font-size:16px;margin:0 0 13px}
+#mapWeather{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+#cityMap .map-weather-choice{min-height:42px;padding:3px 0;border:1px solid #52606c;border-radius:7px;background:#263440;color:#fff;font-size:22px;line-height:1}
+#cityMap .map-weather-choice[aria-pressed="true"]{background:#ffc264;border-color:#ffd89a;color:#33200e}
+#mapWeatherName{margin:8px 0 0;font-size:13px;color:#edf2f5}
+#mapConfirm{margin-top:12px;padding-top:11px;border-top:1px solid #4d5c68}
+#mapQuestion{margin:0 0 8px;font-weight:650}
+.map-confirm-actions{display:flex;gap:8px}
+#mapConfirm button{flex:1;min-height:40px;padding:4px 6px;border:1px solid #798998;border-radius:7px;background:#293744;color:#fff;font-size:13px}
+#mapConfirm #mapGo{background:#ffc264;border-color:#ffc264;color:#33200e;font-weight:750}
+#mapStatus{margin:8px 0 0;font-size:13px;color:#dce6ed}
+#mapStatus:empty{display:none}
+@media(max-width:620px){
+ .city-map-body{grid-template-columns:1fr;padding:10px;gap:10px}
+ #mapFrame{max-width:min(100%,calc(48dvh * var(--map-ratio,1)))}
+ #mapWeather{grid-template-columns:repeat(5,minmax(0,1fr))}
+ .city-map-header{padding:6px 10px}
+}

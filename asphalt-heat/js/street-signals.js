@@ -33,11 +33,15 @@ function makeStreetSigns(){
   }
   g.restore();
  });
- return new THREE.MeshStandardMaterial({map:ctex(c),roughness:.57,alphaTest:.45,metalness:.13,side:THREE.DoubleSide});
+ return new THREE.MeshStandardMaterial({map:ctex(c),roughness:.57,alphaTest:.45,metalness:.13});
 }
 function signFace(label,x,y,z,w,h,angle){
  const slot=CITY_SIGNALS.signs.get(label),g=new THREE.PlaneGeometry(w,h),uv=g.attributes.uv;
  for(let i=0;i<uv.count;i++)uv.setXY(i,slot.u+(uv.getX(i)*.994+.003)/8,slot.v+(uv.getY(i)*.988+.006)/8);
+ if(STREET_NAMES.ns.includes(label)||STREET_NAMES.ew.includes(label)){
+  const back=g.clone();back.rotateY(angle+Math.PI);
+  back.translate(x-.012*Math.sin(angle),y,z-.012*Math.cos(angle));addGeo(CITY_SIGNALS.material,back,false);
+ }
  g.rotateY(angle);g.translate(x,y,z);addGeo(CITY_SIGNALS.material,g,false);
 }
 function signPole(x,z,height,radius){
@@ -113,22 +117,40 @@ function buildTrafficLights(){
    const at=(along,right)=>[x+dx*along+rightX*right,z+dz*along+rightZ*right];
    const section=segmentSection([i-dx,j-dz],[i,j]);
    if(control==='signal'){
-    const far=HALF+2.13,side=HALF+2.14,[px,pz]=at(far,side);
-    signPole(px,pz,6.18,.135);
-    plainBox(MAT.metal,px-.22,px+.22,.15,.195,pz-.22,pz+.22,{shadow:false});
-    for(const offset of [-.145,.145])for(const bolt of [-.145,.145])
-     cyl(MAT.darkMetal,px+offset,.195,pz+bolt,.031,.031,.045,6,{shadow:false});
+    const corner=i===10&&j===10;
+    const far=corner?(dx?HALF+4.90:-(HALF+2.60)):HALF+2.13;
+    const side=corner?(dx?(dx>0?-1:1)*(HALF+2.60):HALF+4.90):HALF+2.14;
+    const [px,pz]=at(far,side);
+    // The northwest mast serves two approaches. Its foundation is a single obstacle.
+    if(!corner||dx!==-1){
+     if(corner){
+      cyl(housing,px,.16,pz,.068,.100,6.01,16);
+      cyl(housing,px,.15,pz,.142,.181,.205,14);
+      STATIC.push({x0:px-.18,x1:px+.18,z0:pz-.18,z1:pz+.18,y0:.15,h:6.17,radius:.18});
+     }else signPole(px,pz,6.18,.135);
+     plainBox(MAT.metal,px-.22,px+.22,.15,.195,pz-.22,pz+.22,{shadow:false});
+     for(const offset of [-.145,.145])for(const bolt of [-.145,.145])
+      cyl(MAT.darkMetal,px+offset,.195,pz+bolt,.031,.031,.045,6,{shadow:false});
+    }
     const nearLane=laneCenter(section,dx,dz,section.outer?1:0);
     const otherLane=section.outer?laneCenter(section,dx,dz):nearLane-2.75;
-    const tip=Math.min(nearLane,otherLane)-.30,armLength=side-tip,[mx,mz]=at(far,(side+tip)/2);
-    const arm=new THREE.CylinderGeometry(.064,.093,armLength,10);arm.rotateZ(Math.PI/2);
-    hardware(arm,MAT.metal,mx,5.95,mz,dx?Math.PI/2:0);
-    for(const u of [nearLane,otherLane]){
-     const [hx,hz]=at(far,u);
-     trafficHead(group,axis,hx,hz,angle);
+    const inward=side<0?-1:1,span=dx?2.68:4.05;
+    const heads=corner?[side-inward*span]:[nearLane,otherLane];
+    const tip=corner?heads[0]-inward*.16:Math.min(...heads)-.21;
+    if(corner){
+     const path=[[side,5.91],[side-inward*.19*span,6.04],[side-inward*.45*span,6.13],[side-inward*.73*span,6.12],[tip,5.94]];
+     for(let k=1;k<path.length;k++){
+      const [pa,ha]=path[k-1],[pb,hb]=path[k],a=at(far,pa),b=at(far,pb);
+      worksBeam(housing,[a[0],ha,a[1]],[b[0],hb,b[1]],.066-(k-1)*.005);
+     }
+    }else{
+     const armLength=side-tip,[mx,mz]=at(far,(side+tip)/2);
+     const arm=new THREE.CylinderGeometry(.064,.093,armLength,10);arm.rotateZ(Math.PI/2);
+     hardware(arm,MAT.metal,mx,5.95,mz,dx?Math.PI/2:0);
     }
-    const [bx,bz]=at(far-.15,side-1.35),blade=STREET_NAMES[dx?'ns':'ew'][dx?i:j];
-    signFace(blade,bx,5.92,bz,2.32,.45,angle);
+    for(const u of heads){const [hx,hz]=at(far,u);trafficHead(group,axis,hx,hz,angle);}
+    const [bx,bz]=at(far-.15,side-inward*1.35),blade=STREET_NAMES[dx?'ns':'ew'][dx?i:j];
+    signFace(blade,bx,corner?3.94:5.92,bz,corner?1.36:2.32,corner?.235:.45,angle);
     if(hasCrossing(i,j,dx,dz)){
      // Both displays face along the crossing, towards the opposite landing.
      for(const sign of [-1,1]){
@@ -158,7 +180,7 @@ function buildTrafficLights(){
    const dx=axis==='ew'?sign:0,dz=axis==='ns'?sign:0,along=block*CELL+(sign>0?19:45);
    const x=(dx?along:line*CELL)-dz*(HALF+.73),z=(dz?along:line*CELL)+dx*(HALF+.73);
    const angle=Math.atan2(-dx,-dz);signPole(x,z,2.79,.042);
-   signFace(hump?'SPEED HUMP':section.rank===2?'30':section.rank===1?'25':'20',
+   signFace(hump?'SPEED HUMP':String(section.limitMph),
     x-dx*.05,2.37,z-dz*.05,hump?.73:.5,hump?.73:.68,angle);
   }
  }

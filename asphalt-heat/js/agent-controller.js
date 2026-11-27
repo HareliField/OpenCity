@@ -41,7 +41,7 @@
   return value;
  }
  function playing() {
-  if (state !== 'play' || shopOpen) throw new Error('Close any open menu and enter play first');
+  if (state !== 'play' || shopOpen || cityMap.open) throw new Error('Close any open menu and enter play first');
  }
  function draw() {
   if (state === 'play' || state === 'dead') { hud(); drawMap(); renderFrame(time); }
@@ -52,6 +52,7 @@
    ...(globalThis.WashHouse?.destination()?[WashHouse.destination()]:[]),
    ...places.map((p,i)=>({id:'place-'+i,name:p.name,kind:p.kind,...point(p.road||p.interact||p.door)})),
    ...GRADE_ROADS.routes.map((r,i)=>({id:'road-'+i,name:r.name,...point(r.curve.getPointAt(.5))})),
+   ...TRAFFIC_PATROL.posts.map((p,i)=>({id:'traffic-'+i,name:p.room,...point(p.point)})),
    {id:'harbor',name:HARBOR.name,x:HARBOR.quay.x0+2,z:(HARBOR.approach.z0+HARBOR.approach.z1)/2},
    ...FREIGHT.gates.map((g,i)=>({id:'gate-'+i,name:g.name,x:g.x,z:FREIGHT.z0+10}))
   ];
@@ -94,7 +95,7 @@
 
  function actions() {
   if (state==='title') return $('play').disabled?[]:['play'];
-  if (state!=='play') return [];
+  if (state!=='play' || cityMap.open) return [];
   if (deskStation&&!policeDesk.open) return [];
   if (policeDesk.open) {
    const buttons=[...policeDesk.querySelectorAll('button')].filter(b=>(b.id||b.dataset.view)&&!b.disabled&&!b.closest('[hidden]'));
@@ -123,7 +124,8 @@
    weapon:p.weapon,owned:{...p.own},ammo:{...p.ammo},gloves:p.gloves,down:p.down,vehicle:p.car?id(p.car):null,speed:p.car?.speed??p.pace??0},
    camera:{mode:caseCamera.enabled?'case':['follow','low','aerial','cockpit'][cameraMode],position:point(camera.position),yaw:camYaw+lookYaw,pitch:lookPitch},
    hudVisible:!$('ui').classList.contains('cleanView'),objective:$('obj').textContent,interaction:actionCtx()?.label??null,
-   law:{wanted,heat,seen:LAW.seen,evadeSeconds:evadeT,lastKnown:LAW.known?point(LAW.anchor):null},
+   law:{wanted,heat,seen:LAW.seen,evadeSeconds:evadeT,lastKnown:LAW.known?point(LAW.anchor):null,
+    limitKmh:TRAFFIC_PATROL.limit,outstandingTickets:PoliceDepartment.tickets.filter(t=>t.driver===p.personId && t.paid===null).length},
    robbery:robbing?{place:robbing.p.name,seconds:robbing.t,total:robbing.p.time}:null,
    outcome:state==='dead'?{kind:deadKind,respawnIn:deadT}:null,
    menu:policeDesk.open?{name:'police',tab:deskTab,station:deskStation?.name,rows:[...$('deskRows').children].map(r=>r.innerText)}:
@@ -133,6 +135,7 @@
   if(!actions().includes(name)) throw new Error('Action unavailable. Read observe.actions');
   if(name==='interact') actionCtx().fn();
   else if(name==='weapon') cycleWeapon();
+  else if(name==='gloves') toggleGloves();
   else if(name.startsWith('answer:'))ResidentCast.answer(Number(name.slice(7)));
   else if(name==='residents')ResidentDirectory.open();
   else if(name==='closeResidents')ResidentDirectory.close();
@@ -146,7 +149,7 @@
  }
 
  function advance(c) {
-  if(!paused || !['play','dead'].includes(state)) throw new Error('Step requires a paused game after Play');
+  if(!paused || cityMap.open || !['play','dead'].includes(state)) throw new Error('Step requires a paused game after Play');
   const ticks=number(c.ticks??1,'ticks',1,120,true);
   const input={forward:number(c.forward??0,'forward',-1,1),turn:number(c.turn??0,'turn',-1,1),
    fire:flag(c.fire??false,'fire'),sprint:flag(c.sprint??false,'sprint'),looking:c.lookYaw!==undefined||c.lookPitch!==undefined};
@@ -166,17 +169,7 @@
   if(car && cars.some(other=>other!==car && Math.abs(other.pos.y-y)<2 && dist2(other.pos,at)<(car.spec.L+other.spec.L)/2))
    throw new Error('Another vehicle occupies the landing area');
   at.y=groundY(at.x,at.z,y);
-  refreshPhysicalWorld(at.x,at.z);
-  if(car) {
-   positionChassis(car,at.x,at.z,yaw,0,at.y);car.body.wakeUp();physCarRead(car);syncCarMesh(car);
-  } else {
-   if(player.c.body) releaseRagdoll(player.c);
-   player.c.root.position.copy(at);player.c.root.rotation.y=yaw;player.c.yaw=yaw;
-  }
-  player.pos.copy(car?car.pos:at);player.yaw=yaw;player.down=player.pace=player.turn=player.spd=0;player.pendingPunch=null;
-  camInit=false;camYaw=yaw;lookYaw=lookPitch=0;
-  // Advance one ordinary tick so the streamed scenery, camera and interactions match the new location.
-  step(1/30,{forward:0,turn:0,fire:false,sprint:false});
+  relocatePlayer(at,yaw);
   record('jump',{to:c.to,position:point(player.pos)});
  }
  function stats(c) {
@@ -225,7 +218,7 @@
     if(c.op==='places') return destinations();
     if(c.op==='world') return world(c);
     if(c.op==='models') return Object.keys(CARSPEC);
-    return structuredClone({cases:PoliceDepartment.cases,radio:PoliceDepartment.transmissions,contacts:PoliceDepartment.contacts,
+    return structuredClone({cases:PoliceDepartment.cases,tickets:PoliceDepartment.tickets,radio:PoliceDepartment.transmissions,contacts:PoliceDepartment.contacts,
      staff:PoliceDepartment.staff.map(s=>({...s,status:PoliceDepartment.status(s)}))});
    case 'step': advance(c);break;
    case 'jump': jump(c);break;

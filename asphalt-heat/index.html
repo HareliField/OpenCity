@@ -3,6 +3,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
 <title>Asphalt Heat</title>
 <link rel="stylesheet" href="police.css">
+<link rel="stylesheet" href="city-map.css">
 <style>
 /* VOICE: sun-baked coastal crime sandbox, loud, cinematic
    IDEA: a living 3D beach city at golden hour you can rob, fight and flee through
@@ -30,8 +31,9 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
 #arbar,#carbar{display:none}
 #conditions{margin-top:6px;font:700 13px/1.3 Inter,system-ui,sans-serif;font-variant-numeric:tabular-nums;color:#fff;text-shadow:0 1px 4px #000,0 0 2px #000}
 #obj{margin-top:8px;font-size:13px;font-weight:700;color:#ffe9c9;text-shadow:0 1px 3px #000;line-height:1.3}
-#sound{display:block;pointer-events:auto;margin-top:8px;min-height:44px;min-width:92px;padding:0 10px;background:rgba(0,0,0,.68);border:1px solid rgba(255,255,255,.35);border-radius:10px;color:#fff;font:700 13px Inter,system-ui,sans-serif;cursor:pointer}
-#sound[aria-pressed="true"]{border-color:#ffe08a;color:#ffe08a}
+#sound{display:block;pointer-events:auto;margin-top:8px;min-height:44px;min-width:92px;padding:0 10px;background:#ad262d;border:1px solid #ff8c91;border-radius:10px;color:#fff;font:700 13px Inter,system-ui,sans-serif;cursor:pointer}
+#graphicsHud{display:block;pointer-events:auto;margin-top:8px;max-width:126px;min-height:36px;padding:4px 6px;border:1px solid #ffffff59;border-radius:8px;background:#171717;color:#fff;font:700 13px Inter,system-ui,sans-serif}
+#sound[aria-pressed="true"]{background:#d13740;border-color:#ffd0d2}
 #sound:focus-visible{outline:2px solid #ffe08a;outline-offset:2px}
 #tr{position:absolute;top:max(10px,env(safe-area-inset-top));right:max(14px,env(safe-area-inset-right));display:flex;flex-direction:column;align-items:flex-end;gap:5px}
 #stars{font-size:clamp(20px,5vw,26px);letter-spacing:1px;text-shadow:0 2px 3px #000;line-height:1}
@@ -130,14 +132,14 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
 <canvas id="c"></canvas>
 <div id="ui" hidden>
   <div id="tl"><div id="cash">$0</div><div class="bar"><i id="hp"></i></div><div class="bar" id="arbar"><i id="ar"></i></div><div class="bar" id="carbar"><i id="chp"></i></div><div id="conditions"></div><div id="obj"></div>
+    <select id="graphicsHud" aria-label="Graphics quality"></select>
     <button id="residentsButton" type="button">Residents</button>
     <button id="sound" type="button" aria-label="Sound" aria-pressed="false">Sound off</button>
-    <button id="gloves" type="button" aria-pressed="false">Gloves off</button>
   </div>
-  <div id="tr"><div id="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><div id="heat"><i></i></div><div id="evade"><i></i></div><canvas id="mm" width="300" height="300"></canvas><div id="wep">FISTS <small></small></div></div>
+  <div id="tr"><div id="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div><div id="heat"><i></i></div><div id="evade"><i></i></div><button id="mapOpen" type="button" aria-label="Open city map" aria-haspopup="dialog" aria-controls="cityMap" title="Open city map"><canvas id="mm" width="300" height="300" aria-hidden="true"></canvas></button><div id="wep">FISTS <small></small></div></div>
   <div id="toast"></div><div id="banner"></div>
   <div id="prog"><span>ROBBING…</span><div class="bar"><i></i></div></div>
-  <div id="speedo">0<small>KM/H</small><div id="driveIdentity"><button id="signalLeft" type="button" aria-label="Left turn signal" aria-pressed="false" title="Left turn signal ([)">◀</button><span id="vehicleName"></span><button id="signalRight" type="button" aria-label="Right turn signal" aria-pressed="false" title="Right turn signal (])">▶</button></div></div>
+  <div id="speedo">0<small>KM/H<span id="roadLimit"></span></small><div id="driveIdentity"><button id="signalLeft" type="button" aria-label="Left turn signal" aria-pressed="false" title="Left turn signal ([)">◀</button><span id="vehicleName"></span><button id="signalRight" type="button" aria-label="Right turn signal" aria-pressed="false" title="Right turn signal (])">▶</button></div></div>
   <div id="joy"><div id="knob"></div></div>
   <div id="interaction" hidden><kbd>C</kbd><span></span></div>
   <div id="btns"><button id="bSprint">SPRINT</button><button id="bWep">WEAPON</button><button id="bAct">ENTER</button><button id="bFire">PUNCH</button></div>
@@ -145,9 +147,42 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
 <button id="followStreetCase" hidden type="button">Follow street incident</button>
 <div id="caseCaption" hidden><strong></strong><span></span></div>
 <div id="touchViews" hidden><button id="viewMode">Camera</button><button id="hudMode">Hide HUD</button><button id="leaveCar" hidden>Exit car</button></div>
+<dialog id="cityMap" aria-labelledby="cityMapTitle">
+ <header class="city-map-header">
+  <h2 id="cityMapTitle">City map</h2>
+  <button id="mapClose" type="button" aria-label="Close city map" autofocus>×</button>
+ </header>
+ <div class="city-map-body">
+  <div class="city-map-area">
+   <div id="mapFrame">
+    <canvas id="travelMap" aria-label="City street map. Click a location to choose it."></canvas>
+    <div id="mapMarkers" aria-label="Landmarks"></div>
+    <span id="mapPlayer" role="img" aria-label="Your location"></span>
+    <span id="mapPin" hidden></span>
+   </div>
+   <div id="mapLegend" aria-label="Map legend"></div>
+  </div>
+  <div class="city-map-controls">
+   <h3>Time &amp; weather</h3>
+   <label class="map-time-label" for="mapTime">Time of day <output id="mapClock" for="mapTime"></output></label>
+   <input id="mapTime" type="range" min="0" max="1439" step="1">
+   <div class="map-sky" aria-hidden="true"><span>☾</span><span>☀</span><span>☾</span></div>
+   <div id="mapWeather" role="group" aria-label="Weather"></div>
+   <p id="mapWeatherName"></p>
+   <div id="mapConfirm" hidden>
+    <p id="mapQuestion" aria-live="polite"></p>
+    <div class="map-confirm-actions">
+     <button id="mapCancel" type="button">Cancel</button>
+     <button id="mapGo" type="button">Yes, travel</button>
+    </div>
+   </div>
+   <p id="mapStatus" role="status"></p>
+  </div>
+ </div>
+</dialog>
 <dialog id="policeDesk" aria-labelledby="deskStation">
  <header><h2 id="deskStation">Police records</h2><button id="deskClose" type="button">Close</button></header>
- <nav aria-label="Station records"><button data-view="Cases">Cases</button><button data-view="Fugitives">Fugitives</button><button data-view="Watch">Watch</button><button data-view="Radio">Radio</button></nav>
+ <nav aria-label="Station records"><button data-view="Cases">Cases</button><button data-view="Tickets">Tickets</button><button data-view="Fugitives">Fugitives</button><button data-view="Watch">Watch</button><button data-view="Radio">Radio</button></nav>
  <div id="deskExercise">
   <button id="followCase" type="button">Follow a training homicide</button>
   <button id="followCall" type="button">Follow a gunfire report</button>
@@ -174,6 +209,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
     <label>Starting weather<select id="startWeather"><option value="">City forecast</option></select></label>
    </div>
   </details>
+  <div class="startClimate"><label>Graphics quality<select id="graphicsStart"></select></label></div>
   <button id="play" disabled>PLAY</button>
   <div id="lbar"><i></i></div>
   <div id="load">Loading…</div>
@@ -184,6 +220,7 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
 <script src="js/resident-assets.js"></script><script src="js/resident-motion.js"></script><script src="js/resident-rig.js"></script><script src="js/resident-cast.js"></script><script src="js/resident-contact.js"></script><script src="js/resident-directory.js"></script>
 <script src="js/wash-house.js"></script>
 <script src="js/weather.js"></script><script src="js/weather-cover.js"></script><script src="js/core.js"></script><script src="js/atmosphere.js"></script><script src="js/precipitation.js"></script>
-<script src="js/phys.js"></script><script src="js/cargen.js"></script><script src="js/fleet.js"></script><script src="js/chars.js"></script><script src="js/world.js"></script><script src="js/harbor.js"></script><script src="js/freight.js"></script><script src="js/streets.js"></script><script src="js/interiors.js"></script><script src="js/access.js"></script><script src="js/roads.js"></script><script src="js/street-plan.js"></script><script src="js/street-surface.js"></script><script src="js/street-signals.js"></script><script src="js/city-traffic.js"></script><script src="js/props.js"></script><script src="js/scenery.js"></script><script src="js/city-works.js"></script><script src="js/city-services.js"></script><script src="js/city-detail.js"></script><script src="js/shop-architecture.js"></script><script src="js/city-fixtures.js"></script><script src="js/city-vegetation.js"></script><script src="js/garden-cottages.js"></script><script src="js/harbor-supply.js"></script><script src="js/coast.js"></script><script src="js/lighthouse.js"></script><script src="js/game.js"></script><script src="js/department.js"></script><script src="js/headquarters.js"></script><script src="js/police-world.js"></script><script src="js/police-desk.js"></script><script src="js/dispatch.js"></script><script src="js/street-incidents.js"></script><script src="js/case-camera.js"></script><script src="js/main.js"></script>
+<script src="js/phys.js"></script><script src="js/cargen.js"></script><script src="js/fleet.js"></script><script src="js/vehicle-components.js"></script><script src="js/chars.js"></script><script src="js/world.js"></script><script src="js/harbor.js"></script><script src="js/freight.js"></script><script src="js/streets.js"></script><script src="js/interiors.js"></script><script src="js/access.js"></script><script src="js/building-construction.js"></script><script src="js/suite-interiors.js"></script><script src="js/domestic-fittings.js"></script><script src="js/fire-escapes.js"></script><script src="js/roads.js"></script><script src="js/street-plan.js"></script><script src="js/street-surface.js"></script><script src="js/street-signals.js"></script><script src="js/city-traffic.js"></script><script src="js/props.js"></script><script src="js/scenery.js"></script><script src="js/city-works.js"></script><script src="js/palm-corner.js"></script><script src="js/city-services.js"></script><script src="js/city-detail.js"></script><script src="js/shop-architecture.js"></script><script src="js/city-fixtures.js"></script><script src="js/civic-fittings.js"></script><script src="js/city-vegetation.js"></script><script src="js/garden-cottages.js"></script><script src="js/harbor-supply.js"></script><script src="js/coast.js"></script><script src="js/coastal-scenery.js"></script><script src="js/dock-yard.js"></script><script src="js/lighthouse.js"></script><script src="js/game.js"></script><script src="js/department.js"></script><script src="js/headquarters.js"></script><script src="js/police-world.js"></script><script src="js/police-desk.js"></script><script src="js/dispatch.js"></script><script src="js/traffic-police.js"></script><script src="js/street-incidents.js"></script><script src="js/case-camera.js"></script><script src="js/main.js"></script>
+<script src="js/city-map.js"></script>
 <script src="js/agent-controller.js"></script>
 </body></html>

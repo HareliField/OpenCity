@@ -243,5 +243,101 @@
       0,
       0.424
     ]
+  },
+  "diner-booth": {
+    "file": "diner-booth.glb"
+  },
+  "diner-table": {
+    "file": "diner-table.glb"
+  },
+  "diner-stool": {
+    "file": "diner-stool.glb"
+  },
+  "corner-news-vendor": {
+    "file": "corner-news-vendor.glb"
+  },
+  "record-browser": {
+    "file": "record-browser.glb"
+  },
+  "coastal-solar-array": {
+    "file": "coastal-solar-array.glb"
+  },
+  "civic-mosaic-basin": {
+    "file": "civic-mosaic-basin.glb"
+  },
+  "glazed-bus-shelter": {
+    "file": "glazed-bus-shelter.glb"
+  },
+  "ceramic-cistern": {
+    "file": "ceramic-cistern.glb"
+  },
+  "diner-espresso": {
+    "file": "diner-espresso.glb"
+  },
+  "graphite-city-saloon": {
+    "file": "graphite-city-saloon.glb"
+  },
+  "engine-transverse": {
+    "file": "engine-transverse.glb"
+  },
+  "engine-v-bank": {
+    "file": "engine-v-bank.glb"
+  },
+  "engine-boxer": {
+    "file": "engine-boxer.glb"
+  },
+  "engine-diesel": {
+    "file": "engine-diesel.glb"
+  },
+  "passenger-cabin": {
+    "file": "passenger-cabin.glb"
+  },
+  "apartment-bed": {
+    "file": "apartment-bed.glb"
+  },
+  "studio-drafting-desk": {
+    "file": "studio-drafting-desk.glb"
+  },
+  "apartment-galley": {
+    "file": "apartment-galley.glb"
+  },
+  "bond-brick": {
+    "file": "bond-brick.glb"
+  },
+  "mission-pantile": {
+    "file": "mission-pantile.glb"
+  },
+  "municipal-cover": {
+    "file": "municipal-cover.glb"
+  },
+  "pier-board": {
+    "file": "pier-board.glb"
+  },
+  "flat-refrigerator": {
+    "file": "flat-refrigerator.glb"
+  },
+  "flat-washstand": {
+    "file": "flat-washstand.glb"
+  },
+  "bedside-lamp": {
+    "file": "bedside-lamp.glb"
+  },
+  "breakfast-tray": {
+    "file": "breakfast-tray.glb"
+  },
+  "shower-tray": {
+    "file": "shower-tray.glb"
+  },
+  "canvas-beach-parasol": {
+    "file": "canvas-beach-parasol.glb"
+  },
+  "canvas-deckchair": {
+    "file": "canvas-deckchair.glb"
+  },
+  "intermodal-container": {
+    "file": "intermodal-container.glb"
+  },
+  "receiving-carton": {
+    "file": "receiving-carton.glb"
   }
 }

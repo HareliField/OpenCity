@@ -1,0 +1,27 @@
+[
+  {
+    "id": "canvas-beach-parasol",
+    "sourceImages": [
+      2,
+      39,
+      48,
+      107
+    ],
+    "description": "Portable eight-gore sunshade for the bathing areas, with joined canvas seams, ferrules and sprung ribs.",
+    "parts": 51,
+    "movableParts": [],
+    "runtimeBytes": 122164
+  },
+  {
+    "id": "canvas-deckchair",
+    "sourceImages": [
+      2,
+      48,
+      107
+    ],
+    "description": "A low folding chair for the bathing areas with an ash frame, woven sling, metal pins and pivot washers.",
+    "parts": 45,
+    "movableParts": [],
+    "runtimeBytes": 198436
+  }
+]

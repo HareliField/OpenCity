@@ -20,7 +20,7 @@ run(`const CANNON=window.CANNON,V3=THREE.Vector3,CELL=64,N=16,W=N*CELL,HALF=8,OR
 `);
 const world=read('js/world.js');
 run(world.slice(world.indexOf('function districtOf('),world.indexOf('const SPECIAL=')));
-for(const name of ['phys','cargen','fleet','access','roads','street-plan','street-surface','city-works','city-services','city-traffic','lighthouse','garden-cottages','game'])run(read('js/'+name+'.js'));
+for(const name of ['phys','cargen','fleet','vehicle-components','access','building-construction','suite-interiors','domestic-fittings','roads','street-plan','street-surface','harbor','city-works','city-services','city-traffic','lighthouse','garden-cottages','civic-fittings','harbor-supply','coast','game'])run(read('js/'+name+'.js'));
 run(`
  player={pos:new V3(800,0,800),car:null};
  setCarLights=()=>{};
@@ -33,6 +33,7 @@ run(`
  assert(controls.signal>20 && controls.signal<120);
  assert(controls['all-stop']>0 && controls['stop-ns']>0 && controls['stop-ew']>0);
  assert.equal(junctionControl(4,5),'signal');
+ assert.equal(junctionControl(10,10),'signal');
  for(let g=0;g<SIGNAL_GROUPS;g++)for(let t=0;t<60;t+=.25){
   const {ns,ew}=phaseForGroup(g,t);
   assert(!(ns.vehicle!=='R'&&ew.vehicle!=='R'));
@@ -72,6 +73,32 @@ run(`
  // The height query also follows the actual triangular planes in transition zones.
  for(const t of [16.8,18.3,20.4,23.2,32.21,44.8])for(const u of [-7.2,-5.9,1.8,5.1])
   approx(hit(2*CELL+u,4*CELL+t),builtStreetHeight(2*CELL+u,4*CELL+t),.001,'pedestrian and wheel surface');
+ sampleBeachRelief();buildSandTiles(MAT.sidewalk);
+ const shoreTiles=STREET_TERRAIN.get(cellKey(W+36,392)).filter(tile=>tile.sandTerrain);
+ assert(shoreTiles.length>=2);
+ for(const tile of shoreTiles)sandTerrainBody(tile);
+ for(let k=0;k<24;k++){
+  const x=W+20.39+k*1.63,z=386.72+k*.87;
+  approx(hit(x,z),groundY(x,z,.3),.0001,'sand relief matches wheel contact');
+ }
+ approx(coastalSandHeight(W+45,W*.42),.02,.0001,'pier entry stays level');
+ const pierFloor={x0:W+40,x1:W+150,z0:W*.42-4,z1:W*.42+4,y:1.60,soffit:1.527};
+ STREET.steps.push(pierFloor);
+ approx(groundY(W+46,W*.42,.02),.02,.0001,'feet below a deck stay at beach height');
+ approx(groundY(W+46,W*.42,1.45),1.60,.0001,'highest pier step meets the platform');
+ STREET.steps.pop();
+ installWorksPhysics();
+ for(const tile of STREET_TERRAIN.get(cellKey(W+32,915)).filter(t=>t.sandTerrain))sandTerrainBody(tile);
+ for(const [x,z] of [[W+32,915.4],[W+34.7,921.32],[W+70,922]]){
+  const ray=new CANNON.RaycastResult();
+  PH.w.raycastClosest(new CV(x,1,z),new CV(x,-3,z),{skipBackfaces:true},ray);
+  assert(ray.hasHit&&ray.hitPointWorld.y<-2.20,'the quay has a submerged floor');
+  approx(ray.hitPointWorld.y,groundY(x,z,0),.0001,'wheel and walking queries share the basin bed');
+ }
+ assert.equal(harborWalkingLimit(910),HARBOR.basin.x0);
+ assert.equal(harborWalkingLimit(971),HARBOR.docks[1].x1);
+ assert.equal(harborWalkingLimit(975),HARBOR.quay.x1);
+ assert.equal(harborWalkingLimit(854),null);
  assert(hasCurbExtension(4,5,0,-1));
  buildCurbExtension(4,5,0,-1);
  const approachZ=5*CELL+STREET_DESIGN.crossing,faceX=4*CELL+HALF-EXTENSION_WIDTH;
@@ -182,8 +209,9 @@ run(`
   const normalOffset=(c.pos.x-b[0]*CELL)*-ez+(c.pos.z-b[1]*CELL)*ex;
   approx(normalOffset,laneCenter(segmentSection(b,e),ex,ez,m.exitLane),1.25,'receiving lane '+b+' '+model+' '+physical+' '+turn);movements++;
  }
- // Two avenues, a collector with curb extensions, Juniper at Bay, a local all-way stop, and the offset waterfront.
- for(const b of [[8,5],[4,5],[2,7],[1,8],[15,7]]){
+ // Two avenues, a collector with curb extensions, Juniper at Bay, a local all-way stop, the offset waterfront,
+ // and the Palm / Marina signal where a collector meets the local street beside the diner.
+ for(const b of [[8,5],[4,5],[2,7],[1,8],[15,7],[10,10]]){
   const before=new Set([...STREET_TERRAIN.values()].flat());
   for(const [dx,dz] of CARDINAL)if(hasCurbExtension(...b,dx,dz))buildCurbExtension(...b,dx,dz);
   const extensions=[...new Set([...STREET_TERRAIN.values()].flat())].filter(tile=>!before.has(tile));
@@ -259,8 +287,8 @@ run(`
   const p={pos:new V3(route.waitX-dx*back,0,route.waitZ-dz*back),mode:'walk',spd:1.15,cross:route};
   peds.push(p);return p;
  }
- for(const i of [4,8]){
-  reset();const j=5,start=signalGroup(i,j)*6,dt=1/30;
+ for(const [i,j] of [[4,5],[8,5],[10,10]]){
+  reset();const start=signalGroup(i,j)*6,dt=1/30;
   const east=walker(i,j,0,1,1,0),west=walker(i,j,0,1,-1,0),rear=walker(i,j,0,1,1,0,.85);
   const edge=crossingEdge(east.cross),span=west.pos.x-east.pos.x;
   approx(span,2*(edge+.47),.001,'pedestrians wait behind the actual curb');
@@ -324,4 +352,93 @@ run(`
   cycleRuns.push(hz);
  }
  console.log('Street regressions passed.',controls,{speedHumps:humps,fleet:fleet.length,movements,stopBarGaps:gaps,cycleRuns});
+`);
+run(`
+ const scene=new THREE.Scene(),STATIC=[],TREES=[],PALMS=[],LAMPS=[],PROPSPOTS=[];
+ const ATLAS={mat:{map:{}}},atlasSlot=()=>({}),pbr=()=>new THREE.MeshBasicMaterial(),lin=n=>new THREE.Color(n);
+ const cyl=()=>{},signQuad=()=>{},makeWet=material=>material;
+ reset();ACCESS.doors.length=0;buildGradeRoads();
+ DRIVEWAYS.set(drivewayKey('ns',14,12),[{side:1,center:26,half:2.6}]);
+ for(const profile of GRADE_PROFILES)roadsideSign(profile);
+ indexStatic();
+ // Sweep full vehicle width between the two intersection boxes, with room for the pavement crown.
+ // Use the streamed, oriented Cannon solids so an overhead bridge is tested at its actual height.
+ const width=Math.max(...Object.values(CARSPEC).map(s=>s.W)),roof=Math.max(...Object.values(CARSPEC).map(s=>s.r))+.15,low=.22;
+ const hull=new CANNON.Box(new CV(width/2,(roof-low)/2,CELL/2-HALF)).convexPolyhedronRepresentation;
+ const lo=new CV(),hi=new CV(),axisHit=new CV();
+ let strips=0;
+ for(let line=0;line<=N;line++)for(let part=0;part<N;part++)for(const axis of ['ns','ew']){
+  const section=streetSection(axis,line,part);
+  for(const dir of [-1,1])for(const lane of section.outer?[0,1]:[0]){
+   const dx=axis==='ew'?dir:0,dz=axis==='ns'?dir:0,u=laneCenter(section,dx,dz,lane);
+   const center=new CV((dx?part+.5:line)*CELL-dz*u,(roof+low)/2,(dz?part+.5:line)*CELL+dx*u);
+   const q=new CANNON.Quaternion();q.setFromEuler(0,Math.atan2(dx,dz),0);
+   hull.calculateWorldAABB(center,q,lo,hi);refreshPhysicalWorld(center.x,center.z);
+   for(const [r,body] of STREETS_PHYS.bodies){
+    if(r.faces||r.sandTerrain)continue;
+    if(body.aabbNeedsUpdate)body.updateAABB();
+    const lower=body.aabb.lowerBound,upper=body.aabb.upperBound;
+    if(upper.x<=lo.x||lower.x>=hi.x||upper.z<=lo.z||lower.z>=hi.z||upper.y<=lo.y||lower.y>=hi.y)continue;
+    for(const [index,shape] of body.shapes.entries()){
+     const solid=shape.convexPolyhedronRepresentation||shape;
+     const position=body.pointToWorldFrame(body.shapeOffsets[index]),rotation=body.quaternion.mult(body.shapeOrientations[index]);
+     assert(!hull.findSeparatingAxis(solid,center,q,position,rotation,axisHit),
+      'grade structure in '+axis+' '+line+'/'+part+' direction '+dir+' lane '+lane+' at '+position);
+    }
+   }
+   strips++;
+  }
+ }
+ assert.equal(strips,1376);
+ const signs=STATIC.filter(r=>r.radius===.077);
+ for(const route of GRADE_ROADS.routes)for(const [n,node] of route.ends.entries()){
+  const dir=n?-1:1,dx=route.axis==='ew'?dir:0,dz=dx?0:dir;
+  const mounted=signs.some(p=>{
+   const x=(p.x0+p.x1)/2-node[0]*CELL,z=(p.z0+p.z1)/2-node[1]*CELL;
+   return x*dx+z*dz < -18 && x*dx+z*dz >= -42 && -dz*x+dx*z > HALF+1.435 &&
+    !nearDriveway(x+node[0]*CELL,z+node[1]*CELL,1.5);
+  });
+  assert(mounted,route.name+' must be signed on the feeder sidewalk before the intersection');
+ }
+ for(let i=5;i<=14;i++)for(let j=8;j<=12;j++){buildSidewalk(blocks[i*N+j]);buildCarriageway('ns',i,j);buildCarriageway('ew',j,i);}
+ STREETS_PHYS.region=-1;
+ function driveGradeLink(a,b,lane,type,takeRamp,physical){
+  Math.random=()=>takeRamp?.45:.96;
+  const dx=b[0]-a[0],dz=b[1]-a[1],car=carOn(a,b,[b[0]+dx,b[1]+dz],lane,takeRamp?22:49,false,type);
+  const exit=takeRamp?car.ai.movement.ramp.exit:b;
+  refreshPhysicalWorld(car.pos.x,car.pos.z);if(physical)physCarOn(car);
+  let peak=0,done=false;
+  for(let tick=0;tick<(takeRamp?15000:1800);tick++){
+   time=tick/90+signalGroup(...b)*6+4;
+   refreshPhysicalWorld(car.pos.x,car.pos.z);advance(1/90,car);
+   peak=Math.max(peak,car.pos.y);
+   if(physical)assert(!PH.w.contacts.some(hit=>hit.bi===car.body || hit.bj===car.body),'chassis struck an obstacle at '+car.pos.toArray());
+   const past=(car.pos.x-exit[0]*CELL)*dx+(car.pos.z-exit[1]*CELL)*dz;
+   if(!car.ai.grade && past>(takeRamp?9:-20)){done=true;break;}
+  }
+  assert(done && (takeRamp?peak>4:peak<.3),'vehicle must finish on its selected road level');
+  if(physical)physCarOff(car);cars.length=0;
+ }
+ for(const type of ['f150','van','harborbox'])driveGradeLink([14,12],[14,13],1,type,false,true);
+ for(const route of GRADE_ROADS.routes)for(const [n,b] of route.ends.entries()){
+  const dir=n?-1:1,dx=route.axis==='ew'?dir:0,dz=dx?0:dir;
+  for(const type of ['van','harborbox'])for(const physical of [false,true])driveGradeLink([b[0]-dx,b[1]-dz],b,0,type,true,physical);
+ }
+ console.log('Grade clearances passed.',{straightLanes:strips,signs:signs.length,deckDrives:16,coastalTruckDrives:3});
+`);
+run(read('js/dock-yard.js'));
+run(`
+ const topQuad=()=>{},beforeDock=new Set([...STREET_TERRAIN.values()].flat());
+ dockYardPaving();cityTerrainReady=true;
+ for(const t of new Set([...STREET_TERRAIN.values()].flat()))if(!beforeDock.has(t))terrainBody(t);
+ const yard=HARBOR.yard;
+ for(const z of [yard.z0+.22,yard.cross[0],yard.cross[1],yard.cross[2]]){
+  for(const x of yard.streets)approx(hit(x,z),groundY(x,z,0),.0001,'dock street tyres match walking height');
+ }
+ for(const x of [1024-7.66,1024-8.55,1024-10.2,1036.17,1037.43]){
+  approx(hit(x,1101),groundY(x,1101,.16),.0001,'the quay apron and gutter share their wheel surface');
+ }
+ assert(groundY(1013.8,1101,.16)-groundY(1024,1101,0)>.14,'the warehouse apron rises above the roadway');
+ for(const x of yard.streets)assert(hasApproach(x/CELL,N,0,-1)&&dockYardGateAt(x,1.32));
+ console.log('Two dock entrances, three junctions and five apron samples match the wheel surfaces.');
 `);

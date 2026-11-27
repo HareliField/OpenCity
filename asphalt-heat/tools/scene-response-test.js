@@ -5,28 +5,46 @@ const path=require('node:path');
 const vm=require('node:vm');
 const THREE=require('../lib/three.min.js');
 const source=name=>fs.readFileSync(path.join(__dirname,'../js',name+'.js'),'utf8');
-function runWatch(noParking,interruptRide=false){
- const ctx=vm.createContext({assert,THREE,window:{},noParking,interruptRide});
+function runWatch(noParking,interruptRide=false,trafficJam=false){
+ const ctx=vm.createContext({assert,THREE,window:{},noParking,interruptRide,trafficJam});
  const run=s=>vm.runInContext(s,ctx);
  run(source('department'));
  run(`const V3=THREE.Vector3,unitBox=new THREE.BoxGeometry(),CELL=64,N=16,HALF=8;
- const player={pos:new V3(137,0,162)},streetIncidents={current:null},cars=[];
+ const player={pos:new V3(137,0,162)},streetIncidents={current:null},cars=[],peds=[];
  const groundY=()=>0,clamp=(v,l,h)=>Math.max(l,Math.min(v,h));
  const nearDriveway=()=>noParking,rayWorld=()=>1,collideWorld=()=>null,caseViewNear=()=>false;
  const sp=(p)=>[Math.round(p.x/CELL),Math.round(p.z/CELL)],nearestNode=sp;
  const dist2=(a,b)=>Math.hypot(a.x-b.x,a.z-b.z),lerpA=(a,b,t)=>a+(b-a)*t,wrapA=a=>a;
  const makeChar=()=>({root:new THREE.Group(),bones:{},yaw:0}),officerModel=()=>'',fitIssuedEquipment=()=>{},personalizeOfficer=()=>{};
- const removeChar=()=>{},updChar=()=>{},blockedAhead=()=>false,setCarLights=()=>{};
+ const camera=new THREE.PerspectiveCamera(48,16/9,.1,150);
+ camera.position.set(130,2,159);camera.lookAt(player.pos);camera.updateMatrixWorld();
+ const streetSection=()=>({inner:2.65}),laneCenter=s=>s.inner;
+ const bodyInsideCar=(c,p,r)=>Math.abs(c.pos.x-p.x)<1+r&&Math.abs(c.pos.z-p.z)<2.4+r;
+ const removeChar=()=>{},updChar=()=>{},blockedAhead=()=>trafficJam,setCarLights=()=>{};
  const spawnCar=(type,x,z,h,driver)=>{const car={type,pos:new V3(x,0,z),h,speed:0,driver};cars.push(car);return car;};
  const removeCar=c=>{PoliceDepartment.release(c.officer);cars.splice(cars.indexOf(c),1);};
- const drive=(c,throttle,steer,brake,dt)=>{c.speed=Math.max(0,c.speed+throttle*7*dt);c.pos.x+=Math.sin(c.h)*c.speed*dt;c.pos.z+=Math.cos(c.h)*c.speed*dt;};`);
+ const drive=(c,throttle,steer,brake,dt)=>{c.h+=steer*Math.min(c.speed/7,1)*1.6*dt;c.speed=Math.max(0,c.speed+throttle*7*dt);c.pos.x+=Math.sin(c.h)*c.speed*dt;c.pos.z+=Math.cos(c.h)*c.speed*dt;};`);
  run(source('police-world'));
  run('equipOfficer=()=>{}');
  return run(`(()=>{
   const pd=PoliceDepartment,unavailable=pd.staff[7];pd.withdraw(unavailable);
   const motor=pd.claim('Patrol','Motor patrol');
   const file=pd.file({kind:'Homicide',origin:'street',at:player.pos,victim:'resident-12'});
-  const arrivals=new Map(),dt=1/30;let largestCrew=0,simultaneousCars=0,retained=false,stolen=null;
+  if(!noParking){
+   const team={frame:sceneStreetFrame(file.at),file,rides:[]};
+   const route=sceneCarSpot(team,0);
+   assert(route.run>=16);assert.equal(route.visible,false,'prefer an upstream origin outside the active camera');
+   const approach=route.start.clone().lerp(route.merge,.5);
+   cars.push({pos:approach,driver:null,speed:0});
+   const alternative=sceneCarSpot(team,0);
+   if(alternative)assert(clearSceneCarPath(alternative.start,alternative.merge,file.id));
+   assert.equal(clearSceneCarPath(route.start,route.merge,file.id),false,'parked cars obstruct the travel lane');
+   cars.pop();peds.push({pos:route.start.clone()});
+   const clearPedestrian=sceneCarSpot(team,0);
+   assert(!clearPedestrian||dist2(clearPedestrian.start,route.start)>1.45);
+   peds.pop();
+  }
+  const arrivals=new Map(),starts=new Map(),dt=1/30;let largestCrew=0,simultaneousCars=0,retained=false,stolen=null;
   for(let i=0;i<2400;i++){
    pd.clock+=dt;
    if(i%30===0)pd.process();
@@ -34,7 +52,11 @@ function runWatch(noParking,interruptRide=false){
     stolen=cars.find(c=>c.driver==='scene');stolen.driver='player';
    }
    for(const car of cars){
-    if(car.driver==='scene')driveSceneCar(car,dt);
+    if(car.driver==='scene'){
+     if(!starts.has(car)){starts.set(car,pd.clock);assert(dist2(car.pos,car.sceneStop)>=16);}
+     driveSceneCar(car,dt);
+     if(trafficJam&&car.sceneParked)assert(pd.clock-starts.get(car)<7);
+    }
     else if(car.driver==='scene return'){car.pos.x+=Math.sin(car.h)*5*dt;car.pos.z+=Math.cos(car.h)*5*dt;}
    }
    updateFieldDetectives(dt);
@@ -62,5 +84,6 @@ function runWatch(noParking,interruptRide=false){
 }
 assert.equal(runWatch(false),2);
 assert.equal(runWatch(true),0);
-assert.equal(runWatch(false,true),1);
+assert.equal(runWatch(false,true),2);
+assert.equal(runWatch(false,false,true),2);
 console.log('Five named patrol officers, staggered arrivals, two marked cars, detective handover, on-foot fallback and vehicle release passed.');

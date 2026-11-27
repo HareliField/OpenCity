@@ -5,12 +5,22 @@ const clamp=(v,a,b)=>v<a?a:v>b?b:v,lerp=(a,b,t)=>a+(b-a)*t;
 const wrapA=a=>{while(a>Math.PI)a-=2*Math.PI;while(a<-Math.PI)a+=2*Math.PI;return a;};
 const lerpA=(a,b,t)=>a+wrapA(b-a)*t;
 let SEED=1337;const srnd=()=>{SEED=(SEED*16807)%2147483647;return(SEED-1)/2147483646;};const srange=(a,b)=>a+srnd()*(b-a),spick=a=>a[Math.floor(srnd()*a.length)];
+const cityInteger=(min,max)=>Math.floor(srange(min,max+1));
 const V3=THREE.Vector3;const unitBox=new THREE.BoxGeometry(1,1,1);
 const ORIGINAL_GRID=8,N=16,CELL=64,HALF=8,W=N*CELL,S=W+16,LANE=4,SW=4;
 const isMobile=matchMedia('(pointer:coarse)').matches||/Android|iPhone|iPad/.test(navigator.userAgent);
 const qp=new URLSearchParams(location.search);
-const QUALITY={level:qp.has('q')?+qp.get('q'):(isMobile?1:2)};
-function applyQuality(){const L=QUALITY.level;QUALITY.physical=L>=2;QUALITY.refl=L>=1;QUALITY.bloom=L>=1;QUALITY.msaa=L>=2?4:(L>=1?2:0);QUALITY.pr=Math.min(devicePixelRatio,L>=2?1.75:L>=1?1.2:.9);QUALITY.shadow=L>=2?2048:1024;QUALITY.reflScale=L>=2?.5:.33;QUALITY.peds=L>=2?26:L>=1?18:12;}
+const GRAPHICS_LEVELS=['Low','Medium','High'];
+const GRAPHICS_KEY='asphalt-heat.graphics';
+const graphicsOverride=qp.get('q');
+let graphicsMode='auto';
+try {
+ const saved=localStorage.getItem(GRAPHICS_KEY);
+ if (['0','1','2'].includes(saved)) graphicsMode=saved;
+} catch {}
+if (['0','1','2'].includes(graphicsOverride)) graphicsMode=graphicsOverride;
+const QUALITY={level:graphicsMode==='auto'?1:Number(graphicsMode),scale:1};
+function applyQuality(){const L=QUALITY.level;QUALITY.physical=L>=2;QUALITY.refl=L>=1;QUALITY.bloom=L>=1;QUALITY.msaa=L>=2?4:(L>=1?2:0);QUALITY.pr=Math.min(devicePixelRatio,L>=2?1.75:L>=1?1.2:.9)*QUALITY.scale;QUALITY.shadow=L>=2?2048:1024;QUALITY.reflScale=L>=2?.5:.33;QUALITY.peds=L>=2?26:L>=1?18:12;}
 applyQuality();
 const LOWSHADOW=QUALITY.level<2;
 function cvs(w,h){const c=document.createElement('canvas');c.width=w;c.height=h;return[c,c.getContext('2d')];}
@@ -35,8 +45,13 @@ for(const lamp of drivingLights)scene.add(lamp,lamp.target);
 const boomL=new THREE.PointLight(0xff8a30,0,60,2);scene.add(boomL);
 /* ---- planar reflection for wet ground ---- */
 const REFL={rt:null,cam:new THREE.PerspectiveCamera(),mat:new THREE.Matrix4(),on:false,uniforms:{tRefl:{value:null},reflMat:{value:new THREE.Matrix4()},reflOn:{value:0}}};
-function reflResize(w,h){if(!QUALITY.refl){REFL.on=false;REFL.uniforms.reflOn.value=0;return;}const s=QUALITY.reflScale;
- if(REFL.rt)REFL.rt.dispose();REFL.rt=new THREE.WebGLRenderTarget(Math.max(64,w*s|0),Math.max(64,h*s|0),{type:POST?THREE.HalfFloatType:THREE.UnsignedByteType,minFilter:THREE.LinearFilter,magFilter:THREE.LinearFilter});
+function reflResize(w,h){
+ REFL.rt?.dispose();
+ if(!QUALITY.refl){
+  REFL.rt=null;REFL.on=false;REFL.uniforms.tRefl.value=null;REFL.uniforms.reflOn.value=0;return;
+ }
+ const s=QUALITY.reflScale;
+ REFL.rt=new THREE.WebGLRenderTarget(Math.max(64,w*s|0),Math.max(64,h*s|0),{type:POST?THREE.HalfFloatType:THREE.UnsignedByteType,minFilter:THREE.LinearFilter,magFilter:THREE.LinearFilter});
  REFL.uniforms.tRefl.value=REFL.rt.texture;REFL.on=true;REFL.uniforms.reflOn.value=1;}
 const _rtv=new V3(),_rn=new V3(0,1,0),_rl=new V3(),_rq=new THREE.Vector4(),_rp=new THREE.Plane(),_rc=new THREE.Vector4();
 const ROAD_MIRROR_POINT=new V3(0,.016,0);
@@ -91,10 +106,17 @@ function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
     float film=uWet*exposed*facingUp*uWetness;
     float pud=smoothstep(.49,.652,pool)*film;
     float damp=film*(.74+.26*big);
-    ${opt.road?`float midblock=smoothstep(8.,16.,max(grid.x,grid.y));
-    float downhill=smoothstep(2.7,7.5,min(grid.x,grid.y));
-    float retention=mix(.42,mix(.16,.92,downhill),midblock);
-    pud*=retention;damp*=mix(.65,1.,retention);`:''}
+    ${opt.road?`// Water collects in aggregate hollows first. As the road dries, each pool recedes at its edges.
+    float across=min(grid.x,grid.y),midblock=smoothstep(8.,16.,max(grid.x,grid.y));
+    float downhill=smoothstep(2.7,7.5,across);
+    float retention=mix(.54,mix(.24,.94,downhill),midblock);
+    float wheelPath=1.-smoothstep(.12,.65,abs(min(abs(across-2.),abs(across-6.))-.75));
+    float aggregateRidges=vnoise(tangent*vec2(1.15,5.8));
+    float basin=pool-.105*(1.-retention)+midblock*.035*wheelPath+.11*(aggregateRidges-.5);
+    // Stripe paint and asphalt share the same water level along a crossing.
+    float waterLevel=.828-.39*uWetness;
+    pud=smoothstep(waterLevel-.031,waterLevel+.058,basin)*smoothstep(.08,.25,uWetness)*exposed*facingUp;
+    damp*=mix(.73,1.,retention);`:''}
     float grain=vnoise(vWP.xz*34.);
     roughnessFactor=mix(roughnessFactor,.29+grain*.15,damp*.81);roughnessFactor=mix(roughnessFactor,.055,pud);diffuseColor.rgb*=mix(1.,.60,damp)*mix(1.,.44,pud);
     ${opt.tint?'diffuseColor.rgb*=mix(.78,1.13,big);':''}
@@ -107,7 +129,10 @@ function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
      diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.76,.83,.90)*(.82+.12*drift+.06*grain),snow);
      roughnessFactor=mix(roughnessFactor,.92,snow);pud*=1.-snow;damp*=1.-snow;
     }
-    ${opt.paint?'if(fbm2(vWP.xz*22.)+vnoise(vWP.xz*69.)*.30<.30)discard;':''}`)
+    ${opt.paint?`float abrasion=fbm2(tangent*vec2(.91,2.8))*.75+grain*.25;
+    float aggregate=fbm2(vWP.xz*22.)+vnoise(vWP.xz*69.)*.30;
+    if(aggregate<.27+.18*smoothstep(.38,.74,abrasion))discard;
+    diffuseColor.rgb*=mix(.67,1.0,smoothstep(.30,.78,aggregate))*(1.-.16*abrasion);`:''}`)
    .replace('#include <normal_fragment_maps>',`#include <normal_fragment_maps>
     normal=normalize(mix(normal,normalize(vNormal),max(pud*.90,snow*.67)));
     if(pud*uRain>.014){
@@ -119,8 +144,10 @@ function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
      normal=normalize(normal+mat3(viewMatrix)*vec3(slope.x,0.,slope.y)*.11);
     }`)
    .replace('#include <tonemapping_fragment>',`
-    {vec3 V=normalize(cameraPosition-vWP);float fr=.13+.87*pow(1.-max(V.y,0.),3.1);float kk=(pud*.93+damp*mix(.22,.30,uLamp)*(1.-pud))*fr*reflOn*(1.-smoothstep(.40,.65,vWP.y));
-     if(kk>.002){vec2 dist=normal.xz*mix(.016,.0025,pud)+vec2(grain-.5,big-.5)*.003;vec4 ru=vRU;ru.xy+=dist*ru.w;vec3 rc=texture2DProj(tRefl,ru).rgb;
+    {vec3 V=normalize(cameraPosition-vWP);float fr=.035+.965*pow(1.-max(V.y,0.),3.7);float kk=(pud*.93+damp*mix(.22,.30,uLamp)*(1.-pud))*fr*reflOn*(1.-smoothstep(.40,.65,vWP.y));
+     if(kk>.002){vec2 dist=(normal-normalize(vNormal)).xy*mix(.016,.005,pud)+vec2(grain-.5,big-.5)*mix(.003,.0012,pud);
+      ${opt.road?'dist.y+=(aggregateRidges-.5)*.008*pud;':''}
+      vec4 ru=vRU;ru.xy+=dist*ru.w;vec3 rc=texture2DProj(tRefl,ru).rgb;
       if(pud<.6){vec4 r2=ru;r2.x+=.008*ru.w;vec4 r3=ru;r3.y-=.012*ru.w;rc=(rc+texture2DProj(tRefl,r2).rgb+texture2DProj(tRefl,r3).rgb)/3.;}
       vec2 edge=abs(ru.xy/max(.001,ru.w)-.5);
       float valid=1.-smoothstep(.46,.50,max(edge.x,edge.y));
@@ -174,11 +201,13 @@ function postInit(){if(!POST)return;PP.scene=new THREE.Scene();PP.cam=new THREE.
    c=mix(c,c*vec3(.97,1.,1.025)+vec3(.003,.004,.008),1.-smoothstep(.0,.45,l));
    vec2 q=vUv-.5;c*=1.-dot(q,q)*.34;c=mix(c,vec3(.5,0.,0.),hurt*(dot(q,q)*1.6));
    c+=(fract(sin(dot(vUv*vec2(12.9898,78.233)+time,vec2(1.,1.)))*43758.5453)-.5)*.007;gl_FragColor=vec4(c,1.);}`,{t:{value:null},b1:{value:null},b2:{value:null},b3:{value:null},bs:{value:.42},aoOn:{value:0},aoMap:{value:null},depthMap:{value:null},aoTexel:{value:new THREE.Vector2()},nearFar:{value:new THREE.Vector2()},ex:{value:1.02},time:{value:0},hurt:{value:0}});}
-function postResize(w,h){if(!POST)return;const pr=renderer.getPixelRatio(),W2=Math.floor(w*pr),H2=Math.floor(h*pr);for(const k of['main','occlusion','b0','b1a','b1b','b2a','b2b','b3a','b3b'])if(PP[k])PP[k].dispose();
+function postResize(w,h){if(!POST)return;const pr=renderer.getPixelRatio(),W2=Math.floor(w*pr),H2=Math.floor(h*pr);for(const k of['main','occlusion','b0','b1a','b1b','b2a','b2b','b3a','b3b']){PP[k]?.dispose();PP[k]=null;}
  const o={type:THREE.HalfFloatType,minFilter:THREE.LinearFilter,magFilter:THREE.LinearFilter,depthBuffer:false};
  if(QUALITY.msaa&&THREE.WebGLMultisampleRenderTarget){PP.main=new THREE.WebGLMultisampleRenderTarget(W2,H2,{type:THREE.HalfFloatType});PP.main.samples=QUALITY.msaa;}else PP.main=new THREE.WebGLRenderTarget(W2,H2,{type:THREE.HalfFloatType,minFilter:THREE.LinearFilter,magFilter:THREE.LinearFilter});
  if(QUALITY.level>=2)PP.main.depthTexture=new THREE.DepthTexture(W2,H2,THREE.UnsignedIntType);
- const mk=s=>new THREE.WebGLRenderTarget(Math.max(8,W2*s|0),Math.max(8,H2*s|0),o);PP.occlusion=QUALITY.level>=2?mk(.50):null;PP.b0=mk(.5);PP.b1a=mk(.25);PP.b1b=mk(.25);PP.b2a=mk(.125);PP.b2b=mk(.125);PP.b3a=mk(.0625);PP.b3b=mk(.0625);}
+ const mk=s=>new THREE.WebGLRenderTarget(Math.max(8,W2*s|0),Math.max(8,H2*s|0),o);PP.occlusion=QUALITY.level>=2?mk(.50):null;
+ if(QUALITY.bloom){PP.b0=mk(.5);PP.b1a=mk(.25);PP.b1b=mk(.25);PP.b2a=mk(.125);PP.b2b=mk(.125);PP.b3a=mk(.0625);PP.b3b=mk(.0625);}
+}
 function pass(mat,target){PP.quad.material=mat;renderer.setRenderTarget(target);renderer.render(PP.scene,PP.cam);}
 function blurTo(src,a,b){PP.blur.uniforms.t.value=src.texture;PP.blur.uniforms.d.value.set(1/a.width,0);pass(PP.blur,a);PP.blur.uniforms.t.value=a.texture;PP.blur.uniforms.d.value.set(0,1/a.height);pass(PP.blur,b);}
 function renderFrame(t){preparePrecipitation();renderReflection();updateShopReflection(t);
@@ -199,6 +228,12 @@ function resize(){const w=innerWidth,h=innerHeight;renderer.setPixelRatio(QUALIT
 postInit();addEventListener('resize',resize);
 /* ---- generic merged-geometry buckets ---- */
 const buckets=new Map();
+function geometryWithBounds(source,sphere){
+ // Three r128 culls an instanced mesh using its geometry. Sector bounds can share the original vertex buffers.
+ const bounded=new THREE.BufferGeometry();
+ for(const key of Object.keys(source.attributes))bounded.setAttribute(key,source.attributes[key]);
+ bounded.setIndex(source.index);bounded.boundingSphere=sphere;return bounded;
+}
 function addGeo(mat,geo,shadow=true,layer){geo.computeBoundingBox();const a=geo.boundingBox;
  const wide=a.max.x-a.min.x>150||a.max.z-a.min.z>150;
  const sector=wide?'wide':Math.floor((a.min.x+a.max.x)/256)+':'+Math.floor((a.min.z+a.max.z)/256);

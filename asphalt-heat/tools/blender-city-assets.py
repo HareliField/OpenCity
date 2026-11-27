@@ -374,7 +374,7 @@ def water_meter():
 def plane_tree(low=False,mature=False):
     name='sycamore-distant' if low else 'avenue-sycamore'
     if mature: name='park-sycamore-distant' if low else 'park-sycamore'
-    a=make(name,[14,18,34,92,112],'Forking avenue sycamore with a lightly pruned crown and separate alpha-cut leaf clusters.')
+    a=make(name,[1,14,18,34,92,112],'Forking avenue sycamore with a lightly pruned crown and layered sprays of photographed leaves.')
     rng=random.Random(65 if mature else 34)
     a.tube('Trunk',[(0,0,0),(.045,-.028,.18),(-.04,.018,1.34),(-.075,.065,2.38),(.054,.113,3.26),(.21,.12,4.21)],[.233,.210,.159,.137,.094,.045],plane_bark,8 if low else 14)
     tips=[]
@@ -386,6 +386,11 @@ def plane_tree(low=False,mature=False):
         fork=root+e*((.44+j*.065)*(1.58 if mature else 1))+Vector((0,0,.96+j*.058))
         crown=fork+e*((.70+rng.random()*.40)*(1.37 if mature else 1))+Vector((0,0,.73+rng.random()*.70))
         a.tube('Primary scaffold limb',[root,(root+fork)*.5+e*.09,fork,crown],[.115-j*.007,.08,.057,.019],plane_bark,6 if low else 9)
+        if mature or j%3==1:
+            inner=fork.lerp(crown,.49)+lateral*(.31 if j%2 else -.37)+Vector((0,0,.19))
+            tip=inner+Vector((.07,-.11,.77))+lateral*(.25 if j%2 else -.21)
+            if not low:a.tube('Inner leaf-bearing shoot',[fork,inner,tip],[.030,.017,.006],plane_bark,6)
+            tips.append((inner,tip,e,lateral))
         for sign in [-1,1]:
             tip=crown+lateral*(sign*(.48+rng.random()*.46))+e*(.13+rng.random()*.42)+Vector((0,0,.42+rng.random()*.87))
             mid=crown*.51+tip*.49+e*.055

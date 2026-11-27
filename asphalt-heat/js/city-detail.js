@@ -9,9 +9,27 @@ function detailPrototype(id){
  };
  const box=(color,x,y,z,w,h,d)=>part(new THREE.BoxGeometry(w,h,d),color,x,y,z);
  const drum=(color,x,y,z,top,foot,h)=>part(new THREE.CylinderGeometry(top,foot,h,12),color,x,y,z);
- if(id==='galvanized-roof-vent'||id==='factory-skylight'){
+ if(id==='garden-sash-frame'){
+  for(const sign of [-1,1]){
+   box(0xc8c2b6,sign*.48,.5,0,.041,1,.73);
+   box(0xc8c2b6,0,sign<0?.032:.968,0,1,.063,1);
+  }
+ }else if(id==='garden-sash-pane'){box(0xffffff,0,.5,0,.944,.925,.08);
+ }else if(id==='galvanized-roof-vent'||id==='factory-skylight'){
   box(0x4d4a43,0,.064,0,1,.128,1);box(0x93978e,0,.45,0,.83,.68,.84);
   box(id==='factory-skylight'?0x899a9c:0x92958e,0,.84,0,.97,.28,.95);
+ }else if(id==='intermodal-container'){
+  for(const side of [-1,1]){
+   box(0xe6e1d4,0,.50,side*.482,.988,.91,.031);
+   box(0xdad7ce,0,.973,side*.48,.998,.054,.039);
+   box(0xccc8bd,0,.032,side*.48,.998,.064,.039);
+   for(let i=0;i<20;i++)box(0xe7e6dc,-.471+i*.0495,.51,side*.492,.020,.88,.016);
+   for(const end of [-.496,.496])box(0xc5c1b5,end,.5,side*.479,.009,.99,.042);
+   box(0xd9d5c8,.495,.50,side*.234,.008,.902,.453);
+   for(const z of [.12,.352])box(0xc6c4b8,.498,.5,side*z,.004,.88,.012);
+  }
+  box(0xdad7cd,0,.986,0,.985,.026,.96);box(0xb5a799,0,.041,0,.987,.068,.96);
+  box(0xdcd9cf,-.494,.50,0,.011,.93,.94);
  }else if(id==='cargo-pallet'){box(0x907855,0,.50,0,1,1,1);
  }else if(id==='quay-drum'){drum(0x7f8780,0,.50,0,.49,.49,1);
  }else if(id==='hardware-stock-rack'){
@@ -29,8 +47,16 @@ function detailPrototype(id){
   drum(0x836449,0,.39,0,.49,.49,.77);drum(0x494846,0,.875,0,.025,.53,.25);
   for(const y of [.12,.41,.72])drum(0x444342,0,y,0,.503,.503,.021);
  }else if(id==='roof-condenser'){
-  box(0x9b9c99,0,.45,0,.98,.85,.94);
-  for(const x of [-.24,.24])drum(0x3d4040,x,.90,0,.19,.19,.052);
+  for(const z of [-.32,.32])box(0x655f56,0,.056,z,.97,.11,.082);
+  box(0xbab8ac,0,.53,0,.98,.79,.92);
+  for(const z of [-.462,.462]){
+   box(0x494d49,0,.49,z,.85,.60,.014);
+   for(let k=0;k<7;k++)box(0x929791,0,.222+k*.081,z*1.018,.83,.018,.019);
+  }
+  for(const x of [-.24,.24]){
+   drum(0x3c3e39,x,.938,0,.206,.206,.031);
+   for(const radius of [.088,.165,.206])part(new THREE.TorusGeometry(radius,.006,5,18).rotateX(Math.PI/2),0xafa89a,x,.957,0);
+  }
  }else if(id==='rescue-hut'){
   box(0xe6dac8,-.11,.65,0,.50,.38,.72);box(0x576b73,-.11,.70,.366,.33,.16,.018);
   for(const x of [-.31,.10])for(const z of [-.30,.30])box(0x796654,x,.24,z,.035,.48,.034);
@@ -75,11 +101,11 @@ function detailPrototype(id){
  const g=mergeGeos(parts);parts.forEach(p=>p.dispose());CITY_DETAIL.prototypes.set(id,g);return g;
 }
 
-function detailFallback(id,x,y,z,dims,angle){
+function detailFallback(id,x,y,z,dims,angle,material=null){
  const geo=detailPrototype(id);if(!geo)return null;
- const key=id+':'+Math.floor(x/128)+':'+Math.floor(z/128);
+ const key=id+':'+(material?.uuid||'')+':'+Math.floor(x/128)+':'+Math.floor(z/128);
  let batch=CITY_DETAIL.fallbacks.get(key);
- if(!batch){batch={geo,items:[],mesh:null};CITY_DETAIL.fallbacks.set(key,batch);}
+ if(!batch){batch={geo,material,items:[],mesh:null};CITY_DETAIL.fallbacks.set(key,batch);}
  const M=new THREE.Matrix4().makeRotationY(angle);M.scale(new V3(...dims));M.setPosition(x,y,z);
  const index=batch.items.length;batch.items.push(M);
  let displayed=true;
@@ -94,13 +120,13 @@ function finishCityDetail(){
  CITY_DETAIL.hidden=new THREE.Matrix4().makeScale(0,0,0);
  const material=new THREE.MeshStandardMaterial({vertexColors:true,roughness:.71,metalness:.10});
  for(const batch of CITY_DETAIL.fallbacks.values()){
-  const mesh=new THREE.InstancedMesh(batch.geo,material,batch.items.length);
+  const mesh=new THREE.InstancedMesh(batch.geo,batch.material||material,batch.items.length);
   const bounds=new THREE.Box3();
   batch.geo.computeBoundingBox();
   batch.items.forEach((M,i)=>{mesh.setMatrixAt(i,M);bounds.union(batch.geo.boundingBox.clone().applyMatrix4(M));});
   // This version of three uses the geometry bound for frustum tests on instanced meshes.
-  mesh.geometry=batch.geo.clone();mesh.geometry.boundingSphere=bounds.getBoundingSphere(new THREE.Sphere());
-  mesh.receiveShadow=true;mesh.castShadow=true;mesh.frustumCulled=true;batch.mesh=mesh;scene.add(mesh);
+  mesh.geometry=geometryWithBounds(batch.geo,bounds.getBoundingSphere(new THREE.Sphere()));
+  mesh.receiveShadow=true;mesh.castShadow=!mesh.material.transparent;mesh.frustumCulled=true;batch.mesh=mesh;scene.add(mesh);
  }
 }
 function retailPhoto(index,M,x,y,z,w,h){
@@ -217,12 +243,11 @@ function buildCityDetail(){
  }
  for(const z of [117,628])worksModel('life-ring-station',W+28.1,.022,z,[.70,1.46,.31],-Math.PI/2);
  for(const [x,z,yaw] of [[W+33,120,0],[W+42,630,Math.PI],[W+44,W*.18,0],
-  [W+44,W*.38,Math.PI],[W+44,W*.68,0],[W+44,W*.89,Math.PI]])buildBeachLookout(x,z,yaw);
- finishCityDetail();
+  [W+44,W*.38,Math.PI],[W+44,W*.68,0],[W+44,W*.77,Math.PI]])buildBeachLookout(x,z,yaw);
 }
 
 function buildBeachLookout(x,z,yaw){
- const ground=.022,M=new THREE.Matrix4().makeRotationY(yaw);M.setPosition(x,0,z);
+ const ground=coastalSandHeight(x,z)+.002,M=new THREE.Matrix4().makeRotationY(yaw);M.setPosition(x,0,z);
  const center=lpt(M,.26025,0);
  worksModel('rescue-hut',center.x,ground,center.z,[5.0205,4.6944,2.84],yaw,false);
  const box=(x0,x1,z0,z1,base,top,deck=false)=>{

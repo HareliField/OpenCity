@@ -27,15 +27,37 @@ function initProps(){const C=(r0,r1,h,s=10)=>new THREE.CylinderGeometry(r0,r1,h,
   mat:blue,shape:()=>new CANNON.Box(new CV(.30,.65,.32)),off:new CV(0,.65,0),mass:60};
  const spots=[...PROPSPOTS];
  for(const L of LAMPS){
-  // Keep one crook over Harbor Books. A corner and midblock candidate are only 5.6 metres apart here.
-  if(Math.abs(L.x-274.4)<.05&&Math.abs(L.z-392.76)<.05)continue;
   const B=blockOf(L.x,L.z),historic=B&&(B.park||B.dist==='oldtown'||(B.i===3||B.i===4)&&B.j===5||B.i===4&&B.j===6);
   spots.push({type:historic?'lantern':'lamp',x:L.x,z:L.z,ry:L.ry});
  }
  const byType={};for(const s of spots){(byType[s.type]=byType[s.type]||[]).push(s);}
  const o=new THREE.Object3D();
- for(const t in byType){const P=T[t];const arr=byType[t];const im=new THREE.InstancedMesh(P.geo,P.mat,arr.length);im.castShadow=true;im.receiveShadow=true;im.instanceMatrix.setUsage(THREE.DynamicDrawUsage);P.mesh=im;if(LOWSHADOW)im.layers.set(2);scene.add(im);
-  arr.forEach((s,k)=>{const y=blockY(s.x,s.z);o.position.set(s.x,y,s.z);o.rotation.set(0,s.ry||0,0);o.updateMatrix();im.setMatrixAt(k,o.matrix);PROPS.list.push({t,P,x:s.x,y,z:s.z,ry:s.ry||0,idx:k,riverside:t==='lantern'&&s.z>382&&s.z<449&&s.x>=255&&s.x<322,body:null,moved:false,broken:false,spray:0,renderPosition:o.position.clone(),renderQuaternion:o.quaternion.clone()});});}
+ for(const [t,arr] of Object.entries(byType)){
+  const P=T[t],sectors=new Map(),location=s=>Math.floor(s.x/192)+','+Math.floor(s.z/192);
+  const surveyed=arr.map(s=>({...s,y:blockY(s.x,s.z)}));
+  P.geo.computeBoundingSphere();
+  const reach=P.geo.boundingSphere.center.length()+P.geo.boundingSphere.radius;
+  for(const s of surveyed){
+   const key=location(s);
+   if(!sectors.has(key))sectors.set(key,{count:0,next:0,bounds:new THREE.Box3()});
+   const group=sectors.get(key);group.count++;
+   group.bounds.expandByPoint(new V3(s.x,s.y,s.z));
+  }
+  for(const group of sectors.values()){
+   const sphere=group.bounds.expandByScalar(reach).getBoundingSphere(new THREE.Sphere());
+   const mesh=new THREE.InstancedMesh(geometryWithBounds(P.geo,sphere),P.mat,group.count);
+   mesh.castShadow=mesh.receiveShadow=mesh.frustumCulled=true;mesh.instanceMatrix.setUsage(THREE.DynamicDrawUsage);
+   if(LOWSHADOW)mesh.layers.set(2);
+   group.mesh=mesh;scene.add(mesh);
+  }
+  for(const s of surveyed){
+   const group=sectors.get(location(s)),y=s.y,idx=group.next++;
+   o.position.set(s.x,y,s.z);o.rotation.set(0,s.ry||0,0);o.updateMatrix();group.mesh.setMatrixAt(idx,o.matrix);
+   PROPS.list.push({t,P,mesh:group.mesh,x:s.x,y,z:s.z,ry:s.ry||0,idx,
+    riverside:t==='lantern'&&s.z>382&&s.z<449&&s.x>=255&&s.x<322,body:null,moved:false,broken:false,spray:0,
+    renderPosition:o.position.clone(),renderQuaternion:o.quaternion.clone()});
+  }
+ }
  /* lamp glows */
  const lamps=PROPS.list.filter(p=>p.P.glow);const gp=new Float32Array(lamps.length*3),gc=new Float32Array(lamps.length*3);
  lamps.forEach((p,k)=>{p.gi=k;const at=lampEmitter(p);gp[k*3]=at.x;gp[k*3+1]=at.y;gp[k*3+2]=at.z;gc[k*3]=1;gc[k*3+1]=.72;gc[k*3+2]=.42;});
@@ -160,13 +182,17 @@ function propInteraction(pos){
  let best=null,d=1.25;
  for(const p of PROPS.active){
   if(p.body.mass>=74)continue;
-  const distance=Math.hypot(p.body.position.x-pos.x,p.body.position.z-pos.z);
-  if(distance<d){d=distance;best=p;}
+  const at=p.body.position,distance=Math.hypot(at.x-pos.x,at.z-pos.z);
+  if(distance>=d||at.y<pos.y-.23||at.y>pos.y+1.72)continue;
+  if(rayWorld(pos.x,pos.z,at.x,at.z,pos.y+.86,at.y,0,true,true)<.999)continue;
+  d=distance;best=p;
  }
  if(!best)return null;
- return {label:'NUDGE',hot:true,fn:()=>{
-  PoliceDepartment.touch(player,best,best.body.position,'Street fixture');
-  const b=best.body,dx=b.position.x-pos.x,dz=b.position.z-pos.z,scale=Math.min(b.mass*.69,24)/(Math.hypot(dx,dz)||1);
-  b.wakeUp();b.applyImpulse(new CV(dx*scale,0,dz*scale),new CV(0,.22,0));
+ const carton=best.t==='receiving-carton';
+ return {label:carton?'MOVE CARTON':'NUDGE',hot:true,fn:()=>{
+  PoliceDepartment.touch(player,best,best.body.position,carton?'Shipping carton':'Street fixture');
+  const b=best.body,dx=b.position.x-pos.x,dz=b.position.z-pos.z;
+  const scale=Math.min(b.mass*(carton?1.70:.69),24)/(Math.hypot(dx,dz)||1);
+  b.wakeUp();b.applyImpulse(new CV(dx*scale,carton?b.mass*1.45:0,dz*scale),new CV(0,carton?.014:.22,0));
  }};
 }

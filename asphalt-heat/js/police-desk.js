@@ -3,6 +3,7 @@ let deskTab='Cases',deskStation=null,deskRevision='';
 function openPoliceDesk(station,view){
  if(view)deskTab=view;
  deskStation=station;deskRevision='';shopOpen=true;
+ policeDesk.querySelector('nav').hidden=!!station.roadside;
  document.getElementById('deskStation').textContent=view?station.name+' · '+view:station.name;
  renderPoliceDesk();policeDesk.showModal();
 }
@@ -10,7 +11,7 @@ function renderPoliceDesk(){
  const pd=PoliceDepartment;
  document.getElementById('deskStation').textContent=deskStation.name+' · '+deskTab;
  const rows=[];
- const roster=[];
+ const roster=[],tickets=[];
  let liveRow=-1;
  if(deskTab==='Cases'){
   for(const c of [...pd.cases].reverse())if(c.stage!=='Unreported'){
@@ -20,11 +21,18 @@ function renderPoliceDesk(){
     return '+'+Math.floor(seconds/60)+'m '+String(seconds%60).padStart(2,'0')+'s · '+event.from+(event.to?' → '+event.to:'')+' — '+event.message;
    });
    if(c===streetIncidents.current?.file)liveRow=rows.length;
-   const title=c.origin==='street'?c.kind+' · '+streetAddress(c.at):c.title||c.kind;
+   const title=c.origin==='street'&&!c.pendingScene?c.kind+' · '+streetAddress(c.at):c.title||c.kind;
    rows.push(['File '+String(c.id).padStart(4,'0')+' · '+title,(c.kind==='Homicide'&&['Wanted','Booked'].includes(c.stage)?'Solved · ':'')+c.stage+' · '+(investigator?.name||'Awaiting assignment'),
     c.victimName?'Victim · '+c.victimName:'',history.join('\n'),c.evidence.map(e=>e.type+' · '+e.source+' · '+e.value).join('\n')||'No evidence filed']);
   }
   if(!rows.length)rows.push(['No cases filed','']);
+ }else if(deskTab==='Tickets'){
+  for(const t of [...pd.tickets].reverse())if(t.driver===player.personId){
+   tickets.push(t);
+   rows.push(['Ticket #'+t.id+' · '+t.offense,'$'+t.fine+' · '+(t.paid===null?'Outstanding':'Paid'),
+    t.street+(t.plate?' · '+t.plate:''),t.detail,'Officer '+t.issuer+' · Badge '+t.badge+' · '+t.witness]);
+  }
+  if(!rows.length)rows.push(['No traffic tickets','']);
  }else if(deskTab==='Evidence'){
   for(const c of pd.cases)for(const e of c.custody||[])rows.push(['Exhibit '+e.tag+' · '+e.type,e.source+' · '+e.holder,e.history.map(h=>h.action+' · '+h.by).join('\n')]);
   if(!rows.length)rows.push(['No exhibits received','']);
@@ -48,7 +56,7 @@ function renderPoliceDesk(){
  for(const [id,scenario] of [['followCase','homicide'],['followCall','heard'],['followPair','paired']]){
   document.getElementById(id).disabled=trainingInProgress(scenario);
  }
- const revision=JSON.stringify([deskTab,rows,liveRow]);
+ const revision=JSON.stringify([deskTab,rows,liveRow,deskTab==='Tickets'?player.cash:null]);
  if(revision===deskRevision)return;
  deskRevision=revision;
  const list=document.getElementById('deskRows');list.replaceChildren();
@@ -70,6 +78,13 @@ function renderPoliceDesk(){
    button.type='button';button.textContent='Staff profile';button.setAttribute('aria-label','Staff profile for '+person.name);
    button.onclick=()=>openStaffProfile(person);li.append(button);
   }
+  const ticket=tickets[rowIndex];
+  if(ticket?.paid===null){
+   const button=document.createElement('button');button.type='button';button.id='payTicket'+ticket.id;
+   button.disabled=player.cash<ticket.fine;button.textContent=button.disabled?'Need $'+ticket.fine+' to pay':'Pay $'+ticket.fine;
+   button.onclick=()=>{if(pd.payTicket(ticket.id,player)){toast('Ticket #'+ticket.id+' paid · $'+ticket.fine,2500);renderPoliceDesk();}};
+   li.append(button);
+  }
   list.append(li);
  }
  for(const b of policeDesk.querySelectorAll('[data-view]'))b.setAttribute('aria-pressed',String(b.dataset.view===deskTab));
@@ -80,10 +95,7 @@ policeDesk.addEventListener('close',()=>{shopOpen=false;deskStation=null;});
 function toggleGloves(){
  if(state!=='play'||shopOpen)return;
  player.gloves=!player.gloves;dressPlayerHands();
- document.getElementById('gloves').textContent=player.gloves?'Gloves on':'Gloves off';
- document.getElementById('gloves').setAttribute('aria-pressed',String(player.gloves));
 }
-document.getElementById('gloves').onclick=toggleGloves;
 
 
 function trainingInProgress(scenario){
