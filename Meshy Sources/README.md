@@ -22,3 +22,7 @@ The new daylight sky and lighting environment use the CC0 Kloofendal 48d Partly 
 - The commercial and coastal props were checked from front, side, and rear views before placement. Surface detail still varies by asset. The pastry case includes a small baked mark and the coupe retains some baked texture wear.
 
 [Meshy Image to 3D settings](https://docs.meshy.ai/en/api/image-to-3d)
+
+## Contribution gallery
+
+[Teal station wagon](gallery-station-wagon.glb) is the source model shown in the Open City gallery's **Create a car** clip. It was generated from text with Meshy 7.1 and textured with Meshy 7. The footage places the model at a curb in Old Town.

@@ -40,3 +40,18 @@ document.getElementById('copy-starter').addEventListener('click', async () => {
   field.focus();
   field.select();
 });
+
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+  const previewObserver = new IntersectionObserver(entries => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      const preview = entry.target;
+      previewObserver.unobserve(preview);
+      preview.play().catch(() => {});
+    }
+  }, { threshold: 0.4 });
+
+  document.querySelectorAll('.contribution-clip video').forEach(preview => {
+    previewObserver.observe(preview);
+  });
+}
