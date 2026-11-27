@@ -126,10 +126,11 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
  #btns{transform:scale(.77);transform-origin:right bottom}#joy{width:106px;height:106px}
  #touchViews{left:140px;bottom:14px}#speedo{left:50%;bottom:10px;transform:translateX(-50%)}
 }
-</style></head><body>
+</style><link rel="stylesheet" href="residents.css"></head><body>
 <canvas id="c"></canvas>
 <div id="ui" hidden>
   <div id="tl"><div id="cash">$0</div><div class="bar"><i id="hp"></i></div><div class="bar" id="arbar"><i id="ar"></i></div><div class="bar" id="carbar"><i id="chp"></i></div><div id="conditions"></div><div id="obj"></div>
+    <button id="residentsButton" type="button">Residents</button>
     <button id="sound" type="button" aria-label="Sound" aria-pressed="false">Sound off</button>
     <button id="gloves" type="button" aria-pressed="false">Gloves off</button>
   </div>
@@ -179,6 +180,9 @@ html,body{margin:0;height:100%;overflow:hidden;background:#120c0a;color:#fff;fon
   <div id="credits">People: Microsoft Rocketbox avatars (MIT) · Surfaces &amp; sky: Poly Haven (CC0) · Physics: cannon-es · Rendering: three.js</div>
 </div></div>
 <script src="lib/three.min.js"></script><script src="lib/GLTFLoader.js"></script><script src="lib/SkeletonUtils.js"></script><script src="lib/cannon.js"></script>
+<script src="js/resident-secondary.js"></script>
+<script src="js/resident-assets.js"></script><script src="js/resident-motion.js"></script><script src="js/resident-rig.js"></script><script src="js/resident-cast.js"></script><script src="js/resident-contact.js"></script><script src="js/resident-directory.js"></script>
+<script src="js/wash-house.js"></script>
 <script src="js/weather.js"></script><script src="js/weather-cover.js"></script><script src="js/core.js"></script><script src="js/atmosphere.js"></script><script src="js/precipitation.js"></script>
 <script src="js/phys.js"></script><script src="js/cargen.js"></script><script src="js/fleet.js"></script><script src="js/chars.js"></script><script src="js/world.js"></script><script src="js/harbor.js"></script><script src="js/freight.js"></script><script src="js/streets.js"></script><script src="js/interiors.js"></script><script src="js/access.js"></script><script src="js/roads.js"></script><script src="js/street-plan.js"></script><script src="js/street-surface.js"></script><script src="js/street-signals.js"></script><script src="js/city-traffic.js"></script><script src="js/props.js"></script><script src="js/scenery.js"></script><script src="js/city-works.js"></script><script src="js/city-services.js"></script><script src="js/city-detail.js"></script><script src="js/shop-architecture.js"></script><script src="js/city-fixtures.js"></script><script src="js/city-vegetation.js"></script><script src="js/garden-cottages.js"></script><script src="js/harbor-supply.js"></script><script src="js/coast.js"></script><script src="js/lighthouse.js"></script><script src="js/game.js"></script><script src="js/department.js"></script><script src="js/headquarters.js"></script><script src="js/police-world.js"></script><script src="js/police-desk.js"></script><script src="js/dispatch.js"></script><script src="js/street-incidents.js"></script><script src="js/case-camera.js"></script><script src="js/main.js"></script>
 <script src="js/agent-controller.js"></script>

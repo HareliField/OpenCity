@@ -19,11 +19,12 @@ function actionCtx(){if(state!=='play'||shopOpen||player.down>0)return null;if(p
   }
   return {label:'EXIT',fn:toggleCar};
  }if(robbing)return{label:'ROB…',fn:()=>{}};
+ const residentAction=globalThis.WashHouse?.interaction(player.pos);if(residentAction)return residentAction;
  const serviceAction=worksAction(player.pos);if(serviceAction)return serviceAction;
  const doorway=doorInteraction(player.pos,1.83);if(doorway)return doorway;
  const p=nearPlace();if(p){if(p.kind==='police')return {label:'CASE DESK',hot:1,fn:()=>openPoliceDesk(p.office)};if(p.kind==='store'||p.kind==='bank')return p.cd>0?{label:'CLOSED',fn:()=>toast('ALREADY HIT — COME BACK LATER',1500)}:{label:'ROB',fn:()=>startRob(p),hot:1};
   if(p.kind==='gunshop')return{label:'SHOP',fn:openShop,hot:1};if(p.kind==='hospital')return{label:'HEAL',fn:()=>{if(player.hp>=100)toast('YOU ARE FINE',1000);else if(player.cash<100)toast('NEED $100',1000);else{player.cash-=100;player.hp=100;toast('PATCHED UP −$100',1400);}},hot:1};}
- const c=nearestCar(3.6);if(c)return{label:c.driver?'JACK':'ENTER',fn:toggleCar,hot:1};return hqInteraction(player.pos)||meetDepartmentPerson()||propInteraction(player.pos)||{label:'ACTION',fn:()=>{}};}
+ const c=nearestCar(3.6);if(c)return{label:c.driver?'JACK':'ENTER',fn:toggleCar,hot:1};return hqInteraction(player.pos)||meetDepartmentPerson()||globalThis.ResidentCast?.interaction(player.pos,player.yaw,peds)||propInteraction(player.pos)||{label:'ACTION',fn:()=>{}};}
 function carDoorSpot(c){
  const base=c.pos.y;
  for(const side of [1,-1]){
@@ -60,7 +61,7 @@ function toggleCar(){
  const c=nearestCar(3.6);if(!c)return;
  const at=carDoorSpot(c);if(!at){toast('DOOR BLOCKED',1000);return;}
  PoliceDepartment.touch(player,c,c.pos,'Vehicle contact');
- if(c.driver==='ai'){const driver=ejectPed(at.x,at.z,c.pos.x,c.pos.z,at.y);
+ if(c.driver==='ai'){const driver=ejectPed(at.x,at.z,c.pos.x,c.pos.z,at.y,globalThis.ResidentCast?.releaseCar(c));
   registerIncident('Vehicle theft',c.pos,{vehicle:c,eyewitness:driver});crime(12,c.pos.x,c.pos.z);toast('CARJACKED!',1300);scare(c.pos.x,c.pos.z,15);}
  else if(c.driver==='police'){const observer=c.officer;leavePoliceVehicle(c,at);registerIncident('Vehicle theft',c.pos,{vehicle:c,eyewitness:observer});crime(30,c.pos.x,c.pos.z,true);toast('STOLE A COP CAR!',1300);}
  else if(c.type==='police'||c.type==='swat'){crime(25,c.pos.x,c.pos.z);toast('STOLE A COP CAR!',1300);}
@@ -72,7 +73,7 @@ function playerAttack(){if(player.fireCd>0||shopOpen||player.down>0)return;const
  if(w==='fist'&&!car){player.fireCd=WEAP.fist.rate;player.c.punch=0;player.c.guard=1;player.guardT=1.5;let best=null,bd=2.1;const yaw=player.yaw;const cand=[];
   for(const p of peds)if(!p.dead)cand.push([p,'ped']);for(const arr of[cops,gang,guards,departmentPeople])for(const u of arr)if(!u.dead)cand.push([u,'unit']);
   for(const[o,k]of cand){const dx=o.pos.x-player.pos.x,dz=o.pos.z-player.pos.z,d=Math.hypot(dx,dz);if(d<bd&&Math.abs(o.pos.y-player.pos.y)<1.4&&rayWorld(player.pos.x,player.pos.z,o.pos.x,o.pos.z,player.pos.y+1.4,o.pos.y+1.4)>=1&&Math.abs(wrapA(Math.atan2(dx,dz)-yaw))<1.1){bd=d;best=[o,k,dx,dz];}}
-  if(best){const[o,k,dx,dz]=best;player.yaw=Math.atan2(dx,dz);player.pendingPunch={at:time+.12,land:()=>{if(o.dead||state!=='play'||player.down>0||player.car||shopOpen||player.weapon!=='fist'||o.pos.distanceTo(player.pos)>2.1||rayWorld(player.pos.x,player.pos.z,o.pos.x,o.pos.z,player.pos.y+1.4,o.pos.y+1.4)<1)return;noise(.12,240,.6);emit(o.pos.x,o.pos.y+1.55,o.pos.z,0,1,0,.15,.15,.4,0xffffff,true);if(k==='ped')hitPed(o,20,dx,dz,true);else hitUnit(o,20,dx,dz,true);}};}else noise(.08,600,.15);return;}
+  if(best){const[o,k,dx,dz]=best;player.yaw=Math.atan2(dx,dz);player.pendingPunch={at:time+.12,land:()=>{if(o.dead||state!=='play'||player.down>0||player.car||shopOpen||player.weapon!=='fist'||o.pos.distanceTo(player.pos)>2.1||rayWorld(player.pos.x,player.pos.z,o.pos.x,o.pos.z,player.pos.y+1.4,o.pos.y+1.4)<1)return;noise(.12,240,.6);emit(o.pos.x,o.pos.y+1.55,o.pos.z,0,1,0,.15,.15,.4,0xffffff,true);if(k==='ped')hitPed(o,20,dx,dz,true);else hitUnit(o,20,dx,dz,true);}};}else if(globalThis.WashHouse?.hit())noise(.12,240,.6);else noise(.08,600,.15);return;}
  const W2=WEAP[w==='fist'?'pistol':w];if(w!=='fist'&&player.ammo[w]<=0){toast('OUT OF AMMO',900);player.weapon='fist';return;}
  if(w==='fist'&&car){toast('SWITCH TO A GUN TO DRIVE-BY',1000);player.fireCd=.5;return;}
  player.fireCd=W2.rate;player.ammo[w]--;lastShot=time;const yaw=car?car.h:player.yaw,fx=Math.sin(yaw),fz=Math.cos(yaw);
@@ -90,7 +91,7 @@ function playerAttack(){if(player.fireCd>0||shopOpen||player.down>0)return;const
    else if(best.kind==='heli'){best.obj.hp-=W2.dmg;emit(end.x,end.y,end.z,0,0,0,.2,.6,.2,0xffe080,true);if(best.obj.hp<=0&&!best.obj.dead){best.obj.dead=true;best.obj.playerCaused=true;best.obj.vel.set(rnd(-3,3),2,rnd(-3,3));crime(80,player.pos.x,player.pos.z,true);toast('CHOPPER DOWN!',1500);}}
    else{hitUnit(best.obj,W2.dmg,dx,dz,false);emit(end.x,end.y,end.z,0,1,0,.25,.3,.6,0x5a0808,false);}}
   else{const a=yaw+rnd(-.06,.06)*(pel>1?3:1),L=W2.range;const ex=o.x+Math.sin(a)*L,ez=o.z+Math.cos(a)*L,f=rayWorld(o.x,o.z,ex,ez,o.y,o.y);end=new V3(o.x+(ex-o.x)*f,o.y+rnd(-.5,.3),o.z+(ez-o.z)*f);if(f<1)for(let q=0;q<3;q++)emit(end.x,end.y,end.z,rnd(-2,2),rnd(1,3),rnd(-2,2),.3,.15,.08,0xffd090,true,9);}
-  tracer(o,end);}
+  globalThis.WashHouse?.contactTrace(o,end);tracer(o,end);}
  emit(o.x,o.y,o.z,0,0,0,.05,.5,1,0xffd070,true);muzzleL.position.copy(o);muzzleL.intensity=12;noise(w==='shotgun'?.35:.16,w==='shotgun'?1600:2600,.5);scare(player.pos.x,player.pos.z,30);
  reportGunfire(player);if(player.ammo[w]<=0){toast('OUT OF AMMO',900);cycleWeapon();}}
 function startRob(p){if(player.weapon==='fist'){toast('PULL OUT A GUN FIRST',1400);return;}robbing={p,t:0,beep:0};registerIncident('Robbery',p.interact||p.door,{handContact:true,alarm:true});crime(p.heat,p.door.x,p.door.z,true);scare(p.door.x,p.door.z,30);
@@ -98,7 +99,7 @@ function startRob(p){if(player.weapon==='fist'){toast('PULL OUT A GUN FIRST',140
  const cp=new V3(base.x-fx*1.16+fz*1.52,0,base.z-fz*1.16-fx*1.52);
  collideWorld(cp,.32);
  if(clerk)removeChar(clerk);
- clerk=makeChar(pickChar(p.kind==='bank'?'mb':'clerk'),{});
+ clerk=makeChar(pickChar(p.kind==='bank'?'mb':'clerk'),{});globalThis.ResidentCast?.assign({c:clerk},p.kind==='bank'?'bank':'clerk');
  clerk.root.position.set(cp.x,groundY(cp.x,cp.z),cp.z);clerk.yaw=yaw;clerk.hands=1;
  if(p.kind==='bank'){
   for(const s of [-1,1])spawnUnit('guard',base.x+fz*s*4.5,base.z-fx*s*4.5,'guard');
@@ -289,6 +290,7 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
   updateVehicleSnow(c,dt);
   updateTurnLamps(c,time);
   if(c.bar){const on=c.siren&&(c.sceneFileId&&c.driver!=='player'||(wanted>0||c.block)&&(c.driver==='police'||c.block));const f=(time*7|0)%2;c.bar.r.material=on&&f?SIREN.onR:SIREN.offR;c.bar.b.material=on&&!f?SIREN.onB:SIREN.offB;}}
+ globalThis.WashHouse?.tick(dt);
  physStep(dt);updateDoorMeshes();
  for(const c of cars){if(c.phys)physCarRead(c);syncCarMesh(c);if(c.spec.form==='roadster'){updateSeatedDriver(c);updateRoadsterDials(c);}c.mesh.visible=dist2(c.pos,player.pos)<230;if(dist2(c.pos,player.pos)<70)updateHeadlights(c,dt);}
  updateDrivingLight();
@@ -311,7 +313,7 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
   const speed=player.pace,dx=Math.sin(player.yaw)*speed*dt,dz=Math.cos(player.yaw)*speed*dt;
   const sx=player.pos.x,sz=player.pos.z;
   player.pos.x+=dx;player.pos.z+=dz;
-  const hitWall=collideWorld(player.pos,.36,{dx,dz,dt});
+  const hitWall=collideWorld(player.pos,.36,{dx,dz,dt,startX:sx,startZ:sz});
   if(hitWall){
    const actual=Math.min(Math.abs(speed),Math.hypot(player.pos.x-sx,player.pos.z-sz)/Math.max(dt,.001));
    player.pace=Math.sign(speed)*actual;
@@ -330,6 +332,7 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
  for(const T of tracers)if(T.l.visible){T.t-=dt;if(T.t<=0)T.l.visible=false;}muzzleL.intensity=Math.max(0,muzzleL.intensity-dt*150);boomL.intensity=Math.max(0,boomL.intensity-dt*25);
  /* wanted */
  if(state==='play'){updateStreetEncounter(dt);updateDepartment(dt);updateLaw(dt);}
+ globalThis.ResidentCast?.tick(dt,caseCamera.focus||player.pos,QUALITY.level>=2?9:5);
  const cleanView=$('ui').classList.contains('cleanView');
  for(const m of markerObjs){
   const at=m.p.road||m.p.interact||m.p.door,d=Math.hypot(at.x-player.pos.x,at.z-player.pos.z);
@@ -378,6 +381,7 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
   camera.fov=lerp(camera.fov,fov,1-Math.exp(-3.4*dt));
   camera.updateProjectionMatrix();
  }
+ globalThis.WashHouse?.portrait(camera);
  updateCaseCamera(dt);
  sky.position.copy(camera.position);
  const viewTarget=caseCamera.focus||tgt;
@@ -425,7 +429,8 @@ function initGame(){buildMinimapBase();buildMarkers();initializePoliceLives();
  SPAWN.hospital={x:hp.door.x+Math.sin(SIDEANG[hp.side])*.6,z:hp.door.z+Math.cos(SIDEANG[hp.side])*.6,yaw:SIDEANG[hp.side]};SPAWN.police={x:pp.door.x+Math.sin(SIDEANG[pp.side])*.6,z:pp.door.z+Math.cos(SIDEANG[pp.side])*.6,yaw:SIDEANG[pp.side]};
  const streetStart={x:CELL*4-HALF-.88,z:CELL*5+HALF+10,yaw:0};
  const stationVisit=qp.get('visit')==='police';
- const start=stationVisit?{x:pp.door.x,z:pp.door.z,yaw:SIDEANG[pp.side]+Math.PI}:streetStart;
+ const shopVisit=qp.get('visit')==='wash-house'&&globalThis.WashHouse?.destination();
+ const start=shopVisit|| (stationVisit?{x:pp.door.x,z:pp.door.z,yaw:SIDEANG[pp.side]+Math.PI}:streetStart);
  player={pos:new V3(start.x,0,start.z),yaw:start.yaw,hp:100,armor:0,cash:250,car:null,fireCd:0,arrestT:0,spd:0,guardT:0,down:0,weapon:'fist',own:{pistol:true,smg:false,shotgun:false},ammo:{pistol:36,smg:0,shotgun:0},c:null};
  player.personId='ah-player';PoliceDepartment.identify(player);player.gloves=false;
  player.c=makePlayerChar();dressPlayerHands();camYaw=player.yaw;
@@ -445,7 +450,7 @@ function initGame(){buildMinimapBase();buildMarkers();initializePoliceLives();
  state='title';}
 async function boot(){resize();state='loading';setLoad('Loading city…',0);
  const mgr=THREE.DefaultLoadingManager;let tot=1,done=0;mgr.onStart=(u,l,t)=>{done=l;tot=t;};mgr.onProgress=(u,l,t)=>{done=l;tot=t;if(state==='loading')setLoad('Loading city & people… '+Math.round(l/t*100)+'%',l/t*.85);};
- await loadSky();
+ await Promise.all([loadSky(),globalThis.ResidentCast?.load(),globalThis.ResidentMotion?.load()]);
  const cast=await (await fetch('models/cast.json')).json();
  const lowSet=['Male_Adult_07','Police_Male_01','Police_Male_02','Police_Male_03','Police_Male_07','Medical_Female_01','Military_Male_01','Security_Male_01','Male_Adult_10','Male_Adult_03','Medical_Male_01','Male_Adult_01','Male_Adult_04','Male_Adult_08','Business_Male_01','Female_Adult_01','Female_Adult_03','Female_Adult_07','Business_Female_01','Sports_Male_01','Sports_Female_01'];
  const names=Object.keys(cast).filter(n=>QUALITY.level>=2||lowSet.includes(n));
@@ -490,6 +495,7 @@ $('play').addEventListener('click',()=>{
  setCityEnvironment(hour,startWeather.value||'clouds',true);
  $('start').style.display='none';$('ui').hidden=false;$('touchViews').hidden=false;
  clock.getDelta();state='play';
+ const selected=qp.get('resident');if(selected)ResidentDirectory.meet(selected);
 });
 window.__game={department:PoliceDepartment,cityWorks:CITY_WORKS,services:CITY_SERVICES,step,ff(n){for(let i=0;i<n;i++){step(1/30);}renderFrame(time);},scene,renderer,camera,sun,PH,get player(){return player},cars,peds,cops,gang,helis,places,PROPS,get heat(){return heat},set heat(v){heat=v},get wanted(){return wanted},get state(){return state},keys,inp,toggleCar,startRob,TPL,QUALITY};
 loop();boot().catch(e=>{console.error(e);setLoad('Error: '+e.message);});

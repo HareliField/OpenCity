@@ -98,11 +98,12 @@ function buildInterior(room){
  addRoomCollider(block,M,u1-t,u1,-.10,depth,3.63);
 
  const width=u1-u0,center=(u0+u1)/2;
- const cool=row===RETAIL.laundry;
+ const cool=row===RETAIL.laundry,idaShop=globalThis.WashHouse?.isShop(room);
  for(const z of [-1.58,back+1.6]){
   for(const x of [u0+width*.27,u1-width*.27]){
    const lamp=lpt(M,x,-z);
-   INTERIORS.emitters.push({x:lamp.x,y:2.77,z:lamp.z,cool});
+   const washLight=idaShop?{colour:z===-1.58?0xfff0e4:0xf4f5fb,intensity:z===-1.58?1.52:1.38,reach:9.5}:null;
+   INTERIORS.emitters.push({x:lamp.x,y:idaShop?2.98:2.77,z:lamp.z,cool,...washLight});
    if(cool){
     textured(m.steel,x-.68,x+.68,3.27,3.36,z-.12,z+.12);
     textured(m.neutral,x-.62,x+.62,3.23,3.272,z-.09,z+.09);
@@ -135,10 +136,20 @@ function buildInterior(room){
   }
  };
  if(row===RETAIL.laundry){
+  globalThis.WashHouse?.register(room,lighting);
   for(let x=u0+1;x<u1-.65;x+=1.10)fixture('washer',x,back+.74,[.96,1.12,.90]);
   for(const x of [u0+2.1,u1-2.1])fixture('counter',x,-3.40,[2.08,.93,.64]);
+  if(idaShop){
+   WashHouse.shelfStock(room);
+   // A diffused task strip above the customer side fills the face from the front.
+   const x=center-.38,z=-1.02,lamp=lpt(M,x,-z);
+   textured(m.steel,x-.60,x+.60,3.21,3.34,z-.085,z+.085);
+   textured(m.neutral,x-.56,x+.56,3.18,3.214,z-.073,z+.073);
+   INTERIORS.emitters.push({x:lamp.x,y:2.80,z:lamp.z,cool:true,colour:0xffeee1,intensity:1.35,reach:8.5});
+  }
   for(const y of [1.61,1.91]){
    textured(m.steel,u0+.48,u1-.48,y,y+.027,back+.19,back+.47);
+   if(idaShop)continue;
    for(let x=u0+.58,i=0;x<u1-.59;x+=.23){
     const tall=.14+(i%4)*.022;
     if(i++%6!==5)textured(m.bottle[(i*5)%6],x,x+.106,y+.029,y+.029+tall,back+.25,back+.367);
@@ -356,8 +367,9 @@ function updateInteriors(dt,x,z,levelY=player.pos.y){
   const light=INTERIORS.lights[i],lamp=near[i]?.lamp;
   if(lamp){
    light.position.set(lamp.x,lamp.y,lamp.z);
-   light.color.setHex(lamp.floorY!==undefined?0xffefd9:lamp.cool?0xffe6cb:0xffbf87);
-   light.intensity=lamp.cool?1.15:1.27;
+   light.color.setHex(lamp.colour??(lamp.floorY!==undefined?0xffefd9:lamp.cool?0xffe6cb:0xffbf87));
+   light.distance=lamp.reach??10;
+   light.intensity=lamp.intensity??(lamp.cool?1.15:1.27);
   }else light.intensity=0;
  }
  for(const f of INTERIORS.fixtures){

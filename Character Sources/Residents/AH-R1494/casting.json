@@ -1,0 +1,10 @@
+{
+  "method": "Local photo synthesis",
+  "engine": "stable-diffusion.cpp",
+  "model": "Realistic Vision V6.0 B1 Hyper",
+  "seed": 761494,
+  "steps": 6,
+  "poseSource": "AH-R0016",
+  "prompt": "Full length documentary casting photograph of one 47 year old man, delicate jaw, natural everyday haircut, compact build, light warm skin, small amused expression. Wearing soft blue checked shirt, trousers and practical shoes. Standing facing camera, head to toe, arms down, hands clear of torso, shoe soles visible, centered upright, plain gray studio background, natural skin and fabric textures, softly lit realistic photograph.",
+  "referenceSha256": "cdf28a977c772912cc8b24adf19ed199c7583beb3d44738597dacf61ad13b0e4"
+}

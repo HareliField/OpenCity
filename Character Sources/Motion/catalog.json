@@ -1,0 +1,178 @@
+{
+  "walk_stop": {
+    "title": "Slow walk and settle",
+    "trial": "16_33",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/016/16_33.bvh",
+    "sha256": "e4600cd3ab9bc61ce24d15fd40d07bcd1e8782c0bccc5899a4e8bdc12c97d240",
+    "fps": 24,
+    "frames": 57
+  },
+  "idle_shift": {
+    "title": "Shift weight",
+    "trial": "139_02",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/139/139_02.bvh",
+    "sha256": "d6eef8f4ab182bef1bb5db0c46cbec0261b81a63ce1720b8a19777b7e79887a9",
+    "fps": 24,
+    "frames": 188
+  },
+  "explain": {
+    "title": "Explain with hands",
+    "trial": "18_08",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/018/18_08.bvh",
+    "sha256": "b57e6ba15cf2bde4e6e4233da53425dde6d91952fb2bff17a89c5fce18a1a0ce",
+    "fps": 24,
+    "frames": 418
+  },
+  "point": {
+    "title": "Give directions",
+    "trial": "139_25",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/139/139_25.bvh",
+    "sha256": "913edf36c461c7011afe42e190b4884ead885b1ceb7fb461aa4f63272039fad7",
+    "fps": 24,
+    "frames": 133
+  },
+  "lift_basket": {
+    "title": "Pick up a laundry basket",
+    "trial": "143_13",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/143/143_13.bvh",
+    "sha256": "3316fb0facdfc9516006e9b0c0184f2180977cf4e1de149b88813423f84bd4de",
+    "fps": 24,
+    "frames": 117
+  },
+  "clean_window": {
+    "title": "Wash the window",
+    "trial": "143_26",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/143/143_26.bvh",
+    "sha256": "8f4c4e0e412e1d67a641e6ad18b27616eee9cb50418afeb0609c3910fff4bc57",
+    "fps": 24,
+    "frames": 127
+  },
+  "sit_rise": {
+    "title": "Sit down and stand up",
+    "trial": "143_18",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/143/143_18.bvh",
+    "sha256": "1b55e3b6fe9254c14acc5cc53cd6e8ede16d21682029c4ccf56d374d612f508f",
+    "fps": 24,
+    "frames": 151
+  },
+  "climb_ladder": {
+    "title": "Climb a ladder",
+    "trial": "143_37",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/143/143_37.bvh",
+    "sha256": "534c04ac1f8299551407d127accef2421da0b5bfaa31b2934573abb5cecec235",
+    "fps": 24,
+    "frames": 111
+  },
+  "step_back": {
+    "title": "Walk backward",
+    "trial": "143_39",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/143/143_39.bvh",
+    "sha256": "8f6f21c7d2767ac9ccdf0901a4868afbf7a9724d34bf59409f101ff51bc314fe",
+    "fps": 24,
+    "frames": 217
+  },
+  "sidestep": {
+    "title": "Move sideways",
+    "trial": "143_40",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/143/143_40.bvh",
+    "sha256": "218a5510c631a3bbcc14f544198ac3c7dd212afdfc1fe436eee90c181d0a0f67",
+    "fps": 24,
+    "frames": 194
+  },
+  "dodge": {
+    "title": "Duck aside",
+    "trial": "139_09",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/139/139_09.bvh",
+    "sha256": "6e71a29196ca8de2260287b6e5c815bcc8800235afa85ee2fed42e7ed8fdfca3",
+    "fps": 24,
+    "frames": 198
+  },
+  "get_up": {
+    "title": "Get up from the ground",
+    "trial": "139_16",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/139/139_16.bvh",
+    "sha256": "ed3b10df446bc12caa2666f625f1fdb190f63b12c0caae9daaddfa7748fb135e",
+    "fps": 24,
+    "frames": 131
+  },
+  "hurt_walk": {
+    "title": "Favor one leg while walking",
+    "trial": "139_19",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/139/139_19.bvh",
+    "sha256": "a207c66613bbd1651ed23c0a6d21788d0a43a1f716f53da94016d7d2a3826470",
+    "fps": 24,
+    "frames": 200
+  },
+  "stumble": {
+    "title": "Stumble and catch balance",
+    "trial": "22_12",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/022/22_12.bvh",
+    "sha256": "5a0106657cd39d31b3104239d485a8674d1ed99a52df1b3c2eeec0aeb91bc7de",
+    "fps": 24,
+    "frames": 61
+  },
+  "start_run": {
+    "title": "Accelerate into a run",
+    "trial": "143_03",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/143/143_03.bvh",
+    "sha256": "ee21e8d2092a2d3711bd130a78ca442872afde2e33c3301c9526141f6c8599c1",
+    "fps": 24,
+    "frames": 48
+  },
+  "run_stop": {
+    "title": "Run and stop",
+    "trial": "143_02",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/143/143_02.bvh",
+    "sha256": "c816373e42cfcc411d2eac4a70e163fe76289bfec46fe98a58e033030f612d82",
+    "fps": 24,
+    "frames": 42
+  },
+  "jump": {
+    "title": "Jump and land",
+    "trial": "16_01",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/016/16_01.bvh",
+    "sha256": "f989be024ec2b26099300707e182c0b96c22fdf7843757f0ba36e75a475c309c",
+    "fps": 24,
+    "frames": 65
+  },
+  "turn_walk": {
+    "title": "Round a corner",
+    "trial": "69_29",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/069/69_29.bvh",
+    "sha256": "a5a0b1d51d5438c45c80d9ed1903fdebe053236b307118056b8e1ef6333d1550",
+    "fps": 24,
+    "frames": 79
+  },
+  "look_around": {
+    "title": "Look around",
+    "trial": "139_01",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/139/139_01.bvh",
+    "sha256": "12ac3c51f3c5d3411c7a31c1f53789579723a843c00679541521d07a8be85949",
+    "fps": 24,
+    "frames": 218
+  },
+  "wave": {
+    "title": "Wave to a neighbor",
+    "trial": "143_25",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/143/143_25.bvh",
+    "sha256": "4e2e283ff5fc9029ed11d8d7e7047688a92337500e2fdb129f850be7f4bcf736",
+    "fps": 24,
+    "frames": 132
+  },
+  "stretch": {
+    "title": "Stretch and yawn",
+    "trial": "143_30",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/143/143_30.bvh",
+    "sha256": "1fe2ef354edb63415477212fb15bdf189ca5ffede323c2be6188e9e027366d8f",
+    "fps": 24,
+    "frames": 74
+  },
+  "step_over": {
+    "title": "Step over an obstacle",
+    "trial": "143_14",
+    "source": "https://raw.githubusercontent.com/una-dinosauria/cmu-mocap/09a07f54f3bbb58797325f009282d0b2048a2871/data/143/143_14.bvh",
+    "sha256": "7d8c2eae5f612d165260362555d979cf70dabc84feeae5548425c79da9d25dc2",
+    "fps": 24,
+    "frames": 145
+  }
+}

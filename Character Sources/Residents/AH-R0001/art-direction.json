@@ -1,0 +1,103 @@
+{
+  "wardrobeScan": "scan-pilot.glb",
+  "workwearAlbedo": "captured-workwear.png",
+  "hair": "loose bun with side-swept fringe",
+  "outerwear": "red gathered windbreaker with a folded hood",
+  "rearPanel": [
+    0.318,
+    0.625
+  ],
+  "handDetails": {
+    "cut": "short unpolished",
+    "swatches": {
+      "skin": [[0.2061,0.5228],[0.7393,0.5215]],
+      "knuckles": [[0.2012,0.5371],[0.7480,0.5436]],
+      "nails": [[0.2383,0.5586],[0.7168,0.5592]]
+    }
+  },
+  "visualDetails": [
+    "fine gray strands at the temples",
+    "small hoop earrings",
+    "red thread through the bottom buttonhole"
+  ],
+  "performance": {
+    "take": "Walk, listen, give room",
+    "gestureProfile": "workday",
+    "castingView": {
+      "centerX": 0.487388,
+      "crownY": 0.015625,
+      "soleY": 0.985677,
+      "crownMesh": "Loose temple wisps and captured fringe",
+      "alternateCrownMeshes": ["Captured bun, crown and fringe", "Combed scalp and swept fringe"],
+      "shoeCollars": {"l": [0.58496, 0.9362], "r": [0.36816, 0.9362]},
+      "fingertips": {
+        "middle_l": [0.7373, 0.5908], "thumb_l": [0.7188, 0.5645],
+        "middle_r": [0.2168, 0.5908], "thumb_r": [0.2402, 0.5638]
+      }
+    },
+    "trigger": "Rafael asks everyone to stop fussing over the suit.",
+    "beats": [
+      "Approach at an unhurried pace",
+      "Settle her weight and lift one brow",
+      "Lower her hands and take half a step back"
+    ],
+    "cuts": [
+      [
+        "walk_stop",
+        0,
+        57,
+        67
+      ],
+      [
+        "explain",
+        215,
+        280,
+        60
+      ],
+      [
+        "step_back",
+        16,
+        36,
+        35
+      ],
+      [
+        "idle_shift",
+        25,
+        47,
+        22
+      ]
+    ],
+    "listenFrame": 60,
+    "markers": [
+      [
+        1,
+        "Cross the shop"
+      ],
+      [
+        59,
+        "Hear Rafael"
+      ],
+      [
+        78,
+        "Open her hand"
+      ],
+      [
+        112,
+        "Give him room"
+      ],
+      [
+        143,
+        "Settle"
+      ]
+    ],
+    "plantedBeats": [
+      1,
+      3
+    ],
+    "gestureWeights": {
+      "upperarm_l": 0.45,
+      "lowerarm_l": 0.62,
+      "upperarm_r": 0.83
+    }
+  }
+}

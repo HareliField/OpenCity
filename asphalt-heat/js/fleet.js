@@ -207,6 +207,7 @@ function updateTurnLamps(c,t){
 
 function removeSeatedDriver(c){
  if(!c.seatedDriver)return;
+ globalThis.ResidentCast?.unbind(c.seatedDriver);
  const {model}=c.seatedDriver;
  c.mesh.remove(model);
  const skeletons=new Set();
@@ -335,7 +336,7 @@ function updateSeatedDriver(c){
   if(name==='Construction_Male_01' && ['m111_tools','m111_opacity'].includes(o.material.name))o.visible=false;
  });
  c.mesh.add(model);
- c.seatedDriver={role,model,bones,angle:NaN};updateDriverSteering(c);
+ c.seatedDriver={role,name,model,bones,angle:NaN};updateDriverSteering(c);globalThis.ResidentCast?.seat(c,c.seatedDriver);
 }
 
 function addNeighborhoodCars(){

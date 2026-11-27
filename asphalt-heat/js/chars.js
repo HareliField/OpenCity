@@ -247,6 +247,7 @@ function updChar(c,spd,dt,vis){const R=c.root;
  if(c.slung)c.slung.visible=c.aim<=0;
  if(c.gun){c.gun.visible=c.aim>0;if(c.gun.visible&&B.RightHand){B.RightHand.getWorldPosition(_hp);c.gun.position.copy(_hp).addScaledVector(_fw,.08);c.gun.rotation.set(0,yaw,0);}}}
 function removeChar(c){
+ globalThis.ResidentCast?.unbind(c);
  scene.remove(c.root);
  if(c.gun)scene.remove(c.gun);
  if(c.portraitSkeleton?.boneTexture)c.portraitSkeleton.boneTexture.dispose();

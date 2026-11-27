@@ -1,0 +1,10 @@
+{
+  "method": "Local photo synthesis",
+  "engine": "stable-diffusion.cpp",
+  "model": "Realistic Vision V6.0 B1 Hyper",
+  "seed": 761488,
+  "steps": 6,
+  "poseSource": "AH-R0002",
+  "prompt": "Full length documentary casting photograph of one 75 year old woman, full cheeks, natural everyday haircut, lean build, light warm skin, patient expression. Wearing old plum windbreaker, trousers and practical shoes. Standing facing camera, head to toe, arms down, hands clear of torso, shoe soles visible, centered upright, plain gray studio background, natural skin and fabric textures, softly lit realistic photograph.",
+  "referenceSha256": "b8ac5b0fae3845bb43904bebf73b2adc3cef95b7079358bb6ddd08e911b67665"
+}
