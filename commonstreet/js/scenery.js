@@ -6,16 +6,12 @@ const _streetScale=new V3(1,1,1);
 const _streetUp=new V3(0,1,0);
 let sceneryClock=0;
 
-function modelInstance(template,dims,id){
- const node=template.clone(true);
- const source=template.userData.dimensions;
- const entry=INTERIORS.catalog[id];
- node.scale.set(dims[0]/source[0],dims[1]/source[1]*(entry.heightScale||1),dims[2]/source[2]);
- return node;
-}
-
 function placeScenery(id,x,y,z,heading,dims,fallback){
  const device=placeCityMachine(id,x,y,z,heading,dims);
+ registerOutdoorModel(id,x,y,z,heading,dims,fallback,device);
+}
+
+function registerOutdoorModel(id,x,y,z,heading,dims,fallback,device=null){
  OUTDOOR_MODELS.push({id,x,y,z,heading,dims,fallback,device,display:null,started:false});
 }
 
@@ -37,7 +33,7 @@ function updateOutdoorModels(dt,x,z){
   p.started=true;
   promise.then(template=>{
    if(!template){p.started=false;return;}
-   const node=modelInstance(template,p.dims,p.id);
+   const node=modelInstance(template,p.dims);
    node.position.set(p.x,p.y,p.z);
    node.rotation.y=p.heading;
    node.traverse(o=>{if(o.isMesh)o.castShadow=true;});
@@ -53,7 +49,10 @@ function updateOutdoorModels(dt,x,z){
  updatePropModels(x,z);
  for(const c of cars)streamVehicleComponents(c,Math.hypot(x-c.pos.x,z-c.pos.z)<48);
  const featured=cars.find(c=>c.heroWanted&&!c.heroLoading&&!c.dead&&!(c.retryAfter>performance.now())&&Math.hypot(x-c.pos.x,z-c.pos.z)<85);
- if(featured&&INTERIORS.catalog[featured.heroAsset||'coupe'])loadHeroCar(featured);
+ if(featured){
+  const url=legacySceneryURL(featured.heroAsset||'coupe');
+  if(url)loadHeroCar(featured,url);
+ }
 }
 
 function updatePropModels(x,z){
@@ -78,7 +77,7 @@ function updatePropModels(x,z){
   p.artStarted=true;
   promise.then(template=>{
    if(!template){p.artStarted=false;return;}
-   const node=modelInstance(template,dims,id);
+   const node=modelInstance(template,dims);
    node.traverse(o=>{
     if(!o.isMesh)return;
     o.castShadow=!p.P.glow;
@@ -177,12 +176,11 @@ const COUPE_WHEEL_FLIP=new THREE.Quaternion().setFromAxisAngle(_streetUp,Math.PI
 const COUPE_WHEEL_SPIN=new THREE.Quaternion();
 const COUPE_WHEEL_X=new V3(1,0,0);
 
-function loadHeroCar(car){
+function loadHeroCar(car,url){
  const id=car.heroAsset||'coupe';
  car.heroLoading=true;
  if(!heroModels.has(id)){
-  const path='models/scenery/'+INTERIORS.catalog[id].file;
-  const model=new Promise((resolve,reject)=>new THREE.GLTFLoader().load(path,resolve,undefined,reject))
+  const model=new Promise((resolve,reject)=>new THREE.GLTFLoader().load(url,resolve,undefined,reject))
    .then(gltf=>{
     let shell=gltf.scene.getObjectByName('VehicleShell')||gltf.scene.getObjectByName('CoupeShell');
     if(!shell&&gltf.scene.getObjectByName('Frame')){

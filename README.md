@@ -16,13 +16,15 @@ The [local city website](http://127.0.0.1:8765/city/) shows contribution example
 
 ## Help build the city
 
-Try a small change to a place you can visit. Repair an awkward doorway, add a shop fixture, give a resident a Saturday errand, or report a street interaction someone else can reproduce. Start with the [contributor prompt](commonstreet/city/contribute.txt), then use a local preview and a GitHub PR to show how your change fits.
+Start with a model, a place, or an issue someone else can reproduce. Use the [contributor prompt](commonstreet/city/contribute.txt) to build and preview a change, then share it in a GitHub PR.
 
 | I want to… | Start here |
 | --- | --- |
 | Explore the city and understand the rules of play | [Player rules](docs/play-rules.md) · [World map](docs/world-map.md) |
 | Understand what the project is building | [Product direction](docs/product.md) |
-| Contribute or review a change | [Collaboration and city rulebook](docs/collaboration.md) · [City design guide](CONTRIBUTING.md) |
+| Add a reusable 3D model | [Model library](commonstreet/models/scenery/library/README.md) · [Local model preview](http://127.0.0.1:8765/model-preview.html) |
+| Decorate a place using an existing model | [Placement files](commonstreet/world/decorations/README.md) |
+| Contribute or review a change | [Contribution paths](docs/collaboration.md#choose-a-contribution-path) · [City design guide](CONTRIBUTING.md) |
 | Make art, models, or interfaces | [Design system](docs/design-system.md) |
 | Work on code, data, or verification | [Architecture and stack](docs/architecture.md) · [Development guide](docs/development.md) |
 | Find the owner of any topic | [Documentation index](docs/README.md) · [Agent instructions](AGENTS.md) |

@@ -331,7 +331,6 @@ function buildMarket(block){
  for(const x of [360.3,363.0,365.7])worksModel('patisserie-case',x,ground,361,[2.45,1.38,.89],0);
  for(const x of [342.8,369.0]){
   worksFurniture(block,'counter',x,ground,361.25,2.55,.98,.78);
-  worksModel('shop-register',x,ground+.99,361.22,[.42,.39,.30],Math.PI,false);
  }
  worksPanel(342.8,ground,362.1,()=>'BUY FRUIT · $3',()=>buyMarketItem(3,5,'Fresh fruit'));
  worksPanel(364,ground,361.98,()=>'BUY BREAD · $5',()=>buyMarketItem(5,8,'Bakery loaf'));

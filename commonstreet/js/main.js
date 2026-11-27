@@ -536,7 +536,8 @@ function initGame(){buildMinimapBase();buildMarkers();initializePoliceLives();in
  state='title';}
 async function boot(){resize();state='loading';setLoad('Loading city…',0);
  const mgr=THREE.DefaultLoadingManager;let tot=1,done=0;mgr.onStart=(u,l,t)=>{done=l;tot=t;};mgr.onProgress=(u,l,t)=>{done=l;tot=t;if(state==='loading')setLoad('Loading city & people… '+Math.round(l/t*100)+'%',l/t*.85);};
- await Promise.all([loadSky(),globalThis.ResidentCast?.load(),globalThis.ResidentMotion?.load()]);
+ const decorationsReady=loadDecorations();
+ await Promise.all([loadSky(),loadSceneryCatalog(),globalThis.ResidentCast?.load(),globalThis.ResidentMotion?.load()]);
  const cast=await (await fetch('models/cast.json')).json();
  const lowSet=['Male_Adult_07','Police_Male_01','Police_Male_02','Police_Male_03','Police_Male_07','Medical_Female_01','Military_Male_01','Security_Male_01','Male_Adult_10','Male_Adult_03','Medical_Male_01','Male_Adult_01','Male_Adult_04','Male_Adult_08','Business_Male_01','Female_Adult_01','Female_Adult_03','Female_Adult_07','Business_Female_01','Sports_Male_01','Sports_Female_01'];
  const names=Object.keys(cast).filter(n=>QUALITY.level>=2||lowSet.includes(n));
@@ -551,10 +552,10 @@ async function boot(){resize();state='loading';setLoad('Loading city…',0);
  for(const n in CAST){const r=CAST[n];(ROLE[r]=ROLE[r]||[]).push(n);if(/Business_Male/.test(n))(ROLE.mb=ROLE.mb||[]).push(n);if(/Business_Female/.test(n))(ROLE.fb=ROLE.fb||[]).push(n);if(/Construction/.test(n))(ROLE.work=ROLE.work||[]).push(n);}
  if(!ROLE.clerk)ROLE.clerk=ROLE.m;for(const r of['cop','swat','army','guard','gang','medic','beach'])if(!ROLE[r])ROLE[r]=ROLE.m;
  setLoad('Building streets…',.92);await new Promise(r=>setTimeout(r,30));state='building';
- await buildCityRest();prepareShopFields();plantVergeGrasses();physInit();indexStatic();physWorld();installWorksPhysics();initProps();initParts();initTracers();initSkids();initCarLenses();initWheels(320);initGame();initWeatherCover();setCityEnvironment();
+ await buildCityRest(decorationsReady);prepareShopFields();plantVergeGrasses();physInit();indexStatic();physWorld();installWorksPhysics();initProps();initParts();initTracers();initSkids();initCarLenses();initWheels(320);initGame();initWeatherCover();setCityEnvironment();
  refreshPhysicalWorld(player.pos.x,player.pos.z);updProps(.5,player.pos.x,player.pos.z);camera.position.set(302,52,390);camera.lookAt(262,4,312);renderFrame(0);
  $('play').disabled=false;setLoad('Ready',1);}
-async function buildCityRest(){const coastReady=loadCoveLayout();SEED=4242;initAwnings();initSigns();initStreetMaterials();initPaving();initInteriors();initWorksMaterials();initRetailFascias();initShopArchitecture();
+async function buildCityRest(decorationsReady){const coastReady=loadCoveLayout();SEED=4242;initAwnings();initSigns();initStreetMaterials();initPaving();initInteriors();initWorksMaterials();initRetailFascias();initShopArchitecture();
  const streetBounds=worksRect(W/2-(S+40)/2,W/2+(S+40)/2,W/2-10-(S+20)/2,W/2-10+(S+20)/2);
  const asph=new THREE.Mesh(worksGroundMesh(streetBounds,-.009,7,0,0),MAT.asphalt);asph.receiveShadow=true;scene.add(asph);
  for(const t of [MAT.asphalt.map,MAT.asphalt.normalMap,MAT.asphalt.roughnessMap])t.repeat.set(1,1);
@@ -571,7 +572,7 @@ async function buildCityRest(){const coastReady=loadCoveLayout();SEED=4242;initA
    await new Promise(resolve=>setTimeout(resolve,0));
   }
  }
- buildWorksGallery();installCityServices();sampleBeachRelief();buildCityDetail();await coastReady;beach();skyline();buildFreightTerminal();buildDockYard();finishCityDetail();buildGradeRoads();buildStreetNetwork();finishStreetDetails();flushBuckets();for(const m of scene.children)if(m.isMesh&&m.material===ATLAS.neon)m.renderOrder=2;plantTrees();buildTrafficLights();flushBuckets();initializeDoorMeshes();}
+ buildWorksGallery();installCityServices();sampleBeachRelief();buildCityDetail();await coastReady;beach();skyline();buildFreightTerminal();buildDockYard();installDecorations(await decorationsReady);finishCityDetail();buildGradeRoads();buildStreetNetwork();finishStreetDetails();flushBuckets();for(const m of scene.children)if(m.isMesh&&m.material===ATLAS.neon)m.renderOrder=2;plantTrees();buildTrafficLights();flushBuckets();initializeDoorMeshes();}
 const startTime=$('startTime'),startWeather=$('startWeather');
 if(hasCustomHour){
  startTime.add(new Option(weather.clockText,'custom'));startTime.value='custom';

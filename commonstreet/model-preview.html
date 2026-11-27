@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Model preview · Commonstreet</title>
+ <style>
+  body{margin:0;background:#101213;color:#f6f4f0;font:1rem system-ui,sans-serif}
+  main{max-width:58rem;margin:auto;padding:clamp(1rem,4vw,2.5rem)}
+  h1{margin:0 0 1rem}
+  form,.controls{display:flex;align-items:center;flex-wrap:wrap;gap:.5rem}
+  input,button{font:inherit;padding:.5rem .7rem;border:1px solid #828481;border-radius:.3rem}
+  input{width:min(14rem,100%);background:#1b1d1e;color:inherit}
+  button{background:#292c2d;color:inherit;cursor:pointer}
+  button:disabled{opacity:.5;cursor:default}
+  :focus-visible{outline:2px solid #ffbf46;outline-offset:2px}
+  canvas{display:block;width:100%;height:clamp(16rem,55vh,34rem);background:#20262a}
+  .controls{margin-top:.75rem}
+ </style>
+</head>
+<body>
+ <main>
+  <h1>Commonstreet model preview</h1>
+  <form action="model-preview.html" method="get">
+   <label for="model">Model ID</label>
+   <input id="model" name="model" type="text" value="shop-register" required>
+   <button>Preview</button>
+  </form>
+  <p id="status" role="status">Loading model…</p>
+  <canvas id="preview" aria-label="3D model"></canvas>
+  <div class="controls">
+   <button id="left" type="button" disabled>Rotate left</button>
+   <button id="right" type="button" disabled>Rotate right</button>
+  </div>
+ </main>
+ <script src="lib/three.min.js"></script>
+ <script src="lib/GLTFLoader.js"></script>
+ <script src="js/scenery-library.js"></script>
+ <script src="js/model-preview.js"></script>
+</body>
+</html>

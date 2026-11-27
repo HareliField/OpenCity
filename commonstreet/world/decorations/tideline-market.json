@@ -1,0 +1,16 @@
+[
+  {
+    "id": "pantry-counter-register",
+    "model": "shop-register",
+    "position": [342.8, 1.16, 361.22],
+    "size": [0.42, 0.39, 0.30],
+    "yaw": 3.141592653589793
+  },
+  {
+    "id": "bakery-counter-register",
+    "model": "shop-register",
+    "position": [369.0, 1.16, 361.22],
+    "size": [0.42, 0.39, 0.30],
+    "yaw": 3.141592653589793
+  }
+]

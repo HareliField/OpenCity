@@ -1,7 +1,5 @@
 /* Walk-in shops with actual rooms, fixtures and low-cost collision shapes. */
-const INTERIORS={materials:{},fixtures:[],lights:[],emitters:[],catalog:{},models:new Map(),clock:0};
-const _assetSize=new V3();
-const _assetCenter=new V3();
+const INTERIORS={materials:{},fixtures:[],lights:[],emitters:[],clock:0};
 
 function initInteriors(){
  const m=INTERIORS.materials;
@@ -46,10 +44,6 @@ function initInteriors(){
   INTERIORS.lights.push(light);
   scene.add(light);
  }
- fetch('models/scenery/catalog.json').then(r=>r.ok?r.json():{}).then(catalog=>{
-  INTERIORS.catalog=catalog;
-  INTERIORS.clock=0;
- }).catch(()=>{});
 }
 
 function hasStockRoom(row){return row===RETAIL.books||row===RETAIL.deli||row===RETAIL.barber||row===RETAIL.studio;}
@@ -376,43 +370,6 @@ function makeFixture(kind,[w,h,d]){
  return group;
 }
 
-function requestScenery(id){
- const record=INTERIORS.catalog[id];
- if(record?.retryAfter>performance.now())return null;
- if(!record)return null;
- if(!INTERIORS.models.has(id)){
-  const url='models/scenery/'+record.file;
-  const result=new Promise((resolve,reject)=>new THREE.GLTFLoader().load(url,resolve,undefined,reject))
-   .then(gltf=>{
-    const model=gltf.scene;
-    model.rotation.y=record.yaw||0;
-    model.updateMatrixWorld(true);
-    const bounds=new THREE.Box3().setFromObject(model);
-    bounds.getCenter(_assetCenter);
-    bounds.getSize(_assetSize);
-    if(!_assetSize.toArray().every(v=>Number.isFinite(v)&&v>.001))return null;
-    const root=new THREE.Group();
-    root.add(model);
-    const anchor=record.anchor||[0,0];
-    model.position.set(-_assetCenter.x+anchor[0]*_assetSize.x,-bounds.min.y,-_assetCenter.z+anchor[1]*_assetSize.z);
-    model.traverse(mesh=>{
-     if(mesh.isMesh){
-      mesh.receiveShadow=true;
-      mesh.castShadow=!mesh.material.transparent;
-      mesh.material.envMapIntensity=.76;
-     }
-    });
-    root.userData.dimensions=_assetSize.toArray();
-    return root;
-   }).catch(()=>null).then(model=>{
-    if(!model){record.retryAfter=performance.now()+10000;INTERIORS.models.delete(id);}
-    return model;
-   });
-  INTERIORS.models.set(id,result);
- }
- return INTERIORS.models.get(id);
-}
-
 function updateInteriors(dt,x,z,levelY=player.pos.y){
  if((INTERIORS.clock-=dt)>0)return;
  INTERIORS.clock=.30;
@@ -446,7 +403,7 @@ function updateInteriors(dt,x,z,levelY=player.pos.y){
    f.pending=true;
    asset.then(template=>{
     if(!template){f.pending=false;return;}
-    const model=modelInstance(template,f.dims,f.id);
+    const model=modelInstance(template,f.dims);
     f.node.remove(f.fallback);
     f.fallback.traverse(o=>{if(o.isMesh)o.geometry.dispose();});
     shadeFixture(model,f.node.position.x,f.node.position.y,f.node.position.z);

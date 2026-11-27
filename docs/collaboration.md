@@ -13,9 +13,21 @@ Commonstreet grows through changes people can try, discuss, and review together.
 
 A person can fill several roles. A contributor's approval authorizes submission. Maintainer authority governs merging and publishing. Agent feedback supports those decisions.
 
+## Choose a contribution path
+
+| Path | Start here | Evidence and review |
+| --- | --- | --- |
+| **Report or playtest** | File a report with a place, starting conditions, and a short reproduction. A screenshot, clip or controller event sequence can be enough. | Triage by the affected area. |
+| **Add a library model** | Add a GLB and a [model record](../commonstreet/models/scenery/library/README.md). Preview it on its own. A second contributor can propose a city placement later. | Standard review for art, provenance, scale and performance. |
+| **Dress a place** | Use an existing asset or add one independently. Add a [placement record](../commonstreet/world/decorations/README.md) for pure decoration. Reuse the world system for solid or usable objects. | Standard review for local changes covered by the rulebook. Show the scene and an adjacent route. |
+| **Build a feature together** | Start with a shared issue for a shop, resident routine, vehicle, or activity. Agree on place and entity IDs, who owns each part, and one shared playtest. Link independently reviewable art, site, story, and behavior PRs. | Review the assembled preview alongside individual changes. Apply the rulebook to each dependency. |
+| **Change shared rules or infrastructure** | Agree on the direction with a maintainer before implementation. Record the affected districts, consumers, compatibility, and rollback. | Maintainer review with a normal and alternate playthrough and checks for dependent systems. |
+
+Try speculative designs in a local checkout or fork. Bring a scoped proposal and its preview to the shared city when it fits the rulebook. See the [architecture boundaries](architecture.md#contribution-architecture) for how to split larger work.
+
 ## How contributions work
 
-1. **Pick a change someone can try.** Pick a location or system and say what a player would notice. Check existing PRs before starting a large or overlapping change. Discuss direction early for shared rules, major canon changes, or release work that needs maintainer review.
+1. **Pick a change someone can try.** Choose a contribution path. Name the place or system if the contribution affects the city. Check existing PRs before starting a large or overlapping change. Discuss direction early for shared rules, major canon changes, or release work that needs maintainer review.
 2. **Build and try it locally.** Use the [copy-ready prompt](../commonstreet/city/contribute.txt), [project map](README.md), and [city design guide](../CONTRIBUTING.md). Build a small change around a normal visit and one relevant variation. For visible or interactive work, show the local game, where to go, and what to do. Reports and documentation can use reproducible evidence appropriate to the change.
 3. **Submit with the contributor's approval.** The public copy-prompt workflow keeps the work local until the contributor approves the preview or evidence and authorizes submission. Then commit the approved change, push it to a fork or authorized contribution branch, and open a PR against upstream `main`. Give the contributor the link. Authorized maintainer work in the shared checkout follows the branch and delivery instructions in [AGENTS.md](../AGENTS.md).
 4. **Review the proposed revision.** Use the GitHub PR as the review record. Share its link with a maintainer or designated reviewer. Give feedback tied to a rule or observed behavior. Review a new revision when the proposal changes after approval.
@@ -38,6 +50,7 @@ Build a believable, lived-in coastal city. A change should fit its location, hav
 
 | Change | What reviewers look for |
 | --- | --- |
+| Library models | A reusable model fits the city's scale and art direction, loads in the standalone preview, and includes verifiable provenance and redistribution terms. |
 | Props, shopfronts and interiors | Appropriate scale and materials. A street bench leaves space to walk past, a door opens without clipping and a furnished room can be reached and exited. |
 | Shops, NPCs and everyday interactions | Believable hours, roles and prices for the setting. Reuse existing interactions when possible. A diner order uses the existing purchase and eating flow. People appear from plausible entrances or outside the player's view and keep their identity. |
 | Small street details | Repairs, signage, lighting, planters and similar details within the existing street layout. Preserve crossings, curb ramps, sight lines, lanes, turns, emergency access and pedestrian clearance. |

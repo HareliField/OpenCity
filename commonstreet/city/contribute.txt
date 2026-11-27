@@ -5,14 +5,15 @@ You are my coding agent. Build the change I describe below in Commonstreet, show
 ## 1. Build locally
 
 - Use the existing checkout of https://github.com/HareliField/OpenCity, or clone it if needed. Before editing, read AGENTS.md and the scoped instructions it points to for the affected files. Read CONTRIBUTING.md and the City rulebook and How contributions work sections in docs/collaboration.md. Preserve other people's work.
-- Classify the idea under the rulebook. Build a scoped change that fits the existing city. Flag shared-system or release changes for maintainer review. If the idea is outside the rules, explain the rule and suggest a grounded alternative before editing.
-- Locate the change in the city and check its connections. Use the design guide to decide who owns, lives in, operates, or visits it, how people reach it, and what changes with the day, hour, staffing, or weather where relevant. State how ordinary play and one relevant variation should work.
+- Choose a contribution path in docs/collaboration.md. For a reusable model, follow commonstreet/models/scenery/library/README.md. For a decorative placement, follow commonstreet/world/decorations/README.md. Coordinate cross-system features on a shared issue and discuss shared rule or release changes with a maintainer early. If the idea is outside the rulebook, explain the rule and suggest a grounded alternative before editing.
+- For a city change, locate it and check its connections. Use the design guide to decide who owns, lives in, operates, or visits it, how people reach it, and what changes with the day, hour, staffing, or weather where relevant. State how ordinary play and one relevant variation should work.
 - Reuse the game's existing systems where they fit. Run the relevant checks and record what you verified. If you have chat access only, hand off the prompt and idea to a coding session with local files, a terminal, the Codex in-app browser, and GitHub access for the later PR step. Report unavailable capabilities accurately.
 
 ## 2. Show me the change
 
 - From `commonstreet/`, start the game with `python3 tools/serve.py`. If the port is busy, use `--port` with a free port.
-- Open `http://127.0.0.1:8765/index.html?agent=1` (or the port you selected) in a separate Codex in-app browser tab owned by this session. Launch and relaunch with sound off. Press Play, verify the in-game control reads **Sound off**, and leave sound off. Use the Codex in-app browser exclusively. If it is unavailable, report the blocker and leave the game closed.
+- For a model contribution, use `http://127.0.0.1:8765/model-preview.html` (or the port you selected) and enter the model ID. Check the dimensions and rotate the model.
+- For a game change, open `http://127.0.0.1:8765/index.html?agent=1` in a separate Codex in-app browser tab owned by this session. Launch and relaunch with sound off. Press Play, verify the in-game control reads **Sound off**, and leave sound off. Use the Codex in-app browser exclusively. If it is unavailable, report the blocker and leave the game closed.
 - Expand **Agent controller**, run `{"op":"help"}`, and use `places`, `jump`, `world`, and `observe` as needed to reach and exercise the change. For a release tooling change, also show the relevant test or dry run. Show me the local game tab, where and how to try the change, and what you verified.
 
 ## 3. Ask before opening the PR
@@ -23,4 +24,4 @@ After I say yes, commit the previewed change, push a contribution branch to my G
 
 ## My change
 
-[Describe what you want to add or improve, where it should happen, and how it should look or behave in the game. If you're improving something that already exists, say what happens now and what should happen instead.]
+[Describe what you want to add or improve and how it should look or behave. Include a location if it changes the city. If you're improving something that already exists, say what happens now and what should happen instead.]

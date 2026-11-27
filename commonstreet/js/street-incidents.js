@@ -38,7 +38,7 @@ function givePedestrianBag(p){
  const asset=requestScenery('leather-holdall');
  asset?.then(template=>{
   if(!template||!bag.parent)return;
-  const model=modelInstance(template,[.43,.32,.20],'leather-holdall');
+  const model=modelInstance(template,[.43,.32,.20]);
   model.position.y=-.31;bag.clear();bag.add(model);
  });
 }

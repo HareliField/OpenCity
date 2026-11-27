@@ -7,7 +7,8 @@
 | Playing | [Player rules](play-rules.md), [player manual](../commonstreet/README.md) | Understand actions, limits, consequences, controls, and setup. |
 | Geography and canon | [World map](world-map.md), [resident directory](../commonstreet/stories/residents/directory.md) | Locate a place or person and check what already connects to them. |
 | Building the world | [City design guide](../CONTRIBUTING.md) | Define how residents, objects, buildings, systems, and activities fit the city. |
-| Contributing and review | [Collaboration guide and city rulebook](collaboration.md) | Submit, review, approve, or roll back a contribution. |
+| Contributing and review | [Contribution paths and city rulebook](collaboration.md) | Choose a path, then submit, review, approve, or roll back a contribution. |
+| Models and decorative placement | [Model library](../commonstreet/models/scenery/library/README.md), [placement files](../commonstreet/world/decorations/README.md) | Add reusable art or use it in an existing place. |
 | Visual and interaction design | [Design system](design-system.md), [photo comparison index](../Meshy%20Sources/City%20reference%20index.md) | Choose materials, dimensions, UI patterns, and visual evidence. |
 | Engineering | [Architecture and stack](architecture.md), [development guide](development.md) | Trace ownership and dependencies, run checks, or plan a release. |
 | Production art | [Blender libraries](../Blender%20Sources/README.md), [Meshy sources](../Meshy%20Sources/README.md), [character pipeline](../Character%20Sources/README.md) | Find editable sources and regenerate a scoped export. |

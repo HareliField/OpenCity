@@ -1,10 +1,10 @@
 ## Change
 
-What does this add or improve? Name the district, landmark or system, and describe what players will notice.
+Choose a [contribution path](https://github.com/HareliField/OpenCity/blob/main/docs/collaboration.md#choose-a-contribution-path). Describe the change and name the model ID, place, or system it affects. Link a shared issue and related PRs for a collaborative feature.
 
 ## Try it
 
-Include the local launch URL or start location, the relevant weather or time, and the shortest steps to see the change.
+Include the model preview ID or game start location and the shortest steps to see the change. Give weather or time when relevant.
 
 ## Evidence
 

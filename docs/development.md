@@ -10,7 +10,7 @@ From the repository root, run:
 python3 commonstreet/tools/serve.py
 ```
 
-The server binds to `127.0.0.1`. Add `--port 8766` if the default port is in use. The entry points are [the game](http://127.0.0.1:8765/index.html), [the contribution site](http://127.0.0.1:8765/city/), and [agent mode](http://127.0.0.1:8765/index.html?agent=1). Play uses the checked-in runtime without an npm install or bundling. Agents follow the [muted browser instructions](../AGENTS.md#launching-and-inspecting-the-game).
+The server binds to `127.0.0.1`. Add `--port 8766` if the default port is in use. The entry points are [the game](http://127.0.0.1:8765/index.html), [the contribution site](http://127.0.0.1:8765/city/), [model preview](http://127.0.0.1:8765/model-preview.html), and [agent mode](http://127.0.0.1:8765/index.html?agent=1). Play uses the checked-in runtime without an npm install or bundling. Agents follow the [muted browser instructions](../AGENTS.md#launching-and-inspecting-the-game).
 
 Check [tools/package.json](../commonstreet/tools/package.json) when a conversion script imports npm packages. Run `npm ci --prefix commonstreet/tools` from the root if you need those dependencies. The focused checks are launched directly with Node. Asset rebuilding has its own dependencies and entry points in the [Blender library](../Blender%20Sources/README.md) and [character pipeline](../Character%20Sources/README.md).
 
@@ -25,7 +25,8 @@ Run the relevant command from `commonstreet/`. These scripts exercise specific c
 | Driving, vehicle components and fit | `node tools/ptest.js`, `node tools/vehicle-components-test.js`, `node tools/roadster-test.js` |
 | Buildings, services and interactions | `node tools/building-construction-test.js`, `node tools/gameplay-test.js` |
 | Environment and coast | `node tools/weather-test.js`, `node tools/lighthouse-test.js` |
-| Models and resident assets | `node tools/city-asset-test.js`, `node tools/resident-cast-test.js`, `node tools/resident-secondary-test.js` |
+| Scenery models and decoration | `node tools/city-asset-test.js` |
+| Resident assets | `node tools/resident-cast-test.js`, `node tools/resident-secondary-test.js` |
 | Resident routines and roles | `node tools/resident-test.js`, `node tools/officer-rig-test.js` |
 | Police, traffic tickets and cases | `node tools/police-test.js`, `node tools/traffic-ticket-test.js`, `node tools/street-case-test.js`, `node tools/scene-response-test.js` |
 

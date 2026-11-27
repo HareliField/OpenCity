@@ -199,7 +199,7 @@ function updateDoorModels(){
   request.then(template=>{
    d.modelPending=false;
    if(!template)return;
-   d.model=modelInstance(template,[d.w,d.h,.107],d.modelId);
+   d.model=modelInstance(template,[d.w,d.h,.107]);
    scene.add(d.model);
    d.dirty=true;
    syncDoorMesh(d);

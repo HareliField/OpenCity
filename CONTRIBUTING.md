@@ -4,6 +4,8 @@ Build a believable coastal city whose people have lives of their own. A shop, pa
 
 Use the [copy-ready agent prompt](commonstreet/city/contribute.txt) to start. The [collaboration guide](docs/collaboration.md) covers preview, submission, and review. Its [city rulebook](docs/collaboration.md#city-rulebook) sets the scope for new mechanics, shared systems, and landmark changes.
 
+For a model on its own, follow the [model library guide](commonstreet/models/scenery/library/README.md). For pure decoration in a place, follow the [placement guide](commonstreet/world/decorations/README.md). For work on city scenes or systems, use the design guidance below.
+
 The rules below guide the design of new contributions. Check the [player rules](docs/play-rules.md) and the relevant implementation to see what the game supports today.
 
 ## Place the change in the existing city
@@ -48,4 +50,4 @@ Use the [world map](docs/world-map.md) to locate the change, the [runtime owners
 
 ## Show how it fits
 
-Preview the change using the [agent controller](commonstreet/README.md#agent-controller) in your own Codex in-app browser tab. Press **Play**, verify **Sound off**, and leave it off. Give the contributor a landmark or coordinates, the in-game day and time if relevant, and steps to see the normal behavior and a plausible variation. Include the affected residents or systems, what you verified, any known gaps, and the source and redistribution rights for added assets. For example, show a resident arriving to sell at a Saturday pop-up, then visit outside its hours and check the posted hours and the clear sidewalk.
+Preview a standalone asset with the [model preview](http://127.0.0.1:8765/model-preview.html). For a city change, use the [agent controller](commonstreet/README.md#agent-controller) in your own Codex in-app browser tab. Press **Play**, verify **Sound off**, and leave it off. Give the contributor a landmark or coordinates, the in-game day and time if relevant, and steps to see the normal behavior and a plausible variation. Include the affected residents or systems, what you verified, any known gaps, and the source and redistribution rights for added assets. For example, show a resident arriving to sell at a Saturday pop-up, then visit outside its hours and check the posted hours and the clear sidewalk.

@@ -150,7 +150,7 @@ function loadMechanicalAssembly(c,v,key,id,at,dims){
  promise.then(template=>{
   v[key+'Loading']=false;
   if(!template||c.components!==v)return;
-  const node=modelInstance(template,dims,id);node.position.copy(at);v.section.add(node);v[key]=node;
+  const node=modelInstance(template,dims);node.position.copy(at);v.section.add(node);v[key]=node;
   if(key==='engine'){v.fan=node.getObjectByName('CoolingFan');node.visible=(v.joints.get('Bonnet')?.state.phase||0)>.025;}
   else node.visible=v.near;
  });
