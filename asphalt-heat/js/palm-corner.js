@@ -157,12 +157,10 @@ function cornerCounterSale(x,y,z,item,desc,price,heal){
  },1.43);
 }
 
-function furnishCornerShop(B,r,y,spec){
+function furnishCornerShop(B,r,y,spec,lit){
  const m=cornerMaterials(),cx=(r.x0+r.x1)/2,cz=(r.z0+r.z1)/2,nearNorth=spec.front==='N';
  const at=distance=>nearNorth?r.z0+distance:r.z1-distance;
  const yaw=nearNorth?Math.PI:0;
- const frontage=lotFace(r,spec.front);
- shopLightingRoom(frontage.matrix,-frontage.width/2,frontage.width/2,Math.min(16,frontage.depth),y);
  // Shop floor and counter stay clear of the front doors, staircase, lift and the public corridor.
  if(spec.kind==='diner'){
   for(const x of [r.x0+4.25,r.x0+9.56,r.x0+15.12,r.x0+20.43]){
@@ -172,12 +170,12 @@ function furnishCornerShop(B,r,y,spec){
    worksModel('enamel-pendant',x,2.68,z,[.38,.26,.38],0,false);
    INTERIORS.emitters.push({x,y:2.78,z,floorY:y,cool:false});
    const lens=new THREE.SphereGeometry(.118,14,10);lens.scale(1,.94,1);lens.translate(x,2.661,z);
-   addGeo(INTERIORS.materials.warm,lens,false);
+   addGeo(roomLightMaterial(INTERIORS.materials.warm,lit),lens,false);
   }
   const barX=r.x1-6.95,z=r.z1-10.35;
-  worksSolid(worksRect(barX-3.86,barX+3.86,z-.425,z+.425),y,y+1.01,m.green);
-  plainBox(m.brass,barX-3.89,barX+3.89,y+.995,y+1.03,z-.46,z+.46);
-  plainBox(m.linen,barX-3.9,barX+3.9,y+1.03,y+1.065,z-.469,z+.469);
+  worksSolid(worksRect(barX-3.86,barX+3.86,z-.425,z+.425),y,y+1.01,roomLightMaterial(m.green,lit));
+  plainBox(roomLightMaterial(m.brass,lit),barX-3.89,barX+3.89,y+.995,y+1.03,z-.46,z+.46);
+  plainBox(roomLightMaterial(m.linen,lit),barX-3.9,barX+3.9,y+1.03,y+1.065,z-.469,z+.469);
   for(const off of [-2.92,-1.75,-.57,.61])worksModel('diner-stool',barX+off,y,z+1.09,[.445,.719,.445]);
   worksModel('shop-register',barX+2.71,y+1.066,z,[.44,.38,.32],Math.PI,false);
   worksModel('diner-espresso',barX-1.57,y+1.066,z,[.68,.382,.426],0,false);
@@ -193,6 +191,11 @@ function furnishCornerShop(B,r,y,spec){
   for(const dx of [-2.04,.18,2.4]){
    plainBox(m.dark,dx-.655,dx+.655,y+1.47,y+2.69,0,.127,{M:face});
    facadePlane(menu,face,dx-.606,dx+.606,y+1.518,y+2.643,.132);
+   const lx=barX+dx,lz=z-.43;
+   worksBeam(m.dark,[lx,4.08,lz],[lx,2.89,lz],.012);
+   worksModel('enamel-pendant',lx,2.67,lz,[.33,.22,.33],0,false);
+   cyl(roomLightMaterial(INTERIORS.materials.warm,lit),lx,2.67,lz,.125,.125,.015,14,{shadow:false});
+   INTERIORS.emitters.push({x:lx,y:2.65,z:lz,colour:0xffd7ac,intensity:1.13,floorY:y});
   }
   // Ceramic wall base, suspended pendant cords and a second booth pair at the corner window.
   for(const [x0,x1] of [[r.x0+.31,r.x0+4.82],[r.x0+6.0,r.x1-.31]]){
@@ -309,7 +312,7 @@ function finishPalmCorner(r,spec,top){
  if(spec.kind==='arcade'){
   // Hipped tile roof over the southern wing. The north stair landing and lift lead to the open terrace.
   const x0=r.x0-.48,x1=r.x1+.48,z0=r.z0+17.06,z1=r.z1+.52,half=(z1-z0)/2;
-  const ridgeZ=(z0+z1)/2,eave=top+.354,rise=3.93;
+  const ridgeZ=(z0+z1)/2,eave=top+.354,rise=2.45;
   const points=[[x0,eave,z0],[x1,eave,z0],[x1,eave,z1],[x0,eave,z1],
    [x0+half,eave+rise,ridgeZ],[x1-half,eave+rise,ridgeZ]];
   const faces=[[0,4,5,1],[1,5,2],[2,5,4,3],[3,4,0]];

@@ -284,16 +284,18 @@ function syncWorksGates(lift){
 function buildMarket(block){
  const w=CITY_WORKS,m=w.m,r=w.market,[basement,ground,flats,roof]=w.levels;
  const outer=[MARKET_STAIR,w.shaft];
+ const front=lotFace(r,'S').matrix;
+ const lit=shopLightingRoom(front,-(r.x1-r.x0)/2,(r.x1-r.x0)/2,r.z1-r.z0,ground,flats-ground-.16);
  topQuad(m.service,365.2,374.5,.158,329.66,332.76,1.7,null,false);
  for(const z of [329.80,332.64])topQuad(MAT.whiteMetal,365.48,374.45,.164,z,z+.08,1,null,false);
  worksSolid(worksRect(365.55,365.75,330.31,332.04),.16,.25,m.stone);
- worksSlab(r,ground,m.marketFloor,outer);
+ worksSlab(r,ground,roomLightMaterial(m.marketFloor,lit),outer);
  worksSlab(r,flats,m.floor,[FLAT_STAIR,MARKET_STAIR,w.shaft]);
  worksSlab(r,roof,MAT.roof,[MARKET_STAIR,w.shaft]);
  for(const p of subtractCityOpenings(r,[FLAT_STAIR,MARKET_STAIR,w.shaft])){
   const g=new THREE.PlaneGeometry(p.x1-p.x0,p.z1-p.z0),uv=g.attributes.uv;
   for(let i=0;i<uv.count;i++)uv.setXY(i,uv.getX(i)*(p.x1-p.x0),uv.getY(i)*(p.z1-p.z0));
-  g.rotateX(Math.PI/2);g.translate((p.x0+p.x1)/2,flats-.163,(p.z0+p.z1)/2);addGeo(m.soffit,g,false);
+  g.rotateX(Math.PI/2);g.translate((p.x0+p.x1)/2,flats-.163,(p.z0+p.z1)/2);addGeo(roomLightMaterial(m.soffit,lit),g,false);
  }
  // Each landing spans both flights. From the flats the return run reaches the terrace.
  worksFlight(MARKET_STAIR,basement,ground,false);
@@ -307,8 +309,6 @@ function buildMarket(block){
   plainBox(m.stone,-width/2-.13,width/2+.13,flats-.30,flats-.06,-.24,.23,{M:face.matrix,uvm:1.3});
   worksSolid(lrect(face.matrix,-width/2,width/2,-.04,.17),roof,roof+.92,m.stone);
  }
- const front=lotFace(r,'S').matrix;
- shopLightingRoom(front,-(r.x1-r.x0)/2,(r.x1-r.x0)/2,r.z1-r.z0);
  for(const [u,slot] of [[-12,w.signs.market],[8,w.signs.baker]]){
   const at=lpt(front,u,-.11);worksPlacard(slot,at.x,3.20,at.z,8,.77);
   const canopy=new THREE.BoxGeometry(8.1,.08,1.33);
@@ -339,7 +339,7 @@ function buildMarket(block){
   INTERIORS.emitters.push({x,y:2.82,z,cool:false,floorY:ground,municipal:true});
   worksBeam(MAT.darkMetal,[x,flats-.15,z],[x,3.36,z],.014);
   worksModel('enamel-pendant',x,3.05,z,[.51,.32,.51],0,false);
-  cyl(m.lamp,x,3.052,z,.20,.20,.012,12,{shadow:false});
+  cyl(roomLightMaterial(m.lamp,lit),x,3.052,z,.20,.20,.012,12,{shadow:false});
  }
  dressMarketWindows();
  buildFlats(block,flats);
@@ -654,17 +654,19 @@ function buildCityWalkup(B,spec){
  const front=lotFace(r,'S').matrix,top=levels[levels.length-1];
  const colors=coastal?['#3c5b58','#efe6cf']:mill?['#324653','#dee1da']:['#503f36','#ece1c8'];
  const signs=spec.front?null:[spec.name,spec.shop].map(text=>worksSign(text,...colors));
+ const shopFace=spec.front&&lotFace(r,spec.front);
+ const lit=shopFace&&shopLightingRoom(shopFace.matrix,-shopFace.width/2,shopFace.width/2,Math.min(16,shopFace.depth),levels[0],3.92);
  for(let i=0;i<levels.length;i++){
   const y=levels[i],roof=i===levels.length-1;
   const holes=i===0?[]:[shaft,i%2===1?a:b,...(roof?[]:[i%2===1?b:a])];
   const finish=spec.front?cornerMaterials():null;
-  worksSlab(r,y,roof?(finish?.roof||MAT.roof):i?m.floor:finish?.storeFloor||m.stone,holes);
+  worksSlab(r,y,roof?(finish?.roof||MAT.roof):i?m.floor:lit?roomLightMaterial(finish.storeFloor,lit):m.stone,holes);
   if(finish&&i){
    // A plaster soffit underneath the occupied floors follows the same stair and lift apertures.
    for(const p of subtractCityOpenings(r,holes)){
     const g=new THREE.PlaneGeometry(p.x1-p.x0,p.z1-p.z0);
     g.rotateX(Math.PI/2);g.translate((p.x1+p.x0)/2,y-.163,(p.z1+p.z0)/2);
-    addGeo(finish.ceiling,g,false);
+    addGeo(i===1?roomLightMaterial(finish.ceiling,lit):finish.ceiling,g,false);
    }
   }
   if(roof)break;
@@ -676,7 +678,7 @@ function buildCityWalkup(B,spec){
    worksWall(B,r,side,y,next-.16,mat,!i&&side==='S'?[-9,8]:[],!(mill&&side==='W'));
   }
   if(spec.front){
-   if(i)furnishCornerFlats(B,r,y,i);else furnishCornerShop(B,r,y,spec);
+   if(i)furnishCornerFlats(B,r,y,i);else furnishCornerShop(B,r,y,spec,lit);
    continue;
   }
   if(i===0){

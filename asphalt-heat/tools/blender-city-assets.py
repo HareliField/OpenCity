@@ -371,44 +371,94 @@ def water_meter():
     return a
 
 
+def garden_laurel():
+    a=make('garden-laurel',[10,17,46,47,78],'Broadleaf garden shrub with branching woody stems, folded evergreen leaves and pale new growth.')
+    tones=[material(name,color,.71,two_sided=True) for name,color in [
+        ('Shaded evergreen leaf','37412b'),('Glossy mature laurel','4f6038'),('Fresh laurel tip','828049')]]
+    rng=random.Random(191)
+    up=Vector((0,0,1))
+    batches=[([],[]) for _ in tones]
+    for leader in range(13):
+        theta=leader*2.39996+rng.uniform(-.19,.19)
+        radial=Vector((cos(theta),sin(theta),0))
+        side=up.cross(radial)
+        low=leader%4
+        root=radial*rng.uniform(.025,.091)
+        end=radial*(.59-.092*low)+up*(.43+.12*low+rng.uniform(-.046,.046))
+        fork=root.lerp(end,.46)+radial*.04+up*.045
+        a.tube('Woody cane',[root,fork,end],[.016,.012,.005],plane_bark,7)
+        for j in range(5):
+            sign=1 if j%2 else -1
+            start=fork.lerp(end,j*.198)
+            twig=start+side*rng.uniform(.12,.22)*sign+radial*.14+up*rng.uniform(.045,.20)
+            a.tube('Leaf stem',[start,twig],[.006,.002],plane_bark,5)
+            for k in range(9):
+                t=(k+.5)/9
+                base=start.lerp(twig,t)
+                turn=theta+(.97 if k%2 else -1.21)+rng.uniform(-.48,.42)
+                along=Vector((cos(turn),sin(turn),rng.uniform(-.48,.72)))*rng.uniform(.069,.115)
+                across=Vector((-sin(turn),cos(turn),rng.uniform(-.23,.23)))*rng.uniform(.018,.027)
+                middle=base+along*.51
+                vs,fs=batches[2 if t>.82 and low>1 else (leader+j+k//3)%2]
+                i=len(vs)
+                vs.extend([base,base+along*.27-across*.70,middle-across,base+along,
+                           middle+across,base+along*.27+across*.70,middle+up*.008])
+                fs.extend((i+n,i+(n+1)%6,i+6) for n in range(6))
+    for (vs,fs),tone in zip(batches,tones):
+        a.mesh('Leaf blades',vs,fs,tone,smooth=True)
+    return a
+
+
 def plane_tree(low=False,mature=False):
     name='sycamore-distant' if low else 'avenue-sycamore'
     if mature: name='park-sycamore-distant' if low else 'park-sycamore'
     a=make(name,[1,14,18,34,92,112],'Forking avenue sycamore with a lightly pruned crown and layered sprays of photographed leaves.')
     rng=random.Random(65 if mature else 34)
     a.tube('Trunk',[(0,0,0),(.045,-.028,.18),(-.04,.018,1.34),(-.075,.065,2.38),(.054,.113,3.26),(.21,.12,4.21)],[.233,.210,.159,.137,.094,.045],plane_bark,8 if low else 14)
-    tips=[]
-    for j in range(9 if mature else 7):
-        theta=j*2.40+rng.uniform(-.16,.16)
-        e=Vector((cos(theta),sin(theta),0))
-        lateral=Vector((-sin(theta),cos(theta),0))
-        root=Vector((.045,.098,2.35+j*.184))
-        fork=root+e*((.44+j*.065)*(1.58 if mature else 1))+Vector((0,0,.96+j*.058))
-        crown=fork+e*((.70+rng.random()*.40)*(1.37 if mature else 1))+Vector((0,0,.73+rng.random()*.70))
-        a.tube('Primary scaffold limb',[root,(root+fork)*.5+e*.09,fork,crown],[.115-j*.007,.08,.057,.019],plane_bark,6 if low else 9)
-        if mature or j%3==1:
-            inner=fork.lerp(crown,.49)+lateral*(.31 if j%2 else -.37)+Vector((0,0,.19))
-            tip=inner+Vector((.07,-.11,.77))+lateral*(.25 if j%2 else -.21)
-            if not low:a.tube('Inner leaf-bearing shoot',[fork,inner,tip],[.030,.017,.006],plane_bark,6)
-            tips.append((inner,tip,e,lateral))
-        for sign in [-1,1]:
-            tip=crown+lateral*(sign*(.48+rng.random()*.46))+e*(.13+rng.random()*.42)+Vector((0,0,.42+rng.random()*.87))
-            mid=crown*.51+tip*.49+e*.055
-            if not low:
-                a.tube('Forked limb',[fork,crown,mid,tip],[.042,.031,.020,.006],plane_bark,6)
-            tips.append((mid,tip,e,lateral))
+    # The centre leader and the spreading lower forks give the crown its rounded envelope.
+    # Keep the branch layout identical at both levels of detail.
+    up=Vector((0,0,1))
+    sprays=[]
+    leaders=9 if mature else 7
+    for j in range(leaders):
+        turn=j*2.39996+rng.uniform(-.32,.32)
+        radial=Vector((cos(turn),sin(turn),0))
+        side=up.cross(radial)
+        fraction=j/(leaders-1)
+        radius=(3.06 if mature else 2.34)*(1-.67*fraction)*rng.uniform(.89,1.09)
+        root=Vector((.035+.10*fraction,.095,2.02+1.92*fraction))
+        end=radial*radius+up*(4.96+1.70*fraction+rng.uniform(-.24,.27))
+        elbow=root.lerp(end,.48)+radial*.16+side*rng.uniform(-.24,.24)+up*.18
+        shoulder=elbow.lerp(end,.57)+side*rng.uniform(-.26,.26)
+        thick=.114-fraction*.039
+        a.tube('Forking scaffold',[root,root.lerp(elbow,.48)-radial*.06,elbow,shoulder,end],
+               [thick,thick*.84,thick*.62,thick*.39,.018],plane_bark,6 if low else 9)
+        for k,sign in enumerate([-1,1,-1,1]):
+            base=elbow.lerp(end,.12+k*.24)
+            reach=(1.27 if mature else .93)*rng.uniform(.78,1.18)
+            direction=side*sign+radial*rng.uniform(.02,.75)
+            bend=base+direction*reach*.49+up*.31
+            tip=bend+direction*reach*.54+up*rng.uniform(-.19,.47)
+            a.tube('Leaf-bearing lateral',[base,bend,tip],[.044-k*.004,.021,.006],plane_bark,4 if low else 7)
+            sprays.append((bend,tip,radial,side))
+            twig=bend+radial*rng.uniform(.28,.65)-side*sign*.17+up*rng.uniform(.25,.69)
+            if not low:a.tube('Fine twig',[bend,bend.lerp(twig,.52)+radial*.07,twig],[.017,.010,.003],plane_bark,5)
+            sprays.append((bend,twig,radial,side))
+        sprays.append((shoulder,end+up*.37,radial,side))
     vs,fs,uvs=[],[],[]
-    # Small bent leaf sprays are distributed along branches. The open intervals reveal branch structure.
-    for mid,tip,e,side in tips:
-        for j in range((6 if mature else 4) if low else (17 if mature else 14)):
-            f=rng.uniform(-.5,1.32)
-            c=mid.lerp(tip,f)+side*rng.uniform(-.61,.61)+e*rng.uniform(-.35,.38)+Vector((0,0,rng.uniform(-.30,.30)))
-            theta=rng.random()*TAU
-            wide=(1.48 if low else .79)*rng.uniform(.79,1.16)
-            h=Vector((cos(theta),sin(theta),rng.uniform(-.27,.27)))*wide*.50
-            v=Vector((-sin(theta)*.40,cos(theta)*.40,rng.uniform(.49,.93)))*wide*.64
+    for k,(base,tip,radial,side) in enumerate(sprays):
+        distribution=random.Random(901+k*29+int(mature))
+        count=(4 if mature else 3) if low else (10 if mature else 8)
+        for j in range(count):
+            c=base.lerp(tip,distribution.uniform(.16,1.20))
+            c+=side*distribution.uniform(-.32,.32)+radial*distribution.uniform(-.28,.29)+up*distribution.uniform(-.23,.28)
+            turn=distribution.uniform(0,TAU)
+            size=(1.02 if low else .64)*distribution.uniform(.68,1.12)
+            h=Vector((cos(turn),sin(turn),distribution.uniform(-.18,.22)))*size*.57
+            tilt=distribution.uniform(-.98,.98)
+            v=Vector((-sin(turn)*cos(tilt),cos(turn)*cos(tilt),sin(tilt)))*size*.53
             i=len(vs)
-            vs.extend([c-h-v,c+h-v,c+h+v,c-h+v,c+e*.082])
+            vs.extend([c-h-v,c+h-v,c+h+v-up*.075,c-h+v-up*.055,c+up*size*.15])
             uvs.extend([(0,0),(1,0),(1,1),(0,1),(.5,.5)])
             fs.extend([(i,i+1,i+4),(i+1,i+2,i+4),(i+2,i+3,i+4),(i+3,i,i+4)])
     a.mesh('Leaf sprays',vs,fs,leaf,smooth=True,uvs=uvs)
@@ -418,41 +468,46 @@ def plane_tree(low=False,mature=False):
 def palm_tree(low=False):
     a=make('palm-distant' if low else 'coastal-date-palm',[5,8,37,82,92],'Scarred leaning trunk, persistent dry skirt and folded, tapered individual leaflets.')
     rng=random.Random(82)
-    crown=Vector((.49,.13,8.49))
+    height=10.58
+    crown=Vector((.51,.16,height))
     def trunk(z):
-        return (.49*(z/8.49)**1.62,.13*(z/8.49)**1.85,z)
-    heights=[0,.10,.28,1.8,4.2,6.7,8.18,8.49]
+        return (.51*(z/height)**1.62,.16*(z/height)**1.85,z)
+    heights=[0,.10,.28,1.8,4.2,7.7,height-.31,height]
     radii=[.249,.245,.218,.173,.152,.141,.164,.181]
     a.tube('Tall tapering bole',[trunk(z) for z in heights],radii,palm_bark,8 if low else 14)
     if not low:
-        for i in range(39):
-            z=.30+i*.207
+        for i in range(48):
+            z=.30+i*.212
             x,y,_=trunk(z)
-            r=.14+.065*(1-z/8.52)**2
+            r=.14+.065*(1-z/height)**2
             a.turn('Leaf base scars',x,y,[(z-.021,r*.985),(z,r+.009),(z+.025,r*.991)],palm_bark,14)
     verts=[[] for _ in frond]
     faces=[[] for _ in frond]
-    for k in range(29):
-        age=min(2,k//11)
+    for k in range(33):
+        age=0 if k<13 else 1 if k<28 else 2
         angle=k*2.39996+rng.uniform(-.12,.12)
         axis=Vector((cos(angle),sin(angle),0))
         side=Vector((-sin(angle),cos(angle),0))
-        length=rng.uniform(2.47,3.16) if age<2 else rng.uniform(.89,1.51)
-        rise=[1.87,1.02,.35][age]*rng.uniform(.8,1.12)
-        fall=[1.70,2.19,2.35][age]*rng.uniform(.86,1.15)
+        length=rng.uniform(2.30,3.22) if age<2 else rng.uniform(1.01,1.67)
+        if k<4:length*=.57
+        rise=[2.16,1.54,.53][age]*rng.uniform(.78,1.19)
+        fall=[1.81,2.42,1.82][age]*rng.uniform(.81,1.17)
+        if k<4:fall*=.41
+        curve=rng.uniform(-.43,.46)
         def at(t):
-            return crown + axis*(length*t)+side*(.20*t*t)+Vector((0,0,rise*t*1.90-fall*t*t*1.65))
+            return crown + axis*(length*t)+side*(curve*t*t)+Vector((0,0,rise*t*1.90-fall*t*t*1.65))
         if low:
             vs,fs,uvs=[],[],[]
             for i in range(8):
                 t=i/7
                 r=at(t)
-                for j,u in enumerate([-.5,0,.5]):
-                    vs.append(r+side*(u*(1.53 if age<2 else .81))+Vector((0,0,-abs(u)*.47)))
+                for u in [-.5,0,.5]:
+                    width=(.27+1.18*sin(pi*t)**.75)*(1 if age<2 else .64)
+                    vs.append(r+side*(u*width)+Vector((0,0,-abs(u)*width*.35)))
                     uvs.append((u+.5,t))
                 if i:
-                    k=3*i
-                    fs.extend([(k-3,k-2,k+1,k),(k-2,k-1,k+2,k+1)])
+                    idx=3*i
+                    fs.extend([(idx-3,idx-2,idx+1,idx),(idx-2,idx-1,idx+2,idx+1)])
             a.mesh('Curved frond spray',vs,fs,palm_card,smooth=True,uvs=uvs)
             continue
         n=15
@@ -554,7 +609,7 @@ def flower_box():
 
 def main():
     for builder in [street_lantern,litter_bin,air_conditioner,roof_fan,washer,barber_pole,manicure_set,nail_desk,pastry_case,
-                    grocery_cooler,pump,life_station,water_meter,book_cart,coffee_machine,flower_box,plane_tree,palm_tree]:
+                    grocery_cooler,pump,life_station,water_meter,book_cart,coffee_machine,flower_box,plane_tree,palm_tree,garden_laurel]:
         builder()
     plane_tree(True)
     palm_tree(True)

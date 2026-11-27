@@ -23,6 +23,7 @@ const plainBox=()=>{},addGeo=(mat,g)=>g.dispose(),freightMarkings=()=>{};
 run(world.slice(world.indexOf('function lrect('),world.indexOf('const PASTEL=')));
 run(read('js/street-plan.js'));run(read('js/city-works.js'));run(read('js/access.js'));run(read('js/building-construction.js'));run(read('js/suite-interiors.js'));run(read('js/domestic-fittings.js'));
 run(read('js/city-services.js'));
+run(read('js/shop-architecture.js'));
 run(read('js/civic-fittings.js'));run(read('js/fire-escapes.js'));
 run("const SW=4;"+world.slice(world.indexOf('function streetSides('),world.indexOf('function shopDressing(')));
 run(world.slice(world.indexOf('function buildCargoContainer'),world.indexOf('/* ---- landmarks')));
@@ -32,6 +33,8 @@ run(`
  const r={x0:16,x1:40,z0:13,z1:28},block=blocks[0],brick={mat:material,rect:r,style:1,bay:2.73,fh:3.4,h:14.6};
  const building=createStoreys(block,r,.15,4.4,[brick]);
  extendStoreys(building,{x0:19,x1:37,z0:15,z1:26},14.6,25.4,material,{style:2,fh:3.6,bay:2.8});
+ assert.equal(block.curtainFaces.length,4);
+ for(const face of block.curtainFaces){assert.equal(face.y0,14.6);assert.equal(face.h,25.4);}
  let count=0,stepsWalked=0;
  const c=building.core,xy=(u,v)=>c.alongX?[v,u]:[u,v];
  function rayY(x,z,top,range=.29){
@@ -42,6 +45,12 @@ run(`
  for(const l of building.levels){
   const {steps,halfRise,mid}=flightMetrics(l);
   physicalParts(l);let floor=l.y0;
+  if(l.tier.style===2){
+   const finish=curtainMaterials(l.tier.seed);
+   assert(l.parts.some(p=>p.role==='glass'&&p.mat===finish.glass&&p.mat.transparent));
+   assert(l.parts.some(p=>p.mat===finish.panel&&p.h===l.h),'back-painted panel conceals the slab edge');
+   assert.equal(l.sashes.length,0,'curtain units stay fixed while masonry sash windows can slide');
+  }
   for(const second of [false,true]){
    const u=second?(c.uc+c.u1)/2:(c.u0+c.uc)/2;
    for(let k=0;k<steps;k++){

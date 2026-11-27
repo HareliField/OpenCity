@@ -106,6 +106,10 @@ function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
     float grain=vnoise(vWP.xz*34.);
     roughnessFactor=mix(roughnessFactor,.29+grain*.15,damp*.81);roughnessFactor=mix(roughnessFactor,.055,pud);diffuseColor.rgb*=mix(1.,.60,damp)*mix(1.,.44,pud);
     ${opt.tint?'diffuseColor.rgb*=mix(.78,1.13,big);':''}
+    ${opt.paving?`float edgeDist=abs(min(grid.x,grid.y)-8.);
+    float splash=(1.-smoothstep(.17,1.87,edgeDist))*smoothstep(.31,.66,fbm2(vWP.xz*vec2(.67,.52)));
+    float deposits=smoothstep(.46,.73,fbm2(vWP.xz*.49)+.15*(fbm2(vWP.xz*3.13)-.5));
+    diffuseColor.rgb*=mix(vec3(.99,.975,.947),vec3(.63,.60,.54),clamp(deposits*.58+splash*.65,0.,1.));`:''}
     float snow=0.;
     if(uSnowCover>.015 && exposed*facingUp>.01){
      float track=min(abs(min(grid.x,grid.y)-2.),abs(min(grid.x,grid.y)-6.));
@@ -118,7 +122,8 @@ function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
     ${opt.paint?`float abrasion=fbm2(tangent*vec2(.91,2.8))*.75+grain*.25;
     float aggregate=fbm2(vWP.xz*22.)+vnoise(vWP.xz*69.)*.30;
     if(aggregate<.27+.18*smoothstep(.38,.74,abrasion))discard;
-    diffuseColor.rgb*=mix(.67,1.0,smoothstep(.30,.78,aggregate))*(1.-.16*abrasion);`:''}`)
+    float trafficWear=smoothstep(.32,.67,abrasion+.16*(aggregateRidges-.5));
+    diffuseColor.rgb*=mix(.46,.87,smoothstep(.30,.78,aggregate))*(1.-.26*trafficWear);`:''}`)
    .replace('#include <normal_fragment_maps>',`#include <normal_fragment_maps>
     normal=normalize(mix(normal,normalize(vNormal),max(pud*.90,snow*.67)));
     if(pud*uRain>.014){
@@ -132,14 +137,14 @@ function makeWet(mat,opt){opt=opt||{};mat.userData.wet=opt;
    .replace('#include <tonemapping_fragment>',`
     {vec3 V=normalize(cameraPosition-vWP);float fr=.035+.965*pow(1.-max(V.y,0.),3.7);float kk=(pud*.93+damp*mix(.22,.30,uLamp)*(1.-pud))*fr*reflOn*(1.-smoothstep(.40,.65,vWP.y));
      if(kk>.002){vec2 dist=(normal-normalize(vNormal)).xy*mix(.016,.005,pud)+vec2(grain-.5,big-.5)*mix(.003,.0012,pud);
-      ${opt.road?'dist.y+=(aggregateRidges-.5)*.008*pud;':''}
+      ${opt.road?'dist.y+=(aggregateRidges-.5)*.006*pud;kk*=mix(.78,.94,pud)*mix(.94,1.,uLamp);':''}
       vec4 ru=vRU;ru.xy+=dist*ru.w;vec3 rc=texture2DProj(tRefl,ru).rgb;
       if(pud<.6){vec4 r2=ru;r2.x+=.008*ru.w;vec4 r3=ru;r3.y-=.012*ru.w;rc=(rc+texture2DProj(tRefl,r2).rgb+texture2DProj(tRefl,r3).rgb)/3.;}
       vec2 edge=abs(ru.xy/max(.001,ru.w)-.5);
       float valid=1.-smoothstep(.46,.50,max(edge.x,edge.y));
       gl_FragColor.rgb=mix(gl_FragColor.rgb,rc,clamp(kk*valid,0.,1.));}}
     #include <tonemapping_fragment>`);};
- mat.customProgramCacheKey=()=>'wet'+(opt.tint?1:0)+(opt.inst?1:0)+(opt.paint?1:0)+(opt.road?1:0);return mat;}
+ mat.customProgramCacheKey=()=>'wet'+(opt.tint?1:0)+(opt.inst?1:0)+(opt.paint?1:0)+(opt.road?1:0)+(opt.paving?1:0);return mat;}
 
 /* ---- post: HDR target, bloom, filmic tonemap ---- */
 const PP={};

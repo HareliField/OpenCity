@@ -218,9 +218,9 @@
       112
     ],
     "description": "Forking avenue sycamore with a lightly pruned crown and layered sprays of photographed leaves.",
-    "parts": 25,
+    "parts": 65,
     "movableParts": [],
-    "runtimeBytes": 572524
+    "runtimeBytes": 657464
   },
   {
     "id": "coastal-date-palm",
@@ -232,9 +232,23 @@
       92
     ],
     "description": "Scarred leaning trunk, persistent dry skirt and folded, tapered individual leaflets.",
-    "parts": 72,
+    "parts": 85,
     "movableParts": [],
-    "runtimeBytes": 914652
+    "runtimeBytes": 1032792
+  },
+  {
+    "id": "garden-laurel",
+    "sourceImages": [
+      10,
+      17,
+      46,
+      47,
+      78
+    ],
+    "description": "Broadleaf garden shrub with branching woody stems, folded evergreen leaves and pale new growth.",
+    "parts": 81,
+    "movableParts": [],
+    "runtimeBytes": 314800
   },
   {
     "id": "sycamore-distant",
@@ -247,9 +261,9 @@
       112
     ],
     "description": "Forking avenue sycamore with a lightly pruned crown and layered sprays of photographed leaves.",
-    "parts": 9,
+    "parts": 37,
     "movableParts": [],
-    "runtimeBytes": 519824
+    "runtimeBytes": 561704
   },
   {
     "id": "palm-distant",
@@ -261,9 +275,9 @@
       92
     ],
     "description": "Scarred leaning trunk, persistent dry skirt and folded, tapered individual leaflets.",
-    "parts": 30,
+    "parts": 34,
     "movableParts": [],
-    "runtimeBytes": 103304
+    "runtimeBytes": 107052
   },
   {
     "id": "park-sycamore",
@@ -276,9 +290,9 @@
       112
     ],
     "description": "Forking avenue sycamore with a lightly pruned crown and layered sprays of photographed leaves.",
-    "parts": 38,
+    "parts": 83,
     "movableParts": [],
-    "runtimeBytes": 629836
+    "runtimeBytes": 731828
   },
   {
     "id": "park-sycamore-distant",
@@ -291,8 +305,8 @@
       112
     ],
     "description": "Forking avenue sycamore with a lightly pruned crown and layered sprays of photographed leaves.",
-    "parts": 11,
+    "parts": 47,
     "movableParts": [],
-    "runtimeBytes": 540176
+    "runtimeBytes": 594264
   }
 ]

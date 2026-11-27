@@ -339,5 +339,8 @@
   },
   "receiving-carton": {
     "file": "receiving-carton.glb"
+  },
+  "garden-laurel": {
+    "file": "garden-laurel.glb"
   }
 }

@@ -1,5 +1,34 @@
 /* Every placement keeps its original trunk collision. Both Blender LODs share the same root and bearings. */
 const CITY_FOREST={species:[],sectors:[],next:0};
+function plantVergeGrasses(){
+ const grass=new THREE.MeshStandardMaterial({vertexColors:true,roughness:.94,side:THREE.DoubleSide,envMapIntensity:.25});
+ for(const b of blocks){
+  const meadow=b.i===13&&b.j>=9&&b.j<=11;
+  if(!meadow&&!b.park)continue;
+  const vertices=[],colors=[],faces=[],half=(b.x1-b.x0)/2-SW-.72;
+  const cx=(b.x0+b.x1)/2,cz=(b.z0+b.z1)/2;
+  let seed=7711+b.i*673+b.j*139;
+  const sample=()=>{seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed/4294967296;};
+  for(let k=0;k<(meadow?188:46);k++){
+   const dx=(2*sample()-1)*half,dz=(2*sample()-1)*half;
+   if(!meadow&&(Math.abs(dx)<4||Math.abs(dz)<4||Math.abs(Math.abs(dx)-Math.abs(dz))<2.5||Math.hypot(dx,dz)<11))continue;
+   const x=cx+dx,z=cz+dz,h=(meadow?.10:.056)*(1+sample()*1.7),shift=sample();
+   for(let j=0;j<11;j++){
+    const az=sample()*6.283,r=(.03+.14*sample())*(meadow?1:.7);
+    const xx=x+Math.cos(az)*r,zz=z+Math.sin(az)*r,vx=Math.sin(az)*.012,vz=-Math.cos(az)*.012;
+    const reach=h*(.37+sample()*.5),rise=h*(.64+sample()*.46),tx=xx+Math.cos(az)*reach,tz=zz+Math.sin(az)*reach,id=vertices.length/3;
+    vertices.push(xx-vx,.174,zz-vz,xx+vx,.174,zz+vz,xx+vx*.49+Math.cos(az)*reach*.29,.174+rise*.68,zz+vz*.49+Math.sin(az)*reach*.29,tx,.174+rise,tz);
+    const hue=shift+.19*sample();colors.push(.098,.105,.041,.098,.105,.041,.17+hue*.071,.18+hue*.054,.055,.22+hue*.107,.23+hue*.081,.079);
+    faces.push(id,id+1,id+2,id,id+2,id+3);
+   }
+  }
+  if(!faces.length)continue;
+  const g=new THREE.BufferGeometry();
+  g.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));g.setAttribute('color',new THREE.Float32BufferAttribute(colors,3));
+  g.setIndex(faces);g.computeVertexNormals();g.computeBoundingSphere();
+  const mesh=new THREE.Mesh(g,grass);mesh.receiveShadow=true;mesh.matrixAutoUpdate=false;scene.add(mesh);
+ }
+}
 function snowOnLeaves(sh){
  if(!sh.fragmentShader.includes('#include <lights_fragment_end>'))return;
  sh.uniforms.uSnowCover=climateUniforms.uSnowCover;sh.uniforms.uCover=climateUniforms.uCover;
@@ -22,7 +51,7 @@ function forestWind(material,palm){
    '#include <begin_vertex>',`#include <begin_vertex>
     vec3 az=instanceMatrix[3].xyz+modelMatrix[3].xyz;
     float sway=sin(treeTime*1.52+az.x*.071+az.z*.093+position.x*.61);
-    float weight=smoothstep(${palm?'6.60,8.70':'2.80,5.85'},position.y);
+    float weight=smoothstep(${palm?'8.30,10.65':'2.80,5.85'},position.y);
     vec2 localWind=vec2(dot(uWind,normalize(instanceMatrix[0].xz)),dot(uWind,normalize(instanceMatrix[2].xz)));
     transformed.xz+=localWind*(.012+.015*sway)*weight;`);
   snowOnLeaves(sh);
@@ -38,16 +67,28 @@ function forestPrototype(root,palm){
   const geo=node.geometry.clone().applyMatrix4(new THREE.Matrix4().multiplyMatrices(inverse,node.matrixWorld));
   const mat=node.material.clone();
   const foliage=mat.alphaTest>0||mat.name.includes('palm leaf')||mat.name.includes('palm skirt');
-  if(palm&&foliage&&mat.alphaTest===0)mat.color.multiplyScalar(.57);
+  if(palm&&foliage&&mat.alphaTest===0)mat.color.multiplyScalar(.81);
   let depth=null;
   if(foliage){
    forestWind(mat,palm);
-   if(mat.alphaTest>0)mat.alphaTest=.34;
+   if(mat.alphaTest>0)mat.alphaTest=palm?.36:.42;
    const wind=mat.onBeforeCompile;
    mat.onBeforeCompile=sh=>{
     wind(sh);
-    sh.fragmentShader=sh.fragmentShader.replace('#include <lights_fragment_end>',
-     '#include <lights_fragment_end>\nreflectedLight.indirectDiffuse+=diffuseColor.rgb*vec3(.12,.14,.069)*(.05+.95*uDay);');
+    sh.uniforms.leafSun=climateUniforms.uSun;sh.uniforms.leafSunlight=climateUniforms.uSunlight;
+    sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vCrownNormal;')
+     .replace('#include <project_vertex>',`#include <project_vertex>
+      vec3 radial=vec3(position.x, (position.y-${palm?'10.30':'4.80'})*1.42, position.z);
+      vCrownNormal=normalize(mat3(modelMatrix)*mat3(instanceMatrix)*(radial+vec3(.01,.06,.01)));`);
+    sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\nvarying vec3 vCrownNormal;uniform vec3 leafSun,leafSunlight;')
+     .replace('#include <normal_fragment_maps>',`#include <normal_fragment_maps>
+      vec3 crownN=normalize(vCrownNormal);
+      normal=normalize(normal*.67+(mat3(viewMatrix)*crownN)*.33);`)
+     .replace('#include <lights_fragment_end>',`#include <lights_fragment_end>
+      float facing=.5+.5*dot(crownN,leafSun);
+      float through=pow(max(0.,dot(normalize(vCanopy.xyz-cameraPosition),leafSun)),2.);
+      vec3 skyFill=vec3(.17,.20,.107)*(.46+.54*max(crownN.y,0.))*uDay;
+      reflectedLight.indirectDiffuse+=diffuseColor.rgb*(skyFill+leafSunlight*vec3(.32,.39,.13)*facing*(.27+.73*through));`);
    };
    depth=new THREE.MeshDepthMaterial({depthPacking:THREE.RGBADepthPacking,map:mat.map,alphaTest:mat.alphaTest,side:THREE.DoubleSide});
    forestWind(depth,palm);
@@ -89,7 +130,7 @@ function loadForestSpecies(species){
     const crown=items[i][3]==='golden'?1.24:1;
     placement.scale.set(crown*scale*(1+.08*v),scale*(1-.065*v),crown*scale*(1+.06*v));
     placement.updateMatrix();placement.matrix.toArray(matrices.array,i*16);
-    if(items[i][3]==='golden')shade.setRGB(1.54,1.13,.62);else shade.setRGB(.86+v*.055,.89+v*.052,.81+v*.055);
+    if(items[i][3]==='golden')shade.setRGB(1.48,1.13,.68);else shade.setRGB(.94+v*.089,.98+v*.051,.86+v*.066);
     shade.toArray(colors.array,i*3);
    }
    const lods=prototypes.slice(mature?2:0,mature?4:2).map(parts=>{

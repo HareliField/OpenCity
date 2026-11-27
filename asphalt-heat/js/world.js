@@ -115,8 +115,10 @@ const FACMAIN=`#include <map_fragment>
   // baked highlights on blinds that produced a checkerboard across otherwise continuous glazing.
   if(family>2.5){
    float glaze=dot(photo,vec3(.2126,.7152,.0722));
-   vec3 tint=mix(vec3(.053,.083,.101),vec3(.18,.21,.218),smoothstep(.02,.63,glaze));
-   photo=mix(photo,tint,.80*glass);
+   bool bronze=mod(floor(vFac.x*117.),3.)<.5;
+   vec3 coating=bronze?vec3(.085,.063,.047):vec3(.045,.063,.066);
+   vec3 tint=coating*mix(.68,2.65,smoothstep(.02,.65,glaze));
+   photo=mix(photo,tint,.74*glass);
   }
   diffuseColor.rgb=photo*mix(vec3(.94),vColor,.16);
   emitW=(emitW*mix(.25,2.6,uLamp)+photo*.065)*glass;
@@ -132,14 +134,48 @@ function facadeMat(name,meters,o={}){const m=pbr(name,meters,Object.assign({env:
  m.customProgramCacheKey=()=>'facade';return m;}
 /* ---- materials ---- */
 const MAT={};
+function fieldSurface(){
+ const mat=makeWet(pbr('garden-lawn',1,{rough:.96,env:.28,ns:.46}),{wet:.14});
+ const soil=T('pier-sand','d',1,true),wet=mat.onBeforeCompile;
+ mat.onBeforeCompile=sh=>{
+  wet(sh);sh.uniforms.fieldSoil={value:soil};
+  sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\nuniform sampler2D fieldSoil;')
+   .replace('#include <map_fragment>',`#ifdef USE_MAP
+    vec2 p=vWP.xz;
+    float field=fbm2(p*.11)+.24*(fbm2(p*.73)-.5);
+    vec3 turf=mapTexelToLinear(texture2D(map,p*.297)).rgb;
+    vec3 crossed=mapTexelToLinear(texture2D(map,mat2(.77,-.64,.64,.77)*p*.214)).rgb;
+    vec3 bare=mapTexelToLinear(texture2D(fieldSoil,p*.67)).rgb*vec3(.80,.71,.56);
+    vec3 grass=mix(turf,crossed,smoothstep(.27,.70,fbm2(p*.46)));
+    grass*=mix(vec3(.89,.94,.73),vec3(1.12,1.02,.78),smoothstep(.33,.69,field));
+    diffuseColor.rgb*=mix(grass,bare,smoothstep(.53,.72,field)*.72);
+    #endif`);
+ };
+ mat.customProgramCacheKey=()=>'patchy-coastal-turf';return mat;
+}
+function builtUpRoof(){
+ const mat=makeWet(pbr('quay-roof',1.82,{rough:.94,env:.34,ns:.47}),{wet:.22});
+ const wet=mat.onBeforeCompile;
+ mat.onBeforeCompile=sh=>{
+  wet(sh);
+  sh.fragmentShader=sh.fragmentShader.replace('#include <map_fragment>',`#include <map_fragment>
+   float terrace=floor(vWP.y*.24);
+   vec2 p=vWP.xz+vec2(terrace*2.69,terrace*1.13);
+   float sheet=fract((p.x+.027*sin(p.y*.64))/1.19);
+   float joint=1.-smoothstep(.005,.029,min(sheet,1.-sheet));
+   float stains=smoothstep(.43,.74,fbm2(p*vec2(.18,.089))+.17*(fbm2(p*.91)-.5));
+   diffuseColor.rgb*=mix(vec3(1.05,1.02,.98),vec3(.69,.67,.62),stains)*(1.-joint*.23);`);
+ };
+ mat.customProgramCacheKey=()=>'weathered-roof-membrane';return mat;
+}
 function initMaterials(){
  loadFacadePhotos();
- MAT.asphalt=makeWet(pbr('street-asphalt',1,{rough:1,rmap:1,ns:.86,env:.7}),{tint:1,road:true,wet:1});
- MAT.sidewalk=makeWet(pbr('sidewalk',3.2,{rough:.95,env:.76,rmap:1}),{wet:.83});
+ MAT.asphalt=makeWet(pbr('street-asphalt',.83,{color:0xd7d1c8,rough:.96,rmap:1,ns:.58,env:.54}),{tint:1,road:true,wet:1});
+ MAT.sidewalk=makeWet(pbr('sidewalk',3.2,{rough:.95,env:.76,rmap:1}),{wet:.83,paving:true});
  MAT.plaza=makeWet(pbr('plaza',3,{rough:.8,env:.6}),{wet:.6});
  MAT.curb=makeWet(pbr('concrete',2,{color:0xb8b3aa,rough:.85}),{wet:.65});
- MAT.sand=pbr('sand',4,{rough:1,env:.3});MAT.grass=makeWet(pbr('grass',4,{rough:1,env:.25}),{wet:.12});
- MAT.planks=makeWet(pbr('planks',3,{rough:.85}),{wet:.54});MAT.roof=makeWet(pbr('roof_gravel',4,{rough:1,env:.3}),{wet:.18});MAT.roofClay=makeWet(pbr('roof_clay',2.2,{rough:.85}),{wet:.32});
+ MAT.sand=pbr('sand',4,{rough:1,env:.3});MAT.grass=fieldSurface();
+ MAT.planks=makeWet(pbr('planks',3,{rough:.85}),{wet:.54});MAT.roof=builtUpRoof();MAT.roofClay=makeWet(pbr('roof_clay',2.2,{rough:.85}),{wet:.32});
  MAT.trim=pbr('concrete',2.5,{color:0xd6d0c4,rough:.8});MAT.stone=pbr('stone_light',3,{rough:.82,ns:.44,color:0xd8c9b4});MAT.column=pbr('stone_light',3.4,{rough:.84,ns:.22,color:0xc3b6a3});MAT.darkMetal=new THREE.MeshStandardMaterial({color:lin(0x26282b),roughness:.45,metalness:.8});
  MAT.metal=new THREE.MeshStandardMaterial({color:lin(0x9aa0a6),roughness:.35,metalness:.85});MAT.whiteMetal=new THREE.MeshStandardMaterial({color:lin(0xe8e8e6),roughness:.4,metalness:.3});
  MAT.wood=new THREE.MeshStandardMaterial({color:lin(0x6a4a32),roughness:.8});MAT.glassDark=new THREE.MeshStandardMaterial({color:0x080a0c,roughness:.05,metalness:.9});
@@ -292,6 +328,13 @@ function splitLots(R,minW){const w=R.x1-R.x0,d=R.z1-R.z0;let lots=[[R.x0,R.x1,R.
  const cut=(arr,ax)=>{const out=[];for(const L of arr){const len=ax?L[1]-L[0]:L[3]-L[2];if(len<minW*2+1){out.push(L);continue;}const m=(ax?L[0]:L[2])+len*srange(.38,.62);if(ax)out.push([L[0],m-.4,L[2],L[3]],[m+.4,L[1],L[2],L[3]]);else out.push([L[0],L[1],L[2],m-.4],[L[0],L[1],m+.4,L[3]]);}return out;};
  lots=cut(lots,1);lots=cut(lots,0);if(srnd()<.5)lots=cut(lots,1);return lots.map(L=>({x0:L[0],x1:L[1],z0:L[2],z1:L[3]}));}
 const FACLIST={oldtown:['brick_red','brick_dark','brick_orange','brick_tan','brick_red'],midtown:['concrete','plaster','brick_tan','stucco','panels','stone_light'],downtown:['tiles','stone_dark','panels','concrete','stone_light'],docks:['brick_factory','corrugated','concrete'],beach:['stucco','stucco','plaster']};
+// The three roofs seen from the Palm Street stop line occupy ordinary buildable lots.
+// Heights include the occupied setback storey. Its centred footprint keeps the stair open.
+const PALM_TOWERS=[
+ {i:8,x:532,z:424,top:62,finish:'stone_dark',tint:0xc6b9a9,style:2,bay:2.32,inset:.10},
+ {i:9,x:598,z:427,top:55,finish:'concrete',tint:0xe2d9c9,style:0,bay:2.85,inset:.14},
+ {i:10,x:659,z:405,top:66,finish:'panels',tint:0xc7d2d4,style:2,bay:2.54,inset:.12}
+];
 function fillDistrict(B,R,dist){
  R={x0:Math.max(R.x0,B.x0+SW),x1:Math.min(R.x1,B.x1-SW),z0:Math.max(R.z0,B.z0+SW),z1:Math.min(R.z1,B.z1-SW)};
  if(R.x1-R.x0<4||R.z1-R.z0<4)return;
@@ -316,17 +359,29 @@ function fillDistrict(B,R,dist){
    const tall=dc<170?srange(.6,1):srange(.3,.7),podium=7.7,fh=3.8;
    const tower=Math.round((podium+tall*srange(76,162))/fh)*fh;
    const bayside=B.i>=8&&B.i<=11,parcel=Math.abs(Math.floor(L.x0*.43+L.z0*.77));
-   const skylineParcel=bayside&&B.j<8&&((B.i===9&&B.j===5)||(B.i===10&&B.j===6)||(B.i===11&&B.j===5))&&L.x0<cx&&L.z0<cz;
-   const edge=bayside&&!skylineParcel;
+   const profile=B.j===6&&PALM_TOWERS.find(t=>t.i===B.i&&withinRect(L,t.x,t.z));
+   const shoulder=bayside&&B.j===5&&(B.i===9||B.i===11)&&(L.x0+L.x1)/2<cx;
+   const edge=bayside&&!profile&&!shoulder;
    const westEdge=B.i===5&&B.j===3||(B.i===4||B.i===5)&&B.j===2;
-   const cap=bayside?65+parcel%12+(B.i===9&&B.j===5?14:0):westEdge?78+parcel%13:tower;
-   const h=edge?podium+fh*(1+parcel%(B.j>=8?2:4)):Math.min(tower,cap);
+   const cap=shoulder?(B.i===11?54:37)+parcel%8:westEdge?78+parcel%13:tower;
+   const h=profile?profile.top-fh:edge?podium+fh*(1+parcel%(B.j>=8?2:4)):Math.min(tower,cap);
    const podiumShell=building(B,L,podium,{mat:MAT.fac.stone_dark,style:0,fh:3.3,bay:4,shops:true,kind:'tower',podium:true});
-   const ix=(L.x1-L.x0)*srange(.016,.075),iz=(L.z1-L.z0)*srange(.016,.075),T2={x0:L.x0+ix,x1:L.x1-ix,z0:L.z0+iz,z1:L.z1-iz};const mat=MAT.fac[spick(FACLIST.downtown)];
+   const ix=(L.x1-L.x0)*srange(.016,.075),iz=(L.z1-L.z0)*srange(.016,.075),T2={x0:L.x0+ix,x1:L.x1-ix,z0:L.z0+iz,z1:L.z1-iz};const sampledFinish=spick(FACLIST.downtown),mat=MAT.fac[profile?profile.finish:sampledFinish];
    const towerStyle={style:srnd()<(edge?.24:.68)?2:0,fh,bay:srnd()<.56?(edge?2.68:1.8):3.2,top:h,tint:spick([0xffffff,0xdfe6ee,0xf2e8dc]),seed:srnd()};
+   if(profile)Object.assign(towerStyle,{style:profile.style,bay:profile.bay,tint:profile.tint});
    extendStoreys(podiumShell,T2,podium,h,mat,towerStyle);
-   roofDressing(T2,h,'tower',podiumShell.core?.opening);
-   if(h>70&&srnd()<.6){
+   roofDressing(T2,h,'tower',podiumShell.core?.opening,!!profile);
+   if(profile){
+    const dx=(T2.x1-T2.x0)*profile.inset,dz=(T2.z1-T2.z0)*profile.inset;
+    const capRect={x0:T2.x0+dx,x1:T2.x1-dx,z0:T2.z0+dz,z1:T2.z1-dz};
+    extendStoreys(podiumShell,capRect,h,profile.top,mat,{...towerStyle,style:2,bay:1.32});
+    roofDressing(capRect,profile.top,'office',podiumShell.core?.opening);
+    for(const level of podiumShell.levels){
+     if(level.h<=podium)continue;
+     const band=profile.i===9?MAT.trim:MAT.metal;
+     perimeterBand(band,level.rect,level.h-.21,level.h-.055,.09);
+    }
+   }else if(h>70&&srnd()<.6){
     const k=.18,T3={x0:T2.x0+(T2.x1-T2.x0)*k,x1:T2.x1-(T2.x1-T2.x0)*k,z0:T2.z0+(T2.z1-T2.z0)*k,z1:T2.z1-(T2.z1-T2.z0)*k},h3=h+(bayside?srange(3.5,6.1):srange(10,26));
     extendStoreys(podiumShell,T3,h,h3,mat,{style:2,fh,bay:1.6,top:h3,seed:srnd()});
     roofDressing(T3,h3,'tower',podiumShell.core?.opening);
@@ -655,7 +710,7 @@ function streetProps(B){const{x0,x1,z0,z1}=B;const dist=B.i===15&&B.j>=13?'docks
  }
  else if(dist!=='docks'&&dist!=='suburb')for(const e of[0,1,2,3])for(let t=9;t<44;t+=13)if(srnd()<.61){
   const [px,pz]=sideP(e,t,1.5),size=srange(.83,1.17);
-  const avenue=(B.i===9&&e===1||B.i===10&&e===3)&&B.j>=6&&B.j<=10;
+  const avenue=(B.i===9&&e===1&&B.j!==9&&B.j!==8||B.i===10&&e===3)&&B.j>=6&&B.j<=10;
   const dinerFront=B.i===10&&B.j===9&&e===2;
   if(avenue)PALMS.push([px,pz,size*1.10]);else if(!dinerFront)TREES.push([px,pz,size]);
  }}
@@ -801,15 +856,53 @@ function beachAreas(pierZ){
 
 function skyline(){
  harborHeadland();
+ // Continue the inland street grid below the skyline. From a high window the strip
+ // between the last playable intersection and the outer districts is visible.
+ const mainland=pbr('street-asphalt',7,{rough:.94,env:.28,color:0xaaa396});
+ topQuad(mainland,-940,W+HALF,-.048,-940,-HALF,1,null,false);
+ topQuad(mainland,-940,-HALF,-.048,-HALF,FREIGHT.z0,1,null,false);
+ const occupied=new Set();
  for(let k=0;k<130;k++){
   const a=srange(Math.PI*.6,Math.PI*1.9),r=srange(S*.62+30,S*.62+260);
-  const x=W/2+Math.cos(a)*r,z=W/2+Math.sin(a)*r;
-  if(x>W+40)continue;
+  const i=Math.floor((W/2+Math.cos(a)*r)/CELL),j=Math.floor((W/2+Math.sin(a)*r)/CELL);
+  const x=(i+.49)*CELL,z=(j+.51)*CELL,key=i+','+j;
+  if(i>=N)continue;
   const w=srange(16,38),d=srange(16,38),h=Math.round(srange(14,110)/4)*4;
   const mat=spick([MAT.fac.concrete,MAT.fac.tiles,MAT.fac.panels,MAT.fac.brick_red]),style=spick([0,1,2]);
-  if(z+d/2>FREIGHT.z0||x+w/2>-HALF-6&&x-w/2<W+150&&z+d/2>-HALF-6&&z-d/2<W+HALF+6)continue;
-  facadeBox(mat,x-w/2,x+w/2,0,h,z-d/2,z+d/2,{style,fh:3.6,bay:3,top:h});
-  topQuad(MAT.roof,x-w/2,x+w/2,h,z-d/2,z+d/2,4,null,false);
+  if(z+d/2>FREIGHT.z0||i>=0&&j>=0||occupied.has(key))continue;
+  occupied.add(key);
+  const r0={x0:x-w/2,x1:x+w/2,z0:z-d/2,z1:z+d/2};
+  const foothill=.42+.58*Math.max(Math.exp(-((x-284)**2+(z+170)**2)/103000),Math.exp(-((x+115)**2+(z-617)**2)/98000));
+  const top=Math.max(12,Math.round(h*foothill/3.6)*3.6);
+  const lower=top>34?top-(k%3+1)*3.6:top;
+  const tint=[0xd7d4c9,0xc6cdce,0xd8cfc6,0xc9c9c4][k%4];
+  facadeBox(mat,r0.x0,r0.x1,0,lower,r0.z0,r0.z1,{style,fh:3.6,bay:3,top:lower,tint,seed:k*.137%1});
+  topQuad(MAT.roof,r0.x0,r0.x1,lower,r0.z0,r0.z1,4,null,false);
+  if(lower<top){
+   const inset=.07+.044*(k%4),dx=w*inset,dz=d*inset;
+   facadeBox(mat,r0.x0+dx,r0.x1-dx,lower,top,r0.z0+dz,r0.z1-dz,{style:k%2?2:0,fh:3.6,bay:2.1,top,tint,seed:k*.193%1});
+   topQuad(MAT.roof,r0.x0+dx,r0.x1-dx,top,r0.z0+dz,r0.z1-dz,3,null,false);
+   plainBox(MAT.metal,x-w*.11,x+w*.17,top,top+2.1,z-d*.085,z+d*.18,{uvm:1});
+  }
+ }
+ for(let i=-7;i<N;i++)for(let j=-7;j<N;j++){
+  if(i>=0&&j>=0)continue;
+  const x=i*CELL,z=j*CELL;
+  topQuad(MAT.curb,x+HALF,x+CELL-HALF,.058,z+HALF,z+CELL-HALF,1.7,null,false);
+  if(occupied.has(i+','+j))continue;
+  const parcel=Math.abs(i*113+j*151+i*j*31);
+  if(parcel%7===0){
+   topQuad(MAT.grass,x+11,x+CELL-11,.083,z+11,z+CELL-11,1,null,false);
+   continue;
+  }
+  for(let n=0;n<2;n++){
+   const x0=x+11+n*21.5,x1=x0+17+parcel%4,z0=z+12+(n?parcel%4:0),z1=z+48+parcel%6;
+   const h=(2+(parcel+n*7)%(j<0&&x>140&&x<440?11:6))*3.45;
+   const finish=[MAT.fac.stucco,MAT.fac.brick_tan,MAT.fac.panels,MAT.fac.concrete][(parcel+n)%4];
+   facadeBox(finish,x0,x1,.061,h,z0,z1,{style:(parcel+n)%3,fh:3.45,bay:2.74,top:h,tint:0xd6d0c5,seed:(parcel+11*n)%103/103});
+   topQuad(MAT.roof,x0,x1,h,z0,z1,2,null,false);
+   plainBox(MAT.metal,x0+3.2,x0+5.7,h,h+1.29,z0+7.3,z0+9.22,{uvm:1});
+  }
  }
  for(const[x,z,sx,sz]of[[W/2,-HALF-.4,S+2,.8],[-HALF-.4,W/2,.8,S+2]])plainBox(MAT.trim,x-sx/2,x+sx/2,0,1.1,z-sz/2,z+sz/2,{uvm:2});
  for(const [a,b] of southWallSpans())plainBox(MAT.trim,a,b,0,1.1,FREIGHT.z0,FREIGHT.z0+.8,{uvm:2});

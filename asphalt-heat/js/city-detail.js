@@ -9,7 +9,15 @@ function detailPrototype(id){
  };
  const box=(color,x,y,z,w,h,d)=>part(new THREE.BoxGeometry(w,h,d),color,x,y,z);
  const drum=(color,x,y,z,top,foot,h)=>part(new THREE.CylinderGeometry(top,foot,h,12),color,x,y,z);
- if(id==='garden-sash-frame'){
+ if(id==='garden-laurel'){
+  for(let j=0;j<17;j++){
+   const turn=j*2.39996,r=(1-j/18)*.33;
+   const tuft=new THREE.IcosahedronGeometry(1,0).scale(.18+j%4*.012,.14+j%3*.016,.16+j%3*.013);
+   tuft.rotateY(turn);tuft.rotateZ(.13*Math.sin(turn));
+   part(tuft,[0x4b5338,0x515b3c,0x606a43,0x77764a][j%4],Math.cos(turn)*r,.35+j*.025,Math.sin(turn)*r);
+  }
+  drum(0x59523e,0,.16,0,.023,.042,.32);
+ }else if(id==='garden-sash-frame'){
   for(const sign of [-1,1]){
    box(0xc8c2b6,sign*.48,.5,0,.041,1,.73);
    box(0xc8c2b6,0,sign<0?.032:.968,0,1,.063,1);
@@ -129,11 +137,11 @@ function finishCityDetail(){
   mesh.receiveShadow=true;mesh.castShadow=!mesh.material.transparent;mesh.frustumCulled=true;batch.mesh=mesh;scene.add(mesh);
  }
 }
-function retailPhoto(index,M,x,y,z,w,h){
+function retailPhoto(index,M,x,y,z,w,h,room){
  const geo=new THREE.PlaneGeometry(w,h),uv=geo.attributes.uv;
  const u=index%4,v=3-Math.floor(index/4);
  for(let i=0;i<uv.count;i++)uv.setXY(i,(u+.008+uv.getX(i)*.984)/4,(v+.008+uv.getY(i)*.984)/4);
- geo.translate(x,y,z);if(M)geo.applyMatrix4(M);addGeo(CITY_DETAIL.shopFinish,geo,false);
+ geo.translate(x,y,z);if(M)geo.applyMatrix4(M);addGeo(roomLightMaterial(CITY_DETAIL.shopFinish,room),geo,false);
 }
 function framedShopPrint(index,M,x,y,z,w,h){
  plainBox(INTERIORS.materials.darkWood,x-w/2-.030,x+w/2+.030,y-h/2-.030,y+h/2+.030,z-.055,z,{M});

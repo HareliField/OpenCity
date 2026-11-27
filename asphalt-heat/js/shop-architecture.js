@@ -115,9 +115,9 @@ function riversideFascia(row,M,u0,u1){
 
 // The mirror plane is shared by coplanar adjoining storefronts. The actual street across the
 // glass appears through a separate clipped camera. The shop interior still draws through it.
-function rememberShopGlass(M,u0,u1){
- const center=lpt(M,(u0+u1)/2,.035),normal=new V3(M.elements[8],0,M.elements[10]).normalize();
- SHOP_ELEVATIONS.frontages.push({center,normal,half:(u1-u0)/2});
+function rememberShopGlass(M,u0,u1,depth=.035,room=null){
+ const center=lpt(M,(u0+u1)/2,depth),normal=new V3(M.elements[8],0,M.elements[10]).normalize();
+ SHOP_ELEVATIONS.frontages.push({center,normal,half:(u1-u0)/2,room});
 }
 
 const SHOP_REFLECTION={
@@ -125,15 +125,22 @@ const SHOP_REFLECTION={
  eye:new V3(),orientation:new THREE.Quaternion(),direction:new V3(),relative:new V3(),clip:new V3(),
  uniforms:{shopMirror:{value:null},shopProject:{value:new THREE.Matrix4()},shopPlane:{value:new THREE.Vector4()},shopMirrorOn:{value:0}}
 };
-function shopGlazing(){
- const m=new THREE.MeshStandardMaterial({color:lin(0xa2b3ba),metalness:.69,roughness:.095,
-  envMapIntensity:.86,transparent:true,opacity:.24,depthWrite:false,side:THREE.DoubleSide});
+function shopGlazing(silvered=false,coating=null){
+ const curtain=coating!==null,tint=coating??(silvered?0xd1d2cb:0xa2b3ba);
+ const m=new THREE.MeshStandardMaterial({color:lin(tint),metalness:silvered?.95:curtain?.46:.69,roughness:silvered?.042:curtain?.14:.095,
+  envMapIntensity:curtain?1.05:silvered?1.12:.86,transparent:!silvered,opacity:silvered?1:curtain?.47:.24,depthWrite:silvered,
+  side:curtain?THREE.FrontSide:THREE.DoubleSide});
  m.onBeforeCompile=sh=>{
   Object.assign(sh.uniforms,SHOP_REFLECTION.uniforms);
   sh.vertexShader=sh.vertexShader.replace('#include <common>',
    '#include <common>\nuniform mat4 shopProject;varying vec4 shopUV;varying vec3 shopWorld;')
    .replace('#include <fog_vertex>',
-   '#include <fog_vertex>\nvec4 sw=modelMatrix*vec4(transformed,1.);shopWorld=sw.xyz;shopUV=shopProject*sw;');
+   `#include <fog_vertex>
+   vec4 sw=vec4(transformed,1.);
+   #ifdef USE_INSTANCING
+    sw=instanceMatrix*sw;
+   #endif
+   sw=modelMatrix*sw;shopWorld=sw.xyz;shopUV=shopProject*sw;`);
   sh.fragmentShader=sh.fragmentShader.replace('#include <common>',
    '#include <common>\nuniform sampler2D shopMirror;uniform vec4 shopPlane;uniform float shopMirrorOn;varying vec4 shopUV;varying vec3 shopWorld;')
    .replace('#include <tonemapping_fragment>',`
@@ -143,28 +150,33 @@ function shopGlazing(){
    float area=1.-smoothstep(.24,.37,abs(dot(shopPlane.xyz,shopWorld)+shopPlane.w));
    vec3 viewN=(viewMatrix*vec4(shopPlane.xyz,0.)).xyz;
    float mirror=shopMirrorOn*step(.96,abs(dot(viewN,normal)))*area*rim*step(0.,shopUV.w);
-   if(mirror>.012)gl_FragColor.rgb=mix(gl_FragColor.rgb,texture2D(shopMirror,coord).rgb,.92*mirror);
-   gl_FragColor.a=mix(.16+.40*fr,.245+.57*fr,mirror);
+   if(mirror>.012)gl_FragColor.rgb=mix(gl_FragColor.rgb,texture2D(shopMirror,coord).rgb*${curtain?'mix(vec3(1.),diffuseColor.rgb,.23)':'vec3(1.)'},.92*mirror);
+   gl_FragColor.a=${silvered?'1.':curtain?'mix(.47+.35*fr,.42+.48*fr,mirror)':'mix(.079+.57*fr,.112+.69*fr,mirror)'};
    #include <tonemapping_fragment>`);
  };
- m.customProgramCacheKey=()=>'shop-planar-glass';
+ m.customProgramCacheKey=()=>silvered?'silvered-shop-mirror':curtain?'coated-curtain-glass':'shop-planar-glass';
  return m;
 }
 function updateShopReflection(t){
  const r=SHOP_REFLECTION,u=r.uniforms;
- if(QUALITY.level<2||camera.position.y<-.2||camera.position.y>22){u.shopMirrorOn.value=0;return;}
+ if(QUALITY.level<2||camera.position.y<-.2){u.shopMirrorOn.value=0;return;}
  camera.getWorldDirection(r.direction);
  let best=null,bestDistance=44;
- for(const f of SHOP_ELEVATIONS.frontages){
+ const consider=f=>{
+  if(f.room&&roomLightAt(f.room,camera.position)===1)return;
   const rel=r.relative.copy(camera.position).sub(f.center),ahead=rel.dot(f.normal);
-  if(ahead<.18||ahead>bestDistance)continue;
+  if(ahead<.18||ahead>bestDistance)return;
   const along=rel.x*f.normal.z-rel.z*f.normal.x,extra=Math.max(0,Math.abs(along)-f.half);
-  const d=Math.hypot(ahead,extra);
-  if(d>=bestDistance)continue;
+  const y=clamp(camera.position.y,f.y0??.35,f.h??3.45),d=Math.hypot(ahead,extra,camera.position.y-y);
+  if(d>=bestDistance)return;
   rel.copy(f.center);rel.x+=clamp(along,-f.half,f.half)*f.normal.z;rel.z-=clamp(along,-f.half,f.half)*f.normal.x;
-  rel.y=2;rel.sub(camera.position);
-  if(rel.dot(r.direction)<-1)continue;
+  rel.y=y;rel.sub(camera.position);
+  if(rel.dot(r.direction)<-1)return;
   best=f;bestDistance=d;
+ };
+ if(camera.position.y<22)for(const f of SHOP_ELEVATIONS.frontages)consider(f);
+ for(const block of CONSTRUCTION.near){
+  for(const plane of block.curtainFaces||[])consider(plane);
  }
  if(!best){u.shopMirrorOn.value=0;return;}
  const target=REFL.rt;
@@ -185,10 +197,10 @@ function updateShopReflection(t){
  u.shopMirror.value=r.rt.texture;u.shopMirrorOn.value=1;
 }
 
-function shopNotice(index,M,x,y,z,w,h){
+function shopNotice(index,M,x,y,z,w,h,room){
  const g=new THREE.PlaneGeometry(w,h),uv=g.attributes.uv,across=index%3,up=1-Math.floor(index/3);
  for(let i=0;i<uv.count;i++)uv.setXY(i,(across+.01+uv.getX(i)*.98)/3,(up+.01+uv.getY(i)*.98)/2);
- g.translate(x,y,z);g.applyMatrix4(M);addGeo(SHOP_ELEVATIONS.prints,g,false);
+ g.translate(x,y,z);g.applyMatrix4(M);addGeo(roomLightMaterial(SHOP_ELEVATIONS.prints,room),g,false);
 }
 function dressShopDisplay(row,M,u0,u1){
  const width=u1-u0,center=(u0+u1)/2,yaw=Math.atan2(M.elements[8],M.elements[10]);
@@ -224,51 +236,240 @@ function dressShopDisplay(row,M,u0,u1){
 const SHOP_ROOMS=[],ROOM_LIGHT_MATERIALS=new WeakMap();
 function roomLightAt(room,p){
  const dx=p.x-room.x,dz=p.z-room.z,u=dx*room.n.z-dz*room.n.x,v=-(dx*room.n.x+dz*room.n.z);
- if(Math.abs(u)>room.w/2+.05||v<-.18||v>room.d+.05||p.y<room.y-.1||p.y>room.y+3.54)return 1;
- const depthLoss=clamp(v/(room.d*.90),0,1);
- return clamp(.83-.43*depthLoss-.12*(1-clamp((room.w/2-Math.abs(u))/.85,0,1)),.30,.84);
+ if(Math.abs(u)>room.w/2+.18||v<-.21||v>room.d+.16||p.y<room.y-.18||p.y>room.y+room.height+.18)return 1;
+ const sky=.18+.58/(1+.23*Math.max(0,v)**1.52);
+ return clamp(sky-.085*(1-clamp((room.w/2-Math.abs(u))/.85,0,1)),.12,.82);
 }
-function shopLightingRoom(M,u0,u1,d,y=.17){
- const pt=lpt(M,(u0+u1)/2,0),room={x:pt.x,z:pt.z,w:u1-u0,d,y,n:new V3(M.elements[8],0,M.elements[10])};
+function shopLightingRoom(M,u0,u1,d,y=.17,height=3.52){
+ const pt=lpt(M,(u0+u1)/2,0),room={x:pt.x,z:pt.z,w:u1-u0,d,y,height,n:new V3(M.elements[8],0,M.elements[10]),lamps:[]};
+ room.uniforms={
+  shopOrigin:{value:new THREE.Vector4(room.x,y,room.z,height)},shopExtent:{value:new THREE.Vector4(room.n.x,room.n.z,room.w,d)},
+  shopField:{value:null},shopGrid:{value:new V3(1,1,1)},shopPower:{value:1},
+  shopActorLamps:{value:INTERIORS.lights.map(light=>light.position)}
+ };
  SHOP_ROOMS.push(room);return room;
 }
-function shopExposure(p){
- let light=1;
- for(const room of SHOP_ROOMS)light=Math.min(light,roomLightAt(room,p));
- return light;
-}
-function roomLightMaterial(mat,factor=null){
+function shopAt(p){return SHOP_ROOMS.find(room=>roomLightAt(room,p)<1);}
+function roomLightMaterial(mat,room){
+ if(!room)return mat;
  let variants=ROOM_LIGHT_MATERIALS.get(mat);
  if(!variants){variants=new Map();ROOM_LIGHT_MATERIALS.set(mat,variants);}
- const key=factor===null?'varying':Math.round(factor*12);
- if(variants.has(key))return variants.get(key);
- const shaded=mat.clone(),multiply=factor===null?'vRoomIrradiance':(key/12).toFixed(4);
- const old=mat.onBeforeCompile;
+ if(variants.has(room))return variants.get(room);
+ const shaded=mat.clone(),old=mat.onBeforeCompile,constant=typeof room==='number';
  shaded.onBeforeCompile=sh=>{
   old.call(shaded,sh);
-  if(factor===null){
-   sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nattribute float roomIrradiance;varying float vRoomIrradiance;')
-    .replace('#include <begin_vertex>','#include <begin_vertex>\nvRoomIrradiance=roomIrradiance;');
-   sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\nvarying float vRoomIrradiance;');
+  if(constant){
+   sh.fragmentShader=sh.fragmentShader.replace('#include <aomap_fragment>',
+    '#include <aomap_fragment>\nreflectedLight.indirectDiffuse*='+room.toFixed(4)+';reflectedLight.indirectSpecular*='+(.32+.68*room).toFixed(4)+';');
+   return;
   }
-  sh.fragmentShader=sh.fragmentShader.replace('#include <aomap_fragment>',
-   '#include <aomap_fragment>\nreflectedLight.indirectDiffuse*='+multiply+';reflectedLight.indirectSpecular*=mix(.32,1.,'+multiply+');');
+  Object.assign(sh.uniforms,room.uniforms);
+  if(mat.isMeshBasicMaterial){
+   sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\nuniform float shopPower;')
+    .replace('#include <color_fragment>','#include <color_fragment>\ndiffuseColor.rgb*=mix(.034,1.,shopPower);');
+   return;
+  }
+  sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 vShopWorld;')
+   .replace('#include <project_vertex>',`#include <project_vertex>
+    vec4 shopVertex=vec4(transformed,1.);
+    #ifdef USE_INSTANCING
+     shopVertex=instanceMatrix*shopVertex;
+    #endif
+    vShopWorld=(modelMatrix*shopVertex).xyz;`);
+  sh.fragmentShader=sh.fragmentShader.replace('#include <common>',`#include <common>
+   varying vec3 vShopWorld;
+   uniform vec4 shopOrigin,shopExtent;
+   uniform vec3 shopGrid,shopActorLamps[3];
+   uniform float shopPower;
+   uniform sampler2D shopField;
+   vec4 shopSample(vec3 cell,float face){
+    vec2 lower=vec2(cell.x+face*shopGrid.x,cell.z+floor(cell.y)*shopGrid.z);
+    vec2 texSize=vec2(6.*shopGrid.x,shopGrid.y*shopGrid.z);
+    vec4 a=texture2D(shopField,lower/texSize),b=texture2D(shopField,(lower+vec2(0.,shopGrid.z))/texSize);
+    return vec4(4.,4.,4.,1.)*mix(a,b,fract(cell.y));
+   }`)
+   .replace('#include <lights_fragment_begin>',`
+    vec3 rel=vShopWorld-shopOrigin.xyz;
+    vec2 along=vec2(shopExtent.y,-shopExtent.x);
+    vec3 roomPoint=vec3(dot(rel.xz,along),rel.y,-dot(rel.xz,shopExtent.xy));
+    float inShop=step(abs(roomPoint.x),shopExtent.z*.5+.19)*step(-.21,roomPoint.y)*step(roomPoint.y,shopOrigin.w+.18)*step(-.21,roomPoint.z)*step(roomPoint.z,shopExtent.w+.18);
+    `+THREE.ShaderChunk.lights_fragment_begin.replace('getPointDirectLightIrradiance( pointLight, geometry, directLight );',`
+     getPointDirectLightIrradiance( pointLight, geometry, directLight );
+     {vec3 lampWorld=cameraPosition+(vec4(pointLight.position,0.)*viewMatrix).xyz;
+     float actorLamp=min(distance(lampWorld,shopActorLamps[0]),min(distance(lampWorld,shopActorLamps[1]),distance(lampWorld,shopActorLamps[2])));
+     directLight.color*=1.-inShop*(1.-step(.03,actorLamp));}`))
+   .replace('#include <aomap_fragment>',`
+    vec3 fieldUV=clamp(vec3(roomPoint.x/shopExtent.z+.5,roomPoint.y/shopOrigin.w,roomPoint.z/shopExtent.w),0.,1.);
+    vec3 cell=fieldUV*(shopGrid-1.)+vec3(.5,0.,.5);
+    cell.y=min(cell.y,shopGrid.y-1.001);
+    vec3 n=inverseTransformDirection(normal,viewMatrix);
+    vec4 vertical=shopSample(cell,2.+step(0.,n.y));
+    vec3 e=shopSample(cell,step(0.,n.x)).rgb*n.x*n.x+vertical.rgb*n.y*n.y+shopSample(cell,4.+step(0.,n.z)).rgb*n.z*n.z;
+    float aperture=.18+.58/(1.+.23*pow(max(roomPoint.z,0.),1.52));
+    float edge=smoothstep(0.,.82,shopExtent.z*.5-abs(roomPoint.x));
+    float ambient=mix(1.,aperture*(.86+.14*edge)*vertical.a,inShop);
+    reflectedLight.indirectDiffuse=reflectedLight.indirectDiffuse*ambient+material.diffuseColor*e*(shopPower*inShop);
+    reflectedLight.indirectSpecular*=mix(.33,1.,ambient);
+    #include <aomap_fragment>`);
  };
- shaded.customProgramCacheKey=()=>mat.customProgramCacheKey()+'-room-'+key;
- variants.set(key,shaded);return shaded;
-}
-function shadeRoomGeometry(room,geometry){
- const pos=geometry.attributes.position,p=new V3(),strength=new Float32Array(pos.count);
- for(let i=0;i<pos.count;i++){
-  p.fromBufferAttribute(pos,i);p.y=clamp(p.y,room.y,room.y+3.50);
-  strength[i]=roomLightAt(room,p);
- }
- geometry.setAttribute('roomIrradiance',new THREE.BufferAttribute(strength,1));
+ shaded.customProgramCacheKey=()=>mat.customProgramCacheKey()+(constant?'-room-level-'+room:'-shop-luminaires');
+ variants.set(room,shaded);return shaded;
 }
 function shadeFixture(node,x,y,z){
- const factor=shopExposure({x,y,z});
- if(factor>.95)return;
+ const room=shopAt({x,y,z});
+ if(!room)return;
  node.traverse(mesh=>{
-  if(mesh.isMesh&&mesh.material?.isMeshStandardMaterial)mesh.material=roomLightMaterial(mesh.material,factor);
+  if(mesh.isMesh&&mesh.material?.isMeshStandardMaterial)mesh.material=roomLightMaterial(mesh.material,room);
  });
+}
+
+// Ground-floor units share a texture of surveyed bounds, lamp positions and glazed sides.
+// A room index on the vertices lets many different units stay in one ordinary street draw call.
+const GROUND_LIGHTS={rows:[],materials:new WeakMap(),uniforms:{
+ groundSurvey:{value:null},surveyRows:{value:1},districtFeed:{value:new THREE.Vector4(1,1,1,1)}
+}};
+function registerGroundLight(r,base,ceiling,sides,p){
+ if(!renderer.capabilities.floatVertexTextures)return null;
+ const front=(side,span)=>sides.includes(side)?(span>=5.4?1:.22):0;
+ const width=r.x1-r.x0,depth=r.z1-r.z0,index=GROUND_LIGHTS.rows.length;
+ GROUND_LIGHTS.rows.push([r.x0,r.x1,r.z0,r.z1,p.x,ceiling-.25,p.z,base,
+  front('W',depth),front('E',depth),front('N',width),front('S',width)]);
+ return index;
+}
+function finishGroundLights(){
+ const rows=GROUND_LIGHTS.rows;if(!rows.length)return;
+ const texture=new THREE.DataTexture(new Float32Array(rows.flat()),3,rows.length,THREE.RGBAFormat,THREE.FloatType);
+ texture.minFilter=texture.magFilter=THREE.NearestFilter;texture.needsUpdate=true;
+ GROUND_LIGHTS.uniforms.groundSurvey.value=texture;GROUND_LIGHTS.uniforms.surveyRows.value=rows.length;
+ GROUND_LIGHTS.uniforms.retailActorLamps={value:INTERIORS.lights.map(l=>l.position)};
+}
+function markGroundLight(geometry,index){
+ if(index!=null)geometry.setAttribute('retailRoom',new THREE.Float32BufferAttribute(
+  new Float32Array(geometry.attributes.position.count).fill(index),1));
+ return geometry;
+}
+function groundLightMaterial(source,index){
+ if(index==null)return source;
+ const known=GROUND_LIGHTS.materials.get(source);if(known)return known;
+ const mat=source.clone(),compile=source.onBeforeCompile;
+ mat.onBeforeCompile=sh=>{
+  compile.call(mat,sh);Object.assign(sh.uniforms,GROUND_LIGHTS.uniforms);
+  const vary='varying vec4 unitRect,unitLamp,unitFront;varying vec3 unitPoint;';
+  sh.vertexShader=sh.vertexShader.replace('#include <common>','#include <common>\n'+vary+
+   'uniform sampler2D groundSurvey;uniform float surveyRows;attribute float retailRoom;')
+   .replace('#include <project_vertex>',`#include <project_vertex>
+    float row=(retailRoom+.5)/surveyRows;
+    unitRect=texture2D(groundSurvey,vec2(1./6.,row));unitLamp=texture2D(groundSurvey,vec2(.5,row));
+    unitFront=texture2D(groundSurvey,vec2(5./6.,row));unitPoint=(modelMatrix*vec4(transformed,1.)).xyz;`);
+  sh.fragmentShader=sh.fragmentShader.replace('#include <common>','#include <common>\n'+vary+
+   `uniform vec4 districtFeed;uniform vec3 retailActorLamps[3];
+    float retailPower(){vec2 eastSouth=step(vec2(${W/2}.),unitLamp.xz);
+     return mix(mix(districtFeed.x,districtFeed.y,eastSouth.x),mix(districtFeed.z,districtFeed.w,eastSouth.x),eastSouth.y);}`);
+  if(mat.isMeshBasicMaterial){
+   sh.fragmentShader=sh.fragmentShader.replace('#include <color_fragment>','#include <color_fragment>\ndiffuseColor.rgb*=mix(.032,1.,retailPower());');
+   return;
+  }
+  const lit=THREE.ShaderChunk.lights_fragment_begin.replace(
+   'getDirectionalDirectLightIrradiance( directionalLight, geometry, directLight );',`
+    getDirectionalDirectLightIrradiance( directionalLight, geometry, directLight );
+    if(insideUnit>.5){
+     vec3 ray=inverseTransformDirection(directLight.direction,viewMatrix);
+     vec2 sideT=mix(edgeDist.xz,edgeDist.yw,step(vec2(0.),ray.xz))/max(abs(ray.xz),vec2(.00001));
+     float xFirst=step(sideT.x,sideT.y),dist=min(sideT.x,sideT.y);
+     float open=mix(mix(unitFront.z,unitFront.w,step(0.,ray.z)),mix(unitFront.x,unitFront.y,step(0.,ray.x)),xFirst);
+     vec3 hit=unitPoint+ray*dist;
+     float gap=abs(mix(hit.x-(unitRect.x+unitRect.y)*.5,hit.z-(unitRect.z+unitRect.w)*.5,xFirst));
+     float door=1.-smoothstep(.54,.65,gap);
+     float head=mix(unitLamp.y-.29,unitLamp.w+2.16,door),sill=mix(unitLamp.w+.36,unitLamp.w,door);
+     float aperture=smoothstep(sill-.045,sill+.045,hit.y)*(1.-smoothstep(head-.045,head+.045,hit.y));
+     directLight.color*=open*aperture;
+    }`).replace('getPointDirectLightIrradiance( pointLight, geometry, directLight );',`
+     getPointDirectLightIrradiance( pointLight, geometry, directLight );
+     {vec3 lampAt=cameraPosition+(vec4(pointLight.position,0.)*viewMatrix).xyz;
+     float actorDistance=min(distance(lampAt,retailActorLamps[0]),min(distance(lampAt,retailActorLamps[1]),distance(lampAt,retailActorLamps[2])));
+     directLight.color*=1.-insideUnit*(1.-step(.03,actorDistance));}`);
+  sh.fragmentShader=sh.fragmentShader.replace('#include <lights_fragment_begin>',`
+    vec4 edgeDist=vec4(unitPoint.x-unitRect.x,unitRect.y-unitPoint.x,unitPoint.z-unitRect.z,unitRect.w-unitPoint.z);
+    float insideUnit=step(.002,min(min(edgeDist.x,edgeDist.y),min(edgeDist.z,edgeDist.w)))*
+                     step(unitLamp.w-.012,unitPoint.y)*step(unitPoint.y,unitLamp.y+.20);
+    `+lit);
+  sh.fragmentShader=sh.fragmentShader.replace('#include <aomap_fragment>',`
+    vec4 daylight=unitFront/(1.+.28*pow(max(vec4(0.),edgeDist),vec4(1.58)));
+    float sky=.13+.67*max(max(daylight.x,daylight.y),max(daylight.z,daylight.w));
+    vec3 toLamp=unitLamp.xyz-unitPoint;
+    float d2=dot(toLamp,toLamp),surface=max(0.,dot(inverseTransformDirection(normal,viewMatrix),normalize(toLamp+vec3(.0001))));
+    float lux=(.17+.83*surface)*smoothstep(-.14,.48,toLamp.y)*2.58/(1.+d2*.48);
+    reflectedLight.indirectDiffuse*=mix(1.,sky,insideUnit);reflectedLight.indirectSpecular*=mix(1.,.29+.71*sky,insideUnit);
+    reflectedLight.indirectDiffuse+=material.diffuseColor*vec3(1.,.846,.65)*lux*retailPower()*insideUnit;
+    #include <aomap_fragment>`);
+ };
+ mat.customProgramCacheKey=()=>source.customProgramCacheKey()+'-ordinary-retail';
+ GROUND_LIGHTS.materials.set(source,mat);return mat;
+}
+
+// Bake the six faces of a diffuse irradiance volume in linear light. It is sampled in
+// world metres, so a moved chair or a turning cabinet door sees the same pool as the floor.
+function prepareShopFields(){
+ finishGroundLights();
+ const furniture=[...INTERIORS.fixtures,...OUTDOOR_MODELS].filter(f=>
+  /bookcase|booksellers-table|pantry-shelf|hardware-stock-rack|washer|laundry-machine|counter|cooler|patisserie-case|record-browser|wardrobe|barber-chair|diner-booth|manicure-desk|nail-workstation/.test(f.id));
+ for(const room of SHOP_ROOMS){
+  const inside=p=>roomLightAt(room,p)<1;
+  const lamps=INTERIORS.emitters.filter(inside).map(lamp=>{
+   const color=lin(lamp.colour??(lamp.cool?0xf4f1df:0xffce95));
+   return {...lamp,color,intensity:lamp.intensity??(lamp.cool?1.15:1.35)};
+  });
+  room.municipal=lamps.some(l=>l.municipal);room.lamps=lamps;
+  const boxes=[];
+  for(const f of furniture){
+   const y=f.node?.position.y??f.y??room.y;
+   if(!inside({x:f.x,y,z:f.z}))continue;
+   const angle=f.node?.rotation.y??f.heading??0,cs=Math.abs(Math.cos(angle)),sn=Math.abs(Math.sin(angle));
+   const hx=(cs*f.dims[0]+sn*f.dims[2])*.47,hz=(sn*f.dims[0]+cs*f.dims[2])*.47;
+   boxes.push([f.x-hx,y+.04,f.z-hz,f.x+hx,y+f.dims[1]*.96,f.z+hz]);
+  }
+  const nx=Math.min(88,Math.max(5,Math.ceil(room.w/.40)+1)),nz=Math.min(74,Math.max(6,Math.ceil(room.d/.40)+1)),ny=9;
+  const data=new Uint8Array(nx*6*ny*nz*4),energy=new Float32Array(18);
+  for(let iy=0;iy<ny;iy++)for(let iz=0;iz<nz;iz++)for(let ix=0;ix<nx;ix++){
+   const u=(ix/(nx-1)-.5)*room.w,v=iz/(nz-1)*room.d;
+   const x=room.x+u*room.n.z-v*room.n.x,y=room.y+iy/(ny-1)*room.height,z=room.z-u*room.n.x-v*room.n.z;
+   energy.fill(0);
+   for(const lamp of lamps){
+    const dx=lamp.x-x,dy=lamp.y-y,dz=lamp.z-z,dist2=dx*dx+dy*dy+dz*dz;
+    const reach=lamp.reach??(lamp.cool?8.1:7.4);
+    if(dist2>=reach*reach)continue;
+    const inv=1/Math.sqrt(Math.max(.035,dist2));
+    let visibility=1;
+    for(const box of boxes){
+     const ax=(box[0]-x)/(dx||.00001),bx=(box[3]-x)/(dx||.00001);
+     const ay=(box[1]-y)/(dy||.00001),by=(box[4]-y)/(dy||.00001);
+     const az=(box[2]-z)/(dz||.00001),bz=(box[5]-z)/(dz||.00001);
+     const entry=Math.max(Math.min(ax,bx),Math.min(ay,by),Math.min(az,bz));
+     if(entry>.012&&entry<.97&&entry<Math.min(Math.max(ax,bx),Math.max(ay,by),Math.max(az,bz))){visibility=.18;break;}
+    }
+    const cutoff=(1-dist2/(reach*reach))**2;
+    const strength=lamp.intensity*cutoff/(.56+.22*dist2);
+    const beam=lamp.cool?.64+.36*clamp(dy*inv,0,1):.25+.75*clamp((dy*inv+.16)/.78,0,1);
+    const dirs=[-dx,dx,-dy,dy,-dz,dz];
+    for(let face=0;face<6;face++){
+     const light=strength*(.12+.88*visibility*beam*Math.max(0,dirs[face]*inv));
+     energy[3*face]+=lamp.color.r*light;energy[3*face+1]+=lamp.color.g*light;energy[3*face+2]+=lamp.color.b*light;
+    }
+   }
+   const wallEdge=Math.min(room.w*.5-Math.abs(u),room.d-v);
+   let contact=1-.24*Math.exp(-Math.max(0,wallEdge)*4.7)*Math.exp(-(y-room.y)*2.3);
+   if(y<room.y+.85)for(const box of boxes){
+    const sx=Math.max(box[0]-x,x-box[3],0),sz=Math.max(box[2]-z,z-box[5],0);
+    contact=Math.min(contact,1-.43*Math.exp(-4.9*Math.hypot(sx,sz)-3.4*Math.abs(y-box[1])));
+   }
+   for(let face=0;face<6;face++){
+    const offset=4*((iy*nz+iz)*nx*6+face*nx+ix);
+    for(let c=0;c<3;c++)data[offset+c]=Math.round(Math.min(4,energy[face*3+c])*63.75);
+    data[offset+3]=Math.round(255*contact);
+   }
+  }
+  const field=new THREE.DataTexture(data,nx*6,nz*ny,THREE.RGBAFormat);
+  field.minFilter=field.magFilter=THREE.LinearFilter;field.needsUpdate=true;
+  room.uniforms.shopField.value=field;room.uniforms.shopGrid.value.set(nx,ny,nz);
+ }
 }

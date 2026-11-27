@@ -179,5 +179,20 @@ def build():
     palm.save(FINISHES/'palm-spray.png',optimize=True)
 
 
+def shop_plaster():
+    # A plain section of the salon's right wall. Remove the low-frequency room
+    # illumination so the same limewash responds to the fixtures in each store.
+    patch = crop(23, (648, 83, 790, 210), (384, 384))
+    grain = np.asarray(patch, dtype=float) - np.asarray(patch.filter(ImageFilter.GaussianBlur(28)), dtype=float)
+    color = wrap_edges(Image.fromarray(np.uint8(np.clip([207, 201, 192] + grain * 1.35, 0, 255))), 30)
+    color.save(GAME / 'tex/shop-plaster_d.webp', quality=90)
+    field = np.asarray(color.convert('L').filter(ImageFilter.GaussianBlur(.7)), dtype=float)
+    rows, cols = np.gradient(field)
+    normal = np.stack((-cols * .018, rows * .018, np.ones_like(field)), axis=-1)
+    normal /= np.linalg.norm(normal, axis=-1, keepdims=True)
+    Image.fromarray(np.uint8((normal * .5 + .5) * 255)).save(GAME / 'tex/shop-plaster_n.webp', quality=90)
+
+
 if __name__ == '__main__':
     build()
+    shop_plaster()

@@ -273,18 +273,22 @@ function buildAccessibleShell(block,R,settings={}){
  const sides=selected.length?selected:['S'];
  const gap=kind==='garage'?Math.min(4.7,Math.min(width,depth)-.75):kind==='lobby'?1.79:1.23;
  const doorH=kind==='garage'?2.92:2.19;
+ const {matrix:M,width:span,depth:run}=lotFace(R,sides[0]);
+ const usable=Math.min(run,15),offset=Math.min(span*.29,4.5),lamp=lpt(M,offset*.48,usable*.57);
+ const room=variants&&rooms?registerGroundLight(R,base,ceiling,sides,lamp):null;
+ const face=mat=>groundLightMaterial(mat,room);
  if(height>ceiling)block.bld.push({...R,y0:ceiling,h:height});
- topQuad(kind==='home'?m.wood:m.tile,R.x0,R.x1,base+.006,R.z0,R.z1,2.4,null,false);
+ markGroundLight(topQuad(face(kind==='home'?m.wood:m.tile),R.x0,R.x1,base+.006,R.z0,R.z1,2.4,null,false),room);
  if(base>.20)STREET.steps.push({...R,y:base});
  for(const r of settings.openRafters?[]:subtractCityOpenings(R,settings.ceilingOpenings||[])){
   weatherCeilings.push({...r,h:ceiling});
-  plainBox(m.ceiling,r.x0,r.x1,ceiling-.10,ceiling,r.z0,r.z1,{uvm:2.6,shadow:false});
+  markGroundLight(plainBox(face(m.ceiling),r.x0,r.x1,ceiling-.10,ceiling,r.z0,r.z1,{uvm:2.6,shadow:false}),room);
  }
 
  for(const side of ['S','N','E','W']){
   const {matrix:M,width:span}=lotFace(R,side),a=-span/2,b=span/2;
   const box=(mat,x0,x1,y0,y1,z0,z1)=>{
-   const geo=plainBox(mat,x0,x1,y0,y1,z0,z1,{M,uvm:2.45,shadow:false});
+   const geo=markGroundLight(plainBox(face(mat),x0,x1,y0,y1,z0,z1,{M,uvm:2.45,shadow:false}),room);
    if(settings.structure?.levels[0].tier.brick&&mat===wall){
     const r={...lrect(M,x0,x1,-z1,-z0),y0,h:y1,side};
     (block.bondWalls||(block.bondWalls=[])).push(r);
@@ -325,18 +329,20 @@ function buildAccessibleShell(block,R,settings={}){
  }
 
  if(!rooms||kind==='garage')return true;
- const {matrix:M,width:span,depth:run}=lotFace(R,sides[0]);
+ if(variants){
+  INTERIORS.emitters.push({x:lamp.x,y:ceiling-.25,z:lamp.z,cool:false,floorY:base});
+  markGroundLight(plainBox(face(m.steel),lamp.x-.53,lamp.x+.53,ceiling-.225,ceiling-.10,lamp.z-.15,lamp.z+.15,{shadow:false}),room);
+  markGroundLight(plainBox(face(m.neutral),lamp.x-.49,lamp.x+.49,ceiling-.246,ceiling-.224,lamp.z-.119,lamp.z+.119,{shadow:false}),room);
+ }
  // Keep the approach inside every entrance clear, including doors on the side walls.
  const entries=sides.map(side=>lrect(lotFace(R,side).matrix,-gap/2-.36,gap/2+.36,-.4,2.15));
  if(settings.structure?.core)entries.push(settings.structure.core.approach);
  function furnish(kind,u,v,dims){
   const [w,,d]=dims,area=lrect(M,u-w/2,u+w/2,v-d/2,v+d/2);
   if(entries.some(e=>e.x0<area.x1&&e.x1>area.x0&&e.z0<area.z1&&e.z1>area.z0))return;
-  placeRoomFurniture(block,M,kind,u,v,base,dims);
+  placeRoomFurniture(block,M,kind,u,v,base,dims,room);
  }
- const usable=Math.min(run,15);
  const counterWidth=Math.min(span*.27,3.05);
- const offset=Math.min(span*.29,4.5);
  const key=kind==='home'?'reading-table':kind==='lobby'?'counter':'display';
  const counter=kind==='home'?[1.11,.73,1.11]:[counterWidth,.97,.65];
  if(offset-counter[0]/2<gap/2+.5||usable<4.5)return true;
@@ -348,13 +354,14 @@ function buildAccessibleShell(block,R,settings={}){
   furnish('stock',-offset,usable*.63,[Math.min(span*.29,2.96),1.82,.44]);
   furnish('stock',offset,usable*.78,[Math.min(span*.28,2.93),1.82,.44]);
  }
- const lamp=lpt(M,offset*.48,usable*.57);
- INTERIORS.emitters.push({x:lamp.x,y:ceiling-.25,z:lamp.z,cool:kind==='garage'});
- plainBox(m.warm,lamp.x-.38,lamp.x+.38,ceiling-.25,ceiling-.21,lamp.z-.08,lamp.z+.08,{shadow:false});
+ if(!variants){
+  INTERIORS.emitters.push({x:lamp.x,y:ceiling-.25,z:lamp.z,cool:false});
+  plainBox(m.warm,lamp.x-.38,lamp.x+.38,ceiling-.25,ceiling-.21,lamp.z-.08,lamp.z+.08,{shadow:false});
+ }
  return true;
 }
 
-function placeRoomFurniture(block,M,kind,u,depth,y,dims){
+function placeRoomFurniture(block,M,kind,u,depth,y,dims,room=null){
  const steps=dims.map(n=>Math.max(1,Math.round(n*5)));
  const key=kind+' '+steps.join(' '),built=steps.map(n=>n/5);
  if(!ACCESS.furniture.has(key))ACCESS.furniture.set(key,makeFixture(kind,built));
@@ -362,7 +369,11 @@ function placeRoomFurniture(block,M,kind,u,depth,y,dims){
  const transform=M.clone().setPosition(point.x,y+.008,point.z);
  transform.scale(new V3(dims[0]/built[0],dims[1]/built[1],dims[2]/built[2]));
  template.traverse(mesh=>{
-  if(mesh.isMesh)addGeo(mesh.material,mesh.geometry.clone().applyMatrix4(transform),false);
+  if(mesh.isMesh){
+   const g=mesh.geometry.clone().applyMatrix4(transform);
+   if(room!=null)addGeo(groundLightMaterial(mesh.material,room),markGroundLight(g,room),false);
+   else addGeo(mesh.material,g,false);
+  }
  });
  const [w,h,d]=dims;
  addRoomCollider(block,M,u-w/2,u+w/2,depth-d/2,depth+d/2,y+h,y);

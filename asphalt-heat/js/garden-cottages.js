@@ -156,6 +156,17 @@ function buildGardenCottages(B){
   plainBox(m.walls[0],house.x0,house.x1,eave-.086,eave-.017,house.z0,house.z1,{uvm:1.47});
   B.bld.push({...house,y0:eave-.086,h:eave-.017});
   gardenRoof(B,house,eave,rise,m.walls[variant]);furnishCottage(B,house,variant,front);
+  // Planted strips along the outer wall leave the inward-facing gates and steps clear.
+  const stripX=col<0?house.x0-.85:house.x1+.85;
+  const bedLength=3.3+variant*.71,bedZ=cz+(row%2?1.07:-.63);
+  topQuad(STREET.materials.mulch,stripX-.54,stripX+.54,.176,bedZ-bedLength/2,bedZ+bedLength/2,1.38,null,false);
+  for(let n=0;n<3+(variant%2);n++){
+   const z=bedZ-bedLength/2+.57+n*(bedLength-1.14)/(2+variant%2),x=stripX+.102*Math.sin(variant+n);
+   const yaw=n*.91+variant*.38,dim=[1.13+.12*(n%2),.62+.14*((n+variant)%4),.95+.089*variant];
+   const far=detailFallback('garden-laurel',x,.175,z,dim,yaw);
+   placeScenery('garden-laurel',x,.175,z,yaw,dim,far);
+   B.bld.push({x0:x-.039,x1:x+.039,y0:.17,h:.17+dim[1]*.67,z0:z-.039,z1:z+.039,radius:.039});
+  }
   const entry=house.entry;
   topQuad(STREET.materials.wornSlab,Math.min(entry.x,centre),Math.max(entry.x,centre),.17,entry.z-.48,entry.z+.48,1.88,null,false);
   garden.push(house);GARDENS.houses.push(house);
