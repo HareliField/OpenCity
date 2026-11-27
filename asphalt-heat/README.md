@@ -217,15 +217,21 @@ Officers can cite speeding, running a red light or stop sign, wrong-way driving,
 
 Run `node tools/traffic-ticket-test.js` to check lawful and unlawful crossings, witness calls, crash attribution, duplicate tickets, payment and reload.
 
-Property damage generates a misdemeanor report when a witness sees it. Civilians take a few seconds to complete the call. Police search the scene and the last confirmed location, and losing sight of the player starts the cooldown. Levels 1 and 2 use investigation behavior. Each incident has a limited ground and air response.
+A confirmed minor incident starts a one-star search. Independent witness statements add corroboration. Further reported crimes and dangerous driving observed by an officer can raise the response. Gunfire heard through a wall can send police to check the area. A pursuit needs an identification or a confirmed sighting.
 
-| Wanted level | Time out of sight before losing a star |
-| --- | --- |
-| 1 | 12 seconds |
-| 2 | 24 seconds |
-| 3 | 25 seconds |
-| 4 | 40 seconds |
-| 5 | 60 seconds |
+Dispatch assigns existing patrols and station cruisers. At one star, officers drive to the reported area, continue on foot and check nearby streets. At higher levels they search more sectors. Officers chase a confirmed suspect and attempt an arrest when they catch up to a suspect who poses no immediate threat. They return fire against an active threat and can set a temporary street closure during a confirmed vehicle pursuit.
+
+Witnesses who recognize the suspect can call again. Officers can link a plate when they see the suspect enter the car or receive a witness report. A known plate can restart a search after the stars clear. An unseen car switch leaves police following the previous lead.
+
+A star can clear after the searches below and a quiet period with no fresh leads. An unresolved search can run up to twice that quiet period before winding down, for example if no units are available. New reports and confirmed sightings restart the quiet period.
+
+| Wanted level | Search areas checked | Minimum time without a lead |
+| --- | --- | --- |
+| 1 | 2 | 40 seconds |
+| 2 | 3 | 58 seconds |
+| 3 | 3 | 60 seconds |
+| 4 | 4 | 80 seconds |
+| 5 | 4 | 105 seconds |
 
 Credits include Microsoft Rocketbox avatars (MIT), Poly Haven textures and sky (CC0), three.js, and cannon-es.
 

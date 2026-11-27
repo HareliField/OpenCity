@@ -9,10 +9,12 @@ run(read('lib/cannon.js'));
 run(read('js/weather.js'));run(read('js/weather-cover.js'));run('const weather=new CoastalWeather(70,10),weatherCover=new WeatherCoverMap();');
 run(`const V3=THREE.Vector3,CANNON=window.CANNON,CELL=64,N=16,HALF=8,W=N*CELL;
  const clamp=(n,a,b)=>Math.min(b,Math.max(a,n)),lerp=(a,b,f)=>a+(b-a)*f;
+ const wrapA=a=>Math.atan2(Math.sin(a),Math.cos(a)),lerpA=(a,b,k)=>a+wrapA(b-a)*k;
+ const pick=items=>items[0],rnd=(a,b)=>(a+b)/2,updChar=()=>{},collideProps=()=>null;
  const base={bld:[],residual:[],x0:1e6,x1:1e6,z0:1e6,z1:1e6};
  const blocks=Array.from({length:N*N},()=>({...base,bld:[],residual:[]}));
  const MAT={},STREET={steps:[]},departmentPeople=[],districtOf=()=>'suburb',worksFloorAt=(x,z,ref,y)=>y;`);
-for(const file of ['phys','cargen','fleet','vehicle-components','access','building-construction','suite-interiors','domestic-fittings','roads','street-plan','street-surface','city-traffic','lighthouse','garden-cottages','civic-fittings','harbor','coast','game','department','dispatch','traffic-police'])run(read('js/'+file+'.js'));
+for(const file of ['phys','cargen','fleet','vehicle-components','access','building-construction','suite-interiors','domestic-fittings','roads','street-plan','street-surface','city-traffic','lighthouse','garden-cottages','civic-fittings','harbor','freight','coast','game','department','dispatch','traffic-police'])run(read('js/'+file+'.js'));
 run(`
  state='play';
  const car={type:'miata',spec:CARSPEC.miata,pos:new V3(),vel:new V3(),plate:'AH TEST',driver:'player',speed:0,h:0};
@@ -103,4 +105,58 @@ run(`
  }
  testCrash(true);testCrash(false);
  console.log('Truck impact attribution passed in both driver positions.');
+`);
+
+run(`
+ cars.length=departmentPeople.length=peds.length=0;
+ setCarLights=()=>{};
+ const makeCruiser=(x,z,index)=>({type:'police',spec:CARSPEC.police,driver:'police',officer:PoliceDepartment.staff[index],
+  dispatched:true,h:0,speed:0,vel:new V3(),pos:new V3(x,0,z),stuck:0,rev:0,cd:0});
+ const target={type:'miata',spec:CARSPEC.miata,driver:'player',plate:'AH PURSUIT',h:0,speed:8,vel:new V3(0,0,8),pos:new V3(125.35,0,295)};
+ player.car=target;player.pos=target.pos;
+ const cruiser=makeCruiser(125.35,270,0);
+ cars.push(cruiser,target);
+ heat=TH[1];wanted=1;time=300;rememberPlate(target.plate);updateSearchLead(target.pos);LAW.seen=true;
+ let policeShots=0;unitShootFrom=()=>{policeShots++;};
+ const dt=1/30;
+ for(let i=0;i<105;i++){
+  time+=dt;target.pos.z+=target.speed*dt;LAW.anchor.copy(target.pos);
+  aiPolice(cruiser,dt);
+ }
+ assert(cruiser.pos.z>290 && dist2(cruiser.pos,target.pos)<30,'a one-star cruiser gains ground on the reported vehicle');
+ assert.equal(policeShots,0,'a reported vehicle alone does not draw fire');
+ LAW.threatUntil=time+60;
+ for(let i=0;i<120&&policeShots===0;i++){
+  time+=dt;target.pos.z+=target.speed*dt;LAW.anchor.copy(target.pos);aiPolice(cruiser,dt);
+ }
+ assert(policeShots>0,'a cruiser with a live threat and visual contact can shoot at one star');
+
+ wanted=2;target.speed=14;target.pos.set(125.35,0,275);LAW.anchor.copy(target.pos);
+ const interception=makeCruiser(125.35,345,1);
+ cars.push(interception);
+ requestPoliceClosure();
+ assert(interception.closure && !cruiser.closure,'a moving patrol ahead is assigned while another continues the pursuit');
+ assert.equal(interception.block,undefined,'the street stays open until the cruiser arrives');
+ const {stop,line}=interception.closure;
+ interception.pos.copy(stop);interception.pos.z-=9;
+ for(let i=0;i<270&&!interception.block;i++){time+=dt;drivePoliceClosure(interception,dt);}
+ assert(interception.block,'the live cruiser reaches and closes the approach');
+ assert.equal(closureApproachSpeed({pos:new V3(stop.x,0,stop.z-5)},{axis:'ns',node:[line,6],dx:0,dz:1},12),0);
+ time=interception.closure.expires;
+ assert(!drivePoliceClosure(interception,dt));
+ assert.equal(interception.block,false);
+ assert.equal(closureApproachSpeed({pos:new V3(stop.x,0,stop.z-5)},{axis:'ns',node:[line,6],dx:0,dz:1},12),12);
+ cars.length=0;
+ wanted=1;player.car=null;player.weapon='fist';player.spd=6.9;player.pos=new V3(125.35,0,275);
+ const foot={team:'law',officer:PoliceDepartment.staff[0],kind:'cop',pos:new V3(125.35,0,263),
+  c:{yaw:0,root:{visible:true,position:new V3()}}};
+ cops.push(foot);
+ let arrest=0;
+ for(let i=0;i<600&&arrest<4.2;i++){
+  time+=dt;player.pos.z+=player.spd*dt;player.arrestContact=false;
+  updUnits(cops,dt);
+  arrest=player.arrestContact?arrest+dt:0;
+ }
+ assert(arrest>=4.2,'a one-star officer can catch and restrain a sprinting suspect');
+ console.log('Vehicle and foot pursuits, threat-gated fire and timed street closure passed.');
 `);

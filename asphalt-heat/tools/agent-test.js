@@ -12,7 +12,7 @@ const context=vm.createContext({
  window:{addEventListener(){}},document:{body:element,head:element,createElement(){return element;}},
  MutationObserver:class {observe(){}},navigator:{},$:()=>element,policeDesk:{open:false},cityMap:{open:false},
  shopOpen:false,deskStation:null,player:{pos:{x:1,y:0,z:2},yaw:0,own:{},ammo:{},cash:0},
- wanted:0,heat:0,evadeT:0,LAW:{},TRAFFIC_PATROL:{limit:null,posts:[]},PoliceDepartment:{tickets:[]},cameraMode:0,camYaw:0,lookYaw:0,lookPitch:0,
+ wanted:0,heat:0,evadeT:0,LAW:{checked:new Set(),plates:new Map()},TRAFFIC_PATROL:{limit:null,posts:[]},PoliceDepartment:{tickets:[]},cameraMode:0,camYaw:0,lookYaw:0,lookPitch:0,
  caseCamera:{enabled:false},canFollowStreetCase:()=>false,camera:{position:{x:0,y:2,z:0}},robbing:null,actionCtx:()=>null,
  step(dt,input){calls.push({...input});context.time+=dt;},drawMap(){},hud(){},renderFrame(){},clock:{getDelta(){}}
 });

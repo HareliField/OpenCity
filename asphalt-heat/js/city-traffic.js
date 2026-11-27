@@ -9,7 +9,7 @@ function gradeConnection(node,dx,dz){
  }
  return null;
 }
-function planMovement(ai,forcedExit){
+function planMovement(ai,forcedExit,allowRamp=true){
  const {a,b}=ai,dx=b[0]-a[0],dz=b[1]-a[1],section=segmentSection(a,b);
  let lane=section.outer?ai.lane||0:0;
  const options=neighbors(b).filter(n=>n[0]!==a[0] || n[1]!==a[1]);
@@ -21,7 +21,7 @@ function planMovement(ai,forcedExit){
  if(section.outer && turn)lane=turn>0?1:0;
  const exitLane=out.outer?(turn?Number(turn>0):section.outer?lane:1):0;
  const connection=!turn && gradeConnection(b,dx,dz);
- const ramp=connection?.route && Math.random()<.55?connection:null;
+ const ramp=connection?.route && allowRamp && Math.random()<.55?connection:null;
  const u=ai.incomingOffset??laneCenter(section,dx,dz,lane);
  const v=ramp?ramp.route.width*.225:laneCenter(out,ex,ez,exitLane);
  const x=b[0]*CELL,z=b[1]*CELL;
@@ -130,10 +130,10 @@ function approachingPriorityCar(c,m,o){
   return along>=-halfLength && along<reach && Math.abs(x*dz-z*dx)<sideClearance;
  });
 }
-function canEnter(c,m,gap,dt){
+function canEnter(c,m,gap,dt,emergency=false){
  if(m.committed)return true;
  const stop=mustStop(m.rule,m.axis);
- if(stop){
+ if(stop&&!emergency){
   if(gap<1.25 && Math.abs(c.speed)<.26){
    if(m.arrived===null)m.arrived=time;
    m.dwell+=dt;
@@ -141,7 +141,7 @@ function canEnter(c,m,gap,dt){
   if(m.dwell<.85)return false;
   if(!hasStopPriority(c,m))return false;
  }
- if(m.rule==='signal'){
+ if(m.rule==='signal'&&!emergency){
   const light=phaseForGroup(signalGroup(...m.node),time)[m.axis].vehicle;
   if(light==='R')return false;
   // Continue on amber only when the front bumper can no longer stop comfortably.
@@ -149,6 +149,7 @@ function canEnter(c,m,gap,dt){
  }
  if(gap>14)return true;
  if(crossingOccupied(m))return false;
+ if(emergency&&gap>3&&gap<c.speed**2/7+2)return false;
  for(const o of cars){
   if(o===c || Math.abs(o.pos.y-c.pos.y)>1.6 ||
     Math.abs(o.pos.x-m.x)>48 || Math.abs(o.pos.z-m.z)>48)continue;
@@ -205,32 +206,60 @@ function trafficDrive(c,target,aim,dt,origin=c.pos){
  }
  setCarLights(c,c.braking || stopped);
 }
-function aiTraffic(c,dt){
+function responseExit(ai,response){
+ const {a,b}=ai;
+ if(response.approach&&b[0]===response.approach[0]&&b[1]===response.approach[1]&&
+  (a[0]!==response.cross[0]||a[1]!==response.cross[1]))return response.cross;
+ const [x,z]=response.approach||nearestNode(response.goal);
+ const options=neighbors(b).filter(n=>n[0]!==a[0]||n[1]!==a[1]);
+ return options.sort((p,q)=>Math.abs(p[0]-x)+Math.abs(p[1]-z)-Math.abs(q[0]-x)-Math.abs(q[1]-z))[0];
+}
+function resumeStreetLane(c){
+ const [i,j]=nearestNode(c.pos),dx=Math.sin(c.h),dz=Math.cos(c.h);
+ const ew=Math.abs(dx)>Math.abs(dz),dir=ew?Math.sign(dx):Math.sign(dz);
+ const a=ew?[clamp(Math.floor(c.pos.x/CELL)+(dir<0?1:0),0,N),j]:
+  [i,clamp(Math.floor(c.pos.z/CELL)+(dir<0?1:0),0,N)];
+ const b=[a[0]+(ew?dir:0),a[1]+(ew?0:dir)];
+ if(b.some(n=>n<0||n>N))return null;
+ const offset=ew?(c.pos.z-j*CELL)*dir:-(c.pos.x-i*CELL)*dir;
+ const section=segmentSection(a,b);
+ return {a,b,lane:section.outer&&Math.abs(offset-section.outer)<Math.abs(offset-section.inner)?1:0,incomingOffset:clamp(offset,-HALF,HALF)};
+}
+function aiTraffic(c,dt,response=null){
+ if(response&&!c.ai)c.ai=resumeStreetLane(c);
  if(!c.ai){
   const a=nearestNode(c.pos),fx=Math.sin(c.h),fz=Math.cos(c.h);
   const b=neighbors(a).sort((p,q)=>(q[0]-p[0])*fx+(q[1]-p[1])*fz)[0];
   c.ai={a,b};
  }
  if(c.ai.grade){followGradeRoad(c,dt);return;}
- const ai=c.ai,m=ai.movement||(ai.movement=planMovement(ai));
+ const ai=c.ai,exit=response?responseExit(ai,response):null;
+ const current=ai.movement;
+ if(!current||exit&&!current.committed&&approachGap(c,current)>14&&(current.exit[0]!==exit[0]||current.exit[1]!==exit[1]))ai.movement=planMovement(ai,exit,!response);
+ const m=ai.movement;
  if(c.clearing && (c.pos.x-c.clearing.x)*c.clearing.ex+(c.pos.z-c.clearing.z)*c.clearing.ez>
    STREET_DESIGN.crossing+STREET_DESIGN.crossWidth/2+c.spec.L/2)c.clearing=null;
  const outDistance=(c.pos.x-m.x)*m.ex+(c.pos.z-m.z)*m.ez;
  if(m.committed && outDistance>=TURN_EXTENT-.3){
   c.clearing=m;c.ai={a:ai.b,b:m.exit,lane:m.exitLane};
-  return aiTraffic(c,dt);
+  return aiTraffic(c,dt,response);
  }
  const gap=approachGap(c,m);
  // Guide the rear axle along the curve so the inside rear tyre of a long vehicle clears the curb.
  const rear={x:c.pos.x-c.spec.wb*Math.sin(c.h),z:c.pos.z-c.spec.wb*Math.cos(c.h)};
  const s=pathProgress(m,rear),look=m.turn && s> -12?clamp(2.9+Math.abs(c.speed)*.29,3.4,5.6):
   clamp(3.6+Math.abs(c.speed)*.53,3.8,9.6);
- let target=m.section.speed*weather.trafficPace*(c.driverPace??(c.driverPace=rnd(.89,1.05)));
+ let target=response?response.speed*weather.trafficPace:m.section.speed*weather.trafficPace*(c.driverPace??(c.driverPace=rnd(.89,1.05)));
+ if(response){
+  if(m.turn)target=Math.min(target,Math.sqrt(40+7*Math.max(0,gap)));
+  else if(gap<10&&!m.committed)target=Math.min(target,10);
+ }
+ if(!response)target=closureApproachSpeed(c,m,target);
  if(m.turn && s> -14)target=Math.min(target,m.turn>0?4.2:5.0);
  const block=m.dx?Math.min(ai.a[0],ai.b[0]):Math.min(ai.a[1],ai.b[1]);
  const line=m.dx?ai.b[1]:ai.b[0],at=m.dx?c.pos.x:c.pos.z;
  if(hasSpeedHump(m.axis,line,block) && Math.abs(at-(block+.5)*CELL)<9)target=Math.min(target,5.0);
- const allowed=canEnter(c,m,gap,dt);
+ const allowed=canEnter(c,m,gap,dt,!!response&&c.siren);
  if(!allowed){
   const available=Math.max(0,gap-.57);
   target=Math.min(target,Math.sqrt(5.6*weather.trafficPace*available),available*1.3);
@@ -246,6 +275,15 @@ function aiTraffic(c,dt){
   c.flipT=(c.flipT||0)+dt;
   if(c.flipT>3){const exit=carDoorSpot(c);if(exit){c.driver=null;ejectPed(exit.x,exit.z,c.pos.x,c.pos.z,exit.y);}}
  }else c.flipT=0;
+}
+function closureApproachSpeed(car,m,target){
+ for(const unit of cars){
+  const closure=unit.closure;
+  if(!closure?.closed||unit===car||closure.axis!==m.axis||closure.line!==(m.axis==='ew'?m.node[1]:m.node[0]))continue;
+  const gap=(closure.at-(m.axis==='ew'?car.pos.x:car.pos.z))*(m.dx||m.dz);
+  if(gap>0&&gap<CELL)target=Math.min(target,Math.max(0,(gap-7)*.65));
+ }
+ return target;
 }
 function pedestrianCanStart(p,crossing){
  const {i,j,axis,legX,legZ}=crossing,control=junctionControl(i,j);
@@ -331,7 +369,8 @@ function parkServiceVehicles(place,type,count){
  choices.sort((a,b)=>dist2(a,place.door)-dist2(b,place.door));
  for(const p of choices){
   if(cars.some(c=>dist2(c.pos,p)<6.4))continue;
-  spawnCar(type,p.x,p.z,p.h,null).keep=true;
+  const car=spawnCar(type,p.x,p.z,p.h,null);car.keep=true;
+  if(type==='police')car.stationFleet=place;
   if(--count===0)break;
  }
 }

@@ -124,7 +124,8 @@
    weapon:p.weapon,owned:{...p.own},ammo:{...p.ammo},gloves:p.gloves,down:p.down,vehicle:p.car?id(p.car):null,speed:p.car?.speed??p.pace??0},
    camera:{mode:caseCamera.enabled?'case':['follow','low','aerial','cockpit'][cameraMode],position:point(camera.position),yaw:camYaw+lookYaw,pitch:lookPitch},
    hudVisible:!$('ui').classList.contains('cleanView'),objective:$('obj').textContent,interaction:actionCtx()?.label??null,
-   law:{wanted,heat,seen:LAW.seen,evadeSeconds:evadeT,lastKnown:LAW.known?point(LAW.anchor):null,
+   law:{wanted,heat,seen:LAW.seen,evadeSeconds:evadeT,lastKnown:LAW.known?point(LAW.anchor):null,scene:LAW.scene?point(LAW.scene):null,
+    checkedAreas:LAW.checked.size,reportedPlates:[...LAW.plates.keys()],
     limitKmh:TRAFFIC_PATROL.limit,outstandingTickets:PoliceDepartment.tickets.filter(t=>t.driver===p.personId && t.paid===null).length},
    robbery:robbing?{place:robbing.p.name,seconds:robbing.t,total:robbing.p.time}:null,
    outcome:state==='dead'?{kind:deadKind,respawnIn:deadT}:null,
@@ -185,7 +186,7 @@
   for(const k of changes) {
    if(k==='wanted') {
     resetDispatch();wanted=c.wanted;heat=TH[wanted];evadeT=0;LAW.lastLevel=wanted;
-    if(wanted) {LAW.known=true;LAW.anchor.copy(player.pos);LAW.dispatchAt=time;}
+    if(wanted) {updateSearchLead(player.pos);LAW.identityUntil=time+12;LAW.dispatchAt=time;}
    } else player[k==='health'?'hp':k]=c[k];
   }
   record('stats',{changes:Object.fromEntries(changes.map(k=>[k,c[k]]))});

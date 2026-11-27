@@ -76,6 +76,10 @@ function observedTrafficTicket(code,at,street,detail){
  if(!observed)return false;
  if(observed.car)observed.car.ticketLightsUntil=time+4;
  deliverTrafficTicket(ticketDetails(code,at,street,detail),observed.officer,'Officer observation');
+ const danger={red:12,stop:7,wrongWay:12,restricted:10,yield:12,speeding:9}[code];
+ if(wanted&&danger&&player.car&&LAW.plates.has(player.car.plate)){
+  fileWitnessReport(danger,at.x,at.z,true,false,{kind:'Reckless driving',vehicle:player.car});
+ }
  return true;
 }
 

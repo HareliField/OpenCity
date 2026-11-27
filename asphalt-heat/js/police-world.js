@@ -218,7 +218,8 @@ function updateDepartment(dt){
   const bulletin=PoliceDepartment.cases.find(c=>c.stage==='Wanted'&&
    (player.car?c.plate===player.car.plate:c.suspect===player.personId));
   if(bulletin&&witnessesFor(at.x,at.z,at.y).officers){
-   recordOffence(TH[3],at.x,at.z,false,at.y);
+   recordOffence(TH[2],at.x,at.z,false,at.y);
+   if(player.car)rememberPlate(player.car.plate);
    PoliceDepartment.radio('Patrol','Positive sighting · file '+bulletin.id+'.','sighting');
   }
  }
@@ -317,10 +318,9 @@ function updateFieldDetectives(dt){
   if(file.response)continue;
   if(u.dead){u.downT+=dt;updChar(u.c,0,dt,true);if(u.downT<15)continue;}
   if(pd.assigned(file)===u.personId&&!u.dead&&(dist2(player.pos,file.at)<64||caseViewNear(file.at,64,5))){
-   const dx=file.at.x-u.pos.x,dz=file.at.z-u.pos.z,length=Math.hypot(dx,dz),pace=length>1.45?1.35:0;
-   if(pace){u.pos.x+=dx/length*pace*dt;u.pos.z+=dz/length*pace*dt;collideWorld(u.pos,.34);}
+   const pace=dist2(u.pos,file.at)>1.45?movePoliceFoot(u,file.at,2.6,dt):0;
    u.pos.y=groundY(u.pos.x,u.pos.z,u.pos.y);u.c.root.position.copy(u.pos);
-   u.c.yaw=Math.atan2(dx,dz);u.c.talk=pace?0:1;updChar(u.c,pace,dt,true);continue;
+   u.c.talk=pace?0:1;updChar(u.c,pace,dt,true);continue;
   }
   removeDepartmentPerson(u);fieldInvestigators.delete(fileId);
  }
@@ -330,13 +330,17 @@ function updateFieldDetectives(dt){
   if(!assignee||fieldInvestigators.has(file.id)||dist2(player.pos,file.at)>52&&!caseViewNear(file.at,52,5))continue;
   const member=pd.staff.find(s=>s.personId===assignee);
   if(!member||pd.bindings.has(member.personId)||pd.unavailable.has(member.personId))continue;
-  const at=new V3(file.at.x,file.at.y||0,file.at.z);
-  const offset=file.origin==='street'?8:4;
-  for(const [dx,dz] of [[offset,0],[-offset,0],[0,offset],[0,-offset]]){
-   if(rayWorld(at.x,at.z,at.x+dx,at.z+dz,at.y+1,at.y+1)<1)continue;
-   at.x+=dx;at.z+=dz;break;
+  const origin=new V3(file.at.x,file.at.y||0,file.at.z);
+  const frame=sceneStreetFrame(origin);
+  let at=null;
+  for(const [along,across] of [[34,HALF+2],[-36,HALF+2],[42,-HALF-2],[-46,-HALF-2],[53,HALF+2],[-56,HALF+2]]){
+   const x=frame.x+frame.tx*along+frame.nx*across,z=frame.z+frame.tz*along+frame.nz*across;
+   const approach=new V3(x,groundY(x,z,origin.y),z);
+   collideWorld(approach,.34);
+   if(dist2(approach,origin)<24||personInView(approach.x,approach.y,approach.z)||caseViewNear(approach,12,5))continue;
+   at=approach;break;
   }
-  collideWorld(at,.34);
+  if(!at)continue;
   const uniform=member.division==='Patrol';
   const c=makeChar(officerModel(member),{gun:true}),u=departmentPerson(member,c,at,uniform);
   personalizeOfficer(c,member);fitIssuedEquipment(c,member);
