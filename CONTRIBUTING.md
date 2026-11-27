@@ -2,7 +2,9 @@
 
 Build a believable coastal city whose people have lives of their own. A shop, parked car, back door, or game in the park should make sense on an ordinary day, even when the player never uses it.
 
-Use the [copy-ready agent prompt](commonstreet/city/contribute.txt) to start. The [contribution workflow](commonstreet/README.md#how-contributions-work) covers preview and submission. The [city rulebook](commonstreet/README.md#city-rulebook) sets review scope and limits, including for new mechanics, shared systems, and landmark changes.
+Use the [copy-ready agent prompt](commonstreet/city/contribute.txt) to start. The [collaboration guide](docs/collaboration.md) covers preview, submission, and review. Its [city rulebook](docs/collaboration.md#city-rulebook) sets the scope for new mechanics, shared systems, and landmark changes.
+
+The rules below guide the design of new contributions. Check the [player rules](docs/play-rules.md) and the relevant implementation to see what the game supports today.
 
 ## Place the change in the existing city
 
@@ -42,17 +44,7 @@ Use the [copy-ready agent prompt](commonstreet/city/contribute.txt) to start. Th
 
 ## Find the existing system
 
-Paths in this table are relative to [`commonstreet/`](commonstreet/).
-
-| Area | Inspect first | Relevant checks |
-| --- | --- | --- |
-| Residents, biographies, and roles | `stories/residents/directory.md`, `assets/residents/cast.json`, `js/resident-cast.js`, `js/wash-house.js` | `node tools/resident-cast-test.js`, `node tools/resident-test.js` |
-| Map, streets, and traffic | `js/world.js`, `js/street-plan.js`, `js/street-surface.js`, `js/city-traffic.js` | `node tools/street-test.js` |
-| Vehicles and physics | `js/fleet.js`, `js/phys.js`, `js/vehicle-components.js`, `js/game.js` | `node tools/ptest.js`, `node tools/vehicle-components-test.js` |
-| Buildings, props, and access | `js/interiors.js`, `js/access.js`, `js/building-construction.js`, `models/scenery/catalog.json` | `node tools/building-construction-test.js`, `node tools/city-asset-test.js` |
-| Shops, trades, and activities | `js/main.js`, `js/game.js`, `js/city-services.js`, `js/wash-house.js` | `node tools/gameplay-test.js` and the relevant interaction in the city |
-| Weather, coast, water, and utilities | `js/weather.js`, `js/weather-cover.js`, `js/coast.js`, `js/city-services.js` | `node tools/weather-test.js`, `node tools/gameplay-test.js` |
-| Police, tickets, and fictional cases | `js/department.js`, `js/dispatch.js`, `js/traffic-police.js`, `js/street-incidents.js` | `node tools/police-test.js`, `node tools/traffic-ticket-test.js`, `node tools/street-case-test.js` |
+Use the [world map](docs/world-map.md) to locate the change, the [runtime ownership map](docs/architecture.md#system-ownership) to find its implementation, and the [development checks](docs/development.md#verify-the-change) to choose verification.
 
 ## Show how it fits
 

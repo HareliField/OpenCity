@@ -1,9 +1,30 @@
 # Commonstreet
 
-Commonstreet is a collaborative game anyone can help build, from its residents and streets to its shops and stories.
+Commonstreet is an original browser-based 3D game and a shared city anyone can help build. Walk from a neighborhood laundromat to the waterfront, drive across the viaduct in changing weather, or follow a resident's story across town. Contributors grow the same city by adding places, people, objects, and playable adventures or improving the ones already there.
 
-- [Play locally](commonstreet/README.md#play-locally)
-- [Copy the contributor prompt](commonstreet/city/contribute.txt)
-- [How contributions work](commonstreet/README.md#how-contributions-work)
-- [City design guide](CONTRIBUTING.md)
-- [City rulebook](commonstreet/README.md#city-rulebook)
+## Play locally
+
+From a checkout of the repository, run:
+
+```sh
+python3 commonstreet/tools/serve.py
+```
+
+Open [the game](http://127.0.0.1:8765/index.html) in a WebGL-capable browser and press **Play**. Use the arrow keys or the touch stick to move, **C** or **Action** to interact, and the round radar to open the city map. The game starts with sound off. Python serves the checked-in game and assets. There is no build step. [Controls and player manual](commonstreet/README.md#play-locally)
+
+The [local city website](http://127.0.0.1:8765/city/) shows contribution examples and provides a copy-ready coding-agent prompt. Codex agents follow the [muted preview instructions](AGENTS.md#launching-and-inspecting-the-game).
+
+## Help build the city
+
+Try a small change to a place you can visit. Repair an awkward doorway, add a shop fixture, give a resident a Saturday errand, or report a street interaction someone else can reproduce. Start with the [contributor prompt](commonstreet/city/contribute.txt), then use a local preview and a GitHub PR to show how your change fits.
+
+| I want to… | Start here |
+| --- | --- |
+| Explore the city and understand the rules of play | [Player rules](docs/play-rules.md) · [World map](docs/world-map.md) |
+| Understand what the project is building | [Product direction](docs/product.md) |
+| Contribute or review a change | [Collaboration and city rulebook](docs/collaboration.md) · [City design guide](CONTRIBUTING.md) |
+| Make art, models, or interfaces | [Design system](docs/design-system.md) |
+| Work on code, data, or verification | [Architecture and stack](docs/architecture.md) · [Development guide](docs/development.md) |
+| Find the owner of any topic | [Documentation index](docs/README.md) · [Agent instructions](AGENTS.md) |
+
+The game is maintained in the [HareliField/OpenCity repository](https://github.com/HareliField/OpenCity). The editable art libraries and included third-party assets carry their own provenance records. [Asset sources and public licensing decisions](docs/decisions.md#public-code-and-asset-terms)

@@ -4,7 +4,7 @@ You are my coding agent. Build the change I describe below in Commonstreet, show
 
 ## 1. Build locally
 
-- Use the existing checkout of https://github.com/HareliField/OpenCity, or clone it if needed. Before editing, read AGENTS.md, CONTRIBUTING.md, and the City rulebook and How contributions work sections in commonstreet/README.md. Follow any instructions that apply to your checkout. Preserve other people's work.
+- Use the existing checkout of https://github.com/HareliField/OpenCity, or clone it if needed. Before editing, read AGENTS.md and the scoped instructions it points to for the affected files. Read CONTRIBUTING.md and the City rulebook and How contributions work sections in docs/collaboration.md. Preserve other people's work.
 - Classify the idea under the rulebook. Build a scoped change that fits the existing city. Flag shared-system or release changes for maintainer review. If the idea is outside the rules, explain the rule and suggest a grounded alternative before editing.
 - Locate the change in the city and check its connections. Use the design guide to decide who owns, lives in, operates, or visits it, how people reach it, and what changes with the day, hour, staffing, or weather where relevant. State how ordinary play and one relevant variation should work.
 - Reuse the game's existing systems where they fit. Run the relevant checks and record what you verified. If you have chat access only, hand off the prompt and idea to a coding session with local files, a terminal, the Codex in-app browser, and GitHub access for the later PR step. Report unavailable capabilities accurately.
