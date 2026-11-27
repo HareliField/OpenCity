@@ -440,7 +440,7 @@ function step(dt,agentInput=null){time+=dt;WATERT.value=time;
  if(player.car)player.car.sliding=false;
  if(toastT>0){toastT-=dt;if(toastT<=0)toastEl.classList.remove('on');}if(bannerT>0){bannerT-=dt;if(bannerT<=0)$('banner').classList.remove('on');}}
 const graphicsControls=[$('graphicsStart'),$('graphicsHud')];
-let graphicsElapsed=0,graphicsFrames=0,graphicsSlowFrames=0,graphicsGrace=2;
+let graphicsElapsed=0,graphicsFrames=0,graphicsSlowFrames=0,graphicsGrace=1;
 function syncGraphicsControls(){
  const autoLabel=QUALITY.scale<1?'Auto · 80%':`Auto · ${GRAPHICS_LEVELS[QUALITY.level]}`;
  for(const control of graphicsControls){
@@ -450,7 +450,7 @@ function syncGraphicsControls(){
 }
 function resetGraphicsSample(){
  graphicsElapsed=graphicsFrames=graphicsSlowFrames=0;
- graphicsGrace=2;
+ graphicsGrace=1;
 }
 function setGraphics(level,scale=1){
  if(level!==QUALITY.level||scale!==QUALITY.scale){
@@ -484,12 +484,13 @@ function sampleGraphics(elapsed){
  graphicsElapsed+=elapsed;
  graphicsFrames++;
  if(elapsed>.05)graphicsSlowFrames++;
- if(graphicsElapsed<1.5||graphicsFrames<3)return;
- const overloaded=graphicsSlowFrames>=3||graphicsElapsed/graphicsFrames>1/30;
+ if(graphicsElapsed<1.2||graphicsFrames<3)return;
+ const average=graphicsElapsed/graphicsFrames;
+ const overloaded=graphicsSlowFrames>=3||average>1/30;
  graphicsElapsed=graphicsFrames=graphicsSlowFrames=0;
  if(!overloaded)return;
  resetGraphicsSample();
- if(QUALITY.scale===1)setGraphics(1,.8);
+ if(QUALITY.scale===1&&average<=1/24)setGraphics(1,.8);
  else setGraphics(0);
 }
 function loop(){
