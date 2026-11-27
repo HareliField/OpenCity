@@ -7,8 +7,8 @@
   <title>Open City — Build the City</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="city.css?v=city-story">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="city.css?v=dark-walkthrough">
 </head>
 <body>
   <header class="topbar" id="city">
@@ -25,47 +25,21 @@
   </header>
 
   <main>
-    <section class="shell hero" aria-labelledby="hero-title">
-      <div class="hero-content">
-        <h1 id="hero-title">The city is yours to build.</h1>
-        <p class="hero-description">Open City is a collaborative game about building a city. It’s rough in plenty of places, and there’s a lot left to do. Play it, find something you’d make better, and use the agent prompt to help us improve it one change at a time.</p>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell hero-content">
+        <h1 id="hero-title">The city<br>is yours to build.</h1>
+        <p class="hero-description">Open City is a collaborative game anyone can help build, from its residents and streets to its shops and stories. We know it’s rough in places and needs a lot of work. Use the agent prompt to help us improve it one change at a time.</p>
         <div class="actions">
-          <button class="button primary" type="button" id="copy-starter">Copy agent prompt</button>
+          <button class="button primary" type="button" id="copy-starter">Copy agent prompt <span aria-hidden="true">↗</span></button>
           <a class="button quiet" id="prompt-link" href="contribute.txt" target="_blank" rel="noopener">View prompt</a>
         </div>
         <div class="notice prompt-notice" id="prompt-status" role="status" hidden></div>
-      </div>
-      <figure class="hero-photo">
-        <img src="south-a.jpg" alt="Brick buildings and shop fronts along an Old Town street in the game" width="1672" height="941" fetchpriority="high">
-        <figcaption>Old Town</figcaption>
-      </figure>
-    </section>
-
-    <section class="shell walkthrough" id="walkthrough" aria-labelledby="walkthrough-title">
-      <h2 id="walkthrough-title">Watch a block take shape.</h2>
-      <div class="walkthrough-layout">
-        <figure class="build-stage">
-          <div class="build-frame" data-stage="0">
-            <img class="build-shot" src="walkthrough/empty-lot.webp" width="1056" height="594" alt="An empty garden lot beside a row of cottages" decoding="async">
-            <img class="build-shot" src="walkthrough/walls.webp" width="1056" height="594" alt="The new cottage walls stand on the lot" decoding="async" aria-hidden="true">
-            <img class="build-shot" src="walkthrough/roof.webp" width="1056" height="594" alt="A terracotta roof completes the new cottage" decoding="async" aria-hidden="true">
-            <img class="build-shot" src="walkthrough/street.webp" width="1056" height="594" alt="The finished cottage seen from the neighboring street" decoding="async" aria-hidden="true">
-            <span class="build-mark" aria-hidden="true"></span>
-            <span class="build-cursor" aria-hidden="true"><span>Agent</span></span>
-          </div>
-          <figcaption>Garden district <span aria-hidden="true">·</span> Example contribution</figcaption>
-        </figure>
-        <ol class="build-steps">
-          <li><a href="walkthrough/empty-lot.webp" aria-current="step"><span class="step-name">Find a lot</span><span class="step-detail">Pick a gap on an existing block.</span><span class="step-arrow" aria-hidden="true">→</span></a></li>
-          <li><a href="walkthrough/walls.webp"><span class="step-name">Raise the walls</span><span class="step-detail">Give the cottage a footprint and a front door.</span><span class="step-arrow" aria-hidden="true">→</span></a></li>
-          <li><a href="walkthrough/roof.webp"><span class="step-name">Put on the roof</span><span class="step-detail">Finish the house with tiles like its neighbors.</span><span class="step-arrow" aria-hidden="true">→</span></a></li>
-          <li><a href="walkthrough/street.webp"><span class="step-name">Check the street</span><span class="step-detail">Walk around the block and see how the change fits.</span><span class="step-arrow" aria-hidden="true">→</span></a></li>
-        </ol>
+        <span class="hero-location">Old Town</span>
       </div>
     </section>
 
     <section class="shell workspace" id="build" aria-labelledby="build-title">
-      <h2 id="build-title">Build with your agent</h2>
+      <div class="section-heading"><h2 id="build-title">Build with your agent</h2></div>
       <div class="contribution-gallery">
         <figure class="contribution-clip">
           <div class="contribution-player">
@@ -110,37 +84,58 @@
       </div>
     </section>
 
-    <div class="shell city-notes">
-      <section id="rules" aria-labelledby="rules-title">
-        <h2 id="rules-title">City rules</h2>
-        <p><a href="https://github.com/HareliField/OpenCity/blob/main/CONTRIBUTING.md">Read the city design guide</a> · <a href="https://github.com/HareliField/OpenCity/blob/main/asphalt-heat/README.md#city-rulebook">Read the full rulebook</a></p>
-        <div class="rule-list">
-          <article>
-            <h3>Eligible for standard review</h3>
-            <p>Props, stores, eating, NPC schedules and small street details using existing systems. Check asset rights, geometry, access and performance on the exact change.</p>
-          </article>
-          <article>
-            <h3>Maintainer review</h3>
-            <p>Shared weather, tunnels and water, new gameplay behavior, and release pipeline edits. Review the affected systems and test a preview build before publication.</p>
-          </article>
-          <article>
-            <h3>Outside the shared-city rules</h3>
-            <p>Major road redesigns and superpowers. Keep the street grid intact and new abilities grounded in the city’s setting.</p>
-          </article>
-        </div>
-      </section>
+    <section class="shell walkthrough" id="walkthrough" aria-labelledby="walkthrough-title">
+      <div class="section-heading"><h2 id="walkthrough-title">Watch a block take shape.</h2></div>
+      <div class="walkthrough-layout">
+        <figure class="build-stage">
+          <div class="build-frame" data-stage="0">
+            <img class="build-shot" src="walkthrough/empty-lot.webp" width="1056" height="594" alt="An empty garden lot beside a row of cottages" decoding="async">
+            <img class="build-shot" src="walkthrough/walls.webp" width="1056" height="594" alt="The new cottage walls stand on the lot" decoding="async" aria-hidden="true">
+            <img class="build-shot" src="walkthrough/roof.webp" width="1056" height="594" alt="A terracotta roof completes the new cottage" decoding="async" aria-hidden="true">
+            <img class="build-shot" src="walkthrough/street.webp" width="1056" height="594" alt="The finished cottage seen from the neighboring street" decoding="async" aria-hidden="true">
+            <span class="build-mark" aria-hidden="true"></span>
+            <span class="build-cursor" aria-hidden="true"><span>Agent</span></span>
+          </div>
+          <figcaption>Garden district <span aria-hidden="true">·</span> Example contribution</figcaption>
+        </figure>
+        <ol class="build-steps">
+          <li><a href="walkthrough/empty-lot.webp" aria-current="step"><span class="step-name">Find a lot</span><span class="step-detail">Pick a gap on an existing block.</span><span class="step-arrow" aria-hidden="true">→</span></a></li>
+          <li><a href="walkthrough/walls.webp"><span class="step-name">Raise the walls</span><span class="step-detail">Give the cottage a footprint and a front door.</span><span class="step-arrow" aria-hidden="true">→</span></a></li>
+          <li><a href="walkthrough/roof.webp"><span class="step-name">Put on the roof</span><span class="step-detail">Finish the house with tiles like its neighbors.</span><span class="step-arrow" aria-hidden="true">→</span></a></li>
+          <li><a href="walkthrough/street.webp"><span class="step-name">Check the street</span><span class="step-detail">Walk around the block and see how the change fits.</span><span class="step-arrow" aria-hidden="true">→</span></a></li>
+        </ol>
+      </div>
+    </section>
 
-      <section class="release-section" id="releases" aria-labelledby="release-title">
-        <h2 id="release-title">City releases</h2>
-        <p><a href="https://github.com/HareliField/OpenCity/releases">View releases on GitHub <span aria-hidden="true">↗</span></a></p>
-      </section>
-    </div>
+    <section class="shell lower" id="rules" aria-labelledby="rules-title">
+      <h2 id="rules-title">City rules</h2>
+      <p><a href="https://github.com/HareliField/OpenCity/blob/main/CONTRIBUTING.md">Read the city design guide</a> · <a href="https://github.com/HareliField/OpenCity/blob/main/asphalt-heat/README.md#city-rulebook">Read the full rulebook</a></p>
+      <div class="rule-list">
+        <article>
+          <h3>Eligible for standard review</h3>
+          <p>Props, stores, eating, NPC schedules and small street details using existing systems. Check asset rights, geometry, access and performance on the exact change.</p>
+        </article>
+        <article>
+          <h3>Maintainer review</h3>
+          <p>Shared weather, tunnels and water, new gameplay behavior, and release pipeline edits. Review the affected systems and test a preview build before publication.</p>
+        </article>
+        <article>
+          <h3>Outside the shared-city rules</h3>
+          <p>Major road redesigns and superpowers. Keep the street grid intact and new abilities grounded in the city’s setting.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="shell lower release-section" id="releases" aria-labelledby="release-title">
+      <h2 id="release-title">City releases</h2>
+      <p><a href="https://github.com/HareliField/OpenCity/releases">View releases on GitHub <span aria-hidden="true">↗</span></a></p>
+    </section>
   </main>
 
   <footer class="shell footer">
     <span>Open City</span>
     <a href="https://github.com/HareliField/OpenCity" target="_blank" rel="noopener">Game repository <span aria-hidden="true">↗</span></a>
   </footer>
-  <script type="module" src="city.js?v=city-story"></script>
+  <script type="module" src="city.js?v=dark-walkthrough"></script>
 </body>
 </html>
