@@ -1,4 +1,4 @@
-"""Serve Asphalt Heat on this computer with a queue sized for parallel asset downloads."""
+"""Serve Open City on this computer with a queue sized for parallel asset downloads."""
 from argparse import ArgumentParser
 from functools import partial
 import gzip
@@ -50,7 +50,7 @@ if __name__ == "__main__":
     game_dir = Path(__file__).resolve().parents[1]
     handler = partial(GameHandler, directory=str(game_dir))
     with GameServer(("127.0.0.1", args.port), handler) as server:
-        print(f"Play Asphalt Heat at http://127.0.0.1:{args.port}/index.html", flush=True)
+        print(f"Play Open City at http://127.0.0.1:{args.port}/index.html", flush=True)
         try:
             server.serve_forever()
         except KeyboardInterrupt:

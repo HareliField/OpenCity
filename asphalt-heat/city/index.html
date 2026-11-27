@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Play Asphalt Heat and try contributing to its collaborative city.">
-  <title>Asphalt Heat — Build the City</title>
+  <meta name="description" content="Play Open City and try contributing to its collaborative city.">
+  <title>Open City — Build the City</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body>
   <header class="topbar" id="city">
     <div class="shell navigation">
-      <a class="wordmark" href="#city"><span class="roadmark" aria-hidden="true"></span> Asphalt Heat</a>
+      <a class="wordmark" href="#city"><span class="roadmark" aria-hidden="true"></span> Open City</a>
       <nav aria-label="City website">
         <a href="#city">City</a>
         <a href="#build">Build</a>
@@ -28,55 +28,54 @@
     <section class="hero" aria-labelledby="hero-title">
       <div class="shell hero-content">
         <h1 id="hero-title">The city<br>is yours to build.</h1>
-        <p>Tell your coding agent what to change. Try it in your local game, then decide whether to submit it to the shared city.</p>
         <div class="actions">
           <button class="button primary" type="button" id="copy-starter">Copy agent prompt <span aria-hidden="true">↗</span></button>
-          <a class="button outline" href="#build">Try the demo</a>
           <a class="button quiet" id="prompt-link" href="contribute.txt" target="_blank" rel="noopener">View prompt</a>
         </div>
         <div class="notice prompt-notice" id="prompt-status" role="status" hidden></div>
-        <span class="hero-location">South A</span>
+        <span class="hero-location">Old Town</span>
       </div>
     </section>
 
     <section class="shell workspace" id="build" aria-labelledby="build-title">
-      <div class="section-heading">
-        <h2 id="build-title">Build with your agent</h2>
-        <div class="demo-tools">
-          <span>Interactive demo</span>
-          <button type="button" class="button outline" id="replay" aria-pressed="false"><span aria-hidden="true">↻</span> Loop demo</button>
-        </div>
-      </div>
-      <ol id="steps" class="steps" aria-label="Contribution progress">
-        <li><button data-step="0" aria-current="step"><span>01</span> Propose</button></li>
-        <li><button data-step="1" disabled><span>02</span> Preview</button></li>
-        <li><button data-step="2" disabled><span>03</span> Review</button></li>
-        <li><button data-step="3" disabled><span>04</span> Release</button></li>
-      </ol>
-      <div class="workbench">
-        <div class="editor">
-          <form id="proposal">
-            <label class="panel-heading" for="idea">What should change?</label>
-            <textarea id="idea" rows="3" maxlength="1400" required></textarea>
-            <p class="field-label">Try an example</p>
-            <div class="examples">
-              <button type="button" class="button" data-example="shop">Noodle shop</button>
-              <button type="button" class="button" data-example="tunnel">Tunnel &amp; water</button>
-              <button type="button" class="button" data-example="powers">Superpowers</button>
-              <select id="example" aria-label="More contribution examples"><option value="" disabled selected>More ideas</option></select>
-            </div>
-            <div class="actions draft-actions">
-              <button type="submit" class="button primary">Build preview <span aria-hidden="true">→</span></button>
-              <button type="button" class="button quiet" id="copy">Copy for my agent</button>
-            </div>
-          </form>
-          <div id="details" hidden></div>
-        </div>
-        <figure class="scene" data-image="shop">
-          <figcaption><span class="pin" aria-hidden="true"></span><span id="location">South A / Market Row</span><span id="scene-state">Concept art</span></figcaption>
+      <div class="section-heading"><h2 id="build-title">Build with your agent</h2></div>
+      <div class="contribution-gallery">
+        <figure class="contribution-clip">
+          <video controls muted playsinline preload="none" poster="clips/street-bin.jpg" aria-label="Place a street prop">
+            <source src="clips/street-bin.mp4" type="video/mp4">
+            <a href="clips/street-bin.mp4">Open video</a>
+          </video>
+          <figcaption><h3>Place a street prop</h3><p>Add a bin and leave room to walk past.</p></figcaption>
+        </figure>
+        <figure class="contribution-clip">
+          <video controls muted playsinline preload="none" poster="clips/resident.jpg" aria-label="Create a resident">
+            <source src="clips/resident.mp4" type="video/mp4">
+            <a href="clips/resident.mp4">Open video</a>
+          </video>
+          <figcaption><h3>Create a resident</h3><p>Give a character a look and a way of moving.</p></figcaption>
+        </figure>
+        <figure class="contribution-clip">
+          <video controls muted playsinline preload="none" poster="clips/street-map.jpg" aria-label="Update a street detail">
+            <source src="clips/street-map.mp4" type="video/mp4">
+            <a href="clips/street-map.mp4">Open video</a>
+          </video>
+          <figcaption><h3>Update a street detail</h3><p>Mark a crosswalk on the map.</p></figcaption>
+        </figure>
+        <figure class="contribution-clip">
+          <video controls muted playsinline preload="none" poster="clips/cottage.jpg" aria-label="Add a building">
+            <source src="clips/cottage.mp4" type="video/mp4">
+            <a href="clips/cottage.mp4">Open video</a>
+          </video>
+          <figcaption><h3>Add a building</h3><p>Fit a cottage into an existing block.</p></figcaption>
+        </figure>
+        <figure class="contribution-clip">
+          <video controls muted playsinline preload="none" poster="clips/shop.jpg" aria-label="Add a shop">
+            <source src="clips/shop.mp4" type="video/mp4">
+            <a href="clips/shop.mp4">Open video</a>
+          </video>
+          <figcaption><h3>Add a shop</h3><p>Build an interior that residents can use.</p></figcaption>
         </figure>
       </div>
-      <p class="notice" id="notice" role="status" hidden></p>
     </section>
 
     <section class="shell lower" id="rules" aria-labelledby="rules-title">
@@ -100,12 +99,12 @@
 
     <section class="shell lower release-section" id="releases" aria-labelledby="release-title">
       <h2 id="release-title">City releases</h2>
-      <p id="release-log" aria-live="polite">Run the demo release to see the sample change log.</p>
+      <p><a href="https://github.com/HareliField/asphalt-heat/releases">View releases on GitHub <span aria-hidden="true">↗</span></a></p>
     </section>
   </main>
 
   <footer class="shell footer">
-    <span>Asphalt Heat</span>
+    <span>Open City</span>
     <a href="https://github.com/HareliField/asphalt-heat" target="_blank" rel="noopener">Game repository <span aria-hidden="true">↗</span></a>
   </footer>
   <script type="module" src="city.js"></script>

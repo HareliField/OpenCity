@@ -1,4 +1,4 @@
-"""Blender mesh and export utilities for the Asphalt Heat object library."""
+"""Blender mesh and export utilities for the Open City object library."""
 from collections import defaultdict
 from math import cos, pi, sin, sqrt
 from pathlib import Path

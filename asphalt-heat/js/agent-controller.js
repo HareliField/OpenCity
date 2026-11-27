@@ -252,7 +252,7 @@
  const modelContext=document.modelContext||navigator.modelContext;
  if(modelContext?.registerTool) {
   const tool={
-   name:'asphalt_heat',description:'Play and inspect this Asphalt Heat tab. Send {"op":"help"} for commands and examples.',
+   name:'asphalt_heat',description:'Play and inspect this Open City tab. Send {"op":"help"} for commands and examples.',
    inputSchema:{type:'object',properties:{command:{type:'object',properties:{op:{type:'string'}},required:['op']}},required:['command']},
    execute:({command})=>{
     try{return {content:[{type:'text',text:JSON.stringify(run(command))}]};}

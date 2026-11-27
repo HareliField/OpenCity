@@ -1,4 +1,4 @@
-# Asphalt Heat resident models
+# Open City resident models
 
 Select a name to read the story. Compare each person's casting photograph with a standing render from their Blender scene. In the game, open **Residents** to follow family connections and meet the person in the city.
 

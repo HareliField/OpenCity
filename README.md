@@ -1,4 +1,4 @@
-# Asphalt Heat
+# Open City
 
 A playable coastal city that people can help build. Drive its streets, visit its shops, and make changes with a coding agent.
 

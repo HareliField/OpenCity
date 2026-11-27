@@ -1,6 +1,6 @@
-# Build my Asphalt Heat contribution
+# Build my Open City contribution
 
-You are my coding agent. Build the change I describe below in Asphalt Heat, show it to me in the local game, and wait for my approval before submitting it to the shared project.
+You are my coding agent. Build the change I describe below in Open City, show it to me in the local game, and wait for my approval before submitting it to the shared project.
 
 ## 1. Build locally
 
@@ -16,7 +16,7 @@ You are my coding agent. Build the change I describe below in Asphalt Heat, show
 
 ## 3. Ask before opening the PR
 
-Ask me: **"Do you want me to submit this previewed change as a pull request to the shared Asphalt Heat project?"** Wait for a clear yes. Until then, keep the work local, including when project instructions normally call for pushing. If I ask for a revision, update the preview and ask again.
+Ask me: **"Do you want me to submit this previewed change as a pull request to the shared Open City project?"** Wait for a clear yes. Until then, keep the work local, including when project instructions normally call for pushing. If I ask for a revision, update the preview and ask again.
 
 After I say yes, commit the previewed change, push a contribution branch to my GitHub fork or an authorized feature branch, and open a PR against the upstream default branch using GitHub tools or `gh`. Include what changed, where to try it, verification results, asset sources if applicable, and anything that needs maintainer review. Give me the PR link so I can share it with the city reviewer. Leave the rules decision, merging and releasing to the project reviewers.
 

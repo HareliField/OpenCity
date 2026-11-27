@@ -130,7 +130,7 @@ class Package:
         )
         self.buffers[0] = {"uri": key + ".bin", "byteLength": len(self.binary)}
         doc = {
-            "asset": {"version": "2.0", "generator": "Asphalt Heat fitted street cast"},
+            "asset": {"version": "2.0", "generator": "Open City fitted street cast"},
             "scene": 0,
             "scenes": [{"nodes": [self.root]}],
             "nodes": self.nodes,

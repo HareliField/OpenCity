@@ -173,7 +173,7 @@ def publish_model(folder, output, hand_model=None):
     doc = {
         "asset": {
             "version": "2.0",
-            "generator": "Asphalt Heat photograph-fitted character factory",
+            "generator": "Open City photograph-fitted character factory",
             "extras": {"factory": FACTORY, "reference": fit["referenceSha256"]},
         },
         "scene": 0,

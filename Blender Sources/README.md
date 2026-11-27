@@ -1,4 +1,4 @@
-# Asphalt Heat object library
+# Open City object library
 
 The Blender file contains individually named, editable collections and a display scene that instances them. All dimensions are in metres. The source photographs are numbered in the companion JSON. A pump's internal dimensions were inferred from the installed piping. The gallery preview in the game uses the same exports as normal play.
 

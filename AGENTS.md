@@ -1,4 +1,4 @@
-# Asphalt Heat
+# Open City
 
 Launch and relaunch the game with sound off. Use a separate Codex in-app browser tab owned by your chat or agent session. Use the Codex in-app browser exclusively for game launches. Do not use Chrome, Dia, Safari, or a tab owned by the user or another agent.
 
@@ -6,6 +6,6 @@ After pressing Play, verify that the in-game button shows **Sound off** and leav
 
 ## Hands-free gameplay and debugging
 
-Every Asphalt Heat agent can launch its own game session with `?agent=1`. Follow the browser and sound instructions above. Press Play, verify **Sound off**, expand **Agent controller**, and run `{"op":"help"}`. The simulation waits between commands so you can inspect a collision, interaction or police response one tick at a time.
+Every Open City agent can launch its own game session with `?agent=1`. Follow the browser and sound instructions above. Press Play, verify **Sound off**, expand **Agent controller**, and run `{"op":"help"}`. The simulation waits between commands so you can inspect a collision, interaction or police response one tick at a time.
 
 Use `places` and `jump` to visit a landmark or coordinates, `world` to inspect what is there, and `observe` to discover the available player actions. Use `events` to collect the command sequence and game messages for a bug report. The [agent controller guide](asphalt-heat/README.md#agent-controller) includes examples and units.

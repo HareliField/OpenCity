@@ -1,4 +1,4 @@
-# Asphalt Heat Meshy assets
+# Open City Meshy assets
 
 This folder preserves the input image, original Meshy output, and four-angle runtime review for each of the 40 assets used in the game. The manifest records the generation settings and the checksum of every original.
 

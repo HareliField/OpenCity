@@ -1,4 +1,4 @@
-# Asphalt Heat residents
+# Open City residents
 
 The city has 1,500 named residents in this collection. The first 150 fill the opening volume. Start with the spoiled citizenship suit at the Wash House, then follow the people involved to a family member elsewhere in the city. The ten volumes contain 150 neighborhood episodes. Within each one, people remember the same event differently and want different things from it.
 
