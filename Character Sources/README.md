@@ -16,7 +16,7 @@ Ida’s folder contains two independent reconstructions. `character.blend` is th
 
 ## Character build test
 
-The [Character Build Test](Character%20Build%20Test/README.md) contains the fitted character and six garment GLBs from the cloth preview.
+The [Character Build Test](Character%20Build%20Test/README.md) contains the original Meshy character, both optimized versions, and six fitted garment GLBs from the cloth preview.
 
 ## Rebuild from source
 
