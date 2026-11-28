@@ -23,6 +23,10 @@ The new daylight sky and lighting environment use the CC0 Kloofendal 48d Partly 
 
 [Meshy Image to 3D settings](https://docs.meshy.ai/en/api/image-to-3d)
 
+## Character Build Test originals
+
+[Character Build Test originals](Character%20Build%20Test%20Originals/README.md) contains the full-resolution wardrobe downloads and their checksums.
+
 ## Contribution gallery
 
 [Teal station wagon](gallery-station-wagon.glb) is the source model shown in the Commonstreet gallery's car clip. It was generated from text with Meshy 7.1 and textured with Meshy 7. The model has a separate windshield and door and rear glass, with a modeled passenger cabin visible through the panes. The footage places it at a curb in Old Town.

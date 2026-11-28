@@ -14,4 +14,6 @@ The Commonstreet base character comparison and the six fitted Meshy-based garmen
 | `socks.glb` | Left and right socks |
 | `shoes.glb` | Left and right shoes |
 
+[Full-resolution Meshy wardrobe downloads](../../Meshy%20Sources/Character%20Build%20Test%20Originals/README.md)
+
 The three character files are alternatives for comparison. Each was verified as one watertight shell. The fitted garments were tested with `character.glb`. Cloth simulation runs in the separate preview. The jacket sleeve and shoe heel still have visible openings in some views.
