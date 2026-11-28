@@ -14,6 +14,10 @@ The editable meshes and skin weights live in each native master. Its textures an
 
 Ida’s folder contains two independent reconstructions. `character.blend` is the open-source sculpt. `scan-pilot.blend` contains the rigged Meshy comparison model generated from the same photograph. `scan-receipt.json` records the 35-credit scan and 5-credit rig. The other residents use the open-source workflow.
 
+## Character build test
+
+The [Character Build Test](Character%20Build%20Test/README.md) contains the fitted character and six garment GLBs from the cloth preview.
+
 ## Rebuild from source
 
 From the repository root, use a Python environment with NumPy, SciPy, Pillow, OpenCV and MediaPipe, a Blender command-line executable, and libzstd. The MediaPipe model directory contains `face_landmarker.task`, `pose_landmarker.task`, `hair.tflite` and `hand_landmarker.task`. [Face](https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker) · [Pose](https://ai.google.dev/edge/mediapipe/solutions/vision/pose_landmarker) · [Multiclass selfie segmentation](https://ai.google.dev/edge/mediapipe/solutions/vision/image_segmenter) · [Hands](https://ai.google.dev/edge/mediapipe/solutions/vision/hand_landmarker)
